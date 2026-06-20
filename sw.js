@@ -1,4 +1,4 @@
-const CACHE = 'daybyday-v1';
+const CACHE = 'daybyday-v2';
 const ASSETS = [
   '/daybyday/',
   '/daybyday/index.html',
