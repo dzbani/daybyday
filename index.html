@@ -2620,9 +2620,9 @@ async function applyLocSearch(){
   const q=inp.value.trim(); if(!q) return;
   status.textContent='Szukam…'; status.style.display='block';
   try{
-    const res=await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&countrycodes=pl&format=json&limit=1&addressdetails=1`,{headers:{'Accept-Language':'pl','User-Agent':'DaybyDay/1.0'}});
+    const res=await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=1&addressdetails=1`,{headers:{'Accept-Language':'pl','User-Agent':'DaybyDay/1.0'}});
     const data=await res.json();
-    if(!data.length){status.textContent='Nie znaleziono miejscowości w Polsce.';return;}
+    if(!data.length){status.textContent='Nie znaleziono miejscowości.';return;}
     const r=data[0];
     LOC_LAT=parseFloat(r.lat); LOC_LON=parseFloat(r.lon);
     LOC_NAME=r.address?.city||r.address?.town||r.address?.village||r.address?.hamlet||r.display_name.split(',')[0];
