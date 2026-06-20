@@ -1,0 +1,365 @@
+﻿1|1|Almachiusz, Eufrozyna, Fulgencjusz, Fulgenty, Józef, Konkordiusz, Maria, Masław, Miecisław, Mieczysław, Mieczysława, Mieszko, Mojsław, Odylon, Odyseusz, Piotr, Walenty, Wilhelm, Wincenty, Zygmunt, Zygmunta
+2|1|Abel, Achacja, Achacy, Adelard, Aida, Argea, Argeus, Aspazja, Aspazjusz, Aspazy, Bazyla, Bazyli, Ditmar, Dobiemir, Grzegorz, Izydor, Jakubina, Makary, Marcelin, Martynian, Narcyz, Stefania, Strzeżysław, Sylwester, Sylwestra, Telesfor, Telesfora, Teodor
+3|1|Anter, Arleta, Cyriak, Cyryn, Cyryna, Daniel, Danuta, Enoch, Genowefa, Gordiusz, Meliton, Piotr, Pryma, Prymus, Teogenes, Teona, Teonas, Włościsława, Zdzisława
+4|1|Aniela, Benedykta, Dafroza, Dobromir, Doroteusz, Elżbieta, Eugeniusz, Fereol, Grzegorz, Krystiana, Marcjan, Roger, Rygobert, Suligost, Tytus
+5|1|Amata, Amelia, Edward, Edwarda, Emiliana, Eufrazjusz, Marcelina, Piotr, Roger, Szymon, Szymona, Włościbor
+6|1|Andrzej, Baltazar, Bolemir, Epifania, Jędrzej, Kacper, Karol, Manomir, Melaniusz, Melchior, Miłowit, Norman, Rafaela, Wiltruda
+7|1|Attila, Chociesław, Izydor, Julian, Kanut, Kryspin, Lucjan, Nicetas, Oriana, Rajmund, Rajmunda, Reginald, Teodor, Walenty, Wirginia, Łucjan
+8|1|Albert, Apolinary, Erhard, Heladia, Heladiusz, Laurencjusz, Laurenty, Mroczysław, Mścisław, Seweryn, Teofil, Wawrzyniec
+9|1|Adrian, Adrianna, Agata, Alicja, Antoni, Borzymir, Bracsław, Finan, Julian, Marcelin, Marcelina, Marcjanna, Mścisława, Piotr, Przemir
+10|1|Agaton, Anna, Dobrosław, Egidia, Grzegorz, Hanna, Idzi, Jan, Kolumba, Leonia, Marcjan, Mojmir, Nikanor, Nikanora, Paweł, Wilhelm
+11|1|Anastazy, Feliks, Hilary, Honorata, Hortensja, Hortensjusz, Hygin, Krzesimir, Matylda, Małomir, Melchiades, Palemon, Palemona, Paulin, Salwiusz, Teodozy, Tezeusz
+12|1|Aelred, Alfred, Antoni, Antonin, Arkadia, Arkadiusz, Arkady, Benedykt, Bernard, Bonit, Bonita, Cezaria, Cezaryna, Erna, Ernest, Eutropiusz, Greta, Hilda, Jan, Małgorzata, Piotr, Stomir, Tacjan, Tacjana, Tygriusz, Wiktorian, Wiktoriana
+13|1|Arkady, Bogumił, Bogumiła, Bogusąd, Chwalisław, Glafira, Godfryd, Hilary, Iweta, Judyta, Leoncjusz, Melania, Potyt, Remigia, Remigiusz, Weronika
+14|1|Amadea, Dacjusz, Domasław, Feliks, Helga, Krystiana, Makryna, Malachiasz, Mściwuj, Nina, Odoryk, Orestes, Piotr, Radogost, Rajner, Saba
+15|1|Aleksander, Arnold, Dalemir, Dobrawa, Domasław, Dąbrówka, Eligia, Franciszek, Habakuk, Ida, Izydor, Jan, Makary, Maksym, Maur, Micheasz, Paweł, Piotr
+16|1|Berard, Furzeusz, Gonsalwy, Hilary, Honorat, Honorata, Marceli, Otto, Piotr, Treweriusz, Trzebowit, Tycjan, Tycjana, Waleriusz, Włodzimierz, Włodzimir, Włodzimira
+17|1|Alba, Antoni, Flawia, Jan, Julian, Kamil, Merul, Przemił, Rosław, Rosława, Rozalinda, Rościsław, Sabin, Sulpicja, Sulpicjusz, Teodor
+18|1|Ammonia, Ammoniusz, Atenogenes, Beatrycze, Bogumił, Krystyna, Liberata, Lubart, Małgorzata, Monika, Pryska, Regina, Sędziwoj, Wenerand, Woluzjan, Zuzanna
+19|1|Adalryk, Andrzej, Basjan, Basjana, Bernard, Erwin, Erwina, Eufemia, Germana, Germanik, Geroncjusz, Henryk, Jan, Januariusz, January, Juliusz, Józef, Kaliksta, Kalista, Kanut, Laudomar, Marceli, Mariusz, Marta, Matylda, Paweł, Pia, Poncjan, Racimir, Sara, Saturnin, Wulstan
+20|1|Dobiegniew, Dobroniega, Dobrożyźń, Dobrzegniew, Eutymiusz, Euzebiusz, Fabian, Fabiana, Maur, Sebastian
+21|1|Agnieszka, Awit, Awita, Długomił, Epifani, Epifaniusz, Eulogia, Eulogiusz, Inez, Jarosław, Jarosława, Józefa, Krystiana, Meinrad, Patrokles, Publiusz, Sobiesława
+22|1|Anastazy, Dobromysł, Dominik, Dorian, Gaudencjusz, Gaudenty, Jutrogost, Kasandra, Laura, Mateusz, Sulisław, Uriel, Wincenty
+23|1|Agatangel, Akwila, Anicet, Aniceta, Bartłomiej, Bernard, Bertram, Daniel, Emerencja, Filip, Henryk, Ildefons, Ildefonsa, Jan, Kadok, Klemens, Konstanty, Maksym, Maria, Michał, Onufry, Parmenas, Rajmund, Rajmunda, Sewerian, Uniemir, Wincenty, Wrocsława, Łukasz
+24|1|Babilas, Chwalibog, Felicjan, Franciszek, Ksenia, Milena, Mirogniew, Rafaela, Rafał, Teodor, Tymoteusz, Urban, Wera
+25|1|Albert, Ananiasz, Apollo, Artemia, Brodzisław, Emanuel, Emanuela, Juwentyn, Maksym, Miłobor, Miłosz, Miłowan, Paweł, Pęcisława
+26|1|Amonasz, Andrzej, Arkadiusz, Ksenofont, Leon, Leona, Małostryj, Paula, Polikarp, Skarbimir, Teogenes, Tymoteusz, Tytus, Wanda, Żeligniew
+27|1|Adalruna, Anioł, Dacjusz, Datyw, Elwir, Henryk, Ilona, Jerzy, Julian, Leander, Leandra, Ninomysł, Przybyrad, Przybysław, Rozalia, Teodoryk, Witalian
+28|1|Amadeusz, Amalia, Augustyn, Blizbor, Boguwola, Flawian, Jakub, Julian, Kalinik, Karol, Krzesąd, Manfred, Manfreda, Maria, Olimpia, Piotr, Radomir, Roger, Tomasz, Tyrs, Waleriusz, Walery, Świedarg
+29|1|Angela, Aniela, Bolesława, Bona, Ewangelina, Gildas, Józef, Konstancjusz, Maur, Papiasz, Sabrina, Sarbeliusz, Sulpicja, Sulpicjusz, Walerian, Waleriusz, Wielisława, Zdzisław, Zdzisława, Żelisław, Żelisława
+30|1|Adalgunda, Adelajda, Aldegunda, Aleksander, Batylda, Bronisław, Cyntia, Dobiegniew, Dobiegniewa, Dobrogniewa, Feliks, Gerard, Gerarda, Hiacynta, Maciej, Marcin, Martyna, Piotr, Sebastian, Teofil
+31|1|Abraham, Cyrus, Ema, Euzebiusz, Geminian, Jan, Ksawery, Ksenia, Ludwika, Marcela, Marcelina, Melaniusz, Rościgniew, Smysława, Spycigniew
+1|2|Brygida, Cecyliusz, Dziadumiła, Emil, Euniusz, Ignacy, Paweł, Pioniusz, Piotr, Prosimir, Sewer, Siemirad, Winand, Winanda, Wirydiana, Zybert, Żegota
+2|2|Andrzej, Ermentruda, Filip, Franciszek, Georgia, Gonsalwy, Jadwiga, Jan, Joanna, Katarzyna, Kornel, Laurencjusz, Laurenty, Marcin, Maria, Markwart, Mikołaj, Mirosława, Miłosław, Miłosława, Odylon, Piotr, Teodoryk, Teofan, Wawrzyniec, Werner
+3|2|Błażej, Błażeja, Celeryn, Celeryna, Hipolit, Hipolita, Ignacy, Klaudyna, Maksym, Ofelia, Oskar, Stefan, Telimena, Uniemysł, Uniesława
+4|2|Andrzej, Awentyn, Częstogoj, Eustachia, Eustachiusz, Eustachy, Gilbert, Izydor, Jan, Joanna, Józef, Mariusz, Weronika, Witosława, Żaneta, Żanna
+5|2|Adelajda, Agata, Albwin, Awit, Awita, Dobiemir, Indracht, Izydor, Jakub, Lubodrog, Modest, Przybygniew, Rodomił, Saba, Strzeżysława
+6|2|Amand, Amanda, Anioł, Antoni, Bogdan, Bogdana, Bohdan, Dorota, Gaston, Joachim, Ksenia, Leon, Leona, Paweł, Szymon, Szymona, Zdziewit
+7|2|Egidia, Eugenia, Idzi, Jakub, Mojżesz, Partenia, Parteniusz, Romeusz, Romuald, Rozalia, Ryszard, Sulimir, Sulisław, Teodor, Wilhelm
+8|2|Ampelia, Ampeliusz, Gabriela, Gniewomir, Gniewosądka, Hieronim, Honorat, Izajasz, Jan, Juwencja, Juwencjusz, Józefina, Lucjusz, Mirogniew, Paweł, Piotr, Polikarp, Sebastian, Stefan, Żaklina
+9|2|Ansbert, Apolonia, Bernard, Cyryl, Donat, Gorzysław, Jakub, Marian, Mariusz, Pola, Pryma, Prymus, Reginald, Sabin, Sulisława
+10|2|Apollo, Elwir, Hiacynt, Jacek, Jacenty, Michał, Scholastyka, Sotera, Tomisława, Tomił, Trojan, Wilhelm
+11|2|Adolf, Adolfa, Bernadeta, Bertrada, Cedmon, Dezyderia, Dezyderiusz, Dezydery, Eufrozyna, Grzegorz, Heloiza, Jonasz, Lucjusz, Maria, Olgierd, Paschalis, Sekundyn, Łazarz, Świętomira, Żelibor
+12|2|Aleksy, Ammonia, Ammoniusz, Ampelia, Ampeliusz, Benedykt, Bonfilia, Bonfiliusz, Damian, Datyw, Etelwold, Eulalia, Ewa, Gaudenty, Gerard, Gerda, Hilarion, Hilariona, Humbelina, Julian, Juwencjusz, Laurenty, Ludan, Ludwik, Maryna, Melecjusz, Modest, Modesta, Norma, Radzim, Saturnin, Saturnina, Trzebiesława
+13|2|Adolf, Beatrycze, Benigny, Emnilda, Eulogia, Eulogiusz, Gilbert, Grzegorz, Hilary, Humbelina, Jordan, Jordana, Kastor, Katarzyna, Licyniusz, Linda, Martynian, Maura, Polieukt, Stefan, Toligniew
+14|2|Abraham, Adolf, Adolfa, Auksencja, Auksencjusz, Auksenty, Cyryl, Dionizja, Dobiesława, Eleukadia, Eleukadiusz, Flawian, Florentyn, Józef, Konrad, Konrada, Krystyna, Liliana, Lilianna, Maro, Maron, Metody, Mikołaj, Modest, Niedamir, Niedomira, Niemir, Nostrian, Piotr, Teodozja, Teodozy, Walenty, Witalis, Zenon
+15|2|Alicja, Dalmacjusz, Dalmacy, Faust, Faustyn, Faustyna, Galfryd, Georgia, Gliceriusz, Joachim, Jordan, Jordana, Julia, Józef, Klaudiusz, Onezym, Pakosława, Przybyrad, Saturnin, Sewer, Teogenes, Zygfryd, Zygfryda, Żywila
+16|2|Bernard, Czcisław, Daniel, Danuta, Eliasz, Filipa, Gilbert, Izajasz, Jeremi, Jeremiasz, Juliana, Julianna, Ludan, Marcjan, Marian, Marut, Maruta, Onezym, Pamfil, Porfirion, Porfiriusz, Porfiry, Przedsława, Samuel, Szymon, Szymona, Teodul, Wirydiana, Zoe
+17|2|Aleksja, Aleksy, Bartłomiej, Bonfilia, Bonfiliusz, Donat, Donata, Faustyn, Fintan, Franciszek, Hermogenes, Izydor, Julian, Klemens, Konstanty, Marianna, Niegowoj, Polichroniusz, Reginald, Romulus, Sylwan, Sylwin, Sylwina, Teodulf, Wilhelm, Zbigniew, Łukasz
+18|2|Agapit, Albert, Flawia, Flawian, Flawiusz, Fryda, Gertruda, Haralampia, Haralampiusz, Heladia, Heladiusz, Klaudiusz, Konstancja, Konstantyna, Kosma, Lucjusz, Maksym, Mojżesz, Szymon, Wespazjan, Więcesława
+19|2|Alwar, Arnold, Barbacy, Beat, Biedziesława, Bonifacy, Czcisław, Gawin, Henryk, Jerzy, Józef, Konrad, Konrada, Leoncjusz, Manswet, Marceli, Prokles, Publiusz, Tuliusz, Waleriusz, Walery, Łucja
+20|2|Amata, Aulus, Eleuteria, Eleuteriusz, Elżbieta, Euchariusz, Euchary, Eustachia, Eustachiusz, Eustachy, Falkon, Hiacynta, Jan, Julia, Leon, Leona, Lubomir, Ludomir, Ludomił, Nila, Nilus, Peleusz, Serapion, Siestrzewit, Sylwan, Ulryk, Zenobia, Zenobiusz
+21|2|Eleonora, Feliks, Fortunat, Gumbert, Henryka, Irena, Kiejstut, Lena, Piotr, Robert, Sewerian, Wyszeniega, Wyszetrop
+22|2|Arystion, Chociebąd, Honorata, Jakub, Konkordia, Maksymian, Marold, Małgorzata, Papiasz, Paschazy, Wrocisław
+23|2|Będzimir, Damian, Damiana, Finan, Florentyn, Izabela, Marta, Milburga, Montan, Piotr, Polikarp, Prymian, Roma, Romana, Stefan, Łazarz
+24|2|Bogurad, Borzygniew, Ermegarda, Flawian, Jan, Julian, Józefa, Lucjusz, Maciej, Marek, Modest, Montan, Sergiusz, Wieledrog
+25|2|Adam, Antonina, Bolebor, Cezariusz, Cezary, Dioskur, Donat, Gromisław, Herena, Just, Konstancjusz, Lubart, Miłosz, Modest, Nicefor, Nicefora, Papiasz, Romeusz, Saturnin, Serapion, Szaweł, Tarazjusz, Tolisław, Tolisława, Walburga, Wiktor, Wiktoryn
+26|2|Aleksander, Bogumił, Dionizy, Faustynian, Gerlinda, Klaudian, Lutomir, Mira, Mirosław, Mirosława, Nestor, Nikolina, Otokar, Porfiriusz, Porfiry
+27|2|Achacja, Achacy, Aleksander, Anastazja, Anna, Auksencja, Auksencjusz, Auksenty, Baldomer, Baldomera, Bazyli, Gabriel, Hanna, Honoryna, Julian, Leander, Leandra, Nestor, Orfeusz, Prokop, Sirosława, Wiktor
+28|2|Antonia, August, Bogurad, Chwalibog, Gaja, Gajusz, Hilary, Józef, Lech, Makary, Nadbor, Oswald, Roman, Sylwana, Tymoteusz
+1|3|Albin, Aldona, Antoni, Antonina, Budzisław, Dawid, Eudoksja, Eulogia, Eulogiusz, Feliks, Herkulan, Herkules, Joanna, Józef, Leon, Leona, Milena, Radosław, Roger, Switbert
+2|3|Absalon, Agnieszka, Halszka, Helena, Henryk, Januaria, Karol, Krzysztof, Michał, Paweł, Prosper, Radosław, Symplicjusz, Łukasz
+3|3|Agrypin, Anzelm, Asteriusz, Eutropiusz, Gerwin, Gerwina, Gwenol, Hieronim, Jakub, Jan, Kinga, Kleonik, Kleonika, Kolumba, Kunegunda, Marcjusz, Maryn, Maryniusz, Piotr, Samuel, Teodor, Teresa, Tycjan, Tycjana, Wirzchosława
+4|3|Adrianna, Arkadia, Arkadiusz, Arkady, Eugeniusz, Gerarda, Humbert, Jakubina, Kazimiera, Kazimierz, Leonard, Lucjana, Lucjusz, Nestor, Piotr, Placyda, Łucja
+5|3|Adrian, Adrianna, Ditmar, Fokas, Fryderyk, Gerazym, Jan, Jeremiasz, Krzysztof, Marek, Oliwia, Oliwiusz, Pakosław, Teofil, Wergilia, Wirgilia, Wirgiliusz, Wolimir
+6|3|Agnieszka, Biedrzysław, Będzimysł, Eugenia, Frydolin, Jordan, Jordana, Kineburga, Koleta, Konon, Radosław, Róża, Wiktor
+7|3|Bazyli, Efrem, Elpidia, Elpidiusz, Eubul, Felicyta, German, Morzysław, Nadmir, Paweł, Perpetua, Teofilakt, Teresa, Tomasz
+8|3|Antoni, Apoloniusz, Arian, Beata, Filemon, Filemona, Franciszek, Gizela, Herenia, Jan, Julian, Miłogost, Poncjusz, Stefan, Szymon, Teotyk, Wincenty
+9|3|Dominik, Franciszka, Kandyd, Katarzyna, Mścisława, Przemyślibor, Rebeka, Samanta
+10|3|Aleksander, Cyprian, Eugenia, Gaja, Gajusz, Krescenty, Makary, Piotr, Porfirion, Symplicjusz, Zwnisława
+11|3|Balbina, Benedykt, Drogosława, Eulogia, Eulogiusz, Eutymiusz, Jan, Kandyd, Konstanty, Ludosław, Nawoj, Pioniusz, Sofroniusz, Sylwia, Tala, Talus, Teresa, Trofim, Świetlana
+12|3|Alojzy, Bernard, Blizbor, Grzegorz, Innocenty, Justyna, Józefina, Maksymilian, Piotr, Teofan
+13|3|Anioł, Bożena, Bratomir, Cieszymysł, Ernest, Kasjan, Krystyna, Letycja, Marek, Patrycja, Roderyk, Sabin, Salomon, Trzebiesław
+14|3|Afrodyzja, Afrodyzy, Bożeciecha, Eutychiusz, Ewa, Fabrycy, Fawila, Jakub, Jarmiła, Leon, Leona, Matylda, Michał, Piotr, Łazarz
+15|3|Gościmir, Heloiza, Klemens, Krzysztof, Leokrycja, Longin, Longina, Ludwika, Matrona, Nikander, Nikandra, Pakosław, Placyd, Probus, Zachariasz
+16|3|Abraham, Agapit, Antoni, Artemia, Budzimir, Cyriak, Dzirżyterg, Gabriel, Henryk, Henryka, Herbert, Herybert, Hiacynt, Hilary, Izabela, Jacek, Jacenty, Julian, Karol, Miłostryj, Patrycjusz, Patrycy, Przybymir, Walenty
+17|3|Agrykola, Ambroży, Armin, Cieszysław, Gertruda, Józef, Patrycjusz, Patrycy, Patryk, Regina, Witburga, Zbigniew, Zbygniewa, Zbyszko
+18|3|Aleksa, Aleksander, Anzelm, Boguchwał, Boguchwała, Celestyna, Cyryl, Edward, Edwarda, Feliks, Finan, Krystian, Marta, Narcyz, Salwator, Trofim
+19|3|Bogdan, Bohdan, Jan, Józef, Leoncjusz, Marceli, Marek, Sybillina
+20|3|Aleksander, Aleksandra, Ambroży, Anatol, Anatoliusz, Archip, Cyriaka, Ermegarda, Eufemia, Fotyna, Hipolit, Józefa, Kira, Klaudia, Klemens, Kutbert, Mamertyn, Matrona, Maurycy, Nicetas, Rafał, Wincenty, Wolfram
+21|3|Benedykta, Filemon, Filemona, Ilayla, Klemencja, Lubomir, Lubomira, Ludomir, Ludomira, Marzanna, Mikołaj, Pafnucy, Serapion, Teodul
+22|3|August, Baldwin, Baldwina, Bazyli, Benwenut, Boguchwał, Bogusław, Bogusława, Epafrodyt, Godzisław, Katarzyna, Kazimierz, Paweł, Zachariasz
+23|3|Adrian, Benedykt, Eberhard, Feliks, Józef, Nikon, Pelagia, Rebeka, Turybiusz, Wiktorian, Wiktoriana, Zbysław
+24|3|Ademar, Aldmir, Aleksander, Bertrada, Dionizy, Dydak, Dzierżysław, Dziesława, Dzirżysława, Gabriel, Jan, Józef, Katarzyna, Marek, Romulus, Sewer, Sofroniusz, Szymon, Szymona, Wiktoria
+25|3|Anuncjata, Baroncjusz, Dezyderiusz, Dezydery, Dula, Eutychiusz, Ireneusz, Jozafata, Kwiryn, Lutogniew, Lutomysł, Maria, Mariola, Małgorzata, Nikodema, Pelagiusz, Prokop, Sławobora, Wieńczysław, Wieńczysława, Wolimir, Łucja
+26|3|Bazyli, Duszan, Dyzma, Emanuel, Emanuela, Feliks, Kasjan, Kwadrat, Larysa, Ludger, Maksyma, Manuela, Montan, Olga, Tekla, Teodor, Teodozy, Tworzymir
+27|3|Aleksander, Archibald, Augusta, Benedykt, Ekhard, Ernest, Gelazja, Gelazy, Jan, Lidia, Macedoniusz, Narzes, Robert, Rzędzimir, Łazarz
+28|3|Aleksander, Doroteusz, Guntram, Ingbert, Joanna, Kastor, Krzesisław, Malachiasz, Malkolm, Pryskus, Renata
+29|3|Bertold, Cyryl, Czcirad, Eustachia, Eustacjusz, Eustazja, Eustazy, Ludolf, Ludolfina, Marek, Satur, Satura, Stefan, Teodor, Wiktoryn
+30|3|Amadea, Amadeusz, Amalia, Amelia, Aniela, Częstobor, Dobromir, Jan, Joachim, Kwiryn, Kwiryna, Leonard, Lutobor, Mamertyn, Mamertyna, Piotr, Zozym
+31|3|Achacja, Achacy, Amos, Balbina, Beniamin, Bonawentura, Dobromira, Gwido, Innocenty, Joanna, Kornelia, Myślidar, Myślisław, Nela
+1|4|Celzjusz, Chionia, Florentyn, Grażyna, Hugo, Irena, Jakubina, Katarzyna, Makary, Meliton, Miłość, Teodora, Tolisław, Tomisław, Wenancjusz, Wenanty, Zbigniew
+2|4|Aaron, Franciszek, Irmina, Laurencja, Leopold, Leopolda, Maria, Miłobąd, Samosąd, Teodozja, Urban, Wiktor
+3|4|Antoni, Benedykt, Cieszygor, Eutychia, Gandolf, Irena, Izbygniew, Izbygniewa, Jakub, Jan, Józef, Nicetas, Pankracy, Ryszard, Sykstus
+4|4|Adelajda, Ambroży, Izydor, Juliana, Józef, Mira, Platon, Teodul, Teodulf, Wyszeniega, Zdzimir
+5|4|Bekan, Borzywoj, Dobromił, Irena, Izbor, Jeremi, Julianna, Krescencja, Maria, Tristan, Wincenty
+6|4|Adam, Celestyn, Celestyna, Diogenes, Filaret, Ireneusz, Izolda, Katarzyna, Marcelin, Michał, Notger, Platonida, Prudencjusz, Sieciesława, Tymoteusz, Zachariasz, Zefiryn, Zefiryna, Świętobor
+7|4|Armin, Asumpta, Donat, Donata, Epifaniusz, Hegezyp, Herman, Jan, Józef, Krystian, Libert, Maria, Niestanka, Przedsław, Saturnin
+8|4|Amancjusz, Apolinary, Asynkryt, August, Cezary, Cezaryna, Dionizjusz, Dionizy, January, Julia, Julian, Makaria, Maksyma, Perpetuus, Radosław, Walter
+9|4|Achacja, Achacy, Celestyna, Demetria, Demetriusz, Dobrosława, Dominik, Duszan, Eupsychia, Eupsychiusz, Franciszek, Heliodor, Hilaria, Hilary, Hugo, Innocenty, Kasylda, Maja, Marceli, Maria, Notger, Prochor, Reginald, Tankred, Ubald, Wadim, Waldetruda
+10|4|Afrykan, Antoni, Apoloniusz, Daniel, Ezechiel, Fulbert, Grodzisław, Henryk, Magda, Magdalena, Makary, Marek, Michał, Notger, Paladiusz, Pompejusz, Terencjusz
+11|4|Anioł, Antypas, Arleta, Filip, Gemma, Helena, Herman, Hildebrand, Hildebranda, Izaak, Jaromir, Leona, Rajner, Stanisław, Stanisława
+12|4|Andrzej, Damian, Eufemia, Juliusz, Jurata, Saba, Siemidrog, Teresa, Wiktor, Zenon, Zenona
+13|4|Agatonika, Długomił, Hermenegild, Hermenegilda, Ida, Jan, Justyn, Karp, Kwintylian, Maksym, Marcin, Marcjusz, Małgorzata, Przemysł, Przemysław, Przemysława, Ursus
+14|4|Ardalion, Berenika, Ernestyna, Izabela, Jadwiga, Julianna, Justyn, Justyna, Krzysztof, Krzysztofa, Lambert, Lamberta, Lawinia, Lawiniusz, Ludwina, Maria, Myślimir, Symplicja, Tomaida, Trofim, Tyburcja, Tyburcjusz, Tyburcy, Walerian
+15|4|Abel, Anastazja, Bazylisa, Cezariusz, Cezary, Eutyches, Krescenty, Maksym, Maro, Maron, Modest, Olimpia, Piotr, Potencjana, Rodan, Sylwester, Sylwestra, Teodor, Wiktoryn, Wszegniew
+16|4|Benedykt, Bernadeta, Cecylian, Charyzjusz, Drogo, Erwin, Erwina, Feliks, Joachim, Julia, Kalikst, Ksenia, Kwintylian, Lambert, Leonid, Marcjalis, Optat, Paweł, Publiusz, Saturnin, Turybiusz, Urban
+17|4|Anicet, Aniceta, Eliasz, Innocenty, Izydor, Izydora, Jakub, Józef, Katarzyna, Klara, Radociech, Robert, Roberta, Salwator, Stefan, Teodora
+18|4|Alicja, Apoloniusz, Barbara, Bogusław, Bogusława, Eleuteria, Eleuteriusz, Elpidiusz, Flawiusz, Gosław, Gosława, Gościsław, Maria, Ryszard, Sabina
+19|4|Adolf, Adolfa, Cieszyrad, Dionizjusz, Dionizy, Ekspedyt, Ekspedyta, Elfeg, Irydion, Jerzy, Konrad, Krescenty, Leon, Leona, Leontyna, Pafnucy, Sokrates, Tymon, Werner, Wigilia, Wincenty, Włodzimir
+20|4|Agnieszka, Amalia, Amelia, Antonin, Berenika, Cezariusz, Cezary, Jagna, Marcelin, Marcelina, Marcjan, Nawoj, Sara, Sekundyn, Sewerian, Sulpicjusz, Szymon, Szymona, Teodor, Teotym, Ursycyn, Wiktor, Zenon, Zotyk
+21|4|Abelard, Addar, Aleksandra, Anastazy, Anzelm, Anzelma, Apollina, Apollo, Apoloniusz, Bartosz, Bartłomiej, Dobrosułka, Drogomił, Feliks, Konrad, Konrada, Żelisław
+22|4|Agapit, Aital, Dominik, Gaja, Gajusz, Leon, Leona, Leonid, Leonida, Lucjusz, Soter, Strzeżymir, Teodor, Wanesa, Wirginiusz, Łukasz
+23|4|Achilles, Adalbert, Adalberta, Egidia, Feliks, Fortunat, Gabriela, Gerard, Gerarda, Helena, Idzi, Ilona, Jerzy, Lena, Maria, Marol, Wojciech, Wojciecha
+24|4|Aleksander, Aleksja, Aleksy, Antym, Bona, Debora, Egbert, Erwin, Erwina, Euzebiusz, Fidelis, Gaston, Grzegorz, Honoriusz, Horacjusz, Horacy, Leoncjusz, Longin, Longina, Saba, Tyberiusz, Zbywoj
+25|4|Anian, Beuno, Darosław, Erwina, Ewodia, Ewodiusz, Filon, Filona, Franciszka, Hermogenes, Jarosław, Kaliksta, Kalista, Marek, Markusław, Piotr, Radociech, Rustyk, Rustyka, Stefan, Włodzimira
+26|4|Artemon, Aureli, Aureliusz, Erwina, Grzegorz, Klarencjusz, Klet, Lucydiusz, Marcelina, Maria, Mariusz, Marzena, Paschazy, Ryszard, Spycimir
+27|4|Anastazy, Andrzej, Bożebor, Felicja, Jakub, Jan, Józef, Marcin, Ożanna, Piotr, Teodor, Teofil, Tertulian, Tertuliana, Zyta, Żelimysł
+28|4|Achacy, Afrodyzja, Afrodyzy, Arystarch, Dydym, Emilian, Gwenol, Joanna, Ludwik, Marek, Maria, Menander, Pamfil, Patrycjusz, Patrycy, Paweł, Piotr, Przybycześć, Teodora, Waleria, Witalis
+29|4|Angelina, Antonia, Bogusław, Bogusława, Ermentruda, Hugo, Jakub, Katarzyna, Krystyn, Marian, Myślimir, Paulin, Piotr, Robert, Roberta, Sewer, Tertulia, Tychik
+30|4|Afrodyzja, Afrodyzy, Andrea, Balladyna, Bartłomiej, Benedykt, Chwalisława, Donat, Eutropiusz, Hildegarda, Jakub, Józef, Katarzyna, Kwiryn, Lilla, Ludwik, Maksym, Maria, Marian, Piotr, Pius, Pomponiusz, Rozamunda, Wawrzyniec, Zofia
+1|5|Asaf, Briok, Floryna, Izydora, Jakub, Jeremi, Jeremiasz, Julian, Józef, Lubomir, Maja, Orencjusz, Peregryn, Petronela, Tamara, Wiwald
+2|5|Anatol, Antoni, Atanazy, Borys, Cyriak, Częstowoj, Eksuperiusz, Iliana, Teodulf, Walbert, Walenty, Walter, Zoe, Zygmunt, Zygmunta
+3|5|Aleksander, Anika, Antonina, Diodor, Diodora, Juwenalis, Leonia, Maria, Mariola, Maura, Piotr, Teodul, Teodulf, Tymoteusz, Wiola, Świętosław, Świętosława, Żaklina
+4|5|Antonia, Antonina, Damian, Damiana, Florian, Gościwit, Grzegorz, January, Kasjan, Leonida, Michał, Monika, Paulin, Pelagia, Strzedziwoj, Sylwan, Tekla, Teodora, Wespazjan, Władysław, Władysława, Łazarz
+5|5|Anioł, Benwenut, Chociemir, Eulogia, Eulogiusz, Eutymiusz, Geroncjusz, Gotard, Hilary, Irena, Ireneusz, Iryda, Jowinian, Maksym, Nicetas, Penelopa, Peregryn, Pius, Stanisław, Stanisława, Teodor, Waldemar, Zdziebor, Zenobiusz
+6|5|Bartłomiej, Benedykta, Domagniew, Edbert, Ewodia, Ewodiusz, Filip, Franciszek, Jakub, Jan, Judyta, Jurand, Miłodrog, Placyd, Radosław, Teodot
+7|5|August, Benedykt, Bogdała, Domicela, Domicjan, Domicjana, Flawia, Florian, Gizela, Gustawa, Jan, Ludomira, Ludomił, Piotr, Róża, Stanimir, Sykstus
+8|5|Achacja, Achacy, Aleksander, Amat, Arseniusz, Augustyna, Aurelian, Dionizy, Heladia, Heladiusz, Ida, Ilza, Michał, Stanisław, Stanisława, Ulryka, Wiktor, Wiron
+9|5|Beat, Geroncjusz, Grzegorz, Hiob, Karola, Karolina, Katarzyna, Mikołaj, Otokar, Pachomiusz, Przebor, Stefan
+10|5|Antoni, Antonin, Beatrycze, Blanda, Celzjusz, Chociesław, Cyryn, Cyryna, Częstomir, Epimach, Feliks, Filadelf, Filadelfia, Gardenia, Gordian, Gordiana, Innocenty, Jan, Nazariusz, Samuel, Sofronia, Sylwester, Sylwestra, Symplicjusz, Wiktoryna, Łazarz
+11|5|Adalbert, Adalberta, Albert, Alojzy, Antym, Benedykt, Berta, Fabiusz, Filip, Franciszek, Iga, Ignacy, Jakub, Lutogniew, Majol, Majola, Maksym, Mamert, Mamerta, Mira, Miranda, Stella, Syzyniusz, Tadea, Tadeusz, Walbert, Zuzanna
+12|5|Achilles, Domicela, Domicjan, Domicjana, Dominik, Flawia, German, Imelda, Jan, Jazon, Joanna, Nawoja, Nereusz, Pankracy, Plautylla, Salwina, Teodora, Wszemił
+13|5|Aaron, Agnieszka, Andrzej, Ciechosław, Cieszymir, Dobiesław, Dobiesława, Gemma, Gerard, Gerarda, Gliceria, Gloria, Jan, Magdalena, Maria, Mucjusz, Natal, Robert, Roberta, Serwacy
+14|5|Ampelia, Ampeliusz, Bona, Bonifacy, Egidia, Fenenna, Idzi, Jeremi, Jeremiasz, Koryna, Maciej, Maria, Michał, Stefania, Tina, Wiktor
+15|5|Andrzej, Atanazy, Cecyliusz, Czcibora, Dioniza, Dionizja, Florencjusz, Izydor, Jan, Kasjusz, Maksym, Miłość, Nadzieja, Paweł, Piotr, Retycja, Retyk, Stanibor, Strzeżysław, Symplicjusz, Wiera, Wiktoryn, Zofia
+16|5|Adam, Adamina, Andromacha, Andrzej, Brenda, Brendan, Fidol, Germeriusz, Honorat, Jędrzej, Peregryn, Rambert, Szymon, Szymona, Trzebiemysł, Ubald, Wieńczysława, Wiktorian, Wiktoriana
+17|5|Andrzej, Antonia, Bruno, Chwalimir, Herakliusz, Montan, Paschalis, Sławomir, Weronika, Wilhelm, Wrocsława
+18|5|Aleksa, Aleksandra, Anian, Ditmar, Eryk, Eryka, Eufrazja, Faina, Feliks, Jan, Kacper, Klaudia, Liberiusz, Matrona, Myślibor, Sandra, Teodot, Wenancjusz
+19|5|Bernarda, Celestyn, Cyriaka, Dunstan, Iwo, Iwona, Jan, Kryspin, Mikołaj, Nikola, Piotr, Potencjana, Pudencjanna, Pękosław, Pękosława, Teofil, Urban
+20|5|Aleksander, Anastazy, Asteriusz, Bazyla, Bernard, Bernardyn, Bronimir, Bronisąd, Dawid, Elfryda, Józefa, Karol, Kolumba, Saturnina, Taleleusz, Teodor, Wiktoria
+21|5|Antioch, Donat, Donata, Jan, Krzysztof, Lena, Patern, Piotr, Polieukt, Przedsława, Ryksa, Serapion, Synezjusz, Teobald, Tymoteusz, Wiktor, Wszemir
+22|5|Dorian, Emil, Helena, Jan, Julia, Krzesisława, Kwiteria, Marcjan, Roma, Roman, Ryta, Wiesław, Wiesława, Wisława
+23|5|Bolelut, Budziwoj, Dezyderia, Dezyderiusz, Dezydery, Emilia, Eufrozyna, Eutychiusz, Gwibert, Iwona, Jan, Julian, Leoncjusz, Lucjusz, Michał
+24|5|Amalia, Cieszysława, Dagmara, Dawid, Donacjan, Franciszek, Jan, Joanna, Ludwik, Maria, Milena, Orion, Tomira, Ubysława, Wincenty, Zuzanna
+25|5|Aldhelm, Andrzej, Beda, Dionizy, Grzegorz, Heladia, Heladiusz, Imisława, Joanna, Leon, Leona, Magda, Magdalena, Marcjanna, Mariusz, Wenerand
+26|5|Adalwin, Adalwina, Alwin, Alwina, Angelika, Eleuteria, Eleuteriusz, Emil, Ewelina, Filip, Filip Neriusz, Joanna, Karp, Kwadrat, Lambert, Lamberta, Paulina, Teodor, Więcemił, Zachariasz
+27|5|Eutropiusz, Fryderyk, Fryderyka, Izydor, Jan, Julian, Juliusz, Lucjan, Magdalena, Małgorzata, Oliwer, Radowit, Restytut, Restytuta, Świętobor
+28|5|Augustyn, Balladyna, Bogurad, Elmira, Emil, German, Heladia, Heladiusz, Herkulan, Ignacy, Jaromir, Just, Justyna, Maria, Wolrad
+29|5|Aleksander, Andrzej, Bogusława, Ermentruda, Izbylut, Magdalena, Maksymin, Maksymina, Maria, Piotr, Rajmund, Rajmunda, Stefan, Syzyniusz, Teodozja, Urszula
+30|5|Anastazy, Andronik, Andrzej, Bazyli, Bolemysł, Brodzisław, Eksuperancjusz, Feliks, Ferdynand, Gawin, Jan, Joanna, Mirogniew, Mszczuj, Suligniewa, Sulimir, Sulirad, Zyndram, Żaneta, Żanna
+31|5|Aniela, Ernesta, Feliks, Jagoda, Kamila, Kancjan, Kancjanela, Kancjusz, Maria, Marietta, Noe, Paschazy, Petronela, Petronia, Petroniusz, Sylwiusz
+1|6|Bernard, Eunika, Felin, Felina, Firmus, Fortunat, Gracja, Hortensja, Ischyrion, Jakub, Julian, Justyn, Juwencja, Konrad, Konrada, Magdalena, Nikodem, Pamela, Pamfil, Paweł, Porfiriusz, Seleukos, Teobald, Tespezjusz, Świętopełk
+2|6|Amin, Armin, Blandyna, Domna, Efrem, Erazm, Eugeniusz, Florianna, Fotyn, Jaczemir, Marcelina, Maria, Marianna, Marzanna, Materna, Mikołaj, Mszczuja, Nicefor, Nicefora, Piotr, Racisław, Sadok, Trofima
+3|6|Anatol, Andrzej, Bratumiła, Cecyliusz, Ferdynand, Franciszek, Izaak, Jan, Joachim, Kewin, Klotylda, Laurencjusz, Leszek, Maciej, Owidia, Owidiusz, Paula, Tamara, Wawrzyniec
+4|6|Aleksander, Braturad, Dacjan, Franciszek, Gostmił, Karol, Karp, Kwiryn, Kwiryna, Lena, Metrofan, Niepełka, Optat, Pacyfik, Saturnina, Skarbisław
+5|6|Bonifacy, Dobrociech, Dobromił, Doroteusz, Emilia, Genadiusz, Hildebrand, Hildebranda, Igor, Jakub, Nikanor, Nikanora, Waleria, Walter, Zenaida
+6|6|Aleksander, Artemiusz, Benigny, Dominika, Gerarda, Kandyda, Klaudiusz, Laurenty, Marceli, Maria, Norbert, Norberta, Paulina, Sydonia, Sydoniusz, Wawrzyniec, Więcerad
+7|6|Anna, Antoni, Ciechomir, Eoban, Hanna, Jarosław, Jeremi, Jeremiasz, Lukrecja, Meriadok, Paweł, Piotr, Robert, Roberta, Sabinian, Teresa, Wiesław, Wiesława, Wisław
+8|6|Dobrociech, Herakliusz, Jadwiga, Jakub, Karp, Maksym, Maksymin, Maksymina, Maria, Medard, Medarda, Seweryn, Wilhelm, Wyszesław
+9|6|Anna, Bertrand, Efrem, Felicjan, Hanna, Józef, Kanimir, Kolumb, Kolumba, Maksymian, Pelagia, Prosimir, Ryszard, Sylwester, Sylwestra, Sławoj
+10|6|Amancjusz, Amata, Apollo, Asteriusz, Aureliusz, Bogumił, Bogumiła, Cecylia, Diana, Edgar, Henryk, Ingolf, Mauryn, Małgorzata, Tymoteusz, Wiktorian, Wiktoriana
+11|6|Adelajda, Anastazy, Barnaba, Feliks, Flora, Florentyn, Fortunat, Jan, Paryzjusz, Paula, Radomił, Radomiła, Teodozja, Witomysł
+12|6|Antoni, Antonina, Bazylides, Bernard, Bolesław, Cyryn, Cyryna, Czesław, Czesława, Ewa, Gwido, Jan, Janina, Jarogniew, Jarogniewa, Kacper, Kazimierz, Leon, Leona, Ludwik, Mieczysław, Mieczysława, Nabor, Narcyz, Nazariusz, Olimpiusz, Onufry, Piotr, Placyd, Przybyrad, Stefan, Tadea, Wyszemir, Włada, Władysław, Władysława, Włodzimierz, Zygmunt, Zygmunta
+13|6|Akwilina, Antoni, Chociemir, Fandyl, Gerard, Gerarda, Gracja, Grzegorz, Herman, Lubowid, Lucjan, Olga, Peregryn, Rambert, Tobiasz, Tryfiliusz, Łucjan
+14|6|Alojzy, Anastazy, Bazyli, Digna, Eliza, Elizeusz, Elwir, Feliks, Justyn, Konstancja, Marcjan, Metody, Myślibor, Ninogniew, Rufin, Rufus, Ryszard, Walery
+15|6|Abraham, Adelajda, Albertyna, Benilda, Bernard, Dula, Edburga, Eutropia, Germana, Hezychiusz, Izolda, Jolanta, Leonida, Liba, Lotar, Oliwia, Oliwiusz, Wisław, Wisława, Wit, Witold, Witolda, Witosław
+16|6|Alina, Aneta, Aubert, Aurelian, Aureusz, Barnaba, Benon, Benona, Budzimir, Cyryk, Jan, Judyta, Julita, Justyna, Ludgarda, Tychon
+17|6|Adolf, Adolfa, Albert, Awit, Awita, Drogomysł, Franciszek, Gundolf, Herweusz, Izaur, Izaura, Laura, Marcjan, Montan, Nikander, Nikandra, Piotr, Radomił, Urho, Waleriana, Łazarz
+18|6|Amand, Amanda, Drogomysł, Drogoradz, Drohobysz, Dzirżysława, Efrem, Elżbieta, Emil, Eufemiusz, Gerwazy, Hipacy, Kaloger, Leoncjusz, Marcelin, Marek, Miłobor, Ożanna, Paula, Przeborka
+19|6|Bonifacy, Borzysław, Gaudencjusz, Gaudenty, Gerwazy, Juliana, Julianna, Michalina, Otto, Protazy, Romuald, Romualda
+20|6|Adalbert, Baltazar, Benigna, Bogna, Bożena, Bratomir, Dina, Edburga, Florentyna, Franciszek, Gemma, Hektor, Jan, Makary, Michał, Rafał, Sylweriusz
+21|6|Alicja, Alojza, Alojzy, Chloe, Demetria, Domamir, Euzebiusz, Lutfryd, Marcja, Rajmund, Rudolf, Rudolfa, Rudolfina, Terencja, Terencjusz
+22|6|Achacja, Achacy, Agenor, Alban, Albana, Będzieciech, Eberhard, Flawiusz, Innocencja, Innocenty, Jan, Lambert, Lamberta, Paulin, Paulina, Tomasz
+23|6|Agrypina, Albin, Anna, Arystokles, Atanazy, Edeltruda, Hanna, Józef, Maksym, Sozypater, Sydoniusz, Symplicjusz, Teodulf, Wanda, Zenon, Zenona
+24|6|Danuta, Doryda, Emilia, Jan, Janina, Janisław, Longin, Longina, Romuald, Romualda, Symplicjusz
+25|6|Adalbert, Antyd, Dorota, Eulogia, Eulogiusz, Febron, Febronia, Fiebrosław, Kineburga, Prosper, Prospera, Tolisława, Łucja
+26|6|Antelm, Dawid, Edburga, Jan, Jeremi, Jeremiasz, Maksencjusz, Mirogod, Paweł, Pelagia, Pelagiusz, Salwia, Salwiusz, Wigiliusz, Zdziwoj
+27|6|Benwenut, Bogodar, Bożydar, Cyryl, Jan, Joanna, Maria, Maryla, Samson, Teresa, Władysław, Władysława, Włodzisław, Włodzisława
+28|6|Adrian, Argymir, Ekhard, Heraklides, Heron, Ireneusz, Józef, Leon, Leona, Lubomir, Miłosz, Olga, Paweł, Plutarch, Seren, Serena, Wincencja, Wincenta, Wincentyna, Zbrosław
+29|6|Beata, Benedykta, Dalebor, Dalebora, Ema, Kasja, Kasjusz, Paweł, Piotr
+30|6|Artemas, Bazyli, Bazylides, Bertram, Ciechosława, Emilia, Ermentruda, Jan, Leon, Leona, Lucyna, Marcjalis, Milena, Teobald, Teobalda, Trofim, Włada, Władysław, Władysława
+1|7|Aaron, Bogusław, Domicjan, Domicjana, Ekhard, Gaweł, Halina, Karolina, Klarysa, Marcin, Marian, Namir, Otto, Szymon, Szymona, Teodoryk
+2|7|Benedykta, Bernard, Bernardyn, Bogodar, Bożydar, Eutyches, Eutychiusz, Jagoda, Juwenalis, Martynian, Niegosława, Switun, Urban
+3|7|Alfreda, Anatol, Heliodor, Hiacynt, Jacek, Jacenty, Józef, Kamelia, Leon, Leona, Longin, Longina, Miłosław, Racigniew, Radomir, Radomira, Teodot, Tomasz, Tryfon
+4|7|Aggeusz, Andrzej, Atanazy, Aurelian, Berta, Elżbieta, Hiacynt, Innocenty, Jacek, Jacenty, Julian, Józef, Malwin, Malwina, Otto, Ozeasz, Patrycjusz, Patrycy, Piotr, Teodor, Udalryk, Werner, Wielisław
+5|7|Antoni, Atanazy, Bartłomiej, Cyryla, Eliasz, Filomena, Jakub, Karola, Liberata, Maria, Marta, Michał, Przybywoj, Trofima, Zoe
+6|7|Agrypina, Chociebor, Dominik, Dominika, Gotard, Ignacja, Izasław, Maria, Nazaria, Niegosław, Teresa, Zuzanna, Łucja
+7|7|Antonin, Apoloniusz, Benedykt, Edelburga, Estera, German, Gościwit, Hezychiusz, Ilidia, Ilidiusz, Józef, Lucjan, Metoda, Metody, Papiasz, Peregryn, Pompejusz, Saturnin, Sędzisław, Sędzisława, Wilibald
+8|7|Adolf, Adolfa, Adrian, Adrianna, Akwila, Chwalimir, Edgar, Elżbieta, Eugeniusz, Falibor, Hadrian, Hadriana, Jan, Kilian, Kiliana, Odeta, Piotr, Prokop, Teobald, Teobalda
+9|7|Adolfina, Adrian, Adrianna, Aleksander, Anatolia, Augustyn, Barbara, Brykcjusz, Cyryl, Florianna, Heloiza, Ifigenia, Joanna, Kornel, Letycja, Mikołaj, Róża, Sylwia, Teodoryk, Weronika, Wszebąd, Zenon, Zenona, Łucja
+10|7|Aleksander, Alma, Amalberga, Anatolia, Aniela, Antoni, Askaniusz, Bianor, Daniel, Emanuel, Engelbert, Filip, January, Leoncjusz, Maurycja, Maurycy, Nasława, Racimir, Rufina, Rzędziwoj, Samson, Sekunda, Sylwan, Witalis, Zacheusz
+11|7|Benedykt, Jan, Kalina, Karina, Olga, Pelagia, Pelagiusz, Pius, Placyd, Sabin, Siepraw, Wyszesława, Zybert
+12|7|Andrzej, Bonifacy, Bruno, Epifania, Euzebiusz, Feliks, Hilarion, Hilariona, Imisław, Imisława, Leon, Leona, Marcjanna, Natan, Paulin, Prokles, Tatomir, Weronika, Świętożyźń
+13|7|Andrzej, Ernest, Eugeniusz, Ezdrasz, Henryk, Joel, Małgorzata, Mildreda, Radomiła, Sara, Serapion, Sylas, Trofima, Wszerad
+14|7|Angelina, Bogdan, Bohdan, Bonawentura, Bruno, Damian, Dobrogost, Fokas, Franciszek, Herakles, Izabela, Jakub, Kamil, Kosma, Tuskana, Ulryk
+15|7|Anna, Antioch, Atanazy, Bonawentura, Cyriak, Cyriaka, Daniel, Dawid, Dawida, Donald, Egon, Hanna, Henryk, Ignacy, Lubomysł, Niecisław, Pompiliusz, Roksana, Włodzimierz, Włodzimir
+16|7|Andrzej, Atenogenes, Bartłomiej, Benedykt, Carmen, Dzierżysław, Dzirżysława, Ermegarda, Eustachia, Eustacjusz, Eustazja, Eustazy, Faust, Kanmił, Maria, Marika, Stefan, Walenty
+17|7|Akwilin, Aleksander, Aleksja, Aleksy, Aneta, Arnulf, Bogdan, Bohdan, Donata, Dzierżykraj, Feliks, Hiacynt, Jacek, Jacenty, Januaria, Karolina, Konstancja, Leon, Leona, Marceli, Marcelina, Sekunda, Sperat, Teodota, Teodozy, Westyna, Żywisława
+18|7|Arnold, Arnulf, Bruno, Drogomir, Drogomira, Drogomił, Drogoradz, Dziwigor, Emilian, Erwin, Erwina, Eugeniusz, Fryderyk, Fryderyka, Julian, Justyn, Kamil, Krescenty, Maryna, Matern, Maternus, Nemezjusz, Nemezy, Prymityw, Robert, Roberta, Symforoza, Szymon, Szymona, Teodozja, Uniesław
+19|7|Ambroży, Arseniusz, Aurea, Epafras, Justa, Lutobor, Makryna, Marcin, Matern, Piotr, Radomiła, Rufina, Symmach, Teodor, Włodzisław, Zdziesuł
+20|7|Aureliusz, Czesław, Czesława, Eliasz, Flawian, Heliasz, Hieronim, Hieronima, Leon, Leona, Ludwika, Małgorzata, Modest, Paweł, Remigia, Remigiusz, Ryta, Sewera, Stojsław
+21|7|Andrzej, Aniela, Arbogast, Benedykt, Dalila, Daniel, Ignacy, Jan, Julia, Just, Klaudiusz, Laurencjusz, Laurenty, Paulina, Prakseda, Rymwid, Wawrzyniec, Zotyk
+22|7|Albin, Artemas, Benon, Benona, Bolesława, Cyryl, Józef, Lena, Letycja, Magda, Magdalena, Maria, Menelaus, Milena, Naczęsława, Nicefor, Nicefora, Platon, Stojsław, Stojsława, Teofil
+23|7|Apolinaria, Apolinary, Bogna, Bolesław, Brygida, Jan, Joanna, Kasjan, Krystyn, Lena, Liboriusz, Olimpiusz, Romula, Wiktor, Żelisław, Żelisława
+24|7|Augustyn, Gleb, Kinga, Krystyna, Krzesimir, Kunegunda, Olga, Sarbeliusz, Segolena, Wojciecha, Zyglinda
+25|7|Antoni, Dariusz, Franciszek, Jakub, Krzysztof, Krzysztofa, Kukufas, Nieznamir, Olimpia, Paweł, Rudolf, Rudolfa, Rudolfina, Sławosław, Walentyna, Żaklina
+26|7|Anika, Anna, Bartłomieja, Eoban, Erast, Grażyna, Hanna, Hiacynt, Jacek, Jacenty, Joachim, Krystiana, Mirosława, Sancja, Teodor, Tytus, Walenty, Wilhelm
+27|7|Adrian, Antuza, Aureli, Aureliusz, Bertold, Celestyn, Celia, Celiusz, Cezary, Feliks, Jerzy, Julia, Laurenty, Lilia, Lilioza, Lilla, Magdalena, Malchus, Maur, Natal, Natalia, Nowellon, Pantaleon, Sergiusz, Stojsław, Teodor, Tomisława, Wszebor
+28|7|Achacja, Achacy, Ada, Aida, Alfonsa, Antoni, Celzjusz, Macieja, Marcela, Melchior, Nazariusz, Samson, Tina, Tymona, Urban, Wiktor, Świętomir
+29|7|Antonin, Beatrycze, Cierpisław, Cirzpibog, Cirzpisława, Eugeniusz, Faustyn, Feliks, Lucyla, Lucyliusz, Maria, Marta, Olaf, Prosper, Prospera, Rufin, Serapia, Symplicjusz, Teodor, Wilhelm
+30|7|Abdon, Aldona, Ingeborga, Julita, Leopold, Leopolda, Ludomiła, Maksyma, Maryna, Paweł, Piotr, Sekunda, Swojsław, Ubysław, Ursus, Zdobysław
+31|7|Adam, Alfonsa, Beat, Demokryt, Emilian, Ernesta, Fabia, Fabiusz, German, Helena, Iga, Ignacy, Jan, Justyn, Lubomir, Ludomir, Ludomira
+1|8|Akcjusz, Aleksander, Antonin, Brodzisław, Eleazar, Etelwold, Justyn, Justyna, Konrad, Konrada, Leoncjusz, Marceli, Nadzieja, Nemezjusz, Nemezy, Piotr, Rudolf, Rudolfa, Rudolfina, Salomea, Teodor, Wiera, Wiercisław
+2|8|Alfreda, Borzysława, Edeltruda, Euzebiusz, Filomena, Gustaw, Gustawa, Karina, Maksym, Maria, Rutyliusz, Stefan, Teodota, Świętosław
+3|8|Augustyn, Dalmacjusz, Dalmacy, Eufroniusz, Kamelia, Kira, Krzywosąd, Lidia, Marana, Miłosław, Nikodem, Nikodema, Piotr, Szczepan
+4|8|Andrzej, Arystarch, Franciszek, Fryderyk, Jan, Justyn, Krescenty, Maria, Mironieg, Perpetua, Pęcisław, Pęcisława, Pękosław, Rajner, Tertulian, Tertuliana
+5|8|Abel, Afra, Cyriak, Jacław, Kasjan, Kasjana, Maria, Memiusz, Nonna, Oswald, Oswalda, Parys, Wenancja, Wenancjusz, Wenanty
+6|8|Felicysym, Jakub, January, Just, Maria, Namir, Nasław, Oktawia, Oktawian, Stefan, Sława, Walburga
+7|8|Agatangel, Albert, Andromeda, Dobiemir, Donat, Dorota, Doryda, Edmund, Edmunda, Kajetan, Kasjan, Klaudia, Konrad, Licynia, Licyniusz, Sykstus, Wincenty
+8|8|Bonifacja, Cyriak, Cyryl, Dominik, Emilian, Esmeralda, Jan, Joanna, Largus, Maryn, Maryniusz, Mirona, Niegosław, Niezamysł, Sewer, Smaragd, Sylwiusz, Wiktor
+9|8|Domicjan, Domicjana, Doroteusz, Edyta, Falkon, Irena, Jan, Julian, Kandyda, Klarysa, Marcelin, Marcjan, Miłorad, Roman, Romuald, Romualda, Teresa
+10|8|Amadea, Amadeusz, Asteria, Bernard, Bianka, Bogdan, Bogdana, Bogodar, Bohdan, Bożydar, Hugo, Hugona, Laurencjusz, Laurenty, Prochor, Wawrzyniec, Wirzchosław
+11|8|Aleksander, Filomena, Herman, Klara, Ligia, Lukrecja, Rufin, Tyburcja, Tyburcjusz, Tyburcy, Włodzimierz, Włodzimir, Włościwoj, Zuzanna
+12|8|Anicet, Aniceta, Bądzsław, Cyriak, Digna, Eunomia, Euzebiusz, Fotyn, Herkulan, Hilaria, Innocenty, Joanna, Julian, Julianna, Largus, Lech, Leonida, Letycja, Makary, Wiktoria, Łukasz
+13|8|Benild, Ernest, Helena, Hipolit, Hipolita, Jan, Kasjan, Kasjana, Konkordia, Maksym, Poncjan, Radegunda, Radomiła, Sekundyn, Wigbert, Wolebor
+14|8|Alan, Alana, Alfred, Atanazja, Dobrowoj, Dobrowoja, Elżbieta, Euzebiusz, Irena, Kalikst, Machabeusz, Majnard, Maksymilian, Marceli, Ursycyn
+15|8|Alipiusz, Armida, Arnulf, Julianna, Maria, Napoleon, Stefan, Tarsycjusz, Trzebiemir
+16|8|Abraham, Ambroży, Anioł, Arsacjusz, Ciechosław, Diomedes, Domarad, Domasuł, Eleuteria, Eleuteriusz, Emil, Laurencjusz, Laurenty, Roch, Saba, Stefan, Symplicjusz, Tytus, Wawrzyniec
+17|8|Anastazja, Anastazy, Anita, Bertram, Bonifacy, Eliza, Euzebiusz, Hiacynt, Jacek, Jacenty, Jaczewoj, Joanna, Julianna, Klara, Liberat, Maksym, Mirona, Roch, Rogat, Rustyk, Rustyka, Septymiusz, Serwiusz, Straton, Zawisza, Żanna
+18|8|Agapit, Agapita, Bogusława, Bronisław, Eryk, Eryka, Firmin, Helena, Ilona, Jan, Laura, Lena, Ludwik, Nela, Paula, Prokul, Sancja, Tacjana, Tworzysława, Włodzimir, Żyrosława
+19|8|Andrzej, Badulf, Bolesław, Donat, Emilia, Ezechiel, Jan, Julian, Julianna, Juliusz, Ludwik, Magnus, Marian, Sebald, Sykstus, Tekla, Tymoteusz, Wiktor
+20|8|Bernard, Eliasz, Filibert, Filiberta, Jan, Krzysztof, Leowigild, Lucjusz, Maksym, Maria, Sabin, Samuel, Samuela, Sara, Sewer, Sieciech, Sobiesław, Świelub
+21|8|Adolf, Adolfa, Agapiusz, Anastazy, Apolinaria, Baldwin, Baldwina, Bernard, Cyriaka, Emilian, Fidelis, Fidelisa, Franciszek, Joanna, Kazimiera, Męcimir, Natal, Pius, Wiktoria
+22|8|Agatonik, Benicjusz, Cezary, Dalegor, Fabrycjan, Fabrycy, Hipolit, Hipolita, Joachim, Lambert, Lamberta, Maria, Namysław, Oswald, Oswalda, Sieciesław, Symforian, Symforiana, Teona, Teonas, Tymoteusz, Zygfryd, Zygfryda
+23|8|Apolinary, Archelaus, Ascelina, Cyriak, Feliksa, Filip, Flawia, Flawian, Ireneusz, Jakub, Justynian, Kalinik, Klaudiusz, Leoncja, Lubomira, Maksym, Róża, Sulirad, Sydonia, Teonilla, Walerian, Wiktor, Zacheusz
+24|8|Albert, Anita, Audoen, Bartosz, Bartłomiej, Cieszymir, Emilia, Eutyches, Eutychiusz, Jerzy, Joanna, Malina, Michalina, Natanael, Patrycjusz, Patrycy
+25|8|Arediusz, Elwir, Elwira, Euzebiusz, Gaudencjusz, Gaudenty, Genezjusz, Grzegorz, Hermina, Julian, Józef, Kalasanty, Ludwik, Luiza, Michał, Patrycja, Peregryn, Poncjan, Teodoryk, Wincenty
+26|8|Adrianna, Aleksander, Dobroniega, Fortunat, Hadrian, Hadriana, Joanna, Konstancjusz, Maksymilian, Maria, Natalia, Safira, Sandra, Symplicjusz, Wiktorian, Wiktoriana, Wirzchosław, Wirzchosława
+27|8|Amadea, Anioł, Cezariusz, Cezary, Dominik, Gebhard, Honorat, Józef, Liceria, Liceriusz, Manea, Marcelin, Małgorzata, Monika, Przybymir, Rufus, Sabinian, Serapion
+28|8|Adelina, Adelinda, Aleksy, Augustyn, Bibian, Bonifacy, Feliks, Fortunat, Hermes, Jadwiga, January, Joachima, Julian, Mojżesz, Pelagiusz, Sobiesław, Stronisław, Wanesa, Wyszomir
+29|8|Andrzej, Beata, Beatrycze, Eutymiusz, Flora, Hipacy, Jan, Krescenty, Mederyk, Mederyka, Michał, Racibor, Sabina, Sebbus, Świętosław
+30|8|Adaukt, Alfred, Częstowoj, Częstowojna, Damroka, Feliks, Gaudencja, Ingeborga, Jan, Małgorzata, Miron, Piotr, Rebeka, Róża, Swojsław, Szczęsny, Tekla, Świetlana
+31|8|Aidan, Albertyna, Amat, Arystyda, Arystydes, Bogdan, Bohdan, Izabela, Jan, Józef, Nikodem, Optat, Paulin, Paulina, Prymian, Rajmund, Roma, Solidariusz, Teodot, Świętosław
+1|9|Amon, Anna, August, Beatrycze, Bronisław, Bronisława, Donat, Dzierżysław, Egidia, Egon, Feliks, Gedeon, Hanna, Idzi, Melecjusz, Michał, Miłodziad, Ruta, Sator, Satora, Sykstus, Werena
+2|9|Absalon, Adelina, Aleksander, Antonin, Apolinary, Bogdan, Bohdan, Dionizy, Dziesław, Eliza, Elpidia, Elpidiusz, Franciszek, Henryk, Ingryda, Jakub, Jan, Julian, Oktawian, Oliwer, Salomon, Seweryn, Sobiemysł, Stefan, Teodor, Walenty, Wilhelm, Zenon, Zofia
+3|9|Antoni, Bartosz, Bartłomiej, Bazylisa, Bronisław, Erazma, Feba, Gerarda, Grzegorz, Izabela, Jan, Maryn, Maryniusz, Mojmir, Pius, Przedsław, Serapia, Szymon, Szymona
+4|9|Adela, Bonifacy, Boromea, Boromeusz, Daniela, Ermegarda, Felicyta, Gwidona, Heliodora, Hermiona, Ida, Imelda, Iwo, Iwona, Kandyda, Kanizja, Kanuta, Katarzyna, Liliana, Lilianna, Linda, Marceli, Maria, Mojżesz, Przemysł, Przemysław, Rajmunda, Rozalia, Rościgniew, Róża, Scypion, Sergia, Stella, Teodor
+5|9|Albert, Bertyn, Budziboj, Dorota, Fereol, Herkulan, Herkules, Peregryn, Przyboj, Racisław, Raisa, Rasława, Rozwita, Stronisława, Teodor, Urban, Wawrzyniec, Wiktoryn, Wiktoryna
+6|9|Albin, Aleksja, Aleksy, Amoniusz, Beata, Bertrand, Bogdana, Bolemir, Donacjan, Eleuteria, Eleuteriusz, Eugenia, Eugeniusz, Ewa, German, Gundolf, Liberat, Magnus, Manswet, Michał, Onezyfor, Uniewit, Zachariasz
+7|9|Dobrobąd, Domasuł, Domasława, Eupsychia, Eupsychiusz, Gratus, Melchior, Pamfil, Regina, Ryszard, Sozont, Teodoryk
+8|9|Adam, Adrianna, Alan, Amon, Bratumił, Eustachia, Eustachy, Euzebiusz, Maria, Marianna, Nestor, Radochna, Radosław, Radosława, Serafina, Teofil, Wiola, Zenon
+9|9|Adrianna, Aniela, Audomar, Aureli, Aureliusz, Bolemir, Bolemira, Czcibora, Dionizy, Doroteusz, Drogomir, Drogomira, Franciszek, Gorgoniusz, Grażyna, Jakub, Jan, Otmar, Ożanna, Piotr, Radosława, Sergiusz, Sewerian, Sobiebor, Sobiesąd, Straton, Świecław
+10|9|Agapiusz, Aldona, Anioł, Antoni, Bonawentura, Datyw, Diomedes, Dydym, Feliks, Franciszek, Izabela, Kandyda, Karol, Klemens, Leon, Leona, Lucjusz, Mikołaj, Monika, Mścibor, Nemezjan, Nikola, Nimfodora, Piotr, Polian, Poliana, Pulcheria, Salwiusz, Sebastian, Sobiesław, Teodor, Wiktor, Łukasz
+11|9|Ademar, Aisza, Dagna, Diodor, Diodora, Dydym, Emilian, Feliks, Hiacynt, Jacek, Jacenty, Jan, Krzesisław, Krzesisława, Naczęsław, Pafnucy, Piotr, Prot, Wincenty
+12|9|Amadeusz, Cyrus, Franciszek, Gwido, Juwencjusz, Macedoniusz, Maja, Maria, Marlena, Sylwin, Sylwina, Tacjan, Teodul, Teodulf
+13|9|Aleksander, Amat, Apolinary, Aureliusz, Dobielut, Eulogia, Eulogiusz, Filip, Genadia, Jan, Julian, Litoriusz, Makrobiusz, Maria, Mauryliusz, Morzysław
+14|9|Albert, Bernard, Cyprian, Jan, Kornel, Maternus, Piotr, Racigniew, Radomira, Roksana, Salustia, Siemomysł, Szymon, Szymona, Wiktor
+15|9|Albin, Budzigniew, Dolores, Ekhard, Eutropia, Filotea, Filoteusz, Herkules, Jeremi, Jeremiasz, Kamil, Katarzyna, Lolita, Maria, Nicetas, Nikodem, Nikodema, Nikomedes, Roger, Teodor, Walerian
+16|9|Abundancja, Abundancjusz, Antym, Cyprian, Edda, Edyta, Eufemia, Eugenia, Franciszek, Geminian, Innocencja, Innocenta, Jan, Kamila, Kornel, Ludomiła, Ninian, Sebastian, Sebastiana, Sędzisław, Wiktor, Łucja
+17|9|Cherubin, Dawid, Drogosław, Dziebor, Franciszek, Gordian, Hildegarda, Justyn, Justyna, Kolumba, Lambert, Lamberta, Makryn, Narcyz, Piotr, Robert, Sokrates, Szczęsna, Szczęsny, Teodora, Walerian, Zygmunt, Zygmunta
+18|9|Areta, Aretas, Ariadna, Arian, Baltazar, Dobrowit, Fereol, Irena, Irma, Irmina, Józef, Metody, Ryszarda, Sobierad, Stanisław, Stanisława, Stefania, Zachariasz, Zofia
+19|9|Arnulf, Dezyderiusz, Dezydery, Eliasz, Eutychiusz, Festus, Januariusz, January, Konstancja, Maria, Marta, Nila, Nilus, Paloma, Peleusz, Teodor, Trofim, Więcemir, Zuzanna
+20|9|Agapit, Agnieszka, Andrzej, Barbara, Dionizy, Eustachia, Eustachiusz, Eustachy, Euzebia, Fausta, Filipa, Franciszek, Gliceriusz, Helmut, Irena, Jan, Klemens, Matea, Miłowuj, Paweł, Perpetua, Protazy, Sokrates, Teodor, Teopist, Teopista
+21|9|Aleksander, Bernardyna, Bożeciech, Demetriusz, Euzebiusz, Hipolit, Hipolita, Ifigenia, Jonasz, Kastor, Konon, Laudo, Laurenty, Marek, Mateusz, Maura, Melecjusz, Melisa, Mira, Pacyfik, Pamfil
+22|9|Bazyla, Daria, Digna, Eksuperiusz, Emeryta, Emmeram, Feliks, Ignacy, Innocenty, Jonasz, Józefa, Kandyd, Maurycjusz, Maurycy, Prosimir, Tacjusz, Tomasz, Wiktor, Wilhelmina, Witalis
+23|9|Adamnan, Andrzej, Antoni, Bernardyna, Boguchwała, Bogusław, Bogusława, Elżbieta, Jan, Konstancjusz, Krzysztof, Liberata, Libert, Lina, Linus, Liwiusz, Pia, Piotr, Pius, Pola, Poliksena, Raisa, Tekla, Wiercisław, Zachariasz, Zofia
+24|9|Amata, Gerard, Gerarda, Herman, Jaromir, Jaromira, Kolumba, Maria, Morzysława, Pacyfik, Pafnucy, Seweryn, Tomir, Twardomir, Uniegost
+25|9|Alfeusz, Aurelia, Ermenfryd, Ermenfryda, Eufrozyna, Firmin, Franciszek, Galfryd, Herkulan, Kamil, Kleofas, Minigniew, Rufus, Wincenty, Włada, Władysław, Władysława, Włodzimir, Włodzimira, Włodzisław, Świętopełk
+26|9|Amancjusz, Budziwoj, Cyprian, Dalmacjusz, Dalmacy, Damian, Euzebiusz, Kacper, Kosma, Majnard, Nila, Nilus, Teresa, Łucja, Łękomir, Łękomira
+27|9|Adolf, Amadeusz, Eleazar, Gaja, Gajusz, Hiltruda, Jan, Mirabella, Mirela, Przedbor, Urban, Wincenty, Zybert
+28|9|Alodiusz, Amalia, Bernardyn, Ditmar, Eksuperiusz, Jan, Laurencjusz, Lena, Marek, Myślibora, Salomon, Sylwin, Sylwina, Tymon, Wacław, Wacława, Wawrzyniec, Więcesław, Więcesława
+29|9|Cyriak, Dadzbog, Dadzboga, Dariusz, Franciszek, Fraternus, Gabriel, Gajana, Grimbald, Ludwin, Michalina, Michał, Mikołaj, Rafał, Rypsyma, Teodota
+30|9|Antoni, Felicja, Franciszek, Grzegorz, Hieronim, Hieronima, Honoriusz, Imisław, Nadzieja, Rachela, Rafał, Ursus, Wiera, Znamir, Zofia
+1|10|Ariel, Bawon, Cieszysław, Danuta, Jan, Julia, Konon, Krescenty, Maksyma, Małobąd, Remigiusz, Teresa, Werner
+2|10|Aleksandra, Aniela, Antoni, Berengar, Berengaria, Dioniza, Dionizja, Eleuteria, Eleuteriusz, Kolumban, Leodegar, Nasiębor, Stanimir, Teofil, Ursycyn
+3|10|Augustyna, Cyprian, Częstobrona, Dionizjusz, Dionizy, Dominik, Ermegarda, Eustachia, Eustachiusz, Eustachy, Ewald, Ewalda, Faust, Gerard, Gerarda, Hezychiusz, Kandyd, Kandyda, Maksymian, Maria, Paweł, Romana, Sirosław, Sulibor, Teresa
+4|10|Alfred, Aurea, Dalewin, Dobromiła, Euzebiusz, Faust, Franciszek, Karola, Konrad, Konrada, Lucjan, Petronia, Petroniusz, Łucjan
+5|10|Apolinary, Attila, Bartłomiej, Charytyna, Donat, Donata, Eutychiusz, Faust, Faustyna, Flawia, Flawiana, Flora, Galla, Igor, Justyn, Konstancjusz, Konstans, Maur, Placyd, Rajmund, Tulia, Wiktoryn
+6|10|Alberta, Artald, Artur, Askaniusz, Baldwin, Baldwina, Bronisław, Bruno, Eulalia, Fryderyka, Magnus, Monika, Renat, Roman
+7|10|Apulejusz, August, Bakchus, Blanka, Justyna, Marek, Maria, Mateusz, Mirela, Rodsław, Rosława, Rościsława, Sergiusz, Stefan, Tekla
+8|10|Artemon, Brygida, Demetriusz, Ewodia, Ewodiusz, Ginter, Gratus, Laurencja, Ludwik, Marcin, Marcjusz, Pelagia, Taida, Waleria
+9|10|Aaron, Abraham, Arnold, Atanazja, Aureli, Bogdan, Bogodar, Bohdan, Bożydar, Dionizjusz, Dionizy, Ginter, Jakub, Jan, Piotr, Przedpełk, Sara, Sybilla, Wincenty
+10|10|Adalryk, Daniel, Dionizjusz, Dionizy, Eleuteria, Eleuteriusz, Eulampia, Eulampiusz, Gereon, Jan, Kalistrat, Kasjusz, Leon, Leona, Lutomir, Maria, Paulin, Paulina, Przemysław, Rustyk, Rustyka, Samuel, Tomił, Tomiła, Twardostoj, Zbigniew
+11|10|Aldona, Andronik, Bruno, Burchard, Dobromił, Dobromiła, Domaczaja, Emanuel, Emil, Emilian, Firmin, Gardomir, Germanik, Gromisław, Maria, Marian, Placyd, Placyda, Probus, Zenaida
+12|10|Cyriak, Edwin, Edwina, Eustachia, Eustachiusz, Eustachy, Euzebia, Grodzisław, Grodzisława, Grzymisław, Maksymilian, Marcin, Salwin, Salwina, Serafin, Wilfryd, Witold, Witolda
+13|10|Daniel, Edward, Edwarda, Faust, Florencjusz, Gerald, Geraldyna, Gerbert, Honorat, January, Karp, Magdalena, Marcjalis, Maurycy, Mikołaj, Reginbald, Siemisław, Teofil, Wacław, Wacława, Wenancjusz, Wenanty
+14|10|Alan, Alana, Ali, Bernard, Burchard, Dominik, Donacjan, Dzierżymir, Fortunat, Fortunata, Gaja, Gajusz, Gaudencjusz, Gaudenty, Gwendalina, Just, Kalikst, Małgorzata, Parascewa, Radzim, Rustyk, Rustyka, Witalia
+15|10|Antioch, Bruno, Drogosław, Drogosława, Eutymiusz, Filipa, Gościsława, Jadwiga, Leonard, Sewer, Tekla, Teodoryk, Teresa
+16|10|Ambroży, Anastazy, Aurelia, Dionizy, Elifia, Elifiusz, Emil, Florentyn, Gaweł, Gerard, Gerarda, Grzegorz, Honorat, Iga, Jadwiga, Józefina, Lubgost, Maksyma, Martynian, Małgorzata, Momelin, Nazary, Nereusz, Radzisław, Saturnin, Walenty
+17|10|Andrzej, Arystion, Augustyna, Florentyn, Heron, Ignacy, Katerw, Laurentyna, Lucyna, Mamelta, Marian, Małgorzata, Nepomucen, Nepomucena, Niceta, Rudolf, Rudolfa, Rudolfina, Seweryna, Sulisława, Wiktor, Zuzanna, Łazarz
+18|10|Ambroży, Asklepiades, Bratumił, Julian, Just, Miłobrat, Piotr, Remigia, Remigiusz, Siemowit, Tryfonia, Ziemowit, Łukasz
+19|10|Akwilin, Ferdynand, Fredeswinda, Gabriel, Izaak, Jan, Kleopatra, Laura, Lucjusz, Paweł, Prokul, Skarbimir, Ziemowit
+20|10|Andrzej, Apollo, Artemiusz, Aureliusz, Aurora, Budzisława, Felicjan, Irena, Jerzy, Maria, Ondyna, Witalis, Żywia
+21|10|Bernard, Celina, Dacjusz, Dobromił, Elżbieta, Hilarion, Hilary, Jakub, Klementyna, Letycja, Malchus, Nunilona, Pelagia, Pelagiusz, Piotr, Samuel, Urszula, Wendelin, Wszebora, Zotyk
+22|10|Abercjusz, Alodia, Donat, Euzebiusz, Filip, Gliceria, Ingbert, Józefina, Kordian, Kordula, Marek, Melaniusz, Salomea, Sewer
+23|10|Bartłomiej, Domicjusz, German, Giedymin, Gracjan, Gracjana, Ignacy, Jan, Klotylda, Marlena, Małogost, Roman, Seweryn
+24|10|Alojzy, Antoni, Antonin, Areta, Aretas, Boleczest, Feliks, Filip, Jan, January, Józef, Marcin, Marek, Pamfilia, Prokles, Rafał, Walentyna
+25|10|Amon, Bonifacy, Chryzant, Chryzanta, Cyryn, Cyryna, Daria, Gaudenty, Hilary, Inga, January, Katarzyna, Kryspin, Kryspinian, Prot, Sambor, Tabita, Tadea, Tadeusz, Teodozy, Wojmir
+26|10|Albin, Amand, Amanda, Bernard, Bonawentura, Damian, Demetriusz, Ewaryst, Ewarysta, Felicysym, Fulko, Kalistrat, Leonarda, Lucjan, Lucjana, Lucyna, Lutosław, Marcjan, Rustyk, Rustyka, Łucjan, Łucjana
+27|10|Barnim, Frumencjusz, Iwo, Iwona, Józef, Kapitolina, Manfred, Manfreda, Sabina, Siestrzemił, Wielebor, Wincenty
+28|10|Alfred, Anastazja, Cyryl, Cyryla, Domabor, Faro, Fidelis, Honorat, Juda Tadeusz, Ksymena, Sabina, Salwia, Salwiusz, Szymon, Szymona, Tadeusz, Wielimir, Wszeciech
+29|10|Dalemir, Dalia, Donat, Ermelinda, Euzebia, Felicjan, Franciszek, Ida, Lubgost, Maksymilian, Narcyz, Piotr, Serafin, Teodor, Walenty, Wiola, Wioleta, Zenobiusz, Żelibor
+30|10|Anioł, Arseniusz, Artemas, Benwenuta, Edmund, Eutropia, Gerard, Gerarda, German, Julian, Klaudiusz, Liberat, Makary, Maksym, Marceli, Przemysław, Saturnin, Serapion, Sulimir, Sęczygniew, Zenobia
+31|10|Antoni, Antonin, Augusta, Bega, Godzimir, Krzysztof, Krzysztofa, Kwintyn, Lucyla, Lucyliusz, Narcyz, Saturnin, Urban, Wolfgang, Łukasz
+1|11|Andrzej, Benigny, Cyrenia, Jakub, Jan, Julianna, Konrad, Konradyn, Konradyna, Licyniusz, Marceli, Maria, Nikola, Rajner, Robert, Seweryn, Teodor, Warcisław, Wiktoryna
+2|11|Agapiusz, Ambroży, Eudoksjusz, Jerzy, Malachiasz, Marcjan, Małgorzata, Stomir, Teodot, Tobiasz, Wiktoryn, Wojsław, Wojsława
+3|11|Berard, Bogumił, Cezary, Chwalisław, German, Ginewra, Hubert, Huberta, Marcin, Sylwia, Teofil, Walenty, Wenefryda, Witalis
+4|11|Agrykola, Amancjusz, Amon, Dżesika, Emeryk, Emeryka, Filolog, Franciszka, Helena, Joannicjusz, Karol, Mojżesz, Mścisława, Mściwoj, Olgierd, Perpetua, Sędzimir, Witalis
+5|11|Blandyn, Blandyna, Dalemir, Dominik, Elżbieta, Filotea, Filoteusz, Florian, Gerald, Magnus, Marek, Sylwan, Sławomir, Teotym, Trofima, Zachariasz
+6|11|Anita, Bogdana, Daniela, Feliks, Gabriela, Hieronim, Kalinik, Krystyna, Leonard, Melaniusz, Nonnus, Teobald, Trzebowit, Walenty, Wincenta, Ziemowit
+7|11|Achilles, Amaranta, Antoni, Engelbert, Ernest, Florencjusz, Gizbert, Herkulan, Hezychiusz, Ingarda, Karina, Longin, Longina, Nikander, Nikandra, Prosdocym, Przemił, Rufus, Wilibrord, Wincenty, Żelibrat, Żytomir
+8|11|Bogdan, Bogodar, Bohdan, Bożydar, Godfryd, Hadrian, Jan, Józef, Klarus, Klaudiusz, Marcin, Maur, Paweł, Sewer, Sewerian, Seweryn, Symforian, Symforiana, Symplicjusz, Sędziwoj, Wiktoria, Wiktoryn, Wilehad
+9|11|Agrypin, Aleksander, Benigny, Czścibor, Debora, Dziwigor, Elżbieta, Genowefa, Gorzysław, Joanna, Ludwik, Nestor, Orestes, Teodora, Ursyn, Świecław
+10|11|Andrzej, Anian, Demetriusz, Florencja, Just, Lena, Leon, Leona, Ludomir, Nela, Nimfa, Probus, Stefan, Tryfena, Unieboż
+11|11|Aleksander, Alicja, Bartosz, Bartłomiej, Jan, Jozafat, Maciej, Marcin, Maryna, Menas, Pafnucy, Sobieżyr, Spycisław, Teodor
+12|11|Arsacjusz, Aureliusz, Czścibor, Emilian, Jan, Jonasz, Jozafat, Konradyn, Kunibert, Lewin, Marcin, Nila, Nilus, Publiusz, Renat, Renata, Witold, Witolda
+13|11|Alojzy, Antonin, Arkadia, Arkadiusz, Arkady, Augustyna, Benedykt, Brykcjusz, Dydak, Eugeniusz, Eutychian, German, Humbert, Izaak, Jan, Kalikst, Krystyn, Liwia, Mateusz, Mikołaj, Nicefor, Nicefora, Paschazy, Probus, Stanisław, Stanisława, Walenty, Wiktor, Włodzisław
+14|11|Agata, Agryppa, Antyd, Czcibora, Damian, Elżbieta, Filomen, Hipacy, Jukund, Józef, Klementyn, Kosma, Laurenty, Mikołaj, Montan, Serapion, Stefan, Teodot, Wawrzyniec, Wszerad, Świecław
+15|11|Albert, Artur, Gurias, Idalia, Józef, Leopold, Leopoldyna, Przybygniew, Roger
+16|11|Agnieszka, Ariel, Ariela, Audomar, Aureliusz, Dionizy, Edmund, Euchariusz, Gertruda, Maria, Małgorzata, Niedamir, Otmar, Patrokles, Paweł, Łucja
+17|11|Alfeusz, Arabela, Dionizy, Drogomir, Drogomira, Drogoradz, Elżbieta, Floryn, Grzegorz, Hugo, Jan, Jozafat, Palmira, Roch, Salomea, Sulibor, Wiktoria, Zacheusz, Zbysław
+18|11|Aniela, Cieszymysł, Filipina, Gabriela, Galezy, Hezychiusz, Józefa, Karol, Karolina, Leonard, Noe, Odolan, Otto, Roman, Tomasz
+19|11|Barbara, Dionizy, Drogosław, Elżbieta, Faust, Jakub, Kryspin, Maksym, Matylda, Małowid, Mironiega, Paweł, Salomea, Seweryn, Teodor
+20|11|Agapiusz, Ampelia, Ampeliusz, Anatol, Aniela, Edmund, Eustachy, Feliks, Fortunata, Grzegorz, Lubomir, Maksencja, Maria, Narzes, Oktawia, Oktawiusz, Rafał, Sylwester, Sylwestra, Symplicjusz, Sędzimir, Tespezjusz
+21|11|Albert, Elwir, Elwira, Gelazja, Gelazy, Heliodor, Janusz, Jaropełk, Kadok, Konrad, Konrada, Maria, Regina, Rufus, Twardosław, Wiesław
+22|11|Cecylia, Ernestyna, Filemon, Filemona, Marek, Salwator, Stefan, Wszemił, Wszemiła
+23|11|Adela, Amfiloch, Felicyta, Fotyna, Grzegorz, Klemens, Kolumban, Lukrecja, Orestes, Przedwoj, Syzyniusz
+24|11|Agnieszka, Albert, Andrzej, Biruta, Chryzogon, Dargorad, Darosław, Dobrosław, Emilia, Enfleda, Felicjana, Firmina, Flora, Franciszek, Gerard, Jan, Jaśmina, Joachim, Protazy, Pęcisław, Roman, Twardomir, Walenty, Żelisława
+25|11|Alan, Alana, Aurelia, Beatrycze, Elżbieta, Erazm, Godzimir, Józef, Katarzyna, Maria, Merkury, Mojżesz, Tęgomir
+26|11|Alipiusz, Ammonia, Ammoniusz, Delfin, Dobiemiest, Faust, Hezychiusz, Jan, Kajetana, Konrad, Konrada, Lechosław, Lechosława, Leonard, Marceli, Nikon, Pachomiusz, Piotr, Stylian, Sylwester, Sylwestra, Syrycjusz, Teodor
+27|11|Achacy, Astryda, Barłaam, Bernardyn, Damazy, Dominik, Franciszek, Franciszka, Gustaw, Gustawa, Iliana, Irenarch, Jakub, Jozafat, Maksym, Maksymilian, Prymityw, Sekundyn, Stojgniew, Walerian, Walery, Wergilia, Wirgilia, Wirgiliusz, Zygfryd, Zygfryda, Żaneta
+28|11|Andrzej, Berta, Eustachy, Feliks, Ginter, Gościrad, Grzegorz, Jakub, Krescenty, Kwieta, Lesław, Lesława, Manswet, Radowit, Roma, Rufus, Sostenes, Stefan, Teodora, Tristan, Urban, Walerian, Zdzisław, Zdzisława
+29|11|Bolemysł, Budok, Błażej, Błażeja, Dionizy, Filomen, Filomena, Flora, Franciszek, Klementyna, Pafnucy, Paramon, Przemysł, Radbod, Saturnin, Siedlewit, Syzyniusz, Walter
+30|11|Andrzej, Aniela, Fryderyk, Justyna, Konstancjusz, Konstanty, Kutbert, Maura, Tadea, Zbysława, Zozym
+1|12|Aleksander, Ananiasz, Antoni, Blanka, Edmund, Eligia, Eligiusz, Ewazjusz, Florencja, Godzisław, Gosław, Gosława, Jan, Katerw, Natal, Natalia, Platon, Prokul, Rudolf, Rudolfa, Rudolfina, Sobiesława, Sylwan
+2|12|Aurelia, Balbina, Bianka, Bibiana, Budzisław, Budzisława, Ludwina, Paulina, Rafał, Sulisław, Sylweriusz, Walenty, Wiktoryn, Zbylut
+3|12|Atalia, Biryn, Franciszek, Gerlinda, Hilaria, Kasjan, Kryspin, Ksawery, Lucjusz, Sofoniasz, Uniemir
+4|12|Barbara, Bernard, Bratumiła, Ciechosław, Ciechosława, Cieszybor, Feliks, Filip, Hieronim, Jan, Klemens, Krystian, Marut, Maruta, Melecjusz, Osmund, Teofan
+5|12|Anastazy, Bartosz, Bartłomiej, Dalmacjusz, Dalmacy, Feliks, Gerald, Geraldyna, Jan, Juliusz, Kryspin, Kryspina, Krystyna, Mikołaj, Pelin, Pelina, Pęcisława, Saba, Sabina, Sawin
+6|12|Abraham, Angelika, Bonifacy, Dioniza, Dionizja, Emilian, Heliodor, Jarema, Leoncja, Mikołaj, Morzysława, Nikola, Piotr, Polichroniusz, Tercjusz
+7|12|Agaton, Ambrozja, Ambroży, Atenodor, Eutychian, Józefa, Marcin, Marcisław, Ninomysł, Polikarp, Sabin, Siemirad, Urban, Zdziemił
+8|12|Alojzy, Apollo, Boguwola, Edyta, Elfryda, Euchariusz, Euchary, Hildemar, Makary, Maria, Marika, Narcyza, Potapiusz, Romaryk, Wirginiusz, Świedarg
+9|12|Chwalimira, Delfina, Gorgonia, Jan, Leokadia, Liboriusz, Naczęmir, Piotr, Prokul, Waleria, Wielisława, Wiesław, Wiesława, Wrocisław
+10|12|Andrzej, Bogdan, Bogdał, Bohdan, Brajan, Daniel, Donat, Eulalia, Eustachia, Eustachy, Fulko, Grzegorz, Judyta, Julia, Loreta, Maria, Maur, Melchiades, Menas, Nikoleta, Polidor, Radzisław, Radzisława, Switun, Unierad, Zbigniew
+11|12|Artur, Damazy, Daniel, Gościwit, Hieronim, Poncjan, Sabin, Stefan, Waldemar, Walenty, Wilburga, Wojmir
+12|12|Adelajda, Aleksander, Amonaria, Bartosz, Dionizja, Edburga, Epimach, Franciszka, Gościwit, Joanna, Justyn, Konrad, Konrada, Konstancjusz, Liberata, Maksencjusz, Merkuria, Przybysława, Spirydion, Suliwuj, Synezjusz, Łazarz
+13|12|Antioch, Antoni, Aubert, Auksencja, Auksencjusz, Auksenty, Edburga, Eugeniusz, Jodok, Orestes, Otylia, Róża, Samboja, Walenty, Łucja
+14|12|Agnellus, Alfred, Arseniusz, Bertold, Druzus, Eutropia, Gorzysław, Heron, Izydor, Jan, Nahum, Nikazjusz, Noemi, Pompejusz, Sławobor, Teodor, Wenancjusz, Wenanty, Wiator
+15|12|Antoni, Bakchus, Drogosław, Drogosława, Euzebiusz, Jan, Maksymin, Maksymina, Maria, Maryn, Maryniusz, Mścigniew, Mścigniewa, Saturnin, Teodor, Walerian, Wiktor, Wirginia, Wolimir
+16|12|Adelajda, Adolf, Agrykola, Albin, Albina, Alicja, Alina, Ananiasz, Dawid, Dyter, Euzebiusz, Konkordiusz, Maria, Sebastian, Walenty, Wolisław, Wolisława, Zdzisław, Zdzisława
+17|12|Bega, Florian, Jan, Jolanta, Modest, Olimpia, Wiwina, Łazarz, Łukasz, Żyrosław
+18|12|Auksencja, Auksencjusz, Auksenty, Bogusław, Flawit, Gościmir, Gracja, Gracjan, Kwintus, Miłosław, Nemezja, Rufus, Symplicjusz, Wilibald, Winibald, Winibalda, Wszemir, Zofia, Zozym
+19|12|Abraham, Anastazy, Beniamin, Berard, Bogumiła, Dariusz, Eleonora, Grzegorz, Kazimiera, Mścigniew, Nemezjusz, Nemezy, Protazja, Tymoteusz, Urban
+20|12|Amon, Bogumił, Bogumiła, Dagmara, Dominik, Eugeniusz, Krystian, Liberat, Makary, Ptolemeusz, Teofil, Ursycyn, Wincenty, Zefiryn, Zefiryna, Zenon, Łukasz
+21|12|Anastazy, Balbin, Festus, Gliceriusz, Honorat, Kanizjusz, Piotr, Temistokles, Tolisław, Tomasz, Tomisław, Tomisława
+22|12|Dobrosułka, Drogomir, Drogomira, Dziesława, Dziwisław, Franciszka, Franciszka Ksawera, Gryzelda, Honorata, Ischyrion, Judyta, Ksawera, Luboradz, Zenon, Zenona
+23|12|Anatolia, Bazylides, Dagobert, Ewaryst, Ewarysta, Gelazy, Iwo, Iwona, Mardoniusz, Oktawian, Saturnin, Serwul, Sławomir, Sławomira, Teodul, Torlak, Wiktor, Wiktoria
+24|12|Adam, Adamina, Adela, Adelajda, Delfin, Druzjan, Druzjanna, Eryk, Eryka, Ewa, Ewelina, Godzisława, Grzegorz, Grzymisława, Hermana, Hermina, Irma, Irmina, Józef, Paula, Tarsylia, Zenobia, Zenobiusz
+25|12|Anastazja, Eugenia, Maria, Natan, Piotr, Siemisław
+26|12|Dionizy, Szczepan, Teodor, Wincencja, Wincenta, Wincentyna, Wrociwoj
+27|12|Bartłomiej, Cezary, Fabiola, Gosław, Jan, Krystyna, Maksym, Przybyrad, Przybysław, Sara, Teodor, Teofan, Żaneta, Żanna
+28|12|Antoni, Armin, Cezary, Dobrowieść, Domna, Domniusz, Godzisław, Teofila, Teona, Teonas, Troadiusz
+29|12|Dawid, Dionizjusz, Domaradz, Dominik, Ebrulf, Ekhard, Gerard, Gerarda, Gosław, Honorat, Jonatan, Krescenty, Marceli, Marcin, Prymian, Radowit, Saturnin, Tadea, Tamara, Tomasz, Trofim, Wiktor
+30|12|Anizja, Anizjusz, Dawid, Dawida, Dionizy, Egwin, Eksuperancjusz, Eugeniusz, Irmina, Liberiusz, Marceli, Perpetuus, Rajner, Sabin, Sewer, Seweryn, Uniedrog, Łazarz
+31|12|Barbacjan, Katarzyna, Kolumba, Mariusz, Melania, Paulina, Saturnina, Sebastian, Sylwester, Sylwestra, Tworzysław, Zotyk

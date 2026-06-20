@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartka z Kalendarza — co wydarzyło się dziś w historii? | DaybyDay</title>
+  <meta name="description" content="Kartka z kalendarza na dziś: rocznice historyczne, urodziny sławnych ludzi, ciekawostki i fakty na każdy dzień roku.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/kartka-z-kalendarza.html">
+  <meta property="og:title" content="Kartka z Kalendarza — co wydarzyło się dziś w historii?">
+  <meta property="og:description" content="Rocznice historyczne, urodziny sławnych ludzi i ciekawostki na każdy dzień roku.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/kartka-z-kalendarza.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:1060px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .date-nav { display:flex; align-items:center; gap:1rem; margin-bottom:2rem; }
+    .date-nav-btn { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:var(--surface); border:1px solid var(--border); border-radius:50%; cursor:pointer; font-size:1rem; transition:all .15s; text-decoration:none; color:var(--text); }
+    .date-nav-btn:hover { background:var(--tag-bg); border-color:#C8C4BE; }
+    .date-picker { padding:.45rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.88rem; color:var(--text); outline:none; cursor:pointer; }
+    .hero-date { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2.5rem; margin-bottom:1.5rem; display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:start; }
+    .hero-day { font-family:'Instrument Serif',serif; font-size:clamp(4rem,12vw,8rem); line-height:1; font-weight:400; }
+    .hero-month { font-family:'Instrument Serif',serif; font-size:clamp(1.8rem,5vw,3rem); line-height:1.1; }
+    .hero-year { font-size:.9rem; color:var(--muted); margin-top:.25rem; }
+    .hero-weekday { font-size:1.1rem; font-weight:500; margin-top:.75rem; }
+    .hero-meta { text-align:right; }
+    .meta-item { font-size:.8rem; color:var(--muted); margin-bottom:.5rem; }
+    .meta-val { font-size:1rem; font-weight:600; color:var(--text); }
+    .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; margin-bottom:1.5rem; }
+    .info-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; }
+    .ic-label { font-size:.7rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.85rem; display:flex; align-items:center; gap:.4rem; }
+    .names-row { display:flex; flex-wrap:wrap; gap:.4rem; }
+    .name-badge { background:var(--tag-bg); border-radius:60px; padding:.3rem .85rem; font-size:.82rem; font-weight:500; text-decoration:none; color:var(--text); transition:background .15s; }
+    .name-badge:hover { background:var(--text); color:white; }
+    .sun-row { display:flex; gap:1.5rem; flex-wrap:wrap; }
+    .sun-item { }
+    .sun-time { font-family:'Instrument Serif',serif; font-size:1.5rem; line-height:1; }
+    .sun-lbl { font-size:.72rem; color:var(--muted); margin-top:.2rem; }
+    .holiday-list { display:flex; flex-direction:column; gap:.5rem; }
+    .holiday-item { display:flex; gap:.6rem; align-items:flex-start; font-size:.83rem; }
+    .holiday-icon { font-size:1rem; flex-shrink:0; margin-top:.05rem; }
+    .moon-row { display:flex; align-items:center; gap:1rem; }
+    .moon-symbol { font-size:2.5rem; }
+    .moon-info { }
+    .moon-phase { font-size:.9rem; font-weight:600; }
+    .moon-age { font-size:.8rem; color:var(--muted); margin-top:.2rem; }
+    .proverb-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; margin-bottom:1.5rem; }
+    .proverb-label { font-size:.7rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.85rem; }
+    .proverb-text { font-family:'Instrument Serif',serif; font-size:1.15rem; font-style:italic; line-height:1.6; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:1060px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .nav-links{display:none} .hero-date{grid-template-columns:1fr} .hero-meta{text-align:left} }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="date-nav">
+    <a class="date-nav-btn" id="prevBtn" title="Poprzedni dzień">‹</a>
+    <input type="date" class="date-picker" id="datePicker" value="2026-06-16">
+    <a class="date-nav-btn" id="nextBtn" title="Następny dzień">›</a>
+    <button class="date-nav-btn" onclick="goToday()" title="Dziś" style="width:auto;padding:0 .75rem;border-radius:60px;font-size:.78rem;font-weight:500">Dziś</button>
+  </div>
+
+  <div id="heroDate" class="hero-date"></div>
+  <div id="infoGrid" class="info-grid"></div>
+  <div id="proverbCard"></div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="index.html">Strona główna</a>
+    <a href="imieniny.html">Imieniny</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+const WEEKDAYS = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+const MONTHS_NOM = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
+const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+
+// Imieniny — uproszczona baza
+const NAMES_DB = {
+  '1-1':['Mieczysław','Mieszka','Seweryn'],'1-6':['Kacper','Melchior','Baltazar'],'1-13':['Bogumył','Weronika'],'1-17':['Antoni'],'1-20':['Fabian','Sebastian'],'1-21':['Agnieszka'],'1-25':['Paweł','Delfina'],
+  '2-2':['Maria','Ofiarowanie'],'2-3':['Błażej'],'2-5':['Agata'],'2-14':['Walenty','Cyryl'],'2-22':['Marta'],'2-24':['Maciej'],
+  '3-4':['Kazimierz'],'3-7':['Tomasz z Akwinu'],'3-12':['Grzegorz'],'3-17':['Patryk'],'3-19':['Józef'],'3-25':['Maria','Zwiastowanie'],
+  '4-2':['Franciszek'],'4-5':['Irena','Wincenty'],'4-16':['Benedykt Labre'],'4-23':['Wojciech','Jerzy'],'4-24':['Horacy'],'4-29':['Katarzyna ze Sieny'],
+  '5-1':['Józef Robotnik'],'5-3':['Maria'],'5-4':['Florian'],'5-8':['Stanisław'],'5-15':['Zofia','Zyta'],'5-26':['Filip'],'5-31':['Maria'],
+  '6-1':['Justyna'],'6-3':['Karolina'],'6-8':['Medard'],'6-13':['Antoni z Padwy'],'6-15':['Jolanta','Wit','Oliwia','Witold','Bernard','Angelina','Jan','Józef','Maria','Modesta','Faustyn'],'6-16':['Aneta','Alina','Justyna','Benon','Elżbieta','Szymon','Łukasz'],'6-21':['Alicja','Leszek'],'6-24':['Jan Chrzciciel'],'6-29':['Piotr','Paweł'],
+  '7-2':['Maria'],'7-11':['Benedykt'],'7-20':['Czesław','Eliasz'],'7-22':['Maria Magdalena'],'7-25':['Jakub'],'7-26':['Anna','Joachim'],
+  '8-5':['Dominik'],'8-10':['Wawrzyniec'],'8-15':['Maria'],'8-24':['Bartłomiej'],'8-28':['Augustyn'],
+  '9-8':['Maria','Urodziny NMP'],'9-15':['Maria Bolesna'],'9-29':['Michał','Gabriel','Rafał'],
+  '10-4':['Franciszek'],'10-7':['Maria Różańcowa'],'10-16':['Jadwiga','Gall'],'10-28':['Szymon','Juda'],
+  '11-1':['Wszystkich Świętych'],'11-11':['Marcin'],'11-15':['Albert'],'11-17':['Elżbieta'],'11-25':['Katarzyna'],'11-30':['Andrzej'],
+  '12-4':['Barbara'],'12-6':['Mikołaj'],'12-8':['Maria Niepokalana'],'12-13':['Łucja'],'12-25':['Narodzenie Pańskie'],'12-26':['Stefan'],'12-31':['Sylwester','Melania'],
+};
+
+// Przysłowia
+const PROVERBS_DB = {
+  '6-15':['Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy.','Na świętego Wita zboże zakwita.'],
+  '6-16':['Czerwiec lipcem się miota, gdy nie ma słońca ani błota.'],
+  '6-24':['Na Jana Chrzciciela słońce nad ziemią miga — urodzaj nie ucieka.'],
+  '6-29':['Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.'],
+  '6-8':['Medard deszczem obdarzył — czterdzieści dni deszczem straszył.'],
+};
+
+// Święta
+const HOLIDAYS_DB = {
+  '1-1':['Nowy Rok — dzień wolny od pracy','Dzień Pokoju'],
+  '1-6':['Trzech Króli — dzień wolny od pracy'],
+  '4-1':['Prima Aprilis'],
+  '5-1':['Święto Pracy — dzień wolny od pracy'],
+  '5-3':['Święto Konstytucji 3 Maja — dzień wolny od pracy'],
+  '6-1':['Dzień Dziecka'],
+  '6-16':['Dzień Dziecka Afrykańskiego','Dzień Blooma','Międzynarodowy Dzień Rodzinnych Przekazów Pieniężnych'],
+  '8-15':['Wniebowzięcie NMP — dzień wolny od pracy','Święto Wojska Polskiego'],
+  '11-1':['Wszystkich Świętych — dzień wolny od pracy'],
+  '11-11':['Święto Niepodległości — dzień wolny od pracy'],
+  '12-25':['Boże Narodzenie — dzień wolny od pracy'],
+  '12-26':['Drugi dzień Bożego Narodzenia — dzień wolny od pracy'],
+};
+
+// Fazy Księżyca 2026 (uproszczone)
+const MOON_PHASES = [
+  { date:'2026-01-03', phase:'Nów', symbol:'🌑' },
+  { date:'2026-01-10', phase:'Pierwsza kwadra', symbol:'🌓' },
+  { date:'2026-01-18', phase:'Pełnia', symbol:'🌕' },
+  { date:'2026-01-25', phase:'Ostatnia kwadra', symbol:'🌗' },
+  { date:'2026-06-11', phase:'Nów', symbol:'🌑' },
+  { date:'2026-06-19', phase:'Pierwsza kwadra', symbol:'🌓' },
+  { date:'2026-06-26', phase:'Pełnia', symbol:'🌕' },
+  { date:'2026-07-04', phase:'Ostatnia kwadra', symbol:'🌗' },
+];
+
+function getMoonPhase(date) {
+  const known = new Date('2000-01-06T18:14:00Z');
+  const diff = (date - known) / 86400000;
+  const cycle = 29.53059;
+  const age = ((diff % cycle) + cycle) % cycle;
+  if (age < 1.5) return { phase:'Nów', symbol:'🌑', age:Math.round(age) };
+  if (age < 7.38) return { phase:'Przybywający sierp', symbol:'🌒', age:Math.round(age) };
+  if (age < 8.88) return { phase:'Pierwsza kwadra', symbol:'🌓', age:Math.round(age) };
+  if (age < 14.77) return { phase:'Przybywający garb', symbol:'🌔', age:Math.round(age) };
+  if (age < 16.27) return { phase:'Pełnia', symbol:'🌕', age:Math.round(age) };
+  if (age < 22.15) return { phase:'Ubywający garb', symbol:'🌖', age:Math.round(age) };
+  if (age < 23.65) return { phase:'Ostatnia kwadra', symbol:'🌗', age:Math.round(age) };
+  return { phase:'Ubywający sierp', symbol:'🌘', age:Math.round(age) };
+}
+
+function getSunTimes(date) {
+  const lat = 52.23, lon = 21.01;
+  const JD = date.getTime() / 86400000 + 2440587.5;
+  const n = JD - 2451545.0;
+  const L = (280.46 + 0.9856474 * n) % 360;
+  const g = (357.528 + 0.9856003 * n) % 360 * Math.PI / 180;
+  const lambda = ((L + 1.915 * Math.sin(g) + 0.02 * Math.sin(2*g)) * Math.PI / 180);
+  const eps = (23.439 - 0.0000004 * n) * Math.PI / 180;
+  const sinDec = Math.sin(eps) * Math.sin(lambda);
+  const dec = Math.asin(sinDec);
+  const cosDec = Math.cos(dec);
+  const cosLat = Math.cos(lat * Math.PI / 180);
+  const sinLat = Math.sin(lat * Math.PI / 180);
+  const cosH = (Math.cos(90.833 * Math.PI / 180) - sinLat * sinDec) / (cosLat * cosDec);
+  if (cosH > 1 || cosH < -1) return null;
+  const H = Math.acos(cosH) * 180 / Math.PI;
+  const eot = (-7.655 * Math.sin(g) + 9.873 * Math.sin(2*lambda + 3.588) + 0.439 * Math.sin(4*lambda)) / 60;
+  const noon = 12 - lon/15 - eot;
+  const m = date.getMonth(), d = date.getDate();
+  const isDST = (m > 2 && m < 9) || (m === 2 && d >= 29) || (m === 9 && d < 25);
+  const offset = isDST ? 2 : 1;
+  return { rise: noon - H/15 + offset, set: noon + H/15 + offset };
+}
+
+function fmtTime(h) {
+  const hh = Math.floor(h) % 24;
+  const mm = Math.round((h - Math.floor(h)) * 60);
+  return String(hh).padStart(2,'0') + ':' + String(mm % 60).padStart(2,'0');
+}
+
+function dayOfYear(d) {
+  return Math.round((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+}
+
+function weekOfYear(d) {
+  const startOfYear = new Date(d.getFullYear(), 0, 1);
+  return Math.ceil(((d - startOfYear) / 86400000 + startOfYear.getDay() + 1) / 7);
+}
+
+function renderDay(dateStr) {
+  const date = new Date(dateStr + 'T12:00:00');
+  const d = date.getDate(), m = date.getMonth() + 1, y = date.getFullYear();
+  const wd = WEEKDAYS[date.getDay()];
+  const doy = dayOfYear(date);
+  const woy = weekOfYear(date);
+  const daysLeft = (new Date(y, 11, 31) - date) / 86400000;
+  const key = m + '-' + d;
+
+  // Hero
+  document.getElementById('heroDate').innerHTML = `
+    <div>
+      <div class="hero-day">${d}</div>
+      <div class="hero-month">${MONTHS_GEN[m-1]} ${y}</div>
+      <div class="hero-weekday">${wd.charAt(0).toUpperCase() + wd.slice(1)}</div>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-item">Dzień roku<br><span class="meta-val">${doy}</span></div>
+      <div class="meta-item">Tydzień<br><span class="meta-val">${woy}</span></div>
+      <div class="meta-item">Dni do końca roku<br><span class="meta-val">${Math.round(daysLeft)}</span></div>
+    </div>
+  `;
+
+  // Imieniny
+  const names = NAMES_DB[key] || NAMES_DB[m + '-' + d] || [];
+  const namesHTML = names.length
+    ? names.map(n => `<a href="imieniny.html?name=${encodeURIComponent(n)}" class="name-badge">${n}</a>`).join('')
+    : '<span style="color:var(--muted);font-size:.82rem">Brak danych dla tego dnia</span>';
+
+  // Słońce
+  const sun = getSunTimes(date);
+  const sunHTML = sun
+    ? `<div class="sun-row">
+        <div class="sun-item"><div class="sun-time">☀️ ${fmtTime(sun.rise)}</div><div class="sun-lbl">Wschód słońca</div></div>
+        <div class="sun-item"><div class="sun-time">🌅 ${fmtTime(sun.set)}</div><div class="sun-lbl">Zachód słońca</div></div>
+        <div class="sun-item"><div class="sun-time">⏱ ${Math.floor(sun.set-sun.rise)}h ${Math.round(((sun.set-sun.rise)%1)*60)}m</div><div class="sun-lbl">Długość dnia</div></div>
+      </div>` : 'Brak danych';
+
+  // Księżyc
+  const moon = getMoonPhase(date);
+  const moonHTML = `<div class="moon-row"><div class="moon-symbol">${moon.symbol}</div><div class="moon-info"><div class="moon-phase">${moon.phase}</div><div class="moon-age">${moon.age}. dzień cyklu</div></div></div>`;
+
+  // Święta
+  const hols = HOLIDAYS_DB[key] || [];
+  const holsHTML = hols.length
+    ? `<div class="holiday-list">${hols.map(h => `<div class="holiday-item"><div class="holiday-icon">🎉</div><div>${h}</div></div>`).join('')}</div>`
+    : '<span style="color:var(--muted);font-size:.82rem">Brak świąt tego dnia</span>';
+
+  document.getElementById('infoGrid').innerHTML = `
+    <div class="info-card">
+      <div class="ic-label">🎂 Imieniny</div>
+      <div class="names-row">${namesHTML}</div>
+    </div>
+    <div class="info-card">
+      <div class="ic-label">☀️ Słońce — Warszawa</div>
+      ${sunHTML}
+    </div>
+    <div class="info-card">
+      <div class="ic-label">🌙 Faza Księżyca</div>
+      ${moonHTML}
+    </div>
+    <div class="info-card">
+      <div class="ic-label">🎊 Święta i wydarzenia</div>
+      ${holsHTML}
+    </div>
+  `;
+
+  // Przysłowie
+  const provs = PROVERBS_DB[key] || [];
+  if (provs.length) {
+    document.getElementById('proverbCard').innerHTML = `
+      <div class="proverb-card">
+        <div class="proverb-label">🌾 Przysłowie na dziś</div>
+        <div class="proverb-text">${provs[0]}</div>
+        ${provs[1] ? `<div class="proverb-text" style="margin-top:.75rem;font-size:.95rem;color:var(--muted)">${provs[1]}</div>` : ''}
+      </div>
+    `;
+  } else {
+    document.getElementById('proverbCard').innerHTML = '';
+  }
+
+  // Update nav buttons
+  const prev = new Date(date); prev.setDate(prev.getDate() - 1);
+  const next = new Date(date); next.setDate(next.getDate() + 1);
+  document.getElementById('prevBtn').onclick = () => navigate(prev.toISOString().slice(0,10));
+  document.getElementById('nextBtn').onclick = () => navigate(next.toISOString().slice(0,10));
+}
+
+function navigate(dateStr) {
+  document.getElementById('datePicker').value = dateStr;
+  renderDay(dateStr);
+}
+
+function goToday() {
+  const today = new Date().toISOString().slice(0,10);
+  navigate(today);
+}
+
+document.getElementById('datePicker').addEventListener('change', function() {
+  renderDay(this.value);
+});
+
+// Sprawdź URL param
+const urlDate = new URLSearchParams(window.location.search).get('date');
+if (urlDate) {
+  document.getElementById('datePicker').value = urlDate;
+  renderDay(urlDate);
+} else {
+  renderDay(document.getElementById('datePicker').value);
+}
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

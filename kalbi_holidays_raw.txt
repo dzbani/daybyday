@@ -1,0 +1,1149 @@
+﻿1|1|Światowy Dzień Kaca
+1|1|Światowy Dzień Pokoju
+1|1|Dzień Domeny Publicznej
+2|1|Światowy Dzień Introwertyka
+2|1|Dzień Ptysia
+3|1|Dzień Słomki do Picia
+4|1|Światowy Dzień Braille'a
+4|1|Dzień Spaghetti
+4|1|Światowy Dzień Hipnotyzmu
+5|1|Dzień Bitej Śmietany
+6|1|Dzień Filatelisty
+6|1|Światowy Dzień Misyjny Dzieci
+6|1|Dzień Wtulania Się
+7|1|Dzień Dziwaka
+8|1|Dzień Elvisa Presleya
+8|1|Dzień Rotacji Ziemi
+9|1|Dzień Ligi Ochrony Przyrody
+9|1|Dzień Moreli
+10|1|Dzień Obniżania Kosztów Energii
+11|1|Dzień Wegetarian
+11|1|Dzień Sprzątania Biurka
+12|1|Dzień Całowania Złotowłosych
+13|1|Dzień Polskiej Wódki
+13|1|Dzień Wzajemnej Adoracji
+13|1|Międzynarodowy Dzień Koszuli
+13|1|Dzień Gumowej Kaczuszki
+14|1|Dzień Ukrytej Miłości
+14|1|Dzień Osób Nieśmiałych
+14|1|Światowy Dzień Logiki
+15|1|Dzień Interlingwy
+15|1|Dzień Wikipedii
+15|1|Dzień Bajgla
+16|1|Dzień Pikantnych Potraw
+17|1|Dzień Dialogu z Judaizmem
+17|1|Dzień Wszystkich Fajnych
+17|1|Światowy Dzień Pizzy
+17|1|Światowy Dzień Śniegu
+18|1|Dzień Kubusia Puchatka
+18|1|Niebieski Poniedziałek
+19|1|Święto Wojskowych Jednostek Organizacyjnych Prokuratury Wojskowej
+19|1|Dzień Popcornu
+20|1|Dzień wiedzy o pingwinach
+20|1|Dzień Bigosu
+20|1|Dzień Miłośników Sera
+20|1|Museum Selfie Day
+21|1|Międzynarodowy Dzień Przytulania
+21|1|Dzień Wiewiórki
+21|1|Dzień Spodni Dresowych
+21|1|Dzień Zdrowej Wagi Kobiet
+22|1|Dzień Ostrego Sosu
+23|1|Dzień bez Opakowań Foliowych
+23|1|Dzień Najbardziej Kochanych
+23|1|Dzień Pisma Ręcznego
+24|1|Dzień Wiedzy o Zespole Möbiusa
+24|1|Międzynarodowy Dzień Edukacji
+25|1|Dzień Sekretarki i Asystentki
+25|1|Dzień Kryptologii
+25|1|Dzień Gracza LOTTO
+26|1|Światowy Dzień Celnictwa
+26|1|Dzień Dialogu z Islamem
+26|1|Dzień Transplantacji
+26|1|Dzień Drugiej Połówki
+26|1|Dzień Australii
+26|1|Międzynarodowy Dzień Czystej Energii
+27|1|Dzień Pracownika Publicznych Służb Zatrudnienia
+27|1|Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu
+28|1|Europejski Dzień Ochrony Danych Osobowych
+28|1|Dzień Piszczałek i Fujarek
+28|1|Międzynarodowy Dzień LEGO
+29|1|Dzień Składanki i Łamigłówki
+29|1|Międzynarodowy Dzień Puzzli
+30|1|Dzień Głupkowatych Powitań na Poczcie Głosowej
+30|1|Dzień Rogalika
+31|1|Dzień Iluzjonistów
+31|1|Dzień Narodzin Rosyjskiej Wódki
+31|1|Dzień Zebry
+31|1|Finał WOŚP
+31|1|Światowy Dzień Trędowatych
+1|2|Dzień Gumy do Żucia
+1|2|Międzynarodowy Dzień bez Oleju Palmowego
+1|2|Dzień Ubezpieczenia Samochodu
+2|2|Dzień Pozytywnego Myślenia
+2|2|Światowy Dzień Mokradeł
+2|2|Dzień Handlowca
+2|2|Dzień Świstaka
+2|2|Dzień Niedźwiedzia
+2|2|Światowy Dzień Życia Konsekrowanego
+2|2|Dzień Naleśnika
+3|2|Dzień Podlaskiej Muzyki
+3|2|Międzynarodowy Dzień Kopania Rowów
+3|2|Dzień Ciasta Marchewkowego
+3|2|Międzynarodowy Dzień Golden Retrievera
+4|2|Międzynarodowy Dzień Walki z Rakiem
+4|2|Światowy Dzień Rzeźnika i Przemysłu Wędliniarskiego
+4|2|Światowy Dzień Wyborów
+5|2|Światowy Dzień Nutelli
+5|2|Dzień Gumy Balonowej
+6|2|Dzień Boba Marleya
+6|2|Międzynarodowy Dzień Zerowej Tolerancji dla Okaleczania Żeńskich Narządów Płciowych
+7|2|Dzień Najwyższej Izby Kontroli
+8|2|Święto Służby Więziennej
+8|2|Międzynarodowy Dzień Epilepsji
+9|2|Dzień Bezpiecznego Internetu
+9|2|Międzynarodowy Dzień Pizzy
+10|2|Światowy Dzień Kociewia
+10|2|Dzień Mincerza
+10|2|Światowy Dzień Suchych Nasion Roślin Strączkowych
+11|2|Światowy Dzień Chorego
+11|2|Ogólnopolski Dzień Dokarmiania Zwierzyny Leśnej
+11|2|Europejski Dzień Numeru Alarmowego 112
+11|2|Międzynarodowy Dzień Kobiet i Dziewcząt w Nauce
+12|2|Światowy Dzień Darwina
+12|2|Międzynarodowy Dzień Dzieci-Żołnierzy
+12|2|Ogólnopolski Dzień Pisania Piórem
+12|2|Międzynarodowy Dzień Dojeżdżania Rowerem do Pracy Zimą
+13|2|Światowy Dzień Radia
+13|2|Międzynarodowy Dzień Prezerwatywy
+14|2|Dzień Chorych na Padaczkę
+14|2|Dzień Wiedzy o Wrodzonych Wadach Serca
+14|2|Światowy Dzień Małżeństwa
+15|2|Dzień Singla
+15|2|Światowy Dzień Młodzieży Prawosławnej
+15|2|Międzynarodowy Dzień Walki z Rakiem Dzieciństwa
+15|2|Światowy Dzień Hipopotama
+15|2|Międzynarodowy Dzień Zespołu Angelmana
+16|2|Międzynarodowy Dzień Listonosza i Doręczyciela Przesyłek
+17|2|Dzień Kota
+17|2|Dzień Służby Cywilnej
+17|2|Światowy Dzień Ducha Ludzkiego
+18|2|Dzień Baterii
+18|2|Dzień Plutona
+19|2|Dzień Nauki Polskiej
+20|2|Światowy Dzień Sprawiedliwości Społecznej
+20|2|Międzynarodowy Dzień Palących Fajkę
+20|2|Dzień Kajdanek
+21|2|Międzynarodowy Dzień Języka Ojczystego
+21|2|Międzynarodowy Dzień Przewodnika Turystycznego
+21|2|Światowy Dzień Wielorybów
+22|2|Dzień Myśli Braterskiej
+22|2|Europejski Dzień Ofiar Przestępstw
+23|2|Dzień bez Łapówki
+23|2|Święto Geografii Wojskowej
+23|2|Międzynarodowy Dzień Pomocy Potrzebującym
+23|2|Ogólnopolski Dzień Walki z Depresją
+24|2|Dzień niespodziewanego całusa
+24|2|Międzynarodowy Dzień Barmana
+24|2|Międzynarodowy Dzień EBM
+25|2|Światowy Dzień Zakładki do Książki
+25|2|Dzień Tosta
+26|2|Dzień Kabanosa
+26|2|Dzień Dinozaura
+26|2|Dzień Pozdrawiania Blondynek
+26|2|Światowy Dzień Pistacji
+27|2|Światowy Dzień Organizacji Pozarządowych
+27|2|Dzień Wiedzy o Anosmii
+27|2|Dzień Niedźwiedzia Polarnego
+28|2|Dzień Spania w Miejscach Publicznych
+28|2|Dzień Kibica Cracovii
+28|2|Dzień Chorób Rzadkich
+1|3|Narodowy Dzień Pamięci 
+1|3|Dzień Puszystych
+1|3|Zero dla Dyskryminacji
+1|3|Światowy Dzień Trawy Morskiej
+1|3|Międzynarodowy Dzień Walki przeciwko Zbrojeniom Atomowym
+1|3|Światowy Dzień Obrony Cywilnej
+1|3|Światowy Dzień Świadomości Autoagresji
+1|3|Dzień Piegów
+1|3|Między­na­ro­dowy Dzień Przy­tu­la­nia Biblio­te­ka­rza
+1|3|Międzynarodowy Dzień Wózka Inwalidzkiego
+2|3|Dzień Staroci
+2|3|Światowy Dzień Tenisa
+3|3|Światowy Dzień Dzikiej Przyrody
+3|3|Światowy Dzień Słuchu
+3|3|Międzynarodowy Dzień Pisarzy
+4|3|Kaziuki
+4|3|Międzynarodowy Dzień Świadomości HPV
+4|3|Światowy Dzień Nauk Inżynieryjnych na Rzecz Zrównoważonego Rozwoju
+4|3|Dzień Gramatyki
+4|3|Międzynarodowy Dzień Mistrza Gry
+5|3|Dzień Teściowej
+5|3|Ogólnopolski Dzień Dentysty
+5|3|Dzień Doceniania
+5|3|Dzień Wiedzy o Dysocjacyjnych Zaburzenia Osobowości
+6|3|Europejski Dzień Logopedy
+6|3|Europejski Dzień Pamięci o Sprawiedliwych
+6|3|Dzień Olimpijczyka
+6|3|Dzień Doceniania Pracownika
+6|3|Światowy Dzień Modlitwy
+6|3|Dzień Czystego Stołu
+7|3|Dzień Płatków Śniadaniowych
+8|3|Międzynarodowy Dzień Praw Kobiet
+8|3|Dzień Rudych Osób
+9|3|Światowy Dzień Drzemki w Pracy
+9|3|Dzień Polskiej Statystyki
+9|3|Dzień Barbie
+10|3|Dzień Mężczyzn
+10|3|Dzień Całowania w Czoło
+10|3|Dzień Mario
+10|3|Międzynarodowy Dzień Peruki
+10|3|Międzynarodowy Dzień Dud
+11|3|Dzień Sołtysa
+11|3|Dzień Misji Ogrodów Zoologicznych i Akwariów
+11|3|Światowy Dzień Hydrauliki
+12|3|Dzień Matematyki
+12|3|Dzień Przeciwko Cenzurze Internetu
+12|3|Światowy Dzień Nerek
+13|3|Dzień Klejnotów
+14|3|Dzień Liczby Pi
+14|3|Biały Dzień
+14|3|Międzynarodowy Dzień Sprzeciwu Wobec Tam
+14|3|Dzień Motyli
+14|3|Międzynarodowy Dzień Działań na rzecz Rzek
+15|3|Międzynarodowy Dzień Inwalidów
+15|3|Światowy Dzień Praw Konsumenta
+15|3|Europejski Dzień Konsumenta
+15|3|Dzień Piekarzy i Cukierników
+15|3|Międzynarodowy Dzień Przeciwko Brutalności Policji
+15|3|Dzień Domeny
+15|3|Dzień Walki z Chrapaniem
+16|3|Dzień Pandy
+17|3|Dzień Św. Patryka
+17|3|Dzień Łodzi Podwodnej
+17|3|Światowy Dzień Pracy Socjalnej
+18|3|Europejski Dzień Mózgu
+18|3|Światowy Dzień Recyklingu
+19|3|Dzień Jedności Kaszubów
+19|3|Dzień Stolarza
+20|3|Dzień Bez Mięsa
+20|3|Światowy Dzień Zdrowia Jamy Ustnej
+20|3|Międzynarodowy Dzień Frankofonii
+20|3|Międzynarodowy Dzień Astrologii
+20|3|Międzynarodowy Dzień Wróbla
+20|3|Dzień Języka Francuskiego
+20|3|Międzynarodowy Dzień Szczęścia
+20|3|Światowy Dzień Żaby
+21|3|Dzień Wagarowicza
+21|3|Światowy Dzień Lasu
+21|3|Światowy Dzień Zespołu Downa
+21|3|Międzynarodowy Dzień Poezji
+21|3|Międzynarodowy Dzień Nowruz
+21|3|Dzień Geodety
+21|3|Światowy Dzień Lalkarstwa
+21|3|Dzień Wierzby
+21|3|Międzynarodowy Dzień Walki z Dyskryminacją Rasową
+21|3|Światowy Dzień Lodowców
+22|3|Dzień Ochrony Bałtyku
+22|3|Światowy Dzień Wody
+22|3|Międzynarodowy Dzień Foki
+23|3|Światowy Dzień Meteorologii
+23|3|Dzień Windy
+23|3|Dzień Przyjaźni Polsko-Węgierskiej
+23|3|Święto Służby Hydrometeorologicznej Sił Zbrojnych
+24|3|Światowy Dzień Gruźlicy
+24|3|Narodowy Dzień Życia
+24|3|Europejski Dzień Lodów Rzemieślniczych
+24|3|Międzynarodowy Dzień Prawa do Prawdy dotyczącej Poważnych Naruszeń Praw Człowieka i Godności Ofiar
+24|3|Narodowy Dzień Pamięci Polaków ratujących Żydów
+25|3|Dzień Czytania Tolkiena
+25|3|Dzień Świętości Życia
+25|3|Międzynarodowy Dzień Gofra
+25|3|Międzynarodowy Dzień Pamięci Ofiar Niewolnictwa i Transatlantyckiego Handlu Niewolnikami
+26|3|Międzynarodowy Dzień Szpinaku
+26|3|Dzień Dobrego Łotra (Dzień Janosika)
+26|3|Dzień Niedźwiedzia Grizzly
+27|3|Międzynarodowy Dzień Teatru
+28|3|Dzień Chwastów
+28|3|Godzina dla Ziemi
+28|3|Międzynarodowy Dzień bez Kłamstwa
+29|3|Święto Polskiej Bielizny
+29|3|Dzień Fortepianu
+29|3|Dzień Metalowca
+30|3|Dzień Pośrednika w Obrocie Nieruchomościami
+30|3|Światowy Dzień Muffinka
+30|3|Światowy Dzień Choroby Afektywnej Dwubiegunowej
+30|3|Międzynarodowy Dzień Zero Waste
+31|3|Światowy Dzień Backupu
+31|3|Światowy dzień budyniu
+1|4|Międzynarodowy Dzień Ptaków
+2|4|Światowy Dzień Świadomości Autyzmu
+2|4|Międzynarodowy Dzień Książki Dla Dzieci
+3|4|Dzień Tęczy
+4|4|Dzień Marchewki
+4|4|Międzynarodowy Dzień Walki na Poduszki
+4|4|Międzynarodowy Dzień Wiedzy o Minach i Działań Zapobiegających Minom
+4|4|Światowy Dzień Bezdomnych Zwierząt
+4|4|Święto Wojskowej Służby Zdrowia
+4|4|Światowy Dzień Szczura
+5|4|Dzień Grzeczności za Kierownicą
+5|4|Dzień Leśnika i Drzewiarza
+5|4|Dzień Karmelu
+6|4|Światowy Dzień Sportu
+6|4|Święto Agencji Bezpieczeństwa Wewnętrznego
+7|4|Międzynarodowy Dzień Domków Lalek
+7|4|Światowy Dzień Zdrowia
+7|4|Dzień Pracownika Służby Zdrowia
+7|4|Dzień Bobrów
+7|4|Dzień Niewidzialnej Pracy
+8|4|Międzynarodowy Dzień Opozycji Przeciw GMO
+8|4|Międzynarodowy Dzień Romów
+8|4|Dzień Miłośników Zoo
+9|4|Światowy Dzień Gołębia
+9|4|Międzynarodowy Dzień Jednorożca
+10|4|Dzień Bandurka
+10|4|Międzynarodowy Dzień Agrafki
+11|4|Dzień Osób z Chorobą Parkinsona
+11|4|Polski Dzień Radia
+11|4|Ogólnopolski Dzień Walki z Bezrobociem
+12|4|Dzień Czekolady
+12|4|Międzynarodowy Dzień Dzieci Ulicy
+12|4|Dzień Chomika
+12|4|Międzynarodowy Dzień Załogowych Lotów Kosmicznych
+12|4|Dzień Czystych Okien
+13|4|Dzień Pamięci Ofiar Zbrodni Katyńskiej
+13|4|Dzień Scrabble
+14|4|Dzień Ludzi Bezdomnych
+14|4|Dzień Patrzenia się w Niebo
+14|4|Dzień Delfina
+14|4|Święto Chrztu Polski
+14|4|Światowy Dzień Choroby Chagasa
+15|4|Światowy Dzień Trzeźwości
+15|4|Światowy Dzień Sztuki
+15|4|Międzynarodowy Dzień Kombatanta
+15|4|Międzynarodowy Dzień Dobrostanu
+15|4|Europejski dzień kontroli prędkości
+16|4|Dzień Sapera
+16|4|Dzień Włókniarza
+16|4|Święto Wojsk Inżynieryjnych
+16|4|Światowy Dzień Walki z Niewolnictwem Dzieci
+17|4|Światowy Dzień Chorych na Hemofilię
+17|4|Światowy Dzień Kostki Rubika
+17|4|Międzynarodowy Dzień Paskudy
+18|4|Dzień Doceniania Męża
+18|4|Międzynarodowy Dzień Ochrony Zabytków
+18|4|Światowy Dzień Krótkofalowca
+18|4|Europejski Dzień Praw Pacjenta
+18|4|Dzień Pacjenta w Śpiączce
+18|4|Dzień Płyty Winylowej
+18|4|Światowy Dzień Cyrku
+19|4|Dzień Czosnku
+19|4|Dzień Rowerowy
+19|4|Narodowy Dzień Czytania Pisma Świętego
+20|4|Dzień Miłości do Różnorodności
+20|4|Dzień Pracownika Przemysłu Włókienniczego, Odzieżowego i Skórzanego
+20|4|Dzień Marihuany
+20|4|Dzień Języka Chińskiego
+21|4|Parilia
+21|4|Światowy Dzień Kreatywności i Innowacji
+22|4|Dzień Ziemi
+22|4|Dzień Pracowników Administracyjnych
+22|4|Międzynarodowy Dzień Matki Ziemi
+22|4|Dzień „Fasolkowych” Cukierków Jelly Bean
+23|4|Światowy Dzień Tenisa Stołowego
+23|4|Światowy Dzień Książki i Praw Autorskich
+23|4|Dzień Geografa
+23|4|Międzynarodowy Dzień świadomości Fibrodysplasia Ossificans Progressiva (FOP)
+23|4|Dzień Języka Hiszpańskiego
+23|4|Dzień Języka Angielskiego
+24|4|Międzynarodowy Dzień Solidarności Młodzieży
+24|4|Światowy Dzień Zwierząt Laboratoryjnych
+24|4|Europejski Dzień Śniadania
+25|4|Dzień Zięcia
+25|4|Dzień Świadomości Alienacji Rodzicielskiej
+25|4|Światowy Dzień Malarii
+25|4|Dzień DNA
+25|4|Światowy Dzień Pingwina
+25|4|Dzień Tai-Chi
+25|4|Światowy Dzień Lekarzy Weterynarii
+26|4|Narodowy Dzień Walki z Rakiem
+26|4|Międzynarodowy Dzień Psa Ratowniczego
+26|4|Światowy Dzień Własności Intelektualnej
+26|4|Dzień Drogowca i Transportowca
+26|4|Międzynarodowy Dzień Pamięci o Katastrofie w Czarnobylu
+26|4|Światowy Dzień Fotografii Otworkowej
+27|4|Światowy Dzień Grafika
+27|4|Dzien Florysty
+27|4|Światowy Dzień Tapira
+27|4|Dzień Żelkowych Misiów
+28|4|Światowy Dzień Bezpieczeństwa i Ochrony Zdrowia w Pracy
+28|4|Dzień Sera Camembert
+28|4|Światowy Dzień Pamięci Ofiar Wypadków przy Pracy
+29|4|Dzień Solidarności Międzypokoleniowej
+29|4|Międzynarodowy Dzień Tańca
+29|4|Dzień Immunologii
+29|4|Międzynarodowy Dzień Świadomości Zagrożenia Hałasem
+30|4|Światowy Dzień Sprzeciwu wobec Bicia Dzieci
+30|4|Międzynarodowy Dzień Jazzu
+30|4|Ogólnopolski Dzień Koni
+30|4|Dzień Uczciwości
+1|5|Ogólnopolskie Święto Kaszanki
+1|5|Międzynarodowy Dzień Partyzanckiego Sadzenia Słoneczników
+1|5|Święto Konwalii
+1|5|Dzień Kosmosu
+1|5|Międzynarodowy Dzień Tuby
+2|5|Dzień Polonii i Polaków za Granicą
+2|5|Dzień Grilla
+2|5|Święto Orła Białego
+2|5|Światowy Dzień Tuńczyka
+2|5|Międzynarodowy Dzień Harry'ego Pottera
+2|5|Dzień Dronów
+2|5|Światowy Dzień Nagiego Ogrodnictwa
+3|5|Światowy Dzień Wolności Prasy
+3|5|Dzień bez Komputera
+3|5|Dzień Słońca
+4|5|Międzynarodowy Dzień Strażaka
+4|5|Światowy Dzień Powolności
+4|5|Dzień Hutnika
+4|5|Dzień Kominiarza
+4|5|Dzień Garncarza
+4|5|Dzień Piekarza
+4|5|Międzynarodowy Dzień Gwiezdnych Wojen
+4|5|Święto Wojskowej Ochrony Przeciwpożarowej
+5|5|Światowy Dzień Higieny Rąk
+5|5|Światowy Dzień Astmy
+5|5|Dzień Bez Makijażu
+5|5|Międzynarodowy Dzień Położnej
+5|5|Dzień Walki z Dyskryminacją Osób z Niepełnosprawnością
+5|5|Dzień Europy Rady Europy
+6|5|Europejski Dzień Bezpieczeństwa Ruchu Drogowego
+6|5|Międzynarodowy Dzień Bez Diety
+6|5|Święto Gwardii Szwajcarskiej
+7|5|Światowy Dzień Hasła
+8|5|Narodowy Dzień Zwycięstwa
+8|5|Międzynarodowy Dzień Kierowcy Zawodowego
+8|5|Dzień Bibliotekarza i Bibliotek
+8|5|Światowy Dzień Czerwonego Krzyża i Czerwonego Półksiężyca
+8|5|Światowy Dzień Osła
+8|5|Światowy Dzień Walki z Rakiem Jajnika
+9|5|Światowy Dzień Ptaków Wędrownych
+9|5|Światowy Dzień Sprawiedliwego Handlu
+9|5|Dzień Europy
+9|5|Dzień Okulistyki
+10|5|Dzień Pracownika Gospodarki Komunalnej
+10|5|Światowy Dzień Tocznia
+10|5|Dzień Zołzy
+11|5|Dzień bez Śmiecenia
+11|5|Dzień Doradcy Podatkowego
+12|5|Międzynarodowy Dzień Pielęgniarek
+12|5|Europejski Dzień Walki z Czerniakiem
+12|5|Europejski Dzień Profilaktyki Udarowej
+12|5|Dzień Syndromu Chronicznego Zmęczenia i Zaburzeń Immunologicznych
+12|5|Międzynarodowy Dzień Limeryków
+12|5|Dzień Wiedzy o Fibromialgii
+12|5|Międzynarodowy Dzień Zdrowia Roślin
+13|5|Ogólnopolski Dzień Profilaktyki
+13|5|Światowy Dzień Furaha
+13|5|Międzynarodowy Dzień Hummusu
+14|5|Dzień Opiekuna Medycznego
+14|5|Dzień Farmaceuty
+15|5|Międzynarodowy Dzień Rodzin
+15|5|Święto Polskiej Muzyki i Plastyki
+15|5|Dzień Niezapominajki
+15|5|Międzynarodowy Dzień Pończoch Nylonowych
+15|5|Światowy Dzień Kangurowania
+15|5|Patronalne Święto Rolników
+15|5|Dzień Dojazdu Rowerem do Pracy
+16|5|Święto Straży Granicznej
+16|5|Międzynarodowy Dzień Celiakii
+16|5|Międzynarodowy Dzień Światła
+16|5|Międzynarodowy Dzień Pokojowego Współistnienia
+16|5|Dzień Wolnej Kultury
+16|5|Międzynarodowy Dzień Whisky
+17|5|Światowy Dzień Nadciśnienia Tętniczego
+17|5|Międzynarodowy Dzień Przeciw Homofobii, Transfobii i Bifobii
+17|5|Międzynarodowy Dzień Telefonów Zaufania dla Dzieci
+17|5|Światowy Dzień Pieczenia
+17|5|Światowy Dzień Telekomunikacji i Społeczeństwa Informacyjnego
+17|5|Światowy Dzień Środków Masowego Przekazu
+17|5|Światowy Dzień Pamięci o Zmarłych na AIDS
+18|5|Międzynarodowy Dzień Muzeów
+18|5|Dzień Mostowca
+19|5|Światowy Dzień Fair Play
+19|5|Dzień Mycia Samochodów
+19|5|Dzień Dobrych Uczynków
+19|5|Ogólnopolski Dzień Bliźniąt
+19|5|Światowy Dzień Lekarza Rodzinnego
+19|5|Światowy Dzień Honorowej Dawczyni Mleka Kobiecego
+19|5|Światowy Dzień Nieswoistych Zapaleń Jelit
+20|5|Światowy Dzień Pszczół
+20|5|Światowy Dzień Metrologii
+20|5|Międzynarodowy Dzień Płynów do Mycia Naczyń
+20|5|Europejski Dzień Morza
+21|5|Międzynarodowy Dzień Herbaty
+21|5|Światowy Dzień Różnorodności Kulturowej dla Dialogu i Rozwoju
+21|5|Europejski Dzień Obszarów Natura 2000
+21|5|Dzień Kadeta
+21|5|Dzień Odnawiania Znajomości
+22|5|Międzynarodowy Dzień Różnorodności Biologicznej
+22|5|Światowy Dzień Gotów
+22|5|Dzień Pac-Mana
+22|5|Dzień Praw Zwierząt
+23|5|Dzień Wymiaru Sprawiedliwości
+23|5|Dzień Teścia
+23|5|Dzień Spedytora
+23|5|Światowy Dzień Żółwia
+23|5|Międzynarodowy Dzień Końca Przetoki Położniczej
+24|5|Europejski Dzień Parków Narodowych
+24|5|Dzień Braci
+24|5|Dzień Cyrylicy
+24|5|Dzień Ślimaka
+24|5|Święto Wojsk Specjalnych
+25|5|Światowy Dzień Piłki Nożnej
+25|5|Międzynarodowy Dzień Dziecka Zaginionego
+25|5|Dzień Królewny
+25|5|Dzień Stemplarza
+25|5|Dzień Piwowara
+25|5|Dzień Ręcznika
+25|5|Dzień Wyzwolenia Afryki
+25|5|Światowy Dzień Futbolu
+26|5|Światowy Dzień Drakuli
+26|5|Dzień Samolotów z Papieru
+27|5|Dzień Samorządu Terytorialnego
+27|5|Dzień Diagnosty Laboratoryjnego
+28|5|Dzień Bez Prezerwatywy
+28|5|Światowy Dzień Raka Krwi
+28|5|Światowy Dzień Hamburgera
+28|5|Dzień Higieny Podczas Miesiączki
+28|5|Dzień Amnesty International
+29|5|Międzynarodowy Dzień Uczestników Misji Pokojowych ONZ
+29|5|Światowy Dzień Zdrowia Układu Pokarmowego
+29|5|Europejski Dzień Sąsiada
+29|5|Dzień Działacza Kultury
+29|5|Dzień Weterana Działań poza Granicami Państwa
+30|5|Dzień Rodzicielstwa Zastępczego
+30|5|Międzynarodowy Dzień Ziemniaka
+30|5|Światowy Dzień Stwardnienia Rozsianego
+30|5|Światowy dzień soku
+31|5|Światowy Dzień bez Tytoniu
+31|5|Dzień Bociana Białego
+31|5|Dzień Pracownika Przemysłu Spożywczego
+31|5|Światowy Dzień Bez Majtek
+31|5|Dzień Rodzeństwa
+31|5|Międzynarodowy Dzień Cytrynówki
+1|6|Światowy Dzień Rodziców
+1|6|Dzień bez Alkoholu
+1|6|Dzień Mleka
+1|6|Święto Bułki
+1|6|Święto Służby Ruchu Lotniczego
+2|6|Dzień bez Krawata
+2|6|Dzień Macochy
+2|6|Dzień Pierwszej Pomocy dla Zwierząt Dzikich i Domowych
+3|6|Światowy Dzień Roweru
+3|6|Dzień Savoir-Vivre
+3|6|Dzień Dobrej Oceny
+4|6|Dzień Wolności i Praw Obywatelskich
+4|6|Dzień Drukarza
+4|6|Międzynarodowy Dzień Dzieci Będących Ofiarami Agresji
+5|6|Światowy Dzień Środowiska
+5|6|Międzynarodowy Dzień Walki z Nielegalnym, Nieraportowanym i Nieuregulowanym Połowom Ryb
+5|6|Święto Regionalnego Centrum Informatyki Warszawa
+6|6|Dzień Języka Rosyjskiego
+6|6|Dzień Slayera
+6|6|Święto Wojsk Chemicznych
+6|6|Dzień Jojo
+7|6|Dzień Seksu
+7|6|Światowy Dzień Bezpieczeństwa Żywności
+7|6|Dzień Chemika
+8|6|Dzień Informatyka
+8|6|Światowy Dzień Oceanów
+8|6|Dzień Cyrku bez Zwierząt
+8|6|Światowy Dzień Guza Mózgu
+9|6|Międzynarodowy Dzień Archiwów
+9|6|Dzień Kaczora Donalda
+9|6|Dzień Przyjaciela
+9|6|Dzień Księgowego (Buchaltera)
+9|6|Dzień Agugaga
+9|6|Dzień Trójkąta Koralowego
+10|6|Międzynarodowy Dzień Elektryka
+10|6|Międzynarodowy Dzień Dialogu Między Cywilizacjami
+10|6|Światowy Dzień Jazdy Nago na Rowerze
+11|6|Międzynarodowy Dzień Zabawy
+11|6|Międzynarodowy Dzień Rysia
+11|6|Dzień Komornika Sądowego
+12|6|Święto Służby Ochrony Państwa
+12|6|Światowy Dzień Sprzeciwu Wobec Pracy Dzieci
+12|6|Dzień Stylisty Paznokci
+12|6|Międzynarodowy Dzień Falafela
+13|6|Święto Dobrych Rad
+13|6|Święto Żandarmerii Wojskowej
+13|6|Międzynarodowy Dzień Świadomości nt. Albinizmu
+13|6|Światowy Dzień Robienia na Drutach w Miejscach Publicznych
+13|6|Światowy Dzień Wellness
+14|6|Światowy Dzień Krwiodawstwa
+14|6|Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Koncentracyjnych i Obozów Zagłady
+14|6|Dzień Dziennikarza Obywatelskiego
+14|6|Międzynarodowy Dzień Kąpieli
+15|6|Dzień Wiatru
+15|6|Ogólnopolski Dzień Dogoterapii
+15|6|Światowy Dzień Praw Osób Starszych
+16|6|Dzień Dziecka Afrykańskiego
+16|6|Dzień Blooma
+16|6|Międzynarodowy Dzień Rodzinnych Przekazów Pieniężnych
+17|6|Dzień Walki z Pustynnieniem i Suszami
+17|6|Święto Wojsk Pancernych i Zmechanizowanych
+18|6|Międzynarodowy Dzień Sushi
+18|6|Dzień Zrównoważonej Gastronomii
+18|6|Międzynarodowy Dzień Przeciwdziałania Mowie Nienawiści
+18|6|Światowy Dzień Raka Nerki
+19|6|Światowy Dzień Anemii Sierpowatej
+19|6|Dzień Leniwych Spacerów
+19|6|Dzień Kibica Wisły Kraków
+20|6|Światowy Dzień Uchodźcy
+20|6|Międzynarodowy Dzień Surfingu
+20|6|Światowy Dzień Żonglerki
+21|6|Święto Muzyki
+21|6|Dzień Deskorolki
+21|6|Międzynarodowy Dzień Jogi
+21|6|Światowy Dzień Żyrafy
+21|6|Światowy Dzień Hydrografii
+21|6|Międzynarodowy Dzień Świętowania Przesilenia
+22|6|Światowy Dzień Garbusa
+22|6|Dzień Kultury Fizycznej
+22|6|Światowy Dzień Lasu Deszczowego
+23|6|Dzień Wędkarza
+23|6|Dzień Służby Publicznej
+23|6|Międzynarodowy Dzień Wdów
+23|6|Międzynarodowy Dzień Kobiet w Inżynierii
+23|6|Dzień Olimpijski
+23|6|Ogólnopolski Dzień Świadomości Raka Prostaty
+24|6|Dzień Przytulania
+24|6|Międzynarodowy Dzień Kobiet w Dyplomacji
+25|6|Dzień Marynarza
+26|6|Światowy Dzień Chłodnictwa
+26|6|Międzynarodowy Dzień Pomocy Ofiarom Tortur
+26|6|Międzynarodowy Dzień Zapobiegania Narkomanii
+27|6|Międzynarodowy Dzień Mikro-, Małych i Średnich Przedsiębiorstw
+27|6|Dzień Szwagra
+27|6|Światowy Dzień Smerfa
+27|6|Światowy Dzień Osób Głuchoniewidomych
+28|6|Święto Marynarki Wojennej
+28|6|Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+28|6|Dzień Szwagra
+29|6|Dzień Rybaka
+29|6|Dzień Ratownika WOPR
+29|6|Święto Wojskowych Oddziałów Gospodarczych
+29|6|Międzynarodowy Dzień Tropików
+30|6|Dzień Asteroid
+30|6|Święto Wojsk Aeromobilnych
+30|6|Dzień Motyla Kapustnika
+1|7|Dzień Psa
+1|7|Dzień Sejmu Polskiego
+1|7|Światowy Dzień Architektury
+1|7|Międzynarodowy Dzień Owoców
+1|7|Święto Dowództwa Operacyjnego Rodzajów Sił Zbrojnych
+1|7|Międzynarodowy Dzień Reggae
+2|7|Dzień Dziennikarza Sportowego
+2|7|Międzynarodowy Dzień UFO
+3|7|Dzień Czerwonej Ostrej Papryczki Chili
+3|7|Międzynarodowy Dzień bez Toreb Foliowych
+3|7|Dzień Cioci i Wujka
+4|7|Święto Hot Doga
+4|7|Międzynarodowy Dzień Spółdzielczości
+5|7|Dzień Łapania za Biust
+5|7|Dzień Bikini
+6|7|Światowy Dzień Pocałunku
+6|7|Dzień Radcy Prawnego
+7|7|Światowy Dzień Czekolady
+9|7|Dzień Chodzenia Do Pracy Inną Drogą
+10|7|Dzień Nikoli Tesli
+10|7|Światowy Dzień Kebaba
+10|7|Dzień Frytek
+11|7|Narodowy Dzień Pamięci Ofiar Ludobójstwa na Wołyniu
+11|7|Światowy Dzień Ludności
+12|7|Dzień Męczeństwa Wsi Polskiej
+13|7|Międzynarodowy Dzień Rock and Rolla
+14|7|Dzień Łapania za Pupę
+14|7|Dzień Rekina
+14|7|Światowy Dzień Szympansa
+15|7|Dzień bez Telefonu Komórkowego
+15|7|Światowy Dzień Umiejętności Młodzieży
+16|7|Dzień Kawii Domowej
+16|7|Światowy Dzień Węża
+17|7|Światowy Dzień Emoji
+17|7|Ogólnopolski Dzień Tabaki
+18|7|Międzynarodowy Dzień Nelsona Mandeli
+18|7|Dzień Kawioru
+18|7|Światowy Dzień Słuchania
+19|7|Dzień Czerwonego Kapturka
+19|7|Dzień Lodów
+20|7|Międzynarodowy Dzień Szachów
+20|7|Dzień Księżyca
+22|7|Dzień Aproksymacji Pi
+22|7|Europejski Dzień wsparcia dla Ofiar Przestępstw z Nienawiści
+22|7|Światowy Dzień Mózgu
+23|7|Dzień Włóczykija
+24|7|Międzynarodowy dzień wirtualnej miłości
+24|7|Dzień Policjanta
+24|7|Dzień Pszczółki Mai
+25|7|Dzień Bezpiecznego Kierowcy
+25|7|Światowy Dzień Zapobiegania Utonięciom
+26|7|Międzynarodowy Dzień Ochrony Ekosystemu i Lasów Namorzynowych
+26|7|Światowy Dzień Dziadków i Osób Starszych
+27|7|Dzień Samotnych
+27|7|Dzień Chodzenia na Szczudłach
+28|7|Światowy Dzień Wirusowego Zapalenia Wątroby
+28|7|Dzień Kultu Masy Mięśniowej
+29|7|Światowy Dzień Tygrysa
+30|7|Międzynarodowy Dzień Przyjaźni
+30|7|Dzień Sernika
+31|7|Dzień Skarbowości
+31|7|Dzień Administratora
+1|8|Światowy Dzień Karmienia Piersią
+1|8|Narodowy Dzień Pamięci Powstania Warszawskiego
+1|8|Międzynarodowy Dzień Cabrio
+1|8|Dzień Pamięci Warszawy
+1|8|Międzynarodowy Dzień Alopecji
+1|8|Światowy Dzień Musztardy
+2|8|Światowy Dzień Pamięci o Zagładzie Romów
+2|8|Dzień Kolorowanek
+3|8|Dzień Arbuza
+4|8|Międzynarodowy Dzień Pantery Mglistej
+5|8|Dzień Bielizny
+6|8|Dzień Świeżego Oddechu
+7|8|Międzynarodowy Dzień Piwa i Piwowara
+7|8|Dzień Pracownika Opieki nad Osobami Starszymi
+8|8|Międzynarodowy Dzień Kota
+8|8|Wielki Dzień Pszczół
+8|8|Międzynarodowy Dzień Kobiecego Orgazmu
+9|8|Międzynarodowy Dzień Ludności Tubylczej na Świecie
+9|8|Dzień Miłośników Książek
+10|8|Dzień Przewodników i Ratowników Górskich
+10|8|Światowy Dzień Lwa
+11|8|Dzień Konserwatora Zabytków
+12|8|Dzień Pracoholików
+12|8|Międzynarodowy Dzień Młodzieży
+12|8|Światowy Dzień Słonia
+13|8|Międzynarodowy Dzień Osób Leworęcznych
+14|8|Dzień Energetyka
+15|8|Dzień Synowej
+16|8|Światowy Dzień Roller Coastera
+16|8|Międzynarodowy Dzień Latarni Morskich
+17|8|Dzień Pozytywnie Zakręconych
+17|8|Dzień Lumpeksu
+19|8|Światowy Dzień Pomocy Humanitarnej
+19|8|Światowy Dzień Fotografii
+20|8|Dzień Wyznawania Miłości
+20|8|Dzień Komara
+21|8|Światowy Dzień Optymisty
+21|8|Międzynarodowy Dzień Seksu
+22|8|Dzień Pracownika Ochrony
+22|8|Światowy Dzień Mleka Roślinnego
+22|8|Międzynarodowy Dzień Upamiętniający Ofiary Aktów Przemocy ze Względu na Religię lub Wyznanie
+23|8|Europejski Dzień Pamięci Ofiar Nazizmu i Stalinizmu
+23|8|Międzynarodowy Dzień Pamięci o Handlu Niewolnikami i jego Zniesieniu
+24|8|Dzień Windowsa
+24|8|Dzień Zdegradowania Plutona
+25|8|Dzień polskiej żywności
+25|8|Dzień Zupy Błyskawicznej
+26|8|Międzynarodowy Dzień Psa
+26|8|Święto Brokatu
+27|8|Dzień Tira
+27|8|Międzynarodowy Dzień Gier Książkowych
+28|8|Światowy Dzień Publicznego Czytania Komiksów
+28|8|Dzień Muszki
+28|8|Święto Lotnictwa Polskiego
+29|8|Dzień Spieczonego Bliźniaka
+29|8|Dzień Strażnika Gminnego i Miejskiego
+29|8|Międzynarodowy Dzień Sprzeciwu wobec Prób Jądrowych
+30|8|Dzień Taksówkarza
+30|8|Międzynarodowy Dzień Pamięci Osób Zaginionych
+30|8|Międzynarodowy Dzień Rekina Wielorybiego
+31|8|Dzień Blogów
+31|8|Dzień Solidarności i Wolności
+31|8|Święto Kawalerii Polskiej
+1|9|Święto Wojsk Obrony Przeciwlotniczej
+1|9|Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+2|9|Dzień Dużego Rozmiaru
+2|9|Światowy Dzień Pozyskiwania Talentów
+3|9|Dzień Wieżowców
+4|9|Światowy Dzień Zdrowia Seksualnego
+4|9|Dzień Orzechów Makadamia
+5|9|Międzynarodowy Dzień Dobroczynności
+5|9|Światowy Dzień Brody
+6|9|Dzień Walki z Prokrastynacją
+7|9|Międzynarodowy Dzień Czystego Powietrza dla Błękitnego Nieba
+7|9|Światowy Dzień Świadomości Dystrofii Mięśniowej Duchenne'a
+8|9|Dzień Dobrych Wiadomości
+8|9|Dzień Marzyciela
+8|9|Światowy Dzień Wellbeingu
+8|9|Międzynarodowy Dzień Alfabetyzacji
+8|9|Światowy Dzień Fizjoterapii
+9|9|Międzynarodowy Dzień Urody
+9|9|Dzień Testera Oprogramowania
+9|9|Światowy Dzień FAS
+9|9|Dzień Recyklingu Baterii
+10|9|Światowy Dzień Zapobiegania Samobójstwom
+10|9|Dzień Piłkarza
+12|9|Dzień Narodów Zjednoczonych dla Współpracy Południe-Południe
+12|9|Dzień Brukarza
+12|9|Światowy Dzień Pierwszej Pomocy
+12|9|Święto Wojsk Lądowych
+13|9|Dzień Całowania Chłopaków w Usta
+13|9|Dzień Weterana Służby Granicznej
+13|9|Dzień Programisty
+14|9|Dzień Walki z Wypaleniem Zawodowym
+15|9|Dzień Majonezu Kieleckiego
+15|9|Międzynarodowy Dzień Kropki
+15|9|Dzień Prostaty
+15|9|Międzynarodowy Dzień Demokracji
+15|9|Dzień Opakowań
+15|9|Dzień Olewania Systemu
+16|9|Dzień Bluesa
+16|9|Dzień Maszynisty
+16|9|Międzynarodowy Dzień Ochrony Warstwy Ozonowej
+16|9|Światowy Dzień Fryzjera
+16|9|Międzynarodowy Dzień Kardiologii Interwencyjnej
+17|9|Światowy Dzień Sybiraka
+17|9|Światowy Dzień Bezpieczeństwa Pacjenta
+17|9|Międzynarodowy Dzień Muzyki Country
+18|9|Międzynarodowy Dzień Bramy Garażowej
+18|9|Międzynarodowy Dzień Geologa
+18|9|Światowy Dzień Monitoringu Wody
+18|9|Międzynarodowy Dzień Równej Płacy
+18|9|Dzień Pierwszej Miłości
+18|9|Światowy Dzień Kierownika
+19|9|Dzień Emotikona
+19|9|Dzień Dzikiej Flory, Fauny i Naturalnych Siedlisk
+19|9|Międzynarodowy Dzień Mówienia jak Pirat
+19|9|Dzień Pracowników Służby BHP
+19|9|Dzień Wolnego Oprogramowania
+20|9|Ogólnopolski Dzień Przedszkolaka
+20|9|Dzień Parówki
+20|9|Dzień Parówkożercy
+20|9|Dzień Doceniania Żony
+21|9|Dzień Krajowej Administracji Skarbowej 
+21|9|Międzynarodowy Dzień Pokoju
+21|9|Dzień Kapsla
+21|9|Światowy Dzień Choroby Alzheimera
+21|9|Światowy Dzień Orderu Uśmiechu
+21|9|Międzynarodowy Dzień Modlitwy o Pokój
+22|9|Światowy Dzień bez Samochodu
+22|9|Dzień Ćwiczenia Przed Lustrem Prośby o Podwyżkę Płacy
+22|9|Światowy Dzień Nosorożca
+22|9|Światowy Dzień Dawcy Szpiku
+23|9|Dzień Spadającego Liścia
+23|9|Międzynarodowy Dzień Języków Migowych
+24|9|Dzień Stylistów Rzęs
+24|9|Światowy Dzień Morza
+25|9|Dzień Budowlańca
+25|9|Światowy Dzień Farmaceuty
+26|9|Europejski Dzień Języków (Międzynarodowy Dzień Języków Obcych)
+26|9|Światowy Dzień Antykoncepcji
+26|9|Światowy Dzień Królika
+26|9|Ogólnopolski Dzień Aptekarza
+27|9|Światowy Dzień Turystyki
+27|9|Międzynarodowy Dzień Głuchych
+27|9|Dzień Podziemnego Państwa Polskiego
+27|9|Święto Wojsk Obrony Terytorialnej
+27|9|Światowy Dzień Rzek
+27|9|Święto Infrastruktury Wojskowej
+28|9|Światowy Dzień Wścieklizny
+28|9|Międzynarodowy Dzień Tajniaka
+28|9|Światowy Dzień Jabłka
+29|9|Dzień Kawy
+29|9|Światowy Dzień Serca
+29|9|Dzień Kuriera i Przewoźnika
+29|9|Ogólnopolski Dzień Głośnego Czytania
+29|9|Dzień Hipochondryka
+29|9|Międzynarodowy Dzień Świadomości o Stratach i Marnotrawstwie Żywności
+30|9|Dzień Chłopaka
+30|9|Światowy Dzień Copywritera
+30|9|Międzynarodowy Dzień Tłumacza
+30|9|Dzień Archiwisty
+30|9|Międzynarodowy Dzień Podcastów
+1|10|Międzynarodowy Dzień Wegetarianizmu
+1|10|Międzynarodowy Dzień Pracownika Ochrony Zdrowia
+1|10|Międzynarodowy Dzień Osób Starszych
+1|10|Światowy Dzień Ptaków
+1|10|Międzynarodowy Dzień Muzyki
+1|10|Międzynarodowy Dzień Kawy
+1|10|Ogólnopolski Policyjny Dzień Odblasków
+2|10|Światowy Dzień Uśmiechu
+2|10|Międzynarodowy Dzień bez Przemocy
+2|10|Światowy Dzień Zwierząt Hodowlanych
+2|10|Dzień Anioła Stróża
+2|10|Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+3|10|Dzień Kasztana
+3|10|Dzień Tkaczki
+3|10|Europejski Dzień Ptaków
+4|10|Światowy Dzień Zwierząt
+4|10|Światowy Dzień Onkologii
+4|10|Dzień Polskiej Harcerki
+5|10|Światowy Dzień Mieszkalnictwa
+5|10|Światowy Dzień Nauczyciela
+6|10|Dzień Borsuka
+6|10|Światowy Dzień Mózgowego Porażenia Dziecięcego
+7|10|Dzień Wanny
+7|10|Dzień Efektywności Energetycznej
+8|10|Światowy Dzień Ośmiornicy
+8|10|Międzynarodowy Dzień Podologii
+8|10|Światowy Dzień Wzroku
+9|10|Światowy Dzień Poczty i Znaczka Pocztowego
+9|10|Międzynarodowy Dzień Pisania Listów
+9|10|Światowy Dzień Jaja
+10|10|Światowy Dzień Zdrowia Psychicznego
+10|10|Dzień Gier Planszowych
+10|10|Europejski Dzień Przeciw Karze Śmierci
+10|10|Światowy Dzień Drzewa
+10|10|Światowy Dzień Owsianki
+10|10|Święto Żołnierza Rezerwy
+10|10|Światowy Dzień Opieki Paliatywnej i Hospicjów
+11|10|Dzień Wychodzenia z Szafy
+11|10|Dzień Dziewczyny
+12|10|Dzień Kolumba w Ameryce
+12|10|Międzynarodowy Dzień Reumatyzmu
+12|10|Dzień Bezpiecznego Komputera
+13|10|Międzynarodowy Dzień Ograniczania Klęsk Żywiołowych
+13|10|Dzień Bez Stanika
+13|10|Międzynarodowy Dzień Ograniczania Skutków Katastrof
+13|10|Dzień Dawcy Szpiku
+13|10|Międzynarodowy Dzień Noszenia Garnituru
+13|10|Dzień Ratownictwa Medycznego
+14|10|Światowy Dzień Normalizacji
+15|10|Światowy Dzień Mycia Rąk
+15|10|Europejski Dzień Walki z Rakiem Piersi
+15|10|Międzynarodowy Dzień Mediacji
+15|10|Światowy Dzień Białej Laski
+15|10|Dzień Dziecka Utraconego (Dzień Pamięci Dzieci Nienarodzonych i Zmarłych)
+15|10|Międzynarodowy Dzień Kobiet Wiejskich
+15|10|Święto Wojsk Radiotechnicznych
+16|10|Światowy Dzień Żywności
+16|10|Dzień Papieża Jana Pawła II
+16|10|Europejski Dzień Przywracania Czynności Serca
+16|10|Dzień Szefa
+16|10|Światowy Dzień Owoców i Warzyw
+16|10|Światowy Dzień Chleba
+16|10|Światowy Dzień Anestezjologa
+16|10|Międzynarodowy Dzień Świadomości Rozwojowych Zaburzeń Językowych
+17|10|Dzień Arkusza Kalkulacyjnego
+17|10|Międzynarodowy Dzień Walki z Ubóstwem
+17|10|Polski Dzień Sprzedaży Bezpośredniej
+17|10|Międzynarodowy Dzień Naprawy
+18|10|Dzień Poczty Polskiej
+18|10|Światowy Dzień Menopauzy i Andropauzy
+18|10|Europejski Dzień przeciwko Handlowi Ludźmi
+18|10|Święto Wojsk Łączności i Informatyki
+18|10|Światowy Dzień Krawata
+19|10|Narodowy Dzień Pamięci Duchownych Niezłomnych
+20|10|Światowy Dzień Statystyki
+20|10|Europejski Dzień Seniora
+20|10|Międzynarodowy Dzień Kontrolera Ruchu Lotniczego
+20|10|Międzynarodowy Dzień Szefa Kuchni
+20|10|Dzień Pasztecika Szczecińskiego
+20|10|Dzień Krajobrazu
+20|10|Światowy Dzień Osteoporozy
+20|10|Dzień Szelek
+20|10|Międzynarodowy Dzień Leniwca
+21|10|Międzynarodowy dzień odpoczynku od świętowania
+21|10|Dzień Bez Skarpetek
+21|10|Światowy Dzień Godności
+22|10|Światowy Dzień Osób Jąkających
+22|10|Dzień CAPS LOCKA
+22|10|Dzień Praw Rodziny
+23|10|Międzynarodowy Dzień Pantery Śnieżnej
+24|10|Światowy Dzień Origami
+24|10|Dzień Narodów Zjednoczonych
+24|10|Światowy Dzień Informacji na temat Rozwoju
+24|10|Dzień Bez Maila
+24|10|Międzynarodowe Święto Uciekających na Rowerze
+24|10|Międzynarodowe Święto Roweru
+24|10|Światowy Dzień Flaczków
+24|10|Międzynarodowy Dzień Dyplomatów
+25|10|Dzień Kundelka
+25|10|Dzień Szewca
+25|10|Dzień Ustawy o Ochronie Zwierząt
+25|10|Dzień Młodzieży PCK
+25|10|Światowy Dzień Makaronu
+25|10|Międzynarodowy Dzień Artystów
+25|10|Światowy Dzień Opery
+25|10|Europejski Dzień Prawnika
+25|10|Europejski Dzień Sprawiedliwości Obywatelskiej
+25|10|Światowy Dzień Kapłana
+26|10|Światowy Dzień Donacji i Transplantacji
+26|10|Światowy Dzień Wiedzy o Interseksualności
+27|10|Światowy Dzień Dziedzictwa Audiowizualnego
+27|10|Święto Terenowych Organów Administracji Wojskowej
+28|10|Dzień Odpoczynku dla Zszarganych Nerwów
+28|10|Światowy Dzień Animacji
+28|10|Dzień Miłośników Pluszaków
+29|10|Międzynarodowy Dzień Łuszczycy
+29|10|Dzień Udaru Mózgu
+29|10|Dzień Internetu
+30|10|Dzień Spódnicy
+30|10|Święto Napojów Wyskokowych
+31|10|Światowy Dzień Oszczędzania
+31|10|Światowy Dzień Miast
+1|11|Światowy Dzień Wegan
+2|11|Międzynarodowy Dzień Ukrócenia Bezkarności za Zbrodnie Przeciwko Dziennikarzom
+3|11|Święto Myśliwych - Hubertus
+3|11|Dzień Gospodyni Domowej
+3|11|Dzień Frazesu
+3|11|Dzień Kanapki
+4|11|Dzień Taniego Wina
+5|11|Dzień Postaci z Bajek
+5|11|Międzynarodowy Dzień Języka Romskiego
+6|11|Międzynarodowy Dzień Zapobiegania Wyzyskowi Środowiska Naturalnego podczas Wojen i Konfliktów Zbrojnych
+6|11|Dzień Saksofonu
+7|11|Światowy Dzień Feministek
+7|11|Międzynarodowy Dzień Fizyki Medycznej
+7|11|Dzień Kotleta Schabowego
+7|11|Światowy Dzień Numbata
+8|11|Europejski Dzień Zdrowego Jedzenia i Gotowania
+8|11|Międzynarodowy Dzień Łamańców Językowych
+8|11|Światowy Dzień Radiologii
+9|11|Światowy Dzień Gry Wstępnej
+9|11|Europejski Dzień Wynalazcy
+9|11|Międzynarodowy Dzień Walki z Faszyzmem i Antysemityzmem
+9|11|Światowy Dzień Adopcji
+9|11|Światowy Dzień Sierot
+10|11|Dzień Jeża
+10|11|Dzień Młodzieży
+10|11|Światowy Dzień Nauki dla Pokoju i Rozwoju
+11|11|Japoński Dzień Singli
+11|11|Święto Orderu Virtuti Militari
+12|11|Światowy Dzień Ergonomii
+12|11|Światowy Dzień Zapalenia Płuc
+12|11|Światowy Dzień Drwala
+12|11|Światowy Dzień Jakości
+13|11|Międzynarodowy Dzień Niewidomych
+13|11|Dzień Placków Ziemniaczanych
+13|11|Święto Służby Uzbrojenia i Elektroniki
+13|11|Światowy Dzień Dobroci
+13|11|Dzień Biznesmena
+14|11|Światowy Dzień Cukrzycy
+14|11|Dzień Seniora
+14|11|Międzynarodowy Dzień Zwalczania Nielegalnego Handlu Dobrami Kultury
+15|11|Dzień Slipek
+15|11|Święto Wojskowego Centrum Geograficznego
+15|11|Dzień Uwięzionego Pisarza
+15|11|Światowy Dzień Ubogich
+15|11|Światowy Dzień Pamięci o Ofiarach Wypadków Drogowych
+16|11|Dzień Tolerancji
+16|11|Dzień Służby Zagranicznej RP
+17|11|Dzień Studenta
+17|11|Światowy Dzień Wcześniaka
+17|11|Dzień Czarnego Kota
+17|11|Dzień Baklawy
+18|11|Europejski Dzień Wiedzy o Antybiotykach
+18|11|Międzynarodowy Dzień Sztuki Islamu
+18|11|Dzień Myszki Miki
+18|11|Dzień Systemów Informacji Geograficznej
+18|11|Światowy Dzień Przewlekłej Obturacyjnej Choroby Płuc
+19|11|Międzynarodowy Dzień Mężczyzn
+19|11|Światowy Dzień Filozofii
+19|11|Światowy Dzień Rzucania Palenia Tytoniu
+19|11|Dzień Toalet
+19|11|Międzynarodowy Dzień Zapobiegania Przemocy Wobec Dzieci
+19|11|Dzień Przedsiębiorczości Kobiet
+19|11|Święto Młodego Wina
+20|11|Dzień Uprzemysłowienia Afryki
+20|11|Międzynarodowy Dzień Praw Dziecka
+20|11|Dzień Pamięci Osób Transpłciowych
+20|11|Dzień Absurdu
+20|11|Światowy Dzień Tabliczki Mnożenia
+21|11|Światowy Dzień Rybołówstwa
+21|11|Dzień Pracownika Socjalnego
+21|11|Światowy Dzień Życzliwości i Pozdrowień
+21|11|Światowy Dzień Telewizji
+21|11|Święto Służby Czołgowo-Samochodowej
+22|11|Dzień Kredki
+22|11|Święto Transportu Wojskowego
+23|11|Święto Wojskowej Służby Prawnej
+23|11|Dzień Fibonacciego
+24|11|Katarzynki
+24|11|Dzień Buraka
+24|11|Światowy Dzień Bliźniąt Syjamskich
+25|11|Dzień Pluszowego Misia
+25|11|Dzień Tramwajarza
+25|11|Dzień Kolejarza
+25|11|Międzynarodowy Dzień Eliminacji Przemocy wobec Kobiet
+25|11|Dzień Bez Futra
+25|11|Ogólnopolski Dzień Erasmusa
+26|11|Światowy Dzień Drzewa Oliwnego
+26|11|Dzień Ciasta
+27|11|Dzień Nitkowania
+27|11|Międzynarodowy Dzień Inżyniera Systemów
+28|11|Święto Marynarki Wojennej
+28|11|Dzień Pocałunku
+28|11|Dzień bez Zakupów
+28|11|Dzień Podłości
+28|11|Dzień Otwarty Notariatu
+29|11|Dzień Podchorążego
+29|11|Międzynarodowy Dzień Solidarności z Narodem Palestyńskim
+30|11|Dzień Białych Skarpetek
+30|11|Dzień Pamięci Wszystkich Ofiar Wojen Chemicznych
+1|12|Światowy Dzień AIDS
+1|12|Światowy Dzień Puszczania Bąków
+1|12|Dzień Numizmatyków
+1|12|Dzień Jubilera
+2|12|Międzynarodowy Dzień Upamiętniający Zniesienie Niewolnictwa
+2|12|Dzień Placków
+3|12|Międzynarodowy Dzień Osób Niepełnosprawnych
+3|12|Dzień Naftowca i Gazownika
+3|12|Światowy Dzień Majsterkowicza
+4|12|Dzień Górnika
+4|12|Święto Wojsk Rakietowych i Artylerii
+4|12|Międzynarodowy Dzień Geparda
+4|12|Dzień Sztucznego Futra
+5|12|Międzynarodowy Dzień Wolontariusza
+5|12|Światowy Dzień Gleby
+5|12|Dzień Ninja
+5|12|Dzień Marynarza Śródlądowego
+6|12|Dzień Anioła
+6|12|Dzień Lombardów
+7|12|Międzynarodowy Dzień Lotnictwa Cywilnego
+8|12|Dzień Kupca
+9|12|Dzień Dziewic
+9|12|Międzynarodowy Dzień Przeciwdziałania Korupcji
+9|12|Międzynarodowy Dzień Pamięci i Godności Ofiar Zbrodni Ludobójstwa oraz Zapobiegania tej Zbrodni
+9|12|Międzynarodowy Dzień Medycyny Weterynaryjnej
+10|12|Dzień Świątecznego Swetra
+10|12|Dzień Praw Człowieka
+10|12|Dzień Bota
+11|12|Dzień Chruścików
+11|12|Międzynarodowy Dzień Terenów Górskich
+11|12|Międzynarodowy Dzień Tanga
+12|12|Dzień Guzika
+12|12|Międzynarodowy Dzień Powszechnego Ubezpieczenia Zdrowotnego
+12|12|Międzynarodowy Dzień Neutralności
+12|12|Dzień Gwiazdy Betlejemskiej
+13|12|Dzień Księgarza
+13|12|Dzień Pamięci Ofiar Stanu Wojennego
+13|12|Światowy Dzień Skrzypiec
+13|12|Międzynarodowy Dzień Palenia Świec
+14|12|Dzień Małpy
+14|12|Dzień Pamięci 47 Roninów
+15|12|Dzień Zamenhofa (Dzień Esperanto)
+15|12|Dzień Herbaty
+15|12|Święto Służby Metrologii Wojskowej
+16|12|Dzień Pokrywania Wszystkiego Czekoladą
+16|12|Dzień Pojednania
+17|12|Ogólnopolski Dzień Bez 
+17|12|Dzień bez Przekleństw
+17|12|Dzień Braci Wright
+17|12|Ogólnopolski Dzień Rozmów Twarzą w Twarz
+18|12|Międzynarodowy Dzień Migrantów
+18|12|Dzień Języka Arabskiego
+18|12|Dzień Underdoga
+19|12|Dzień wiecznie zielonych roślin
+20|12|Dzień Ryby
+20|12|Międzynarodowy Dzień Solidarności
+21|12|Dzień Orgazmu
+21|12|Światowy Dzień Snowboardu
+21|12|Światowy Dzień Pozdrawiania Brunetek
+21|12|Dzień Pamięci o Poległych na Misjach
+27|12|Dzień Keksa
+27|12|Międzynarodowy Dzień Gotowości na Epidemię
+28|12|Dzień Gry w Karty
+30|12|Dzień Serka Wiejskiego
+31|12|Dzień bez Bielizny

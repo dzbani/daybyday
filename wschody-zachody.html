@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wschód i Zachód Słońca w Polsce 2026 | DaybyDay</title>
+  <meta name="description" content="Godziny wschodu i zachodu słońca w Polsce na każdy dzień 2026. Sprawdź o której wschodzi i zachodzi słońce w Twoim mieście.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/wschody-zachody.html">
+  <meta property="og:title" content="Wschód i Zachód Słońca w Polsce 2026">
+  <meta property="og:description" content="Godziny wschodu i zachodu słońca na każdy dzień 2026. Wybierz miasto i sprawdź długość dnia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/wschody-zachody.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .page { max-width:1100px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:600px; margin-bottom:2rem; }
+    .city-tabs { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:2rem; }
+    .city-tab { padding:.4rem 1.1rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.82rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
+    .city-tab.active,.city-tab:hover { background:var(--text); color:white; border-color:var(--text); }
+    .today-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; margin-bottom:2rem; }
+    .today-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:1rem; }
+    .today-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1rem; margin-bottom:1.5rem; }
+    .today-item { text-align:center; }
+    .today-icon { font-size:2rem; margin-bottom:.4rem; }
+    .today-time { font-family:'Instrument Serif',serif; font-size:1.8rem; line-height:1; }
+    .today-name { font-size:.75rem; color:var(--muted); margin-top:.25rem; }
+    .day-bar { margin-top:1rem; }
+    .day-bar-label { font-size:.72rem; color:var(--muted); margin-bottom:.5rem; display:flex; justify-content:space-between; }
+    .day-bar-track { height:12px; background:var(--tag-bg); border-radius:60px; position:relative; overflow:hidden; }
+    .day-bar-sun { position:absolute; height:100%; background:linear-gradient(90deg,#F4A261,#E76F51); border-radius:60px; transition:width .4s; }
+    .section-title { font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:1.25rem; }
+    .week-table { margin-bottom:2.5rem; }
+    .wtable { width:100%; border-collapse:collapse; font-size:.85rem; }
+    .wtable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.65rem .75rem; border-bottom:2px solid var(--border); }
+    .wtable td { padding:.65rem .75rem; border-bottom:1px solid var(--border); }
+    .wtable tr.today-row td { background:var(--tag-bg); font-weight:600; }
+    .wtable tr:hover td { background:var(--tag-bg); }
+    .month-tabs { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.5rem; }
+    .month-tab { padding:.4rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.8rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
+    .month-tab.active,.month-tab:hover { background:var(--text); color:white; border-color:var(--text); }
+    .month-section { display:none; }
+    .month-section.active { display:block; }
+    .month-table { }
+    .mtable { width:100%; border-collapse:collapse; font-size:.82rem; }
+    .mtable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.6rem .75rem; border-bottom:2px solid var(--border); }
+    .mtable td { padding:.55rem .75rem; border-bottom:1px solid var(--border); }
+    .mtable tr.today-row td { background:var(--tag-bg); font-weight:600; }
+    .info-box { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem 1.5rem; margin-bottom:2rem; display:flex; gap:1rem; }
+    .info-icon { font-size:1.3rem; flex-shrink:0; }
+    .info-text { font-size:.83rem; color:var(--muted); line-height:1.65; }
+    .info-text strong { color:var(--text); }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .nav-links{display:none} }
+    .location-search { display:flex; gap:.5rem; margin-bottom:2rem; }
+    .location-input { flex:1; padding:.45rem 1rem; border:1px solid var(--border); border-radius:60px; font-size:.85rem; font-family:inherit; background:var(--surface); color:var(--text); outline:none; transition:border-color .15s; }
+    .location-input:focus { border-color:var(--text); }
+    .location-input::placeholder { color:var(--muted); }
+    .location-btn { padding:.45rem 1.2rem; background:var(--text); color:white; border:none; border-radius:60px; font-size:.82rem; font-weight:500; font-family:inherit; cursor:pointer; transition:opacity .15s; white-space:nowrap; }
+    .location-btn:hover { opacity:.8; }
+    .location-btn:disabled { opacity:.5; cursor:default; }
+    .location-status { font-size:.78rem; color:var(--muted); margin-top:-.5rem; margin-bottom:1.5rem; min-height:1.2em; }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="page-label">Astronomia</div>
+  <h1 class="page-title">Wschód i zachód słońca</h1>
+  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>
+
+  <div class="city-tabs" id="cityTabs"></div>
+
+  <div class="location-search">
+    <input type="text" class="location-input" id="locationInput" placeholder="Wpisz nazwę miejscowości, np. Zakopane, Kielce, Sandomierz…" />
+    <button class="location-btn" id="locationBtn" onclick="searchLocation()">Szukaj</button>
+  </div>
+  <div class="location-status" id="locationStatus"></div>
+
+  <div class="today-card">
+    <div class="today-label" id="todayLabel">Dziś — 16 czerwca 2026 · Warszawa</div>
+    <div class="today-grid" id="todayGrid"></div>
+    <div class="day-bar">
+      <div class="day-bar-label"><span id="barLeft"></span><span id="barRight"></span></div>
+      <div class="day-bar-track"><div class="day-bar-sun" id="barSun"></div></div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-icon">ℹ️</div>
+    <div class="info-text"><strong>Czas letni i zimowy:</strong> Polska stosuje czas letni (CEST = UTC+2) od ostatniej niedzieli marca do ostatniej niedzieli października, a czas zimowy (CET = UTC+1) przez pozostałą część roku. Wszystkie godziny podane są w czasie lokalnym.</div>
+  </div>
+
+  <div class="section-title">Prognoza na 7 dni</div>
+  <div class="week-table">
+    <table class="wtable">
+      <thead><tr><th>Data</th><th>Dzień tyg.</th><th>☀️ Wschód</th><th>🌅 Zachód</th><th>Długość dnia</th></tr></thead>
+      <tbody id="weekBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-title">Wschody i zachody — <span id="monthTitle">czerwiec 2026</span></div>
+  <div class="month-tabs" id="monthTabs"></div>
+  <div id="monthSections"></div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="index.html">Strona główna</a>
+    <a href="zmiana-czasu.html">Zmiana czasu</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+const CITIES = {
+  warszawa: { name:'Warszawa', lat:52.23, lon:21.01 },
+  krakow:   { name:'Kraków',   lat:50.06, lon:19.94 },
+  gdansk:   { name:'Gdańsk',   lat:54.35, lon:18.65 },
+  wroclaw:  { name:'Wrocław',  lat:51.11, lon:17.04 },
+  poznan:   { name:'Poznań',   lat:52.41, lon:16.93 },
+  katowice: { name:'Katowice', lat:50.26, lon:19.02 },
+  lodz:     { name:'Łódź',     lat:51.75, lon:19.46 },
+  lublin:   { name:'Lublin',   lat:51.25, lon:22.57 },
+};
+
+const MONTHS_NOM = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
+const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+const WEEKDAYS_SHORT = ['nd.','pn.','wt.','śr.','cz.','pt.','sb.'];
+const WEEKDAYS = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+
+let currentCity = 'warszawa';
+
+// Algorytm NOAA Solar Calculator
+function calcSunCore(year, month, day, lat, lon) {
+  const rad = Math.PI / 180;
+  const isLeap = year%4===0 && (year%100!==0 || year%400===0);
+  const mo = [0,31,59,90,120,151,181,212,243,273,304,334];
+  const N = mo[month-1] + day + (isLeap && month>2 ? 1 : 0);
+  const g2 = 2*Math.PI/(isLeap?366:365) * (N-1+0.5);
+  const eqt = 229.18*(0.000075+0.001868*Math.cos(g2)-0.032077*Math.sin(g2)-0.014615*Math.cos(2*g2)-0.04089*Math.sin(2*g2));
+  const decl = 0.006918-0.399912*Math.cos(g2)+0.070257*Math.sin(g2)-0.006758*Math.cos(2*g2)+0.000907*Math.sin(2*g2)-0.002697*Math.cos(3*g2)+0.00148*Math.sin(3*g2);
+  const cosHA = (Math.cos(90.833*rad) - Math.sin(lat*rad)*Math.sin(decl)) / (Math.cos(lat*rad)*Math.cos(decl));
+  if (Math.abs(cosHA) > 1) return null;
+  const HA = Math.acos(cosHA) / rad;
+  const riseMin = 720 - 4*(lon+HA) - eqt;
+  const setMin  = 720 - 4*(lon-HA) - eqt;
+  return { riseUTC: riseMin/60, setUTC: setMin/60 };
+}
+
+function getSunTimes(date, lat, lon) {
+  const y = date.getFullYear(), m = date.getMonth()+1, d = date.getDate();
+  const c = calcSunCore(y, m, d, lat, lon);
+  if (!c) return null;
+  const tz = date.getTimezoneOffset() === -120 ? 2 : 1;
+  return { rise: c.riseUTC + tz, set: c.setUTC + tz };
+}
+
+function fmtTime(h) {
+  const hh = Math.floor(h) % 24;
+  const mm = Math.round((h - Math.floor(h)) * 60);
+  return String(hh).padStart(2,'0') + ':' + String(mm % 60).padStart(2,'0');
+}
+
+function fmtDuration(h) {
+  const tot = Math.round(h * 60);
+  return Math.floor(tot/60) + ' godz. ' + (tot%60) + ' min';
+}
+
+function renderToday(c) {
+  const today = new Date();
+  const times = getSunTimes(today, c.lat, c.lon);
+  document.getElementById('todayLabel').textContent = `Dziś — ${today.getDate()} ${['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'][today.getMonth()]} ${today.getFullYear()} · ${c.name}`;
+  const dur = times.set - times.rise;
+  document.getElementById('todayGrid').innerHTML = `
+    <div class="today-item"><div class="today-icon">🌅</div><div class="today-time">${fmtTime(times.rise)}</div><div class="today-name">Wschód słońca</div></div>
+    <div class="today-item"><div class="today-icon">☀️</div><div class="today-time">${fmtTime((times.rise+times.set)/2)}</div><div class="today-name">Południe słoneczne</div></div>
+    <div class="today-item"><div class="today-icon">🌇</div><div class="today-time">${fmtTime(times.set)}</div><div class="today-name">Zachód słońca</div></div>
+    <div class="today-item"><div class="today-icon">⏱️</div><div class="today-time">${Math.floor(dur)}h ${Math.round((dur%1)*60)}m</div><div class="today-name">Długość dnia</div></div>
+  `;
+  document.getElementById('barLeft').textContent = fmtTime(times.rise);
+  document.getElementById('barRight').textContent = fmtTime(times.set);
+  const pct = ((times.set - times.rise) / 24 * 100).toFixed(1);
+  document.getElementById('barSun').style.cssText = `left:${(times.rise/24*100).toFixed(1)}%;width:${pct}%`;
+}
+
+function renderWeek(c) {
+  const todayBase = new Date(); todayBase.setHours(12,0,0,0);
+  let html = '';
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(todayBase); d.setDate(todayBase.getDate() + i);
+    const t = getSunTimes(d, c.lat, c.lon);
+    const dur = t.set - t.rise;
+    const isToday = i === 0;
+    html += `<tr class="${isToday?'today-row':''}">
+      <td>${d.getDate()} ${MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}</td>
+      <td>${WEEKDAYS[d.getDay()]}</td>
+      <td>${fmtTime(t.rise)}</td>
+      <td>${fmtTime(t.set)}</td>
+      <td>${fmtDuration(dur)}</td>
+    </tr>`;
+  }
+  document.getElementById('weekBody').innerHTML = html;
+}
+
+function renderMonths(c) {
+  const tabsEl = document.getElementById('monthTabs');
+  const sectionsEl = document.getElementById('monthSections');
+  tabsEl.innerHTML = '';
+  sectionsEl.innerHTML = '';
+
+  MONTHS_NOM.forEach((m, mi) => {
+    const tab = document.createElement('button');
+    tab.className = 'month-tab' + (mi === 5 ? ' active' : '');
+    tab.textContent = m;
+    const mIdx = mi;
+    tab.onclick = () => {
+      document.querySelectorAll('.month-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.month-section').forEach(s => s.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('ms-sun-' + mIdx).classList.add('active');
+      document.getElementById('monthTitle').textContent = m + ' 2026';
+    };
+    tabsEl.appendChild(tab);
+
+    const sec = document.createElement('div');
+    sec.className = 'month-section' + (mi === 5 ? ' active' : '');
+    sec.id = 'ms-sun-' + mIdx;
+
+    const daysInMonth = new Date(2026, mi + 1, 0).getDate();
+    let rows = '';
+    for (let d = 1; d <= daysInMonth; d++) {
+      const date = new Date(2026, mi, d);
+      const t = getSunTimes(date, c.lat, c.lon);
+      const dur = t.set - t.rise;
+      const isToday = mi === 5 && d === 16;
+      rows += `<tr class="${isToday?'today-row':''}">
+        <td>${d}</td><td>${WEEKDAYS_SHORT[date.getDay()]}</td>
+        <td>${fmtTime(t.rise)}</td><td>${fmtTime(t.set)}</td>
+        <td>${fmtDuration(dur)}</td>
+      </tr>`;
+    }
+    sec.innerHTML = `<table class="mtable"><thead><tr><th>Dzień</th><th></th><th>☀️ Wschód</th><th>🌅 Zachód</th><th>Długość dnia</th></tr></thead><tbody>${rows}</tbody></table>`;
+    sectionsEl.appendChild(sec);
+  });
+}
+
+function selectCity(key) {
+  currentCity = key;
+  document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector('[data-city="'+key+'"]').classList.add('active');
+  document.getElementById('locationStatus').textContent = '';
+  const c = CITIES[key];
+  renderToday(c);
+  renderWeek(c);
+  renderMonths(c);
+}
+
+async function searchLocation() {
+  const input = document.getElementById('locationInput');
+  const btn = document.getElementById('locationBtn');
+  const status = document.getElementById('locationStatus');
+  const q = input.value.trim();
+  if (!q) return;
+  btn.disabled = true;
+  status.textContent = 'Szukam…';
+  try {
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&countrycodes=pl&format=json&limit=1&addressdetails=1`;
+    const res = await fetch(url, { headers: { 'Accept-Language': 'pl', 'User-Agent': 'DaybyDay/1.0' } });
+    const data = await res.json();
+    if (!data.length) { status.textContent = 'Nie znaleziono miejscowości w Polsce.'; btn.disabled = false; return; }
+    const r = data[0];
+    const lat = parseFloat(r.lat), lon = parseFloat(r.lon);
+    const name = r.address?.city || r.address?.town || r.address?.village || r.address?.hamlet || r.display_name.split(',')[0];
+    document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
+    status.textContent = `Wyniki dla: ${r.display_name.split(',').slice(0,3).join(',')}`;
+    const c = { name, lat, lon };
+    renderToday(c);
+    renderWeek(c);
+    renderMonths(c);
+  } catch(e) {
+    status.textContent = 'Błąd połączenia z serwisem geolokalizacji.';
+  }
+  btn.disabled = false;
+}
+
+// City tabs
+const cityTabsEl = document.getElementById('cityTabs');
+Object.entries(CITIES).forEach(([key, c]) => {
+  const btn = document.createElement('button');
+  btn.className = 'city-tab' + (key === 'warszawa' ? ' active' : '');
+  btn.setAttribute('data-city', key);
+  btn.textContent = c.name;
+  btn.onclick = () => selectCity(key);
+  cityTabsEl.appendChild(btn);
+});
+
+document.getElementById('locationInput').addEventListener('keydown', e => { if (e.key === 'Enter') searchLocation(); });
+
+selectCity('warszawa');
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

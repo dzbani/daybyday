@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przysłowia Polskie — przysłowia na każdy dzień | DaybyDay</title>
+  <meta name="description" content="Polskie przysłowia ludowe na każdy dzień roku — o pogodzie, porach roku i mądrości ludowej. Kalendarz przysłów polskich.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/przyslowia.html">
+  <meta property="og:title" content="Przysłowia Polskie — przysłowia na każdy dzień roku">
+  <meta property="og:description" content="Polskie przysłowia ludowe na każdy dzień: o pogodzie, porach roku i życiu codziennym.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/przyslowia.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:1100px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:600px; margin-bottom:2rem; }
+    .month-tabs { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:2rem; }
+    .month-tab { padding:.4rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.8rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
+    .month-tab.active,.month-tab:hover { background:var(--text); color:white; border-color:var(--text); }
+    .month-section { display:none; }
+    .month-section.active { display:block; }
+    .day-group { margin-bottom:1.5rem; }
+    .day-header { display:flex; align-items:baseline; gap:.75rem; padding:.6rem 0; border-bottom:1px solid var(--border); margin-bottom:.75rem; }
+    .day-num { font-family:'Instrument Serif',serif; font-size:1.8rem; line-height:1; min-width:2.5rem; }
+    .day-info { }
+    .day-weekday { font-size:.78rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+    .day-names { font-size:.8rem; color:var(--muted); margin-top:.1rem; }
+    .proverbs-list { display:flex; flex-direction:column; gap:.6rem; }
+    .proverb-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1rem 1.25rem; display:flex; gap:.75rem; align-items:flex-start; }
+    .proverb-icon { font-size:1.1rem; flex-shrink:0; margin-top:.1rem; }
+    .proverb-text { font-family:'Instrument Serif',serif; font-size:1rem; line-height:1.55; font-style:italic; }
+    .today-badge { background:var(--text); color:white; font-size:.65rem; font-weight:600; padding:.15rem .5rem; border-radius:60px; margin-left:.5rem; vertical-align:middle; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .nav-links{display:none} }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="page-label">Tradycja</div>
+  <h1 class="page-title">Kalendarz przysłów polskich</h1>
+  <p class="page-sub">Tradycyjne przysłowia polskie przyporządkowane do dni i miesięcy. Mądrość ludowa na temat pogody, przyrody, rolnictwa i codziennego życia przekazywana przez pokolenia.</p>
+
+  <div class="month-tabs" id="monthTabs"></div>
+  <div id="monthSections"></div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="index.html">Strona główna</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+const MONTHS = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
+const WEEKDAYS = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
+
+const PROVERBS = {
+  1: [
+    { d:1,  names:'Mieczysławy, Seweryna',         p:['Jak styczeń mroźny, rok będzie płodny.','Nowy Rok — nowe szczęście, stara bieda się polepsza.','Jaki Nowy Rok, taki cały rok.'] },
+    { d:2,  names:'Bazylego, Grzegorza',            p:['Styczeń ciepły — marzec mroźny.','Gdy styczeń wilgotny, lato suche.'] },
+    { d:3,  names:'Genowefy, Daniela',              p:['Mróz w styczeń — pszenica w spiżarni.','Styczeń bez śniegu — zły rok dla rolnika.'] },
+    { d:4,  names:'Tytusa, Anieli',                 p:['Zimny styczeń — ciepły maj.','Gdy w styczeń mróz trzaska, lato złotem błyska.'] },
+    { d:5,  names:'Edwarda, Szymona',               p:['Styczeń odwilżą znaczony — kwiecień mroźny.','Przed Trzech Króli dni jasne — rok urodzajny.'] },
+    { d:6,  names:'Kacpra, Melchiora, Baltazara',   p:['Na Trzech Króli zima w pełni.','Gdy na Trzech Króli mróz — do marca będzie ostry kłos.','Trzej Królowie z gwiazdą — zima do wiosny nie odpada.'] },
+    { d:7,  names:'Juliana, Rajmunda',              p:['Po Trzech Królach styczeń strzela mrozem.','Styczeń pełen śniegu — dobry rok dla stodoły.'] },
+    { d:8,  names:'Seweryna, Marii',                p:['Ile śniegu w styczeń pada, tyle deszczu w maju pada.','Styczeń mglisty — marzec deszczowy.'] },
+    { d:9,  names:'Marceliny, Adama',               p:['Mroźny styczeń — ciepły kwiecień.','Styczeń słoneczny — ale zimny.'] },
+    { d:10, names:'Wilhelma, Danuty',               p:['Gdy w połowie zimy śnieg leży — zboże w stodole się jeży.','Styczeń śniegiem pokryty — w lecie pola obfite.'] },
+    { d:11, names:'Honoraty, Ernesta',              p:['Im więcej śniegu w styczeń pada, tym wiosna wcześniej nastaje.','Śnieg w styczeń to złoto dla pól.'] },
+    { d:12, names:'Benedykta, Tatiany',             p:['Styczeń ciepły — wiosna ostra.','Gdy w styczeń woda, w marcu loda.'] },
+    { d:13, names:'Bogumyły, Weroniki',             p:['Styczeń deszczem się zaznajomi — marzec śniegiem się przypomni.','Styczeń bez mrozu — zły znak dla chłopa.'] },
+    { d:14, names:'Feliksa, Niny',                  p:['Mrozy stajenne w styczeń — dobry rok dla koni.','Styczeń czternasty — wróżba na wiosnę.'] },
+    { d:15, names:'Pawła, Arnolda',                 p:['Styczeń mroźny bez śniegu — wiosna bez deszczu.','Gdyby styczeń miał lato, wrzesień miałby mróz za to.'] },
+    { d:16, names:'Marcelego, Waldemara',           p:['Na Marcelego zima się zaostrza lub odpuszcza.','Marceli — jeśli mroźny, rok korzystny.'] },
+    { d:17, names:'Antoniego',                      p:['Na świętego Antoniego mróz piszczy na błoniu.','Antoni surowy — luty spokojny.'] },
+    { d:18, names:'Małgorzaty, Piotra',             p:['Środek zimy — mróz się pości lub odpuszcza.','Styczeń bez wichru — dobry rok dla ogrodnika.'] },
+    { d:19, names:'Henryka, Mariusza',              p:['Gdy styczeń mgłami przykryty — lato suche.','Po świętym Henryku wiosna za trzy tygodnie.'] },
+    { d:20, names:'Fabiana, Sebastiana',            p:['Na świętego Sebastiana zima jest panią.','Gdy na Fabiana słońce zaświeci, piękne lato się wróży.','Sebastian mroźny — rżysko obfite.'] },
+    { d:21, names:'Agnieszki',                      p:['Agnieszka mroźna — wiosna wczesna.','Na świętą Agnieszkę śnieg na polach gęsto leży.'] },
+    { d:22, names:'Anastazego, Wincentego',         p:['Na Wincentego słońce zaświeci — zima się skróci.','Wincenty mroźny — kwiecień bezbłędny.'] },
+    { d:23, names:'Ildefonsa, Rajmunda',            p:['Rajmund śniegiem obsypany — marzec umiarkowany.','Koniec trzeciej dekady stycznia — zima odpuszcza lub się zaostrza.'] },
+    { d:24, names:'Felicji, Tymoteusza',            p:['Tymoteusz mroźny — rok wczesny.','Na Tymoteusza dzień dłuższy o chwilę.'] },
+    { d:25, names:'Pawła, Delfiny',                 p:['Na nawrócenie Pawła dobra pogoda — rok będzie miał uroda.','Jeśli w dzień świętego Pawła słońce świeci, rok zboże zasięci.','Paweł z mrozem — lipiec z żarem.'] },
+    { d:26, names:'Tymoteusza, Tytusa',             p:['Po świętym Pawle dni wyraźnie przyrastają.','Styczeń u końca — zima w pół drogi.'] },
+    { d:27, names:'Anieli, Hieronima',              p:['Aniela mroźna — lato chłodne.','Na koniec stycznia zima liczy dni.'] },
+    { d:28, names:'Tomasza z Akwinu, Walerego',     p:['Wróżba na wigilię lutego: ile śniegu, tyle deszczu w maju.','Ostatnie dni stycznia srogie — luty łagodne.'] },
+    { d:29, names:'Franciszka Salezego, Zdzisławy', p:['Franciszek na śniegu chodzi — luty za nim przychodzi.','Koniec miesiąca bez mrozu — wróży rok urodzaju.'] },
+    { d:30, names:'Martyny, Macieja',               p:['Martyna w mrozie — wiosna skora.','Przed lutym zima jeszcze zębami kłapie.'] },
+    { d:31, names:'Marceli, Jana Bosco',             p:['Ostatni dzień zimy pierwszej — lutowy mróz już czeka.','Styczeń za sobą zostawia ślady na śniegu.'] },
+  ],
+  2: [
+    { d:1,  names:'Brygidy, Ignacego',              p:['Luty krótki, ale bardzo czuły.','Luty — tydzień mroźny, tydzień odwilżowy.'] },
+    { d:2,  names:'Marii, Ofiarowania Pańskiego',   p:['Na Gromniczną połowa zimy minioną.','Gdy na Gromniczną słońce zaświeci, niedźwiedź w dziurze jeszcze poleci.','Gromniczna słoneczna — sześć tygodni do wiosny daleko.'] },
+    { d:3,  names:'Błażeja, Oskara',                p:['Na świętego Błażeja zima do ucieczki się poddaje.','Błażej gardło leczy — mrozy też ustępują.'] },
+    { d:4,  names:'Weroniki, Andrzeja',             p:['Luty zmienny jak kameleon — raz mróz, raz odwilż.','Gdy luty z deszczem — marzec ze śniegiem.'] },
+    { d:5,  names:'Agaty, Adelajdy',                p:['Na świętą Agatę zima traci szatę.','Agata słoneczna — wiosna wczesna.'] },
+    { d:6,  names:'Doroty, Pawła',                  p:['Dorotka kwiatki niesie — ale mróz je przyniesie.','Gdy Dorota z burzą — wiosna będzie burzliwa.'] },
+    { d:7,  names:'Ryszarda, Romualda',             p:['Luty pełen śniegu — marzec pełen wody.','Śnieg w lutym — złoto na polu w lecie.'] },
+    { d:8,  names:'Hieronima, Jana',                p:['Luty deszczowy — marzec mroźny.','Gdy w lutym odwilż — mróz w marcu powróci.'] },
+    { d:9,  names:'Apolonii, Cyryla',               p:['Luty bez mrozu — zły rok dla zbóż.','Apolonia z mrozem — zęby bolą, ale zima zdrowa.'] },
+    { d:10, names:'Scholastyki, Wilhelma',           p:['Scholastyka w śniegu — lato w chłodzie.','Środek lutego — zima zaczyna tracić siły.'] },
+    { d:11, names:'Marii z Lourdes, Lucjana',       p:['Na Matkę Boską Gromniczną albo mrozy, albo odwilż.','Luty lubi zaskoczyć.'] },
+    { d:12, names:'Eulalii, Damiana',               p:['Luty na odwilż — marzec na ziąb.','Gdy w połowie lutym ciepło — biada ogrodniku.'] },
+    { d:13, names:'Grzegorza, Agnieszki',           p:['Przed Walentym ptaki się już budzą.','Luty zmienny, rok niezmienny.'] },
+    { d:14, names:'Walentego, Cyryla',              p:['Na świętego Walentego ptaki się kojarzą, ludzie miłością darzą.','Walenty mrozem straszy, ale zimy nie przedłuży.','Gdy Walenty słoneczny — miłość i urodzaj.'] },
+    { d:15, names:'Faustyny, Jowity',               p:['Po Walentym dzień coraz wyraźniej dłuższy.','Faustyna słoneczna — wiosna blisko.'] },
+    { d:16, names:'Julianny, Danuty',               p:['Luty ma krótko — ale kłuje mocno.','Juliana mroźna — marzec łagodny.'] },
+    { d:17, names:'Aleksego, Donata',               p:['Na Aleksego pola jeszcze we śnie leżą.','Luty ku końcowi — zima się chwieje.'] },
+    { d:18, names:'Szymona, Konstancji',            p:['Szymon w lutym — wiosna za miesiąc.','Luty ostatnią kartę ze śniegu przerzuca.'] },
+    { d:19, names:'Arnolda, Konrada',               p:['Luty odwilżowy — marzec śnieżny.','Przed końcem lutego — obserwuj niebo.'] },
+    { d:20, names:'Leona, Ludomiry',                p:['Leon mroźny — kwiecień słoneczny.','Luty z mrozem — wiosna w sile.'] },
+    { d:21, names:'Eleonory, Anny',                 p:['Luty ostatnią bitwę z zimą stacza.','Gdy w lutym grzmi — wiosna bez zwłoki.'] },
+    { d:22, names:'Marty, Piotra',                  p:['Na Piotrowym Stolcu pola śniegiem okute.','Luty — zima się spieszy.'] },
+    { d:23, names:'Romany, Damiana',                p:['Przedostatni tydzień lutowy — wiosna w bramie.','Gdy luty bez śniegu — lato bez deszczu.'] },
+    { d:24, names:'Macieja, Bogusława',             p:['Święty Maciej lód łamie, a jak nie — to zamraża.','Na Maciejowy dzień zima bierze w lód albo pierzyna w błoto wpada.','Maciej z lodem — bociany za rok.'] },
+    { d:25, names:'Wiktora, Cezarego',              p:['Wiktor z odwilżą — marzec ze śniegiem.','Luty ku końcowi — pole coraz głośniej woła.'] },
+    { d:26, names:'Aleksandra, Mirosławy',          p:['Aleksander na przełomie — zima lub wiosna.','Ostatni tydzień lutowy liczy mrozy.'] },
+    { d:27, names:'Gabriela, Leandra',              p:['Gabriel z ciepłem — marzec zaskakuje.','Luty ciepły — marzec zdradliwy.'] },
+    { d:28, names:'Romana, Makarego',               p:['Ostatni dzień lutego — zima pożegnać się nie spieszy.','Luty krótki — ale pamiętany.'] },
+  ],
+  3: [
+    { d:1,  names:'Albina, Antoniny',               p:['Marzec jak zając — ucieka i wraca.','Pierwszy marzec ciepły — kwiecień mroźny.'] },
+    { d:2,  names:'Heleny, Karola',                 p:['Marzec deszczowy — maj słoneczny.','Gdy marzec z deszczem — zboże radosne.'] },
+    { d:3,  names:'Kingi, Kunegundy',               p:['Marzec trzeci — zima się wlecze.','Kunegunda z mrozem — Kazimierz z odwilżą.'] },
+    { d:4,  names:'Kazimierza',                     p:['Święty Kazimierz śnieg przywozi lub odpędza.','Na Kazimierza wiosnę za kołnierz ciepło wpuszcza.','Kazimierz mroźny — rok zbożny.'] },
+    { d:5,  names:'Fryderyka, Adriana',             p:['Po świętym Kazimierzu rzeki zaczynają topnieć.','Marzec zmienny — rolnik czujny.'] },
+    { d:6,  names:'Róży, Wiktora',                  p:['Marzec z mrozem po Kazimierzu — krótko postoi.','Gdy w marcu burza — maj gorący.'] },
+    { d:7,  names:'Tomasza, Felicyty',              p:['Marzec z piorunem — lato z grzmotem.','Siedem dni marca — zima lub wiosna.'] },
+    { d:8,  names:'Marii, Jana',                    p:['Na Marię w marcu kwiaty w śniegu.','Gdy marzec mokry — polska trawa tłusta.'] },
+    { d:9,  names:'Franciszki, Dominika',           p:['Marzec dziewiąty — wiosna się spieszy.','Franciszka w słońcu — wiosna za tydzień.'] },
+    { d:10, names:'Aleksandra, Maksa',              p:['Marzec deszczowy i zimny — czerwiec gorący.','Gdy marzec szumi — bociany rychło lecą.'] },
+    { d:11, names:'Benedykta, Rozalii',             p:['Benedykt przychodzi z wiosną na plecach.','Na Benedykta słońce — dobre zboże w polu.'] },
+    { d:12, names:'Grzegorza',                      p:['Na świętego Grzegorza idzie zima do morza.','Gdy Grzegorz przyszedł, bociany za nim przyszły.','Grzegorz słoneczny — wiosna pewna.'] },
+    { d:13, names:'Bożeny, Krystyny',               p:['Po Grzegorzu bocian przyleciał — zima odfrunęła.','Marzec trzynasty — kalendarz wiosenny.'] },
+    { d:14, names:'Leontyny, Matyldy',              p:['Matylda wiosenna — lato ciepłe.','Marzec z wichrem — kwiecień spokojny.'] },
+    { d:15, names:'Klemensa, Longina',              p:['Połowa marca — zima lub wiosna.','Gdy marzec z mrozem w połowie — nie siać przed końcem marca.'] },
+    { d:16, names:'Izabeli, Bonifacego',            p:['Izabela w słońcu — sady obiecują.','Marzec ciepły w połowie — kwiecień mokry.'] },
+    { d:17, names:'Patryka, Zbigniewa',             p:['Na Patryka wiosna za progiem stoi.','Patryk z ciepłem — chmiel w górę rośnie.'] },
+    { d:18, names:'Cyryla, Edwarda',                p:['Cyryl wiosenny — ogród radosny.','Przed Józefem obejrzyj sad i ogród.'] },
+    { d:19, names:'Józefa',                         p:['Święty Józef ciepło do chaty niesie.','Na świętego Józefa sadzonki w ziemię wkładaj, bo dobry owoc w sadzie będziesz miał.','Józef słoneczny — rok w owoce bogaty.'] },
+    { d:20, names:'Aleksandra, Klaudii',            p:['Równonoc wiosenna — dzień z nocą w parze.','Na równonoc wiosenną przyroda się budzi.'] },
+    { d:21, names:'Benedykta, Nikifora',            p:['Pierwszy dzień wiosny w kalendarzu — ale natura decyduje.','Marzec dwudziesty pierwszy — wiosna oficjalnie.'] },
+    { d:22, names:'Kazimiry, Eugenii',              p:['Po równonocy dzień przeważa nad nocą.','Marzec ciepły po dwudziestym — kwiecień pogodny.'] },
+    { d:23, names:'Pelagii, Feliksa',               p:['Na koniec marca ziemia pragnie nasion.','Marzec z burzą — rok urodzajny.'] },
+    { d:24, names:'Marka, Gabriela',                p:['Gabriel wiosenny — dobra nowina dla pól.','Przed Zwiastowaniem bocian ląduje.'] },
+    { d:25, names:'Marii, Zwiastowania',            p:['Na Zwiastowanie bocian do domu wita — wiosna jak złoto.','Na Zwiastowanie kto nie sieje, przez lato popłakuje.','Zwiastowanie słoneczne — rok dostatni.'] },
+    { d:26, names:'Larysy, Emanueli',               p:['Po Zwiastowaniu zima powrotu nie ma.','Marzec ku końcowi — siewnik gotuj.'] },
+    { d:27, names:'Ernesta, Jana',                  p:['Ostatnia dekada marca — czas siewu.','Gdy marzec ciepły na końcu — kwiecień będzie trudny.'] },
+    { d:28, names:'Anieli, Sykstusa',               p:['Aniela wiosenna — kwiaty za tydzień.','Marzec odchodzi — kwiecień nadchodzi.'] },
+    { d:29, names:'Wiktoryna, Helmuta',             p:['Przedostatni marzec — siej owies z ufnością.','Marzec z wiatrem — kwiecień z deszczem.'] },
+    { d:30, names:'Amelii, Leonarda',               p:['Na koniec marca — żywot się budzi.','Amelia wiosenna — sad rozkwita.'] },
+    { d:31, names:'Beniamina, Guida',               p:['Ostatni marzec — wiosna rządzi.','Gdy koniec marca ciepły — maj pracowitych nagradza.'] },
+  ],
+  4: [
+    { d:1,  names:'Hugona, Ireny',                  p:['Kwiecień plecień — bo przeplata trochę zimy, trochę lata.','Kwiecień mokry — w stodole pełne wiadra.','Prima Aprilis — żart kwiatami okryty.'] },
+    { d:2,  names:'Franciszka, Urszuli',            p:['Kwiecień deszczowy — trawnik zielony.','Gdy drugi kwiecień z deszczem — maj słoneczny.'] },
+    { d:3,  names:'Ryszarda, Ireny',                p:['Kwiecień trzeci — zima wciąż się wlecze.','Mróz w kwiecień — owoc w lipcu.'] },
+    { d:4,  names:'Izydora, Benedykta',             p:['Na Izydora pola się śmieją.','Kwiecień czwarty — sprawdź czy sad kwitnie.'] },
+    { d:5,  names:'Ireny, Wincentego',              p:['Kwiecień z wichrem — marzec pamiętany.','Gdy w kwiecień liście rozwijają — lato pełne obiecują.'] },
+    { d:6,  names:'Celestyna, Wilhelma',            p:['Celestyn wiosenny — ogrodnicy radośni.','Kwiecień szósty — ogród sprawdź.'] },
+    { d:7,  names:'Jana, Rufina',                   p:['Kwiecień z burzą — rok w zboże bogaty.','Gdy w kwiecień grzmoty — sierpień z dostatkiem.'] },
+    { d:8,  names:'Cezarego, Dionizego',            p:['Kwiecień mokry na początku — koniec suchy.','Dionizy z deszczem — winogrona kwaśne.'] },
+    { d:9,  names:'Marii, Waltruda',                p:['Na początku kwiet kwiaty ziemia wydaje.','Kwiecień deszczowy to złoto w stodole.'] },
+    { d:10, names:'Michała, Makarego',              p:['Michał wiosenny — pola głośno wołają.','Kwiecień dziesiąty — siej warzywa z ufnością.'] },
+    { d:11, names:'Leona, Filipa',                  p:['Kwiecień z słońcem — ziemia wysycha.','Gdy kwiecień słoneczny — maj suchy.'] },
+    { d:12, names:'Juliusza, Zenona',               p:['Kwiecień daje i odbiera — tak chce natura.','Juliusz wiosenny — wróżba lata.'] },
+    { d:13, names:'Przemysława, Hermenegilda',      p:['Kwiecień trzynasty — sprawdź niebo.','Gdy w kwiecień mróz — majowi pomóż.'] },
+    { d:14, names:'Waleriana, Justyny',             p:['Walerian wiosenny — zioła rosną.','Kwiecień czternasty — siej buraki.'] },
+    { d:15, names:'Anastazji, Wacława',             p:['Połowa kwiet — wiosna w pełni.','Wacław wiosenny — ogrody radosne.'] },
+    { d:16, names:'Benedykta, Bernadety',           p:['Bernadeta kwiat ma w ręku — wiosna na wsi.','Kwiecień szesnasty — jabłonie kwitnące.'] },
+    { d:17, names:'Roberta, Rudolfa',               p:['Robert wiosenny — jeziora pełne.','Kwiecień siedemnasty — sprawdź kłosy.'] },
+    { d:18, names:'Bogumiły, Apoloniusza',          p:['Bogumił w wiośnie — dusze szczęśliwe.','Kwiecień ciepły w połowie — maj kapryśny.'] },
+    { d:19, names:'Tymona, Adolfa',                 p:['Kwiecień z mroźnymi nocami — majowe przymrozki pamiętaj.','Timon wiosenny — ryby w rzece.'] },
+    { d:20, names:'Agnieszki, Czesława',            p:['Agnieszka wiosenna — zioła kwitnące.','Kwiecień dwudziesty — kopaj w ogrodzie.'] },
+    { d:21, names:'Anzelma, Feliksa',               p:['Kwiecień z ciepłem po dwudziestym — maj pracowity.','Anzelm z deszczem — maj zielony.'] },
+    { d:22, names:'Łukasza, Kai',                   p:['Ziemia Matka w kwiecień budzi — rolnik pracuje.','Na Dzień Ziemi natura mówi.'] },
+    { d:23, names:'Wojciecha',                      p:['Na świętego Wojciecha bociany budzą z kochanki nieba.','Gdy Wojciech mroźny, owoc tego roku będzie kosztowny.','Wojciech z słońcem — żyto się obiecuje.'] },
+    { d:24, names:'Horacego, Jerzego',              p:['Jerzy na koniu — zima pobita.','Na świętego Jerzego wąż z dziury wychodzi.'] },
+    { d:25, names:'Marka, Jarosława',               p:['Na Marka — słońce grzeje mocniej.','Marek wiosenny — poluj na pieczarki.'] },
+    { d:26, names:'Marzeny, Klety',                 p:['Kwiecień ku końcowi — pszczoły w kwiatach.','Marzenka w słońcu — winogrona obiecuje.'] },
+    { d:27, names:'Zyty, Teofila',                  p:['Zyta z kwiatami — stodoła pełna.','Kwiecień na końcu — sprawdź drzewa owocowe.'] },
+    { d:28, names:'Witalisa, Piotra',               p:['Witalis z deszczem — ogród kwitnie.','Kwiecień ostatni — siej co możesz.'] },
+    { d:29, names:'Katarzyny ze Sieny, Roberty',    p:['Katarzyna wiosenna — zioła zbieraj.','Przed majem kwiecień ostatnią szansę daje.'] },
+    { d:30, names:'Katarzyny, Mariana',             p:['Kwiecień bez deszczu — w stodole cicho.','Kwiecień z piorunami — lato jak marzenie.','Ostatni kwiecień — maj za drzwiami.'] },
+  ],
+  5: [
+    { d:1,  names:'Józefa Robotnika, Filipa',       p:['Maj chłodny i deszczowy — rok urodzajny.','Kto w maju nie pracuje, ten przez zimę gościuje.','Majowe deszcze — złoto dla pól.'] },
+    { d:2,  names:'Zygmunta, Atanazego',            p:['Maj drugi ciepły — trzecia dekada sucha.','Gdy maj z deszczem na początku — sierpień obfity.'] },
+    { d:3,  names:'Marii, Antoniny',                p:['Na Konstytucję Trzeciego Maja — wiosna pełna.','Maj trzeci z kwiatami — rok dostatni.'] },
+    { d:4,  names:'Floriana, Moniki',               p:['Florian ognie gasi — deszcze przywołuje.','Na Floriana deszcz pada — pożary nie grożą.'] },
+    { d:5,  names:'Ireny, Waldemara',               p:['Maj piąty — sprawdź czy sad kwitnie.','Irena w słońcu — dobre lato obiecuje.'] },
+    { d:6,  names:'Jana, Judyty',                   p:['Maj szósty deszczowy — czerwiec pogodny.','Gdy w maju mgły poranne — upał w południe.'] },
+    { d:7,  names:'Stanisława, Gizeli',             p:['Na świętego Stanisława lato się przedstawia.','Stanisław z deszczem — żyto radosne.'] },
+    { d:8,  names:'Stanisława Biskupa, Wiktora',    p:['Maj ósmy z burzą — rok w żyto bogaty.','Gdy maj grzmi — sierpień gorący.'] },
+    { d:9,  names:'Grzegorza, Bożeny',              p:['Grzegorz majowy — winogrona obiecuje.','Maj dziewiąty ciepły — wrzesień łagodny.'] },
+    { d:10, names:'Izydora, Antoniego',             p:['Izydor rolnik — patron dobrych zbiorów.','Na Izydora zasiewaj najpóźniej.'] },
+    { d:11, names:'Filipa, Ignacego',               p:['Filip majowy — szparagi w ziemi.','Maj jedenasty — deszcz czy słońce — obie dobre.'] },
+    { d:12, names:'Pankracego, Dominika',           p:['Pankracy mróz przynosi — strzeż sadzone.','Zimni Ogrodnicy: Pankracy, Serwacy, Bonifacy — trzy mroźne dni.'] },
+    { d:13, names:'Serwacego, Natalii',             p:['Serwacy mroźny — drzewa owocowe cierpią.','Gdy Serwacy bez mrozu — lato gorące.'] },
+    { d:14, names:'Bonifacego, Korony',             p:['Bonifacy z lodem — ogrodnicy płaczą.','Po Bonifacym mróz nie wraca.'] },
+    { d:15, names:'Zofii, Izydora',                 p:['Zimna Zofia, Pankracy, Serwacy — trzej mroźni bracia.','Na Zofię idź boso po rosie, zdrowie do domu przyniesie.','Po Zimnej Zofii — mróz odpuszcza.'] },
+    { d:16, names:'Andrzeja Boboli, Jana',          p:['Po zimnych ogrodnikach — ciepło pewne.','Maj szesnasty — siej bez obaw.'] },
+    { d:17, names:'Paschalisa, Sławomira',          p:['Maj siedemnasty — pszczoły pracują.','Sławomir majowy — zboże wyrośnie.'] },
+    { d:18, names:'Eryka, Jana',                    p:['Maj osiemnasty z deszczem — czerwiec suchy.','Eryk majowy — jeziora pełne.'] },
+    { d:19, names:'Piotra, Ivo',                    p:['Piotr majowy — gaj zielony.','Maj dziewiętnasty — czas sadzić pomidory.'] },
+    { d:20, names:'Antoniny, Bernardyna',           p:['Bernardyn z kwiatami — lato piękne.','Maj dwudziesty — sprawdź zioła.'] },
+    { d:21, names:'Wiktora, Tymoteusza',            p:['Wiktor w maju — w polu wesoło.','Maj ciepły po dwudziestym — dobrze wróży.'] },
+    { d:22, names:'Romy, Julii',                    p:['Rita z różą — maj pełen kwiatów.','Maj dwudziesty drugi — ogród jak raj.'] },
+    { d:23, names:'Dezyderego, Iwony',              p:['Dezydery z deszczem — staw pełny.','Maj na końcu — lato się zbliża.'] },
+    { d:24, names:'Joanny, Zuzanny',                p:['Joanna majowa — pola zielone.','Maj dwudziesty czwarty — ogórek zasadź.'] },
+    { d:25, names:'Grzegorza VII, Urbana',          p:['Na świętego Urbana dobre wino w beczułce schowane.','Jeśli Urban z deszczem, wino kwaśne do pieśni.','Urban słoneczny — winnica obiecuje.'] },
+    { d:26, names:'Filipa Neri, Eweliny',           p:['Filip Neri — kapłan wiosenny.','Maj dwudziesty szósty — sprawdź strąki.'] },
+    { d:27, names:'Augustyna, Jana',                p:['Augustyn majowy — zioła leśne.','Maj na końcu zbiera siły do lata.'] },
+    { d:28, names:'Germana, Jarosława',             p:['German majowy — las zielony.','Przedostatni tydzień maja — lato za dwa kroki.'] },
+    { d:29, names:'Maksymiliana, Magdaleny',        p:['Maj dwudziesty dziewiąty — sprawdź w polu.','Magdalena majowa — kwiaty pełne.'] },
+    { d:30, names:'Ferdynanda, Joanny',             p:['Ferdynand majowy — rok słodki.','Maj na ostatku — każdy chwyta wolny czas.'] },
+    { d:31, names:'Anieli, Petroneli',              p:['Ostatni maj — lato tuż tuż.','Petronela majowa — wróżba radosnego lata.','Na końcu maja — liczy się żyto.'] },
+  ],
+  6: [
+    { d:1,  names:'Justyny, Nikodema',              p:['Czerwiec ciepły — zboże radosne.','Czerwiec deszczowy — sierpień gorący.'] },
+    { d:2,  names:'Marceliny, Erazma',              p:['Czerwiec drugi — sprawdź truskawki.','Erazm z deszczem — ogród kwitnie.'] },
+    { d:3,  names:'Klotyldy, Karola',               p:['Karol czerwcowy — lato zapewnia.','Czerwiec trzeci — owce strzyc czas.'] },
+    { d:4,  names:'Franciszka, Kwiryna',            p:['Czerwiec czwarty — słońce grzeje.','Gdy czerwiec z burzą na początku — lato gorące.'] },
+    { d:5,  names:'Bonifacego, Walburgi',           p:['Bonifacy czerwcowy — miód w ulu.','Czerwiec piąty — pszczoły w kwiatach.'] },
+    { d:6,  names:'Norberta, Filipa',               p:['Norbert czerwcowy — zboże w kłosach.','Czerwiec szósty — sprawdź rzepak.'] },
+    { d:7,  names:'Roberta, Wiesławy',              p:['Czerwiec siódmy — truskawki dojrzałe.','Wiesław czerwcowy — rzeki pełne.'] },
+    { d:8,  names:'Medarda',                        p:['Medard deszczem obdarzył — czterdzieści dni deszczem straszył.','Na Medarda jak pada — przez czterdzieści dni nie ustaje woda.','Medard suchy — czterdzieści dni bez deszczu.'] },
+    { d:9,  names:'Diany, Felicjana',               p:['Po Medardzie czterdzieści dni niezmienne.','Czerwiec dziewiąty — sprawdź ogród.'] },
+    { d:10, names:'Bogumiła, Małgorzaty',           p:['Bogumił z deszczem — pszczoły w pracy.','Czerwiec dziesiąty — owoce nalewaj.'] },
+    { d:11, names:'Barnaby, Jana',                  p:['Barnaba czerwcowy — dzień apostoła słońca.','Czerwiec jedenasty — kwiaty zbieraj.'] },
+    { d:12, names:'Jana, Onufrego',                 p:['Onufry czerwcowy — pustelnicy w cieniu.','Czerwiec dwunasty — komary aktywne.'] },
+    { d:13, names:'Antoniego z Padwy',              p:['Antoni z Padwy — kto zguby szuka, znajdzie.','Na Antoniego deszcz pada — zboże pełne wody.'] },
+    { d:14, names:'Walerego, Michała',              p:['Czerwiec czternasty — żyto kwitnie.','Walery czerwcowy — ryby dorodne.'] },
+    { d:15, names:'Wita, Modesta',                  p:['Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy.','Na świętego Wita zboże zakwita.','Na świętego Wita ze śpiewem ptaków kwita.'] },
+    { d:16, names:'Benona, Aliny',                  p:['Czerwiec szesnasty — len zbieraj.','Alina z rosą — ogród radosny.'] },
+    { d:17, names:'Laury, Marcjalisa',              p:['Laura czerwcowa — lato w rozkwicie.','Czerwiec siedemnasty — pszczoły zbierają.'] },
+    { d:18, names:'Marka, Elżbiety',               p:['Marek czerwcowy — zioła leśne dojrzałe.','Czerwiec osiemnasty — jagody w lesie.'] },
+    { d:19, names:'Gerwazego, Protazego',           p:['Gerwazy z deszczem — Paweł z słońcem.','Czerwiec dziewiętnasty — truskawki ostatnie.'] },
+    { d:20, names:'Bogny, Rafaela',                 p:['Czerwiec dwudziesty — lato oficjalnie.','Rafael czerwcowy — ryby skaczą.'] },
+    { d:21, names:'Alojzego, Rudolfa',              p:['Na Alojzego — dzień najdłuższy.','Letnie przesilenie — słońce na szczycie.'] },
+    { d:22, names:'Pauliny, Jana',                  p:['Po przesileniu dzień zaczyna wracać.','Czerwiec dwudziesty drugi — siana czas.'] },
+    { d:23, names:'Wandy, Józefa',                  p:['Wanda czerwcowa — wianki na wodzie.','Na Sobótkę dziewczęta kwiatami się ozdabiają.'] },
+    { d:24, names:'Jana Chrzciciela',               p:['Na Jana Chrzciciela słońce nad ziemią miga — urodzaj nie ucieka.','Gdy na świętego Jana rzeka wzbiera — rok w polu obfity.','Na Jana kąp się w rzece, zdrowie do ciała płynie.'] },
+    { d:25, names:'Łucji, Wilhelma',                p:['Po Janie lato chodzi inaczej.','Czerwiec dwudziesty piąty — len kwitnie.'] },
+    { d:26, names:'Jana, Dawida',                   p:['Dawid czerwcowy — wody ciepłe.','Czerwiec dwudziesty szósty — zbieraj pierwsze jagody.'] },
+    { d:27, names:'Cyryla, Władysława',             p:['Władysław z burzą — deszcz do końca tygodnia.','Czerwiec dwudziesty siódmy — żyto dojrzewa.'] },
+    { d:28, names:'Leona, Anny',                    p:['Leon czerwcowy — pszczoły w miodzie.','Czerwiec ku końcowi — żniwa za miesiąc.'] },
+    { d:29, names:'Piotra i Pawła',                 p:['Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.','Od Piotra i Pawła — żyto do kosy się kłania.','Gdy Piotr i Paweł słoneczni — zboże złote.'] },
+    { d:30, names:'Ottona, Emilii',                 p:['Ostatni czerwiec — żniwa pukają w bramę.','Czerwiec koniec — lato w sile.'] },
+  ],
+  7: [
+    { d:1,  names:'Mariana, Haliny',                p:['Lipiec skwarny — rok owocny.','Deszcz lipcowy rolnikowi nie drogowy.','Lipiec ciepły — pszczoły szczęśliwe.'] },
+    { d:2,  names:'Marii z Góry Karmel, Ottona',    p:['Lipiec deszczowy — sierpień suchy.','Gdy lipiec mglisty — jesień piękna.'] },
+    { d:3,  names:'Tomasza, Jacka',                 p:['Tomasz lipcowy — żniwa blisko.','Lipiec trzeci — sprawdź rzepak.'] },
+    { d:4,  names:'Elżbiety, Zygmunta',             p:['Lipiec czwarty — zboże w pełni.','Elżbieta lipcowa — jagody leśne.'] },
+    { d:5,  names:'Karoliny, Antoniego',            p:['Lipiec piąty — sprawdź siano.','Karolina lipcowa — pola złote.'] },
+    { d:6,  names:'Dominiki, Gotarda',              p:['Lipiec szósty — burze możliwe.','Gdy lipiec z burzami — sierpień spokojny.'] },
+    { d:7,  names:'Klaudii, Cyryla',                p:['Lipiec siódmy — owce na pastwisku.','Cyryl lipcowy — rzeki ciepłe.'] },
+    { d:8,  names:'Elżbiety, Eugeniusza',           p:['Lipiec ósmy — żniwa zaczynają.','Eugeniusz lipcowy — owoce dojrzałe.'] },
+    { d:9,  names:'Weroniki, Zenona',               p:['Weronika lipcowa — twarz słońcem pocałowana.','Lipiec dziewiąty — sprawdź jabłka.'] },
+    { d:10, names:'Wawrzyńca, Rufiny',              p:['Rufina lipcowa — wino w beczkach.','Lipiec dziesiąty — słońce w zenicie.'] },
+    { d:11, names:'Benedykta, Olgi',                p:['Benedykt lipcowy — las pełen grzybów.','Lipiec jedenasty — sprawdź ogórek.'] },
+    { d:12, names:'Jana Gwalberta, Brunona',        p:['Lipiec dwunasty — lato w środku.','Bruno lipcowy — ryby płyną.'] },
+    { d:13, names:'Henryka, Sary',                  p:['Henryk lipcowy — żniwa pewne.','Lipiec trzynasty — deszcz czy słońce.'] },
+    { d:14, names:'Kamila, Bonawentury',            p:['Kamil lipcowy — chory na słońce.','Lipiec czternasty — sprawdź maliny.'] },
+    { d:15, names:'Henryka, Włodzimierza',          p:['Połowa lipca — lato w pełni.','Włodzimierz lipcowy — wiśnie dojrzałe.'] },
+    { d:16, names:'Marii z Góry Karmel, Euzebiusza',p:['Na Karmel — ziele i kwiaty w koszu.','Lipiec szesnasty — grzyby w lesie szukaj.'] },
+    { d:17, names:'Aleksego, Andrzeja',             p:['Aleksy lipcowy — chmiel się wspina.','Lipiec siedemnasty — sprawdź pszczoły.'] },
+    { d:18, names:'Sławy, Szymona',                 p:['Sława lipcowa — pola żółte.','Lipiec osiemnasty — deszcz lipcowy cenny.'] },
+    { d:19, names:'Wincentego, Wiesławy',           p:['Wincenty lipcowy — winogrona w kwiecie.','Lipiec dziewiętnasty — sprawdź wiśnie.'] },
+    { d:20, names:'Eliasza, Czesławy',              p:['Na Eliasza burze i pioruny — rolnicy się kłaniają.','Eliasz deszczem albo suszą rządzi.','Gdy Eliasz grzmi — lato żar wyda.'] },
+    { d:21, names:'Daniela, Wawrzyńca',             p:['Daniel lipcowy — rzeki ciepłe.','Lipiec dwudziesty pierwszy — sprawdź żyto.'] },
+    { d:22, names:'Marii Magdaleny',                p:['Maria Magdalena z deszczem — grzyby po deszczu.','Na Magdaleny deszcz pada — urodzaj wróży.'] },
+    { d:23, names:'Brygidy, Apolinarego',           p:['Brygida lipcowa — len zbieraj.','Lipiec dwudziesty trzeci — cebula dojrzewa.'] },
+    { d:24, names:'Kingi, Jadwigi',                 p:['Kinga lipcowa — sól i chleb na stole.','Lipiec dwudziesty czwarty — sprawdź buraki.'] },
+    { d:25, names:'Jakuba',                         p:['Na świętego Jakuba zbierać czas grzyba.','Gdy Jakub z deszczem — figi do wina.','Jakub lipcowy — grzyby w lesie.'] },
+    { d:26, names:'Anny, Joachima',                 p:['Na Annę — babcie zbierają zioła.','Anna lipcowa — żniwa pewne.'] },
+    { d:27, names:'Natalii, Lilii',                 p:['Natalia lipcowa — pola żółte.','Lipiec dwudziesty siódmy — sprawdź len.'] },
+    { d:28, names:'Innocentego, Wiktora',           p:['Wiktor lipcowy — ryby skaczą.','Lipiec ku końcowi — żniwa zaczynają.'] },
+    { d:29, names:'Marty, Olgi',                    p:['Marta lipcowa — stół pełen.','Na Martę — gospodyni zbiera pierwsze żniwa.'] },
+    { d:30, names:'Piotra, Julity',                 p:['Piotr lipcowy — żniwa w pełni.','Lipiec trzydziesty — sprawdź sianokosy.'] },
+    { d:31, names:'Ignacego Loyoli, Fabiana',       p:['Ostatni lipiec — sierpień puka.','Ignacy lipcowy — pole złote.','Koniec lipca — żniwa w pełni.'] },
+  ],
+  8: [
+    { d:1,  names:'Alfonsa, Piotra',                p:['Sierpień z deszczem — rolnik z pieszczą.','Pierwszy sierpień mokry — całe lato mokre.','Sierpień cały — pracą napełniaj.'] },
+    { d:2,  names:'Gustawa, Euzebiusza',            p:['Sierpień drugi — żniwa trwają.','Gustaw sierpniowy — zboże zbieraj.'] },
+    { d:3,  names:'Nikodema, Lidii',                p:['Sierpień trzeci — owce strzyc czas.','Lidia sierpniowa — sad dojrzały.'] },
+    { d:4,  names:'Jana Vianneya, Dominika',        p:['Sierpień czwarty — grzyby w lesie.','Dominik sierpniowy — miód w ulu.'] },
+    { d:5,  names:'Marii, Kasjana',                 p:['Sierpień piąty — sprawdź ogórek.','Gdy sierpień deszczowy — jesień długa.'] },
+    { d:6,  names:'Jakuba, Sławy',                  p:['Przemienienie sierpniowe — słońce w zenicie.','Sierpień szósty — owoce zbieraj.'] },
+    { d:7,  names:'Kajetana, Donata',               p:['Kajetan sierpniowy — zboże do stodoły.','Sierpień siódmy — cebula gotowa.'] },
+    { d:8,  names:'Dominika, Cyriaka',              p:['Sierpień ósmy — sprawdź jabłka.','Gdy sierpień pogodny — wrzesień spokojny.'] },
+    { d:9,  names:'Romana, Teresy',                 p:['Roman sierpniowy — rzeki spokojne.','Sierpień dziewiąty — trwa żniwo.'] },
+    { d:10, names:'Wawrzyńca',                      p:['Na świętego Wawrzyńca słońce pali, zboże w polu się wali.','Wawrzyniec słońcem pali — żniwa w polu się gonią.','Na Wawrzyńca — noc spadających gwiazd.'] },
+    { d:11, names:'Zuzanny, Klary',                 p:['Klara sierpniowa — owoce jasne.','Sierpień jedenasty — jabłka zbieraj.'] },
+    { d:12, names:'Hilarii, Leszka',                p:['Sierpień dwunasty — sprawdź buraki.','Leszek sierpniowy — pola żółknące.'] },
+    { d:13, names:'Hipolita, Poncjana',             p:['Sierpień trzynasty — gruszki dojrzałe.','Gdy sierpień na Hipolita suchy — wrzesień mokry.'] },
+    { d:14, names:'Maksymiliana, Eberharda',        p:['Wigilia Wniebowzięcia — kwiaty do kościoła.','Sierpień czternasty — zioła zbieraj.'] },
+    { d:15, names:'Wniebowzięcia NMP',              p:['Na Wniebowzięcie Maryi zboże w stodole się leży.','Gdy na Matkę Boską Zielną deszcz pada — jesień mokra nadciąga.','Na Zielną — zioła poświęcone w ręku.'] },
+    { d:16, names:'Rocha, Stefana',                 p:['Roch sierpniowy — grzyby po deszczu.','Sierpień szesnasty — sprawdź winogrona.'] },
+    { d:17, names:'Jacka, Bertolda',                p:['Jacek sierpniowy — cukinia w ogrodzie.','Sierpień siedemnasty — ogórek ostatni.'] },
+    { d:18, names:'Heleny, Klary',                  p:['Helena sierpniowa — złote liście.','Sierpień osiemnasty — pełnia lata.'] },
+    { d:19, names:'Jana Eudes, Magnusa',            p:['Sierpień dziewiętnasty — żniwa w końcowym etapie.','Magnus sierpniowy — góry pod śniegiem.'] },
+    { d:20, names:'Bernarda, Sławy',                p:['Bernard sierpniowy — pszczoły zbierają ostatnie.','Sierpień dwudziesty — sprawdź śliwki.'] },
+    { d:21, names:'Piusa X, Joanny',                p:['Sierpień dwudziesty pierwszy — orzechy leśne.','Joanna sierpniowa — lato końcowe.'] },
+    { d:22, names:'Marii, Tymoteusza',              p:['Maria sierpniowa — kwiaty schną.','Sierpień dwudziesty drugi — zbieraj zioła.'] },
+    { d:23, names:'Róży z Limy, Filipa',            p:['Róża sierpniowa — zapachy mocne.','Sierpień dwudziesty trzeci — winogrona sprawdź.'] },
+    { d:24, names:'Bartłomieja',                    p:['Na świętego Bartłomieja dobre żniwa do koleja.','Bartłomiej lato zamknie — jesień nadciąga.','Bartłomiej z mgłą — zima wczesna.'] },
+    { d:25, names:'Ludwika, Józefy',                p:['Ludwik sierpniowy — chmiel dojrzały.','Sierpień dwudziesty piąty — sprawdź ziemniaki.'] },
+    { d:26, names:'Marii Częstochowskiej, Irydy',   p:['Na Częstochową — plony do domu.','Sierpień dwudziesty szósty — grzyby ostatnie.'] },
+    { d:27, names:'Józefa Kalasancjusza, Moniki',   p:['Sierpień ku końcowi — jesień puka.','Monika sierpniowa — złote dni.'] },
+    { d:28, names:'Augustyna, Wiliama',             p:['Augustyn sierpniowy — filozofia natury.','Sierpień dwudziesty ósmy — ziemniaki kopać czas.'] },
+    { d:29, names:'Sabiny, Jana',                   p:['Sabina sierpniowa — siana ostatnie.','Sierpień ku końcowi — jesień za bramą.'] },
+    { d:30, names:'Róży, Feliksa',                  p:['Sierpień trzydziesty — owce tłuste.','Różany sierpień — zapach na polu.'] },
+    { d:31, names:'Rajmunda, Aidy',                 p:['Ostatni sierpień — lato żegna się.','Raj sierpniowy — jesień jutro.','Koniec lata — wspomnienie o żniwach.'] },
+  ],
+  9: [
+    { d:1,  names:'Idziego, Bronisławy',            p:['Wrzesień pierwszy — jesień puka.','Idzi wrześniowy — wrzos kwitnie.'] },
+    { d:2,  names:'Stefana, Ingrydy',               p:['Wrzesień z deszczem — październik suchy.','Gdy wrzesień ciepły — październik mroźny.'] },
+    { d:3,  names:'Grzegorza Wielkiego, Danuty',    p:['Grzegorz wrześniowy — zorze piękne.','Wrzesień trzeci — sprawdź ziemniaki.'] },
+    { d:4,  names:'Rozalii, Irydy',                 p:['Wrzesień czwarty — jabłka w koszu.','Rozalia wrześniowa — kwiaty schną.'] },
+    { d:5,  names:'Doroty, Wawrzyńca',              p:['Wrzesień piąty — sprawdź kapustę.','Dorota wrześniowa — grzyby w lesie.'] },
+    { d:6,  names:'Beaty, Magnusa',                 p:['Wrzesień szósty — len zbieraj.','Gdy wrzesień mglisty — zima wczesna.'] },
+    { d:7,  names:'Reginy, Melchiora',              p:['Regina wrześniowa — sadź cebulę.','Wrzesień siódmy — winogrona sprawdź.'] },
+    { d:8,  names:'Narodzenia NMP',                 p:['Na Matkę Boską Siewną siej, kiedy czas sprzyja.','Sieje się na Siewną — wschodzi na wiosnę.','Na Siewną — zboże ozime w ziemię.'] },
+    { d:9,  names:'Sergiusza, Piotra',              p:['Wrzesień dziewiąty — buraki zbieraj.','Sergiusz wrześniowy — las złocieje.'] },
+    { d:10, names:'Mikołaja, Salomei',              p:['Wrzesień dziesiąty — gruszki ostatnie.','Salomea wrześniowa — plony w domu.'] },
+    { d:11, names:'Jacka, Prota',                   p:['Wrzesień jedenasty — sprawdź dynie.','Jacek wrześniowy — łąki złote.'] },
+    { d:12, names:'Gwidona, Marii',                 p:['Wrzesień dwunasty — chmiel zbieraj.','Gdy wrzesień ciepły w połowie — październik chłodny.'] },
+    { d:13, names:'Jana Złotoustego, Maurycego',    p:['Wrzesień trzynasty — jabłka ostatnie.','Złotousty wrześniowy — słowa ciepłe jak lato.'] },
+    { d:14, names:'Podwyższenia Krzyża',            p:['Na Podwyższenie liście żółkną i w górę lecą.','Wrzesień z deszczem — październik z mrozem.','Na Podwyższenie — żegnaj lato.'] },
+    { d:15, names:'Marii Bolesnej, Nikodema',       p:['Wrzesień piętnasty — jesień oficjalnie.','Maria Bolesna — jesień smutna, ale piękna.'] },
+    { d:16, names:'Korneliusza, Edyty',             p:['Wrzesień szesnasty — sprawdź kapustę.','Edyta wrześniowa — grzyby w lesie.'] },
+    { d:17, names:'Roberta, Hildegardy',            p:['Hildegarda wrześniowa — zioła suszone.','Wrzesień siedemnasty — cebula zbieraj.'] },
+    { d:18, names:'Stanisławy, Ireny',              p:['Wrzesień osiemnasty — śliwki ostatnie.','Irena wrześniowa — sad się dojrzewa.'] },
+    { d:19, names:'Januarego, Konstancji',          p:['Wrzesień dziewiętnasty — buraki cukrowe.','Konstancja wrześniowa — ziemia spracowana.'] },
+    { d:20, names:'Eustachiusza, Faustyny',         p:['Eustachy wrześniowy — las kolorowy.','Wrzesień dwudziesty — jabłka zbieraj.'] },
+    { d:21, names:'Mateusza, Józefata',             p:['Mateusz wrześniowy — jesień w sile.','Na Mateusza — plony policzone.'] },
+    { d:22, names:'Tomasza, Maurycego',             p:['Wrzesień z więdnącym liściem — zima wróżona.','Tomasz wrześniowy — oblicz żniwa.'] },
+    { d:23, names:'Tekli, Linusa',                  p:['Wrzesień dwudziesty trzeci — równonoc jesienna.','Na równonoc jesienną — noc z dniem równy.'] },
+    { d:24, names:'Marii, Gerarda',                 p:['Wrzesień dwudziesty czwarty — kapusta kisić czas.','Gerard wrześniowy — pole zaorać.'] },
+    { d:25, names:'Władysława, Aurela',             p:['Wrzesień dwudziesty piąty — sprawdź piwnicę.','Władysław wrześniowy — ziemniaki kopaj.'] },
+    { d:26, names:'Kosmy i Damiana, Justyny',       p:['Kosma i Damian — obrońcy ogrodu.','Wrzesień dwudziesty szósty — dynie zbieraj.'] },
+    { d:27, names:'Wincentego de Paul, Floriana',   p:['Wrzesień ku końcowi — jesień rządzi.','Wincenty wrześniowy — charytatywny czas.'] },
+    { d:28, names:'Wacława, Libuszy',               p:['Wacław wrześniowy — Czechy i Polska wspólne.','Wrzesień dwudziesty ósmy — owce do owczarni.'] },
+    { d:29, names:'Michała Archanioła',             p:['Na Michała gęsi do wsi nawieszają.','Gdy Michał z mrozem — zima pewna przed nozem.','Michał archanioł — jesień strzeże.'] },
+    { d:30, names:'Hieronima, Honoriusza',          p:['Ostatni wrzesień — październik puka.','Hieronim wrześniowy — las złotolisty.','Koniec września — liście w złocie.'] },
+  ],
+  10: [
+    { d:1,  names:'Teresy, Remigiusza',             p:['Październik z deszczem — listopad suchy.','Teresa październikowa — jesień w sercu.'] },
+    { d:2,  names:'Aniołów Stróżów, Teofila',       p:['Na Aniołów Stróżów — anioły pilnują.','Październik drugi — liście zlatują.'] },
+    { d:3,  names:'Wincentego, Gwidona',            p:['Październik trzeci — sprawdź ziemniaki.','Gdy październik ciepły — listopad mroźny.'] },
+    { d:4,  names:'Franciszka z Asyżu',             p:['Na Franciszka lecą liście jak płatki.','Październik z liściem — ogrodnik spokojny.','Franciszek z Asyżu — przyroda umiłowana.'] },
+    { d:5,  names:'Placyda, Leonarda',              p:['Październik piąty — sprawdź kapustę.','Placyd październikowy — łąki mokre.'] },
+    { d:6,  names:'Brunona, Czcibora',              p:['Październik szósty — grzyby ostatnie.','Bruno październikowy — las jesienny.'] },
+    { d:7,  names:'Marii Różańcowej, Justyny',      p:['Na różaniec październikowy — pacierze do końca roku.','Październik siódmy — grzyby prawdziwki.'] },
+    { d:8,  names:'Pelagii, Benedykta',             p:['Październik ósmy — sprawdź kapustę kiszoną.','Pelagia październikowa — rzeki spokojne.'] },
+    { d:9,  names:'Jana z Capestrano, Elżbiety',    p:['Październik dziewiąty — liście zlatują.','Elżbieta październikowa — cebula w piwnicy.'] },
+    { d:10, names:'Franciszka, Daniela',            p:['Październik dziesiąty — złota jesień.','Daniel październikowy — pola orać czas.'] },
+    { d:11, names:'Emilii, Aleksandra',             p:['Październik jedenasty — sadź cebulę ozimą.','Aleksander październikowy — mróz nocny.'] },
+    { d:12, names:'Maksymiliana, Sławomiry',        p:['Październik dwunasty — winogrona ostatnie.','Gdy październik pogodny — zima miękka.'] },
+    { d:13, names:'Edwarda, Faustyny',              p:['Edward październikowy — sad pełen owoców.','Październik trzynasty — sprawdź piwnicę.'] },
+    { d:14, names:'Kaliksta, Benedykta',            p:['Październik czternasty — mróz nocny możliwy.','Kalikst październikowy — liście złote.'] },
+    { d:15, names:'Teresy z Avila, Jadwigi',        p:['Teresa z Avila — modlitwa jesienna.','Połowa października — zima za dwa miesiące.'] },
+    { d:16, names:'Jadwigi Śląskiej, Małgorzaty',   p:['Jadwiga Śląska — Polska i Niemcy złączone.','Październik szesnasty — grzyby ostatni czas.'] },
+    { d:17, names:'Ignacego, Rozalii',              p:['Październik siedemnasty — liście w pełni.','Ignacy październikowy — las kolorowy.'] },
+    { d:18, names:'Łukasza, Juliana',               p:['Na Łukasza — słońce po jesiennemu.','Październik osiemnasty — sadź tulipany.'] },
+    { d:19, names:'Piotra z Alcantary, Jana',       p:['Październik dziewiętnasty — sprawdź dach.','Piotr październikowy — deszcze jesienne.'] },
+    { d:20, names:'Ireny, Wencelindy',              p:['Październik dwudziesty — złote liście.','Irena październikowa — woda w rowach.'] },
+    { d:21, names:'Urszuli, Celiny',                p:['Urszula październikowa — wiatry jesienne.','Październik dwudziesty pierwszy — sprawdź drzewa.'] },
+    { d:22, names:'Korduli, Filipa',                p:['Październik z burzą — zima wczesna.','Kordula październikowa — wiatr z południa.'] },
+    { d:23, names:'Jana z Kapistrano, Seweryna',    p:['Październik dwudziesty trzeci — mróz nocny.','Gdy październik bez mrozu — listopad skujny.'] },
+    { d:24, names:'Rafała, Antoniego',              p:['Rafał październikowy — anioł jesieni.','Październik dwudziesty czwarty — kapusta kiszonka gotowa.'] },
+    { d:25, names:'Darii, Kryspiany',               p:['Październik dwudziesty piąty — zima za miesiąc.','Daria październikowa — pola orać.'] },
+    { d:26, names:'Ewarysta, Lucjana',              p:['Październik ku końcowi — ziemia śpi.','Ewaryst październikowy — wiatry północne.'] },
+    { d:27, names:'Sabiny, Wincentego',             p:['Październik dwudziesty siódmy — mróz nocny.','Sabina październikowa — zioła suszone.'] },
+    { d:28, names:'Szymona i Judy',                 p:['Na Szymona i Judy zima za drzwiami budzi.','Gdy Szymon mroźny — grudzień śnieżny.','Szymon i Juda — koniec jesieni wróżą.'] },
+    { d:29, names:'Zenobiusza, Felicji',            p:['Październik dwudziesty dziewiąty — sadź cebulę.','Gdy październik ciepły na końcu — listopad mroźny.'] },
+    { d:30, names:'Alfonsa, Edmunda',               p:['Październik trzydziesty — pola orać czas.','Edmund październikowy — sad posprzątaj.'] },
+    { d:31, names:'Wolfganga, Urbana',              p:['Ostatni październik — Wszystkich Świętych za rogiem.','Halloween — noc czarownic i duchów.','Koniec października — zima coraz bliżej.'] },
+  ],
+  11: [
+    { d:1,  names:'Wszystkich Świętych',            p:['Na Wszystkich Świętych jeśli ciepło — listopad będzie długo siedzieć.','Wszystkich Świętych bez mrozu — Mikołaj z wiatrem do domu.','Na cmentarzu znicze płoną — pamięć trwa.'] },
+    { d:2,  names:'Zaduszki, Tobiasza',             p:['W Zaduszki dusze wracają — daj im ciepłe jedzenie.','Kiedy chmurny dzień Zaduszek — zima srogie niesie mrozki.'] },
+    { d:3,  names:'Sylwii, Huberta',                p:['Hubert listopadowy — polowanie otwarte.','Listopad trzeci — mróz możliwy.'] },
+    { d:4,  names:'Karola Boromeusza, Witosławy',   p:['Karol listopadowy — zima pewna.','Listopad czwarty — sprawdź opał.'] },
+    { d:5,  names:'Elżbiety, Zachariasza',          p:['Elżbieta listopadowa — deszcze pewne.','Listopad piąty — liście ostatnie.'] },
+    { d:6,  names:'Leonarda, Feliksa',              p:['Leonard listopadowy — zwierzęta do stajni.','Listopad szósty — sprawdź komin.'] },
+    { d:7,  names:'Ernesta, Rufiny',                p:['Listopad siódmy — wiatr z północy.','Ernest listopadowy — zboże ozime kiełkuje.'] },
+    { d:8,  names:'Seweryna, Klaudiusza',           p:['Listopad ósmy — mróz nocny możliwy.','Seweryn listopadowy — dni coraz krótsze.'] },
+    { d:9,  names:'Teodora, Engelbertu',            p:['Listopad dziewiąty — sprawdź piec.','Teodory listopadowy — śnieg możliwy.'] },
+    { d:10, names:'Leona, Ludomiry',                p:['Leon listopadowy — zima puka w okno.','Listopad dziesiąty — sprawdź dach.'] },
+    { d:11, names:'Marcina',                        p:['Na świętego Marcina zima się zaczyna.','Gdy gęś na Marcina po lodzie chodzi — zima długo nie odchodzi.','Święty Marcin na białym koniu jedzie — zima za nim.'] },
+    { d:12, names:'Macieja, Niny',                  p:['Po Marcinie zima się zaostrza.','Listopad dwunasty — śnieg pierwszy możliwy.'] },
+    { d:13, names:'Stanisława Kostki, Dydaka',      p:['Stanisław listopadowy — zima za parę dni.','Listopad trzynasty — sprawdź ogrzewanie.'] },
+    { d:14, names:'Wawrzyńca, Emila',               p:['Listopad czternasty — dzień krótki.','Wawrzyniec listopadowy — noc długa.'] },
+    { d:15, names:'Leopolda, Elżbiety',             p:['Leopold listopadowy — deszcze lub śnieg.','Połowa listopada — zima pewna.'] },
+    { d:16, names:'Edmunda, Małgorzaty',            p:['Edmund listopadowy — zima silna.','Listopad szesnasty — sprawdź piwnicę.'] },
+    { d:17, names:'Elżbiety Węgierskiej, Grzegorza',p:['Elżbieta węgierska — charytatywna zima.','Listopad siedemnasty — ubodzy czekają ciepła.'] },
+    { d:18, names:'Romana, Ody',                    p:['Listopad osiemnasty — mróz nocny.','Roman listopadowy — rzeki zimne.'] },
+    { d:19, names:'Elżbiety, Seweryna',             p:['Listopad dziewiętnasty — śnieg za progiem.','Seweryn listopadowy — zima pewna.'] },
+    { d:20, names:'Feliksa, Rafaela',               p:['Listopad dwudziesty — mróz nocny.','Feliks listopadowy — krótki dzień.'] },
+    { d:21, names:'Ofiarowania NMP, Janusza',       p:['Ofiarowanie Maryi — zima ofiarowuje mróz.','Listopad dwudziesty pierwszy — sprawdź opał.'] },
+    { d:22, names:'Cecylii, Marka',                 p:['Cecylia listopadowa — muzyka przy ognisku.','Listopad dwudziesty drugi — mróz pewny.'] },
+    { d:23, names:'Klemensa, Felicyty',             p:['Klemens listopadowy — woda w rurach zamarza.','Listopad dwudziesty trzeci — sprawdź samochód.'] },
+    { d:24, names:'Jana od Krzyża, Flory',          p:['Jan od Krzyża — zimowe ciemności.','Listopad dwudziesty czwarty — dzień najkrótszy w pamiętaniu.'] },
+    { d:25, names:'Katarzyny Aleksandryjskiej, Piotra', p:['Na Katarzynę — koła się kręcą.','Katarzyna Aleksandryjska — mądrość w zimie.'] },
+    { d:26, names:'Sylwestra, Konrada',             p:['Sylwester Listopadowy — inny niż grudniowy.','Listopad dwudziesty szósty — mróz nocny.'] },
+    { d:27, names:'Waleriana, Wirgiliusza',         p:['Walerian listopadowy — zima rządzi.','Listopad ku końcowi — grudzień puka.'] },
+    { d:28, names:'Jakuba, Stefana',                p:['Listopad dwudziesty ósmy — sprawdź piec.','Stefan listopadowy — zima silna.'] },
+    { d:29, names:'Saturnina, Błażeja',             p:['Przedostatni listopad — grudzień za chwilę.','Saturnin listopadowy — Saturn rządzi zimą.'] },
+    { d:30, names:'Andrzeja',                       p:['Na świętego Andrzeja z zimą się rozmieja.','Andrzejki — wróżby miłosne i zimowe.','Lej wosk na Andrzeja — los odczytaj.'] },
+  ],
+  12: [
+    { d:1,  names:'Eligiusza, Blanki',              p:['Grudzień pierwszy — zima w pełni.','Eligiusz grudniowy — rzemieślnicy w domu.'] },
+    { d:2,  names:'Balbiny, Bibiany',               p:['Grudzień drugi — sprawdź opał.','Gdy grudzień ciepły — styczeń mroźny.'] },
+    { d:3,  names:'Franciszka Ksawerego, Luizy',   p:['Grudzień trzeci — śnieg możliwy.','Franciszek grudniowy — misje w zimie.'] },
+    { d:4,  names:'Barbary',                        p:['Święta Barbara po lodzie, Boże Narodzenie po wodzie.','Gdy Barbara z deszczem — Boże Narodzenie ze śniegiem.','Na Barbarę — mróz lub odwilż na Boże Narodzenie.'] },
+    { d:5,  names:'Saby, Kryspiny',                 p:['Grudzień piąty — sprawdź dach.','Kryspina grudniowa — prezenty szykuj.'] },
+    { d:6,  names:'Mikołaja',                       p:['Mikołaj mroźny — cały rok śnieżny.','Na Mikołaja dzieci na prezenty czekają.','Gdy Mikołaj z deszczem — Boże Narodzenie bez śniegu.'] },
+    { d:7,  names:'Ambrożego, Teodory',             p:['Ambroży grudniowy — pszczoły zimują.','Grudzień siódmy — dni bardzo krótkie.'] },
+    { d:8,  names:'Niepokalanego Poczęcia NMP',     p:['Na Niepokalane Poczęcie — zima w szacie białej.','Grudzień ósmy — sprawdź opał.'] },
+    { d:9,  names:'Leokadii, Wiesławy',             p:['Grudzień dziewiąty — mróz nocny.','Leokadia grudniowa — noc długa.'] },
+    { d:10, names:'Julii, Edwarda',                 p:['Grudzień dziesiąty — sprawdź samochód.','Edward grudniowy — zima rządzi.'] },
+    { d:11, names:'Damazego, Biny',                 p:['Grudzień jedenasty — śnieg możliwy.','Damazy grudniowy — zima pewna.'] },
+    { d:12, names:'Otylii, Aleksandra',             p:['Grudzień dwunasty — sprawdź okna.','Otylia grudniowa — zima oczy oślepia.'] },
+    { d:13, names:'Łucji',                          p:['Łucja dnia przyczyni czy nocy — ciemności nie zmniejszy.','Na świętą Łucję dzień się o krok przybliży.','Łucja grudniowa — najkrótszy dzień tuż tuż.'] },
+    { d:14, names:'Jana od Krzyża, Izydora',        p:['Jan od Krzyża w grudniu — mistyczna noc.','Grudzień czternasty — prezenty szykuj.'] },
+    { d:15, names:'Niny, Celiny',                   p:['Grudzień piętnasty — dziesięć dni do Gwiazdki.','Nina grudniowa — gwiazdy jasne.'] },
+    { d:16, names:'Albiny, Seweryna',               p:['Grudzień szesnasty — piecz pierniki.','Albina grudniowa — śnieg jak pierniki.'] },
+    { d:17, names:'Łazarza, Olimpii',               p:['Grudzień siedemnasty — dzień ciemny.','Łazarz grudniowy — przebudzenie ze snu.'] },
+    { d:18, names:'Bogusławy, Gracjana',            p:['Grudzień osiemnasty — wigilia coraz bliżej.','Bogusława grudniowa — dom przystrojony.'] },
+    { d:19, names:'Dariusza, Urbana',               p:['Grudzień dziewiętnasty — śnieg marzeń.','Urban grudniowy — choinka pachnąca.'] },
+    { d:20, names:'Filibertu, Dominiki',            p:['Grudzień dwudziesty — ostatnie zakupy.','Dominika grudniowa — rodzina czeka.'] },
+    { d:21, names:'Tomasza, Honoriusza',            p:['Na Tomasza — przesilenie zimowe.','Najkrótszy dzień roku — słońce zawraca.','Tomasz grudniowy — zima w szczycie.'] },
+    { d:22, names:'Zenona, Demetriusza',            p:['Po przesileniu dzień przybywa.','Grudzień dwudziesty drugi — Gwiazdka za trzy dni.'] },
+    { d:23, names:'Jana Kęty, Wiktorii',            p:['Jan Kęty grudniowy — mądrość na Boże Narodzenie.','Grudzień dwudziesty trzeci — opłatek przygotuj.'] },
+    { d:24, names:'Ewy, Adama',                     p:['Wigilia gwiazdkowa — gwiazda na niebie.','Gdy na Wigilię gwiazda wyraźna — rok dobry.','Na Wigilię — pierwsza gwiazda na stole.'] },
+    { d:25, names:'Narodzenia Pańskiego',           p:['Boże Narodzenie ze śniegiem — Wielkanoc z kwieciem.','Gdy Boże Narodzenie zielone — Wielkanoc biała.','Na Boże Narodzenie słońce zaświeci — urodzajny rok.'] },
+    { d:26, names:'Szczepana, Dionizego',           p:['Na Szczepana — zima potrząsa śniegiem.','Szczepan grudniowy — drugi dzień świąt.','Gdy na Szczepana mróz — do wiosny daleko.'] },
+    { d:27, names:'Jana, Fabioli',                  p:['Jan grudniowy — czas odpoczynku.','Grudzień dwudziesty siódmy — sprawdź co zostało.'] },
+    { d:28, names:'Młodzianków, Antoniny',          p:['Na Młodzianki — błogosław dziatwy.','Grudzień dwudziesty ósmy — kolędnicy w drodze.'] },
+    { d:29, names:'Tomasza Becketa, Dawida',        p:['Grudzień dwudziesty dziewiąty — zapasów liczba.','Dawid grudniowy — rok się kończy.'] },
+    { d:30, names:'Dawida, Rogera',                 p:['Przedostatni grudniowy — bilans roku.','Grudzień trzydziesty — Sylwester jutro.'] },
+    { d:31, names:'Sylwestra',                      p:['Jak Sylwester — taki cały rok nowy.','Sylwestrowa noc jasna i gwiaździsta — rok obfity.','Na Sylwestra hałasuj — złe duchy przepędź.'] },
+  ],
+};
+
+const today = new Date();
+const todayM = today.getMonth() + 1, todayD = today.getDate();
+
+const tabsEl = document.getElementById('monthTabs');
+const sectionsEl = document.getElementById('monthSections');
+
+MONTHS.forEach((m, i) => {
+  const mNum = i + 1;
+  const tab = document.createElement('button');
+  tab.className = 'month-tab' + (mNum === todayM ? ' active' : '');
+  tab.textContent = m;
+  tab.onclick = () => {
+    document.querySelectorAll('.month-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.month-section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('ms-' + mNum).classList.add('active');
+  };
+  tabsEl.appendChild(tab);
+
+  const sec = document.createElement('div');
+  sec.className = 'month-section' + (mNum === todayM ? ' active' : '');
+  sec.id = 'ms-' + mNum;
+
+  const days = PROVERBS[mNum] || [];
+  if (days.length === 0) {
+    sec.innerHTML = '<p style="color:var(--muted);font-size:.85rem;padding:1rem 0">Przysłowia dla tego miesiąca będą dodane wkrótce.</p>';
+  } else {
+    sec.innerHTML = days.map(day => {
+      const date = new Date(2026, mNum-1, day.d);
+      const wd = WEEKDAYS[date.getDay()];
+      const isToday = mNum === todayM && day.d === todayD;
+      const todayBadge = isToday ? '<span class="today-badge">Dziś</span>' : '';
+      const icons = ['🌾','🌿','☁️','🌧️','❄️','☀️','🌻'];
+      return `<div class="day-group">
+        <div class="day-header">
+          <div class="day-num">${day.d}</div>
+          <div class="day-info">
+            <div class="day-weekday">${wd}${todayBadge}</div>
+            <div class="day-names">${day.names}</div>
+          </div>
+        </div>
+        <div class="proverbs-list">
+          ${day.p.map((p,pi) => `<div class="proverb-card"><div class="proverb-icon">${icons[pi % icons.length]}</div><div class="proverb-text">${p}</div></div>`).join('')}
+        </div>
+      </div>`;
+    }).join('');
+  }
+  sectionsEl.appendChild(sec);
+});
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

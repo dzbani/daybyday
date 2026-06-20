@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zmiana Czasu 2026 — kiedy przestawiamy zegarki? | DaybyDay</title>
+  <meta name="description" content="Kiedy zmiana czasu 2026 w Polsce? Sprawdź dokładną datę i godzinę przestawienia zegarków na czas letni i zimowy.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/zmiana-czasu.html">
+  <meta property="og:title" content="Zmiana Czasu 2026 — kiedy przestawiamy zegarki?">
+  <meta property="og:description" content="Kiedy zmiana czasu 2026? Data i godzina przestawienia zegarków na czas letni i zimowy w Polsce.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/zmiana-czasu.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:900px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:600px; margin-bottom:2rem; }
+    .change-cards { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:2.5rem; }
+    .change-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; position:relative; overflow:hidden; }
+    .change-card.summer { border-top:3px solid #F4A261; }
+    .change-card.winter { border-top:3px solid #5D93C4; }
+    .change-card.past { opacity:.65; }
+    .change-badge { display:inline-flex; align-items:center; gap:.35rem; font-size:.68rem; font-weight:600; padding:.2rem .65rem; border-radius:60px; margin-bottom:1rem; }
+    .badge-summer { background:#FEF3E8; color:#C05700; }
+    .badge-winter { background:#EBF3FB; color:#1A5276; }
+    .badge-past { background:var(--tag-bg); color:var(--muted); }
+    .badge-upcoming { background:#EDF7EE; color:#3A6B3F; }
+    .change-date { font-family:'Instrument Serif',serif; font-size:1.8rem; line-height:1; margin-bottom:.4rem; }
+    .change-time { font-size:.85rem; color:var(--muted); margin-bottom:1rem; }
+    .change-dir { font-size:1.5rem; margin-bottom:.5rem; }
+    .change-desc { font-size:.83rem; color:var(--muted); line-height:1.65; }
+    .change-desc strong { color:var(--text); }
+    .countdown-box { background:var(--text); color:white; border-radius:var(--radius); padding:1.5rem 2rem; margin-bottom:2.5rem; display:flex; align-items:center; gap:2rem; flex-wrap:wrap; }
+    .cd-label { font-size:.78rem; opacity:.7; margin-bottom:.25rem; }
+    .cd-val { font-family:'Instrument Serif',serif; font-size:2.2rem; line-height:1; }
+    .cd-sep { opacity:.3; font-size:1.5rem; }
+    .section-title { font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:1.25rem; }
+    .year-table { margin-bottom:2.5rem; }
+    .ytable { width:100%; border-collapse:collapse; font-size:.85rem; }
+    .ytable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.65rem .75rem; border-bottom:2px solid var(--border); }
+    .ytable td { padding:.65rem .75rem; border-bottom:1px solid var(--border); }
+    .ytable tr.current-year td { background:var(--tag-bg); font-weight:600; }
+    .faq { margin-top:1rem; }
+    .faq-item { border-bottom:1px solid var(--border); padding:1.1rem 0; }
+    .faq-q { font-size:.88rem; font-weight:600; margin-bottom:.5rem; }
+    .faq-a { font-size:.84rem; color:var(--muted); line-height:1.7; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .nav-links{display:none} .change-cards{grid-template-columns:1fr} }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="page-label">Czas i strefy</div>
+  <h1 class="page-title">Zmiana czasu 2026</h1>
+  <p class="page-sub">Kiedy w Polsce przestawiamy zegarki? Sprawdź dokładne daty i godziny zmiany na czas letni i zimowy w 2026 roku i kolejnych latach.</p>
+
+  <div class="change-cards">
+    <div class="change-card summer past">
+      <div class="change-badge badge-summer badge-past">✓ Minęła</div>
+      <div class="change-date">29 marca 2026</div>
+      <div class="change-time">O godzinie 2:00 → 3:00</div>
+      <div class="change-dir">☀️ ➜</div>
+      <div class="change-desc">Zmiana na <strong>czas letni (CEST)</strong> — przestawiamy zegarki <strong>o 1 godzinę do przodu</strong>. Ta noc jest krótsza o 1 godzinę. Obowiązuje strefa UTC+2.</div>
+    </div>
+    <div class="change-card winter">
+      <div class="change-badge badge-winter badge-upcoming">↑ Zbliża się</div>
+      <div class="change-date">25 października 2026</div>
+      <div class="change-time">O godzinie 3:00 → 2:00</div>
+      <div class="change-dir">❄️ ➜</div>
+      <div class="change-desc">Zmiana na <strong>czas zimowy (CET)</strong> — przestawiamy zegarki <strong>o 1 godzinę do tyłu</strong>. Ta noc jest dłuższa o 1 godzinę. Obowiązuje strefa UTC+1.</div>
+    </div>
+  </div>
+
+  <div class="countdown-box" id="countdownBox"></div>
+
+  <div class="section-title">Zestawienie lat 2024–2030</div>
+  <div class="year-table">
+    <table class="ytable">
+      <thead><tr><th>Rok</th><th>Zmiana na letni (marzec)</th><th>Zmiana na zimowy (październik)</th></tr></thead>
+      <tbody>
+        <tr><td>2024</td><td>31 marca 2024, 2:00 → 3:00</td><td>27 października 2024, 3:00 → 2:00</td></tr>
+        <tr><td>2025</td><td>30 marca 2025, 2:00 → 3:00</td><td>26 października 2025, 3:00 → 2:00</td></tr>
+        <tr class="current-year"><td><strong>2026</strong></td><td><strong>29 marca 2026, 2:00 → 3:00</strong></td><td><strong>25 października 2026, 3:00 → 2:00</strong></td></tr>
+        <tr><td>2027</td><td>28 marca 2027, 2:00 → 3:00</td><td>31 października 2027, 3:00 → 2:00</td></tr>
+        <tr><td>2028</td><td>26 marca 2028, 2:00 → 3:00</td><td>29 października 2028, 3:00 → 2:00</td></tr>
+        <tr><td>2029</td><td>25 marca 2029, 2:00 → 3:00</td><td>28 października 2029, 3:00 → 2:00</td></tr>
+        <tr><td>2030</td><td>31 marca 2030, 2:00 → 3:00</td><td>27 października 2030, 3:00 → 2:00</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title">Często zadawane pytania</div>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Kiedy dokładnie przestawiamy zegarki w 2026 roku?</div>
+      <div class="faq-a">Na czas letni: 29 marca 2026 o godzinie 2:00 zegarki przestawiamy na 3:00 (o godzinę do przodu). Na czas zimowy: 25 października 2026 o godzinie 3:00 zegarki przestawiamy na 2:00 (o godzinę do tyłu).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Dlaczego Polska zmienia czas?</div>
+      <div class="faq-a">Zmiana czasu w Polsce wynika z dyrektywy UE nakazującej stosowanie czasu letniego. Polska, jak większość krajów UE, stosuje czas zimowy (CET, UTC+1) i letni (CEST, UTC+2). Celem jest lepsze wykorzystanie dziennego światła.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czy Unia Europejska planuje likwidację zmiany czasu?</div>
+      <div class="faq-a">W 2019 roku Parlament Europejski zagłosował za likwidacją zmiany czasu, jednak decyzja o wyborze stałego czasu (letniego lub zimowego) miała należeć do każdego kraju. Ze względu na brak porozumienia między państwami, zmiana czasu jest nadal stosowana w Polsce i pozostałych krajach UE.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">W którym kierunku przestawiamy zegarki?</div>
+      <div class="faq-a">Wiosna (marzec): do przodu — „wiosennym skokiem" tracimy godzinę snu. Jesień (październik): do tyłu — „jesiennym cofnięciem" zyskujemy godzinę. Łatwy sposób zapamiętania: <em>wiosną (spring) skaczemy do przodu, jesienią (fall) cofamy się.</em></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Który dzień jest krótszy, a który dłuższy przy zmianie czasu?</div>
+      <div class="faq-a">Kiedy przestawiamy na czas letni (marzec): noc ma 23 godziny (den jest normalny, noc krótsza). Kiedy wracamy na czas zimowy (październik): noc ma 25 godzin (zyskujemy dodatkową godzinę snu).</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="index.html">Strona główna</a>
+    <a href="wschody-zachody.html">Wschody i zachody</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+  const target = new Date('2026-10-25T03:00:00+02:00');
+  const now = new Date();
+
+  function renderCountdown() {
+    const diff = target - new Date();
+    if (diff <= 0) {
+      document.getElementById('countdownBox').innerHTML = '<div><div class="cd-label">Zmiana czasu zimowego 2026</div><div class="cd-val">Już za nami</div></div>';
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    document.getElementById('countdownBox').innerHTML = `
+      <div><div class="cd-label">Do zmiany czasu zimowego</div><div style="font-size:.75rem;opacity:.6">25 października 2026, 3:00 → 2:00</div></div>
+      <div style="display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap">
+        <div><div class="cd-val">${days}</div><div class="cd-label">dni</div></div>
+        <div class="cd-sep">:</div>
+        <div><div class="cd-val">${String(hours).padStart(2,'0')}</div><div class="cd-label">godzin</div></div>
+        <div class="cd-sep">:</div>
+        <div><div class="cd-val">${String(mins).padStart(2,'0')}</div><div class="cd-label">minut</div></div>
+      </div>
+    `;
+  }
+
+  renderCountdown();
+  setInterval(renderCountdown, 60000);
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

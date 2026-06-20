@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Dzisiaj - Kalendarz Świąt</title>
+
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+<meta name="description"
+      content="Kartka z kalendarza na dziś - święta, imieniny i ważne daty"/> 
+<meta name="keywords"
+      content="dzisiaj, dziś, dzisiejsze święta, imieniny dzisiaj, aktualny czas"/> 
+ 
+
+<style type="text/css">
+.date-box {
+    color: #307FBF;
+}
+
+.calendar-page {
+    border-top: 2px #307FBF solid;
+}
+
+.calendar-page h3 {
+    border-left: 20px #307FBF solid;
+    color: #307FBF;
+}
+
+.calendar-page .important-holidays a {
+    color: #307FBF;
+}
+</style>
+
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JNQQQN58YF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JNQQQN58YF');
+</script>
+
+
+    <script type="text/javascript">
+    var DOMContentLoadedTimestamp = (new Date()).getTime();
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <link rel="stylesheet" href="/media/css/combined.516.css" type="text/css" media="screen">
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/media/js/html5shiv.js" data-deploy-ignore="true"></script>
+      <script type="text/javascript" src="/media/js/respond.min.js" data-deploy-ignore="true"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <![endif]-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    
+</head>
+
+<body>
+
+<div id="wrap-head-body">
+
+<div class="header">
+    <nav class="navbar" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header-wrapper">
+            <div class="navbar-header">
+                
+                <button type="button"
+                    class="navbar-toggle  offcanvas-toggle"
+                    data-toggle="offcanvas"
+                    data-target="#js-bootstrap-offcanvas">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img src="/media/images/logo.png" alt="Kalendarz Świąt" width="232" height="50">
+                    <span>Kalendarz Świąt</span></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="menu_bar_wrap" class="nav-wrapper">
+        
+        <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+  <ul class="nav navbar-nav navbar-left">
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Kalendarze <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        
+        <li class="submenu-item-1">
+        <a href="/kalendarz/2026" title="Kalendarz na 2026 rok">Kalendarz 2026</a>
+        </li>
+        
+        <li class="submenu-item-2">
+        <a href="/kalendarz/2027" title="Kalendarz na 2027 rok">Kalendarz 2027</a>
+        </li>
+        
+        <li class="submenu-item-3">
+        <a href="/kalendarz/2028" title="Kalendarz na 2028 rok">Kalendarz 2028</a>
+        </li>
+        
+
+        <li class="separator"><a href="/kalendarz-do-druku/2026"
+                                 title="Kalendarze na rok 2026 w formacie PDF do wydrukowania">Kalendarz 2026 do druku</a>
+        </li>
+        <li><a href="/kalendarz-do-druku/2027"
+                                 title="Kalendarze na rok 2027 w formacie PDF do wydrukowania">Kalendarz 2027 do druku</a>
+        </li>
+
+        
+        <li
+        
+            class="separator submenu-item-1"
+        
+        >
+        <a href="/kalendarz_czerwiec/2026"
+            title="Szczegółowy kalendarz na miesiąc czerwiec 2026">
+            Czerwiec 2026</a>
+        </li>
+        
+        <li
+        
+            class="submenu-item-2"
+        
+        >
+        <a href="/kalendarz_lipiec/2026"
+            title="Szczegółowy kalendarz na miesiąc lipiec 2026">
+            Lipiec 2026</a>
+        </li>
+        
+
+        <li class="separator">
+        <a href="/kalendarz_ksiezycowy/czerwiec/2026"
+            title="Kalendarz księżycowy na czerwiec 2026">Księżyc w czerwcu</a>
+        </li>
+
+        <li>
+        <a href="/fazy_ksiezyca/2026"
+           title="Daty i godziny faz Księżyca w kolejnych miesiącach 2026 roku">Fazy Księżyca 2026</a>
+        <

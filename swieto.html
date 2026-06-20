@@ -1,0 +1,1519 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Święto — szczegóły dnia wolnego | DaybyDay</title>
+  <meta name="description" content="Szczegółowe informacje o polskich świętach i dniach wolnych od pracy — historia, tradycje i daty.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/swieto.html">
+  <meta property="og:title" content="Święto — szczegóły dnia wolnego | DaybyDay">
+  <meta property="og:description" content="Historia i tradycje polskich świąt i dni wolnych od pracy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/swieto.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:800px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .breadcrumb { display:flex; align-items:center; gap:.5rem; font-size:.78rem; color:var(--muted); margin-bottom:2rem; }
+    .breadcrumb a { color:var(--muted); text-decoration:none; }
+    .breadcrumb a:hover { color:var(--text); }
+    .breadcrumb-sep { opacity:.4; }
+    .holiday-header { margin-bottom:2.5rem; }
+    .holiday-emoji { font-size:3.5rem; line-height:1; margin-bottom:1rem; }
+    .holiday-badges { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem; }
+    .badge { display:inline-flex; align-items:center; gap:.3rem; font-size:.68rem; font-weight:600; padding:.2rem .65rem; border-radius:60px; letter-spacing:.06em; }
+    .badge-state { background:#EDF7EE; color:#3A6B3F; }
+    .badge-religious { background:#EBF3FB; color:#1A5276; }
+    .badge-cultural { background:#FEF3E8; color:#C05700; }
+    .badge-unofficial { background:var(--tag-bg); color:var(--muted); }
+    .badge-dayoff { background:#1A1916; color:white; }
+    .holiday-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.5rem; }
+    .holiday-date { font-size:1rem; color:var(--muted); }
+    .holiday-body { margin-bottom:2.5rem; }
+    .holiday-body p { font-size:.92rem; line-height:1.8; color:var(--text); margin-bottom:1.1rem; }
+    .section { margin-bottom:2rem; }
+    .section-title { font-family:'Instrument Serif',serif; font-size:1.35rem; margin-bottom:1rem; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; margin-bottom:1.5rem; }
+    .info-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.1rem 1.25rem; }
+    .info-label { font-size:.68rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.3rem; }
+    .info-value { font-size:.9rem; color:var(--text); line-height:1.5; }
+    .traditions-list { list-style:none; }
+    .traditions-list li { font-size:.88rem; line-height:1.7; padding:.5rem 0; border-bottom:1px solid var(--border); display:flex; gap:.75rem; }
+    .traditions-list li:last-child { border-bottom:none; }
+    .trad-dot { width:6px; height:6px; border-radius:50%; background:var(--text); margin-top:.55rem; flex-shrink:0; }
+    .related-section { margin-top:2.5rem; }
+    .related-title { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.75rem; }
+    .related-links { display:flex; gap:.5rem; flex-wrap:wrap; }
+    .related-link { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:.45rem 1rem; font-size:.82rem; text-decoration:none; color:var(--text); transition:background .15s; }
+    .related-link:hover { background:var(--tag-bg); }
+    .not-found { text-align:center; padding:5rem 2rem; }
+    .not-found-title { font-family:'Instrument Serif',serif; font-size:2rem; margin-bottom:.75rem; }
+    .not-found-sub { font-size:.9rem; color:var(--muted); }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:800px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    .footer-links a:hover { color:var(--text); }
+    @media(max-width:600px){ .nav-links{display:none} .info-grid{grid-template-columns:1fr} }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html" class="active">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page" id="pageContent"></div>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="swieta.html">Wszystkie święta</a>
+    <a href="index.html">Strona główna</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+const HOLIDAYS_DB = {
+  'nowy-rok': {
+    name: 'Nowy Rok',
+    date: '1 stycznia',
+    emoji: '🎆',
+    type: 'state',
+    typeLabel: 'Święto państwowe',
+    dayOff: true,
+    origin: 'Starożytność, reformy kalendarza juliańskiego (46 p.n.e.) i gregoriańskiego (1582)',
+    observed: 'Polska i ponad 150 państw świata',
+    desc: [
+      'Nowy Rok obchodzony jest 1 stycznia — pierwszego dnia roku według kalendarza gregoriańskiego. Jest to dzień wolny od pracy w Polsce i jednocześnie jeden z najbardziej powszechnie świętowanych dni na świecie. Symbolizuje nowy początek, szansę na zmianę i realizację postanowień.',
+      'Historia świętowania początku roku sięga starożytności. Już Babilończycy około 2000 roku p.n.e. świętowali Akitu — nowy rok zbiegający się z wiosenną równonocą. Rzymianie pod rządami Juliusza Cezara wprowadzili w 46 roku p.n.e. nowy kalendarz, ustalając 1 stycznia jako pierwszy dzień roku — na cześć Janusa, dwugłowego boga początków i przejść.',
+      'W Polsce noc z 31 grudnia na 1 stycznia nosi nazwę sylwestra (od papieża Sylwestra I, który zmarł 31 grudnia 335 roku). Świętowanie Nowego Roku jest w Polsce bardzo popularne — uliczne fajerwerki, bale sylwestrowe i telewizyjne transmisje z licznikiem czasu to nieodłączny element tej nocy.'
+    ],
+    traditions: [
+      'Fajerwerki i pokazy ogni sztucznych o północy',
+      'Wspólne liczenie do północy i toast szampanem lub winem',
+      'Składanie noworocznych postanowień (np. dieta, sport, nauka)',
+      'Życzenia noworoczne składane rodzinie i przyjaciołom',
+      'Oglądanie transmisji telewizyjnych i balów sylwestrowych'
+    ],
+    related: ['sylwester', 'trzech-kroli']
+  },
+  'trzech-kroli': {
+    name: 'Trzech Króli (Objawienie Pańskie)',
+    date: '6 stycznia',
+    emoji: '⭐',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Tradycja chrześcijańska, od IV wieku n.e.',
+    observed: 'Polska, kraje katolickie i prawosławne',
+    desc: [
+      'Święto Trzech Króli (oficjalnie: Objawienie Pańskie, łac. Epiphania Domini) jest obchodzone 6 stycznia i upamiętnia przybycie Trzech Mędrców (Magów) ze Wschodu do Betlejem, aby oddać hołd narodzonemu Jezusowi. W Polsce jest to dzień wolny od pracy od 2011 roku.',
+      'Biblia nie mówi wprost o liczbie Magów — tradycja trzech wynika z liczby darów: złota, kadzidła i mirry. Imiona Kacper, Melchior i Baltazar pojawiają się dopiero w tradycji z VI wieku. Święto kończy oficjalnie okres Bożego Narodzenia.',
+      'W Polsce 6 stycznia jest dniem wielkich procesji i kolęd. Dzieci przebrane za Trzech Króli chodzą po domach, śpiewając kolędy w zamian za datki na cele charytatywne — tradycja ta jest organizowana przez Caritas Polska.'
+    ],
+    traditions: [
+      'Poświęcenie kredą i kadzidłem, zapisanie liter K+M+B (Kaspar, Melchior, Balthasar) nad drzwiami',
+      'Wielkie kolędowanie dzieci przebranych za Trzech Króli (Orszak Trzech Króli)',
+      'Procesje i msze w kościołach katolickich',
+      'Ciasto z ukrytą fasolą lub figurką — kto trafi, będzie królem',
+      'Święcenie złota, kadzidła i mirry w kościołach'
+    ],
+    related: ['boze-narodzenie', 'boze-narodzenie-2']
+  },
+  'dzien-celnika': {
+    name: 'Dzień Celnika',
+    date: '21 stycznia',
+    emoji: '🛃',
+    type: 'unofficial',
+    typeLabel: 'Dzień branżowy',
+    dayOff: false,
+    origin: 'Polska tradycja służb celnych',
+    observed: 'Służba Celno-Skarbowa w Polsce',
+    desc: [
+      'Dzień Celnika obchodzony jest 21 stycznia i jest świętem pracowników Służby Celno-Skarbowej w Polsce. To dzień, w którym uhonorowane są osoby pracujące na przejściach granicznych, w portach lotniczych i na granicach morskich, chroniąc krajową gospodarkę i bezpieczeństwo państwa.',
+      'Polska Służba Celna ma wielowiekową tradycję. Cła pobierane były w Polsce już w czasach Piastów. Współczesna Służba Celno-Skarbowa, wchodząca w skład Krajowej Administracji Skarbowej (KAS), zajmuje się kontrolą obrotu towarowego z zagranicą, poborem ceł i podatku VAT od importu oraz zwalczaniem przemytu.',
+      'W tym dniu organizowane są uroczystości, odznaczenia i spotkania branżowe. Celnicy często otrzymują podziękowania od ministerstwa finansów za szczególne osiągnięcia w służbie.'
+    ],
+    traditions: [
+      'Uroczystości i gale z udziałem pracowników służb celnych',
+      'Wręczanie odznaczeń i wyróżnień zasłużonym celnikom',
+      'Spotkania integracyjne w jednostkach celno-skarbowych',
+      'Podsumowanie rocznych osiągnięć służby'
+    ],
+    related: ['swieto-pracy']
+  },
+  'gromniczna': {
+    name: 'Matki Bożej Gromnicznej',
+    date: '2 lutego',
+    emoji: '🕯️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska, IV wiek; w Polsce od X wieku',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Matki Bożej Gromnicznej (Ofiarowanie Pańskie) obchodzone jest 2 lutego, dokładnie 40 dni po Bożym Narodzeniu. Upamiętnia ono ofiarowanie małego Jezusa w Świątyni Jerozolimskiej przez Maryję i Józefa, zgodnie z żydowskim prawem Mojżeszowym.',
+      'Nazwa „Gromniczna" pochodzi od słowa „grom" — tego dnia święci się w kościele świece (gromnice), które miały chronić domy, pola i ludzi przed piorunami, burzami i złymi mocami. Gromnica zapalana była też przy śmiertelnie chorym i podczas burz.',
+      'W Polsce Gromniczna ma także wymiar ludowy — uważano, że tego dnia niedźwiedź wychodzi z gawry i jeśli zobaczy swój cień, wraca i śpi kolejne sześć tygodni (zima trwa dalej). Odpowiada to tradycji Dnia Świstaka (Groundhog Day) celebrowanego w USA.'
+    ],
+    traditions: [
+      'Poświęcenie świec gromnic w kościołach',
+      'Procesja ze świecami podczas mszy świętej',
+      'Przechowywanie gromnicy w domu i zapalanie podczas burz lub przy chorych',
+      'Obserwowanie pogody — tradycja przepowiadania zimy',
+      'Ludowe wróżby na temat długości zimy'
+    ],
+    related: ['boze-narodzenie', 'wielkanoc']
+  },
+  'walentynki': {
+    name: 'Walentynki',
+    date: '14 lutego',
+    emoji: '💝',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Tradycja zachodnia, od XIV wieku; popularność w Polsce od lat 90. XX w.',
+    observed: 'Europa, Ameryka Północna, Polska',
+    desc: [
+      'Walentynki to dzień zakochanych obchodzony 14 lutego. Nazwa pochodzi od świętego Walentego (łac. Valentinus) — chrześcijańskiego biskupa lub kapłana z Terni (Umbria) w Italii, który poniósł śmierć męczeńską około 270 roku n.e. za panowania cesarza Klaudiusza II.',
+      'Według legendy święty Walenty potajemnie udzielał ślubów młodym parom, mimo że cesarz Klaudiusz II zakazał małżeństw dla mężczyzn w wieku poboru do wojska. Inna legenda mówi, że przed śmiercią wysłał list miłosny do córki swojego strażnika, podpisując go „Twój Walenty".',
+      'W Polsce walentynki nabrały popularności w latach 90. XX wieku, przede wszystkim za sprawą kultury masowej i mediów. Dziś to jedno z najważniejszych komercyjnych świąt roku — Polacy kupują kwiaty, czekoladki, biżuterię i wysyłają kartki.'
+    ],
+    traditions: [
+      'Wręczanie kwiatów — szczególnie czerwonych róż — ukochanej osobie',
+      'Wymiana kartek i listów miłosnych (walentynek)',
+      'Prezenty: czekoladki, biżuteria, perfumy',
+      'Romantyczne kolacje we dwoje',
+      'Wyznania uczuć osobom, do których żywimy sympatię'
+    ],
+    related: ['dzien-kobiet', 'dzien-matki']
+  },
+  'dzien-kobiet': {
+    name: 'Dzień Kobiet',
+    date: '8 marca',
+    emoji: '💐',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Ruch robotniczy, Nowy Jork 1908; ONZ oficjalnie od 1977',
+    observed: 'Polska i ponad 100 państw na świecie',
+    desc: [
+      'Międzynarodowy Dzień Kobiet obchodzony jest 8 marca. Jego korzenie sięgają 1908 roku, gdy w Nowym Jorku ok. 15 000 kobiet przeszło marszem ulicami, domagając się krótszego dnia pracy, lepszych zarobków i prawa do głosowania. W 1910 roku na Międzynarodowej Konferencji Socjalistycznej w Kopenhadze Clara Zetkin zaproponowała ustanowienie corocznego Dnia Kobiet.',
+      'W Polsce w czasach PRL-u Dzień Kobiet był obchodzony bardzo uroczyście — kobiety otrzymywały goździki i drobne upominki od zakładów pracy i mężów. Po 1989 roku święto straciło nieco na oficjalności, ale nadal pozostaje popularną okazją do wyrażenia szacunku i wdzięczności wobec kobiet.',
+      'Dziś Dzień Kobiet ma podwójny charakter: celebracyjny (kwiaty, życzenia, prezenty) i polityczny (marsze i akcje walczące o równe prawa kobiet, koniec przemocy, równość płac).'
+    ],
+    traditions: [
+      'Wręczanie kobietom kwiatów — tradycyjnie goździków (PRL) lub tulipanów',
+      'Życzenia i drobne upominki od rodziny, kolegów i pracodawcy',
+      'Marsze i demonstracje na rzecz równouprawnienia kobiet',
+      'Akcje społeczne i kampanie dotyczące praw kobiet',
+      'Organizowanie wydarzeń i konferencji poświęconych kobietom'
+    ],
+    related: ['walentynki', 'dzien-matki']
+  },
+  'dzien-wiosny': {
+    name: 'Pierwszy Dzień Wiosny',
+    date: '21 marca',
+    emoji: '🌸',
+    type: 'cultural',
+    typeLabel: 'Dzień sezonowy',
+    dayOff: false,
+    origin: 'Astronomia (równonoc wiosenna); w Polsce tradycja szkolna od XX wieku',
+    observed: 'Polska (przede wszystkim wśród młodzieży)',
+    desc: [
+      'Astronomiczny pierwszy dzień wiosny wypada 20 lub 21 marca, gdy Słońce przekracza punkt równonocy wiosennej (punkt Barana). Dzień i noc są wtedy równej długości. Przez wiele stuleci widziano w tym wydarzeniu odrodzenie przyrody, koniec zimy i powrót życia.',
+      'W Polsce 21 marca jest szczególnie ważny dla uczniów — to tradycyjny dzień wagarów. Nie jest to oficjalny dzień wolny, ale zwyczajowo w wielu szkołach tolerowane jest absencja uczniów, a niektórzy nauczyciele organizują zajęcia w plenerze lub wycieczki.',
+      'Dawniej tego dnia topiono Marzannę — słomianą kukłę symbolizującą zimę i śmierć, którą wrzucano do rzeki lub palono, by przepędzić zimę i przywitać wiosnę. Zwyczaj ten ma korzenie słowiańskie i był częścią obrzędów agrarnych.'
+    ],
+    traditions: [
+      'Topienie Marzanny — kukły ze słomy symbolizującej zimę',
+      'Wagary — uczniowie masowo opuszczają lekcje',
+      'Pikniki i spacery na świeżym powietrzu',
+      'Sadzenie roślin i pierwsze prace ogrodowe',
+      'Szkolne i przedszkolne zabawy na powitanie wiosny'
+    ],
+    related: ['wielkanoc', 'dzien-ziemi']
+  },
+  'wielkanoc': {
+    name: 'Wielkanoc (Niedziela Wielkanocna)',
+    date: 'Ruchome (marzec–kwiecień)',
+    emoji: '🐣',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Chrześcijaństwo, I wiek n.e.; obliczane wg kalendarza księżycowego',
+    observed: 'Polska i kraje chrześcijańskie na całym świecie',
+    desc: [
+      'Wielkanoc to najważniejsze święto chrześcijańskie, upamiętniające Zmartwychwstanie Jezusa Chrystusa trzeciego dnia po Jego śmierci na krzyżu. Data Wielkanocy jest ruchoma — wypada w pierwszą niedzielę po pierwszej pełni Księżyca następującej po 21 marca. Może zatem wypaść między 22 marca a 25 kwietnia.',
+      'Wielkanoc poprzedza 40-dniowy post zwany Wielkim Postem, a bezpośrednio ją poprzedza Wielki Tydzień — od Niedzieli Palmowej do Wielkiej Soboty. Kluczowe są: Wielki Czwartek (Ostatnia Wieczerza), Wielki Piątek (śmierć Jezusa) i Wielka Sobota (czuwanie przy Bożym Grobie).',
+      'W Polsce Wielkanoc jest świętowana przez trzy dni — Niedzielę i Poniedziałek Wielkanocny są dniami wolnymi. Tradycje wielkanocne mają charakter zarówno religijny, jak i ludowy: święconka, śmigus-dyngus, kraszanki i pisanki to nieodłączne elementy polskiej Wielkanocy.'
+    ],
+    traditions: [
+      'Rezurekcja — uroczysta msza wielkanocna o świcie lub w nocy',
+      'Święconka — koszyczek z pokarmami (jajka, chleb, kiełbasa, chrzan, ciasto) poświęcany w kościele',
+      'Pisanki i kraszanki — malowane i zdobione jajka wielkanocne',
+      'Śniadanie wielkanocne z rodziną — żurek, biała kiełbasa, babka wielkanocna',
+      'Baranek wielkanocny z cukru lub masła jako symbol Zmartwychwstałego Chrystusa'
+    ],
+    related: ['poniedzialek-wielkanocny', 'wniebowstapienie', 'zielone-swiatki']
+  },
+  'poniedzialek-wielkanocny': {
+    name: 'Poniedziałek Wielkanocny (Śmigus-Dyngus)',
+    date: 'Ruchome (dzień po Wielkanocy)',
+    emoji: '💦',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Polska tradycja chrześcijańska i słowiańska, XV–XVI wiek',
+    observed: 'Polska i diaspora polska',
+    desc: [
+      'Poniedziałek Wielkanocny to drugi dzień świąt Wielkanocy, oficjalnie dzień wolny od pracy. W Polsce znany jest przede wszystkim ze zwyczaju śmigusa-dyngusa — oblewania się wodą, który jest charakterystyczny niemal wyłącznie dla polskiej kultury ludowej.',
+      'Śmigus i dyngus to pierwotnie dwa osobne zwyczaje. Śmigus polegał na uderzaniu witkami wierzbowymi po nogach (nawiązanie do biczowania Chrystusa), dyngus natomiast to wykup od oblewania wodą lub przynoszenie pisanek. Z czasem oba zwyczaje zlały się w jeden i dziś Śmigus-Dyngus oznacza po prostu oblewanie wodą.',
+      'Tradycja oblewania wodą miała pierwotnie znaczenie magiczne — woda symbolizowała oczyszczenie, płodność i odrodzenie. Chłopcy oblewali dziewczęta, a te, które zostały oblane, cieszyły się z tego, bo wróżyło to szczęście w miłości i zamążpójście.'
+    ],
+    traditions: [
+      'Oblewanie się wodą — wiadra, pistolety na wodę, sikawki',
+      'Msza wielkanocna i procesja rezurekcyjna',
+      'Śniadanie wielkanocne — tradycyjne potrawy: żurek, biała kiełbasa, jajka, babka',
+      'Odwiedziny rodziny i krewnych',
+      'Dzieci chodzące po domach i obdarowywane słodyczami'
+    ],
+    related: ['wielkanoc', 'dzien-wiosny']
+  },
+  'dzien-ziemi': {
+    name: 'Dzień Ziemi',
+    date: '22 kwietnia',
+    emoji: '🌍',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'USA, 22 kwietnia 1970; ONZ od 2009 roku',
+    observed: 'Ponad 193 państw na świecie',
+    desc: [
+      'Dzień Ziemi obchodzony jest 22 kwietnia. Po raz pierwszy świętowano go w Stanach Zjednoczonych w 1970 roku z inicjatywy senatora Gaylorda Nelsona, który zaproponował ogólnokrajowe działania na rzecz środowiska naturalnego po katastrofie ekologicznej wycieku ropy u wybrzeży Santa Barbara w 1969 roku. W pierwszym obchodzie wzięło udział 20 milionów Amerykanów.',
+      'Od 2009 roku ONZ oficjalnie uznaje 22 kwietnia za Dzień Matki Ziemi. Jest to największa świecka uroczystość na świecie pod względem uczestnictwa — angażuje ponad miliard ludzi w ponad 193 krajach. Dzień jest poświęcony edukacji ekologicznej i działaniom na rzecz ochrony środowiska.',
+      'W Polsce Dzień Ziemi jest coraz bardziej popularny — szkoły organizują akcje sprzątania, sadzenia drzew i wykłady ekologiczne. Wiele miast i gmin przeprowadza inicjatywy na rzecz czystości i ochrony przyrody.'
+    ],
+    traditions: [
+      'Sprzątanie parków, lasów i brzegów rzek',
+      'Sadzenie drzew i roślin',
+      'Akcje edukacyjne w szkołach i przedszkolach',
+      'Marsze i demonstracje ekologiczne',
+      'Ograniczanie zużycia energii i plastiku'
+    ],
+    related: ['dzien-wiosny', 'dzien-ksiazki']
+  },
+  'dzien-ksiazki': {
+    name: 'Światowy Dzień Książki',
+    date: '23 kwietnia',
+    emoji: '📚',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'UNESCO, od 1995 roku; data związana ze śmiercią Cervantesa i Szekspira (1616)',
+    observed: 'Ponad 100 państw',
+    desc: [
+      'Światowy Dzień Książki i Praw Autorskich obchodzony jest 23 kwietnia z inicjatywy UNESCO od 1995 roku. Data nie jest przypadkowa — 23 kwietnia 1616 roku zmarli dwaj giganci literatury światowej: Miguel de Cervantes (autor Don Kichota) i William Shakespeare. Tego samego dnia urodził się Vladímir Nabokov.',
+      'Celem święta jest promowanie czytelnictwa, wydawnictwa i ochrony własności intelektualnej. W Polsce dzień ten zbliżony jest do „Nocy Bibliotek" i różnych akcji zachęcających do czytania. Każdego roku wyznaczane jest jedno miasto na Światową Stolicę Książki UNESCO.',
+      'W Polsce czytelnictwo jest wyzwaniem — badania wykazują, że ponad połowa Polaków nie przeczytała w danym roku żadnej książki. Dzień Książki to okazja do promocji bibliotek, targu książki i wymiany lektur.'
+    ],
+    traditions: [
+      'Akcje rozdawania i wymiany książek w miastach',
+      'Noc Bibliotek — nocne spotkania autorskie i dyskusje',
+      'Promocje w księgarniach i bibliotekach',
+      'Konkursy czytelnicze i literackie w szkołach',
+      'Spotkania z autorami i pisarzami'
+    ],
+    related: ['dzien-ziemi', 'swieto-pracy']
+  },
+  'swieto-pracy': {
+    name: 'Święto Pracy',
+    date: '1 maja',
+    emoji: '⚒️',
+    type: 'state',
+    typeLabel: 'Święto państwowe',
+    type2: 'cultural',
+    typeLabel2: 'Międzynarodowe',
+    dayOff: true,
+    origin: 'Ruch robotniczy, Chicago 1886; oficjalnie w Polsce od 1919',
+    observed: 'Polska i ponad 80 państw na świecie',
+    desc: [
+      'Międzynarodowe Święto Pracy obchodzone jest 1 maja na cześć ruchu robotniczego i walki o prawa pracownicze. Jego korzenie tkwią w wydarzeniach w Chicago z 1886 roku — 1 maja tamtego roku robotnicy rozpoczęli strajk generalny w celu wywalczenia 8-godzinnego dnia pracy. Starcia z policją w okolicach placu Haymarket (4 maja) zakończyły się ofiarami śmiertelnymi.',
+      'Na cześć ofiar z Chicago, II Międzynarodówka Socjalistyczna ogłosiła w 1889 roku 1 maja dniem solidarności robotniczej. W Polsce Święto Pracy zostało oficjalnie ustanowione w 1919 roku. W czasach PRL było hucznie celebrowane pochodami pierwszomajowymi, które stały się symbolem komunistycznej propagandy.',
+      'Dziś 1 maja jest w Polsce przede wszystkim dniem wypoczynku i często „długiego weekendu majowego" — w połączeniu ze Świętem Konstytucji 3 Maja tworzy kilkudniowy wypoczynek zwany „majówką".'
+    ],
+    traditions: [
+      'Majówka — grillowanie, pikniki i wycieczki w gronie rodziny i przyjaciół',
+      'Marsze związkowe i demonstracje pracownicze w dużych miastach',
+      'Pierwsze wyjazdy turystyczne sezonu wiosennego',
+      'Tradycja pochodu pierwszomajowego (dziś rzadka)',
+      'Sezony otwarcia ogródków i restauracji na zewnątrz'
+    ],
+    related: ['konstytucja-3-maja', 'dzien-pracy']
+  },
+  'konstytucja-3-maja': {
+    name: 'Święto Konstytucji 3 Maja',
+    date: '3 maja',
+    emoji: '🏛️',
+    type: 'state',
+    typeLabel: 'Święto państwowe',
+    dayOff: true,
+    origin: 'Uchwalenie Konstytucji 3 Maja 1791 r.; oficjalnie ustanowione w 1919 r.',
+    observed: 'Polska',
+    desc: [
+      'Święto Konstytucji 3 Maja upamiętnia uchwalenie przez Sejm Czteroletni 3 maja 1791 roku Konstytucji Rzeczypospolitej Obojga Narodów — pierwszej nowoczesnej konstytucji w Europie i drugiej na świecie (po Konstytucji Stanów Zjednoczonych z 1787 roku). Była ona dziełem obozu reform skupionego wokół króla Stanisława Augusta Poniatowskiego.',
+      'Konstytucja 3 Maja wprowadzała trójpodział władzy, znosiła liberum veto, ograniczała anarchię szlachecką i tworzyła nowoczesne podstawy ustrojowe państwa. Niestety, zaledwie rok po jej uchwaleniu Polska utraciła niepodległość wskutek II rozbioru przez Rosję i Prusy.',
+      'Dziś 3 maja jest jednym z ważniejszych świąt narodowych. Organizowane są uroczystości pod pomnikami, msze święte w intencji ojczyzny i pochody. Łącznie z 1 maja tworzy tzw. „majówkę" — popularny długi weekend.'
+    ],
+    traditions: [
+      'Uroczyste msze święte i nabożeństwa w intencji ojczyzny',
+      'Defilady i uroczystości państwowe z udziałem wojska',
+      'Złożenie kwiatów pod pomnikami i miejscami pamięci',
+      'Majówka — grillowanie i pikniki na łonie natury',
+      'Akademie szkolne i spektakle patriotyczne'
+    ],
+    related: ['swieto-pracy', 'swieto-niepodleglosci']
+  },
+  'dzien-matki': {
+    name: 'Dzień Matki',
+    date: '26 maja',
+    emoji: '👩‍👧‍👦',
+    type: 'cultural',
+    typeLabel: 'Święto rodzinne',
+    dayOff: false,
+    origin: 'USA 1908 (Anna Jarvis); w Polsce od 1923 roku',
+    observed: 'Polska i ponad 50 państw na świecie',
+    desc: [
+      'Dzień Matki obchodzony jest w Polsce 26 maja. Święto ma uhonorować matki i macierzyństwo — jeden z fundamentów rodziny i społeczeństwa. Pierwsze obchody zorganizowała w 1908 roku Anna Jarvis w Grafton (Wirginia Zachodnia, USA) ku czci swojej nieżyjącej matki, Ann Jarvis, działaczki społecznej.',
+      'W Polsce Dzień Matki po raz pierwszy zorganizowano w 1923 roku z inicjatywy Związku Pracy Obywatelskiej Kobiet w Warszawie. Szybko zyskał popularność i stał się jednym z najważniejszych świąt rodzinnych. Data 26 maja nawiązuje do urodzin Jana Szczepanika — polskiego wynalazcy i filantropa.',
+      'Dziś Dzień Matki to przede wszystkim czas, gdy dzieci — małe i duże — wyrażają wdzięczność i miłość swoim mamom. W polskich szkołach dzieci przygotowują akademie i przedstawienia, a w domach wręczają laurki, kwiaty i prezenty.'
+    ],
+    traditions: [
+      'Wręczanie kwiatów — szczególnie goździków i tulipanów',
+      'Akademie i inscenizacje w przedszkolach i szkołach',
+      'Śniadanie lub obiad dla mamy przygotowany przez rodzinę',
+      'Kartki, laurki i handmade prezenty od dzieci',
+      'Wyjścia do restauracji i wspólne spędzanie czasu'
+    ],
+    related: ['dzien-kobiet', 'dzien-dziecka', 'walentynki']
+  },
+  'dzien-dziecka': {
+    name: 'Dzień Dziecka',
+    date: '1 czerwca',
+    emoji: '🎈',
+    type: 'cultural',
+    typeLabel: 'Święto rodzinne',
+    dayOff: false,
+    origin: 'Konferencja ONZ w Genewie 1925; Polska obchodzi od 1952',
+    observed: 'Polska i ponad 50 państw (różne daty)',
+    desc: [
+      'Dzień Dziecka obchodzony jest w Polsce 1 czerwca. Jego historia sięga 1925 roku, gdy na Światowej Konferencji w Genewie zadeklarowano prawa dzieci do ochrony. W PRL-u Dzień Dziecka ustanowiono w 1952 roku, wzorując się na rozwiązaniach radzieckich.',
+      'W Polsce Dzień Dziecka jest dniem, gdy dzieci otrzymują od dorosłych prezenty, słodycze i atrakcje. Organizowane są festyny, imprezy szkolne i przedszkolne, a parki rozrywki oferują zniżki. Jest to też okazja do przypomnienia o prawach dzieci — do bezpieczeństwa, edukacji, zdrowia i ochrony przed przemocą.',
+      'Polska ratyfikowała Konwencję ONZ o Prawach Dziecka w 1991 roku. W Polsce działa Rzecznik Praw Dziecka, który szczególnie aktywnie angażuje się w obchody 1 czerwca, organizując akcje uświadamiające.'
+    ],
+    traditions: [
+      'Prezenty, zabawki i słodycze dla dzieci',
+      'Festyny i zabawy szkolne i przedszkolne',
+      'Darmowe lub zniżkowe atrakcje w parkach i kinach',
+      'Rodzinne wyjścia do zoo, parku rozrywki, kina',
+      'Konkursy i zawody sportowe dla dzieci'
+    ],
+    related: ['dzien-matki', 'dzien-wiosny']
+  },
+  'wniebowstapienie': {
+    name: 'Wniebowstąpienie Pańskie',
+    date: 'Ruchome (czwartek, 39 dni po Wielkanocy)',
+    emoji: '✨',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Chrześcijaństwo, I wiek n.e.',
+    observed: 'Kościół Katolicki, Polska i kraje katolickie',
+    desc: [
+      'Wniebowstąpienie Pańskie (łac. Ascensio Domini) upamiętnia uniesienie się Jezusa Chrystusa do nieba 40 dni po Zmartwychwstaniu, w obecności apostołów na Górze Oliwnej. Jest to jedna z głównych prawd wiary chrześcijańskiej opisana w Ewangelii Łukasza i Dziejach Apostolskich.',
+      'Wniebowstąpienie przypada zawsze w czwartek — 39 dni po Niedzieli Wielkanocnej (40. dzień Okresu Wielkanocnego). W wielu krajach katolickich (Niemcy, Francja, Belgia, Holandia) jest dniem wolnym od pracy, jednak w Polsce nie ma takiego statusu.',
+      'Liturgicznie Wniebowstąpienie zamyka Okres Wielkanocny i zapowiada Zesłanie Ducha Świętego (Zielone Świątki) 10 dni później. W polskiej tradycji ludowej wiązało się z procesjami i błogosławieństwem pól.'
+    ],
+    traditions: [
+      'Uroczysta msza święta w kościele',
+      'Procesje poza kościołem — tradycja błogosławienia pól',
+      'Nowenna przed Zesłaniem Ducha Świętego',
+      'W szkołach nauka o znaczeniu teologicznym tego święta'
+    ],
+    related: ['wielkanoc', 'zielone-swiatki', 'boze-cialo']
+  },
+  'dzien-wiatru': {
+    name: 'Dzień Wiatru',
+    date: '15 czerwca',
+    emoji: '🌬️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Inicjatywa branży energetyki wiatrowej, od 2007 roku',
+    observed: 'Europa i świat',
+    desc: [
+      'Globalny Dzień Wiatru (ang. Global Wind Day) obchodzony jest 15 czerwca z inicjatywy Europejskiego Stowarzyszenia Energii Wiatrowej (EWEA) i Światowej Rady Energii Wiatrowej (GWEC). Po raz pierwszy zorganizowano go w 2007 roku.',
+      'Celem święta jest popularyzacja energetyki wiatrowej jako czystej i odnawialnej alternatywy dla paliw kopalnych. W Polsce energetyka wiatrowa szybko się rozwija — Polska należy do czołówki europejskich producentów energii z wiatru, szczególnie na obszarach Niziny Mazowieckiej i wybrzeża Bałtyku.',
+      'W Dniu Wiatru organizowane są otwarte farmy wiatrowe, wykłady o energetyce odnawialnej, pokazy latawców i imprezy edukacyjne dla dzieci i dorosłych. To też okazja do dyskusji o transformacji energetycznej i walce ze zmianami klimatycznymi.'
+    ],
+    traditions: [
+      'Latanie latawcami i wiatrakami',
+      'Otwarte dni na farmach wiatrowych',
+      'Wykłady i warsztaty o energetyce odnawialnej',
+      'Konkursy budowy latawców w szkołach',
+      'Akcje informacyjne o OZE'
+    ],
+    related: ['dzien-ziemi', 'dzien-ksiazki']
+  },
+  'zielone-swiatki': {
+    name: 'Zesłanie Ducha Świętego (Zielone Świątki)',
+    date: 'Ruchome (niedziela, 49 dni po Wielkanocy)',
+    emoji: '🕊️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Chrześcijaństwo, I wiek n.e.; nawiązuje do żydowskiego święta Szawuot',
+    observed: 'Polska i kraje chrześcijańskie',
+    desc: [
+      'Zielone Świątki (oficjalnie: Niedziela Zesłania Ducha Świętego) obchodzone są 50 dni po Wielkanocy. Upamiętniają one zejście Ducha Świętego na apostołów i Maryję zgromadzonych w Wieczerniku w Jerozolimie, co opisuje Księga Dziejów Apostolskich. To wydarzenie jest uważane za narodziny Kościoła.',
+      'Polska nazwa „Zielone Świątki" pochodzi od zwyczaju ozdabiania domów, kościołów i studni zielonymi gałązkami, kwiatami i wiankami — symbolizującymi odrodzenie i działanie Ducha Świętego. W Polsce jest to dzień wolny od pracy.',
+      'Tradycje Zielonych Świątek mają silny charakter ludowy. W wielu regionach wypasano krowy przez zielone pola (puszczanie „majowych"), a dziewczęta plotły wianki i puszczały je na wodę — wróżąc z nich przyszłość miłosną.'
+    ],
+    traditions: [
+      'Ozdabianie kościołów i domów zielonymi gałązkami i kwiatami',
+      'Uroczysta msza z czytaniem Dziejów Apostolskich',
+      'Procesje ze świecami i śpiew modlitwy do Ducha Świętego',
+      'Ludowe wianki i wróżby dziewcząt',
+      'Majowe — procesje i śpiewy maryjne kończące maj'
+    ],
+    related: ['wielkanoc', 'wniebowstapienie', 'boze-cialo']
+  },
+  'boze-cialo': {
+    name: 'Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa)',
+    date: 'Ruchome (czwartek, 60 dni po Wielkanocy)',
+    emoji: '🌹',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Kościół Katolicki, bulla papieska 1264 r.; w Polsce od XIV wieku',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Boże Ciało (łac. Corpus Christi) to uroczystość katolicka obchodzona w czwartek 60 dni po Wielkanocy. Upamiętnia ona ustanowienie Eucharystii podczas Ostatniej Wieczerzy. Święto zostało wprowadzone przez papieża Urbana IV w 1264 roku na wniosek świętej Julianny z Liège.',
+      'W Polsce Boże Ciało jest jednym z największych świąt katolickich. Tradycja procesji eucharystycznych przez ulice miast i wsi ma tu kilkusetletnią historię. Cztery ołtarze ustawiane na trasie procesji symbolizują cztery Ewangelie.',
+      'Polska obchodzi Boże Ciało z wielką pompą — księża niosą monstrancję pod baldachimem, wierni rzucają kwiaty pod nogi procesji, stroje ludowe i mundury to normalny widok. Szczególnie słynna jest procesja w Łowiczu, gdzie kobiety przybywają w tradycyjnych strojach łowickich.'
+    ],
+    traditions: [
+      'Procesja eucharystyczna ulicami z monstrancją pod baldachimem',
+      'Cztery ołtarze na trasie procesji — czytania z czterech Ewangelii',
+      'Ozdabianie ulic kwiatami, brzozowymi gałązkami i chorągwiami',
+      'Stroje ludowe i regionalne w procesjach (szczególnie w Łowiczu)',
+      'Uroczysta msza polowa i uczestnictwo całej wspólnoty'
+    ],
+    related: ['wielkanoc', 'zielone-swiatki', 'wniebowstapienie']
+  },
+  'wniebowziecie-nmp': {
+    name: 'Wniebowzięcie Najświętszej Maryi Panny',
+    date: '15 sierpnia',
+    emoji: '🌺',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Kościół Katolicki; dogmat ogłoszony przez Piusa XII w 1950 r.',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Wniebowzięcie Najświętszej Maryi Panny obchodzone jest 15 sierpnia. Według wiary katolickiej Maryja po śmierci (lub odśnięciu — tradycja wschodnia) została wzięta do nieba z duszą i ciałem. Jest to dogmat wiary katolickiej ogłoszony przez papieża Piusa XII w 1950 roku bullą Munificentissimus Deus.',
+      'W Polsce 15 sierpnia pokrywa się z Świętem Wojska Polskiego — upamiętniającym Bitwę Warszawską z 1920 roku (zwaną „Cudem nad Wisłą"), gdy wojska polskie pod dowództwem marszałka Józefa Piłsudskiego pokonały Armię Czerwoną. Te dwa święta nadają 15 sierpnia szczególny, podwójny wymiar.',
+      'Dawniej 15 sierpnia był jednym z najpopularniejszych dożynek — „Matka Boska Zielna" to ludowa nazwa tego dnia. Wierni przynosili do kościołów bukiety ziół, kwiatów i kłosów zbóż do poświęcenia, wierząc że będą chronić dom przez cały rok.'
+    ],
+    traditions: [
+      'Uroczysta msza i procesja ku czci Matki Bożej',
+      'Poświęcenie bukietów ziół, kwiatów i kłosów zbóż (Matka Boska Zielna)',
+      'Defilada Wojska Polskiego w Warszawie (Święto Wojska)',
+      'Uroczystości patriotyczne — obchody Bitwy Warszawskiej',
+      'Pielgrzymki do sanktuariów maryjnych (Częstochowa, Licheń)'
+    ],
+    related: ['boze-cialo', 'boze-narodzenie', 'wszystkich-swietych']
+  },
+  'dzien-nauczyciela': {
+    name: 'Dzień Nauczyciela (Komisji Edukacji Narodowej)',
+    date: '14 października',
+    emoji: '📐',
+    type: 'cultural',
+    typeLabel: 'Święto branżowe',
+    dayOff: false,
+    origin: 'Polska tradycja; data nawiązuje do KEN, powołanej 14 października 1773 r.',
+    observed: 'Polska',
+    desc: [
+      'Dzień Nauczyciela obchodzony jest w Polsce 14 października. Data nawiązuje do powołania Komisji Edukacji Narodowej (KEN) — 14 października 1773 roku. KEN była pierwszym na świecie ministerstwem oświaty, powołanym przez sejm Rzeczypospolitej Obojga Narodów po kasacji zakonu jezuitów.',
+      'Dzień ten jest tradycyjnie dniem, kiedy uczniowie składają życzenia i podziękowania swoim nauczycielom. W wielu szkołach uczniowie klas starszych organizują zastępstwa za nauczycieli, prowadząc lekcje dla młodszych kolegów. Nauczyciele mogą też liczyć na prezenty i kwiaty od uczniów i rodziców.',
+      'Choć formalnie Dzień Nauczyciela nie jest dniem wolnym od pracy, w wielu szkołach organizowane są akademie, przedstawienia i inne uroczystości zamiast regularnych lekcji.'
+    ],
+    traditions: [
+      'Życzenia i kwiaty dla nauczycieli od uczniów i rodziców',
+      'Akademie i inscenizacje w szkołach i przedszkolach',
+      'Uczniowskie zastępstwo — starsi uczniowie prowadzą lekcje',
+      'Nagrody i odznaczenia dla wyróżnionych nauczycieli',
+      'Podziękowania w mediach społecznościowych (akcja #DzięKuję)'
+    ],
+    related: ['dzien-dziecka', 'swieto-pracy']
+  },
+  'halloween': {
+    name: 'Halloween',
+    date: '31 października',
+    emoji: '🎃',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Celtycki Samhain, Irlandia/Wielka Brytania; popularność w Polsce od lat 90. XX w.',
+    observed: 'USA, UK, Irlandia; w Polsce przede wszystkim przez dzieci i młodzież',
+    desc: [
+      'Halloween obchodzone jest 31 października i wywodzi się ze starożytnego celtyckiego święta Samhain (czyt. „Sałin"), którym Celtowie obchodzili koniec lata i zbiorów. Wierzyli, że tej nocy granica między światem żywych i umarłych jest najcieńsza, a duchy mogą powracać na ziemię.',
+      'Po chrystianizacji Irlandii i Wielkiej Brytanii Samhain zlał się z Wszystkimi Świętymi (1 listopada), tworząc „All Hallows Eve" (Wigilię Wszystkich Świętych) — stąd skrót „Halloween". W XIX wieku irlandzcy emigranci przywieźli zwyczaj do USA, skąd — już w zmodernizowanej formie — trafił z powrotem do Europy.',
+      'W Polsce Halloween jest popularne przede wszystkim wśród dzieci i młodzieży — chodzenie w kostiumach, zabawy w „cukierek albo psikus" (ang. trick-or-treat) i dekorowanie dyń. Nie jest obchodzone przez starsze pokolenia ani przez środowiska religijne, które preferują skupienie na Wszystkich Świętych.'
+    ],
+    traditions: [
+      'Przebieranie się w kostiumy — duch, wiedźma, wampir, zombie',
+      'Rzeźbienie dyni (Jack-o-lantern) ze świeczką w środku',
+      '"Cukierek albo psikus" — dzieci chodzą po domach po słodycze',
+      'Imprezy tematyczne z dekoracjami Halloween',
+      'Oglądanie horrorów i strasznie filmów'
+    ],
+    related: ['wszystkich-swietych', 'dzien-wiatru']
+  },
+  'wszystkich-swietych': {
+    name: 'Wszystkich Świętych',
+    date: '1 listopada',
+    emoji: '🕯️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Chrześcijaństwo, IV wiek; papież Grzegorz IV ustanowił 1 listopada w 837 r.',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Wszystkich Świętych (łac. Festum Omnium Sanctorum) obchodzone jest 1 listopada i jest dniem pamięci o wszystkich świętych i błogosławionych Kościoła Katolickiego — zarówno oficjalnie kanonizowanych, jak i tych znanych tylko Bogu. Następnego dnia, 2 listopada, przypada Dzień Zaduszny — modlitwa za dusze czyśćcowe.',
+      'W Polsce Wszystkich Świętych jest jednym z najważniejszych świąt zarówno religijnych, jak i rodzinnych. Polacy masowo odwiedzają cmentarze, aby odwiedzić groby swoich bliskich, zapalić znicze i złożyć kwiaty. Widok polskich nekropolii tej nocy — morze ognia tysięcy zniczy — jest niezwykłym zjawiskiem.',
+      'Tradycja odwiedzania grobów ma w Polsce głęboki wymiar społeczny — jest to czas refleksji, pamięci o tych, którzy odeszli, ale też spotkania rodzinnego. Na wielu cmentarzach odbywają się specjalne nabożeństwa polowe.'
+    ],
+    traditions: [
+      'Odwiedzanie cmentarzy i zapalanie zniczy na grobach bliskich',
+      'Składanie kwiatów i wieńców na grobach',
+      'Msze święte w kościołach i nabożeństwa na cmentarzach',
+      'Modlitwa za dusze czyśćcowe (Dzień Zaduszny 2 listopada)',
+      'Rodzinne odwiedziny grobów i wspomnienia o zmarłych'
+    ],
+    related: ['halloween', 'swieto-niepodleglosci', 'gromniczna']
+  },
+  'swieto-niepodleglosci': {
+    name: 'Narodowe Święto Niepodległości',
+    date: '11 listopada',
+    emoji: '🦅',
+    type: 'state',
+    typeLabel: 'Święto państwowe',
+    dayOff: true,
+    origin: 'Odzyskanie niepodległości przez Polskę 11 listopada 1918 r.',
+    observed: 'Polska',
+    desc: [
+      'Narodowe Święto Niepodległości obchodzone jest 11 listopada. W tym dniu 1918 roku Polska odzyskała niepodległość po 123 latach zaborów (1795–1918) przez Rosję, Prusy i Austrię. 11 listopada jest datą rozejmu kończącego I wojnę światową — upadek trzech mocarstw zaborczych (Rosji, Niemiec, Austro-Węgier) umożliwił odrodzenie państwa polskiego.',
+      'Kluczową postacią tego dnia jest Józef Piłsudski — naczelny wódz Wojska Polskiego, który 11 listopada 1918 roku przejął zwierzchnictwo wojskowe w Warszawie. W 1919 roku Sejm Ustawodawczy uznał 11 listopada dniem Święta Niepodległości, jednak w czasach PRL był on zakazany. Przywrócono go oficjalnie w 1989 roku.',
+      'Dziś Święto Niepodległości jest obchodzone uroczyście w całej Polsce. Szczególnie znany jest Marsz Niepodległości w Warszawie — coroczna manifestacja patriotyczna organizowana przez środowiska nacjonalistyczne, przyciągająca dziesiątki tysięcy uczestników z całej Polski i zagranicy, często wywołująca kontrowersje.'
+    ],
+    traditions: [
+      'Uroczystości państwowe z udziałem Prezydenta i rządu',
+      'Defilada Wojska Polskiego w Warszawie',
+      'Złożenie kwiatów pod Grobem Nieznanego Żołnierza',
+      'Marsz Niepodległości w Warszawie i inne marsze w miastach',
+      'Akademie szkolne i spektakle patriotyczne'
+    ],
+    related: ['konstytucja-3-maja', 'swieto-pracy']
+  },
+  'mikolajki': {
+    name: 'Mikołajki',
+    date: '6 grudnia',
+    emoji: '🎅',
+    type: 'cultural',
+    typeLabel: 'Święto rodzinne',
+    dayOff: false,
+    origin: 'Kult świętego Mikołaja z Miry (IV wiek); w Polsce tradycja od wieków',
+    observed: 'Polska i kraje Europy Środkowej',
+    desc: [
+      'Mikołajki obchodzone są 6 grudnia w dniu wspomnienia świętego Mikołaja, biskupa Miry w Licji (dzisiejsza Turcja), który żył w IV wieku. Znany był z dobroczynnoci i hojności — legendy głoszą, że nocą podrzucał worki ze złotem przez okna do domów biednych dziewcząt, by miały posag.',
+      'W Polsce Mikołajki są szczególnie ważnym dniem dla dzieci — grzeczne dzieci budzą się rankiem i znajdują prezenty w butach lub pod poduszką, niegrzeczne zaś — rózgi (dziś zwykle czekoladowe). W wielu szkołach i przedszkolach pojawiają się osoby przebrane za Świętego Mikołaja.',
+      'Mikołajki różnią się od Bożego Narodzenia — to polska tradycja „małego prezentu" specjalnie dla dzieci. W niektórych rodzinach Mikołajki zastąpiły Wigilię jako główny dzień obdarowywania dzieci, ale większość Polaków traktuje je jako osobne, dodatkowe święto.'
+    ],
+    traditions: [
+      'Dzieci stawiają buty przy łóżku lub drzwiach dla Świętego Mikołaja',
+      'Prezenty lub słodycze rankiem — dla grzecznych, rózga — dla niegrzecznych',
+      'Wizyta Świętego Mikołaja w szkołach i przedszkolach',
+      'Zawody mikołajkowe i pływanie mikołajkowe w jeziorach i basenach',
+      'Bale mikołajkowe i imprezy firmowe z motywem świętego Mikołaja'
+    ],
+    related: ['wigilia', 'boze-narodzenie', 'nowy-rok']
+  },
+  'wigilia': {
+    name: 'Wigilia Bożego Narodzenia',
+    date: '24 grudnia',
+    emoji: '🕯️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Tradycja chrześcijańska i słowiańska; w Polsce od XI-XII wieku',
+    observed: 'Polska i kraje słowiańskie',
+    desc: [
+      'Wigilia Bożego Narodzenia to 24 grudnia — wieczór poprzedzający narodziny Jezusa. W Polsce Wigilia jest najważniejszym wieczorem roku — bardziej uroczystym niż sam dzień Bożego Narodzenia. Nazwa „wigilia" pochodzi od łacińskiego „vigilia" (czuwanie) — nawiązując do czuwania przed wielkim świętem.',
+      'Polska Wigilia jest wyjątkowa na tle Europy swoją atmosferą i bogactwem tradycji. Kolacja wigilijna powinna składać się z 12 potraw (symbolizujących 12 apostołów lub 12 miesięcy roku). Tradycyjnie są to dania bezmięsne — barszcz z uszkami, karp, pierogi, śledź, makowiec, kutia.',
+      'Pierwszy znak Gwiazdy Betlejemskiej (pierwsza gwiazda na niebie) rozpoczyna wieczerzę. Na stole zostawia się wolne miejsce dla niespodziewanego gościa lub pamięci po zmarłych. Po kolacji dzieci szukają prezentów pod choinką, a rodziny wspólnie śpiewają kolędy i idą na Pasterkę.'
+    ],
+    traditions: [
+      'Kolacja wigilijna — 12 potraw bez mięsa (karp, barszcz, pierogi, uszka)',
+      'Dzielenie się opłatkiem z życzeniami dla każdego przy stole',
+      'Wolne miejsce przy stole — dla niespodziewanego gościa lub w pamięci o zmarłych',
+      'Prezenty pod choinką — odkrywane po kolacji',
+      'Pasterka — uroczysta msza o północy z 24 na 25 grudnia',
+      'Kolędowanie i śpiewanie polskich kolęd'
+    ],
+    related: ['boze-narodzenie', 'boze-narodzenie-2', 'nowy-rok', 'mikolajki']
+  },
+  'boze-narodzenie': {
+    name: 'Boże Narodzenie (I dzień)',
+    date: '25 grudnia',
+    emoji: '⭐',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Chrześcijaństwo, IV wiek n.e.; data ustalona przez Kościół Rzymski ok. 336 r.',
+    observed: 'Polska i kraje chrześcijańskie na całym świecie',
+    desc: [
+      'Boże Narodzenie (25 grudnia) to jedno z dwóch najważniejszych świąt chrześcijańskich, upamiętniające narodziny Jezusa Chrystusa w Betlejem. Choć dokładna data narodzin Jezusa nie jest znana, Kościół Zachodni wybrał 25 grudnia już w IV wieku, być może nawiązując do pogańskiego święta Sol Invictus (Niezwyciężone Słońce) lub zimowego przesilenia.',
+      'W Polsce Boże Narodzenie obejmuje dwa dni wolne — 25 i 26 grudnia. Pierwszy dzień jest czasem uroczystych mszy, rodzinnych obiadów i odpoczynku. Tradycyjny obiad bożonarodzeniowy składa się z mięsnych potraw (bigos, kapuśniak, pieczeń) — po wigilijnym postnym menu.',
+      'Choinka, szopka (Betlejem z figurkami) i kolędy są nieodłącznymi elementami polskich Świąt. W Polsce kolędowanie ma wielowiekową tradycję — chodzenie z szopką lub gwiazdą po domach było powszechne w całym kraju.'
+    ],
+    traditions: [
+      'Msza bożonarodzeniowa z całą rodziną',
+      'Uroczysty rodzinny obiad z mięsem (bigos, kapuśniak, pieczeń)',
+      'Śpiewanie kolęd przy choince',
+      'Szopka bożonarodzeniowa — figurki Maryi, Józefa, Dzieciątka, Trzech Króli',
+      'Odwiedziny dalszej rodziny i krewnych',
+      'Kolędnicy chodzący po domach z szopką lub gwiazdą'
+    ],
+    related: ['wigilia', 'boze-narodzenie-2', 'trzech-kroli', 'mikolajki']
+  },
+  'boze-narodzenie-2': {
+    name: 'Boże Narodzenie (II dzień — Szczepan)',
+    date: '26 grudnia',
+    emoji: '🎄',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: true,
+    origin: 'Tradycja chrześcijańska; wspomnienie świętego Szczepana (pierwszego męczennika)',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Drugi dzień Bożego Narodzenia przypada 26 grudnia i w tradycji kościelnej jest wspomnieniem świętego Szczepana — pierwszego chrześcijańskiego męczennika, ukamienowanego za wyznawanie wiary. Stąd potoczna nazwa tego dnia: „Szczepan".',
+      'W Polsce 26 grudnia jest równie ważny jak 25 — to dzień wolny, przeznaczony na dalsze świętowanie, odwiedziny krewnych i przyjaciół, których nie było w domu wcześniej. Tradycyjnie tego dnia kolędnicy (przebrani za postacie biblijne lub zwierzęta) chodzą po wsiach i miastach.',
+      'Przed Bożym Narodzeniem w kościołach odprawiano mszę roratną (Roraty) — codzienną, wczesnoranną mszę ku czci Matki Bożej podczas Adwentu. 26 grudnia zamyka intensywny czas świąt i zapowiada spokojniejszy czas między Bożym Narodzeniem a Nowym Rokiem.'
+    ],
+    traditions: [
+      'Odwiedziny rodziny i przyjaciół — dalsza część świętowania',
+      'Kolędnicy — przebrani za Heroda, Śmierć, Anioła, szopkę żywą',
+      'Pozostałości wigilijnej kolacji podawane na zimno',
+      'Spacery i odpoczynek po biesiadzie',
+      'Msza ku czci świętego Szczepana'
+    ],
+    related: ['wigilia', 'boze-narodzenie', 'trzech-kroli']
+  },
+  'dzien-ojca': {
+    name: 'Dzień Ojca',
+    date: '23 czerwca',
+    emoji: '👨‍👧‍👦',
+    type: 'cultural',
+    typeLabel: 'Święto rodzinne',
+    dayOff: false,
+    origin: 'USA lata 10. XX w. (Sonora Dodd); w Polsce od lat 90. XX w.',
+    observed: 'Polska i ponad 70 państw na świecie',
+    desc: [
+      'Dzień Ojca obchodzony jest w Polsce 23 czerwca. Święto ma uhonorować ojców i ojcostwo — rolę mężczyzny jako rodzica i opiekuna. Inicjatorką Dnia Ojca w USA była Sonora Smart Dodd, która w 1909 roku zaproponowała święto ku czci swojego ojca — wdowca wychowującego samodzielnie szóstkę dzieci.',
+      'W Polsce Dzień Ojca nie ma tak długiej tradycji jak Dzień Matki — zyskał popularność dopiero po 1989 roku, przede wszystkim za sprawą kultury popularnej i mediów. Niemniej dziś jest jednym z ważnych świąt rodzinnych, choć obchodzony skromniej niż Dzień Matki.',
+      'Data 23 czerwca jest specyficzna dla Polski — w innych krajach Dzień Ojca przypada w różnych terminach (np. w USA i Niemczech w trzecią niedzielę czerwca). W tym dniu dzieci przygotowują niespodzianki, laurki i prezenty dla swoich tatusiów.'
+    ],
+    traditions: [
+      'Życzenia i prezenty dla ojców — zegarki, narzędzia, książki, gadżety',
+      'Laurki i kartki przygotowane przez dzieci w szkołach i przedszkolach',
+      'Rodzinny obiad lub wyjście do restauracji na cześć taty',
+      'Wspólne aktywności z ojcem — sport, spacery, wyjazdy',
+      'Akademie i przedstawienia w szkołach ku czci tatusiów'
+    ],
+    related: ['dzien-matki', 'dzien-dziecka', 'walentynki']
+  },
+  'dzien-morza': {
+    name: 'Dzień Morza',
+    date: '1 lipca',
+    emoji: '⚓',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Polska tradycja; ustanowiony w 1932 roku',
+    observed: 'Polska, szczególnie regiony nadmorskie',
+    desc: [
+      'Dzień Morza obchodzony jest w Polsce 1 lipca — jako coroczne święto upamiętniające związek Polski z Morzem Bałtyckim. Ustanowiony w 1932 roku przez Ligę Morską i Kolonialną, miał budować świadomość morską wśród Polaków i promować rozwój polskiej floty handlowej oraz marynarki.',
+      'Polska ma ok. 770 km wybrzeża Morza Bałtyckiego. Główne porty morskie to Gdańsk, Gdynia i Szczecin. Gdynia — wybudowana od podstaw w latach 20. XX wieku — była symbolem ambicji morskich odrodzonego państwa polskiego. Port w Gdyni był jednym z największych i najnowocześniejszych w Europie przed II wojną światową.',
+      'W Dniu Morza organizowane są regaty, pokazy morskie, dni otwarte na statkach i okrętach, festiwale szantowe oraz uroczystości w portach. To okazja do podkreślenia znaczenia morza dla polskiej gospodarki, kultury i historii.'
+    ],
+    traditions: [
+      'Regaty i zawody żeglarskie na Bałtyku i jeziorach',
+      'Dni otwarte na okrętach Marynarki Wojennej i statkach handlowych',
+      'Festiwale szantowe — muzyka marynarzy',
+      'Uroczystości portowe w Gdańsku, Gdyni i Szczecinie',
+      'Wystawy o historii polskiej floty i marynarki'
+    ],
+    related: ['swieto-pracy', 'dzien-ziemi']
+  },
+  'dzien-babci-dziadka': {
+    name: 'Dzień Babci i Dziadka',
+    date: '21–22 stycznia',
+    emoji: '👴👵',
+    type: 'cultural',
+    typeLabel: 'Święto rodzinne',
+    dayOff: false,
+    origin: 'Polska tradycja, ustanowiona w latach 60. XX w.',
+    observed: 'Polska',
+    desc: [
+      'Dzień Babci obchodzony jest w Polsce 21 stycznia, a Dzień Dziadka — 22 stycznia. To dwa bliskie sobie święta rodzinne, dedykowane dziadkom — ważnym osobom w życiu każdej polskiej rodziny. Oba dni cieszą się szczególną popularnością wśród dzieci w wieku przedszkolnym i wczesnoszkolnym.',
+      'Tradycja obdarowywania babć i dziadków wywodzi się z PRL-u — szkoły i przedszkola organizowały akademie, na których dzieci recytowały wiersze, śpiewały piosenki i wręczały laurki. Zwyczaj ten przetrwał do dziś i jest jednym z najbardziej wzruszających momentów roku szkolnego.',
+      'Rola dziadków w polskiej rodzinie jest ogromna — często to oni opiekują się wnukami, przekazują tradycje i wartości, są ostoją rodzinnej pamięci. Dzień Babci i Dziadka jest okazją, by wyrazić im za to wdzięczność.'
+    ],
+    traditions: [
+      'Akademie i przedstawienia w przedszkolach i szkołach',
+      'Laurki, rysunki i wiersze ofiarowane dziadkom przez wnuki',
+      'Rodzinne odwiedziny babci i dziadka z kwiatami i słodyczami',
+      'Wspólny obiad lub herbata z babcią i dziadkiem',
+      'Zdjęcia pamiątkowe całej rodziny'
+    ],
+    related: ['dzien-matki', 'dzien-ojca', 'dzien-dziecka']
+  },
+  'dzien-ratownika': {
+    name: 'Dzień Ratownictwa Medycznego',
+    date: '13 września',
+    emoji: '🚑',
+    type: 'cultural',
+    typeLabel: 'Dzień branżowy',
+    dayOff: false,
+    origin: 'Polska; nawiązuje do uchwalenia Ustawy o Państwowym Ratownictwie Medycznym w 2006 r.',
+    observed: 'Polska',
+    desc: [
+      'Dzień Ratownictwa Medycznego obchodzony jest 13 września w Polsce. Upamiętnia uchwalenie 8 września 2006 roku Ustawy o Państwowym Ratownictwie Medycznym, która zorganizowała system ratownictwa medycznego w Polsce. Data 13 września nawiązuje do wejścia ustawy w życie.',
+      'Ratownicy medyczni to jedna z najbardziej odpowiedzialnych grup zawodowych w Polsce — pracują w warunkach ekstremalnego stresu, często decydując o życiu lub śmierci pacjenta. Zawód ratownika medycznego wymaga specjalistycznego wykształcenia i regularnych szkoleń.',
+      'W Polsce działa blisko 1500 zespołów ratownictwa medycznego. Dzień Ratownictwa Medycznego to okazja do uhonorowania ratowników, ale też do edukacji — wielu organizatorów przeprowadza w tym dniu darmowe kursy pierwszej pomocy dla obywateli.'
+    ],
+    traditions: [
+      'Uroczystości i gale honorujące ratowników medycznych',
+      'Darmowe kursy pierwszej pomocy dla obywateli',
+      'Dni otwarte na stacjach pogotowia — pokazy sprzętu',
+      'Odznaczenia i wyróżnienia dla wybitnych ratowników',
+      'Kampanie społeczne o znaczeniu pierwszej pomocy'
+    ],
+    related: ['swieto-pracy', 'dzien-nauczyciela']
+  },
+  'dzien-historii': {
+    name: 'Rocznica agresji ZSRR na Polskę',
+    date: '17 września',
+    emoji: '🕊️',
+    type: 'state',
+    typeLabel: 'Rocznica historyczna',
+    dayOff: false,
+    origin: '17 września 1939 r. — agresja ZSRR na Polskę',
+    observed: 'Polska',
+    desc: [
+      '17 września 1939 roku — zaledwie 17 dni po napaści Niemiec na Polskę — wojska sowieckie przekroczyły wschodnią granicę Rzeczypospolitej, realizując tajne ustalenia paktu Ribbentrop-Mołotow (23 sierpnia 1939). Atak był całkowitym zaskoczeniem dla rządu polskiego, który nie spodziewał się ciosu z dwóch stron jednocześnie.',
+      'Agresja ZSRR przypieczętowała klęskę wojsk polskich broniących się przed Niemcami. Polskie władze i część armii ewakuowały się do Rumunii i dalej na Zachód, gdzie kontynuowały walkę. Setki tysięcy polskich żołnierzy dostało się do sowieckiej niewoli — wielu z nich zginęło w zbrodni katyńskiej (1940).',
+      'Rocznica 17 września jest w Polsce dniem pamięci o ofiarach agresji sowieckiej. Organizowane są uroczystości przy pomnikach, msze w intencji ofiar i prelekcje historyczne. Data ta nie jest oficjalnym świętem państwowym, ale ma duże znaczenie w polskiej tożsamości historycznej.'
+    ],
+    traditions: [
+      'Uroczystości i msze przy pomnikach ofiar agresji sowieckiej',
+      'Obchody ku pamięci ofiar zbrodni katyńskiej',
+      'Wystawy historyczne i prelekcje w szkołach i muzeach',
+      'Złożenie kwiatów pod Pomnikiem Katyńskim',
+      'Akcje edukacyjne o tajnym protokole paktu Ribbentrop-Mołotow'
+    ],
+    related: ['swieto-niepodleglosci', 'konstytucja-3-maja']
+  },
+  'przesilenie-letnie': {
+    name: 'Przesilenie letnie',
+    date: '21 czerwca',
+    emoji: '☀️',
+    type: 'cultural',
+    typeLabel: 'Zjawisko astronomiczne',
+    dayOff: false,
+    origin: 'Obserwacje astronomiczne — starożytność',
+    observed: 'Cały świat',
+    desc: [
+      'Przesilenie letnie (łac. solstitium aestivum) to dzień, w którym słońce osiąga najwyższy punkt nad horyzontem w całym roku. Przypada około 21 czerwca na półkuli północnej i jest najdłuższym dniem roku — Słońce przebywa nad horyzontem przez rekordową liczbę godzin. W Polsce w 2026 roku dzień trwa blisko 17 godzin.',
+      'Z astronomicznego punktu widzenia przesilenie letnie oznacza moment, w którym oś Ziemi jest maksymalnie nachylona w kierunku Słońca (pod kątem 23,5°). Po tym dniu noce zaczynają się stopniowo wydłużać, aż do przesilenia zimowego w grudniu.',
+      'W Polsce noc poprzedzająca przesilenie to Noc Świętojańska (Kupała) — jedno z najstarszych słowiańskich świąt, wywodzące się z pogańskich obrzędów płodności i ognia. Puszczanie wianków na wodzie, skakanie przez ognisko i szukanie kwiatu paproci to tradycje żywe po dziś dzień.'
+    ],
+    traditions: [
+      'Noc Świętojańska (Kupała) — ogniska i puszczanie wianków na wodę',
+      'Obserwacja wschodu słońca o świcie najdłuższego dnia',
+      'Festiwale i imprezy plenerowe z okazji letniego przesilenia',
+      'W skandynawskich krajach: Midsommar — wielkie świętowanie',
+      'Starożytne obrzędy — stonehenge i inne megalityczne miejsca kultu'
+    ],
+    related: ['przesilenie-zimowe', 'dzien-wiosny']
+  },
+  'przesilenie-zimowe': {
+    name: 'Przesilenie zimowe',
+    date: '22 grudnia',
+    emoji: '❄️',
+    type: 'cultural',
+    typeLabel: 'Zjawisko astronomiczne',
+    dayOff: false,
+    origin: 'Obserwacje astronomiczne — starożytność',
+    observed: 'Cały świat',
+    desc: [
+      'Przesilenie zimowe (łac. solstitium hiemale) to najkrótszy dzień roku — około 22 grudnia na półkuli północnej Słońce wschodzi najpóźniej i zachodzi najwcześniej. W Polsce dzień może trwać zaledwie około 7–8 godzin w zależności od szerokości geograficznej.',
+      'Astronomicznie to moment, gdy oś Ziemi jest maksymalnie odchylona od Słońca. Po przesileniu zimowym dni zaczynają się stopniowo wydłużać — jest to więc symboliczny „powrót Słońca" i nadzieja na wiosnę, który od tysiącleci stanowi okazję do świętowania.',
+      'Większość zimowych świąt wywodzi się właśnie z tradycji przesilenia: rzymskie Saturnalia, nordycki Jul, słowiańskie Szczodre Gody — wszystkie celebrowały powrót światła. Chrześcijańskie Boże Narodzenie zostało umieszczone w tym czasie nieprzypadkowo, nawiązując do motywu narodzin Światłości.'
+    ],
+    traditions: [
+      'Obserwacja wschodu Słońca w najkrótszym dniu roku',
+      'Słowiańskie Szczodre Gody — świętowanie powrotu światła',
+      'Nordycki Jul — dekorowanie domów zielenią i zapalanie świateł',
+      'Starożytne obrzędy w Stonehenge i innych megalitycznych miejscach',
+      'Czas refleksji i oczekiwania na dłuższe dni'
+    ],
+    related: ['przesilenie-letnie', 'boze-narodzenie', 'wigilia']
+  },
+  'sylwester': {
+    name: 'Sylwester',
+    date: '31 grudnia',
+    emoji: '🎉',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska (wspomnienie papieża Sylwestra I); w Polsce od XIV wieku',
+    observed: 'Polska i kraje zachodnie',
+    desc: [
+      'Sylwester to ostatni dzień roku — 31 grudnia. Nazwa pochodzi od papieża Sylwestra I, który zasiadał na tronie Piotrowym od 314 do 335 roku i zmarł właśnie 31 grudnia. W Polsce i wielu krajach katolickich dzień ten był obchodzony jako wspomnienie liturgiczne papieża.',
+      'Z biegiem czasu Sylwester zyskał zupełnie świecki, karnawałowy charakter. Wieczór 31 grudnia i noc 1 stycznia to czas wielkich zabaw, balów, imprez i fajerwerków. Tradycja toast o północy szampanem lub winem musującym wywodzi się z XVIII-wiecznej Francji.',
+      'W Polsce Sylwester obchodzony jest bardzo hucznie — miejskie plece i parki organizują koncerty sylwestrowe, telewizja transmituje gale, a Polacy bawią się w domach, restauracjach i na imprezach. O północy niebo zabarwia się od fajerwerków.'
+    ],
+    traditions: [
+      'Bale i imprezy sylwestrowe w gronie przyjaciół i rodziny',
+      'Toast szampanem lub winem musującym o północy',
+      'Fajerwerki i pokazy ogni sztucznych',
+      'Koncerty i gale telewizyjne z odliczaniem do Nowego Roku',
+      'Składanie życzeń noworocznych i celebracja nowych początków'
+    ],
+    related: ['nowy-rok', 'boze-narodzenie-2']
+  },
+  'tlusty-czwartek': {
+    name: 'Tłusty Czwartek',
+    date: '12 lutego 2026',
+    emoji: '🍩',
+    type: 'cultural',
+    typeLabel: 'Tradycja',
+    dayOff: false,
+    origin: 'Tradycja polska i europejska; ostatni czwartek przed Środą Popielcową',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Tłusty Czwartek to ostatni czwartek karnawału — okres hulańców i ucztowania przed Wielkim Postem. W Polsce jest to jeden z najbardziej lubianych dni kulinarnych w roku, kiedy Polacy zjadają miliony pączków i faworków.',
+      'Według tradycji w Tłusty Czwartek należy dobrze zjeść — kto nie zje pączka, temu przez cały rok może się nie wieść. Polskie cukiernie i piekarnie produkują w tym dniu kilkadziesiąt milionów pączków. Sam tylko Kraków zjada ponad milion pączków w jeden dzień.',
+      'Tradycja obżarstwa przed postem sięga średniowiecza — było to ostatnie świętowanie przed 40-dniowym Wielkim Postem, kiedy obowiązywała wstrzemięźliwość od mięsa i tłuszczów. Pączki smażono właśnie w tłuszczu, by "wyczerpać" zapasy przed postem.'
+    ],
+    traditions: [
+      'Jedzenie pączków z różanym nadzieniem i lukrem',
+      'Faworki (chrust) — kruche ciastka smażone w głębokim oleju',
+      'Odwiedzanie cukierni i piekarni po świeże wypieki',
+      'Zabawy i imprezy karnawałowe',
+      'Symboliczne objadanie się przed nadchodzącym postem'
+    ],
+    related: ['ostatki', 'popielec', 'wielkanoc']
+  },
+  'ostatki': {
+    name: 'Ostatki (Śledzik)',
+    date: '17 lutego 2026',
+    emoji: '🎭',
+    type: 'cultural',
+    typeLabel: 'Tradycja',
+    dayOff: false,
+    origin: 'Tradycja polska i europejska; wtorek przed Środą Popielcową',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Ostatki (zwane też Śledzikiem lub Zapustem) to ostatni wtorek karnawału — dzień przed Środą Popielcową, kiedy kończy się czas hulanek i zabaw. Nazwa "Ostatki" pochodzi od słowa "ostatni" — ostatnie chwile karnawałowego szaleństwa.',
+      'Tradycyjnie Ostatki to czas bali maskowych, tańców i śpiewów do późnej nocy — nierzadko do samego świtu. Dawniej w karczmach i dworach bawiono się hucznie, bo następnego dnia zaczynał się 40-dniowy Wielki Post z jego surowymi nakazami.',
+      '"Śledzik" to nazwa pochodzi od tradycji podawania śledzia o północy — symbolicznie kończącego karnawał i inaugurującego postne menu. Dziś zakłady pracy i szkoły organizują "śledziki", czyli skromne spotkania z kawą, herbatą i właśnie śledziem.'
+    ],
+    traditions: [
+      'Bale maskowe i karnawałowe do białego rana',
+      'Symboliczne podanie śledzia o północy',
+      'Ostatnie jedzenie tłustych potraw przed postem',
+      'Śpiewanie pieśni i tańce w gronie znajomych',
+      'Zakładowe i szkolne "śledziki" — skromne spotkania'
+    ],
+    related: ['tlusty-czwartek', 'popielec', 'wielkanoc']
+  },
+  'popielec': {
+    name: 'Środa Popielcowa (Popielec)',
+    date: '18 lutego 2026',
+    emoji: '✝️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska; od IX wieku w Kościele łacińskim',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Środa Popielcowa (Popielec) to pierwszy dzień Wielkiego Postu — 40-dniowego okresu pokuty i przygotowania do Wielkanocy. Tego dnia kapłan posypuje głowy wiernych popiołem, wypowiadając słowa "Prochem jesteś i w proch się obrócisz" lub "Nawracajcie się i wierzcie w Ewangelię".',
+      'Popiół pochodzi ze spalenia palm poświęconych w poprzednim roku na Niedzielę Palmową. Gest posypania głowy popiołem symbolizuje pokorę, skruchę i świadomość przemijania — nawiązuje do biblijnej tradycji żałoby i pokuty.',
+      'W Polsce Środa Popielcowa jest dniem powszednim, jednak kościoły są tego dnia przepełnione. Obowiązuje ścisły post od pokarmów mięsnych i wstrzemięźliwość. Kościół zachęca wiernych do modlitwy, postu i jałmużny przez cały Wielki Post.'
+    ],
+    traditions: [
+      'Posypanie głowy popiołem podczas mszy świętej',
+      'Post ścisły i wstrzemięźliwość od mięsa',
+      'Rozpoczęcie 40-dniowego Wielkiego Postu',
+      'Rezygnacja z przyjemności i rozrywek',
+      'Modlitwa, post i jałmużna jako praktyki wielkopostne'
+    ],
+    related: ['tlusty-czwartek', 'wielki-piatek', 'wielkanoc']
+  },
+  'prima-aprilis': {
+    name: 'Prima Aprilis',
+    date: '1 kwietnia',
+    emoji: '🃏',
+    type: 'cultural',
+    typeLabel: 'Tradycja',
+    dayOff: false,
+    origin: 'Geneza niepewna; w Europie popularny od XVI–XVII wieku',
+    observed: 'Polska i wiele krajów świata',
+    desc: [
+      'Prima Aprilis (łac. "pierwszy kwietnia") to dzień żartów, kawałów i psikusów obchodzony 1 kwietnia. Tradycja ta jest znana w niemal całym świecie zachodnim, choć jej dokładne początki nie są pewne — najprawdopodobniej wiązała się ze zmianą kalendarza lub z przyjściem wiosny.',
+      'W Polsce Prima Aprilis ma długą tradycję — już w XVII wieku znany był zwyczaj robienia żartów tego dnia. Popularne kawały to fałszywe wiadomości, zmyślone alarmy, przyklejanie kartek na plecach czy oszukańcze propozycje. Nawet media, szkoły i firmy biorą udział w żartowaniu.',
+      'W Polsce mówi się, że Prima Aprilis trwa tylko do południa — żarty po godzinie 12:00 "nie liczą się" i można się odegrać na żartownisiu. W krajach anglosaskich nie ma tego ograniczenia.'
+    ],
+    traditions: [
+      'Robienie żartów, kawałów i psikusów',
+      'Fałszywe wiadomości i zmyślone alarmy',
+      'Żarty medialne i "fake newsy" traktowane humorystycznie',
+      'Przyklejanie karteczek "Uderz mnie" na plecach',
+      'Zwyczaj: żarty tylko do południa'
+    ],
+    related: ['sylwester', 'wielkanoc']
+  },
+  'dzien-chlopaka': {
+    name: 'Dzień Chłopaka',
+    date: '30 września',
+    emoji: '🧒',
+    type: 'unofficial',
+    typeLabel: 'Nieoficjalne',
+    dayOff: false,
+    origin: 'Polska tradycja; obchodzony od lat 90. XX wieku',
+    observed: 'Polska',
+    desc: [
+      'Dzień Chłopaka obchodzony jest 30 września — jako dopełnienie Dnia Kobiet (8 marca) i pendant do Dnia Dziecka (1 czerwca). W Polsce jest popularny głównie wśród dzieci i młodzieży szkolnej, gdzie koleżanki składają kolegom życzenia i drobne upominki.',
+      'Geneza tego święta jest stosunkowo młoda — w Polsce upowszechniło się w latach 90. XX wieku, głównie jako odpowiedź na Dzień Kobiet. Data 30 września nie ma szczególnego historycznego uzasadnienia, choć w niektórych krajach Dzień Chłopaka przypada w inne dni.',
+      'W szkołach dziewczęta często wręczają chłopcom słodycze lub drobne upominki. To dzień zabawy i koleżeńskich gestów, bez szczególnej powagi czy ceremonii.'
+    ],
+    traditions: [
+      'Składanie życzeń chłopcom przez koleżanki',
+      'Wręczanie słodyczy i drobnych upominków',
+      'Zabawy klasowe i szkolne akcje tematyczne',
+      'Zabawne kawały i życzenia między rówieśnikami'
+    ],
+    related: ['dzien-kobiet', 'dzien-dziecka', 'dzien-ojca']
+  },
+  'andrzejki': {
+    name: 'Andrzejki',
+    date: '30 listopada',
+    emoji: '🔮',
+    type: 'cultural',
+    typeLabel: 'Tradycja',
+    dayOff: false,
+    origin: 'Tradycja słowiańska i chrześcijańska; wigilia święta Andrzeja Apostoła',
+    observed: 'Polska i kraje słowiańskie',
+    desc: [
+      'Andrzejki obchodzone są w nocy z 29 na 30 listopada — w wigilię wspomnienia św. Andrzeja Apostoła (30 listopada). W tradycji ludowej był to magiczny czas wróżb matrymonialnych, szczególnie dla panien, które pytały o swojego przyszłego męża.',
+      'Nazwa "Andrzejki" pochodzi od imienia Andrzej — patrona dnia. W Polsce była to jedna z najważniejszych nocy wróżbiarskich w roku. Panny lały wosk przez klucz, wywoływały duchy, rzucały buciki i puszczały na wodę łódeczki z napisanymi imionami kawalerów.',
+      'Dziś Andrzejki to przede wszystkim okazja do zabawy, imprezy i zabawy w wróżby dla grup rówieśniczych, klas szkolnych, współpracowników. Tradycyjne wróżby są traktowane humorystycznie, ale chętnie praktykowane.'
+    ],
+    traditions: [
+      'Lanie wosku przez klucz i odgadywanie kształtów',
+      'Rzucanie bucikiem przez lewe ramię — w którą stronę czubek, stamtąd przyjdzie pan młody',
+      'Puszczanie łódeczek na wodzie z imionami kawalerów',
+      'Obieranie jabłka w jedną długą skórkę i rzucanie przez ramię — litera jaka wyjdzie, takie inicjały przyszłego partnera',
+      'Imprezy andrzejkowe z wróżbami i tańcami'
+    ],
+    related: ['sylwester', 'mikołajki']
+  },
+  'barbarka': {
+    name: 'Barbórka (Dzień Górnika)',
+    date: '4 grudnia',
+    emoji: '⛏️',
+    type: 'unofficial',
+    typeLabel: 'Dzień branżowy',
+    dayOff: false,
+    origin: 'Tradycja górnicza; wspomnienie św. Barbary, patronki górników',
+    observed: 'Polska, szczególnie Śląsk i regiony górnicze',
+    desc: [
+      'Barbórka obchodzona jest 4 grudnia — w dniu wspomnienia świętej Barbary, patronki górników, hutników, artylerzystów i innych zawodów związanych z ryzykiem wybuchu. W Polsce jest to najważniejsze święto środowiska górniczego, szczególnie na Śląsku.',
+      'Święta Barbara (ok. 235–306 n.e.) była według legendy zamknięta przez ojca w wieży z trzema oknami — symbolizującymi Trójcę Świętą. Zginęła śmiercią męczeńską za wiarę. Górnicy czcili ją jako orędowniczkę w niebezpiecznym zawodzie.',
+      'W dniu Barbórki w kopalniach odprawiają się uroczyste msze, wręczane są odznaczenia i nagrody. Na Śląsku Barbórka to święto całych rodzin — organizowane są Karczmy Piwne, koncerty i parady górnicze w mundurach. Górnicy paradują w galowych mundurach z lampkami górniczymi.'
+    ],
+    traditions: [
+      'Uroczyste msze i akademie w kopalniach i hutach',
+      'Parady górnicze w galowych mundurach',
+      'Karczmy Piwne — tradycyjne górnicze biesiady',
+      'Wręczanie odznaczeń zasłużonym pracownikom',
+      'Folklorystyczne kapele górnicze i śląskie przyśpiewki'
+    ],
+    related: ['dzien-ratownika', 'swieto-pracy']
+  },
+  'niedziela-palmowa': {
+    name: 'Niedziela Palmowa',
+    date: '29 marca 2026',
+    emoji: '🌿',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska, od IV wieku',
+    observed: 'Polska i kraje chrześcijańskie',
+    desc: [
+      'Niedziela Palmowa (łac. Dominica in Palmis) to niedziela poprzedzająca Wielkanoc, rozpoczynająca Wielki Tydzień. Upamiętnia wjazd Jezusa do Jerozolimy, kiedy mieszkańcy witali go, machając palmowymi gałązkami i okładając nimi drogę.',
+      'W Polsce tradycją jest święcenie palm wielkanocnych — wiązanek z wierzbowych gałązek, bukszpanu, kolorowych kwiatów z bibuły i suszonych traw. Najbardziej znane są palmy kurpiowskie i łowickie, sięgające nawet kilku metrów wysokości.',
+      'Po mszy święcone palmy zanosi się do domu. Według tradycji ludowej palma wielkanocna chroni dom przed piorunami i chorobami. Trzyma się ją za obrazem lub w wazonie przez cały rok.'
+    ],
+    traditions: [
+      'Poświęcenie palm wielkanocnych w kościele',
+      'Konkurs na najpiękniejszą i najwyższą palmę',
+      'Procesja z palmami wokół kościoła',
+      'Przechowywanie poświęconej palmy w domu przez rok',
+      'Lekkie uderzenie palmą na szczęście i zdrowie'
+    ],
+    related: ['wielkanoc', 'wielki-piatek']
+  },
+  'wielki-czwartek': {
+    name: 'Wielki Czwartek',
+    date: '2 kwietnia 2026',
+    emoji: '🍞',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska, od I wieku',
+    observed: 'Polska i kraje chrześcijańskie',
+    desc: [
+      'Wielki Czwartek to czwarty dzień Wielkiego Tygodnia, upamiętniający Ostatnią Wieczerzę Jezusa z apostołami. Tego wieczoru Jezus ustanowił sakrament Eucharystii i obmył nogi swoim uczniom, dając przykład służby i pokory.',
+      'W kościołach katolickich Wielki Czwartek rozpoczyna Triduum Paschalne — najważniejsze trzy dni roku liturgicznego. Msza Wieczerzy Pańskiej odprawiana jest wieczorem, na pamiątkę Ostatniej Wieczerzy. Po mszy przenosi się Najświętszy Sakrament do ciemnicy.',
+      'W Polsce Wielki Czwartek jest dniem roboczym, jednak wiele osób uczestniczy w wieczornej mszy. Tradycją jest też odwiedzanie kilku kościołów, by modlić się przy ciemnicach — tzw. "chodzenie do ciemnic".'
+    ],
+    traditions: [
+      'Msza Wieczerzy Pańskiej wieczorem w kościele',
+      'Adoracja Najświętszego Sakramentu w ciemnicy',
+      'Nawiedzanie kilku kościołów ("chodzenie do ciemnic")',
+      'Obrzęd obmycia nóg — celebrans myje nogi 12 osobom',
+      'Milczenie dzwonów aż do Wielkanocy'
+    ],
+    related: ['wielki-piatek', 'wielkanoc', 'niedziela-palmowa']
+  },
+  'wielki-piatek': {
+    name: 'Wielki Piątek',
+    date: '3 kwietnia 2026',
+    emoji: '✝️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska, od I wieku',
+    observed: 'Polska i kraje chrześcijańskie',
+    desc: [
+      'Wielki Piątek to dzień ukrzyżowania i śmierci Jezusa Chrystusa — jeden z najważniejszych i najpoważniejszych dni roku liturgicznego. Kościół katolicki obchodzi go bez mszy świętej (jedyna taka liturgia w roku), odprawiając zamiast niej uroczyste Nabożeństwo Męki Pańskiej.',
+      'W Polsce Wielki Piątek jest dniem powszednim, jednak od 2024 roku stał się dniem wolnym od zajęć dla uczniów i nauczycieli. Wiele osób pości i powstrzymuje się od spożywania mięsa. Sklepy i restauracje mają skrócone godziny pracy.',
+      'Charakterystycznym elementem są Drogi Krzyżowe odprawiane w kościołach i na otwartym powietrzu, a także Groby Pańskie, przy których wierni modlą się przez całą noc i dzień.'
+    ],
+    traditions: [
+      'Liturgia Męki Pańskiej (bez mszy świętej)',
+      'Droga Krzyżowa w kościele i na otwartym powietrzu',
+      'Adoracja Krzyża i Grobu Pańskiego',
+      'Post ścisły i wstrzemięźliwość od pokarmów mięsnych',
+      'Nocna adoracja przy Grobach Pańskich'
+    ],
+    related: ['wielka-sobota', 'wielkanoc', 'wielki-czwartek']
+  },
+  'wielka-sobota': {
+    name: 'Wielka Sobota',
+    date: '4 kwietnia 2026',
+    emoji: '🧺',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska, od I wieku',
+    observed: 'Polska i kraje chrześcijańskie',
+    desc: [
+      'Wielka Sobota to czas między śmiercią a zmartwychwstaniem Jezusa — dzień ciszy, milczenia i oczekiwania. W tradycji kościelnej jest to jedyny dzień w roku, w którym nie sprawuje się żadnych sakramentów z wyjątkiem namaszczenia chorych.',
+      'W Polsce Wielka Sobota słynie z pięknej tradycji święcenia pokarmów. Do kościoła przynosi się koszyki wyłożone białą serwetką, wypełnione chlebem, jajkami, wędliną, solą, chrzanem i babką wielkanocną. Poświęcone pokarmy spożywa się na śniadanie wielkanocne.',
+      'Wieczorem w Wielką Sobotę odprawiana jest Wigilia Paschalna — najdłuższa i najważniejsza msza roku. Liturgia rozpoczyna się od poświęcenia ognia i paschału (wielkanocnej świecy), po czym następuje Liturgia Słowa, Liturgia Chrzcielna i Eucharystia.'
+    ],
+    traditions: [
+      'Święcenie pokarmów wielkanocnych w koszyczku',
+      'Rezurekcja — uroczysta msza o zmartwychwstaniu (noc lub świt)',
+      'Adoracja Grobu Pańskiego',
+      'Wigilia Paschalna z poświęceniem ognia i paschału',
+      'Przygotowywanie wielkanocnego śniadania'
+    ],
+    related: ['wielkanoc', 'wielki-piatek']
+  },
+  'milosierdzie-boze': {
+    name: 'Niedziela Miłosierdzia Bożego',
+    date: '12 kwietnia 2026',
+    emoji: '❤️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Objawienia św. Faustyny Kowalskiej, 1931; ustanowione przez Jana Pawła II w 2000 r.',
+    observed: 'Polska i Kościół katolicki na całym świecie',
+    desc: [
+      'Niedziela Miłosierdzia Bożego to pierwsza niedziela po Wielkanocy, ustanowiona przez Jana Pawła II w roku 2000, podczas kanonizacji polskiej mistyczki — świętej Faustyny Kowalskiej (1905–1938). To jedno z najważniejszych polskich "eksportów" do Kościoła powszechnego.',
+      'Siostra Faustyna Kowalska, zakonnica z Krakowa, opisała w swoim "Dzienniczku" wizje Jezusa, który polecił jej propagować kult Bożego Miłosierdzia. W Polsce devotion ta jest wyjątkowo żywa — Sanktuarium Bożego Miłosierdzia w Krakowie-Łagiewnikach jest jednym z największych centrów pielgrzymkowych świata.',
+      'W tym dniu Kościół zachęca do pełnego odpustu — udziału we mszy, spowiedzi, komunii i modlitwy w intencjach papieża. Koronka do Miłosierdzia Bożego odmawiana jest szczególnie o godzinie 15:00, zwanej "godziną miłosierdzia".'
+    ],
+    traditions: [
+      'Udział we mszy świętej i przyjęcie komunii',
+      'Odmówienie koronki do Miłosierdzia Bożego o godz. 15:00',
+      'Pielgrzymki do Sanktuarium w Krakowie-Łagiewnikach',
+      'Adoracja Najświętszego Sakramentu',
+      'Spowiedź i uzyskanie odpustu zupełnego'
+    ],
+    related: ['wielkanoc', 'wszyscy-swietych']
+  },
+  'dzien-flagi': {
+    name: 'Dzień Flagi Rzeczypospolitej Polskiej',
+    date: '2 maja',
+    emoji: '🇵🇱',
+    type: 'state',
+    typeLabel: 'Święto państwowe',
+    dayOff: false,
+    origin: 'Ustanowiony ustawą Sejmu RP w 2004 roku',
+    observed: 'Polska',
+    desc: [
+      'Dzień Flagi Rzeczypospolitej Polskiej obchodzony jest 2 maja, między Świętem Pracy (1 maja) a Świętem Konstytucji 3 Maja. Ustanowiony został uchwałą Sejmu w 2004 roku, by promować wiedzę o polskich symbolach narodowych i zachęcać do ich eksponowania.',
+      'Biało-czerwona flaga polska wywodzi się z barw herbowych dynastii Piastów i Jagiellonów. Biel symbolizuje czystość i prawość, czerwień — krew przelaną za ojczyznę. Kolory te po raz pierwszy użyte zostały oficjalnie w 1831 roku podczas Powstania Listopadowego.',
+      '2 maja w wielu miastach organizowane są biegi po banderoli, wystawy historyczne i uroczystości patriotyczne. To dobra okazja do zawieszenia flagi przed domem lub oknem — w Polsce jest to prawo każdego obywatela przez cały rok.'
+    ],
+    traditions: [
+      'Wywieszanie biało-czerwonej flagi przed domem i budynkami publicznymi',
+      'Uroczystości i akademie patriotyczne w szkołach i urzędach',
+      'Biegi flagowe i marsze z biało-czerwonymi barwami',
+      'Wystawy poświęcone historii polskich symboli narodowych',
+      'Lekcje i warsztaty o polskich symbolach dla dzieci'
+    ],
+    related: ['konstytucja-3-maja', 'swieto-niepodleglosci']
+  },
+  'dzien-europy': {
+    name: 'Dzień Europy',
+    date: '9 maja',
+    emoji: '🇪🇺',
+    type: 'cultural',
+    typeLabel: 'Święto europejskie',
+    dayOff: false,
+    origin: 'Deklaracja Schumana, 9 maja 1950; ustanowiony przez UE w 1985 r.',
+    observed: 'Unia Europejska i kraje partnerskie',
+    desc: [
+      'Dzień Europy obchodzony jest 9 maja i upamiętnia rocznicę słynnej Deklaracji Schumana z 9 maja 1950 roku. Robert Schuman, ówczesny minister spraw zagranicznych Francji, przedstawił wówczas plan integracji europejskiej, który stał się fundamentem późniejszej Wspólnoty Europejskiej.',
+      'W Polsce Dzień Europy jest szczególnie ważny — Polska jest członkiem Unii Europejskiej od 1 maja 2004 roku. Polacy korzystają ze swobodnego przepływu osób, towarów i kapitału, a Polska jest jednym z największych beneficjentów funduszy unijnych w historii UE.',
+      'Z okazji Dnia Europy w całej Polsce i Europie organizowane są festiwale, pikniki, konkursy i wystawy promujące kulturę, różnorodność i wspólne wartości Unii Europejskiej. Instytucje UE otwierają swoje podwoje dla odwiedzających.'
+    ],
+    traditions: [
+      'Festiwale europejskie i pikniki z kulturą krajów UE',
+      'Drzwi otwarte instytucji unijnych i europejskich',
+      'Konkursy wiedzy o Europie w szkołach',
+      'Wystawy i spektakle promujące europejskie dziedzictwo',
+      'Ceremonie z flagami i hymnami europejskimi'
+    ],
+    related: ['swieto-pracy', 'konstytucja-3-maja']
+  },
+  'trojca-swiety': {
+    name: 'Uroczystość Trójcy Przenajświętszej',
+    date: '31 maja 2026',
+    emoji: '✨',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska; ustanowione przez papieża Jana XXII w 1334 r.',
+    observed: 'Polska i Kościół katolicki',
+    desc: [
+      'Uroczystość Trójcy Przenajświętszej obchodzona jest w niedzielę po Zesłaniu Ducha Świętego (Zielonych Świątkach). Jest to jedno z najważniejszych świąt dogmatycznych chrześcijaństwa, poświęcone tajemnicy Trójcy Świętej — jednego Boga w trzech Osobach: Ojca, Syna i Ducha Świętego.',
+      'Dogmat o Trójcy Świętej był przedmiotem wielkich sporów teologicznych w pierwszych wiekach chrześcijaństwa. Sobór Nicejski (325 n.e.) i Sobór Konstantynopolitański (381 n.e.) ostatecznie sformułowały wyznanie wiary, w którym Kościół wyznaje Trójjedynego Boga.',
+      'W Polsce jest to zwykły dzień roboczy, jednak licznie obchodzone w kościołach. W ikonografii Trójca Święta przedstawiana jest np. jako trzy postacie (ikona Rublowa), trójkąt czy trzy splecione pierścienie.'
+    ],
+    traditions: [
+      'Uroczysta msza ku czci Trójcy Świętej',
+      'Odmówienie "Chwała Ojcu i Synowi i Duchowi Świętemu"',
+      'Katecheza i rozważania o tajemnicy Trójcy',
+      'Śpiew hymnów trynitarnych'
+    ],
+    related: ['zielone-swiatki', 'boze-cialo']
+  },
+  'dzien-rybaka': {
+    name: 'Dzień Rybaka',
+    date: '27 lipca',
+    emoji: '🎣',
+    type: 'unofficial',
+    typeLabel: 'Dzień branżowy',
+    dayOff: false,
+    origin: 'Polska tradycja; ustanowiony w 1950 roku',
+    observed: 'Polska',
+    desc: [
+      'Dzień Rybaka obchodzony jest 27 lipca i honoruje zawodowych rybaków morskich, jeziornych i rzecznych, a także pracowników akwakultury i rybołówstwa śródlądowego. To tradycyjne polskie święto branżowe, obchodzone od ponad 70 lat.',
+      'Rybołówstwo ma w Polsce wielowiekową tradycję — wybrzeże Bałtyku, tysiące jezior mazurskich i warmińskich, rzeki Wisła i Odra zawsze żywiły rybaków i ich rodziny. Dziś polska flota rybacka operuje głównie na Bałtyku, a kraj jest znaczącym producentem ryb hodowlanych.',
+      'Z okazji Dnia Rybaka organizowane są festyny portowe, regaty, wystawy i pokazy kulinarnych specjałów z ryb. W portach takich jak Władysławowo, Hel czy Łeba odbywają się uroczyste defilady kutrów i błogosławieństwo połowów.'
+    ],
+    traditions: [
+      'Festyny i pikniki w portach rybackich',
+      'Defilady kutrów i statków rybackich',
+      'Degustacje regionalnych potraw rybnych',
+      'Regaty i zawody wędkarskie',
+      'Msza i błogosławieństwo floty rybackiej'
+    ],
+    related: ['dzien-morza']
+  },
+  'rocznica-powstania-warszawskiego': {
+    name: 'Rocznica wybuchu Powstania Warszawskiego',
+    date: '1 sierpnia',
+    emoji: '🕯️',
+    type: 'unofficial',
+    typeLabel: 'Rocznica historyczna',
+    dayOff: false,
+    origin: 'Powstanie Warszawskie, 1 sierpnia 1944',
+    observed: 'Polska, szczególnie Warszawa',
+    desc: [
+      '1 sierpnia 1944 roku o godzinie 17:00 — zwanej "godziną W" — wybuchło Powstanie Warszawskie. Było to największe zbrojne wystąpienie przeciwko niemieckiej okupacji w historii II Wojny Światowej. Przez 63 dni ponad 50 000 żołnierzy Armii Krajowej walczyło o wyzwolenie Warszawy.',
+      'Powstanie zakończyło się tragicznie — kapitulacją 2 października 1944 roku. Zginęło ok. 18 000 żołnierzy AK i ok. 150 000–200 000 cywilnych mieszkańców Warszawy. Po upadku Niemcy wyburzyli niemal całe miasto, wypędzając ocalałych mieszkańców.',
+      'Każdego roku 1 sierpnia o godzinie 17:00 w Warszawie i innych miastach Polski wyją syreny przez minutę, a ruch uliczny zamiera. Mieszkańcy zatrzymują się, by oddać hołd poległym. Przy Pomniku Powstania Warszawskiego i Muzeum Powstania Warszawskiego odbywają się uroczystości z udziałem najwyższych władz państwowych.'
+    ],
+    traditions: [
+      'Minuta ciszy o godzinie 17:00 — "godzina W"',
+      'Sygnał syren alarmowych w całej Warszawie',
+      'Uroczystości przy Pomniku Powstania Warszawskiego',
+      'Składanie zniczy i kwiatów na cmentarzach powstańczych',
+      'Marsze z białoczerwonymi flagami i kotwicami (znak AK)'
+    ],
+    related: ['swieto-niepodleglosci', 'dzien-solidarnosci']
+  },
+  'dzien-solidarnosci': {
+    name: 'Dzień Solidarności i Wolności',
+    date: '31 sierpnia',
+    emoji: '✊',
+    type: 'state',
+    typeLabel: 'Dzień państwowy',
+    dayOff: false,
+    origin: 'Podpisanie Porozumień Sierpniowych, 31 sierpnia 1980',
+    observed: 'Polska',
+    desc: [
+      '31 sierpnia 1980 roku w Stoczni Gdańskiej im. Lenina podpisano Porozumienia Sierpniowe — historyczne porozumienie między Komisją Rządową a Międzyzakładowym Komitetem Strajkowym. Strajkujący robotnicy, pod przywództwem Lecha Wałęsy, wywalczyli prawo do tworzenia niezależnych związków zawodowych.',
+      'Z tego porozumienia zrodziła się "Solidarność" — niezależny samorządny związek zawodowy, który stał się symbolem walki z komunizmem nie tylko w Polsce, ale na całym świecie. Ruch Solidarności przyczynił się do pokojowego obalenia systemu komunistycznego w Polsce i inspirował narody innych krajów.',
+      'Dzień Solidarności i Wolności ustanowiony został uchwałą Sejmu RP. Co roku 31 sierpnia w Gdańsku, przy Bramie nr 2 Stoczni Gdańskiej, odbywają się uroczystości z udziałem prezydenta, premiera i byłych działaczy Solidarności.'
+    ],
+    traditions: [
+      'Uroczystości przy Pomniku Poległych Stoczniowców w Gdańsku',
+      'Składanie kwiatów i wieńców przez władze państwowe',
+      'Msza święta w intencji działaczy Solidarności',
+      'Wystawy i projekcje o historii Solidarności',
+      'Spotkania z byłymi uczestnikami strajków sierpniowych'
+    ],
+    related: ['swieto-niepodleglosci', 'rocznica-powstania-warszawskiego']
+  },
+  'rocznica-1-wrzesnia': {
+    name: 'Rocznica wybuchu II Wojny Światowej',
+    date: '1 września',
+    emoji: '🕊️',
+    type: 'unofficial',
+    typeLabel: 'Rocznica historyczna',
+    dayOff: false,
+    origin: 'Napaść Niemiec na Polskę, 1 września 1939',
+    observed: 'Polska i wiele krajów świata',
+    desc: [
+      '1 września 1939 roku o godzinie 4:45 pancernik "Schleswig-Holstein" ostrzelał Westerplatte w Gdańsku — rozpoczynając II Wojnę Światową, najkrwawszy konflikt zbrojny w historii ludzkości, w którym zginęło ok. 70–85 milionów ludzi. Polska jako pierwsza stawiła zbrojny opór agresorowi.',
+      'W ciągu 5 lat niemieckiej i radzieckiej okupacji Polska straciła ok. 6 milionów obywateli — połowę z nich stanowili Żydzi. Zniszczone zostały całe miasta, zgrabiono dorobek cywilizacyjny narodu. Polska była jedynym krajem, gdzie Niemcy wprowadzili karę śmierci za udzielanie pomocy Żydom.',
+      'Każdego roku 1 września w Polsce i na świecie odbywają się uroczystości upamiętniające ofiary II Wojny Światowej. Centralne obchody mają miejsce na Westerplatte w Gdańsku — miejscu, gdzie 182 polskich żołnierzy przez 7 dni bohatersko broniło się przed kilkutysięczną armią niemiecką.'
+    ],
+    traditions: [
+      'Uroczystości na Westerplatte w Gdańsku',
+      'Apele poległych i minuty ciszy w całym kraju',
+      'Składanie kwiatów na cmentarzach wojennych',
+      'Lekcje historii i projekcje filmowe w szkołach',
+      'Bicie dzwonów kościelnych o godzinie 4:45'
+    ],
+    related: ['dzien-historii', 'swieto-niepodleglosci']
+  },
+  'dzien-polskiego-panstwa-podziemnego': {
+    name: 'Dzień Polskiego Państwa Podziemnego',
+    date: '27 września',
+    emoji: '🦅',
+    type: 'state',
+    typeLabel: 'Dzień państwowy',
+    dayOff: false,
+    origin: 'Powołanie Służby Zwycięstwu Polski, 27 września 1939',
+    observed: 'Polska',
+    desc: [
+      '27 września 1939 roku — niespełna miesiąc po napaści Niemiec na Polskę — generał Michał Karaszewicz-Tokarzewski na rozkaz rządu RP na uchodźstwie powołał do życia Służbę Zwycięstwu Polski. Była to zalążek Polskiego Państwa Podziemnego — fenomenu na skalę światową.',
+      'Polskie Państwo Podziemne to unikalna struktura, która w warunkach totalnej okupacji zachowała ciągłość legalnych instytucji państwowych. Działały podziemne sądy, szkoły (tajne komplety), wydawnictwa, teatry i wojsko (Armia Krajowa). Polacy nie pogodzili się z kapitulacją i kontynuowali opór.',
+      'Dzień Polskiego Państwa Podziemnego ustanowiony został uchwałą Sejmu RP w 1998 roku. To hołd dla tych, którzy z narażeniem życia budowali struktury wolnej Polski pod niemieckim i radzieckim terrorem.'
+    ],
+    traditions: [
+      'Uroczystości państwowe z udziałem władz RP',
+      'Składanie wieńców przy pomnikach i tablicach AK',
+      'Lekcje historii o Polskim Państwie Podziemnym',
+      'Wystawy o konspiracji i tajnym nauczaniu',
+      'Spotkania z weteranami i ich rodzinami'
+    ],
+    related: ['swieto-niepodleglosci', 'dzien-historii']
+  },
+  'dzien-zaduszny': {
+    name: 'Dzień Zaduszny',
+    date: '2 listopada',
+    emoji: '🕯️',
+    type: 'religious',
+    typeLabel: 'Święto religijne',
+    dayOff: false,
+    origin: 'Tradycja chrześcijańska; ustanowiony przez opata Odylona z Cluny ok. 998 r.',
+    observed: 'Polska i kraje katolickie',
+    desc: [
+      'Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych) obchodzony jest 2 listopada, dzień po Uroczystości Wszystkich Świętych. Poświęcony jest modlitwie za dusze wszystkich wiernych, którzy odeszli — szczególnie tych, którzy przebywają w czyśćcu i potrzebują modlitewnego wsparcia żywych.',
+      'W Polsce Dzień Zaduszny splata się z tradycją Wszystkich Świętych w jedną wielką "kulturę cmentarną" pierwszych dni listopada. Cmentarze rozświetlone są milionami zniczy, rodziny odwiedzają groby bliskich, porządkują je i modlą się. Ten widok jest jednym z najbardziej charakterystycznych obrazów polskiej jesieni.',
+      'Tradycja Dziadów — pogańskiego święta pamięci przodków, opisanego przez Adama Mickiewicza — nakłada się w Polsce na chrześcijański Dzień Zaduszny, tworząc wyjątkowo głęboki kult pamięci o zmarłych.'
+    ],
+    traditions: [
+      'Odwiedzanie grobów bliskich i ich porządkowanie',
+      'Zapalanie zniczy na cmentarzach',
+      'Modlitwa za dusze zmarłych, różaniec i wypominki',
+      'Msza święta za wszystkich wiernych zmarłych',
+      'Kwesty na renowację zabytkowych nagrobków'
+    ],
+    related: ['wszystkich-swietych']
+  }
+};
+
+function getBadgeClass(type) {
+  return { state:'badge-state', religious:'badge-religious', cultural:'badge-cultural', unofficial:'badge-unofficial' }[type] || 'badge-unofficial';
+}
+
+function render() {
+  const id = new URLSearchParams(window.location.search).get('id');
+  const page = document.getElementById('pageContent');
+
+  if (!id || !HOLIDAYS_DB[id]) {
+    page.innerHTML = `
+      <div class="not-found">
+        <div style="font-size:3rem;margin-bottom:1rem">🗓️</div>
+        <div class="not-found-title">Nie znaleziono święta</div>
+        <div class="not-found-sub">Spróbuj wrócić do <a href="swieta.html" style="color:var(--text)">listy świąt</a>.</div>
+      </div>`;
+    return;
+  }
+
+  const h = HOLIDAYS_DB[id];
+  document.title = `${h.name} — DaybyDay`;
+
+  const tradItems = h.traditions.map(t => `<li><span class="trad-dot"></span><span>${t}</span></li>`).join('');
+  const relLinks = (h.related || []).map(slug => {
+    const rel = HOLIDAYS_DB[slug];
+    return rel ? `<a href="swieto.html?id=${slug}" class="related-link">${rel.emoji} ${rel.name}</a>` : '';
+  }).join('');
+
+  page.innerHTML = `
+    <div class="breadcrumb">
+      <a href="index.html">DaybyDay</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="swieta.html">Święta</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>${h.name}</span>
+    </div>
+
+    <div class="holiday-header">
+      <div class="holiday-emoji">${h.emoji}</div>
+      <div class="holiday-badges">
+        <span class="badge ${getBadgeClass(h.type)}">${h.typeLabel}</span>
+        ${h.type2 ? `<span class="badge ${getBadgeClass(h.type2)}">${h.typeLabel2}</span>` : ''}
+        ${h.dayOff ? '<span class="badge badge-dayoff">Dzień wolny</span>' : ''}
+      </div>
+      <h1 class="holiday-title">${h.name}</h1>
+      <div class="holiday-date">${h.date}</div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">Pochodzenie</div>
+        <div class="info-value">${h.origin}</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Obchodzone w</div>
+        <div class="info-value">${h.observed}</div>
+      </div>
+    </div>
+
+    <div class="holiday-body">
+      ${h.desc.map(p => `<p>${p}</p>`).join('')}
+    </div>
+
+    <div class="section">
+      <div class="section-title">Tradycje i zwyczaje</div>
+      <ul class="traditions-list">${tradItems}</ul>
+    </div>
+
+    ${relLinks ? `<div class="related-section">
+      <div class="related-title">Powiązane święta</div>
+      <div class="related-links">${relLinks}</div>
+    </div>` : ''}
+  `;
+}
+
+render();
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Znaki Zodiaku — daty, cechy i horoskop | DaybyDay</title>
+  <meta name="description" content="Wszystkie 12 znaków zodiaku: daty, cechy charakteru, żywioły i planety. Sprawdź pod jakim znakiem się urodziłeś.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.pl/znaki-zodiaku.html">
+  <meta property="og:title" content="Znaki Zodiaku — daty, cechy i opis każdego znaku">
+  <meta property="og:description" content="12 znaków zodiaku z datami i opisami. Sprawdź swój znak i poznaj jego cechy charakterystyczne.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.pl/og-image.svg">
+  <meta property="og:url" content="https://daybyday.pl/znaki-zodiaku.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:1100px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:600px; margin-bottom:2rem; }
+    .calc-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; margin-bottom:2rem; }
+    .calc-title { font-family:'Instrument Serif',serif; font-size:1.3rem; margin-bottom:1.25rem; }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.25rem; }
+    .form-group label { display:block; font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:.5rem; }
+    .form-group input { width:100%; padding:.75rem 1rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); outline:none; transition:border-color .15s; }
+    .form-group input:focus { border-color:var(--text); }
+    .btn-calc { padding:.75rem 2rem; background:var(--text); color:white; border:none; border-radius:10px; font-family:inherit; font-size:.88rem; font-weight:600; cursor:pointer; transition:opacity .15s; }
+    .btn-calc:hover { opacity:.85; }
+    .sign-result { display:none; margin-top:1.5rem; padding:1.5rem; background:var(--tag-bg); border-radius:12px; }
+    .sign-result.visible { display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap; }
+    .sign-symbol { font-size:3.5rem; line-height:1; }
+    .sign-info { }
+    .sign-name { font-family:'Instrument Serif',serif; font-size:2rem; margin-bottom:.25rem; }
+    .sign-dates-txt { font-size:.85rem; color:var(--muted); }
+    .sign-traits { display:flex; gap:.4rem; margin-top:.6rem; flex-wrap:wrap; }
+    .sign-trait { background:var(--surface); border:1px solid var(--border); border-radius:60px; padding:.2rem .7rem; font-size:.75rem; }
+    .section-title { font-family:'Instrument Serif',serif; font-size:1.5rem; margin-bottom:1.25rem; }
+    .signs-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; margin-bottom:3rem; }
+    .sign-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; cursor:pointer; transition:border-color .15s,box-shadow .15s; }
+    .sign-card:hover { border-color:#C8C4BE; box-shadow:0 4px 16px rgba(0,0,0,.05); }
+    .sign-card.active { border-color:var(--text); }
+    .sc-top { display:flex; align-items:center; gap:1rem; margin-bottom:1rem; }
+    .sc-symbol { font-size:2.2rem; }
+    .sc-name { font-family:'Instrument Serif',serif; font-size:1.3rem; }
+    .sc-date { font-size:.75rem; color:var(--muted); margin-top:.1rem; }
+    .sc-element { display:inline-flex; align-items:center; gap:.3rem; font-size:.72rem; font-weight:500; padding:.2rem .6rem; border-radius:60px; background:var(--tag-bg); margin-bottom:.75rem; }
+    .sc-desc { font-size:.82rem; color:var(--muted); line-height:1.7; }
+    .sc-traits { display:flex; gap:.35rem; flex-wrap:wrap; margin-top:.75rem; }
+    .sc-trait { background:var(--tag-bg); border-radius:60px; padding:.15rem .6rem; font-size:.72rem; }
+    .dates-table { margin-bottom:3rem; }
+    .dtable { width:100%; border-collapse:collapse; font-size:.82rem; }
+    .dtable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.65rem .75rem; border-bottom:2px solid var(--border); }
+    .dtable td { padding:.65rem .75rem; border-bottom:1px solid var(--border); }
+    .dtable tr:hover td { background:var(--tag-bg); }
+    .faq { margin-top:1rem; }
+    .faq-item { border-bottom:1px solid var(--border); padding:1.1rem 0; }
+    .faq-q { font-size:.88rem; font-weight:600; margin-bottom:.5rem; }
+    .faq-a { font-size:.84rem; color:var(--muted); line-height:1.7; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .nav-links{display:none} .form-grid{grid-template-columns:1fr} }
+  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="nav-logo">DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+  <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="page-label">Astrologia</div>
+  <h1 class="page-title">Znaki Zodiaku 2026</h1>
+  <p class="page-sub">Sprawdź swój znak zodiaku, poznaj daty graniczne z dokładnością astronomiczną i odkryj cechy charakteru przypisywane każdemu z 12 znaków.</p>
+
+  <div class="calc-card">
+    <div class="calc-title">Kalkulator znaku zodiaku</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="birthDate">Data urodzenia</label>
+        <input type="date" id="birthDate">
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcSign()">Sprawdź swój znak</button>
+    <div class="sign-result" id="signResult">
+      <div class="sign-symbol" id="srSymbol"></div>
+      <div class="sign-info">
+        <div class="sign-name" id="srName"></div>
+        <div class="sign-dates-txt" id="srDates"></div>
+        <div class="sign-traits" id="srTraits"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Wszystkie znaki zodiaku</div>
+  <div class="signs-grid" id="signsGrid"></div>
+
+  <div class="section-title">Daty graniczne 2026</div>
+  <div class="dates-table">
+    <table class="dtable">
+      <thead><tr><th>Znak</th><th>Popularne daty</th><th>Dokładny moment wejścia 2026</th><th>Żywioł</th><th>Planeta</th></tr></thead>
+      <tbody id="datesBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-title">Często zadawane pytania</div>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Dlaczego popularne daty znaków różnią się od astronomicznych?</div>
+      <div class="faq-a">Podawane w prasie zakresy dat (np. Baran: 21 marca – 19 kwietnia) to uproszczenie. W rzeczywistości Słońce przechodzi przez kolejne znaki w konkretnych godzinach i minutach, które każdego roku są nieco inne. Osoby urodzone w granicznych dniach powinny sprawdzić dokładny rok urodzenia.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czy godzina urodzenia ma znaczenie dla znaku Słońca?</div>
+      <div class="faq-a">Tak — gdy urodziny przypadają w dniu zmiany znaku, godzina jest kluczowa. Np. jeśli Słońce wchodzi w Byka 20 kwietnia o 14:00, osoba urodzona tego dnia przed 14:00 ma Barana, a po 14:00 — Byka.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czym różnią się znaki zodiaku od konstelacji?</div>
+      <div class="faq-a">Znaki zodiaku (zodiak tropikalny) to 12 równych odcinków po 30° ekliptyki, liczone od punktu wiosennego. Konstelacje to rzeczywiste grupy gwiazd o różnych rozmiarach. Z powodu precesji osi Ziemi znaki i konstelacje nie pokrywają się — Słońce w znaku Barana jest astronomicznie w konstelacji Ryb.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Co to jest Wężownik i czy jest 13. znakiem?</div>
+      <div class="faq-a">Wężownik (Ophiuchus) to konstelacja, przez którą Słońce rzeczywiście przechodzi, ale nie jest częścią zodiaku tropikalnego opartego na 12 równych znakach. Większość systemów astrologicznych używanych w Polsce i na Zachodzie nie uwzględnia Wężownika.</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="index.html">Strona główna</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+
+<script>
+const SIGNS = [
+  { name:'Baran', symbol:'♈', dates:'21 marca – 19 kwietnia', start:[3,21], end:[4,19], exact:'20 marca 2026, 16:46 CET', element:'Ogień', planet:'Mars', color:'#C0392B',
+    traits:['Energiczny','Odważny','Pionierski','Impulsywny','Spontaniczny'],
+    desc:'Baran bywa łączony z energią, inicjatywą i odwagą. Osoby spod tego znaku są często pierwszymi, które podejmują działanie. Mogą być impulsywne, ale też niezwykle zdeterminowane w dążeniu do celu.' },
+  { name:'Byk', symbol:'♉', dates:'20 kwietnia – 20 maja', start:[4,20], end:[5,20], exact:'20 kwietnia 2026, 03:38 CEST', element:'Ziemia', planet:'Wenus', color:'#27AE60',
+    traits:['Wytrwały','Zmysłowy','Lojalny','Uparty','Praktyczny'],
+    desc:'Byk kojarzony jest z wytrwałością, zmysłowością i przywiązaniem do tradycji. Osoby te cenią stabilność i bezpieczeństwo. Potrafią długo dążyć do celu, choć bywają uparte.' },
+  { name:'Bliźnięta', symbol:'♊', dates:'21 maja – 20 czerwca', start:[5,21], end:[6,20], exact:'21 maja 2026, 02:56 CEST', element:'Powietrze', planet:'Merkury', color:'#F39C12',
+    traits:['Komunikatywny','Ciekawy','Elastyczny','Niezdecydowany','Dowcipny'],
+    desc:'Bliźnięta łączone są z ciekawością, komunikatywnością i elastycznością. Lubią różnorodność i szybko przyswajają nowe informacje. Mogą mieć trudności z wyborem jednej drogi.' },
+  { name:'Rak', symbol:'♋', dates:'21 czerwca – 22 lipca', start:[6,21], end:[7,22], exact:'21 czerwca 2026, 10:24 CEST', element:'Woda', planet:'Księżyc', color:'#2980B9',
+    traits:['Opiekuńczy','Empatyczny','Intuicyjny','Wrażliwy','Rodzinny'],
+    desc:'Rak łączony jest z empatią, opiekuńczością i silnym przywiązaniem do rodziny. Osoby te są bardzo intuicyjne i wrażliwe na emocje innych. Mogą być skłonne do zamykania się w sobie.' },
+  { name:'Lew', symbol:'♌', dates:'23 lipca – 22 sierpnia', start:[7,23], end:[8,22], exact:'23 lipca 2026, 21:25 CEST', element:'Ogień', planet:'Słońce', color:'#E67E22',
+    traits:['Charyzmatyczny','Hojny','Dumny','Twórczy','Dramatyczny'],
+    desc:'Lew kojarzony jest z charyzmą, kreatywnością i naturalnym autorytetem. Osoby spod tego znaku lubią być w centrum uwagi i często inspirują innych swoją energią.' },
+  { name:'Panna', symbol:'♍', dates:'23 sierpnia – 22 września', start:[8,23], end:[9,22], exact:'23 sierpnia 2026, 04:42 CEST', element:'Ziemia', planet:'Merkury', color:'#8E44AD',
+    traits:['Analityczny','Dokładny','Pomocny','Krytyczny','Pracowity'],
+    desc:'Panna łączona jest z analitycznym umysłem, precyzją i skromnością. Osoby te zwracają uwagę na szczegóły i chętnie pomagają innym. Bywają krytyczne — szczególnie wobec siebie.' },
+  { name:'Waga', symbol:'♎', dates:'23 września – 22 października', start:[9,23], end:[10,22], exact:'23 września 2026, 02:05 CEST', element:'Powietrze', planet:'Wenus', color:'#16A085',
+    traits:['Dyplomatyczny','Sprawiedliwy','Estetyczny','Niezdecydowany','Towarzyski'],
+    desc:'Waga kojarzona jest z poczuciem sprawiedliwości, estetyką i harmonią w relacjach. Osoby te szukają równowagi i często pełnią rolę mediatorów. Mogą mieć trudności z podejmowaniem decyzji.' },
+  { name:'Skorpion', symbol:'♏', dates:'23 października – 21 listopada', start:[10,23], end:[11,21], exact:'23 października 2026, 11:18 CEST', element:'Woda', planet:'Pluton/Mars', color:'#8E1A10',
+    traits:['Intensywny','Lojalny','Przenikliwy','Zazdrosny','Zdeterminowany'],
+    desc:'Skorpion łączony jest z intensywnością emocji, przenikliwością i determinacją. Osoby te rzadko pozostają obojętne — albo fascynują, albo odpychają. Są bardzo lojalne wobec bliskich.' },
+  { name:'Strzelec', symbol:'♐', dates:'22 listopada – 21 grudnia', start:[11,22], end:[12,21], exact:'22 listopada 2026, 08:56 CET', element:'Ogień', planet:'Jowisz', color:'#D35400',
+    traits:['Optymistyczny','Wolny','Filozoficzny','Nieostrożny','Przygodowy'],
+    desc:'Strzelec kojarzony jest z optymizmem, miłością do wolności i poszukiwaniem sensu. Osoby te kochają podróże i poznawanie różnych kultur. Bywają nieostrożne w obietnicach.' },
+  { name:'Koziorożec', symbol:'♑', dates:'22 grudnia – 19 stycznia', start:[12,22], end:[1,19], exact:'22 grudnia 2026, 02:42 CET', element:'Ziemia', planet:'Saturn', color:'#5D6D7E',
+    traits:['Ambitny','Odpowiedzialny','Zdyscyplinowany','Powściągliwy','Wytrwały'],
+    desc:'Koziorożec łączony jest z ambicją, odpowiedzialnością i cierpliwością. Osoby te budują stabilność krok po kroku i rzadko się poddają. Mogą być powściągliwe w wyrażaniu emocji.' },
+  { name:'Wodnik', symbol:'♒', dates:'20 stycznia – 18 lutego', start:[1,20], end:[2,18], exact:'20 stycznia 2026, 13:20 CET', element:'Powietrze', planet:'Uran', color:'#2471A3',
+    traits:['Oryginalny','Humanitarny','Niezależny','Nieprzewidywalny','Innowacyjny'],
+    desc:'Wodnik kojarzony jest z oryginalnością, humanitaryzmem i niezależnością myślenia. Osoby te często wyprzedzają swój czas i cenią wolność intelektualną ponad wszystko.' },
+  { name:'Ryby', symbol:'♓', dates:'19 lutego – 20 marca', start:[2,19], end:[3,20], exact:'19 lutego 2026, 03:52 CET', element:'Woda', planet:'Neptun', color:'#1A5276',
+    traits:['Wrażliwy','Empatyczny','Intuicyjny','Idealistyczny','Twórczy'],
+    desc:'Ryby łączone są z wrażliwością, wyobraźnią i empatią. Osoby spod tego znaku często mają silną intuicję i zdolności artystyczne. Mogą zatracać się w marzeniach.' },
+];
+
+function getSign(date) {
+  const m = date.getMonth() + 1, d = date.getDate();
+  for (const s of SIGNS) {
+    const [sm, sd] = s.start, [em, ed] = s.end;
+    if (sm === em) { if (m===sm && d>=sd && d<=ed) return s; }
+    else if (em > sm) { if ((m===sm && d>=sd)||(m===em && d<=ed)) return s; }
+    else { if ((m===sm && d>=sd)||(m===em && d<=ed)||(m>sm||m<em)) return s; }
+  }
+  // fallback
+  for (const s of SIGNS) {
+    const [sm, sd] = s.start;
+    if (m===sm && d>=sd) return s;
+  }
+  return SIGNS[11];
+}
+
+function calcSign() {
+  const d = new Date(document.getElementById('birthDate').value);
+  if (isNaN(d)) { alert('Podaj datę urodzenia.'); return; }
+  const s = getSign(d);
+  document.getElementById('srSymbol').textContent = s.symbol;
+  document.getElementById('srName').textContent = s.name;
+  document.getElementById('srDates').textContent = s.dates + ' · ' + s.element + ' · ' + s.planet;
+  document.getElementById('srTraits').innerHTML = s.traits.map(t=>`<span class="sign-trait">${t}</span>`).join('');
+  document.getElementById('signResult').classList.add('visible');
+}
+
+// Render signs grid
+document.getElementById('signsGrid').innerHTML = SIGNS.map(s => `
+  <div class="sign-card">
+    <div class="sc-top">
+      <div class="sc-symbol">${s.symbol}</div>
+      <div>
+        <div class="sc-name">${s.name}</div>
+        <div class="sc-date">${s.dates}</div>
+      </div>
+    </div>
+    <div class="sc-element" style="background:${s.color}18;color:${s.color}">${s.element} · ${s.planet}</div>
+    <div class="sc-desc">${s.desc}</div>
+    <div class="sc-traits">${s.traits.map(t=>`<span class="sc-trait">${t}</span>`).join('')}</div>
+  </div>
+`).join('');
+
+// Render dates table
+document.getElementById('datesBody').innerHTML = SIGNS.map(s => `
+  <tr>
+    <td><strong>${s.symbol} ${s.name}</strong></td>
+    <td>${s.dates}</td>
+    <td style="color:var(--muted);font-size:.78rem">${s.exact}</td>
+    <td>${s.element}</td>
+    <td>${s.planet}</td>
+  </tr>
+`).join('');
+
+// Default date
+document.getElementById('birthDate').value = '1990-06-15';
+</script>
+<script>document.getElementById('navMonth').textContent=new Date().toLocaleDateString('pl-PL',{month:'long',year:'numeric'});</script>
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';<\/script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
