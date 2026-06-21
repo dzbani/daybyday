@@ -59,8 +59,8 @@
     #calPopup .cal-cell.empty { cursor: default; }
     .page { max-width: 1120px; margin: 0 auto; padding: 2.5rem 2rem 6rem; display: grid; grid-template-columns: 1fr 320px; gap: 1.5rem; align-items: start; }
     @media (max-width: 768px) { .page { grid-template-columns: 1fr; } .nav-links { display: none; } }
-    .date-hero { background: linear-gradient(135deg, #ffffff 60%, #FDF6EF 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem; margin-bottom: 1.5rem; transition: box-shadow .2s, border-color .2s; }
-    .date-hero:hover { box-shadow: 0 4px 20px rgba(0,0,0,.06); border-color: #D8D4CF; }
+    .date-hero { background: linear-gradient(135deg, #ffffff 60%, #FDF6EF 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem; margin-bottom: 1.5rem; transition: box-shadow .2s, border-color .2s; box-shadow: 0 1px 3px rgba(26,25,22,.05), 0 4px 16px rgba(26,25,22,.05); }
+    .date-hero:hover { box-shadow: 0 4px 24px rgba(26,25,22,.09); border-color: #D8D4CF; }
     .date-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
     .date-big { font-family: 'Instrument Serif', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 400; line-height: 0.95; letter-spacing: -0.03em; color: var(--text); }
     .date-big .day-name { display: block; font-size: 0.32em; font-family: 'Inter', sans-serif; font-weight: 300; letter-spacing: 0.02em; color: var(--muted); margin-bottom: 0.3em; }
@@ -69,12 +69,12 @@
     .date-meta span:last-child { border-bottom: none; }
     .date-meta > span::before { content: ''; position: absolute; left: 0; top: 1.05rem; width: 4px; height: 4px; border-radius: 50%; background: var(--muted); opacity: 0.5; }
     .date-meta span strong { font-family: 'Instrument Serif', serif; color: var(--text); font-weight: 400; font-size: 1.05rem; }
-    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin-bottom: 1.5rem; transition: box-shadow .2s, border-color .2s; }
-    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.06); border-color: #D8D4CF; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem; margin-bottom: 1.5rem; transition: box-shadow .2s, border-color .2s; box-shadow: 0 1px 3px rgba(26,25,22,.05), 0 2px 10px rgba(26,25,22,.04); }
+    .card:hover { box-shadow: 0 4px 24px rgba(26,25,22,.09); border-color: #D8D4CF; }
     @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
     .card, .date-hero { animation: fadeUp .35s ease both; }
     .card:nth-child(1){animation-delay:.04s} .card:nth-child(2){animation-delay:.08s} .card:nth-child(3){animation-delay:.12s} .card:nth-child(4){animation-delay:.16s} .card:nth-child(5){animation-delay:.20s} .card:nth-child(6){animation-delay:.24s} .card:nth-child(7){animation-delay:.28s} .card:nth-child(8){animation-delay:.32s}
-    .card-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; padding-left: 10px; border-left: 2px solid var(--border); }
+    .card-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; padding-left: 10px; border-left: 2px solid #C8C4BE; }
     .names-list { font-size: 0.92rem; font-style: italic; line-height: 1.8; color: var(--text); }
     .name-tag { color: var(--text); text-decoration: none; font-style: italic; }
     .name-tag:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -226,6 +226,8 @@
       flex-shrink: 0; line-height: 1;
     }
     #themeToggle:hover { background: var(--tag-bg); color: var(--text); }
+    [data-theme="dark"] .card, [data-theme="dark"] .date-hero { box-shadow: none; }
+    [data-theme="dark"] .card-title { border-left-color: var(--border); }
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
     [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98) !important; }
     [data-theme="dark"] .date-hero { background: linear-gradient(135deg, #1B1A18 60%, #211E1A 100%) !important; }
