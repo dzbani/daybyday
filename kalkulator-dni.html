@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#888580; --tag-bg:#F0EDEA; --radius:16px; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; }
     body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
     .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
     .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; }
@@ -90,6 +90,7 @@
       --open: #0D1F10; --open-text: #7BC87F;
       --closed: #1F0D0A; --closed-text: #D47A5A;
     }
+    [data-theme="dark"] { --muted: #9A9790; }
     #themeToggle {
       background: none; border: 1px solid var(--border); border-radius: 8px;
       width: 32px; height: 32px; cursor: pointer; font-size: 14px;
@@ -110,12 +111,29 @@
     [data-theme="dark"] #calPopup { box-shadow: 0 8px 32px rgba(0,0,0,.4); }
     [data-theme="dark"] .filter-btn:hover, [data-theme="dark"] .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
     [data-theme="dark"] .date-search input[type=date] { color-scheme: dark; }
+    /* Accessibility: font scaling */
+    [data-font="large"] { font-size: 112%; }
+    [data-font="xl"] { font-size: 125%; }
+    /* Better line-height */
+    body { line-height: 1.65; }
+    /* Focus outline for keyboard navigation */
+    :focus-visible { outline: 2px solid var(--sun, #E8936A); outline-offset: 2px; border-radius: 4px; }
+    /* Font-size toggle button */
+    #fontToggle {
+      background: none; border: 1px solid var(--border); border-radius: 8px;
+      width: 32px; height: 32px; cursor: pointer; font-size: 11px; font-weight: 700;
+      color: var(--muted); transition: background .15s, color .15s;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; line-height: 1; font-family: inherit; letter-spacing: -.03em;
+    }
+    #fontToggle:hover { background: var(--tag-bg); color: var(--text); }
   </style>
   <script>
     (function(){
       var s=localStorage.getItem('dbd-theme');
       var p=window.matchMedia('(prefers-color-scheme:dark)').matches;
       document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));
+            var f=localStorage.getItem('dbd-font')||'normal';if(f!=='normal')document.documentElement.setAttribute('data-font',f);
     })();
   </script>
 </head>
@@ -129,7 +147,8 @@
     <li><a href="kalkulatory.html" class="active">Kalkulatory</a></li>
   </ul>
   <a class="nav-month" id="navMonth" href="index.html?cal=1"></a>
-    <button id="themeToggle" onclick="toggleDarkMode()" title="Tryb ciemny/jasny"></button>
+    <button id="fontToggle" onclick="cycleFontSize()" title="Rozmiar tekstu" aria-label="Zmień rozmiar tekstu">A</button>
+    <button id="themeToggle" onclick="toggleDarkMode()" title="Tryb ciemny/jasny" aria-label="Przełącz tryb ciemny/jasny"></button>
   <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </nav>
 
@@ -256,12 +275,32 @@
     var t=d.getAttribute('data-theme')==='dark'?'light':'dark';
     d.setAttribute('data-theme',t);
     localStorage.setItem('dbd-theme',t);
+    updateThemeBtn();
+  }
+  function updateThemeBtn(){
     var b=document.getElementById('themeToggle');
-    if(b) b.textContent=t==='dark'?'☀':'☾';
+    if(b) b.setAttribute('aria-label', document.documentElement.getAttribute('data-theme')==='dark'?'Przełącz na tryb jasny':'Przełącz na tryb ciemny');
+    if(b) b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'☾';
+  }
+  function cycleFontSize(){
+    var sizes=['normal','large','xl'];
+    var d=document.documentElement;
+    var cur=d.getAttribute('data-font')||'normal';
+    var next=sizes[(sizes.indexOf(cur)+1)%sizes.length];
+    d.setAttribute('data-font',next);
+    localStorage.setItem('dbd-font',next);
+    updateFontBtn();
+  }
+  function updateFontBtn(){
+    var b=document.getElementById('fontToggle');
+    if(!b) return;
+    var f=document.documentElement.getAttribute('data-font')||'normal';
+    b.textContent=f==='normal'?'A':f==='large'?'A+':'A++';
+    b.setAttribute('aria-label',f==='normal'?'Zwiększ czcionkę':f==='large'?'Jeszcze większa czcionka':'Przywróć domyślną czcionkę');
   }
   (function(){
-    var b=document.getElementById('themeToggle');
-    if(b) b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'☾';
+    updateThemeBtn();
+    updateFontBtn();
   })();
 </script>
 </body>
