@@ -120,6 +120,19 @@
     .footer-links a:hover { color: var(--text); }
     .footer-copy { font-size: 0.75rem; color: var(--muted); }
 .chevron-svg { width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round; }
+    /* Drag & drop card reorder */
+    .drag-handle { display:none; position:absolute; top:1rem; right:1rem; font-size:1.2rem; color:var(--muted); cursor:grab; user-select:none; line-height:1; padding:4px; border-radius:6px; transition:color .15s, background .15s; }
+    .drag-handle:active { cursor:grabbing; }
+    .drag-handle:hover { color:var(--text); background:var(--tag-bg); }
+    .drag-handle-light { color:rgba(255,255,255,.4); }
+    .drag-handle-light:hover { color:white; background:rgba(255,255,255,.15); }
+    body.cards-edit .drag-handle { display:block; }
+    body.cards-edit .card, body.cards-edit .quote-card { position:relative; cursor:default; transition:box-shadow .15s, transform .1s, opacity .15s; }
+    body.cards-edit .card:hover, body.cards-edit .quote-card:hover { box-shadow:0 6px 24px rgba(0,0,0,.1); }
+    .card.drag-over, .quote-card.drag-over { outline:2px solid var(--sun); outline-offset:2px; }
+    .card.dragging, .quote-card.dragging { opacity:.45; transform:scale(.98); box-shadow:none !important; }
+    #editOrderBtn.active { background:var(--sun) !important; color:#111110 !important; border-color:var(--sun) !important; }
+    /* Mini calendar */
     .mini-cal { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; text-align:center; font-size:0.78rem; }
     .mini-cal-hd { color:var(--muted); padding:3px 0; font-weight:500; }
     .mini-cal-day { padding:5px 2px; border-radius:6px; cursor:pointer; text-decoration:none; color:var(--text); transition:background 0.12s; }
@@ -299,6 +312,7 @@
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
         <div class="date-label" style="margin-bottom:0;">Kartka z kalendarza</div>
         <div style="display:flex;gap:0.5rem;align-items:center;">
+          <button onclick="toggleCardEdit()" id="editOrderBtn" title="Zmień kolejność sekcji" style="font:inherit;font-size:.8rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.25rem .6rem;cursor:pointer;transition:background .15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">⚙</button>
           <button id="shareBtn" onclick="shareDay()" title="Udostępnij ten dzień" style="font:inherit;font-size:.8rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.25rem .6rem;cursor:pointer;transition:background .15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">🔗</button>
           <a id="prevDayLink" href="#" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">←</a>
           <a id="todayLink" href="index.html" style="font-size:0.75rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);display:none;transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">Dziś</a>
@@ -318,31 +332,36 @@
     </div>
 
     <!-- IMIENINY -->
-    <div class="card">
+    <div class="card" data-card-id="imieniny">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title">Imieniny</div>
       <div class="names-list" id="namesList"></div>
     </div>
 
     <!-- ŚWIĘTA -->
-    <div class="card">
+    <div class="card" data-card-id="swieta">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title">Święta i obchodzone dni</div>
       <div class="holidays-list" id="holidaysList"></div>
     </div>
 
     <!-- NAJBLIŻSZE ŚWIĘTA -->
-    <div class="card">
+    <div class="card" data-card-id="najblizsze">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title">Najbliższe ważne daty</div>
       <div id="upcomingList"></div>
     </div>
 
     <!-- NASTĘPNY DŁUGI WEEKEND -->
-    <div class="card" id="longWeekendCard">
+    <div class="card" data-card-id="dlugiwknd" id="longWeekendCard">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title">Następny długi weekend</div>
       <div id="longWeekendContent"></div>
     </div>
 
     <!-- SŁOŃCE / KSIĘŻYC -->
-    <div class="card">
+    <div class="card" data-card-id="astro">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
         <span>Dane astronomiczne — <button id="locNameBtn" onclick="toggleLocSearch()" style="font:inherit;font-size:inherit;font-weight:inherit;color:var(--sun);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline dotted;text-underline-offset:3px;" title="Zmień lokalizację">Poznań</button></span>
         <div id="locSearchBox" style="display:none;align-items:center;gap:.4rem;">
@@ -389,13 +408,15 @@
     </div>
 
     <!-- MINI KALENDARZ -->
-    <div class="card">
+    <div class="card" data-card-id="minikalen">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title" id="miniCalTitle">Kalendarz miesiąca</div>
       <div id="miniCal"></div>
     </div>
 
     <!-- DNI DO KOŃCA ROKU -->
-    <div class="card">
+    <div class="card" data-card-id="rok">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title">Ile zostało do końca roku?</div>
       <div id="yearCounters" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;text-align:center;margin-top:0.25rem;"></div>
       <div style="margin-top:1rem;">
@@ -405,20 +426,23 @@
     </div>
 
     <!-- TEN DZIEŃ W HISTORII -->
-    <div class="card" id="historyCard" style="display:none">
+    <div class="card" data-card-id="historia" id="historyCard" style="display:none">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title" id="historyTitle">Ten dzień w historii</div>
       <div id="historyList"></div>
     </div>
 
     <!-- CYTAT DNIA -->
-    <div class="quote-card">
+    <div class="quote-card" data-card-id="cytat">
+      <div class="drag-handle drag-handle-light" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="quote-mark">"</div>
       <p class="quote-text" id="quoteText"></p>
       <div class="quote-author" id="quoteAuthor"></div>
     </div>
 
     <!-- PRZYSŁOWIA -->
-    <div class="card">
+    <div class="card" data-card-id="przyslowia">
+      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title" id="proverbTitle">Przysłowia</div>
       <div class="proverb-list" id="proverbList"></div>
     </div>
@@ -3056,6 +3080,111 @@ function jumpToDate(val){
     updateThemeBtn();
     updateFontBtn();
   })();
+</script>
+
+<script>
+// ── Card order drag & drop ──────────────────────────────────────────────────
+const CARD_ORDER_KEY = 'dbd-card-order';
+const DEFAULT_ORDER = ['imieniny','swieta','najblizsze','dlugiwknd','astro','minikalen','rok','historia','cytat','przyslowia'];
+
+function getMain() { return document.querySelector('main'); }
+
+function saveCardOrder() {
+  const cards = [...getMain().querySelectorAll('[data-card-id]')];
+  localStorage.setItem(CARD_ORDER_KEY, JSON.stringify(cards.map(c => c.dataset.cardId)));
+}
+
+function applyCardOrder() {
+  const saved = JSON.parse(localStorage.getItem(CARD_ORDER_KEY) || 'null');
+  if (!saved) return;
+  const main = getMain();
+  saved.forEach(id => {
+    const el = main.querySelector(`[data-card-id="${id}"]`);
+    if (el) main.appendChild(el);
+  });
+}
+
+function toggleCardEdit() {
+  const editing = document.body.classList.toggle('cards-edit');
+  const btn = document.getElementById('editOrderBtn');
+  btn.classList.toggle('active', editing);
+  btn.title = editing ? 'Gotowe — zamknij tryb edycji' : 'Zmień kolejność sekcji';
+  if (!editing) saveCardOrder();
+}
+
+// Pointer-based drag (works on mouse + touch)
+let dragEl = null, dragGhost = null, lastOver = null;
+let startX = 0, startY = 0, offX = 0, offY = 0;
+
+function onPointerDown(e) {
+  if (!document.body.classList.contains('cards-edit')) return;
+  if (!e.target.closest('.drag-handle')) return;
+  e.preventDefault();
+  dragEl = e.target.closest('[data-card-id]');
+  const rect = dragEl.getBoundingClientRect();
+  offX = e.clientX - rect.left;
+  offY = e.clientY - rect.top;
+
+  dragGhost = dragEl.cloneNode(true);
+  dragGhost.style.cssText = `position:fixed;z-index:9999;pointer-events:none;width:${rect.width}px;opacity:.85;transform:rotate(1.5deg) scale(1.02);box-shadow:0 16px 40px rgba(0,0,0,.18);border-radius:16px;transition:none;`;
+  dragGhost.style.left = (e.clientX - offX) + 'px';
+  dragGhost.style.top  = (e.clientY - offY) + 'px';
+  document.body.appendChild(dragGhost);
+  dragEl.classList.add('dragging');
+
+  document.addEventListener('pointermove', onPointerMove, {passive:false});
+  document.addEventListener('pointerup', onPointerUp);
+  document.addEventListener('pointercancel', onPointerUp);
+}
+
+function onPointerMove(e) {
+  if (!dragEl) return;
+  e.preventDefault();
+  dragGhost.style.left = (e.clientX - offX) + 'px';
+  dragGhost.style.top  = (e.clientY - offY) + 'px';
+
+  const target = getCardAt(e.clientX, e.clientY);
+  if (target && target !== dragEl) {
+    if (lastOver && lastOver !== target) lastOver.classList.remove('drag-over');
+    target.classList.add('drag-over');
+    lastOver = target;
+  } else if (!target && lastOver) {
+    lastOver.classList.remove('drag-over');
+    lastOver = null;
+  }
+}
+
+function onPointerUp(e) {
+  document.removeEventListener('pointermove', onPointerMove);
+  document.removeEventListener('pointerup', onPointerUp);
+  document.removeEventListener('pointercancel', onPointerUp);
+
+  if (dragGhost) { dragGhost.remove(); dragGhost = null; }
+  if (lastOver) { lastOver.classList.remove('drag-over'); }
+
+  if (dragEl && lastOver && lastOver !== dragEl) {
+    const main = getMain();
+    const cards = [...main.querySelectorAll('[data-card-id]')];
+    const fromIdx = cards.indexOf(dragEl);
+    const toIdx   = cards.indexOf(lastOver);
+    if (fromIdx < toIdx) main.insertBefore(dragEl, lastOver.nextSibling);
+    else                 main.insertBefore(dragEl, lastOver);
+    saveCardOrder();
+  }
+
+  if (dragEl) { dragEl.classList.remove('dragging'); dragEl = null; }
+  lastOver = null;
+}
+
+function getCardAt(x, y) {
+  const els = document.elementsFromPoint(x, y);
+  return els.find(el => el.dataset && el.dataset.cardId && el !== dragGhost) || null;
+}
+
+document.querySelector('main').addEventListener('pointerdown', onPointerDown);
+
+// Apply saved order on load
+applyCardOrder();
 </script>
 </body>
 </html>
