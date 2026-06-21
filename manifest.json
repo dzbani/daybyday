@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "DaybyDay — Twój kalendarz",
   "short_name": "DaybyDay",
   "description": "Imieniny, święta, wschód słońca, fazy księżyca i kalkulatory dat.",
@@ -6,8 +6,8 @@
   "scope": "/daybyday/",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#F8F7F5",
-  "background_color": "#F8F7F5",
+  "theme_color": "#111110",
+  "background_color": "#111110",
   "icons": [
     {
       "src": "favicon.svg",
