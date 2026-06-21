@@ -29,10 +29,10 @@
     .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
     .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
     .page { max-width:1060px; margin:0 auto; padding:2.5rem 2rem 6rem; }
-    .date-nav { display:flex; align-items:center; gap:1rem; margin-bottom:2rem; }
-    .date-nav-btn { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:var(--surface); border:1px solid var(--border); border-radius:50%; cursor:pointer; font-size:1rem; transition:all .15s; text-decoration:none; color:var(--text); }
+    .date-nav { display:flex; align-items:center; gap:.75rem; margin-bottom:2rem; }
+    .date-nav-btn { width:36px; height:36px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:var(--surface); border:1px solid var(--border); border-radius:50%; cursor:pointer; font-size:1rem; transition:all .15s; text-decoration:none; color:var(--text); }
     .date-nav-btn:hover { background:var(--tag-bg); border-color:#C8C4BE; }
-    .date-picker { padding:.45rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.88rem; color:var(--text); outline:none; cursor:pointer; }
+    .date-picker { padding:.45rem .75rem; background:var(--surface); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.88rem; color:var(--text); outline:none; cursor:pointer; flex:1; min-width:0; }
     .hero-date { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2.5rem; margin-bottom:1.5rem; display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:start; }
     .hero-day { font-family:'Instrument Serif',serif; font-size:clamp(4rem,12vw,8rem); line-height:1; font-weight:400; }
     .hero-month { font-family:'Instrument Serif',serif; font-size:clamp(1.8rem,5vw,3rem); line-height:1.1; }
