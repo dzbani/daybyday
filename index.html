@@ -370,16 +370,9 @@
     <!-- SŁOŃCE / KSIĘŻYC -->
     <div class="card" data-card-id="astro">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+      <div class="card-title">
         <span>Dane astronomiczne — <button id="locNameBtn" onclick="toggleLocSearch()" style="font:inherit;font-size:inherit;font-weight:inherit;color:var(--sun);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline dotted;text-underline-offset:3px;" title="Zmień lokalizację">Poznań</button></span>
-        <div id="locSearchBox" style="display:none;align-items:center;gap:.4rem;">
-          <input id="locSearchInput" type="text" placeholder="Wpisz miejscowość…" style="font:inherit;font-size:.8rem;padding:.3rem .7rem;border:1px solid var(--border);border-radius:60px;outline:none;width:180px;" />
-          <button onclick="applyLocSearch()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:var(--text);color:#fff;border:none;border-radius:60px;cursor:pointer;">Szukaj</button>
-          <button onclick="resetLoc()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);" title="Wróć do domyślnej (Poznań)">Resetuj</button>
-          <button onclick="toggleLocSearch()" style="font:inherit;font-size:.78rem;padding:.3rem .6rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);">✕</button>
-        </div>
       </div>
-      <div id="locSearchStatus" style="font-size:.75rem;color:var(--muted);margin-bottom:.5rem;display:none;"></div>
       <div class="astro-grid">
         <div class="astro-block">
           <div class="astro-header">
@@ -2759,13 +2752,12 @@ function updateLocUI(){
   if(btn) btn.textContent=LOC_NAME;
 }
 function toggleLocSearch(){
-  const box=document.getElementById('locSearchBox');
+  const overlay=document.getElementById('locOverlay');
   const status=document.getElementById('locSearchStatus');
-  const open=box.style.display==='none';
-  box.style.display=open?'flex':'none';
-  status.style.display='none';
+  const open=overlay.style.display==='none'||overlay.style.display==='';
+  overlay.style.display=open?'flex':'none';
   status.textContent='';
-  if(open){ const inp=document.getElementById('locSearchInput'); inp.value=''; inp.focus(); }
+  if(open){ const inp=document.getElementById('locSearchInput'); inp.value=''; setTimeout(()=>inp.focus(),50); }
 }
 async function applyLocSearch(){
   const inp=document.getElementById('locSearchInput');
@@ -3224,6 +3216,21 @@ document.querySelector('main').addEventListener('pointerdown', onPointerDown);
 applyCardOrder();
 </script>
 
+<!-- Location search modal -->
+<div id="locOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.45);backdrop-filter:blur(3px);align-items:center;justify-content:center;" onclick="if(event.target===this)toggleLocSearch()">
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.5rem;width:min(360px,90vw);box-shadow:0 16px 48px rgba(0,0,0,.2);">
+    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Zmień lokalizację</div>
+    <div style="display:flex;gap:.5rem;margin-bottom:.75rem;">
+      <input id="locSearchInput" type="text" placeholder="Wpisz miejscowość…" style="font:inherit;font-size:.88rem;padding:.45rem .85rem;border:1px solid var(--border);border-radius:10px;outline:none;flex:1;background:var(--bg);color:var(--text);" />
+      <button onclick="applyLocSearch()" style="font:inherit;font-size:.82rem;padding:.45rem 1rem;background:var(--text);color:var(--bg);border:none;border-radius:10px;cursor:pointer;white-space:nowrap;">Szukaj</button>
+    </div>
+    <div id="locSearchStatus" style="font-size:.78rem;color:var(--muted);min-height:1.2em;"></div>
+    <div style="display:flex;justify-content:space-between;margin-top:1rem;">
+      <button onclick="resetLoc()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);">Resetuj do Poznania</button>
+      <button onclick="toggleLocSearch()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);">Zamknij</button>
+    </div>
+  </div>
+</div>
 <script src="transitions.js"></script></body>
 </html>
 
