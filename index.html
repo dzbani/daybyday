@@ -121,7 +121,7 @@
     .footer-copy { font-size: 0.75rem; color: var(--muted); }
 .chevron-svg { width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round; }
     /* Drag & drop card reorder */
-    .drag-handle { display:none; position:absolute; top:1rem; right:1rem; font-size:1.2rem; color:var(--muted); cursor:grab; user-select:none; line-height:1; padding:4px; border-radius:6px; transition:color .15s, background .15s; }
+    .drag-handle { display:none; position:absolute; top:1rem; right:1rem; font-size:1.2rem; color:var(--muted); cursor:grab; user-select:none; line-height:1; padding:4px; border-radius:6px; transition:color .15s, background .15s; touch-action:none; -webkit-user-select:none; }
     .drag-handle:active { cursor:grabbing; }
     .drag-handle:hover { color:var(--text); background:var(--tag-bg); }
     .drag-handle-light { color:rgba(255,255,255,.4); }
@@ -3122,10 +3122,14 @@ function onPointerDown(e) {
   if (!document.body.classList.contains('cards-edit')) return;
   if (!e.target.closest('.drag-handle')) return;
   e.preventDefault();
+  e.stopPropagation();
   dragEl = e.target.closest('[data-card-id]');
   const rect = dragEl.getBoundingClientRect();
   offX = e.clientX - rect.left;
   offY = e.clientY - rect.top;
+
+  // Capture pointer so mobile scroll can't steal events
+  e.target.setPointerCapture(e.pointerId);
 
   dragGhost = dragEl.cloneNode(true);
   dragGhost.style.cssText = `position:fixed;z-index:9999;pointer-events:none;width:${rect.width}px;opacity:.85;transform:rotate(1.5deg) scale(1.02);box-shadow:0 16px 40px rgba(0,0,0,.18);border-radius:16px;transition:none;`;
