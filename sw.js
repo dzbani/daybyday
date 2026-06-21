@@ -1,7 +1,20 @@
-const CACHE = 'daybyday-v3';
+const CACHE = 'daybyday-v4';
+
+const PRECACHE = [
+  'fonts.css',
+  'fonts/outfit-latin.woff2',
+  'fonts/outfit-latin-ext.woff2',
+  'fonts/instrument-serif-normal-latin.woff2',
+  'fonts/instrument-serif-normal-latin-ext.woff2',
+  'fonts/instrument-serif-italic-latin.woff2',
+  'fonts/instrument-serif-italic-latin-ext.woff2',
+];
 
 self.addEventListener('install', e => {
   self.skipWaiting();
+  e.waitUntil(
+    caches.open(CACHE).then(c => c.addAll(PRECACHE))
+  );
 });
 
 self.addEventListener('activate', e => {
