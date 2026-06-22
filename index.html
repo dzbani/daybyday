@@ -415,12 +415,6 @@
       </div>
     </div>
 
-    <!-- MINI KALENDARZ -->
-    <div class="card" data-card-id="minikalen">
-      <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title" id="miniCalTitle">Kalendarz miesiąca</div>
-      <div id="miniCal"></div>
-    </div>
 
     <!-- DNI DO KOŃCA ROKU -->
     <div class="card" data-card-id="rok">
@@ -470,6 +464,10 @@
         </div>
       </div>
       <div class="weather-details" id="weatherDetails"></div>
+    </div>
+    <div class="card">
+      <div class="card-title" id="miniCalTitle">Kalendarz miesiąca</div>
+      <div id="miniCal"></div>
     </div>
     <div class="card">
       <div class="card-title">Kalendarze</div>
@@ -4064,7 +4062,7 @@ function jumpToDate(val){
 <script>
 // ── Card order drag & drop ──────────────────────────────────────────────────
 const CARD_ORDER_KEY = 'dbd-card-order';
-const DEFAULT_ORDER = ['imieniny','swieta','najblizsze','dlugiwknd','astro','minikalen','rok','historia','cytat','przyslowia'];
+const DEFAULT_ORDER = ['imieniny','swieta','najblizsze','dlugiwknd','astro','rok','historia','cytat','przyslowia'];
 
 function getMain() { return document.querySelector('main'); }
 
