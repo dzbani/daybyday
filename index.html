@@ -3615,6 +3615,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const EVENT_SLUG={
     'Nowy Rok':'nowy-rok',
     'Trzech Króli':'trzech-kroli',
+    'Tłusty Czwartek':'tlusty-czwartek',
     'Walentynki':'walentynki',
     'Dzień Kobiet':'dzien-kobiet',
     'Dzień Wiosny':'dzien-wiosny',
@@ -3627,17 +3628,19 @@ function getMoonRiseSet(year,month,day,lat,lon){
     'Dzień Dziecka':'dzien-dziecka',
     'Boże Ciało':'boze-cialo',
     'Dzień Ojca':'dzien-ojca',
+    'Przesilenie letnie':'przesilenie-letnie',
     'Wniebowzięcie NMP':'wniebowziecie-nmp',
     'Wszystkich Świętych':'wszystkich-swietych',
-    'Dzień Zaduszny':null,
+    'Halloween':'halloween',
+    'Dzień Zaduszny':'dzien-zaduszny',
     'Święto Niepodległości':'swieto-niepodleglosci',
-    'Niepokalane Poczęcie NMP':null,
+    'Andrzejki':'andrzejki',
+    'Mikołajki':'mikolajki',
+    'Przesilenie zimowe':'przesilenie-zimowe',
     'Wigilia':'wigilia',
     'Boże Narodzenie':'boze-narodzenie',
-    'Drugi Dzień Świąt':'boze-narodzenie-2',
+    'Drugi dzień Bożego Narodzenia':'boze-narodzenie-2',
     'Sylwester':'sylwester',
-    'Przesilenie letnie':'przesilenie-letnie',
-    'Przesilenie zimowe':'przesilenie-zimowe',
   };
   const EVENT_DESC={
     'Nowy Rok':'Pierwszy dzień roku — tradycja życzeń noworocznych i postanowień.',
@@ -3685,8 +3688,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     row.href=slug?`swieto.html?id=${slug}`:`index.html?d=${d}&m=${m}&y=${y}`;
     const EMOJI={'Nowy Rok':'🎆','Trzech Króli':'⭐','Tłusty Czwartek':'🍩','Walentynki':'❤️','Dzień Kobiet':'🌷','Dzień Wiosny':'🌸','Wielkanoc':'🐣','Poniedziałek Wielkanocny':'🐣','Święto Pracy':'⚒️','Święto Konstytucji 3 Maja':'🇵🇱','Dzień Matki':'💐','Zielone Świątki':'🕊️','Dzień Dziecka':'🎈','Boże Ciało':'✝️','Przesilenie letnie':'☀️','Wniebowzięcie NMP':'🕊️','Wszyscy Świętych':'🕯️','Wszystkich Świętych':'🕯️','Halloween':'🎃','Dzień Niepodległości':'🇵🇱','Święto Niepodległości':'🇵🇱','Andrzejki':'🔮','Mikołajki':'🎅','Niepokalane Poczęcie NMP':'✝️','Przesilenie zimowe':'❄️','Wigilia':'🎄','Boże Narodzenie':'🎄','Drugi dzień Bożego Narodzenia':'🎄','Sylwester':'🎆','Dzień Ojca':'👨'};
     const em=EMOJI[name]||'📅';
-    const desc=EVENT_DESC[name]||'';
-    row.innerHTML=`<span class="upcoming-left"><span class="upcoming-name">${em} ${name}</span>${desc?`<span class="upcoming-desc">${desc}</span>`:''}</span><span class="upcoming-meta">za ${diff} dni — ${d} ${MONTH_GEN[m]}</span>`;
+    row.innerHTML=`<span class="upcoming-name">${em} ${name}</span><span class="upcoming-meta">za ${diff} dni — ${d} ${MONTH_GEN[m]}</span>`;
     ul.appendChild(row);
   });
 
