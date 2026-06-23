@@ -3361,70 +3361,73 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const rad=Math.PI/180;
   const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
   const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
-  const fmt=h=>{h=((h+tz)%24+24)%24;const hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60)return fmt(h+1/60);return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
+  const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
-  // Pozycja księżyca (uproszczona) dla podanego JD
+  // Pozycja księżyca — pełny algorytm Meeus rozdz. 47 (28+28 wyrazów)
   function moonPos(jd){
-    const d=jd-2451545.0;
-    const L=((218.3165+13.17639648*d)%360+360)%360;
-    const M=((134.9634+13.06499295*d)%360+360)%360;
-    const F=((93.2721+13.22935024*d)%360+360)%360;
-    const D=((297.8502+12.19074912*d)%360+360)%360;
-    const Ms=((357.5291+0.98560028*d)%360+360)%360;
-    const Ls=((280.4664+0.98564736*d)%360+360)%360;
-    const s=Math.sin,c=Math.cos;
-    const r=rad;
-    // ecliptic longitude corrections (Meeus low-precision)
-    const lam=(L
-      +6.289*s(M*r)
-      +1.274*s((2*D-M)*r)
-      +0.658*s(2*D*r)
-      -0.186*s(Ms*r)
-      +0.214*s(2*M*r)
-      +0.059*s((2*D-2*M)*r)
-      +0.057*s((2*D-Ms-M)*r)
-      +0.053*s((2*D+M)*r)
-      +0.046*s((2*D-Ms)*r)
-      +0.041*s((M-Ms)*r)
-      -0.035*s(D*r)
-      -0.031*s((M+Ms)*r)
-      -0.114*s(2*F*r)
-      -0.015*s((2*F-2*D)*r)
-      +0.011*s((M-4*D)*r)
-    )*r;
-    // ecliptic latitude corrections
-    const bet=(
-      5.128*s(F*r)
-      +0.280*s((M+F)*r)
-      -0.277*s((M-F)*r)
-      +0.173*s((2*D-F)*r)
-      +0.055*s((2*D+F-M)*r)
-      -0.046*s((2*D-F-M)*r)
-      +0.033*s((2*D+F)*r)
-      +0.017*s((2*M+F)*r)
-    )*r;
-    const eps=(23.439-0.0000004*d)*r;
-    const sinDec=Math.sin(bet)*Math.cos(eps)+Math.cos(bet)*Math.sin(eps)*Math.sin(lam);
+    const T=(jd-2451545.0)/36525;
+    const r=rad,s=Math.sin;
+    const Lp=((218.3164477+481267.88123421*T-0.0015786*T*T+T*T*T/538841)%360+360)%360;
+    const D =((297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868)%360+360)%360;
+    const M =((357.5291092+ 35999.0502909*T-0.0001536*T*T)%360+360)%360;
+    const Mp=((134.9633964+477198.8675055*T+0.0087414*T*T+T*T*T/69699)%360+360)%360;
+    const F =((93.2720950 +483202.0175233*T-0.0036539*T*T)%360+360)%360;
+    const E=1-0.002516*T-0.0000074*T*T, E2=E*E;
+    // poprawki długości ekliptycznej [0.000001°]
+    const dL=6288774*s(Mp*r)+1274027*s((2*D-Mp)*r)+658314*s(2*D*r)
+      +213618*s(2*Mp*r)-185116*E*s(M*r)-114332*s(2*F*r)
+      +58793*s((2*D-2*Mp)*r)+57066*E*s((2*D-M-Mp)*r)
+      +53322*s((2*D+Mp)*r)+45758*E*s((2*D-M)*r)
+      -40923*E*s((M-Mp)*r)-34720*s(D*r)-30383*E*s((M+Mp)*r)
+      +15327*s((2*D-2*F)*r)+10980*s((Mp-2*F)*r)
+      +10675*s((4*D-Mp)*r)+10034*s(3*Mp*r)
+      +8548*s((4*D-2*Mp)*r)-7888*E*s((2*D+M-Mp)*r)
+      -6766*E*s((2*D+M)*r)-5163*s((D-Mp)*r)
+      +4987*E*s((D+M)*r)+4036*E*s((2*D-M+Mp)*r)
+      +3994*s((2*D+2*Mp)*r)+3861*s(4*D*r)
+      +3665*s((2*D-3*Mp)*r)-2689*E*s((M-2*Mp)*r)
+      -2602*s((2*D-Mp+2*F)*r)+2390*E*s((2*Mp-M)*r)
+      -2348*s((D+Mp)*r);
+    // poprawki szerokości ekliptycznej [0.000001°]
+    const dB=5128122*s(F*r)+280602*s((Mp+F)*r)+277693*s((Mp-F)*r)
+      +173237*s((2*D-F)*r)+55413*s((2*D+F-Mp)*r)
+      +46271*s((2*D-F-Mp)*r)+32573*s((2*D+F)*r)
+      +17198*s((2*Mp+F)*r)+9266*s((2*D+Mp-F)*r)
+      +8822*s((2*Mp-F)*r)+8216*E*s((2*D-M-F)*r)
+      +4324*s((2*D-2*Mp-F)*r)+4200*s((2*D+Mp+F)*r)
+      -3359*E*s((2*D+M-F)*r)+2463*E*s((2*D-M-Mp+F)*r)
+      +2211*E*s((2*D-M+F)*r)+2065*E*s((2*D-M-Mp-F)*r)
+      -1870*E*s((M-Mp-F)*r)+1828*s((4*D-Mp-F)*r)
+      -1794*E*s((M+F)*r)-1749*s(3*F*r)
+      -1565*E*s((M-Mp+F)*r)-1491*s((D+F)*r)
+      -1475*E*s((M+Mp+F)*r)-1410*E*s((M+Mp-F)*r)
+      -1344*E*s((M-F)*r)-1335*s((D-F)*r)
+      +1107*s((3*Mp+F)*r)+1021*s((4*D-F)*r);
+    const moonLon=((Lp+dL/1000000)%360+360)%360;
+    const moonLat=dB/1000000;
+    const eps=(23.4392911-0.0130042*T)*r;
+    const cLat=Math.cos(moonLat*r),sLat=Math.sin(moonLat*r);
+    const cLon=Math.cos(moonLon*r),sLon=Math.sin(moonLon*r);
+    const sinDec=sLat*Math.cos(eps)+cLat*Math.sin(eps)*sLon;
     const Dec=Math.asin(sinDec);
-    const RA=((Math.atan2(Math.cos(bet)*Math.sin(lam)*Math.cos(eps)-Math.sin(bet)*Math.sin(eps),Math.cos(lam))/r)%360+360)%360;
+    const RA=((Math.atan2(sLon*Math.cos(eps)-sLat*Math.sin(eps)/cLat,cLon)/r)%360+360)%360;
     return{RA,Dec,sinDec};
   }
 
-  // Skanowanie wysokości księżyca (bardziej dokładne niż metoda tranzytowa)
   const JD0=toJD(year,month,day);
   const T0=(JD0-2451545.0)/36525;
-  const GMST0=(6.697375+2400.0513369*T0+0.0000258622*T0*T0)%24;
-  const H0=0.5; // kąt horyzont księżyca
+  const GMST0=(6.697374558+2400.0513369*T0+0.0000258622*T0*T0-1.7222e-9*T0*T0*T0)%24;
+  const H0=0.125; // Meeus: h0 = 0.7275*π_mean - 0.5667°
 
   function moonAlt(t){
     const {RA,Dec,sinDec}=moonPos(JD0+t/24);
-    const LST=((GMST0+t*1.00274+lon/15)%24+24)%24;
+    const LST=((GMST0+t*1.00273791+lon/15)%24+24)%24;
     const HA=((LST-RA/15)*15%360+360)%360;
     return Math.asin(sinDec*Math.sin(lat*rad)+Math.cos(Dec)*Math.cos(lat*rad)*Math.cos(HA*rad))/rad-H0;
   }
 
   function bisect(lo,hi,rising){
-    for(let i=0;i<40;i++){
+    for(let i=0;i<50;i++){
       const m=(lo+hi)/2;
       if(rising?(moonAlt(m)<0):(moonAlt(m)>=0))lo=m; else hi=m;
     }
@@ -3432,10 +3435,10 @@ function getMoonRiseSet(year,month,day,lat,lon){
   }
 
   let riseT=null,setT=null,prev=moonAlt(0);
-  for(let t=0.25;t<=25.25;t+=0.25){
+  for(let t=0.1;t<=25.1;t+=0.1){
     const curr=moonAlt(t);
-    if(prev<0&&curr>=0&&riseT===null)riseT=bisect(t-0.25,t,true);
-    if(prev>=0&&curr<0&&setT===null)setT=bisect(t-0.25,t,false);
+    if(prev<0&&curr>=0&&riseT===null)riseT=bisect(t-0.1,t,true);
+    if(prev>=0&&curr<0&&setT===null)setT=bisect(t-0.1,t,false);
     prev=curr;
   }
 
