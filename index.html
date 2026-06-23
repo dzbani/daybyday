@@ -3672,6 +3672,17 @@ function getMoonRiseSet(year,month,day,lat,lon){
     'Sylwester':'Ostatni dzień roku — pożegnanie starego roku.',
     'Przesilenie zimowe':'Najkrótszy dzień roku — astronomiczny początek zimy.',
   };
+  // Dodaj dzisiejsze NAMED_DAYS do listy świąt
+  NAMED_DAYS.filter(([dd,mm])=>dd===d&&mm===m).forEach(([,,name])=>{
+    const slug=EVENT_SLUG[name];
+    const el=document.createElement('a');
+    el.href=slug?`swieto.html?id=${slug}`:`index.html?d=${d}&m=${m}&y=${y}`;
+    el.className='holiday-item';
+    el.innerHTML=`<div class="holiday-dot" style="background:var(--sun)"></div><span class="holiday-name">${name}</span>`;
+    const hlEl=document.getElementById('holidaysList');
+    if(hlEl.querySelector('span')) hlEl.innerHTML=''; // usuń "brak świąt"
+    hlEl.appendChild(el);
+  });
   const TODAY_MS=new Date(y,m-1,d).getTime();
   const allUpcoming=[...PUBLIC_HOLIDAYS,...MOVABLE,...NAMED_DAYS].map(([dd,mm,name])=>{
     let dt=new Date(y,mm-1,dd);
