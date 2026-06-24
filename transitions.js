@@ -1,4 +1,4 @@
-document.addEventListener('click',function(e){
+﻿document.addEventListener('click',function(e){
   var a=e.target.closest('a[href]');
   if(!a)return;
   var href=a.getAttribute('href');
