@@ -1,0 +1,5 @@
+const NAME_DESCRIPTIONS_RICH = {
+
+  "Adam": '<div class="name-desc-section"><div class="name-desc-label">Znaczenie imienia</div><p>Imię Adam pochodzi z języka <strong>hebrajskiego</strong>. Wywodzi się najprawdopodobniej od słowa <em>adamah</em>, oznaczającego „ziemię, rolę” — stąd znaczenie „zrodzony z ziemi” lub „rolnik”. Możliwe też pochodzenie od słowa <em>adom</em> („czerwony”, od koloru gliny). W językach ałtajskich <em>adam</em> oznacza „człowiek”.</p></div><div class="name-desc-section"><div class="name-desc-label">Historia</div><p>Adam to jedno z najstarszych imion chrześcijańskich — znane z Biblii jako imię pierwszego człowieka. W Polsce używane od wieków. Dziś należy do najczęstszych polskich imion męskich (miejsce 10. wg PESEL).</p></div><div class="name-desc-section"><div class="name-desc-label">Zdrobnienia</div><p>Adaś, Adi, Adek</p></div><div class="name-desc-section"><div class="name-desc-label">Odpowiedniki w innych językach</div><p>Adam (ang., niem., franc., hiszp.), Ádám (węg.), Adão (port.), Ādam (arab.), Адам (ros., ukr.)</p></div>',
+
+};
