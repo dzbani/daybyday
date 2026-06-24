@@ -302,6 +302,7 @@
 </footer>
 
 <script src="name_popularity.js"></script>
+<script src="name_descriptions.js"></script>
 <script>
 // Polska baza imienin — format: [miesiąc(1-12), dzień, [imiona]]
 const NAMES=
@@ -4843,6 +4844,12 @@ function doSearch(val) {
       <div style="background:var(--tag-bg);border-left:3px solid var(--border);padding:.85rem 1.1rem;border-radius:0 8px 8px 0">
         <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> osób w Polsce</div>
         <div style="font-size:.75rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</div>
+      </div>` : ''}
+      ${(typeof NAME_DESCRIPTIONS !== 'undefined' && NAME_DESCRIPTIONS[matchedName]) ? `
+      <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
+        <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Znaczenie imienia</div>
+        <p style="font-size:.88rem;line-height:1.75;color:var(--text);margin:0">${NAME_DESCRIPTIONS[matchedName]}</p>
+        <div style="font-size:.72rem;color:var(--muted);margin-top:.5rem">źródło: Wikipedia</div>
       </div>` : ''}
     </div>
   `;
