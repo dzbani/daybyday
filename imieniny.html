@@ -832,14 +832,8 @@ const NAME_PRIMARY_DAY = {
     top3.push({d, featuredName, extra});
   }
 
-  // Sortuj: minione daty malejąco (najświeższe pierwsze), potem przyszłe rosnąco
-  const todayD = TODAY.getDate();
-  top3.sort((a,b)=>{
-    const aPast = a.d <= todayD, bPast = b.d <= todayD;
-    if(aPast && bPast) return b.d - a.d; // minione: 12 przed 5
-    if(!aPast && !bPast) return a.d - b.d; // przyszłe: 24 przed 29
-    return aPast ? -1 : 1; // minione przed przyszłymi
-  });
+  // Sortuj rosnąco po dacie
+  top3.sort((a,b) => a.d - b.d);
 
   const top3El = document.getElementById('popularTop3');
   top3.forEach(({d, featuredName, extra})=>{
