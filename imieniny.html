@@ -4866,7 +4866,11 @@ const urlParam = new URLSearchParams(window.location.search).get('name');
 if (urlParam) {
   searchInput.value = urlParam;
   doSearch(urlParam);
-  // Dynamiczny tytuł i opis dla SEO
+}
+buildAll();
+
+// Dynamiczny tytuł i opis dla SEO — na końcu żeby nie był nadpisany
+if (urlParam) {
   const nameCapitalized = urlParam.charAt(0).toUpperCase() + urlParam.slice(1).toLowerCase();
   document.title = `Imieniny ${nameCapitalized} — kiedy są imieniny ${nameCapitalized}? | DaybyDay`;
   const descMeta = document.querySelector('meta[name="description"]');
@@ -4874,8 +4878,6 @@ if (urlParam) {
   const ogTitle = document.querySelector('meta[property="og:title"]');
   if (ogTitle) ogTitle.setAttribute('content', `Imieniny ${nameCapitalized} | DaybyDay`);
 }
-
-buildAll();
 </script>
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
   <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
