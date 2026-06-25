@@ -4866,6 +4866,13 @@ const urlParam = new URLSearchParams(window.location.search).get('name');
 if (urlParam) {
   searchInput.value = urlParam;
   doSearch(urlParam);
+  // Dynamiczny tytuł i opis dla SEO
+  const nameCapitalized = urlParam.charAt(0).toUpperCase() + urlParam.slice(1).toLowerCase();
+  document.title = `Imieniny ${nameCapitalized} — kiedy są imieniny ${nameCapitalized}? | DaybyDay`;
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (descMeta) descMeta.setAttribute('content', `Kiedy są imieniny ${nameCapitalized}? Sprawdź datę imienin, znaczenie imienia, historię i życzenia imieninowe dla ${nameCapitalized}.`);
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', `Imieniny ${nameCapitalized} | DaybyDay`);
 }
 
 buildAll();
