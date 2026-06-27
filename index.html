@@ -4595,25 +4595,20 @@ function jumpToDate(val){
 
   function parseBirths(wikitext){
     return wikitext.split('\n').filter(l=>l.startsWith('*')).map(l=>{
-      const m2=l.match(/^\*\s*\[\[(\d{3,4})\]\]\s*[–-]\s*\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/);
+      const clean=l.replace(/&nbsp;/g,' ').replace(/&[a-z]+;/g,'');
+      const m2=clean.match(/^\*\s*\[\[(\d{3,4})\]\]\s*[–-]\s*\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/);
       if(!m2) return null;
       return {year:parseInt(m2[1]), name:stripWiki(m2[3]||m2[2]), pageTitle:m2[2]};
     }).filter(Boolean);
   }
 
   const base=`https://pl.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=wikitext&format=json&origin=*`;
-  Promise.all([
-    fetch(base+'&section=4').then(r=>r.json()),
-    fetch(base+'&section=5').then(r=>r.json())
-  ]).then(([s4,s5])=>{
-    const births=[
-      ...parseBirths(s4?.parse?.wikitext?.['*']||''),
-      ...parseBirths(s5?.parse?.wikitext?.['*']||'')
-    ];
+  fetch(base+'&section=4').then(r=>r.json()).then(s4=>{
+    const births=parseBirths(s4?.parse?.wikitext?.['*']||'');
     if(!births.length) return;
 
-    // pobierz opisy z Wikidata dla wszystkich — filtruj po "polsk"
-    const titles=births.map(p=>p.pageTitle).join('|');
+    // pobierz opisy z Wikidata (max 50 tytułów)
+    const titles=births.slice(0,50).map(p=>p.pageTitle).join('|');
     const wdUrl=`https://www.wikidata.org/w/api.php?action=wbgetentities&sites=plwiki&titles=${encodeURIComponent(titles)}&props=descriptions|sitelinks&languages=pl&format=json&origin=*`;
     fetch(wdUrl).then(r=>r.json()).then(wd=>{
       const descMap={}, slMap={};
@@ -4636,8 +4631,8 @@ function jumpToDate(val){
       document.getElementById('birthdayList').innerHTML=html;
       document.getElementById('birthdayTitle').textContent=`Urodzeni ${d} ${MONTHS_PL[m-1]}`;
       document.getElementById('birthdayCard').style.display='';
-    });
-  }).catch(()=>{});
+    }).catch(e=>console.error('WD birthday:',e));
+  }).catch(e=>console.error('PL wiki birthday:',e));
 })();
 
 // ── Ten dzień w historii (Wikipedia PL) ──────────────────────
