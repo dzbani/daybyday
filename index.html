@@ -4577,54 +4577,48 @@ function jumpToDate(val){
     <div class="lw-meta">${dayLabels.join('<br>')}</div>`;
 })();
 
-// ── Urodzeni tego dnia — Polacy (PL Wikipedia + Wikidata opisy)
+// ── Urodzeni tego dnia (EN Wikipedia + Wikidata opisy PL) ─────
 (function loadBirthdays(){
   const params=new URLSearchParams(location.search);
   const TODAY=new Date();
   const m=parseInt(params.get('m'))||TODAY.getMonth()+1;
   const d=parseInt(params.get('d'))||TODAY.getDate();
   const MONTHS_PL=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
-  const PAGE_NAMES=['1_stycznia','2_stycznia','3_stycznia','4_stycznia','5_stycznia','6_stycznia','7_stycznia','8_stycznia','9_stycznia','10_stycznia','11_stycznia','12_stycznia','13_stycznia','14_stycznia','15_stycznia','16_stycznia','17_stycznia','18_stycznia','19_stycznia','20_stycznia','21_stycznia','22_stycznia','23_stycznia','24_stycznia','25_stycznia','26_stycznia','27_stycznia','28_stycznia','29_stycznia','30_stycznia','31_stycznia','1_lutego','2_lutego','3_lutego','4_lutego','5_lutego','6_lutego','7_lutego','8_lutego','9_lutego','10_lutego','11_lutego','12_lutego','13_lutego','14_lutego','15_lutego','16_lutego','17_lutego','18_lutego','19_lutego','20_lutego','21_lutego','22_lutego','23_lutego','24_lutego','25_lutego','26_lutego','27_lutego','28_lutego','29_lutego','1_marca','2_marca','3_marca','4_marca','5_marca','6_marca','7_marca','8_marca','9_marca','10_marca','11_marca','12_marca','13_marca','14_marca','15_marca','16_marca','17_marca','18_marca','19_marca','20_marca','21_marca','22_marca','23_marca','24_marca','25_marca','26_marca','27_marca','28_marca','29_marca','30_marca','31_marca','1_kwietnia','2_kwietnia','3_kwietnia','4_kwietnia','5_kwietnia','6_kwietnia','7_kwietnia','8_kwietnia','9_kwietnia','10_kwietnia','11_kwietnia','12_kwietnia','13_kwietnia','14_kwietnia','15_kwietnia','16_kwietnia','17_kwietnia','18_kwietnia','19_kwietnia','20_kwietnia','21_kwietnia','22_kwietnia','23_kwietnia','24_kwietnia','25_kwietnia','26_kwietnia','27_kwietnia','28_kwietnia','29_kwietnia','30_kwietnia','1_maja','2_maja','3_maja','4_maja','5_maja','6_maja','7_maja','8_maja','9_maja','10_maja','11_maja','12_maja','13_maja','14_maja','15_maja','16_maja','17_maja','18_maja','19_maja','20_maja','21_maja','22_maja','23_maja','24_maja','25_maja','26_maja','27_maja','28_maja','29_maja','30_maja','31_maja','1_czerwca','2_czerwca','3_czerwca','4_czerwca','5_czerwca','6_czerwca','7_czerwca','8_czerwca','9_czerwca','10_czerwca','11_czerwca','12_czerwca','13_czerwca','14_czerwca','15_czerwca','16_czerwca','17_czerwca','18_czerwca','19_czerwca','20_czerwca','21_czerwca','22_czerwca','23_czerwca','24_czerwca','25_czerwca','26_czerwca','27_czerwca','28_czerwca','29_czerwca','30_czerwca','1_lipca','2_lipca','3_lipca','4_lipca','5_lipca','6_lipca','7_lipca','8_lipca','9_lipca','10_lipca','11_lipca','12_lipca','13_lipca','14_lipca','15_lipca','16_lipca','17_lipca','18_lipca','19_lipca','20_lipca','21_lipca','22_lipca','23_lipca','24_lipca','25_lipca','26_lipca','27_lipca','28_lipca','29_lipca','30_lipca','31_lipca','1_sierpnia','2_sierpnia','3_sierpnia','4_sierpnia','5_sierpnia','6_sierpnia','7_sierpnia','8_sierpnia','9_sierpnia','10_sierpnia','11_sierpnia','12_sierpnia','13_sierpnia','14_sierpnia','15_sierpnia','16_sierpnia','17_sierpnia','18_sierpnia','19_sierpnia','20_sierpnia','21_sierpnia','22_sierpnia','23_sierpnia','24_sierpnia','25_sierpnia','26_sierpnia','27_sierpnia','28_sierpnia','29_sierpnia','30_sierpnia','31_sierpnia','1_września','2_września','3_września','4_września','5_września','6_września','7_września','8_września','9_września','10_września','11_września','12_września','13_września','14_września','15_września','16_września','17_września','18_września','19_września','20_września','21_września','22_września','23_września','24_września','25_września','26_września','27_września','28_września','29_września','30_września','1_października','2_października','3_października','4_października','5_października','6_października','7_października','8_października','9_października','10_października','11_października','12_października','13_października','14_października','15_października','16_października','17_października','18_października','19_października','20_października','21_października','22_października','23_października','24_października','25_października','26_października','27_października','28_października','29_października','30_października','31_października','1_listopada','2_listopada','3_listopada','4_listopada','5_listopada','6_listopada','7_listopada','8_listopada','9_listopada','10_listopada','11_listopada','12_listopada','13_listopada','14_listopada','15_listopada','16_listopada','17_listopada','18_listopada','19_listopada','20_listopada','21_listopada','22_listopada','23_listopada','24_listopada','25_listopada','26_listopada','27_listopada','28_listopada','29_listopada','30_listopada','1_grudnia','2_grudnia','3_grudnia','4_grudnia','5_grudnia','6_grudnia','7_grudnia','8_grudnia','9_grudnia','10_grudnia','11_grudnia','12_grudnia','13_grudnia','14_grudnia','15_grudnia','16_grudnia','17_grudnia','18_grudnia','19_grudnia','20_grudnia','21_grudnia','22_grudnia','23_grudnia','24_grudnia','25_grudnia','26_grudnia','27_grudnia','28_grudnia','29_grudnia','30_grudnia','31_grudnia'];
-  const daysInMonth=[31,29,31,30,31,30,31,31,30,31,30,31];
-  let dayIdx=d-1; for(let i=0;i<m-1;i++) dayIdx+=daysInMonth[i];
-  const pageName=PAGE_NAMES[dayIdx]||`${d}_${MONTHS_PL[m-1]}`;
+  const EN_MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const pageName=`${EN_MONTHS[m-1]}_${d}`;
 
   function stripWiki(t){
-    return t.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g,'$1').replace(/'{2,3}/g,'').replace(/\{\{[^}]*\}\}/g,'').replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+    return t.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g,'$1').replace(/'{2,3}/g,'').replace(/\{\{[^}]*\}\}/g,'').replace(/<[^>]+>/g,'').replace(/&[a-z]+;/g,'').replace(/\s+/g,' ').trim();
   }
 
   function parseBirths(wikitext){
     return wikitext.split('\n').filter(l=>l.startsWith('*')).map(l=>{
-      const clean=l.replace(/&nbsp;/g,' ').replace(/&[a-z]+;/g,'');
-      const m2=clean.match(/^\*\s*\[\[(\d{3,4})\]\]\s*[–-]\s*\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/);
+      const m2=l.match(/^\*\s*\[\[(\d{3,4})\]\]\s*[–&;ndash]*-?\s*\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]\s*[,–]/);
       if(!m2) return null;
       return {year:parseInt(m2[1]), name:stripWiki(m2[3]||m2[2]), pageTitle:m2[2]};
     }).filter(Boolean);
   }
 
-  const base=`https://pl.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=wikitext&format=json&origin=*`;
-  console.log('birthday: start fetch', pageName);
-  fetch(base+'&section=4').then(r=>r.json()).then(s4=>{
-    const births=parseBirths(s4?.parse?.wikitext?.['*']||'');
-    console.log('birthday: births found', births.length);
+  const base=`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=wikitext&format=json&origin=*`;
+  Promise.all([
+    fetch(base+'&section=8').then(r=>r.json()),
+    fetch(base+'&section=9').then(r=>r.json())
+  ]).then(([s8,s9])=>{
+    const births=[
+      ...parseBirths(s8?.parse?.wikitext?.['*']||''),
+      ...parseBirths(s9?.parse?.wikitext?.['*']||'')
+    ];
     if(!births.length) return;
-
-    // pobierz opisy z Wikidata (max 50 tytułów)
     const titles=births.slice(0,50).map(p=>p.pageTitle).join('|');
-    const wdUrl=`https://www.wikidata.org/w/api.php?action=wbgetentities&sites=plwiki&titles=${encodeURIComponent(titles)}&props=descriptions|sitelinks&languages=pl&format=json&origin=*`;
+    const wdUrl=`https://www.wikidata.org/w/api.php?action=wbgetentities&sites=enwiki&titles=${encodeURIComponent(titles)}&props=descriptions|sitelinks&languages=pl&format=json&origin=*`;
     fetch(wdUrl).then(r=>r.json()).then(wd=>{
       const descMap={}, slMap={};
       Object.values(wd.entities||{}).forEach(e=>{
-        const t=e.sitelinks?.plwiki?.title;
-        if(t){
-          descMap[t]=e.descriptions?.pl?.value||'';
-          slMap[t]=Object.keys(e.sitelinks||{}).length;
-        }
+        const t=e.sitelinks?.enwiki?.title;
+        if(t){descMap[t]=e.descriptions?.pl?.value||''; slMap[t]=Object.keys(e.sitelinks||{}).length;}
       });
-      // filtruj: Polacy (opis zawiera "polsk") i powszechnie znani (min. 15 języków)
-      const polish=births.filter(p=>/polsk/i.test(descMap[p.pageTitle]||''));
-      const famous=polish.filter(p=>(slMap[p.pageTitle]||0)>=15);
-      const pool=famous.length>=2 ? famous : polish.filter(p=>(slMap[p.pageTitle]||0)>=5);
+      const famous=births.filter(p=>(slMap[p.pageTitle]||0)>=30);
+      const pool=famous.length>=3 ? famous : births.filter(p=>(slMap[p.pageTitle]||0)>=15);
       const pick=[...pool].sort(()=>Math.random()-.5).slice(0,5);
       pick.sort((a,b)=>a.year-b.year);
       const html=pick.map(p=>{
@@ -4634,8 +4628,8 @@ function jumpToDate(val){
       document.getElementById('birthdayList').innerHTML=html;
       document.getElementById('birthdayTitle').textContent=`Urodzeni ${d} ${MONTHS_PL[m-1]}`;
       document.getElementById('birthdayCard').style.display='';
-    }).catch(e=>console.error('WD birthday:',e));
-  }).catch(e=>console.error('PL wiki birthday:',e));
+    }).catch(()=>{});
+  }).catch(()=>{});
 })();
 
 // ── Ten dzień w historii (Wikipedia PL) ──────────────────────
