@@ -4617,8 +4617,8 @@ function jumpToDate(val){
         const t=e.sitelinks?.enwiki?.title;
         if(t){descMap[t]=e.descriptions?.pl?.value||''; slMap[t]=Object.keys(e.sitelinks||{}).length;}
       });
-      const famous=births.filter(p=>(slMap[p.pageTitle]||0)>=30);
-      const pool=famous.length>=3 ? famous : births.filter(p=>(slMap[p.pageTitle]||0)>=15);
+      const pool=births.filter(p=>(slMap[p.pageTitle]||0)>=50);
+      if(!pool.length) return;
       const pick=[...pool].sort(()=>Math.random()-.5).slice(0,5);
       pick.sort((a,b)=>a.year-b.year);
       const html=pick.map(p=>{
