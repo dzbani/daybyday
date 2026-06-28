@@ -1,4 +1,5 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://dzbani.github.io/daybyday/sitemap.xml
+Sitemap: https://daybyday.pl/sitemap.xml
+Sitemap: https://daybyday.pl/sitemap-imieniny.xml
