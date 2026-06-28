@@ -4834,7 +4834,7 @@ function doSearch(val) {
   const datesList = allDatesSorted.map(e => {
     const dd = String(e.d).padStart(2,'0'), mm = String(e.m).padStart(2,'0');
     const yr = (e.m > today.getMonth()+1 || (e.m===today.getMonth()+1 && e.d>=today.getDate())) ? ty : ty+1;
-    return `<a href="/kartka-z-kalendarza.html?date=${yr}-${mm}-${dd}" style="color:inherit;text-decoration:underline;text-underline-offset:3px">${e.d} ${MONTH_NAMES_GEN[e.m]}</a>`;
+    return `<a href="/index.html?d=${e.d}&m=${e.m}&y=${yr}" style="color:inherit;text-decoration:underline;text-underline-offset:3px">${e.d} ${MONTH_NAMES_GEN[e.m]}</a>`;
   }).join(', ');
 
   body.innerHTML = `
