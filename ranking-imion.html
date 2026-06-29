@@ -107,6 +107,19 @@ footer a:hover{color:var(--text)}
 <div class="ranking-wrap">
   <div class="ranking-grid" id="grid"></div>
 </div>
+<div class="hero" style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem">
+  <div class="hero-label">Rejestr PESEL · stan na 20.01.2026</div>
+  <h2 style="font-size:1.75rem;font-weight:700;font-family:'Instrument Serif',serif;margin:.25rem 0 .5rem">Imiona noszone w Polsce</h2>
+  <p class="hero-sub">Liczba żyjących osób o danym imieniu — dane z rejestru PESEL.</p>
+  <span class="source-badge">Źródło: dane.gov.pl / MSWiA &middot; stan na 20.01.2026</span>
+</div>
+<div class="filters" id="peselFilters">
+  <button class="filter-btn active" id="pbtnF" onclick="setPlecPesel('f')">👧 Żeńskie</button>
+  <button class="filter-btn" id="pbtnM" onclick="setPlecPesel('m')">👦 Męskie</button>
+</div>
+<div class="ranking-wrap">
+  <div class="ranking-grid" id="peselGrid"></div>
+</div>
 <footer>
   <a href="index.html">DaybyDay</a> &middot; Dane: <a href="https://dane.gov.pl" target="_blank" rel="noopener">dane.gov.pl</a> &middot; <a href="polityka-prywatnosci.html">Polityka prywatności</a>
 </footer>
@@ -154,6 +167,23 @@ function toggleDark(){
   document.getElementById('themeBtn').textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';
 })();
 render();
+
+const PESEL={f:[["Anna",1063756],["Katarzyna",602474],["Małgorzata",572067],["Maria",566902],["Agnieszka",544968],["Ewa",469822],["Barbara",467697],["Magdalena",434117],["Elżbieta",404679],["Joanna",401861],["Aleksandra",390147],["Krystyna",383140],["Monika",376767],["Zofia",360466],["Natalia",320219],["Julia",314539],["Teresa",312053],["Karolina",295011],["Marta",289122],["Danuta",286032],["Beata",278457],["Dorota",266291],["Alicja",254745],["Jolanta",233614],["Hanna",231647],["Zuzanna",231506],["Iwona",230870],["Halina",226656],["Paulina",224208],["Grażyna",223100],["Jadwiga",218462],["Justyna",216299],["Wiktoria",209093],["Janina",198471],["Irena",196353],["Bożena",194754],["Maja",188657],["Renata",185837],["Agata",184481],["Sylwia",181946],["Urszula",180127],["Patrycja",169495],["Oliwia",166399],["Emilia",165157],["Izabela",159119],["Helena",155762],["Weronika",151660],["Aneta",151255],["Ewelina",148020],["Martyna",143235]],m:[["Piotr",682516],["Krzysztof",631898],["Tomasz",533217],["Andrzej",513749],["Paweł",502076],["Michał",492326],["Jan",462503],["Marcin",447274],["Jakub",433692],["Adam",400572],["Łukasz",382274],["Mateusz",377592],["Grzegorz",369675],["Marek",369240],["Stanisław",348827],["Wojciech",335544],["Mariusz",283705],["Dariusz",279482],["Maciej",267055],["Rafał",260326],["Robert",256984],["Kamil",251233],["Zbigniew",249852],["Szymon",244928],["Dawid",239942],["Kacper",232125],["Jacek",227193],["Jerzy",222479],["Bartosz",205155],["Artur",198335],["Ryszard",189300],["Józef",188007],["Jarosław",187945],["Tadeusz",186094],["Sebastian",186060],["Damian",183835],["Sławomir",180911],["Patryk",180227],["Antoni",176680],["Filip",176647],["Roman",174380],["Mirosław",173239],["Janusz",173146],["Daniel",171875],["Karol",165804],["Przemysław",165034],["Aleksander",162886],["Henryk",150311],["Adrian",149545],["Mikołaj",141540]]};
+let peselPlec='f';
+function setPlecPesel(p){
+  peselPlec=p;
+  document.getElementById('pbtnF').classList.toggle('active',p==='f');
+  document.getElementById('pbtnM').classList.toggle('active',p==='m');
+  renderPesel();
+}
+function renderPesel(){
+  var list=PESEL[peselPlec];
+  var max=list[0][1];
+  document.getElementById('peselGrid').innerHTML=
+    card('TOP 20','Polska',list.slice(0,20),0,max)+
+    card('Miejsca 21–50','Polska',list.slice(20,50),20,max);
+}
+renderPesel();
 </script>
 <script src="transitions.js"></script>
 </body>
