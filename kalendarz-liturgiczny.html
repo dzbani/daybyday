@@ -70,6 +70,7 @@
     .feast-name { font-family:'Instrument Serif',serif; font-size:1.1rem; line-height:1.25; margin-bottom:.25rem; }
     .feast-rank { font-size:.74rem; color:var(--muted); }
     .today-badge { display:inline-block; background:#E8936A; color:#111110; font-size:.62rem; font-weight:600; padding:.15rem .45rem; border-radius:60px; margin-left:.5rem; vertical-align:middle; }
+    .obligatory-badge { display:inline-block; background:var(--tag-bg); color:var(--muted); border:1px solid var(--border); font-size:.6rem; font-weight:600; padding:.12rem .4rem; border-radius:60px; margin-left:.4rem; vertical-align:middle; }
 
     footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
@@ -188,6 +189,15 @@
 
   <h2 class="section-title">Dni postu i wstrzemięźliwości</h2>
   <div class="season-list" id="fastList"></div>
+
+  <h2 class="section-title">Polskie tradycje liturgiczne</h2>
+  <div class="season-list">
+    <div class="season-row"><span class="season-dot" style="background:#3F8A5C"></span><span class="season-name">Roraty</span><span class="season-range">Adwent — Msze poranne ku czci Najświętszej Maryi Panny, odprawiane przy świetle świec przed wschodem słońca</span></div>
+    <div class="season-row"><span class="season-dot" style="background:#6B4C9A"></span><span class="season-name">Gorzkie żale</span><span class="season-range">Wielki Post — nabożeństwo pasyjne odprawiane w niedziele, rozważające mękę Pańską</span></div>
+    <div class="season-row"><span class="season-dot" style="background:#FFFFFF;border-color:#D8D4CE"></span><span class="season-name">Nabożeństwa majowe</span><span class="season-range">Maj — codzienne nabożeństwa ku czci Matki Bożej (Litania Loretańska) przy kapliczkach i w kościołach</span></div>
+    <div class="season-row"><span class="season-dot" style="background:#C23B3B"></span><span class="season-name">Nabożeństwa czerwcowe</span><span class="season-range">Czerwiec — nabożeństwa ku czci Najświętszego Serca Pana Jezusa (Litania do Serca Jezusowego)</span></div>
+    <div class="season-row"><span class="season-dot" style="background:#3F8A5C"></span><span class="season-name">Nabożeństwa różańcowe</span><span class="season-range">Październik — codzienne odmawianie różańca w kościołach</span></div>
+  </div>
 </div>
 
 <footer>
@@ -343,9 +353,10 @@
 
     const fixed=[
       {date:new Date(christmasThisLitYear.getFullYear(),11,8), name:'Niepokalane Poczęcie NMP', color:'white', rank:'Uroczystość'},
-      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość'},
+      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość', obligatory:true},
       {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto'},
-      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość'},
+      {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true},
+      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true},
       {date:new Date(epiphany.getFullYear(),2,25), name:'Zwiastowanie Pańskie', color:'white', rank:'Uroczystość'},
       {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu'},
       {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień'},
@@ -355,12 +366,12 @@
       {date:addDays(easter,42), name:'Wniebowstąpienie Pańskie', color:'white', rank:'Uroczystość (w Polsce przeniesiona na 7. niedzielę wielkanocną)'},
       {date:pentecost, name:'Zesłanie Ducha Świętego (Pięćdziesiątnica)', color:'red', rank:'Uroczystość'},
       {date:trinitySunday, name:'Trójcy Przenajświętszej', color:'white', rank:'Uroczystość'},
-      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość'},
+      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość', obligatory:true},
       {date:addDays(easter,68), name:'Najświętszego Serca Pana Jezusa', color:'white', rank:'Uroczystość — piątek po oktawie Bożego Ciała'},
       {date:new Date(epiphany.getFullYear(),5,24), name:'Narodzenie św. Jana Chrzciciela', color:'white', rank:'Uroczystość'},
       {date:new Date(epiphany.getFullYear(),5,29), name:'Świętych Apostołów Piotra i Pawła', color:'red', rank:'Uroczystość'},
-      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość'},
-      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość'},
+      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość', obligatory:true},
+      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość', obligatory:true},
       {date:new Date(epiphany.getFullYear(),10,2), name:'Wspomnienie wszystkich wiernych zmarłych (Zaduszki)', color:'violet', rank:'Wspomnienie'},
       {date:christKingDate, name:'Jezusa Chrystusa Króla Wszechświata', color:'white', rank:'Uroczystość — koniec roku liturgicznego'},
     ].sort((a,b)=>a.date-b.date);
@@ -400,7 +411,7 @@
         +'<span class="feast-dot" style="background:'+cc.hex+';border-color:'+(cc.border||cc.hex)+'"></span>'
         +'<div class="feast-info">'
         +'<div class="feast-date">'+fmtDate(f.date)+(isToday?' <span class="today-badge">Dziś</span>':'')+'</div>'
-        +'<div class="feast-name">'+f.name+'</div>'
+        +'<div class="feast-name">'+f.name+(f.obligatory?' <span class="obligatory-badge">Nakazane</span>':'')+'</div>'
         +'<div class="feast-rank">'+f.rank+' · kolor '+cc.label+'</div>'
         +'</div></div>';
     }).join('');
