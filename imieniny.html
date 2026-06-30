@@ -899,7 +899,7 @@ function renderMonthCalendar(m) {
     const isTod = isToday(m, d);
     const cell = document.createElement('a');
     cell.className = 'cal-day' + (isSun ? ' sun' : '') + (isTod ? ' today' : '');
-    cell.href = `imieniny.html?d=${d}&m=${m}&y=${year}`;
+    cell.href = `/imieniny.html?d=${d}&m=${m}&y=${year}`;
 
     const numDiv = document.createElement('div');
     numDiv.className = 'cal-day-num';
