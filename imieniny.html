@@ -308,6 +308,7 @@
 
 <script src="name_popularity.js"></script>
 <script src="name_popularity_gender.js"></script>
+<script src="name_trends.js"></script>
 <script src="name_descriptions.js"></script>
 <script src="name_descriptions_rich.js"></script>
 <script>
@@ -4724,6 +4725,55 @@ function getDetails(name) {
   return NAME_DB[normalize(name)] || null;
 }
 
+function buildTrendChart(name) {
+  if (typeof NAME_TRENDS === 'undefined' || !NAME_TRENDS[name]) return '';
+  const data = NAME_TRENDS[name];
+  const years = [2019, 2020, 2021, 2022, 2023, 2024];
+  const vals = years.map(y => data[y] || 0);
+  const maxVal = Math.max(...vals);
+  if (maxVal === 0) return '';
+
+  const W = 320, H = 110, PL = 42, PR = 12, PT = 14, PB = 28;
+  const cW = W - PL - PR, cH = H - PT - PB;
+
+  const xPos = i => PL + (i / (years.length - 1)) * cW;
+  const yPos = v => PT + cH - (v / maxVal) * cH;
+
+  // Line path
+  const pts = vals.map((v, i) => `${xPos(i).toFixed(1)},${yPos(v).toFixed(1)}`);
+  const linePath = 'M' + pts.join('L');
+
+  // Fill path
+  const fillPath = linePath + `L${xPos(years.length-1).toFixed(1)},${(PT+cH).toFixed(1)}L${xPos(0).toFixed(1)},${(PT+cH).toFixed(1)}Z`;
+
+  // Y-axis labels (max and ~half)
+  const yLabels = [
+    { v: maxVal, y: yPos(maxVal) },
+    { v: Math.round(maxVal / 2), y: yPos(maxVal / 2) },
+    { v: 0, y: yPos(0) }
+  ];
+
+  // Dots and x-labels
+  const dots = vals.map((v, i) => `<circle cx="${xPos(i).toFixed(1)}" cy="${yPos(v).toFixed(1)}" r="3" fill="var(--accent,#2563eb)" stroke="white" stroke-width="1.5"/>`).join('');
+  const xLabels = years.map((y, i) => `<text x="${xPos(i).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">${y}</text>`).join('');
+  const yLabelsSvg = yLabels.map(l => `<text x="${PL-5}" y="${l.y+3}" text-anchor="end" font-size="9" fill="var(--muted)">${l.v >= 1000 ? (l.v/1000).toFixed(l.v%1000===0?0:1)+'k' : l.v}</text>`).join('');
+  const gridLines = yLabels.map(l => `<line x1="${PL}" y1="${l.y.toFixed(1)}" x2="${W-PR}" y2="${l.y.toFixed(1)}" stroke="var(--border)" stroke-width="0.5"/>`).join('');
+
+  return `<div style="margin-top:1rem;padding:1rem;background:var(--tag-bg);border-radius:8px">
+    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2019–2024)</div>
+    <svg viewBox="0 0 ${W} ${H}" width="100%" style="overflow:visible;display:block">
+      <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent,#2563eb)" stop-opacity="0.18"/><stop offset="100%" stop-color="var(--accent,#2563eb)" stop-opacity="0.02"/></linearGradient></defs>
+      ${gridLines}
+      <path d="${fillPath}" fill="url(#tg)"/>
+      <path d="${linePath}" fill="none" stroke="var(--accent,#2563eb)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      ${dots}
+      ${xLabels}
+      ${yLabelsSvg}
+    </svg>
+    <div style="font-size:.7rem;color:var(--muted);margin-top:.25rem">źródło: dane.gov.pl · imiona pierwsze nadawane noworodkom</div>
+  </div>`;
+}
+
 function doSearch(val) {
   const keyRaw = val.toLowerCase();
   const keyAscii = normalize(val);
@@ -4866,6 +4916,7 @@ function doSearch(val) {
         <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> osób w Polsce${nameRank ? ` · <strong>${nameRank.rank}.</strong> najpopularniejsze imię ${nameRank.gender}` : ''}</div>
         <div style="font-size:.75rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</div>
       </div>` : ''}
+      ${buildTrendChart(matchedName)}
       ${(typeof NAME_DESCRIPTIONS_RICH !== 'undefined' && NAME_DESCRIPTIONS_RICH[matchedName]) ? `
       <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
         ${NAME_DESCRIPTIONS_RICH[matchedName]}
