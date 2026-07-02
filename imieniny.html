@@ -4716,9 +4716,11 @@ if (typeof NAME_POPULARITY_MALE !== 'undefined') {
   Object.keys(NAME_POPULARITY_MALE).forEach((n, i) => { RANK_MALE[n] = i + 1; });
 }
 function getNameRank(name) {
-  if (RANK_FEMALE[name]) return { rank: RANK_FEMALE[name], gender: 'żeńskie' };
-  if (RANK_MALE[name]) return { rank: RANK_MALE[name], gender: 'męskie' };
-  return null;
+  const rf = RANK_FEMALE[name] || Infinity;
+  const rm = RANK_MALE[name] || Infinity;
+  if (rf === Infinity && rm === Infinity) return null;
+  if (rf <= rm) return { rank: rf, gender: 'żeńskie' };
+  return { rank: rm, gender: 'męskie' };
 }
 
 function getDetails(name) {
