@@ -307,6 +307,7 @@
 </footer>
 
 <script src="name_popularity.js"></script>
+<script src="name_popularity_gender.js"></script>
 <script src="name_descriptions.js"></script>
 <script src="name_descriptions_rich.js"></script>
 <script>
@@ -4705,6 +4706,20 @@ const NAME_DB = {
 
 function normalize(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l'); }
 
+// Rankingi popularności
+const RANK_FEMALE = {}, RANK_MALE = {};
+if (typeof NAME_POPULARITY_FEMALE !== 'undefined') {
+  Object.keys(NAME_POPULARITY_FEMALE).forEach((n, i) => { RANK_FEMALE[n] = i + 1; });
+}
+if (typeof NAME_POPULARITY_MALE !== 'undefined') {
+  Object.keys(NAME_POPULARITY_MALE).forEach((n, i) => { RANK_MALE[n] = i + 1; });
+}
+function getNameRank(name) {
+  if (RANK_FEMALE[name]) return { rank: RANK_FEMALE[name], gender: 'żeńskie' };
+  if (RANK_MALE[name]) return { rank: RANK_MALE[name], gender: 'męskie' };
+  return null;
+}
+
 function getDetails(name) {
   return NAME_DB[normalize(name)] || null;
 }
@@ -4779,6 +4794,7 @@ function doSearch(val) {
   const peselCount = (typeof NAME_POPULARITY !== 'undefined') ? (NAME_POPULARITY[matchedName] || 0) : 0;
   const countSrc = (d && d.count) ? d.count : (peselCount > 0 ? peselCount.toLocaleString('pl-PL') : null);
   const countHTML = countSrc ? `<span class="result-count">Imię nosi w Polsce <strong>${countSrc}</strong> osób <span style="font-size:.75rem;color:var(--muted)">(rejestr PESEL, stan na 20.01.2026)</span></span>` : '';
+  const nameRank = getNameRank(matchedName);
 
   // Stats
   const statsHTML = d ? `
@@ -4847,7 +4863,7 @@ function doSearch(val) {
       </p>
       ${peselCount > 0 ? `
       <div style="background:var(--tag-bg);border-left:3px solid var(--border);padding:.85rem 1.1rem;border-radius:0 8px 8px 0">
-        <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> osób w Polsce</div>
+        <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> osób w Polsce${nameRank ? ` · <strong>${nameRank.rank}.</strong> najpopularniejsze imię ${nameRank.gender}` : ''}</div>
         <div style="font-size:.75rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</div>
       </div>` : ''}
       ${(typeof NAME_DESCRIPTIONS_RICH !== 'undefined' && NAME_DESCRIPTIONS_RICH[matchedName]) ? `
