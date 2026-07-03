@@ -4730,7 +4730,8 @@ function getDetails(name) {
 function buildTrendChart(name) {
   if (typeof NAME_TRENDS === 'undefined' || !NAME_TRENDS[name]) return '';
   const data = NAME_TRENDS[name];
-  const years = [2019, 2020, 2021, 2022, 2023, 2024];
+  const years = [];
+  for (let y = 2000; y <= 2024; y++) years.push(y);
   const vals = years.map(y => data[y] || 0);
   const maxVal = Math.max(...vals);
   if (maxVal === 0) return '';
@@ -4755,14 +4756,16 @@ function buildTrendChart(name) {
     { v: 0, y: yPos(0) }
   ];
 
-  // Dots and x-labels
-  const dots = vals.map((v, i) => `<circle cx="${xPos(i).toFixed(1)}" cy="${yPos(v).toFixed(1)}" r="3" fill="var(--accent,#2563eb)" stroke="white" stroke-width="1.5"/>`).join('');
-  const xLabels = years.map((y, i) => `<text x="${xPos(i).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">${y}</text>`).join('');
+  // Dots and x-labels only every 5 years (+ first/last) - 25 punktów byłoby za gęste
+  const lastIdx = years.length - 1;
+  const labelIdx = years.map((y, i) => (y % 5 === 0 || i === lastIdx) ? i : -1).filter(i => i >= 0);
+  const dots = labelIdx.map(i => `<circle cx="${xPos(i).toFixed(1)}" cy="${yPos(vals[i]).toFixed(1)}" r="2.5" fill="var(--accent,#2563eb)" stroke="white" stroke-width="1.5"/>`).join('');
+  const xLabels = labelIdx.map(i => `<text x="${xPos(i).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">${years[i]}</text>`).join('');
   const yLabelsSvg = yLabels.map(l => `<text x="${PL-5}" y="${l.y+3}" text-anchor="end" font-size="9" fill="var(--muted)">${l.v >= 1000 ? (l.v/1000).toFixed(l.v%1000===0?0:1)+'k' : l.v}</text>`).join('');
   const gridLines = yLabels.map(l => `<line x1="${PL}" y1="${l.y.toFixed(1)}" x2="${W-PR}" y2="${l.y.toFixed(1)}" stroke="var(--border)" stroke-width="0.5"/>`).join('');
 
   return `<div style="margin-top:1rem;padding:1rem;background:var(--tag-bg);border-radius:8px">
-    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2019–2024)</div>
+    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2000–2024)</div>
     <svg viewBox="0 0 ${W} ${H}" width="100%" style="overflow:visible;display:block">
       <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent,#2563eb)" stop-opacity="0.18"/><stop offset="100%" stop-color="var(--accent,#2563eb)" stop-opacity="0.02"/></linearGradient></defs>
       ${gridLines}
