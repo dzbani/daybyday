@@ -4813,6 +4813,8 @@ function doSearch(val) {
   ) || r.names[0];
 
   const d = getDetails(matchedName);
+  const richDesc = (typeof NAME_DESCRIPTIONS_RICH !== 'undefined') ? NAME_DESCRIPTIONS_RICH[matchedName] : null;
+  const richHasPatron = !!richDesc && ['Patron','Święty patron','Święta patronka','Święci patroni','Święte patronki'].some(h => richDesc.includes('<h3>' + h + '</h3>'));
 
   // Dates badges
   const extraDates = d ? d.extraDates.filter(x => x !== mainDateStr) : [];
@@ -4885,7 +4887,7 @@ function doSearch(val) {
         <p style="font-size:.88rem;line-height:1.75;color:var(--text);margin:0">${NAME_DESCRIPTIONS[matchedName]}</p>
         <div style="font-size:.72rem;color:var(--muted);margin-top:.5rem">źródło: Wikipedia</div>
       </div>` : ''}
-      ${d && d.patron && !(typeof NAME_DESCRIPTIONS_RICH !== 'undefined' && NAME_DESCRIPTIONS_RICH[matchedName] && NAME_DESCRIPTIONS_RICH[matchedName].includes('Święci patroni')) ? `
+      ${d && d.patron && !richHasPatron ? `
       <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
         <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem">Patron / Patronka</div>
         <p style="font-size:.88rem;line-height:1.75;color:var(--text);margin:0">${d.patron}</p>
