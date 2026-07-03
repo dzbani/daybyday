@@ -4708,19 +4708,30 @@ const NAME_DB = {
 function normalize(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l'); }
 
 // Rankingi popularności
-const RANK_FEMALE = {}, RANK_MALE = {};
-if (typeof NAME_POPULARITY_FEMALE !== 'undefined') {
-  Object.keys(NAME_POPULARITY_FEMALE).forEach((n, i) => { RANK_FEMALE[n] = i + 1; });
+// Przy niskich liczbach nosicieli setki/tysiące imion mają identyczną wartość -
+// pokazywanie konkretnej rangi ("28946. najpopularniejsze") sugerowałoby fałszywą precyzję.
+// TIE_THRESHOLD: jeśli imię dzieli miejsce z więcej niż tyloma innymi, ranga jest ukrywana.
+const TIE_THRESHOLD = 15;
+const RANK_FEMALE = {}, RANK_MALE = {}, TIE_FEMALE = {}, TIE_MALE = {};
+function buildRanks(src, rankMap, tieMap) {
+  if (typeof src === 'undefined') return;
+  const entries = Object.entries(src);
+  entries.forEach(([n], i) => { rankMap[n] = i + 1; });
+  const valueCounts = {};
+  entries.forEach(([, v]) => { valueCounts[v] = (valueCounts[v] || 0) + 1; });
+  entries.forEach(([n, v]) => { tieMap[n] = valueCounts[v]; });
 }
-if (typeof NAME_POPULARITY_MALE !== 'undefined') {
-  Object.keys(NAME_POPULARITY_MALE).forEach((n, i) => { RANK_MALE[n] = i + 1; });
-}
+buildRanks(typeof NAME_POPULARITY_FEMALE !== 'undefined' ? NAME_POPULARITY_FEMALE : undefined, RANK_FEMALE, TIE_FEMALE);
+buildRanks(typeof NAME_POPULARITY_MALE !== 'undefined' ? NAME_POPULARITY_MALE : undefined, RANK_MALE, TIE_MALE);
 function getNameRank(name) {
   const rf = RANK_FEMALE[name] || Infinity;
   const rm = RANK_MALE[name] || Infinity;
   if (rf === Infinity && rm === Infinity) return null;
-  if (rf <= rm) return { rank: rf, gender: 'żeńskie' };
-  return { rank: rm, gender: 'męskie' };
+  const isFemale = rf <= rm;
+  const rank = isFemale ? rf : rm;
+  const tieSize = isFemale ? TIE_FEMALE[name] : TIE_MALE[name];
+  if (tieSize > TIE_THRESHOLD) return null;
+  return { rank, gender: isFemale ? 'żeńskie' : 'męskie' };
 }
 
 function getDetails(name) {
