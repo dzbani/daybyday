@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daybyday.pl/sitemap.xml
-Sitemap: https://daybyday.pl/sitemap-imieniny.xml
+Sitemap: https://daybyday.today/sitemap.xml
+Sitemap: https://daybyday.today/sitemap-imieniny.xml
