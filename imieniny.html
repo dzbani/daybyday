@@ -4848,50 +4848,6 @@ function doSearch(val) {
   const countHTML = countSrc ? `<span class="result-count">Imię nosi w Polsce <strong>${countSrc}</strong> osób <span style="font-size:.75rem;color:var(--muted)">(rejestr PESEL, stan na 20.01.2026)</span></span>` : '';
   const nameRank = getNameRank(matchedName);
 
-  // Stats
-  const statsHTML = d ? `
-    <div class="result-stats">
-      <div class="result-stat"><div class="result-stat-label">Pochodzenie</div><div class="result-stat-val">${d.origin}</div></div>
-      <div class="result-stat"><div class="result-stat-label">Znaczenie</div><div class="result-stat-val">${d.meaning}</div></div>
-      <div class="result-stat"><div class="result-stat-label">Patron / Patronka</div><div class="result-stat-val">${d.patron}</div></div>
-      ${d.diminutives ? `<div class="result-stat"><div class="result-stat-label">Zdrobnienia</div><div class="result-stat-val">${d.diminutives}</div></div>` : ''}
-    </div>` : '';
-
-  // Foreign
-  const foreignHTML = d && d.foreign ? `
-    <div class="result-stat" style="margin-bottom:1.75rem;"><div class="result-stat-label">Odpowiedniki zagraniczne</div><div class="result-stat-val">${d.foreign}</div></div>` : '';
-
-  // Traits
-  const traitsHTML = d ? `
-    <div class="result-section">
-      <div class="result-section-title">Cechy charakteru</div>
-      <div class="result-traits">
-        <div class="traits-col">
-          <div class="traits-col-label"><span style="color:#3A6B3F">●</span> Zalety</div>
-          ${d.positive.map(t => `<div class="trait-item"><div class="trait-dot pos"></div><span>${t}</span></div>`).join('')}
-        </div>
-        <div class="traits-col">
-          <div class="traits-col-label"><span style="color:#8B3A1A">●</span> Wyzwania</div>
-          ${d.negative.map(t => `<div class="trait-item"><div class="trait-dot neg"></div><span>${t}</span></div>`).join('')}
-        </div>
-      </div>
-    </div>` : '';
-
-  // Professions
-  const professionsHTML = d && d.professions ? `
-    <div class="result-section">
-      <div class="result-section-title">Rekomendowane zawody</div>
-      <div class="result-professions">
-        ${d.professions.map(p => `<span class="profession-tag">${p}</span>`).join('')}
-      </div>
-    </div>` : '';
-
-  // Love
-  const loveHTML = d && d.love ? `
-    <div class="result-section">
-      <div class="result-section-title">W sferze uczuciowej</div>
-      <p class="result-desc">${d.love}</p>
-    </div>` : '';
 
   // Also row
   let alsoText = '';
@@ -4929,7 +4885,7 @@ function doSearch(val) {
         <p style="font-size:.88rem;line-height:1.75;color:var(--text);margin:0">${NAME_DESCRIPTIONS[matchedName]}</p>
         <div style="font-size:.72rem;color:var(--muted);margin-top:.5rem">źródło: Wikipedia</div>
       </div>` : ''}
-      ${d && d.patron ? `
+      ${d && d.patron && !(typeof NAME_DESCRIPTIONS_RICH !== 'undefined' && NAME_DESCRIPTIONS_RICH[matchedName] && NAME_DESCRIPTIONS_RICH[matchedName].includes('Święci patroni')) ? `
       <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
         <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem">Patron / Patronka</div>
         <p style="font-size:.88rem;line-height:1.75;color:var(--text);margin:0">${d.patron}</p>

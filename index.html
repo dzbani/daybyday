@@ -3790,7 +3790,7 @@ function calcSunTimes(year,month,day){
   const c=calcSunCore(year,month,day,LOC_LAT,LOC_LON);
   if(!c)return{rise:'—',set:'—',len:'—',frac:0,lenMin:0,dawn:'—',dusk:'—',noon:'—',noonAlt:'—'};
   const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
-  const fmt=h=>{h=((h+tz)%24+24)%24;const hh=Math.floor(h),mm=Math.round((h-hh)*60);return`${String(hh).padStart(2,'0')}:${String(mm%60).padStart(2,'0')}`;};
+  const fmt=h=>{h=((h+tz)%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
   const lh=Math.floor(c.lenH),lm=Math.round((c.lenH-lh)*60);
   // Świt i zmierzch cywilny (-6°): cosHA dla -6° zamiast -0.833°
   const rad=Math.PI/180;
