@@ -846,7 +846,7 @@ function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/
   top3.forEach(({d, featuredName, extra})=>{
     const card = document.createElement('a');
     card.className='popular-card';
-    card.href=`/index.html?d=${d}&m=${m}&y=${popularYear}`;
+    card.href=`/imieniny.html?d=${d}&m=${m}&y=${popularYear}`;
     card.innerHTML=`<div class="popular-card-date">${d} ${MONTH_NAMES_GEN[m]}</div>
       <div class="popular-card-names">${featuredName}${extra.length?', '+extra.join(', '):''}</div>`;
     top3El.appendChild(card);
