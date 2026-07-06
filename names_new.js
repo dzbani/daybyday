@@ -347,7 +347,7 @@ const NAMES=
   [11,12,["Artur","Damazy","Daniel","Gościwit","Hieronim","Maria","Poncjan","Sabin","Stefan","Waldemar","Walenty","Walentyn","Wilburga","Wojmir"]],
   [12,12,["Adelajda","Aleksander","Amonaria","Bartosz","Dagmara","Dionizja","Edburga","Epimach","Franciszka","Gościwit","Joanna","Justyn","Konrad","Konrada","Konstancjusz","Liberata","Maksencjusz","Merkuria","Przybysława","Spirydion","Suliwuj","Synezjusz","Łazarz"]],
   [13,12,["Antioch","Antoni","Aubert","Auksencja","Auksencjusz","Auksenty","Edburga","Eugeniusz","Jodok","Orestes","Otylia","Róża","Samboja","Walenty","Walentyn","Łucja"]],
-  [14,12,["Agnellus","Alfred","Arseniusz","Bertold","Druzus","Eutropia","Gorzysław","Heron","Izydor","Jan","Nahum","Nikazjusz","Noemi","Pompejusz","Sławobor","Teodor","Wenancjusz","Wenanty","Wiator"]],
+  [14,12,["Agnellus","Alfred","Arseniusz","Bertold","Druzus","Eutropia","Gorzysław","Heron","Izydor","Jan","Nahum","Naomi","Nikazjusz","Noemi","Pompejusz","Sławobor","Teodor","Wenancjusz","Wenanty","Wiator"]],
   [15,12,["Antoni","Bakchus","Celina","Drogosław","Drogosława","Euzebiusz","Ireneusz","Jan","Maksymin","Maksymina","Maria","Maryn","Maryniusz","Mścigniew","Mścigniewa","Saturnin","Teodor","Walerian","Weronika","Wiktor","Wirginia","Wolimir"]],
   [16,12,["Adelajda","Adolf","Agrykola","Albin","Albina","Alicja","Alina","Ananiasz","Dawid","Dyter","Euzebiusz","Konkordiusz","Maria","Sebastian","Walenty","Walentyn","Wolisław","Wolisława","Zdziesława","Zdzisław","Zdzisława"]],
   [17,12,["Bega","Florian","Jan","Jolanta","Modest","Olimpia","Wiwina","Łazarz","Łukasz","Żyrosław"]],
