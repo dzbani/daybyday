@@ -842,10 +842,11 @@ function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/
   top3.sort((a,b) => a.d - b.d);
 
   const top3El = document.getElementById('popularTop3');
+  const popularYear = TODAY.getFullYear();
   top3.forEach(({d, featuredName, extra})=>{
     const card = document.createElement('a');
     card.className='popular-card';
-    card.href=`/imieniny/${nameSlug(featuredName)}/`;
+    card.href=`/index.html?d=${d}&m=${m}&y=${popularYear}`;
     card.innerHTML=`<div class="popular-card-date">${d} ${MONTH_NAMES_GEN[m]}</div>
       <div class="popular-card-names">${featuredName}${extra.length?', '+extra.join(', '):''}</div>`;
     top3El.appendChild(card);
