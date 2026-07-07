@@ -4743,7 +4743,7 @@ function buildTrendChart(name) {
   if (typeof NAME_TRENDS === 'undefined' || !NAME_TRENDS[name]) return '';
   const data = NAME_TRENDS[name];
   const years = [];
-  for (let y = 2000; y <= 2024; y++) years.push(y);
+  for (let y = 2000; y <= 2025; y++) years.push(y);
   const vals = years.map(y => data[y] || 0);
   const maxVal = Math.max(...vals);
   if (maxVal === 0) return '';
@@ -4779,7 +4779,7 @@ function buildTrendChart(name) {
   const narrative = buildTrendNarrative(name, vals, years);
 
   return `<div style="margin-top:1rem;padding:1rem;background:var(--tag-bg);border-radius:8px">
-    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2000–2024)</div>
+    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2000–2025)</div>
     <svg viewBox="0 0 ${W} ${H}" width="100%" style="overflow:visible;display:block">
       <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent,#2563eb)" stop-opacity="0.18"/><stop offset="100%" stop-color="var(--accent,#2563eb)" stop-opacity="0.02"/></linearGradient></defs>
       ${gridLines}
@@ -4798,6 +4798,7 @@ function trendOdmiana(n) { return n === 1 ? 'raz' : 'razy'; }
 
 function buildTrendNarrative(name, vals, years) {
   const val2000 = vals[0], val2024 = vals[vals.length - 1];
+  const lastYear = years[years.length - 1];
   let peakVal = -1, peakYear = years[0];
   vals.forEach((v, i) => { if (v > peakVal) { peakVal = v; peakYear = years[i]; } });
   const firstYear = years[vals.findIndex(v => v > 0)];
@@ -4806,28 +4807,28 @@ function buildTrendNarrative(name, vals, years) {
 
   let sentence;
 
-  if (val2000 === 0 && val2024 === 0 && peakVal >= 5 && peakYear > 2000 && peakYear < 2024) {
+  if (val2000 === 0 && val2024 === 0 && peakVal >= 5 && peakYear > 2000 && peakYear < lastYear) {
     return `Imię <strong>${name}</strong> miało krótki epizod popularności w polskich metrykach — po raz pierwszy pojawiło się w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
   } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
-    sentence = `Imię <strong>${name}</strong> to stosunkowo nowe zjawisko w polskich metrykach — pierwsze pojedyncze nadania odnotowano dopiero w ${firstYear} roku, a w 2024 roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `Imię <strong>${name}</strong> to stosunkowo nowe zjawisko w polskich metrykach — pierwsze pojedyncze nadania odnotowano dopiero w ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 >= 10 && val2024 <= 2) {
-    sentence = `W ciągu ostatnich 20 lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w 2024 roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `W ciągu ostatnich ${lastYear - 2000} lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 >= 10 && pct !== null && pct <= -50) {
-    sentence = `W ciągu ostatnich 20 lat popularność imienia <strong>${name}</strong> drastycznie spadła — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, podczas gdy w 2024 roku już tylko ${fmt(val2024)} ${trendOdmiana(val2024)} (spadek o ${Math.abs(pct)}%).`;
+    sentence = `W ciągu ostatnich ${lastYear - 2000} lat popularność imienia <strong>${name}</strong> drastycznie spadła — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, podczas gdy w ${lastYear} roku już tylko ${fmt(val2024)} ${trendOdmiana(val2024)} (spadek o ${Math.abs(pct)}%).`;
   } else if (val2000 >= 10 && pct !== null && pct <= -20) {
-    sentence = `Popularność imienia <strong>${name}</strong> systematycznie maleje — z ${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w 2024 roku, czyli spadek o ${Math.abs(pct)}%.`;
+    sentence = `Popularność imienia <strong>${name}</strong> systematycznie maleje — z ${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku, czyli spadek o ${Math.abs(pct)}%.`;
   } else if (val2000 >= 3 && pct !== null && pct >= 100) {
     const multiplier = val2024 / val2000;
     const growthText = multiplier >= 3 ? `niemal ${Math.round(multiplier)}-krotnie` : `o ${pct}%`;
     const zaledwie = val2000 < 500 ? 'zaledwie ' : '';
-    sentence = `Popularność imienia <strong>${name}</strong> gwałtownie wzrosła w ciągu ostatnich dwóch dekad — z ${zaledwie}${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w 2024 roku (wzrost ${growthText}).`;
+    sentence = `Popularność imienia <strong>${name}</strong> gwałtownie wzrosła w ciągu ostatnich ${lastYear - 2000} lat — z ${zaledwie}${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku (wzrost ${growthText}).`;
   } else if (val2000 >= 3 && pct !== null && pct >= 30) {
-    sentence = `Imię <strong>${name}</strong> zyskuje na popularności — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w 2024 roku już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `Imię <strong>${name}</strong> zyskuje na popularności — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else {
-    sentence = `Popularność imienia <strong>${name}</strong> pozostaje względnie stabilna od 2000 roku — wtedy nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w 2024 roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `Popularność imienia <strong>${name}</strong> pozostaje względnie stabilna od 2000 roku — wtedy nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   }
 
-  if (peakYear !== 2000 && peakYear !== 2024 && peakVal >= Math.max(val2000, val2024, 5) * 1.4) {
+  if (peakYear !== 2000 && peakYear !== lastYear && peakVal >= Math.max(val2000, val2024, 5) * 1.4) {
     sentence += ` Szczyt popularności imię osiągnęło w ${peakYear} roku, gdy nadano je ${fmt(peakVal)} ${trendOdmiana(peakVal)}.`;
   }
 
