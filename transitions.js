@@ -7,3 +7,7 @@
   document.body.classList.add('page-out');
   setTimeout(function(){window.location.href=href;},220);
 });
+
+window.addEventListener('pageshow',function(){
+  document.body.classList.remove('page-out');
+});
