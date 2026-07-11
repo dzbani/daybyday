@@ -119,8 +119,11 @@
     /* Popularne w miesiącu */
     .popular-section { margin-bottom:2.5rem; }
     .popular-section-title { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:1.25rem; padding-bottom:.6rem; border-bottom:1px solid var(--border); }
-    .name-desc-section { margin-bottom:1.1rem; }
-    .name-desc-label, .name-desc-section h3 { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; }
+    .name-desc-section { margin-bottom:1.1rem; padding-top:1.1rem; }
+    .name-desc-section:first-child { padding-top:0; }
+    .name-desc-section:not(:first-child) { border-top:1px solid var(--border); }
+    .name-desc-label, .name-desc-section h3 { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; display:flex; align-items:center; gap:.45rem; }
+    .name-desc-section h3 svg { flex-shrink:0; opacity:.75; }
     .name-desc-section p { font-size:.88rem; line-height:1.75; color:var(--text); margin:0; }
     .popular-top3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem; }
     @media(max-width:680px){ .popular-top3 { grid-template-columns:1fr 1fr; } }
@@ -4954,8 +4957,35 @@ function doSearch(val) {
     </div>
   `;
 
+  enhanceDescIcons(searchResult);
   searchResult.classList.add('visible');
   searchResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+const SECTION_ICONS = {
+  znaczenie: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>',
+  historia: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>',
+  zdrobnienia: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>',
+  odpowiedniki: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>',
+  patron: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>',
+  nosiciele: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>'
+};
+function pickSectionIcon(label){
+  const t = label.toLowerCase();
+  if (t.includes('znaczenie')) return SECTION_ICONS.znaczenie;
+  if (t.includes('historia')) return SECTION_ICONS.historia;
+  if (t.includes('zdrobni')) return SECTION_ICONS.zdrobnienia;
+  if (t.includes('odpowiednik')) return SECTION_ICONS.odpowiedniki;
+  if (t.includes('patron')) return SECTION_ICONS.patron;
+  if (t.includes('nosiciel')) return SECTION_ICONS.nosiciele;
+  return null;
+}
+function enhanceDescIcons(root){
+  root.querySelectorAll('.name-desc-section h3').forEach(h3 => {
+    if (h3.querySelector('svg')) return;
+    const icon = pickSectionIcon(h3.textContent);
+    if (icon) h3.insertAdjacentHTML('afterbegin', icon);
+  });
 }
 
 // Auto-search from URL param
