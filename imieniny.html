@@ -125,10 +125,6 @@
     .name-desc-label, .name-desc-section h3 { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; display:flex; align-items:center; gap:.45rem; }
     .name-desc-section h3 svg { flex-shrink:0; opacity:.75; }
     .name-desc-section p { font-size:.88rem; line-height:1.75; color:var(--text); margin:0; }
-    .quick-facts { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.1rem; }
-    .quick-fact { display:inline-flex; align-items:center; gap:.4rem; background:var(--tag-bg); border-radius:999px; padding:.35rem .8rem; font-size:.78rem; color:var(--text); line-height:1.3; }
-    .quick-fact svg { opacity:.7; flex-shrink:0; }
-    .quick-fact b { font-weight:600; }
     .popular-top3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem; }
     @media(max-width:680px){ .popular-top3 { grid-template-columns:1fr 1fr; } }
     @media(max-width:440px){ .popular-top3 { grid-template-columns:1fr; } }
@@ -4945,7 +4941,6 @@ function doSearch(val) {
       ${buildTrendChart(matchedName)}
       ${(typeof NAME_DESCRIPTIONS_RICH !== 'undefined' && NAME_DESCRIPTIONS_RICH[matchedName]) ? `
       <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
-        ${buildQuickFacts(NAME_DESCRIPTIONS_RICH[matchedName])}
         ${NAME_DESCRIPTIONS_RICH[matchedName]}
         <div style="font-size:.72rem;color:var(--muted);margin-top:.75rem">źródło: Wikipedia</div>
       </div>` : (typeof NAME_DESCRIPTIONS !== 'undefined' && NAME_DESCRIPTIONS[matchedName]) ? `
@@ -4984,18 +4979,6 @@ function pickSectionIcon(label){
   if (t.includes('patron')) return SECTION_ICONS.patron;
   if (t.includes('nosiciel')) return SECTION_ICONS.nosiciele;
   return null;
-}
-const QUICK_FACT_ICONS = {
-  patron: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>'
-};
-function buildQuickFacts(html){
-  if (!html) return '';
-  const patronMatch = html.match(/<h3>((?:Patron|Patronka|Święt[yaci]|Święte)[^<]*)<\/h3><p>([\s\S]{0,300}?)<\/p>/i);
-  if (!patronMatch) return '';
-  const dateMatch = patronMatch[2].match(/\((\d{1,2}\s+[a-ząćęłńóśźż]+)/i);
-  if (!dateMatch) return '';
-  const fact = { icon: QUICK_FACT_ICONS.patron, text: 'Patron: <b>' + dateMatch[1] + '</b>' };
-  return '<div class="quick-facts"><span class="quick-fact">' + fact.icon + '<span>' + fact.text + '</span></span></div>';
 }
 function enhanceDescIcons(root){
   root.querySelectorAll('.name-desc-section h3').forEach(h3 => {
