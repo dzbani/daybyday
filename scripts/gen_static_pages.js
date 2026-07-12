@@ -117,7 +117,8 @@ function buildPage(name) {
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
-    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; line-height: 1.7; }
+    :root { color-scheme: light; }
+    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; background: #F8F7F5; line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .5rem; }
     h2 { font-size: 1.2rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
     .dates { font-size: 1.1rem; color: #555; margin-bottom: 1.5rem; }
