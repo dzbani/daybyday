@@ -1,0 +1,14 @@
+#!/bin/sh
+# Regeneruje statyczne podstrony imieniny/<slug>/index.html dla imion,
+# których wpis w name_descriptions_rich.js zmienił się w tym commicie.
+# Aktywowane przez: git config core.hooksPath .githooks
+
+if git diff --cached --name-only | grep -q '^name_descriptions_rich\.js$'; then
+  node scripts/gen_static_pages.js --changed-staged
+  if [ $? -ne 0 ]; then
+    echo "gen_static_pages.js (pre-commit) nie powiódł się — commit przerwany." >&2
+    exit 1
+  fi
+fi
+
+exit 0
