@@ -212,6 +212,7 @@
       <div class="moon-detail"><div class="moon-detail-num" id="mdNext">—</div><div class="moon-detail-label" id="mdNextLabel">Następna faza</div></div>
     </div>
     <div style="font-size:.7rem;color:var(--muted);text-align:center;margin-top:.5rem;cursor:pointer" id="moonLoc" onclick="askGeo()">📍 <span id="moonLocLabel">Warszawa</span> — kliknij aby użyć swojej lokalizacji</div>
+    <div style="font-size:.7rem;color:var(--muted);text-align:center;margin-top:.25rem;min-height:1em" id="moonLocHint"></div>
   </div>
 
   <div class="phase-legend">
@@ -228,7 +229,7 @@
     <button class="month-tab" onclick="filterMonth('marzec',this)">Mar</button>
     <button class="month-tab" onclick="filterMonth('kwiecień',this)">Kwi</button>
     <button class="month-tab" onclick="filterMonth('maj',this)">Maj</button>
-    <button class="month-tab active" onclick="filterMonth('czerwiec',this)">Cze</button>
+    <button class="month-tab" onclick="filterMonth('czerwiec',this)">Cze</button>
     <button class="month-tab" onclick="filterMonth('lipiec',this)">Lip</button>
     <button class="month-tab" onclick="filterMonth('sierpień',this)">Sie</button>
     <button class="month-tab" onclick="filterMonth('wrzesień',this)">Wrz</button>
@@ -779,7 +780,12 @@
     });
   }
 
-  filterMonth('czerwiec', document.querySelector('.month-tab.active'));
+  (function() {
+    const MONTH_NAMES = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
+    const currentMonthName = MONTH_NAMES[new Date().getMonth()];
+    const currentTab = Array.from(document.querySelectorAll('.month-tab')).find(b => b.getAttribute('onclick') === `filterMonth('${currentMonthName}',this)`);
+    filterMonth(currentMonthName, currentTab || document.querySelector('.month-tab'));
+  })();
 </script>
 
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
@@ -946,8 +952,22 @@
   }
 
   window.askGeo=function(){
-    if(!navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition(p=>render(p.coords.latitude,p.coords.longitude,'Twoja lokalizacja'),()=>{});
+    const hint=document.getElementById('moonLocHint');
+    if(!navigator.geolocation){
+      if(hint) hint.textContent='Twoja przeglądarka nie obsługuje geolokalizacji.';
+      return;
+    }
+    if(hint) hint.textContent='Szukam lokalizacji…';
+    navigator.geolocation.getCurrentPosition(
+      p=>{ render(p.coords.latitude,p.coords.longitude,'Twoja lokalizacja'); if(hint) hint.textContent=''; },
+      err=>{
+        let msg='Nie udało się pobrać lokalizacji.';
+        if(err.code===err.PERMISSION_DENIED) msg='Brak zgody na lokalizację — zezwól w ustawieniach przeglądarki i spróbuj ponownie.';
+        else if(err.code===err.POSITION_UNAVAILABLE) msg='Lokalizacja jest obecnie niedostępna.';
+        else if(err.code===err.TIMEOUT) msg='Przekroczono czas oczekiwania na lokalizację.';
+        if(hint) hint.textContent=msg;
+      }
+    );
   };
 
   render(52.23, 21.01, 'Warszawa');
