@@ -4810,7 +4810,7 @@ function buildTrendNarrative(name, vals, years) {
 
   let sentence;
 
-  if (val2000 === 0 && val2024 === 0 && peakVal >= 5 && peakYear > 2000 && peakYear < lastYear) {
+  if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
     return `Imię <strong>${name}</strong> miało krótki epizod popularności w polskich metrykach — po raz pierwszy pojawiło się w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
   } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
     sentence = `Imię <strong>${name}</strong> to stosunkowo nowe zjawisko w polskich metrykach — pierwsze pojedyncze nadania odnotowano dopiero w ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
