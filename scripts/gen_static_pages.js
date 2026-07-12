@@ -163,6 +163,51 @@ function getChangedStagedNames() {
   return namesFromDiff(diff);
 }
 
+// --- Kontrola powielania treści między "Znaczenie imienia" a "Historia" ---
+// Wykryte 2026-07-12: dziesiątki wpisów (Bonifacy, Ernest, Lubomir...) miały Historię
+// zaczynającą się od powtórnego wyjaśnienia tej samej etymologii co w Znaczeniu — realny
+// sygnał "thin/duplicate content" (możliwy powód odrzuceń AdSense). Ten check ostrzega
+// PRZED zapisem nowego/edytowanego wpisu, żeby błąd nie narastał po cichu przez kolejne batche.
+const DUP_STOP = new Set(['i', 'w', 'z', 'na', 'do', 'od', 'się', 'że', 'jako', 'po', 'a', 'o', 'to', 'jest', 'był', 'była', 'które', 'który', 'która', 'dla', 'przez', 'ze', 'za', 'lub', 'czy', 'ale', 'tego', 'tej', 'tym', 'tych', 'nie', 'jego', 'jej', 'imię', 'imienia', 'pochodzi']);
+// Prefiks (5 znaków) zamiast pełnego słowa - proste "biedne" stemowanie, bo polska fleksja
+// (powaga/powagę/powagi) inaczej daje falszywie NISKIE podobienstwo przy porownaniu dokladnych
+// slow (wykryte 2026-07-12: Ernest mial tylko 14% przy pelnych slowach, mimo ewidentnego
+// powielenia tej samej etymologii - dopiero prefiks 5-znakowy zlapal to na 28%).
+function dupWords(s) { return s.toLowerCase().replace(/[^a-ząćęłńóśźż\s-]/g, ' ').split(/\s+/).filter(w => w.length > 3 && !DUP_STOP.has(w)).map(w => w.slice(0, 5)); }
+function jaccardOverlap(a, b) {
+  const wa = new Set(dupWords(a)), wb = new Set(dupWords(b));
+  let common = 0;
+  for (const w of wa) if (wb.has(w)) common++;
+  const union = new Set([...wa, ...wb]).size;
+  return union === 0 ? 0 : common / union;
+}
+function extractSectionText(html, header) {
+  const m = html.match(new RegExp('<h3>' + header + '</h3><p>([\\s\\S]*?)</p>'));
+  return m ? m[1].replace(/<[^>]+>/g, '') : null;
+}
+function firstSentence(text) {
+  const m = text.match(/^.*?[.!?](?:\s|$)/);
+  return m ? m[0] : text;
+}
+const DUP_THRESHOLD = 0.25;
+function checkDuplication(names, quiet) {
+  const flagged = [];
+  for (const name of names) {
+    const rich = RICH[name];
+    if (!rich) continue;
+    const znacz = extractSectionText(rich, 'Znaczenie imienia');
+    const hist = extractSectionText(rich, 'Historia');
+    if (!znacz || !hist) continue;
+    const overlap = jaccardOverlap(znacz, firstSentence(hist));
+    if (overlap >= DUP_THRESHOLD) flagged.push({ name, pct: Math.round(overlap * 100) });
+  }
+  if (flagged.length && !quiet) {
+    console.log(`\n⚠ OSTRZEŻENIE — ${flagged.length} imię/imion ma Historię powtarzającą etymologię ze Znaczenia (Jaccard >=${Math.round(DUP_THRESHOLD * 100)}%):`);
+    flagged.forEach(f => console.log(`  ${f.name}: ${f.pct}% nakładania — Historia nie powinna zaczynać się od powtórnego wyjaśnienia etymologii, tylko od faktów biograficznych/historycznych`));
+  }
+  return flagged;
+}
+
 // --- CLI ---
 function main() {
   const args = process.argv.slice(2);
@@ -172,6 +217,7 @@ function main() {
   const onlyArg = args.find(a => a.startsWith('--only='));
   const changedStaged = args.includes('--changed-staged');
   const quiet = args.includes('--quiet');
+  const checkDupOnly = args.includes('--check-duplication');
 
   let candidateNames;
   if (changedStaged) {
@@ -182,6 +228,21 @@ function main() {
   } else {
     candidateNames = Object.values(slugOwner);
   }
+
+  // --check-duplication: tylko audyt powielania Znaczenie/Historia, bez generowania stron.
+  // Użyj np. do skanowania całej bazy: node scripts/gen_static_pages.js --check-duplication
+  if (checkDupOnly) {
+    const names = onlyArg ? candidateNames : Object.keys(RICH);
+    const flagged = checkDuplication(names, true);
+    flagged.sort((a, b) => b.pct - a.pct);
+    console.log(`Sprawdzonych imion: ${names.length} | Powyżej progu ${Math.round(DUP_THRESHOLD * 100)}%: ${flagged.length}`);
+    flagged.forEach(f => console.log(`  ${f.pct}% ${f.name}`));
+    return;
+  }
+
+  // Przy zmianach w name_descriptions_rich.js (hook pre-commit) ostrzeż o nowym/pogłębionym
+  // powielaniu treści dla dotkniętych imion — PRZED zapisem statycznych stron.
+  if (changedStaged) checkDuplication(candidateNames, quiet);
 
   if (!quiet && collisionLog.length) {
     console.log('--- Kolizje slugów wykryte i rozwiązane ---');
