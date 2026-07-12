@@ -62,7 +62,8 @@
     .season-range { font-size:.78rem; color:var(--muted); }
 
     .feasts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
-    .feast-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start; }
+    .feast-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start; text-decoration:none; color:inherit; transition:border-color .15s,transform .15s; }
+    .feast-card:hover { border-color:var(--text); transform:translateY(-2px); }
     .feast-card.today { border-color:var(--text); }
     .feast-dot { width:18px; height:18px; border-radius:50%; flex-shrink:0; margin-top:.15rem; border:1px solid var(--border); }
     .feast-info { flex:1; }
@@ -352,28 +353,28 @@
     }
 
     const fixed=[
-      {date:new Date(christmasThisLitYear.getFullYear(),11,8), name:'Niepokalane Poczęcie NMP', color:'white', rank:'Uroczystość'},
-      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość', obligatory:true},
-      {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto'},
-      {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true},
-      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true},
-      {date:new Date(epiphany.getFullYear(),2,25), name:'Zwiastowanie Pańskie', color:'white', rank:'Uroczystość'},
-      {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu'},
-      {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień'},
-      {date:holyThursday, name:'Wielki Czwartek — Msza Wieczerzy Pańskiej', color:'white', rank:'Początek Triduum Paschalnego'},
-      {date:goodFriday, name:'Wielki Piątek — Liturgia Męki Pańskiej', color:'red', rank:'Dzień postu ścisłego, Triduum Paschalne'},
-      {date:easter, name:'Niedziela Zmartwychwstania Pańskiego', color:'white', rank:'Uroczystość — szczyt roku liturgicznego'},
-      {date:addDays(easter,42), name:'Wniebowstąpienie Pańskie', color:'white', rank:'Uroczystość (w Polsce przeniesiona na 7. niedzielę wielkanocną)'},
-      {date:pentecost, name:'Zesłanie Ducha Świętego (Pięćdziesiątnica)', color:'red', rank:'Uroczystość'},
-      {date:trinitySunday, name:'Trójcy Przenajświętszej', color:'white', rank:'Uroczystość'},
-      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość', obligatory:true},
-      {date:addDays(easter,68), name:'Najświętszego Serca Pana Jezusa', color:'white', rank:'Uroczystość — piątek po oktawie Bożego Ciała'},
-      {date:new Date(epiphany.getFullYear(),5,24), name:'Narodzenie św. Jana Chrzciciela', color:'white', rank:'Uroczystość'},
-      {date:new Date(epiphany.getFullYear(),5,29), name:'Świętych Apostołów Piotra i Pawła', color:'red', rank:'Uroczystość'},
-      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość', obligatory:true},
-      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość', obligatory:true},
-      {date:new Date(epiphany.getFullYear(),10,2), name:'Wspomnienie wszystkich wiernych zmarłych (Zaduszki)', color:'violet', rank:'Wspomnienie'},
-      {date:christKingDate, name:'Jezusa Chrystusa Króla Wszechświata', color:'white', rank:'Uroczystość — koniec roku liturgicznego'},
+      {date:new Date(christmasThisLitYear.getFullYear(),11,8), name:'Niepokalane Poczęcie NMP', color:'white', rank:'Uroczystość', slug:'niepokalane-poczecie-nmp'},
+      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-narodzenie'},
+      {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto', slug:'szczepana-pierwszego-meczennika'},
+      {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true, slug:'swietej-bozej-rodzicielki-maryi'},
+      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true, slug:'objawienie-panskie'},
+      {date:new Date(epiphany.getFullYear(),2,25), name:'Zwiastowanie Pańskie', color:'white', rank:'Uroczystość', slug:'zwiastowanie-panskie'},
+      {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu', slug:'sroda-popielcowa'},
+      {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień', slug:'niedziela-palmowa'},
+      {date:holyThursday, name:'Wielki Czwartek — Msza Wieczerzy Pańskiej', color:'white', rank:'Początek Triduum Paschalnego', slug:'wielki-czwartek'},
+      {date:goodFriday, name:'Wielki Piątek — Liturgia Męki Pańskiej', color:'red', rank:'Dzień postu ścisłego, Triduum Paschalne', slug:'wielki-piatek'},
+      {date:easter, name:'Niedziela Zmartwychwstania Pańskiego', color:'white', rank:'Uroczystość — szczyt roku liturgicznego', slug:'niedziela-zmartwychwstania-panskiego'},
+      {date:addDays(easter,42), name:'Wniebowstąpienie Pańskie', color:'white', rank:'Uroczystość (w Polsce przeniesiona na 7. niedzielę wielkanocną)', slug:'wniebowstapienie-panskie'},
+      {date:pentecost, name:'Zesłanie Ducha Świętego (Pięćdziesiątnica)', color:'red', rank:'Uroczystość', slug:'zeslanie-ducha-swietego'},
+      {date:trinitySunday, name:'Trójcy Przenajświętszej', color:'white', rank:'Uroczystość', slug:'trojcy-przenajswietszej'},
+      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-cialo'},
+      {date:addDays(easter,68), name:'Najświętszego Serca Pana Jezusa', color:'white', rank:'Uroczystość — piątek po oktawie Bożego Ciała', slug:'najswietszego-serca-pana-jezusa'},
+      {date:new Date(epiphany.getFullYear(),5,24), name:'Narodzenie św. Jana Chrzciciela', color:'white', rank:'Uroczystość', slug:'narodzenie-jana-chrzciciela'},
+      {date:new Date(epiphany.getFullYear(),5,29), name:'Świętych Apostołów Piotra i Pawła', color:'red', rank:'Uroczystość', slug:'piotra-i-pawla'},
+      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość', obligatory:true, slug:'wniebowziecie-nmp'},
+      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość', obligatory:true, slug:'wszystkich-swietych'},
+      {date:new Date(epiphany.getFullYear(),10,2), name:'Wspomnienie wszystkich wiernych zmarłych (Zaduszki)', color:'violet', rank:'Wspomnienie', slug:'zaduszki'},
+      {date:christKingDate, name:'Jezusa Chrystusa Króla Wszechświata', color:'white', rank:'Uroczystość — koniec roku liturgicznego', slug:'chrystusa-krola-wszechswiata'},
     ].sort((a,b)=>a.date-b.date);
 
     return {seasons, active, todayName, todayColor, fixed, today, ashWednesday, goodFriday, weekLabel};
@@ -407,13 +408,13 @@
     grid.innerHTML=data.fixed.map(f=>{
       const cc=COLORS[f.color];
       const isToday=sameDay(f.date,today);
-      return '<div class="feast-card'+(isToday?' today':'')+'">'
+      return '<a class="feast-card'+(isToday?' today':'')+'" href="/swieta-liturgiczne/'+f.slug+'/">'
         +'<span class="feast-dot" style="background:'+cc.hex+';border-color:'+(cc.border||cc.hex)+'"></span>'
         +'<div class="feast-info">'
         +'<div class="feast-date">'+fmtDate(f.date)+(isToday?' <span class="today-badge">Dziś</span>':'')+'</div>'
         +'<div class="feast-name">'+f.name+(f.obligatory?' <span class="obligatory-badge">Nakazane</span>':'')+'</div>'
         +'<div class="feast-rank">'+f.rank+' · kolor '+cc.label+'</div>'
-        +'</div></div>';
+        +'</div></a>';
     }).join('');
 
     const fastRows=[

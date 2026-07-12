@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://daybyday.today/sitemap.xml
 Sitemap: https://daybyday.today/sitemap-imieniny.xml
+Sitemap: https://daybyday.today/sitemap-swieta-liturgiczne.xml
