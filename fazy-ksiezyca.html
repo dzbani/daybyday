@@ -831,7 +831,7 @@
 
 <script>
 (function() {
-  const DEG = Math.PI / 180, RAD = 180 / Math.PI;
+  const DEG = Math.PI / 180;
   const NEW_MOONS = [
     new Date('2025-12-20T05:43:00Z'), new Date('2026-01-18T19:52:00Z'),
     new Date('2026-02-17T12:01:00Z'), new Date('2026-03-19T01:23:00Z'),
@@ -860,48 +860,109 @@
   const PL_MON = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
   const PL_MON_SHORT = ['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
 
-  function jd(d) { return d.getTime()/86400000 + 2440587.5; }
+  // Wschód/zachód/kulminacja Księżyca — pełny algorytm Meeus (rozdz. 47, 28+28 wyrazów)
+  // z wyszukiwaniem przez bisekcję, ten sam sprawdzony algorytm co na stronie głównej
+  // (index.html/getMoonRiseSet) — poprzednia, uproszczona metoda 3-punktowej interpolacji
+  // dawała błędne wyniki (myliła się nawet po godzinie) i nie uwzględniała strefy czasowej.
+  function moonRiseTransitSet(date, lat, lon) {
+    const year=date.getFullYear(), month=date.getMonth()+1, day=date.getDate();
+    const rad=DEG;
+    const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
+    const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
+    const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
-  function moonPos(jde) {
-    const T=(jde-2451545)/36525;
-    const L=((218.3164477+481267.88123421*T-0.0015786*T*T)%360+360)%360;
-    const M=((134.9633964+477198.8675055*T+0.0087414*T*T)%360+360)%360;
-    const Ms=((357.5291092+35999.0502909*T)%360+360)%360;
-    const F=((93.2720950+483202.0175233*T-0.0036539*T*T)%360+360)%360;
-    const D=((297.8501921+445267.1114034*T-0.0018819*T*T)%360+360)%360;
-    const dL=6288774*Math.sin(M*DEG)+1274027*Math.sin((2*D-M)*DEG)+658314*Math.sin(2*D*DEG)
-            +213618*Math.sin(2*M*DEG)-185116*Math.sin(Ms*DEG)-114332*Math.sin(2*F*DEG)
-            +58793*Math.sin((2*D-2*M)*DEG)+57066*Math.sin((2*D-Ms-M)*DEG)
-            +53322*Math.sin((2*D+M)*DEG)+45758*Math.sin((2*D-Ms)*DEG);
-    const dB=5128122*Math.sin(F*DEG)+280602*Math.sin((M+F)*DEG)+277693*Math.sin((M-F)*DEG)
-            +173237*Math.sin((2*D-F)*DEG)+55413*Math.sin((2*D-M+F)*DEG)+46271*Math.sin((2*D-M-F)*DEG);
-    return {lon:((L+dL/1000000)%360+360)%360, lat:dB/1000000};
-  }
+    function moonPos(jde) {
+      const T=(jde-2451545.0)/36525;
+      const r=rad,s=Math.sin;
+      const Lp=((218.3164477+481267.88123421*T-0.0015786*T*T+T*T*T/538841)%360+360)%360;
+      const D =((297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868)%360+360)%360;
+      const M =((357.5291092+ 35999.0502909*T-0.0001536*T*T)%360+360)%360;
+      const Mp=((134.9633964+477198.8675055*T+0.0087414*T*T+T*T*T/69699)%360+360)%360;
+      const F =((93.2720950 +483202.0175233*T-0.0036539*T*T)%360+360)%360;
+      const E=1-0.002516*T-0.0000074*T*T;
+      const dL=6288774*s(Mp*r)+1274027*s((2*D-Mp)*r)+658314*s(2*D*r)
+        +213618*s(2*Mp*r)-185116*E*s(M*r)-114332*s(2*F*r)
+        +58793*s((2*D-2*Mp)*r)+57066*E*s((2*D-M-Mp)*r)
+        +53322*s((2*D+Mp)*r)+45758*E*s((2*D-M)*r)
+        -40923*E*s((M-Mp)*r)-34720*s(D*r)-30383*E*s((M+Mp)*r)
+        +15327*s((2*D-2*F)*r)+10980*s((Mp-2*F)*r)
+        +10675*s((4*D-Mp)*r)+10034*s(3*Mp*r)
+        +8548*s((4*D-2*Mp)*r)-7888*E*s((2*D+M-Mp)*r)
+        -6766*E*s((2*D+M)*r)-5163*s((D-Mp)*r)
+        +4987*E*s((D+M)*r)+4036*E*s((2*D-M+Mp)*r)
+        +3994*s((2*D+2*Mp)*r)+3861*s(4*D*r)
+        +3665*s((2*D-3*Mp)*r)-2689*E*s((M-2*Mp)*r)
+        -2602*s((2*D-Mp+2*F)*r)+2390*E*s((2*Mp-M)*r)
+        -2348*s((D+Mp)*r);
+      const dB=5128122*s(F*r)+280602*s((Mp+F)*r)+277693*s((Mp-F)*r)
+        +173237*s((2*D-F)*r)+55413*s((2*D+F-Mp)*r)
+        +46271*s((2*D-F-Mp)*r)+32573*s((2*D+F)*r)
+        +17198*s((2*Mp+F)*r)+9266*s((2*D+Mp-F)*r)
+        +8822*s((2*Mp-F)*r)+8216*E*s((2*D-M-F)*r)
+        +4324*s((2*D-2*Mp-F)*r)+4200*s((2*D+Mp+F)*r)
+        -3359*E*s((2*D+M-F)*r)+2463*E*s((2*D-M-Mp+F)*r)
+        +2211*E*s((2*D-M+F)*r)+2065*E*s((2*D-M-Mp-F)*r)
+        -1870*E*s((M-Mp-F)*r)+1828*s((4*D-Mp-F)*r)
+        -1794*E*s((M+F)*r)-1749*s(3*F*r)
+        -1565*E*s((M-Mp+F)*r)-1491*s((D+F)*r)
+        -1475*E*s((M+Mp+F)*r)-1410*E*s((M+Mp-F)*r)
+        -1344*E*s((M-F)*r)-1335*s((D-F)*r)
+        +1107*s((3*Mp+F)*r)+1021*s((4*D-F)*r);
+      const moonLon=((Lp+dL/1000000)%360+360)%360;
+      const moonLat=dB/1000000;
+      const eps=(23.4392911-0.0130042*T)*r;
+      const cLat=Math.cos(moonLat*r),sLat=Math.sin(moonLat*r);
+      const cLon=Math.cos(moonLon*r),sLon=Math.sin(moonLon*r);
+      const sinDec=sLat*Math.cos(eps)+cLat*Math.sin(eps)*sLon;
+      const Dec=Math.asin(sinDec);
+      const RA=((Math.atan2(sLon*Math.cos(eps)-sLat*Math.sin(eps)/cLat,cLon)/r)%360+360)%360;
+      return{RA,Dec,sinDec};
+    }
 
-  function toEq(lon,lat,T) {
-    const eps=(23.439291111-0.013004167*T)*DEG, l=lon*DEG, b=lat*DEG;
-    const ra=(Math.atan2(Math.sin(l)*Math.cos(eps)-Math.tan(b)*Math.sin(eps),Math.cos(l))*RAD+360)%360;
-    const dec=Math.asin(Math.sin(b)*Math.cos(eps)+Math.cos(b)*Math.sin(eps)*Math.sin(l))*RAD;
-    return {ra,dec};
-  }
+    const JD0=toJD(year,month,day);
+    const T0=(JD0-2451545.0)/36525;
+    const GMST0=(6.697374558+2400.0513369*T0+0.0000258622*T0*T0-1.7222e-9*T0*T0*T0)%24;
+    const H0=0.125;
 
-  function fmt(h) {
-    h=((h%24)+24)%24;
-    return String(Math.floor(h)).padStart(2,'0')+':'+String(Math.round((h%1)*60)).padStart(2,'0');
-  }
+    function moonAlt(t){
+      const {Dec,sinDec}=moonPos(JD0+t/24);
+      const {RA}=moonPos(JD0+t/24);
+      const LST=((GMST0+t*1.00273791+lon/15)%24+24)%24;
+      const HA=((LST-RA/15)*15%360+360)%360;
+      return {alt:Math.asin(sinDec*Math.sin(lat*rad)+Math.cos(Dec)*Math.cos(lat*rad)*Math.cos(HA*rad))/rad-H0, HA};
+    }
+    const altAt=t=>moonAlt(t).alt;
 
-  function moonRiseSet(date, lat, lon) {
-    const jd0=Math.floor(jd(new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()))))+0.5;
-    const T=(jd0-2451545)/36525;
-    const pos=[-1,0,1].map(i=>{const p=moonPos(jd0+i);return toEq(p.lon,p.lat,T+i/36525);});
-    const th0=((280.46061837+360.98564736629*(jd0-2451545)+0.000387933*T*T)%360+360)%360;
-    const phi=lat*DEG, h0=0.125*DEG;
-    const cosH=(Math.sin(h0)-Math.sin(phi)*Math.sin(pos[1].dec*DEG))/(Math.cos(phi)*Math.cos(pos[1].dec*DEG));
-    if(Math.abs(cosH)>1) return null;
-    const H0=Math.acos(cosH)*RAD;
-    const norm=m=>((m%1)+1)%1;
-    const m0=norm((pos[1].ra-lon-th0)/360);
-    return {rise:norm(m0-H0/360)*24, transit:m0*24, set:norm(m0+H0/360)*24};
+    function bisect(lo,hi,rising){
+      for(let i=0;i<50;i++){
+        const m=(lo+hi)/2;
+        if(rising?(altAt(m)<0):(altAt(m)>=0))lo=m; else hi=m;
+      }
+      return(lo+hi)/2;
+    }
+
+    let riseT=null,setT=null,peakT=null,peakAlt=-Infinity,prev=altAt(0);
+    if(prev>peakAlt){peakAlt=prev;peakT=0;}
+    for(let t=0.1;t<=25.1;t+=0.1){
+      const curr=altAt(t);
+      if(prev<0&&curr>=0&&riseT===null)riseT=bisect(t-0.1,t,true);
+      if(prev>=0&&curr<0&&setT===null)setT=bisect(t-0.1,t,false);
+      if(curr>peakAlt){peakAlt=curr;peakT=t;}
+      prev=curr;
+    }
+    // dopracuj czas kulminacji (maksimum wysokości) wyszukiwaniem trójdzielnym wokół zgrubnego szczytu
+    let lo=Math.max(0,peakT-0.2), hi=Math.min(25.1,peakT+0.2);
+    for(let i=0;i<40;i++){
+      const m1=lo+(hi-lo)/3, m2=hi-(hi-lo)/3;
+      if(altAt(m1)<altAt(m2))lo=m1; else hi=m2;
+    }
+    const transitT=(lo+hi)/2;
+
+    return{
+      rise: riseT!==null?fmt(riseT):'—',
+      transit: fmt(transitT),
+      set: setT!==null?fmt(setT):'—',
+    };
   }
 
   function getMoonAge(now) {
@@ -937,16 +998,16 @@
     const age=getMoonAge(now);
     const ilum=Math.round((1-Math.cos(age/29.53059*2*Math.PI))/2*100);
     const phase=getPhase(age);
-    const rs=moonRiseSet(now,lat,lon);
+    const rs=moonRiseTransitSet(now,lat,lon);
     const next=getNext(now);
     document.getElementById('moonIcon').textContent=phase.icon;
     document.getElementById('moonPhaseName').textContent=phase.name;
     document.getElementById('moonPhaseDate').textContent=now.getDate()+' '+PL_MON[now.getMonth()]+' '+now.getFullYear();
     document.getElementById('mdIlum').textContent=ilum+'%';
     document.getElementById('mdAge').textContent=Math.floor(age)+' dni';
-    document.getElementById('mdRise').textContent=rs?fmt(rs.rise):'—';
-    document.getElementById('mdTransit').textContent=rs?fmt(rs.transit):'—';
-    document.getElementById('mdSet').textContent=rs?fmt(rs.set):'—';
+    document.getElementById('mdRise').textContent=rs.rise;
+    document.getElementById('mdTransit').textContent=rs.transit;
+    document.getElementById('mdSet').textContent=rs.set;
     if(next){document.getElementById('mdNext').textContent=next.num;document.getElementById('mdNextLabel').textContent=next.sub;}
     document.getElementById('moonLocLabel').textContent=locName;
   }
