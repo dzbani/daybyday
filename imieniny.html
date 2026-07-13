@@ -4897,7 +4897,7 @@ function doSearch(val) {
   const now = new Date(); now.setHours(0,0,0,0);
   allDates.forEach(({m: em, d: ed}) => {
     let cand = new Date(now.getFullYear(), em-1, ed);
-    if (cand <= now) cand = new Date(now.getFullYear()+1, em-1, ed);
+    if (cand < now) cand = new Date(now.getFullYear()+1, em-1, ed);
     const diff = Math.round((cand - now) / 86400000);
     if (diff < minDays) { minDays = diff; nearestDate = {m: em, d: ed}; }
   });
@@ -4928,7 +4928,7 @@ function doSearch(val) {
     <div style="padding:.25rem 0">
       <div class="result-name" style="margin-bottom:1.25rem">${matchedName}</div>
       <p style="font-size:.9rem;line-height:1.7;margin-bottom:.75rem">
-        Do najbliższych imienin <strong>${matchedName}</strong> zostało <strong>${minDays}</strong> dni${months>0?`, co stanowi ${months} mies. i ${remDays} dni`:''}.
+        ${minDays === 0 ? `Dziś są imieniny <strong>${matchedName}</strong>!` : `Do najbliższych imienin <strong>${matchedName}</strong> zostało <strong>${minDays}</strong> dni${months>0?`, co stanowi ${months} mies. i ${remDays} dni`:''}.`}
       </p>
       <p style="font-size:.9rem;line-height:1.7;margin-bottom:.75rem">
         Daty imienin ${matchedName}: ${datesList}.
