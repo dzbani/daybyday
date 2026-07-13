@@ -352,7 +352,7 @@ const HOLIDAYS_DB = {
     related: ['walentynki', 'dzien-matki']
   },
   'dzien-wiosny': {
-    name: 'Pierwszy Dzień Wiosny',
+    name: 'Dzień Wagarowicza / Pierwszy Dzień Wiosny',
     date: '21 marca',
     emoji: '🌸',
     type: 'cultural',
@@ -362,17 +362,16 @@ const HOLIDAYS_DB = {
     observed: 'Polska (przede wszystkim wśród młodzieży)',
     desc: [
       'Astronomiczny pierwszy dzień wiosny wypada 20 lub 21 marca, gdy Słońce przekracza punkt równonocy wiosennej (punkt Barana). Dzień i noc są wtedy równej długości. Przez wiele stuleci widziano w tym wydarzeniu odrodzenie przyrody, koniec zimy i powrót życia.',
-      'W Polsce 21 marca jest szczególnie ważny dla uczniów — to tradycyjny dzień wagarów. Nie jest to oficjalny dzień wolny, ale zwyczajowo w wielu szkołach tolerowane jest absencja uczniów, a niektórzy nauczyciele organizują zajęcia w plenerze lub wycieczki.',
-      'Dawniej tego dnia topiono Marzannę — słomianą kukłę symbolizującą zimę i śmierć, którą wrzucano do rzeki lub palono, by przepędzić zimę i przywitać wiosnę. Zwyczaj ten ma korzenie słowiańskie i był częścią obrzędów agrarnych.'
+      'W Polsce 21 marca jest szczególnie ważny dla uczniów — to tradycyjny dzień wagarów, znany jako Dzień Wagarowicza. Nie jest to oficjalny dzień wolny, ale zwyczajowo w wielu szkołach tolerowana jest absencja uczniów, a niektórzy nauczyciele organizują zajęcia w plenerze lub wycieczki.',
+      'Tego samego dnia obchodzi się też odrębną, znacznie starszą tradycję — topienie Marzanny, słowiański zwyczaj symbolicznego pożegnania zimy.'
     ],
     traditions: [
-      'Topienie Marzanny — kukły ze słomy symbolizującej zimę',
       'Wagary — uczniowie masowo opuszczają lekcje',
       'Pikniki i spacery na świeżym powietrzu',
       'Sadzenie roślin i pierwsze prace ogrodowe',
-      'Szkolne i przedszkolne zabawy na powitanie wiosny'
+      'Szkolne wycieczki i zajęcia w plenerze'
     ],
-    related: ['wielkanoc', 'dzien-ziemi']
+    related: ['wielkanoc', 'dzien-ziemi', 'topienie-marzanny']
   },
   'wielkanoc': {
     name: 'Wielkanoc (Niedziela Wielkanocna)',
@@ -1834,6 +1833,73 @@ const HOLIDAYS_DB = {
       'Wystawy i wykłady poświęcone historii powstania wielkopolskiego'
     ],
     related: ['swieto-niepodleglosci']
+  },
+  'dzien-mezczyzn': {
+    name: 'Dzień Mężczyzn',
+    date: '10 marca',
+    emoji: '🎩',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Tradycja obchodzona w Polsce od niedawna; data nawiązuje do wspomnienia 40 Męczenników z Sebasty',
+    observed: 'Polska',
+    desc: [
+      'Dzień Mężczyzn obchodzony jest w Polsce 10 marca — dwa dni po Międzynarodowym Dniu Kobiet (8 marca), jako swoiste dopełnienie tamtego święta. W przeciwieństwie do Dnia Kobiet ma znacznie krótszą tradycję i wciąż zyskuje na popularności.',
+      'Data 10 marca nawiązuje do chrześcijańskiego wspomnienia Czterdziestu Męczenników z Sebasty — rzymskich żołnierzy, którzy w IV wieku ponieśli śmierć, odmawiając wyrzeczenia się wiary chrześcijańskiej. Ich historia symbolizuje odwagę, wytrwałość i determinację — cechy tradycyjnie przypisywane mężczyznom.',
+      'Warto zaznaczyć, że w ponad 80 krajach świata obchodzony jest Międzynarodowy Dzień Mężczyzn 19 listopada — w Polsce jednak przyjęła się inna, marcowa data.'
+    ],
+    traditions: [
+      'Składanie życzeń i drobnych upominków mężczyznom',
+      'Akcje społeczne dotyczące zdrowia mężczyzn',
+      'Artykuły i kampanie w mediach o roli mężczyzn we współczesnym świecie'
+    ],
+    related: ['dzien-kobiet', 'dzien-ojca']
+  },
+  'dzien-przedszkolaka': {
+    name: 'Ogólnopolski Dzień Przedszkolaka',
+    date: '20 września',
+    emoji: '🧸',
+    type: 'cultural',
+    typeLabel: 'Święto kulturowe',
+    dayOff: false,
+    origin: 'Ustanowiony uchwałą Sejmu z 13 września 2013 r.; inicjatywa dyrektorek przedszkoli z Łodzi, obchodzony od 2010 r.',
+    observed: 'Polska',
+    desc: [
+      'Ogólnopolski Dzień Przedszkolaka obchodzony jest 20 września — święto ustanowione uchwałą Sejmu RP z 13 września 2013 roku. Ma na celu podkreślenie roli wychowania przedszkolnego w rozwoju dzieci oraz promowanie edukacji przedszkolnej w Polsce.',
+      'Inicjatywa święta wyszła od dyrektorek przedszkoli z Łodzi, a pierwsze obchody odbyły się już w 2010 roku — dzieci sadziły wtedy pamiątkowe dęby i wypuszczały w niebo balony z życzeniami.',
+      'Dzień Przedszkolaka ma nawet własny hymn, który zna większość polskich przedszkolaków. W wielu placówkach nowo przyjęte dzieci są tego dnia uroczyście pasowane na przedszkolaków.'
+    ],
+    traditions: [
+      'Uroczyste pasowanie na przedszkolaka nowo przyjętych dzieci',
+      'Sadzenie pamiątkowych drzew',
+      'Wypuszczanie balonów z życzeniami',
+      'Wspólne śpiewanie hymnu Dnia Przedszkolaka',
+      'Zabawy i konkursy tematyczne w przedszkolach'
+    ],
+    related: ['dzien-dziecka', 'dzien-nauczyciela']
+  },
+  'topienie-marzanny': {
+    name: 'Topienie Marzanny',
+    date: '21 marca',
+    emoji: '🔥',
+    type: 'cultural',
+    typeLabel: 'Zwyczaj ludowy',
+    dayOff: false,
+    origin: 'Tradycja słowiańska, sięgająca czasów pogańskich',
+    observed: 'Polska i inne kraje słowiańskie',
+    desc: [
+      'Topienie Marzanny to starosłowiański obrzęd pożegnania zimy, obchodzony 21 marca — w pierwszy dzień astronomicznej wiosny. Marzanna to słowiańska bogini zimy i śmierci, symbolicznie przedstawiana jako słomiana kukła ubrana w białe szaty.',
+      'Zgodnie z tradycją mieszkańcy wsi nieśli kukłę Marzanny w procesji poza granice miejscowości, gdzie topiono ją w rzece lub jeziorze, a niekiedy dodatkowo podpalano. Ten symboliczny akt miał „zabić" zimę i otworzyć drogę nadchodzącej wiośnie.',
+      'Współcześnie zwyczaj ten kultywowany jest głównie przez dzieci, młodzież szkolną oraz zespoły folklorystyczne, które własnoręcznie przygotowują kukły Marzanny, a następnie w pochodzie niosą je nad wodę przy śpiewie tradycyjnych pieśni.'
+    ],
+    traditions: [
+      'Wykonywanie kukły Marzanny ze słomy i szmatek',
+      'Pochód z Marzanną do rzeki lub jeziora',
+      'Topienie lub palenie kukły',
+      'Konkursy na najładniejszą Marzannę w szkołach i przedszkolach',
+      'Śpiewanie tradycyjnych pieśni pożegnania zimy'
+    ],
+    related: ['dzien-wiosny', 'wielkanoc']
   }
 };
 
