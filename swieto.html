@@ -50,6 +50,8 @@
     .badge-religious { background:#EBF3FB; color:#1A5276; }
     .badge-cultural { background:#FEF3E8; color:#C05700; }
     .badge-unofficial { background:var(--tag-bg); color:var(--muted); }
+    .badge-historical { background:#F3EFEE; color:#7A4A42; }
+    .badge-professional { background:#F1EEF7; color:#5B4E8C; }
     .badge-dayoff { background:#1A1916; color:white; }
     .holiday-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.5rem; }
     .holiday-date { font-size:1rem; color:var(--muted); }
@@ -260,7 +262,7 @@ const HOLIDAYS_DB = {
     name: 'Dzień Celnika',
     date: '21 stycznia',
     emoji: '🛃',
-    type: 'unofficial',
+    type: 'professional',
     typeLabel: 'Dzień branżowy',
     dayOff: false,
     origin: 'Polska tradycja służb celnych',
@@ -977,7 +979,7 @@ const HOLIDAYS_DB = {
     name: 'Dzień Ratownictwa Medycznego',
     date: '13 września',
     emoji: '🚑',
-    type: 'cultural',
+    type: 'professional',
     typeLabel: 'Dzień branżowy',
     dayOff: false,
     origin: 'Polska; nawiązuje do uchwalenia Ustawy o Państwowym Ratownictwie Medycznym w 2006 r.',
@@ -1000,7 +1002,7 @@ const HOLIDAYS_DB = {
     name: 'Rocznica agresji ZSRR na Polskę',
     date: '17 września',
     emoji: '🕊️',
-    type: 'state',
+    type: 'historical',
     typeLabel: 'Rocznica historyczna',
     dayOff: false,
     origin: '17 września 1939 r. — agresja ZSRR na Polskę',
@@ -1457,7 +1459,7 @@ const HOLIDAYS_DB = {
     name: 'Dzień Rybaka',
     date: '27 lipca',
     emoji: '🎣',
-    type: 'unofficial',
+    type: 'professional',
     typeLabel: 'Dzień branżowy',
     dayOff: false,
     origin: 'Polska tradycja; ustanowiony w 1950 roku',
@@ -1526,7 +1528,7 @@ const HOLIDAYS_DB = {
     name: 'Rocznica wybuchu II Wojny Światowej',
     date: '1 września',
     emoji: '🕊️',
-    type: 'unofficial',
+    type: 'historical',
     typeLabel: 'Rocznica historyczna',
     dayOff: false,
     origin: 'Napaść Niemiec na Polskę, 1 września 1939',
@@ -1836,7 +1838,7 @@ const HOLIDAYS_DB = {
 };
 
 function getBadgeClass(type) {
-  return { state:'badge-state', religious:'badge-religious', cultural:'badge-cultural', unofficial:'badge-unofficial' }[type] || 'badge-unofficial';
+  return { state:'badge-state', religious:'badge-religious', cultural:'badge-cultural', unofficial:'badge-unofficial', historical:'badge-historical', professional:'badge-professional' }[type] || 'badge-unofficial';
 }
 
 function render() {

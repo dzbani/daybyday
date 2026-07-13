@@ -66,6 +66,8 @@
     .type-nieoficjalne { background:#F0EDEA; color:#6B6864; }
     .type-miedzynarodowe { background:#EDF7EE; color:#3A6B3F; }
     .type-koscielne { background:#FDF5EE; color:#8B5E2A; }
+    .type-historyczne { background:#F3EFEE; color:#7A4A42; }
+    .type-branzowe { background:#F1EEF7; color:#5B4E8C; }
     .today-marker { font-size:.65rem; font-weight:600; padding:.12rem .45rem; background:var(--text); color:white; border-radius:4px; margin-left:.4rem; }
     footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
@@ -135,6 +137,8 @@
     [data-theme="dark"] .type-koscielne { background: #1F1208; color: #D4955A; }
     [data-theme="dark"] .type-nieoficjalne { background: var(--tag-bg); color: var(--muted); }
     [data-theme="dark"] .type-miedzynarodowe { background: #0D1F10; color: #7BC87F; }
+    [data-theme="dark"] .type-historyczne { background: #241512; color: #C98F84; }
+    [data-theme="dark"] .type-branzowe { background: #1B1826; color: #A99BD9; }
     [data-theme="dark"] input[type=date], [data-theme="dark"] input[type=text],
     [data-theme="dark"] input[type=number], [data-theme="dark"] select {
       background: var(--surface); color: var(--text); border-color: var(--border); color-scheme: dark;
@@ -203,6 +207,8 @@
     <button class="filter-btn" onclick="filterType('koscielne',this)">Kościelne</button>
     <button class="filter-btn" onclick="filterType('miedzynarodowe',this)">Międzynarodowe</button>
     <button class="filter-btn" onclick="filterType('nieoficjalne',this)">Tradycyjne i okolicznościowe</button>
+    <button class="filter-btn" onclick="filterType('historyczne',this)">Historyczne</button>
+    <button class="filter-btn" onclick="filterType('branzowe',this)">Branżowe</button>
   </div>
 
   <div class="holidays-list" id="holidaysList">
@@ -228,10 +234,10 @@
       <div class="holiday-name">Dzień Dziadka</div>
       <span class="holiday-type type-nieoficjalne">Tradycyjne i okolicznościowe</span><span class="holiday-arrow">›</span>
     </a>
-    <a href="swieto.html?id=dzien-celnika" class="holiday-row" data-type="miedzynarodowe">
-      <div class="holiday-date">25 sty</div><div class="holiday-dot" style="background:#3A6B3F"></div>
+    <a href="swieto.html?id=dzien-celnika" class="holiday-row" data-type="branzowe">
+      <div class="holiday-date">25 sty</div><div class="holiday-dot" style="background:#5B4E8C"></div>
       <div class="holiday-name">Dzień Celnika i Pracownika Służby Granicznej</div>
-      <span class="holiday-type type-miedzynarodowe">Branżowe</span><span class="holiday-arrow">›</span>
+      <span class="holiday-type type-branzowe">Branżowe</span><span class="holiday-arrow">›</span>
     </a>
 
     <div class="month-label" data-month="luty">Luty</div>
@@ -445,10 +451,10 @@
       <div class="holiday-name">Dzień Walki i Męczeństwa Wsi Polskiej</div>
       <span class="holiday-type type-panstwowe">Państwowe</span><span class="holiday-arrow">›</span>
     </a>
-    <a href="swieto.html?id=dzien-rybaka" class="holiday-row" data-type="nieoficjalne">
-      <div class="holiday-date">27 lip</div><div class="holiday-dot" style="background:#6B6864"></div>
+    <a href="swieto.html?id=dzien-rybaka" class="holiday-row" data-type="branzowe">
+      <div class="holiday-date">27 lip</div><div class="holiday-dot" style="background:#5B4E8C"></div>
       <div class="holiday-name">Dzień Rybaka</div>
-      <span class="holiday-type type-nieoficjalne">Tradycyjne i okolicznościowe</span><span class="holiday-arrow">›</span>
+      <span class="holiday-type type-branzowe">Branżowe</span><span class="holiday-arrow">›</span>
     </a>
 
     <div class="month-label" data-month="sierpień">Sierpień</div>
@@ -474,20 +480,20 @@
     </a>
 
     <div class="month-label" data-month="wrzesień">Wrzesień</div>
-    <a href="swieto.html?id=rocznica-1-wrzesnia" class="holiday-row" data-type="nieoficjalne">
-      <div class="holiday-date">1 wrz</div><div class="holiday-dot" style="background:#6B6864"></div>
+    <a href="swieto.html?id=rocznica-1-wrzesnia" class="holiday-row" data-type="historyczne">
+      <div class="holiday-date">1 wrz</div><div class="holiday-dot" style="background:#7A4A42"></div>
       <div class="holiday-name">Rocznica wybuchu II Wojny Światowej (1939)</div>
-      <span class="holiday-type type-nieoficjalne">Historyczne</span><span class="holiday-arrow">›</span>
+      <span class="holiday-type type-historyczne">Historyczne</span><span class="holiday-arrow">›</span>
     </a>
-    <a href="swieto.html?id=dzien-ratownika" class="holiday-row" data-type="nieoficjalne">
-      <div class="holiday-date">13 wrz</div><div class="holiday-dot" style="background:#6B6864"></div>
+    <a href="swieto.html?id=dzien-ratownika" class="holiday-row" data-type="branzowe">
+      <div class="holiday-date">13 wrz</div><div class="holiday-dot" style="background:#5B4E8C"></div>
       <div class="holiday-name">Dzień Ratownictwa Medycznego</div>
-      <span class="holiday-type type-nieoficjalne">Tradycyjne i okolicznościowe</span><span class="holiday-arrow">›</span>
+      <span class="holiday-type type-branzowe">Branżowe</span><span class="holiday-arrow">›</span>
     </a>
-    <a href="swieto.html?id=dzien-historii" class="holiday-row" data-type="nieoficjalne">
-      <div class="holiday-date">17 wrz</div><div class="holiday-dot" style="background:#6B6864"></div>
+    <a href="swieto.html?id=dzien-historii" class="holiday-row" data-type="historyczne">
+      <div class="holiday-date">17 wrz</div><div class="holiday-dot" style="background:#7A4A42"></div>
       <div class="holiday-name">Rocznica agresji ZSRR na Polskę (17 września 1939)</div>
-      <span class="holiday-type type-nieoficjalne">Historyczne</span><span class="holiday-arrow">›</span>
+      <span class="holiday-type type-historyczne">Historyczne</span><span class="holiday-arrow">›</span>
     </a>
     <a href="swieto.html?id=dzien-polskiego-panstwa-podziemnego" class="holiday-row" data-type="panstwowe">
       <div class="holiday-date">27 wrz</div><div class="holiday-dot" style="background:#3A5FA0"></div>
