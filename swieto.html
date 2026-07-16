@@ -393,7 +393,7 @@ const HOLIDAYS_DB = {
       'Sadzenie roślin i pierwsze prace ogrodowe',
       'Szkolne wycieczki i zajęcia w plenerze'
     ],
-    related: ['wielkanoc', 'dzien-ziemi', 'topienie-marzanny']
+    related: ['wielkanoc', 'dzien-ziemi', 'topienie-marzanny', 'dzien-lasow']
   },
   'wielkanoc': {
     name: 'Wielkanoc (Niedziela Wielkanocna)',
@@ -556,7 +556,7 @@ const HOLIDAYS_DB = {
       'Kartki, laurki i handmade prezenty od dzieci',
       'Wyjścia do restauracji i wspólne spędzanie czasu'
     ],
-    related: ['dzien-kobiet', 'dzien-dziecka', 'walentynki']
+    related: ['dzien-kobiet', 'dzien-dziecka', 'walentynki', 'dzien-rodzin']
   },
   'dzien-dziecka': {
     name: 'Dzień Dziecka',
@@ -579,7 +579,7 @@ const HOLIDAYS_DB = {
       'Rodzinne wyjścia do zoo, parku rozrywki, kina',
       'Konkursy i zawody sportowe dla dzieci'
     ],
-    related: ['dzien-matki', 'dzien-wiosny']
+    related: ['dzien-matki', 'dzien-wiosny', 'dzien-rodzin']
   },
   'wniebowstapienie': {
     name: 'Wniebowstąpienie Pańskie',
@@ -902,7 +902,7 @@ const HOLIDAYS_DB = {
       'Wspólne aktywności z ojcem — sport, spacery, wyjazdy',
       'Akademie i przedstawienia w szkołach ku czci tatusiów'
     ],
-    related: ['dzien-matki', 'dzien-dziecka', 'walentynki']
+    related: ['dzien-matki', 'dzien-dziecka', 'walentynki', 'dzien-rodzin']
   },
   'dzien-morza': {
     name: 'Dzień Morza',
@@ -925,7 +925,7 @@ const HOLIDAYS_DB = {
       'Uroczystości portowe w Gdańsku, Gdyni i Szczecinie',
       'Wystawy o historii polskiej floty i marynarki'
     ],
-    related: ['swieto-pracy', 'dzien-ziemi']
+    related: ['swieto-pracy', 'dzien-ziemi', 'dzien-oceanow']
   },
   'dzien-babci': {
     name: 'Dzień Babci',
@@ -1898,7 +1898,7 @@ const HOLIDAYS_DB = {
       'Konkursy na najładniejszą Marzannę w szkołach i przedszkolach',
       'Śpiewanie tradycyjnych pieśni pożegnania zimy'
     ],
-    related: ['dzien-wiosny', 'wielkanoc']
+    related: ['dzien-wiosny', 'wielkanoc', 'dzien-lasow']
   },
   'dzien-handlowca': {
     name: 'Dzień Handlowca',
@@ -2622,7 +2622,7 @@ const HOLIDAYS_DB = {
       'Wydarzenia organizowane przez izby lekarsko-weterynaryjne',
       'Wyróżnienia dla zasłużonych lekarzy weterynarii'
     ],
-    related: []
+    related: ['dzien-zwierzat']
   },
   'dzien-bibliotekarza': {
     name: 'Dzień Bibliotekarza i Bibliotek',
@@ -2908,7 +2908,7 @@ const HOLIDAYS_DB = {
       'Spotkania środowisk rybackich',
       'Kampanie informacyjne o odpowiedzialnej konsumpcji ryb'
     ],
-    related: ['dzien-rybaka', 'dzien-morza']
+    related: ['dzien-rybaka', 'dzien-morza', 'dzien-oceanow']
   },
   'dzien-ratownika-wopr': {
     name: 'Dzień Ratownika WOPR',
@@ -3281,6 +3281,282 @@ const HOLIDAYS_DB = {
       'Posterunek honorowy przy Belwederze',
       'Defilada pododdziałów w uczelniach wojskowych',
       'Uroczystości w Wojskowej Akademii Technicznej i innych szkołach oficerskich'
+    ],
+    related: []
+  },
+  'dzien-jezyka-ojczystego': {
+    name: 'Międzynarodowy Dzień Języka Ojczystego',
+    date: '21 lutego',
+    emoji: '🗣️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony przez UNESCO na 30. Sesji Konferencji Generalnej 17 listopada 1999 r.',
+    observed: 'Ponad 190 państw świata',
+    desc: [
+      'Międzynarodowy Dzień Języka Ojczystego obchodzony jest 21 lutego — ustanowiony przez UNESCO podczas 30. Sesji Konferencji Generalnej 17 listopada 1999 roku, z inicjatywy Bangladeszu.',
+      'Data upamiętnia wydarzenia z 21 lutego 1952 roku w Dhace (dzisiejsza stolica Bangladeszu), gdy podczas pokojowej demonstracji zginęło pięciu studentów domagających się nadania językowi bengalskiemu statusu jednego z języków urzędowych ówczesnego Pakistanu Wschodniego.',
+      'Celem święta jest promowanie wielojęzyczności i różnorodności językowej oraz zwrócenie uwagi na problem wymierania języków — według UNESCO co najmniej połowa z ok. 7 tysięcy języków świata może zniknąć do końca obecnego stulecia.'
+    ],
+    traditions: [
+      'Wydarzenia edukacyjne o różnorodności językowej w szkołach i bibliotekach',
+      'Kampanie UNESCO promujące wielojęzyczną edukację',
+      'Konferencje językoznawcze i debaty o ochronie języków zagrożonych',
+      'Publikacje o historii i pochodzeniu języka polskiego'
+    ],
+    related: []
+  },
+  'dzien-walki-z-depresja': {
+    name: 'Międzynarodowy Dzień Walki z Depresją',
+    date: '23 lutego',
+    emoji: '🧠',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'W Polsce jako Ogólnopolski Dzień Walki z Depresją ustanowiony przez Ministra Zdrowia w 2001 r.',
+    observed: 'Polska',
+    desc: [
+      'Międzynarodowy (w Polsce: Ogólnopolski) Dzień Walki z Depresją obchodzony jest 23 lutego. W Polsce święto ustanowił w 2001 roku Minister Zdrowia, w odpowiedzi na rosnącą skalę zachorowań na depresję i potrzebę odczarowania tematu zdrowia psychicznego.',
+      'Głównym celem obchodów jest wsparcie osób chorujących na depresję i ich rodzin, motywowanie do podjęcia leczenia oraz wskazywanie, gdzie szukać pomocy — a także upowszechnianie rzetelnej wiedzy o chorobie wśród ogółu społeczeństwa.',
+      'Depresja pozostaje jedną z najczęstszych chorób cywilizacyjnych — według Światowej Organizacji Zdrowia dotyka setek milionów ludzi na całym świecie, a wciąż zbyt często pozostaje nierozpoznana lub nieleczona z powodu stygmatyzacji.'
+    ],
+    traditions: [
+      'Kampanie edukacyjne o objawach i leczeniu depresji',
+      'Bezpłatne konsultacje i infolinie wsparcia psychologicznego',
+      'Konferencje i wykłady specjalistów zdrowia psychicznego',
+      'Publikacje i akcje społeczne przełamujące tabu wokół depresji'
+    ],
+    related: []
+  },
+  'dzien-praw-konsumenta': {
+    name: 'Światowy Dzień Praw Konsumenta',
+    date: '15 marca',
+    emoji: '🛍️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Upamiętnia przemówienie prezydenta USA Johna F. Kennedy’ego z 15 marca 1962 r.; ogłoszony przez Consumers International w 1983 r.',
+    observed: 'Ponad 100 państw świata',
+    desc: [
+      'Światowy Dzień Praw Konsumenta obchodzony jest 15 marca — data upamiętnia przemówienie prezydenta USA Johna F. Kennedy’ego przed Kongresem 15 marca 1962 roku, w którym sformułował on cztery podstawowe prawa konsumentów: do informacji, do wyboru, do bezpieczeństwa i do reprezentacji.',
+      'Święto zostało oficjalnie ogłoszone w 1983 roku przez Consumers International — międzynarodową organizację zrzeszającą stowarzyszenia konsumenckie z całego świata.',
+      'Każdego roku obchodom towarzyszy inny temat przewodni, zwracający uwagę na aktualne wyzwania rynku — od bezpieczeństwa produktów, przez ochronę danych, po sprawiedliwość cyfrową i zrównoważoną konsumpcję.'
+    ],
+    traditions: [
+      'Kampanie informacyjne organizacji i rzeczników praw konsumentów',
+      'Bezpłatne porady konsumenckie i prawne',
+      'Konferencje i debaty o prawach konsumentów',
+      'Publikacje podsumowujące aktualne zagrożenia dla konsumentów'
+    ],
+    related: []
+  },
+  'dzien-lasow': {
+    name: 'Międzynarodowy Dzień Lasów',
+    date: '21 marca',
+    emoji: '🌲',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony przez Zgromadzenie Ogólne ONZ 28 listopada 2012 r.',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Lasów obchodzony jest 21 marca — ustanowiony przez Zgromadzenie Ogólne ONZ 28 listopada 2012 roku, z inicjatywy Kolaboracyjnego Partnerstwa ds. Lasów.',
+      'Celem święta jest zwrócenie uwagi na kluczową rolę lasów i drzew dla klimatu, różnorodności biologicznej oraz gospodarki — lasy pokrywają ok. jednej trzeciej powierzchni lądowej Ziemi i są domem dla większości gatunków lądowych.',
+      'Każdego roku obchody koncentrują się wokół innego hasła przewodniego, ustalanego przez Kolaboracyjne Partnerstwo ds. Lasów, dotyczącego np. lasów i innowacji, lasów i zdrowia czy zrównoważonej gospodarki leśnej.'
+    ],
+    traditions: [
+      'Sadzenie drzew i akcje zalesiania',
+      'Edukacja leśna organizowana przez Lasy Państwowe i szkoły',
+      'Wystawy i wydarzenia poświęcone ochronie lasów',
+      'Kampanie o zrównoważonej gospodarce leśnej'
+    ],
+    related: [
+      'dzien-wiosny',
+      'topienie-marzanny'
+    ]
+  },
+  'dzien-wody': {
+    name: 'Światowy Dzień Wody',
+    date: '22 marca',
+    emoji: '💧',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ z 22 grudnia 1992 r., w następstwie Szczytu Ziemi w Rio de Janeiro; pierwsze obchody w 1993 r.',
+    observed: 'Świat',
+    desc: [
+      'Światowy Dzień Wody obchodzony jest 22 marca — ustanowiony rezolucją Zgromadzenia Ogólnego ONZ z 22 grudnia 1992 roku, w ramach Agendy 21 przyjętej podczas Szczytu Ziemi (UNCED) w Rio de Janeiro w czerwcu 1992 roku. Pierwsze obchody odbyły się w 1993 roku.',
+      'Święto zwraca uwagę na znaczenie dostępu do czystej wody pitnej i zrównoważonej gospodarki zasobami wodnymi — problem dotykający wciąż setki milionów ludzi na świecie pozbawionych bezpiecznej wody.',
+      'Każdego roku obchodom towarzyszy inne hasło przewodnie, powiązane z aktualnym raportem ONZ o gospodarce wodnej na świecie.'
+    ],
+    traditions: [
+      'Kampanie edukacyjne o oszczędzaniu wody',
+      'Wydarzenia organizowane przez przedsiębiorstwa wodociągowe',
+      'Publikacja Światowego Raportu ONZ o Gospodarce Wodnej',
+      'Akcje sprzątania rzek, jezior i zbiorników wodnych'
+    ],
+    related: []
+  },
+  'dzien-zdrowia': {
+    name: 'Światowy Dzień Zdrowia',
+    date: '7 kwietnia',
+    emoji: '🏥',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony przez Światową Organizację Zdrowia (WHO) w 1948 r.; obchodzony od 1950 r.',
+    observed: 'Świat (państwa członkowskie WHO)',
+    desc: [
+      'Światowy Dzień Zdrowia obchodzony jest 7 kwietnia — w rocznicę powstania Światowej Organizacji Zdrowia (WHO) w 1948 roku. Pierwsze obchody odbyły się w 1950 roku i od tego czasu święto jest celebrowane corocznie.',
+      'Każdego roku obchodom towarzyszy inne hasło przewodnie, zwracające uwagę na najbardziej palące i zaniedbane problemy zdrowotne świata — od chorób zakaźnych, przez zdrowie psychiczne, po dostęp do opieki zdrowotnej w krajach rozwijających się.',
+      'Światowy Dzień Zdrowia inicjuje też Miesiąc Zdrowia oraz cykl działań edukacyjnych i profilaktycznych realizowanych pod tym samym hasłem przez WHO i jej biura regionalne na całym świecie.'
+    ],
+    traditions: [
+      'Kampanie edukacyjne WHO pod corocznym hasłem przewodnim',
+      'Bezpłatne badania profilaktyczne i dni otwarte w placówkach zdrowia',
+      'Konferencje i debaty o wyzwaniach zdrowia publicznego',
+      'Publikacje podsumowujące stan zdrowia społeczeństw'
+    ],
+    related: []
+  },
+  'dzien-rodzin': {
+    name: 'Międzynarodowy Dzień Rodzin',
+    date: '15 maja',
+    emoji: '👨‍👩‍👧‍👦',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ nr 47/237 z grudnia 1993 r.; pierwsze obchody w 1994 r.',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Rodzin obchodzony jest 15 maja — ustanowiony rezolucją Zgromadzenia Ogólnego ONZ nr 47/237 z grudnia 1993 roku, jako kontynuacja obchodzonego w 1994 roku Międzynarodowego Roku Rodziny.',
+      'Celem święta jest zwiększenie świadomości społecznej na temat roli rodziny w rozwoju ekonomicznym i społecznym oraz wyzwań, przed jakimi stoją współczesne rodziny na całym świecie.',
+      'Każdego roku obchodom towarzyszy inne hasło przewodnie, dotyczące np. równowagi między pracą a życiem rodzinnym, ubóstwa rodzin czy wpływu zmian demograficznych i technologicznych na życie rodzinne.'
+    ],
+    traditions: [
+      'Kampanie ONZ i organizacji pozarządowych o wartości rodziny',
+      'Konferencje i debaty o polityce rodzinnej',
+      'Wydarzenia lokalne promujące spędzanie czasu z rodziną',
+      'Publikacje o wyzwaniach współczesnych rodzin'
+    ],
+    related: [
+      'dzien-matki',
+      'dzien-ojca',
+      'dzien-dziecka'
+    ]
+  },
+  'dzien-oceanow': {
+    name: 'Światowy Dzień Oceanów',
+    date: '8 czerwca',
+    emoji: '🌊',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Zaproponowany w 1992 r. podczas Szczytu Ziemi w Rio de Janeiro; oficjalnie ustanowiony przez Zgromadzenie Ogólne ONZ w grudniu 2008 r.',
+    observed: 'Świat',
+    desc: [
+      'Światowy Dzień Oceanów obchodzony jest 8 czerwca. Ideę święta zaproponowały w 1992 roku podczas Szczytu Ziemi (UNCED) w Rio de Janeiro Międzynarodowe Centrum Rozwoju Oceanów (ICOD) oraz Instytut Oceaniczny Kanady (OIC).',
+      'Oficjalnie Zgromadzenie Ogólne ONZ uznało 8 czerwca Światowym Dniem Oceanów dopiero w grudniu 2008 roku, po wieloletniej kampanii organizacji pozarządowych The Ocean Project i World Ocean Network.',
+      'Celem święta jest podnoszenie świadomości o kluczowej roli oceanów dla klimatu i życia na Ziemi oraz o zagrożeniach związanych z ich zanieczyszczeniem, zakwaszeniem i nadmierną eksploatacją zasobów.'
+    ],
+    traditions: [
+      'Akcje sprzątania plaż i wybrzeży',
+      'Kampanie edukacyjne o ochronie mórz i oceanów',
+      'Wydarzenia organizowane przez akwaria i muzea morskie',
+      'Publikacje o zagrożeniach dla ekosystemów morskich'
+    ],
+    related: [
+      'dzien-morza',
+      'dzien-rybolowstwa'
+    ]
+  },
+  'dzien-krwiodawcy': {
+    name: 'Światowy Dzień Krwiodawcy',
+    date: '14 czerwca',
+    emoji: '🩸',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony przez Światowe Zgromadzenie Zdrowia (WHO) w 2005 r.; data to rocznica urodzin Karla Landsteinera (1868)',
+    observed: 'Świat',
+    desc: [
+      'Światowy Dzień Krwiodawcy obchodzony jest 14 czerwca — w rocznicę urodzin Karla Landsteinera (14 czerwca 1868 roku), austriackiego lekarza, który w 1901 roku odkrył grupy krwi, za co w 1930 roku otrzymał Nagrodę Nobla.',
+      'Święto ustanowiło w 2005 roku Światowe Zgromadzenie Zdrowia — najwyższy organ decyzyjny Światowej Organizacji Zdrowia (WHO) — jako coroczne, cykliczne wydarzenie.',
+      'Dzień ten jest okazją do podziękowania honorowym dawcom krwi za bezinteresowną pomoc oraz do zwrócenia uwagi na stałe zapotrzebowanie na krew w placówkach medycznych na całym świecie.'
+    ],
+    traditions: [
+      'Akcje honorowego oddawania krwi',
+      'Podziękowania i wyróżnienia dla zasłużonych krwiodawców',
+      'Kampanie edukacyjne o znaczeniu regularnego oddawania krwi',
+      'Wydarzenia organizowane przez centra krwiodawstwa i PCK'
+    ],
+    related: []
+  },
+  'dzien-muzyki': {
+    name: 'Światowy Dzień Muzyki',
+    date: '1 października',
+    emoji: '🎵',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Zainicjowany w 1975 r. przez Yehudiego Menuhina, prezydenta Międzynarodowej Rady Muzyki (IMC) działającej pod egidą UNESCO',
+    observed: 'Świat',
+    desc: [
+      'Światowy (Międzynarodowy) Dzień Muzyki obchodzony jest 1 października — zainicjowany w 1975 roku przez Yehudiego Menuhina (1916–1999), światowej sławy skrzypka i dyrygenta, ówczesnego prezydenta Międzynarodowej Rady Muzyki (International Music Council, IMC), organizacji powołanej przez UNESCO.',
+      'Menuhin pragnął, by muzyka była postrzegana jako uniwersalny język łączący ludzi ponad podziałami kulturowymi i społecznymi, a muzycy — jako twórcy dobra wspólnego ludzkości.',
+      'Święto obchodzone jest koncertami, warsztatami i wydarzeniami edukacyjnymi organizowanymi przez szkoły muzyczne, filharmonie i instytucje kultury na całym świecie.'
+    ],
+    traditions: [
+      'Koncerty i festiwale muzyczne',
+      'Dni otwarte w szkołach i filharmoniach muzycznych',
+      'Warsztaty i lekcje pokazowe dla dzieci i młodzieży',
+      'Wydarzenia promujące różnorodność gatunków muzycznych'
+    ],
+    related: []
+  },
+  'dzien-zwierzat': {
+    name: 'Światowy Dzień Zwierząt',
+    date: '4 października',
+    emoji: '🐾',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Obchodzony od 1931 r., ustanowiony na kongresie ekologów we Florencji; data to wspomnienie liturgiczne św. Franciszka z Asyżu, patrona zwierząt',
+    observed: 'Świat',
+    desc: [
+      'Światowy Dzień Zwierząt obchodzony jest 4 października — w dniu liturgicznego wspomnienia św. Franciszka z Asyżu, patrona zwierząt, przyrody i ekologii, znanego z głoszenia braterstwa człowieka ze wszystkimi istotami żywymi.',
+      'Święto obchodzone jest nieprzerwanie od 1931 roku, gdy ustanowiono je podczas międzynarodowego kongresu ekologów we Florencji, jako wyraz troski o ochronę zwierząt i ich dobrostan.',
+      'Dzień ten jest okazją do zwrócenia uwagi na prawa zwierząt, warunki ich życia w hodowli i niewoli oraz ochronę gatunków zagrożonych wyginięciem — na całym świecie organizowane są zbiórki, adopcje i kampanie edukacyjne.'
+    ],
+    traditions: [
+      'Dni otwarte w schroniskach dla zwierząt i zoo',
+      'Akcje adopcyjne i zbiórki dla schronisk',
+      'Kampanie edukacyjne o prawach i dobrostanie zwierząt',
+      'Wydarzenia organizowane przez organizacje prozwierzęce'
+    ],
+    related: [
+      'dzien-weterynarii'
+    ]
+  },
+  'dzien-tolerancji': {
+    name: 'Międzynarodowy Dzień Tolerancji',
+    date: '16 listopada',
+    emoji: '🕊️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ nr 51/95 z 12 grudnia 1995 r., z inicjatywy UNESCO',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Tolerancji obchodzony jest 16 listopada — w rocznicę przyjęcia przez państwa członkowskie UNESCO 16 listopada 1995 roku Deklaracji Zasad Tolerancji, definiującej tolerancję jako szacunek, akceptację i docenianie różnorodności kultur i sposobów bycia ludzi.',
+      'Formalnie święto ustanowiło Zgromadzenie Ogólne ONZ rezolucją nr 51/95 z 12 grudnia 1995 roku, w nawiązaniu do ogłoszonego wcześniej przez UNESCO Międzynarodowego Roku Tolerancji (1995).',
+      'Inicjatywa powstała w odpowiedzi na narastające zjawiska nietolerancji, przemocy, nacjonalizmu, rasizmu i antysemityzmu, którym towarzyszy marginalizacja i dyskryminacja mniejszości na całym świecie.'
+    ],
+    traditions: [
+      'Konferencje i debaty o tolerancji i prawach człowieka',
+      'Kampanie edukacyjne w szkołach przeciw dyskryminacji',
+      'Wydarzenia kulturalne promujące różnorodność',
+      'Publikacje UNESCO podsumowujące stan tolerancji na świecie'
     ],
     related: []
   }
