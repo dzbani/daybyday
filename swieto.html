@@ -371,7 +371,7 @@ const HOLIDAYS_DB = {
       'Akcje społeczne i kampanie dotyczące praw kobiet',
       'Organizowanie wydarzeń i konferencji poświęconych kobietom'
     ],
-    related: ['walentynki', 'dzien-matki']
+    related: ['walentynki', 'dzien-matki', 'dzien-eliminacji-przemocy']
   },
   'dzien-wiosny': {
     name: 'Dzień Wagarowicza / Pierwszy Dzień Wiosny',
@@ -579,7 +579,7 @@ const HOLIDAYS_DB = {
       'Rodzinne wyjścia do zoo, parku rozrywki, kina',
       'Konkursy i zawody sportowe dla dzieci'
     ],
-    related: ['dzien-matki', 'dzien-wiosny', 'dzien-rodzin']
+    related: ['dzien-matki', 'dzien-wiosny', 'dzien-rodzin', 'powszechny-dzien-dziecka']
   },
   'wniebowstapienie': {
     name: 'Wniebowstąpienie Pańskie',
@@ -3417,7 +3417,7 @@ const HOLIDAYS_DB = {
       'Konferencje i debaty o wyzwaniach zdrowia publicznego',
       'Publikacje podsumowujące stan zdrowia społeczeństw'
     ],
-    related: []
+    related: ['dzien-aids']
   },
   'dzien-rodzin': {
     name: 'Międzynarodowy Dzień Rodzin',
@@ -3442,7 +3442,8 @@ const HOLIDAYS_DB = {
     related: [
       'dzien-matki',
       'dzien-ojca',
-      'dzien-dziecka'
+      'dzien-dziecka',
+      'powszechny-dzien-dziecka'
     ]
   },
   'dzien-oceanow': {
@@ -3490,7 +3491,7 @@ const HOLIDAYS_DB = {
       'Kampanie edukacyjne o znaczeniu regularnego oddawania krwi',
       'Wydarzenia organizowane przez centra krwiodawstwa i PCK'
     ],
-    related: []
+    related: ['dzien-aids']
   },
   'dzien-muzyki': {
     name: 'Światowy Dzień Muzyki',
@@ -3694,8 +3695,131 @@ const HOLIDAYS_DB = {
     ],
     related: [
       'dzien-tolerancji',
-      'dzien-pokoju'
+      'dzien-pokoju',
+      'dzien-pamieci-holokaustu'
     ]
+  },
+  'dzien-pamieci-holokaustu': {
+    name: 'Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu',
+    date: '27 stycznia',
+    emoji: '🕯️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ z 1 listopada 2005 r.; data to rocznica wyzwolenia obozu Auschwitz-Birkenau 27 stycznia 1945 r.',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu obchodzony jest 27 stycznia — ustanowiony rezolucją Zgromadzenia Ogólnego ONZ z 1 listopada 2005 roku. Data upamiętnia wyzwolenie niemieckiego nazistowskiego obozu koncentracyjnego i zagłady Auschwitz-Birkenau przez żołnierzy Armii Czerwonej 27 stycznia 1945 roku, podczas którego uwolniono ok. 7 tysięcy więźniów, w tym ok. 500 dzieci.',
+      'Święto ma na celu zachowanie pamięci o ok. 6 milionach Żydów oraz milionach innych ofiar zamordowanych podczas Holokaustu, a także przeciwdziałanie negowaniu i zniekształcaniu historii Zagłady oraz współczesnym przejawom antysemityzmu i nietolerancji.',
+      'Główne uroczystości państwowe i międzynarodowe odbywają się corocznie na terenie Miejsca Pamięci Auschwitz-Birkenau w Polsce, z udziałem ocalałych świadków historii, przedstawicieli rządów i organizacji międzynarodowych.'
+    ],
+    traditions: [
+      'Centralne uroczystości na terenie byłego obozu Auschwitz-Birkenau',
+      'Spotkania z ocalałymi świadkami Holokaustu',
+      'Zapalanie zniczy i minuta ciszy w intencji ofiar',
+      'Wydarzenia edukacyjne o historii Zagłady w szkołach i muzeach'
+    ],
+    related: [
+      'dzien-tolerancji',
+      'dzien-praw-czlowieka'
+    ]
+  },
+  'dzien-eliminacji-przemocy': {
+    name: 'Międzynarodowy Dzień Eliminacji Przemocy wobec Kobiet',
+    date: '25 listopada',
+    emoji: '🎗️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony przez Zgromadzenie Ogólne ONZ w 1999 r.; data upamiętnia zamordowanie sióstr Mirabal w Dominikanie w 1960 r.',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Eliminacji Przemocy wobec Kobiet obchodzony jest 25 listopada — oficjalnie ustanowiony przez Zgromadzenie Ogólne ONZ w 1999 roku, choć jako nieformalny dzień pamięci obchodzony był już od 1981 roku z inicjatywy działaczek z Latynoamerykańskich i Karaibskich Spotkań Feministycznych (Encuentros).',
+      'Data upamiętnia zamordowanie 25 listopada 1960 roku trzech sióstr Mirabal — Patrii, Minervy i Marii Teresy — dominikańskich działaczek opozycyjnych wobec dyktatury Rafaela Trujillo, znanych w podziemiu jako „Motyle" (Las Mariposas), które stały się symbolem oporu wobec przemocy politycznej i przemocy wobec kobiet.',
+      'Dzień ten otwiera coroczną, trwającą do 10 grudnia (Dnia Praw Człowieka) kampanię „16 dni akcji przeciwko przemocy ze względu na płeć", organizowaną na całym świecie przez ONZ i organizacje pozarządowe.'
+    ],
+    traditions: [
+      'Kampania „16 dni akcji przeciwko przemocy ze względu na płeć"',
+      'Wydarzenia i marsze solidarności z ofiarami przemocy',
+      'Kampanie edukacyjne o przeciwdziałaniu przemocy wobec kobiet',
+      'Iluminacje budynków na pomarańczowo — kolor kampanii ONZ'
+    ],
+    related: [
+      'dzien-kobiet',
+      'dzien-tolerancji'
+    ]
+  },
+  'powszechny-dzien-dziecka': {
+    name: 'Powszechny Dzień Dziecka',
+    date: '20 listopada',
+    emoji: '🧒',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Zalecony rezolucją Zgromadzenia Ogólnego ONZ 838 (IX) z 1954 r.; data upamiętnia też przyjęcie Deklaracji Praw Dziecka (1959) i Konwencji o Prawach Dziecka (1989)',
+    observed: 'Świat',
+    desc: [
+      'Powszechny Dzień Dziecka (ang. Universal Children\'s Day) obchodzony jest 20 listopada — zalecony przez Zgromadzenie Ogólne ONZ rezolucją 838 (IX) z 1954 roku jako dzień promujący braterstwo i wzajemne zrozumienie między dziećmi całego świata oraz działania na rzecz ich dobrobytu.',
+      'Data 20 listopada zyskała dodatkowe znaczenie, gdy Zgromadzenie Ogólne ONZ przyjęło tego dnia w 1959 roku Deklarację Praw Dziecka, a trzydzieści lat później, w 1989 roku — Konwencję o Prawach Dziecka, najszerzej ratyfikowany traktat praw człowieka w historii.',
+      'To święto ONZ jest odrębne od polskiego Dnia Dziecka obchodzonego 1 czerwca — data 1 czerwca ma rodowód sowiecki/blokowy i nie jest oficjalnie ustanowioną datą ONZ, choć obie daty łączy wspólny cel: zwrócenie uwagi na prawa i dobrostan dzieci.'
+    ],
+    traditions: [
+      'Wydarzenia edukacyjne o prawach dziecka organizowane przez UNICEF',
+      'Kampanie „dzieci przejmują władzę" — symboliczne objęcie stanowisk publicznych',
+      'Debaty i konferencje o ochronie praw dziecka na świecie',
+      'Publikacje podsumowujące stan przestrzegania Konwencji o Prawach Dziecka'
+    ],
+    related: [
+      'dzien-dziecka',
+      'dzien-rodzin'
+    ]
+  },
+  'dzien-aids': {
+    name: 'Światowy Dzień AIDS',
+    date: '1 grudnia',
+    emoji: '🎗️',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony z inicjatywy Światowej Organizacji Zdrowia (WHO) w 1988 r.; potwierdzony rezolucją Zgromadzenia Ogólnego ONZ 43/15 z 1988 r.',
+    observed: 'Świat',
+    desc: [
+      'Światowy Dzień AIDS obchodzony jest 1 grudnia — po raz pierwszy zorganizowany w 1988 roku z inicjatywy Światowej Organizacji Zdrowia (WHO), a jego znaczenie potwierdziła rezolucja Zgromadzenia Ogólnego ONZ 43/15 z tego samego roku, wyrażająca zaniepokojenie skalą pandemii HIV/AIDS.',
+      'Symbolem solidarności z osobami żyjącymi z HIV i chorymi na AIDS jest czerwona wstążka — stworzona w 1991 roku przez nowojorską grupę artystyczną Visual AIDS Artists Caucus, a więc kilka lat po ustanowieniu samego święta.',
+      'Tego dnia na całym świecie organizowane są konferencje, akcje edukacyjne i wydarzenia kulturalne poświęcone profilaktyce HIV/AIDS, wsparciu dla osób chorych oraz walce ze stygmatyzacją związaną z zakażeniem.'
+    ],
+    traditions: [
+      'Noszenie czerwonej wstążki jako symbolu solidarności',
+      'Bezpłatne testy na HIV organizowane przez placówki medyczne',
+      'Kampanie edukacyjne o profilaktyce HIV/AIDS',
+      'Iluminacje budynków na czerwono, wydarzenia kulturalne i charytatywne'
+    ],
+    related: [
+      'dzien-krwiodawcy',
+      'dzien-zdrowia'
+    ]
+  },
+  'dzien-osob-niepelnosprawnych': {
+    name: 'Międzynarodowy Dzień Osób z Niepełnosprawnościami',
+    date: '3 grudnia',
+    emoji: '♿',
+    type: 'cultural',
+    typeLabel: 'Dzień tematyczny',
+    dayOff: false,
+    origin: 'Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ 47/3 z 1992 r., na zakończenie Dekady Osób Niepełnosprawnych ONZ (1983–1992)',
+    observed: 'Świat',
+    desc: [
+      'Międzynarodowy Dzień Osób z Niepełnosprawnościami obchodzony jest 3 grudnia — ustanowiony rezolucją Zgromadzenia Ogólnego ONZ 47/3 z 1992 roku, na zakończenie trwającej dekadę (1983–1992) Dekady Osób Niepełnosprawnych ONZ.',
+      'Celem święta jest promowanie zrozumienia problemów, z jakimi mierzą się osoby z niepełnosprawnościami, oraz wspieranie ich godności, praw i pełnego uczestnictwa w życiu społecznym, politycznym, gospodarczym i kulturalnym na równi z innymi obywatelami.',
+      'Każdego roku obchodom towarzyszy inne hasło przewodnie, ustalane przez ONZ, dotyczące np. dostępności przestrzeni publicznej, zatrudnienia osób z niepełnosprawnościami czy nowych technologii wspomagających.'
+    ],
+    traditions: [
+      'Konferencje i debaty o prawach osób z niepełnosprawnościami',
+      'Kampanie o dostępności przestrzeni publicznej i cyfrowej',
+      'Wydarzenia integracyjne organizowane przez PFRON i organizacje pozarządowe',
+      'Wyróżnienia dla osób i instytucji działających na rzecz integracji'
+    ],
+    related: []
   }
 };
 
