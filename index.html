@@ -512,6 +512,7 @@
   <p class="footer-copy">&copy; 2026 daybyday.today</p>
 </footer>
 
+<script src="swieta_data.js"></script>
 <script>
 // ── Dane: imieniny ────────────────────────────────────────────
 const NAMES=
@@ -4305,17 +4306,16 @@ function getMoonRiseSet(year,month,day,lat,lon){
     hlEl.insertBefore(el, hlEl.firstChild);
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
-  const allUpcoming=[...PUBLIC_HOLIDAYS,...MOVABLE,...NAMED_DAYS].map(([dd,mm,name])=>{
+  const allUpcoming=SWIETA_DATA.filter(([,,name,,type])=>!type.split(' ').includes('branzowe') && name!=='Święto Wojska Polskiego').map(([dd,mm,name,slug])=>{
     let dt=new Date(y,mm-1,dd);
     if(dt.getTime()<TODAY_MS)dt=new Date(y+1,mm-1,dd);
     const diff=Math.round((dt.getTime()-TODAY_MS)/86400000);
-    return{name,dt,diff};
+    return{name,dt,diff,slug};
   }).filter(x=>x.diff>0).sort((a,b)=>a.diff-b.diff).slice(0,6);
 
   const ul=document.getElementById('upcomingList');
-  allUpcoming.forEach(({name,dt,diff})=>{
+  allUpcoming.forEach(({name,dt,diff,slug})=>{
     const d=dt.getDate(),m=dt.getMonth()+1,y=dt.getFullYear();
-    const slug=EVENT_SLUG[name];
     const EMOJI={'Nowy Rok':'🎆','Trzech Króli':'⭐','Tłusty Czwartek':'🍩','Walentynki':'❤️','Dzień Kobiet':'🌷','Dzień Wiosny':'🌸','Wielkanoc':'🐣','Poniedziałek Wielkanocny':'🐣','Święto Pracy':'⚒️','Święto Konstytucji 3 Maja':'🇵🇱','Dzień Matki':'💐','Zielone Świątki':'🕊️','Dzień Dziecka':'🎈','Boże Ciało':'✝️','Przesilenie letnie':'☀️','Wniebowzięcie NMP':'🕊️','Wszyscy Świętych':'🕯️','Wszystkich Świętych':'🕯️','Halloween':'🎃','Dzień Niepodległości':'🇵🇱','Święto Niepodległości':'🇵🇱','Narodowy Dzień Pamięci Powstania Warszawskiego':'🏛️','Powstanie Warszawskie':'🏛️','Dzień Zaduszny':'🕯️','Andrzejki':'🔮','Mikołajki':'🎅','Niepokalane Poczęcie NMP':'✝️','Przesilenie zimowe':'❄️','Wigilia':'🎄','Boże Narodzenie':'🎄','Drugi dzień Bożego Narodzenia':'🎄','Sylwester':'🎆','Dzień Ojca':'👨'};
     const em=EMOJI[name]||'📅';
     const meta=diff===0?`dzisiaj — ${d} ${MONTH_GEN[m]}`:`za ${diff} ${diff===1?'dzień':'dni'} — ${d} ${MONTH_GEN[m]}`;
