@@ -81,13 +81,15 @@
     .footer-links { display:flex; gap:1.5rem; }
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .nav-links{display:none} .topnav{padding:0 12px} }
-    .location-search { display:flex; gap:.5rem; margin-bottom:2rem; }
-    .location-input { flex:1; padding:.45rem 1rem; border:1px solid var(--border); border-radius:60px; font-size:.85rem; font-family:inherit; background:var(--surface); color:var(--text); outline:none; transition:border-color .15s; }
+    .location-search { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2rem; }
+    .location-input { flex:1; min-width:180px; padding:.45rem 1rem; border:1px solid var(--border); border-radius:60px; font-size:.85rem; font-family:inherit; background:var(--surface); color:var(--text); outline:none; transition:border-color .15s; }
     .location-input:focus { border-color:var(--text); }
     .location-input::placeholder { color:var(--muted); }
     .location-btn { padding:.45rem 1.2rem; background:var(--text); color:white; border:none; border-radius:60px; font-size:.82rem; font-weight:500; font-family:inherit; cursor:pointer; transition:opacity .15s; white-space:nowrap; }
     .location-btn:hover { opacity:.8; }
     .location-btn:disabled { opacity:.5; cursor:default; }
+    .location-btn.secondary { background:var(--surface); color:var(--text); border:1px solid var(--border); }
+    .location-btn.secondary:hover { opacity:1; background:var(--tag-bg); }
     .location-status { font-size:.78rem; color:var(--muted); margin-top:-.5rem; margin-bottom:1.5rem; min-height:1.2em; }
 
     body{animation:pageIn .28s ease both}
@@ -135,6 +137,7 @@
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
     [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98) !important; }
     [data-theme="dark"] .location-btn { color: var(--bg); }
+    [data-theme="dark"] .location-btn.secondary { color: var(--text); }
     [data-theme="dark"] .city-tab.active, [data-theme="dark"] .city-tab:hover { color: var(--bg); }
     [data-theme="dark"] .month-tab.active, [data-theme="dark"] .month-tab:hover { color: var(--bg); }
     [data-theme="dark"] .date-hero { background: linear-gradient(135deg, #1B1A18 60%, #211E1A 100%) !important; }
@@ -218,6 +221,7 @@
   <div class="location-search">
     <input type="text" class="location-input" id="locationInput" placeholder="Wpisz nazwę miejscowości, np. Zakopane, Kielce, Sandomierz…" />
     <button class="location-btn" id="locationBtn" onclick="searchLocation()">Szukaj</button>
+    <button class="location-btn secondary" id="geoBtn" onclick="useMyLocation(false)" title="Ustaw moją lokalizację jako domyślną">📍 Moja lokalizacja</button>
   </div>
   <div class="location-status" id="locationStatus"></div>
 
@@ -259,15 +263,23 @@
 
 <script>
 const CITIES = {
-  warszawa: { name:'Warszawa', lat:52.23, lon:21.01 },
-  krakow:   { name:'Kraków',   lat:50.06, lon:19.94 },
-  gdansk:   { name:'Gdańsk',   lat:54.35, lon:18.65 },
-  wroclaw:  { name:'Wrocław',  lat:51.11, lon:17.04 },
-  poznan:   { name:'Poznań',   lat:52.41, lon:16.93 },
-  katowice: { name:'Katowice', lat:50.26, lon:19.02 },
-  lodz:     { name:'Łódź',     lat:51.75, lon:19.46 },
-  lublin:   { name:'Lublin',   lat:51.25, lon:22.57 },
+  warszawa:   { name:'Warszawa',   lat:52.23, lon:21.01 },
+  krakow:     { name:'Kraków',     lat:50.06, lon:19.94 },
+  gdansk:     { name:'Gdańsk',     lat:54.35, lon:18.65 },
+  wroclaw:    { name:'Wrocław',    lat:51.11, lon:17.04 },
+  poznan:     { name:'Poznań',     lat:52.41, lon:16.93 },
+  katowice:   { name:'Katowice',   lat:50.26, lon:19.02 },
+  lodz:       { name:'Łódź',       lat:51.75, lon:19.46 },
+  lublin:     { name:'Lublin',     lat:51.25, lon:22.57 },
+  szczecin:   { name:'Szczecin',   lat:53.43, lon:14.55 },
+  bydgoszcz:  { name:'Bydgoszcz',  lat:53.12, lon:18.00 },
+  bialystok:  { name:'Białystok',  lat:53.13, lon:23.16 },
+  rzeszow:    { name:'Rzeszów',    lat:50.04, lon:21.99 },
 };
+
+const LOC_STORAGE_KEY = 'dbd-sun-location';
+function saveLocation(loc) { localStorage.setItem(LOC_STORAGE_KEY, JSON.stringify(loc)); }
+function loadSavedLocation() { try { return JSON.parse(localStorage.getItem(LOC_STORAGE_KEY)); } catch(e) { return null; } }
 
 const MONTHS_NOM = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
 const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
@@ -402,9 +414,40 @@ function selectCity(key) {
   document.querySelector('[data-city="'+key+'"]').classList.add('active');
   document.getElementById('locationStatus').textContent = '';
   const c = CITIES[key];
+  saveLocation({ key, name:c.name, lat:c.lat, lon:c.lon });
   renderToday(c);
   renderWeek(c);
   renderMonths(c);
+}
+
+function useMyLocation(silent) {
+  const status = document.getElementById('locationStatus');
+  const btn = document.getElementById('geoBtn');
+  if (!navigator.geolocation) {
+    if (!silent && status) status.textContent = 'Twoja przeglądarka nie obsługuje geolokalizacji.';
+    return;
+  }
+  if (!silent) { status.textContent = 'Szukam Twojej lokalizacji…'; if (btn) btn.disabled = true; }
+  navigator.geolocation.getCurrentPosition(
+    p => {
+      const c = { name:'Twoja lokalizacja', lat:p.coords.latitude, lon:p.coords.longitude };
+      document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
+      saveLocation({ key:null, name:c.name, lat:c.lat, lon:c.lon });
+      renderToday(c);
+      renderWeek(c);
+      renderMonths(c);
+      if (!silent) { status.textContent = 'Ustawiono Twoją lokalizację jako domyślną.'; btn.disabled = false; }
+    },
+    err => {
+      if (silent) return; // cichy pierwszy odczyt — bez komunikatu błędu, zostaje Warszawa
+      let msg = 'Nie udało się pobrać lokalizacji.';
+      if (err.code === err.PERMISSION_DENIED) msg = 'Brak zgody na lokalizację — zezwól w ustawieniach przeglądarki i spróbuj ponownie.';
+      else if (err.code === err.POSITION_UNAVAILABLE) msg = 'Lokalizacja jest obecnie niedostępna.';
+      else if (err.code === err.TIMEOUT) msg = 'Przekroczono czas oczekiwania na lokalizację.';
+      status.textContent = msg;
+      btn.disabled = false;
+    }
+  );
 }
 
 async function searchLocation() {
@@ -426,6 +469,7 @@ async function searchLocation() {
     document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
     status.textContent = `Wyniki dla: ${r.display_name.split(',').slice(0,3).join(',')}`;
     const c = { name, lat, lon };
+    saveLocation({ key:null, name, lat, lon });
     renderToday(c);
     renderWeek(c);
     renderMonths(c);
@@ -448,7 +492,18 @@ Object.entries(CITIES).forEach(([key, c]) => {
 
 document.getElementById('locationInput').addEventListener('keydown', e => { if (e.key === 'Enter') searchLocation(); });
 
-selectCity('warszawa');
+const savedLoc = loadSavedLocation();
+if (savedLoc && savedLoc.key && CITIES[savedLoc.key]) {
+  selectCity(savedLoc.key);
+} else if (savedLoc && typeof savedLoc.lat === 'number') {
+  document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
+  renderToday(savedLoc);
+  renderWeek(savedLoc);
+  renderMonths(savedLoc);
+} else {
+  selectCity('warszawa');
+  useMyLocation(true);
+}
 </script>
 
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">

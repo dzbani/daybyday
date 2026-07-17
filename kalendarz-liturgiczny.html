@@ -61,6 +61,13 @@
     .season-name { font-weight:600; font-size:.9rem; flex:1; }
     .season-range { font-size:.78rem; color:var(--muted); }
 
+    .feast-tools { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.25rem; }
+    .feast-search-input { flex:1; min-width:200px; padding:.45rem 1rem; border:1px solid var(--border); border-radius:60px; font-size:.85rem; font-family:inherit; background:var(--surface); color:var(--text); outline:none; transition:border-color .15s; }
+    .feast-search-input:focus { border-color:var(--text); }
+    .feast-search-input::placeholder { color:var(--muted); }
+    .feast-year-select { padding:.45rem 1rem; border:1px solid var(--border); border-radius:60px; font-size:.85rem; font-family:inherit; background:var(--surface); color:var(--text); cursor:pointer; }
+    .feast-empty { font-size:.85rem; color:var(--muted); padding:1rem; }
+    [data-theme="dark"] .feast-search-input, [data-theme="dark"] .feast-year-select { color-scheme:dark; }
     .feasts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
     .feast-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem; display:flex; gap:1rem; align-items:flex-start; text-decoration:none; color:inherit; transition:border-color .15s,transform .15s; }
     .feast-card:hover { border-color:var(--text); transform:translateY(-2px); }
@@ -186,7 +193,12 @@
   <div class="season-list" id="seasonList"></div>
 
   <h2 class="section-title" id="feastsTitle">Najważniejsze święta i uroczystości</h2>
+  <div class="feast-tools">
+    <input type="text" id="feastSearch" class="feast-search-input" placeholder="Szukaj święta, np. Boże Ciało…" aria-label="Szukaj święta">
+    <select id="yearSelect" class="feast-year-select" aria-label="Wybierz rok"></select>
+  </div>
   <div class="feasts-grid" id="feastsGrid"></div>
+  <div class="feast-empty" id="feastEmpty" style="display:none;">Brak świąt pasujących do wyszukiwania.</div>
 
   <h2 class="section-title">Dni postu i wstrzemięźliwości</h2>
   <div class="season-list" id="fastList"></div>
@@ -380,22 +392,36 @@
     return {seasons, active, todayName, todayColor, fixed, today, ashWednesday, goodFriday, weekLabel};
   }
 
-  function render(){
-    const today=new Date(); today.setHours(0,0,0,0);
-    const data=computeLiturgicalData(today);
-    const c=COLORS[data.todayColor];
+  let realToday;
 
-    const swatch=document.getElementById('todaySwatch');
-    swatch.style.background=c.hex;
-    swatch.style.borderColor=c.border||c.hex;
-    document.getElementById('todayName').textContent=data.todayName;
-    document.getElementById('todayColor').textContent='Kolor liturgiczny: '+c.label;
-    document.getElementById('todayDate').textContent=fmtDate(today);
-    document.getElementById('todayWeek').textContent=data.weekLabel||'';
+  function populateYearSelect(currentYear){
+    const sel=document.getElementById('yearSelect');
+    let opts='';
+    for(let y=currentYear-2; y<=currentYear+5; y++){
+      opts+='<option value="'+y+'"'+(y===currentYear?' selected':'')+'>'+y+'</option>';
+    }
+    sel.innerHTML=opts;
+  }
+
+  function applyFeastFilter(){
+    const q=document.getElementById('feastSearch').value.trim().toLowerCase();
+    const cards=[...document.querySelectorAll('#feastsGrid .feast-card')];
+    let visible=0;
+    cards.forEach(card=>{
+      const name=(card.querySelector('.feast-name').textContent||'').toLowerCase();
+      const match=!q || name.includes(q);
+      card.style.display=match?'':'none';
+      if(match) visible++;
+    });
+    document.getElementById('feastEmpty').style.display=(cards.length && !visible)?'block':'none';
+  }
+
+  function renderFeastsAndSeasons(anchorDate, useRealBadges){
+    const data=computeLiturgicalData(anchorDate);
 
     const seasonList=document.getElementById('seasonList');
     seasonList.innerHTML=data.seasons.map(s=>{
-      const isActive = data.active===s;
+      const isActive = useRealBadges && data.active===s;
       const cc=COLORS[s.color];
       return '<div class="season-row'+(isActive?' active':'')+'">'
         +'<span class="season-dot" style="background:'+cc.hex+';border-color:'+(cc.border||cc.hex)+'"></span>'
@@ -407,7 +433,7 @@
     const grid=document.getElementById('feastsGrid');
     grid.innerHTML=data.fixed.map(f=>{
       const cc=COLORS[f.color];
-      const isToday=sameDay(f.date,today);
+      const isToday=useRealBadges && sameDay(f.date,anchorDate);
       return '<a class="feast-card'+(isToday?' today':'')+'" href="/swieta-liturgiczne/'+f.slug+'/">'
         +'<span class="feast-dot" style="background:'+cc.hex+';border-color:'+(cc.border||cc.hex)+'"></span>'
         +'<div class="feast-info">'
@@ -428,6 +454,34 @@
       +'<span class="season-range">'+r.range+' · '+r.note+'</span>'
       +'</div>'
     ).join('');
+
+    applyFeastFilter();
+  }
+
+  function render(){
+    const today=new Date(); today.setHours(0,0,0,0);
+    realToday=today;
+    const data=computeLiturgicalData(today);
+    const c=COLORS[data.todayColor];
+
+    const swatch=document.getElementById('todaySwatch');
+    swatch.style.background=c.hex;
+    swatch.style.borderColor=c.border||c.hex;
+    document.getElementById('todayName').textContent=data.todayName;
+    document.getElementById('todayColor').textContent='Kolor liturgiczny: '+c.label;
+    document.getElementById('todayDate').textContent=fmtDate(today);
+    document.getElementById('todayWeek').textContent=data.weekLabel||'';
+
+    populateYearSelect(today.getFullYear());
+    renderFeastsAndSeasons(today, true);
+
+    document.getElementById('feastSearch').addEventListener('input', applyFeastFilter);
+    document.getElementById('yearSelect').addEventListener('change', e=>{
+      const y=parseInt(e.target.value,10);
+      const isRealYear=(y===realToday.getFullYear());
+      const anchor=isRealYear?realToday:new Date(y,6,1);
+      renderFeastsAndSeasons(anchor, isRealYear);
+    });
   }
 
   render();
