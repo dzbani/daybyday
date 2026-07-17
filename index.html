@@ -4354,11 +4354,12 @@ function getMoonRiseSet(year,month,day,lat,lon){
 
   // ── Liczniki do końca roku ────────────────────────────────────
   const endOfYear=new Date(y,11,31);
-  const daysLeft=Math.round((endOfYear-T)/86400000)+1;
+  const daysLeft=Math.round((endOfYear-T)/86400000);
   // zlicz dni robocze (pon–pt) minus święta
   const pubSet=new Set([...PUBLIC_HOLIDAYS,...MOVABLE].map(([dd,mm])=>`${y}-${mm}-${dd}`));
   let workDays=0;
-  for(let dt2=new Date(T.getTime());dt2<=endOfYear;dt2.setDate(dt2.getDate()+1)){
+  const tomorrow=new Date(T.getTime()); tomorrow.setDate(tomorrow.getDate()+1);
+  for(let dt2=tomorrow;dt2<=endOfYear;dt2.setDate(dt2.getDate()+1)){
     const dow=dt2.getDay();
     const key=`${dt2.getFullYear()}-${dt2.getMonth()+1}-${dt2.getDate()}`;
     if(dow>=1&&dow<=5&&!pubSet.has(key))workDays++;
