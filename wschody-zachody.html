@@ -355,9 +355,12 @@ function renderMonths(c) {
   tabsEl.innerHTML = '';
   sectionsEl.innerHTML = '';
 
+  const now = new Date();
+  const todayMonth = now.getMonth(), todayDate = now.getDate(), todayYear = now.getFullYear();
+
   MONTHS_NOM.forEach((m, mi) => {
     const tab = document.createElement('button');
-    tab.className = 'month-tab' + (mi === 5 ? ' active' : '');
+    tab.className = 'month-tab' + (mi === todayMonth ? ' active' : '');
     tab.textContent = m;
     const mIdx = mi;
     tab.onclick = () => {
@@ -370,7 +373,7 @@ function renderMonths(c) {
     tabsEl.appendChild(tab);
 
     const sec = document.createElement('div');
-    sec.className = 'month-section' + (mi === 5 ? ' active' : '');
+    sec.className = 'month-section' + (mi === todayMonth ? ' active' : '');
     sec.id = 'ms-sun-' + mIdx;
 
     const daysInMonth = new Date(2026, mi + 1, 0).getDate();
@@ -379,7 +382,7 @@ function renderMonths(c) {
       const date = new Date(2026, mi, d);
       const t = getSunTimes(date, c.lat, c.lon);
       const dur = t.set - t.rise;
-      const isToday = mi === 5 && d === 16;
+      const isToday = todayYear === 2026 && mi === todayMonth && d === todayDate;
       rows += `<tr class="${isToday?'today-row':''}">
         <td>${d}</td><td>${WEEKDAYS_SHORT[date.getDay()]}</td>
         <td>${fmtTime(t.rise)}</td><td>${fmtTime(t.set)}</td>
@@ -389,6 +392,8 @@ function renderMonths(c) {
     sec.innerHTML = `<table class="mtable"><thead><tr><th>Dzień</th><th></th><th>☀️ Wschód</th><th>🌅 Zachód</th><th>Długość dnia</th></tr></thead><tbody>${rows}</tbody></table>`;
     sectionsEl.appendChild(sec);
   });
+
+  document.getElementById('monthTitle').textContent = MONTHS_NOM[todayMonth] + ' 2026';
 }
 
 function selectCity(key) {
