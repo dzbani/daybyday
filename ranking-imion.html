@@ -66,6 +66,7 @@ footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--text)}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9960731129891588" crossorigin="anonymous"></script>
+<script src="imieniny_slugs.js"></script>
 </head>
 <body>
 <nav>
@@ -134,6 +135,8 @@ function setPlec(p){
   document.getElementById('btnM').classList.toggle('active',p==='m');
   render();
 }
+function nameSlug(n){return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,'');}
+function nameHref(name){var slug=nameSlug(name);return (typeof IMIENINY_SLUGS!=='undefined'&&IMIENINY_SLUGS.has(slug))?('/imieniny/'+slug+'/'):('/imieniny.html?name='+encodeURIComponent(name));}
 function medal(i){return i===0?'g':i===1?'s':i===2?'b':'';}
 function card(title, pill, list, offset, max){
   if(!list.length) return '';
@@ -141,7 +144,7 @@ function card(title, pill, list, offset, max){
     +list.map(function(e,i){
       var name=e[0],cnt=e[1],bar=Math.round(cnt/max*100);
       return '<li class="ritem"><span class="rnum '+medal(i+offset)+'">'+( i+offset+1)+'</span>'
-        +'<a class="rname" href="/imieniny.html?name='+encodeURIComponent(name)+'">'+name+'</a>'
+        +'<a class="rname" href="'+nameHref(name)+'">'+name+'</a>'
         +'<div class="rbar-w"><div class="rbar" style="width:'+bar+'%"></div></div>'
         +'<span class="rcnt">'+cnt.toLocaleString('pl-PL')+'</span></li>';
     }).join('')+'</ul></div>';

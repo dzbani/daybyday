@@ -176,6 +176,7 @@
     })();
   </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9960731129891588" crossorigin="anonymous"></script>
+<script src="imieniny_slugs.js"></script>
 </head>
 <body>
 <nav class="topnav">
@@ -216,6 +217,8 @@
 </footer>
 
 <script>
+function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,''); }
+function nameHref(name) { const slug=nameSlug(name); return (typeof IMIENINY_SLUGS!=='undefined'&&IMIENINY_SLUGS.has(slug)) ? `/imieniny/${slug}/` : `imieniny.html?name=${encodeURIComponent(name)}`; }
 const WEEKDAYS = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
 const MONTHS_NOM = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
 const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
@@ -354,7 +357,7 @@ function renderDay(dateStr) {
   // Imieniny
   const names = NAMES_DB[key] || NAMES_DB[m + '-' + d] || [];
   const namesHTML = names.length
-    ? names.map(n => `<a href="imieniny.html?name=${encodeURIComponent(n)}" class="name-badge">${n}</a>`).join('')
+    ? names.map(n => `<a href="${nameHref(n)}" class="name-badge">${n}</a>`).join('')
     : '<span style="color:var(--muted);font-size:.82rem">Brak danych dla tego dnia</span>';
 
   // Słońce

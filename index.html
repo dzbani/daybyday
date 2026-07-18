@@ -513,7 +513,9 @@
 </footer>
 
 <script src="swieta_data.js"></script>
+<script src="imieniny_slugs.js"></script>
 <script>
+function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,''); }
 // ── Dane: imieniny ────────────────────────────────────────────
 const NAMES=
 [
@@ -4052,7 +4054,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   } else {
     const popular=names.filter(n=>POPULAR.has(n));
     const rest=names.filter(n=>!POPULAR.has(n));
-    const mkLink=(n,cls)=>{const a=document.createElement('a');a.href=`imieniny.html?name=${encodeURIComponent(n)}`;a.className='name-tag'+' '+cls;a.textContent=n;return a;};
+    const mkLink=(n,cls)=>{const a=document.createElement('a');const slug=nameSlug(n);a.href=(typeof IMIENINY_SLUGS!=='undefined'&&IMIENINY_SLUGS.has(slug))?`/imieniny/${slug}/`:`imieniny.html?name=${encodeURIComponent(n)}`;a.className='name-tag'+' '+cls;a.textContent=n;return a;};
     const mkText=t=>{const s=document.createElement('span');s.className='names-separator';s.textContent=t;return s;};
     const primary=popular.length?popular:names.slice(0,3);
     const secondary=popular.length?rest:names.slice(3);
