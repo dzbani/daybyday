@@ -128,6 +128,7 @@
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-bez-oleju-palmowego/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-czystej-energii/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-dojezdzania-rowerem-do-pracy-zima/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-dud/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-dzieci-zolnierzy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-ebm/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-edukacji/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -136,13 +137,20 @@
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-kobiet-i-dziewczat-w-nauce/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-koszuli/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-lego/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-mistrza-gry/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-palacych-fajke/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-peruki/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pisarzy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pizzy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-praw-kobiet/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-prezerwatywy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-przytulania/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-puzzli/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-swiadomosci-hpv/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-przeciwko-zbrojeniom-atomowym/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-rakiem/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-rakiem-dziecinstwa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-wozka-inwalidzkiego/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zerowej-tolerancji-dla-okaleczania-zenskich-narzadow-plciowych/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zespolu-angelmana/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/mikolajki/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -161,7 +169,9 @@
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-braille-a/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-chorego/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-darwina/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-drzemki-w-pracy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-ducha-ludzkiego/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-dzikiej-przyrody/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-hipnotyzmu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-hipopotama/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-introwertyka/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -171,16 +181,23 @@
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-malzenstwa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-misyjny-dzieci/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-mlodziezy-prawoslawnej/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-modlitwy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-mokradel/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-nauk-inzynieryjnych-na-rzecz-zrownowazonego-rozwoju/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-nutelli/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-obrony-cywilnej/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-organizacji-pozarzadowych/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-pistacji/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-pizzy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-pokoju/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-radia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-sluchu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-sniegu/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-sprawiedliwosci-spolecznej/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-suchych-nasion-roslin-straczkowych/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-swiadomosci-autoagresji/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-tenisa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://daybyday.today/swieto/swiatowy-dzien-trawy-morskiej/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-tredowatych/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-wielorybow/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://daybyday.today/swieto/swiatowy-dzien-wyborow/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
