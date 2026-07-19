@@ -77,6 +77,19 @@
     .cal-day.holiday::after { content: ''; position: absolute; bottom: 3px; left: 50%; transform: translateX(-50%); width: 3px; height: 3px; background: var(--holiday-text); border-radius: 50%; }
     .cal-day.weekend:not(.today) { color: #C0735A; }
     .cal-day.other-month { color: #D0CDC8; }
+    .month-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+    .month-header .month-name { margin-bottom: 0; }
+    .table-toggle { background: none; border: 1px solid var(--border); border-radius: 8px; font-size: .72rem; padding: .25rem .55rem; cursor: pointer; color: var(--muted); font-family: inherit; transition: background .15s; }
+    .table-toggle:hover { background: var(--tag-bg); }
+    .table-toggle.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .month-table { width: 100%; border-collapse: collapse; font-size: .74rem; }
+    .month-table th { text-align: left; font-weight: 600; color: var(--muted); padding: .35rem .4rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .month-table td { padding: .35rem .4rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .month-table tr.today td { font-weight: 700; }
+    .month-table tr.weekend td { color: #C0735A; }
+    .month-table tr.holiday td.day-cell { color: var(--holiday-text); font-weight: 600; }
+    .month-table-wrap { overflow-x: auto; }
+    .month-card.table-mode { grid-column: 1 / -1; }
     footer { border-top: 1px solid var(--border); padding: 2rem; max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
     .footer-logo { font-family: 'Instrument Serif', serif; font-size: 1rem; }
     .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
@@ -269,8 +282,177 @@
 
   const TODAY = new Date();
   let currentYear = 2026;
+  const tableModeMonths = new Set(); // ktore miesiace (0-11) sa w trybie tabeli
 
   function pad(n) { return String(n).padStart(2, '0'); }
+
+  // ── Wschód/zachód słońca — algorytm NOAA (ten sam co na stronie głównej) ──
+  const LOC = { name: 'Poznań', lat: 52.4064, lon: 16.9252 };
+  function calcSunCore(year, month, day, lat, lon) {
+    const rad = Math.PI / 180;
+    const isLeap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+    const diy = isLeap ? 366 : 365;
+    const mo = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    const N = mo[month - 1] + day + (isLeap && month > 2 ? 1 : 0);
+    const g2 = 2 * Math.PI / diy * (N - 1 + 0.5);
+    const eqt = 229.18 * (0.000075 + 0.001868 * Math.cos(g2) - 0.032077 * Math.sin(g2) - 0.014615 * Math.cos(2 * g2) - 0.04089 * Math.sin(2 * g2));
+    const decl = 0.006918 - 0.399912 * Math.cos(g2) + 0.070257 * Math.sin(g2) - 0.006758 * Math.cos(2 * g2) + 0.000907 * Math.sin(2 * g2) - 0.002697 * Math.cos(3 * g2) + 0.00148 * Math.sin(3 * g2);
+    const cosHA = (Math.cos(90.833 * rad) - Math.sin(lat * rad) * Math.sin(decl)) / (Math.cos(lat * rad) * Math.cos(decl));
+    if (Math.abs(cosHA) > 1) return null;
+    const HA = Math.acos(cosHA) / rad;
+    const riseMin = 720 - 4 * (lon + HA) - eqt;
+    const setMin = 720 - 4 * (lon - HA) - eqt;
+    return { riseUTC: riseMin / 60, setUTC: setMin / 60, lenH: (setMin - riseMin) / 60 };
+  }
+  // Czas letni UE: ostatnia niedziela marca 01:00 UTC -> ostatnia niedziela pazdziernika 01:00 UTC.
+  // Liczone wprost z daty docelowej (nie z zegara systemowego przegladarki), zeby dzialalo
+  // poprawnie niezaleznie od strefy czasowej odwiedzajacego/robota indeksujacego.
+  function isPolandDST(year, month, day) {
+    if (month < 3 || month > 10) return false;
+    if (month > 3 && month < 10) return true;
+    const lastSunday = (y, m) => { const d = new Date(Date.UTC(y, m, 0)); const dow = d.getUTCDay(); d.setUTCDate(d.getUTCDate() - dow); return d.getUTCDate(); };
+    if (month === 3) return day >= lastSunday(year, 3);
+    return day < lastSunday(year, 10);
+  }
+  function fmtSunTime(year, month, day, h) {
+    const tz = isPolandDST(year, month, day) ? 2 : 1;
+    h = ((h + tz) % 24 + 24) % 24;
+    let hh = Math.floor(h), mm = Math.round((h - hh) * 60);
+    if (mm === 60) { mm = 0; hh = (hh + 1) % 24; }
+    return `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
+  }
+  function sunTimesFor(year, month, day) {
+    const c = calcSunCore(year, month, day, LOC.lat, LOC.lon);
+    if (!c) return { rise: '—', set: '—', len: '—' };
+    const lh = Math.floor(c.lenH), lm = Math.round((c.lenH - lh) * 60);
+    return { rise: fmtSunTime(year, month, day, c.riseUTC), set: fmtSunTime(year, month, day, c.setUTC), len: `${lh}h ${lm}m` };
+  }
+
+  // ── Faza księżyca — algorytm Meeus (ten sam co na stronie głównej) ──
+  function getMoonPhaseCompact(year, month, day) {
+    const rad = Math.PI / 180;
+    function toJD(y, m, d) { if (m <= 2) { y--; m += 12; } const A = Math.floor(y / 100); const B = 2 - A + Math.floor(A / 4); return Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5; }
+    const JD = toJD(year, month, day) + 0.5;
+    const T = (JD - 2451545.0) / 36525;
+    const D = ((297.8501921 + 445267.1114034 * T - 0.0018819 * T * T + T * T * T / 545868) % 360 + 360) % 360;
+    const M = ((357.5291092 + 35999.0502909 * T - 0.0001536 * T * T) % 360 + 360) % 360;
+    const Mp = ((134.9633964 + 477198.8675055 * T + 0.0087414 * T * T + T * T * T / 69699) % 360 + 360) % 360;
+    const F = ((93.2720950 + 483202.0175233 * T - 0.0036539 * T * T) % 360 + 360) % 360;
+    const Lp = ((218.3164477 + 481267.88123421 * T - 0.0015786 * T * T) % 360 + 360) % 360;
+    const dL = 6288774 * Math.sin(Mp * rad) + 1274027 * Math.sin((2 * D - Mp) * rad) + 658314 * Math.sin(2 * D * rad)
+      + 213618 * Math.sin(2 * Mp * rad) - 185116 * Math.sin(M * rad) - 114332 * Math.sin(2 * F * rad)
+      + 58793 * Math.sin((2 * D - 2 * Mp) * rad) + 57066 * Math.sin((2 * D - M - Mp) * rad)
+      + 53322 * Math.sin((2 * D + Mp) * rad) + 45758 * Math.sin((2 * D - M) * rad)
+      - 40923 * Math.sin((M - Mp) * rad) - 34720 * Math.sin(D * rad) - 30383 * Math.sin((M + Mp) * rad);
+    const moonLon = ((Lp + dL / 1000000) % 360 + 360) % 360;
+    const sunLon = ((280.46646 + 36000.76983 * T + 0.0003032 * T * T) % 360 + 360) % 360;
+    const elong = ((moonLon - sunLon) % 360 + 360) % 360;
+    const SYNODIC = 29.53058867;
+    const age = elong / 360 * SYNODIC;
+    let icon;
+    if (age < 1.85) icon = '🌑';
+    else if (age < 7.38) icon = '🌒';
+    else if (age < 9.22) icon = '🌓';
+    else if (age < 14.77) icon = '🌔';
+    else if (age < 16.61) icon = '🌕';
+    else if (age < 22.15) icon = '🌖';
+    else if (age < 23.99) icon = '🌗';
+    else icon = '🌘';
+    const ZODIAC = ['Baran ♈', 'Byk ♉', 'Bliźnięta ♊', 'Rak ♋', 'Lew ♌', 'Panna ♍', 'Waga ♎', 'Skorpion ♏', 'Strzelec ♐', 'Koziorożec ♑', 'Wodnik ♒', 'Ryby ♓'];
+    return { icon, sign: ZODIAC[Math.floor(moonLon / 30) % 12] };
+  }
+
+  function getSunZodiac(m, d) {
+    if ((m == 3 && d >= 21) || (m == 4 && d <= 19)) return 'Baran ♈';
+    if ((m == 4 && d >= 20) || (m == 5 && d <= 20)) return 'Byk ♉';
+    if ((m == 5 && d >= 21) || (m == 6 && d <= 20)) return 'Bliźnięta ♊';
+    if ((m == 6 && d >= 21) || (m == 7 && d <= 22)) return 'Rak ♋';
+    if ((m == 7 && d >= 23) || (m == 8 && d <= 22)) return 'Lew ♌';
+    if ((m == 8 && d >= 23) || (m == 9 && d <= 22)) return 'Panna ♍';
+    if ((m == 9 && d >= 23) || (m == 10 && d <= 22)) return 'Waga ♎';
+    if ((m == 10 && d >= 23) || (m == 11 && d <= 21)) return 'Skorpion ♏';
+    if ((m == 11 && d >= 22) || (m == 12 && d <= 21)) return 'Strzelec ♐';
+    if ((m == 12 && d >= 22) || (m == 1 && d <= 19)) return 'Koziorożec ♑';
+    if ((m == 1 && d >= 20) || (m == 2 && d <= 18)) return 'Wodnik ♒';
+    return 'Ryby ♓';
+  }
+
+  function goToDay(year, month, day) {
+    window.location.href = `index.html?d=${day}&m=${month}&y=${year}`;
+  }
+
+  function buildMonthTable(year, m) {
+    const wrap = document.createElement('div');
+    wrap.className = 'month-table-wrap';
+    const table = document.createElement('table');
+    table.className = 'month-table';
+    table.innerHTML = `<thead><tr><th>Dzień</th><th>Wsch.</th><th>Zach.</th><th>Dł. dnia</th><th>Księżyc</th><th>Zodiak</th></tr></thead>`;
+    const tbody = document.createElement('tbody');
+    const daysInMonth = new Date(year, m + 1, 0).getDate();
+    for (let d = 1; d <= daysInMonth; d++) {
+      const date = new Date(year, m, d);
+      const dow = date.getDay();
+      const key = `${year}-${pad(m + 1)}-${pad(d)}`;
+      const isToday = date.toDateString() === TODAY.toDateString();
+      const isHoliday = HOLIDAYS[key];
+      const isWeekend = dow === 0 || dow === 6;
+      const sun = sunTimesFor(year, m + 1, d);
+      const moon = getMoonPhaseCompact(year, m + 1, d);
+      const tr = document.createElement('tr');
+      tr.className = (isToday ? 'today ' : '') + (isHoliday ? 'holiday ' : '') + (isWeekend ? 'weekend' : '');
+      tr.style.cursor = 'pointer';
+      tr.title = key;
+      tr.addEventListener('click', () => goToDay(year, m + 1, d));
+      tr.innerHTML = `<td class="day-cell">${d} ${DAY_NAMES[dow === 0 ? 6 : dow - 1]}</td><td>${sun.rise}</td><td>${sun.set}</td><td>${sun.len}</td><td>${moon.icon} ${moon.sign}</td><td>${getSunZodiac(m + 1, d)}</td>`;
+      tbody.appendChild(tr);
+    }
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+    return wrap;
+  }
+
+  function buildMonthGrid(year, m) {
+    const calGrid = document.createElement('div');
+    calGrid.className = 'cal-grid';
+
+    DAY_NAMES.forEach((d, i) => {
+      const h = document.createElement('div');
+      h.className = 'cal-header' + (i >= 5 ? ' weekend' : '');
+      h.textContent = d;
+      calGrid.appendChild(h);
+    });
+
+    const firstDay = new Date(year, m, 1);
+    let startDow = firstDay.getDay();
+    startDow = startDow === 0 ? 6 : startDow - 1;
+
+    for (let i = 0; i < startDow; i++) {
+      const empty = document.createElement('div');
+      empty.className = 'cal-day empty';
+      calGrid.appendChild(empty);
+    }
+
+    const daysInMonth = new Date(year, m + 1, 0).getDate();
+    for (let d = 1; d <= daysInMonth; d++) {
+      const date = new Date(year, m, d);
+      const dow = date.getDay();
+      const key = `${year}-${pad(m+1)}-${pad(d)}`;
+      const isToday = date.toDateString() === TODAY.toDateString();
+      const isHoliday = HOLIDAYS[key];
+      const isWeekend = dow === 0 || dow === 6;
+
+      const cell = document.createElement('div');
+      cell.className = 'cal-day';
+      if (isToday) cell.classList.add('today');
+      else if (isHoliday) cell.classList.add('holiday');
+      else if (isWeekend) cell.classList.add('weekend');
+      cell.textContent = d;
+      cell.title = key;
+      cell.addEventListener('click', () => goToDay(year, m + 1, d));
+      calGrid.appendChild(cell);
+    }
+    return calGrid;
+  }
 
   function buildCalendar(year) {
     const grid = document.getElementById('monthsGrid');
@@ -281,56 +463,26 @@
 
     for (let m = 0; m < 12; m++) {
       const card = document.createElement('div');
-      card.className = 'month-card';
+      card.className = 'month-card' + (tableModeMonths.has(m) ? ' table-mode' : '');
 
+      const header = document.createElement('div');
+      header.className = 'month-header';
       const title = document.createElement('div');
       title.className = 'month-name';
       title.textContent = MONTH_NAMES[m];
-      card.appendChild(title);
-
-      const calGrid = document.createElement('div');
-      calGrid.className = 'cal-grid';
-
-      DAY_NAMES.forEach((d, i) => {
-        const h = document.createElement('div');
-        h.className = 'cal-header' + (i >= 5 ? ' weekend' : '');
-        h.textContent = d;
-        calGrid.appendChild(h);
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'table-toggle' + (tableModeMonths.has(m) ? ' active' : '');
+      toggleBtn.textContent = tableModeMonths.has(m) ? '📅 Siatka' : '📊 Tabela (wschód/zachód, księżyc)';
+      toggleBtn.title = 'Pokaż wschód/zachód słońca, fazę księżyca i znak zodiaku dla każdego dnia miesiąca';
+      toggleBtn.addEventListener('click', () => {
+        if (tableModeMonths.has(m)) tableModeMonths.delete(m); else tableModeMonths.add(m);
+        buildCalendar(currentYear);
       });
+      header.appendChild(title);
+      header.appendChild(toggleBtn);
+      card.appendChild(header);
 
-      const firstDay = new Date(year, m, 1);
-      let startDow = firstDay.getDay();
-      startDow = startDow === 0 ? 6 : startDow - 1;
-
-      for (let i = 0; i < startDow; i++) {
-        const empty = document.createElement('div');
-        empty.className = 'cal-day empty';
-        calGrid.appendChild(empty);
-      }
-
-      const daysInMonth = new Date(year, m + 1, 0).getDate();
-      for (let d = 1; d <= daysInMonth; d++) {
-        const date = new Date(year, m, d);
-        const dow = date.getDay();
-        const key = `${year}-${pad(m+1)}-${pad(d)}`;
-        const isToday = date.toDateString() === TODAY.toDateString();
-        const isHoliday = HOLIDAYS[key];
-        const isWeekend = dow === 0 || dow === 6;
-
-        const cell = document.createElement('div');
-        cell.className = 'cal-day';
-        if (isToday) cell.classList.add('today');
-        else if (isHoliday) cell.classList.add('holiday');
-        else if (isWeekend) cell.classList.add('weekend');
-        cell.textContent = d;
-        cell.title = key;
-        cell.addEventListener('click', () => {
-          window.location.href = `index.html?date=${key}`;
-        });
-        calGrid.appendChild(cell);
-      }
-
-      card.appendChild(calGrid);
+      card.appendChild(tableModeMonths.has(m) ? buildMonthTable(year, m) : buildMonthGrid(year, m));
       grid.appendChild(card);
     }
   }
