@@ -277,10 +277,17 @@ function getSunTimes(date) {
   const H = Math.acos(cosH) * 180 / Math.PI;
   const eot = (-7.655 * Math.sin(g) + 9.873 * Math.sin(2*lambda + 3.588) + 0.439 * Math.sin(4*lambda)) / 60;
   const noon = 12 - lon/15 - eot;
-  const m = date.getMonth(), d = date.getDate();
-  const isDST = (m > 2 && m < 9) || (m === 2 && d >= 29) || (m === 9 && d < 25);
-  const offset = isDST ? 2 : 1;
+  const offset = isPolandDST(date.getFullYear(), date.getMonth() + 1, date.getDate()) ? 2 : 1;
   return { rise: noon - H/15 + offset, set: noon + H/15 + offset };
+}
+
+// Czas letni UE liczony wprost z daty docelowej (nie z przyblizonych stalych dni 29/25) — patrz index.html
+function isPolandDST(year,month,day){
+  if(month<3||month>10)return false;
+  if(month>3&&month<10)return true;
+  const lastSunday=(y,m)=>{const d=new Date(Date.UTC(y,m,0));const dow=d.getUTCDay();d.setUTCDate(d.getUTCDate()-dow);return d.getUTCDate();};
+  if(month===3)return day>=lastSunday(year,3);
+  return day<lastSunday(year,10);
 }
 
 function fmtTime(h) {

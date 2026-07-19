@@ -305,11 +305,20 @@ function calcSunCore(year, month, day, lat, lon) {
   return { riseUTC: riseMin/60, setUTC: setMin/60 };
 }
 
+// Czas letni UE liczony wprost z daty docelowej (nie z zegara przegladarki) — patrz index.html
+function isPolandDST(year,month,day){
+  if(month<3||month>10)return false;
+  if(month>3&&month<10)return true;
+  const lastSunday=(y,m)=>{const d=new Date(Date.UTC(y,m,0));const dow=d.getUTCDay();d.setUTCDate(d.getUTCDate()-dow);return d.getUTCDate();};
+  if(month===3)return day>=lastSunday(year,3);
+  return day<lastSunday(year,10);
+}
+
 function getSunTimes(date, lat, lon) {
   const y = date.getFullYear(), m = date.getMonth()+1, d = date.getDate();
   const c = calcSunCore(y, m, d, lat, lon);
   if (!c) return null;
-  const tz = date.getTimezoneOffset() === -120 ? 2 : 1;
+  const tz = isPolandDST(y, m, d) ? 2 : 1;
   return { rise: c.riseUTC + tz, set: c.setUTC + tz };
 }
 

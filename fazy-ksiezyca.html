@@ -864,11 +864,20 @@
   // z wyszukiwaniem przez bisekcję, ten sam sprawdzony algorytm co na stronie głównej
   // (index.html/getMoonRiseSet) — poprzednia, uproszczona metoda 3-punktowej interpolacji
   // dawała błędne wyniki (myliła się nawet po godzinie) i nie uwzględniała strefy czasowej.
+  // Czas letni UE liczony wprost z daty docelowej (nie z zegara przegladarki) — patrz index.html
+  function isPolandDST(year,month,day){
+    if(month<3||month>10)return false;
+    if(month>3&&month<10)return true;
+    const lastSunday=(y,m)=>{const d=new Date(Date.UTC(y,m,0));const dow=d.getUTCDay();d.setUTCDate(d.getUTCDate()-dow);return d.getUTCDate();};
+    if(month===3)return day>=lastSunday(year,3);
+    return day<lastSunday(year,10);
+  }
+
   function moonRiseTransitSet(date, lat, lon) {
     const year=date.getFullYear(), month=date.getMonth()+1, day=date.getDate();
     const rad=DEG;
     const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
-    const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
+    const tz=isPolandDST(year,month,day)?2:1;
     const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
     function moonPos(jde) {

@@ -3768,6 +3768,17 @@ const LOC_DEFAULT={name:'Poznań',lat:52.4064,lon:16.9252};
 let LOC_NAME=LOC_DEFAULT.name,LOC_LAT=LOC_DEFAULT.lat,LOC_LON=LOC_DEFAULT.lon;
 (function(){const s=localStorage.getItem('kalbi_loc');if(s){try{const p=JSON.parse(s);LOC_NAME=p.name;LOC_LAT=p.lat;LOC_LON=p.lon;}catch(e){}}})();
 
+// Czas letni UE: ostatnia niedziela marca 01:00 UTC -> ostatnia niedziela pazdziernika 01:00 UTC.
+// Liczone wprost z daty docelowej (nie z zegara systemowego przegladarki/robota), zeby dzialalo
+// poprawnie niezaleznie od strefy czasowej odwiedzajacego.
+function isPolandDST(year,month,day){
+  if(month<3||month>10)return false;
+  if(month>3&&month<10)return true;
+  const lastSunday=(y,m)=>{const d=new Date(Date.UTC(y,m,0));const dow=d.getUTCDay();d.setUTCDate(d.getUTCDate()-dow);return d.getUTCDate();};
+  if(month===3)return day>=lastSunday(year,3);
+  return day<lastSunday(year,10);
+}
+
 function calcSunCore(year,month,day,lat,lon){
   const rad=Math.PI/180;
   // Algorytm NOAA Solar Calculator
@@ -3795,7 +3806,7 @@ function calcSunCore(year,month,day,lat,lon){
 function calcSunTimes(year,month,day){
   const c=calcSunCore(year,month,day,LOC_LAT,LOC_LON);
   if(!c)return{rise:'—',set:'—',len:'—',frac:0,lenMin:0,dawn:'—',dusk:'—',noon:'—',noonAlt:'—'};
-  const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
+  const tz=isPolandDST(year,month,day)?2:1;
   const fmt=h=>{h=((h+tz)%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
   const lh=Math.floor(c.lenH),lm=Math.round((c.lenH-lh)*60);
   // Świt i zmierzch cywilny (-6°): cosHA dla -6° zamiast -0.833°
@@ -3920,7 +3931,7 @@ function getMoonPhase(year,month,day){
 function getMoonRiseSet(year,month,day,lat,lon){
   const rad=Math.PI/180;
   const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
-  const tz=new Date(year,month-1,day).getTimezoneOffset()===-120?2:1;
+  const tz=isPolandDST(year,month,day)?2:1;
   const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
   // Pozycja księżyca — pełny algorytm Meeus rozdz. 47 (28+28 wyrazów)
