@@ -287,6 +287,7 @@
 
 <script src="transitions.js"></script>
 <script src="swieta_data.js"></script>
+<script src="swieto_slugs.js"></script>
 <script>
 (function(){
   const MONTH_ABBR=['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
@@ -309,7 +310,7 @@
     }
     const types=typeStr.split(' ');
     const row=document.createElement('a');
-    row.href='swieto.html?id='+slug;
+    row.href=(typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:'swieto.html?id='+slug;
     row.className='holiday-row';
     row.dataset.type=typeStr;
     const dateLabel=DATE_LABEL_OVERRIDE[slug]||(day+' '+MONTH_ABBR[month-1]);

@@ -11,4 +11,12 @@ if git diff --cached --name-only | grep -q '^name_descriptions_rich\.js$'; then
   fi
 fi
 
+if git diff --cached --name-only | grep -q '^swieto\.html$'; then
+  node scripts/gen_static_swieto_pages.js --changed-staged
+  if [ $? -ne 0 ]; then
+    echo "gen_static_swieto_pages.js (pre-commit) nie powiódł się — commit przerwany." >&2
+    exit 1
+  fi
+fi
+
 exit 0
