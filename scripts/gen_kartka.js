@@ -88,11 +88,21 @@ const PROVERBS_MONTH_POOL = (function () {
   return pool;
 })();
 
-// --- 3. SWIETA_DATA (powazne swieta ze slugami) ---
+// --- 3. SWIETA_DATA (powazne swieta ze slugami) + HOLIDAYS_DB ze swieto.html (pelna baza, w tym partie tematyczne) ---
 const swietaDataRaw = readFile('swieta_data.js');
 const SWIETA_DATA = eval(extractConst(swietaDataRaw, 'SWIETA_DATA'));
 const majorByName = {}; // nazwa -> slug
 for (const [d, m, name, slug] of SWIETA_DATA) { majorByName[name] = slug; }
+const swietoHtmlRaw = readFile('swieto.html');
+const hdbStart = swietoHtmlRaw.indexOf('const HOLIDAYS_DB = {');
+const hdbBraceStart = swietoHtmlRaw.indexOf('{', hdbStart);
+let hdbDepth = 0, hdbI = hdbBraceStart;
+for (; hdbI < swietoHtmlRaw.length; hdbI++) {
+  if (swietoHtmlRaw[hdbI] === '{') hdbDepth++;
+  if (swietoHtmlRaw[hdbI] === '}') { hdbDepth--; if (hdbDepth === 0) { hdbI++; break; } }
+}
+const HOLIDAYS_DB = eval('(' + swietoHtmlRaw.slice(hdbBraceStart, hdbI) + ')');
+for (const [slug, entry] of Object.entries(HOLIDAYS_DB)) { majorByName[entry.name] = slug; }
 
 // --- 4. swieto_slugs.js: ktore slugi maja gotowa strone ---
 const swietoSlugsRaw = readFile('swieto_slugs.js');
@@ -160,9 +170,9 @@ function patchKartkaHtml() {
   let html = readFile('kartka-z-kalendarza.html');
   const { namesLit, holidaysLit, proverbsLit } = buildRealDbLiterals();
 
-  const namesBlockRe = /\/\/ Imieniny — uproszczona baza\r?\nconst NAMES_DB = \{[\s\S]*?\r?\n\};/;
-  const proverbsBlockRe = /\/\/ Przysłowia\r?\nconst PROVERBS_DB = \{[\s\S]*?\r?\n\};/;
-  const holidaysBlockRe = /\/\/ Święta\r?\nconst HOLIDAYS_DB = \{[\s\S]*?\r?\n\};/;
+  const namesBlockRe = /(?:\/\/[^\r\n]*\r?\n)?const NAMES_DB = \{[\s\S]*?\};/;
+  const proverbsBlockRe = /(?:\/\/[^\r\n]*\r?\n)?const PROVERBS_DB = \{[\s\S]*?\};/;
+  const holidaysBlockRe = /(?:\/\/[^\r\n]*\r?\n)?const HOLIDAYS_DB = \{[\s\S]*?\};/;
 
   if (!namesBlockRe.test(html)) throw new Error('Nie znaleziono bloku NAMES_DB do podmiany');
   if (!proverbsBlockRe.test(html)) throw new Error('Nie znaleziono bloku PROVERBS_DB do podmiany');

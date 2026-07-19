@@ -515,6 +515,7 @@
 <script src="swieta_data.js"></script>
 <script src="imieniny_slugs.js"></script>
 <script src="swieto_slugs.js"></script>
+<script src="swieto_names.js"></script>
 <script>
 function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,''); }
 function swietoHref(slug) { return (typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:`swieto.html?id=${slug}`; }
@@ -4092,7 +4093,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
     heroEl.style.display='flex';
     todays.forEach(([,,name,,tag])=>{
       const a=document.createElement('a');
-      a.href=`swieta-nietypowe.html?q=${encodeURIComponent(name)}`;
+      const heroPromotedSlug=(typeof SWIETO_NAME_TO_SLUG!=='undefined')?SWIETO_NAME_TO_SLUG[name]:undefined;
+      a.href=(heroPromotedSlug&&typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(heroPromotedSlug))?`/swieto/${heroPromotedSlug}/`:`swieta-nietypowe.html?q=${encodeURIComponent(name)}`;
       a.style.cssText=`display:inline-flex;align-items:center;gap:.3rem;font-size:.75rem;color:var(--muted);text-decoration:none;background:var(--tag-bg);border:1px solid var(--border);border-radius:60px;padding:.2rem .6rem;white-space:nowrap;transition:background .15s;`;
       a.onmouseover=()=>a.style.background='var(--border)';
       a.onmouseout=()=>a.style.background='var(--tag-bg)';
@@ -4118,7 +4120,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
     });
     todaysNietypowe.forEach(([,,name,,tag])=>{
       const el=document.createElement('a');
-      el.href=`swieta-nietypowe.html?q=${encodeURIComponent(name)}`;
+      const promotedSlug=(typeof SWIETO_NAME_TO_SLUG!=='undefined')?SWIETO_NAME_TO_SLUG[name]:undefined;
+      el.href=(promotedSlug&&typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(promotedSlug))?`/swieto/${promotedSlug}/`:`swieta-nietypowe.html?q=${encodeURIComponent(name)}`;
       el.className='holiday-item';
       el.innerHTML=`<div class="holiday-dot" style="background:${TAG_COLOR[tag]||'var(--muted)'}"></div><span class="holiday-name">${name}</span>`;
       hl.appendChild(el);
