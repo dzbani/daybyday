@@ -684,7 +684,13 @@
   <span class="footer-copy">&copy; 2026 daybyday.today</span>
 </footer>
 
+<script src="swieto_slugs.js"></script>
+<script src="swieto_names.js"></script>
 <script>
+function swietoLink(name) {
+  const slug = (typeof SWIETO_NAME_TO_SLUG!=='undefined') ? SWIETO_NAME_TO_SLUG[name] : undefined;
+  return (slug && typeof SWIETO_SLUGS!=='undefined' && SWIETO_SLUGS.has(slug)) ? `/swieto/${slug}/` : null;
+}
 const MONTHS     = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
 const MONTH_LONG = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
 const MONTH_SHORT= ['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
@@ -1321,7 +1327,6 @@ const HOLIDAYS = [
 [27,6,'Dzień Szwagra','Szwagier — brat żony lub mąż siostry — to ktoś, kto stał się rodziną przez przypadek. Dziś chwila uznania za wspólne grillowania i rodzinne obiady.','inne'],
 [27,6,'Światowy Dzień Smerfa','Smerfy narodziły się w 1958 roku w belgijskim komiksie Peyo. Niebieskie stworzenia z białymi czapkami podbiły świat — dziś obchodzimy urodziny tych grzybowych mieszkańców.','inne'],
 [27,6,'Światowy Dzień Osób Głuchoniewidomych','Osoby głuchoniewidome żyją w podwójnej izolacji zmysłowej — dziś walczymy o ich dostęp do komunikacji, pomocy i pełnego uczestnictwa w społeczeństwie.','inne'],
-[28,6,'Święto Marynarki Wojennej','Polska Marynarka Wojenna strzegła Bałtyku przez stulecia — dziś marynarze świętują na okrętach i w portach, a biało-niebieskie flagi powiewają wzdłuż wybrzeża.','inne'],
 [28,6,'Narodowy Dzień Pamięci Poznańskiego Czerwca 1956','28 czerwca 1956 roku poznańscy robotnicy wyszli na ulice — pierwsze takie wystąpienie w PRL, krwawo stłumione przez wojsko. Dziś pamiętamy o ofiarach i ich odwadze.','inne'],
 [28,6,'Dzień Szwagra','Szwagier bywa tematem żartów, lecz dla wielu rodzin to ważna figura — ktoś, kto pojawił się przez miłość i zostaje przez lata. Dziś doceniamy tych z drugiej strony rodziny.','inne'],
 [29,6,'Dzień Rybaka','Rybacy wyruszają przed świtem — sieć, wiosło i ocean. Dziś hołd dla tych, którzy zaopatrują świat w ryby, zmagając się z pogodą i coraz bardziej pustymi wodami.','inne'],
@@ -1922,12 +1927,16 @@ function render(){
     </div>`;
     cards.forEach(([d,m,name,desc,tag], i) => {
       const todayCls = isToday(d,m) ? ' today' : '';
+      const link = swietoLink(name);
+      const nameHtml = link
+        ? `<a href="${link}" class="hc-name" style="text-decoration:none;color:inherit" onclick="event.stopPropagation()">${name}</a>`
+        : `<div class="hc-name">${name}</div>`;
       html += `<div class="holiday-card anim${todayCls}" style="animation-delay:${Math.min(i*0.04,0.6)}s;cursor:pointer" onclick="showDetail(${d},${m},${JSON.stringify(name)},${JSON.stringify(tag)},${JSON.stringify(desc)})">
         <div class="hc-dateline">
           <span class="hc-day">${String(d).padStart(2,'0')}</span>
           <span class="hc-month-label">${shortMonth(m)}</span>
         </div>
-        <div class="hc-name">${name}</div>
+        ${nameHtml}
         <div class="hc-desc">${desc}</div>
         <span class="hc-tag">${tag}</span>
       </div>`;
@@ -1949,9 +1958,19 @@ function showDetail(d, m, name, tag, desc) {
   document.getElementById('modalTitle').textContent = name;
   document.getElementById('modalTag').textContent = tag;
   const wikiSlug = encodeURIComponent(name.replace(/ /g,'_'));
+  const ownLink = swietoLink(name);
+  const ownLinkHtml = ownLink
+    ? `<a href="${ownLink}"
+          style="display:inline-flex;align-items:center;gap:.4rem;color:var(--text);font-size:.85rem;font-weight:500;text-decoration:none;border:1px solid var(--border);border-radius:8px;padding:.45rem 1rem;margin-right:.5rem;transition:background .15s"
+          onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background=''">
+         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+         Pełna strona na DaybyDay
+       </a>`
+    : '';
   document.getElementById('modalBody').innerHTML =
     `<p>${desc}</p>
      <p style="margin-top:1.5rem">
+       ${ownLinkHtml}
        <a href="https://pl.wikipedia.org/wiki/${wikiSlug}" target="_blank" rel="noopener"
           style="display:inline-flex;align-items:center;gap:.4rem;color:var(--text);font-size:.85rem;font-weight:500;text-decoration:none;border:1px solid var(--border);border-radius:8px;padding:.45rem 1rem;transition:background .15s"
           onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background=''">
@@ -1992,6 +2011,7 @@ function setView(v) {
   document.getElementById('grid').style.display = v==='list' ? '' : 'none';
   document.getElementById('calSection').classList.toggle('visible', v==='cal');
   if (v==='cal') renderCal();
+  if (v==='list') render();
 }
 
 // ── Calendar ───────────────────────────────────────────────
@@ -2125,13 +2145,17 @@ if (_q) {
       items.length
         ? `${items.length} ${items.length===1?'święto':items.length<5?'święta':'świąt'}`
         : 'Brak świąt tego dnia';
-    document.getElementById('dayViewGrid').innerHTML = items.map(([d, m, name, desc, tag]) =>
-      `<div class="holiday-card anim" style="cursor:pointer" data-expand="1">
-        <div class="hc-name">${name}</div>
+    document.getElementById('dayViewGrid').innerHTML = items.map(([d, m, name, desc, tag]) => {
+      const link = swietoLink(name);
+      const nameHtml = link
+        ? `<a href="${link}" class="hc-name" style="text-decoration:none;color:inherit" onclick="event.stopPropagation()">${name}</a>`
+        : `<div class="hc-name">${name}</div>`;
+      return `<div class="holiday-card anim" style="cursor:pointer" data-expand="1">
+        ${nameHtml}
         <div class="hc-desc">${desc}</div>
         <span class="hc-tag">${tag}</span>
-      </div>`
-    ).join('');
+      </div>`;
+    }).join('');
     document.getElementById('dayViewGrid').addEventListener('click', e => {
       const card = e.target.closest('[data-expand]');
       if (!card) return;

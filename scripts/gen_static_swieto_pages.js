@@ -18,6 +18,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const { execSync } = require('child_process');
+const { regenerateRegistry } = require('./swieto_registry');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -154,14 +155,11 @@ function main() {
     writtenPaths.push(path.relative(ROOT, filePath));
   }
 
-  // --- Wygeneruj swieto_slugs.js (uzywane do bezpiecznego linkowania z fallbackiem) ---
-  const allSlugs = Object.keys(HOLIDAYS_DB).filter(s => fs.existsSync(path.join(ROOT, 'swieto', s, 'index.html')));
-  const slugsContent = `// Lista slugow, dla ktorych istnieje wygenerowana strona /swieto/<slug>/ — uzywane do bezpiecznego linkowania bezposredniego (fallback na swieto.html?id= gdy brak).\nconst SWIETO_SLUGS=new Set(${JSON.stringify(allSlugs.sort())});\n`;
-  const slugsPath = path.join(ROOT, 'swieto_slugs.js');
-  const existingSlugs = fs.existsSync(slugsPath) ? fs.readFileSync(slugsPath, 'utf8') : '';
-  if (existingSlugs !== slugsContent) {
-    if (!dryRun) fs.writeFileSync(slugsPath, slugsContent, 'utf8');
-    writtenPaths.push('swieto_slugs.js');
+  // --- Zregeneruj swieto_slugs.js / swieto_names.js / sitemap-swieto.xml (skan dysku, obejmuje tez lekkie strony) ---
+  let registryStats = null;
+  if (!dryRun) {
+    registryStats = regenerateRegistry(ROOT);
+    writtenPaths.push('swieto_slugs.js', 'swieto_names.js', 'sitemap-swieto.xml');
   }
 
   if (!quiet) {
@@ -169,7 +167,7 @@ function main() {
     console.log(`Zapisanych/zmienionych: ${written}${dryRun ? ' (DRY RUN — nic nie zapisano)' : ''}`);
     console.log(`Bez zmian: ${unchanged}`);
     console.log(`Pominiętych (brak w HOLIDAYS_DB): ${skipped}`);
-    console.log(`Łącznie stron statycznych /swieto/*/: ${allSlugs.length}`);
+    if (registryStats) console.log(`Łącznie stron statycznych /swieto/*/: ${registryStats.slugCount}`);
   }
 
   if (changedStaged && !dryRun && writtenPaths.length) {
