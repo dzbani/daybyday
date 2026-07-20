@@ -108,6 +108,11 @@ for (const [slug, entry] of Object.entries(HOLIDAYS_DB)) { majorByName[entry.nam
 const swietoSlugsRaw = readFile('swieto_slugs.js');
 const SWIETO_SLUGS = new Set(eval(swietoSlugsRaw.match(/new Set\((\[[\s\S]*?\])\)/)[1]));
 
+// --- 4b. swieto_names.js: pelna mapa nazwa->slug (obejmuje tez ~1000 lekkich stron + aliasy) ---
+const swietoNamesRaw = readFile('swieto_names.js');
+const SWIETO_NAME_TO_SLUG = eval('(' + swietoNamesRaw.match(/const SWIETO_NAME_TO_SLUG=(\{[\s\S]*?\});/)[1] + ')');
+Object.assign(majorByName, SWIETO_NAME_TO_SLUG);
+
 // --- 5. Dla kazdego dnia roku (365 + 29 lutego) policz ostateczna liste przyslow (fallback jak w index.html) ---
 const MONTH_DAYS = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // luty z 29 (rok przestepny) dla kompletnosci
 function proverbsFor(m, d, dayOfYearApprox) {
