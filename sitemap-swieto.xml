@@ -2451,6 +2451,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-swietego-patryka/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-swietosci-zycia/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -3547,6 +3552,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-leniwca/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-liczby-pi/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
