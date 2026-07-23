@@ -3116,6 +3116,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/hubertus/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/japonski-dzien-singli/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -3926,6 +3931,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-radiologii/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-reggae/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -4121,6 +4131,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-ukrocenia-bezkarnosci/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-ukrocenia-bezkarnosci-za-zbrodnie-przeciwko-dziennikarzom/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -4152,6 +4167,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-dyskryminacja-rasowa/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-faszyzmem/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4232,6 +4252,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zapobiegania-przemocy-wobec-dzieci/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zapobiegania-wyzyskowi-srodowiska/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -5112,6 +5137,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-nauk-inzynieryjnych-na-rzecz-zrownowazonego-rozwoju/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-nauki-dla-pokoju/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
