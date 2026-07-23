@@ -2871,6 +2871,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-zamenhofa/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-zamenhofa-dzien-esperanto/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -3996,6 +4001,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-solidarnosci-ludzkiej/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-solidarnosci-mlodziezy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -4531,6 +4541,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/rocznica-pierwszego-lotu-braci-wright/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/rocznica-powstania-warszawskiego/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -4927,6 +4942,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-jazdy-nago-na-rowerze/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-jezyka-arabskiego/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
