@@ -871,6 +871,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-higieny-miesiaczkowej/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-higieny-podczas-miesiaczki/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
