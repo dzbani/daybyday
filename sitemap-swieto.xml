@@ -4016,6 +4016,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-studenta/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-surfingu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -5617,6 +5622,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-tenisa-stolowego/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-toalet/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
