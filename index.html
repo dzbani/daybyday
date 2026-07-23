@@ -11,7 +11,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle">DaybyDay — Kalendarz</title>
+  <title id="pageTitle">DaybyDay — Twój codzienny kalendarz</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23E8936A'/><rect x='4' y='10' width='24' height='18' rx='3' fill='white' opacity='.95'/><rect x='4' y='8' width='24' height='7' rx='3' fill='%23C8734A'/><rect x='9' y='6' width='3' height='5' rx='1.5' fill='white'/><rect x='20' y='6' width='3' height='5' rx='1.5' fill='white'/><text x='16' y='24' text-anchor='middle' font-family='Arial' font-size='11' font-weight='bold' fill='%23E8936A'>18</text></svg>">
   <meta name="description" content="DaybyDay — codzienny almanach: imieniny, święta, wschód i zachód słońca, fazy księżyca, kalkulatory dat. Sprawdź co się dzieje dzisiaj.">
   <meta name="robots" content="index, follow">
@@ -284,9 +284,9 @@
 </head>
 <body>
 <nav class="topnav">
-  <a href="index.html" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
+  <a href="/" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Główna</a></li>
+    <li><a href="/" class="active">Główna</a></li>
     <li><a href="imieniny.html">Imieniny</a></li>
     <li><a href="swieta.html">Święta</a></li>
     <li><a href="kalendarz-liturgiczny.html">Liturgiczny</a></li>
@@ -311,7 +311,7 @@
         <div style="display:flex;gap:0.5rem;align-items:center;flex-shrink:0;">
           <button id="shareBtn" onclick="shareDay()" title="Udostępnij ten dzień" style="font:inherit;font-size:.8rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.25rem .6rem;cursor:pointer;transition:background .15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">🔗</button>
           <a id="prevDayLink" href="#" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">←</a>
-          <a id="todayLink" href="index.html" style="font-size:0.75rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);display:none;transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">Dziś</a>
+          <a id="todayLink" href="/" style="font-size:0.75rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);display:none;transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">Dziś</a>
           <a id="nextDayLink" href="#" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">→</a>
         </div>
       </div>
@@ -4037,14 +4037,14 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // Nawigacja prev/next
   const prev=new Date(T); prev.setDate(prev.getDate()-1);
   const next=new Date(T); next.setDate(next.getDate()+1);
-  const dayUrl=dt=>`index.html?d=${dt.getDate()}&m=${dt.getMonth()+1}&y=${dt.getFullYear()}`;
+  const dayUrl=dt=>`/?d=${dt.getDate()}&m=${dt.getMonth()+1}&y=${dt.getFullYear()}`;
   document.getElementById('prevDayLink').href=dayUrl(prev);
   document.getElementById('nextDayLink').href=dayUrl(next);
   if(!isToday){
     const tl=document.getElementById('todayLink'); tl.style.display='inline-block';
   }
 
-  document.title=`${d} ${MONTH_GEN[m]} ${y} — DaybyDay`;
+  document.title=`DaybyDay — Twój codzienny kalendarz`;
 
   // Date hero
   const dayNameEl=document.getElementById('dayName');
@@ -4227,7 +4227,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     for(let i=0;i<startDow;i++){const s=document.createElement('span');s.className='mini-cal-day other-month';grid.appendChild(s);}
     for(let dd=1;dd<=daysInMonth;dd++){
       const a=document.createElement('a');
-      a.href=`index.html?d=${dd}&m=${cm}&y=${cy}`;
+      a.href=`/?d=${dd}&m=${cm}&y=${cy}`;
       const isViewed=(dd===d&&cm===m&&cy===y);
       const isRealToday=(dd===todayD&&cm===todayM&&cy===todayY);
       let cls='mini-cal-day';
@@ -4331,7 +4331,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     if(shownTodayNames.has(name))return; // już pokazane z SWIETA_DATA/HOLIDAYS wyżej
     const slug=EVENT_SLUG[name];
     const el=document.createElement('a');
-    el.href=slug?swietoHref(slug):`index.html?d=${d}&m=${m}&y=${y}`;
+    el.href=slug?swietoHref(slug):`/?d=${d}&m=${m}&y=${y}`;
     el.className='holiday-item';
     el.style.cssText='font-weight:600;border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.25rem;';
     const em=({'Tłusty Czwartek':'🍩','Walentynki':'❤️','Dzień Kobiet':'🌷','Dzień Wiosny':'🌸','Dzień Matki':'💐','Dzień Dziecka':'🎈','Dzień Ojca':'👨','Przesilenie letnie':'☀️','Halloween':'🎃','Andrzejki':'🔮','Mikołajki':'🎅','Przesilenie zimowe':'❄️','Wigilia':'🎄','Sylwester':'🎆'})[name]||'📅';
@@ -4364,7 +4364,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     }
     const row=document.createElement('a');
     row.className='upcoming-item';
-    row.href=slug?swietoHref(slug):`index.html?d=${d}&m=${m}&y=${y}`;
+    row.href=slug?swietoHref(slug):`/?d=${d}&m=${m}&y=${y}`;
     row.innerHTML=`<span class="upcoming-name">${em} ${name}</span><span class="upcoming-meta">${meta}</span>`;
     ul.appendChild(row);
   });
@@ -4505,8 +4505,8 @@ function jumpToDate(val){
   const [y,m,d]=val.split('-').map(Number);
   const TODAY=new Date(); TODAY.setHours(0,0,0,0);
   const sel=new Date(y,m-1,d);
-  if(sel.getTime()===TODAY.getTime()) location.href='index.html';
-  else location.href=`index.html?d=${d}&m=${m}&y=${y}`;
+  if(sel.getTime()===TODAY.getTime()) location.href='/';
+  else location.href=`/?d=${d}&m=${m}&y=${y}`;
 }
 (function setDateInput(){
   const inp=document.getElementById('dateJump');
