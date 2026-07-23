@@ -47,6 +47,7 @@ const SWIETA_DATA=[
   [7,4,'Światowy Dzień Zdrowia','dzien-zdrowia','miedzynarodowe'],
   [12,4,'Dzień Kosmonautyki','dzien-kosmonautyki','branzowe'],
   [12,4,'Niedziela Miłosierdzia Bożego','milosierdzie-boze','koscielne'],
+  [13,4,'Dzień Pamięci Ofiar Zbrodni Katyńskiej','dzien-pamieci-ofiar-zbrodni-katynskiej','panstwowe'],
   [14,4,'Święto Chrztu Polski','swieto-chrztu-polski','panstwowe'],
   [16,4,'Dzień Sapera (Święto Wojsk Inżynieryjnych)','dzien-sapera','branzowe'],
   [22,4,'Dzień Ziemi','dzien-ziemi','miedzynarodowe'],
