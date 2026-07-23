@@ -631,6 +631,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-dziecka-utraconego/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-dziecka-utraconego-dzien-pamieci-dzieci-nienarodzonych-i-zmarlych/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
