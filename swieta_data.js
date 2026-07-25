@@ -100,6 +100,7 @@ const SWIETA_DATA=[
   [27,6,'Światowy Dzień Rybołówstwa','dzien-rybolowstwa','branzowe'],
   [29,6,'Dzień Ratownika WOPR','dzien-ratownika-wopr','branzowe'],
   [29,6,'Dzień Rybaka','dzien-rybaka','branzowe'],
+  [1,7,'Dzień Sejmu Polskiego','dzien-sejmu-polskiego','panstwowe'],
   [1,7,'Światowy Dzień Architektury','dzien-architekta','branzowe'],
   [1,7,'Dzień Morza','dzien-morza','nieoficjalne'],
   [6,7,'Dzień Radcy Prawnego','dzien-radcy-prawnego','branzowe'],
