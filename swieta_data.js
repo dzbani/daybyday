@@ -94,6 +94,7 @@ const SWIETA_DATA=[
   [14,6,'Światowy Dzień Krwiodawcy','dzien-krwiodawcy','miedzynarodowe'],
   [14,6,'Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Koncentracyjnych i Obozów Zagłady','dzien-pamieci-ofiar-obozow-koncentracyjnych','panstwowe'],
   [20,6,'Narodowy Dzień Powstań Śląskich','dzien-powstan-slaskich','panstwowe'],
+  [28,6,'Narodowy Dzień Pamięci Poznańskiego Czerwca 1956','narodowy-dzien-pamieci-poznanskiego-czerwca-1956','panstwowe'],
   [21,6,'Międzynarodowy Dzień Jogi','dzien-jogi','miedzynarodowe'],
   [23,6,'Dzień Ojca','dzien-ojca','nieoficjalne'],
   [27,6,'Światowy Dzień Rybołówstwa','dzien-rybolowstwa','branzowe'],
