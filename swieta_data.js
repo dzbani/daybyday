@@ -84,6 +84,7 @@ const SWIETA_DATA=[
   [31,5,'Uroczystość Trójcy Przenajświętszej','trojca-swiety','koscielne'],
   [1,6,'Dzień Dziecka','dzien-dziecka','nieoficjalne'],
   [4,6,'Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa)','boze-cialo','koscielne'],
+  [4,6,'Dzień Wolności i Praw Obywatelskich','dzien-wolnosci-i-praw-obywatelskich','panstwowe'],
   [4,6,'Dzień Drukarza','dzien-drukarza','branzowe'],
   [7,6,'Dzień Chemika','dzien-chemika','branzowe'],
   [8,6,'Światowy Dzień Oceanów','dzien-oceanow','miedzynarodowe'],
