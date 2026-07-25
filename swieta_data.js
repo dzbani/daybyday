@@ -120,6 +120,7 @@ const SWIETA_DATA=[
   [31,8,'Dzień Solidarności i Wolności','dzien-solidarnosci','panstwowe'],
   [31,8,'Święto Kawalerii Polskiej','swieto-kawalerii-polskiej','branzowe'],
   [1,9,'Rocznica wybuchu II Wojny Światowej (1939)','rocznica-1-wrzesnia','historyczne'],
+  [1,9,'Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej','dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej','panstwowe'],
   [13,9,'Dzień Programisty','dzien-programisty','branzowe'],
   [16,9,'Europejski Dzień Maszynisty Kolejowego','dzien-maszynisty','branzowe'],
   [17,9,'Rocznica agresji ZSRR na Polskę (17 września 1939)','dzien-historii','historyczne'],
