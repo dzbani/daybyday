@@ -143,6 +143,7 @@ const SWIETA_DATA=[
   [18,10,'Dzień Łącznościowca','dzien-lacznosciowca','branzowe'],
   [19,10,'Narodowy Dzień Pamięci Duchownych Niezłomnych','dzien-pamieci-duchownych-niezlomnych','panstwowe'],
   [20,10,'Międzynarodowy Dzień Szefa Kuchni','dzien-szefa-kuchni','branzowe'],
+  [22,10,'Dzień Praw Rodziny','dzien-praw-rodziny','panstwowe'],
   [25,10,'Europejski Dzień Prawnika','europejski-dzien-prawnika','branzowe'],
   [25,10,'Dzień Szewca','dzien-szewca','branzowe'],
   [31,10,'Halloween','halloween','nieoficjalne'],
