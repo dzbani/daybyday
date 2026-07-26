@@ -5401,6 +5401,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-pochp/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-poczty/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
