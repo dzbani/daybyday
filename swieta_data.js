@@ -134,6 +134,7 @@ const SWIETA_DATA=[
   [30,9,'Międzynarodowy Dzień Tłumacza','dzien-tlumacza','branzowe'],
   [30,9,'Dzień Archiwisty','dzien-archiwisty','branzowe'],
   [1,10,'Światowy Dzień Muzyki','dzien-muzyki','miedzynarodowe'],
+  [2,10,'Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy','dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy','panstwowe'],
   [4,10,'Światowy Dzień Zwierząt','dzien-zwierzat','miedzynarodowe'],
   [5,10,'Dzień Spedytora','dzien-spedytora','branzowe'],
   [11,10,'Międzynarodowy Dzień Dziewcząt','dzien-dziewczat','miedzynarodowe'],
