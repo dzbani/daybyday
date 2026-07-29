@@ -18886,6 +18886,12 @@ function getBadgeClass(type) {
   return { state:'badge-state', religious:'badge-religious', cultural:'badge-cultural', unofficial:'badge-unofficial', historical:'badge-historical', professional:'badge-professional' }[type] || 'badge-unofficial';
 }
 
+function buildTitle(h) {
+  if (h.dayOff === true) return `${h.name} — kiedy wypada i czy to dzień wolny? | DaybyDay`;
+  if (h.type === 'state' || h.type === 'religious') return `${h.name} — kiedy wypada? Czy to dzień wolny? | DaybyDay`;
+  return `${h.name} — kiedy wypada? | DaybyDay`;
+}
+
 function render() {
   const id = new URLSearchParams(window.location.search).get('id');
   const page = document.getElementById('pageContent');
@@ -18901,7 +18907,7 @@ function render() {
   }
 
   const h = HOLIDAYS_DB[id];
-  document.title = `${h.name} — DaybyDay`;
+  document.title = buildTitle(h);
 
   const tradItems = h.traditions.map(t => `<li><span class="trad-dot"></span><span>${t}</span></li>`).join('');
   const relLinks = (h.related || []).map(slug => {

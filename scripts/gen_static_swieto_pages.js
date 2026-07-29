@@ -44,6 +44,12 @@ const HOLIDAYS_DB = loadHolidaysDb(htmlRaw);
 
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+function buildTitle(h) {
+  if (h.dayOff === true) return `${h.name} — kiedy wypada i czy to dzień wolny? | DaybyDay`;
+  if (h.type === 'state' || h.type === 'religious') return `${h.name} — kiedy wypada? Czy to dzień wolny? | DaybyDay`;
+  return `${h.name} — kiedy wypada? | DaybyDay`;
+}
+
 function buildPage(slug) {
   const h = HOLIDAYS_DB[slug];
   if (!h) return null;
@@ -64,7 +70,7 @@ function buildPage(slug) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${esc(h.name)} — DaybyDay</title>
+  <title>${esc(buildTitle(h))}</title>
   <meta name="description" content="${esc(metaDesc)}">
   <link rel="canonical" href="https://daybyday.today/swieto/${slug}/">
   <meta property="og:title" content="${esc(h.name)} | DaybyDay">

@@ -16,7 +16,7 @@ function scanSwietoFolders(ROOT) {
     if (!fs.existsSync(idx)) continue;
     slugs.push(entry.name);
     const content = fs.readFileSync(idx, 'utf8');
-    const m = content.match(/<title>([\s\S]*?) — DaybyDay<\/title>/);
+    const m = content.match(/<meta property="og:title" content="([\s\S]*?) \| DaybyDay">/);
     if (m) {
       const name = m[1].replace(/&quot;/g, '"').replace(/&amp;/g, '&');
       nameToSlug[name] = entry.name;

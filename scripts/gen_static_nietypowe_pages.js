@@ -150,7 +150,7 @@ function main() {
       // kolizja, tylko regeneracja tej samej strony, zostaw slug bez zmian.
       const existingPath = path.join(ROOT, 'swieto', slug, 'index.html');
       const existingTitle = fs.existsSync(existingPath)
-        ? (fs.readFileSync(existingPath, 'utf8').match(/<title>([\s\S]*?) — DaybyDay<\/title>/) || [])[1]
+        ? (fs.readFileSync(existingPath, 'utf8').match(/<meta property="og:title" content="([\s\S]*?) \| DaybyDay">/) || [])[1]
         : undefined;
       if (existingTitle !== name) {
         // prawdziwa kolizja (inne swieto o tym samym slugu) — dolacz dzien/miesiac dla unikalnosci
