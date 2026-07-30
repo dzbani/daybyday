@@ -39,28 +39,39 @@ function slugify(name) {
 
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Wyciaga literal tablicy/obiektu zaczynajacy sie po startMarker, liczac
+// glebokosc nawiasow zamiast zakladac konkretny styl zakonczenia linii
+// (CRLF/LF) - odporne na to, jakie EOL ma akurat plik zrodlowy.
+function extractBalanced(raw, startMarker, openChar, closeChar) {
+  const start = raw.indexOf(startMarker);
+  if (start === -1) throw new Error(`Nie znaleziono "${startMarker}"`);
+  const openIdx = raw.indexOf(openChar, start);
+  let depth = 0, end = -1;
+  for (let i = openIdx; i < raw.length; i++) {
+    if (raw[i] === openChar) depth++;
+    else if (raw[i] === closeChar) { depth--; if (depth === 0) { end = i; break; } }
+  }
+  if (end === -1) throw new Error(`Nie znaleziono zamkniecia dla "${startMarker}"`);
+  return raw.slice(start, end + 1);
+}
+
 // --- Wczytaj HOLIDAYS (nietypowe) ze swieta-nietypowe.html ---
 function loadNietypoweHolidays() {
   const raw = fs.readFileSync(path.join(ROOT, 'swieta-nietypowe.html'), 'utf8');
-  const start = raw.indexOf('const HOLIDAYS = [');
-  if (start === -1) throw new Error('Nie znaleziono HOLIDAYS w swieta-nietypowe.html');
-  const end = raw.indexOf('\r\n];', start);
-  const src = raw.slice(start, end + 3);
+  const src = extractBalanced(raw, 'const HOLIDAYS = [', '[', ']');
   const sandbox = {};
   vm.createContext(sandbox);
-  vm.runInContext(src + '\nthis.__H__ = HOLIDAYS;', sandbox);
+  vm.runInContext(src + ';\nthis.__H__ = HOLIDAYS;', sandbox);
   return sandbox.__H__;
 }
 
 // --- Wczytaj HOLIDAYS_DB (juz awansowane) ze swieto.html, zeby wykluczyc duplikaty ---
 function loadPromotedNames() {
   const raw = fs.readFileSync(path.join(ROOT, 'swieto.html'), 'utf8');
-  const start = raw.indexOf('const HOLIDAYS_DB = {');
-  const end = raw.indexOf('\r\n};', start);
-  const src = raw.slice(start, end + 3);
+  const src = extractBalanced(raw, 'const HOLIDAYS_DB = {', '{', '}');
   const sandbox = {};
   vm.createContext(sandbox);
-  vm.runInContext(src + '\nthis.__DB__ = HOLIDAYS_DB;', sandbox);
+  vm.runInContext(src + ';\nthis.__DB__ = HOLIDAYS_DB;', sandbox);
   const names = new Set();
   for (const h of Object.values(sandbox.__DB__)) names.add(h.name);
   return names;
