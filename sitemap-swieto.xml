@@ -2531,11 +2531,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/dzien-szwagra-28-6/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/dzien-tai-chi/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -2892,11 +2887,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/dzien-zamenhofa/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/dzien-zamenhofa-dzien-esperanto/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3761,11 +3751,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pamieci-i-godnosci-ofiar-zbrodni-ludobojstwa-oraz-zapobiegania-tej-zbrodni/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pamieci-o-handlu-niewolnikami-i-jego-zniesieniu/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -3792,11 +3777,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pantery-mglistej/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-pantery-snieznej/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4186,17 +4166,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-ukrocenia-bezkarnosci-za-zbrodnie-przeciwko-dziennikarzom/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-upamietniajacy-ofiary-aktow-przemocy-ze-wzgledu-na-religie-lub-wyznanie/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-upamietniajacy-zniesienie-niewolnictwa/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4222,11 +4192,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-faszyzmem/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-walki-z-faszyzmem-i-antysemityzmem/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4312,11 +4277,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zapobiegania-wyzyskowi-srodowiska/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-zapobiegania-wyzyskowi-srodowiska-naturalnego-podczas-wojen-i-konfliktow-zbrojnych/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -5226,11 +5186,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/swiatowy-dzien-nauki-dla-pokoju-i-rozwoju/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-nerek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -5407,11 +5362,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-poczty/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/swiatowy-dzien-poczty-i-znaczka-pocztowego/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
