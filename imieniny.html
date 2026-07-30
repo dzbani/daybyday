@@ -314,6 +314,7 @@
 <script src="name_trends.js"></script>
 <script src="name_descriptions.js"></script>
 <script src="name_descriptions_rich.js"></script>
+<script src="name_genitive.js"></script>
 <script>
 // Polska baza imienin — format: [miesiąc(1-12), dzień, [imiona]]
 const NAMES=
@@ -5002,10 +5003,11 @@ buildAll();
 // Dynamiczny tytuł i opis dla SEO
 if (urlParam) {
   const nameCapitalized = urlParam.charAt(0).toUpperCase() + urlParam.slice(1).toLowerCase();
+  const nameGenitive = (typeof NAME_GENITIVE !== 'undefined' && NAME_GENITIVE[nameCapitalized]) || nameCapitalized;
   setTimeout(function(){
-    document.title = `Imieniny ${nameCapitalized} — kiedy są imieniny ${nameCapitalized}? | DaybyDay`;
+    document.title = `Imieniny ${nameCapitalized} — kiedy są imieniny ${nameGenitive}? | DaybyDay`;
     const descMeta = document.querySelector('meta[name="description"]');
-    if (descMeta) descMeta.setAttribute('content', `Kiedy są imieniny ${nameCapitalized}? Sprawdź datę imienin, znaczenie imienia, historię i życzenia imieninowe dla ${nameCapitalized}.`);
+    if (descMeta) descMeta.setAttribute('content', `Kiedy są imieniny ${nameGenitive}? Sprawdź datę imienin, znaczenie imienia, historię i życzenia imieninowe dla ${nameGenitive}.`);
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) ogTitle.setAttribute('content', `Imieniny ${nameCapitalized} | DaybyDay`);
   }, 100);

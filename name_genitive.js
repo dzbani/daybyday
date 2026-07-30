@@ -1,0 +1,25 @@
+// Dopelniacz (przypadek "kogo? czego?") najpopularniejszych imion - uzupelniane partiami.
+// Imiona spoza tej mapy nadal uzywaja (niepoprawnej gramatycznie) formy mianownika jako fallback,
+// zeby brak wpisu nie psul strony - patrz uzycie w imieniny.html i scripts/gen_static_pages.js.
+const NAME_GENITIVE = {
+  "Anna": "Anny",
+  "Katarzyna": "Katarzyny",
+  "Małgorzata": "Małgorzaty",
+  "Maria": "Marii",
+  "Agnieszka": "Agnieszki",
+  "Ewa": "Ewy",
+  "Barbara": "Barbary",
+  "Magdalena": "Magdaleny",
+  "Elżbieta": "Elżbiety",
+  "Joanna": "Joanny",
+  "Piotr": "Piotra",
+  "Krzysztof": "Krzysztofa",
+  "Tomasz": "Tomasza",
+  "Andrzej": "Andrzeja",
+  "Paweł": "Pawła",
+  "Michał": "Michała",
+  "Jan": "Jana",
+  "Marcin": "Marcina",
+  "Jakub": "Jakuba",
+  "Adam": "Adama",
+};

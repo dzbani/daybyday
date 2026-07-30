@@ -17,6 +17,13 @@ const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 
+// --- 0. Wczytaj NAME_GENITIVE (dopelniacz, uzupelniany partiami - fallback: mianownik) ---
+let genitiveRaw = fs.readFileSync(path.join(ROOT, 'name_genitive.js'), 'utf8').replace(/^﻿/, '');
+const genitiveSandbox = {};
+vm.createContext(genitiveSandbox);
+vm.runInContext(genitiveRaw + '\nthis.__RESULT__ = NAME_GENITIVE;', genitiveSandbox);
+const NAME_GENITIVE = genitiveSandbox.__RESULT__;
+
 // --- 1. Wczytaj NAME_DESCRIPTIONS_RICH ---
 let richRaw = fs.readFileSync(path.join(ROOT, 'name_descriptions_rich.js'), 'utf8').replace(/^﻿/, '');
 const richSandbox = {};
@@ -95,6 +102,7 @@ function buildPage(name) {
   const datesStr = dates.map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ');
   const freqStr = dates.length === 1 ? 'raz w roku' : `${dates.length} razy w roku`;
   const descHtml = transformRich(rich);
+  const genitive = NAME_GENITIVE[name] || name;
   const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${datesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
 
   const richHasPatron = PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
@@ -108,7 +116,7 @@ function buildPage(name) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imieniny ${name} — kiedy są imieniny ${name}? | DaybyDay</title>
+  <title>Imieniny ${name} — kiedy są imieniny ${genitive}? | DaybyDay</title>
   <meta name="description" content="${metaDesc}">
   <link rel="canonical" href="https://daybyday.today/imieniny/${nameSlug(name)}/">
   <meta property="og:title" content="Imieniny ${name} | DaybyDay">
