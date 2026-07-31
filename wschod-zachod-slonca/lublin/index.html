@@ -11,15 +11,17 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wschód i Zachód Słońca w Polsce 2026 | DaybyDay</title>
-  <meta name="description" content="Godziny wschodu i zachodu słońca w Polsce na każdy dzień 2026. Sprawdź o której wschodzi i zachodzi słońce w Twoim mieście.">
+  <title>Wschód i zachód słońca w Lublinie 2026 | DaybyDay</title>
+  <meta name="description" content="Godziny wschodu i zachodu słońca w Lublinie na każdy dzień 2026 roku. Sprawdź o której wschodzi i zachodzi słońce oraz długość dnia w Lublinie.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://daybyday.today/wschody-zachody.html">
-  <meta property="og:title" content="Wschód i Zachód Słońca w Polsce 2026">
-  <meta property="og:description" content="Godziny wschodu i zachodu słońca na każdy dzień 2026. Wybierz miasto i sprawdź długość dnia.">
+  <link rel="canonical" href="https://daybyday.today/wschod-zachod-slonca/lublin/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wschód i zachód słońca w Lublinie","description":"Godziny wschodu i zachodu słońca w Lublinie na każdy dzień 2026 roku. Sprawdź o której wschodzi i zachodzi słońce oraz długość dnia w Lublinie.","url":"https://daybyday.today/wschod-zachod-slonca/lublin/","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DaybyDay","item":"https://daybyday.today/"},{"@type":"ListItem","position":2,"name":"Wschód i zachód słońca","item":"https://daybyday.today/wschody-zachody.html"},{"@type":"ListItem","position":3,"name":"Lublin","item":"https://daybyday.today/wschod-zachod-slonca/lublin/"}]}</script>
+  <meta property="og:title" content="Wschód i zachód słońca w Lublinie 2026">
+  <meta property="og:description" content="Godziny wschodu i zachodu słońca w Lublinie na każdy dzień 2026 roku. Sprawdź o której wschodzi i zachodzi słońce oraz długość dnia w Lublinie.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image.svg">
-  <meta property="og:url" content="https://daybyday.today/wschody-zachody.html">
+  <meta property="og:url" content="https://daybyday.today/wschod-zachod-slonca/lublin/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -91,6 +93,9 @@
     .location-btn.secondary { background:var(--surface); color:var(--text); border:1px solid var(--border); }
     .location-btn.secondary:hover { opacity:1; background:var(--tag-bg); }
     .location-status { font-size:.78rem; color:var(--muted); margin-top:-.5rem; margin-bottom:1.5rem; min-height:1.2em; }
+    .breadcrumb { font-size:.78rem; color:var(--muted); margin-bottom:1rem; }
+    .breadcrumb a { color:var(--muted); text-decoration:none; }
+    .breadcrumb a:hover { color:var(--text); }
 
     body{animation:pageIn .28s ease both}
     @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -213,8 +218,9 @@
 
 <main class="page">
   <div class="page-label">Astronomia</div>
-  <h1 class="page-title">Wschód i zachód słońca</h1>
-  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>
+  <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://daybyday.today/">DaybyDay</a> › <a href="https://daybyday.today/wschody-zachody.html">Wschód i zachód słońca</a> › <span>Lublin</span></nav>
+  <h1 class="page-title">Wschód i zachód słońca w Lublinie</h1>
+  <p class="page-sub">Godziny wschodu i zachodu słońca w Lublinie na każdy dzień 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>
 
   <div class="city-tabs" id="cityTabs"></div>
   <p style="font-size:.78rem;color:var(--muted);margin:-1.25rem 0 2rem;">Zobacz szczegółowo:
@@ -506,7 +512,7 @@ async function searchLocation() {
 const cityTabsEl = document.getElementById('cityTabs');
 Object.entries(CITIES).forEach(([key, c]) => {
   const btn = document.createElement('button');
-  btn.className = 'city-tab' + (key === 'warszawa' ? ' active' : '');
+  btn.className = 'city-tab' + (key === 'lublin' ? ' active' : '');
   btn.setAttribute('data-city', key);
   btn.textContent = c.name;
   btn.onclick = () => selectCity(key);
@@ -524,7 +530,7 @@ if (savedLoc && savedLoc.key && CITIES[savedLoc.key]) {
   renderWeek(savedLoc);
   renderMonths(savedLoc);
 } else {
-  selectCity('warszawa');
+  selectCity('lublin');
   useMyLocation(true);
 }
 </script>
