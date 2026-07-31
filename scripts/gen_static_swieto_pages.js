@@ -44,6 +44,12 @@ const HOLIDAYS_DB = loadHolidaysDb(htmlRaw);
 
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
+// zeby tresc nigdy nie mogla przedwczesnie zamknac tagu <script>.
+function jsonLdScript(obj) {
+  return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
+}
+
 function buildTitle(h) {
   if (h.dayOff === true) return `${h.name} — kiedy wypada i czy to dzień wolny? | DaybyDay`;
   if (h.type === 'state' || h.type === 'religious') return `${h.name} — kiedy wypada? Czy to dzień wolny? | DaybyDay`;
@@ -65,6 +71,26 @@ function buildPage(slug) {
     return `<li><a href="${href}">${rel.emoji} ${rel.name}</a></li>`;
   }).join('');
 
+  const pageUrl = `https://daybyday.today/swieto/${slug}/`;
+  const articleLd = jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: h.name,
+    description: metaDesc,
+    url: pageUrl,
+    inLanguage: 'pl',
+    isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
+  });
+  const breadcrumbLd = jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'DaybyDay', item: 'https://daybyday.today/' },
+      { '@type': 'ListItem', position: 2, name: 'Święta', item: 'https://daybyday.today/swieta.html' },
+      { '@type': 'ListItem', position: 3, name: h.name, item: pageUrl },
+    ],
+  });
+
   return `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -72,12 +98,14 @@ function buildPage(slug) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(buildTitle(h))}</title>
   <meta name="description" content="${esc(metaDesc)}">
-  <link rel="canonical" href="https://daybyday.today/swieto/${slug}/">
+  <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="${esc(h.name)} | DaybyDay">
   <meta property="og:description" content="${esc(metaDesc)}">
-  <meta property="og:url" content="https://daybyday.today/swieto/${slug}/">
+  <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  ${articleLd}
+  ${breadcrumbLd}
   <style>
     :root { color-scheme: light; }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; background: #F8F7F5; line-height: 1.7; }

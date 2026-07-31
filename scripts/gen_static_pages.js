@@ -74,6 +74,12 @@ function transformRich(html) {
   return html.replace(/<h3>/g, '<div class="name-desc-label">').replace(/<\/h3>/g, '</div>');
 }
 
+// Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
+// zeby tresc (np. cudzysłowy/HTML w opisie) nigdy nie mogla przedwczesnie zamknac tagu <script>.
+function jsonLdScript(obj) {
+  return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
+}
+
 // --- 5. Rozwiąż kolizje slugów: wybierz imię BEZ wiodącego "Ł", jeśli jest dokładnie jeden taki wariant ---
 const bySlug = {};
 for (const name of Object.keys(RICH)) {
@@ -111,6 +117,27 @@ function buildPage(name) {
     ? `\n  <div class="patron-section">\n    <h2>Patron / Patronka</h2>\n    <p>${dbEntry.patron}</p>\n  </div>`
     : '';
 
+  const slug = nameSlug(name);
+  const pageUrl = `https://daybyday.today/imieniny/${slug}/`;
+  const articleLd = jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `Imieniny ${name}`,
+    description: metaDesc,
+    url: pageUrl,
+    inLanguage: 'pl',
+    isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
+  });
+  const breadcrumbLd = jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'DaybyDay', item: 'https://daybyday.today/' },
+      { '@type': 'ListItem', position: 2, name: 'Imieniny', item: 'https://daybyday.today/imieniny.html' },
+      { '@type': 'ListItem', position: 3, name: name, item: pageUrl },
+    ],
+  });
+
   return `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -118,12 +145,14 @@ function buildPage(name) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imieniny ${name} — kiedy są imieniny ${genitive}? | DaybyDay</title>
   <meta name="description" content="${metaDesc}">
-  <link rel="canonical" href="https://daybyday.today/imieniny/${nameSlug(name)}/">
+  <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="Imieniny ${name} | DaybyDay">
   <meta property="og:description" content="${metaDesc}">
-  <meta property="og:url" content="https://daybyday.today/imieniny/${nameSlug(name)}/">
+  <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  ${articleLd}
+  ${breadcrumbLd}
   <style>
     :root { color-scheme: light; }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; background: #F8F7F5; line-height: 1.7; }
