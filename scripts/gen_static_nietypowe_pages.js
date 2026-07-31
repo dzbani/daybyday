@@ -112,15 +112,17 @@ function buildLightPage(slug, entry) {
     inLanguage: 'pl',
     isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
   });
+  const breadcrumbItems = [
+    { name: 'DaybyDay', url: 'https://daybyday.today/' },
+    { name: 'Święta nietypowe', url: 'https://daybyday.today/swieta-nietypowe.html' },
+    { name: name, url: pageUrl },
+  ];
   const breadcrumbLd = jsonLdScript({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'DaybyDay', item: 'https://daybyday.today/' },
-      { '@type': 'ListItem', position: 2, name: 'Święta nietypowe', item: 'https://daybyday.today/swieta-nietypowe.html' },
-      { '@type': 'ListItem', position: 3, name: name, item: pageUrl },
-    ],
+    itemListElement: breadcrumbItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: it.url })),
   });
+  const breadcrumbHtml = `<nav class="breadcrumb" aria-label="breadcrumb">${breadcrumbItems.map((it, i) => i === breadcrumbItems.length - 1 ? `<span>${esc(it.name)}</span>` : `<a href="${it.url}">${esc(it.name)}</a>`).join(' › ')}</nav>`;
 
   return `<!DOCTYPE html>
 <html lang="pl">
@@ -144,9 +146,13 @@ function buildLightPage(slug, entry) {
     .date { font-size: 1.1rem; color: #555; margin-bottom: 1.5rem; }
     .tag { display: inline-block; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: #888; border: 1px solid #ddd; border-radius: 999px; padding: .2rem .7rem; margin-bottom: 1.5rem; }
     a { color: #1A1916; }
+    .breadcrumb { font-size: .8rem; color: #888; margin-bottom: 1rem; }
+    .breadcrumb a { color: #888; }
+    .breadcrumb a:hover { color: #1A1916; }
   </style>
 </head>
 <body>
+  ${breadcrumbHtml}
   <h1>${esc(name)}</h1>
   <p class="date">${esc(dateStr)}</p>
   <span class="tag">${esc(tagLabel)}</span>

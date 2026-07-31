@@ -128,15 +128,17 @@ function buildPage(name) {
     inLanguage: 'pl',
     isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
   });
+  const breadcrumbItems = [
+    { name: 'DaybyDay', url: 'https://daybyday.today/' },
+    { name: 'Imieniny', url: 'https://daybyday.today/imieniny.html' },
+    { name: name, url: pageUrl },
+  ];
   const breadcrumbLd = jsonLdScript({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'DaybyDay', item: 'https://daybyday.today/' },
-      { '@type': 'ListItem', position: 2, name: 'Imieniny', item: 'https://daybyday.today/imieniny.html' },
-      { '@type': 'ListItem', position: 3, name: name, item: pageUrl },
-    ],
+    itemListElement: breadcrumbItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: it.url })),
   });
+  const breadcrumbHtml = `<nav class="breadcrumb" aria-label="breadcrumb">${breadcrumbItems.map((it, i) => i === breadcrumbItems.length - 1 ? `<span>${it.name}</span>` : `<a href="${it.url}">${it.name}</a>`).join(' › ')}</nav>`;
 
   return `<!DOCTYPE html>
 <html lang="pl">
@@ -163,9 +165,13 @@ function buildPage(name) {
     .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #888; margin-bottom: .4rem; }
     .patron-section { border-top: 1px solid #e5e3de; margin-top: 1.5rem; padding-top: 1.25rem; }
     a { color: #1A1916; }
+    .breadcrumb { font-size: .8rem; color: #888; margin-bottom: 1rem; }
+    .breadcrumb a { color: #888; }
+    .breadcrumb a:hover { color: #1A1916; }
   </style>
 </head>
 <body>
+  ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
   <div>${descHtml}</div>${patronBlock}

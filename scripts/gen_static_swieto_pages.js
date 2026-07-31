@@ -81,15 +81,17 @@ function buildPage(slug) {
     inLanguage: 'pl',
     isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
   });
+  const breadcrumbItems = [
+    { name: 'DaybyDay', url: 'https://daybyday.today/' },
+    { name: 'Święta', url: 'https://daybyday.today/swieta.html' },
+    { name: h.name, url: pageUrl },
+  ];
   const breadcrumbLd = jsonLdScript({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'DaybyDay', item: 'https://daybyday.today/' },
-      { '@type': 'ListItem', position: 2, name: 'Święta', item: 'https://daybyday.today/swieta.html' },
-      { '@type': 'ListItem', position: 3, name: h.name, item: pageUrl },
-    ],
+    itemListElement: breadcrumbItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: it.url })),
   });
+  const breadcrumbHtml = `<nav class="breadcrumb" aria-label="breadcrumb">${breadcrumbItems.map((it, i) => i === breadcrumbItems.length - 1 ? `<span>${esc(it.name)}</span>` : `<a href="${it.url}">${esc(it.name)}</a>`).join(' › ')}</nav>`;
 
   return `<!DOCTYPE html>
 <html lang="pl">
@@ -116,9 +118,13 @@ function buildPage(slug) {
     .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #888; margin: 1.5rem 0 .5rem; }
     ul { padding-left: 1.2rem; }
     a { color: #1A1916; }
+    .breadcrumb { font-size: .8rem; color: #888; margin-bottom: 1rem; }
+    .breadcrumb a { color: #888; }
+    .breadcrumb a:hover { color: #1A1916; }
   </style>
 </head>
 <body>
+  ${breadcrumbHtml}
   <h1>${esc(h.name)} ${h.emoji || ''}</h1>
   <p class="date">${esc(h.date)}</p>
   <div class="info">
