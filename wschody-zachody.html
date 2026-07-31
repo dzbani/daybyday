@@ -91,6 +91,8 @@
     .location-btn.secondary { background:var(--surface); color:var(--text); border:1px solid var(--border); }
     .location-btn.secondary:hover { opacity:1; background:var(--tag-bg); }
     .location-status { font-size:.78rem; color:var(--muted); margin-top:-.5rem; margin-bottom:1.5rem; min-height:1.2em; }
+    .city-links a { color:var(--muted); text-decoration:none; }
+    .city-links a:hover { color:var(--text); text-decoration:underline; }
 
     body{animation:pageIn .28s ease both}
     @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -217,7 +219,7 @@
   <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>
 
   <div class="city-tabs" id="cityTabs"></div>
-  <p style="font-size:.78rem;color:var(--muted);margin:-1.25rem 0 2rem;">Zobacz szczegółowo:
+  <p class="city-links" style="font-size:.78rem;color:var(--muted);margin:-1.25rem 0 2rem;">Zobacz szczegółowo:
     <a href="/wschod-zachod-slonca/warszawa/">Warszawa</a>,
     <a href="/wschod-zachod-slonca/krakow/">Kraków</a>,
     <a href="/wschod-zachod-slonca/gdansk/">Gdańsk</a>,
