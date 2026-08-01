@@ -11,12 +11,12 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Długie Weekendy 2026 — kalendarz i dni urlopu | DaybyDay</title>
-  <meta name="description" content="Kalendarz długich weekendów 2026 w Polsce. Sprawdź dokładne daty, ile dni urlopu potrzebujesz i jak wydłużyć wolne przy świętach.">
+  <title>Długie Weekendy 2026/2027 — kalendarz i dni urlopu | DaybyDay</title>
+  <meta name="description" content="Kalendarz długich weekendów 2026 i 2027 w Polsce. Sprawdź dokładne daty, ile dni urlopu potrzebujesz i jak wydłużyć wolne przy świętach.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/dlugie-weekendy.html">
-  <meta property="og:title" content="Długie Weekendy 2026 — kalendarz i dni urlopu">
-  <meta property="og:description" content="7 długich weekendów w 2026 roku. Sprawdź terminy i zaplanuj urlop mądrze.">
+  <meta property="og:title" content="Długie Weekendy 2026/2027 — kalendarz i dni urlopu">
+  <meta property="og:description" content="7 długich weekendów w 2026 roku i 7 w 2027 roku. Sprawdź terminy i zaplanuj urlop mądrze.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image.svg">
   <meta property="og:url" content="https://daybyday.today/dlugie-weekendy.html">
@@ -159,23 +159,40 @@
 
 <div class="page">
   <div class="page-label">Urlop</div>
-  <h1 class="page-title">Długie Weekendy 2026</h1>
-  <p class="page-sub">Kiedy w 2026 roku wypadają długie weekendy i ile dni urlopu potrzebujesz, żeby je wykorzystać? Pełny kalendarz z podpowiedziami, jak najlepiej ułożyć wolne.</p>
+  <h1 class="page-title">Długie Weekendy</h1>
+  <p class="page-sub">Kiedy wypadają długie weekendy i ile dni urlopu potrzebujesz, żeby je wykorzystać? Pełny kalendarz z podpowiedziami, jak najlepiej ułożyć wolne.</p>
 
-  <div class="info-box">
+  <div class="year-nav" style="display:flex;gap:.5rem;margin-bottom:1.5rem;">
+    <button class="year-btn dw-year-btn active" data-year="2026" onclick="showDwYear(2026)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2026</button>
+    <button class="year-btn dw-year-btn" data-year="2027" onclick="showDwYear(2027)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2027</button>
+  </div>
+  <style>.dw-year-btn.active{background:var(--text) !important;color:var(--bg) !important;border-color:var(--text) !important;}</style>
+
+  <div class="info-box" id="dw-info-2026">
     <div class="info-icon">🗓</div>
     <div class="info-text">
       <strong>Jak liczymy długie weekendy?</strong> Bierzemy pod uwagę 14 dni ustawowo wolnych od pracy w Polsce w 2026 roku (w tym Wigilię, ustawowo wolną od 2025 r.) i sprawdzamy, które z nich sąsiadują z sobotą lub niedzielą — albo da się je z weekendem połączyć, biorąc 1–2 dni urlopu. W 2026 roku takich okazji jest <strong>7</strong>, a mądre zaplanowanie zaledwie <strong>6 dni urlopu</strong> daje łącznie <strong>28 dni wolnego</strong>.
     </div>
   </div>
+  <div class="info-box" id="dw-info-2027" style="display:none;">
+    <div class="info-icon">🗓</div>
+    <div class="info-text">
+      <strong>Jak liczymy długie weekendy?</strong> Bierzemy pod uwagę 14 dni ustawowo wolnych od pracy w Polsce w 2027 roku i sprawdzamy, które z nich sąsiadują z sobotą lub niedzielą — albo da się je z weekendem połączyć, biorąc 1–2 dni urlopu. W 2027 roku takich okazji jest <strong>7</strong>, a mądre zaplanowanie zaledwie <strong>4 dni urlopu</strong> daje łącznie <strong>26 dni wolnego</strong> — mniej urlopu niż w 2026 roku, bo więcej świąt wypada tuż przy weekendzie.
+    </div>
+  </div>
 
-  <div class="stats-row">
+  <div class="stats-row" id="dw-stats-2026">
     <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">długich weekendów w 2026</div></div>
     <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">dni urlopu, by wykorzystać wszystkie</div></div>
     <div class="stat-card"><div class="stat-num">28</div><div class="stat-label">dni wolnego łącznie</div></div>
   </div>
+  <div class="stats-row" id="dw-stats-2027" style="display:none;">
+    <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">długich weekendów w 2027</div></div>
+    <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">dni urlopu, by wykorzystać wszystkie</div></div>
+    <div class="stat-card"><div class="stat-num">26</div><div class="stat-label">dni wolnego łącznie</div></div>
+  </div>
 
-  <div class="weekends-list" id="weekendsList">
+  <div class="weekends-list" id="weekendsList-2026">
     <div class="weekend-row" data-end="2026-01-06">
       <div class="wknd-dates">1–6 stycznia <span style="color:var(--muted);font-weight:400">(czw–wt)</span></div>
       <div class="wknd-status">
@@ -247,10 +264,88 @@
     </div>
   </div>
 
-  <div class="info-box" style="margin-top:2rem;">
+  <div class="weekends-list" id="weekendsList-2027" style="display:none;">
+    <div class="weekend-row" data-end="2027-01-06">
+      <div class="wknd-dates">1–6 stycznia <span style="color:var(--muted);font-weight:400">(pt–śr)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Nowy Rok + Trzech Króli</div>
+        <div class="wknd-hint">Weź urlop w poniedziałek 4.01 i wtorek 5.01</div>
+      </div>
+      <span class="wknd-badge badge-vac">2 dni urlopu</span>
+      <span class="wknd-badge badge-len">6 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-03-29">
+      <div class="wknd-dates">27–29 marca <span style="color:var(--muted);font-weight:400">(sob–pon)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Wielkanoc</div>
+        <div class="wknd-hint">Naturalny długi weekend — bez urlopu. Weź też piątek 26.03, by mieć 4 dni.</div>
+      </div>
+      <span class="wknd-badge badge-vac" style="background:var(--open);color:var(--open-text)">bez urlopu</span>
+      <span class="wknd-badge badge-len">3 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-05-03">
+      <div class="wknd-dates">1–3 maja <span style="color:var(--muted);font-weight:400">(sob–pon)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Majówka (Święto Pracy + Konstytucja 3 Maja)</div>
+        <div class="wknd-hint">Naturalny długi weekend — bez urlopu. Weź też piątek 30.04, by mieć 4 dni.</div>
+      </div>
+      <span class="wknd-badge badge-vac" style="background:var(--open);color:var(--open-text)">bez urlopu</span>
+      <span class="wknd-badge badge-len">3 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-05-30">
+      <div class="wknd-dates">27–30 maja <span style="color:var(--muted);font-weight:400">(czw–nd)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Boże Ciało</div>
+        <div class="wknd-hint">Weź urlop w piątek 28.05</div>
+      </div>
+      <span class="wknd-badge badge-vac">1 dzień urlopu</span>
+      <span class="wknd-badge badge-len">4 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-11-01">
+      <div class="wknd-dates">30 października – 1 listopada <span style="color:var(--muted);font-weight:400">(sob–pon)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Wszystkich Świętych</div>
+        <div class="wknd-hint">Naturalny długi weekend — bez urlopu. Weź też piątek 29.10, by mieć 4 dni.</div>
+      </div>
+      <span class="wknd-badge badge-vac" style="background:var(--open);color:var(--open-text)">bez urlopu</span>
+      <span class="wknd-badge badge-len">3 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-11-14">
+      <div class="wknd-dates">11–14 listopada <span style="color:var(--muted);font-weight:400">(czw–nd)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Święto Niepodległości</div>
+        <div class="wknd-hint">Weź urlop w piątek 12.11</div>
+      </div>
+      <span class="wknd-badge badge-vac">1 dzień urlopu</span>
+      <span class="wknd-badge badge-len">4 dni wolnego</span>
+    </div>
+
+    <div class="weekend-row" data-end="2027-12-26">
+      <div class="wknd-dates">24–26 grudnia <span style="color:var(--muted);font-weight:400">(pt–nd)</span></div>
+      <div class="wknd-status">
+        <div class="wknd-name">Wigilia + Boże Narodzenie</div>
+        <div class="wknd-hint">Naturalny długi weekend — bez urlopu. Weź też poniedziałek 27.12, by mieć 4 dni.</div>
+      </div>
+      <span class="wknd-badge badge-vac" style="background:var(--open);color:var(--open-text)">bez urlopu</span>
+      <span class="wknd-badge badge-len">3 dni wolnego</span>
+    </div>
+  </div>
+
+  <div class="info-box" style="margin-top:2rem;" id="dw-note-2026">
     <div class="info-icon">💡</div>
     <div class="info-text">
       <strong>Uwaga:</strong> jeśli święto wypada w niedzielę (jak Wielkanoc, Zielone Świątki czy Wszystkich Świętych w 2026 roku), polskie prawo pracy nie przewiduje żadnej rekompensaty. Inaczej jest ze świętem w sobotę — Wniebowzięcie NMP wypada w 2026 roku właśnie w sobotę (15 sierpnia): zgodnie z art. 130 §2 Kodeksu pracy pracodawca musi obniżyć wymiar czasu pracy o 8 godzin w danym okresie rozliczeniowym, co w praktyce oznacza dodatkowy dzień wolny. Nie ma on jednak stałej daty — o tym, kiedy dokładnie go udzielić, decyduje pracodawca w ramach okresu rozliczeniowego — dlatego 15 sierpnia nie znalazło się na tej liście jako konkretny termin długiego weekendu.
+    </div>
+  </div>
+  <div class="info-box" id="dw-note-2027" style="margin-top:2rem;display:none;">
+    <div class="info-icon">💡</div>
+    <div class="info-text">
+      <strong>Uwaga:</strong> jeśli święto wypada w niedzielę (jak Wielkanoc czy Zielone Świątki w 2027 roku), polskie prawo pracy nie przewiduje żadnej rekompensaty. Inaczej jest ze świętem w sobotę — Święto Pracy wypada w 2027 roku właśnie w sobotę (1 maja): zgodnie z art. 130 §2 Kodeksu pracy pracodawca musi obniżyć wymiar czasu pracy o 8 godzin w danym okresie rozliczeniowym, co w praktyce oznacza dodatkowy dzień wolny. Nie ma on jednak stałej daty — decyduje o tym pracodawca w ramach okresu rozliczeniowego — dlatego 1 maja nie zwiększa dodatkowo liczby dni wolnego na tej liście ponad naturalny weekend.
     </div>
   </div>
 </div>
@@ -262,6 +357,15 @@
 </footer>
 
 <script>
+  function showDwYear(year){
+    [2026, 2027].forEach(function(y){
+      document.getElementById('dw-info-'+y).style.display = (y===year) ? '' : 'none';
+      document.getElementById('dw-stats-'+y).style.display = (y===year) ? '' : 'none';
+      document.getElementById('weekendsList-'+y).style.display = (y===year) ? '' : 'none';
+      document.getElementById('dw-note-'+y).style.display = (y===year) ? '' : 'none';
+      document.querySelector('.dw-year-btn[data-year="'+y+'"]').classList.toggle('active', y===year);
+    });
+  }
   (function updateRowStates() {
     const today = new Date(); today.setHours(0,0,0,0);
     const rows = document.querySelectorAll('.weekend-row');
