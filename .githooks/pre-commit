@@ -19,4 +19,16 @@ if git diff --cached --name-only | grep -q '^swieto\.html$'; then
   fi
 fi
 
+# sitemap-imieniny.xml nie ma zrodla danych do "--changed-staged" (skanuje foldery na
+# dysku), wiec odpalamy go za kazdym razem, gdy commit dotyka czegokolwiek w imieniny/
+# - zapobiega cichemu driftowi sitemapy przy nowych/usunietych stronach imion.
+if git diff --cached --name-only | grep -q '^imieniny/'; then
+  node scripts/gen_sitemap_imieniny.js
+  if [ $? -ne 0 ]; then
+    echo "gen_sitemap_imieniny.js (pre-commit) nie powiódł się — commit przerwany." >&2
+    exit 1
+  fi
+  git add sitemap-imieniny.xml
+fi
+
 exit 0
