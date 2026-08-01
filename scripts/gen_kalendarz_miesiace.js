@@ -62,8 +62,9 @@ function holidayNameFor(key) {
   return HOLIDAY_NAMES[key] || 'Święto ustawowo wolne od pracy';
 }
 
-// Nazwy odpowiadajace kluczom dat w HOLIDAYS (zsynchronizowane z HOLIDAYS_DB w swieto.html,
-// dayOff:true, po naprawie bledu Wigilii - patrz wymiar-czasu-pracy.html/pamiec projektu).
+// Nazwy odpowiadajace kluczom dat w HOLIDAYS (zsynchronizowane z HOLIDAYS_DB w swieto.html).
+// Od Wigilii 2025 wlacznie: 14 dni ustawowo wolnych (Wigilia dodana ustawa z 6.12.2024,
+// Dz.U. 2024 poz. 1965, w zyciu od 1.02.2025) - patrz pamiec projektu.
 const HOLIDAY_NAMES = {
   '2025-01-01': 'Nowy Rok', '2025-01-06': 'Trzech Króli',
   '2025-04-20': 'Wielkanoc', '2025-04-21': 'Poniedziałek Wielkanocny',
@@ -71,28 +72,28 @@ const HOLIDAY_NAMES = {
   '2025-06-08': 'Zielone Świątki', '2025-06-19': 'Boże Ciało',
   '2025-08-15': 'Wniebowzięcie NMP',
   '2025-11-01': 'Wszystkich Świętych', '2025-11-11': 'Święto Niepodległości',
-  '2025-12-25': 'Boże Narodzenie', '2025-12-26': 'Drugi dzień Bożego Narodzenia',
+  '2025-12-24': 'Wigilia Bożego Narodzenia', '2025-12-25': 'Boże Narodzenie', '2025-12-26': 'Drugi dzień Bożego Narodzenia',
   '2026-01-01': 'Nowy Rok', '2026-01-06': 'Trzech Króli',
   '2026-04-05': 'Wielkanoc', '2026-04-06': 'Poniedziałek Wielkanocny',
   '2026-05-01': 'Święto Pracy', '2026-05-03': 'Konstytucja 3 Maja',
   '2026-05-24': 'Zielone Świątki', '2026-06-04': 'Boże Ciało',
   '2026-08-15': 'Wniebowzięcie NMP',
   '2026-11-01': 'Wszystkich Świętych', '2026-11-11': 'Święto Niepodległości',
-  '2026-12-25': 'Boże Narodzenie', '2026-12-26': 'Drugi dzień Bożego Narodzenia',
+  '2026-12-24': 'Wigilia Bożego Narodzenia', '2026-12-25': 'Boże Narodzenie', '2026-12-26': 'Drugi dzień Bożego Narodzenia',
   '2027-01-01': 'Nowy Rok', '2027-01-06': 'Trzech Króli',
   '2027-03-28': 'Wielkanoc', '2027-03-29': 'Poniedziałek Wielkanocny',
   '2027-05-01': 'Święto Pracy', '2027-05-03': 'Konstytucja 3 Maja',
   '2027-05-16': 'Zielone Świątki', '2027-05-27': 'Boże Ciało',
   '2027-08-15': 'Wniebowzięcie NMP',
   '2027-11-01': 'Wszystkich Świętych', '2027-11-11': 'Święto Niepodległości',
-  '2027-12-25': 'Boże Narodzenie', '2027-12-26': 'Drugi dzień Bożego Narodzenia',
+  '2027-12-24': 'Wigilia Bożego Narodzenia', '2027-12-25': 'Boże Narodzenie', '2027-12-26': 'Drugi dzień Bożego Narodzenia',
   '2028-01-01': 'Nowy Rok', '2028-01-06': 'Trzech Króli',
   '2028-04-16': 'Wielkanoc', '2028-04-17': 'Poniedziałek Wielkanocny',
   '2028-05-01': 'Święto Pracy', '2028-05-03': 'Konstytucja 3 Maja',
   '2028-06-04': 'Zielone Świątki', '2028-06-15': 'Boże Ciało',
   '2028-08-15': 'Wniebowzięcie NMP',
   '2028-11-01': 'Wszystkich Świętych', '2028-11-11': 'Święto Niepodległości',
-  '2028-12-25': 'Boże Narodzenie', '2028-12-26': 'Drugi dzień Bożego Narodzenia',
+  '2028-12-24': 'Wigilia Bożego Narodzenia', '2028-12-25': 'Boże Narodzenie', '2028-12-26': 'Drugi dzień Bożego Narodzenia',
 };
 
 function buildMonthData(year, monthIdx0) {
