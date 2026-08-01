@@ -486,5 +486,29 @@
     <priority>0.5</priority>
     <lastmod>2026-08-01</lastmod>
   </url>
+  <url>
+    <loc>https://daybyday.today/kalendarz/2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://daybyday.today/kalendarz/2026/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://daybyday.today/kalendarz/2027/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://daybyday.today/kalendarz/2028/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.55</priority>
+    <lastmod>2026-08-01</lastmod>
+  </url>
 </urlset>
 

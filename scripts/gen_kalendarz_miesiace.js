@@ -271,7 +271,7 @@ function buildPage(year, monthIdx0) {
 
   <div class="month-nav">
     ${prevLink}
-    <a href="/kalendarz.html">Pełny kalendarz roczny →</a>
+    <a href="/kalendarz/${year}/">Cały rok ${year} →</a>
     ${nextLink}
   </div>
 
@@ -288,6 +288,172 @@ function buildPage(year, monthIdx0) {
   </div>
 
   ${otherYears ? `<div class="chips-section"><div class="chips-label">${monthName} w innych latach</div><div class="chips">${otherYears}</div></div>` : ''}
+</div>
+
+<footer>
+  <div class="footer-logo">DaybyDay</div>
+  <div class="footer-links"><a href="/polityka-prywatnosci.html">Polityka prywatności</a><a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a></div>
+  <p class="footer-copy" style="font-size:.75rem;color:var(--muted)">&copy; ${year} daybyday.today</p>
+</footer>
+</body>
+</html>
+`;
+}
+
+function buildYearPage(year) {
+  const pageUrl = `https://daybyday.today/kalendarz/${year}/`;
+  const isLeap = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+  const daysInYear = isLeap ? 366 : 365;
+  const yearHolidays = Object.keys(HOLIDAY_NAMES).filter(k => k.startsWith(`${year}-`)).sort();
+  const holidayRows = yearHolidays.map(k => {
+    const [, m, d] = k.split('-').map(Number);
+    const date = new Date(year, m - 1, d);
+    const dow = date.getDay();
+    const dowLabel = dow === 0 ? 'niedziela' : dow === 6 ? 'sobota' : DAY_NAMES_FULL[dow - 1].toLowerCase();
+    return `<tr><td>${d} ${MONTH_GEN[m - 1]}</td><td>${esc(HOLIDAY_NAMES[k])}</td><td>${dowLabel}</td></tr>`;
+  }).join('');
+
+  const monthCards = MONTH_SLUGS.map((slug, i) => {
+    const { daysInMonth, holidaysInMonth, weekendCount } = buildMonthData(year, i);
+    const holidayLabel = holidaysInMonth.length ? `${holidaysInMonth.length} ${holidaysInMonth.length === 1 ? 'święto' : 'święta'}` : 'brak świąt';
+    return `<a href="/kalendarz/${year}/${slug}/" class="month-card-link"><div class="month-card-name">${MONTH_NAMES[i]}</div><div class="month-card-meta">${daysInMonth} dni · ${weekendCount} weekendowych · ${holidayLabel}</div></a>`;
+  }).join('');
+
+  const title = `Kalendarz ${year} — wszystkie miesiące, święta, dni wolne | DaybyDay`;
+  const metaDesc = `Kalendarz na cały ${year} rok: 12 miesięcy, ${yearHolidays.length} świąt ustawowo wolnych od pracy, wschody i zachody słońca, fazy księżyca. Wybierz miesiąc, żeby zobaczyć szczegóły.`;
+  const pageSub = `Rok ${year} ma ${daysInYear} dni i ${yearHolidays.length} świąt ustawowo wolnych od pracy. Wybierz miesiąc poniżej, żeby zobaczyć szczegółową tabelę dnia (wschody/zachody słońca, fazy księżyca, znaki zodiaku).`;
+
+  const breadcrumbItems = [
+    { name: 'DaybyDay', url: 'https://daybyday.today/' },
+    { name: 'Kalendarz roczny', url: 'https://daybyday.today/kalendarz.html' },
+    { name: `${year}`, url: pageUrl },
+  ];
+  const breadcrumbHtml = `<nav class="breadcrumb" aria-label="breadcrumb">${breadcrumbItems.map((it, i) => i === breadcrumbItems.length - 1 ? `<span>${it.name}</span>` : `<a href="${it.url}">${it.name}</a>`).join(' › ')}</nav>`;
+  const articleLd = jsonLdScript({
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: `Kalendarz ${year}`, description: metaDesc, url: pageUrl,
+    inLanguage: 'pl', isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
+  });
+  const breadcrumbLd = jsonLdScript({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: it.url })),
+  });
+
+  const prevLink = YEARS.includes(year - 1) ? `<a href="/kalendarz/${year - 1}/">← ${year - 1}</a>` : '<span></span>';
+  const nextLink = YEARS.includes(year + 1) ? `<a href="/kalendarz/${year + 1}/">${year + 1} →</a>` : '<span></span>';
+
+  return `<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQZRJPF39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2LQZRJPF39');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${title}</title>
+  <meta name="description" content="${esc(metaDesc)}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="${pageUrl}">
+  <meta property="og:title" content="Kalendarz ${year}">
+  <meta property="og:description" content="${esc(metaDesc)}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.today/og-image.svg">
+  <meta property="og:url" content="${pageUrl}">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  ${articleLd}
+  ${breadcrumbLd}
+
+  <link rel="stylesheet" href="/fonts.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; }
+    html, body { max-width: 100vw; overflow-x: clip; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; line-height:1.65; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; display:flex; align-items:center; gap:.5rem; }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; }
+    .nav-links a:hover { background:var(--tag-bg); color:var(--text); }
+    .page { max-width:1120px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .breadcrumb { font-size:.78rem; color:var(--muted); margin-bottom:1rem; }
+    .breadcrumb a { color:var(--muted); text-decoration:none; }
+    .breadcrumb a:hover { color:var(--text); }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:700px; margin-bottom:2rem; }
+    .year-nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; font-size:.85rem; }
+    .year-nav a { color:var(--text); text-decoration:none; font-weight:500; }
+    .year-nav a:hover { text-decoration:underline; }
+    .months-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; margin-bottom:2.5rem; }
+    .month-card-link { display:block; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.1rem 1.25rem; text-decoration:none; color:var(--text); transition:border-color .15s; }
+    .month-card-link:hover { border-color:#C8C4BE; }
+    .month-card-name { font-family:'Instrument Serif',serif; font-size:1.15rem; margin-bottom:.3rem; }
+    .month-card-meta { font-size:.75rem; color:var(--muted); }
+    .holidays-table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-bottom:2rem; }
+    table.holidays-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+    table.holidays-table th, table.holidays-table td { padding:.7rem 1.1rem; text-align:left; border-bottom:1px solid var(--border); }
+    table.holidays-table thead th { font-size:.66rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); background:var(--tag-bg); }
+    table.holidays-table tbody tr:last-child td { border-bottom:none; }
+    .section-label { font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:.75rem; }
+    .full-cal-link { font-size:.85rem; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-links{display:none} .months-grid{grid-template-columns:1fr 1fr} }
+  </style>
+  <style id="dark-mode-styles">
+    [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; }
+    [data-theme="dark"] a { color: inherit; }
+  </style>
+  <script>
+    (function(){
+      var s=localStorage.getItem('dbd-theme');
+      var p=window.matchMedia('(prefers-color-scheme:dark)').matches;
+      document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));
+    })();
+  </script>
+</head>
+<body>
+<nav class="topnav">
+  <a href="/" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="/">Główna</a></li>
+    <li><a href="/imieniny.html">Imieniny</a></li>
+    <li><a href="/swieta.html">Święta</a></li>
+    <li><a href="/kalendarz-liturgiczny.html">Liturgiczny</a></li>
+    <li><a href="/kalkulatory.html">Kalkulatory</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  ${breadcrumbHtml}
+  <div class="page-label">Kalendarz</div>
+  <h1 class="page-title">Kalendarz ${year}</h1>
+  <p class="page-sub">${pageSub}</p>
+
+  <div class="year-nav">
+    ${prevLink}
+    <a href="/kalendarz.html">Wszystkie lata (widok interaktywny) →</a>
+    ${nextLink}
+  </div>
+
+  <div class="months-grid">${monthCards}</div>
+
+  <div class="section-label">Święta ustawowo wolne od pracy w ${year} roku</div>
+  <div class="holidays-table-wrap">
+    <table class="holidays-table">
+      <thead><tr><th>Data</th><th>Święto</th><th>Dzień tygodnia</th></tr></thead>
+      <tbody>${holidayRows}</tbody>
+    </table>
+  </div>
+
+  ${year === 2026 ? `<p class="full-cal-link"><a href="/wymiar-czasu-pracy.html">Sprawdź wymiar czasu pracy na ${year} rok →</a></p>` : ''}
 </div>
 
 <footer>
@@ -318,6 +484,20 @@ function main() {
     }
   }
   console.log(`Stron /kalendarz/<rok>/<miesiac>/: ${YEARS.length * 12} razem, zapisanych/zmienionych: ${written}${DRY ? ' (DRY RUN)' : ''}, bez zmian: ${unchanged}`);
+
+  let yearWritten = 0, yearUnchanged = 0;
+  for (const year of YEARS) {
+    if (onlyList && !onlyList.includes(`${year}-index`)) continue;
+    const page = buildYearPage(year);
+    const folder = path.join(ROOT, 'kalendarz', String(year));
+    if (!DRY && !fs.existsSync(folder)) fs.mkdirSync(folder, { recursive: true });
+    const filePath = path.join(folder, 'index.html');
+    const existing = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '';
+    if (existing === page) { yearUnchanged++; continue; }
+    if (!DRY) fs.writeFileSync(filePath, page, 'utf8');
+    yearWritten++;
+  }
+  console.log(`Stron /kalendarz/<rok>/ (parasol): ${YEARS.length} razem, zapisanych/zmienionych: ${yearWritten}${DRY ? ' (DRY RUN)' : ''}, bez zmian: ${yearUnchanged}`);
 }
 
 main();

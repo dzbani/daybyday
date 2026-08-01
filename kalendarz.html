@@ -225,6 +225,7 @@
       <button class="year-btn" onclick="changeYear(1)">2027 →</button>
     </div>
   </div>
+  <p style="margin:-1.5rem 0 2rem;"><a id="yearPageLink" href="/kalendarz/2026/" style="font-size:.82rem;color:var(--muted);">Zobacz jako osobną stronę →</a></p>
 
   <div class="legend">
     <div class="legend-item"><div class="legend-dot" style="background:var(--today)"></div>Dzisiaj</div>
@@ -461,6 +462,7 @@
     document.getElementById('yearLabel').textContent = year;
     document.querySelectorAll('.year-btn')[0].textContent = `← ${year-1}`;
     document.querySelectorAll('.year-btn')[1].textContent = `${year+1} →`;
+    document.getElementById('yearPageLink').href = `/kalendarz/${year}/`;
 
     for (let m = 0; m < 12; m++) {
       const card = document.createElement('div');
