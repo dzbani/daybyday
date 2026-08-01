@@ -11,12 +11,12 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Święta i dni wolne 2026 — kalendarz świąt | DaybyDay</title>
-  <meta name="description" content="Kompletny kalendarz świąt i dni wolnych od pracy w Polsce 2026. Sprawdź kiedy są długie weekendy, Wielkanoc, Boże Narodzenie i inne święta.">
+  <title>Święta i dni wolne 2026/2027 — kalendarz świąt | DaybyDay</title>
+  <meta name="description" content="Kompletny kalendarz świąt i dni wolnych od pracy w Polsce 2026 i 2027. Sprawdź kiedy są długie weekendy, Wielkanoc, Boże Narodzenie i inne święta.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/swieta.html">
-  <meta property="og:title" content="Święta i dni wolne 2026 — kalendarz świąt w Polsce">
-  <meta property="og:description" content="Kompletny kalendarz świąt i dni wolnych w Polsce 2026. Długie weekendy, święta państwowe i kościelne.">
+  <meta property="og:title" content="Święta i dni wolne 2026/2027 — kalendarz świąt w Polsce">
+  <meta property="og:description" content="Kompletny kalendarz świąt i dni wolnych w Polsce 2026 i 2027. Długie weekendy, święta państwowe i kościelne.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image.svg">
   <meta property="og:url" content="https://daybyday.today/swieta.html">
@@ -197,9 +197,15 @@
 
 <div class="page">
   <div class="page-header">
-    <div class="page-label">Polska 2026</div>
+    <div class="page-label">Polska</div>
     <h1 class="page-title">Święta i dni wolne</h1>
   </div>
+
+  <div class="year-nav" style="display:flex;gap:.5rem;margin-bottom:1.25rem;">
+    <button class="year-btn swieta-year-btn active" data-year="2026" onclick="showSwietaYear(2026)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2026</button>
+    <button class="year-btn swieta-year-btn" data-year="2027" onclick="showSwietaYear(2027)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2027</button>
+  </div>
+  <style>.swieta-year-btn.active{background:var(--text) !important;color:var(--bg) !important;border-color:var(--text) !important;}</style>
 
   <div class="filter-row">
     <button class="filter-btn active" onclick="filterType('wszystkie',this)">Wszystkie</button>
@@ -296,28 +302,57 @@
   const TYPE_COLOR={panstwowe:'#3A5FA0',koscielne:'#8B5E2A',miedzynarodowe:'#3A6B3F',branzowe:'#5B4E8C',nieoficjalne:'#6B6864',historyczne:'#7A4A42'};
   const DATE_LABEL_OVERRIDE={'dzien-farmaceuty':'25–26 wrz'};
 
-  const list=document.getElementById('holidaysList');
-  const sorted=[...SWIETA_DATA].sort((a,b)=> a[1]-b[1] || a[0]-b[0]);
-  let curMonth=-1;
-  sorted.forEach(([day,month,name,slug,typeStr])=>{
-    if(month!==curMonth){
-      curMonth=month;
-      const label=document.createElement('div');
-      label.className='month-label';
-      label.dataset.month=MONTH_NAME[month-1];
-      label.textContent=MONTH_NAME[month-1].charAt(0).toUpperCase()+MONTH_NAME[month-1].slice(1);
-      list.appendChild(label);
-    }
-    const types=typeStr.split(' ');
-    const row=document.createElement('a');
-    row.href=(typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:'swieto.html?id='+slug;
-    row.className='holiday-row';
-    row.dataset.type=typeStr;
-    const dateLabel=DATE_LABEL_OVERRIDE[slug]||(day+' '+MONTH_ABBR[month-1]);
-    const badges=types.map(t=>'<span class="holiday-type type-'+t+'">'+TYPE_LABEL[t]+'</span>').join('');
-    row.innerHTML='<div class="holiday-date">'+dateLabel+'</div><div class="holiday-dot" style="background:'+TYPE_COLOR[types[0]]+'"></div><div class="holiday-name">'+name+'</div>'+badges+'<span class="holiday-arrow">›</span>';
-    list.appendChild(row);
+  // Ruchome swieta (liczone wzgledem Wielkanocy) - w SWIETA_DATA daty sa dla 2026
+  // (Wielkanoc 5 kwietnia). Dla 2027 (Wielkanoc 28 marca) podmieniamy tylko te sluigi,
+  // reszta (stale daty) zostaje bez zmian - unika duplikowania calej ~170-pozycyjnej bazy.
+  const MOVABLE_2027={
+    'tlusty-czwartek':[4,2], 'ostatki':[9,2], 'popielec':[10,2],
+    'niedziela-palmowa':[21,3], 'wielki-czwartek':[25,3], 'wielki-piatek':[26,3],
+    'wielka-sobota':[27,3], 'wielkanoc':[28,3], 'poniedzialek-wielkanocny':[29,3],
+    'milosierdzie-boze':[4,4], 'wniebowstapienie':[9,5], 'zielone-swiatki':[16,5],
+    'boze-cialo':[27,5],
+  };
+  const SWIETA_DATA_2027=SWIETA_DATA.map(([day,month,name,slug,typeStr])=>{
+    const ov=MOVABLE_2027[slug];
+    return ov ? [ov[0],ov[1],name,slug,typeStr] : [day,month,name,slug,typeStr];
   });
+
+  const list=document.getElementById('holidaysList');
+  let currentData=SWIETA_DATA;
+
+  function render(data){
+    list.innerHTML='';
+    const sorted=[...data].sort((a,b)=> a[1]-b[1] || a[0]-b[0]);
+    let curMonth=-1;
+    sorted.forEach(([day,month,name,slug,typeStr])=>{
+      if(month!==curMonth){
+        curMonth=month;
+        const label=document.createElement('div');
+        label.className='month-label';
+        label.dataset.month=MONTH_NAME[month-1];
+        label.textContent=MONTH_NAME[month-1].charAt(0).toUpperCase()+MONTH_NAME[month-1].slice(1);
+        list.appendChild(label);
+      }
+      const types=typeStr.split(' ');
+      const row=document.createElement('a');
+      row.href=(typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:'swieto.html?id='+slug;
+      row.className='holiday-row';
+      row.dataset.type=typeStr;
+      const dateLabel=DATE_LABEL_OVERRIDE[slug]||(day+' '+MONTH_ABBR[month-1]);
+      const badges=types.map(t=>'<span class="holiday-type type-'+t+'">'+TYPE_LABEL[t]+'</span>').join('');
+      row.innerHTML='<div class="holiday-date">'+dateLabel+'</div><div class="holiday-dot" style="background:'+TYPE_COLOR[types[0]]+'"></div><div class="holiday-name">'+name+'</div>'+badges+'<span class="holiday-arrow">›</span>';
+      list.appendChild(row);
+    });
+  }
+
+  window.showSwietaYear=function(year){
+    currentData = (year===2027) ? SWIETA_DATA_2027 : SWIETA_DATA;
+    document.querySelectorAll('.swieta-year-btn').forEach(b=>b.classList.toggle('active', Number(b.dataset.year)===year));
+    document.querySelectorAll('.filter-btn').forEach((b,i)=>b.classList.toggle('active', i===0));
+    render(currentData);
+  };
+
+  render(currentData);
 })();
 </script>
 </body>
