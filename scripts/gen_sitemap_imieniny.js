@@ -21,12 +21,25 @@ const IMIENINY_DIR = path.join(ROOT, 'imieniny');
 const DRY = process.argv.includes('--dry-run');
 
 const slugs = fs.readdirSync(IMIENINY_DIR, { withFileTypes: true })
-  .filter(d => d.isDirectory())
+  .filter(d => d.isDirectory() && d.name !== 'miesiac')
   .map(d => d.name)
   .filter(slug => fs.existsSync(path.join(IMIENINY_DIR, slug, 'index.html')))
   .sort();
 
-const urls = slugs.map(s => `  <url><loc>https://daybyday.today/imieniny/${s}/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>`).join('\n');
+// Strony-huby /imieniny/miesiac/<slug>/ (12 miesiecy) - osobny podkatalog, dodawany osobno
+const MIESIAC_DIR = path.join(IMIENINY_DIR, 'miesiac');
+const miesiacSlugs = fs.existsSync(MIESIAC_DIR)
+  ? fs.readdirSync(MIESIAC_DIR, { withFileTypes: true })
+      .filter(d => d.isDirectory())
+      .map(d => d.name)
+      .filter(slug => fs.existsSync(path.join(MIESIAC_DIR, slug, 'index.html')))
+      .sort()
+  : [];
+
+const urls = [
+  ...slugs.map(s => `  <url><loc>https://daybyday.today/imieniny/${s}/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>`),
+  ...miesiacSlugs.map(s => `  <url><loc>https://daybyday.today/imieniny/miesiac/${s}/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>`),
+].join('\n');
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 
 const filePath = path.join(ROOT, 'sitemap-imieniny.xml');
@@ -35,4 +48,5 @@ const changed = existing !== sitemap;
 if (!DRY && changed) fs.writeFileSync(filePath, sitemap, 'utf8');
 
 console.log(`Folderow ze stronami (imieniny/<slug>/index.html): ${slugs.length}`);
+console.log(`Stron-hubow miesiecznych (imieniny/miesiac/<slug>/index.html): ${miesiacSlugs.length}`);
 console.log(changed ? `sitemap-imieniny.xml ${DRY ? '(dry-run, nie zapisano)' : 'zaktualizowany'}` : 'sitemap-imieniny.xml bez zmian');
