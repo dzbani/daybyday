@@ -11,17 +11,24 @@
   <meta property="og:url" content="https://daybyday.today/kartka/04-14/">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){var s=localStorage.getItem('dbd-theme');var p=window.matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
   <style>
-    :root { color-scheme: light; }
-    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; background: #F8F7F5; line-height: 1.7; }
+    :root { --bg:#F8F7F5; --text:#1A1916; --muted2:#888; --border:#e5e3de; color-scheme: light dark; }
+    [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted2:#8A8680; --border:#2C2A27; }
+    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .25rem; }
-    .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #888; margin: 1.5rem 0 .5rem; }
+    .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin: 1.5rem 0 .5rem; }
     ul { padding-left: 1.2rem; }
-    a { color: #1A1916; }
+    a { color: var(--text); }
     .daynav { display: flex; justify-content: space-between; margin-top: 2rem; font-size: .9rem; }
+    #themeToggle { position: fixed; top: .75rem; right: .75rem; background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted2); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; }
+    #themeToggle:hover { background: var(--border); }
+    #themeToggle::before { content: '☾'; }
+    [data-theme="dark"] #themeToggle::before { content: '☀'; }
   </style>
 </head>
 <body>
+  <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   <h1>14 kwietnia</h1>
   <div class="section-label">Imieniny</div>
   <p><a href="/imieniny/ardalion/">Ardalion</a>, <a href="/imieniny/berenika/">Berenika</a>, <a href="/imieniny/ernestyna/">Ernestyna</a>, <a href="/imieniny/izabela/">Izabela</a>, <a href="/imieniny/jadwiga/">Jadwiga</a>, <a href="/imieniny/julianna/">Julianna</a>, <a href="/imieniny/justyn/">Justyn</a>, <a href="/imieniny/justyna/">Justyna</a>, <a href="/imieniny/krzysztof/">Krzysztof</a>, <a href="/imieniny/krzysztofa/">Krzysztofa</a>, <a href="/imieniny/lambert/">Lambert</a>, <a href="/imieniny/lamberta/">Lamberta</a>, <a href="/imieniny/lawinia/">Lawinia</a>, <a href="/imieniny/lawiniusz/">Lawiniusz</a>, <a href="/imieniny/ludwina/">Ludwina</a>, <a href="/imieniny/maksym/">Maksym</a>, <a href="/imieniny/maria/">Maria</a>, <a href="/imieniny/myslimir/">Myślimir</a>, <a href="/imieniny/symplicja/">Symplicja</a>, <a href="/imieniny/tomaida/">Tomaida</a>, <a href="/imieniny/trofim/">Trofim</a>, <a href="/imieniny/tyburcja/">Tyburcja</a>, <a href="/imieniny/tyburcjusz/">Tyburcjusz</a>, <a href="/imieniny/tyburcy/">Tyburcy</a>, <a href="/imieniny/walerian/">Walerian</a></p>

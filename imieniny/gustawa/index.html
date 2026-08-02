@@ -13,22 +13,29 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Imieniny Gustawa","description":"Gustawa obchodzi imieniny 3 razy w roku: 7 maja, 2 sierpnia, 27 listopada. Sprawdź znaczenie imienia, historię i życzenia imieninowe.","url":"https://daybyday.today/imieniny/gustawa/","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DaybyDay","item":"https://daybyday.today/"},{"@type":"ListItem","position":2,"name":"Imieniny","item":"https://daybyday.today/imieniny.html"},{"@type":"ListItem","position":3,"name":"Gustawa","item":"https://daybyday.today/imieniny/gustawa/"}]}</script>
+  <script>(function(){var s=localStorage.getItem('dbd-theme');var p=window.matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
   <style>
-    :root { color-scheme: light; }
-    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: #1A1916; background: #F8F7F5; line-height: 1.7; }
+    :root { --bg:#F8F7F5; --text:#1A1916; --muted:#555; --muted2:#888; --border:#e5e3de; color-scheme: light dark; }
+    [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted:#B0ACA4; --muted2:#8A8680; --border:#2C2A27; }
+    body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .5rem; }
     h2 { font-size: 1.2rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
-    .dates { font-size: 1.1rem; color: #555; margin-bottom: 1.5rem; }
+    .dates { font-size: 1.1rem; color: var(--muted); margin-bottom: 1.5rem; }
     .name-desc-section { margin-bottom: 1.25rem; }
-    .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #888; margin-bottom: .4rem; }
-    .patron-section { border-top: 1px solid #e5e3de; margin-top: 1.5rem; padding-top: 1.25rem; }
-    a { color: #1A1916; }
-    .breadcrumb { font-size: .8rem; color: #888; margin-bottom: 1rem; }
-    .breadcrumb a { color: #888; }
-    .breadcrumb a:hover { color: #1A1916; }
+    .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin-bottom: .4rem; }
+    .patron-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+    a { color: var(--text); }
+    .breadcrumb { font-size: .8rem; color: var(--muted2); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--muted2); }
+    .breadcrumb a:hover { color: var(--text); }
+    #themeToggle { position: fixed; top: .75rem; right: .75rem; background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; }
+    #themeToggle:hover { background: var(--border); }
+    #themeToggle::before { content: '☾'; }
+    [data-theme="dark"] #themeToggle::before { content: '☀'; }
   </style>
 </head>
 <body>
+  <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://daybyday.today/">DaybyDay</a> › <a href="https://daybyday.today/imieniny.html">Imieniny</a> › <span>Gustawa</span></nav>
   <h1>Imieniny – Gustawa</h1>
   <p class="dates">Imieniny Gustawa: <strong>7 maja, 2 sierpnia, 27 listopada</strong></p>
