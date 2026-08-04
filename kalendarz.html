@@ -101,7 +101,29 @@
     body{animation:pageIn .28s ease both}
     @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
     body.page-out{animation:pageOut .22s ease forwards}
-    @keyframes pageOut{to{opacity:0;transform:translateY(-5px)}}  </style>
+    @keyframes pageOut{to{opacity:0;transform:translateY(-5px)}}
+    .print-btn { display: inline-flex; align-items: center; gap: .35rem; }
+  </style>
+  <style media="print">
+    .topnav, footer, .no-print, #fontToggle, #themeToggle, .nav-burger, #cookieBanner { display: none !important; }
+    html, body { background: #fff !important; color: #000 !important; }
+    .page { padding: 0; max-width: 100%; }
+    .page-header { margin-bottom: 1rem; }
+    .months-grid { display: grid !important; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+    .month-card { border: 1px solid #999 !important; background: #fff !important; break-inside: avoid; page-break-inside: avoid; padding: .6rem; }
+    .month-name, .page-title { color: #000 !important; }
+    .cal-header { color: #333 !important; }
+    .cal-day { color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .cal-day.holiday, .cal-day.weekend:not(.today) { color: #8B3A1A !important; }
+    .cal-day.today { background: #000 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .cal-day.other-month { color: #ccc !important; }
+    .month-table, .month-table th, .month-table td { color: #000 !important; }
+    .month-table tr.holiday td.day-cell, .month-table tr.weekend td { color: #8B3A1A !important; }
+
+    body.print-single .month-card { display: none !important; }
+    body.print-single .month-card.print-target { display: block !important; grid-column: 1 / -1 !important; max-width: 420px; margin: 0 auto; }
+    body.print-single .months-grid { display: block !important; }
+  </style>
   <style>
     .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
     .nav-burger:hover { background:var(--tag-bg); }
@@ -223,9 +245,10 @@
       <button class="year-btn" onclick="changeYear(-1)">← 2025</button>
       <span class="year-label" id="yearLabel">2026</span>
       <button class="year-btn" onclick="changeYear(1)">2027 →</button>
+      <button class="year-btn print-btn no-print" onclick="printYear()" title="Drukuj cały kalendarz roczny">🖨️ Drukuj</button>
     </div>
   </div>
-  <p style="margin:-1.5rem 0 2rem;"><a id="yearPageLink" href="/kalendarz/2026/" style="font-size:.82rem;color:var(--muted);">Zobacz jako osobną stronę →</a></p>
+  <p class="no-print" style="margin:-1.5rem 0 2rem;"><a id="yearPageLink" href="/kalendarz/2026/" style="font-size:.82rem;color:var(--muted);">Zobacz jako osobną stronę →</a></p>
 
   <div class="legend">
     <div class="legend-item"><div class="legend-dot" style="background:var(--today)"></div>Dzisiaj</div>
@@ -467,6 +490,7 @@
     for (let m = 0; m < 12; m++) {
       const card = document.createElement('div');
       card.className = 'month-card' + (tableModeMonths.has(m) ? ' table-mode' : '');
+      card.dataset.month = m;
 
       const header = document.createElement('div');
       header.className = 'month-header';
@@ -474,21 +498,28 @@
       title.className = 'month-name';
       title.textContent = MONTH_NAMES[m];
       const toggleBtn = document.createElement('button');
-      toggleBtn.className = 'table-toggle' + (tableModeMonths.has(m) ? ' active' : '');
+      toggleBtn.className = 'table-toggle no-print' + (tableModeMonths.has(m) ? ' active' : '');
       toggleBtn.textContent = tableModeMonths.has(m) ? '📅 Siatka' : '📊 Tabela (wschód/zachód, księżyc)';
       toggleBtn.title = 'Pokaż wschód/zachód słońca, fazę księżyca i znak zodiaku dla każdego dnia miesiąca';
       toggleBtn.addEventListener('click', () => {
         if (tableModeMonths.has(m)) tableModeMonths.delete(m); else tableModeMonths.add(m);
         buildCalendar(currentYear);
       });
+      const printMonthBtn = document.createElement('button');
+      printMonthBtn.className = 'table-toggle no-print';
+      printMonthBtn.textContent = '🖨️';
+      printMonthBtn.title = `Drukuj tylko ${MONTH_NAMES[m]} ${year}`;
+      printMonthBtn.addEventListener('click', (e) => { e.stopPropagation(); printMonth(m); });
       header.appendChild(title);
       header.appendChild(toggleBtn);
+      header.appendChild(printMonthBtn);
       card.appendChild(header);
 
       card.appendChild(tableModeMonths.has(m) ? buildMonthTable(year, m) : buildMonthGrid(year, m));
 
       if (year >= 2025 && year <= 2028) {
         const detailLink = document.createElement('a');
+        detailLink.className = 'no-print';
         detailLink.href = `/kalendarz/${year}/${MONTH_SLUGS[m]}/`;
         detailLink.textContent = 'Szczegółowa strona miesiąca →';
         detailLink.style.cssText = 'display:block;margin-top:.75rem;font-size:.78rem;color:var(--muted);text-decoration:none;';
@@ -502,6 +533,20 @@
   function changeYear(delta) {
     currentYear += delta;
     buildCalendar(currentYear);
+  }
+
+  function printYear() {
+    document.body.classList.remove('print-single');
+    window.print();
+  }
+
+  function printMonth(m) {
+    document.querySelectorAll('.month-card').forEach(c => c.classList.remove('print-target'));
+    const card = document.querySelector(`.month-card[data-month="${m}"]`);
+    if (card) card.classList.add('print-target');
+    document.body.classList.add('print-single');
+    window.print();
+    document.body.classList.remove('print-single');
   }
 
   buildCalendar(currentYear);
