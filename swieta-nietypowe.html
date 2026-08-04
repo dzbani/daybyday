@@ -693,6 +693,7 @@ function swietoLink(name) {
 }
 const MONTHS     = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
 const MONTH_LONG = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
+const MONTH_LONG_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
 const MONTH_SHORT= ['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
 const WEEKDAYS   = ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
 
@@ -1868,7 +1869,7 @@ function fullMonth(m){ return MONTH_LONG[m-1]; }
   document.getElementById('todaySection').style.display='';
   const wd = WEEKDAYS[TODAY.getDay()];
   document.getElementById('todayFullDate').textContent =
-    `${wd}, ${T_DAY} ${fullMonth(T_MONTH).toLowerCase()} ${TODAY.getFullYear()}`;
+    `${wd}, ${T_DAY} ${MONTH_LONG_GEN[T_MONTH-1]} ${TODAY.getFullYear()}`;
   const grid = document.getElementById('todayGrid');
   grid.innerHTML = items.map(([,, name, desc, tag])=>
     `<div class="today-card" data-expand="1">
@@ -1953,7 +1954,7 @@ function filterMonth(m, btn){
 }
 
 function showDetail(d, m, name, tag, desc) {
-  document.getElementById('modalMeta').textContent = `${d} ${MONTH_LONG[m-1].toLowerCase()} · ${tag}`;
+  document.getElementById('modalMeta').textContent = `${d} ${MONTH_LONG_GEN[m-1]} · ${tag}`;
   document.getElementById('modalTitle').textContent = name;
   document.getElementById('modalTag').textContent = tag;
   const wikiSlug = encodeURIComponent(name.replace(/ /g,'_'));
