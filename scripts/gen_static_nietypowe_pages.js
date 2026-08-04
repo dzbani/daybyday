@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { regenerateRegistry } = require('./swieto_registry');
+const { regenerateRegistry, NAME_ALIASES } = require('./swieto_registry');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -71,7 +71,14 @@ function loadNietypoweHolidays() {
   return sandbox.__H__;
 }
 
+const MONTH_INDEX_PL = { 'stycznia':1,'lutego':2,'marca':3,'kwietnia':4,'maja':5,'czerwca':6,
+  'lipca':7,'sierpnia':8,'września':9,'października':10,'listopada':11,'grudnia':12 };
+
 // --- Wczytaj HOLIDAYS_DB (juz awansowane) ze swieto.html, zeby wykluczyc duplikaty ---
+// Zwraca zarowno zbior nazw (do dokladnego porownania), jak i liste {name, day, month}
+// (do porownania fuzzy PO DACIE — patrz sameNormalizedName nizej: podobienstwo nazwy
+// bez zgodnosci daty dawalo falszywe trafienia, np. "Swieto Polskiej Bielizny" [29 marca]
+// vs "Miedzynarodowy Dzien Bielizny" [5 sierpnia] to dwa rozne, realne swieta).
 function loadPromotedNames() {
   const raw = fs.readFileSync(path.join(ROOT, 'swieto.html'), 'utf8');
   const src = extractBalanced(raw, 'const HOLIDAYS_DB = {', '{', '}');
@@ -79,22 +86,44 @@ function loadPromotedNames() {
   vm.createContext(sandbox);
   vm.runInContext(src + ';\nthis.__DB__ = HOLIDAYS_DB;', sandbox);
   const names = new Set();
-  for (const h of Object.values(sandbox.__DB__)) names.add(h.name);
-  return names;
+  const dated = [];
+  for (const h of Object.values(sandbox.__DB__)) {
+    names.add(h.name);
+    const m = h.date && h.date.match(/^(\d{1,2})\s+(\p{L}+)/u);
+    if (m) dated.push({ name: h.name, day: parseInt(m[1], 10), month: MONTH_INDEX_PL[m[2].toLowerCase()] });
+  }
+  return { names, dated };
 }
 
 // znane aliasy — ta sama realna okazja pod inna nazwa w bazie nietypowych,
-// juz opisana pod inna nazwa w warstwie bogatej (patrz swieto_registry.js NAME_ALIASES)
-const KNOWN_ALIAS_NAMES = new Set([
-  'Międzynarodowy Dzień Sprzeciwu Wobec Tam',
-  'Dzień Diagnosty Laboratoryjnego',
-  'Dzień Farmaceuty',
-  'Dzień Maszynisty',
-  'Dzień Nauki Polskiej',
-  'Dzień Praw Człowieka',
-  'Dzień Sapera',
-  'Dzień Tolerancji',
-]);
+// juz opisana pod inna nazwa w warstwie bogatej. Jedno zrodlo prawdy: NAME_ALIASES
+// w swieto_registry.js (tam tez sluzy do linkowania SWIETO_NAME_TO_SLUG) — wczesniej
+// ta lista byla utrzymywana rownolegle w obu plikach i mogla sie rozjechac.
+const KNOWN_ALIAS_NAMES = new Set(Object.keys(NAME_ALIASES));
+
+// --- Zabezpieczenie na przyszlosc: wykrywanie NOWYCH, jeszcze nie skatalogowanych
+// aliasow po znormalizowanej nazwie (bez prefiksow typu "Miedzynarodowy"/"Swiatowy",
+// bez wielkosci liter/diakrytykow), zeby ten sam blad (patrz audyt 2026-08-04, 77
+// duplikatow) nie odtworzyl sie cicho przy kolejnych dopisywanych swietach. Celowo
+// wymaga DOKLADNEJ rownosci znormalizowanego zbioru slow (nie progu podobienstwa) —
+// to bezpieczne minimum, ktore w audycie 2026-08-04 nie dalo ani jednego falszywego
+// trafienia (np. "Ogolnopolski Dzien Bez" nie zostal blednie dopasowany do "...bez
+// Przeklenstw", bo maja rozne zbiory slow po normalizacji).
+const STOPWORDS = new Set(['dzien','dzień','swiatowy','światowy','miedzynarodowy',
+  'międzynarodowy','europejski','narodowy','ogolnopolski','ogólnopolski','krajowy',
+  'dnia','swieto','święto','polski','polska','polskiej']);
+function normalizedWordSet(name) {
+  const norm = name.toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9 ]/g, ' ');
+  return new Set(norm.split(/\s+/).filter(w => w.length > 2 && !STOPWORDS.has(w)));
+}
+function sameNormalizedName(a, b) {
+  const sa = normalizedWordSet(a), sb = normalizedWordSet(b);
+  if (sa.size === 0 || sb.size === 0 || sa.size !== sb.size) return false;
+  for (const w of sa) if (!sb.has(w)) return false;
+  return true;
+}
 
 function buildLightPage(slug, entry) {
   const [d, m, name, desc, tag] = entry;
@@ -178,7 +207,7 @@ function main() {
   const limit = limitArg ? parseInt(limitArg.split('=')[1]) : Infinity;
 
   const HOLIDAYS = loadNietypoweHolidays();
-  const promotedNames = loadPromotedNames();
+  const { names: promotedNames, dated: promotedDated } = loadPromotedNames();
 
   const usedSlugs = new Set();
   // juz istniejace foldery (np. wygenerowane wczesniej przez ten sam skrypt lub bogaty generator)
@@ -186,12 +215,21 @@ function main() {
     if (entry.isDirectory()) usedSlugs.add(entry.name);
   }
 
-  let written = 0, unchanged = 0, skippedPromoted = 0, skippedAlias = 0, processed = 0;
+  let written = 0, unchanged = 0, skippedPromoted = 0, skippedAlias = 0, skippedFuzzy = 0, processed = 0;
+  const newFuzzyMatches = [];
 
   for (const entry of HOLIDAYS) {
     const name = entry[2];
     if (promotedNames.has(name)) { skippedPromoted++; continue; }
     if (KNOWN_ALIAS_NAMES.has(name)) { skippedAlias++; continue; }
+    const [entryDay, entryMonth] = entry;
+    const fuzzyMatch = promotedDated.find(pn =>
+      pn.day === entryDay && pn.month === entryMonth && sameNormalizedName(pn.name, name));
+    if (fuzzyMatch) {
+      skippedFuzzy++;
+      newFuzzyMatches.push({ name, fuzzyMatch: fuzzyMatch.name });
+      continue;
+    }
     if (processed >= limit) break;
     processed++;
 
@@ -226,13 +264,22 @@ function main() {
   let registryStats = null;
   if (!dryRun) registryStats = regenerateRegistry(ROOT);
 
-  console.log(`Kandydatów (nie-awansowanych): ${HOLIDAYS.length - skippedPromoted - skippedAlias}`);
+  console.log(`Kandydatów (nie-awansowanych): ${HOLIDAYS.length - skippedPromoted - skippedAlias - skippedFuzzy}`);
   console.log(`Pominiętych (już awansowane do HOLIDAYS_DB): ${skippedPromoted}`);
   console.log(`Pominiętych (znany alias tego samego wydarzenia): ${skippedAlias}`);
+  console.log(`Pominiętych (nowo wykryty prawdopodobny alias, NIE w NAME_ALIASES): ${skippedFuzzy}`);
   console.log(`Przetworzonych: ${processed}`);
   console.log(`Zapisanych/zmienionych: ${written}${dryRun ? ' (DRY RUN — nic nie zapisano)' : ''}`);
   console.log(`Bez zmian: ${unchanged}`);
   if (registryStats) console.log(`Łącznie stron statycznych /swieto/*/: ${registryStats.slugCount}`);
+  if (newFuzzyMatches.length) {
+    console.log('\nUWAGA: znaleziono prawdopodobne aliasy jeszcze nie wpisane do NAME_ALIASES');
+    console.log('(strona NIE zostala wygenerowana jako duplikat, ale link z listy nietypowych');
+    console.log('nie bedzie klikalny dopoki alias nie zostanie dopisany recznie w swieto_registry.js):');
+    for (const { name, fuzzyMatch } of newFuzzyMatches) {
+      console.log(`  "${name}"  ~=  "${fuzzyMatch}"`);
+    }
+  }
 }
 
 main();
