@@ -116,9 +116,10 @@
     .cal-header { color: #333 !important; }
     .cal-day { color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .cal-day.holiday, .cal-day.weekend:not(.today) { color: #8B3A1A !important; }
-    .cal-day.today { background: #000 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .cal-day.today { background: transparent !important; color: #000 !important; font-weight: 400 !important; border-radius: 0 !important; }
     .cal-day.other-month { color: #ccc !important; }
     .month-table, .month-table th, .month-table td { color: #000 !important; }
+    .month-table tr.today td { font-weight: 400 !important; }
     .month-table tr.holiday td.day-cell, .month-table tr.weekend td { color: #8B3A1A !important; }
 
     @page { margin: 1cm; }
