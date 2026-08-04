@@ -110,9 +110,9 @@
     .year-nav button { display: none !important; }
     html, body { background: #fff !important; color: #000 !important; }
     @page { margin: 1cm; }
-    .page { padding: 0; max-width: 100%; }
-    .page-header { margin-bottom: .6rem; }
-    .page-title { font-size: 1.5rem !important; }
+    .page { padding: 0; max-width: 100%; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+    .page-header { margin-bottom: .4rem; flex: 0 0 auto; }
+    .page-title { font-size: 1.3rem !important; }
     .month-name, .page-title { color: #000 !important; }
     .cal-header { color: #333 !important; }
     .cal-day { color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -123,18 +123,23 @@
     .month-table tr.today td { font-weight: 400 !important; }
     .month-table tr.holiday td.day-cell, .month-table tr.weekend td { color: #8B3A1A !important; }
 
-    /* Caly rok na 2 kartkach po 6 miesiecy (wiecej miejsca niz upychanie 12 na raz) */
-    body:not(.print-single) .months-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    body:not(.print-single) .month-card {
-      border: 1px solid #ccc !important; background: #fff !important; padding: .7rem .8rem;
-      break-inside: avoid; page-break-inside: avoid;
+    /* Caly rok na jednej kartce: siatka 3x4 miesiace, w ramkach */
+    body:not(.print-single) .months-grid {
+      display: grid !important; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(4, 1fr);
+      gap: .55rem; flex: 1; min-height: 0;
     }
-    body:not(.print-single) .month-card:nth-child(6) { break-after: page; page-break-after: always; }
-    body:not(.print-single) .month-header { margin-bottom: .4rem; }
-    body:not(.print-single) .month-name { font-size: 1.15rem !important; margin-bottom: 0 !important; }
-    body:not(.print-single) .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
-    body:not(.print-single) .cal-header { font-size: .65rem !important; padding: .15rem 0 !important; }
-    body:not(.print-single) .cal-day { font-size: .9rem !important; aspect-ratio: 1; }
+    body:not(.print-single) .month-card {
+      border: 1px solid #ccc !important; background: #fff !important; padding: .45rem .5rem;
+      display: flex; flex-direction: column; overflow: hidden; break-inside: avoid; page-break-inside: avoid;
+    }
+    body:not(.print-single) .month-header { margin-bottom: .3rem; flex: 0 0 auto; }
+    body:not(.print-single) .month-name { font-size: .95rem !important; margin-bottom: 0 !important; }
+    body:not(.print-single) .cal-grid {
+      flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: auto repeat(6, 1fr); gap: 3px;
+    }
+    body:not(.print-single) .cal-header { font-size: .55rem !important; padding: .1rem 0 !important; }
+    body:not(.print-single) .cal-day { font-size: .72rem !important; aspect-ratio: unset !important; }
 
     body.print-single .page-header, body.print-single .legend { display: none !important; }
     body.print-single .months-grid { display: block !important; }
