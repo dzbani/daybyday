@@ -106,12 +106,13 @@
     .print-btn { display: inline-flex; align-items: center; gap: .35rem; }
   </style>
   <style media="print">
-    .topnav, footer, .no-print, #fontToggle, #themeToggle, .nav-burger, #cookieBanner { display: none !important; }
+    .topnav, footer, .no-print, #fontToggle, #themeToggle, .nav-burger, #cookieBanner, .legend { display: none !important; }
+    .year-nav button { display: none !important; }
     html, body { background: #fff !important; color: #000 !important; }
+    @page { margin: 1cm; }
     .page { padding: 0; max-width: 100%; }
-    .page-header { margin-bottom: 1rem; }
-    .months-grid { display: grid !important; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
-    .month-card { border: 1px solid #999 !important; background: #fff !important; break-inside: avoid; page-break-inside: avoid; padding: .6rem; }
+    .page-header { margin-bottom: .6rem; }
+    .page-title { font-size: 1.5rem !important; }
     .month-name, .page-title { color: #000 !important; }
     .cal-header { color: #333 !important; }
     .cal-day { color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -122,8 +123,19 @@
     .month-table tr.today td { font-weight: 400 !important; }
     .month-table tr.holiday td.day-cell, .month-table tr.weekend td { color: #8B3A1A !important; }
 
-    @page { margin: 1cm; }
-    body.print-single .page { padding: 0; }
+    /* Caly rok na 2 kartkach po 6 miesiecy (wiecej miejsca niz upychanie 12 na raz) */
+    body:not(.print-single) .months-grid { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    body:not(.print-single) .month-card {
+      border: 1px solid #ccc !important; background: #fff !important; padding: .7rem .8rem;
+      break-inside: avoid; page-break-inside: avoid;
+    }
+    body:not(.print-single) .month-card:nth-child(6) { break-after: page; page-break-after: always; }
+    body:not(.print-single) .month-header { margin-bottom: .4rem; }
+    body:not(.print-single) .month-name { font-size: 1.15rem !important; margin-bottom: 0 !important; }
+    body:not(.print-single) .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    body:not(.print-single) .cal-header { font-size: .65rem !important; padding: .15rem 0 !important; }
+    body:not(.print-single) .cal-day { font-size: .9rem !important; aspect-ratio: 1; }
+
     body.print-single .page-header, body.print-single .legend { display: none !important; }
     body.print-single .months-grid { display: block !important; }
     body.print-single .month-card { display: none !important; }
@@ -131,6 +143,7 @@
       display: flex !important; flex-direction: column;
       grid-column: 1 / -1 !important; width: 100%; max-width: 100%;
       height: 100vh; margin: 0; border: none !important; padding: 0; box-sizing: border-box;
+      background: #fff !important;
     }
     body.print-single .print-target .month-header { justify-content: center; margin-bottom: 1.25cm; flex: 0 0 auto; }
     body.print-single .print-target .month-name { font-size: 3rem; }
