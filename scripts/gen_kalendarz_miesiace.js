@@ -96,6 +96,30 @@ const HOLIDAY_NAMES = {
   '2028-12-24': 'Wigilia Bożego Narodzenia', '2028-12-25': 'Boże Narodzenie', '2028-12-26': 'Drugi dzień Bożego Narodzenia',
 };
 
+// Niedziele handlowe 2026 - zsynchronizowane z niedziele-handlowe.html (jedyne zrodlo
+// prawdy, tam tez lista wszystkich 52 niedziel roku w DATES_2026). Otwarte niedziele
+// (8 z 52) maja wlasna etykiete tlumaczaca dlaczego akurat ta jest handlowa; pozostale
+// sa domyslnie "niehandlowa". Rok 2027 nie ma jeszcze oficjalnych dat (ogloszenie przez
+// MRiPS dopiero w IV kw. 2026), wiec celowo NIE fabrykujemy danych - funkcja zwraca null
+// dla lat innych niz 2026.
+const OPEN_SUNDAYS_2026 = {
+  '1-25': 'Niedziela handlowa — przed końcem miesiąca',
+  '3-29': 'Niedziela Palmowa — handlowa przed Wielkanocą',
+  '4-26': 'Niedziela handlowa — ostatnia niedziela kwietnia',
+  '6-28': 'Niedziela handlowa — ostatnia niedziela czerwca',
+  '8-30': 'Niedziela handlowa — przed szkołą',
+  '12-6': 'Niedziela handlowa — przedświąteczna',
+  '12-13': 'Niedziela handlowa — przedświąteczna',
+  '12-20': 'Niedziela handlowa — przedświąteczna',
+};
+function shoppingSundayInfo(year, m, d, dow) {
+  if (year !== 2026 || dow !== 0) return null;
+  const key = `${m}-${d}`;
+  return OPEN_SUNDAYS_2026[key]
+    ? { open: true, label: OPEN_SUNDAYS_2026[key] }
+    : { open: false, label: 'Niedziela niehandlowa — sklepy zamknięte' };
+}
+
 function buildMonthData(year, monthIdx0) {
   const m = monthIdx0 + 1;
   const daysInMonth = new Date(year, m, 0).getDate();
@@ -116,6 +140,7 @@ function buildMonthData(year, monthIdx0) {
       day: d, dow, key, isHoliday, isWeekend,
       dayName: DAY_NAMES[dow === 0 ? 6 : dow - 1],
       sun, moon, zodiac: getSunZodiac(m, d),
+      shopping: shoppingSundayInfo(year, m, d, dow),
     });
   }
   return { daysInMonth, rows, holidaysInMonth, weekendCount };
@@ -155,7 +180,11 @@ function buildPage(year, monthIdx0) {
   const tableRows = rows.map(r => {
     const cls = [r.isHoliday ? 'holiday' : '', r.isWeekend ? 'weekend' : ''].filter(Boolean).join(' ');
     const dayLink = `/kartka/${pad(m)}-${pad(r.day)}/`;
-    return `<tr class="${cls}"><td class="day-cell"><a href="${dayLink}">${r.day} ${r.dayName}</a></td><td>${r.sun.rise}</td><td>${r.sun.set}</td><td>${r.sun.len}</td><td>${r.moon.icon} ${esc(r.moon.sign)}</td><td>${esc(r.zodiac)}</td>${r.isHoliday ? `<td class="holiday-name">${esc(holidayNameFor(r.key))}</td>` : '<td></td>'}</tr>`;
+    const noteParts = [];
+    if (r.isHoliday) noteParts.push(esc(holidayNameFor(r.key)));
+    if (r.shopping) noteParts.push(`<span class="${r.shopping.open ? 'shop-open' : 'shop-closed'}">${esc(r.shopping.label)}</span>`);
+    const noteCell = noteParts.length ? `<td class="holiday-name">${noteParts.join(' · ')}</td>` : '<td></td>';
+    return `<tr class="${cls}"><td class="day-cell"><a href="${dayLink}">${r.day} ${r.dayName}</a></td><td>${r.sun.rise}</td><td>${r.sun.set}</td><td>${r.sun.len}</td><td>${r.moon.icon} ${esc(r.moon.sign)}</td><td>${esc(r.zodiac)}</td>${noteCell}</tr>`;
   }).join('');
 
   // Nawigacja miedzy miesiacami (moze przechodzic przez granice roku, tylko jesli docelowy rok jest w zakresie YEARS)
@@ -227,6 +256,10 @@ function buildPage(year, monthIdx0) {
     table.cal-table tr.holiday td.day-cell, table.cal-table tr.holiday td.holiday-name { color:var(--holiday-text); font-weight:600; }
     table.cal-table .day-cell a { color:inherit; text-decoration:none; }
     table.cal-table .day-cell a:hover { text-decoration:underline; }
+    .shop-open { color:#3A6B3F; }
+    .shop-closed { color:#8B3A1A; }
+    [data-theme="dark"] .shop-open { color:#7BC87F; }
+    [data-theme="dark"] .shop-closed { color:#D47A5A; }
     .chips-section { margin-bottom:2rem; }
     .chips-label { font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
     .chips { display:flex; flex-wrap:wrap; gap:.5rem; }
