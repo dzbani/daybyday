@@ -284,8 +284,63 @@ function buildStaticPage(day) {
 `;
 }
 
+// Kompaktowa, osadzalna wersja karty dnia (do <iframe> na obcych stronach) — cel: backlink z
+// serwisów, ktore wstawia widget u siebie (ten sam wzorzec co "Kartka z kalendarza na dzis" u
+// kalendarzswiat.pl, potwierdzony jako duze zrodlo ich backlinkow przez Bing Webmaster Tools).
+function buildWidgetPage(day) {
+  const { m, d } = day;
+  const slug = `${pad2(m)}-${pad2(d)}`;
+  const dateLabel = `${d} ${MONTH_GEN[m]}`;
+
+  const namesHtml = day.names.length
+    ? day.names.slice(0, 6).map(n => `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>`).join(', ')
+    : '—';
+
+  let holidayHtml = '';
+  if (day.holidays.length) {
+    const h = day.holidays[0];
+    const slugMajor = majorByName[h.name];
+    const href = slugMajor && SWIETO_SLUGS.has(slugMajor)
+      ? `https://daybyday.today/swieto/${slugMajor}/`
+      : `https://daybyday.today/swieta-nietypowe.html?q=${encodeURIComponent(h.name)}`;
+    holidayHtml = `<div class="label">Dziś obchodzimy</div><div><a href="${href}" target="_top">${esc(h.name)}</a></div>`;
+  }
+
+  return `<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${dateLabel} — DaybyDay</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: transparent; }
+  body { font-family: Georgia, serif; color: #1A1916; padding: 14px 16px; font-size: 14px; line-height: 1.5; }
+  .card { border: 1px solid #E8E5E0; border-radius: 12px; padding: 14px 16px; background: #FFFFFF; }
+  .date { font-size: 1.35rem; font-weight: 600; margin-bottom: .4rem; }
+  .label { font-size: .66rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: #8A8680; margin: .65rem 0 .2rem; }
+  a { color: #1A1916; }
+  .brand { display: block; margin-top: .75rem; padding-top: .6rem; border-top: 1px solid #E8E5E0; font-size: .7rem; color: #8A8680; text-decoration: none; font-family: Georgia, serif; }
+  .brand b { color: #1A1916; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="date">${dateLabel}</div>
+    <div class="label">Imieniny</div>
+    <div>${namesHtml}</div>
+    ${holidayHtml}
+    <a class="brand" href="https://daybyday.today/kartka/${slug}/" target="_top">Kartka z kalendarza — <b>DaybyDay.today</b></a>
+  </div>
+</body>
+</html>
+`;
+}
+
 function genStaticPages() {
   let written = 0;
+  let widgetsWritten = 0;
   for (const day of days) {
     const slug = `${pad2(day.m)}-${pad2(day.d)}`;
     const folder = path.join(ROOT, 'kartka', slug);
@@ -297,8 +352,19 @@ function genStaticPages() {
       if (!DRY) fs.writeFileSync(filePath, page, 'utf8');
       written++;
     }
+
+    const widgetFolder = path.join(folder, 'widget');
+    if (!DRY && !fs.existsSync(widgetFolder)) fs.mkdirSync(widgetFolder, { recursive: true });
+    const widgetPath = path.join(widgetFolder, 'index.html');
+    const widgetPage = buildWidgetPage(day);
+    const widgetExisting = fs.existsSync(widgetPath) ? fs.readFileSync(widgetPath, 'utf8') : '';
+    if (widgetExisting !== widgetPage) {
+      if (!DRY) fs.writeFileSync(widgetPath, widgetPage, 'utf8');
+      widgetsWritten++;
+    }
   }
   console.log(`Statyczne strony /kartka/*/: ${written} zapisanych/zmienionych z ${days.length} (${DRY ? 'DRY RUN' : 'zapisano'}).`);
+  console.log(`Widgety /kartka/*/widget/: ${widgetsWritten} zapisanych/zmienionych z ${days.length} (${DRY ? 'DRY RUN' : 'zapisano'}). Nie w sitemap (noindex, przeznaczone do osadzania).`);
 
   // kartka_slugs.js
   const allSlugs = days.map(d => `${pad2(d.m)}-${pad2(d.d)}`).sort();

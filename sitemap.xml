@@ -175,6 +175,12 @@
     <lastmod>2026-06-15</lastmod>
   </url>
   <url>
+    <loc>https://daybyday.today/widget-kartka.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+    <lastmod>2026-08-06</lastmod>
+  </url>
+  <url>
     <loc>https://daybyday.today/zmiana-czasu.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
