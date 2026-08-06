@@ -39,6 +39,14 @@ function slugify(name) {
 
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Przycina opis do ~155 znakow (limit snippetu Google/Bing) na granicy slowa, z wielokropkiem.
+function truncateDesc(str, maxLen = 155) {
+  if (str.length <= maxLen) return str;
+  const cut = str.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+}
+
 // Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
 // zeby tresc nigdy nie mogla przedwczesnie zamknac tagu <script>.
 function jsonLdScript(obj) {
@@ -128,7 +136,7 @@ function sameNormalizedName(a, b) {
 function buildLightPage(slug, entry) {
   const [d, m, name, desc, tag] = entry;
   const dateStr = `${d} ${MONTH_NAMES_PL[m - 1]}`;
-  const metaDesc = (desc || `${name} — ${dateStr}.`).replace(/<[^>]+>/g, '').slice(0, 300);
+  const metaDesc = truncateDesc((desc || `${name} — ${dateStr}.`).replace(/<[^>]+>/g, ''));
   const tagLabel = TAG_LABELS[tag] || tag || '';
 
   const pageUrl = `https://daybyday.today/swieto/${slug}/`;

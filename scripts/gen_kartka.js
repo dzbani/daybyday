@@ -197,6 +197,14 @@ function patchKartkaHtml() {
 // ============================================================
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Przycina opis do ~155 znakow (limit snippetu Google/Bing) na granicy slowa, z wielokropkiem.
+function truncateDesc(str, maxLen = 155) {
+  if (str.length <= maxLen) return str;
+  const cut = str.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+}
+
 function buildStaticPage(day) {
   const { m, d } = day;
   const slug = `${pad2(m)}-${pad2(d)}`;
@@ -220,7 +228,7 @@ function buildStaticPage(day) {
   if (day.names.length) metaDescParts.push(`imieniny obchodzą ${day.names.slice(0, 3).join(', ')}`);
   if (day.holidays.length) metaDescParts.push(`${day.holidays.length} świąt i dni tematycznych`);
   metaDescParts.push('przysłowie ludowe na ten dzień');
-  const metaDesc = `${dateLabel}: ${metaDescParts.join(', ')}. Sprawdź, co przypada na ten dzień.`;
+  const metaDesc = truncateDesc(`${dateLabel}: ${metaDescParts.join(', ')}. Sprawdź, co przypada na ten dzień.`);
 
   const prevIdx = (day.doy - 2 + 366) % 366;
   const nextIdx = day.doy % 366;

@@ -44,6 +44,14 @@ const HOLIDAYS_DB = loadHolidaysDb(htmlRaw);
 
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Przycina opis do ~155 znakow (limit snippetu Google/Bing) na granicy slowa, z wielokropkiem.
+function truncateDesc(str, maxLen = 155) {
+  if (str.length <= maxLen) return str;
+  const cut = str.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trim() + '…';
+}
+
 // Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
 // zeby tresc nigdy nie mogla przedwczesnie zamknac tagu <script>.
 function jsonLdScript(obj) {
@@ -60,7 +68,7 @@ function buildPage(slug) {
   const h = HOLIDAYS_DB[slug];
   if (!h) return null;
 
-  const metaDesc = (h.desc && h.desc[0] ? h.desc[0].replace(/<[^>]+>/g, '') : `${h.name} — ${h.date}. Historia, pochodzenie i tradycje.`).slice(0, 300);
+  const metaDesc = truncateDesc(h.desc && h.desc[0] ? h.desc[0].replace(/<[^>]+>/g, '') : `${h.name} — ${h.date}. Historia, pochodzenie i tradycje.`);
   const descHtml = (h.desc || []).map(p => `<p>${p}</p>`).join('');
   const tradHtml = (h.traditions || []).map(t => `<li>${t}</li>`).join('');
   const relLinks = (h.related || []).map(rslug => {
