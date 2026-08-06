@@ -106,10 +106,13 @@ function buildPage(name) {
   if (!rich) return null;
 
   const datesStr = dates.map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ');
+  const metaDatesStr = dates.length > 3
+    ? dates.slice(0, 3).map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ') + ' i inne'
+    : datesStr;
   const freqStr = dates.length === 1 ? 'raz w roku' : `${dates.length} razy w roku`;
   const descHtml = transformRich(rich);
   const genitive = NAME_GENITIVE[name] || name;
-  const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${datesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
+  const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
 
   const richHasPatron = PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
   const dbEntry = NAME_DB[normalize(name)];
