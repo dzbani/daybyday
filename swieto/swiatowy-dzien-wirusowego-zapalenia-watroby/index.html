@@ -28,14 +28,30 @@
     .breadcrumb { font-size: .8rem; color: var(--muted2); margin-bottom: 1rem; }
     .breadcrumb a { color: var(--muted2); }
     .breadcrumb a:hover { color: var(--text); }
-    #themeToggle { position: fixed; top: .75rem; right: .75rem; background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; }
+    .topnav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+    .topnav .nav-logo { font-weight: 700; color: var(--text); text-decoration: none; font-size: 1.05rem; flex-shrink: 0; }
+    .topnav .nav-links { list-style: none; display: flex; gap: 1.1rem; margin: 0; padding: 0; flex-wrap: wrap; flex: 1; }
+    .topnav .nav-links a { color: var(--muted); text-decoration: none; font-size: .85rem; }
+    .topnav .nav-links a:hover { color: var(--text); }
+    @media(max-width:480px){ .topnav .nav-links{gap:.6rem .9rem; font-size:.8rem;} }
+    #themeToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     #themeToggle:hover { background: var(--border); }
     #themeToggle::before { content: '☾'; }
     [data-theme="dark"] #themeToggle::before { content: '☀'; }
   </style>
 </head>
 <body>
-  <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
+  <nav class="topnav">
+    <a href="/" class="nav-logo">DaybyDay</a>
+    <ul class="nav-links">
+      <li><a href="/">Główna</a></li>
+      <li><a href="/imieniny.html">Imieniny</a></li>
+      <li><a href="/swieta.html">Święta</a></li>
+      <li><a href="/kalendarz-liturgiczny.html">Liturgiczny</a></li>
+      <li><a href="/kalkulatory.html">Kalkulatory</a></li>
+    </ul>
+    <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
+  </nav>
   <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://daybyday.today/">DaybyDay</a> › <a href="https://daybyday.today/swieta.html">Święta</a> › <span>Światowy Dzień Wirusowego Zapalenia Wątroby</span></nav>
   <h1>Światowy Dzień Wirusowego Zapalenia Wątroby 🩺</h1>
   <p class="date">28 lipca</p>
