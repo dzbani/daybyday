@@ -31,6 +31,13 @@ vm.createContext(richSandbox);
 vm.runInContext(richRaw + '\nthis.__RESULT__ = NAME_DESCRIPTIONS_RICH;', richSandbox);
 const RICH = richSandbox.__RESULT__;
 
+// --- 1b. Wczytaj NAME_TRENDS (nadania noworodkom 2000-2025, dane.gov.pl) ---
+let trendsRaw = fs.readFileSync(path.join(ROOT, 'name_trends.js'), 'utf8').replace(/^﻿/, '');
+const trendsSandbox = {};
+vm.createContext(trendsSandbox);
+vm.runInContext(trendsRaw + '\nthis.__RESULT__ = NAME_TRENDS;', trendsSandbox);
+const NAME_TRENDS = trendsSandbox.__RESULT__;
+
 // --- 2. Wczytaj tablicę NAMES wbudowaną w imieniny.html ---
 const htmlRaw = fs.readFileSync(path.join(ROOT, 'imieniny.html'), 'utf8');
 const namesMatch = htmlRaw.match(/const NAMES=\r?\n(\[[\s\S]*?\r?\n\]);/);
@@ -99,6 +106,105 @@ for (const [slug, names] of Object.entries(bySlug)) {
   collisionLog.push(`${slug}: [${names.join(', ')}] -> wybrano "${slugOwner[slug]}"`);
 }
 
+// Skopiowane 1:1 z imieniny.html (buildTrendChart/trendOdmiana/buildTrendNarrative) -
+// ta sama logika renderowania wykresu trendu popularnosci, tylko uruchamiana w Node
+// przy generowaniu statycznych stron zamiast w przegladarce.
+function buildTrendChart(name) {
+  if (typeof NAME_TRENDS === 'undefined' || !NAME_TRENDS[name]) return '';
+  const data = NAME_TRENDS[name];
+  const years = [];
+  for (let y = 2000; y <= 2025; y++) years.push(y);
+  const vals = years.map(y => data[y] || 0);
+  const maxVal = Math.max(...vals);
+  if (maxVal === 0) return '';
+
+  const W = 320, H = 110, PL = 42, PR = 12, PT = 14, PB = 28;
+  const cW = W - PL - PR, cH = H - PT - PB;
+
+  const xPos = i => PL + (i / (years.length - 1)) * cW;
+  const yPos = v => PT + cH - (v / maxVal) * cH;
+
+  // Line path
+  const pts = vals.map((v, i) => `${xPos(i).toFixed(1)},${yPos(v).toFixed(1)}`);
+  const linePath = 'M' + pts.join('L');
+
+  // Fill path
+  const fillPath = linePath + `L${xPos(years.length-1).toFixed(1)},${(PT+cH).toFixed(1)}L${xPos(0).toFixed(1)},${(PT+cH).toFixed(1)}Z`;
+
+  // Y-axis labels (max and ~half)
+  const yLabels = [
+    { v: maxVal, y: yPos(maxVal) },
+    { v: Math.round(maxVal / 2), y: yPos(maxVal / 2) },
+    { v: 0, y: yPos(0) }
+  ];
+
+  // Dots and x-labels only every 5 years (+ first/last) - 25 punktów byłoby za gęste
+  const lastIdx = years.length - 1;
+  const labelIdx = years.map((y, i) => (y % 5 === 0 || i === lastIdx) ? i : -1).filter(i => i >= 0);
+  const dots = labelIdx.map(i => `<circle cx="${xPos(i).toFixed(1)}" cy="${yPos(vals[i]).toFixed(1)}" r="2.5" fill="var(--accent,#2563eb)" stroke="white" stroke-width="1.5"/>`).join('');
+  const xLabels = labelIdx.map(i => `<text x="${xPos(i).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">${years[i]}</text>`).join('');
+  const yLabelsSvg = yLabels.map(l => `<text x="${PL-5}" y="${l.y+3}" text-anchor="end" font-size="9" fill="var(--muted)">${l.v >= 1000 ? (l.v/1000).toFixed(l.v%1000===0?0:1)+'k' : l.v}</text>`).join('');
+  const gridLines = yLabels.map(l => `<line x1="${PL}" y1="${l.y.toFixed(1)}" x2="${W-PR}" y2="${l.y.toFixed(1)}" stroke="var(--border)" stroke-width="0.5"/>`).join('');
+
+  const narrative = buildTrendNarrative(name, vals, years);
+
+  return `<div style="margin-top:1rem;padding:1rem;background:var(--tag-bg);border-radius:8px">
+    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2000–2025)</div>
+    <svg viewBox="0 0 ${W} ${H}" width="100%" style="overflow:visible;display:block">
+      <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent,#2563eb)" stop-opacity="0.18"/><stop offset="100%" stop-color="var(--accent,#2563eb)" stop-opacity="0.02"/></linearGradient></defs>
+      ${gridLines}
+      <path d="${fillPath}" fill="url(#tg)"/>
+      <path d="${linePath}" fill="none" stroke="var(--accent,#2563eb)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      ${dots}
+      ${xLabels}
+      ${yLabelsSvg}
+    </svg>
+    <div style="font-size:.7rem;color:var(--muted);margin-top:.25rem">źródło: dane.gov.pl · imiona pierwsze nadawane noworodkom</div>
+    ${narrative ? `<div style="font-size:.85rem;line-height:1.6;color:var(--text);margin-top:.85rem;padding-top:.85rem;border-top:1px solid var(--border)">${narrative}</div>` : ''}
+  </div>`;
+}
+
+function trendOdmiana(n) { return n === 1 ? 'raz' : 'razy'; }
+
+function buildTrendNarrative(name, vals, years) {
+  const val2000 = vals[0], val2024 = vals[vals.length - 1];
+  const lastYear = years[years.length - 1];
+  let peakVal = -1, peakYear = years[0];
+  vals.forEach((v, i) => { if (v > peakVal) { peakVal = v; peakYear = years[i]; } });
+  const firstYear = years[vals.findIndex(v => v > 0)];
+  const pct = val2000 > 0 ? Math.round((val2024 - val2000) / val2000 * 100) : null;
+  const fmt = n => n.toLocaleString('pl-PL');
+
+  let sentence;
+
+  if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
+    return `Imię <strong>${name}</strong> miało krótki epizod popularności w polskich metrykach — po raz pierwszy pojawiło się w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
+  } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
+    sentence = `Imię <strong>${name}</strong> to stosunkowo nowe zjawisko w polskich metrykach — pierwsze pojedyncze nadania odnotowano dopiero w ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  } else if (val2000 >= 10 && val2024 <= 2) {
+    sentence = `W ciągu ostatnich ${lastYear - 2000} lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  } else if (val2000 >= 10 && pct !== null && pct <= -50) {
+    sentence = `W ciągu ostatnich ${lastYear - 2000} lat popularność imienia <strong>${name}</strong> drastycznie spadła — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, podczas gdy w ${lastYear} roku już tylko ${fmt(val2024)} ${trendOdmiana(val2024)} (spadek o ${Math.abs(pct)}%).`;
+  } else if (val2000 >= 10 && pct !== null && pct <= -20) {
+    sentence = `Popularność imienia <strong>${name}</strong> systematycznie maleje — z ${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku, czyli spadek o ${Math.abs(pct)}%.`;
+  } else if (val2000 >= 3 && pct !== null && pct >= 100) {
+    const multiplier = val2024 / val2000;
+    const growthText = multiplier >= 3 ? `niemal ${Math.round(multiplier)}-krotnie` : `o ${pct}%`;
+    const zaledwie = val2000 < 500 ? 'zaledwie ' : '';
+    sentence = `Popularność imienia <strong>${name}</strong> gwałtownie wzrosła w ciągu ostatnich ${lastYear - 2000} lat — z ${zaledwie}${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku (wzrost ${growthText}).`;
+  } else if (val2000 >= 3 && pct !== null && pct >= 30) {
+    sentence = `Imię <strong>${name}</strong> zyskuje na popularności — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  } else {
+    sentence = `Popularność imienia <strong>${name}</strong> pozostaje względnie stabilna od 2000 roku — wtedy nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  }
+
+  if (peakYear !== 2000 && peakYear !== lastYear && peakVal >= Math.max(val2000, val2024, 5) * 1.4) {
+    sentence += ` Szczyt popularności imię osiągnęło w ${peakYear} roku, gdy nadano je ${fmt(peakVal)} ${trendOdmiana(peakVal)}.`;
+  }
+
+  return sentence;
+}
+
 function buildPage(name) {
   const dates = (dateMap[name] || []).slice().sort((a, b) => a.m !== b.m ? a.m - b.m : a.d - b.d);
   if (!dates.length) return null;
@@ -111,6 +217,7 @@ function buildPage(name) {
     : datesStr;
   const freqStr = dates.length === 1 ? 'raz w roku' : `${dates.length} razy w roku`;
   const descHtml = transformRich(rich);
+  const trendHtml = buildTrendChart(name);
   const genitive = NAME_GENITIVE[name] || name;
   const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
 
@@ -160,8 +267,8 @@ function buildPage(name) {
   ${breadcrumbLd}
   <script>(function(){var s=localStorage.getItem('dbd-theme');var p=window.matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
   <style>
-    :root { --bg:#F8F7F5; --text:#1A1916; --muted:#555; --muted2:#888; --border:#e5e3de; color-scheme: light dark; }
-    [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted:#B0ACA4; --muted2:#8A8680; --border:#2C2A27; }
+    :root { --bg:#F8F7F5; --text:#1A1916; --muted:#555; --muted2:#888; --border:#e5e3de;${trendHtml ? ' --tag-bg:#EFEDE8; --accent:#8a6d3b;' : ''} color-scheme: light dark; }
+    [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted:#B0ACA4; --muted2:#8A8680; --border:#2C2A27;${trendHtml ? ' --tag-bg:#1c1b18; --accent:#c9a86a;' : ''} }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .5rem; }
     h2 { font-size: 1.2rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
@@ -200,7 +307,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
-  <div>${descHtml}</div>${patronBlock}
+  <div>${descHtml}</div>${trendHtml ? '\n  ' + trendHtml : ''}${patronBlock}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
