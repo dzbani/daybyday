@@ -307,7 +307,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
-  <div>${descHtml}</div>${trendHtml ? '\n  ' + trendHtml : ''}${patronBlock}
+  ${trendHtml ? trendHtml + '\n  ' : ''}<div>${descHtml}</div>${patronBlock}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
