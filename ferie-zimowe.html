@@ -203,7 +203,7 @@
   </div>
 
   <div id="year-2026">
-    <div class="countdown-card">
+    <div class="countdown-card" id="countdownCard">
       <div class="countdown-label">Do końca roku szkolnego</div>
       <div class="countdown-num" id="countdown">11</div>
       <div class="countdown-sub">dni do zakończenia roku szkolnego (26 czerwca 2026)</div>
@@ -372,8 +372,13 @@
   const endOfYear = new Date('2026-06-26');
   const today = new Date();
   const days = Math.ceil((endOfYear - today) / 86400000);
-  const el = document.getElementById('countdown');
-  if (el) el.textContent = days > 0 ? days : 0;
+  const card = document.getElementById('countdownCard');
+  if (days > 0) {
+    const el = document.getElementById('countdown');
+    if (el) el.textContent = days;
+  } else if (card) {
+    card.style.display = 'none';
+  }
 </script>
 
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
