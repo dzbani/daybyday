@@ -113,6 +113,24 @@ const swietoNamesRaw = readFile('swieto_names.js');
 const SWIETO_NAME_TO_SLUG = eval('(' + swietoNamesRaw.match(/const SWIETO_NAME_TO_SLUG=(\{[\s\S]*?\});/)[1] + ')');
 Object.assign(majorByName, SWIETO_NAME_TO_SLUG);
 
+// --- 4c. Funkcje astro (sun/moon/zodiac) wyciagniete z kalendarz.html — ten sam wzorzec
+// co scripts/gen_kalendarz_miesiace.js (jedno zrodlo prawdy, brak duplikacji algorytmu). ---
+const kalendarzRaw = readFile('kalendarz.html');
+const astroFuncsStart = kalendarzRaw.indexOf('function pad(n)');
+const astroFuncsEnd = kalendarzRaw.indexOf('function goToDay');
+if (astroFuncsStart === -1 || astroFuncsEnd === -1) throw new Error('Nie znaleziono bloku funkcji sun/moon w kalendarz.html');
+const astroFuncsCode = kalendarzRaw.slice(astroFuncsStart, astroFuncsEnd);
+const astroSandbox = {};
+vm.createContext(astroSandbox);
+vm.runInContext(astroFuncsCode + '\nthis.__calc__ = { sunTimesFor, getMoonPhaseCompact, getSunZodiac };', astroSandbox);
+const { sunTimesFor, getMoonPhaseCompact, getSunZodiac } = astroSandbox.__calc__;
+const ASTRO_YEAR = 2026; // rok referencyjny do liczenia wschod/zachod/faza ksiezyca (te same daty co reszta strony)
+// 29 lutego nie istnieje w 2026 (nie przestepny) - kalendarz.html liczy dzien roku jako
+// mo[month-1]+day bez sprawdzania czy data istnieje w danym roku, wiec dla (2026,2,29) wyszlyby
+// po cichu wartosci matematycznie tozsame z 1 marca. Uzywamy najblizszego roku przestepnego
+// TYLKO dla tego jednego dnia, zeby liczba dni w roku (366) byla spojna z algorytmem.
+function astroYearFor(m, d) { return (m === 2 && d === 29) ? 2028 : ASTRO_YEAR; }
+
 // --- 5. Dla kazdego dnia roku (365 + 29 lutego) policz ostateczna liste przyslow (fallback jak w index.html) ---
 const MONTH_DAYS = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // luty z 29 (rok przestepny) dla kompletnosci
 function proverbsFor(m, d, dayOfYearApprox) {
@@ -197,6 +215,13 @@ function patchKartkaHtml() {
 // ============================================================
 function esc(s) { return String(s).replace(/"/g, '&quot;'); }
 
+// Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
+// zeby tresc nigdy nie mogla przedwczesnie zamknac tagu <script> (ten sam wzorzec co w
+// gen_static_swieto_pages.js/gen_kalendarz_miesiace.js).
+function jsonLdScript(obj) {
+  return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
+}
+
 // Przycina opis do ~155 znakow (limit snippetu Google/Bing) na granicy slowa, z wielokropkiem.
 function truncateDesc(str, maxLen = 155) {
   if (str.length <= maxLen) return str;
@@ -224,16 +249,39 @@ function buildStaticPage(day) {
 
   const proverbHtml = day.proverbs.map(p => `<p>${esc(p)}</p>`).join('');
 
+  const astroYear = astroYearFor(m, d);
+  const sun = sunTimesFor(astroYear, m, d);
+  const moon = getMoonPhaseCompact(astroYear, m, d);
+  const zodiac = getSunZodiac(m, d);
+  const astroHtml = `<p>Wschód słońca: <strong>${esc(sun.rise)}</strong> · Zachód: <strong>${esc(sun.set)}</strong> · Długość dnia: ${esc(sun.len)}</p><p>Faza księżyca: ${esc(moon.icon)} ${esc(moon.sign)} · Znak zodiaku: ${esc(zodiac)}</p>`;
+
   const metaDescParts = [];
   if (day.names.length) metaDescParts.push(`imieniny obchodzą ${day.names.slice(0, 3).join(', ')}`);
   if (day.holidays.length) metaDescParts.push(`${day.holidays.length} świąt i dni tematycznych`);
-  metaDescParts.push('przysłowie ludowe na ten dzień');
+  metaDescParts.push(`wschód słońca o ${sun.rise}`);
   const metaDesc = truncateDesc(`${dateLabel}: ${metaDescParts.join(', ')}. Sprawdź, co przypada na ten dzień.`);
 
   const prevIdx = (day.doy - 2 + 366) % 366;
   const nextIdx = day.doy % 366;
   const prevSlugRef = days[prevIdx] ? `${pad2(days[prevIdx].m)}-${pad2(days[prevIdx].d)}` : null;
   const nextSlugRef = days[nextIdx] ? `${pad2(days[nextIdx].m)}-${pad2(days[nextIdx].d)}` : null;
+
+  const pageUrl = `https://daybyday.today/kartka/${slug}/`;
+  const breadcrumbItems = [
+    { name: 'DaybyDay', url: 'https://daybyday.today/' },
+    { name: 'Kartka z kalendarza', url: 'https://daybyday.today/kartka-z-kalendarza.html' },
+    { name: dateLabel, url: pageUrl },
+  ];
+  const breadcrumbHtml = `<nav class="breadcrumb" aria-label="breadcrumb">${breadcrumbItems.map((it, i) => i === breadcrumbItems.length - 1 ? `<span>${esc(it.name)}</span>` : `<a href="${it.url}">${esc(it.name)}</a>`).join(' › ')}</nav>`;
+  const articleLd = jsonLdScript({
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: `${dateLabel} — kartka z kalendarza`, description: metaDesc, url: pageUrl,
+    inLanguage: 'pl', isPartOf: { '@type': 'WebSite', name: 'DaybyDay', url: 'https://daybyday.today/' },
+  });
+  const breadcrumbLd = jsonLdScript({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbItems.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: it.url })),
+  });
 
   return `<!DOCTYPE html>
 <html lang="pl">
@@ -242,18 +290,23 @@ function buildStaticPage(day) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${dateLabel} — kartka z kalendarza | DaybyDay</title>
   <meta name="description" content="${esc(metaDesc)}">
-  <link rel="canonical" href="https://daybyday.today/kartka/${slug}/">
+  <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="${dateLabel} — kartka z kalendarza | DaybyDay">
   <meta property="og:description" content="${esc(metaDesc)}">
-  <meta property="og:url" content="https://daybyday.today/kartka/${slug}/">
+  <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  ${articleLd}
+  ${breadcrumbLd}
   <script>(function(){var s=localStorage.getItem('dbd-theme');var p=window.matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));})();</script>
   <style>
     :root { --bg:#F8F7F5; --text:#1A1916; --muted2:#888; --border:#e5e3de; color-scheme: light dark; }
     [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted2:#8A8680; --border:#2C2A27; }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .25rem; }
+    .breadcrumb { font-size: .8rem; color: var(--muted2); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--muted2); }
+    .breadcrumb a:hover { color: var(--text); }
     .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin: 1.5rem 0 .5rem; }
     ul { padding-left: 1.2rem; }
     a { color: var(--text); }
@@ -266,18 +319,21 @@ function buildStaticPage(day) {
 </head>
 <body>
   <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
+  ${breadcrumbHtml}
   <h1>${dateLabel}</h1>
   <div class="section-label">Imieniny</div>
   <p>${namesHtml}</p>
   <div class="section-label">Święta i wydarzenia</div>
   ${holidaysHtml}
+  <div class="section-label">Wschód/zachód słońca i księżyc</div>
+  ${astroHtml}
   <div class="section-label">Przysłowie na ten dzień</div>
   ${proverbHtml}
   <div class="daynav">
     ${prevSlugRef ? `<a href="/kartka/${prevSlugRef}/">← poprzedni dzień</a>` : '<span></span>'}
     ${nextSlugRef ? `<a href="/kartka/${nextSlugRef}/">następny dzień →</a>` : '<span></span>'}
   </div>
-  <p><a href="/kartka-z-kalendarza.html?date=2026-${pad2(m)}-${pad2(d)}">Pełne informacje (wschód/zachód słońca, faza księżyca) →</a></p>
+  <p><a href="/kartka-z-kalendarza.html?date=${ASTRO_YEAR}-${pad2(m)}-${pad2(d)}">Zobacz jako interaktywną kartę →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
 </html>
