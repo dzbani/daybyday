@@ -15,6 +15,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+const { patchFile: patchMonthTables } = require('./gen_wschody_static');
 
 const ROOT = path.join(__dirname, '..');
 const SRC_PATH = path.join(ROOT, 'wschody-zachody.html');
@@ -95,6 +96,10 @@ function buildPage(slug, city) {
   html = html.replace(OLD_HERO, `<div class="page-label">Astronomia</div>\n  ${breadcrumbHtml}\n  <h1 class="page-title">Wschód i zachód słońca ${cityIn}</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>`);
   html = html.replace(OLD_TAB_DEFAULT, `btn.className = 'city-tab' + (key === '${slug}' ? ' active' : '');`);
   html = html.replace(OLD_INIT_DEFAULT, `} else {\n  selectCity('${slug}');\n  useMyLocation(true);\n}`);
+
+  // Statyczne tabele miesieczne dla WLASNEJ lokalizacji tego miasta (nie Warszawy) -
+  // ten sam mechanizm co dla glownej strony, patrz gen_wschody_static.js.
+  html = patchMonthTables(`wschod-zachod-slonca/${slug}/index.html`, html, city.lat, city.lon);
 
   return html;
 }
