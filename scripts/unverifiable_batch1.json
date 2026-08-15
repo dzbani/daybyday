@@ -1,0 +1,177 @@
+[
+ {
+  "m": 1,
+  "d": 2,
+  "names": "Bazylego, Grzegorza",
+  "text": "Styczeń ciepły — marzec mroźny.",
+  "note": "Generyczna korelacja dwóch miesięcy, bez rymu, nie znaleziono źródła."
+ },
+ {
+  "m": 1,
+  "d": 2,
+  "names": "Bazylego, Grzegorza",
+  "text": "Gdy styczeń wilgotny, lato suche.",
+  "note": "Plauzybilna struktura ludowa, brak potwierdzenia w źródłach."
+ },
+ {
+  "m": 1,
+  "d": 3,
+  "names": "Genowefy, Daniela",
+  "text": "Styczeń bez śniegu — zły rok dla rolnika.",
+  "note": "Temat zgodny z ludową logiką, ale konkretny tekst niepotwierdzony."
+ },
+ {
+  "m": 1,
+  "d": 4,
+  "names": "Tytusa, Anieli",
+  "text": "Zimny styczeń — ciepły maj.",
+  "note": "Generyczna korelacja miesięcy, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 5,
+  "names": "Edwarda, Szymona",
+  "text": "Styczeń odwilżą znaczony — kwiecień mroźny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 7,
+  "names": "Juliana, Rajmunda",
+  "text": "Po Trzech Królach styczeń strzela mrozem.",
+  "note": "Wiarygodny styl, brak potwierdzenia źródłowego."
+ },
+ {
+  "m": 1,
+  "d": 7,
+  "names": "Juliana, Rajmunda",
+  "text": "Styczeń pełen śniegu — dobry rok dla stodoły.",
+  "note": "Motyw zgodny ze śniegiem jako zapowiedzią urodzaju, tekst niepotwierdzony."
+ },
+ {
+  "m": 1,
+  "d": 8,
+  "names": "Seweryna, Marii",
+  "text": "Styczeń mglisty — marzec deszczowy.",
+  "note": "Zbliżony motyw do potwierdzonego \"Gdy styczeń zamglony, marzec zaśnieżony\", ale inny skutek (deszcz vs śnieg) — nie liczę jako pełne potwierdzenie."
+ },
+ {
+  "m": 1,
+  "d": 9,
+  "names": "Marceliny, Adama",
+  "text": "Mroźny styczeń — ciepły kwiecień.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 10,
+  "names": "Wilhelma, Danuty",
+  "text": "Styczeń śniegiem pokryty — w lecie pola obfite.",
+  "note": "Zgodny tematycznie, tekst niepotwierdzony."
+ },
+ {
+  "m": 1,
+  "d": 12,
+  "names": "Benedykta, Tatiany",
+  "text": "Styczeń ciepły — wiosna ostra.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 13,
+  "names": "Bogumyły, Weroniki",
+  "text": "Styczeń bez mrozu — zły znak dla chłopa.",
+  "note": "Zgodny tematycznie z realnym wierzeniem, tekst niepotwierdzony."
+ },
+ {
+  "m": 1,
+  "d": 15,
+  "names": "Pawła, Arnolda",
+  "text": "Styczeń mroźny bez śniegu — wiosna bez deszczu.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 15,
+  "names": "Pawła, Arnolda",
+  "text": "Gdyby styczeń miał lato, wrzesień miałby mróz za to.",
+  "note": "Konstrukcja warunkowa typowa dla przysłów ludowych, ale tekst niepotwierdzony."
+ },
+ {
+  "m": 1,
+  "d": 17,
+  "names": "Antoniego",
+  "text": "Na świętego Antoniego mróz piszczy na błoniu.",
+  "note": "Przyzwoity styl rymowany, ale niepotwierdzony źródłowo."
+ },
+ {
+  "m": 1,
+  "d": 17,
+  "names": "Antoniego",
+  "text": "Antoni surowy — luty spokojny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 18,
+  "names": "Małgorzaty, Piotra",
+  "text": "Styczeń bez wichru — dobry rok dla ogrodnika.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 19,
+  "names": "Henryka, Mariusza",
+  "text": "Gdy styczeń mgłami przykryty — lato suche.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 20,
+  "names": "Fabiana, Sebastiana",
+  "text": "Na świętego Sebastiana zima jest panią.",
+  "note": "Poetycki, ale wiarygodny styl; brak potwierdzenia."
+ },
+ {
+  "m": 1,
+  "d": 20,
+  "names": "Fabiana, Sebastiana",
+  "text": "Gdy na Fabiana słońce zaświeci, piękne lato się wróży.",
+  "note": "Plauzybilne, niepotwierdzone."
+ },
+ {
+  "m": 1,
+  "d": 22,
+  "names": "Anastazego, Wincentego",
+  "text": "Na Wincentego słońce zaświeci — zima się skróci.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 23,
+  "names": "Ildefonsa, Rajmunda",
+  "text": "Rajmund śniegiem obsypany — marzec umiarkowany.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 24,
+  "names": "Felicji, Tymoteusza",
+  "text": "Na Tymoteusza dzień dłuższy o chwilę.",
+  "note": "Łagodne stwierdzenie faktu, niepotwierdzone jako przysłowie."
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "names": "Pawła, Delfiny",
+  "text": "Paweł z mrozem — lipiec z żarem.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 1,
+  "d": 26,
+  "names": "Tymoteusza, Tytusa",
+  "text": "Po świętym Pawle dni wyraźnie przyrastają.",
+  "note": "Stwierdzenie faktu przyrodniczego, niepotwierdzone jako przysłowie."
+ }
+]

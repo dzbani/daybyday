@@ -1,0 +1,177 @@
+[
+ {
+  "m": 1, "d": 2,
+  "oldText": "Styczeń ciepły — marzec mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Makary pogodny, cały styczeń chłodny.",
+  "source": "kalbi.pl, przysłowia polskie na styczeń (2 stycznia, św. Makary) — oryginał to bezźródłowy szablon 'X — Y' bez rymu i logiki ludowej."
+ },
+ {
+  "m": 1, "d": 2,
+  "oldText": "Gdy styczeń wilgotny, lato suche.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w styczniu woda huczy, to na wiosnę mróz dokuczy.",
+  "source": "kalendarzswiat.pl/meteoprog.pl (przyslowia_styczen) — realne przysłowie o 'wodzie' w styczniu wiąże ją z mrozem na wiosnę, nie z suchym latem jak w oryginale."
+ },
+ {
+  "m": 1, "d": 3,
+  "oldText": "Styczeń bez śniegu — zły rok dla rolnika.",
+  "classification": "suspicious",
+  "newProverb": "Od Genowefy listopad swój bierze początek.",
+  "source": "przyslowia.net (3 stycznia, św. Genowefa) — dokładne trafienie daty i patronki; oryginał to generyczny szablon bez potwierdzenia."
+ },
+ {
+  "m": 1, "d": 4,
+  "oldText": "Zimny styczeń — ciepły maj.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w Eugeniego lód albo woda, taka i lipcowa pokaże się pogoda.",
+  "source": "kalbi.pl/przyslowia.net (4 stycznia, św. Eugeniusz) — dokładne trafienie daty; oryginał to generyczna korelacja bez rymu i bez potwierdzenia."
+ },
+ {
+  "m": 1, "d": 5,
+  "oldText": "Styczeń odwilżą znaczony — kwiecień mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Gdy styczeń burzliwy z śniegami, lato burzliwe z deszczami.",
+  "source": "kalbi.pl/przyslowia.net (5 stycznia) — dokładne trafienie daty; oryginał niepotwierdzony, szablonowy."
+ },
+ {
+  "m": 1, "d": 7,
+  "oldText": "Po Trzech Królach styczeń strzela mrozem.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Trzech Króli mrozem trzyma, będzie jeszcze długa zima.",
+  "source": "topagrar.pl, kalbi.pl (Trzech Króli, 6 stycznia — dzień poprzedzający) — ten sam motyw (mróz po Epifanii), ale oryginalny tekst nie występuje w żadnym źródle."
+ },
+ {
+  "m": 1, "d": 7,
+  "oldText": "Styczeń pełen śniegu — dobry rok dla stodoły.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w styczniu mrozy i śniegi, będą stodoły po brzegi.",
+  "source": "kalendarzswiat.pl/meteoprog.pl — niemal identyczny motyw (śnieg → pełne stodoły), ale dokładny tekst oryginału nie istnieje w źródłach; to on posłużył za wzór do sparafrazowania w szablon 'X — Y'."
+ },
+ {
+  "m": 1, "d": 8,
+  "oldText": "Styczeń mglisty — marzec deszczowy.",
+  "classification": "suspicious",
+  "newProverb": "Gdy styczeń zamglony, marzec zaśnieżony.",
+  "source": "kalendarzswiat.pl/meteoprog.pl — realne przysłowie zmienia skutek na 'deszczowy' zamiast 'zaśnieżony', co jest typowym sygnałem przeróbki/fabrykacji, nie cytatem."
+ },
+ {
+  "m": 1, "d": 9,
+  "oldText": "Mroźny styczeń — ciepły kwiecień.",
+  "classification": "suspicious",
+  "newProverb": "Styczeń, styczeń, wszystko studzi — ziemię, bydło i ludzi.",
+  "source": "kalbi.pl/meteoprog.pl (9 stycznia) — dokładne trafienie daty; oryginał to niepotwierdzony szablon."
+ },
+ {
+  "m": 1, "d": 10,
+  "oldText": "Styczeń śniegiem pokryty — w lecie pola obfite.",
+  "classification": "suspicious",
+  "newProverb": "Gdy słońce przygrzewa na Jana Dobrego, spodziewać się można lata pogodnego.",
+  "source": "kalbi.pl/przyslowia.net (10 stycznia, św. Jan Dobry) — dokładne trafienie daty; oryginał niepotwierdzony."
+ },
+ {
+  "m": 1, "d": 12,
+  "oldText": "Styczeń ciepły — wiosna ostra.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy w styczniu rosną trawy, lipiec dla nas niełaskawy.",
+  "source": "kalbi.pl (12 stycznia) — dokładne trafienie daty; oryginał to niepotwierdzony szablon."
+ },
+ {
+  "m": 1, "d": 13,
+  "oldText": "Styczeń bez mrozu — zły znak dla chłopa.",
+  "classification": "suspicious",
+  "newProverb": "Weronika chustkę zrzuci, wiosna od nas się odwróci.",
+  "source": "kalbi.pl (13 stycznia, św. Weronika — patronka zgodna z imiennikiem w kalendarzu). Oryginał tematycznie zbliżony do 'Styczeń mrozem trzeszczeć musi, wtedy chłopa plon przydusi', ale to inny, niepotwierdzony tekst."
+ },
+ {
+  "m": 1, "d": 15,
+  "oldText": "Styczeń mroźny bez śniegu — wiosna bez deszczu.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w zimie nie było śniegu, to go wiele spadnie w kwietniu.",
+  "source": "kalbi.pl (motyw ogólnostyczniowy, brak śniegu) — oryginał to niepotwierdzony szablon 'X — Y'."
+ },
+ {
+  "m": 1, "d": 15,
+  "oldText": "Gdyby styczeń miał lato, wrzesień miałby mróz za to.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy w styczniu lato, w lecie zima za to.",
+  "source": "kalendarzswiat.pl/meteoprog.pl/kalbi.pl — to zniekształcona wersja bardzo znanego przysłowia (zmieniono 'lato/zima' na 'wrzesień/mróz'), czyli przeróbka, nie cytat."
+ },
+ {
+  "m": 1, "d": 17,
+  "oldText": "Na świętego Antoniego mróz piszczy na błoniu.",
+  "classification": "suspicious",
+  "newProverb": "Jak styczeń zachlapany, to lipiec zapłakany.",
+  "source": "kalbi.pl (17 stycznia) — to przysłowie faktycznie przypisane do tego dnia w źródłach; wersja o 'mrozie piszczącym na błoniu' nie występuje w żadnym sprawdzonym zbiorze (mimo poszukiwań specjalnie pod kątem św. Antoniego)."
+ },
+ {
+  "m": 1, "d": 17,
+  "oldText": "Antoni surowy — luty spokojny.",
+  "classification": "suspicious",
+  "newProverb": "Styczeń mrozem trzeszczeć musi, wtedy chłopa plon przydusi.",
+  "source": "kalendarzswiat.pl/meteoprog.pl — realne przysłowie ogólnostyczniowe; oryginał (szablon 'X — Y') niepotwierdzony."
+ },
+ {
+  "m": 1, "d": 18,
+  "oldText": "Styczeń bez wichru — dobry rok dla ogrodnika.",
+  "classification": "suspicious",
+  "newProverb": "Gdy na Małgorzaty mróz, jeszcze długo nie pojedzie wóz.",
+  "source": "kalbi.pl (18 stycznia, św. Małgorzata — patronka zgodna z imiennikiem w kalendarzu). Oryginał wspomina anachroniczne 'dobry rok dla ogrodnika' zamiast typowego dla przysłów ludowych 'gospodarza/rolnika' — sygnał sztucznego doboru słów."
+ },
+ {
+  "m": 1, "d": 19,
+  "oldText": "Gdy styczeń mgłami przykryty — lato suche.",
+  "classification": "suspicious",
+  "newProverb": "Gdy styczeń z zimnem nie chodzi, marzec, kwiecień wychłodzi.",
+  "source": "kalbi.pl (19 stycznia) — dokładne trafienie daty; oryginał niepotwierdzony, sprzeczny z realnym 'Gdy styczeń zamglony, marzec zaśnieżony' (mgła → śnieg, nie susza)."
+ },
+ {
+  "m": 1, "d": 20,
+  "oldText": "Na świętego Sebastiana zima jest panią.",
+  "classification": "suspicious",
+  "newProverb": "Fabian i Sebastian, gdy mróz dadzą, srogą zimę przyprowadzą.",
+  "source": "kalbi.pl (20 stycznia, św. Fabian i Sebastian) — dokładne trafienie daty i patronów; oryginał to przeróbka innego realnego przysłowia 'Na świętego Sebastiana mróz nie uznaje pana' (zmieniono 'mróz nie uznaje pana' na 'zima jest panią')."
+ },
+ {
+  "m": 1, "d": 20,
+  "oldText": "Gdy na Fabiana słońce zaświeci, piękne lato się wróży.",
+  "classification": "suspicious",
+  "newProverb": "Fabian i Sebastian pierwsi drzewa budzą, ale radzi często łudzą.",
+  "source": "zbiory przysłów ludowych o pogodzie (20 stycznia, św. Fabian) — realne przysłowie na ten dzień; oryginał niepotwierdzony."
+ },
+ {
+  "m": 1, "d": 22,
+  "oldText": "Na Wincentego słońce zaświeci — zima się skróci.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy Wincenty posypie pierze, to nie ustanie aż do Gromnicznej w pierwsze pacierze.",
+  "source": "kalbi.pl (22 stycznia, św. Wincenty) — dokładne trafienie daty i patrona; oryginał niepotwierdzony (istnieją inne realne warianty: 'Na święty Wincenty, szczypie mróz w pięty')."
+ },
+ {
+  "m": 1, "d": 23,
+  "oldText": "Rajmund śniegiem obsypany — marzec umiarkowany.",
+  "classification": "suspicious",
+  "newProverb": "W styczniu łów łatwy na kuropatwy.",
+  "source": "kalbi.pl (23 stycznia) — dokładne trafienie daty; oryginał (szablon 'X — Y') niepotwierdzony w żadnym źródle mimo szukania specjalnie pod kątem imienia Rajmund."
+ },
+ {
+  "m": 1, "d": 24,
+  "oldText": "Na Tymoteusza dzień dłuższy o chwilę.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Tymoteusza trzeba ci czapki, nie kapelusza.",
+  "source": "kalbi.pl (24 stycznia, św. Tymoteusz) — dokładne trafienie daty i patrona; oryginał to gołe stwierdzenie faktu przyrodniczego, nie przysłowie, i nie występuje w żadnym źródle."
+ },
+ {
+  "m": 1, "d": 25,
+  "oldText": "Paweł z mrozem — lipiec z żarem.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Pawła połowa zimy przepadła.",
+  "source": "kalbi.pl i wiele innych źródeł (25 stycznia, Nawrócenie św. Pawła) — bardzo znane, dobrze poświadczone przysłowie na dokładnie tę datę; oryginał (szablon 'X — Y') niepotwierdzony."
+ },
+ {
+  "m": 1, "d": 26,
+  "oldText": "Po świętym Pawle dni wyraźnie przyrastają.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy styczeń najostrzejszy, tedy roczek najpłodniejszy.",
+  "source": "meteoprog.pl/kalbi.pl (przysłowie ogólnostyczniowe, blisko dnia 26/27) — oryginał to stwierdzenie faktu przyrodniczego bez pokrycia w źródłach jako przysłowie."
+ }
+]
