@@ -1,0 +1,3152 @@
+[
+    {
+        "m":  1,
+        "d":  1,
+        "text":  "Jak styczeń mroźny, rok będzie płodny.",
+        "classification":  "verified",
+        "note":  "Bliska parafraza \"Kiedy styczeń najmroźniejszy, wtedy roczek najpłodniejszy\" (kalendarzswiat.pl)."
+    },
+    {
+        "m":  1,
+        "d":  1,
+        "text":  "Nowy Rok — nowe szczęście, stara bieda się polepsza.",
+        "classification":  "suspicious",
+        "note":  "Prawdziwe jest tylko \"Nowy Rok, nowe szczęście\" (życzenie); doklejona fraza o biedzie nie ma potwierdzenia, brzmi sztucznie."
+    },
+    {
+        "m":  1,
+        "d":  1,
+        "text":  "Jaki Nowy Rok, taki cały rok.",
+        "classification":  "well-known-classic",
+        "note":  "Powszechnie znane polskie porzekadło noworoczne."
+    },
+    {
+        "m":  1,
+        "d":  2,
+        "text":  "Styczeń ciepły — marzec mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja dwóch miesięcy, bez rymu, nie znaleziono źródła."
+    },
+    {
+        "m":  1,
+        "d":  2,
+        "text":  "Gdy styczeń wilgotny, lato suche.",
+        "classification":  "unverifiable",
+        "note":  "Plauzybilna struktura ludowa, brak potwierdzenia w źródłach."
+    },
+    {
+        "m":  1,
+        "d":  3,
+        "text":  "Mróz w styczeń — pszenica w spiżarni.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny: powinno być \"w styczniu\" (miejscownik) — mocny sygnał fabrykacji."
+    },
+    {
+        "m":  1,
+        "d":  3,
+        "text":  "Styczeń bez śniegu — zły rok dla rolnika.",
+        "classification":  "unverifiable",
+        "note":  "Temat zgodny z ludową logiką, ale konkretny tekst niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  4,
+        "text":  "Zimny styczeń — ciepły maj.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja miesięcy, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  4,
+        "text":  "Gdy w styczeń mróz trzaska, lato złotem błyska.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\"; \"złotem błyska\" to nienaturalna, współczesna metafora."
+    },
+    {
+        "m":  1,
+        "d":  5,
+        "text":  "Styczeń odwilżą znaczony — kwiecień mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  5,
+        "text":  "Przed Trzech Króli dni jasne — rok urodzajny.",
+        "classification":  "suspicious",
+        "note":  "Błąd fleksyjny \"przed Trzech Króli\" (powinno być \"przed Trzema Królami\")."
+    },
+    {
+        "m":  1,
+        "d":  6,
+        "text":  "Na Trzech Króli zima w pełni.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znaną tradycją \"Gdy Trzech Króli mrozem trzyma, będzie jeszcze długa zima\"."
+    },
+    {
+        "m":  1,
+        "d":  6,
+        "text":  "Gdy na Trzech Króli mróz — do marca będzie ostry kłos.",
+        "classification":  "suspicious",
+        "note":  "Nielogiczne powiązanie: \"kłos\" (dojrzałe zboże) nie występuje w marcu — błąd ludowej logiki rolniczej."
+    },
+    {
+        "m":  1,
+        "d":  6,
+        "text":  "Trzej Królowie z gwiazdą — zima do wiosny nie odpada.",
+        "classification":  "suspicious",
+        "note":  "Nienaturalna, niegramatyczna konstrukcja \"zima nie odpada\", brak potwierdzenia."
+    },
+    {
+        "m":  1,
+        "d":  7,
+        "text":  "Po Trzech Królach styczeń strzela mrozem.",
+        "classification":  "unverifiable",
+        "note":  "Wiarygodny styl, brak potwierdzenia źródłowego."
+    },
+    {
+        "m":  1,
+        "d":  7,
+        "text":  "Styczeń pełen śniegu — dobry rok dla stodoły.",
+        "classification":  "unverifiable",
+        "note":  "Motyw zgodny ze śniegiem jako zapowiedzią urodzaju, tekst niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  8,
+        "text":  "Ile śniegu w styczeń pada, tyle deszczu w maju pada.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\" zamiast \"w styczniu\"."
+    },
+    {
+        "m":  1,
+        "d":  8,
+        "text":  "Styczeń mglisty — marzec deszczowy.",
+        "classification":  "unverifiable",
+        "note":  "Zbliżony motyw do potwierdzonego \"Gdy styczeń zamglony, marzec zaśnieżony\", ale inny skutek (deszcz vs śnieg) — nie liczę jako pełne potwierdzenie."
+    },
+    {
+        "m":  1,
+        "d":  9,
+        "text":  "Mroźny styczeń — ciepły kwiecień.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  9,
+        "text":  "Styczeń słoneczny — ale zimny.",
+        "classification":  "suspicious",
+        "note":  "Nie zawiera żadnej przepowiedni ani logiki ludowej — czysty wypełniacz."
+    },
+    {
+        "m":  1,
+        "d":  10,
+        "text":  "Gdy w połowie zimy śnieg leży — zboże w stodole się jeży.",
+        "classification":  "suspicious",
+        "note":  "\"Zboże się jeży\" to nienaturalny obraz wymyślony dla rymu, bez sensu w tradycji ludowej."
+    },
+    {
+        "m":  1,
+        "d":  10,
+        "text":  "Styczeń śniegiem pokryty — w lecie pola obfite.",
+        "classification":  "unverifiable",
+        "note":  "Zgodny tematycznie, tekst niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  11,
+        "text":  "Im więcej śniegu w styczeń pada, tym wiosna wcześniej nastaje.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\"; logika odwrócona względem typowych wierzeń ludowych."
+    },
+    {
+        "m":  1,
+        "d":  11,
+        "text":  "Śnieg w styczeń to złoto dla pól.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\" zamiast \"w styczniu\"."
+    },
+    {
+        "m":  1,
+        "d":  12,
+        "text":  "Styczeń ciepły — wiosna ostra.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  12,
+        "text":  "Gdy w styczeń woda, w marcu loda.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\"; \"loda\" nie jest poprawną formą polskiego słowa \"lód\"."
+    },
+    {
+        "m":  1,
+        "d":  13,
+        "text":  "Styczeń deszczem się zaznajomi — marzec śniegiem się przypomni.",
+        "classification":  "suspicious",
+        "note":  "Sztuczna, współczesna personifikacja (\"zaznajomi się\"), nietypowa dla idiomu ludowego."
+    },
+    {
+        "m":  1,
+        "d":  13,
+        "text":  "Styczeń bez mrozu — zły znak dla chłopa.",
+        "classification":  "unverifiable",
+        "note":  "Zgodny tematycznie z realnym wierzeniem, tekst niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  14,
+        "text":  "Mrozy stajenne w styczeń — dobry rok dla koni.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w styczeń\"; \"mrozy stajenne\" to nietypowe, wymyślone określenie."
+    },
+    {
+        "m":  1,
+        "d":  15,
+        "text":  "Styczeń mroźny bez śniegu — wiosna bez deszczu.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  15,
+        "text":  "Gdyby styczeń miał lato, wrzesień miałby mróz za to.",
+        "classification":  "unverifiable",
+        "note":  "Konstrukcja warunkowa typowa dla przysłów ludowych, ale tekst niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  16,
+        "text":  "Na Marcelego zima się zaostrza lub odpuszcza.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\" — nic nie przewiduje, typowy wypełniacz."
+    },
+    {
+        "m":  1,
+        "d":  16,
+        "text":  "Marceli — jeśli mroźny, rok korzystny.",
+        "classification":  "suspicious",
+        "note":  "Szablon: mało znane imię + banalna korzyść, bez rymu i潜 w źródłach."
+    },
+    {
+        "m":  1,
+        "d":  17,
+        "text":  "Na świętego Antoniego mróz piszczy na błoniu.",
+        "classification":  "unverifiable",
+        "note":  "Przyzwoity styl rymowany, ale niepotwierdzony źródłowo."
+    },
+    {
+        "m":  1,
+        "d":  17,
+        "text":  "Antoni surowy — luty spokojny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  18,
+        "text":  "Środek zimy — mróz się pości lub odpuszcza.",
+        "classification":  "suspicious",
+        "note":  "\"Mróz się pości\" nie ma sensu (pościć dotyczy ludzi); przepowiednia \"i tak, i tak\"."
+    },
+    {
+        "m":  1,
+        "d":  18,
+        "text":  "Styczeń bez wichru — dobry rok dla ogrodnika.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  19,
+        "text":  "Gdy styczeń mgłami przykryty — lato suche.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  19,
+        "text":  "Po świętym Henryku wiosna za trzy tygodnie.",
+        "classification":  "suspicious",
+        "note":  "Arbitralna, precyzyjna liczba tygodni nietypowa dla stylu ludowego; Henryk nie jest znanym dniem pogodowym."
+    },
+    {
+        "m":  1,
+        "d":  20,
+        "text":  "Na świętego Sebastiana zima jest panią.",
+        "classification":  "unverifiable",
+        "note":  "Poetycki, ale wiarygodny styl; brak potwierdzenia."
+    },
+    {
+        "m":  1,
+        "d":  20,
+        "text":  "Gdy na Fabiana słońce zaświeci, piękne lato się wróży.",
+        "classification":  "unverifiable",
+        "note":  "Plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  1,
+        "d":  20,
+        "text":  "Sebastian mroźny — rżysko obfite.",
+        "classification":  "suspicious",
+        "note":  "\"Rżysko\" (ściernisko po żniwach) nie ma logicznego związku ze styczniowym mrozem."
+    },
+    {
+        "m":  1,
+        "d":  21,
+        "text":  "Agnieszka mroźna — wiosna wczesna.",
+        "classification":  "suspicious",
+        "note":  "Pomija prawdziwe, dobrze udokumentowane przysłowie \"Święta Agnieszka wypuszcza skowronka z mieszka\"; wygląda na wymyślony zastępnik."
+    },
+    {
+        "m":  1,
+        "d":  21,
+        "text":  "Na świętą Agnieszkę śnieg na polach gęsto leży.",
+        "classification":  "suspicious",
+        "note":  "Jak wyżej — pomija realny motyw skowronka, generyczny wypełniacz."
+    },
+    {
+        "m":  1,
+        "d":  22,
+        "text":  "Na Wincentego słońce zaświeci — zima się skróci.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  22,
+        "text":  "Wincenty mroźny — kwiecień bezbłędny.",
+        "classification":  "suspicious",
+        "note":  "\"Kwiecień bezbłędny\" to bezsensowne, współczesne sformułowanie."
+    },
+    {
+        "m":  1,
+        "d":  23,
+        "text":  "Rajmund śniegiem obsypany — marzec umiarkowany.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  23,
+        "text":  "Koniec trzeciej dekady stycznia — zima odpuszcza lub się zaostrza.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\"; \"dekada\" to termin kalendarzowy obcy językowi ludowemu."
+    },
+    {
+        "m":  1,
+        "d":  24,
+        "text":  "Tymoteusz mroźny — rok wczesny.",
+        "classification":  "suspicious",
+        "note":  "Szablon: mało znane imię + bezsensowna fraza \"rok wczesny\"."
+    },
+    {
+        "m":  1,
+        "d":  24,
+        "text":  "Na Tymoteusza dzień dłuższy o chwilę.",
+        "classification":  "unverifiable",
+        "note":  "Łagodne stwierdzenie faktu, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  1,
+        "d":  25,
+        "text":  "Na nawrócenie Pawła dobra pogoda — rok będzie miał uroda.",
+        "classification":  "well-known-classic",
+        "note":  "Nawrócenie św. Pawła (25 stycznia) to znany dzień pogodowy w polskim folklorze rolniczym."
+    },
+    {
+        "m":  1,
+        "d":  25,
+        "text":  "Jeśli w dzień świętego Pawła słońce świeci, rok zboże zasięci.",
+        "classification":  "well-known-classic",
+        "note":  "Ten sam, dobrze udokumentowany motyw dnia Nawrócenia św. Pawła."
+    },
+    {
+        "m":  1,
+        "d":  25,
+        "text":  "Paweł z mrozem — lipiec z żarem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  26,
+        "text":  "Po świętym Pawle dni wyraźnie przyrastają.",
+        "classification":  "unverifiable",
+        "note":  "Stwierdzenie faktu przyrodniczego, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  1,
+        "d":  26,
+        "text":  "Styczeń u końca — zima w pół drogi.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  1,
+        "d":  27,
+        "text":  "Aniela mroźna — lato chłodne.",
+        "classification":  "suspicious",
+        "note":  "Szablon: mało znane imię + banalny skutek."
+    },
+    {
+        "m":  1,
+        "d":  27,
+        "text":  "Na koniec stycznia zima liczy dni.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  1,
+        "d":  28,
+        "text":  "Wróżba na wigilię lutego: ile śniegu, tyle deszczu w maju.",
+        "classification":  "suspicious",
+        "note":  "\"Wigilia lutego\" to nienaturalne, niespotykane w polskim folklorze określenie."
+    },
+    {
+        "m":  1,
+        "d":  28,
+        "text":  "Ostatnie dni stycznia srogie — luty łagodne.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  1,
+        "d":  29,
+        "text":  "Franciszek na śniegu chodzi — luty za nim przychodzi.",
+        "classification":  "unverifiable",
+        "note":  "Przyzwoity rym, ale niepotwierdzony."
+    },
+    {
+        "m":  1,
+        "d":  29,
+        "text":  "Koniec miesiąca bez mrozu — wróży rok urodzaju.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  1,
+        "d":  30,
+        "text":  "Martyna w mrozie — wiosna skora.",
+        "classification":  "suspicious",
+        "note":  "Szablon: mało znane imię, archaizujące \"skora\" naciągnięte pod rym."
+    },
+    {
+        "m":  1,
+        "d":  30,
+        "text":  "Przed lutym zima jeszcze zębami kłapie.",
+        "classification":  "unverifiable",
+        "note":  "Barwny idiom, plauzybilny styl ludowy, niepotwierdzony źródłowo."
+    },
+    {
+        "m":  1,
+        "d":  31,
+        "text":  "Ostatni dzień zimy pierwszej — lutowy mróz już czeka.",
+        "classification":  "suspicious",
+        "note":  "\"Zima pierwsza\" to pojęcie bez sensu w obrębie jednego roku — ślad błędnej generacji."
+    },
+    {
+        "m":  1,
+        "d":  31,
+        "text":  "Styczeń za sobą zostawia ślady na śniegu.",
+        "classification":  "suspicious",
+        "note":  "Czysto poetycki opis, nie zawiera żadnej przepowiedni ani ludowej logiki."
+    },
+    {
+        "m":  2,
+        "d":  1,
+        "text":  "Luty krótki, ale bardzo czuły.",
+        "classification":  "suspicious",
+        "note":  "\"Bardzo czuły\" to współczesna, antropomorfizująca fraza bez ludowej logiki i bez przepowiedni."
+    },
+    {
+        "m":  2,
+        "d":  1,
+        "text":  "Luty — tydzień mroźny, tydzień odwilżowy.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne ze znanym motywem zmienności lutego, tekst niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  2,
+        "text":  "Na Gromniczną połowa zimy minioną.",
+        "classification":  "verified",
+        "note":  "Odpowiada dobrze udokumentowanemu \"Gromnica to zimy połowica\"."
+    },
+    {
+        "m":  2,
+        "d":  2,
+        "text":  "Gdy na Gromniczną słońce zaświeci, niedźwiedź w dziurze jeszcze poleci.",
+        "classification":  "suspicious",
+        "note":  "Motyw niedźwiedzia przepowiadającego pogodę to import z amerykańskiego Dnia Świstaka, nie polska tradycja gromniczna; \"poleci\" nie pasuje do niedźwiedzia."
+    },
+    {
+        "m":  2,
+        "d":  2,
+        "text":  "Gromniczna słoneczna — sześć tygodni do wiosny daleko.",
+        "classification":  "suspicious",
+        "note":  "\"Sześć tygodni\" to typowy motyw amerykańskiego Groundhog Day, nietypowy dla polskiej Gromnicznej."
+    },
+    {
+        "m":  2,
+        "d":  3,
+        "text":  "Na świętego Błażeja zima do ucieczki się poddaje.",
+        "classification":  "unverifiable",
+        "note":  "Zbliżone tematycznie do realnych przysłów o Błażeju, ale tekst niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  3,
+        "text":  "Błażej gardło leczy — mrozy też ustępują.",
+        "classification":  "well-known-classic",
+        "note":  "Rdzeń zgodny z powszechnie znanym \"Święty Błażej, gardła zagrzej\"."
+    },
+    {
+        "m":  2,
+        "d":  4,
+        "text":  "Luty zmienny jak kameleon — raz mróz, raz odwilż.",
+        "classification":  "suspicious",
+        "note":  "\"Kameleon\" to egzotyczne, całkowicie obce polskiemu folklorowi porównanie."
+    },
+    {
+        "m":  2,
+        "d":  4,
+        "text":  "Gdy luty z deszczem — marzec ze śniegiem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  5,
+        "text":  "Na świętą Agatę zima traci szatę.",
+        "classification":  "unverifiable",
+        "note":  "Rym wiarygodny stylistycznie, ale nie pokrywa się z potwierdzonymi wariantami (np. \"chatę wymiata\")."
+    },
+    {
+        "m":  2,
+        "d":  5,
+        "text":  "Agata słoneczna — wiosna wczesna.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, pomija realne motywy Agaty (ogień, chleb)."
+    },
+    {
+        "m":  2,
+        "d":  6,
+        "text":  "Dorotka kwiatki niesie — ale mróz je przyniesie.",
+        "classification":  "suspicious",
+        "note":  "Zdanie niespójne logicznie — kto/co przynosi kwiatki, a co mróz, nie jest jasne."
+    },
+    {
+        "m":  2,
+        "d":  6,
+        "text":  "Gdy Dorota z burzą — wiosna będzie burzliwa.",
+        "classification":  "suspicious",
+        "note":  "Burza w lutym jest meteorologicznie skrajnie rzadka w Polsce — nierealny scenariusz."
+    },
+    {
+        "m":  2,
+        "d":  7,
+        "text":  "Luty pełen śniegu — marzec pełen wody.",
+        "classification":  "unverifiable",
+        "note":  "Zgodny z logiką roztopów, tekst niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  7,
+        "text":  "Śnieg w lutym — złoto na polu w lecie.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  8,
+        "text":  "Luty deszczowy — marzec mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  8,
+        "text":  "Gdy w lutym odwilż — mróz w marcu powróci.",
+        "classification":  "verified",
+        "note":  "Odpowiada potwierdzonemu \"Gdy ciepło w lutym, zimno w marcu bywa\"."
+    },
+    {
+        "m":  2,
+        "d":  9,
+        "text":  "Luty bez mrozu — zły rok dla zbóż.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  9,
+        "text":  "Apolonia z mrozem — zęby bolą, ale zima zdrowa.",
+        "classification":  "well-known-classic",
+        "note":  "Apolonia jest powszechnie znaną patronką bólu zębów w polskiej tradycji."
+    },
+    {
+        "m":  2,
+        "d":  10,
+        "text":  "Scholastyka w śniegu — lato w chłodzie.",
+        "classification":  "suspicious",
+        "note":  "Brak potwierdzenia, słaba, generyczna logika."
+    },
+    {
+        "m":  2,
+        "d":  10,
+        "text":  "Środek lutego — zima zaczyna tracić siły.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  11,
+        "text":  "Na Matkę Boską Gromniczną albo mrozy, albo odwilż.",
+        "classification":  "suspicious",
+        "note":  "Błędne przypisanie dnia — Matka Boska Gromniczna przypada 2 lutego, nie 11 lutego."
+    },
+    {
+        "m":  2,
+        "d":  11,
+        "text":  "Luty lubi zaskoczyć.",
+        "classification":  "suspicious",
+        "note":  "Zbyt współczesna, potoczna fraza (\"lubi zaskoczyć\"), nie idiom ludowy."
+    },
+    {
+        "m":  2,
+        "d":  12,
+        "text":  "Luty na odwilż — marzec na ziąb.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  12,
+        "text":  "Gdy w połowie lutym ciepło — biada ogrodniku.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w połowie lutym\" zamiast \"w połowie lutego\"."
+    },
+    {
+        "m":  2,
+        "d":  13,
+        "text":  "Przed Walentym ptaki się już budzą.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne z motywem ptaków łączących się w pary przed Walentym, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  2,
+        "d":  13,
+        "text":  "Luty zmienny, rok niezmienny.",
+        "classification":  "suspicious",
+        "note":  "Puste, nic nieprzewidujące zdanie mimo rymu."
+    },
+    {
+        "m":  2,
+        "d":  14,
+        "text":  "Na świętego Walentego ptaki się kojarzą, ludzie miłością darzą.",
+        "classification":  "well-known-classic",
+        "note":  "Odpowiada dawnej polskiej tradycji łączenia się ptaków w pary na Walentego."
+    },
+    {
+        "m":  2,
+        "d":  14,
+        "text":  "Walenty mrozem straszy, ale zimy nie przedłuży.",
+        "classification":  "unverifiable",
+        "note":  "Plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  14,
+        "text":  "Gdy Walenty słoneczny — miłość i urodzaj.",
+        "classification":  "suspicious",
+        "note":  "\"Miłość\" w komercyjnym, walentynkowym sensie to współczesny naddatek, nie ludowy motyw pogodowy."
+    },
+    {
+        "m":  2,
+        "d":  15,
+        "text":  "Po Walentym dzień coraz wyraźniej dłuższy.",
+        "classification":  "unverifiable",
+        "note":  "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  2,
+        "d":  15,
+        "text":  "Faustyna słoneczna — wiosna blisko.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  2,
+        "d":  16,
+        "text":  "Luty ma krótko — ale kłuje mocno.",
+        "classification":  "unverifiable",
+        "note":  "Zwięzły idiom, plauzybilny stylistycznie, niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  16,
+        "text":  "Juliana mroźna — marzec łagodny.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz; niespójność imienia (\"Julianny\" w metryczce vs \"Juliana\" w tekście)."
+    },
+    {
+        "m":  2,
+        "d":  17,
+        "text":  "Na Aleksego pola jeszcze we śnie leżą.",
+        "classification":  "unverifiable",
+        "note":  "Poetyckie, ale plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  17,
+        "text":  "Luty ku końcowi — zima się chwieje.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  18,
+        "text":  "Szymon w lutym — wiosna za miesiąc.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, słaba treść."
+    },
+    {
+        "m":  2,
+        "d":  18,
+        "text":  "Luty ostatnią kartę ze śniegu przerzuca.",
+        "classification":  "suspicious",
+        "note":  "\"Przerzuca kartę\" to nowoczesna metafora (kalendarza/książki), obca chłopskiej stylistyce ludowej."
+    },
+    {
+        "m":  2,
+        "d":  19,
+        "text":  "Luty odwilżowy — marzec śnieżny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  19,
+        "text":  "Przed końcem lutego — obserwuj niebo.",
+        "classification":  "suspicious",
+        "note":  "Współczesna instrukcja poradnikowa, nie przysłowie z przepowiednią."
+    },
+    {
+        "m":  2,
+        "d":  20,
+        "text":  "Leon mroźny — kwiecień słoneczny.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz z mało znanym imieniem."
+    },
+    {
+        "m":  2,
+        "d":  20,
+        "text":  "Luty z mrozem — wiosna w sile.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  21,
+        "text":  "Luty ostatnią bitwę z zimą stacza.",
+        "classification":  "suspicious",
+        "note":  "\"Stacza bitwę\" to literacka, współczesna personifikacja, nie idiom ludowy."
+    },
+    {
+        "m":  2,
+        "d":  21,
+        "text":  "Gdy w lutym grzmi — wiosna bez zwłoki.",
+        "classification":  "unverifiable",
+        "note":  "Grzmoty lutowe to realny, choć rzadki motyw ludowy (por. potwierdzone \"W lutym gdy zagrzmi...\"), ale ten konkretny tekst niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  22,
+        "text":  "Na Piotrowym Stolcu pola śniegiem okute.",
+        "classification":  "unverifiable",
+        "note":  "Nawiązuje do realnego święta Katedry św. Piotra (22 lutego), tekst niepotwierdzony."
+    },
+    {
+        "m":  2,
+        "d":  22,
+        "text":  "Luty — zima się spieszy.",
+        "classification":  "suspicious",
+        "note":  "Zbyt ogólnikowe, brak treści przepowiadającej."
+    },
+    {
+        "m":  2,
+        "d":  23,
+        "text":  "Przedostatni tydzień lutowy — wiosna w bramie.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  23,
+        "text":  "Gdy luty bez śniegu — lato bez deszczu.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  24,
+        "text":  "Święty Maciej lód łamie, a jak nie — to zamraża.",
+        "classification":  "well-known-classic",
+        "note":  "Odpowiada bardzo znanemu \"Święty Maciej zimę traci albo ją bogaci\"."
+    },
+    {
+        "m":  2,
+        "d":  24,
+        "text":  "Na Maciejowy dzień zima bierze w lód albo pierzyna w błoto wpada.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne tematycznie, ale \"pierzyna w błoto\" to dziwny, niejasny obraz."
+    },
+    {
+        "m":  2,
+        "d":  24,
+        "text":  "Maciej z lodem — bociany za rok.",
+        "classification":  "suspicious",
+        "note":  "\"Bociany za rok\" nie ma sensu — bociany wracają tej samej wiosny, nie za rok."
+    },
+    {
+        "m":  2,
+        "d":  25,
+        "text":  "Wiktor z odwilżą — marzec ze śniegiem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  25,
+        "text":  "Luty ku końcowi — pole coraz głośniej woła.",
+        "classification":  "suspicious",
+        "note":  "Nienaturalna personifikacja \"pole głośno woła\"."
+    },
+    {
+        "m":  2,
+        "d":  26,
+        "text":  "Aleksander na przełomie — zima lub wiosna.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\" — nic nie przewiduje."
+    },
+    {
+        "m":  2,
+        "d":  26,
+        "text":  "Ostatni tydzień lutowy liczy mrozy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  27,
+        "text":  "Gabriel z ciepłem — marzec zaskakuje.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  27,
+        "text":  "Luty ciepły — marzec zdradliwy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  2,
+        "d":  28,
+        "text":  "Ostatni dzień lutego — zima pożegnać się nie spieszy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  2,
+        "d":  28,
+        "text":  "Luty krótki — ale pamiętany.",
+        "classification":  "suspicious",
+        "note":  "Puste, nic nieprzewidujące zdanie."
+    },
+    {
+        "m":  3,
+        "d":  1,
+        "text":  "Marzec jak zając — ucieka i wraca.",
+        "classification":  "well-known-classic",
+        "note":  "Porównanie marca do zająca (niestały, skaczący) to znany polski obraz ludowy."
+    },
+    {
+        "m":  3,
+        "d":  1,
+        "text":  "Pierwszy marzec ciepły — kwiecień mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  2,
+        "text":  "Marzec deszczowy — maj słoneczny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  2,
+        "text":  "Gdy marzec z deszczem — zboże radosne.",
+        "classification":  "suspicious",
+        "note":  "Sztuczna personifikacja \"zboże radosne\"."
+    },
+    {
+        "m":  3,
+        "d":  3,
+        "text":  "Kunegunda z mrozem — Kazimierz z odwilżą.",
+        "classification":  "unverifiable",
+        "note":  "Wprowadza dzień Kazimierza, tekst niepotwierdzony."
+    },
+    {
+        "m":  3,
+        "d":  4,
+        "text":  "Święty Kazimierz śnieg przywozi lub odpędza.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\" — nic nie przewiduje."
+    },
+    {
+        "m":  3,
+        "d":  4,
+        "text":  "Na Kazimierza wiosnę za kołnierz ciepło wpuszcza.",
+        "classification":  "suspicious",
+        "note":  "Niespójna, nielogiczna fraza."
+    },
+    {
+        "m":  3,
+        "d":  4,
+        "text":  "Kazimierz mroźny — rok zbożny.",
+        "classification":  "unverifiable",
+        "note":  "Rym prawdopodobny stylistycznie, niepotwierdzony."
+    },
+    {
+        "m":  3,
+        "d":  5,
+        "text":  "Po świętym Kazimierzu rzeki zaczynają topnieć.",
+        "classification":  "suspicious",
+        "note":  "Rzeki nie \"topnieją\" — topnieje lód na rzekach; błąd rzeczowy."
+    },
+    {
+        "m":  3,
+        "d":  5,
+        "text":  "Marzec zmienny — rolnik czujny.",
+        "classification":  "suspicious",
+        "note":  "Ogólnikowa rada, nie przepowiednia ludowa."
+    },
+    {
+        "m":  3,
+        "d":  6,
+        "text":  "Marzec z mrozem po Kazimierzu — krótko postoi.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  6,
+        "text":  "Gdy w marcu burza — maj gorący.",
+        "classification":  "unverifiable",
+        "note":  "Marcowe grzmoty to realny motyw ludowy (por. potwierdzone \"W marcu, gdy są grzmoty...\"), lecz ten konkretny wniosek niepotwierdzony."
+    },
+    {
+        "m":  3,
+        "d":  7,
+        "text":  "Marzec z piorunem — lato z grzmotem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  7,
+        "text":  "Siedem dni marca — zima lub wiosna.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\"; \"siedem dni marca\" nie odpowiada żadnemu realnemu zwyczajowi."
+    },
+    {
+        "m":  3,
+        "d":  8,
+        "text":  "Na Marię w marcu kwiaty w śniegu.",
+        "classification":  "unverifiable",
+        "note":  "Poetyckie, plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  8,
+        "text":  "Gdy marzec mokry — polska trawa tłusta.",
+        "classification":  "suspicious",
+        "note":  "Zbędny, nacjonalistyczny dodatek \"polska trawa\" nietypowy dla przysłów ludowych."
+    },
+    {
+        "m":  3,
+        "d":  9,
+        "text":  "Franciszka w słońcu — wiosna za tydzień.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  10,
+        "text":  "Marzec deszczowy i zimny — czerwiec gorący.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  10,
+        "text":  "Gdy marzec szumi — bociany rychło lecą.",
+        "classification":  "unverifiable",
+        "note":  "Plauzybilny motyw bociani, niepotwierdzony."
+    },
+    {
+        "m":  3,
+        "d":  11,
+        "text":  "Benedykt przychodzi z wiosną na plecach.",
+        "classification":  "suspicious",
+        "note":  "Współczesna personifikacja \"wiosna na plecach\"."
+    },
+    {
+        "m":  3,
+        "d":  11,
+        "text":  "Na Benedykta słońce — dobre zboże w polu.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  12,
+        "text":  "Na świętego Grzegorza idzie zima do morza.",
+        "classification":  "verified",
+        "note":  "Dokładny cytat znanego przysłowia (wsjp.pl, Wikisłownik)."
+    },
+    {
+        "m":  3,
+        "d":  12,
+        "text":  "Gdy Grzegorz przyszedł, bociany za nim przyszły.",
+        "classification":  "unverifiable",
+        "note":  "Motyw zgodny z tradycją, tekst niepotwierdzony dosłownie."
+    },
+    {
+        "m":  3,
+        "d":  12,
+        "text":  "Grzegorz słoneczny — wiosna pewna.",
+        "classification":  "suspicious",
+        "note":  "Doklejony, generyczny wypełniacz."
+    },
+    {
+        "m":  3,
+        "d":  13,
+        "text":  "Po Grzegorzu bocian przyleciał — zima odfrunęła.",
+        "classification":  "unverifiable",
+        "note":  "Ładna personifikacja, plauzybilna, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  14,
+        "text":  "Matylda wiosenna — lato ciepłe.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  3,
+        "d":  14,
+        "text":  "Marzec z wichrem — kwiecień spokojny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  15,
+        "text":  "Połowa marca — zima lub wiosna.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\"."
+    },
+    {
+        "m":  3,
+        "d":  15,
+        "text":  "Gdy marzec z mrozem w połowie — nie siać przed końcem marca.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczna rada rolnicza, plauzybilny styl, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  16,
+        "text":  "Izabela w słońcu — sady obiecują.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, imię Izabela nietypowe dla polskiego kalendarza ludowego."
+    },
+    {
+        "m":  3,
+        "d":  16,
+        "text":  "Marzec ciepły w połowie — kwiecień mokry.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  17,
+        "text":  "Na Patryka wiosna za progiem stoi.",
+        "classification":  "unverifiable",
+        "note":  "Patryk nie jest tradycyjnym polskim świętym pogodowym, ale zdanie samo w sobie neutralne."
+    },
+    {
+        "m":  3,
+        "d":  17,
+        "text":  "Patryk z ciepłem — chmiel w górę rośnie.",
+        "classification":  "suspicious",
+        "note":  "Chmiel nie rośnie w marcu; brak realnego związku Patryka z chmielem w polskim folklorze."
+    },
+    {
+        "m":  3,
+        "d":  18,
+        "text":  "Cyryl wiosenny — ogród radosny.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz z personifikacją."
+    },
+    {
+        "m":  3,
+        "d":  18,
+        "text":  "Przed Józefem obejrzyj sad i ogród.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczna rada, plauzybilna, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  19,
+        "text":  "Święty Józef ciepło do chaty niesie.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne z motywem wiosennego ciepła na Józefa, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  3,
+        "d":  19,
+        "text":  "Na świętego Józefa sadzonki w ziemię wkładaj, bo dobry owoc w sadzie będziesz miał.",
+        "classification":  "well-known-classic",
+        "note":  "Józef to udokumentowany, kluczowy dzień siewu/sadzenia w polskim kalendarzu rolniczym."
+    },
+    {
+        "m":  3,
+        "d":  19,
+        "text":  "Józef słoneczny — rok w owoce bogaty.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  20,
+        "text":  "Równonoc wiosenna — dzień z nocą w parze.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym faktem astronomicznym/tradycyjnym."
+    },
+    {
+        "m":  3,
+        "d":  20,
+        "text":  "Na równonoc wiosenną przyroda się budzi.",
+        "classification":  "unverifiable",
+        "note":  "Ogólnikowe stwierdzenie sezonowe."
+    },
+    {
+        "m":  3,
+        "d":  21,
+        "text":  "Pierwszy dzień wiosny w kalendarzu — ale natura decyduje.",
+        "classification":  "suspicious",
+        "note":  "Współczesna, refleksyjna fraza (\"ale natura decyduje\"), nie idiom ludowy."
+    },
+    {
+        "m":  3,
+        "d":  22,
+        "text":  "Po równonocy dzień przeważa nad nocą.",
+        "classification":  "unverifiable",
+        "note":  "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  3,
+        "d":  22,
+        "text":  "Marzec ciepły po dwudziestym — kwiecień pogodny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  23,
+        "text":  "Na koniec marca ziemia pragnie nasion.",
+        "classification":  "suspicious",
+        "note":  "Poetycka antropomorfizacja \"ziemia pragnie\", nietypowa dla stylu ludowego."
+    },
+    {
+        "m":  3,
+        "d":  23,
+        "text":  "Marzec z burzą — rok urodzajny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  24,
+        "text":  "Gabriel wiosenny — dobra nowina dla pól.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz z niepasującą frazą religijną \"dobra nowina\"."
+    },
+    {
+        "m":  3,
+        "d":  24,
+        "text":  "Przed Zwiastowaniem bocian ląduje.",
+        "classification":  "unverifiable",
+        "note":  "Zapowiedź motywu bocianiego związanego ze Zwiastowaniem, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  25,
+        "text":  "Na Zwiastowanie bocian do domu wita — wiosna jak złoto.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowaną tradycją powrotu bocianów wokół Zwiastowania."
+    },
+    {
+        "m":  3,
+        "d":  25,
+        "text":  "Na Zwiastowanie kto nie sieje, przez lato popłakuje.",
+        "classification":  "well-known-classic",
+        "note":  "Zwiastowanie jako tradycyjny termin siewu jest dobrze udokumentowane w polskim folklorze."
+    },
+    {
+        "m":  3,
+        "d":  25,
+        "text":  "Zwiastowanie słoneczne — rok dostatni.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  26,
+        "text":  "Po Zwiastowaniu zima powrotu nie ma.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  26,
+        "text":  "Marzec ku końcowi — siewnik gotuj.",
+        "classification":  "suspicious",
+        "note":  "\"Siewnik\" to nowoczesna maszyna rolnicza, anachronizm w rzekomo tradycyjnym przysłowiu."
+    },
+    {
+        "m":  3,
+        "d":  27,
+        "text":  "Ostatnia dekada marca — czas siewu.",
+        "classification":  "suspicious",
+        "note":  "\"Dekada\" (okres 10-dniowy) to termin kalendarzowy obcy językowi ludowemu."
+    },
+    {
+        "m":  3,
+        "d":  27,
+        "text":  "Gdy marzec ciepły na końcu — kwiecień będzie trudny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  28,
+        "text":  "Aniela wiosenna — kwiaty za tydzień.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  3,
+        "d":  28,
+        "text":  "Marzec odchodzi — kwiecień nadchodzi.",
+        "classification":  "suspicious",
+        "note":  "Czysta tautologia, brak jakiejkolwiek przepowiedni."
+    },
+    {
+        "m":  3,
+        "d":  29,
+        "text":  "Przedostatni marzec — siej owies z ufnością.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczna rada, plauzybilna, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  29,
+        "text":  "Marzec z wiatrem — kwiecień z deszczem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  3,
+        "d":  30,
+        "text":  "Na koniec marca — żywot się budzi.",
+        "classification":  "suspicious",
+        "note":  "Archaiczne, wzniosłe \"żywot\" użyte w pustym, nic nieprzewidującym zdaniu."
+    },
+    {
+        "m":  3,
+        "d":  30,
+        "text":  "Amelia wiosenna — sad rozkwita.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  3,
+        "d":  31,
+        "text":  "Ostatni marzec — wiosna rządzi.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  3,
+        "d":  31,
+        "text":  "Gdy koniec marca ciepły — maj pracowitych nagradza.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  1,
+        "text":  "Kwiecień plecień — bo przeplata trochę zimy, trochę lata.",
+        "classification":  "verified",
+        "note":  "Dokładny cytat najbardziej znanego polskiego przysłowia o kwietniu."
+    },
+    {
+        "m":  4,
+        "d":  1,
+        "text":  "Kwiecień mokry — w stodole pełne wiadra.",
+        "classification":  "suspicious",
+        "note":  "\"Wiadra\" to niewłaściwa jednostka dla przechowywania zboża w stodole — błąd rzeczowy."
+    },
+    {
+        "m":  4,
+        "d":  1,
+        "text":  "Prima Aprilis — żart kwiatami okryty.",
+        "classification":  "suspicious",
+        "note":  "Nonsensowna, kwiecista fraza bez odniesienia do realnej tradycji primaaprilisowej."
+    },
+    {
+        "m":  4,
+        "d":  2,
+        "text":  "Kwiecień deszczowy — trawnik zielony.",
+        "classification":  "suspicious",
+        "note":  "\"Trawnik\" to współczesne, przydomowe pojęcie, obce tradycyjnemu słownictwu wiejskiemu."
+    },
+    {
+        "m":  4,
+        "d":  2,
+        "text":  "Gdy drugi kwiecień z deszczem — maj słoneczny.",
+        "classification":  "suspicious",
+        "note":  "\"Drugi kwiecień\" (drugi dzień miesiąca) to nienaturalne sformułowanie, obce stylowi ludowemu."
+    },
+    {
+        "m":  4,
+        "d":  3,
+        "text":  "Mróz w kwiecień — owoc w lipcu.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+    },
+    {
+        "m":  4,
+        "d":  4,
+        "text":  "Na Izydora pola się śmieją.",
+        "classification":  "unverifiable",
+        "note":  "Poetycka personifikacja, ale w duchu znanych zwrotów ludowych (\"słońce się śmieje\"), niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  5,
+        "text":  "Kwiecień z wichrem — marzec pamiętany.",
+        "classification":  "suspicious",
+        "note":  "\"Marzec pamiętany\" nie tworzy sensownej przepowiedni."
+    },
+    {
+        "m":  4,
+        "d":  5,
+        "text":  "Gdy w kwiecień liście rozwijają — lato pełne obiecują.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+    },
+    {
+        "m":  4,
+        "d":  6,
+        "text":  "Celestyn wiosenny — ogrodnicy radośni.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz z mało znanym imieniem."
+    },
+    {
+        "m":  4,
+        "d":  7,
+        "text":  "Kwiecień z burzą — rok w zboże bogaty.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  7,
+        "text":  "Gdy w kwiecień grzmoty — sierpień z dostatkiem.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+    },
+    {
+        "m":  4,
+        "d":  8,
+        "text":  "Kwiecień mokry na początku — koniec suchy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  8,
+        "text":  "Dionizy z deszczem — winogrona kwaśne.",
+        "classification":  "suspicious",
+        "note":  "Winorośl nie kwitnie ani nie owocuje w kwietniu w Polsce — anachroniczny/nielogiczny związek."
+    },
+    {
+        "m":  4,
+        "d":  9,
+        "text":  "Na początku kwiet kwiaty ziemia wydaje.",
+        "classification":  "suspicious",
+        "note":  "Uszkodzony tekst — \"kwiet\" to najwyraźniej ucięte \"kwietnia\", ślad błędu generacji."
+    },
+    {
+        "m":  4,
+        "d":  9,
+        "text":  "Kwiecień deszczowy to złoto w stodole.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  10,
+        "text":  "Michał wiosenny — pola głośno wołają.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz z nienaturalną personifikacją."
+    },
+    {
+        "m":  4,
+        "d":  11,
+        "text":  "Kwiecień z słońcem — ziemia wysycha.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  11,
+        "text":  "Gdy kwiecień słoneczny — maj suchy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  12,
+        "text":  "Kwiecień daje i odbiera — tak chce natura.",
+        "classification":  "suspicious",
+        "note":  "Współczesna, filozoficzna fraza \"tak chce natura\" bez konkretnej przepowiedni."
+    },
+    {
+        "m":  4,
+        "d":  12,
+        "text":  "Juliusz wiosenny — wróżba lata.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, treść bardzo ogólnikowa."
+    },
+    {
+        "m":  4,
+        "d":  13,
+        "text":  "Gdy w kwiecień mróz — majowi pomóż.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w kwiecień\"; bezsensowny nakaz \"majowi pomóż\"."
+    },
+    {
+        "m":  4,
+        "d":  14,
+        "text":  "Walerian wiosenny — zioła rosną.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  15,
+        "text":  "Połowa kwiet — wiosna w pełni.",
+        "classification":  "suspicious",
+        "note":  "Uszkodzony tekst \"kwiet\" zamiast \"kwietnia\"."
+    },
+    {
+        "m":  4,
+        "d":  15,
+        "text":  "Wacław wiosenny — ogrody radosne.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  16,
+        "text":  "Bernadeta kwiat ma w ręku — wiosna na wsi.",
+        "classification":  "suspicious",
+        "note":  "Słabe, luźne odniesienie do Bernadetty z Lourdes, brak realnej podstawy w polskim folklorze pogodowym."
+    },
+    {
+        "m":  4,
+        "d":  17,
+        "text":  "Robert wiosenny — jeziora pełne.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, bezsensowny związek imię-jeziora."
+    },
+    {
+        "m":  4,
+        "d":  18,
+        "text":  "Bogumił w wiośnie — dusze szczęśliwe.",
+        "classification":  "suspicious",
+        "note":  "Abstrakcyjna, niezwiązana z pogodą fraza \"dusze szczęśliwe\"."
+    },
+    {
+        "m":  4,
+        "d":  18,
+        "text":  "Kwiecień ciepły w połowie — maj kapryśny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  19,
+        "text":  "Kwiecień z mroźnymi nocami — majowe przymrozki pamiętaj.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczne ostrzeżenie zgodne z realną wiedzą rolniczą, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  4,
+        "d":  19,
+        "text":  "Timon wiosenny — ryby w rzece.",
+        "classification":  "suspicious",
+        "note":  "Błędna, niepolska forma imienia (\"Timon\" zamiast \"Tymon\"); szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  20,
+        "text":  "Agnieszka wiosenna — zioła kwitnące.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  21,
+        "text":  "Kwiecień z ciepłem po dwudziestym — maj pracowity.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  21,
+        "text":  "Anzelm z deszczem — maj zielony.",
+        "classification":  "unverifiable",
+        "note":  "Łagodny, plauzybilny, niepotwierdzony."
+    },
+    {
+        "m":  4,
+        "d":  22,
+        "text":  "Ziemia Matka w kwiecień budzi — rolnik pracuje.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny \"w kwiecień\"; \"Ziemia Matka\" to współczesne, nie ludowe pojęcie."
+    },
+    {
+        "m":  4,
+        "d":  22,
+        "text":  "Na Dzień Ziemi natura mówi.",
+        "classification":  "suspicious",
+        "note":  "Dzień Ziemi to nowożytne (1970) święto międzynarodowe, anachronizm w tradycyjnym przysłowiu."
+    },
+    {
+        "m":  4,
+        "d":  23,
+        "text":  "Na świętego Wojciecha bociany budzą z kochanki nieba.",
+        "classification":  "suspicious",
+        "note":  "Niespójna, niegramatyczna fraza \"kochanki nieba\"; prawdziwa tradycja mówi o wronie chowającej się w życie, nie o bocianach."
+    },
+    {
+        "m":  4,
+        "d":  23,
+        "text":  "Gdy Wojciech mroźny, owoc tego roku będzie kosztowny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  23,
+        "text":  "Wojciech z słońcem — żyto się obiecuje.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  24,
+        "text":  "Jerzy na koniu — zima pobita.",
+        "classification":  "unverifiable",
+        "note":  "Nawiązuje do ikonografii św. Jerzego, plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  24,
+        "text":  "Na świętego Jerzego wąż z dziury wychodzi.",
+        "classification":  "unverifiable",
+        "note":  "Zgodny z realnym motywem budzenia się zwierząt wiosną, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  4,
+        "d":  25,
+        "text":  "Na Marka — słońce grzeje mocniej.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  25,
+        "text":  "Marek wiosenny — poluj na pieczarki.",
+        "classification":  "suspicious",
+        "note":  "Pieczarki to grzyby uprawne, nie zbierane \"polowaniem\" w polu; błędna terminologia."
+    },
+    {
+        "m":  4,
+        "d":  26,
+        "text":  "Kwiecień ku końcowi — pszczoły w kwiatach.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  26,
+        "text":  "Marzenka w słońcu — winogrona obiecuje.",
+        "classification":  "suspicious",
+        "note":  "Zdrobniałe, mało formalne imię \"Marzenka\"; winogrona nieadekwatne do kwietnia."
+    },
+    {
+        "m":  4,
+        "d":  27,
+        "text":  "Zyta z kwiatami — stodoła pełna.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, nielogiczny związek kwiaty-pełna stodoła."
+    },
+    {
+        "m":  4,
+        "d":  27,
+        "text":  "Kwiecień na końcu — sprawdź drzewa owocowe.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczna rada, plauzybilna, niepotwierdzona."
+    },
+    {
+        "m":  4,
+        "d":  28,
+        "text":  "Witalis z deszczem — ogród kwitnie.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  28,
+        "text":  "Kwiecień ostatni — siej co możesz.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  29,
+        "text":  "Katarzyna wiosenna — zioła zbieraj.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  4,
+        "d":  29,
+        "text":  "Przed majem kwiecień ostatnią szansę daje.",
+        "classification":  "suspicious",
+        "note":  "Pusta, ogólnikowa personifikacja \"ostatnią szansę daje\"."
+    },
+    {
+        "m":  4,
+        "d":  30,
+        "text":  "Kwiecień bez deszczu — w stodole cicho.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  4,
+        "d":  30,
+        "text":  "Kwiecień z piorunami — lato jak marzenie.",
+        "classification":  "suspicious",
+        "note":  "\"Lato jak marzenie\" to współczesna, romantyczna fraza, nie idiom ludowy."
+    },
+    {
+        "m":  4,
+        "d":  30,
+        "text":  "Ostatni kwiecień — maj za drzwiami.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  1,
+        "text":  "Maj chłodny i deszczowy — rok urodzajny.",
+        "classification":  "verified",
+        "note":  "Odpowiada potwierdzonemu \"Chłodny maj, dobry urodzaj\"."
+    },
+    {
+        "m":  5,
+        "d":  1,
+        "text":  "Kto w maju nie pracuje, ten przez zimę gościuje.",
+        "classification":  "suspicious",
+        "note":  "Nielogiczny wniosek (\"gościuje\"), nie odpowiada żadnej znanej tradycji majowej."
+    },
+    {
+        "m":  5,
+        "d":  1,
+        "text":  "Majowe deszcze — złoto dla pól.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne tematycznie z \"Deszcz majowy, chleb gotowy\", ale inny tekst."
+    },
+    {
+        "m":  5,
+        "d":  2,
+        "text":  "Gdy maj z deszczem na początku — sierpień obfity.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  5,
+        "d":  3,
+        "text":  "Na Konstytucję Trzeciego Maja — wiosna pełna.",
+        "classification":  "suspicious",
+        "note":  "Święto Konstytucji 3 Maja to świeckie święto historyczne (od 1791/1919), nie tradycyjny dzień pogodowy — anachroniczne pomieszanie."
+    },
+    {
+        "m":  5,
+        "d":  3,
+        "text":  "Maj trzeci z kwiatami — rok dostatni.",
+        "classification":  "suspicious",
+        "note":  "Ta sama anachroniczna podstawa co wyżej."
+    },
+    {
+        "m":  5,
+        "d":  4,
+        "text":  "Florian ognie gasi — deszcze przywołuje.",
+        "classification":  "well-known-classic",
+        "note":  "Florian jest powszechnie znanym patronem strażaków/od ognia w polskiej tradycji."
+    },
+    {
+        "m":  5,
+        "d":  4,
+        "text":  "Na Floriana deszcz pada — pożary nie grożą.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą, dobrze udokumentowaną tradycją."
+    },
+    {
+        "m":  5,
+        "d":  5,
+        "text":  "Irena w słońcu — dobre lato obiecuje.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  5,
+        "d":  6,
+        "text":  "Gdy w maju mgły poranne — upał w południe.",
+        "classification":  "unverifiable",
+        "note":  "Wiarygodna obserwacja meteorologiczna, niepotwierdzona źródłowo."
+    },
+    {
+        "m":  5,
+        "d":  7,
+        "text":  "Na świętego Stanisława lato się przedstawia.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  7,
+        "text":  "Stanisław z deszczem — żyto radosne.",
+        "classification":  "suspicious",
+        "note":  "Sztuczna personifikacja \"żyto radosne\"."
+    },
+    {
+        "m":  5,
+        "d":  8,
+        "text":  "Maj ósmy z burzą — rok w żyto bogaty.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie \"maj ósmy\" (dzień miesiąca) obce stylowi przysłów ludowych, które odnoszą się do imion świętych."
+    },
+    {
+        "m":  5,
+        "d":  8,
+        "text":  "Gdy maj grzmi — sierpień gorący.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  5,
+        "d":  10,
+        "text":  "Izydor rolnik — patron dobrych zbiorów.",
+        "classification":  "well-known-classic",
+        "note":  "Izydor Oracz jest rzeczywistym, dobrze znanym patronem rolników."
+    },
+    {
+        "m":  5,
+        "d":  10,
+        "text":  "Na Izydora zasiewaj najpóźniej.",
+        "classification":  "unverifiable",
+        "note":  "Praktyczna rada, plauzybilna, niepotwierdzona."
+    },
+    {
+        "m":  5,
+        "d":  12,
+        "text":  "Pankracy mróz przynosi — strzeż sadzone.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne z tradycją zimnych ogrodników, drobny błąd fleksyjny (\"sadzone\" zam. \"sadzonek\")."
+    },
+    {
+        "m":  5,
+        "d":  12,
+        "text":  "Zimni Ogrodnicy: Pankracy, Serwacy, Bonifacy — trzy mroźne dni.",
+        "classification":  "verified",
+        "note":  "Zgodne z powszechnie znanym \"Pankracy, Serwacy, Bonifacy — źli na ogrody chłopacy\"."
+    },
+    {
+        "m":  5,
+        "d":  13,
+        "text":  "Serwacy mroźny — drzewa owocowe cierpią.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowaną tradycją zimnych ogrodników i ryzyka przymrozków dla drzew owocowych."
+    },
+    {
+        "m":  5,
+        "d":  13,
+        "text":  "Gdy Serwacy bez mrozu — lato gorące.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  14,
+        "text":  "Bonifacy z lodem — ogrodnicy płaczą.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tradycją zimnych ogrodników."
+    },
+    {
+        "m":  5,
+        "d":  14,
+        "text":  "Po Bonifacym mróz nie wraca.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  15,
+        "text":  "Zimna Zofia, Pankracy, Serwacy — trzej mroźni bracia.",
+        "classification":  "suspicious",
+        "note":  "Błąd logiczny/gramatyczny: Zofia jest kobietą, nie może być jednym z \"braci\"; pomija Bonifacego z prawdziwej czwórki."
+    },
+    {
+        "m":  5,
+        "d":  15,
+        "text":  "Na Zofię idź boso po rosie, zdrowie do domu przyniesie.",
+        "classification":  "suspicious",
+        "note":  "Zwyczaj chodzenia boso po rosie wiąże się tradycyjnie z nocą świętojańską (czerwiec), nie z \"Zimną Zośką\" (mroźny dzień) — pomieszanie tradycji."
+    },
+    {
+        "m":  5,
+        "d":  15,
+        "text":  "Po Zimnej Zofii — mróz odpuszcza.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tradycją zimnych ogrodników — Zofia zamyka okres przymrozków."
+    },
+    {
+        "m":  5,
+        "d":  16,
+        "text":  "Po zimnych ogrodnikach — ciepło pewne.",
+        "classification":  "well-known-classic",
+        "note":  "Logiczne zakończenie tradycji zimnych ogrodników."
+    },
+    {
+        "m":  5,
+        "d":  18,
+        "text":  "Maj osiemnasty z deszczem — czerwiec suchy.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+    },
+    {
+        "m":  5,
+        "d":  20,
+        "text":  "Bernardyn z kwiatami — lato piękne.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  5,
+        "d":  21,
+        "text":  "Wiktor w maju — w polu wesoło.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz, treść bardzo ogólnikowa."
+    },
+    {
+        "m":  5,
+        "d":  21,
+        "text":  "Maj ciepły po dwudziestym — dobrze wróży.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  22,
+        "text":  "Rita z różą — maj pełen kwiatów.",
+        "classification":  "suspicious",
+        "note":  "Niezgodność z metryczką dnia (\"Romy, Julii\"), a nie Rity — wyraźny błąd/fabrykacja; św. Rita nie jest typową postacią polskiego kalendarza pogodowego."
+    },
+    {
+        "m":  5,
+        "d":  23,
+        "text":  "Dezydery z deszczem — staw pełny.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  5,
+        "d":  23,
+        "text":  "Maj na końcu — lato się zbliża.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  25,
+        "text":  "Na świętego Urbana dobre wino w beczułce schowane.",
+        "classification":  "well-known-classic",
+        "note":  "Urban jest znanym patronem winiarzy w tradycji polskiej."
+    },
+    {
+        "m":  5,
+        "d":  25,
+        "text":  "Jeśli Urban z deszczem, wino kwaśne do pieśni.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą tradycją urbanową."
+    },
+    {
+        "m":  5,
+        "d":  25,
+        "text":  "Urban słoneczny — winnica obiecuje.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  26,
+        "text":  "Filip Neri — kapłan wiosenny.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe zdanie, nie przysłowie, brak treści przepowiadającej."
+    },
+    {
+        "m":  5,
+        "d":  27,
+        "text":  "Maj na końcu zbiera siły do lata.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  5,
+        "d":  28,
+        "text":  "Przedostatni tydzień maja — lato za dwa kroki.",
+        "classification":  "suspicious",
+        "note":  "Współczesny idiom \"za dwa kroki\", uboga treść."
+    },
+    {
+        "m":  5,
+        "d":  30,
+        "text":  "Maj na ostatku — każdy chwyta wolny czas.",
+        "classification":  "suspicious",
+        "note":  "\"Wolny czas\" to współczesne pojęcie czasu wolnego, anachroniczne dla tradycyjnego folkloru chłopskiego."
+    },
+    {
+        "m":  5,
+        "d":  31,
+        "text":  "Ostatni maj — lato tuż tuż.",
+        "classification":  "suspicious",
+        "note":  "Potoczne, współczesne powtórzenie \"tuż tuż\", nie styl ludowy."
+    },
+    {
+        "m":  5,
+        "d":  31,
+        "text":  "Na końcu maja — liczy się żyto.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  1,
+        "text":  "Czerwiec ciepły — zboże radosne.",
+        "classification":  "suspicious",
+        "note":  "Sztuczna personifikacja \"zboże radosne\", powtarzający się szablon."
+    },
+    {
+        "m":  6,
+        "d":  1,
+        "text":  "Czerwiec deszczowy — sierpień gorący.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  6,
+        "d":  2,
+        "text":  "Erazm z deszczem — ogród kwitnie.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  6,
+        "d":  4,
+        "text":  "Gdy czerwiec z burzą na początku — lato gorące.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  8,
+        "text":  "Medard deszczem obdarzył — czterdzieści dni deszczem straszył.",
+        "classification":  "verified",
+        "note":  "Odpowiada dobrze udokumentowanemu przysłowiu o 40 dniach deszczu po Medardzie."
+    },
+    {
+        "m":  6,
+        "d":  8,
+        "text":  "Na Medarda jak pada — przez czterdzieści dni nie ustaje woda.",
+        "classification":  "verified",
+        "note":  "Bliska parafraza tej samej, potwierdzonej tradycji."
+    },
+    {
+        "m":  6,
+        "d":  8,
+        "text":  "Medard suchy — czterdzieści dni bez deszczu.",
+        "classification":  "well-known-classic",
+        "note":  "Standardowa odwrócona forma tej samej powszechnie znanej reguły."
+    },
+    {
+        "m":  6,
+        "d":  9,
+        "text":  "Po Medardzie czterdzieści dni niezmienne.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą tradycją."
+    },
+    {
+        "m":  6,
+        "d":  10,
+        "text":  "Bogumił z deszczem — pszczoły w pracy.",
+        "classification":  "suspicious",
+        "note":  "Pszczoły nie latają w deszczu — sprzeczne z realną wiedzą pszczelarską."
+    },
+    {
+        "m":  6,
+        "d":  13,
+        "text":  "Antoni z Padwy — kto zguby szuka, znajdzie.",
+        "classification":  "well-known-classic",
+        "note":  "Antoni Padewski jest powszechnie znanym patronem odnajdywania zagubionych rzeczy."
+    },
+    {
+        "m":  6,
+        "d":  13,
+        "text":  "Na Antoniego deszcz pada — zboże pełne wody.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  15,
+        "text":  "Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy.",
+        "classification":  "well-known-classic",
+        "note":  "Archaiczna forma i rym (suchy/muchy) typowe dla autentycznych XIX-wiecznych zbiorów przysłów."
+    },
+    {
+        "m":  6,
+        "d":  15,
+        "text":  "Na świętego Wita zboże zakwita.",
+        "classification":  "well-known-classic",
+        "note":  "Rym Wita/zakwita zgodny ze stylem genuine przysłów kalendarzowych."
+    },
+    {
+        "m":  6,
+        "d":  15,
+        "text":  "Na świętego Wita ze śpiewem ptaków kwita.",
+        "classification":  "suspicious",
+        "note":  "Wygląda na wtórną przeróbkę poprzedniego przysłowia z tym samym rymem — dublowanie/wypełniacz."
+    },
+    {
+        "m":  6,
+        "d":  16,
+        "text":  "Alina z rosą — ogród radosny.",
+        "classification":  "suspicious",
+        "note":  "Szablonowy wypełniacz."
+    },
+    {
+        "m":  6,
+        "d":  19,
+        "text":  "Gerwazy z deszczem — Paweł z słońcem.",
+        "classification":  "suspicious",
+        "note":  "Niejasne odniesienie do \"Pawła\" — nie ma w metryczce dnia, zdanie niespójne."
+    },
+    {
+        "m":  6,
+        "d":  21,
+        "text":  "Na Alojzego — dzień najdłuższy.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z faktem przesilenia letniego przypadającego ok. 21 czerwca."
+    },
+    {
+        "m":  6,
+        "d":  21,
+        "text":  "Letnie przesilenie — słońce na szczycie.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym faktem astronomicznym."
+    },
+    {
+        "m":  6,
+        "d":  22,
+        "text":  "Po przesileniu dzień zaczyna wracać.",
+        "classification":  "unverifiable",
+        "note":  "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  6,
+        "d":  23,
+        "text":  "Na Sobótkę dziewczęta kwiatami się ozdabiają.",
+        "classification":  "well-known-classic",
+        "note":  "Zwyczaj wianków na Sobótkę/noc świętojańską jest dobrze udokumentowaną polską tradycją."
+    },
+    {
+        "m":  6,
+        "d":  24,
+        "text":  "Na Jana Chrzciciela słońce nad ziemią miga — urodzaj nie ucieka.",
+        "classification":  "unverifiable",
+        "note":  "Niepewna, dziwna fraza \"słońce miga\", ale w duchu ogólnego motywu świętojańskiego."
+    },
+    {
+        "m":  6,
+        "d":  24,
+        "text":  "Gdy na świętego Jana rzeka wzbiera — rok w polu obfity.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  24,
+        "text":  "Na Jana kąp się w rzece, zdrowie do ciała płynie.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowanym słowiańskim zwyczajem kąpieli w noc świętojańską."
+    },
+    {
+        "m":  6,
+        "d":  25,
+        "text":  "Po Janie lato chodzi inaczej.",
+        "classification":  "suspicious",
+        "note":  "Puste, nic nieznaczące zdanie."
+    },
+    {
+        "m":  6,
+        "d":  27,
+        "text":  "Władysław z burzą — deszcz do końca tygodnia.",
+        "classification":  "suspicious",
+        "note":  "Precyzyjne ramy czasowe \"do końca tygodnia\" nietypowe dla stylu ludowego, przypomina współczesną prognozę."
+    },
+    {
+        "m":  6,
+        "d":  28,
+        "text":  "Czerwiec ku końcowi — żniwa za miesiąc.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  29,
+        "text":  "Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowaną tradycją Piotra i Pawła jako początku dojrzewania zbóż."
+    },
+    {
+        "m":  6,
+        "d":  29,
+        "text":  "Od Piotra i Pawła — żyto do kosy się kłania.",
+        "classification":  "well-known-classic",
+        "note":  "Klasyczny obraz żniwny zgodny z tą samą tradycją."
+    },
+    {
+        "m":  6,
+        "d":  29,
+        "text":  "Gdy Piotr i Paweł słoneczni — zboże złote.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  6,
+        "d":  30,
+        "text":  "Ostatni czerwiec — żniwa pukają w bramę.",
+        "classification":  "suspicious",
+        "note":  "Powtarzająca się, sztuczna personifikacja \"puka\"."
+    },
+    {
+        "m":  6,
+        "d":  30,
+        "text":  "Czerwiec koniec — lato w sile.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  1,
+        "text":  "Lipiec skwarny — rok owocny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  7,
+        "d":  1,
+        "text":  "Deszcz lipcowy rolnikowi nie drogowy.",
+        "classification":  "unverifiable",
+        "note":  "Rym lipcowy/drogowy przypomina styl ludowy, ale sens frazy niejasny; niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  1,
+        "text":  "Lipiec ciepły — pszczoły szczęśliwe.",
+        "classification":  "suspicious",
+        "note":  "Sztuczna personifikacja pszczół, powtarzający się szablon."
+    },
+    {
+        "m":  7,
+        "d":  2,
+        "text":  "Lipiec deszczowy — sierpień suchy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  7,
+        "d":  2,
+        "text":  "Gdy lipiec mglisty — jesień piękna.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  7,
+        "d":  6,
+        "text":  "Gdy lipiec z burzami — sierpień spokojny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  7,
+        "d":  15,
+        "text":  "Połowa lipca — lato w pełni.",
+        "classification":  "suspicious",
+        "note":  "Tautologiczne, nic nieprzewidujące zdanie."
+    },
+    {
+        "m":  7,
+        "d":  16,
+        "text":  "Na Karmel — ziele i kwiaty w koszu.",
+        "classification":  "suspicious",
+        "note":  "Zbyt ogólnikowe, nie oddaje realnej tradycji Matki Boskiej Szkaplerznej."
+    },
+    {
+        "m":  7,
+        "d":  20,
+        "text":  "Na Eliasza burze i pioruny — rolnicy się kłaniają.",
+        "classification":  "well-known-classic",
+        "note":  "Prorok Eliasz jest tradycyjnie kojarzony z burzami w folklorze słowiańskim."
+    },
+    {
+        "m":  7,
+        "d":  20,
+        "text":  "Eliasz deszczem albo suszą rządzi.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą tradycją."
+    },
+    {
+        "m":  7,
+        "d":  20,
+        "text":  "Gdy Eliasz grzmi — lato żar wyda.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  22,
+        "text":  "Maria Magdalena z deszczem — grzyby po deszczu.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  22,
+        "text":  "Na Magdaleny deszcz pada — urodzaj wróży.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  25,
+        "text":  "Na świętego Jakuba zbierać czas grzyba.",
+        "classification":  "well-known-classic",
+        "note":  "Rym Jakuba/grzyba zgodny z klasycznym stylem sezonowych przysłów grzybowych."
+    },
+    {
+        "m":  7,
+        "d":  25,
+        "text":  "Gdy Jakub z deszczem — figi do wina.",
+        "classification":  "suspicious",
+        "note":  "Figi nie są tradycyjną polską rośliną — nielogiczny, obcy element."
+    },
+    {
+        "m":  7,
+        "d":  26,
+        "text":  "Na Annę — babcie zbierają zioła.",
+        "classification":  "unverifiable",
+        "note":  "Łagodny kalambur (Anna jako patronka babć), plauzybilny, niepotwierdzony."
+    },
+    {
+        "m":  7,
+        "d":  28,
+        "text":  "Lipiec ku końcowi — żniwa zaczynają.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  29,
+        "text":  "Na Martę — gospodyni zbiera pierwsze żniwa.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  7,
+        "d":  30,
+        "text":  "Lipiec trzydziesty — sprawdź sianokosy.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+    },
+    {
+        "m":  7,
+        "d":  31,
+        "text":  "Ostatni lipiec — sierpień puka.",
+        "classification":  "suspicious",
+        "note":  "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+    },
+    {
+        "m":  7,
+        "d":  31,
+        "text":  "Koniec lipca — żniwa w pełni.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  8,
+        "d":  1,
+        "text":  "Sierpień z deszczem — rolnik z pieszczą.",
+        "classification":  "suspicious",
+        "note":  "\"Z pieszczą\" to niepoprawna, bezsensowna fraza — sztuczny rym."
+    },
+    {
+        "m":  8,
+        "d":  1,
+        "text":  "Pierwszy sierpień mokry — całe lato mokre.",
+        "classification":  "suspicious",
+        "note":  "Logicznie wsteczne — jeden dzień sierpnia nie może retroaktywnie określać \"całego lata\", które w większości już minęło."
+    },
+    {
+        "m":  8,
+        "d":  1,
+        "text":  "Sierpień cały — pracą napełniaj.",
+        "classification":  "suspicious",
+        "note":  "Ogólnikowy nakaz, nie przepowiednia ludowa."
+    },
+    {
+        "m":  8,
+        "d":  5,
+        "text":  "Gdy sierpień deszczowy — jesień długa.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  8,
+        "d":  8,
+        "text":  "Gdy sierpień pogodny — wrzesień spokojny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  8,
+        "d":  10,
+        "text":  "Na świętego Wawrzyńca słońce pali, zboże w polu się wali.",
+        "classification":  "well-known-classic",
+        "note":  "Rym pali/wali zgodny z klasycznym motywem sierpniowego żaru w folklorze."
+    },
+    {
+        "m":  8,
+        "d":  10,
+        "text":  "Wawrzyniec słońcem pali — żniwa w polu się gonią.",
+        "classification":  "unverifiable",
+        "note":  "Wariant zbliżony do powyższego, niepotwierdzony osobno."
+    },
+    {
+        "m":  8,
+        "d":  10,
+        "text":  "Na Wawrzyńca — noc spadających gwiazd.",
+        "classification":  "well-known-classic",
+        "note":  "Perseidy szczytują ok. 10-12 sierpnia; \"łzy świętego Wawrzyńca\" to faktycznie udokumentowana europejska tradycja astronomiczno-ludowa."
+    },
+    {
+        "m":  8,
+        "d":  13,
+        "text":  "Gdy sierpień na Hipolita suchy — wrzesień mokry.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  8,
+        "d":  14,
+        "text":  "Wigilia Wniebowzięcia — kwiaty do kościoła.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne z realnym zwyczajem święcenia ziół/kwiatów, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  8,
+        "d":  15,
+        "text":  "Na Wniebowzięcie Maryi zboże w stodole się leży.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  8,
+        "d":  15,
+        "text":  "Gdy na Matkę Boską Zielną deszcz pada — jesień mokra nadciąga.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  8,
+        "d":  15,
+        "text":  "Na Zielną — zioła poświęcone w ręku.",
+        "classification":  "well-known-classic",
+        "note":  "Święcenie ziół na Matkę Boską Zielną to bardzo dobrze udokumentowany polski zwyczaj katolicki."
+    },
+    {
+        "m":  8,
+        "d":  24,
+        "text":  "Na świętego Bartłomieja dobre żniwa do koleja.",
+        "classification":  "unverifiable",
+        "note":  "Archaicznie brzmiące, niejasne \"do koleja\"; niepotwierdzone."
+    },
+    {
+        "m":  8,
+        "d":  24,
+        "text":  "Bartłomiej lato zamknie — jesień nadciąga.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne tematycznie z tradycją Bartłomieja jako granicy lata, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  8,
+        "d":  24,
+        "text":  "Bartłomiej z mgłą — zima wczesna.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  8,
+        "d":  26,
+        "text":  "Na Częstochową — plony do domu.",
+        "classification":  "suspicious",
+        "note":  "Zbyt ogólnikowe, słabo powiązane z realną tradycją pielgrzymkową na Jasną Górę."
+    },
+    {
+        "m":  8,
+        "d":  27,
+        "text":  "Sierpień ku końcowi — jesień puka.",
+        "classification":  "suspicious",
+        "note":  "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+    },
+    {
+        "m":  8,
+        "d":  29,
+        "text":  "Sierpień ku końcowi — jesień za bramą.",
+        "classification":  "suspicious",
+        "note":  "Niemal duplikat poprzednich wpisów — wypełniacz szablonowy."
+    },
+    {
+        "m":  8,
+        "d":  30,
+        "text":  "Sierpień trzydziesty — owce tłuste.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie do dnia miesiąca; nieuzasadniony związek z tłustością owiec."
+    },
+    {
+        "m":  8,
+        "d":  30,
+        "text":  "Różany sierpień — zapach na polu.",
+        "classification":  "suspicious",
+        "note":  "Czysto poetyckie, bez treści przepowiadającej."
+    },
+    {
+        "m":  8,
+        "d":  31,
+        "text":  "Ostatni sierpień — lato żegna się.",
+        "classification":  "unverifiable",
+        "note":  "Tautologiczne, ale łagodne."
+    },
+    {
+        "m":  8,
+        "d":  31,
+        "text":  "Koniec lata — wspomnienie o żniwach.",
+        "classification":  "suspicious",
+        "note":  "Refleksyjny, nostalgiczny ton współczesny, nie przysłowie ludowe."
+    },
+    {
+        "m":  9,
+        "d":  2,
+        "text":  "Wrzesień z deszczem — październik suchy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  9,
+        "d":  2,
+        "text":  "Gdy wrzesień ciepły — październik mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  9,
+        "d":  6,
+        "text":  "Gdy wrzesień mglisty — zima wczesna.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  9,
+        "d":  8,
+        "text":  "Na Matkę Boską Siewną siej, kiedy czas sprzyja.",
+        "classification":  "well-known-classic",
+        "note":  "Matka Boska Siewna to tradycyjny, dobrze udokumentowany termin siewu ozimin w Polsce."
+    },
+    {
+        "m":  9,
+        "d":  8,
+        "text":  "Sieje się na Siewną — wschodzi na wiosnę.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą, dobrze znaną tradycją."
+    },
+    {
+        "m":  9,
+        "d":  8,
+        "text":  "Na Siewną — zboże ozime w ziemię.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z tą samą tradycją."
+    },
+    {
+        "m":  9,
+        "d":  12,
+        "text":  "Gdy wrzesień ciepły w połowie — październik chłodny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  9,
+        "d":  14,
+        "text":  "Na Podwyższenie liście żółkną i w górę lecą.",
+        "classification":  "suspicious",
+        "note":  "Błąd rzeczowy: opadające jesienią liście lecą w dół, nie \"w górę\"."
+    },
+    {
+        "m":  9,
+        "d":  14,
+        "text":  "Wrzesień z deszczem — październik z mrozem.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  9,
+        "d":  14,
+        "text":  "Na Podwyższenie — żegnaj lato.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne z tradycyjnym postrzeganiem tego dnia jako granicy lata, niepotwierdzone dosłownie."
+    },
+    {
+        "m":  9,
+        "d":  15,
+        "text":  "Maria Bolesna — jesień smutna, ale piękna.",
+        "classification":  "suspicious",
+        "note":  "Czysto emocjonalna, sentymentalna refleksja, nie ludowa przepowiednia."
+    },
+    {
+        "m":  9,
+        "d":  21,
+        "text":  "Na Mateusza — plony policzone.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  9,
+        "d":  22,
+        "text":  "Wrzesień z więdnącym liściem — zima wróżona.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  9,
+        "d":  23,
+        "text":  "Na równonoc jesienną — noc z dniem równy.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym faktem astronomicznym."
+    },
+    {
+        "m":  9,
+        "d":  26,
+        "text":  "Kosma i Damian — obrońcy ogrodu.",
+        "classification":  "suspicious",
+        "note":  "Błąd rzeczowy: Kosma i Damian są tradycyjnie patronami lekarzy/medycyny, nie ogrodu."
+    },
+    {
+        "m":  9,
+        "d":  27,
+        "text":  "Wrzesień ku końcowi — jesień rządzi.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  9,
+        "d":  29,
+        "text":  "Na Michała gęsi do wsi nawieszają.",
+        "classification":  "suspicious",
+        "note":  "Bezsensowny czasownik \"nawieszają\" wobec gęsi; tradycja jedzenia gęsi wiąże się ze św. Marcinem (11 listopada), nie Michałem — pomieszanie dat."
+    },
+    {
+        "m":  9,
+        "d":  29,
+        "text":  "Gdy Michał z mrozem — zima pewna przed nozem.",
+        "classification":  "suspicious",
+        "note":  "\"Przed nozem\" nie jest poprawnym polskim wyrażeniem — sztuczny, wymuszony rym."
+    },
+    {
+        "m":  9,
+        "d":  29,
+        "text":  "Michał archanioł — jesień strzeże.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  9,
+        "d":  30,
+        "text":  "Ostatni wrzesień — październik puka.",
+        "classification":  "suspicious",
+        "note":  "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+    },
+    {
+        "m":  9,
+        "d":  30,
+        "text":  "Koniec września — liście w złocie.",
+        "classification":  "unverifiable",
+        "note":  "Poetyckie, ale łagodne i plauzybilne."
+    },
+    {
+        "m":  10,
+        "d":  1,
+        "text":  "Październik z deszczem — listopad suchy.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  2,
+        "text":  "Na Aniołów Stróżów — anioły pilnują.",
+        "classification":  "suspicious",
+        "note":  "Czysta tautologia bez treści przepowiadającej."
+    },
+    {
+        "m":  10,
+        "d":  3,
+        "text":  "Gdy październik ciepły — listopad mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  4,
+        "text":  "Na Franciszka lecą liście jak płatki.",
+        "classification":  "unverifiable",
+        "note":  "Poetyckie, plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  10,
+        "d":  4,
+        "text":  "Październik z liściem — ogrodnik spokojny.",
+        "classification":  "suspicious",
+        "note":  "Zbyt ogólnikowe, brak realnej treści."
+    },
+    {
+        "m":  10,
+        "d":  4,
+        "text":  "Franciszek z Asyżu — przyroda umiłowana.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe zdanie, nie przysłowie z przepowiednią."
+    },
+    {
+        "m":  10,
+        "d":  7,
+        "text":  "Na różaniec październikowy — pacierze do końca roku.",
+        "classification":  "suspicious",
+        "note":  "Słaba, niejasna logika łącząca miesiąc różańcowy z modlitwą \"do końca roku\"."
+    },
+    {
+        "m":  10,
+        "d":  12,
+        "text":  "Gdy październik pogodny — zima miękka.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  15,
+        "text":  "Teresa z Avila — modlitwa jesienna.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe zdanie, nie przysłowie z przepowiednią."
+    },
+    {
+        "m":  10,
+        "d":  15,
+        "text":  "Połowa października — zima za dwa miesiące.",
+        "classification":  "unverifiable",
+        "note":  "Łagodne stwierdzenie faktu kalendarzowego."
+    },
+    {
+        "m":  10,
+        "d":  16,
+        "text":  "Jadwiga Śląska — Polska i Niemcy złączone.",
+        "classification":  "suspicious",
+        "note":  "Dziwna, niejasna fraza polityczno-historyczna, nie przysłowie pogodowe ani ludowe."
+    },
+    {
+        "m":  10,
+        "d":  18,
+        "text":  "Na Łukasza — słońce po jesiennemu.",
+        "classification":  "unverifiable",
+        "note":  "Łagodne, plauzybilne, niepotwierdzone."
+    },
+    {
+        "m":  10,
+        "d":  22,
+        "text":  "Październik z burzą — zima wczesna.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  23,
+        "text":  "Gdy październik bez mrozu — listopad skujny.",
+        "classification":  "suspicious",
+        "note":  "\"Skujny\" nie jest poprawnym polskim słowem — ślad fabrykacji/zniekształcenia."
+    },
+    {
+        "m":  10,
+        "d":  26,
+        "text":  "Październik ku końcowi — ziemia śpi.",
+        "classification":  "unverifiable",
+        "note":  "Poetycki, ale łagodny sezonowy obraz."
+    },
+    {
+        "m":  10,
+        "d":  28,
+        "text":  "Na Szymona i Judy zima za drzwiami budzi.",
+        "classification":  "suspicious",
+        "note":  "Zdanie niegramatyczne/niespójne składniowo (\"budzi\" bez dopełnienia)."
+    },
+    {
+        "m":  10,
+        "d":  28,
+        "text":  "Gdy Szymon mroźny — grudzień śnieżny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  28,
+        "text":  "Szymon i Juda — koniec jesieni wróżą.",
+        "classification":  "unverifiable",
+        "note":  "Zgodne tematycznie ze znanym motywem \"Szymona i Judy — zima blisko\", niepotwierdzone dosłownie."
+    },
+    {
+        "m":  10,
+        "d":  29,
+        "text":  "Gdy październik ciepły na końcu — listopad mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  10,
+        "d":  30,
+        "text":  "Październik trzydziesty — pola orać czas.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+    },
+    {
+        "m":  10,
+        "d":  31,
+        "text":  "Ostatni październik — Wszystkich Świętych za rogiem.",
+        "classification":  "unverifiable",
+        "note":  "Tautologiczne, ale łagodne."
+    },
+    {
+        "m":  10,
+        "d":  31,
+        "text":  "Halloween — noc czarownic i duchów.",
+        "classification":  "suspicious",
+        "note":  "Halloween to nowożytny import amerykańsko-celtycki, nie tradycyjne polskie przysłowie ludowe."
+    },
+    {
+        "m":  10,
+        "d":  31,
+        "text":  "Koniec października — zima coraz bliżej.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, łagodne stwierdzenie sezonowe."
+    },
+    {
+        "m":  11,
+        "d":  1,
+        "text":  "Na Wszystkich Świętych jeśli ciepło — listopad będzie długo siedzieć.",
+        "classification":  "suspicious",
+        "note":  "\"Listopad będzie długo siedzieć\" to bezsensowna personifikacja, nie tworzy sensownej przepowiedni."
+    },
+    {
+        "m":  11,
+        "d":  1,
+        "text":  "Wszystkich Świętych bez mrozu — Mikołaj z wiatrem do domu.",
+        "classification":  "suspicious",
+        "note":  "Niespójna, niejasna konstrukcja zdaniowa."
+    },
+    {
+        "m":  11,
+        "d":  1,
+        "text":  "Na cmentarzu znicze płoną — pamięć trwa.",
+        "classification":  "suspicious",
+        "note":  "Czysto refleksyjne, współczesne zdanie, nie przysłowie z przepowiednią ludową."
+    },
+    {
+        "m":  11,
+        "d":  2,
+        "text":  "W Zaduszki dusze wracają — daj im ciepłe jedzenie.",
+        "classification":  "suspicious",
+        "note":  "Nakaz \"dania duszom ciepłego jedzenia\" nie odpowiada udokumentowanej tradycji Zaduszek (modlitwa, odwiedziny grobów)."
+    },
+    {
+        "m":  11,
+        "d":  2,
+        "text":  "Kiedy chmurny dzień Zaduszek — zima srogie niesie mrozki.",
+        "classification":  "unverifiable",
+        "note":  "Drobny błąd fleksyjny (\"zima srogie\" zam. \"sroga\"), ale plauzybilny styl ludowy."
+    },
+    {
+        "m":  11,
+        "d":  11,
+        "text":  "Na świętego Marcina zima się zaczyna.",
+        "classification":  "well-known-classic",
+        "note":  "Jedno z najbardziej znanych polskich przysłów kalendarzowych."
+    },
+    {
+        "m":  11,
+        "d":  11,
+        "text":  "Gdy gęś na Marcina po lodzie chodzi — zima długo nie odchodzi.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowaną tradycją gęsi marcińskiej."
+    },
+    {
+        "m":  11,
+        "d":  11,
+        "text":  "Święty Marcin na białym koniu jedzie — zima za nim.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z bardzo znanym obrazem św. Marcina na białym koniu."
+    },
+    {
+        "m":  11,
+        "d":  12,
+        "text":  "Po Marcinie zima się zaostrza.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  11,
+        "d":  15,
+        "text":  "Połowa listopada — zima pewna.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  11,
+        "d":  17,
+        "text":  "Elżbieta węgierska — charytatywna zima.",
+        "classification":  "suspicious",
+        "note":  "Bezsensowne, niegramatyczne połączenie \"charytatywna zima\"."
+    },
+    {
+        "m":  11,
+        "d":  21,
+        "text":  "Ofiarowanie Maryi — zima ofiarowuje mróz.",
+        "classification":  "suspicious",
+        "note":  "Pusta gra słów \"ofiarowanie/ofiarowuje\", bez realnej podstawy ludowej."
+    },
+    {
+        "m":  11,
+        "d":  24,
+        "text":  "Jan od Krzyża — zimowe ciemności.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe, nie przysłowie z przepowiednią."
+    },
+    {
+        "m":  11,
+        "d":  25,
+        "text":  "Na Katarzynę — koła się kręcą.",
+        "classification":  "well-known-classic",
+        "note":  "Nawiązuje do koła św. Katarzyny — jej dobrze znanego atrybutu ikonograficznego."
+    },
+    {
+        "m":  11,
+        "d":  25,
+        "text":  "Katarzyna Aleksandryjska — mądrość w zimie.",
+        "classification":  "suspicious",
+        "note":  "Zbyt ogólnikowa, doklejona fraza bez realnej podstawy."
+    },
+    {
+        "m":  11,
+        "d":  27,
+        "text":  "Listopad ku końcowi — grudzień puka.",
+        "classification":  "suspicious",
+        "note":  "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+    },
+    {
+        "m":  11,
+        "d":  29,
+        "text":  "Przedostatni listopad — grudzień za chwilę.",
+        "classification":  "suspicious",
+        "note":  "Tautologiczne, brak treści."
+    },
+    {
+        "m":  11,
+        "d":  30,
+        "text":  "Na świętego Andrzeja z zimą się rozmieja.",
+        "classification":  "suspicious",
+        "note":  "\"Rozmieja\" nie jest poprawnym polskim słowem — wygląda na sztuczny rym."
+    },
+    {
+        "m":  11,
+        "d":  30,
+        "text":  "Andrzejki — wróżby miłosne i zimowe.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe zdanie definiujące zwyczaj, nie przysłowie."
+    },
+    {
+        "m":  11,
+        "d":  30,
+        "text":  "Lej wosk na Andrzeja — los odczytaj.",
+        "classification":  "well-known-classic",
+        "note":  "Odpowiada bardzo znanemu zwyczajowi lania wosku w andrzejki."
+    },
+    {
+        "m":  12,
+        "d":  2,
+        "text":  "Gdy grudzień ciepły — styczeń mroźny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  12,
+        "d":  4,
+        "text":  "Święta Barbara po lodzie, Boże Narodzenie po wodzie.",
+        "classification":  "well-known-classic",
+        "note":  "Bardzo znane, klasyczne polskie przysłowie kalendarzowe."
+    },
+    {
+        "m":  12,
+        "d":  4,
+        "text":  "Gdy Barbara z deszczem — Boże Narodzenie ze śniegiem.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodny wariant tej samej dobrze znanej tradycji odwrotności."
+    },
+    {
+        "m":  12,
+        "d":  4,
+        "text":  "Na Barbarę — mróz lub odwilż na Boże Narodzenie.",
+        "classification":  "suspicious",
+        "note":  "Przepowiednia \"i tak, i tak\" — osłabiona wersja właściwej reguły odwrotności."
+    },
+    {
+        "m":  12,
+        "d":  6,
+        "text":  "Mikołaj mroźny — cały rok śnieżny.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  12,
+        "d":  6,
+        "text":  "Na Mikołaja dzieci na prezenty czekają.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym współczesnym zwyczajem mikołajkowym."
+    },
+    {
+        "m":  12,
+        "d":  6,
+        "text":  "Gdy Mikołaj z deszczem — Boże Narodzenie bez śniegu.",
+        "classification":  "unverifiable",
+        "note":  "Generyczna korelacja, niepotwierdzona."
+    },
+    {
+        "m":  12,
+        "d":  8,
+        "text":  "Na Niepokalane Poczęcie — zima w szacie białej.",
+        "classification":  "suspicious",
+        "note":  "Poetycki, ogólnikowy wypełniacz bez treści przepowiadającej."
+    },
+    {
+        "m":  12,
+        "d":  13,
+        "text":  "Łucja dnia przyczyni czy nocy — ciemności nie zmniejszy.",
+        "classification":  "well-known-classic",
+        "note":  "Odpowiada bardzo znanemu staremu przysłowiu \"Święta Łucja dnia przyczyni, nocy ujmie\" (kalendarz juliański)."
+    },
+    {
+        "m":  12,
+        "d":  13,
+        "text":  "Na świętą Łucję dzień się o krok przybliży.",
+        "classification":  "unverifiable",
+        "note":  "Luźna parafraza tego samego motywu, niepotwierdzona dosłownie."
+    },
+    {
+        "m":  12,
+        "d":  14,
+        "text":  "Jan od Krzyża w grudniu — mistyczna noc.",
+        "classification":  "suspicious",
+        "note":  "Czysto opisowe, poetyckie zdanie, nie przysłowie."
+    },
+    {
+        "m":  12,
+        "d":  21,
+        "text":  "Na Tomasza — przesilenie zimowe.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z faktem, że przesilenie zimowe historycznie wiązano ze świętem Tomasza."
+    },
+    {
+        "m":  12,
+        "d":  21,
+        "text":  "Najkrótszy dzień roku — słońce zawraca.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym faktem astronomicznym."
+    },
+    {
+        "m":  12,
+        "d":  22,
+        "text":  "Po przesileniu dzień przybywa.",
+        "classification":  "unverifiable",
+        "note":  "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+    },
+    {
+        "m":  12,
+        "d":  23,
+        "text":  "Jan Kęty grudniowy — mądrość na Boże Narodzenie.",
+        "classification":  "suspicious",
+        "note":  "Ogólnikowa, doklejona fraza bez realnej treści."
+    },
+    {
+        "m":  12,
+        "d":  24,
+        "text":  "Wigilia gwiazdkowa — gwiazda na niebie.",
+        "classification":  "unverifiable",
+        "note":  "Tautologiczne, ale łagodne."
+    },
+    {
+        "m":  12,
+        "d":  24,
+        "text":  "Gdy na Wigilię gwiazda wyraźna — rok dobry.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym zwyczajem wypatrywania pierwszej gwiazdki."
+    },
+    {
+        "m":  12,
+        "d":  24,
+        "text":  "Na Wigilię — pierwsza gwiazda na stole.",
+        "classification":  "suspicious",
+        "note":  "Błąd rzeczowy: tradycja mówi o gwieździe na niebie, nie \"na stole\"."
+    },
+    {
+        "m":  12,
+        "d":  25,
+        "text":  "Boże Narodzenie ze śniegiem — Wielkanoc z kwieciem.",
+        "classification":  "well-known-classic",
+        "note":  "Znana, klasyczna reguła odwrotności między Bożym Narodzeniem a Wielkanocą."
+    },
+    {
+        "m":  12,
+        "d":  25,
+        "text":  "Gdy Boże Narodzenie zielone — Wielkanoc biała.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodny wariant tej samej dobrze znanej reguły."
+    },
+    {
+        "m":  12,
+        "d":  25,
+        "text":  "Na Boże Narodzenie słońce zaświeci — urodzajny rok.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  12,
+        "d":  26,
+        "text":  "Na Szczepana — zima potrząsa śniegiem.",
+        "classification":  "unverifiable",
+        "note":  "Poetyckie, łagodne, plauzybilne."
+    },
+    {
+        "m":  12,
+        "d":  26,
+        "text":  "Gdy na Szczepana mróz — do wiosny daleko.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  12,
+        "d":  27,
+        "text":  "Jak Jan Apostoł ośnieżony, św. Józef już zielony.",
+        "classification":  "well-known-classic",
+        "note":  "Archaiczna forma \"Jak X, tak Y\" łącząca grudniowego świętego z marcowym, typowa dla starych zbiorów przysłów (styl Kraszewskiego)."
+    },
+    {
+        "m":  12,
+        "d":  28,
+        "text":  "Na Młodzianki — błogosław dziatwy.",
+        "classification":  "suspicious",
+        "note":  "Błąd gramatyczny (\"błogosław dziatwy\" zam. \"dziatwę\"); forma bardziej liturgiczna niż ludowa."
+    },
+    {
+        "m":  12,
+        "d":  30,
+        "text":  "Grudzień trzydziesty — Sylwester jutro.",
+        "classification":  "suspicious",
+        "note":  "Numeryczne odniesienie do dnia miesiąca i czysta tautologia."
+    },
+    {
+        "m":  12,
+        "d":  31,
+        "text":  "Jak Sylwester — taki cały rok nowy.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z powszechnie znanym przekonaniem \"jaki Sylwester, taki cały rok\"."
+    },
+    {
+        "m":  12,
+        "d":  31,
+        "text":  "Sylwestrowa noc jasna i gwiaździsta — rok obfity.",
+        "classification":  "unverifiable",
+        "note":  "Generyczne, niepotwierdzone."
+    },
+    {
+        "m":  12,
+        "d":  31,
+        "text":  "Na Sylwestra hałasuj — złe duchy przepędź.",
+        "classification":  "well-known-classic",
+        "note":  "Zgodne z dobrze udokumentowanym słowiańskim/polskim zwyczajem hałasowania w sylwestra."
+    }
+]

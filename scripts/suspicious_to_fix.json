@@ -1,0 +1,1304 @@
+[
+ {
+  "m": 1,
+  "d": 1,
+  "names": "Mieczysławy, Seweryna",
+  "text": "Nowy Rok — nowe szczęście, stara bieda się polepsza.",
+  "note": "Prawdziwe jest tylko \"Nowy Rok, nowe szczęście\" (życzenie); doklejona fraza o biedzie nie ma potwierdzenia, brzmi sztucznie."
+ },
+ {
+  "m": 1,
+  "d": 3,
+  "names": "Genowefy, Daniela",
+  "text": "Mróz w styczeń — pszenica w spiżarni.",
+  "note": "Błąd gramatyczny: powinno być \"w styczniu\" (miejscownik) — mocny sygnał fabrykacji."
+ },
+ {
+  "m": 1,
+  "d": 4,
+  "names": "Tytusa, Anieli",
+  "text": "Gdy w styczeń mróz trzaska, lato złotem błyska.",
+  "note": "Błąd gramatyczny \"w styczeń\"; \"złotem błyska\" to nienaturalna, współczesna metafora."
+ },
+ {
+  "m": 1,
+  "d": 5,
+  "names": "Edwarda, Szymona",
+  "text": "Przed Trzech Króli dni jasne — rok urodzajny.",
+  "note": "Błąd fleksyjny \"przed Trzech Króli\" (powinno być \"przed Trzema Królami\")."
+ },
+ {
+  "m": 1,
+  "d": 6,
+  "names": "Kacpra, Melchiora, Baltazara",
+  "text": "Gdy na Trzech Króli mróz — do marca będzie ostry kłos.",
+  "note": "Nielogiczne powiązanie: \"kłos\" (dojrzałe zboże) nie występuje w marcu — błąd ludowej logiki rolniczej."
+ },
+ {
+  "m": 1,
+  "d": 6,
+  "names": "Kacpra, Melchiora, Baltazara",
+  "text": "Trzej Królowie z gwiazdą — zima do wiosny nie odpada.",
+  "note": "Nienaturalna, niegramatyczna konstrukcja \"zima nie odpada\", brak potwierdzenia."
+ },
+ {
+  "m": 1,
+  "d": 8,
+  "names": "Seweryna, Marii",
+  "text": "Ile śniegu w styczeń pada, tyle deszczu w maju pada.",
+  "note": "Błąd gramatyczny \"w styczeń\" zamiast \"w styczniu\"."
+ },
+ {
+  "m": 1,
+  "d": 9,
+  "names": "Marceliny, Adama",
+  "text": "Styczeń słoneczny — ale zimny.",
+  "note": "Nie zawiera żadnej przepowiedni ani logiki ludowej — czysty wypełniacz."
+ },
+ {
+  "m": 1,
+  "d": 10,
+  "names": "Wilhelma, Danuty",
+  "text": "Gdy w połowie zimy śnieg leży — zboże w stodole się jeży.",
+  "note": "\"Zboże się jeży\" to nienaturalny obraz wymyślony dla rymu, bez sensu w tradycji ludowej."
+ },
+ {
+  "m": 1,
+  "d": 11,
+  "names": "Honoraty, Ernesta",
+  "text": "Im więcej śniegu w styczeń pada, tym wiosna wcześniej nastaje.",
+  "note": "Błąd gramatyczny \"w styczeń\"; logika odwrócona względem typowych wierzeń ludowych."
+ },
+ {
+  "m": 1,
+  "d": 11,
+  "names": "Honoraty, Ernesta",
+  "text": "Śnieg w styczeń to złoto dla pól.",
+  "note": "Błąd gramatyczny \"w styczeń\" zamiast \"w styczniu\"."
+ },
+ {
+  "m": 1,
+  "d": 12,
+  "names": "Benedykta, Tatiany",
+  "text": "Gdy w styczeń woda, w marcu loda.",
+  "note": "Błąd gramatyczny \"w styczeń\"; \"loda\" nie jest poprawną formą polskiego słowa \"lód\"."
+ },
+ {
+  "m": 1,
+  "d": 13,
+  "names": "Bogumyły, Weroniki",
+  "text": "Styczeń deszczem się zaznajomi — marzec śniegiem się przypomni.",
+  "note": "Sztuczna, współczesna personifikacja (\"zaznajomi się\"), nietypowa dla idiomu ludowego."
+ },
+ {
+  "m": 1,
+  "d": 14,
+  "names": "Feliksa, Niny",
+  "text": "Mrozy stajenne w styczeń — dobry rok dla koni.",
+  "note": "Błąd gramatyczny \"w styczeń\"; \"mrozy stajenne\" to nietypowe, wymyślone określenie."
+ },
+ {
+  "m": 1,
+  "d": 16,
+  "names": "Marcelego, Waldemara",
+  "text": "Na Marcelego zima się zaostrza lub odpuszcza.",
+  "note": "Przepowiednia \"i tak, i tak\" — nic nie przewiduje, typowy wypełniacz."
+ },
+ {
+  "m": 1,
+  "d": 16,
+  "names": "Marcelego, Waldemara",
+  "text": "Marceli — jeśli mroźny, rok korzystny.",
+  "note": "Szablon: mało znane imię + banalna korzyść, bez rymu i潜 w źródłach."
+ },
+ {
+  "m": 1,
+  "d": 18,
+  "names": "Małgorzaty, Piotra",
+  "text": "Środek zimy — mróz się pości lub odpuszcza.",
+  "note": "\"Mróz się pości\" nie ma sensu (pościć dotyczy ludzi); przepowiednia \"i tak, i tak\"."
+ },
+ {
+  "m": 1,
+  "d": 19,
+  "names": "Henryka, Mariusza",
+  "text": "Po świętym Henryku wiosna za trzy tygodnie.",
+  "note": "Arbitralna, precyzyjna liczba tygodni nietypowa dla stylu ludowego; Henryk nie jest znanym dniem pogodowym."
+ },
+ {
+  "m": 1,
+  "d": 20,
+  "names": "Fabiana, Sebastiana",
+  "text": "Sebastian mroźny — rżysko obfite.",
+  "note": "\"Rżysko\" (ściernisko po żniwach) nie ma logicznego związku ze styczniowym mrozem."
+ },
+ {
+  "m": 1,
+  "d": 21,
+  "names": "Agnieszki",
+  "text": "Agnieszka mroźna — wiosna wczesna.",
+  "note": "Pomija prawdziwe, dobrze udokumentowane przysłowie \"Święta Agnieszka wypuszcza skowronka z mieszka\"; wygląda na wymyślony zastępnik."
+ },
+ {
+  "m": 1,
+  "d": 21,
+  "names": "Agnieszki",
+  "text": "Na świętą Agnieszkę śnieg na polach gęsto leży.",
+  "note": "Jak wyżej — pomija realny motyw skowronka, generyczny wypełniacz."
+ },
+ {
+  "m": 1,
+  "d": 22,
+  "names": "Anastazego, Wincentego",
+  "text": "Wincenty mroźny — kwiecień bezbłędny.",
+  "note": "\"Kwiecień bezbłędny\" to bezsensowne, współczesne sformułowanie."
+ },
+ {
+  "m": 1,
+  "d": 23,
+  "names": "Ildefonsa, Rajmunda",
+  "text": "Koniec trzeciej dekady stycznia — zima odpuszcza lub się zaostrza.",
+  "note": "Przepowiednia \"i tak, i tak\"; \"dekada\" to termin kalendarzowy obcy językowi ludowemu."
+ },
+ {
+  "m": 1,
+  "d": 24,
+  "names": "Felicji, Tymoteusza",
+  "text": "Tymoteusz mroźny — rok wczesny.",
+  "note": "Szablon: mało znane imię + bezsensowna fraza \"rok wczesny\"."
+ },
+ {
+  "m": 1,
+  "d": 27,
+  "names": "Anieli, Hieronima",
+  "text": "Aniela mroźna — lato chłodne.",
+  "note": "Szablon: mało znane imię + banalny skutek."
+ },
+ {
+  "m": 1,
+  "d": 28,
+  "names": "Tomasza z Akwinu, Walerego",
+  "text": "Wróżba na wigilię lutego: ile śniegu, tyle deszczu w maju.",
+  "note": "\"Wigilia lutego\" to nienaturalne, niespotykane w polskim folklorze określenie."
+ },
+ {
+  "m": 1,
+  "d": 30,
+  "names": "Martyny, Macieja",
+  "text": "Martyna w mrozie — wiosna skora.",
+  "note": "Szablon: mało znane imię, archaizujące \"skora\" naciągnięte pod rym."
+ },
+ {
+  "m": 1,
+  "d": 31,
+  "names": "Marceli, Jana Bosco",
+  "text": "Ostatni dzień zimy pierwszej — lutowy mróz już czeka.",
+  "note": "\"Zima pierwsza\" to pojęcie bez sensu w obrębie jednego roku — ślad błędnej generacji."
+ },
+ {
+  "m": 1,
+  "d": 31,
+  "names": "Marceli, Jana Bosco",
+  "text": "Styczeń za sobą zostawia ślady na śniegu.",
+  "note": "Czysto poetycki opis, nie zawiera żadnej przepowiedni ani ludowej logiki."
+ },
+ {
+  "m": 2,
+  "d": 1,
+  "names": "Brygidy, Ignacego",
+  "text": "Luty krótki, ale bardzo czuły.",
+  "note": "\"Bardzo czuły\" to współczesna, antropomorfizująca fraza bez ludowej logiki i bez przepowiedni."
+ },
+ {
+  "m": 2,
+  "d": 2,
+  "names": "Marii, Ofiarowania Pańskiego",
+  "text": "Gdy na Gromniczną słońce zaświeci, niedźwiedź w dziurze jeszcze poleci.",
+  "note": "Motyw niedźwiedzia przepowiadającego pogodę to import z amerykańskiego Dnia Świstaka, nie polska tradycja gromniczna; \"poleci\" nie pasuje do niedźwiedzia."
+ },
+ {
+  "m": 2,
+  "d": 2,
+  "names": "Marii, Ofiarowania Pańskiego",
+  "text": "Gromniczna słoneczna — sześć tygodni do wiosny daleko.",
+  "note": "\"Sześć tygodni\" to typowy motyw amerykańskiego Groundhog Day, nietypowy dla polskiej Gromnicznej."
+ },
+ {
+  "m": 2,
+  "d": 4,
+  "names": "Weroniki, Andrzeja",
+  "text": "Luty zmienny jak kameleon — raz mróz, raz odwilż.",
+  "note": "\"Kameleon\" to egzotyczne, całkowicie obce polskiemu folklorowi porównanie."
+ },
+ {
+  "m": 2,
+  "d": 5,
+  "names": "Agaty, Adelajdy",
+  "text": "Agata słoneczna — wiosna wczesna.",
+  "note": "Szablonowy wypełniacz, pomija realne motywy Agaty (ogień, chleb)."
+ },
+ {
+  "m": 2,
+  "d": 6,
+  "names": "Doroty, Pawła",
+  "text": "Dorotka kwiatki niesie — ale mróz je przyniesie.",
+  "note": "Zdanie niespójne logicznie — kto/co przynosi kwiatki, a co mróz, nie jest jasne."
+ },
+ {
+  "m": 2,
+  "d": 6,
+  "names": "Doroty, Pawła",
+  "text": "Gdy Dorota z burzą — wiosna będzie burzliwa.",
+  "note": "Burza w lutym jest meteorologicznie skrajnie rzadka w Polsce — nierealny scenariusz."
+ },
+ {
+  "m": 2,
+  "d": 10,
+  "names": "Scholastyki, Wilhelma",
+  "text": "Scholastyka w śniegu — lato w chłodzie.",
+  "note": "Brak potwierdzenia, słaba, generyczna logika."
+ },
+ {
+  "m": 2,
+  "d": 11,
+  "names": "Marii z Lourdes, Lucjana",
+  "text": "Na Matkę Boską Gromniczną albo mrozy, albo odwilż.",
+  "note": "Błędne przypisanie dnia — Matka Boska Gromniczna przypada 2 lutego, nie 11 lutego."
+ },
+ {
+  "m": 2,
+  "d": 11,
+  "names": "Marii z Lourdes, Lucjana",
+  "text": "Luty lubi zaskoczyć.",
+  "note": "Zbyt współczesna, potoczna fraza (\"lubi zaskoczyć\"), nie idiom ludowy."
+ },
+ {
+  "m": 2,
+  "d": 12,
+  "names": "Eulalii, Damiana",
+  "text": "Gdy w połowie lutym ciepło — biada ogrodniku.",
+  "note": "Błąd gramatyczny \"w połowie lutym\" zamiast \"w połowie lutego\"."
+ },
+ {
+  "m": 2,
+  "d": 13,
+  "names": "Grzegorza, Agnieszki",
+  "text": "Luty zmienny, rok niezmienny.",
+  "note": "Puste, nic nieprzewidujące zdanie mimo rymu."
+ },
+ {
+  "m": 2,
+  "d": 14,
+  "names": "Walentego, Cyryla",
+  "text": "Gdy Walenty słoneczny — miłość i urodzaj.",
+  "note": "\"Miłość\" w komercyjnym, walentynkowym sensie to współczesny naddatek, nie ludowy motyw pogodowy."
+ },
+ {
+  "m": 2,
+  "d": 15,
+  "names": "Faustyny, Jowity",
+  "text": "Faustyna słoneczna — wiosna blisko.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 2,
+  "d": 16,
+  "names": "Julianny, Danuty",
+  "text": "Juliana mroźna — marzec łagodny.",
+  "note": "Szablonowy wypełniacz; niespójność imienia (\"Julianny\" w metryczce vs \"Juliana\" w tekście)."
+ },
+ {
+  "m": 2,
+  "d": 18,
+  "names": "Szymona, Konstancji",
+  "text": "Szymon w lutym — wiosna za miesiąc.",
+  "note": "Szablonowy wypełniacz, słaba treść."
+ },
+ {
+  "m": 2,
+  "d": 18,
+  "names": "Szymona, Konstancji",
+  "text": "Luty ostatnią kartę ze śniegu przerzuca.",
+  "note": "\"Przerzuca kartę\" to nowoczesna metafora (kalendarza/książki), obca chłopskiej stylistyce ludowej."
+ },
+ {
+  "m": 2,
+  "d": 19,
+  "names": "Arnolda, Konrada",
+  "text": "Przed końcem lutego — obserwuj niebo.",
+  "note": "Współczesna instrukcja poradnikowa, nie przysłowie z przepowiednią."
+ },
+ {
+  "m": 2,
+  "d": 20,
+  "names": "Leona, Ludomiry",
+  "text": "Leon mroźny — kwiecień słoneczny.",
+  "note": "Szablonowy wypełniacz z mało znanym imieniem."
+ },
+ {
+  "m": 2,
+  "d": 21,
+  "names": "Eleonory, Anny",
+  "text": "Luty ostatnią bitwę z zimą stacza.",
+  "note": "\"Stacza bitwę\" to literacka, współczesna personifikacja, nie idiom ludowy."
+ },
+ {
+  "m": 2,
+  "d": 22,
+  "names": "Marty, Piotra",
+  "text": "Luty — zima się spieszy.",
+  "note": "Zbyt ogólnikowe, brak treści przepowiadającej."
+ },
+ {
+  "m": 2,
+  "d": 24,
+  "names": "Macieja, Bogusława",
+  "text": "Maciej z lodem — bociany za rok.",
+  "note": "\"Bociany za rok\" nie ma sensu — bociany wracają tej samej wiosny, nie za rok."
+ },
+ {
+  "m": 2,
+  "d": 25,
+  "names": "Wiktora, Cezarego",
+  "text": "Luty ku końcowi — pole coraz głośniej woła.",
+  "note": "Nienaturalna personifikacja \"pole głośno woła\"."
+ },
+ {
+  "m": 2,
+  "d": 26,
+  "names": "Aleksandra, Mirosławy",
+  "text": "Aleksander na przełomie — zima lub wiosna.",
+  "note": "Przepowiednia \"i tak, i tak\" — nic nie przewiduje."
+ },
+ {
+  "m": 2,
+  "d": 28,
+  "names": "Romana, Makarego",
+  "text": "Luty krótki — ale pamiętany.",
+  "note": "Puste, nic nieprzewidujące zdanie."
+ },
+ {
+  "m": 3,
+  "d": 2,
+  "names": "Heleny, Karola",
+  "text": "Gdy marzec z deszczem — zboże radosne.",
+  "note": "Sztuczna personifikacja \"zboże radosne\"."
+ },
+ {
+  "m": 3,
+  "d": 4,
+  "names": "Kazimierza",
+  "text": "Święty Kazimierz śnieg przywozi lub odpędza.",
+  "note": "Przepowiednia \"i tak, i tak\" — nic nie przewiduje."
+ },
+ {
+  "m": 3,
+  "d": 4,
+  "names": "Kazimierza",
+  "text": "Na Kazimierza wiosnę za kołnierz ciepło wpuszcza.",
+  "note": "Niespójna, nielogiczna fraza."
+ },
+ {
+  "m": 3,
+  "d": 5,
+  "names": "Fryderyka, Adriana",
+  "text": "Po świętym Kazimierzu rzeki zaczynają topnieć.",
+  "note": "Rzeki nie \"topnieją\" — topnieje lód na rzekach; błąd rzeczowy."
+ },
+ {
+  "m": 3,
+  "d": 5,
+  "names": "Fryderyka, Adriana",
+  "text": "Marzec zmienny — rolnik czujny.",
+  "note": "Ogólnikowa rada, nie przepowiednia ludowa."
+ },
+ {
+  "m": 3,
+  "d": 7,
+  "names": "Tomasza, Felicyty",
+  "text": "Siedem dni marca — zima lub wiosna.",
+  "note": "Przepowiednia \"i tak, i tak\"; \"siedem dni marca\" nie odpowiada żadnemu realnemu zwyczajowi."
+ },
+ {
+  "m": 3,
+  "d": 8,
+  "names": "Marii, Jana",
+  "text": "Gdy marzec mokry — polska trawa tłusta.",
+  "note": "Zbędny, nacjonalistyczny dodatek \"polska trawa\" nietypowy dla przysłów ludowych."
+ },
+ {
+  "m": 3,
+  "d": 11,
+  "names": "Benedykta, Rozalii",
+  "text": "Benedykt przychodzi z wiosną na plecach.",
+  "note": "Współczesna personifikacja \"wiosna na plecach\"."
+ },
+ {
+  "m": 3,
+  "d": 12,
+  "names": "Grzegorza",
+  "text": "Grzegorz słoneczny — wiosna pewna.",
+  "note": "Doklejony, generyczny wypełniacz."
+ },
+ {
+  "m": 3,
+  "d": 14,
+  "names": "Leontyny, Matyldy",
+  "text": "Matylda wiosenna — lato ciepłe.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 3,
+  "d": 15,
+  "names": "Klemensa, Longina",
+  "text": "Połowa marca — zima lub wiosna.",
+  "note": "Przepowiednia \"i tak, i tak\"."
+ },
+ {
+  "m": 3,
+  "d": 16,
+  "names": "Izabeli, Bonifacego",
+  "text": "Izabela w słońcu — sady obiecują.",
+  "note": "Szablonowy wypełniacz, imię Izabela nietypowe dla polskiego kalendarza ludowego."
+ },
+ {
+  "m": 3,
+  "d": 17,
+  "names": "Patryka, Zbigniewa",
+  "text": "Patryk z ciepłem — chmiel w górę rośnie.",
+  "note": "Chmiel nie rośnie w marcu; brak realnego związku Patryka z chmielem w polskim folklorze."
+ },
+ {
+  "m": 3,
+  "d": 18,
+  "names": "Cyryla, Edwarda",
+  "text": "Cyryl wiosenny — ogród radosny.",
+  "note": "Szablonowy wypełniacz z personifikacją."
+ },
+ {
+  "m": 3,
+  "d": 21,
+  "names": "Benedykta, Nikifora",
+  "text": "Pierwszy dzień wiosny w kalendarzu — ale natura decyduje.",
+  "note": "Współczesna, refleksyjna fraza (\"ale natura decyduje\"), nie idiom ludowy."
+ },
+ {
+  "m": 3,
+  "d": 23,
+  "names": "Pelagii, Feliksa",
+  "text": "Na koniec marca ziemia pragnie nasion.",
+  "note": "Poetycka antropomorfizacja \"ziemia pragnie\", nietypowa dla stylu ludowego."
+ },
+ {
+  "m": 3,
+  "d": 24,
+  "names": "Marka, Gabriela",
+  "text": "Gabriel wiosenny — dobra nowina dla pól.",
+  "note": "Szablonowy wypełniacz z niepasującą frazą religijną \"dobra nowina\"."
+ },
+ {
+  "m": 3,
+  "d": 26,
+  "names": "Larysy, Emanueli",
+  "text": "Marzec ku końcowi — siewnik gotuj.",
+  "note": "\"Siewnik\" to nowoczesna maszyna rolnicza, anachronizm w rzekomo tradycyjnym przysłowiu."
+ },
+ {
+  "m": 3,
+  "d": 27,
+  "names": "Ernesta, Jana",
+  "text": "Ostatnia dekada marca — czas siewu.",
+  "note": "\"Dekada\" (okres 10-dniowy) to termin kalendarzowy obcy językowi ludowemu."
+ },
+ {
+  "m": 3,
+  "d": 28,
+  "names": "Anieli, Sykstusa",
+  "text": "Aniela wiosenna — kwiaty za tydzień.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 3,
+  "d": 28,
+  "names": "Anieli, Sykstusa",
+  "text": "Marzec odchodzi — kwiecień nadchodzi.",
+  "note": "Czysta tautologia, brak jakiejkolwiek przepowiedni."
+ },
+ {
+  "m": 3,
+  "d": 30,
+  "names": "Amelii, Leonarda",
+  "text": "Na koniec marca — żywot się budzi.",
+  "note": "Archaiczne, wzniosłe \"żywot\" użyte w pustym, nic nieprzewidującym zdaniu."
+ },
+ {
+  "m": 3,
+  "d": 30,
+  "names": "Amelii, Leonarda",
+  "text": "Amelia wiosenna — sad rozkwita.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 1,
+  "names": "Hugona, Ireny",
+  "text": "Kwiecień mokry — w stodole pełne wiadra.",
+  "note": "\"Wiadra\" to niewłaściwa jednostka dla przechowywania zboża w stodole — błąd rzeczowy."
+ },
+ {
+  "m": 4,
+  "d": 1,
+  "names": "Hugona, Ireny",
+  "text": "Prima Aprilis — żart kwiatami okryty.",
+  "note": "Nonsensowna, kwiecista fraza bez odniesienia do realnej tradycji primaaprilisowej."
+ },
+ {
+  "m": 4,
+  "d": 2,
+  "names": "Franciszka, Urszuli",
+  "text": "Kwiecień deszczowy — trawnik zielony.",
+  "note": "\"Trawnik\" to współczesne, przydomowe pojęcie, obce tradycyjnemu słownictwu wiejskiemu."
+ },
+ {
+  "m": 4,
+  "d": 2,
+  "names": "Franciszka, Urszuli",
+  "text": "Gdy drugi kwiecień z deszczem — maj słoneczny.",
+  "note": "\"Drugi kwiecień\" (drugi dzień miesiąca) to nienaturalne sformułowanie, obce stylowi ludowemu."
+ },
+ {
+  "m": 4,
+  "d": 3,
+  "names": "Ryszarda, Ireny",
+  "text": "Mróz w kwiecień — owoc w lipcu.",
+  "note": "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+ },
+ {
+  "m": 4,
+  "d": 5,
+  "names": "Ireny, Wincentego",
+  "text": "Kwiecień z wichrem — marzec pamiętany.",
+  "note": "\"Marzec pamiętany\" nie tworzy sensownej przepowiedni."
+ },
+ {
+  "m": 4,
+  "d": 5,
+  "names": "Ireny, Wincentego",
+  "text": "Gdy w kwiecień liście rozwijają — lato pełne obiecują.",
+  "note": "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+ },
+ {
+  "m": 4,
+  "d": 6,
+  "names": "Celestyna, Wilhelma",
+  "text": "Celestyn wiosenny — ogrodnicy radośni.",
+  "note": "Szablonowy wypełniacz z mało znanym imieniem."
+ },
+ {
+  "m": 4,
+  "d": 7,
+  "names": "Jana, Rufina",
+  "text": "Gdy w kwiecień grzmoty — sierpień z dostatkiem.",
+  "note": "Błąd gramatyczny \"w kwiecień\" zamiast \"w kwietniu\"."
+ },
+ {
+  "m": 4,
+  "d": 8,
+  "names": "Cezarego, Dionizego",
+  "text": "Dionizy z deszczem — winogrona kwaśne.",
+  "note": "Winorośl nie kwitnie ani nie owocuje w kwietniu w Polsce — anachroniczny/nielogiczny związek."
+ },
+ {
+  "m": 4,
+  "d": 9,
+  "names": "Marii, Waltruda",
+  "text": "Na początku kwiet kwiaty ziemia wydaje.",
+  "note": "Uszkodzony tekst — \"kwiet\" to najwyraźniej ucięte \"kwietnia\", ślad błędu generacji."
+ },
+ {
+  "m": 4,
+  "d": 10,
+  "names": "Michała, Makarego",
+  "text": "Michał wiosenny — pola głośno wołają.",
+  "note": "Szablonowy wypełniacz z nienaturalną personifikacją."
+ },
+ {
+  "m": 4,
+  "d": 12,
+  "names": "Juliusza, Zenona",
+  "text": "Kwiecień daje i odbiera — tak chce natura.",
+  "note": "Współczesna, filozoficzna fraza \"tak chce natura\" bez konkretnej przepowiedni."
+ },
+ {
+  "m": 4,
+  "d": 12,
+  "names": "Juliusza, Zenona",
+  "text": "Juliusz wiosenny — wróżba lata.",
+  "note": "Szablonowy wypełniacz, treść bardzo ogólnikowa."
+ },
+ {
+  "m": 4,
+  "d": 13,
+  "names": "Przemysława, Hermenegilda",
+  "text": "Gdy w kwiecień mróz — majowi pomóż.",
+  "note": "Błąd gramatyczny \"w kwiecień\"; bezsensowny nakaz \"majowi pomóż\"."
+ },
+ {
+  "m": 4,
+  "d": 14,
+  "names": "Waleriana, Justyny",
+  "text": "Walerian wiosenny — zioła rosną.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 15,
+  "names": "Anastazji, Wacława",
+  "text": "Połowa kwiet — wiosna w pełni.",
+  "note": "Uszkodzony tekst \"kwiet\" zamiast \"kwietnia\"."
+ },
+ {
+  "m": 4,
+  "d": 15,
+  "names": "Anastazji, Wacława",
+  "text": "Wacław wiosenny — ogrody radosne.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 16,
+  "names": "Benedykta, Bernadety",
+  "text": "Bernadeta kwiat ma w ręku — wiosna na wsi.",
+  "note": "Słabe, luźne odniesienie do Bernadetty z Lourdes, brak realnej podstawy w polskim folklorze pogodowym."
+ },
+ {
+  "m": 4,
+  "d": 17,
+  "names": "Roberta, Rudolfa",
+  "text": "Robert wiosenny — jeziora pełne.",
+  "note": "Szablonowy wypełniacz, bezsensowny związek imię-jeziora."
+ },
+ {
+  "m": 4,
+  "d": 18,
+  "names": "Bogumiły, Apoloniusza",
+  "text": "Bogumił w wiośnie — dusze szczęśliwe.",
+  "note": "Abstrakcyjna, niezwiązana z pogodą fraza \"dusze szczęśliwe\"."
+ },
+ {
+  "m": 4,
+  "d": 19,
+  "names": "Tymona, Adolfa",
+  "text": "Timon wiosenny — ryby w rzece.",
+  "note": "Błędna, niepolska forma imienia (\"Timon\" zamiast \"Tymon\"); szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 20,
+  "names": "Agnieszki, Czesława",
+  "text": "Agnieszka wiosenna — zioła kwitnące.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 22,
+  "names": "Łukasza, Kai",
+  "text": "Ziemia Matka w kwiecień budzi — rolnik pracuje.",
+  "note": "Błąd gramatyczny \"w kwiecień\"; \"Ziemia Matka\" to współczesne, nie ludowe pojęcie."
+ },
+ {
+  "m": 4,
+  "d": 22,
+  "names": "Łukasza, Kai",
+  "text": "Na Dzień Ziemi natura mówi.",
+  "note": "Dzień Ziemi to nowożytne (1970) święto międzynarodowe, anachronizm w tradycyjnym przysłowiu."
+ },
+ {
+  "m": 4,
+  "d": 23,
+  "names": "Wojciecha",
+  "text": "Na świętego Wojciecha bociany budzą z kochanki nieba.",
+  "note": "Niespójna, niegramatyczna fraza \"kochanki nieba\"; prawdziwa tradycja mówi o wronie chowającej się w życie, nie o bocianach."
+ },
+ {
+  "m": 4,
+  "d": 25,
+  "names": "Marka, Jarosława",
+  "text": "Marek wiosenny — poluj na pieczarki.",
+  "note": "Pieczarki to grzyby uprawne, nie zbierane \"polowaniem\" w polu; błędna terminologia."
+ },
+ {
+  "m": 4,
+  "d": 26,
+  "names": "Marzeny, Klety",
+  "text": "Marzenka w słońcu — winogrona obiecuje.",
+  "note": "Zdrobniałe, mało formalne imię \"Marzenka\"; winogrona nieadekwatne do kwietnia."
+ },
+ {
+  "m": 4,
+  "d": 27,
+  "names": "Zyty, Teofila",
+  "text": "Zyta z kwiatami — stodoła pełna.",
+  "note": "Szablonowy wypełniacz, nielogiczny związek kwiaty-pełna stodoła."
+ },
+ {
+  "m": 4,
+  "d": 28,
+  "names": "Witalisa, Piotra",
+  "text": "Witalis z deszczem — ogród kwitnie.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 29,
+  "names": "Katarzyny ze Sieny, Roberty",
+  "text": "Katarzyna wiosenna — zioła zbieraj.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 4,
+  "d": 29,
+  "names": "Katarzyny ze Sieny, Roberty",
+  "text": "Przed majem kwiecień ostatnią szansę daje.",
+  "note": "Pusta, ogólnikowa personifikacja \"ostatnią szansę daje\"."
+ },
+ {
+  "m": 4,
+  "d": 30,
+  "names": "Katarzyny, Mariana",
+  "text": "Kwiecień z piorunami — lato jak marzenie.",
+  "note": "\"Lato jak marzenie\" to współczesna, romantyczna fraza, nie idiom ludowy."
+ },
+ {
+  "m": 5,
+  "d": 1,
+  "names": "Józefa Robotnika, Filipa",
+  "text": "Kto w maju nie pracuje, ten przez zimę gościuje.",
+  "note": "Nielogiczny wniosek (\"gościuje\"), nie odpowiada żadnej znanej tradycji majowej."
+ },
+ {
+  "m": 5,
+  "d": 3,
+  "names": "Marii, Antoniny",
+  "text": "Na Konstytucję Trzeciego Maja — wiosna pełna.",
+  "note": "Święto Konstytucji 3 Maja to świeckie święto historyczne (od 1791/1919), nie tradycyjny dzień pogodowy — anachroniczne pomieszanie."
+ },
+ {
+  "m": 5,
+  "d": 3,
+  "names": "Marii, Antoniny",
+  "text": "Maj trzeci z kwiatami — rok dostatni.",
+  "note": "Ta sama anachroniczna podstawa co wyżej."
+ },
+ {
+  "m": 5,
+  "d": 5,
+  "names": "Ireny, Waldemara",
+  "text": "Irena w słońcu — dobre lato obiecuje.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 5,
+  "d": 7,
+  "names": "Stanisława, Gizeli",
+  "text": "Stanisław z deszczem — żyto radosne.",
+  "note": "Sztuczna personifikacja \"żyto radosne\"."
+ },
+ {
+  "m": 5,
+  "d": 8,
+  "names": "Stanisława Biskupa, Wiktora",
+  "text": "Maj ósmy z burzą — rok w żyto bogaty.",
+  "note": "Numeryczne odniesienie \"maj ósmy\" (dzień miesiąca) obce stylowi przysłów ludowych, które odnoszą się do imion świętych."
+ },
+ {
+  "m": 5,
+  "d": 15,
+  "names": "Zofii, Izydora",
+  "text": "Zimna Zofia, Pankracy, Serwacy — trzej mroźni bracia.",
+  "note": "Błąd logiczny/gramatyczny: Zofia jest kobietą, nie może być jednym z \"braci\"; pomija Bonifacego z prawdziwej czwórki."
+ },
+ {
+  "m": 5,
+  "d": 15,
+  "names": "Zofii, Izydora",
+  "text": "Na Zofię idź boso po rosie, zdrowie do domu przyniesie.",
+  "note": "Zwyczaj chodzenia boso po rosie wiąże się tradycyjnie z nocą świętojańską (czerwiec), nie z \"Zimną Zośką\" (mroźny dzień) — pomieszanie tradycji."
+ },
+ {
+  "m": 5,
+  "d": 18,
+  "names": "Eryka, Jana",
+  "text": "Maj osiemnasty z deszczem — czerwiec suchy.",
+  "note": "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+ },
+ {
+  "m": 5,
+  "d": 20,
+  "names": "Antoniny, Bernardyna",
+  "text": "Bernardyn z kwiatami — lato piękne.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 5,
+  "d": 21,
+  "names": "Wiktora, Tymoteusza",
+  "text": "Wiktor w maju — w polu wesoło.",
+  "note": "Szablonowy wypełniacz, treść bardzo ogólnikowa."
+ },
+ {
+  "m": 5,
+  "d": 22,
+  "names": "Romy, Julii",
+  "text": "Rita z różą — maj pełen kwiatów.",
+  "note": "Niezgodność z metryczką dnia (\"Romy, Julii\"), a nie Rity — wyraźny błąd/fabrykacja; św. Rita nie jest typową postacią polskiego kalendarza pogodowego."
+ },
+ {
+  "m": 5,
+  "d": 23,
+  "names": "Dezyderego, Iwony",
+  "text": "Dezydery z deszczem — staw pełny.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 5,
+  "d": 26,
+  "names": "Filipa Neri, Eweliny",
+  "text": "Filip Neri — kapłan wiosenny.",
+  "note": "Czysto opisowe zdanie, nie przysłowie, brak treści przepowiadającej."
+ },
+ {
+  "m": 5,
+  "d": 28,
+  "names": "Germana, Jarosława",
+  "text": "Przedostatni tydzień maja — lato za dwa kroki.",
+  "note": "Współczesny idiom \"za dwa kroki\", uboga treść."
+ },
+ {
+  "m": 5,
+  "d": 30,
+  "names": "Ferdynanda, Joanny",
+  "text": "Maj na ostatku — każdy chwyta wolny czas.",
+  "note": "\"Wolny czas\" to współczesne pojęcie czasu wolnego, anachroniczne dla tradycyjnego folkloru chłopskiego."
+ },
+ {
+  "m": 5,
+  "d": 31,
+  "names": "Anieli, Petroneli",
+  "text": "Ostatni maj — lato tuż tuż.",
+  "note": "Potoczne, współczesne powtórzenie \"tuż tuż\", nie styl ludowy."
+ },
+ {
+  "m": 6,
+  "d": 1,
+  "names": "Justyny, Nikodema",
+  "text": "Czerwiec ciepły — zboże radosne.",
+  "note": "Sztuczna personifikacja \"zboże radosne\", powtarzający się szablon."
+ },
+ {
+  "m": 6,
+  "d": 2,
+  "names": "Marceliny, Erazma",
+  "text": "Erazm z deszczem — ogród kwitnie.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 6,
+  "d": 10,
+  "names": "Bogumiła, Małgorzaty",
+  "text": "Bogumił z deszczem — pszczoły w pracy.",
+  "note": "Pszczoły nie latają w deszczu — sprzeczne z realną wiedzą pszczelarską."
+ },
+ {
+  "m": 6,
+  "d": 15,
+  "names": "Wita, Modesta",
+  "text": "Na świętego Wita ze śpiewem ptaków kwita.",
+  "note": "Wygląda na wtórną przeróbkę poprzedniego przysłowia z tym samym rymem — dublowanie/wypełniacz."
+ },
+ {
+  "m": 6,
+  "d": 16,
+  "names": "Benona, Aliny",
+  "text": "Alina z rosą — ogród radosny.",
+  "note": "Szablonowy wypełniacz."
+ },
+ {
+  "m": 6,
+  "d": 19,
+  "names": "Gerwazego, Protazego",
+  "text": "Gerwazy z deszczem — Paweł z słońcem.",
+  "note": "Niejasne odniesienie do \"Pawła\" — nie ma w metryczce dnia, zdanie niespójne."
+ },
+ {
+  "m": 6,
+  "d": 25,
+  "names": "Łucji, Wilhelma",
+  "text": "Po Janie lato chodzi inaczej.",
+  "note": "Puste, nic nieznaczące zdanie."
+ },
+ {
+  "m": 6,
+  "d": 27,
+  "names": "Cyryla, Władysława",
+  "text": "Władysław z burzą — deszcz do końca tygodnia.",
+  "note": "Precyzyjne ramy czasowe \"do końca tygodnia\" nietypowe dla stylu ludowego, przypomina współczesną prognozę."
+ },
+ {
+  "m": 6,
+  "d": 30,
+  "names": "Ottona, Emilii",
+  "text": "Ostatni czerwiec — żniwa pukają w bramę.",
+  "note": "Powtarzająca się, sztuczna personifikacja \"puka\"."
+ },
+ {
+  "m": 7,
+  "d": 1,
+  "names": "Mariana, Haliny",
+  "text": "Lipiec ciepły — pszczoły szczęśliwe.",
+  "note": "Sztuczna personifikacja pszczół, powtarzający się szablon."
+ },
+ {
+  "m": 7,
+  "d": 15,
+  "names": "Henryka, Włodzimierza",
+  "text": "Połowa lipca — lato w pełni.",
+  "note": "Tautologiczne, nic nieprzewidujące zdanie."
+ },
+ {
+  "m": 7,
+  "d": 16,
+  "names": "Marii z Góry Karmel, Euzebiusza",
+  "text": "Na Karmel — ziele i kwiaty w koszu.",
+  "note": "Zbyt ogólnikowe, nie oddaje realnej tradycji Matki Boskiej Szkaplerznej."
+ },
+ {
+  "m": 7,
+  "d": 25,
+  "names": "Jakuba",
+  "text": "Gdy Jakub z deszczem — figi do wina.",
+  "note": "Figi nie są tradycyjną polską rośliną — nielogiczny, obcy element."
+ },
+ {
+  "m": 7,
+  "d": 30,
+  "names": "Piotra, Julity",
+  "text": "Lipiec trzydziesty — sprawdź sianokosy.",
+  "note": "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+ },
+ {
+  "m": 7,
+  "d": 31,
+  "names": "Ignacego Loyoli, Fabiana",
+  "text": "Ostatni lipiec — sierpień puka.",
+  "note": "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+ },
+ {
+  "m": 8,
+  "d": 1,
+  "names": "Alfonsa, Piotra",
+  "text": "Sierpień z deszczem — rolnik z pieszczą.",
+  "note": "\"Z pieszczą\" to niepoprawna, bezsensowna fraza — sztuczny rym."
+ },
+ {
+  "m": 8,
+  "d": 1,
+  "names": "Alfonsa, Piotra",
+  "text": "Pierwszy sierpień mokry — całe lato mokre.",
+  "note": "Logicznie wsteczne — jeden dzień sierpnia nie może retroaktywnie określać \"całego lata\", które w większości już minęło."
+ },
+ {
+  "m": 8,
+  "d": 1,
+  "names": "Alfonsa, Piotra",
+  "text": "Sierpień cały — pracą napełniaj.",
+  "note": "Ogólnikowy nakaz, nie przepowiednia ludowa."
+ },
+ {
+  "m": 8,
+  "d": 26,
+  "names": "Marii Częstochowskiej, Irydy",
+  "text": "Na Częstochową — plony do domu.",
+  "note": "Zbyt ogólnikowe, słabo powiązane z realną tradycją pielgrzymkową na Jasną Górę."
+ },
+ {
+  "m": 8,
+  "d": 27,
+  "names": "Józefa Kalasancjusza, Moniki",
+  "text": "Sierpień ku końcowi — jesień puka.",
+  "note": "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+ },
+ {
+  "m": 8,
+  "d": 29,
+  "names": "Sabiny, Jana",
+  "text": "Sierpień ku końcowi — jesień za bramą.",
+  "note": "Niemal duplikat poprzednich wpisów — wypełniacz szablonowy."
+ },
+ {
+  "m": 8,
+  "d": 30,
+  "names": "Róży, Feliksa",
+  "text": "Sierpień trzydziesty — owce tłuste.",
+  "note": "Numeryczne odniesienie do dnia miesiąca; nieuzasadniony związek z tłustością owiec."
+ },
+ {
+  "m": 8,
+  "d": 30,
+  "names": "Róży, Feliksa",
+  "text": "Różany sierpień — zapach na polu.",
+  "note": "Czysto poetyckie, bez treści przepowiadającej."
+ },
+ {
+  "m": 8,
+  "d": 31,
+  "names": "Rajmunda, Aidy",
+  "text": "Koniec lata — wspomnienie o żniwach.",
+  "note": "Refleksyjny, nostalgiczny ton współczesny, nie przysłowie ludowe."
+ },
+ {
+  "m": 9,
+  "d": 14,
+  "names": "Podwyższenia Krzyża",
+  "text": "Na Podwyższenie liście żółkną i w górę lecą.",
+  "note": "Błąd rzeczowy: opadające jesienią liście lecą w dół, nie \"w górę\"."
+ },
+ {
+  "m": 9,
+  "d": 15,
+  "names": "Marii Bolesnej, Nikodema",
+  "text": "Maria Bolesna — jesień smutna, ale piękna.",
+  "note": "Czysto emocjonalna, sentymentalna refleksja, nie ludowa przepowiednia."
+ },
+ {
+  "m": 9,
+  "d": 26,
+  "names": "Kosmy i Damiana, Justyny",
+  "text": "Kosma i Damian — obrońcy ogrodu.",
+  "note": "Błąd rzeczowy: Kosma i Damian są tradycyjnie patronami lekarzy/medycyny, nie ogrodu."
+ },
+ {
+  "m": 9,
+  "d": 29,
+  "names": "Michała Archanioła",
+  "text": "Na Michała gęsi do wsi nawieszają.",
+  "note": "Bezsensowny czasownik \"nawieszają\" wobec gęsi; tradycja jedzenia gęsi wiąże się ze św. Marcinem (11 listopada), nie Michałem — pomieszanie dat."
+ },
+ {
+  "m": 9,
+  "d": 29,
+  "names": "Michała Archanioła",
+  "text": "Gdy Michał z mrozem — zima pewna przed nozem.",
+  "note": "\"Przed nozem\" nie jest poprawnym polskim wyrażeniem — sztuczny, wymuszony rym."
+ },
+ {
+  "m": 9,
+  "d": 30,
+  "names": "Hieronima, Honoriusza",
+  "text": "Ostatni wrzesień — październik puka.",
+  "note": "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+ },
+ {
+  "m": 10,
+  "d": 2,
+  "names": "Aniołów Stróżów, Teofila",
+  "text": "Na Aniołów Stróżów — anioły pilnują.",
+  "note": "Czysta tautologia bez treści przepowiadającej."
+ },
+ {
+  "m": 10,
+  "d": 4,
+  "names": "Franciszka z Asyżu",
+  "text": "Październik z liściem — ogrodnik spokojny.",
+  "note": "Zbyt ogólnikowe, brak realnej treści."
+ },
+ {
+  "m": 10,
+  "d": 4,
+  "names": "Franciszka z Asyżu",
+  "text": "Franciszek z Asyżu — przyroda umiłowana.",
+  "note": "Czysto opisowe zdanie, nie przysłowie z przepowiednią."
+ },
+ {
+  "m": 10,
+  "d": 7,
+  "names": "Marii Różańcowej, Justyny",
+  "text": "Na różaniec październikowy — pacierze do końca roku.",
+  "note": "Słaba, niejasna logika łącząca miesiąc różańcowy z modlitwą \"do końca roku\"."
+ },
+ {
+  "m": 10,
+  "d": 15,
+  "names": "Teresy z Avila, Jadwigi",
+  "text": "Teresa z Avila — modlitwa jesienna.",
+  "note": "Czysto opisowe zdanie, nie przysłowie z przepowiednią."
+ },
+ {
+  "m": 10,
+  "d": 16,
+  "names": "Jadwigi Śląskiej, Małgorzaty",
+  "text": "Jadwiga Śląska — Polska i Niemcy złączone.",
+  "note": "Dziwna, niejasna fraza polityczno-historyczna, nie przysłowie pogodowe ani ludowe."
+ },
+ {
+  "m": 10,
+  "d": 23,
+  "names": "Jana z Kapistrano, Seweryna",
+  "text": "Gdy październik bez mrozu — listopad skujny.",
+  "note": "\"Skujny\" nie jest poprawnym polskim słowem — ślad fabrykacji/zniekształcenia."
+ },
+ {
+  "m": 10,
+  "d": 28,
+  "names": "Szymona i Judy",
+  "text": "Na Szymona i Judy zima za drzwiami budzi.",
+  "note": "Zdanie niegramatyczne/niespójne składniowo (\"budzi\" bez dopełnienia)."
+ },
+ {
+  "m": 10,
+  "d": 30,
+  "names": "Alfonsa, Edmunda",
+  "text": "Październik trzydziesty — pola orać czas.",
+  "note": "Numeryczne odniesienie do dnia miesiąca, obce stylowi ludowemu."
+ },
+ {
+  "m": 10,
+  "d": 31,
+  "names": "Wolfganga, Urbana",
+  "text": "Halloween — noc czarownic i duchów.",
+  "note": "Halloween to nowożytny import amerykańsko-celtycki, nie tradycyjne polskie przysłowie ludowe."
+ },
+ {
+  "m": 11,
+  "d": 1,
+  "names": "Wszystkich Świętych",
+  "text": "Na Wszystkich Świętych jeśli ciepło — listopad będzie długo siedzieć.",
+  "note": "\"Listopad będzie długo siedzieć\" to bezsensowna personifikacja, nie tworzy sensownej przepowiedni."
+ },
+ {
+  "m": 11,
+  "d": 1,
+  "names": "Wszystkich Świętych",
+  "text": "Wszystkich Świętych bez mrozu — Mikołaj z wiatrem do domu.",
+  "note": "Niespójna, niejasna konstrukcja zdaniowa."
+ },
+ {
+  "m": 11,
+  "d": 1,
+  "names": "Wszystkich Świętych",
+  "text": "Na cmentarzu znicze płoną — pamięć trwa.",
+  "note": "Czysto refleksyjne, współczesne zdanie, nie przysłowie z przepowiednią ludową."
+ },
+ {
+  "m": 11,
+  "d": 2,
+  "names": "Zaduszki, Tobiasza",
+  "text": "W Zaduszki dusze wracają — daj im ciepłe jedzenie.",
+  "note": "Nakaz \"dania duszom ciepłego jedzenia\" nie odpowiada udokumentowanej tradycji Zaduszek (modlitwa, odwiedziny grobów)."
+ },
+ {
+  "m": 11,
+  "d": 17,
+  "names": "Elżbiety Węgierskiej, Grzegorza",
+  "text": "Elżbieta węgierska — charytatywna zima.",
+  "note": "Bezsensowne, niegramatyczne połączenie \"charytatywna zima\"."
+ },
+ {
+  "m": 11,
+  "d": 21,
+  "names": "Ofiarowania NMP, Janusza",
+  "text": "Ofiarowanie Maryi — zima ofiarowuje mróz.",
+  "note": "Pusta gra słów \"ofiarowanie/ofiarowuje\", bez realnej podstawy ludowej."
+ },
+ {
+  "m": 11,
+  "d": 24,
+  "names": "Jana od Krzyża, Flory",
+  "text": "Jan od Krzyża — zimowe ciemności.",
+  "note": "Czysto opisowe, nie przysłowie z przepowiednią."
+ },
+ {
+  "m": 11,
+  "d": 25,
+  "names": "Katarzyny Aleksandryjskiej, Piotra",
+  "text": "Katarzyna Aleksandryjska — mądrość w zimie.",
+  "note": "Zbyt ogólnikowa, doklejona fraza bez realnej podstawy."
+ },
+ {
+  "m": 11,
+  "d": 27,
+  "names": "Waleriana, Wirgiliusza",
+  "text": "Listopad ku końcowi — grudzień puka.",
+  "note": "Powtarzający się, sztuczny szablon personifikacji \"puka\"."
+ },
+ {
+  "m": 11,
+  "d": 29,
+  "names": "Saturnina, Błażeja",
+  "text": "Przedostatni listopad — grudzień za chwilę.",
+  "note": "Tautologiczne, brak treści."
+ },
+ {
+  "m": 11,
+  "d": 30,
+  "names": "Andrzeja",
+  "text": "Na świętego Andrzeja z zimą się rozmieja.",
+  "note": "\"Rozmieja\" nie jest poprawnym polskim słowem — wygląda na sztuczny rym."
+ },
+ {
+  "m": 11,
+  "d": 30,
+  "names": "Andrzeja",
+  "text": "Andrzejki — wróżby miłosne i zimowe.",
+  "note": "Czysto opisowe zdanie definiujące zwyczaj, nie przysłowie."
+ },
+ {
+  "m": 12,
+  "d": 4,
+  "names": "Barbary",
+  "text": "Na Barbarę — mróz lub odwilż na Boże Narodzenie.",
+  "note": "Przepowiednia \"i tak, i tak\" — osłabiona wersja właściwej reguły odwrotności."
+ },
+ {
+  "m": 12,
+  "d": 8,
+  "names": "Niepokalanego Poczęcia NMP",
+  "text": "Na Niepokalane Poczęcie — zima w szacie białej.",
+  "note": "Poetycki, ogólnikowy wypełniacz bez treści przepowiadającej."
+ },
+ {
+  "m": 12,
+  "d": 14,
+  "names": "Jana od Krzyża, Izydora",
+  "text": "Jan od Krzyża w grudniu — mistyczna noc.",
+  "note": "Czysto opisowe, poetyckie zdanie, nie przysłowie."
+ },
+ {
+  "m": 12,
+  "d": 23,
+  "names": "Jana Kęty, Wiktorii",
+  "text": "Jan Kęty grudniowy — mądrość na Boże Narodzenie.",
+  "note": "Ogólnikowa, doklejona fraza bez realnej treści."
+ },
+ {
+  "m": 12,
+  "d": 24,
+  "names": "Ewy, Adama",
+  "text": "Na Wigilię — pierwsza gwiazda na stole.",
+  "note": "Błąd rzeczowy: tradycja mówi o gwieździe na niebie, nie \"na stole\"."
+ },
+ {
+  "m": 12,
+  "d": 28,
+  "names": "Młodzianków, Antoniny",
+  "text": "Na Młodzianki — błogosław dziatwy.",
+  "note": "Błąd gramatyczny (\"błogosław dziatwy\" zam. \"dziatwę\"); forma bardziej liturgiczna niż ludowa."
+ },
+ {
+  "m": 12,
+  "d": 30,
+  "names": "Dawida, Rogera",
+  "text": "Grudzień trzydziesty — Sylwester jutro.",
+  "note": "Numeryczne odniesienie do dnia miesiąca i czysta tautologia."
+ }
+]
