@@ -1,0 +1,202 @@
+[
+  {
+    "m": 1,
+    "d": 26,
+    "oldText": "Styczeń u końca — zima w pół drogi.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy styczeń najmroźniejszy, wtedy roczek najpłodniejszy.",
+    "source": "Nie znaleziono oryginału w żadnym źródle (kalbi.pl, kalendarzswiat.pl, przyslowia.net) — schemat antytezy 'X — Y' bez pokrycia, brak przysłowia patronalnego dla Tymoteusza/Tytusa. Zamiennik: realne ogólnostyczniowe przysłowie potwierdzone na kalendarzswiat.pl/przyslowia_styczen."
+  },
+  {
+    "m": 1,
+    "d": 27,
+    "oldText": "Na koniec stycznia zima liczy dni.",
+    "classification": "suspicious",
+    "newProverb": "Jeżeli pszczoła w styczniu z ula wylatuje, rzadko pomyślny rok nam obiecuje.",
+    "source": "Nie znaleziono oryginału w żadnym sprawdzonym źródle; brak przysłowia patronalnego dla Anieli/Hieronima na ten dzień. Zamiennik potwierdzony na kalendarzswiat.pl i zbaszyn.naszemiasto.pl."
+  },
+  {
+    "m": 1,
+    "d": 28,
+    "oldText": "Ostatnie dni stycznia srogie — luty łagodne.",
+    "classification": "suspicious",
+    "newProverb": "Styczeń mrozem trzeszczeć musi, wtedy chłopa plon przydusi.",
+    "source": "Schemat antytezy 'X — Y' niepotwierdzony; brak ludowego przysłowia pogodowego dla Tomasza z Akwinu (znaleziono tylko treści liturgiczne o świętym). Zamiennik potwierdzony na kalendarzswiat.pl/przyslowia_styczen."
+  },
+  {
+    "m": 1,
+    "d": 29,
+    "oldText": "Franciszek na śniegu chodzi — luty za nim przychodzi.",
+    "classification": "suspicious",
+    "newProverb": "Jak Święta Agnieszka wypuści śnieg z mieszka, to go nie powstrzyma ani do Franciszka.",
+    "source": "Oryginał niepotwierdzony (sprawdzono kalbi.pl, kalendarzswiat.pl — brak). Uwaga: znalezione w sieci 'Na świętego Franciszka przylatuje pliszka' dotyczy INNEGO Franciszka (2 kwietnia, nie Franciszka Salezego), więc odrzucone jako zamiennik. Zamiennik faktycznie patronalny: przysłowie o św. Agnieszce (21.01) i Franciszku Salezym (24.01) cytowane m.in. w opracowaniach ludowych przysłów styczniowych (werandacountry.pl / dzieciecafizyka.pl)."
+  },
+  {
+    "m": 1,
+    "d": 29,
+    "oldText": "Koniec miesiąca bez mrozu — wróży rok urodzaju.",
+    "classification": "suspicious",
+    "newProverb": "Gdy styczeń zamglony, marzec zaśnieżony.",
+    "source": "Schemat generyczny niepotwierdzony. Zamiennik: realne przysłowie ogólnostyczniowe, kalendarzswiat.pl/przyslowia_styczen."
+  },
+  {
+    "m": 1,
+    "d": 30,
+    "oldText": "Przed lutym zima jeszcze zębami kłapie.",
+    "classification": "suspicious",
+    "newProverb": "Na świętą Martynę przybyło dnia na godzinę.",
+    "source": "Idiom 'zima zębami kłapie' niepotwierdzony w żadnym zbiorze przysłów. Zamiennik patronalny (Martyna, 30 stycznia) potwierdzony m.in. przez współczesny artykuł znadrudy.pl cytujący to tradycyjne przysłowie w kontekście długości dnia."
+  },
+  {
+    "m": 2,
+    "d": 1,
+    "oldText": "Luty — tydzień mroźny, tydzień odwilżowy.",
+    "classification": "suspicious",
+    "newProverb": "Gdy bez wiatrów luty chodzi, w kwietniu wicher nie zawodzi.",
+    "source": "Oryginał niepotwierdzony; brak przysłowia patronalnego dla Brygidy/Ignacego na 1 lutego w sprawdzonych źródłach. Zamiennik potwierdzony na kalendarzswiat.pl/przyslowia_luty."
+  },
+  {
+    "m": 2,
+    "d": 3,
+    "oldText": "Na świętego Błażeja zima do ucieczki się poddaje.",
+    "classification": "suspicious",
+    "newProverb": "Święty Błażej, gardła zagrzej.",
+    "source": "Oryginał niepotwierdzony (fabrykacja tematyczna). Prawdziwe przysłowia o św. Błażeju dotyczą gardła/zdrowia i pogody na Wielkanoc, potwierdzone na kalendarzswiat.pl/przyslowia_luty."
+  },
+  {
+    "m": 2,
+    "d": 4,
+    "oldText": "Gdy luty z deszczem — marzec ze śniegiem.",
+    "classification": "suspicious",
+    "newProverb": "W lutym wody wiele - w lecie głodne nawet cielę.",
+    "source": "Schemat antytezy niepotwierdzony. Zamiennik potwierdzony na kalendarzswiat.pl/przyslowia_luty."
+  },
+  {
+    "m": 2,
+    "d": 5,
+    "oldText": "Na świętą Agatę zima traci szatę.",
+    "classification": "suspicious",
+    "newProverb": "Święta Agata w zimę bogata.",
+    "source": "Rym niepotwierdzony w żadnym zbiorze (sprawdzone warianty to 'chatę wymiata' i 'w zimę bogata'). Zamiennik potwierdzony na meteoprog.pl i przyslowia.net (przysłowia na 5 lutego)."
+  },
+  {
+    "m": 2,
+    "d": 7,
+    "oldText": "Luty pełen śniegu — marzec pełen wody.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy luty pofolguje, marzec zimę zreperuje.",
+    "source": "Schemat antytezy niepotwierdzony; prawdziwe przysłowia notowane na kalbi.pl dla 7 lutego są inne (m.in. to powyższe, rok 2024)."
+  },
+  {
+    "m": 2,
+    "d": 7,
+    "oldText": "Śnieg w lutym — złoto na polu w lecie.",
+    "classification": "suspicious",
+    "newProverb": "W lutym śnieg i mróz stały, w lecie będą upały.",
+    "source": "Fabrykacja z metaforą 'złota' niepotwierdzona; podobna treść (śnieg w lutym -> upały latem) istnieje naprawdę i jest potwierdzona na kalendarzswiat.pl/przyslowia_luty — użyto realnej wersji."
+  },
+  {
+    "m": 2,
+    "d": 8,
+    "oldText": "Luty deszczowy — marzec mroźny.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy luty schodzi, człek po wodzie brodzi.",
+    "source": "Schemat antytezy niepotwierdzony; brak przysłowia patronalnego dla Hieronima/Jana na 8 lutego. Zamiennik potwierdzony na kalendarzswiat.pl/przyslowia_luty."
+  },
+  {
+    "m": 2,
+    "d": 9,
+    "oldText": "Luty bez mrozu — zły rok dla zbóż.",
+    "classification": "suspicious",
+    "newProverb": "Na świętą Apolonię, zaprzęgaj konie.",
+    "source": "Schemat generyczny niepotwierdzony. Zamiennik patronalny (Apolonia, 9 lutego) potwierdzony przez wiele źródeł opisujących tradycję rozpoczynania prac polowych w tym dniu."
+  },
+  {
+    "m": 2,
+    "d": 10,
+    "oldText": "Środek lutego — zima zaczyna tracić siły.",
+    "classification": "suspicious",
+    "newProverb": "Scholastyka – mróz utyka, zanim Walenty nam zaświeci, obaczymy, mróz kark skręci.",
+    "source": "Oryginał niepotwierdzony w żadnym źródle. Zamiennik patronalny (Scholastyka, 10 lutego) potwierdzony w zbiorach przysłów pogodowych na luty (m.in. cytowany przez meteoprog.pl/spbystry.szkolnastrona.pl)."
+  },
+  {
+    "m": 2,
+    "d": 12,
+    "oldText": "Luty na odwilż — marzec na ziąb.",
+    "classification": "suspicious",
+    "newProverb": "Gdy luty bez mrozów i nieburzliwy, rok bywa słotny i nieurodziwy.",
+    "source": "Schemat antytezy niepotwierdzony; brak przysłowia patronalnego dla Eulalii/Damiana. Zamiennik potwierdzony na przyslowia.net i kalbi.pl (kartka na 17 lutego 2029, ta sama myśl o lutym bez mrozów)."
+  },
+  {
+    "m": 2,
+    "d": 13,
+    "oldText": "Przed Walentym ptaki się już budzą.",
+    "classification": "suspicious",
+    "newProverb": "Gdy w lutym do połowy zima się wysili, to na koniec miesiąca już się nie wychyli.",
+    "source": "Motyw ptaków łączących się w pary przed Walentym to tradycja anglosaska (Chaucer), nie znaleziono go w żadnym polskim zbiorze przysłów ludowych — potraktowane jako import kulturowy, nie polskie przysłowie. Zamiennik potwierdzony na kalbi.pl (kartka na 13 lutego, lata 2006/2026)."
+  },
+  {
+    "m": 2,
+    "d": 14,
+    "oldText": "Walenty mrozem straszy, ale zimy nie przedłuży.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Walentego bywa mróz już do niczego.",
+    "source": "Oryginał niepotwierdzony. Realne przysłowia o Walentym potwierdzone na kalbi.pl/przyslowia-polskie-na-luty."
+  },
+  {
+    "m": 2,
+    "d": 15,
+    "oldText": "Po Walentym dzień coraz wyraźniej dłuższy.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy luty, obuj buty.",
+    "source": "To stwierdzenie faktu astronomicznego, nie przysłowie ludowe — brak w jakimkolwiek zbiorze. Zamiennik: realne, krótkie przysłowie ogólnolutowe potwierdzone na kalendarzswiat.pl/przyslowia_luty."
+  },
+  {
+    "m": 2,
+    "d": 16,
+    "oldText": "Luty ma krótko — ale kłuje mocno.",
+    "classification": "suspicious",
+    "newProverb": "Lepiej widzieć wilka w lesie, niż furmana w lutym w polu.",
+    "source": "Idiom niepotwierdzony; brak przysłowia patronalnego dla Julianny/Danuty. Zamiennik potwierdzony na przyslowia.net (przysłowia na 16 lutego)."
+  },
+  {
+    "m": 2,
+    "d": 17,
+    "oldText": "Na Aleksego pola jeszcze we śnie leżą.",
+    "classification": "suspicious",
+    "newProverb": "Gdy ciepły luty, patrz jakie masz buty.",
+    "source": "Poetycki obraz niepotwierdzony; brak realnego przysłowia patronalnego dla Aleksego na 17 lutego (sprawdzono kalbi.pl, przyslowia.net). Zamiennik: realne przysłowie ogólnolutowe notowane na 17 lutego, przyslowia.net."
+  },
+  {
+    "m": 2,
+    "d": 17,
+    "oldText": "Luty ku końcowi — zima się chwieje.",
+    "classification": "suspicious",
+    "newProverb": "Jak w lutym rosa pada, nocne przymrozki w maju zapowiada.",
+    "source": "Schemat antytezy niepotwierdzony. Zamiennik potwierdzony na przyslowia.net i kalbi.pl (kartka na 17 lutego)."
+  },
+  {
+    "m": 2,
+    "d": 19,
+    "oldText": "Luty odwilżowy — marzec śnieżny.",
+    "classification": "suspicious",
+    "newProverb": "W Świętego Konrada, zima nie rada.",
+    "source": "Schemat antytezy niepotwierdzony. Zamiennik patronalny (Konrad, 19 lutego — pasuje do imion Arnolda/Konrada w bazie) potwierdzony na przyslowia.net (przysłowia na 19 lutego)."
+  },
+  {
+    "m": 2,
+    "d": 20,
+    "oldText": "Luty z mrozem — wiosna w sile.",
+    "classification": "suspicious",
+    "newProverb": "Jeśli luty śnieżny, mroźny, spodziewaj się wczesnej wiosny.",
+    "source": "Schemat antytezy niepotwierdzony; brak przysłowia patronalnego dla Leona/Ludomiry. Zamiennik potwierdzony na przyslowia.net (przysłowia na 20 lutego)."
+  },
+  {
+    "m": 2,
+    "d": 21,
+    "oldText": "Gdy w lutym grzmi — wiosna bez zwłoki.",
+    "classification": "suspicious",
+    "newProverb": "Gdy luty z burzami, wiosna prędko z nami.",
+    "source": "Motyw grzmotów lutowych jest realny, ale ten dokładny tekst niepotwierdzony. Zamiennik o tej samej treści (burze w lutym -> szybka wiosna) potwierdzony jako pochodzący ze zbioru D. i W. Masłowskich 'Przysłowia polskie i obce', notowany też jako 'Gdy luty z wiatrami, rychła wiosna przed nami'."
+  }
+]
