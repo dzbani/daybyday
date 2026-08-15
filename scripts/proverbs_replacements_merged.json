@@ -1,0 +1,2129 @@
+[
+ {
+  "m": 1,
+  "d": 14,
+  "names": "Feliksa, Niny",
+  "newProverb": "Kiedy styczeń najmroźniejszy, wtedy roczek najpłodniejszy.",
+  "source": "kalendarzswiat.pl/przyslowia_styczen — klasyczne ogólne przysłowie ludowe o styczniu",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 3,
+  "d": 3,
+  "names": "Kingi, Kunegundy",
+  "newProverb": "Suchy marzec, kwiecień mokry, maj przechłodny — nie będzie rok głodny.",
+  "source": "kalendarzswiat.pl/przyslowia_marzec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 3,
+  "d": 9,
+  "names": "Franciszki, Dominika",
+  "newProverb": "Co marzec wypiecze, to kwiecień wysiecze.",
+  "source": "kalendarzswiat.pl/przyslowia_marzec; mamotoja.pl",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 3,
+  "d": 13,
+  "names": "Bożeny, Krystyny",
+  "newProverb": "W marcu, gdy są grzmoty, urośnie zboże ponad płoty.",
+  "source": "kalendarzswiat.pl/przyslowia_marzec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 3,
+  "d": 21,
+  "names": "Benedykta, Nikifora",
+  "newProverb": "Jedna jaskółka nie przynosi wiosny.",
+  "source": "Wikiźródła, „Przysłowia i zwyczaje gospodarskie/Marzec” (J.I. Kraszewski) — użyte dla dnia oficjalnego kalendarzowego początku wiosny",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 3,
+  "names": "Ryszarda, Ireny",
+  "newProverb": "Przyjdzie kwiecień, ostatki z gumna wymieciem.",
+  "source": "Wikiźródła, „Przysłowia i zwyczaje gospodarskie/Kwiecień”",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 4,
+  "names": "Izydora, Benedykta",
+  "newProverb": "Suchy marzec, maj nie chłodny, kwiecień mokry, rok nie głodny.",
+  "source": "Wikiźródła, „Przysłowia i zwyczaje gospodarskie/Kwiecień”",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 6,
+  "names": "Celestyna, Wilhelma",
+  "newProverb": "Deszcze częste w kwietniu wróżą, że owoców będzie dużo.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien; dziendobry.tvn.pl",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 10,
+  "names": "Michała, Makarego",
+  "newProverb": "Gdyby w kwietniu nie padało, to owoców będzie mało.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 13,
+  "names": "Przemysława, Hermenegilda",
+  "newProverb": "Kwiecień co deszczem rosi, wiele owoców przynosi.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien; dziendobry.tvn.pl",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 14,
+  "names": "Waleriana, Justyny",
+  "newProverb": "Jak przygrzeje słonko, przejdzie kwiecień łąką.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 16,
+  "names": "Benedykta, Bernadety",
+  "newProverb": "Choć i w kwietniu słonko grzeje, nieraz pole śnieg zawieje.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 17,
+  "names": "Roberta, Rudolfa",
+  "newProverb": "Jeśli w kwietniu pszczoły latają, to długie chłody się zapowiadają.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien; dziendobry.tvn.pl",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 4,
+  "d": 20,
+  "names": "Agnieszki, Czesława",
+  "newProverb": "Pogody kwietniowe — słoty majowe.",
+  "source": "kalendarzswiat.pl/przyslowia_kwiecien",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 2,
+  "names": "Zygmunta, Atanazego",
+  "newProverb": "Chłodny maj, dobry urodzaj.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 5,
+  "names": "Ireny, Waldemara",
+  "newProverb": "Deszcz majowy, chleb gotowy.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 6,
+  "names": "Jana, Judyty",
+  "newProverb": "Kiedy mokry maj, będzie żyto jako gaj.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 9,
+  "names": "Grzegorza, Bożeny",
+  "newProverb": "Gdy maj jest przy pogodzie, nie bywają siana w szkodzie.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 11,
+  "names": "Filipa, Ignacego",
+  "newProverb": "Grzmot w maju nie szkodzi, sad dobrze obrodzi.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 16,
+  "names": "Andrzeja Boboli, Jana",
+  "newProverb": "Jeśli w maju grzmot, rośnie wszystko w lot.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 17,
+  "names": "Paschalisa, Sławomira",
+  "newProverb": "Kiedy lipa w maju kwitnie, to w ulach miód zawiśnie.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 18,
+  "names": "Eryka, Jana",
+  "newProverb": "Dużo chrabąszczy w maju, proso będzie niby w gaju.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 19,
+  "names": "Piotra, Ivo",
+  "newProverb": "Gdy kukułka kuka w maju, spodziewaj się urodzaju.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 20,
+  "names": "Antoniny, Bernardyna",
+  "newProverb": "Gdy się maj z grzmotem odezwie na wschodzie, rok sprzyja sianu i zbożu.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 22,
+  "names": "Romy, Julii",
+  "newProverb": "Maj bogaty sieje kwiaty.",
+  "source": "werandacountry.pl/przyslowia-na-maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 24,
+  "names": "Joanny, Zuzanny",
+  "newProverb": "Majowe błoto, więcej niż złoto.",
+  "source": "werandacountry.pl/przyslowia-na-maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 26,
+  "names": "Filipa Neri, Eweliny",
+  "newProverb": "Częste w maju grzmoty rozpraszają chłopom zgryzoty.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 27,
+  "names": "Augustyna, Jana",
+  "newProverb": "Maj — bydłu daj, a sam za piec uciekaj.",
+  "source": "Wikiźródła, „Przysłowia i zwyczaje gospodarskie/Maj”",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 28,
+  "names": "Germana, Jarosława",
+  "newProverb": "Chłodny maj, dobry urodzaj.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 29,
+  "names": "Maksymiliana, Magdaleny",
+  "newProverb": "Deszcz majowy, chleb gotowy.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 30,
+  "names": "Ferdynanda, Joanny",
+  "newProverb": "Kiedy mokry maj, będzie żyto jako gaj.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 5,
+  "d": 31,
+  "names": "Anieli, Petroneli",
+  "newProverb": "Gdy maj jest przy pogodzie, nie bywają siana w szkodzie.",
+  "source": "kalendarzswiat.pl/przyslowia_maj",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 2,
+  "names": "Marceliny, Erazma",
+  "newProverb": "Czerwiec daje dni gorące, kosa brzęczy już na łące.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 3,
+  "names": "Klotyldy, Karola",
+  "newProverb": "Czerwiec stały, grudzień doskonały.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 4,
+  "names": "Franciszka, Kwiryna",
+  "newProverb": "Gdy czerwiec chłodem i wodą szafuje, to zwykle rok cały popsuje.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 5,
+  "names": "Bonifacego, Walburgi",
+  "newProverb": "Czerwiec na maju zwykle się wzoruje, jego pluchy, pogody, często naśladuje.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 6,
+  "names": "Norberta, Filipa",
+  "newProverb": "Siej na świętego Norberta, będzie jęczmienia sterta.",
+  "source": "meteoprog.pl — przysłowia pogodowe o św. Norbercie (6 czerwca)",
+  "matchType": "saint",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 7,
+  "names": "Roberta, Wiesławy",
+  "newProverb": "Norbert, Robert, Medard to bracia młodzi, spodziewajcie się powodzi.",
+  "source": "meteoprog.pl — przysłowia pogodowe 5–6 czerwca, tradycja o świętych Norbercie, Robercie i Medardzie",
+  "matchType": "saint",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 9,
+  "names": "Diany, Felicjana",
+  "newProverb": "Kiedy kwitnie w czerwcu bób, to największy wtedy głód, a kiedy mak, to już nie tak.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 10,
+  "names": "Bogumiła, Małgorzaty",
+  "newProverb": "Od czerwca dużo zależy, czy żniwa będą jak należy.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 11,
+  "names": "Barnaby, Jana",
+  "newProverb": "Na świętego Barnabę idź kosić trawę.",
+  "source": "tradycyjne polskie przysłowie ludowe o św. Barnabie (11 czerwca), poświadczone w opracowaniach o dawnych zwyczajach rolniczych",
+  "matchType": "saint",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 12,
+  "names": "Jana, Onufrego",
+  "newProverb": "Na św. Onufry otwierajcie kufry.",
+  "source": "przyslowia.net; sp1gostynin.edu.pl — polskie przysłowia ludowe na czerwiec",
+  "matchType": "saint",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 14,
+  "names": "Walerego, Michała",
+  "newProverb": "Pełnia czerwcowa — burza gotowa.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 16,
+  "names": "Benona, Aliny",
+  "newProverb": "W czerwcu grusze kwiat zrzucają, czereśnie się zapalają.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 17,
+  "names": "Laury, Marcjalisa",
+  "newProverb": "W czerwcu się okaże, co nam Bóg da w darze.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 18,
+  "names": "Marka, Elżbiety",
+  "newProverb": "Nie trzeba w czerwcu o deszcz prosić, przyjdzie jak zaczniemy kosić.",
+  "source": "przyslowia.net/przyslowia-na-czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 19,
+  "names": "Gerwazego, Protazego",
+  "newProverb": "Na świętego Gerwazego jest w ogrodzie coś pięknego.",
+  "source": "przyslowia.net; kalendarzswiat.pl — przysłowie o św. Gerwazym (19 czerwca)",
+  "matchType": "saint",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 20,
+  "names": "Bogny, Rafaela",
+  "newProverb": "Grzmoty czerwca rozweselają rolnikom serca.",
+  "source": "przyslowia.net/przyslowia-na-czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 22,
+  "names": "Pauliny, Jana",
+  "newProverb": "Czerwiec zimny i wilgotny, całemu roku bardzo psotny.",
+  "source": "przyslowia.net/przyslowia-na-czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 23,
+  "names": "Wandy, Józefa",
+  "newProverb": "Gdzie sobótki palą, tam grady nie przeszkadzają.",
+  "source": "muzeum-radom.pl — tradycja ludowa Nocy Świętojańskiej / Sobótki (23–24 czerwca)",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 25,
+  "names": "Łucji, Wilhelma",
+  "newProverb": "Czerwiec gdy zagrzmi, gdzie zorze zachodzą, ryby się obficie zrodzą.",
+  "source": "przyslowia.net/przyslowia-na-czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 26,
+  "names": "Jana, Dawida",
+  "newProverb": "W czerwcu pełnia sprowadza burze, ostatnia kwadra zaś deszcze duże.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 27,
+  "names": "Cyryla, Władysława",
+  "newProverb": "Czerwiec się czerwieni, będzie dość w kieszeni.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 6,
+  "d": 28,
+  "names": "Leona, Anny",
+  "newProverb": "Czerwiec daje dni gorące, kosa brzęczy już na łące.",
+  "source": "kalendarzswiat.pl/przyslowia_czerwiec",
+  "matchType": "month-general",
+  "__file": "replacements_1.json"
+ },
+ {
+  "m": 7,
+  "d": 3,
+  "names": "Tomasza, Jacka",
+  "newProverb": "Gdy w lipcu słońce dopieka, burza niedaleka.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 3), potwierdzone też przez radiokielce.pl",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 4,
+  "names": "Elżbiety, Zygmunta",
+  "newProverb": "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 4)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 5,
+  "names": "Karoliny, Antoniego",
+  "newProverb": "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 5); potwierdzone przez radiokielce.pl",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 6,
+  "names": "Dominiki, Gotarda",
+  "newProverb": "Kto w lipcu patrzy chłodu, nacierpi się w zimie głodu.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 6)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 7,
+  "names": "Klaudii, Cyryla",
+  "newProverb": "Kwiat lipcowy, napój zdrowy.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 7)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 8,
+  "names": "Elżbiety, Eugeniusza",
+  "newProverb": "Lipcowe deszcze dla chłopa kleszcze; jak pogoda, większa swoboda.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 9, przysłowie ogólnolipcowe)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 9,
+  "names": "Weroniki, Zenona",
+  "newProverb": "Gdy się pająk w lipcu przechodzi, ze sobą deszcz przywodzi, gdy swą pajęczynę psuje, bliską burzę czuje.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 10,
+  "names": "Wawrzyńca, Rufiny",
+  "newProverb": "Lipcowe upały, wrzesień doskonały.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 11,
+  "names": "Benedykta, Olgi",
+  "newProverb": "W lipcu upały, styczeń mroźny cały.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 12,
+  "names": "Jana Gwalberta, Brunona",
+  "newProverb": "Lipiec — ostatek chleba wypiec.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 12)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 13,
+  "names": "Henryka, Sary",
+  "newProverb": "Miesiąc lipiec musi przypiec i ostatki mąki wypiec.",
+  "source": "kalendarzswiat.pl / radiokielce.pl – przysłowia na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 14,
+  "names": "Kamila, Bonawentury",
+  "newProverb": "Upały lipcowe, mrozy styczniowe.",
+  "source": "radiokielce.pl – Ludowe przysłowia pogodowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 15,
+  "names": "Henryka, Włodzimierza",
+  "newProverb": "W lipcu pszczeli rój, nie opłaci trudu znój.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 15)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 16,
+  "names": "Marii z Góry Karmel, Euzebiusza",
+  "newProverb": "W lipcu gdy służą pogody, bój się wielkiej wody.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 16)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 17,
+  "names": "Aleksego, Andrzeja",
+  "newProverb": "Gdy lipiec z deszczem, zima będzie z wiatrem.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 18,
+  "names": "Sławy, Szymona",
+  "newProverb": "Jeżeli w żniwa mysz w polu gniazdo wysoko zakłada, znak to, że zima srogie śniegi zapowiada.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 18); potwierdzone przez radiokielce.pl",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 19,
+  "names": "Wincentego, Wiesławy",
+  "newProverb": "Czego lipiec nie dowarzy, tego sierpień nie dosmaży.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 19); potwierdzone przez radiokielce.pl",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 21,
+  "names": "Daniela, Wawrzyńca",
+  "newProverb": "Kiedy lipiec daje deszcze, długie lato będzie jeszcze.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 23,
+  "names": "Brygidy, Apolinarego",
+  "newProverb": "Jak poranek mglisty, wieczór przezroczysty.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 23)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 24,
+  "names": "Kingi, Jadwigi",
+  "newProverb": "Czego lipiec i sierpień nie dowarzy, tego wrzesień nie usmaży.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na lipiec",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 25,
+  "names": "Jakuba",
+  "newProverb": "Na święty Jakub chleba sobie nakup.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 25, seria przysłów o św. Jakubie)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 26,
+  "names": "Anny, Joachima",
+  "newProverb": "Święta Anka pasie baranka.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 26, św. Anna)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 27,
+  "names": "Natalii, Lilii",
+  "newProverb": "Gdy w lipcu słońce dopieka, burza niedaleka.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 27, przysłowie ogólnolipcowe)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 28,
+  "names": "Innocentego, Wiktora",
+  "newProverb": "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 28, przysłowie ogólnolipcowe)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 29,
+  "names": "Marty, Olgi",
+  "newProverb": "Około dnia świętej Marty, ze żniwami już nie żarty.",
+  "source": "kalbi.pl / radiokielce.pl – przysłowia na lipiec (dzień 29, św. Marta)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 30,
+  "names": "Piotra, Julity",
+  "newProverb": "Jak po lipcu gorącym sierpień się ochłodzi, to później zima z wielkim śniegiem chodzi.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 30)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 7,
+  "d": 31,
+  "names": "Ignacego Loyoli, Fabiana",
+  "newProverb": "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota.",
+  "source": "kalbi.pl – Przysłowia polskie na lipiec (dzień 31, przysłowie ogólnolipcowe)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 2,
+  "names": "Gustawa, Euzebiusza",
+  "newProverb": "Na święty Gustaw kopy w polu ustaw.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 2, św. Gustaw); potwierdzone przez werandacountry.pl",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 3,
+  "names": "Nikodema, Lidii",
+  "newProverb": "Pogoda na Nikodema — cały miesiąc deszczu nie ma.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 3, św. Nikodem)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 4,
+  "names": "Jana Vianneya, Dominika",
+  "newProverb": "Gdy ciepło na Dominika, ostra zima nas dotyka.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 4, św. Dominik); potwierdzone przez werandacountry.pl",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 5,
+  "names": "Marii, Kasjana",
+  "newProverb": "Gdy w dni sierpnia spieka wszędzie, tedy długa zima będzie.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 6,
+  "names": "Jakuba, Sławy",
+  "newProverb": "W Przemienienie Pańskie są burze szatańskie.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 6, święto Przemienienia Pańskiego)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 7,
+  "names": "Kajetana, Donata",
+  "newProverb": "Święty Kajetanie, strzeż od deszczu sprzątanie.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 7, św. Kajetan)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 8,
+  "names": "Dominika, Cyriaka",
+  "newProverb": "Kiedy sierpień przychodzi, reszta zboża z pola schodzi.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 9,
+  "names": "Romana, Teresy",
+  "newProverb": "Czego sierpień nie dowarzy, tego wrzesień nie doparzy.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 11,
+  "names": "Zuzanny, Klary",
+  "newProverb": "Od świętej Klary są już ładne dary.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 11, św. Klara)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 12,
+  "names": "Hilarii, Leszka",
+  "newProverb": "Gdy w sierpniu z północy dmucha, następuje zwykle posucha.",
+  "source": "kalbi.pl / kalendarzswiat.pl – przysłowia na sierpień (dzień 12)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 13,
+  "names": "Hipolita, Poncjana",
+  "newProverb": "Jeżeli w sierpniu gorąco będzie, to zima w śniegi długo zasiędzie.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 14,
+  "names": "Maksymiliana, Eberharda",
+  "newProverb": "Początki sierpnia pogodne, wróżą zimy łagodne.",
+  "source": "meteoprog.pl / kalendarzswiat.pl – przysłowia na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 16,
+  "names": "Rocha, Stefana",
+  "newProverb": "Na święty Roch w stodole groch.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 16, św. Roch)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 17,
+  "names": "Jacka, Bertolda",
+  "newProverb": "Jeśli w dniu Jacka nie pada, suchą jesień zapowiada.",
+  "source": "kuriergalicyjski.com – Przysłowia na sierpień (św. Jacek, 17 sierpnia)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 18,
+  "names": "Heleny, Klary",
+  "newProverb": "Żołędzie pełne i białe, przyszłe lato doskonałe.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 18)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 19,
+  "names": "Jana Eudes, Magnusa",
+  "newProverb": "Kiedy sierpień wrzos rozwija, jesień krótka, szybko mija.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 20,
+  "names": "Bernarda, Sławy",
+  "newProverb": "Jeśli na Bernarda ziemia twarda, to będzie zima harda, a jak miękka to lekka.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 20, św. Bernard)",
+  "matchType": "saint",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 21,
+  "names": "Piusa X, Joanny",
+  "newProverb": "Jeśli piękny sierpień, gotuj sobie chłopku kieszeń.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 21)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 22,
+  "names": "Marii, Tymoteusza",
+  "newProverb": "Jeśli w sierpniu dni jasne, będą stodoły ciasne.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 23,
+  "names": "Róży z Limy, Filipa",
+  "newProverb": "W sierpniu grzmotów wiele, mokrą zimę ściele.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 25,
+  "names": "Ludwika, Józefy",
+  "newProverb": "Gdy sierpień w upały zbywa, lato długie zwykle bywa.",
+  "source": "kalendarzswiat.pl / kuriergalicyjski.com – przysłowia na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 26,
+  "names": "Marii Częstochowskiej, Irydy",
+  "newProverb": "W sierpniu mgły w górach — mroźne Gody, kiedy mgły w dolinach — to wróżba pogody.",
+  "source": "kalendarzswiat.pl – Polskie przysłowia ludowe na sierpień",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 27,
+  "names": "Józefa Kalasancjusza, Moniki",
+  "newProverb": "Kto latem pracuje, zimą głodu nie czuje.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 27)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 28,
+  "names": "Augustyna, Wiliama",
+  "newProverb": "Sierpień pogodny jest dla winogron wygodny.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 28)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 29,
+  "names": "Sabiny, Jana",
+  "newProverb": "Dużo grzybów sierpniowych, dużo zawiei śniegowych.",
+  "source": "kalbi.pl / kalendarzswiat.pl – przysłowia na sierpień (dzień 29)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 8,
+  "d": 31,
+  "names": "Rajmunda, Aidy",
+  "newProverb": "Ostatni sierpnia zapowiada, jaka pogoda na wrzesień wypada.",
+  "source": "kalbi.pl – Przysłowia polskie na sierpień (dzień 31)",
+  "matchType": "month-general",
+  "__file": "replacements_2.json"
+ },
+ {
+  "m": 9,
+  "d": 1,
+  "names": "Idziego, Bronisławy",
+  "newProverb": "Święty Idzi wiedzie wrzesień, wnet nadejdzie dżdżysta jesień.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 1 września (Idzi); potwierdzone niezależnie przez fil.ug.edu.pl (Wydział Filologiczny UG) i przyslowia.net",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 3,
+  "names": "Grzegorza Wielkiego, Danuty",
+  "newProverb": "Wrzeszczy wrzesień, że już jesień.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 3 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 4,
+  "names": "Rozalii, Irydy",
+  "newProverb": "Gdy nadejdzie wrzesień, rolnik ma zawsze pełną kieszeń.",
+  "source": "kalbi.pl (dzień 4 września); potwierdzone przez agrofakt.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 5,
+  "names": "Doroty, Wawrzyńca",
+  "newProverb": "Gdy wrzesień bez deszczów będzie, w zimie wiatrów pełno wszędzie.",
+  "source": "kalbi.pl (dzień 5 września); ogólna lista mamotoja.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 6,
+  "names": "Beaty, Magnusa",
+  "newProverb": "Jak we wrześniu krety kopią po nizinach, będzie wietrzno, ale lekka zima.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 6 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 7,
+  "names": "Reginy, Melchiora",
+  "newProverb": "Święta Regina mgły rozpina.",
+  "source": "kalbi.pl (dzień 7 września, Regina); potwierdzone przez meteoprog.pl i mamotoja.pl",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 9,
+  "names": "Sergiusza, Piotra",
+  "newProverb": "Gdy grzyby wielkie korzenie mają, wielką zimę zapowiadają.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 9 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 10,
+  "names": "Mikołaja, Salomei",
+  "newProverb": "Wrzesień chodzi po rosie, zbiera grzyby we wrzosie.",
+  "source": "kalendarzswiat.pl / mamotoja.pl - ogólna lista przysłów wrześniowych",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 11,
+  "names": "Jacka, Prota",
+  "newProverb": "Ze wszystkich świętych najlepszy Jacek, bo kto żyje dostał placek.",
+  "source": "kalbi.pl (dzień 11 września, Jacek); potwierdzone przez pl.wiktionary.org (Aneks: Przysłowia polskie - imiona)",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 12,
+  "names": "Gwidona, Marii",
+  "newProverb": "Jeśli wrzesień będzie ciepły i suchy, pewno październik nie oszczędzi pluchy.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 12 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 13,
+  "names": "Jana Złotoustego, Maurycego",
+  "newProverb": "Czym dłużej jaskółki we wrześniu zostają, tym dłużej piękne i jasne dni bywają.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 13 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 15,
+  "names": "Marii Bolesnej, Nikodema",
+  "newProverb": "Pogoda na Nikodema — niedziel cztery deszczu nie ma.",
+  "source": "kalbi.pl (dzień 15 września, Nikodem); wariant potwierdzony w ogólnym wyszukiwaniu ('cały miesiąc deszczu nie ma')",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 16,
+  "names": "Korneliusza, Edyty",
+  "newProverb": "Im głębiej we wrześniu grzebią się robaki, tym srożej się zima da ludziom we znaki.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 16 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 17,
+  "names": "Roberta, Hildegardy",
+  "newProverb": "Jaką pogodę na nowiu da wrzesień, taka bywa zwykle przez całą jesień.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 17 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 18,
+  "names": "Stanisławy, Ireny",
+  "newProverb": "Kiedy Irena z mrozem przybywa, babie lato krótkie bywa.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 18 września (Irena)",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 19,
+  "names": "Januarego, Konstancji",
+  "newProverb": "Wrzesień wrzosami strojny, lecz od pracy znojny.",
+  "source": "kalendarzswiat.pl - ogólna lista przysłów wrześniowych",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 20,
+  "names": "Eustachiusza, Faustyny",
+  "newProverb": "Gdy we wrześniu grzybów brak, niezawodny zimy znak.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 20 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 21,
+  "names": "Mateusza, Józefata",
+  "newProverb": "Na świętego Mateusza dostanie kapusta kapelusza.",
+  "source": "kalbi.pl (dzień 21 września, Mateusz); wariant potwierdzony w Wikiźródłach 'Przysłowia i zwyczaje gospodarskie' ('Po świętym Mateuszu, nie chodź w kapeluszu')",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 22,
+  "names": "Tomasza, Maurycego",
+  "newProverb": "Jeśli Maurycy ma jasne lice, to przyprowadzi wnet nawałnicę.",
+  "source": "kalbi.pl (dzień 22 września, Maurycy); potwierdzone niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 23,
+  "names": "Tekli, Linusa",
+  "newProverb": "Skoro wrzesień, to już jesień, ale jabłek pełna kieszeń.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 23 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 24,
+  "names": "Marii, Gerarda",
+  "newProverb": "Na Gerarda, gdy sucho, zima będzie z pluchą.",
+  "source": "kalbi.pl (dzień 24 września, Gerard); potwierdzone niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 25,
+  "names": "Władysława, Aurela",
+  "newProverb": "Wrześniowa słota, miarka deszczu, korzec błota.",
+  "source": "kalendarzswiat.pl / spbystry.szkolnastrona.pl - ogólna lista przysłów wrześniowych",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 26,
+  "names": "Kosmy i Damiana, Justyny",
+  "newProverb": "We wrześniu, gdy tłuste ptaki, srogo się zima da ludziom we znaki.",
+  "source": "kalbi.pl (dzień 26 września); wariant 'We wrześniu tłuste ptaki, mróz w zimie nie byle jaki' u spbystry.szkolnastrona.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 27,
+  "names": "Wincentego de Paul, Floriana",
+  "newProverb": "Straszna jest wrześniowa słota - miarka deszczu, korzec błota.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 27 września",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 28,
+  "names": "Wacława, Libuszy",
+  "newProverb": "Na świętego Wacława w polu pustki, w domu sława.",
+  "source": "kalbi.pl (dzień 28 września, Wacław); potwierdzone niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 9,
+  "d": 30,
+  "names": "Hieronima, Honoriusza",
+  "newProverb": "Jeśli na świętego Prota jest pogoda albo słota, to na świętego Hieronima deszczyk jest, albo go ni ma.",
+  "source": "kalbi.pl (przysłowie o Hieronimie, 30.09, wzmiankowane przy dniu Prota 11.09); skrócony wariant 'na świętego Hieronima jest pogoda albo jej ni ma' potwierdzony przez pl.wiktionary.org",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 1,
+  "names": "Teresy, Remigiusza",
+  "newProverb": "Gdy październik mroźny, to nie będzie styczeń groźny.",
+  "source": "kalbi.pl / kalendarzswiat.pl, dzień 1 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 2,
+  "names": "Aniołów Stróżów, Teofila",
+  "newProverb": "Gdy w październiku ciepło chadza, w lutym mrozy naprowadza.",
+  "source": "kalbi.pl (dzień 2 października); meteoprog.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 3,
+  "names": "Wincentego, Gwidona",
+  "newProverb": "Październik chodzi po kraju, cichnie ptactwo w gaju.",
+  "source": "kalendarzswiat.pl - ogólna lista; dosłownie potwierdzone w Wikiźródłach 'Przysłowia i zwyczaje gospodarskie'",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 5,
+  "names": "Placyda, Leonarda",
+  "newProverb": "W październiku, gdy liść z drzewa niesporo opada, późną to wiosnę zapowiada.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 5 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 6,
+  "names": "Brunona, Czcibora",
+  "newProverb": "W październiku kawek gromada, słotne dni nam zapowiada.",
+  "source": "kalbi.pl (dzień 6 października); spbystry.szkolnastrona.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 7,
+  "names": "Marii Różańcowej, Justyny",
+  "newProverb": "Kiedy październik śnieżny i chłodny, to styczeń zwykle łagodny.",
+  "source": "kalbi.pl (dzień 7 października); meteoprog.pl",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 8,
+  "names": "Pelagii, Benedykta",
+  "newProverb": "Ile razy przed nowiem w październiku śnieg spadnie, tyle razy wśród zimy odwilży przypadnie.",
+  "source": "meteoprog.pl; kalbi.pl (dzień 8 października)",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 9,
+  "names": "Jana z Capestrano, Elżbiety",
+  "newProverb": "Gdy październik z wodami, grudzień z wiatrami.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 9 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 10,
+  "names": "Franciszka, Daniela",
+  "newProverb": "Październik spoczynku nie chce dać, każe orać, każe siać.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 11 października (użyte jako ogólne przysłowie o pracach jesiennych)",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 11,
+  "names": "Emilii, Aleksandra",
+  "newProverb": "Gdy październik ostro trzyma, zwykle potem ostra zima.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 12 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 12,
+  "names": "Maksymiliana, Sławomiry",
+  "newProverb": "Gdy październik mokro trzyma, zwykle potem ostra zima.",
+  "source": "spbystry.szkolnastrona.pl - kalendarz przysłów, dzień 17 października (wariant ogólny)",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 13,
+  "names": "Edwarda, Faustyny",
+  "newProverb": "Na Edwarda jesień twarda.",
+  "source": "kalbi.pl (dzień 13 października, Edward); potwierdzone przez pl.wiktionary.org (Aneks: Przysłowia polskie - imiona)",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 14,
+  "names": "Kaliksta, Benedykta",
+  "newProverb": "Liść na drzewie mocno trzyma, nie tak prędko przyjdzie zima.",
+  "source": "kalendarzswiat.pl - ogólna lista przysłów październikowych",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 16,
+  "names": "Jadwigi Śląskiej, Małgorzaty",
+  "newProverb": "Kto sieje na świętą Jadwigę, ten zbiera figę.",
+  "source": "kalbi.pl (dzień 15/16 października, Jadwiga); potwierdzone niezależnym wyszukiwaniem oraz pl.wikiquote.org (hasło Jadwiga)",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 17,
+  "names": "Ignacego, Rozalii",
+  "newProverb": "Październik ciepły, będzie luty skrzepły.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 19 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 18,
+  "names": "Łukasza, Juliana",
+  "newProverb": "Na świętego Łukasza jest w domu chleb i kasza.",
+  "source": "potwierdzone niezależnym wyszukiwaniem oraz w Wikiźródłach 'Przysłowia i zwyczaje gospodarskie' (wariant 'Święty Łukasz, czego w polu szukasz?')",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 19,
+  "names": "Piotra z Alcantary, Jana",
+  "newProverb": "Idzie jesień, a tu pusta kieszeń.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 20 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 20,
+  "names": "Ireny, Wencelindy",
+  "newProverb": "Kiedy w październiku mrozy i zawieje, w styczniu ciepłe słonko pewnie zajaśnieje.",
+  "source": "spbystry.szkolnastrona.pl - kalendarz przysłów, dzień 22 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 21,
+  "names": "Urszuli, Celiny",
+  "newProverb": "Święta Urszula perły rozsuła.",
+  "source": "Wikiźródła 'Przysłowia i zwyczaje gospodarskie'; wariant 'perły szronu rozsnuła...' potwierdzony niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 22,
+  "names": "Korduli, Filipa",
+  "newProverb": "Święta Urszula i Kordula dzieci do pieca przytula.",
+  "source": "Wikiźródła 'Przysłowia i zwyczaje gospodarskie'; potwierdzone niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 23,
+  "names": "Jana z Kapistrano, Seweryna",
+  "newProverb": "W jesieni prędko gdy liść z drzewa spadnie, to wkrótce zima będzie, każdy zgadnie.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 24 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 24,
+  "names": "Rafała, Antoniego",
+  "newProverb": "Jaki październik, taki marzec, doznał tego niejeden starzec.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 25 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 25,
+  "names": "Darii, Kryspiany",
+  "newProverb": "Październik, bo paździerze baba z lnu cierlicą bierze.",
+  "source": "spbystry.szkolnastrona.pl (dzień 26 października); wariant 'Pościernik, bo po ścierni...' w Wikiźródłach",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 26,
+  "names": "Ewarysta, Lucjana",
+  "newProverb": "Pierwszy śnieg w październiku, gdy na błoto pada, łagodną zimę zapowiada.",
+  "source": "spbystry.szkolnastrona.pl - kalendarz przysłów, dzień 27 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 27,
+  "names": "Sabiny, Wincentego",
+  "newProverb": "Jesień bezdeszczowa to zima wiatrowa.",
+  "source": "kalbi.pl - kalendarz przysłów polskich, dzień 27 października",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 29,
+  "names": "Zenobiusza, Felicji",
+  "newProverb": "Gdy jesień zamglona, zima zaśnieżona.",
+  "source": "kalendarzswiat.pl - ogólna lista przysłów październikowych",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 10,
+  "d": 30,
+  "names": "Alfonsa, Edmunda",
+  "newProverb": "Miesiąc październy, marca obraz wierny.",
+  "source": "pl.wikiquote.org, hasło 'Październik'",
+  "matchType": "month-general",
+  "__file": "replacements_3.json"
+ },
+ {
+  "m": 11,
+  "d": 3,
+  "names": "Sylwii, Huberta",
+  "newProverb": "Kiedy swego czasu goły las nastaje, święty Hubert z lasu cały obiad daje.",
+  "source": "kalbi.pl (Przysłowia polskie na listopad, sekcja 3 listopada) oraz przyslowia.net — przysłowie przypisane dniu św. Huberta",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 4,
+  "names": "Karola Boromeusza, Witosławy",
+  "newProverb": "Deszcze listopadowe budzą wiatry zimowe.",
+  "source": "przyslowia.net, strona \"Przysłowia na 4 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 5,
+  "names": "Elżbiety, Zachariasza",
+  "newProverb": "Gdy w listopadzie liść na szczytach drzew się trzyma, to w maju na nowe liście spadnie jeszcze zima.",
+  "source": "przyslowia.net, strona \"Przysłowia na 5 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 6,
+  "names": "Leonarda, Feliksa",
+  "newProverb": "W listopadzie kapusty pełne kadzie.",
+  "source": "przyslowia.net, strona \"Przysłowia na 6 listopada\"; przysłowie potwierdzone też na kalbi.pl",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 7,
+  "names": "Ernesta, Rufiny",
+  "newProverb": "Jaka pogoda listopadowa, taka i marcowa.",
+  "source": "przyslowia.net, strona \"Przysłowia na 7 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 8,
+  "names": "Seweryna, Klaudiusza",
+  "newProverb": "Gdy łagodna jesień trzyma, będzie krótka, ostra zima.",
+  "source": "przyslowia.net, strona \"Przysłowia na 8 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 9,
+  "names": "Teodora, Engelbertu",
+  "newProverb": "W listopadzie goło w sadzie.",
+  "source": "przyslowia.net, strona \"Przysłowia na 9 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 10,
+  "names": "Leona, Ludomiry",
+  "newProverb": "Gdy w listopadzie wody się podniosą, to snadź w zimie deszcze roszą.",
+  "source": "przyslowia.net, strona \"Przysłowia na 10 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 12,
+  "names": "Macieja, Niny",
+  "newProverb": "Jaka pogoda w listopadzie służy, taka na marzec się wróży.",
+  "source": "przyslowia.net, strona \"Przysłowia na 12 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 13,
+  "names": "Stanisława Kostki, Dydaka",
+  "newProverb": "Na Stanisława Kostkę ujrzysz śniegu drobnostkę, a na Ofiarowanie przydadzą się sanie.",
+  "source": "przyslowia.net, strona \"Przysłowia na 13 listopada\" — przysłowie wiązane ze świętem Stanisława Kostki",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 14,
+  "names": "Wawrzyńca, Emila",
+  "newProverb": "Jeśli kret w listopadzie jeszcze późno ryje, na Nowy Rok komar wpadnie w bryję.",
+  "source": "przyslowia.net, strona \"Przysłowia na 14 listopada\"; wariant też na kalbi.pl",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 15,
+  "names": "Leopolda, Elżbiety",
+  "newProverb": "Deszcz w połowie listopada, tęgi mróz w połowie stycznia zapowiada.",
+  "source": "przyslowia.net, strona \"Przysłowia na 15 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 16,
+  "names": "Edmunda, Małgorzaty",
+  "newProverb": "Grzmot listopada dużo zboża zapowiada.",
+  "source": "kalbi.pl / meteoprog.pl — ogólne przysłowie listopadowe",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 17,
+  "names": "Elżbiety Węgierskiej, Grzegorza",
+  "newProverb": "W połowie listopada deszczy, w połowie stycznia trzeszczy.",
+  "source": "przyslowia.net, strona \"Przysłowia na 17 listopada\"; wariant też na kalbi.pl",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 18,
+  "names": "Romana, Ody",
+  "newProverb": "Gdy listopad z deszczami, grudzień zwykle z wiatrami.",
+  "source": "przyslowia.net, strona \"Przysłowia na 18 listopada\"; wariant też na kalbi.pl",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 19,
+  "names": "Elżbiety, Seweryna",
+  "newProverb": "Na świętą Elżbietę bywa śnieg nad piętę.",
+  "source": "przyslowia.net, strona \"Przysłowia na 19 listopada\" (trzy przysłowia wiązane ze św. Elżbietą); potwierdzone niezależnym wyszukiwaniem",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 20,
+  "names": "Feliksa, Rafaela",
+  "newProverb": "W listopadzie mróz, szykuj w marcu wóz.",
+  "source": "przyslowia.net, strona \"Przysłowia na 20 listopada\"; wariant też na kalbi.pl",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 21,
+  "names": "Ofiarowania NMP, Janusza",
+  "newProverb": "Gdy pogoda w Ofiarowanie, ostra zima nastanie.",
+  "source": "przyslowia.net, strona \"Przysłowia na 21 listopada\" — przysłowie wiązane ze świętem Ofiarowania NMP",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 22,
+  "names": "Cecylii, Marka",
+  "newProverb": "Kiedy na świętą Cecylię grzmi, rolnik o dobry roku śni.",
+  "source": "przyslowia.net, strona \"Przysłowia na 22 listopada\" — przysłowie wiązane ze św. Cecylią",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 23,
+  "names": "Klemensa, Felicyty",
+  "newProverb": "Święty Klemens zimę zaczyna, święty Piotr ją kończy.",
+  "source": "wojciech.bialystok.pl — artykuł o św. Klemensie (23 listopada), cytat zweryfikowany",
+  "matchType": "saint",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 24,
+  "names": "Jana od Krzyża, Flory",
+  "newProverb": "Kwitną drzewa w listopadzie wszędzie, zima aż do maja będzie.",
+  "source": "przyslowia.net, strona \"Przysłowia na 8 listopada\" — ogólne przysłowie listopadowe",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 26,
+  "names": "Sylwestra, Konrada",
+  "newProverb": "Jaki listopad, taki będzie marzec, prorokuje stuletni starzec.",
+  "source": "kalbi.pl / przyslowia.net, strona \"Przysłowia na 6 listopada\"",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 27,
+  "names": "Waleriana, Wirgiliusza",
+  "newProverb": "Gdy zbyt długo złota jesień trzyma, nagle przyjdzie zima.",
+  "source": "kalbi.pl, Przysłowia polskie na listopad",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 28,
+  "names": "Jakuba, Stefana",
+  "newProverb": "Słońce listopada mrozy zapowiada.",
+  "source": "kalbi.pl / meteoprog.pl — ogólne przysłowie listopadowe",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 11,
+  "d": 29,
+  "names": "Saturnina, Błażeja",
+  "newProverb": "Deszcz w początku listopada, mrozy w styczniu zapowiada.",
+  "source": "kalbi.pl / meteoprog.pl — ogólne przysłowie listopadowe",
+  "matchType": "month-general",
+  "__file": "replacements_4.json"
+ },
+ {
+  "m": 12,
+  "d": 1,
+  "names": "Eligiusza, Blanki",
+  "kind": "A",
+  "oldText": "Grudzień pierwszy — zima w pełni.",
+  "newProverb": "Jaki pierwszy dzień miesiąca, taki będzie aż do końca.",
+  "source": "przyslowia.net/przyslowia-na-1-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 1,
+  "names": "Eligiusza, Blanki",
+  "kind": "B",
+  "oldText": "Eligiusz grudniowy — rzemieślnicy w domu.",
+  "newProverb": "Jak się grudzień zaczyna, taka ma być cała zima.",
+  "source": "przyslowia.net/przyslowia-na-1-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 2,
+  "names": "Balbiny, Bibiany",
+  "kind": "A",
+  "oldText": "Grudzień drugi — sprawdź opał.",
+  "newProverb": "W pierwszym tygodniu grudnia pogoda stała, będzie zima długa, biała.",
+  "source": "przyslowia.net/przyslowia-na-2-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 3,
+  "names": "Franciszka Ksawerego, Luizy",
+  "kind": "A",
+  "oldText": "Grudzień trzeci — śnieg możliwy.",
+  "newProverb": "Grudzień jak łagodny wszędzie, cała zima dzieckiem będzie.",
+  "source": "przyslowia.net/przyslowia-na-3-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 3,
+  "names": "Franciszka Ksawerego, Luizy",
+  "kind": "B",
+  "oldText": "Franciszek grudniowy — misje w zimie.",
+  "newProverb": "Suchy grudzień stoi za to, że sucha będzie wiosna i suche lato.",
+  "source": "przyslowia.net/przyslowia-na-11-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 5,
+  "names": "Saby, Kryspiny",
+  "kind": "A",
+  "oldText": "Grudzień piąty — sprawdź dach.",
+  "newProverb": "Piąty grudzień stycznia czyni znaki.",
+  "source": "przyslowia.net/przyslowia-na-5-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 5,
+  "names": "Saby, Kryspiny",
+  "kind": "B",
+  "oldText": "Kryspina grudniowa — prezenty szykuj.",
+  "newProverb": "Pogoda grudniowa — wody połowa, lodu połowa.",
+  "source": "przyslowia.net/przyslowia-na-10-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 7,
+  "names": "Ambrożego, Teodory",
+  "kind": "A",
+  "oldText": "Grudzień siódmy — dni bardzo krótkie.",
+  "newProverb": "Na święty Ambroży poprawią się mrozy.",
+  "source": "przyslowia.net/przyslowia-na-7-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 7,
+  "names": "Ambrożego, Teodory",
+  "kind": "B",
+  "oldText": "Ambroży grudniowy — pszczoły zimują.",
+  "newProverb": "Święty Ambroży zimy przysporzy.",
+  "source": "przyslowia.net/przyslowia-na-7-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 8,
+  "names": "Niepokalanego Poczęcia NMP",
+  "kind": "A",
+  "oldText": "Grudzień ósmy — sprawdź opał.",
+  "newProverb": "Po suchym grudniu sucha wiosna bywa i pogoda we żniwa.",
+  "source": "przyslowia.net/przyslowia-na-8-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 9,
+  "names": "Leokadii, Wiesławy",
+  "kind": "A",
+  "oldText": "Grudzień dziewiąty — mróz nocny.",
+  "newProverb": "Grudzień to miesiąc zawiły, czasem srogi, czasem miły.",
+  "source": "przyslowia.net/przyslowia-na-9-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 9,
+  "names": "Leokadii, Wiesławy",
+  "kind": "B",
+  "oldText": "Leokadia grudniowa — noc długa.",
+  "newProverb": "Silne i częste wiatry w grudniu są wróżbą wielkich deszczów w marcu i kwietniu.",
+  "source": "przyslowia.net/przyslowia-na-9-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 10,
+  "names": "Julii, Edwarda",
+  "kind": "A",
+  "oldText": "Grudzień dziesiąty — sprawdź samochód.",
+  "newProverb": "Gdy ptaki o północy latają, mroźną zimę przepowiadają.",
+  "source": "przyslowia.net/przyslowia-na-10-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 10,
+  "names": "Julii, Edwarda",
+  "kind": "B",
+  "oldText": "Edward grudniowy — zima rządzi.",
+  "newProverb": "Pogoda grudniowa — wody połowa, lodu połowa.",
+  "source": "przyslowia.net/przyslowia-na-10-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 11,
+  "names": "Damazego, Biny",
+  "kind": "A",
+  "oldText": "Grudzień jedenasty — śnieg możliwy.",
+  "newProverb": "Suchy grudzień stoi za to, że sucha będzie wiosna i suche lato.",
+  "source": "przyslowia.net/przyslowia-na-11-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 11,
+  "names": "Damazego, Biny",
+  "kind": "B",
+  "oldText": "Damazy grudniowy — zima pewna.",
+  "newProverb": "Pogoda grudniowa — lodu połowa, wody połowa.",
+  "source": "przyslowia.net/przyslowia-na-11-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 12,
+  "names": "Otylii, Aleksandra",
+  "kind": "A",
+  "oldText": "Grudzień dwunasty — sprawdź okna.",
+  "newProverb": "W zimie odkryte ucho, to w lecie sucho.",
+  "source": "przyslowia.net/przyslowia-na-12-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 12,
+  "names": "Otylii, Aleksandra",
+  "kind": "B",
+  "oldText": "Otylia grudniowa — zima oczy oślepia.",
+  "newProverb": "Dłużej świat zima ziębi, niż lato zagrzewa.",
+  "source": "przyslowia.net/przyslowia-na-12-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 13,
+  "names": "Łucji",
+  "kind": "B",
+  "oldText": "Łucja grudniowa — najkrótszy dzień tuż tuż.",
+  "newProverb": "Po świętej Łucji dzień trwa najkrócej.",
+  "source": "przyslowia.net/przyslowia-na-13-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 14,
+  "names": "Jana od Krzyża, Izydora",
+  "kind": "A",
+  "oldText": "Grudzień czternasty — prezenty szykuj.",
+  "newProverb": "Taką pogodę Nowy Rok przynosi, jaka na Jana od Krzyża się głosi.",
+  "source": "przyslowia.net/przyslowia-na-14-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 15,
+  "names": "Niny, Celiny",
+  "kind": "A",
+  "oldText": "Grudzień piętnasty — dziesięć dni do Gwiazdki.",
+  "newProverb": "Jak w zimie piecze, to w lecie ciecze.",
+  "source": "przyslowia.net/przyslowia-na-15-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 15,
+  "names": "Niny, Celiny",
+  "kind": "B",
+  "oldText": "Nina grudniowa — gwiazdy jasne.",
+  "newProverb": "Czym w grudniu większy mróz, tym do worka zboże bardziej włóż.",
+  "source": "przyslowia.net/przyslowia-na-15-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 16,
+  "names": "Albiny, Seweryna",
+  "kind": "A",
+  "oldText": "Grudzień szesnasty — piecz pierniki.",
+  "newProverb": "Grudzień zimny, śniegiem przykryty, daje rok w zboże obfity.",
+  "source": "przyslowia.net/przyslowia-na-16-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 16,
+  "names": "Albiny, Seweryna",
+  "kind": "B",
+  "oldText": "Albina grudniowa — śnieg jak pierniki.",
+  "newProverb": "Gdyby kiedy w grudniu grzmiało, wiatrów byłoby niemało.",
+  "source": "przyslowia.net/przyslowia-na-16-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 17,
+  "names": "Łazarza, Olimpii",
+  "kind": "A",
+  "oldText": "Grudzień siedemnasty — dzień ciemny.",
+  "newProverb": "W grudniu rzeki kryją lody, a lud cieszy się na Gody.",
+  "source": "przyslowia.net/przyslowia-na-17-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 17,
+  "names": "Łazarza, Olimpii",
+  "kind": "B",
+  "oldText": "Łazarz grudniowy — przebudzenie ze snu.",
+  "newProverb": "Grudzień ostro mrozi drogi, wieprze bije, drwa znosi dla zimowej trwogi.",
+  "source": "przyslowia.net/przyslowia-na-17-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 18,
+  "names": "Bogusławy, Gracjana",
+  "kind": "A",
+  "oldText": "Grudzień osiemnasty — wigilia coraz bliżej.",
+  "newProverb": "Mroźny grudzień, wiele śniegu, żyzny roczek będzie w biegu.",
+  "source": "przyslowia.net/przyslowia-na-18-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 18,
+  "names": "Bogusławy, Gracjana",
+  "kind": "B",
+  "oldText": "Bogusława grudniowa — dom przystrojony.",
+  "newProverb": "Gdy w grudniu śnieg pada, drugi rok taki sam zapowiada.",
+  "source": "przyslowia.net/przyslowia-na-18-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 19,
+  "names": "Dariusza, Urbana",
+  "kind": "A",
+  "oldText": "Grudzień dziewiętnasty — śnieg marzeń.",
+  "newProverb": "Grudzień z grzmotami, rok z wiatrami.",
+  "source": "przyslowia.net/przyslowia-na-19-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 19,
+  "names": "Dariusza, Urbana",
+  "kind": "B",
+  "oldText": "Urban grudniowy — choinka pachnąca.",
+  "newProverb": "Pogoda na Urbana, to wielka wygrana.",
+  "source": "przyslowia.net/przyslowia-na-19-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 20,
+  "names": "Filibertu, Dominiki",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty — ostatnie zakupy.",
+  "newProverb": "Gdy ciepło na Dominika, ostra zima nas dotyka.",
+  "source": "przyslowia.net/przyslowia-na-20-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 20,
+  "names": "Filibertu, Dominiki",
+  "kind": "B",
+  "oldText": "Dominika grudniowa — rodzina czeka.",
+  "newProverb": "Na świętego Dominika głucho wszędzie, śpiew ptactwa zanika.",
+  "source": "przyslowia.net/przyslowia-na-20-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 21,
+  "names": "Tomasza, Honoriusza",
+  "kind": "B",
+  "oldText": "Tomasz grudniowy — zima w szczycie.",
+  "newProverb": "Na Tomasza najdłuższa noc nasza.",
+  "source": "przyslowia.net/przyslowia-na-21-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 22,
+  "names": "Zenona, Demetriusza",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty drugi — Gwiazdka za trzy dni.",
+  "newProverb": "Gdy łagodna jesień trzyma, będzie krótka, ostra zima.",
+  "source": "przyslowia.net/przyslowia-na-22-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 23,
+  "names": "Jana Kęty, Wiktorii",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty trzeci — opłatek przygotuj.",
+  "newProverb": "Im więcej zimą wody, tym więcej wiosną pogody.",
+  "source": "przyslowia.net/przyslowia-na-23-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 26,
+  "names": "Szczepana, Dionizego",
+  "kind": "B",
+  "oldText": "Szczepan grudniowy — drugi dzień świąt.",
+  "newProverb": "Na świętego Szczepana bywa błoto po kolana.",
+  "source": "przyslowia.net/przyslowia-na-26-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 27,
+  "names": "Jana, Fabioli",
+  "kind": "B",
+  "oldText": "Jan grudniowy — czas odpoczynku.",
+  "newProverb": "Jak Jan Apostoł ośnieżony, św. Józef (19.03) już zielony.",
+  "source": "przyslowia.net/przyslowia-na-27-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 27,
+  "names": "Jana, Fabioli",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty siódmy — sprawdź co zostało.",
+  "newProverb": "Jak Apostoł pokazuje, taki luty następuje.",
+  "source": "przyslowia.net/przyslowia-na-27-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 28,
+  "names": "Młodzianków, Antoniny",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty ósmy — kolędnicy w drodze.",
+  "newProverb": "Niewiniątek dzień pokaże, jaka pogoda w marcu się okaże.",
+  "source": "przyslowia.net/przyslowia-na-28-grudnia/",
+  "matchType": "saint",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 29,
+  "names": "Tomasza Becketa, Dawida",
+  "kind": "A",
+  "oldText": "Grudzień dwudziesty dziewiąty — zapasów liczba.",
+  "newProverb": "Zima starym dokucza, a młodych naucza.",
+  "source": "przyslowia.net/przyslowia-na-29-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 29,
+  "names": "Tomasza Becketa, Dawida",
+  "kind": "B",
+  "oldText": "Dawid grudniowy — rok się kończy.",
+  "newProverb": "Zima nie pyta, gdzie się lato podziało.",
+  "source": "przyslowia.net/przyslowia-na-29-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ },
+ {
+  "m": 12,
+  "d": 30,
+  "names": "Dawida, Rogera",
+  "kind": "B",
+  "oldText": "Przedostatni grudniowy — bilans roku.",
+  "newProverb": "Kiedy grzmi na lód, będzie głód.",
+  "source": "przyslowia.net/przyslowia-na-30-grudnia/",
+  "matchType": "month-general",
+  "__file": "replacements_5.json"
+ }
+]

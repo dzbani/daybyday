@@ -1,0 +1,37 @@
+[
+  {
+    "m": 4,
+    "d": 20,
+    "names": "Agnieszki, Czesława",
+    "text": "Pogody kwietniowe — słoty majowe.",
+    "kind": "B"
+  },
+  {
+    "m": 6,
+    "d": 14,
+    "names": "Walerego, Michała",
+    "text": "Pełnia czerwcowa — burza gotowa.",
+    "kind": "B"
+  },
+  {
+    "m": 12,
+    "d": 5,
+    "names": "Saby, Kryspiny",
+    "text": "Pogoda grudniowa — wody połowa, lodu połowa.",
+    "kind": "B"
+  },
+  {
+    "m": 12,
+    "d": 10,
+    "names": "Julii, Edwarda",
+    "text": "Pogoda grudniowa — wody połowa, lodu połowa.",
+    "kind": "B"
+  },
+  {
+    "m": 12,
+    "d": 11,
+    "names": "Damazego, Biny",
+    "text": "Pogoda grudniowa — lodu połowa, wody połowa.",
+    "kind": "B"
+  }
+]
