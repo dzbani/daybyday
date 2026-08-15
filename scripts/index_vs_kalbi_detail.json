@@ -1,0 +1,3419 @@
+[
+ {
+  "key": "1-1",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak Nowy Rok jasny i chłodny, będzie roczek pogodny i płodny.",
+   "Gdy na Nowy Rok plucha, ze żniwem też będzie pokuta.",
+   "Gdy na Nowy rok jasno, to w gumnach będzie ciasno."
+  ]
+ },
+ {
+  "key": "2-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy Makary pogodny cały styczeń chłodny.",
+   "Makary jasny, będzie wrzesień krasny"
+  ]
+ },
+ {
+  "key": "3-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Od Genowefy listopad swój bierze początek."
+  ]
+ },
+ {
+  "key": "4-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w Eugeniego lód albo woda taka i lipcowa pokaże się pogoda."
+  ]
+ },
+ {
+  "key": "5-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy styczeń burzliwy z śniegami lato burzliwe z deszczami."
+  ]
+ },
+ {
+  "key": "6-1",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy trzech Króli mrozem trzyma będzie jeszcze długa zima.",
+   "Na Trzech Króli słońce świeci, wiosna do nas pędem leci.",
+   "Gdy Trzy Króle pogodą obdarzą, nie zasypiaj ranków gospodarzu."
+  ]
+ },
+ {
+  "key": "7-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jeśli w styczniu deszcze leją nie ciesz się wielką nadzieją.",
+   "Po styczniu jasnym i białym będą w lato upały."
+  ]
+ },
+ {
+  "key": "8-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Kiedy w styczniu rośnie trawa marna w lecie jest potrawa.",
+   "Gdy w zimie nie było śniegu to go wiele spadnie w kwietniu."
+  ]
+ },
+ {
+  "key": "9-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Styczeń, styczeń wszystko studzi – ziemię, bydło, ludzi."
+  ]
+ },
+ {
+  "key": "10-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy słońce przygrzewa na Jana Dobrego spodziewać się można lata pogodnego."
+  ]
+ },
+ {
+  "key": "11-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Święta Honorata figle płata."
+  ]
+ },
+ {
+  "key": "12-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w styczniu rosną trawy lipiec dla nas niełaskawy."
+  ]
+ },
+ {
+  "key": "13-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Weronika chustkę zrzuci wiosna od nas się odwróci."
+  ]
+ },
+ {
+  "key": "14-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Kiedy ptaki w styczniu śpiewają to im w maju dzioby zamarzają.",
+   "Jak Feliks mroźny, tak i luty groźny."
+  ]
+ },
+ {
+  "key": "15-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Ciepła izba marzeń szczytem i tak jakoś mija styczeń.",
+   "Jeśli w Święty Paweł śnieg albo deszcz pada, dobrych urodzajów spodziewać wypada."
+  ]
+ },
+ {
+  "key": "16-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaka pogoda w Świętego Marcela będzie pogodna Wielka Niedziela."
+  ]
+ },
+ {
+  "key": "17-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak styczeń zachlapany to lipiec zapłakany."
+  ]
+ },
+ {
+  "key": "18-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy na Małgorzaty mróz, jeszcze długo nie pojedzie wóz."
+  ]
+ },
+ {
+  "key": "19-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Święty Józef pogodny, będzie roczek urodny",
+   "Gdy Styczeń z zimnem nie chodzi marzec, kwiecień wychłodzi."
+  ]
+ },
+ {
+  "key": "20-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Fabian i Sebastian gdy mróz dadzą srogą zimę przyprowadzą."
+  ]
+ },
+ {
+  "key": "21-1",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak Święta Agnieszka wypuści śnieg z mieszka, to go nie powstrzyma ani do Franciszka (24 sty.).",
+   "Agnieszka li łaskawa, wkrótce w polu zabawa; Agnieszka li nielusa, jeszcze zimie pokusa.",
+   "Agnieszka łaskawa puszcza skowronka z rękawa."
+  ]
+ },
+ {
+  "key": "22-1",
+  "idxCount": 1,
+  "kalbiCount": 2,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy na Wincentego i nawrócenie Pawła (25 sty.) pogoda świeci spodziewajcie się dobrego lata dzieci."
+  ]
+ },
+ {
+  "key": "23-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W styczniu łów łatwy na kuropatwy."
+  ]
+ },
+ {
+  "key": "24-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Tymoteusza trzeba ci czapki nie kapelusza."
+  ]
+ },
+ {
+  "key": "25-1",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Świętego Pawła połowa zimy przepadła.",
+   "Gdy na święty Paweł jasno, po żniwach w stodole ciasno.",
+   "Jeśli w święty Paweł śnieg albo deszcz pada, dobrych się urodzajów spodziewać wypada."
+  ]
+ },
+ {
+  "key": "26-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w styczniu lato w lecie zimno za to."
+  ]
+ },
+ {
+  "key": "27-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy styczeń najostrzejszy tedy roczek najpłodniejszy."
+  ]
+ },
+ {
+  "key": "28-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na Świętego Karola wyjrzy spod śniegu rola.",
+   "Urodzaje da rola gdy deszcz leje w Karola."
+  ]
+ },
+ {
+  "key": "29-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Franciszka przylatuje pliszka."
+  ]
+ },
+ {
+  "key": "30-1",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Św. Marcin lody gładzi, gdy ich nie ma to je sadzi.",
+   "Na Świętą Martynę przybyło dnia na godzinę."
+  ]
+ },
+ {
+  "key": "31-1",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Ludwika koń na grudzie utyka."
+  ]
+ },
+ {
+  "key": "1-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Czasem się luty zlituje że człek niby wiosnę czuje, ale czasem się tak zżyma że człek prawie nie wytrzyma.",
+   "Idzie luty, podkuj buty.",
+   "Gdy mróz w lutym ostro trzyma, tedy jest niedługa zima."
+  ]
+ },
+ {
+  "key": "2-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy w Gromnice pięknie wszędzie, tedy dobra wiosna będzie.",
+   "Gromnice w śniegu, wiosna jest w biegu, lecz gdy pogoda, dla wiosny zawoda.",
+   "Gdy w Gromnicę z dachów ciecze, zima jeszcze się przewlecze."
+  ]
+ },
+ {
+  "key": "3-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak pogoda w św. Błażeja, będzie ze śniegiem Wielka Niedziela.",
+   "Jak śnieg na św. Błażeja, pogodna będzie Wielka Niedziela.",
+   "Deszcz na świętego Błażeja, słaba wiosny nadzieja."
+  ]
+ },
+ {
+  "key": "4-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy ciepło w lutym, zimno w marcu bywa, długo potrwa zima, rzecz to niewątpliwa."
+  ]
+ },
+ {
+  "key": "5-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy św. Agata po błocie brodzi, człek w Zmartwychwstanie po lodzie chodzi.",
+   "Po świętej Agacie wyschną na słońcu gacie.",
+   "Święta Agata chatę wymiata."
+  ]
+ },
+ {
+  "key": "6-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Po Św. Dorocie wyschną chusty na płocie, a jak nie wyschną, to człeka mrozy do chałupy wepchną.",
+   "Rzadki dzień świętej Doroty bez mrozu, zawiei, słoty.",
+   "Święta Dorota wypuszcza skowronka za wrota."
+  ]
+ },
+ {
+  "key": "7-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w lutym rosa pada, nowe mrozy zapowiada."
+  ]
+ },
+ {
+  "key": "8-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak luty nastaje, śnieg jeszcze nie taje."
+  ]
+ },
+ {
+  "key": "9-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy mróz w lutym ostro trzyma, tedy już niedługa zima."
+  ]
+ },
+ {
+  "key": "10-2",
+  "idxCount": 2,
+  "kalbiCount": 3,
+  "matches": 2,
+  "matchedTexts": [
+   "Na św. Jacenty - łamią się pod lodem pręty.",
+   "Święta Scholastyka zaśnieżonymi drogami spyka."
+  ]
+ },
+ {
+  "key": "11-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli luty śnieżny, mroźny, spodziewaj się wczesnej wiosny."
+  ]
+ },
+ {
+  "key": "12-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na świętego Ludwika na grudzie koń utyka."
+  ]
+ },
+ {
+  "key": "13-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w lutym do połowy zima się wysili, to na koniec miesiąca już się nie wychyli."
+  ]
+ },
+ {
+  "key": "14-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy na święty Walek deszcze, mrozy wrócą jeszcze.",
+   "Jak Walenty nie poleje, to na wiosnę masz nadzieję.",
+   "Gdy na św. Walenty mróz, chowaj sanie, szykuj wóz."
+  ]
+ },
+ {
+  "key": "15-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czasem luty ostro kuty, czasem w luty same pluty."
+  ]
+ },
+ {
+  "key": "16-2",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Luty, gdy wiatrów i mrozów nie daje, sprowadzi rok słotny i nieurodzaje.",
+   "Święty Maciej zimę traci, albo ją bogaci."
+  ]
+ },
+ {
+  "key": "17-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli ci jeszcze nie dokuczył luty, to pal dobrze w kominie i miej kożuch suty."
+  ]
+ },
+ {
+  "key": "18-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Luty bywa w lód okuty."
+  ]
+ },
+ {
+  "key": "19-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W świętego Konrada, zima nie rada."
+  ]
+ },
+ {
+  "key": "20-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W lutym, gdy zagrzmi od wschodniego boku, burze i wiatry częste są w tym roku."
+  ]
+ },
+ {
+  "key": "21-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy kot w lutym na słonku się grzeje, musi w marcu zajść na przypiecek."
+  ]
+ },
+ {
+  "key": "22-2",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy mróz w lutym dwudziestym drugim, dzień straszy nas mrozem długim.",
+   "Zimno w Piotra Stolicę, czterdzieści dni takich naliczę."
+  ]
+ },
+ {
+  "key": "23-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Silne wiatry przy końcu lutego, spodziewaj się zatem lata żyznego."
+  ]
+ },
+ {
+  "key": "24-2",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak w Święty Maciej ciepło, to się będzie długo wlekło.",
+   "Na świętego Macieja pierwsza wiosny nadzieja.",
+   "Święty Maciej zimę traci albo ją bogaci."
+  ]
+ },
+ {
+  "key": "25-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Skoro po Macieju drzewa się ogrzeją, leć do sadu, oczyść go z owadów."
+  ]
+ },
+ {
+  "key": "26-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy wiatr ostro w lutym wieje, chłop ma dobrą nadzieję."
+  ]
+ },
+ {
+  "key": "27-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Luty stały, latem upały."
+  ]
+ },
+ {
+  "key": "28-2",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W lutym wiele wody - całe lato bez pogody."
+  ]
+ },
+ {
+  "key": "1-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Albina rzadka u ludzi mina, bo post się zaczyna."
+  ]
+ },
+ {
+  "key": "2-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czasem i w marcu, zetnie wodę w garncu."
+  ]
+ },
+ {
+  "key": "3-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy marzec mglisty, w lecie czas dżdżysty."
+  ]
+ },
+ {
+  "key": "4-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Dzień świętego Kazimierza resztki zimy uśmierza.",
+   "Jeżeli na świętego Kazimierza pogoda, to na ziemniaki woda (na wykopki).",
+   "Na świętego Kazimierza pełno już młodego zwierza."
+  ]
+ },
+ {
+  "key": "5-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy marzec suchy, kwiecień nagradza, bo deszcze sprowadza."
+  ]
+ },
+ {
+  "key": "6-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu grzmi, w maju śniegiem cmi."
+  ]
+ },
+ {
+  "key": "7-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu topnieje, to na wiosnę mróz bieleje."
+  ]
+ },
+ {
+  "key": "8-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Deszcze marcowe zbożu niezdrowe."
+  ]
+ },
+ {
+  "key": "9-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy Franciszka z wichrem po polu hasa, może sypnąć śniegiem powyżej pasa."
+  ]
+ },
+ {
+  "key": "10-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy mróz w marcu dnia dziesiątego, jeszcze czterdzieści dni mrozu takiego.",
+   "Czterdziestu Męczenników jakich, czterdzieści dni po nich takich",
+   "Kiedy na Czterdziestu Męczenników marznie, to jeszcze czterdzieści nocy przymarznie."
+  ]
+ },
+ {
+  "key": "11-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli zapusty pogodne bywają, Świąt wielkanocnych tak się spodziewają."
+  ]
+ },
+ {
+  "key": "12-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Świętego Grzegorza idzie zima do morza.",
+   "Na świętego Grzegorza szuka kawka łoża",
+   "Groch święty Grzegorz zasiewa, soczewicę Jakub miewa."
+  ]
+ },
+ {
+  "key": "13-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu niebo od południa ryknie, rok wszego dobra z tego wyniknie."
+  ]
+ },
+ {
+  "key": "14-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W marcu, gdy są grzmoty, urośnie zboże ponad płoty."
+  ]
+ },
+ {
+  "key": "15-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu deszcz pada, wtedy rolnik biada, gdy słonko jaśnieje, to rolnik się śmieje."
+  ]
+ },
+ {
+  "key": "16-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Hilary zapowiada, jaka pogoda w Wielkanoc przypada."
+  ]
+ },
+ {
+  "key": "17-3",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy na Gertrudy zjawią się bociany, to wiosna już rychło nastanie.",
+   "Ogrodniku, św. Gertruda gdy słońcem błyśnie zrobi cuda oczywiście."
+  ]
+ },
+ {
+  "key": "18-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na św. Edwarda zimy pogarda."
+  ]
+ },
+ {
+  "key": "19-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy na święty Józef bociek przybędzie, to już śniegu nie będzie.",
+   "Na świętego Józefa pięknie, zima prędko pęknie.",
+   "Święty Józef pogodny, będzie roczek wodny."
+  ]
+ },
+ {
+  "key": "20-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Od dnia dwudziestego marca zagrzewa słońce nawet starca."
+  ]
+ },
+ {
+  "key": "21-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak po Benedykcie ciepło, to i w lecie będzie piekło.",
+   "Benedykt groch w polu sieje, Wojciech (23 kwi.) do owsa się śmieje.",
+   "Benedykta Bożą mocą, dzionek już się równa z nocą."
+  ]
+ },
+ {
+  "key": "22-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeżeli w pierwszy dzień po przesileniu marcowym burza się zdarzy, zima już nie przydarzy."
+  ]
+ },
+ {
+  "key": "23-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Marzec zimny i słoneczny, plon zaręcza dostateczny."
+  ]
+ },
+ {
+  "key": "24-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Szymona nie wdziewaj już kaftana."
+  ]
+ },
+ {
+  "key": "25-3",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jakie jest Zwiastowanie, takie będzie i Zmartwychwstanie.",
+   "Gdy przed Zwiastowaniem ruszy się pszczoła, to mokrą wiosnę nam przywoła.",
+   "Na Zwiastowanie jaskółki się ukazują, ludziom wiosnę zwiastują."
+  ]
+ },
+ {
+  "key": "26-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Ile mgieł w marcu, tyle deszczów w czerwcu."
+  ]
+ },
+ {
+  "key": "27-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Suchy marzec, mokry maj, będzie żytko jako gaj."
+  ]
+ },
+ {
+  "key": "28-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu deszcz pada, wtedy rolnik biada, gdy słońce jaśnieje, to rolnik się śmieje."
+  ]
+ },
+ {
+  "key": "29-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w marcu plucha, to w maju posucha."
+  ]
+ },
+ {
+  "key": "30-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w marcu mgły bywają, w lecie burze przeszkadzają."
+  ]
+ },
+ {
+  "key": "31-3",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Co marzec wypiecze, to kwiecień wyciecze."
+  ]
+ },
+ {
+  "key": "1-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W prima aprilis się omylisz, gdzie postąpisz, gdzie się schylisz.",
+   "Pierwszy kwietnia - bajów pletnia."
+  ]
+ },
+ {
+  "key": "2-4",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na św. Franciszka nieraz dobrze grzmi i łyska.",
+   "Na św. Franciszka zielenią się łany i ze swego zimowiska wracają bociany.",
+   "Na Świętego Franciszka przylatuje pliszka."
+  ]
+ },
+ {
+  "key": "3-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Kiedy w kwietniu grzmoty, szron już nie ma roboty.",
+   "Jeżeli w kwietniu posuszy, nic się w polu nie ruszy."
+  ]
+ },
+ {
+  "key": "4-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Izydora dla bociana pora."
+  ]
+ },
+ {
+  "key": "5-4",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Chociaż św. Wincenty, jednak szczypie mróz w pięty.",
+   "Jak się Wincenty rozdeszczy, źle chłopu wilga wieszczy.",
+   "Na św. Wincenty nie chodź bosymi pięty, bo nieraz mrozek cięty."
+  ]
+ },
+ {
+  "key": "6-4",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Kwiecień-plecień, bo przeplata, trochę zimy, trochę lata.",
+   "W kwietniu posusza, nic się na polach nie rusza.",
+   "Suchemu kwietniowi chłop się nie raduje, bo kwiecień mokry dobry rok zwiastuje."
+  ]
+ },
+ {
+  "key": "7-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Choć i w kwietniu słonko grzeje, nieraz pole śnieg zawieje."
+  ]
+ },
+ {
+  "key": "8-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaka na Julii pogoda, taką Wielkanoc poda."
+  ]
+ },
+ {
+  "key": "9-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Choć już w kwietniu słonko grzeje, nieraz pole śnieg zawieje.",
+   "W kwietniu łagodne kwiatki, w grudniu śnieżne płatki."
+  ]
+ },
+ {
+  "key": "10-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Dzień na święty Makary pewnie przepowiada, czy we wrześniu pogoda, czy też ciągle pada."
+  ]
+ },
+ {
+  "key": "11-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grzmot w kwietniu dobra nowina, już szron roślin nie pościna."
+  ]
+ },
+ {
+  "key": "12-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kwiecień, co deszczem rosi, wiele owoców przynosi."
+  ]
+ },
+ {
+  "key": "13-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w kwietniu pszczoły nie latają, to jeszcze długie chłody się zapowiadają."
+  ]
+ },
+ {
+  "key": "14-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Świętego Justyna siew się w polu zaczyna."
+  ]
+ },
+ {
+  "key": "15-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W kwietniu posucha, niknie rolnikom otucha.",
+   "Kwiecień, kiedy deszczem plecie, to się maj wystroi w kwiecie."
+  ]
+ },
+ {
+  "key": "16-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kwiecień wilgotny obiecuje rok stokrotny."
+  ]
+ },
+ {
+  "key": "17-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kwiecień czasem kwieciem ściele, albo śniegiem przyjaciele."
+  ]
+ },
+ {
+  "key": "18-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w kwietniu słonko na dworze, nie będzie pustek w komorze."
+  ]
+ },
+ {
+  "key": "19-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Chcesz mieć kęs płótna dobrego, siej len na św. Jerzego."
+  ]
+ },
+ {
+  "key": "20-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak w kwietniu rosa, to dosiewaj chłopie mocno prosa."
+  ]
+ },
+ {
+  "key": "21-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w kwietniu ciepłe deszcze padają, pogodną jesień zapowiadają."
+  ]
+ },
+ {
+  "key": "22-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w kwietniu słonko grzeje, rolnik nie zubożeje."
+  ]
+ },
+ {
+  "key": "23-4",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy na św. Wojciecha rano deszcz pada, do połowy lata suszę zapowiada.",
+   "Ile razy przed Wojciechem zagrzmi na pola, tyle razy po Wojciechu zabieli się rola.",
+   "Gdy przed Wojciechem grzmi, długo jeszcze ziemia śni"
+  ]
+ },
+ {
+  "key": "24-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jak w kwietniu mróz, to na pagórku siana wóz.",
+   "Ta urodzajna pszenica bywa, która w kwietniu przepiórkę przykrywa."
+  ]
+ },
+ {
+  "key": "25-4",
+  "idxCount": 2,
+  "kalbiCount": 3,
+  "matches": 2,
+  "matchedTexts": [
+   "Chodzisz na Marka bez koszuli, w maju kożuchem się otulisz.",
+   "Na św. Marka deszcz, to suchego lata wieszcz."
+  ]
+ },
+ {
+  "key": "26-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Mokre dni kwietnia zazwyczaj wróżą, że w lecie będzie owoców dużo.",
+   "Za kwietniem ciepłym idzie maj chłodny."
+  ]
+ },
+ {
+  "key": "27-4",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Śnieg w kwietniu goi rolę, hamuje niedolę.",
+   "Kwiecień daje zieleń trawce, gra pastuszek na igrawce."
+  ]
+ },
+ {
+  "key": "28-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Deszcze częste w kwietniu wróżą, że owoców będzie dużo."
+  ]
+ },
+ {
+  "key": "29-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kwiecień co deszczem rosi, wiele owoców przynosi."
+  ]
+ },
+ {
+  "key": "30-4",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy kwiecień chmurny, a maj z wiatrami, rok żyzny przed nami."
+  ]
+ },
+ {
+  "key": "1-5",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Pierwszego maja deszcz, nieurodzajów wieszcz.",
+   "Na pierwszego maja szron, obiecuje hojny plon."
+  ]
+ },
+ {
+  "key": "2-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W Zygmunta deszcz - nieurodzaju wieszcz."
+  ]
+ },
+ {
+  "key": "3-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Maj zieleni łąki, drzewa, już i ptaszek w polu śpiewa."
+  ]
+ },
+ {
+  "key": "4-5",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Kiedy poleje na świętego Floriana, potrwa czas jakiś pogoda zakichana.",
+   "Deszcze w świętego Floriana, skrzynia groszem napchana.",
+   "Na Floriana bywa żyto po kolana"
+  ]
+ },
+ {
+  "key": "5-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Maj bogaty sieje kwiaty."
+  ]
+ },
+ {
+  "key": "6-5",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Kiedy w Filipa i Jakuba deszcz pada, suchy rok będzie; kiedy nie pada - mokry będzie.",
+   "Na Filipa, gdy przymrozek spadnie, najgorsza zaraza na zboże przypadnie.",
+   "Na świętego Filipa jeśli deszcz rzęsisty, będzie plon dobry i czysty."
+  ]
+ },
+ {
+  "key": "7-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gizela święta zimy nie pamięta."
+  ]
+ },
+ {
+  "key": "8-5",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na świętego Stanisława rośnie koniom trawa.",
+   "Na świętego Stanisława w domu pustki, w polu sława."
+  ]
+ },
+ {
+  "key": "9-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w maju śnieg pada, suszę zapowiada."
+  ]
+ },
+ {
+  "key": "10-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy mokry maj, będzie żyto jako gaj."
+  ]
+ },
+ {
+  "key": "11-5",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy przed Pankracym przymrozek nocny się zdarzy, zimno wiosnę zwarzy.",
+   "Gdy przed Pankracym nocą przymrozi, lato będzie przepadziste, a jesienią czasy dżdżyste."
+  ]
+ },
+ {
+  "key": "12-5",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Pankracy, Serwacy i Bonifacy – źli na ogrody chłopacy",
+   "Pankracy, Serwacy, Bonifacy, każdy swoim zimnem raczy",
+   "Przed Pankracym nie ma lata, po Bonifacym mróz ulata."
+  ]
+ },
+ {
+  "key": "13-5",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy słoneczko przed Serwacym ciepło juz dogrzewa, po Serwacym szron pokryje i kwiaty i drzewa.",
+   "Jak się rozsierdzi Serwacy, to wszystko zmrozi i przeinaczy."
+  ]
+ },
+ {
+  "key": "14-5",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Pankracy, Serwacy i Bonifacy gdy z przymrozkiem stają, lato zimne dają.",
+   "Pankracy, Serwacy, Bonifacy, każdy swoim zimnem raczy."
+  ]
+ },
+ {
+  "key": "15-5",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na świętą Zofiję deszcz po polach bije.",
+   "Gdy w Zofię zboże do pasa, na zimę chleb i okrasa.",
+   "Dla świętej Zosi kłos się podnosi"
+  ]
+ },
+ {
+  "key": "16-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Niedługo trwa deszcz majowy, tyle, co łzy młodej wdowy."
+  ]
+ },
+ {
+  "key": "17-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w maju wiatr z północy, ma się u nas zimno w nocy."
+  ]
+ },
+ {
+  "key": "18-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grzmot w maju, sprzyja urodzaju."
+  ]
+ },
+ {
+  "key": "19-5",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Urbana chwile jakie, mówią, ze i lato takie.",
+   "W Urbana, miły chłopie, siej len i konopie.",
+   "Na świętego Urbana wszystka rola zasiana."
+  ]
+ },
+ {
+  "key": "20-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy Bernard grzmi i deszczy, czerwiec z pogodą, a lipiec z wodą."
+  ]
+ },
+ {
+  "key": "21-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Jana Nepomucena wiadoma już zboża cena."
+  ]
+ },
+ {
+  "key": "22-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w maju śnieg się zdarzy, to lato dobrze wyparzy."
+  ]
+ },
+ {
+  "key": "23-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w maju żołądź dobrze okwita, dobry rok zawita."
+  ]
+ },
+ {
+  "key": "24-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w Zuzannę burze, jesienią pełne podwórze."
+  ]
+ },
+ {
+  "key": "25-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak w maju plucha, to w czerwcu posucha."
+  ]
+ },
+ {
+  "key": "26-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Wody w maju stojące szkodę przynoszą łące."
+  ]
+ },
+ {
+  "key": "27-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Częste deszcze w całym maju chleb i siano nam dawają."
+  ]
+ },
+ {
+  "key": "28-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli deszcze w maju, wszystko rośnie jak w gaju."
+  ]
+ },
+ {
+  "key": "29-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w maju grzmot, rośnie wszystko w lot."
+  ]
+ },
+ {
+  "key": "30-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy maj zimny, a w czerwcu deszcz pada, gospodarz pełne stodoły posiada."
+  ]
+ },
+ {
+  "key": "31-5",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Deszcz na Nawiedzenie Panny potrwa pewno do Zuzanny."
+  ]
+ },
+ {
+  "key": "1-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec na maju zwykle się wzoruje, jego pluchy, pogody często naśladuje."
+  ]
+ },
+ {
+  "key": "2-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Święty Eugenii pogodę w czerwcu odmieni."
+  ]
+ },
+ {
+  "key": "3-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec po deszczowym maju, często dżdżysty w naszym kraju."
+  ]
+ },
+ {
+  "key": "4-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec gdy zagrzmi, gdzie zorze zachodzą, ryby się obficie urodzą."
+  ]
+ },
+ {
+  "key": "6-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Siej na świętego Norberta, będzie jęczmienia sterta. Norbert cztery niedziele po sobie ściele."
+  ]
+ },
+ {
+  "key": "7-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W czerwcu pełnia sprowadza burze, ostatnia kwadra zaś deszcze duże."
+  ]
+ },
+ {
+  "key": "8-6",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Czasem i na Świętego Medarda wiosna jeszcze przytwarda.",
+   "Jaki Medard dzień obwieści, takich będzie dni czterdzieści.",
+   "Jak się na Medarda pogoda zepsuje, to potem dni czterdzieści niebo posikuje."
+  ]
+ },
+ {
+  "key": "9-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W czerwcu się pokaże, co nam Bóg da w darze."
+  ]
+ },
+ {
+  "key": "10-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Ze świętą Małgorzatą zaczyna się lato."
+  ]
+ },
+ {
+  "key": "11-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy czerwiec chłodem i wodą szafuje, to zwykle rok cały popsuje."
+  ]
+ },
+ {
+  "key": "12-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec nosi dni gorące, kosa dzwoni już na łące."
+  ]
+ },
+ {
+  "key": "13-6",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na święty Antoni pierwsza się jagódka zapłoni.",
+   "Kto sieje tatarkę na Antka i Wita, to mu pięknie powschodzi i zakwita.",
+   "Święty Antoni o gryce siać przypomni."
+  ]
+ },
+ {
+  "key": "14-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Nie trzeba w czerwcu o deszcz prosić, przyjdzie jak zaczniemy kosić."
+  ]
+ },
+ {
+  "key": "15-6",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na świętego Wita zboże zakwita.",
+   "Na świętego Wita ze śpiewem ptaków kwita.",
+   "Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy."
+  ]
+ },
+ {
+  "key": "16-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grzmoty czerwca rozweselają rolnikom serca."
+  ]
+ },
+ {
+  "key": "17-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Upał w sianokosy, żniwa - zima ostra i dokuczliwa, a jeżeli słota - w zimie dużo błota."
+  ]
+ },
+ {
+  "key": "18-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na początku lata ranne grzmoty są zapowiedzią rychłej słoty."
+  ]
+ },
+ {
+  "key": "19-6",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na świętego Gerwazego jest w ogrodzie coś pięknego.",
+   "Na święty Protazy każdy się poparzy."
+  ]
+ },
+ {
+  "key": "20-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak w czerwcu pogoda służy, rolnik tylko oczy mruży."
+  ]
+ },
+ {
+  "key": "21-6",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Dzień świętego Alojzego przyczynia wina dobrego.",
+   "Na Święty Jan przyniósł jagód dzban."
+  ]
+ },
+ {
+  "key": "22-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy słońce w Raka z grzmotem wschodzi, to posuchę zwykle przynosi."
+  ]
+ },
+ {
+  "key": "23-6",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W dniu Wandy gdy słonko bezchmurnie zachodzi, święty Jan pogodą rolników nagrodzi.",
+   "Wanda z Janem wianki puszczają po wodzie i wspólnie radzą o żniwnej pogodzie."
+  ]
+ },
+ {
+  "key": "24-6",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy Jan z deszczem przybywa, to słota bywa także i we żniwa.",
+   "Jak święty Jan się obwieści, takich będzie dni czterdzieści.",
+   "Chrzest Jana w deszczowej wodzie trzyma zbiory w przeszkodzie."
+  ]
+ },
+ {
+  "key": "25-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec mokry po zimnym maju, chłopom w jesieni będzie jak w raju."
+  ]
+ },
+ {
+  "key": "26-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec się czerwieni - będzie dość w kieszeni."
+  ]
+ },
+ {
+  "key": "27-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec grudniową pogodę głosi, lipiec dla stycznia wróżbę przynosi."
+  ]
+ },
+ {
+  "key": "28-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czerwiec na maju zwykle się wzoruje, jego pluchy, pogody często naśladuje."
+  ]
+ },
+ {
+  "key": "29-6",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy Piotr z Pawłem w deszcz uderzy, słońce za mgłą tydzień leży.",
+   "Gdy święty Piotr z Pawłem płaczą, ludzie przez tydzień słońca nie zobaczą.",
+   "Kiedy święty Piotr grzeje, za wiosną jeszcze trzykroć kur zapieje."
+  ]
+ },
+ {
+  "key": "30-6",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Od czerwca dużo zależy, czy żniwa będą jak należy."
+  ]
+ },
+ {
+  "key": "1-7",
+  "idxCount": 1,
+  "kalbiCount": 2,
+  "matches": 1,
+  "matchedTexts": [
+   "Deszcze na lipca pierwszego, drugiego, zapowiedzią deszczu czterdziestodniowego."
+  ]
+ },
+ {
+  "key": "2-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy pająk w lipcu przychodzi, to za sobą deszcz przywodzi, gdy swą pajęczynę snuje, bliską burzę czuje."
+  ]
+ },
+ {
+  "key": "3-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w lipcu słońce dopieka, burza niedaleka."
+  ]
+ },
+ {
+  "key": "4-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda."
+  ]
+ },
+ {
+  "key": "5-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota."
+  ]
+ },
+ {
+  "key": "6-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kto w lipcu patrzy chłodu, nacierpi się w zimie głodu."
+  ]
+ },
+ {
+  "key": "7-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kwiat lipcowy, napój zdrowy."
+  ]
+ },
+ {
+  "key": "8-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy lipiec daje deszcze, długie lato będzie jeszcze."
+  ]
+ },
+ {
+  "key": "9-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Lipcowe deszcze dla chłopa kleszcze; jak pogoda, większa swoboda."
+  ]
+ },
+ {
+  "key": "10-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Filip przepowiada, ile tygodni popada."
+  ]
+ },
+ {
+  "key": "11-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Lipcowe upały, wrzesień doskonały."
+  ]
+ },
+ {
+  "key": "12-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Lipiec – ostatek chleba wypiec."
+  ]
+ },
+ {
+  "key": "13-7",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "W lipcu się kłosek korzy, że niesie dar boży, a najpierwsza Małgorzata, sierp w zboże założy.",
+   "Na świętą Małgorzatę kopa zawsze w polu stanie.",
+   "Ze świętą Małgorzatą upał przybiera, kanikułę otwiera."
+  ]
+ },
+ {
+  "key": "14-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Upały lipcowe wróżą mrozy styczniowe."
+  ]
+ },
+ {
+  "key": "15-7",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W lipcu pszczeli rój, nie opłaci trudu znój.",
+   "Święty Bonawentura pszeniczkę na polu maluje"
+  ]
+ },
+ {
+  "key": "16-7",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W lipcu, gdy służą pogody, bój się wielkiej wody.",
+   "Wraz ze Szkaplerną Matką, na zagon z czeladką."
+  ]
+ },
+ {
+  "key": "17-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W lipcu upały, styczeń mroźny cały."
+  ]
+ },
+ {
+  "key": "18-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeżeli w żniwa mysz w polu gniazdo wysoko zakłada, znak to, że zima srogie śniegi zapowiada."
+  ]
+ },
+ {
+  "key": "19-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czego lipiec nie dowarzy, tego sierpień nie dosmaży."
+  ]
+ },
+ {
+  "key": "20-7",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jaka Małgorzatka, takie będzie pół latka.",
+   "Deszcz na świętą Małgorzatę jest orzechom na stratę.",
+   "Na świętego Eliasza z nowego użątku kasza."
+  ]
+ },
+ {
+  "key": "21-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w czasie deszczu tworzą się bańki na wodzie, słota potrwa długo."
+  ]
+ },
+ {
+  "key": "22-7",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy Magdalena deszczem zaczyna, to zwykle deszcz dłużej trzyma.",
+   "Gdy na Świętą Marię Magdalenę jest pogoda, to obrodzi późne zboże.",
+   "Gdy na Świętą Marię Magdalenę są burze, to będzie dużo zboża w stodole."
+  ]
+ },
+ {
+  "key": "23-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy listki ziemniaków w górę spoglądają, to nam na pogodę znak pewny dają."
+  ]
+ },
+ {
+  "key": "24-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak poranek mglisty, wieczór przezroczysty."
+  ]
+ },
+ {
+  "key": "25-7",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Im na Krzysztofa większe pogody, tym zimą sroższe nastaną lody.",
+   "W dzień świętego Jakuba chmury, będą śniegu fury.",
+   "Jaki Jakub do południa, taka zima też do grudnia."
+  ]
+ },
+ {
+  "key": "26-7",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Od świętej Anki chłodne wieczory i poranki",
+   "Gdy w świętą Annę deszcz pada, to robak orzechy zjada.",
+   "Na świętą Annę mrowiska, szukaj w zimie ogniska."
+  ]
+ },
+ {
+  "key": "27-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy się za wozem kurzy, spodziewaj się burzy."
+  ]
+ },
+ {
+  "key": "28-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Słońce mocno przypieka, burza niedaleka."
+  ]
+ },
+ {
+  "key": "29-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Około dnia świętej Marty, ze żniwami już nie żarty."
+  ]
+ },
+ {
+  "key": "30-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak po lipcu gorącym sierpień się ochłodzi, to później zima z wielkim śniegiem chodzi."
+  ]
+ },
+ {
+  "key": "31-7",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota."
+  ]
+ },
+ {
+  "key": "1-8",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jaki pierwszy, drugi, trzeci, taki cały sierpień leci.",
+   "Na Świętego Piotra Polikopy grom popali kopy."
+  ]
+ },
+ {
+  "key": "2-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaki pierwszy, drugi ćmi, takie sierpnia, września dni."
+  ]
+ },
+ {
+  "key": "3-8",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jaki pierwszy, drugi, trzeci, taki cały sierpień leci.",
+   "Jak na Piotra posuszy, lato jesień przesuszy.",
+   "Pogoda na Nikodema - cały miesiąc deszczu nie ma."
+  ]
+ },
+ {
+  "key": "5-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Początki sierpnia pogodne, wróżą zimy łagodne."
+  ]
+ },
+ {
+  "key": "6-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W Przemienienie Pańskie są burze szatańskie."
+  ]
+ },
+ {
+  "key": "7-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Święty Kajetanie, strzeż od deszczu sprzątanie."
+  ]
+ },
+ {
+  "key": "8-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w sierpniu dni jasne, będą stodoły ciasne."
+  ]
+ },
+ {
+  "key": "9-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy sierpień przychodzi, reszta zboża z pola schodzi."
+  ]
+ },
+ {
+  "key": "10-8",
+  "idxCount": 2,
+  "kalbiCount": 3,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy Wawrzyniec i Bartłomiej (24 sie.) pogodą dopisują, piękną jesień obiecują",
+   "Gdy na Wawrzyńca orzechy obrodzą, to w zimie mrozy dogodzą"
+  ]
+ },
+ {
+  "key": "11-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Od świętej Klary są już ładne dary."
+  ]
+ },
+ {
+  "key": "12-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy sierpień przychodzi, reszta zboża z pola schodzi."
+  ]
+ },
+ {
+  "key": "13-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w dni sierpnia spieka wszędzie, tedy długa zima będzie."
+  ]
+ },
+ {
+  "key": "14-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak po lipcu sierpień się ochłodzi, to później zima twarda z wielkim śniegiem chodzi."
+  ]
+ },
+ {
+  "key": "15-8",
+  "idxCount": 2,
+  "kalbiCount": 3,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy na Wniebowzięcie Panny ciepło dopisuje, to ciepły i pogodny koniec lata obiecuje.",
+   "Na Wniebowzięcie słota, w jesieni dużo błota."
+  ]
+ },
+ {
+  "key": "16-8",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Święty Roch w stodole groch.",
+   "Na święty Roch, jaki dzień, taka noc.",
+   "Od świętego Rocha na pole już socha."
+  ]
+ },
+ {
+  "key": "17-8",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jacek gdy suchy, rozprasza jesienne pluchy.",
+   "Jeśli w dniu Jacka nie pada, suchą jesień zapowiada."
+  ]
+ },
+ {
+  "key": "18-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W sierpniu grzmotów wiele, mokrą zimę ściele."
+  ]
+ },
+ {
+  "key": "19-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy sierpień wrzos rozwija, jesień krótka, szybko mija."
+  ]
+ },
+ {
+  "key": "20-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli na Bernarda ziemia twarda, to będzie zima harda, a jak miękka to lekka."
+  ]
+ },
+ {
+  "key": "21-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w sierpniu z północy dmucha, nastaje zwykle posucha."
+  ]
+ },
+ {
+  "key": "22-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kto w lecie nie zbiera, w zimie głodem przymiera."
+  ]
+ },
+ {
+  "key": "23-8",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy słońce z grzmotem w znak Panny wchodzi, zapowiedź to niepogody długiej i powodzi.",
+   "Gdy księżyc w Pannie o grzmoty, pięćdziesiąt dni pluszczą słoty."
+  ]
+ },
+ {
+  "key": "24-8",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Święty Bartłomiej zwiastuje, jaka jesień następuje.",
+   "Jaki dzień Bartłomieja, takiej jesieni nadzieja",
+   "Kiedy do Bartłomieja bocian u nas trwa mnogi, tedy zima lekka będzie i opał niedrogi."
+  ]
+ },
+ {
+  "key": "25-8",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na Ludwika zboże z pola umyka.",
+   "Gdy na Luizy ładnie, śnieg późno spadnie."
+  ]
+ },
+ {
+  "key": "26-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeżeli w sierpniu gorąco będzie, to zima w śniegi długo zasiędzie."
+  ]
+ },
+ {
+  "key": "27-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Dużo grzybów sierpniowych, dużo zawiei śniegowych."
+  ]
+ },
+ {
+  "key": "28-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Sierpień pogodny jest dla winogron wygodny."
+  ]
+ },
+ {
+  "key": "29-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy sierpień w upały zbywa lato długie zwykle bywa."
+  ]
+ },
+ {
+  "key": "30-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czego sierpień nie dowarzy, tego wrzesień nie doparzy."
+  ]
+ },
+ {
+  "key": "31-8",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Ostatni sierpnia zapowiada, jaka pogoda na wrzesień wypada."
+  ]
+ },
+ {
+  "key": "1-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Pierwszy września pogodny, w zimie czas wygodny.",
+   "Gdy na święty Idzi ładnie, śnieg na pewno późno spadnie.",
+   "Gdy święty Idzi burzliwie się poda, przez cały wrzesień niestała pogoda."
+  ]
+ },
+ {
+  "key": "2-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli wrzesień z pogodą zaczyna, zwykle przez miesiąc pogoda trzyma."
+  ]
+ },
+ {
+  "key": "3-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Wrzeszczy wrzesień, że już jesień."
+  ]
+ },
+ {
+  "key": "4-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy nadejdzie wrzesień, rolnik ma zawsze pełną kieszeń."
+  ]
+ },
+ {
+  "key": "5-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy wrzesień bez deszczów będzie, w zimie wiatrów pełno wszędzie."
+  ]
+ },
+ {
+  "key": "6-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jak we wrześniu krety kopią po nizinach, będzie wietrzno, ale lekka zima."
+  ]
+ },
+ {
+  "key": "7-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Święta Regina mgły rozpina.",
+   "W dzień świętej Reginy wabią chłopaków dziewczyny.",
+   "Święta Regina gałęzie ugina."
+  ]
+ },
+ {
+  "key": "8-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy Narodzenie Maryi pogodne, to będzie tak cztery tygodnie.",
+   "Jeśli w Maryi Narodzenie nie pada, to sucha jesień się zapowiada.",
+   "Gdy na Siewną jest błękitnie, wtedy pięknie wrzos zakwitnie."
+  ]
+ },
+ {
+  "key": "9-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy grzyby wielkie korzenie mają, wielką zimę zapowiadają."
+  ]
+ },
+ {
+  "key": "10-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na świętego Łukasza jest w domu chleb i kasza."
+  ]
+ },
+ {
+  "key": "11-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy na Jacka pogodnie, suche w jesieni dnie.",
+   "Jeśli na Jacka nie panuje plucha, to pewnie zima będzie sucha.",
+   "Ze wszystkich świętych najlepszy Jacek, bo kto żyje dostał placek."
+  ]
+ },
+ {
+  "key": "12-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli wrzesień będzie ciepły i suchy, pewno październik nie oszczędzi pluchy."
+  ]
+ },
+ {
+  "key": "13-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Czym dłużej jaskółki we wrześniu zostają, tym dłużej piękne i jasne dni bywają."
+  ]
+ },
+ {
+  "key": "14-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Podwyższenie Świętego Krzyża jesień się przybliża."
+  ]
+ },
+ {
+  "key": "15-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jakie Najświętszej Maryi Panny urodziny (8 wrz.), takie też i imieniny (15 wrz.).",
+   "Nikodem gdy suchy, rozprasza jesienne pluchy.",
+   "Pogoda na Nikodema - niedziel cztery deszczu nie ma."
+  ]
+ },
+ {
+  "key": "16-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Im głębiej we wrześniu grzebią się robaki, tym srożej się zima da ludziom we znaki."
+  ]
+ },
+ {
+  "key": "17-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaką pogodę na nowiu da wrzesień, taka bywa zwykle przez całą jesień."
+  ]
+ },
+ {
+  "key": "18-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy Irena z mrozem przybywa, babie lato krótkie bywa."
+  ]
+ },
+ {
+  "key": "19-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na świętego Teodora zapełniona komora."
+  ]
+ },
+ {
+  "key": "20-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy we wrześniu grzybów brak, niezawodny zimy znak."
+  ]
+ },
+ {
+  "key": "21-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy na święty Mateusz śnieg przybieżał, będzie po pas całą zimę leżał.",
+   "Mateusz bez dżdżów potoku da win do przyszłego roku.",
+   "Na święty Mateusz jeśli mróz, jeszcze sanie do szopy włóż."
+  ]
+ },
+ {
+  "key": "22-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Joachima boską mocą dzionek już się równa z nocą.",
+   "Jeśli jasny Maurycy, to rad w zimie wiatr ryczy.",
+   "Jeśli Maurycy ma jasne lice, to przyprowadzi wnet nawałnicę."
+  ]
+ },
+ {
+  "key": "23-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Skoro wrzesień, to już jesień, ale jabłek pełna kieszeń."
+  ]
+ },
+ {
+  "key": "24-9",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gerard czasem wróży na to, że z nim przyjdzie drugie lato.",
+   "Na Gerarda, gdy sucho, zima będzie z pluchą."
+  ]
+ },
+ {
+  "key": "25-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy Kleofas we mgle chodzi, mokrą zimę zwykle zrodzi."
+  ]
+ },
+ {
+  "key": "26-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "We wrześniu, gdy tłuste ptaki, srogo się zima da ludziom we znaki."
+  ]
+ },
+ {
+  "key": "27-9",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Straszna jest wrześniowa słota - miarka deszczu, korzec błota."
+  ]
+ },
+ {
+  "key": "28-9",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na świętego Wacława w polu pustki, w domu sława.",
+   "Gdy na Wacława i Michała (29 wrz.) jasno, nie będzie w zimie ciasno."
+  ]
+ },
+ {
+  "key": "29-9",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Do Michała przymrozków ile i w maju tyle.",
+   "Gdy deszcz w świętego Michała, będzie łagodna zima cała.",
+   "Gdy na Michała obrodzą żołędzie, dużo śniegów w zimie będzie."
+  ]
+ },
+ {
+  "key": "30-9",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Na świętego Hieronima jest pogoda albo jej ni ma.",
+   "Wiele ostu we wrzesień wróży pogodną jesień."
+  ]
+ },
+ {
+  "key": "1-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik mroźny, to nie będzie styczeń groźny."
+  ]
+ },
+ {
+  "key": "2-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w październiku ciepło chadza, w lutym mrozy naprowadza."
+  ]
+ },
+ {
+  "key": "3-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Gerarda gdy sucho lato będzie z pluchą."
+  ]
+ },
+ {
+  "key": "4-10",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Święty Franciszku, czego się chłopie po polu kręcisz?",
+   "Po Świętym Franciszku pasą bydło na żytnisku.",
+   "Na świętego Franciszka odlatuje pliszka"
+  ]
+ },
+ {
+  "key": "5-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W październiku, gdy liść z drzewa niesporo opada, późną to wiosnę zapowiada."
+  ]
+ },
+ {
+  "key": "6-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W październiku kawek gromada, słotne dni nam zapowiada."
+  ]
+ },
+ {
+  "key": "7-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy październik śnieżny i chłodny, to styczeń zwykle łagodny."
+  ]
+ },
+ {
+  "key": "8-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Po świętej Brygidzie babie lato przyjdzie."
+  ]
+ },
+ {
+  "key": "9-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik z wodami, grudzień z wiatrami."
+  ]
+ },
+ {
+  "key": "10-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Październik chodzi po kraju, cichnie ptactwo w gaju."
+  ]
+ },
+ {
+  "key": "11-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Październik spoczynku nie chce dać, każe orać, każe siać."
+  ]
+ },
+ {
+  "key": "12-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik ostro trzyma, zwykle potem ostra zima."
+  ]
+ },
+ {
+  "key": "13-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W Edwarda jesień twarda."
+  ]
+ },
+ {
+  "key": "14-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik ciepło trzyma, zwykle mroźna bywa zima."
+  ]
+ },
+ {
+  "key": "15-10",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Koło świętej Jadwigi babie lato fruwa na wyścigi",
+   "Od świętej Jadwigi z pola na wyścigi",
+   "Na świętą Jadwigę, jeśli deszcz nie pada, to do kapusty Bóg miodu dokłada"
+  ]
+ },
+ {
+  "key": "16-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy w święty Gaweł słota, będzie w lecie dużo błota."
+  ]
+ },
+ {
+  "key": "17-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik mokro trzyma, zwykle potem ostra zima."
+  ]
+ },
+ {
+  "key": "18-10",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Październik chodzi po kraju, wygania ptactwo z gaju.",
+   "Na Świętego Łuka schowaj pług i włóka."
+  ]
+ },
+ {
+  "key": "19-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Październik ciepły, będzie luty skrzepły."
+  ]
+ },
+ {
+  "key": "20-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Idzie jesień, a tu pusta kieszeń."
+  ]
+ },
+ {
+  "key": "21-10",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Od świętej Urszuli chłop się kożuchem otuli.",
+   "Od świętej Urszuli oczekuj śnieżnej koszuli.",
+   "Święta Urszula – perły rozsuła, miesiąc wiedział – nie powiedział, słońce wstało, pozbierało."
+  ]
+ },
+ {
+  "key": "22-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Ile razy przed nowiem w październiku śnieg spadnie, tyle razy wśród zimy odwilży przypadnie."
+  ]
+ },
+ {
+  "key": "23-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy październik śnieżny i chłodny, to styczeń bywa zwykle pogodny."
+  ]
+ },
+ {
+  "key": "24-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W jesieni prędko gdy liść z drzewa spadnie, to wkrótce zima będzie, każdy zgadnie."
+  ]
+ },
+ {
+  "key": "25-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaki październik, taki marzec, doznał tego niejeden starzec."
+  ]
+ },
+ {
+  "key": "26-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy jesień zamglona, zima zaśnieżona."
+  ]
+ },
+ {
+  "key": "28-10",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak przyjdzie Szymon i Judy, zagoń bydło z pola do budy.",
+   "Po świętym Tadeuszu trzeba chodzić w kapeluszu.",
+   "Na Świętego Szymona i Judy spodziewaj się śniegu albo grudy."
+  ]
+ },
+ {
+  "key": "29-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy październik mroźny, to nie będzie styczeń groźny."
+  ]
+ },
+ {
+  "key": "30-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w październiku ciepło chadza, w lutym mrozy naprowadza."
+  ]
+ },
+ {
+  "key": "31-10",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Październik stoi u dwora, wykop ziemniaki pora."
+  ]
+ },
+ {
+  "key": "1-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "We Wszystkich Świętych, gdy się deszcz rozpada, może słota potrzymać do końca listopada.",
+   "Czasy niekiedy bywają, że Wszyscy Święci w bieli przybywają.",
+   "Na Wszystkich Świętych ziemia skrzepła, to będzie zima ciepła, a jak deszcz, to trzeba będzie za piec wleść."
+  ]
+ },
+ {
+  "key": "2-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Dzień Zaduszny bywa pluśny, niebo płacze, ludzie płaczą, a ubogich chlebem raczą, rozdając jałmużnę za duszyczki różne.",
+   "Jak listopad ciepły - marzec mrozem przewlekły. Gdy listopad mroźny, to lipiec nie groźny."
+  ]
+ },
+ {
+  "key": "3-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Kiedy swego czasu goły las nastaje, święty Hubert z lasu cały obiad daje.",
+   "Jaki listopad trzeci, taki marzec się kleci.",
+   "Deszcz z początkiem listopada, mrozy w styczniu zapowiada."
+  ]
+ },
+ {
+  "key": "4-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Deszcze listopadowe budzą wiatry zimowe.",
+   "Gdy w listopadzie gawrony gromadnie latają, deszcze albo śniegi zapowiadają.",
+   "Na świętego Franciszka chłop w polu nic nie zyska."
+  ]
+ },
+ {
+  "key": "5-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy w listopadzie liść na szczytach drzew się trzyma, to w maju na nowe liście spadnie jeszcze zima.",
+   "Pogoda listopadowa taka jak Tytusowa (4 kwi.)."
+  ]
+ },
+ {
+  "key": "6-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jaki listopad, taki będzie marzec, prorokuje stuletni starzec."
+  ]
+ },
+ {
+  "key": "7-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jaka pogoda listopadowa, taka i marcowa.",
+   "Kiedy zima w listopadzie, jeszcze w kwietniu zimno się kładzie."
+  ]
+ },
+ {
+  "key": "8-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy łagodna jesień trzyma, będzie krótka, ostra zima."
+  ]
+ },
+ {
+  "key": "9-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Kiedy zima w listopadzie, jeszcze w kwietniu zimno się kładzie.",
+   "W listopadzie goło w sadzie.",
+   "Listopad marcowi za rodzica służy i marcowe psoty wróży."
+  ]
+ },
+ {
+  "key": "10-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w listopadzie wody się podniosą, to snadź w zimie deszcze roszą."
+  ]
+ },
+ {
+  "key": "11-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Marcinowa gęś po wodzie, Boże Narodzenie na lodzie; Marcinowa gęś po lodzie, Boże Narodzenie po wodzie.",
+   "Gdy święty Marcin po lodzie, to kolęda po wodzie.",
+   "Gdy liście przed Marcinem nie opadają, to mroźną zimę przepowiadają."
+  ]
+ },
+ {
+  "key": "12-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jaka pogoda w listopadzie służy, taka na marzec się wróży.",
+   "Witold w listopadzie grzmi, rolnik wiosną śni."
+  ]
+ },
+ {
+  "key": "13-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na Stanisława Kostkę ujrzysz śniegu drobnostkę, a na Ofiarowanie (21.11) przydadzą się sanie."
+  ]
+ },
+ {
+  "key": "14-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jeśli kret w listopadzie jeszcze późno ryje, na Nowy Rok komar wpadnie w bryję.",
+   "Listopad marcowi za rodzica służy i marcowe psoty wróży."
+  ]
+ },
+ {
+  "key": "15-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Listopad ciecze, marzec nie podpiecze.",
+   "Deszcz w połowie listopada, tęgi mróz w połowie stycznia zapowiada."
+  ]
+ },
+ {
+  "key": "16-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Deszcz w połowie listopada, tęgi mróz w styczniu zapowiada.",
+   "Deszcz w Marka, Ziemia w lecie jak skwarka."
+  ]
+ },
+ {
+  "key": "17-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "W połowie listopada deszczy, w połowie stycznia trzeszczy.",
+   "Od świętej Salomei zima jest w nadziei."
+  ]
+ },
+ {
+  "key": "18-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy listopad z deszczami, grudzień zwykle z wiatrami."
+  ]
+ },
+ {
+  "key": "19-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na świętą Elżbietę bywa śnieg nad piętę.",
+   "Święta Elżbieta - śniegiem pokryta.",
+   "Zjawia to Elżbieta święta, czy ta zima będzie cięta."
+  ]
+ },
+ {
+  "key": "20-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W listopadzie mróz, szykuj w marcu wóz."
+  ]
+ },
+ {
+  "key": "21-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Dwudziesty pierwszy listopada pogodę zimy zapowiada.",
+   "Gdy pogoda w Ofiarowanie, ostra zima nastanie.",
+   "Jaka pogoda w Ofiarowanie służy, taka się na całą zimę wróży."
+  ]
+ },
+ {
+  "key": "22-11",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Gdy na świętą Cecylię grzmi, rolnikom o dobry roku śni.",
+   "Święto Cecylii jesień nam umili."
+  ]
+ },
+ {
+  "key": "24-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Deszcz w połowie listopada, tęgi mróz w połowie stycznia zapowiada."
+  ]
+ },
+ {
+  "key": "25-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Jak się Katarzyna głosi, tak się Nowy Rok nosi.",
+   "Katarzyna dzień jaki, cały grudzień taki.",
+   "Kiedy w świętą Katarzynę lód nie stanie, to gotuj sanie."
+  ]
+ },
+ {
+  "key": "26-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "W jesieni zając kożuch na chropawy w niedługim czasie nos twój jest sinawy."
+  ]
+ },
+ {
+  "key": "27-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy zbyt długo złota jesień trzyma nagle przyjdzie zima."
+  ]
+ },
+ {
+  "key": "28-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Kiedy Zdzisiek rano szroni zima jest w zasięgu dłoni."
+  ]
+ },
+ {
+  "key": "29-11",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Słońce listopada mrozy zapowiada."
+  ]
+ },
+ {
+  "key": "30-11",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy święty Andrzej ze śniegiem przybieży sto dni śnieg w polu leży.",
+   "Na świętego Andrzeja trza kożucha dobrodzieja.",
+   "Gdy w Andrzeja deszcz lub słota, w grudniu drogi bez błota."
+  ]
+ },
+ {
+  "key": "2-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy na początku grudnia pogoda stała, zima będzie długo biała."
+  ]
+ },
+ {
+  "key": "3-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Im więcej w grudniu pogody, tym więcej wiosną wody."
+  ]
+ },
+ {
+  "key": "4-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Barbara po wodzie, Boże Narodzenie po lodzie.",
+   "Gdy w świętą Barbarę gęś po stawie chodzi, w Boże Narodzenie pływać po nim się godzi",
+   "Kiedy na Świętą Barbarę błoto, będzie zima jak złoto."
+  ]
+ },
+ {
+  "key": "5-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Piąty grudzień stycznia czyni znaki, szósty grudzień luty przepowiada, siódmy grudzień o marcu gada."
+  ]
+ },
+ {
+  "key": "6-12",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jeśli święty Mikołaj lodu nie roztopi, długo będą w ręce chuchać chłopi",
+   "W Mikołaja, gdy deszcz wszędzie, cała zima lekka będzie."
+  ]
+ },
+ {
+  "key": "7-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Na święty Ambroży poprawią się mrozy."
+  ]
+ },
+ {
+  "key": "8-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w grudniu często dmucha, to w marcu i kwietniu plucha."
+  ]
+ },
+ {
+  "key": "9-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grudzień to miesiąc zawiły, czasem srogi, czasem miły."
+  ]
+ },
+ {
+  "key": "10-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Pogoda grudniowa – wody połowa, lodu połowa."
+  ]
+ },
+ {
+  "key": "11-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Suchy grudzień stoi za to, że sucha będzie wiosna i suche lato."
+  ]
+ },
+ {
+  "key": "12-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grudzień zimny, śniegiem pokryty, daje rok w zboże obfity."
+  ]
+ },
+ {
+  "key": "13-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy w świętą Łucję mróz, styczeń nie napruszy dużo śniegu.",
+   "Święta Łucja głosi, jaką pogodę styczeń przynosi.",
+   "Od Łucji do Wigilii patrz dni - o przyszłym roku powiedzą Ci."
+  ]
+ },
+ {
+  "key": "14-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Taką pogodę Nowy Rok przynosi, jaka na Jana od Krzyża się głosi."
+  ]
+ },
+ {
+  "key": "15-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Po suchym grudniu sucha wiosna bywa i pogoda we żniwa."
+  ]
+ },
+ {
+  "key": "16-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grudzień zimny, śniegiem przykryty, daje rok w zboże obfity."
+  ]
+ },
+ {
+  "key": "17-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Mroźny grudzień, wiele śniegu, żyzny roczek będzie w biegu."
+  ]
+ },
+ {
+  "key": "18-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Jeśli w grudniu często dmucha, to w marcu wciąż plucha."
+  ]
+ },
+ {
+  "key": "19-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy w adwencie szadź na drzewach się pokazuje, to rok urodzajny nam zwiastuje."
+  ]
+ },
+ {
+  "key": "20-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Gdy ciepło na Dominika, ostra zima nas dotyka.",
+   "Gdy Makary pogodny, cały styczeń chłodny.",
+   "Dzień świętego Makarego pewnie przepowiada, czy we wrześniu pogoda, czy też ciągle pada."
+  ]
+ },
+ {
+  "key": "21-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Święty Toma Gody już doma.",
+   "Gdy na Tomasza deszcz pada, zmienną zimę zapowiada.",
+   "Na święty Tomasz dzień się z nocą sili, mniej nocy, więcej dnia będzie po chwili."
+  ]
+ },
+ {
+  "key": "22-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Gdy woda zimą huczy, to na wiosnę mróz dokuczy."
+  ]
+ },
+ {
+  "key": "23-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Grudzień ze śniegiem zimny, żytom na wskroś przyjemny."
+  ]
+ },
+ {
+  "key": "24-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Adam i Ewa pokazują, jaki styczeń i luty po nich następują",
+   "Słota w dzień Adama i Ewy, zabezpiecz od zimna cholewy.",
+   "Gdy w dzień Adama i Ewy mróz i pięknie, zima wcześnie pęknie."
+  ]
+ },
+ {
+  "key": "25-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Boże Narodzenie po lodzie, Wielkanoc po wodzie.",
+   "Boże Narodzenie po wodzie, Wielkanoc po lodzie.",
+   "Gdy w Boże Narodzenie pola są zielone, na Wielkanoc będą śniegiem przywalone."
+  ]
+ },
+ {
+  "key": "26-12",
+  "idxCount": 3,
+  "kalbiCount": 3,
+  "matches": 3,
+  "matchedTexts": [
+   "Na Świętego Szczepana, bywa błoto po kolana.",
+   "Szczepan mroźny, luty groźny.",
+   "Jaka pogoda w Szczepana panuje, taka na luty nam się szykuje."
+  ]
+ },
+ {
+  "key": "27-12",
+  "idxCount": 2,
+  "kalbiCount": 3,
+  "matches": 2,
+  "matchedTexts": [
+   "Pogoda marcowa, taka sama jak i Szczepanowa.",
+   "Wigilia jasna, święty Jan ciemny, obiecują rok przyjemny."
+  ]
+ },
+ {
+  "key": "28-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Niewiniątek dzień pokaże, jaka pogoda w marcu się okaże."
+  ]
+ },
+ {
+  "key": "30-12",
+  "idxCount": 2,
+  "kalbiCount": 2,
+  "matches": 2,
+  "matchedTexts": [
+   "Jeśli da śnieg Eugenii, to się zima przemieni.",
+   "Eugeniego lód albo woda pokaże, czy w maju będzie pogoda."
+  ]
+ },
+ {
+  "key": "31-12",
+  "idxCount": 1,
+  "kalbiCount": 1,
+  "matches": 1,
+  "matchedTexts": [
+   "Dzień Sylwestrowy pokaże czas lipcowy."
+  ]
+ }
+]
