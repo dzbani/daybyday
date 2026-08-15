@@ -1,0 +1,177 @@
+[
+ {
+  "m": 3,
+  "d": 16,
+  "names": "Izabeli, Bonifacego",
+  "text": "Marzec ciepły w połowie — kwiecień mokry.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 17,
+  "names": "Patryka, Zbigniewa",
+  "text": "Na Patryka wiosna za progiem stoi.",
+  "note": "Patryk nie jest tradycyjnym polskim świętym pogodowym, ale zdanie samo w sobie neutralne."
+ },
+ {
+  "m": 3,
+  "d": 18,
+  "names": "Cyryla, Edwarda",
+  "text": "Przed Józefem obejrzyj sad i ogród.",
+  "note": "Praktyczna rada, plauzybilna, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 19,
+  "names": "Józefa",
+  "text": "Święty Józef ciepło do chaty niesie.",
+  "note": "Zgodne z motywem wiosennego ciepła na Józefa, niepotwierdzone dosłownie."
+ },
+ {
+  "m": 3,
+  "d": 19,
+  "names": "Józefa",
+  "text": "Józef słoneczny — rok w owoce bogaty.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 3,
+  "d": 20,
+  "names": "Aleksandra, Klaudii",
+  "text": "Na równonoc wiosenną przyroda się budzi.",
+  "note": "Ogólnikowe stwierdzenie sezonowe."
+ },
+ {
+  "m": 3,
+  "d": 22,
+  "names": "Kazimiry, Eugenii",
+  "text": "Po równonocy dzień przeważa nad nocą.",
+  "note": "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+ },
+ {
+  "m": 3,
+  "d": 22,
+  "names": "Kazimiry, Eugenii",
+  "text": "Marzec ciepły po dwudziestym — kwiecień pogodny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 23,
+  "names": "Pelagii, Feliksa",
+  "text": "Marzec z burzą — rok urodzajny.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 3,
+  "d": 24,
+  "names": "Marka, Gabriela",
+  "text": "Przed Zwiastowaniem bocian ląduje.",
+  "note": "Zapowiedź motywu bocianiego związanego ze Zwiastowaniem, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "names": "Marii, Zwiastowania",
+  "text": "Zwiastowanie słoneczne — rok dostatni.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 3,
+  "d": 26,
+  "names": "Larysy, Emanueli",
+  "text": "Po Zwiastowaniu zima powrotu nie ma.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 3,
+  "d": 27,
+  "names": "Ernesta, Jana",
+  "text": "Gdy marzec ciepły na końcu — kwiecień będzie trudny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 29,
+  "names": "Wiktoryna, Helmuta",
+  "text": "Przedostatni marzec — siej owies z ufnością.",
+  "note": "Praktyczna rada, plauzybilna, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 29,
+  "names": "Wiktoryna, Helmuta",
+  "text": "Marzec z wiatrem — kwiecień z deszczem.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 3,
+  "d": 31,
+  "names": "Beniamina, Guida",
+  "text": "Ostatni marzec — wiosna rządzi.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 3,
+  "d": 31,
+  "names": "Beniamina, Guida",
+  "text": "Gdy koniec marca ciepły — maj pracowitych nagradza.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 4,
+  "d": 4,
+  "names": "Izydora, Benedykta",
+  "text": "Na Izydora pola się śmieją.",
+  "note": "Poetycka personifikacja, ale w duchu znanych zwrotów ludowych (\"słońce się śmieje\"), niepotwierdzona."
+ },
+ {
+  "m": 4,
+  "d": 7,
+  "names": "Jana, Rufina",
+  "text": "Kwiecień z burzą — rok w zboże bogaty.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 4,
+  "d": 8,
+  "names": "Cezarego, Dionizego",
+  "text": "Kwiecień mokry na początku — koniec suchy.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 4,
+  "d": 9,
+  "names": "Marii, Waltruda",
+  "text": "Kwiecień deszczowy to złoto w stodole.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 4,
+  "d": 11,
+  "names": "Leona, Filipa",
+  "text": "Kwiecień z słońcem — ziemia wysycha.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 4,
+  "d": 11,
+  "names": "Leona, Filipa",
+  "text": "Gdy kwiecień słoneczny — maj suchy.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 4,
+  "d": 18,
+  "names": "Bogumiły, Apoloniusza",
+  "text": "Kwiecień ciepły w połowie — maj kapryśny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 4,
+  "d": 19,
+  "names": "Tymona, Adolfa",
+  "text": "Kwiecień z mroźnymi nocami — majowe przymrozki pamiętaj.",
+  "note": "Praktyczne ostrzeżenie zgodne z realną wiedzą rolniczą, niepotwierdzone dosłownie."
+ }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "m": 3,
+    "d": 16,
+    "oldText": "Marzec ciepły w połowie — kwiecień mokry.",
+    "classification": "suspicious",
+    "newProverb": "Hilary zapowiada, jaka pogoda na Wielkanoc przypada.",
+    "source": "meteoprog.pl (\"Przysłowia pogodowe, 16 marca\") oraz niezależnie hebius.wordpress.com i znadrudy.pl — autentyczne przysłowie na 16 marca (dzień Hilarego). Oryginalny tekst to klasyczny fabrykowany szablon antytezy marzec-kwiecień, bez pokrycia w żadnym źródle."
+  },
+  {
+    "m": 3,
+    "d": 17,
+    "oldText": "Na Patryka wiosna za progiem stoi.",
+    "classification": "suspicious",
+    "newProverb": "Gdy na Gertrudy zjawią się bociany, to wiosna już rychło nastanie.",
+    "source": "iwonazmyslona.blogspot.com (zbiór przysłów ludowych) — 17 marca to w tradycji ludowej dzień św. Gertrudy z udokumentowanym przysłowiem bocianim. Patryk nie jest tradycyjnym polskim świętym pogodowym, a fraza \"wiosna za progiem stoi\" nie występuje w żadnym znalezionym źródle."
+  },
+  {
+    "m": 3,
+    "d": 18,
+    "oldText": "Przed Józefem obejrzyj sad i ogród.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Edwarda zimy pogarda.",
+    "source": "kalbi.pl (kalendarz przysłów, 18 marca), potwierdzone też w zbiorach cytowanych przez cytaty.pl (\"Tygodniowe przysłowia polskie na 12-18 marca\") — zgodne z imieniem Edwarda przypisanym tej dacie. Oryginalna fraza nie znaleziona w żadnym źródle."
+  },
+  {
+    "m": 3,
+    "d": 19,
+    "oldText": "Święty Józef ciepło do chaty niesie.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Józefa pięknie, zima prędko pęknie.",
+    "source": "przyslowia.net (\"Przysłowia na 19 marca\") oraz kalbi.pl — jedno z najbardziej rozpoznawalnych, wielokrotnie poświadczonych przysłów o św. Józefie. Oryginalna fraza \"ciepło do chaty niesie\" niepotwierdzona w żadnym źródle."
+  },
+  {
+    "m": 3,
+    "d": 19,
+    "oldText": "Józef słoneczny — rok w owoce bogaty.",
+    "classification": "suspicious",
+    "newProverb": "Przyjdzie święty Józef z pomocą, porówna dzień z nocą.",
+    "source": "przyslowia.net i kalbi.pl (19 marca) — realne, poświadczone przysłowie o św. Józefie. Oryginał to fabrykowany szablon antytezy \"X słoneczny — rok w Y bogaty\"."
+  },
+  {
+    "m": 3,
+    "d": 20,
+    "oldText": "Na równonoc wiosenną przyroda się budzi.",
+    "classification": "suspicious",
+    "newProverb": "Od dnia dwudziestego marca zagrzewa słońce nawet starca.",
+    "source": "kalbi.pl (20 marca), niezależnie potwierdzone na healtyplan.blogspot.com (wpis z 2014) — realne przysłowie związane z równonocą wiosenną. Oryginalne zdanie to ogólnikowe stwierdzenie bez pokrycia źródłowego."
+  },
+  {
+    "m": 3,
+    "d": 22,
+    "oldText": "Po równonocy dzień przeważa nad nocą.",
+    "classification": "suspicious",
+    "newProverb": "Jeżeli w pierwszy dzień po przesileniu marcowym burza się zdarzy, zima już nie przydarzy.",
+    "source": "kalbi.pl (22 marca) — realne przysłowie o pierwszym dniu po przesileniu wiosennym. Oryginał to zwykłe stwierdzenie faktu astronomicznego, nie przysłowie ludowe."
+  },
+  {
+    "m": 3,
+    "d": 22,
+    "oldText": "Marzec ciepły po dwudziestym — kwiecień pogodny.",
+    "classification": "suspicious",
+    "newProverb": "W marcu jak w garncu.",
+    "source": "well-known-classic — jedno z najpowszechniej znanych polskich przysłów o marcu, nie wymaga pojedynczego źródła. Oryginał to fabrykowany szablon antytezy marzec-kwiecień."
+  },
+  {
+    "m": 3,
+    "d": 23,
+    "oldText": "Marzec z burzą — rok urodzajny.",
+    "classification": "suspicious",
+    "newProverb": "Marzec zimny i słoneczny, plon zaręcza dostateczny.",
+    "source": "kalbi.pl (23 marca), potwierdzone w materiale pap-mediaroom.pl o przysłowiach pogodowych. Oryginał to fabrykowany szablon antytezy."
+  },
+  {
+    "m": 3,
+    "d": 24,
+    "oldText": "Przed Zwiastowaniem bocian ląduje.",
+    "classification": "suspicious",
+    "newProverb": "Na Świętego Szymona nie wdziewaj już kaftana.",
+    "source": "kalbi.pl (24 marca), potwierdzone też w zbiorze cytaty.pl (\"Tygodniowe przysłowia polskie na 19-25 marca\"). Oryginalna fraza o bocianie lądującym \"przed\" Zwiastowaniem niepotwierdzona — prawdziwe przysłowia bocianie dotyczą samego dnia Zwiastowania (25 marca), nie dnia poprzedniego."
+  },
+  {
+    "m": 3,
+    "d": 25,
+    "oldText": "Zwiastowanie słoneczne — rok dostatni.",
+    "classification": "suspicious",
+    "newProverb": "Na Zwiastowanie bocian na gnieździe stanie.",
+    "source": "niedziela.pl, tygodnikzamojski.pl, gazetaolsztynska.pl, podlaskie24.pl — bardzo dobrze udokumentowane, jedno z najbardziej znanych polskich przysłów ludowych związanych ze Zwiastowaniem. Oryginał to fabrykowany szablon antytezy."
+  },
+  {
+    "m": 3,
+    "d": 26,
+    "oldText": "Po Zwiastowaniu zima powrotu nie ma.",
+    "classification": "suspicious",
+    "newProverb": "Marzec, czy słoneczny, czy płaczliwy, listopada obraz żywy.",
+    "source": "mamotoja.pl (\"Przysłowia na marzec\") oraz kalendarzswiat.pl — autentyczne, ogólnomarcowe przysłowie ludowe. Oryginalna fraza niepotwierdzona w żadnym źródle; dzień po Zwiastowaniu nie ma udokumentowanych własnych przysłów pogodowych."
+  },
+  {
+    "m": 3,
+    "d": 27,
+    "oldText": "Gdy marzec ciepły na końcu — kwiecień będzie trudny.",
+    "classification": "suspicious",
+    "newProverb": "Gdy w Ruperta niebo jasne będzie, w lipcu takiż czas pogody wszędzie.",
+    "source": "kalbi.pl (27 marca) — realne przysłowie związane z dniem św. Ruperta. Oryginał to fabrykowany szablon antytezy marzec-kwiecień."
+  },
+  {
+    "m": 3,
+    "d": 29,
+    "oldText": "Przedostatni marzec — siej owies z ufnością.",
+    "classification": "suspicious",
+    "newProverb": "Ile mgieł w marcu, tyle deszczów w czerwcu.",
+    "source": "kalbi.pl (29 marca) — realne przysłowie ludowe. Oryginalna fraza \"przedostatni marzec\" to nietypowa, niespotykana w źródłach konstrukcja dat, sygnał fabrykacji."
+  },
+  {
+    "m": 3,
+    "d": 29,
+    "oldText": "Marzec z wiatrem — kwiecień z deszczem.",
+    "classification": "suspicious",
+    "newProverb": "Co marzec wypiecze, to kwiecień wysiecze.",
+    "source": "well-known-classic, tytuł artykułu mamotoja.pl potwierdza powszechną rozpoznawalność. Oryginał to fabrykowany szablon antytezy marzec-kwiecień."
+  },
+  {
+    "m": 3,
+    "d": 31,
+    "oldText": "Ostatni marzec — wiosna rządzi.",
+    "classification": "suspicious",
+    "newProverb": "Nie siejesz grochu w marcu, nie masz go w garncu.",
+    "source": "kalbi.pl (31 marca) — klasyczne, powszechnie znane przysłowie o końcu marca. Oryginał to ogólnikowe zdanie bez pokrycia źródłowego."
+  },
+  {
+    "m": 3,
+    "d": 31,
+    "oldText": "Gdy koniec marca ciepły — maj pracowitych nagradza.",
+    "classification": "suspicious",
+    "newProverb": "Po niestatecznym marcu świat się cieszy majem.",
+    "source": "Zbiór Samuela Adalberga (klasyczny XIX-wieczny zbiór polskich przysłów), potwierdzone jako przysłowie na 31 marca. Oryginał to fabrykowany szablon antytezy."
+  },
+  {
+    "m": 4,
+    "d": 4,
+    "oldText": "Na Izydora pola się śmieją.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Izydora – dla bocianów pora.",
+    "source": "mamotoja.pl (\"51 ludowych przysłów na kwiecień\") oraz niezależnie kalbi.pl (4 kwietnia) — dobrze udokumentowane przysłowie o św. Izydorze. Oryginalna poetycka personifikacja niepotwierdzona w żadnym źródle."
+  },
+  {
+    "m": 4,
+    "d": 7,
+    "oldText": "Kwiecień z burzą — rok w zboże bogaty.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Donata idź po pracę do brata.",
+    "source": "kalbi.pl (7 kwietnia, kartka z kalendarza) — realne przysłowie o św. Donacie. Uwaga: ten dokładny tekst był już wcześniej wskazany przez użytkownika jako przykład znanego, powtarzającego się szablonu fabrykacji \"X z burzą — rok w Y bogaty\"."
+  },
+  {
+    "m": 4,
+    "d": 8,
+    "oldText": "Kwiecień mokry na początku — koniec suchy.",
+    "classification": "suspicious",
+    "newProverb": "Kwiecień-plecień, bo przeplata, trochę zimy, trochę lata.",
+    "source": "well-known-classic — najbardziej znane polskie przysłowie o kwietniu, potwierdzone m.in. przez kalbi.pl i kalendarzswiat.pl. Oryginał to fabrykowany szablon antytezy początek-koniec miesiąca."
+  },
+  {
+    "m": 4,
+    "d": 9,
+    "oldText": "Kwiecień deszczowy to złoto w stodole.",
+    "classification": "suspicious",
+    "newProverb": "Deszcze częste w kwietniu wróżą, że owoców będzie dużo.",
+    "source": "kalendarzswiat.pl (\"Przysłowia ludowe na kwiecień\") — realne przysłowie o deszczowym kwietniu. Oryginalna fraza \"złoto w stodole\" niepotwierdzona w żadnym źródle."
+  },
+  {
+    "m": 4,
+    "d": 11,
+    "oldText": "Kwiecień z słońcem — ziemia wysycha.",
+    "classification": "suspicious",
+    "newProverb": "Kwiecień, co deszczem rosi, wiele owoców przynosi.",
+    "source": "kalbi.pl (11 kwietnia, powtarzające się w wielu latach kartki kalendarza, np. 1981, 1993) — realne przysłowie. Oryginał to ogólnikowe zdanie bez pokrycia źródłowego."
+  },
+  {
+    "m": 4,
+    "d": 11,
+    "oldText": "Gdy kwiecień słoneczny — maj suchy.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy w kwietniu słonko grzeje, wtedy chłop nie zubożeje.",
+    "source": "kalendarzswiat.pl (\"Przysłowia ludowe na kwiecień\") — realne, znane przysłowie. Oryginał to fabrykowany szablon antytezy kwiecień-maj."
+  },
+  {
+    "m": 4,
+    "d": 18,
+    "oldText": "Kwiecień ciepły w połowie — maj kapryśny.",
+    "classification": "suspicious",
+    "newProverb": "Mokre dni kwietnia zazwyczaj wróżą, że w lecie będzie owoców dużo.",
+    "source": "kalbi.pl (18 kwietnia, kartka z kalendarza 2029) — realne przysłowie. Oryginał to fabrykowany szablon antytezy kwiecień-maj."
+  },
+  {
+    "m": 4,
+    "d": 19,
+    "oldText": "Kwiecień z mroźnymi nocami — majowe przymrozki pamiętaj.",
+    "classification": "suspicious",
+    "newProverb": "Ciepły kwiecień, mokry maj – będzie zboże jako gaj.",
+    "source": "mamotoja.pl i kalendarzswiat.pl — autentyczne, dobrze udokumentowane przysłowie ogólnokwietniowe. Dla samej daty 19 kwietnia (Tymona, Adolfa) nie znaleziono wiarygodnie potwierdzonego przysłowia patronalnego (znaleziona fraza o lnie i św. Jerzym z kalbi.pl budzi wątpliwości, bo inne źródła — mamotoja.pl — przypisują św. Jerzego do 23 kwietnia), dlatego użyto sprawdzonego przysłowia ogólnego zamiast niepewnego patronalnego."
+  }
+]
