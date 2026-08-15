@@ -1,0 +1,202 @@
+[
+ {
+  "m": 2,
+  "d": 22,
+  "oldText": "Na Piotrowym Stolcu pola śniegiem okute.",
+  "classification": "suspicious",
+  "newProverb": "Gdy mróz w lutym dwudziestym drugim, dzień straszy nas mrozem długim.",
+  "source": "Nie znaleziono żadnego potwierdzenia oryginału (dziwaczne, niespotykane odniesienie do święta Katedry św. Piotra w kontekście pogodowym). Zamiennik potwierdzony: kalbi.pl (kartka na 22 lutego) oraz przyslowia.net, dokładnie na tę datę."
+ },
+ {
+  "m": 2,
+  "d": 23,
+  "oldText": "Przedostatni tydzień lutowy — wiosna w bramie.",
+  "classification": "suspicious",
+  "newProverb": "Silne wiatry przy końcu lutego, spodziewaj się zatem lata żyznego.",
+  "source": "Generyczne sformułowanie bez pokrycia w źródłach. Zamiennik potwierdzony: kalbi.pl i kalendarzswiat.pl, dokładnie na 23 lutego."
+ },
+ {
+  "m": 2,
+  "d": 23,
+  "oldText": "Gdy luty bez śniegu — lato bez deszczu.",
+  "classification": "suspicious",
+  "newProverb": "Jeśli luty ciepło trzyma, będzie jeszcze w marcu zima.",
+  "source": "Klasyczny szablon antytezy X—Y bez potwierdzenia. Zamiennik potwierdzony: meteoprog.pl (ogólnomiesięczna lista przysłów o lutym), inne niż użyte dla 23a."
+ },
+ {
+  "m": 2,
+  "d": 24,
+  "oldText": "Na Maciejowy dzień zima bierze w lód albo pierzyna w błoto wpada.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy Gromniczna zimę traci, to Święty Maciej (24.02) ją wzbogaci.",
+  "source": "Dziwny, niejasny obraz \"pierzyna w błoto\" nieobecny w żadnym źródle; prawdziwe przysłowia o Macieju (kalbi.pl, meteoprog.pl, przyslowia.net) mają zupełnie inną treść (lody, chłody, żyto). Zamiennik potwierdzony na dokładnie tę datę."
+ },
+ {
+  "m": 2,
+  "d": 25,
+  "oldText": "Wiktor z odwilżą — marzec ze śniegiem.",
+  "classification": "suspicious",
+  "newProverb": "Skoro po Macieju drzewa się ogrzeją, leć do sadu, oczyść go z owadów.",
+  "source": "Imię Wiktor nie występuje w żadnym znalezionym przysłowiu pogodowym — to fabrykowany szablon. Zamiennik potwierdzony: kalbi.pl, dokładnie na 25 lutego."
+ },
+ {
+  "m": 2,
+  "d": 26,
+  "oldText": "Ostatni tydzień lutowy liczy mrozy.",
+  "classification": "suspicious",
+  "newProverb": "Luty gdy wiatrów i mrozów nie daje, prowadzi rok słotny i nieurodzaje.",
+  "source": "Generyczne, brak potwierdzenia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 26 lutego."
+ },
+ {
+  "m": 2,
+  "d": 27,
+  "oldText": "Gabriel z ciepłem — marzec zaskakuje.",
+  "classification": "suspicious",
+  "newProverb": "Luty, szykuj buty, bo nadejdą deszcze, pluty.",
+  "source": "Imię Gabriel nie występuje w żadnym znalezionym przysłowiu pogodowym. Zamiennik potwierdzony: kalbi.pl, dokładnie na 27 lutego."
+ },
+ {
+  "m": 2,
+  "d": 27,
+  "oldText": "Luty ciepły — marzec zdradliwy.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy kot w lutym na słonku się grzeje, musi w marcu zajść na przypiecek.",
+  "source": "Szablon antytezy bez pokrycia w źródłach. Zamiennik potwierdzony: kalendarzswiat.pl, dokładnie na 27 lutego (inny niż użyty dla 27a)."
+ },
+ {
+  "m": 2,
+  "d": 28,
+  "oldText": "Ostatni dzień lutego — zima pożegnać się nie spieszy.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy w lutym tajanie, szykuj chłopie sanie.",
+  "source": "Generyczne, brak potwierdzenia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 28 lutego."
+ },
+ {
+  "m": 3,
+  "d": 1,
+  "oldText": "Pierwszy marzec ciepły — kwiecień mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Na Świętego Albina rzadka u ludzi mina, bo post się zaczyna.",
+  "source": "Generyczna korelacja bez pokrycia. Zamiennik potwierdzony: meteoprog.pl i kalbi.pl, dokładnie na 1 marca, dodatkowo pasuje do patrona dnia (Albina)."
+ },
+ {
+  "m": 3,
+  "d": 2,
+  "oldText": "Marzec deszczowy — maj słoneczny.",
+  "classification": "suspicious",
+  "newProverb": "Czasem i w marcu, zetnie wodę w garncu.",
+  "source": "Szablon antytezy bez pokrycia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 2 marca."
+ },
+ {
+  "m": 3,
+  "d": 3,
+  "oldText": "Kunegunda z mrozem — Kazimierz z odwilżą.",
+  "classification": "suspicious",
+  "newProverb": "Śnieg marcowy owocom niezdrowy.",
+  "source": "Generyczna kombinacja dwóch patronów bez pokrycia w źródłach. Zamiennik potwierdzony: kalbi.pl, dokładnie na 3 marca (imieniny Kunegundy)."
+ },
+ {
+  "m": 3,
+  "d": 4,
+  "oldText": "Kazimierz mroźny — rok zbożny.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Kazimierza pełno już młodego zwierza.",
+  "source": "Sprawdzono wiele realnych przysłów o Kazimierzu (Wikicytaty, okiemjadwigi.pl, kalbi.pl) — żadne nie ma formy \"Kazimierz mroźny — rok zbożny\"; realne mówią o odejściu zimy, skowronku, czajce, młodym zwierzu. Zamiennik potwierdzony: kalbi.pl, dokładnie na 4 marca."
+ },
+ {
+  "m": 3,
+  "d": 6,
+  "oldText": "Marzec z mrozem po Kazimierzu — krótko postoi.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy w marcu deszczu wiele, nieurodzaj zboża ściele.",
+  "source": "Generyczne, brak potwierdzenia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 6 marca."
+ },
+ {
+  "m": 3,
+  "d": 6,
+  "oldText": "Gdy w marcu burza — maj gorący.",
+  "classification": "suspicious",
+  "newProverb": "W marcu, gdy są grzmoty, urośnie zboże ponad płoty.",
+  "source": "Motyw marcowych grzmotów jest realny, ale żadne znalezione przysłowie (meteoprog.pl, wiktionary) nie kończy się wnioskiem \"maj gorący\" — realne warianty mówią o gradzie, śniegu w maju lub obfitym zbożu. Zamiennik potwierdzony, ten sam realny motyw."
+ },
+ {
+  "m": 3,
+  "d": 7,
+  "oldText": "Marzec z piorunem — lato z grzmotem.",
+  "classification": "suspicious",
+  "newProverb": "W marcu, gdy grzmot na lody spada, w lecie grad zapowiada.",
+  "source": "Jak wyżej — motyw realny, ale ta konkretna fraza niepotwierdzona. Zamiennik potwierdzony: meteoprog.pl/wiktionary, inny wariant niż użyty dla 6 marca."
+ },
+ {
+  "m": 3,
+  "d": 8,
+  "oldText": "Na Marię w marcu kwiaty w śniegu.",
+  "classification": "suspicious",
+  "newProverb": "Marzec - figlarzec, przeplata, trochę zimy, trochę lata.",
+  "source": "Poetycki, ale niepotwierdzony; realne przysłowie na 8 marca (kalbi.pl) nie ma nic wspólnego z Marią ani kwiatami. Zamiennik potwierdzony: kalbi.pl, dokładnie na 8 marca, znany klasyk."
+ },
+ {
+  "m": 3,
+  "d": 9,
+  "oldText": "Franciszka w słońcu — wiosna za tydzień.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Franciszka z wichrem po polu hasa, może sypnąć śniegiem powyżej pasa.",
+  "source": "Realne przysłowie na 9 marca (kalbi.pl) dotyczące właśnie Franciszki istnieje i ma zupełnie inną treść (wicher, śnieg) — potwierdza to, że oryginał jest fabrykacją. Zamiennik dokładnie pasuje do imienia i daty."
+ },
+ {
+  "m": 3,
+  "d": 10,
+  "oldText": "Marzec deszczowy i zimny — czerwiec gorący.",
+  "classification": "suspicious",
+  "newProverb": "Gdy mróz w marcu dnia dziesiątego, jeszcze czterdzieści dni mrozu takiego.",
+  "source": "Szablon antytezy bez pokrycia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 10 marca."
+ },
+ {
+  "m": 3,
+  "d": 10,
+  "oldText": "Gdy marzec szumi — bociany rychło lecą.",
+  "classification": "suspicious",
+  "newProverb": "Ile razy marzec mgłą uraczy, tyle niepogody w lecie znaczy.",
+  "source": "Motyw bocianiego przylotu wiązany jest w źródłach (bociany.pl, Wikiźródła) z dniami św. Józefa (19.03) i Gertrudy (17.03), nie z \"szumem\" marca 10 dnia — fraza niepotwierdzona. Zamiennik: meteoprog.pl, ogólnomarcowe przysłowie (inne niż użyte dla 10a)."
+ },
+ {
+  "m": 3,
+  "d": 11,
+  "oldText": "Na Benedykta słońce — dobre zboże w polu.",
+  "classification": "suspicious",
+  "newProverb": "Marzec uparty stroi z pługiem żarty.",
+  "source": "Generyczne, brak potwierdzenia; realne przysłowie na 11 marca (kalbi.pl) nie dotyczy Benedykta ani zboża. Zamiennik potwierdzony: kalbi.pl, dokładnie na 11 marca."
+ },
+ {
+  "m": 3,
+  "d": 12,
+  "oldText": "Gdy Grzegorz przyszedł, bociany za nim przyszły.",
+  "classification": "suspicious",
+  "newProverb": "Na Św. Grzegorza idzie zima do morza.",
+  "source": "Sprawdzono pełną listę przysłów o Grzegorzu (meteoprog.pl, 11 pozycji na 12 marca) — żadne nie wspomina bocianów; skojarzenie bociana z imieniem Grzegorz to wyłącznie czeska tradycja nadawania bocianom imion, nie polskie przysłowie. Zamiennik potwierdzony, klasyczny, dokładnie na tę datę."
+ },
+ {
+  "m": 3,
+  "d": 13,
+  "oldText": "Po Grzegorzu bocian przyleciał — zima odfrunęła.",
+  "classification": "suspicious",
+  "newProverb": "Każdy gospodarz zasiewa pierwszy groch na marca, aby też próżnego nie miał na ognicku garnca.",
+  "source": "Ładna personifikacja, ale niepotwierdzona i błędnie przenosi temat Grzegorza (12 marca) na 13 marca. Zamiennik potwierdzony: kalbi.pl, dokładnie na 13 marca."
+ },
+ {
+  "m": 3,
+  "d": 14,
+  "oldText": "Marzec z wichrem — kwiecień spokojny.",
+  "classification": "suspicious",
+  "newProverb": "Gdy suchy marzec, a maj mokry bywa, żyznego roku oracz się spodziewa.",
+  "source": "Szablon antytezy bez pokrycia. Zamiennik potwierdzony: kalbi.pl, dokładnie na 14 marca."
+ },
+ {
+  "m": 3,
+  "d": 15,
+  "oldText": "Gdy marzec z mrozem w połowie — nie siać przed końcem marca.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w marcu deszcz pada, wtedy rolnik biada, gdy słonko jaśnieje, to rolnik się śmieje.",
+  "source": "Praktyczna rada rolnicza brzmi plauzybilnie, ale nie znaleziono jej w żadnym źródle; realne przysłowie na 15 marca (kalbi.pl) ma zupełnie inną treść. Zamiennik potwierdzony, dokładnie na tę datę."
+ }
+]
