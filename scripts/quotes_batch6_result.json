@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Jeśli wszyscy myślą podobnie, to ktoś nie myśli.",
+    "original_author": "Generał George S. Patton",
+    "status": "misattributed",
+    "correct_author": "nieznany (Patton zmarł w 1945 r.; najwcześniejsze udokumentowane powiązanie z jego nazwiskiem pochodzi dopiero z książki z 1990 r. 'Great Quotes From Great Leaders' - 45 lat po jego śmierci)",
+    "evidence": "Quote Investigator ustalił, że książka 'I Remember General Patton's Principles' (1979) Portera B. Williamsona wspomina tę zasadę jako łączoną zarówno z Pattonem, jak i Benjaminem Franklinem, ale NIE przypisuje jej wprost żadnemu z nich. Dopiero zbiór cytatów z 1990 r. przypisał ją jednoznacznie Pattonowi. Nawet menedżerowie Google (Eric Schmidt i Jonathan Rosenberg) w książce 'How Google Works' (2014) nie byli w stanie zweryfikować pochodzenia cytatu. Wzorzec (późne, pośmiertne przypisanie do autorytatywnej postaci bez dowodu źródłowego) jest analogiczny do potwierdzonych fałszywych atrybucji z poprzednich partii (np. cytat Hawkinga). https://quoteinvestigator.com/2022/11/05/think-alike/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Zawsze wolę wierzyć w to, co najlepsze w każdym, to oszczędza tyle kłopotów.",
+    "original_author": "Rudyard Kipling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczna linijka autorstwa Kiplinga, ale wypowiedziana przez fikcyjną postać w jego opowiadaniu 'A Second-Rate Woman' ('I always prefer to believe the best of everybody, it saves so much trouble'), gdzie inna postać natychmiast przedstawia przeciwny pogląd. Analogicznie do cytatu Goethego z partii 5 - to Kipling jest autorem opublikowanego tekstu, nawet jeśli w fikcyjnym dialogu, więc przypisanie jest technicznie zasadne, choć brakuje kontekstu, że to głos postaci, a nie osobista deklaracja autora. https://quoteinvestigator.com/2022/06/30/believe-best/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Szczebel drabiny nigdy nie był przeznaczony do spoczynku, a jedynie do przytrzymania stopy człowieka na tyle długo, aby umożliwić mu postawienie drugiej nieco wyżej.",
+    "original_author": "Thomas Huxley",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('The rung of a ladder was never meant to rest upon, but only to hold a man's foot long enough to enable him to put the other somewhat higher') jest konsekwentnie i wyłącznie przypisywany Thomasowi Henry'emu Huxleyowi w wielu źródłach (Goodreads, BrainyQuote, AZQuotes, Forbes), z odniesieniem do jego 'Collected Essays'. Brak jakiegokolwiek alternatywnego autora czy dowodu obalającego. https://www.forbes.com/quotes/9177/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zawsze lepiej jest być na dole drabiny, na którą chcesz się wspiąć, niż na szczycie tej, na którą nie chcesz.",
+    "original_author": "Martin Freeman",
+    "status": "misattributed",
+    "correct_author": "nieznany / niejasne pochodzenie (najczęściej przypisywane piosenkarzowi Stephenowi Kelloggowi; wariant pojawił się też w brytyjskim serialu 'The Office'); aktor Martin Freeman nie ma z tym cytatem żadnego udokumentowanego związku",
+    "evidence": "Dogłębne przeszukanie nie znalazło ŻADNEGO źródła łączącego ten cytat z aktorem Martinem Freemanem (Bilbo Baggins, dr Watson). Wersje tej sentencji są przypisywane m.in. Dave'owi Eggersowi ('Better to be at the bottom of a ladder you want to climb than in the middle of some ladder you don't'), piosenkarzowi Stephenowi Kelloggowi, a wariant pojawia się jako kwestia postaci Tima w brytyjskim 'The Office'. To wyraźna, bezpodstawna atrybucja do niewłaściwej znanej osoby. https://bookmarketingbestsellers.com/stephen-kellogg-on-climbing-ladders/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Ciemność nie może wypędzić ciemności; tylko światło może to zrobić. Nienawiść nie może wypędzić nienawiści; tylko miłość może to zrobić.",
+    "original_author": "Martin Luther King Jr.",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny, dokładnie udokumentowany cytat z eseju 'Loving Your Enemies' w zbiorze kazań MLK 'Strength to Love' (1963): 'Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.' Potwierdzone m.in. przez Snopes i Stanford Book Haven, które badały autentyczność wersji krążących online. https://www.snopes.com/fact-check/darkness-quote-mlk/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Następnym razem, gdy pomyślisz, że jesteś ważny, spróbuj rozkazywać cudzemu psu.",
+    "original_author": "Will Rogers",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat Willa Rogersa: 'If you get to thinking you're a person of some influence, try ordering somebody else's dog around.' Konsekwentnie i wyłącznie przypisywany jemu w wielu poważanych źródłach (AZQuotes, Goodreads, Thought Catalog), zgodny z jego znanym stylem humorystyczno-ludowym.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jesteśmy mniej znudzeni niż nasi przodkowie, ale bardziej boimy się nudy.",
+    "original_author": "Bertrand Russell",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dokładny cytat z książki Bertranda Russella 'The Conquest of Happiness' (1930), z rozdziału 'Boredom and Excitement': 'We are less bored than our ancestors were, but we are more afraid of boredom.' Potwierdzone m.in. przez The Marginalian i pełny tekst książki dostępny online (russell-j.com).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Oczekiwanie, że świat potraktuje cię sprawiedliwie, ponieważ jesteś dobrym człowiekiem, jest trochę jak oczekiwanie, że byk cię nie zaatakuje, ponieważ jesteś wegetarianinem.",
+    "original_author": "Dennis Wholey",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Expecting the world to treat you fairly because you are a good person is a little like expecting the bull not to attack you because you are a vegetarian') konsekwentnie i wyłącznie przypisywany Dennisowi Wholeyowi (amerykańskiemu prezenterowi telewizyjnemu i autorowi, ur. 1939) w licznych bazach cytatów (Goodreads, Quotefancy, Elephant Journal), ale żadne źródło nie wskazuje konkretnej książki czy wystąpienia. Brak dowodu w żadną stronę, ale to realna, weryfikowalna osoba (nie celebrycka 'przynęta' jak w innych przypadkach tej partii).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wczesny ptak dostaje robaka, ale druga mysz dostaje ser.",
+    "original_author": "Steven Wright",
+    "status": "misattributed",
+    "correct_author": "nieznany (żart krążył anonimowo na Usenecie już w grudniu 1994 r.; z nazwiskiem Wrighta połączono go dopiero w listopadzie 1997 r.)",
+    "evidence": "Quote Investigator jednoznacznie stwierdza, że dowody na autorstwo Wrighta są 'słabe' ('the evidence is weak'). Najwcześniejszy udokumentowany wariant pojawił się w grudniu 1994 r. na Usenecie (grupa alt.buddha.short.fat.guy) bez żadnej atrybucji. Dopiero w listopadzie 1997 r. - trzy lata później - zaczęto łączyć go z Wrightem. QI dodaje wprost: 'many one-liners are incorrectly ascribed to Wright' (wiele jednowierszowych żartów jest błędnie przypisywanych Wrightowi). https://quoteinvestigator.com/2013/01/25/second-mouse/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Aby widzieć, musimy zapomnieć nazwę rzeczy, na którą patrzymy.",
+    "original_author": "Claude Monet",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('To see we must forget the name of the thing we are looking at') konsekwentnie i wyłącznie przypisywany Monetowi (AZQuotes, Quotefancy, liczne artykuły o jego filozofii malarskiej), tematycznie spójny z jego znanym podejściem do postrzegania i impresjonizmu, ale żadne źródło nie wskazuje konkretnego listu, wywiadu czy publikacji. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Czasami twoja radość jest źródłem twojego uśmiechu, ale czasami twój uśmiech może być źródłem twojej radości.",
+    "original_author": "Thich Nhat Hanh",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie i wyłącznie przypisywany Thich Nhat Hanhowi (Goodreads, BrainyQuote, Quotefancy, Pass It On), zgodny z jego znanym stylem nauczania o uważności, ale żadne z przeszukanych źródeł nie wskazuje konkretnej książki (np. 'Being Peace' czy 'Peace Is Every Step'). Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie wiem, co przyniesie przyszłość, ale wiem, kto ją ma.",
+    "original_author": "Ralph Abernathy",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('I don't know what the future may hold, but I know who holds the future') konsekwentnie i wyłącznie przypisywany Ralphowi Abernathy'emu - realnej, historycznej postaci, bliskiemu współpracownikowi MLK i współzałożycielowi SCLC (AZQuotes, BrainyQuote, Quotefancy) - zgodny z jego wiarą religijną i retoryką z ruchu praw obywatelskich, ale żadne źródło nie wskazuje konkretnego kazania czy wystąpienia. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kreatywność to po prostu łączenie rzeczy. Kiedy pytasz kreatywnych ludzi, jak coś zrobili, czują się trochę winni, ponieważ tak naprawdę tego nie zrobili, tylko coś zobaczyli.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny, dokładnie udokumentowany cytat z wywiadu Steve'a Jobsa dla magazynu Wired (luty 1996, przeprowadzony przez Gary'ego Wolfa): 'Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something...' Jedno z najsłynniejszych, solidnie zweryfikowanych powiedzeń Jobsa.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Prawie wszyscy ludzie są w stanie znieść przeciwności losu, ale jeśli chcesz sprawdzić charakter człowieka, daj mu siłę.",
+    "original_author": "Abraham Lincoln",
+    "status": "misattributed",
+    "correct_author": "Robert G. Ingersoll (który powiedział to O Lincolnie, chwaląc jego charakter, a nie Lincoln sam o sobie); poprzednik myśli: Thomas Carlyle, 1841",
+    "evidence": "Quote Investigator i Snopes jednoznacznie stwierdzają, że nie ma żadnego dowodu, iż Lincoln wypowiedział lub napisał te słowa. Sentencja wywodzi się od szkockiego filozofa Thomasa Carlyle'a (1841: 'for one man who can stand prosperity, there are a hundred that will stand adversity'), a mówca Robert G. Ingersoll skomponował podobne fragmenty CHWALĄCE charakter Lincolna ('if you wish to know what a man really is give him power'). Współczesna wersja przypisana bezpośrednio Lincolnowi pojawiła się dopiero w gazetowej kolumnie z 1931 r. - efekt pomylenia słów O Lincolnie ze słowami Lincolna. https://quoteinvestigator.com/2016/04/14/adversity/ ; https://www.snopes.com/fact-check/lincoln-character-power/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Twój umysł odda ci dokładnie tyle, ile w niego włożysz.",
+    "original_author": "James Joyce",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Your mind will give back exactly what you put into it') krąży szeroko w internecie przypisywany Joyce'owi (Goodreads, AZQuotes, Quotefancy), ale nie znaleziono go w żadnym z jego głównych dzieł ('Ulysses', 'Dubliners', 'A Portrait of the Artist', 'Finnegans Wake') ani w zestawieniach jego autentycznych, udokumentowanych cytatów literackich. Stylistycznie brzmi bardziej jak współczesna maksyma motywacyjna niż fragment prozy Joyce'a, ale nie znaleziono jednoznacznego źródła obalającego atrybucję (np. Wikiquote). Brak rozstrzygnięcia w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Są dwa dni w roku, w których nie możemy nic zrobić: wczoraj i jutro.",
+    "original_author": "Mahatma Gandhi",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Ta sama sentencja krąży w dwóch konkurencyjnych wersjach - przypisywana zarówno Gandhiemu ('There are two days in the year that we can not do anything, yesterday and tomorrow'), jak i Dalajlamie ('There are only two days in the year that nothing can be done... Today is the right day to Love, Believe, Do and mostly Live'), przy czym wersja Dalajlamy jest w internecie znacznie bardziej rozpowszechniona. Podwójna, sprzeczna atrybucja do dwóch różnych znanych postaci duchowych jest typowym sygnałem ostrzegawczym dla fabrykacji (jak w innych potwierdzonych przypadkach tej i poprzednich partii), ale nie znaleziono dedykowanego dochodzenia (np. Quote Investigator) rozstrzygającego, który (jeśli którykolwiek) autor jest prawdziwy. Brak jednoznacznego dowodu w żadną stronę specyficznie dla wersji przypisanej Gandhiemu.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie jest śmiałą przygodą albo nie jest niczym.",
+    "original_author": "Helen Keller",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Quote Investigator potwierdza autentyczność: cytat pochodzi z książki Helen Keller 'Let Us Have Faith' (1940), rozdział 'Faith Fears Not': 'Life is either a daring adventure or nothing.' (str. 50-51 wydania z 1946 r.). QI zaleca używać wersji bez dodanego 'at all', która dokładnie odpowiada badanej polskiej wersji ('nie jest niczym', bez 'w ogóle'). https://quoteinvestigator.com/2014/11/21/adventure/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Obiecaj mi, że zawsze będziesz pamiętać: jesteś odważniejszy niż myślisz, silniejszy niż się wydajesz i mądrzejszy niż myślisz.",
+    "original_author": "A. A. Milne",
+    "status": "misattributed",
+    "correct_author": "Carter Crocker (scenarzysta filmu Disneya 'Pooh's Grand Adventure: The Search for Christopher Robin', 1997)",
+    "evidence": "Te słowa NIE pojawiają się w oryginalnej książce A. A. Milne'a 'The House at Pooh Corner' (1928) ani w żadnym innym jego tekście o Kubusiu Puchatku. Pochodzą z filmu animowanego Disneya 'Pooh's Grand Adventure: The Search for Christopher Robin' (1997), napisanego przez Cartera Crockera, w którym słowa te wypowiada Christopher Robin do Puchatka. Milne zmarł w 1956 r., ponad 40 lat przed powstaniem tego filmu. Udokumentowane m.in. przez badania cytowane w artykule 'A.A. Milne Would Never Write That!' (LinkedIn) oraz stronę poświęconą błędnym cytatom Puchatka (poohmisquoted.weebly.com).",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Opróżnij swój umysł, bądź bezkształtny. Bezkształtny, jak woda. Jeśli wlejesz wodę do kubka, stanie się ona kubkiem. Bądź wodą, mój przyjacielu.",
+    "original_author": "Bruce Lee",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny, dobrze udokumentowany cytat Bruce'a Lee. Idea pierwotnie pojawiła się we wrześniu 1971 r. w odcinku 'The Way of the Intercepting Fist' serialu 'Longstreet' (scenariusz Stirlinga Silliphanta, przyjaciela i ucznia Lee, opartego na ich prawdziwych rozmowach treningowych), a swoją ikoniczną, najbardziej znaną formę przybrał w wywiadzie Lee dla 'The Pierre Berton Show' w grudniu 1971 r.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wszystkie drogi prowadzą w końcu do domu. Trzeba o tym zawsze pamiętać — zarówno w pracy, jak i w życiu.",
+    "original_author": "Chiwetel Ejiofor",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "To autentyczna, osobista wypowiedź aktora Chiwetela Ejiofora ('All roads lead home in the end. You've got to keep that in mind always – in your work and in your life'), pochodząca z jego wywiadu dla Interview Magazine, w którym mówił o swoich nigeryjskich korzeniach i tożsamości - NIE jest to kwestia z żadnej roli filmowej. Uwaga z zadania okazała się nietrafiona - to jego prywatna refleksja, a nie fikcyjna postać.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Prawdziwy sekret szczęścia tkwi w prawdziwym zainteresowaniu wszystkimi szczegółami codziennego życia.",
+    "original_author": "William Morris",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny fragment z wykładu Williama Morrisa 'The Aims of Art' (zebranego w tomie 'Signs of Change', 1888). Pełny, oryginalny fragment brzmi: 'They will discover, or rediscover rather, that the true secret of happiness lies in the taking a genuine interest in all the details of daily life, in elevating them by...' - popularna wersja jest skrócona i wyrwana z kontekstu (podobnie jak cytat Goethego w partii 5), ale autorstwo Morrisa jest prawdziwe.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Ćwicz to, co wiesz, a pomoże ci to wyjaśnić to, czego teraz nie wiesz.",
+    "original_author": "Rembrandt",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wypowiedź Rembrandta odnotowana przez jego ucznia Samuela van Hoogstratena w 1678 r., cytowana m.in. w 'A Dictionary of Thoughts' Tryona Edwardsa (1908, str. 131): 'Practice what you know, and it will help to make clear what now you do not know.' Źródło pośrednie (relacja ucznia, przekazana przez XX-wieczny słownik cytatów), ale konsekwentnie i wiarygodnie udokumentowane jako świadectwo naocznego świadka.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jakkolwiek dobrze rozumiem, moje zrozumienie może być tylko nieskończenie małym ułamkiem wszystkiego, co chcę zrozumieć.",
+    "original_author": "Ada Lovelace",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wierna, skrócona parafraza autentycznego fragmentu z listów Ady Lovelace: 'I never am really satisfied that I understand anything; because, understand it well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand about the many connections and relations which occur to me...' Cytat pochodzi z jej rzeczywistej korespondencji, cytowanej w biografiach (m.in. Betty Toole 'Ada, the Enchantress of Numbers').",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Grozi ci życie tak wygodne i miękkie, że umrzesz, nigdy nie realizując swojego prawdziwego potencjału.",
+    "original_author": "David Goggins",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny, dokładnie zlokalizowany cytat z bestsellerowej książki Davida Goggins 'Can't Hurt Me: Master Your Mind and Defy the Odds' (2018): 'You are in danger of living a life so comfortable and soft, that you will die without ever realizing your true potential.' Współczesny autor, łatwy do zweryfikowania, solidnie potwierdzony.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli słyszysz psy, idź dalej. Jeśli widzisz pochodnie w lesie, idź dalej. Nigdy się nie zatrzymuj. Jeśli chcesz posmakować wolności, idź dalej.",
+    "original_author": "Harriet Tubman",
+    "status": "misattributed",
+    "correct_author": "nieznany - to fikcyjny tekst z popularnych, beletryzowanych biografii Harriet Tubman dla młodzieży, nie jej autentyczne, historyczne słowa",
+    "evidence": "Kate Larson, uznana biografka Harriet Tubman (autorka 'Bound for the Promised Land'), stwierdziła wprost: 'Harriet Tubman never said this — it comes from one of the scores of juvenile Harriet Tubman fictionalized biographies' (Harriet Tubman nigdy tego nie powiedziała - to pochodzi z jednej z licznych beletryzowanych biografii dla młodzieży). Cytat jest silnie kojarzony z filmem 'Harriet' (2019), co potwierdza podejrzenie z zadania - to fraza scenariuszowa/popkulturowa, a nie udokumentowana wypowiedź historyczna. Mimo to jest masowo powielany jako autentyczny (Goodreads, AZQuotes, Quotefancy).",
+    "recommendation": "remove"
+  }
+]
