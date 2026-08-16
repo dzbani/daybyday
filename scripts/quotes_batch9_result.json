@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Świat może być lepszy, jeśli będzie w nim miłość, tolerancja i pokora.",
+    "original_author": "Irena Sendlerowa",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Polskie Radio (artykuł 'Miłość, tolerancja i pokora') potwierdza, że na pytanie o to, co najważniejsze w życiu, Sendlerowa konsekwentnie odpowiadała: 'Miłość, tolerancja i pokora'. Te słowa są też znane jako zamykająca fraza filmu biograficznego 'Dzieci Ireny Sendlerowej' oraz cytowane w kontekście jej listu do Senatu RP z 2007 roku. Wielokrotnie potwierdzone w niezależnych polskich źródłach, nie tylko na anglojęzycznych serwisach z cytatami. https://www.polskieradio.pl/24/289/artykul/171050,milosc-tolerancja-i-pokora ; https://www.shalombait.org.ar/en/irena-sendler-el-mundo-puede-ser-un-lugar-mejor-si-hay-amor-tolerancia-y-humildad/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wycięcie negatywnych ludzi z mojego życia nie oznacza, że ich nienawidzę, oznacza po prostu, że szanuję siebie.",
+    "original_author": "Marilyn Monroe",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Brak jakiegokolwiek udokumentowanego źródła (wywiadu, listu, biografii) potwierdzającego, że Monroe wypowiedziała te słowa - cytat występuje wyłącznie na serwisach agregujących cytaty (AZquotes, QuoteFancy). Ten sam tekst krąży w sieci również jako cytat 'Unknown' oraz przypisywany kontom social-media @BryantMcGill/@SimpleReminders/@JenniMcGill, co jest typowym wzorcem współczesnego 'lorem ipsum' motywacyjnego doklejanego do sławnych nazwisk. Fraza o 'wycinaniu negatywnych ludzi' jest anachronicznym, typowo XXI-wiecznym żargonem self-help, nieobecnym w żadnym znanym wywiadzie czy piśmie Monroe z lat 50. Dedykowana strona zwalczająca fałszywe cytaty Marilyn (marilynrememberedfanclub.com) nie potwierdza tego cytatu jako autentycznego. To już czwarty sprawdzony cytat 'Marilyn Monroe' w tym projekcie i czwarty, który nie przetrwał weryfikacji (0/4). https://www.marilynrememberedfanclub.com/marilyn-monroe-fake-quotes/ ; https://thoughtcatalog.com/kara-nesvig/2014/08/most-of-those-marilyn-monroe-quotes-are-fake-heres-what-she-did-and-didnt-say/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Myślę, że dziewczyna, która jest w stanie zarobić na własne utrzymanie i sama za siebie zapłacić, powinna być szczęśliwa jak nikt inny na ziemi. Poczucie niezależności i bezpieczeństwa jest bardzo słodkie.",
+    "original_author": "Susan B. Anthony",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('I think the girl who is able to earn her own living...') jest konsekwentnie przypisywany Susan B. Anthony na wielu serwisach (BrainyQuote, Goodreads, QuoteFancy) i treściowo zgodny z jej poglądami na niezależność ekonomiczną kobiet, ale nie znaleziono wskazania konkretnej mowy, listu czy publikacji źródłowej ani analizy Quote Investigator/Snopes.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Mój ból może być powodem czyjegoś śmiechu. Ale mój śmiech nigdy nie może być powodem czyjegoś bólu.",
+    "original_author": "Charlie Chaplin",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko krąży w internecie przypisywany Chaplinowi (Goodreads, AZquotes, QuoteFancy, Goalcast), ale nie odnaleziono go w żadnym udokumentowanym źródle pierwotnym (autobiografia, wywiad, przemówienie) ani analizy Quote Investigator. Wikiquote dla Chaplina nie zawiera tego cytatu w sekcji potwierdzonych wypowiedzi.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kiedy już zaakceptujesz swoje wady, nikt nie będzie mógł wykorzystać ich przeciwko tobie.",
+    "original_author": "George R. R. Martin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Once you've accepted your flaws, no one can use them against you') pochodzi z powieści 'A Game of Thrones' George'a R.R. Martina, wypowiedziany przez postać Tyriona Lannistera. Potwierdzone na Goodreads (cytaty z książki) i wielu innych serwisach ze wskazaniem źródła literackiego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Twierdzę, że najbardziej wyzwalającą rzeczą w pięknie jest uświadomienie sobie, że to ty jesteś patrzącym.",
+    "original_author": "Salma Hayek",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi ze wstępu (foreword) Salmy Hayek do książki 'The Beauty of Color' (2005). Pełny cytat: 'People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing that you are the beholder.'",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli wszyscy cię kochają, coś jest nie tak. Znajdź co najmniej jednego wroga, który będzie cię strzegł.",
+    "original_author": "Paulo Coelho",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('If everybody loves you, something is wrong. Find at least one enemy to keep you alert') został opublikowany bezpośrednio na oficjalnych kontach Paulo Coelho na Facebooku i Twitterze/X (m.in. wpis z 27 września 2017), co potwierdza autentyczne autorstwo. https://www.facebook.com/paulocoelho/photos/a.241365541210/10158440320996211/ ; https://twitter.com/paulocoelho/status/913380292521549824",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Straciłem już kontakt z kilkoma osobami, którymi kiedyś byłem.",
+    "original_author": "Joan Didion",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('I have already lost touch with a couple of people I used to be') pochodzi z eseju Joan Didion 'On Keeping a Notebook', zawartego w zbiorze 'Slouching Towards Bethlehem' (1968).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie zwalczaj swoich demonów. Twoje demony są tutaj, aby Cię czegoś nauczyć. Usiądź z nimi, weź coś do picia, poznaj ich imiona i porozmawiaj o oparzeniach na ich palcach oraz zadrapaniach na ich kostkach. Niektóre z nich są naprawdę sympatyczne.",
+    "original_author": "Charles Bukowski",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży wyłącznie na serwisach z cytatami (Goodreads, AZquotes, QuoteFancy) bez wskazania konkretnego wiersza, listu czy wywiadu źródłowego. Grupa bibliotekarzy Goodreads oraz forum bukowski.net wielokrotnie wskazywały, że zdecydowana większość cytatów 'Bukowskiego' krążących w sieci (szacunkowo ok. 95%) nie ma potwierdzenia w jego opublikowanych dziełach - ten konkretny cytat nie został jednak nigdzie wprost zdementowany ani potwierdzony.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Naprawdę wierzę, że gdyby przywódcy polityczni świata mogli zobaczyć swoją planetę z odległości 100 000 mil, ich perspektywa uległaby zasadniczej zmianie.",
+    "original_author": "Michael Collins, astronauta",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z książki Michaela Collinsa 'Carrying the Fire: An Astronaut's Journey' (1974). Pełny fragment opisuje tzw. 'overview effect' i mówi m.in. o niewidocznych granicach oraz Ziemi jako 'blue and white' widzianej z kosmosu.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Innowacja zyska popularność tylko wtedy, gdy pomoże ludziom ulepszyć coś, co już robią w swoim życiu.",
+    "original_author": "Clayton Christensen",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('An innovation will get traction only if it helps people get something that they're already doing in their lives done better') konsekwentnie przypisywany Christensenowi na BrainyQuote, AZquotes, QuoteFancy, ale bez wskazania konkretnej książki, artykułu HBR czy wywiadu źródłowego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Innowacja to przypadek, więc nie wiesz, co ludzie stworzą.",
+    "original_author": "Tim Berners-Lee",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Innovation is serendipity, so you don't know what people will make') konsekwentnie przypisywany Bernersowi-Lee na BrainyQuote, AZquotes, QuoteFancy, ale bez wskazania konkretnego wywiadu czy przemówienia źródłowego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie staram się przeskakiwać ponad siedmiometrowymi poprzeczkami. Szukam jednometrowych poprzeczek, po których mogę przejść.",
+    "original_author": "Warren Buffett",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z listu Warrena Buffetta do akcjonariuszy Berkshire Hathaway z 1989 roku: 'To the extent we have been successful, it is because we concentrated on identifying one-foot hurdles that we could step over rather than because we acquired any ability to clear seven-footers.' Polska wersja jest wierną parafrazą tej myśli.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Tworzenie filmów to ciężka praca. To jak bycie lekarzem: Pracujesz długie godziny, bardzo ciężkie godziny i jest to emocjonalna, napięta praca. Jeśli naprawdę tego nie kochasz, to nie warto.",
+    "original_author": "George Lucas",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('It's hard work making movies. It's like being a doctor: you work long hours...') konsekwentnie przypisywany Lucasowi na BrainyQuote i wielu innych serwisach z dokładnie tym samym brzmieniem, co sugeruje realne pochodzenie wywiadowe, ale nie odnaleziono konkretnego, datowanego źródła (wywiadu, artykułu).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Stado osłów prowadzone przez lwa jest lepsze niż stado lwów prowadzone przez osła.",
+    "original_author": "George Washington",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Quote Investigator (2024) ustalił, że to powiedzenie to starożytne adage o wojsku ('an army of stags led by a lion is more formidable than an army of lions led by a stag'), którego korzenie sięgają starożytnej Grecji (przypisywane ateńskiemu generałowi Chabriasowi) oraz XVIII-wiecznych publikacji brytyjskich (1736 'Universal Spectator', 1743 tekst przypisywany Danielowi Defoe). QI wprost stwierdza: 'there is no recorded individual who said this statement... Washington is not its true source' - przypisanie Waszyngtonowi powstało prawdopodobnie wśród kadry lub kadetów West Point. Zgodnie z sugestią w zadaniu, zdanie krąży też przypisywane Aleksandrowi Wielkiemu, ale i to przypisanie jest apokryficzne wg QI. https://quoteinvestigator.com/2024/07/29/army-lion/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Moim jedynym celem jest skupienie się na moim rzemiośle i upewnienie się, że moje życie jest tak ostre, jak to tylko możliwe, aby zaatakować każdą postać, która jest mi dana.",
+    "original_author": "Michael K. Williams",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('My only goal is to stay focused on my craft and make sure my life is as sharp as it can be to attack any character that is given to me') konsekwentnie przypisywany Williamsowi na BrainyQuote, QuoteFancy i innych, ale bez wskazania konkretnego wywiadu źródłowego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bóg nie wymaga od nas sukcesu; wymaga tylko, abyś spróbował.",
+    "original_author": "Matka Teresa",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Oficjalna strona Missionaries of Charity/Mother Teresa Center wprost wymienia ten cytat ('God doesn't require us to succeed; he only requires that you try') w dziale 'Quotes falsely attributed to Mother Teresa'. Autentyczna, pokrewna myśl Matki Teresy brzmi inaczej: 'God has not called me to be successful; He has called me to be faithful.' To już trzeci sprawdzony cytat 'Matki Teresy' w tym projekcie i trzeci oficjalnie zdementowany przez jej fundację (0/3). https://www.motherteresa.org/mtc/false-quotes",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Myślę o robieniu serialu jako o bardzo ciężkiej pracy. Ale potem rozmawiałem z górnikami i to jest naprawdę ciężka praca.",
+    "original_author": "William Shatner",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie przypisywany Shatnerowi na BrainyQuote i innych serwisach, w oryginale precyzującym 'coal miners' (górnicy węgla) - polska wersja z ogólnym 'górnicy' jest zgodna treściowo. Nie odnaleziono jednak konkretnego, datowanego wywiadu źródłowego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Przypominam sobie każdego ranka: Nic, co powiem tego dnia, niczego mnie nie nauczy. Więc jeśli mam się uczyć, muszę to robić słuchając.",
+    "original_author": "Larry King",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z książki Larry'ego Kinga 'Truth Be Told: Off the Record about Favorite Guests, Memorable Moments, Funniest Jokes, and a Half Century of Asking Questions' (2012), str. 130.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie stajesz się tym, czego chcesz, stajesz się tym, w co wierzysz.",
+    "original_author": "Oprah Winfrey",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży w kilku różniących się wersjach ('you don't become what you want, you become what you believe' vs. 'you don't get what you wish for, you get what you believe' z 'The Life You Want Tour'), co utrudnia jednoznaczne wskazanie oryginalnego brzmienia i źródła. Treściowo zgodny z tematyką jej 'LifeClass', ale bez wskazania konkretnego, datowanego wystąpienia dla wersji użytej w bazie.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie jestem dobry w niczym poza komedią, w której myślę, że jestem dobry. Ale myślę, że jestem na tyle dobry w komedii, że mogę przetrwać.",
+    "original_author": "Norm Macdonald",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wywiadu Steve'a Heislera z Normem Macdonaldem, opublikowanego 12 kwietnia 2011. Oryginał: 'I'm no good at anything but comedy, which I think I'm good at... I think I'm good enough at comedy that I can survive.'",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Piękno zaczyna się w momencie, gdy decydujesz się być sobą.",
+    "original_author": "Coco Chanel",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Beauty begins the moment you decide to be yourself') szeroko krąży w internecie, ale nie występuje na stronie Coco Chanel na Wikiquote (która wymaga źródeł z faktycznych dzieł/wywiadów, nie kompilacji cytatów), a strona dyskusyjna Wikiquote wprost ostrzega przed cytatami pochodzącymi z powojennych zbiorów cytatów zamiast z autentycznych wypowiedzi Chanel. Brak jednoznacznego potwierdzenia lub zdementowania.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie jest za późno na nowy początek.",
+    "original_author": "Eleanor Brownn",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Eleanor Brownn to realnie istniejąca autorka, cytat ('It's not too late for a new beginning') widnieje na Goodreads i QuoteFancy przypisany do niej, ale bez wskazania konkretnej książki lub publikacji źródłowej.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Aby zrozumieć serce i umysł człowieka, nie patrz na to, co już osiągnął, ale na to, do czego dąży.",
+    "original_author": "Kahlil Gibran",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko przypisywany Gibranowi, ale najstarsze odnalezione źródło to nie jego własne dzieło, lecz książka innej autorki - Lisy Ford 'Become a Conscious Creator: A Return to Self-Empowerment' (2007), która go cytuje - co nie potwierdza jednoznacznie, że pochodzi z oryginalnego tekstu Gibrana (np. 'Wędrowiec' czy 'Szaleniec'). Brak wskazania na Wikiquote wśród potwierdzonych cytatów.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie to 10 procent tego, co mi się przydarza i 90 procent tego, jak na to reaguję.",
+    "original_author": "Charles Swindoll",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z twórczości pastora Charlesa R. Swindolla, wywodzi się z jego bestsellerów 'Active Spirituality' i 'Laugh Again', a pełna wersja brzmi: 'I am convinced that life is 10% what happens to me and 90% how I react to it.' Jeden z najlepiej udokumentowanych i konsekwentnie przypisywanych cytatów w tym zbiorze.",
+    "recommendation": "keep"
+  }
+]
