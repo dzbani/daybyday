@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Jeśli masz plan B, to plan A nigdy nie zadziała.",
+    "original_author": "Will Smith",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Popularna, powszechnie krążąca wersja angielska brzmi inaczej: 'There's no reason to have a plan B because it distracts from plan A' (Goodreads, AZQuotes, QuoteFancy, liczne posty FB/IG/YouTube). Cytat jest masowo powtarzany, ale żadne źródło nie wskazuje konkretnego wywiadu, przemówienia czy publikacji, w której Will Smith miałby to powiedzieć - wszystkie ślady prowadzą do kompilacji motywacyjnych na YouTube/social media bez podanego pierwotnego kontekstu. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zainwestuj w swoją wiedzę — to przynosi najlepsze odsetki.",
+    "original_author": "Warren Buffett",
+    "status": "misattributed",
+    "correct_author": "Benjamin Franklin (przypisanie tradycyjne, choć również niepewne źródłowo)",
+    "evidence": "To dokładnie klasyczny cytat 'An investment in knowledge pays the best interest', od dekad i w setkach źródeł (Goodreads, BrainyQuote, 19FortyFive, liczne blogi finansowe) przypisywany Benjaminowi Franklinowi (rzekomo z 'Poor Richard's Almanack'), nigdy Warrenowi Buffettowi. Żadne źródło nie łączy tej konkretnej frazy z Buffettem - jego autentyczne, udokumentowane cytaty o inwestowaniu w siebie brzmią inaczej (np. 'By far the best investment you can make is in yourself', wywiad dla Yahoo Finance 2019 - patrz cytat nr 25 w tej samej partii, gdzie zaszła najwyraźniej odwrotna pomyłka). Samo przypisanie Franklinowi jest również formalnie niepotwierdzone w jego pismach (Bartleby oznacza je jako niezweryfikowane), ale to i tak nie jest cytat Buffetta.",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Twoja praca wypełni dużą część twojego życia — jedynym sposobem na pełne zadowolenie jest robić to, co uważasz za wielką pracę.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wierna parafraza fragmentu przemówienia Steve'a Jobsa na rozpoczęciu roku akademickiego na Stanford University (12.06.2005): 'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.' Powszechnie potwierdzone w oficjalnym transkrypcie (news.stanford.edu) oraz nagraniu wideo.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy nie pozwól, by strach przed porażką powstrzymał cię od grania w grę.",
+    "original_author": "Babe Ruth",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Never let the fear of striking out keep you from playing the game') jest bardzo szeroko i konsekwentnie przypisywany Babe'owi Ruthowi (Goodreads, BrainyQuote, AZQuotes, QuoteFancy), czasem z odniesieniem do 'Babe Ruth's Own Book of Baseball' (1928), ale żadne z przeszukanych źródeł nie podaje konkretnej strony ani cytatu z tej książki. Quote Investigator nie ma dedykowanego artykułu o tej frazie. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Silni ludzie nie poniżają innych — pomagają im się podnieść.",
+    "original_author": "Michael P. Watson",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie przypisywany 'Michael P. Watson' na wielu portalach z cytatami (AZQuotes, QuoteFancy, Goodreads, QuotesLyfe), ale nie znaleziono żadnych informacji biograficznych o tej osobie ani pierwotnego źródła (książki, wystąpienia) - jedna wersja na Goodreads jest nawet przypisana zupełnie innej osobie ('Abhishek Shukla'), co wskazuje na niepewność atrybucji krążącej w internecie. Brak dowodu jednoznacznie potwierdzającego lub obalającego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Najciemniej jest tuż przed świtem.",
+    "original_author": "Thomas Fuller",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fraza w formie 'It is always darkest just before the Day dawneth' pochodzi z opublikowanego dzieła angielskiego teologa Thomasa Fullera 'A Pisgah-Sight of Palestine and the Confines Thereof' (1650). Choć przysłowie mogło mieć wcześniejsze, ludowe korzenie (możliwe irlandzkie pochodzenie wg Samuela Lovera, 1858), to udokumentowane, drukowane źródło z nazwiskiem Fullera istnieje i jest powszechnie akceptowane jako punkt odniesienia.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Twoim czasem jest teraz.",
+    "original_author": "Barack Obama",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono dokładnej frazy 'Your time is now' w żadnym udokumentowanym przemówieniu ani książce Obamy. Najbliższe autentyczne, potwierdzone sformułowania to 'This is our time'/'Our Moment Is Now' (przemówienie w Des Moines, Iowa) oraz 'You don't choose the time. The time chooses you' (z książki 'A Promised Land'), ale żadne nie odpowiada dokładnie tej wersji. Brak twardego potwierdzenia w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kiedy wszystko wydaje się iść pod prąd — pamiętaj, że samolot startuje pod wiatr.",
+    "original_author": "Henry Ford",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko i konsekwentnie przypisywany Henry'emu Fordowi (Goodreads, BrainyQuote, AZQuotes, LinkedIn), z pewnym uzasadnieniem kontekstowym (firma Forda produkowała samoloty Ford Tri-Motor, sam Ford latał własnymi samolotami), ale żadne źródło nie podaje konkretnego wystąpienia, wywiadu czy publikacji z tym zdaniem. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Twoje życie nie staje się lepsze przez przypadek — staje się lepsze przez zmianę.",
+    "original_author": "Jim Rohn",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat opublikowany na oficjalnym koncie X 'Jim Rohn Official' oraz szeroko powtarzany (Goodreads, AZQuotes, Good News Network, Medium) i tematycznie spójny z charakterystyczną dla Rohna grą słów ('chance' vs 'change'). Mimo to żadne źródło nie wskazuje konkretnej książki, nagrania czy wykładu, w którym padłoby to zdanie - jedynym śladem jest wpis w mediach społecznościowych opublikowany po śmierci Rohna (zm. 2009), a nie prymarne, udokumentowane źródło z jego życia.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wielkie umysły omawia idee, przeciętne umysły omawiają zdarzenia, małe umysły omawiają ludzi.",
+    "original_author": "Eleanor Roosevelt",
+    "status": "misattributed",
+    "correct_author": "nieznany (najwcześniejszy udokumentowany ślad: Henry Thomas Buckle, wg relacji Charlesa Stewarta z 1901 r.)",
+    "evidence": "Quote Investigator ustalił, że najsilniejsze wczesne dopasowanie tej trójdzielnej maksymy pochodzi z autobiografii Charlesa Stewarta z 1901 r., który opisuje rozmowę z historykiem Henrym Thomasem Buckle'em wypowiadającym podobną myśl. Zdanie w formie zbliżonej do współczesnej pojawiło się w wpływowym zbiorze Laurence'a J. Petera 'Peter's Quotations' (1977) bez podanego autora, a dopiero od 1987 r. zaczęto je przypisywać Eleanor Roosevelt - przypisanie narastało stopniowo w kulturze popularnej, bez żadnego udokumentowanego śladu w jej pismach czy przemówieniach. https://quoteinvestigator.com/2014/11/18/great-minds/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Szczęście nie jest czymś gotowym. Wynika z twoich własnych działań.",
+    "original_author": "Dalajlama XIV",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Happiness is not something ready-made. It comes from your own actions.') konsekwentnie przypisywany Dalajlamie XIV w kontekście jego książki 'The Art of Happiness: A Handbook for Living' (współautor Howard C. Cutler, 1998), spójny z jego znaną filozofią - wielokrotnie cytowany w zestawieniach cytatów specyficznie z tej książki (np. movemequotes.com).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Uśmiech kosztuje mniej od elektryczności, a daje więcej światła.",
+    "original_author": "A. J. Cronin",
+    "status": "misattributed",
+    "correct_author": "nieznany (przysłowie szkockie; bywa też przypisywane Abbé Pierre/Henri Grouès - nie A. J. Croninowi)",
+    "evidence": "Ten cytat nie pojawia się w żadnym uznanym zbiorze cytatów A. J. Cronina (Wikiquote, LibQuotes z 8 udokumentowanymi cytatami, QuoteFancy top 9, Quoteswave) - żadne z tych źródeł go nie zawiera. Za to inne źródła (CubaPlus Magazine, BuboQuote, QuotesLyfe) opisują go jako 'przysłowie szkockie' lub przypisują francuskiemu duchownemu Abbé Pierre (Henri Grouès): 'A smile costs less than electricity, but gives much light.' Brak jakiegokolwiek dowodu łączącego to zdanie z Croninem.",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Sukces to nie finał, porażka to nie klęska — odwaga trwania ma znaczenie.",
+    "original_author": "Winston Churchill",
+    "status": "misattributed",
+    "correct_author": "nieznany (Churchill nigdy tego nie powiedział wg International Churchill Society)",
+    "evidence": "International Churchill Society - oficjalna organizacja dedykowana zachowaniu spuścizny Churchilla - jednoznacznie umieszcza ten cytat na liście błędnie mu przypisywanych ('We can find no attribution for either one of these, and you will find that they are broadly attributed to Winston Churchill. They are found nowhere in his canon, however.'). Potwierdzają to również Snopes i CheckYourFact. Churchill rzeczywiście powiedział coś zbliżonego, ale innego: 'Defeat is never final. Victory is never final. It's courage that counts.' https://www.snopes.com/fact-check/winston-churchill-quote-success-failure/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Bądź zmianą, którą chcesz widzieć w świecie.",
+    "original_author": "Mahatma Gandhi",
+    "status": "misattributed",
+    "correct_author": "nieznany (najwcześniejszy ślad: Arleen Lorrance, 1974; brak w pismach Gandhiego)",
+    "evidence": "Quote Investigator: to jeden z najsłynniejszych fałszywych cytatów - Gandhi Institute for Nonviolence nie odnalazł go w pismach Gandhiego (zm. 1948). Najbliższa autentyczna wypowiedź Gandhiego brzmi inaczej: 'We but mirror the world. All the tendencies present in the outer world are to be found in the world of our body. If we could change ourselves, the tendencies in the world would also change' (Indian Opinion, 1913). Najwcześniejsze bliskie dopasowanie popularnej wersji odnaleziono dopiero w 1974 r. w rozdziale książki autorstwa edukatorki Arleen Lorrance. https://quoteinvestigator.com/2017/10/23/be-change/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Człowiek, który przestaje się uczyć, starzeje się — czy ma 20, czy 80 lat.",
+    "original_author": "Henry Ford",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Anyone who stops learning is old, whether at twenty or eighty') szeroko i konsekwentnie przypisywany Henry'emu Fordowi (Goodreads, BrainyQuote, AZQuotes, QuoteFancy), ale żadne źródło nie wskazuje konkretnej publikacji, wywiadu czy dokumentu, w którym miałby to powiedzieć. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Optymizm to wiara prowadząca do osiągnięć. Bez nadziei nic nie da się zrobić.",
+    "original_author": "Helen Keller",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.') pochodzi z eseju Helen Keller pt. 'Optimism' z 1903 r. Źródło potwierdzone przez American Foundation for the Blind (afb.org) - organizację blisko związaną z jej spuścizną, podającą konkretny tytuł i rok publikacji.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Każda chwila to nowy początek.",
+    "original_author": "T. S. Eliot",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Every moment is a fresh beginning') jest konsekwentnie cytowany z odniesieniem do konkretnego wydania 'The Poems of T. S. Eliot Volume I: Collected and Uncollected Poems' (Faber & Faber, 2015, red. Christopher Ricks i Jim McCue), s. 938 - jest to poważne, naukowe wydanie zebranych i wcześniej niepublikowanych wierszy Eliota, więc cytowanie z konkretną stroną wskazuje na realne źródło, a nie tylko krążącą bez pochodzenia maksymę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Marzenia się nie spełniają — spełnia się je.",
+    "original_author": "Audrey Hepburn",
+    "status": "misattributed",
+    "correct_author": "nieznany (w polskim internecie krąży też pod nazwiskiem Rafała Froni i innych - nie ma dowodu na Hepburn)",
+    "evidence": "Nie znaleziono tego zdania w żadnym angielskim zbiorze cytatów Hepburn (BrainyQuote, Goodreads, ourmindfullife.com, keepinspiring.me) - próby znalezienia angielskiego oryginału ('Dreams don't come true, you make them come true') nie dały żadnego trafienia. Co więcej, w polskim internecie ta sama myśl krąży pod zupełnie innymi nazwiskami - m.in. jako cytat Rafała Froni na Lubimyczytać.pl oraz w wersji przypisywanej Jakubowi B. Bączkowi - co silnie sugeruje, że jest to popularna polska maksyma motywacyjna, wtórnie i błędnie podpięta pod nazwisko Audrey Hepburn, a nie jej autentyczna wypowiedź.",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Dbaj o minuty, a godziny same zadbają o siebie.",
+    "original_author": "Lord Chesterfield",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z autentycznych 'Letters to His Son' Philipa Dormera Stanhope'a, hrabiego Chesterfield: 'I recommend to you to take care of the minutes; for hours will take care of themselves. I am very sure, that many people lose two or three hours every day, by not taking care of the minutes.' Źródło i autorstwo dobrze udokumentowane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma drogi do szczęścia — szczęście jest drogą.",
+    "original_author": "Thich Nhat Hanh",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('There is no way to happiness, happiness is the way. There is no way to peace, peace is the way. There is no way to enlightenment, enlightenment is the way.') przypisywany jest książce Thich Nhat Hanha 'The Art of Mindful Living: How to Bring Love, Compassion, and Inner Peace into Your Daily Life'. Warto odnotować, że wariant 'peace is the way' pierwotnie pochodzi od amerykańskiego pacyfisty A. J. Muste (1885-1967), którego Thich Nhat Hanh otwarcie podziwiał i cytował - prawdopodobnie rozbudował tę myśl o warianty 'happiness' i 'enlightenment' we własnej książce, co czyni przypisanie mu tej konkretnej, rozszerzonej wersji zasadnym.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli możesz o tym marzyć, możesz to zrobić.",
+    "original_author": "Walt Disney",
+    "status": "misattributed",
+    "correct_author": "Tom Fitzgerald (Disney Imagineer, hasło stworzone dla atrakcji Horizons w EPCOT, 1983) — nie Walt Disney",
+    "evidence": "Wielokrotnie i jednoznacznie udokumentowane błędne przypisanie: 'There's no evidence in either filmed, audio, or written format that Walt ever said anything even remotely like the quote.' Fraza ('If we can dream it, we can do it') została stworzona przez scenarzystę Disneya Toma Fitzgeralda na potrzeby atrakcji Horizons w EPCOT Center, otwartej w 1983 r. - siedemnaście lat po śmierci Walta Disneya (zm. 1966). Potwierdzone m.in. przez AllEars.Net, Gizmodo/Paleofuture i MousePlanet. https://allears.net/2025/03/29/no-walt-disney-didnt-say-if-you-can-dream-it-you-can-do-it/ ; https://gizmodo.com/8-walt-disney-quotes-that-are-actually-fake-1692355588",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Człowiek, który się nie myli, nie robi nic.",
+    "original_author": "Theodore Roosevelt",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Zdanie w tej rodzinie sformułowań pojawia się już w 1900 r. w artykule Jacoba Riisa w 'The American Monthly Review of Reviews' oraz w jego biografii 'Theodore Roosevelt: The Citizen' (1904), gdzie Riis określa je jako jedną z 'maksym' TR - opublikowane za życia Roosevelta (zm. 1919) i nigdy przez niego niezdementowane. Theodore Roosevelt Presidential Library (trlibrary.com/tr/fake-quotes) koryguje jedynie dokładne brzmienie (autentyczna wersja to raczej 'the man who makes no mistakes is the man who never does anything' niż popularna internetowa wersja 'never makes mistakes'), ale nie kwestionuje samego powiązania z TR za pośrednictwem Riisa. Ostateczne pochodzenie myśli może sięgać jeszcze wcześniejszych źródeł (wiersz w biuletynie 'Concatenated Order of Hoo-Hoo', 1897), ale przypisanie do Roosevelta jako jego znanej maksymy jest solidnie udokumentowane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wieczne jest tylko to, co zostaje w sercach ludzi.",
+    "original_author": "Henryk Sienkiewicz",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tego cytatu w żadnym uznanym zbiorze wypowiedzi Sienkiewicza - ani na Wikicytatach PL (przeszukane w całości), ani w bazach cytatów z jego dzieł (granice.pl, lubimyczytać.pl, cytaty.info, webook.pl - w tym osobno przeszukane cytaty z 'Quo Vadis'). Fraza pojawia się za to w kontekście ogólnych, anonimowych sentencji żałobnych/nagrobnych ('motta nagrobne'), co sugeruje, że może być bezautorskim powiedzeniem wtórnie podpiętym pod nazwisko znanego polskiego pisarza. Brak jednak jednoznacznego dowodu obalającego tę atrybucję.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jutro jest nową stroną, na której nie ma jeszcze ani jednej plamy.",
+    "original_author": "Lucy Maud Montgomery",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Isn't it nice to think that tomorrow is a new day with no mistakes in it yet?') pochodzi z powieści L. M. Montgomery 'Anne z Zielonego Wzgórza' ('Anne of Green Gables', 1908) - to słowa postaci Anne skierowane do Marilli. Jedna z najczęściej cytowanych (i czasem lekko przeinaczanych) linijek powieści, potwierdzona w tekście źródłowym.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Najlepsza inwestycja to inwestycja w siebie.",
+    "original_author": "Benjamin Franklin",
+    "status": "misattributed",
+    "correct_author": "Warren Buffett",
+    "evidence": "To sparafrazowana wersja udokumentowanej wypowiedzi Warrena Buffetta 'By far the best investment you can make is in yourself', wypowiedzianej w wywiadzie dla Yahoo Finance (redaktor naczelny Andy Serwer) w 2019 r. oraz powtórzonej w wywiadzie dla ABC News, gdzie Buffett tłumaczył, że inwestowanie we własne umiejętności daje aktywo, którego nie można opodatkować ani odebrać. Żadne źródło nie łączy tej frazy z Benjaminem Franklinem - jego autentyczny, klasyczny cytat o inwestowaniu dotyczy wiedzy i 'najlepszych odsetek' (patrz cytat nr 2 w tej samej partii, gdzie zaszła najwyraźniej odwrotna pomyłka - tamten cytat Franklina przypisano Buffettowi).",
+    "recommendation": "fix_author"
+  }
+]
