@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Zdradzę ci sekret, który doprowadził mnie do moich celów: Moja siła leży wyłącznie w mojej wytrwałości.",
+    "original_author": "Louis Pasteur",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Quote Investigator potwierdza autentyczność: cytat pochodzi z przemówienia Pasteura na bankiecie weterynarzy w 1885, potwierdzone przez relację jego współpracownika Roux. https://quoteinvestigator.com/2019/12/28/tenacity/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Daj mi magazyniera z celem, a dam ci człowieka, który przejdzie do historii. Daj mi człowieka bez celu, a dam ci urzędnika.",
+    "original_author": "James Cash Penney",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie przypisywany J.C. Penneyowi na wielu serwisach z cytatami (Goodreads, AZQuotes, Quotes.net), ale nie znaleziono pierwotnego źródła (przemówienia, wywiadu, książki) potwierdzającego autentyczność. Brak też dowodów na błędne przypisanie.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Osiągnięcie jednego celu powinno być punktem wyjścia do osiągnięcia kolejnego.",
+    "original_author": "Alexander Graham Bell",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko przypisywany Bellowi na serwisach typu QuoteFancy, AZQuotes, Goalcast, ale bez wskazania konkretnego źródła (listu, wywiadu, publikacji). Brak dowodów na błędne przypisanie, ale też brak twardego potwierdzenia.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie znam nikogo, kto dotarłby na szczyt bez ciężkiej pracy. To jest właśnie przepis. Nie zawsze doprowadzi cię na szczyt, ale powinien cię do niego przybliżyć.",
+    "original_author": "Margaret Thatcher",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wywiadu Thatcher dla włoskiej telewizji RAI (10 marca 1986), archiwizowanego w oficjalnym Margaret Thatcher Foundation. https://www.margaretthatcher.org/document/106223",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Pesymista widzi trudności w każdej okazji; optymista widzi okazję w każdej trudności.",
+    "original_author": "Winston Churchill",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Quote Investigator wykazał, że nie ma dowodów na wypowiedzenie/napisanie tego zdania przez Churchilla; najwcześniejszy znany ślad podobnej myśli to przemówienie Bertrama Carra (burmistrza Carlisle) z 1919 roku. Przypisanie Churchillowi powstało dopiero w 'The Book of Quotes' Barbary Rowes (1979). Potwierdzone też przez Check Your Fact. https://quoteinvestigator.com/2017/07/26/optimist/ ; https://checkyourfact.com/2019/07/25/fact-check-winston-churchill-optimist-opportunity-every-difficulty/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Możesz, powinieneś i jeśli jesteś na tyle odważny, by zacząć, zrobisz to.",
+    "original_author": "Stephen King",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z książki Stephena Kinga 'On Writing: A Memoir of the Craft', potwierdzone m.in. przez QuotesLyfe i wielokrotnie cytowane z tego źródła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Gdyby ludzie wiedzieli, jak ciężko pracowałem, aby osiągnąć mistrzostwo, nie wydawałoby się to takie wspaniałe.",
+    "original_author": "Michał Anioł",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży w wielu wariantach ('worked'/'had to work'/'at my art') bez wskazania źródła. Źródła wskazują, że przypisanie Michałowi Aniołowi pojawia się w publikacjach nie-specjalistycznych najwcześniej ok. 1929 roku, ale 'no source is known' - pierwotne źródło jest nieznane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Żyjemy w społeczeństwie, w którym prawie we wszystkich przypadkach ciężka praca jest nagradzana.",
+    "original_author": "Neil deGrasse Tyson",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wywiadu Tysona w programie NPR 'Fresh Air' z 28 lutego 2014 roku, potwierdzone przez AZQuotes i inne bazy cytatów wskazujące to źródło.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Myślę, że pewnego dnia odkryjesz, że jesteś bohaterem, którego szukałeś.",
+    "original_author": "Jimmy Stewart",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Wersja spopularyzowana ('I think one day you'll find that you're the hero you've been looking for') krąży wyłącznie na serwisach z cytatami motywacyjnymi (Pinterest, Instagram, AZQuotes) bez żadnego wskazania źródła (filmu, wywiadu, wystąpienia). Fraza ma charakter współczesnego mema motywacyjnego, brak dowodów, że Stewart kiedykolwiek to powiedział lub napisał.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Podjąłem wtedy postanowienie, że jeśli będę mógł, to coś osiągnę. I żadne godziny pracy, ani ilość pracy, ani ilość pieniędzy nie powstrzymają mnie od dawania z siebie tego, co najlepsze.",
+    "original_author": "Harland Sanders",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z autobiografii Harlanda Sandersa, cytowany w artykule The Guardian 'KFC dishes up Colonel Sanders' autobiography for free' (Alison Flood, 31 maja 2012).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "To, co robimy, jest ważniejsze niż to, co mówimy lub w co wierzymy.",
+    "original_author": "Bell Hooks",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wywiadu Kevina Powella z bell hooks dla BKNation.org, opublikowanego 28 lutego 2014 roku.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Modlisz się za głodnych. Potem ich karmisz. Tak działa modlitwa.",
+    "original_author": "Papież Franciszek",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Spopularyzowana, skrócona parafraza autentycznej wypowiedzi Franciszka z lipca 2013: 'Modlitwa, która nie prowadzi cię do praktycznego działania na rzecz brata... jest modlitwą jałową i niepełną'. Autor poprawny, forma to internetowa kondensacja jego myśli, nie dosłowny cytat. Potwierdzone przez Busted Halo i inne źródła katolickie.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie nie jest łatwe dla nikogo z nas. Ale co z tego? Musimy być wytrwali, a przede wszystkim wierzyć w siebie.",
+    "original_author": "Marie Curie",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z biografii 'Madame Curie: A Biography' (1937) autorstwa Eve Curie Labouisse, w tłumaczeniu Vincenta Sheeana, str. 222.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jesteś w przededniu całkowitego zwycięstwa. Nie możesz się pomylić. Świat jest za tobą.",
+    "original_author": "Josephine Baker",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment przemówienia Josephine Baker podczas Marszu na Waszyngton, 28 sierpnia 1963 roku. Pełny transkrypt: 'you are on the eve of complete victory. Continue on. You can't go wrong. The world is behind you.' https://www.crmvet.org/info/bakerj.htm",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bez względu na to, co ludzie ci mówią, słowa i pomysły mogą zmienić świat.",
+    "original_author": "Robin Williams",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Kwestia postaci Johna Keatinga (granego przez Robina Williamsa) z filmu 'Stowarzyszenie Umarłych Poetów' (1989). Zgodnie z ustalonym w tym zbiorze podejściem do cytatów filmowych (por. Rocky Balboa w partii 3) - podwójne przypisanie postać/aktor jest tu akceptowane, autor napisany poprawnie jako aktor wypowiadający kwestię.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy nie możemy bać się posunąć za daleko, bo sukces leży tuż za nami.",
+    "original_author": "Marcel Proust",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży w dwóch sprzecznych wersjach - 'for success lies just beyond' oraz 'for truth lies beyond' - obie przypisywane Proustowi, bez wskazania konkretnego dzieła czy strony. Żadna baza cytatów nie podaje źródła pierwotnego, co sugeruje niepewne pochodzenie.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Czy naprawdę chcesz spojrzeć wstecz na swoje życie i zobaczyć, jak wspaniałe mogłoby być, gdybyś nie bał się go przeżyć?",
+    "original_author": "Caroline Myss",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie przypisywany Caroline Myss na wielu serwisach (Goodreads, AZQuotes, QuoteFancy), ale bez wskazania konkretnej książki lub wystąpienia jako źródła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Byłam absolutnie przerażona w każdej chwili mojego życia — i nigdy nie pozwoliłam, by powstrzymało mnie to przed zrobieniem jednej rzeczy, którą chciałam zrobić.",
+    "original_author": "Georgia O'Keeffe",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z nagranego wywiadu Georgii O'Keeffe z Museum of Modern Art (MoMA) z 1977 roku, potwierdzony m.in. przez oficjalny blog Denver Art Museum.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Powiem ci, czym naprawdę jest odwaga. Odwaga to po prostu determinacja, by wykonać pracę, o której wiesz, że musi zostać wykonana.",
+    "original_author": "Audie Murphy",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z artykułu prasowego 'Determination to Do a Tough Job' (Fort Worth Star-Telegram, 8 lipca 1945), zdigitalizowanego na oficjalnej stronie audiemurphy.com. https://www.audiemurphy.com/newspaper/news014/fwst_07-08-45.pdf",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Daj mi odwagę służyć innym, bo w służbie jest prawdziwe życie.",
+    "original_author": "Cesar Chavez",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment 'Prayer of the Farm Workers' Struggle' - modlitwy/wiersza autorstwa Cesara Chaveza, udokumentowanego m.in. na oficjalnej stronie UFW (ufw.org).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Najlepszą ochroną, jaką może mieć każda kobieta… jest odwaga.",
+    "original_author": "Elizabeth Cady Stanton",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko przypisywany Stanton, omówiony nawet w dedykowanym artykule na Verily Magazine (2016), ale żadne źródło nie wskazuje konkretnego pisma, przemówienia czy dokumentu, w którym miałaby to powiedzieć/napisać.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie odkrywa się nowych lądów bez zgody na utratę z oczu, na bardzo długi czas, brzegu.",
+    "original_author": "Andre Gide",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży w wielu niespójnych wersjach ('one does not discover'/'in order to discover, one must be willing'), bez wskazania konkretnego dzieła Gide'a. Dodatkowo istnieje pokrewna, ale odrębna wersja ('man cannot discover new oceans...') często błędnie przypisywana Krzysztofowi Kolumbowi, co sugeruje ogólne zamieszanie wokół tej rodziny cytatów. Brak potwierdzenia pierwotnego źródła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Aby wprowadzić zmiany, nie możesz bać się zrobić pierwszego kroku. Poniesiemy porażkę, jeśli nie spróbujemy.",
+    "original_author": "Rosa Parks",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z książki 'Dear Mrs. Parks: A Dialogue with Today's Youth' (1996). Popularna wersja jest lekką parafrazą oryginalnego zdania Parks: 'To bring about change, one must not be afraid to take the first step, or else it will not be done. I believe that the only failure is failing to try' - sens i autorstwo zgodne z oryginałem.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "O wiele lepiej jest odważyć się na potężne rzeczy, odnieść chwalebne triumfy — nawet jeśli są naznaczone porażką — niż uplasować się wśród tych biednych duchów, którzy ani nie cieszą się zbytnio, ani nie cierpią, ponieważ żyją w szarym zmierzchu.",
+    "original_author": "Theodore Roosevelt",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z przemówienia Theodore'a Roosevelta 'The Strenuous Life' wygłoszonego przed Hamilton Club w Chicago, 10 kwietnia 1899 roku. Potwierdzone przez Theodore Roosevelt Center. https://www.theodorerooseveltcenter.org/quote/far-better-it-is-to-dare-mighty-things...",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie wolno się bać, strach zabija duszę. Strach to mała śmierć, a wielkie unicestwienie. Stawię mu czoło. Niech przejdzie po mnie i przeze mnie.",
+    "original_author": "Frank Herbert",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment 'Litanii przeciw strachowi' z powieści 'Diuna' (1965) Franka Herberta, recytowanej przez postać Paula Atrydy. Zgodnie z ustalonym w tym zbiorze podejściem do cytatów literackich/filmowych (por. Rocky Balboa w partii 3) - podwójne przypisanie postać/autor jest akceptowane, przypisanie autorowi powieści jest tu spójne z podobnymi przypadkami.",
+    "recommendation": "keep"
+  }
+]
