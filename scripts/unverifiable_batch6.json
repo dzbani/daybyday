@@ -1,0 +1,317 @@
+[
+ {
+  "m": 8,
+  "d": 13,
+  "names": "Hipolita, Poncjana",
+  "text": "Gdy sierpień na Hipolita suchy — wrzesień mokry.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 8,
+  "d": 14,
+  "names": "Maksymiliana, Eberharda",
+  "text": "Wigilia Wniebowzięcia — kwiaty do kościoła.",
+  "note": "Zgodne z realnym zwyczajem święcenia ziół/kwiatów, niepotwierdzone dosłownie."
+ },
+ {
+  "m": 8,
+  "d": 15,
+  "names": "Wniebowzięcia NMP",
+  "text": "Na Wniebowzięcie Maryi zboże w stodole się leży.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 8,
+  "d": 15,
+  "names": "Wniebowzięcia NMP",
+  "text": "Gdy na Matkę Boską Zielną deszcz pada — jesień mokra nadciąga.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 8,
+  "d": 24,
+  "names": "Bartłomieja",
+  "text": "Na świętego Bartłomieja dobre żniwa do koleja.",
+  "note": "Archaicznie brzmiące, niejasne \"do koleja\"; niepotwierdzone."
+ },
+ {
+  "m": 8,
+  "d": 24,
+  "names": "Bartłomieja",
+  "text": "Bartłomiej lato zamknie — jesień nadciąga.",
+  "note": "Zgodne tematycznie z tradycją Bartłomieja jako granicy lata, niepotwierdzone dosłownie."
+ },
+ {
+  "m": 8,
+  "d": 24,
+  "names": "Bartłomieja",
+  "text": "Bartłomiej z mgłą — zima wczesna.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 8,
+  "d": 31,
+  "names": "Rajmunda, Aidy",
+  "text": "Ostatni sierpień — lato żegna się.",
+  "note": "Tautologiczne, ale łagodne."
+ },
+ {
+  "m": 9,
+  "d": 2,
+  "names": "Stefana, Ingrydy",
+  "text": "Wrzesień z deszczem — październik suchy.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 9,
+  "d": 2,
+  "names": "Stefana, Ingrydy",
+  "text": "Gdy wrzesień ciepły — październik mroźny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 9,
+  "d": 6,
+  "names": "Beaty, Magnusa",
+  "text": "Gdy wrzesień mglisty — zima wczesna.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 9,
+  "d": 12,
+  "names": "Gwidona, Marii",
+  "text": "Gdy wrzesień ciepły w połowie — październik chłodny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 9,
+  "d": 14,
+  "names": "Podwyższenia Krzyża",
+  "text": "Wrzesień z deszczem — październik z mrozem.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 9,
+  "d": 14,
+  "names": "Podwyższenia Krzyża",
+  "text": "Na Podwyższenie — żegnaj lato.",
+  "note": "Zgodne z tradycyjnym postrzeganiem tego dnia jako granicy lata, niepotwierdzone dosłownie."
+ },
+ {
+  "m": 9,
+  "d": 21,
+  "names": "Mateusza, Józefata",
+  "text": "Na Mateusza — plony policzone.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 9,
+  "d": 22,
+  "names": "Tomasza, Maurycego",
+  "text": "Wrzesień z więdnącym liściem — zima wróżona.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 9,
+  "d": 27,
+  "names": "Wincentego de Paul, Floriana",
+  "text": "Wrzesień ku końcowi — jesień rządzi.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 9,
+  "d": 29,
+  "names": "Michała Archanioła",
+  "text": "Michał archanioł — jesień strzeże.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 9,
+  "d": 30,
+  "names": "Hieronima, Honoriusza",
+  "text": "Koniec września — liście w złocie.",
+  "note": "Poetyckie, ale łagodne i plauzybilne."
+ },
+ {
+  "m": 10,
+  "d": 1,
+  "names": "Teresy, Remigiusza",
+  "text": "Październik z deszczem — listopad suchy.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 3,
+  "names": "Wincentego, Gwidona",
+  "text": "Gdy październik ciepły — listopad mroźny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 4,
+  "names": "Franciszka z Asyżu",
+  "text": "Na Franciszka lecą liście jak płatki.",
+  "note": "Poetyckie, plauzybilne, niepotwierdzone."
+ },
+ {
+  "m": 10,
+  "d": 12,
+  "names": "Maksymiliana, Sławomiry",
+  "text": "Gdy październik pogodny — zima miękka.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 15,
+  "names": "Teresy z Avila, Jadwigi",
+  "text": "Połowa października — zima za dwa miesiące.",
+  "note": "Łagodne stwierdzenie faktu kalendarzowego."
+ },
+ {
+  "m": 10,
+  "d": 18,
+  "names": "Łukasza, Juliana",
+  "text": "Na Łukasza — słońce po jesiennemu.",
+  "note": "Łagodne, plauzybilne, niepotwierdzone."
+ },
+ {
+  "m": 10,
+  "d": 22,
+  "names": "Korduli, Filipa",
+  "text": "Październik z burzą — zima wczesna.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 26,
+  "names": "Ewarysta, Lucjana",
+  "text": "Październik ku końcowi — ziemia śpi.",
+  "note": "Poetycki, ale łagodny sezonowy obraz."
+ },
+ {
+  "m": 10,
+  "d": 28,
+  "names": "Szymona i Judy",
+  "text": "Gdy Szymon mroźny — grudzień śnieżny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 28,
+  "names": "Szymona i Judy",
+  "text": "Szymon i Juda — koniec jesieni wróżą.",
+  "note": "Zgodne tematycznie ze znanym motywem \"Szymona i Judy — zima blisko\", niepotwierdzone dosłownie."
+ },
+ {
+  "m": 10,
+  "d": 29,
+  "names": "Zenobiusza, Felicji",
+  "text": "Gdy październik ciepły na końcu — listopad mroźny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 10,
+  "d": 31,
+  "names": "Wolfganga, Urbana",
+  "text": "Ostatni październik — Wszystkich Świętych za rogiem.",
+  "note": "Tautologiczne, ale łagodne."
+ },
+ {
+  "m": 10,
+  "d": 31,
+  "names": "Wolfganga, Urbana",
+  "text": "Koniec października — zima coraz bliżej.",
+  "note": "Generyczne, łagodne stwierdzenie sezonowe."
+ },
+ {
+  "m": 11,
+  "d": 2,
+  "names": "Zaduszki, Tobiasza",
+  "text": "Kiedy chmurny dzień Zaduszek — zima srogie niesie mrozki.",
+  "note": "Drobny błąd fleksyjny (\"zima srogie\" zam. \"sroga\"), ale plauzybilny styl ludowy."
+ },
+ {
+  "m": 11,
+  "d": 12,
+  "names": "Macieja, Niny",
+  "text": "Po Marcinie zima się zaostrza.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 11,
+  "d": 15,
+  "names": "Leopolda, Elżbiety",
+  "text": "Połowa listopada — zima pewna.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 12,
+  "d": 2,
+  "names": "Balbiny, Bibiany",
+  "text": "Gdy grudzień ciepły — styczeń mroźny.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 12,
+  "d": 6,
+  "names": "Mikołaja",
+  "text": "Mikołaj mroźny — cały rok śnieżny.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 12,
+  "d": 6,
+  "names": "Mikołaja",
+  "text": "Gdy Mikołaj z deszczem — Boże Narodzenie bez śniegu.",
+  "note": "Generyczna korelacja, niepotwierdzona."
+ },
+ {
+  "m": 12,
+  "d": 13,
+  "names": "Łucji",
+  "text": "Na świętą Łucję dzień się o krok przybliży.",
+  "note": "Luźna parafraza tego samego motywu, niepotwierdzona dosłownie."
+ },
+ {
+  "m": 12,
+  "d": 22,
+  "names": "Zenona, Demetriusza",
+  "text": "Po przesileniu dzień przybywa.",
+  "note": "Stwierdzenie faktu, niepotwierdzone jako przysłowie."
+ },
+ {
+  "m": 12,
+  "d": 24,
+  "names": "Ewy, Adama",
+  "text": "Wigilia gwiazdkowa — gwiazda na niebie.",
+  "note": "Tautologiczne, ale łagodne."
+ },
+ {
+  "m": 12,
+  "d": 25,
+  "names": "Narodzenia Pańskiego",
+  "text": "Na Boże Narodzenie słońce zaświeci — urodzajny rok.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 12,
+  "d": 26,
+  "names": "Szczepana, Dionizego",
+  "text": "Na Szczepana — zima potrząsa śniegiem.",
+  "note": "Poetyckie, łagodne, plauzybilne."
+ },
+ {
+  "m": 12,
+  "d": 26,
+  "names": "Szczepana, Dionizego",
+  "text": "Gdy na Szczepana mróz — do wiosny daleko.",
+  "note": "Generyczne, niepotwierdzone."
+ },
+ {
+  "m": 12,
+  "d": 31,
+  "names": "Sylwestra",
+  "text": "Sylwestrowa noc jasna i gwiaździsta — rok obfity.",
+  "note": "Generyczne, niepotwierdzone."
+ }
+]

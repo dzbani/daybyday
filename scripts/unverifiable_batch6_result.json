@@ -1,0 +1,317 @@
+[
+ {
+  "m": 8, "d": 13,
+  "oldText": "Gdy sierpień na Hipolita suchy — wrzesień mokry.",
+  "classification": "suspicious",
+  "newProverb": "Gdy gęś chodzi w sierpniu po lodzie, to w listopadzie chodzi po wodzie.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" — przysłowie przypisane do 13 sierpnia (Hipolit). Oryginał to generyczna korelacja sierpień-suchy/wrzesień-mokry bez pokrycia źródłowego, wzorzec antytezy jak w poprzednich partiach."
+ },
+ {
+  "m": 8, "d": 14,
+  "oldText": "Wigilia Wniebowzięcia — kwiaty do kościoła.",
+  "classification": "suspicious",
+  "newProverb": null,
+  "source": "Brak potwierdzenia. Sprawdzono ekai.pl, misyjne.pl, niedziela.pl, krolujnamchryste.eu — wszystkie umiejscawiają zwyczaj święcenia ziół/kwiatów na 15.08 (Matka Boska Zielna), nie na wigilii 14.08. Tekst nie ma struktury prawdziwego przysłowia (brak korelacji pogodowej/wróżby), tylko opisuje zwyczaj - fabrykowany wypełniacz kalendarza. Nie znaleziono realnego zamiennika datowanego dokładnie na 14 sierpnia."
+ },
+ {
+  "m": 8, "d": 15,
+  "oldText": "Na Wniebowzięcie Maryi zboże w stodole się leży.",
+  "classification": "suspicious",
+  "newProverb": "Od Wniebowzięcia miej w stodole połowę żęcia.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" (15 sierpnia). Potwierdzone niezależnie jako \"Na Wniebowzięcie zakończone żęcie\" (ekai.pl, misyjne.pl). Oryginalny tekst miał błędną/nienaturalną konstrukcję \"zboże... się leży\" i nie pokrywał się z żadnym znanym źródłem."
+ },
+ {
+  "m": 8, "d": 15,
+  "oldText": "Gdy na Matkę Boską Zielną deszcz pada — jesień mokra nadciąga.",
+  "classification": "suspicious",
+  "newProverb": "Na Wniebowzięcie słota, w jesieni dużo błota.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" (15 sierpnia, Matka Boska Zielna). Motyw (deszcz na Wniebowzięcie -> mokra jesień) jest realny, ale oryginalny tekst użyty w bazie to fabrykowana parafraza w szablonie antytezy \"X — Y nadciąga\", nie dosłowny cytat z żadnego źródła."
+ },
+ {
+  "m": 8, "d": 24,
+  "oldText": "Na świętego Bartłomieja dobre żniwa do koleja.",
+  "classification": "suspicious",
+  "newProverb": "Bartłomiej ukazuje, jaka jesień następuje.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" (24 sierpnia, Bartłomiej). Fraza \"do koleja\" w oryginale jest bezsensowna/niepotwierdzona - typowy sygnał fabrykacji."
+ },
+ {
+  "m": 8, "d": 24,
+  "oldText": "Bartłomiej lato zamknie — jesień nadciąga.",
+  "classification": "suspicious",
+  "newProverb": "Jaki dzień Bartłomieja, takiej jesieni nadzieja.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" (24 sierpnia, Bartłomiej). Oryginał to fabrykowana parafraza w szablonie \"X — Y nadciąga\"."
+ },
+ {
+  "m": 8, "d": 24,
+  "oldText": "Bartłomiej z mgłą — zima wczesna.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Bartłomiej z grzmotami, śnieżna zima przed nami.",
+  "source": "kalbi.pl, \"Przysłowia polskie na sierpień\" (24 sierpnia, Bartłomiej). Oryginał to generyczna korelacja bez pokrycia źródłowego."
+ },
+ {
+  "m": 8, "d": 31,
+  "oldText": "Ostatni sierpień — lato żegna się.",
+  "classification": "suspicious",
+  "newProverb": "Ostatni sierpnia zapowiada, jaka pogoda na wrzesień wypada.",
+  "source": "Zbiory przysłów pogodowych (m.in. rodzina.polki.pl \"303 przysłowia o pogodzie\"). Oryginał to tautologiczny wypełniacz bez struktury prawdziwego przysłowia."
+ },
+ {
+  "m": 9, "d": 2,
+  "oldText": "Wrzesień z deszczem — październik suchy.",
+  "classification": "suspicious",
+  "newProverb": "Jeśli wrzesień będzie suchy, październik nie oszczędzi nam pluchy.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Uwaga: prawdziwe przysłowie ma logikę ODWROTNĄ (suchy wrzesień -> mokry październik) niż fabrykowany oryginał (deszczowy wrzesień -> suchy październik) - dodatkowy sygnał fabrykacji przez błąd logiki ludowej."
+ },
+ {
+  "m": 9, "d": 2,
+  "oldText": "Gdy wrzesień ciepły — październik mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Jaki pierwszy wrzesień, taka będzie jesień.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to generyczny szablon korelacji bez pokrycia."
+ },
+ {
+  "m": 9, "d": 6,
+  "oldText": "Gdy wrzesień mglisty — zima wczesna.",
+  "classification": "suspicious",
+  "newProverb": "Gdy wrzesień z pogodą zaczyna, zwykle przez miesiąc pogoda się trzyma.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to generyczna korelacja niepotwierdzona."
+ },
+ {
+  "m": 9, "d": 12,
+  "oldText": "Gdy wrzesień ciepły w połowie — październik chłodny.",
+  "classification": "suspicious",
+  "newProverb": "Wrzesień jeszcze w słońcu chodzi, babie lato już się rodzi.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to generyczny szablon korelacji."
+ },
+ {
+  "m": 9, "d": 14,
+  "oldText": "Wrzesień z deszczem — październik z mrozem.",
+  "classification": "suspicious",
+  "newProverb": "Gdy wrzesień bez deszczów będzie, w zimie wiatrów pełno wszędzie.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to generyczna korelacja."
+ },
+ {
+  "m": 9, "d": 14,
+  "oldText": "Na Podwyższenie — żegnaj lato.",
+  "classification": "suspicious",
+  "newProverb": "Na Podwyższenie Świętego Krzyża jesień się przybliża.",
+  "source": "kalbi.pl, \"Przysłowia polskie na wrzesień\" (14 września, Podwyższenie Krzyża). Oryginał to luźna parafraza prawdziwego motywu, nie dosłowny cytat."
+ },
+ {
+  "m": 9, "d": 21,
+  "oldText": "Na Mateusza — plony policzone.",
+  "classification": "suspicious",
+  "newProverb": "Na święty Mateusz jeśli mróz, jeszcze sanie do szopy włóż.",
+  "source": "kalbi.pl, \"Przysłowia polskie na wrzesień\" (21 września, Mateusz). Realne przysłowia o Mateuszu dotyczą pogody (śnieg/mróz/wiatr), nie \"liczenia plonów\" - motyw oryginału nie ma pokrycia."
+ },
+ {
+  "m": 9, "d": 22,
+  "oldText": "Wrzesień z więdnącym liściem — zima wróżona.",
+  "classification": "suspicious",
+  "newProverb": "Czego lipiec i sierpień nie dowarzy, tego wrzesień nie dosmaży.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to generyczny fabrykat bez pokrycia."
+ },
+ {
+  "m": 9, "d": 27,
+  "oldText": "Wrzesień ku końcowi — jesień rządzi.",
+  "classification": "suspicious",
+  "newProverb": "Wrzesień wrzosami strojny, lecz od pracy znojny.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to tautologiczny wypełniacz."
+ },
+ {
+  "m": 9, "d": 29,
+  "oldText": "Michał archanioł — jesień strzeże.",
+  "classification": "suspicious",
+  "newProverb": "Święty Michał lato przekichał.",
+  "source": "kalbi.pl, \"Przysłowia polskie na wrzesień\" (29 września, Michał Archanioł). Oryginał to generyczna parafraza bez dosłownego pokrycia."
+ },
+ {
+  "m": 9, "d": 30,
+  "oldText": "Koniec września — liście w złocie.",
+  "classification": "suspicious",
+  "newProverb": "Kiedy wrzesień, to już jesień, wtedy jabłek pełna kieszeń.",
+  "source": "kalendarzswiat.pl/przyslowia_wrzesien. Oryginał to poetycki wypełniacz bez struktury przysłowia i bez źródła."
+ },
+ {
+  "m": 10, "d": 1,
+  "oldText": "Październik z deszczem — listopad suchy.",
+  "classification": "suspicious",
+  "newProverb": "Gdy październik z wodami, grudzień z wiatrami.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" (motyw ogólny). Oryginał to generyczny szablon korelacji."
+ },
+ {
+  "m": 10, "d": 3,
+  "oldText": "Gdy październik ciepły — listopad mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Gdy w październiku ciepło chadza, w lutym mrozy naprowadza.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\". Oryginał to generyczny szablon korelacji."
+ },
+ {
+  "m": 10, "d": 4,
+  "oldText": "Na Franciszka lecą liście jak płatki.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Franciszka odlatuje pliszka.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — przysłowie patronalne (Franciszek), realny motyw odlotu ptaków zamiast fabrykowanego porównania liści do płatków."
+ },
+ {
+  "m": 10, "d": 12,
+  "oldText": "Gdy październik pogodny — zima miękka.",
+  "classification": "suspicious",
+  "newProverb": "Gdy październik ostro trzyma, zwykle potem ostra zima.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 12 października."
+ },
+ {
+  "m": 10, "d": 15,
+  "oldText": "Połowa października — zima za dwa miesiące.",
+  "classification": "suspicious",
+  "newProverb": "Kto sieje na świętą Jadwigę, ten zbiera figę.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 15 października (Jadwiga). Oryginał to stwierdzenie kalendarzowego faktu, nie przysłowie."
+ },
+ {
+  "m": 10, "d": 18,
+  "oldText": "Na Łukasza — słońce po jesiennemu.",
+  "classification": "suspicious",
+  "newProverb": "Październik chodzi po kraju, wygania ptactwo z gaju.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 18 października (Łukasz)."
+ },
+ {
+  "m": 10, "d": 22,
+  "oldText": "Październik z burzą — zima wczesna.",
+  "classification": "suspicious",
+  "newProverb": "Ile razy przed nowiem w październiku śnieg spadnie, tyle razy wśród zimy odwilży przypadnie.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 22 października."
+ },
+ {
+  "m": 10, "d": 26,
+  "oldText": "Październik ku końcowi — ziemia śpi.",
+  "classification": "suspicious",
+  "newProverb": "Jesień bezdeszczowa to zima wiatrowa.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" (27 października, motyw ogólny końca miesiąca). Oryginał to poetycki wypełniacz bez źródła."
+ },
+ {
+  "m": 10, "d": 28,
+  "oldText": "Gdy Szymon mroźny — grudzień śnieżny.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Szymona i Judy spodziewają się śniegu i grudy.",
+  "source": "kalbi.pl oraz niezależnie potwierdzone (slowo.redemptor.pl i inne) — klasyczne przysłowie patronalne na 28 października."
+ },
+ {
+  "m": 10, "d": 28,
+  "oldText": "Szymon i Juda — koniec jesieni wróżą.",
+  "classification": "suspicious",
+  "newProverb": "Jak przyjdzie Szymon i Judy, zagoń bydło z pola do budy.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 28 października (Szymon i Juda). Oryginał to luźna parafraza, nie dosłowny cytat."
+ },
+ {
+  "m": 10, "d": 29,
+  "oldText": "Gdy październik ciepły na końcu — listopad mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Gdy październik mroźny, to nie będzie styczeń groźny.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 29 października. Oryginał niemal identyczny w formie do przysłowia z 3 października - powtórka szablonu antytezy, dodatkowy sygnał fabrykacji."
+ },
+ {
+  "m": 10, "d": 31,
+  "oldText": "Ostatni październik — Wszystkich Świętych za rogiem.",
+  "classification": "suspicious",
+  "newProverb": "Październik stoi u dwora, wykop ziemniaki pora.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" — datowane dokładnie na 31 października. Oryginał to tautologiczny wypełniacz."
+ },
+ {
+  "m": 10, "d": 31,
+  "oldText": "Koniec października — zima coraz bliżej.",
+  "classification": "suspicious",
+  "newProverb": "Gdy październik mokro trzyma, zwykle potem ostra zima.",
+  "source": "kalbi.pl, \"Przysłowia polskie na październik\" (17 października, motyw ogólny). Oryginał to generyczny wypełniacz sezonowy."
+ },
+ {
+  "m": 11, "d": 2,
+  "oldText": "Kiedy chmurny dzień Zaduszek — zima srogie niesie mrozki.",
+  "classification": "suspicious",
+  "newProverb": "Wszyscy Święci — śnieg się kręci, a w Zaduszki — dżdży jak ze strużki.",
+  "source": "Zbiory przysłów listopadowych (m.in. spbystry.szkolnastrona.pl i pokrewne). Oryginał zawiera błąd fleksyjny (\"zima srogie\" zam. \"sroga\"), co jest wyraźnym sygnałem fabrykacji."
+ },
+ {
+  "m": 11, "d": 12,
+  "oldText": "Po Marcinie zima się zaostrza.",
+  "classification": "suspicious",
+  "newProverb": "Od świętego Marcina zima się zaczyna.",
+  "source": "kalbi.pl / zbiory przysłów listopadowych — klasyczne przysłowie o świętym Marcinie (11 listopada). Oryginał to luźna, uwspółcześniona parafraza."
+ },
+ {
+  "m": 11, "d": 15,
+  "oldText": "Połowa listopada — zima pewna.",
+  "classification": "suspicious",
+  "newProverb": "Deszcz w połowie listopada, tęgi mróz w styczniu zapowiada.",
+  "source": "kalbi.pl — datowane dokładnie na 15 listopada. Oryginał to generyczne stwierdzenie bez struktury przysłowia."
+ },
+ {
+  "m": 12, "d": 2,
+  "oldText": "Gdy grudzień ciepły — styczeń mroźny.",
+  "classification": "suspicious",
+  "newProverb": "Jeśli w grudniu często dmucha, to w marcu i kwietniu plucha.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\". Oryginał to generyczny szablon korelacji."
+ },
+ {
+  "m": 12, "d": 6,
+  "oldText": "Mikołaj mroźny — cały rok śnieżny.",
+  "classification": "suspicious",
+  "newProverb": "Grudzień z grzmotami, rok z wiatrami.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\" — datowane dokładnie na 6 grudnia (Mikołaj)."
+ },
+ {
+  "m": 12, "d": 6,
+  "oldText": "Gdy Mikołaj z deszczem — Boże Narodzenie bez śniegu.",
+  "classification": "suspicious",
+  "newProverb": "Na Mikołaja porzuć wóz i zaprzęż sanie.",
+  "source": "meteoprog.pl, \"Przysłowia mikołajkowe\" — klasyczne przysłowie na 6 grudnia."
+ },
+ {
+  "m": 12, "d": 13,
+  "oldText": "Na świętą Łucję dzień się o krok przybliży.",
+  "classification": "suspicious",
+  "newProverb": "Święta Łucja dnia przyrzuca.",
+  "source": "polskieradio.pl, astronet.pl, wrozbyonline.pl — dobrze udokumentowane klasyczne przysłowie (warianty: \"Święta Łuca dnia przykróca\", \"Święto Łucy - noc króci\"). Oryginał to luźna, spłycona parafraza tego samego motywu."
+ },
+ {
+  "m": 12, "d": 22,
+  "oldText": "Po przesileniu dzień przybywa.",
+  "classification": "suspicious",
+  "newProverb": null,
+  "source": "Nie znaleziono udokumentowanego przysłowia ludowego na 22 grudnia. To stwierdzenie faktu astronomicznego, nie przysłowie. Co ciekawe, prawdziwy, historyczny motyw \"dzień przybywa\" jest w polskiej tradycji przypisany świętej Łucji (13.12) z powodu przesunięcia kalendarza gregoriańskiego (potwierdzone przez polskieradio.pl), a nie przesileniu zimowemu - fabrykowany wpis najwyraźniej pomylił/przesunął ten motyw na złą datę."
+ },
+ {
+  "m": 12, "d": 24,
+  "oldText": "Wigilia gwiazdkowa — gwiazda na niebie.",
+  "classification": "suspicious",
+  "newProverb": "Jak w Wigilię z dachu ciecze, zima długo się przewlecze.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\" — datowane dokładnie na 24 grudnia. Oryginał to tautologiczny wypełniacz."
+ },
+ {
+  "m": 12, "d": 25,
+  "oldText": "Na Boże Narodzenie słońce zaświeci — urodzajny rok.",
+  "classification": "suspicious",
+  "newProverb": "W jakim blasku Bóg się rodzi, w takim cały styczeń chodzi.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\" — datowane dokładnie na 25 grudnia. Oryginał to generyczny fabrykat."
+ },
+ {
+  "m": 12, "d": 26,
+  "oldText": "Na Szczepana — zima potrząsa śniegiem.",
+  "classification": "suspicious",
+  "newProverb": "Jaka pogoda w Szczepana panuje, taka na luty nam się szykuje.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\" — datowane dokładnie na 26 grudnia (Szczepan)."
+ },
+ {
+  "m": 12, "d": 26,
+  "oldText": "Gdy na Szczepana mróz — do wiosny daleko.",
+  "classification": "suspicious",
+  "newProverb": "Szczepan mroźny, luty groźny.",
+  "source": "przyslowia.net, \"Przysłowia na 26 grudnia\" i pokrewne zbiory — klasyczne przysłowie patronalne."
+ },
+ {
+  "m": 12, "d": 31,
+  "oldText": "Sylwestrowa noc jasna i gwiaździsta — rok obfity.",
+  "classification": "suspicious",
+  "newProverb": "Dzień Sylwestrowy pokaże czas lipcowy.",
+  "source": "kalbi.pl, \"Przysłowia polskie na grudzień\" — datowane dokładnie na 31 grudnia (Sylwester). Oryginał to generyczny fabrykat."
+ }
+]
