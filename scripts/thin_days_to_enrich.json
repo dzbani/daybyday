@@ -1,0 +1,632 @@
+[
+ {
+  "m": 5,
+  "d": 9,
+  "names": "Grzegorza, Bożeny",
+  "existingProverb": "Gdy maj jest przy pogodzie, nie bywają siana w szkodzie."
+ },
+ {
+  "m": 5,
+  "d": 11,
+  "names": "Filipa, Ignacego",
+  "existingProverb": "Grzmot w maju nie szkodzi, sad dobrze obrodzi."
+ },
+ {
+  "m": 5,
+  "d": 17,
+  "names": "Paschalisa, Sławomira",
+  "existingProverb": "Kiedy lipa w maju kwitnie, to w ulach miód zawiśnie."
+ },
+ {
+  "m": 5,
+  "d": 19,
+  "names": "Piotra, Ivo",
+  "existingProverb": "Gdy kukułka kuka w maju, spodziewaj się urodzaju."
+ },
+ {
+  "m": 5,
+  "d": 24,
+  "names": "Joanny, Zuzanny",
+  "existingProverb": "Majowe błoto, więcej niż złoto."
+ },
+ {
+  "m": 5,
+  "d": 29,
+  "names": "Maksymiliana, Magdaleny",
+  "existingProverb": "Deszcz majowy, chleb gotowy."
+ },
+ {
+  "m": 6,
+  "d": 3,
+  "names": "Klotyldy, Karola",
+  "existingProverb": "Czerwiec stały, grudzień doskonały."
+ },
+ {
+  "m": 6,
+  "d": 5,
+  "names": "Bonifacego, Walburgi",
+  "existingProverb": "Czerwiec na maju zwykle się wzoruje, jego pluchy, pogody, często naśladuje."
+ },
+ {
+  "m": 6,
+  "d": 6,
+  "names": "Norberta, Filipa",
+  "existingProverb": "Siej na świętego Norberta, będzie jęczmienia sterta."
+ },
+ {
+  "m": 6,
+  "d": 7,
+  "names": "Roberta, Wiesławy",
+  "existingProverb": "Norbert, Robert, Medard to bracia młodzi, spodziewajcie się powodzi."
+ },
+ {
+  "m": 6,
+  "d": 11,
+  "names": "Barnaby, Jana",
+  "existingProverb": "Na świętego Barnabę idź kosić trawę."
+ },
+ {
+  "m": 6,
+  "d": 12,
+  "names": "Jana, Onufrego",
+  "existingProverb": "Na św. Onufry otwierajcie kufry."
+ },
+ {
+  "m": 6,
+  "d": 14,
+  "names": "Walerego, Michała",
+  "existingProverb": "Pełnia czerwcowa — burza gotowa."
+ },
+ {
+  "m": 6,
+  "d": 17,
+  "names": "Laury, Marcjalisa",
+  "existingProverb": "W czerwcu się okaże, co nam Bóg da w darze."
+ },
+ {
+  "m": 6,
+  "d": 18,
+  "names": "Marka, Elżbiety",
+  "existingProverb": "Nie trzeba w czerwcu o deszcz prosić, przyjdzie jak zaczniemy kosić."
+ },
+ {
+  "m": 6,
+  "d": 20,
+  "names": "Bogny, Rafaela",
+  "existingProverb": "Grzmoty czerwca rozweselają rolnikom serca."
+ },
+ {
+  "m": 6,
+  "d": 26,
+  "names": "Jana, Dawida",
+  "existingProverb": "W czerwcu pełnia sprowadza burze, ostatnia kwadra zaś deszcze duże."
+ },
+ {
+  "m": 7,
+  "d": 3,
+  "names": "Tomasza, Jacka",
+  "existingProverb": "Gdy w lipcu słońce dopieka, burza niedaleka."
+ },
+ {
+  "m": 7,
+  "d": 4,
+  "names": "Elżbiety, Zygmunta",
+  "existingProverb": "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda."
+ },
+ {
+  "m": 7,
+  "d": 5,
+  "names": "Karoliny, Antoniego",
+  "existingProverb": "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota."
+ },
+ {
+  "m": 7,
+  "d": 7,
+  "names": "Klaudii, Cyryla",
+  "existingProverb": "Kwiat lipcowy, napój zdrowy."
+ },
+ {
+  "m": 7,
+  "d": 8,
+  "names": "Elżbiety, Eugeniusza",
+  "existingProverb": "Lipcowe deszcze dla chłopa kleszcze; jak pogoda, większa swoboda."
+ },
+ {
+  "m": 7,
+  "d": 9,
+  "names": "Weroniki, Zenona",
+  "existingProverb": "Gdy się pająk w lipcu przechodzi, ze sobą deszcz przywodzi, gdy swą pajęczynę psuje, bliską burzę czuje."
+ },
+ {
+  "m": 7,
+  "d": 10,
+  "names": "Wawrzyńca, Rufiny",
+  "existingProverb": "Lipcowe upały, wrzesień doskonały."
+ },
+ {
+  "m": 7,
+  "d": 11,
+  "names": "Benedykta, Olgi",
+  "existingProverb": "W lipcu upały, styczeń mroźny cały."
+ },
+ {
+  "m": 7,
+  "d": 12,
+  "names": "Jana Gwalberta, Brunona",
+  "existingProverb": "Lipiec — ostatek chleba wypiec."
+ },
+ {
+  "m": 7,
+  "d": 13,
+  "names": "Henryka, Sary",
+  "existingProverb": "Miesiąc lipiec musi przypiec i ostatki mąki wypiec."
+ },
+ {
+  "m": 7,
+  "d": 14,
+  "names": "Kamila, Bonawentury",
+  "existingProverb": "Upały lipcowe, mrozy styczniowe."
+ },
+ {
+  "m": 7,
+  "d": 17,
+  "names": "Aleksego, Andrzeja",
+  "existingProverb": "Gdy lipiec z deszczem, zima będzie z wiatrem."
+ },
+ {
+  "m": 7,
+  "d": 18,
+  "names": "Sławy, Szymona",
+  "existingProverb": "Jeżeli w żniwa mysz w polu gniazdo wysoko zakłada, znak to, że zima srogie śniegi zapowiada."
+ },
+ {
+  "m": 7,
+  "d": 19,
+  "names": "Wincentego, Wiesławy",
+  "existingProverb": "Czego lipiec nie dowarzy, tego sierpień nie dosmaży."
+ },
+ {
+  "m": 7,
+  "d": 21,
+  "names": "Daniela, Wawrzyńca",
+  "existingProverb": "Kiedy lipiec daje deszcze, długie lato będzie jeszcze."
+ },
+ {
+  "m": 7,
+  "d": 23,
+  "names": "Brygidy, Apolinarego",
+  "existingProverb": "Jak poranek mglisty, wieczór przezroczysty."
+ },
+ {
+  "m": 7,
+  "d": 24,
+  "names": "Kingi, Jadwigi",
+  "existingProverb": "Czego lipiec i sierpień nie dowarzy, tego wrzesień nie usmaży."
+ },
+ {
+  "m": 7,
+  "d": 27,
+  "names": "Natalii, Lilii",
+  "existingProverb": "Gdy w lipcu słońce dopieka, burza niedaleka."
+ },
+ {
+  "m": 8,
+  "d": 2,
+  "names": "Gustawa, Euzebiusza",
+  "existingProverb": "Na święty Gustaw kopy w polu ustaw."
+ },
+ {
+  "m": 8,
+  "d": 3,
+  "names": "Nikodema, Lidii",
+  "existingProverb": "Pogoda na Nikodema — cały miesiąc deszczu nie ma."
+ },
+ {
+  "m": 8,
+  "d": 4,
+  "names": "Jana Vianneya, Dominika",
+  "existingProverb": "Gdy ciepło na Dominika, ostra zima nas dotyka."
+ },
+ {
+  "m": 8,
+  "d": 6,
+  "names": "Jakuba, Sławy",
+  "existingProverb": "W Przemienienie Pańskie są burze szatańskie."
+ },
+ {
+  "m": 8,
+  "d": 7,
+  "names": "Kajetana, Donata",
+  "existingProverb": "Święty Kajetanie, strzeż od deszczu sprzątanie."
+ },
+ {
+  "m": 8,
+  "d": 9,
+  "names": "Romana, Teresy",
+  "existingProverb": "Czego sierpień nie dowarzy, tego wrzesień nie doparzy."
+ },
+ {
+  "m": 8,
+  "d": 11,
+  "names": "Zuzanny, Klary",
+  "existingProverb": "Od świętej Klary są już ładne dary."
+ },
+ {
+  "m": 8,
+  "d": 12,
+  "names": "Hilarii, Leszka",
+  "existingProverb": "Gdy w sierpniu z północy dmucha, następuje zwykle posucha."
+ },
+ {
+  "m": 8,
+  "d": 14,
+  "names": "Maksymiliana, Eberharda",
+  "existingProverb": "Początki sierpnia pogodne, wróżą zimy łagodne."
+ },
+ {
+  "m": 8,
+  "d": 16,
+  "names": "Rocha, Stefana",
+  "existingProverb": "Na święty Roch w stodole groch."
+ },
+ {
+  "m": 8,
+  "d": 17,
+  "names": "Jacka, Bertolda",
+  "existingProverb": "Jeśli w dniu Jacka nie pada, suchą jesień zapowiada."
+ },
+ {
+  "m": 8,
+  "d": 18,
+  "names": "Heleny, Klary",
+  "existingProverb": "Żołędzie pełne i białe, przyszłe lato doskonałe."
+ },
+ {
+  "m": 8,
+  "d": 19,
+  "names": "Jana Eudes, Magnusa",
+  "existingProverb": "Kiedy sierpień wrzos rozwija, jesień krótka, szybko mija."
+ },
+ {
+  "m": 8,
+  "d": 20,
+  "names": "Bernarda, Sławy",
+  "existingProverb": "Jeśli na Bernarda ziemia twarda, to będzie zima harda, a jak miękka to lekka."
+ },
+ {
+  "m": 8,
+  "d": 21,
+  "names": "Piusa X, Joanny",
+  "existingProverb": "Jeśli piękny sierpień, gotuj sobie chłopku kieszeń."
+ },
+ {
+  "m": 8,
+  "d": 22,
+  "names": "Marii, Tymoteusza",
+  "existingProverb": "Jeśli w sierpniu dni jasne, będą stodoły ciasne."
+ },
+ {
+  "m": 8,
+  "d": 23,
+  "names": "Róży z Limy, Filipa",
+  "existingProverb": "W sierpniu grzmotów wiele, mokrą zimę ściele."
+ },
+ {
+  "m": 8,
+  "d": 25,
+  "names": "Ludwika, Józefy",
+  "existingProverb": "Gdy sierpień w upały zbywa, lato długie zwykle bywa."
+ },
+ {
+  "m": 8,
+  "d": 28,
+  "names": "Augustyna, Wiliama",
+  "existingProverb": "Sierpień pogodny jest dla winogron wygodny."
+ },
+ {
+  "m": 9,
+  "d": 1,
+  "names": "Idziego, Bronisławy",
+  "existingProverb": "Święty Idzi wiedzie wrzesień, wnet nadejdzie dżdżysta jesień."
+ },
+ {
+  "m": 9,
+  "d": 3,
+  "names": "Grzegorza Wielkiego, Danuty",
+  "existingProverb": "Wrzeszczy wrzesień, że już jesień."
+ },
+ {
+  "m": 9,
+  "d": 4,
+  "names": "Rozalii, Irydy",
+  "existingProverb": "Gdy nadejdzie wrzesień, rolnik ma zawsze pełną kieszeń."
+ },
+ {
+  "m": 9,
+  "d": 5,
+  "names": "Doroty, Wawrzyńca",
+  "existingProverb": "Gdy wrzesień bez deszczów będzie, w zimie wiatrów pełno wszędzie."
+ },
+ {
+  "m": 9,
+  "d": 7,
+  "names": "Reginy, Melchiora",
+  "existingProverb": "Święta Regina mgły rozpina."
+ },
+ {
+  "m": 9,
+  "d": 9,
+  "names": "Sergiusza, Piotra",
+  "existingProverb": "Gdy grzyby wielkie korzenie mają, wielką zimę zapowiadają."
+ },
+ {
+  "m": 9,
+  "d": 10,
+  "names": "Mikołaja, Salomei",
+  "existingProverb": "Wrzesień chodzi po rosie, zbiera grzyby we wrzosie."
+ },
+ {
+  "m": 9,
+  "d": 11,
+  "names": "Jacka, Prota",
+  "existingProverb": "Ze wszystkich świętych najlepszy Jacek, bo kto żyje dostał placek."
+ },
+ {
+  "m": 9,
+  "d": 13,
+  "names": "Jana Złotoustego, Maurycego",
+  "existingProverb": "Czym dłużej jaskółki we wrześniu zostają, tym dłużej piękne i jasne dni bywają."
+ },
+ {
+  "m": 9,
+  "d": 16,
+  "names": "Korneliusza, Edyty",
+  "existingProverb": "Im głębiej we wrześniu grzebią się robaki, tym srożej się zima da ludziom we znaki."
+ },
+ {
+  "m": 9,
+  "d": 17,
+  "names": "Roberta, Hildegardy",
+  "existingProverb": "Jaką pogodę na nowiu da wrzesień, taka bywa zwykle przez całą jesień."
+ },
+ {
+  "m": 9,
+  "d": 18,
+  "names": "Stanisławy, Ireny",
+  "existingProverb": "Kiedy Irena z mrozem przybywa, babie lato krótkie bywa."
+ },
+ {
+  "m": 9,
+  "d": 19,
+  "names": "Januarego, Konstancji",
+  "existingProverb": "Wrzesień wrzosami strojny, lecz od pracy znojny."
+ },
+ {
+  "m": 9,
+  "d": 20,
+  "names": "Eustachiusza, Faustyny",
+  "existingProverb": "Gdy we wrześniu grzybów brak, niezawodny zimy znak."
+ },
+ {
+  "m": 9,
+  "d": 24,
+  "names": "Marii, Gerarda",
+  "existingProverb": "Na Gerarda, gdy sucho, zima będzie z pluchą."
+ },
+ {
+  "m": 9,
+  "d": 25,
+  "names": "Władysława, Aurela",
+  "existingProverb": "Wrześniowa słota, miarka deszczu, korzec błota."
+ },
+ {
+  "m": 9,
+  "d": 28,
+  "names": "Wacława, Libuszy",
+  "existingProverb": "Na świętego Wacława w polu pustki, w domu sława."
+ },
+ {
+  "m": 10,
+  "d": 5,
+  "names": "Placyda, Leonarda",
+  "existingProverb": "W październiku, gdy liść z drzewa niesporo opada, późną to wiosnę zapowiada."
+ },
+ {
+  "m": 10,
+  "d": 6,
+  "names": "Brunona, Czcibora",
+  "existingProverb": "W październiku kawek gromada, słotne dni nam zapowiada."
+ },
+ {
+  "m": 10,
+  "d": 8,
+  "names": "Pelagii, Benedykta",
+  "existingProverb": "Ile razy przed nowiem w październiku śnieg spadnie, tyle razy wśród zimy odwilży przypadnie."
+ },
+ {
+  "m": 10,
+  "d": 9,
+  "names": "Jana z Capestrano, Elżbiety",
+  "existingProverb": "Gdy październik z wodami, grudzień z wiatrami."
+ },
+ {
+  "m": 10,
+  "d": 10,
+  "names": "Franciszka, Daniela",
+  "existingProverb": "Październik spoczynku nie chce dać, każe orać, każe siać."
+ },
+ {
+  "m": 10,
+  "d": 11,
+  "names": "Emilii, Aleksandra",
+  "existingProverb": "Gdy październik ostro trzyma, zwykle potem ostra zima."
+ },
+ {
+  "m": 10,
+  "d": 13,
+  "names": "Edwarda, Faustyny",
+  "existingProverb": "Na Edwarda jesień twarda."
+ },
+ {
+  "m": 10,
+  "d": 14,
+  "names": "Kaliksta, Benedykta",
+  "existingProverb": "Liść na drzewie mocno trzyma, nie tak prędko przyjdzie zima."
+ },
+ {
+  "m": 10,
+  "d": 17,
+  "names": "Ignacego, Rozalii",
+  "existingProverb": "Październik ciepły, będzie luty skrzepły."
+ },
+ {
+  "m": 10,
+  "d": 19,
+  "names": "Piotra z Alcantary, Jana",
+  "existingProverb": "Idzie jesień, a tu pusta kieszeń."
+ },
+ {
+  "m": 10,
+  "d": 20,
+  "names": "Ireny, Wencelindy",
+  "existingProverb": "Kiedy w październiku mrozy i zawieje, w styczniu ciepłe słonko pewnie zajaśnieje."
+ },
+ {
+  "m": 10,
+  "d": 21,
+  "names": "Urszuli, Celiny",
+  "existingProverb": "Święta Urszula perły rozsuła."
+ },
+ {
+  "m": 10,
+  "d": 24,
+  "names": "Rafała, Antoniego",
+  "existingProverb": "Jaki październik, taki marzec, doznał tego niejeden starzec."
+ },
+ {
+  "m": 10,
+  "d": 25,
+  "names": "Darii, Kryspiany",
+  "existingProverb": "Październik, bo paździerze baba z lnu cierlicą bierze."
+ },
+ {
+  "m": 10,
+  "d": 27,
+  "names": "Sabiny, Wincentego",
+  "existingProverb": "Jesień bezdeszczowa to zima wiatrowa."
+ },
+ {
+  "m": 11,
+  "d": 3,
+  "names": "Sylwii, Huberta",
+  "existingProverb": "Kiedy swego czasu goły las nastaje, święty Hubert z lasu cały obiad daje."
+ },
+ {
+  "m": 11,
+  "d": 4,
+  "names": "Karola Boromeusza, Witosławy",
+  "existingProverb": "Deszcze listopadowe budzą wiatry zimowe."
+ },
+ {
+  "m": 11,
+  "d": 5,
+  "names": "Elżbiety, Zachariasza",
+  "existingProverb": "Gdy w listopadzie liść na szczytach drzew się trzyma, to w maju na nowe liście spadnie jeszcze zima."
+ },
+ {
+  "m": 11,
+  "d": 6,
+  "names": "Leonarda, Feliksa",
+  "existingProverb": "W listopadzie kapusty pełne kadzie."
+ },
+ {
+  "m": 11,
+  "d": 7,
+  "names": "Ernesta, Rufiny",
+  "existingProverb": "Jaka pogoda listopadowa, taka i marcowa."
+ },
+ {
+  "m": 11,
+  "d": 8,
+  "names": "Seweryna, Klaudiusza",
+  "existingProverb": "Gdy łagodna jesień trzyma, będzie krótka, ostra zima."
+ },
+ {
+  "m": 11,
+  "d": 9,
+  "names": "Teodora, Engelbertu",
+  "existingProverb": "W listopadzie goło w sadzie."
+ },
+ {
+  "m": 11,
+  "d": 10,
+  "names": "Leona, Ludomiry",
+  "existingProverb": "Gdy w listopadzie wody się podniosą, to snadź w zimie deszcze roszą."
+ },
+ {
+  "m": 11,
+  "d": 13,
+  "names": "Stanisława Kostki, Dydaka",
+  "existingProverb": "Na Stanisława Kostkę ujrzysz śniegu drobnostkę, a na Ofiarowanie przydadzą się sanie."
+ },
+ {
+  "m": 11,
+  "d": 14,
+  "names": "Wawrzyńca, Emila",
+  "existingProverb": "Jeśli kret w listopadzie jeszcze późno ryje, na Nowy Rok komar wpadnie w bryję."
+ },
+ {
+  "m": 11,
+  "d": 16,
+  "names": "Edmunda, Małgorzaty",
+  "existingProverb": "Grzmot listopada dużo zboża zapowiada."
+ },
+ {
+  "m": 11,
+  "d": 18,
+  "names": "Romana, Ody",
+  "existingProverb": "Gdy listopad z deszczami, grudzień zwykle z wiatrami."
+ },
+ {
+  "m": 11,
+  "d": 19,
+  "names": "Elżbiety, Seweryna",
+  "existingProverb": "Na świętą Elżbietę bywa śnieg nad piętę."
+ },
+ {
+  "m": 11,
+  "d": 20,
+  "names": "Feliksa, Rafaela",
+  "existingProverb": "W listopadzie mróz, szykuj w marcu wóz."
+ },
+ {
+  "m": 11,
+  "d": 22,
+  "names": "Cecylii, Marka",
+  "existingProverb": "Kiedy na świętą Cecylię grzmi, rolnik o dobry roku śni."
+ },
+ {
+  "m": 11,
+  "d": 23,
+  "names": "Klemensa, Felicyty",
+  "existingProverb": "Święty Klemens zimę zaczyna, święty Piotr ją kończy."
+ },
+ {
+  "m": 11,
+  "d": 26,
+  "names": "Sylwestra, Konrada",
+  "existingProverb": "Jaki listopad, taki będzie marzec, prorokuje stuletni starzec."
+ },
+ {
+  "m": 11,
+  "d": 28,
+  "names": "Jakuba, Stefana",
+  "existingProverb": "Słońce listopada mrozy zapowiada."
+ },
+ {
+  "m": 12,
+  "d": 22,
+  "names": "Zenona, Demetriusza",
+  "existingProverb": "Gdy łagodna jesień trzyma, będzie krótka, ostra zima."
+ }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "m": 1,
+    "d": 21,
+    "newProverb": "Jak Święta Agnieszka wypuści śnieg z mieszka, to go nie powstrzyma ani do Franciszka.",
+    "source": "kalbi.pl (kalendarz przysłów, 21 stycznia) — wariant ludowy przysłowia o św. Agnieszce (24.01 to wspomnienie św. Franciszka Salezego)",
+    "matchType": "saint"
+  },
+  {
+    "m": 2,
+    "d": 3,
+    "newProverb": "Deszcz na świętego Błażeja, słaba wiosny nadzieja.",
+    "source": "kalbi.pl (kalendarz przysłów, 3 lutego — dzień św. Błażeja)",
+    "matchType": "saint"
+  },
+  {
+    "m": 4,
+    "d": 16,
+    "newProverb": "Grzmot w kwietniu dobra nowina, już szron roślin nie pościna.",
+    "source": "kalbi.pl / kalendarzswiat.pl (przysłowia polskie na kwiecień) — ogólnomiesięczne przysłowie ludowe o kwietniu",
+    "matchType": "month-general"
+  },
+  {
+    "m": 4,
+    "d": 17,
+    "newProverb": "Za kwietniem ciepłym idzie maj chłodny.",
+    "source": "kalbi.pl (przysłowia polskie na kwiecień) — ogólnomiesięczne przysłowie ludowe o kwietniu",
+    "matchType": "month-general"
+  },
+  {
+    "m": 5,
+    "d": 5,
+    "newProverb": "Maj bogaty sieje kwiaty.",
+    "source": "kalbi.pl (przysłowia polskie na maj) — ogólnomiesięczne przysłowie ludowe o maju",
+    "matchType": "month-general"
+  },
+  {
+    "m": 6,
+    "d": 4,
+    "newProverb": "Czerwiec nosi dni gorące, kosa dzwoni już na łące.",
+    "source": "kalbi.pl (przysłowia polskie na czerwiec) — ogólnomiesięczne przysłowie ludowe o czerwcu",
+    "matchType": "month-general"
+  },
+  {
+    "m": 7,
+    "d": 6,
+    "newProverb": "Czego lipiec nie dowarzy, tego sierpień nie dosmaży.",
+    "source": "kalbi.pl (przysłowia polskie na lipiec) — ogólnomiesięczne przysłowie ludowe o lipcu",
+    "matchType": "month-general"
+  },
+  {
+    "m": 7,
+    "d": 28,
+    "newProverb": "Lipcowe upały, wrzesień doskonały.",
+    "source": "kalbi.pl (przysłowia polskie na lipiec) — ogólnomiesięczne przysłowie ludowe o lipcu",
+    "matchType": "month-general"
+  }
+]

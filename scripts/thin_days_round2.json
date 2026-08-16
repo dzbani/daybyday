@@ -1,0 +1,50 @@
+[
+ {
+  "m": 1,
+  "d": 21,
+  "names": "Agnieszki",
+  "existingProverb": "Święta Agnieszka wypuszcza skowronka z mieszka."
+ },
+ {
+  "m": 2,
+  "d": 3,
+  "names": "Błażeja, Oskara",
+  "existingProverb": "Święty Błażej, gardła zagrzej."
+ },
+ {
+  "m": 4,
+  "d": 16,
+  "names": "Benedykta, Bernadety",
+  "existingProverb": "Choć i w kwietniu słonko grzeje, nieraz pole śnieg zawieje."
+ },
+ {
+  "m": 4,
+  "d": 17,
+  "names": "Roberta, Rudolfa",
+  "existingProverb": "Jeśli w kwietniu pszczoły latają, to długie chłody się zapowiadają."
+ },
+ {
+  "m": 5,
+  "d": 5,
+  "names": "Ireny, Waldemara",
+  "existingProverb": "Deszcz majowy, chleb gotowy."
+ },
+ {
+  "m": 6,
+  "d": 4,
+  "names": "Franciszka, Kwiryna",
+  "existingProverb": "Gdy czerwiec chłodem i wodą szafuje, to zwykle rok cały popsuje."
+ },
+ {
+  "m": 7,
+  "d": 6,
+  "names": "Dominiki, Gotarda",
+  "existingProverb": "Kto w lipcu patrzy chłodu, nacierpi się w zimie głodu."
+ },
+ {
+  "m": 7,
+  "d": 28,
+  "names": "Innocentego, Wiktora",
+  "existingProverb": "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda."
+ }
+]
