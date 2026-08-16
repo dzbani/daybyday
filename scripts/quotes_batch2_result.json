@@ -1,0 +1,194 @@
+[
+  {
+    "original_text_pl": "Trzy rzeczy budują charakter: praca, praca i jeszcze raz praca.",
+    "original_author": "Albert Schweitzer",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono żadnego źródła (angielskiego oryginału ani polskiego) łączącego to zdanie ze Schweitzerem - ani w bazach cytatów (BrainyQuote, AZQuotes, WikiQuote, WIST), ani w polskich zbiorach cytatów o pracy, ani w publikacjach o Schweitzerze. Podejrzanie niska 'widoczność' cytatu w internecie (w przeciwieństwie do typowych viralowych fałszywych cytatów) sugeruje, że może to być rzadko powielana fabrykacja lub błędne tłumaczenie, ale brak jest twardego dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeżeli wiesz czego chcesz, masz już połowę drogi za sobą.",
+    "original_author": "Theodore Roosevelt",
+    "status": "misattributed",
+    "correct_author": "nieznany (brak pierwotnego źródła)",
+    "evidence": "Bliźniacza, znacznie popularniejsza wersja tego cytatu ('Believe you can and you're halfway there') jest oficjalnie zakwestionowana przez Theodore Roosevelt Presidential Library: 'No primary source has ever been found.' Nie znaleziono żadnego udokumentowanego źródła (pisma, przemówienia) potwierdzającego którąkolwiek wersję tej myśli u Roosevelta. https://www.trlibrary.com/tr/quotes",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Wszyscy mamy skrzydła — ale ci, którzy marzą o lataniu, często chodzą pieszo.",
+    "original_author": "Erich Fromm",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono żadnego angielskiego ani niemieckiego oryginału tego zdania przypisywanego Frommowi w żadnej bazie cytatów ani w jego dziełach. Bardzo podobne sformułowania o 'skrzydłach' krążą w internecie przypisywane różnym osobom (Franz Kafka - w odwrotnym sensie, Michael Hutchence, Miranda Kerr), co sugeruje, że to 'wędrujący' cytat bez jednoznacznego autora, ale nie ma bezpośredniego dowodu obalającego akurat przypisanie Frommowi.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "To nie gwiazdy kształtują nasze losy — my sami je kształtujemy.",
+    "original_author": "William Shakespeare",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Popularna parafraza autentycznej kwestii Cassiusa z 'Juliusza Cezara' (akt I, scena II): 'The fault, dear Brutus, is not in our stars, But in ourselves, that we are underlings.' Treść i autorstwo Shakespeare'a są w pełni potwierdzone, choć spopularyzowana wersja jest uproszczoną parafrazą, nie dosłownym cytatem ze sztuki. https://www.goodnewsnetwork.org/william-shakespeare-quote-about-our-destiny/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Świat, który stworzyliśmy, jest procesem naszego myślenia. Nie można go zmienić bez zmiany myślenia.",
+    "original_author": "Albert Einstein",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko krąży jako einsteinowski, ale bez jednoznacznie udokumentowanego źródła. Wg dostępnych informacji o książce Alice Calaprice 'The New Quotable Einstein' (2005) redaktorka nie zdołała znaleźć źródła dla tej wersji i uznała ją za możliwą parafrazę autentycznej wypowiedzi Einsteina z 1946 roku. Brak jest jednak jednoznacznego zaklasyfikowania jako fałszywy (jak w przypadku innych sprawdzonych tu cytatów 'Probably Not By Einstein').",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "To nasze wybory, a nie nasze zdolności, pokazują, czym naprawdę jesteśmy.",
+    "original_author": "J. K. Rowling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słowa Dumbledore'a z 'Harry Potter and the Chamber of Secrets' (Harry Potter i Komnata Tajemnic): 'It is our choices, Harry, that show what we truly are, far more than our abilities.' https://www.goodreads.com/quotes/12415-it-is-our-choices-harry-that-show-what-we-truly",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Są tylko dwa sposoby przeżycia życia — jeden jakby nic nie było cudem, drugi jakby wszystko było cudem.",
+    "original_author": "Albert Einstein",
+    "status": "misattributed",
+    "correct_author": "nieznany (autor pozostaje anonimowy wg Quote Investigator)",
+    "evidence": "Quote Investigator (2024): jedynym śladem przypisania Einsteinowi jest izolowana notatka geografa Gilberta Fowlera White'a z 1942 r. bez wyjaśnienia źródła. Podobna myśl pojawia się już w kazaniu Basila Wilberforce'a z 1896 r. i u św. Augustyna (via Edward S. Drown, 1913). Cytat umieszczono w sekcji 'Probably Not By Einstein' w 'The Ultimate Quotable Einstein' (2010) Alice Calaprice. QI konkluduje: 'currently, QI believes the creator remains anonymous.' https://quoteinvestigator.com/2024/05/04/everything-miracle/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Niedoskonałość jest piękna, szaleństwo jest geniuszem — lepiej być absurdalnie śmiesznym niż absurdalnie nudnym.",
+    "original_author": "Marilyn Monroe",
+    "status": "misattributed",
+    "correct_author": "nieznany (prawdopodobnie fabrykacja internetowa)",
+    "evidence": "Thought Catalog ('Most Of Those Marilyn Monroe Quotes Are Fake') jednoznacznie wymienia ten cytat jako coś, czego Monroe NIE powiedziała, w ramach szerszego, wielokrotnie potwierdzonego wzorca masowych fałszywych cytatów przypisywanych jej w internecie (por. już 2 wcześniej potwierdzone przypadki w tej samej bazie cytatów). https://thoughtcatalog.com/kara-nesvig/2014/08/most-of-those-marilyn-monroe-quotes-are-fake-heres-what-she-did-and-didnt-say/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Kobieta jest jak torebka herbaty — nie wiesz, jaka jest mocna, dopóki nie trafi do gorącej wody.",
+    "original_author": "Eleanor Roosevelt",
+    "status": "misattributed",
+    "correct_author": "nieznany (popularne powiedzenie ewoluujące od 1915 r.; przypisanie Eleanor Roosevelt spopularyzowała Hillary Clinton w latach 2000., bez dowodów)",
+    "evidence": "Quote Investigator: archiwiści Franklin D. Roosevelt Library nie znaleźli tego zdania w żadnych pismach Eleanor Roosevelt. Najwcześniejsza wersja pochodzi z gazety w Seattle z 1915 r. (o mężczyznach, nie o herbacie). Wersję z 'tea bags' używał m.in. Armand J. Gariepy (lata 50.), Phyllis Schlafly (1967), Rita Mae Brown (1985); podobne zdanie przypisano też Nancy Reagan (1981). https://quoteinvestigator.com/2013/02/03/hot-water/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "To życie jest tym, co z niego zrobisz. Bez względu na wszystko — czasem zawalisz.",
+    "original_author": "Marilyn Monroe",
+    "status": "misattributed",
+    "correct_author": "nieznany (prawdopodobnie fabrykacja internetowa)",
+    "evidence": "Na Goodreads cytat oznaczony tagami 'attributed-no-source' i 'misattributed-marilyn-monroe'. Brak jakiegokolwiek udokumentowanego źródła (wywiadu, pisma) potwierdzającego autorstwo Monroe - zgodnie z tym samym, wielokrotnie potwierdzonym wzorcem masowych fałszywych cytatów krążących pod jej nazwiskiem w internecie.",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Potrzeba dużo odwagi, by stawiać czoła wrogom, ale tyle samo, by stawiać czoła przyjaciołom.",
+    "original_author": "J. K. Rowling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słowa Dumbledore'a z 'Harry Potter and the Sorcerer's/Philosopher's Stone' (Harry Potter i Kamień Filozoficzny), wypowiedziane podczas nagradzania Neville'a Longbottoma punktami dla Gryffindoru. https://www.goodreads.com/quotes/8667-it-takes-a-great-deal-of-bravery-to-stand-up",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Lubię nonsens — budzi komórki mózgowe. Fantazja jest niezbędnym składnikiem życia.",
+    "original_author": "Dr. Seuss",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living...' - wypowiedź Theodora Geisela (Dr. Seussa) opublikowana w Los Angeles Times, artykuł Milesa Corwina z 27.11.1983, cytowana też w 'Dr. Seuss: American Icon' Philipa Nela (2004), s. 38. https://www.goodreads.com/quotes/315635-i-like-nonsense-it-wakes-up-the-brain-cells-fantasy",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Mogłem nie dojść tam, gdzie zamierzałem — ale myślę, że trafiłem tam, gdzie powinienem.",
+    "original_author": "Douglas Adams",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z powieści Douglasa Adamsa 'The Long Dark Tea-Time of the Soul' (1988) - słowa postaci Dirka Gently'ego. https://www.goodreads.com/quotes/3278-i-may-not-have-gone-where-i-intended-to-go",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Przeciwieństwem miłości nie jest nienawiść — to obojętność.",
+    "original_author": "Elie Wiesel",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wiesel wypowiedział to zdanie w wywiadzie dla 'U.S. News & World Report' (27.10.1986): 'Indifference, to me, is the epitome of evil. The opposite of love is not hate, it's indifference.' Wyraził podobną myśl też w mowie noblowskiej (grudzień 1986). Koncepcja ma wcześniejsze korzenie (m.in. Wilhelm Stekel, 1921), ale udokumentowana wypowiedź samego Wiesela uzasadnia przypisanie. https://quoteinvestigator.com/2019/05/21/indifference/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie to to, co nam się przydarza, gdy jesteśmy zajęci robieniem innych planów.",
+    "original_author": "Allen Saunders",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wg Yale Book of Quotations (red. Fred R. Shapiro) autorstwo Allena Saundersa jest udokumentowane - pierwsze użycie w komiksie 'Mary Worth' (2.09.1956) i w Reader's Digest (styczeń 1957). Cytat jest często błędnie przypisywany Johnowi Lennonowi (spopularyzował go w piosence 'Beautiful Boy', 1980), ale baza już poprawnie podaje Saundersa jako autora. https://quoteinvestigator.com/2012/05/06/other-plans/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli osądzasz ludzi, nie masz czasu ich kochać.",
+    "original_author": "Matka Teresa",
+    "status": "misattributed",
+    "correct_author": "nieznany (parafraza/interpretacja, nie autentyczne słowa Matki Teresy)",
+    "evidence": "Oficjalna strona Missionaries of Charity / motherteresa.org, sekcja 'False Quotes', klasyfikuje to zdanie jako 'significantly paraphrased versions or personal interpretations of statements Mother Teresa made; they are not her authentic words'. https://www.motherteresa.org/mtc/false-quotes",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Logika zawiezie cię z A do Z. Wyobraźnia zawiezie cię wszędzie.",
+    "original_author": "Albert Einstein",
+    "status": "misattributed",
+    "correct_author": "nieznany (brak wcześniejszych odniesień; nie ma go w 'The Ultimate Quotable Einstein')",
+    "evidence": "Cytat NIE znajduje się w 'The Ultimate Quotable Einstein' (2010) Alice Calaprice - autorytatywnym źródle cytatów Einsteina. Nie znaleziono żadnych wcześniejszych odniesień do tego zdania, a nikt z powielających je źródeł nie podaje, kiedy i gdzie miał je wypowiedzieć. Einstein rzeczywiście powiedział coś zbliżonego w wywiadzie dla 'Saturday Evening Post' (1929): 'Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world' - ale to inne, udokumentowane zdanie.",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Jedna dobra rzecz w muzyce — gdy cię uderza, nie czujesz bólu.",
+    "original_author": "Bob Marley",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'One good thing about music, when it hits you, you feel no pain.' - linijka z piosenki Boba Marleya 'Trenchtown Rock' (1971/1975). https://www.goodreads.com/quotes/4401-one-good-thing-about-music-when-it-hits-you-you",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Im więcej czytasz, tym więcej rzeczy wiesz. Im więcej się uczysz, tym dalej zajdziesz.",
+    "original_author": "Dr. Seuss",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'The more that you read, the more things you will know. The more that you learn, the more places you'll go.' - z książki Dr. Seussa 'I Can Read with My Eyes Shut!' (1978). https://www.goodreads.com/quotes/6806-the-more-that-you-read-the-more-things-you-will",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Każdy głupiec może wiedzieć. Chodzi o to, żeby rozumieć.",
+    "original_author": "Albert Einstein",
+    "status": "misattributed",
+    "correct_author": "Ernest Kinoy (scenarzysta, napisał tę kwestię dla fikcyjnej postaci Einsteina w dramacie telewizyjnym z 1973 r.)",
+    "evidence": "Quote Investigator: brak wiarygodnych dowodów, że Einstein to powiedział; nie ma tego zdania w 'The Ultimate Quotable Einstein' Calaprice. Zdanie zostało napisane przez scenarzystę Ernesta Kinoya jako kwestia fikcyjnej postaci Einsteina w telewizyjnym dramacie z 1973 r.; fragment scenariusza po raz pierwszy opublikowano w podręczniku 'Philosophy: An Introduction to The Art of Wondering' (5. wydanie, 1990). https://quoteinvestigator.com/2021/11/20/fool-know/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nigdy nie jest za późno, by stać się tym, kim mogłeś być.",
+    "original_author": "George Eliot",
+    "status": "misattributed",
+    "correct_author": "Dinah Maria Mulock Craik (powieść 'A Life for a Life', 1859)",
+    "evidence": "Quote Investigator: badacze nie odnaleźli tego zdania w żadnej książce ani liście George Eliot; przypisanie jej nie ma wsparcia źródłowego. Najwcześniejszy dokładny ślad pochodzi z 'Literary News' (1881, rok po śmierci Eliot), gdzie czytelnik przypisał je Eliot bez weryfikacji. Prawdziwym źródłem jest powieść Dinah Marii (Mulock) Craik 'A Life for a Life' (1859). Na Goodreads cytat oznaczono jako 'misattributed' i 'source-unknown'. https://quoteinvestigator.com/2013/11/24/never-too-late/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Wszystko czego potrzebujesz to miłość. Ale trochę czekolady od czasu do czasu też nie zaszkodzi.",
+    "original_author": "Charles M. Schulz",
+    "status": "misattributed",
+    "correct_author": "nieznany (nie ma dowodów, że Schulz to napisał lub powiedział)",
+    "evidence": "Derrick Bang, uznany ekspert od twórczości Schulza/Peanuts, potwierdził, że Schulz nigdy nie napisał ani nie powiedział tego zdania, ani nie pojawia się ono w żadnym pasku komiksu 'Peanuts'. Mimo to cytat jest szeroko rozpowszechniony w internecie jako jego autorstwa. https://www.cbr.com/peanuts-snoopy-charles-schulz-love-chocolate-quote/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Nie wszyscy możemy robić wielkie rzeczy. Ale możemy robić małe rzeczy z wielką miłością.",
+    "original_author": "Matka Teresa",
+    "status": "misattributed",
+    "correct_author": "nieznany (parafraza/interpretacja, nie autentyczne słowa Matki Teresy)",
+    "evidence": "Oficjalna strona motherteresa.org, sekcja 'False Quotes', wymienia zarówno wersję 'Not all of us can do great things. But we can do small things with great love', jak i wariant 'We can do no great things, only small things with great love' w kategorii zdań 'significantly paraphrased versions or personal interpretations... not her authentic words'. https://www.motherteresa.org/mtc/false-quotes",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Oczywiście to się dzieje w twojej głowie — ale dlaczego miałoby to oznaczać, że nie jest prawdziwe?",
+    "original_author": "J. K. Rowling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słowa Dumbledore'a z rozdziału 35 ('King's Cross') 'Harry Potter and the Deathly Hallows' (Harry Potter i Insygnia Śmierci): 'Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?' https://www.goodreads.com/quotes/7989-of-course-it-is-happening-inside-your-head-harry-but",
+    "recommendation": "keep"
+  }
+]
