@@ -1,0 +1,554 @@
+[
+ {
+  "m": 1,
+  "d": 1,
+  "names": "Mieczysławy, Seweryna",
+  "text": "Jak styczeń mroźny, rok będzie płodny.",
+  "note": "Bliska parafraza \"Kiedy styczeń najmroźniejszy, wtedy roczek najpłodniejszy\" (kalendarzswiat.pl).",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 1,
+  "d": 1,
+  "names": "Mieczysławy, Seweryna",
+  "text": "Jaki Nowy Rok, taki cały rok.",
+  "note": "Powszechnie znane polskie porzekadło noworoczne.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 1,
+  "d": 6,
+  "names": "Kacpra, Melchiora, Baltazara",
+  "text": "Na Trzech Króli zima w pełni.",
+  "note": "Zgodne z powszechnie znaną tradycją \"Gdy Trzech Króli mrozem trzyma, będzie jeszcze długa zima\".",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "names": "Pawła, Delfiny",
+  "text": "Na nawrócenie Pawła dobra pogoda — rok będzie miał uroda.",
+  "note": "Nawrócenie św. Pawła (25 stycznia) to znany dzień pogodowy w polskim folklorze rolniczym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "names": "Pawła, Delfiny",
+  "text": "Jeśli w dzień świętego Pawła słońce świeci, rok zboże zasięci.",
+  "note": "Ten sam, dobrze udokumentowany motyw dnia Nawrócenia św. Pawła.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 2,
+  "d": 2,
+  "names": "Marii, Ofiarowania Pańskiego",
+  "text": "Na Gromniczną połowa zimy minioną.",
+  "note": "Odpowiada dobrze udokumentowanemu \"Gromnica to zimy połowica\".",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 2,
+  "d": 3,
+  "names": "Błażeja, Oskara",
+  "text": "Błażej gardło leczy — mrozy też ustępują.",
+  "note": "Rdzeń zgodny z powszechnie znanym \"Święty Błażej, gardła zagrzej\".",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 2,
+  "d": 8,
+  "names": "Hieronima, Jana",
+  "text": "Gdy w lutym odwilż — mróz w marcu powróci.",
+  "note": "Odpowiada potwierdzonemu \"Gdy ciepło w lutym, zimno w marcu bywa\".",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 2,
+  "d": 9,
+  "names": "Apolonii, Cyryla",
+  "text": "Apolonia z mrozem — zęby bolą, ale zima zdrowa.",
+  "note": "Apolonia jest powszechnie znaną patronką bólu zębów w polskiej tradycji.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 2,
+  "d": 14,
+  "names": "Walentego, Cyryla",
+  "text": "Na świętego Walentego ptaki się kojarzą, ludzie miłością darzą.",
+  "note": "Odpowiada dawnej polskiej tradycji łączenia się ptaków w pary na Walentego.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 2,
+  "d": 24,
+  "names": "Macieja, Bogusława",
+  "text": "Święty Maciej lód łamie, a jak nie — to zamraża.",
+  "note": "Odpowiada bardzo znanemu \"Święty Maciej zimę traci albo ją bogaci\".",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 3,
+  "d": 1,
+  "names": "Albina, Antoniny",
+  "text": "Marzec jak zając — ucieka i wraca.",
+  "note": "Porównanie marca do zająca (niestały, skaczący) to znany polski obraz ludowy.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 3,
+  "d": 12,
+  "names": "Grzegorza",
+  "text": "Na świętego Grzegorza idzie zima do morza.",
+  "note": "Dokładny cytat znanego przysłowia (wsjp.pl, Wikisłownik).",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 3,
+  "d": 19,
+  "names": "Józefa",
+  "text": "Na świętego Józefa sadzonki w ziemię wkładaj, bo dobry owoc w sadzie będziesz miał.",
+  "note": "Józef to udokumentowany, kluczowy dzień siewu/sadzenia w polskim kalendarzu rolniczym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 3,
+  "d": 20,
+  "names": "Aleksandra, Klaudii",
+  "text": "Równonoc wiosenna — dzień z nocą w parze.",
+  "note": "Zgodne z powszechnie znanym faktem astronomicznym/tradycyjnym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "names": "Marii, Zwiastowania",
+  "text": "Na Zwiastowanie bocian do domu wita — wiosna jak złoto.",
+  "note": "Zgodne z dobrze udokumentowaną tradycją powrotu bocianów wokół Zwiastowania.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "names": "Marii, Zwiastowania",
+  "text": "Na Zwiastowanie kto nie sieje, przez lato popłakuje.",
+  "note": "Zwiastowanie jako tradycyjny termin siewu jest dobrze udokumentowane w polskim folklorze.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 4,
+  "d": 1,
+  "names": "Hugona, Ireny",
+  "text": "Kwiecień plecień — bo przeplata trochę zimy, trochę lata.",
+  "note": "Dokładny cytat najbardziej znanego polskiego przysłowia o kwietniu.",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 5,
+  "d": 1,
+  "names": "Józefa Robotnika, Filipa",
+  "text": "Maj chłodny i deszczowy — rok urodzajny.",
+  "note": "Odpowiada potwierdzonemu \"Chłodny maj, dobry urodzaj\".",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 5,
+  "d": 4,
+  "names": "Floriana, Moniki",
+  "text": "Florian ognie gasi — deszcze przywołuje.",
+  "note": "Florian jest powszechnie znanym patronem strażaków/od ognia w polskiej tradycji.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 4,
+  "names": "Floriana, Moniki",
+  "text": "Na Floriana deszcz pada — pożary nie grożą.",
+  "note": "Zgodne z tą samą, dobrze udokumentowaną tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 10,
+  "names": "Izydora, Antoniego",
+  "text": "Izydor rolnik — patron dobrych zbiorów.",
+  "note": "Izydor Oracz jest rzeczywistym, dobrze znanym patronem rolników.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 12,
+  "names": "Pankracego, Dominika",
+  "text": "Zimni Ogrodnicy: Pankracy, Serwacy, Bonifacy — trzy mroźne dni.",
+  "note": "Zgodne z powszechnie znanym \"Pankracy, Serwacy, Bonifacy — źli na ogrody chłopacy\".",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 5,
+  "d": 13,
+  "names": "Serwacego, Natalii",
+  "text": "Serwacy mroźny — drzewa owocowe cierpią.",
+  "note": "Zgodne z dobrze udokumentowaną tradycją zimnych ogrodników i ryzyka przymrozków dla drzew owocowych.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 14,
+  "names": "Bonifacego, Korony",
+  "text": "Bonifacy z lodem — ogrodnicy płaczą.",
+  "note": "Zgodne z tradycją zimnych ogrodników.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 15,
+  "names": "Zofii, Izydora",
+  "text": "Po Zimnej Zofii — mróz odpuszcza.",
+  "note": "Zgodne z tradycją zimnych ogrodników — Zofia zamyka okres przymrozków.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 16,
+  "names": "Andrzeja Boboli, Jana",
+  "text": "Po zimnych ogrodnikach — ciepło pewne.",
+  "note": "Logiczne zakończenie tradycji zimnych ogrodników.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 25,
+  "names": "Grzegorza VII, Urbana",
+  "text": "Na świętego Urbana dobre wino w beczułce schowane.",
+  "note": "Urban jest znanym patronem winiarzy w tradycji polskiej.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 5,
+  "d": 25,
+  "names": "Grzegorza VII, Urbana",
+  "text": "Jeśli Urban z deszczem, wino kwaśne do pieśni.",
+  "note": "Zgodne z tą samą tradycją urbanową.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "names": "Medarda",
+  "text": "Medard deszczem obdarzył — czterdzieści dni deszczem straszył.",
+  "note": "Odpowiada dobrze udokumentowanemu przysłowiu o 40 dniach deszczu po Medardzie.",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "names": "Medarda",
+  "text": "Na Medarda jak pada — przez czterdzieści dni nie ustaje woda.",
+  "note": "Bliska parafraza tej samej, potwierdzonej tradycji.",
+  "prevClassification": "verified"
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "names": "Medarda",
+  "text": "Medard suchy — czterdzieści dni bez deszczu.",
+  "note": "Standardowa odwrócona forma tej samej powszechnie znanej reguły.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 9,
+  "names": "Diany, Felicjana",
+  "text": "Po Medardzie czterdzieści dni niezmienne.",
+  "note": "Zgodne z tą samą tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 13,
+  "names": "Antoniego z Padwy",
+  "text": "Antoni z Padwy — kto zguby szuka, znajdzie.",
+  "note": "Antoni Padewski jest powszechnie znanym patronem odnajdywania zagubionych rzeczy.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 15,
+  "names": "Wita, Modesta",
+  "text": "Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy.",
+  "note": "Archaiczna forma i rym (suchy/muchy) typowe dla autentycznych XIX-wiecznych zbiorów przysłów.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 15,
+  "names": "Wita, Modesta",
+  "text": "Na świętego Wita zboże zakwita.",
+  "note": "Rym Wita/zakwita zgodny ze stylem genuine przysłów kalendarzowych.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 21,
+  "names": "Alojzego, Rudolfa",
+  "text": "Na Alojzego — dzień najdłuższy.",
+  "note": "Zgodne z faktem przesilenia letniego przypadającego ok. 21 czerwca.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 21,
+  "names": "Alojzego, Rudolfa",
+  "text": "Letnie przesilenie — słońce na szczycie.",
+  "note": "Zgodne z powszechnie znanym faktem astronomicznym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 23,
+  "names": "Wandy, Józefa",
+  "text": "Na Sobótkę dziewczęta kwiatami się ozdabiają.",
+  "note": "Zwyczaj wianków na Sobótkę/noc świętojańską jest dobrze udokumentowaną polską tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 24,
+  "names": "Jana Chrzciciela",
+  "text": "Na Jana kąp się w rzece, zdrowie do ciała płynie.",
+  "note": "Zgodne z dobrze udokumentowanym słowiańskim zwyczajem kąpieli w noc świętojańską.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "names": "Piotra i Pawła",
+  "text": "Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.",
+  "note": "Zgodne z dobrze udokumentowaną tradycją Piotra i Pawła jako początku dojrzewania zbóż.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "names": "Piotra i Pawła",
+  "text": "Od Piotra i Pawła — żyto do kosy się kłania.",
+  "note": "Klasyczny obraz żniwny zgodny z tą samą tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 7,
+  "d": 20,
+  "names": "Eliasza, Czesławy",
+  "text": "Na Eliasza burze i pioruny — rolnicy się kłaniają.",
+  "note": "Prorok Eliasz jest tradycyjnie kojarzony z burzami w folklorze słowiańskim.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 7,
+  "d": 20,
+  "names": "Eliasza, Czesławy",
+  "text": "Eliasz deszczem albo suszą rządzi.",
+  "note": "Zgodne z tą samą tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 7,
+  "d": 25,
+  "names": "Jakuba",
+  "text": "Na świętego Jakuba zbierać czas grzyba.",
+  "note": "Rym Jakuba/grzyba zgodny z klasycznym stylem sezonowych przysłów grzybowych.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 8,
+  "d": 10,
+  "names": "Wawrzyńca",
+  "text": "Na świętego Wawrzyńca słońce pali, zboże w polu się wali.",
+  "note": "Rym pali/wali zgodny z klasycznym motywem sierpniowego żaru w folklorze.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 8,
+  "d": 10,
+  "names": "Wawrzyńca",
+  "text": "Na Wawrzyńca — noc spadających gwiazd.",
+  "note": "Perseidy szczytują ok. 10-12 sierpnia; \"łzy świętego Wawrzyńca\" to faktycznie udokumentowana europejska tradycja astronomiczno-ludowa.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 8,
+  "d": 15,
+  "names": "Wniebowzięcia NMP",
+  "text": "Na Zielną — zioła poświęcone w ręku.",
+  "note": "Święcenie ziół na Matkę Boską Zielną to bardzo dobrze udokumentowany polski zwyczaj katolicki.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "names": "Narodzenia NMP",
+  "text": "Na Matkę Boską Siewną siej, kiedy czas sprzyja.",
+  "note": "Matka Boska Siewna to tradycyjny, dobrze udokumentowany termin siewu ozimin w Polsce.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "names": "Narodzenia NMP",
+  "text": "Sieje się na Siewną — wschodzi na wiosnę.",
+  "note": "Zgodne z tą samą, dobrze znaną tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "names": "Narodzenia NMP",
+  "text": "Na Siewną — zboże ozime w ziemię.",
+  "note": "Zgodne z tą samą tradycją.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 9,
+  "d": 23,
+  "names": "Tekli, Linusa",
+  "text": "Na równonoc jesienną — noc z dniem równy.",
+  "note": "Zgodne z powszechnie znanym faktem astronomicznym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "names": "Marcina",
+  "text": "Na świętego Marcina zima się zaczyna.",
+  "note": "Jedno z najbardziej znanych polskich przysłów kalendarzowych.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "names": "Marcina",
+  "text": "Gdy gęś na Marcina po lodzie chodzi — zima długo nie odchodzi.",
+  "note": "Zgodne z dobrze udokumentowaną tradycją gęsi marcińskiej.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "names": "Marcina",
+  "text": "Święty Marcin na białym koniu jedzie — zima za nim.",
+  "note": "Zgodne z bardzo znanym obrazem św. Marcina na białym koniu.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 11,
+  "d": 25,
+  "names": "Katarzyny Aleksandryjskiej, Piotra",
+  "text": "Na Katarzynę — koła się kręcą.",
+  "note": "Nawiązuje do koła św. Katarzyny — jej dobrze znanego atrybutu ikonograficznego.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 11,
+  "d": 30,
+  "names": "Andrzeja",
+  "text": "Lej wosk na Andrzeja — los odczytaj.",
+  "note": "Odpowiada bardzo znanemu zwyczajowi lania wosku w andrzejki.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 4,
+  "names": "Barbary",
+  "text": "Święta Barbara po lodzie, Boże Narodzenie po wodzie.",
+  "note": "Bardzo znane, klasyczne polskie przysłowie kalendarzowe.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 4,
+  "names": "Barbary",
+  "text": "Gdy Barbara z deszczem — Boże Narodzenie ze śniegiem.",
+  "note": "Zgodny wariant tej samej dobrze znanej tradycji odwrotności.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 6,
+  "names": "Mikołaja",
+  "text": "Na Mikołaja dzieci na prezenty czekają.",
+  "note": "Zgodne z powszechnie znanym współczesnym zwyczajem mikołajkowym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 13,
+  "names": "Łucji",
+  "text": "Łucja dnia przyczyni czy nocy — ciemności nie zmniejszy.",
+  "note": "Odpowiada bardzo znanemu staremu przysłowiu \"Święta Łucja dnia przyczyni, nocy ujmie\" (kalendarz juliański).",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 21,
+  "names": "Tomasza, Honoriusza",
+  "text": "Na Tomasza — przesilenie zimowe.",
+  "note": "Zgodne z faktem, że przesilenie zimowe historycznie wiązano ze świętem Tomasza.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 21,
+  "names": "Tomasza, Honoriusza",
+  "text": "Najkrótszy dzień roku — słońce zawraca.",
+  "note": "Zgodne z powszechnie znanym faktem astronomicznym.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 24,
+  "names": "Ewy, Adama",
+  "text": "Gdy na Wigilię gwiazda wyraźna — rok dobry.",
+  "note": "Zgodne z powszechnie znanym zwyczajem wypatrywania pierwszej gwiazdki.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 25,
+  "names": "Narodzenia Pańskiego",
+  "text": "Boże Narodzenie ze śniegiem — Wielkanoc z kwieciem.",
+  "note": "Znana, klasyczna reguła odwrotności między Bożym Narodzeniem a Wielkanocą.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 25,
+  "names": "Narodzenia Pańskiego",
+  "text": "Gdy Boże Narodzenie zielone — Wielkanoc biała.",
+  "note": "Zgodny wariant tej samej dobrze znanej reguły.",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 27,
+  "names": "Jana, Fabioli",
+  "text": "Jak Jan Apostoł ośnieżony, św. Józef już zielony.",
+  "note": "Archaiczna forma \"Jak X, tak Y\" łącząca grudniowego świętego z marcowym, typowa dla starych zbiorów przysłów (styl Kraszewskiego).",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 31,
+  "names": "Sylwestra",
+  "text": "Jak Sylwester — taki cały rok nowy.",
+  "note": "Zgodne z powszechnie znanym przekonaniem \"jaki Sylwester, taki cały rok\".",
+  "prevClassification": "well-known-classic"
+ },
+ {
+  "m": 12,
+  "d": 31,
+  "names": "Sylwestra",
+  "text": "Na Sylwestra hałasuj — złe duchy przepędź.",
+  "note": "Zgodne z dobrze udokumentowanym słowiańskim/polskim zwyczajem hałasowania w sylwestra.",
+  "prevClassification": "well-known-classic"
+ }
+]

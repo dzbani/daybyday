@@ -1,0 +1,554 @@
+[
+ {
+  "m": 1,
+  "d": 1,
+  "oldText": "Jak styczeń mroźny, rok będzie płodny.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Bliska parafraza dobrze udokumentowanego \"Kiedy styczeń najmroźniejszy, wtedy roczek najpłodniejszy\" (kalendarzswiat.pl, strus.org)."
+ },
+ {
+  "m": 1,
+  "d": 1,
+  "oldText": "Jaki Nowy Rok, taki cały rok.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Powszechnie znane, potwierdzone w wielu niezależnych źródłach (Muzeum Zagłębia w Będzinie \"Nowy rok jaki, cały rok taki\", Wikicytaty, mamotoja.pl)."
+ },
+ {
+  "m": 1,
+  "d": 6,
+  "oldText": "Na Trzech Króli zima w pełni.",
+  "classification": "still-unverifiable",
+  "newProverb": null,
+  "source": "Dokładna fraza nie występuje w żadnym sprawdzonym źródle. Istnieją pokrewne, dobrze udokumentowane przysłowia (\"Gdy w Trzech Króli mrozem trzyma, będzie jeszcze długa zima\", \"Na Trzech Króli każdy się w kożuch tuli\"), ale nie w tym dokładnym sformułowaniu \"zima w pełni\" - brak podstaw do uznania za well-known-classic, brak też jednoznacznych sygnałów fabrykacji."
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "oldText": "Na nawrócenie Pawła dobra pogoda — rok będzie miał uroda.",
+  "classification": "suspicious",
+  "newProverb": "Gdy na święty Wincenty i Nawrócenie Pawła pogoda świeci, spodziewajcie się dobrego lata, dzieci.",
+  "source": "Błąd gramatyczny (\"rok będzie miał uroda\" zamiast \"urodę\" w bierniku) - typowy sygnał fabrykacji. Prawdziwe przysłowie na ten dzień (mikolajlipowiec.pl, strus.org) brzmi: \"Gdy na święty Wincenty i Nawrócenie Pawła pogoda świeci, spodziewajcie się dobrego lata, dzieci.\""
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "oldText": "Jeśli w dzień świętego Pawła słońce świeci, rok zboże zasięci.",
+  "classification": "suspicious",
+  "newProverb": "Na Świętego Pawła połowa zimy przepadła.",
+  "source": "\"Zasięci\" to nie istniejące polskie słowo/forma czasownika - sfabrykowany rym. Prawdziwe, potwierdzone przysłowie na 25 stycznia (kalbi.pl): \"Na Świętego Pawła połowa zimy przepadła.\""
+ },
+ {
+  "m": 2,
+  "d": 2,
+  "oldText": "Na Gromniczną połowa zimy minioną.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Bliska, poprawna parafraza dobrze udokumentowanego \"Gromnica - zimy połowica\" (radioplus.com.pl, gosc.pl, pl.wiktionary.org, etnomuzeum.pl)."
+ },
+ {
+  "m": 2,
+  "d": 3,
+  "oldText": "Błażej gardło leczy — mrozy też ustępują.",
+  "classification": "suspicious",
+  "newProverb": "Święty Błażej, gardła zagrzej.",
+  "source": "Rdzeń (\"gardło leczy\") jest zgodny z \"Święty Błażej, gardła zagrzej\", ale dodatek \"mrozy też ustępują\" nie ma pokrycia w żadnym źródle - realne przysłowia o Błażeju dotyczą śniegu/deszczu i Wielkanocy (\"Jak pogoda w św. Błażeja, będzie ze śniegiem Wielka Niedziela\"), nie mrozów. Zamiennik potwierdzony przez kalbi.pl/niedziela.pl."
+ },
+ {
+  "m": 2,
+  "d": 8,
+  "oldText": "Gdy w lutym odwilż — mróz w marcu powróci.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dobra parafraza potwierdzonego \"Gdy ciepło w lutym, zimno w marcu bywa, długo trwa zima, to jest niewątpliwa\" (pl.wiktionary.org)."
+ },
+ {
+  "m": 2,
+  "d": 9,
+  "oldText": "Apolonia z mrozem — zęby bolą, ale zima zdrowa.",
+  "classification": "suspicious",
+  "newProverb": "Luty bywa w lód okuty.",
+  "source": "Apolonia jest dobrze udokumentowaną patronką bólu zębów, ale żadne źródło nie łączy jej z mrozem ani z formułą \"zima zdrowa\" - brak takiego przysłowia w kalendarzach ludowych (kalbi.pl, kalendarzswiat.pl). Zastąpiono ogólnym, prawdziwym przysłowiem lutowym."
+ },
+ {
+  "m": 2,
+  "d": 14,
+  "oldText": "Na świętego Walentego ptaki się kojarzą, ludzie miłością darzą.",
+  "classification": "suspicious",
+  "newProverb": "Na św. Walentego bywa mróz już do niczego.",
+  "source": "Motyw \"ptaków kojarzących się\" na Walentego to zachodnioeuropejska tradycja średniowieczna (Chaucer), nieudokumentowana jako polskie przysłowie ludowe. Realne polskie przysłowia na 14 lutego dotyczą pogody/mrozu (kalbi.pl, interia.pl, wikikids.pl)."
+ },
+ {
+  "m": 2,
+  "d": 24,
+  "oldText": "Święty Maciej lód łamie, a jak nie — to zamraża.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza bardzo dobrze udokumentowanego \"Święty Maciej zimę traci albo ją bogaci\" (salon24.pl, naszemiasto.pl, strus.org, mikolajlipowiec.pl)."
+ },
+ {
+  "m": 3,
+  "d": 1,
+  "oldText": "Marzec jak zając — ucieka i wraca.",
+  "classification": "suspicious",
+  "newProverb": "W marcu jak w garncu.",
+  "source": "Żadne źródło nie łączy marca z zającem - brak takiego obrazu w zbiorach przysłów o marcu (mamotoja.pl, kalendarzswiat.pl, mnwr.pl). Zastąpiono najsłynniejszym, w pełni potwierdzonym przysłowiem marcowym."
+ },
+ {
+  "m": 3,
+  "d": 12,
+  "oldText": "Na świętego Grzegorza idzie zima do morza.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat, potwierdzony przez wsjp.pl (Wielki słownik języka polskiego PAN) oraz pl.wiktionary.org."
+ },
+ {
+  "m": 3,
+  "d": 19,
+  "oldText": "Na świętego Józefa sadzonki w ziemię wkładaj, bo dobry owoc w sadzie będziesz miał.",
+  "classification": "suspicious",
+  "newProverb": "W Józefa z zimy się śmiej i na grządce kapustę siej.",
+  "source": "Realne przysłowia o Józefie (muzeumetnograficzne.rzeszow.pl) dotyczą sadzenia ziemniaków, siania kapusty i grochu, nie \"sadzonek\"/owoców w sadzie - ta konkretna treść nie ma pokrycia w źródłach."
+ },
+ {
+  "m": 3,
+  "d": 20,
+  "oldText": "Równonoc wiosenna — dzień z nocą w parze.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Zgodne z udokumentowanym motywem \"Przyjdzie święty Józef z pomocą, porówna dzień z nocą\" (muzeumetnograficzne.rzeszow.pl) oraz z faktem astronomicznym równonocy wiosennej."
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "oldText": "Na Zwiastowanie bocian do domu wita — wiosna jak złoto.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza dobrze udokumentowanego \"Na Zwiastowanie bocian na gnieździe stanie\" (podlaskie24.pl, tygodnikzamojski.pl, ethnomuseum.pl)."
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "oldText": "Na Zwiastowanie kto nie sieje, przez lato popłakuje.",
+  "classification": "suspicious",
+  "newProverb": "Na Zwiastowanie Najświętszej Panny jaskółki się pokazują i wiosnę zwiastują.",
+  "source": "Nie znaleziono tej treści w żadnym źródle. Realne przysłowia o Zwiastowaniu dotyczą mgły/powodzi, jaskółek i pogody wielkanocnej (\"Jakie Zwiastowanie, takie Zmartwychwstanie\") - pl.wikisource.org, podlaskie24.pl."
+ },
+ {
+  "m": 4,
+  "d": 1,
+  "oldText": "Kwiecień plecień — bo przeplata trochę zimy, trochę lata.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat najbardziej znanego polskiego przysłowia o kwietniu - potwierdzony w niezliczonych niezależnych źródłach."
+ },
+ {
+  "m": 5,
+  "d": 1,
+  "oldText": "Maj chłodny i deszczowy — rok urodzajny.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Zgodne z potwierdzonym (Samuel Adalberg, \"Księga przysłów...\" 1894) \"Chłodny maj, dobry urodzaj\" - l24.lt, kalendarzswiat.pl."
+ },
+ {
+  "m": 5,
+  "d": 4,
+  "oldText": "Florian ognie gasi — deszcze przywołuje.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Florian jest powszechnie znanym i dobrze udokumentowanym patronem od ognia oraz wody/deszczu w polskiej tradycji ludowej (misyjne.pl, katolik.pl, pismofolkowe.pl, ppoz.pl)."
+ },
+ {
+  "m": 5,
+  "d": 4,
+  "oldText": "Na Floriana deszcz pada — pożary nie grożą.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z udokumentowanym ludowym przekonaniem, że deszcz na Floriana zapowiadał mniej pożarów (archiwum.nikidw.edu.pl, pismofolkowe.pl)."
+ },
+ {
+  "m": 5,
+  "d": 10,
+  "oldText": "Izydor rolnik — patron dobrych zbiorów.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Izydor Oracz jest niezwykle dobrze udokumentowanym, powszechnie znanym patronem rolników (Wikipedia, farmer.pl, tygodnik-rolniczy.pl, piusx.pl - data 10 maja w formie nadzwyczajnej)."
+ },
+ {
+  "m": 5,
+  "d": 12,
+  "oldText": "Zimni Ogrodnicy: Pankracy, Serwacy, Bonifacy — trzy mroźne dni.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Zgodne z bardzo dobrze udokumentowanym \"Pankracy, Serwacy i Bonifacy dla drzew wielcy niedobracy\" (dziennik.pl, mwmskansen.pl, parafiaswtomasza.pl)."
+ },
+ {
+  "m": 5,
+  "d": 13,
+  "oldText": "Serwacy mroźny — drzewa owocowe cierpią.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą, bardzo dobrze udokumentowaną tradycją zimnych ogrodników szkodzących drzewom."
+ },
+ {
+  "m": 5,
+  "d": 14,
+  "oldText": "Bonifacy z lodem — ogrodnicy płaczą.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą tradycją zimnych ogrodników (dziennik.pl, portaldohistorii.com)."
+ },
+ {
+  "m": 5,
+  "d": 15,
+  "oldText": "Po Zimnej Zofii — mróz odpuszcza.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z dobrze udokumentowanym faktem, że Zimna Zośka zamyka okres majowych przymrozków (dziennik.pl, farmer.pl, agronomist.pl)."
+ },
+ {
+  "m": 5,
+  "d": 16,
+  "oldText": "Po zimnych ogrodnikach — ciepło pewne.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Logiczna kontynuacja dobrze udokumentowanej tradycji zimnych ogrodników, którzy zamykają okres przymrozków w maju (farmer.pl, modr.pl)."
+ },
+ {
+  "m": 5,
+  "d": 25,
+  "oldText": "Na świętego Urbana dobre wino w beczułce schowane.",
+  "classification": "still-unverifiable",
+  "newProverb": null,
+  "source": "Urban jest dobrze udokumentowanym patronem winiarzy, ale nie znaleziono tej konkretnej treści w żadnym zbiorze przysłów - realne znalezione przysłowia o Urbanie dotyczą deszczu/jęczmienia (\"Kto sieje jęczmień na Urbana, będzie pił piwo z dzbana\"), nie przechowywania wina."
+ },
+ {
+  "m": 5,
+  "d": 25,
+  "oldText": "Jeśli Urban z deszczem, wino kwaśne do pieśni.",
+  "classification": "suspicious",
+  "newProverb": "Gdy deszcz na świętego Urbana, mały profit z winobrania.",
+  "source": "\"Wino kwaśne do pieśni\" to bezsensowna fraza sklejona pod rym. Prawdziwe, potwierdzone przysłowie o tej samej treści (deszcz=zła wina) to: \"Gdy deszcz na świętego Urbana, mały profit z winobrania\" (l24.lt/dziennik.pl)."
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "oldText": "Medard deszczem obdarzył — czterdzieści dni deszczem straszył.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza bardzo dobrze udokumentowanego \"Gdy deszcze w dzień Świętego Medarda padają, do dni czterdziestu częstokroć nie ustają\" (meteoprog.pl, strus.org)."
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "oldText": "Na Medarda jak pada — przez czterdzieści dni nie ustaje woda.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza potwierdzonego \"Jak na Medarda pada, czterdzieści dni pada\" (meteoprog.pl)."
+ },
+ {
+  "m": 6,
+  "d": 8,
+  "oldText": "Medard suchy — czterdzieści dni bez deszczu.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Standardowa, logicznie poprawna odwrócona forma tej samej, bardzo dobrze udokumentowanej reguły 40 dni (strus.org: \"Święty Medard w sobie mieści słot lub pogód dni czterdzieści\")."
+ },
+ {
+  "m": 6,
+  "d": 9,
+  "oldText": "Po Medardzie czterdzieści dni niezmienne.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą, powszechnie znaną tradycją 40 dni po Medardzie."
+ },
+ {
+  "m": 6,
+  "d": 13,
+  "oldText": "Antoni z Padwy — kto zguby szuka, znajdzie.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Antoni Padewski jest niezwykle dobrze udokumentowanym, powszechnie znanym patronem rzeczy zagubionych w polskiej kulturze (deon.pl, edziecko.pl, elini.pl)."
+ },
+ {
+  "m": 6,
+  "d": 15,
+  "oldText": "Gdy przychodzi Witus suchy, tedy wiedzie z sobą muchy.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat archaicznego przysłowia, potwierdzony m.in. przez legionhdk.pl."
+ },
+ {
+  "m": 6,
+  "d": 15,
+  "oldText": "Na świętego Wita zboże zakwita.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat, potwierdzony przez archiwum.wodr.poznan.pl oraz strus.org."
+ },
+ {
+  "m": 6,
+  "d": 21,
+  "oldText": "Na Alojzego — dzień najdłuższy.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z powszechnie znanym faktem, że przesilenie letnie (21 czerwca) zbiega się z imieninami Alojzego."
+ },
+ {
+  "m": 6,
+  "d": 21,
+  "oldText": "Letnie przesilenie — słońce na szczycie.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Powszechnie znany, łatwo weryfikowalny fakt astronomiczny."
+ },
+ {
+  "m": 6,
+  "d": 23,
+  "oldText": "Na Sobótkę dziewczęta kwiatami się ozdabiają.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zwyczaj wianków na Sobótkę/noc świętojańską jest bardzo dobrze udokumentowaną polską tradycją (wspolnotapolska.org.pl, polskatradycja.pl)."
+ },
+ {
+  "m": 6,
+  "d": 24,
+  "oldText": "Na Jana kąp się w rzece, zdrowie do ciała płynie.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z dobrze udokumentowanym słowiańskim zwyczajem kąpieli w noc świętojańską (wyjatkowyprezent.pl, focus.pl, kalendarzrolnikow.pl)."
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "oldText": "Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Piotr z Pawłem w deszcz uderzy, słońce za mgłą tydzień leży.",
+  "source": "Nie znaleziono żadnego przysłowia o Piotrze i Pawle dotyczącego żyta/dojrzewania zboża (sprawdzono kalbi.pl, strus.org, meteoprog.pl) - prawdziwe przysłowia na ten dzień dotyczą deszczu/mgły i grzybów."
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "oldText": "Od Piotra i Pawła — żyto do kosy się kłania.",
+  "classification": "suspicious",
+  "newProverb": "Po świętym Pawle i Piotrze muchy tłuste jak wieprze.",
+  "source": "Jak wyżej - brak potwierdzenia motywu żyta/kosy dla Piotra i Pawła w źródłach. Zamiennik to realne, potwierdzone przysłowie (meteoprog.pl)."
+ },
+ {
+  "m": 7,
+  "d": 20,
+  "oldText": "Na Eliasza burze i pioruny — rolnicy się kłaniają.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Prorok Eliasz jest bardzo dobrze udokumentowany w folklorze słowiańskim jako następca Peruna, władca burz i piorunów (idziemy.pl, slawoslaw.pl, mitologiaslowianska.fandom.com)."
+ },
+ {
+  "m": 7,
+  "d": 20,
+  "oldText": "Eliasz deszczem albo suszą rządzi.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą, dobrze udokumentowaną tradycją Eliasza jako władcy zjawisk atmosferycznych oraz z potwierdzonym \"Jeśli deszcz na Eliasza, to zgubi się pasza\"."
+ },
+ {
+  "m": 7,
+  "d": 25,
+  "oldText": "Na świętego Jakuba zbierać czas grzyba.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Jakuba ostatnia już siewów pora.",
+  "source": "Realne przysłowia o Jakubie (mnwr.pl) dotyczą pogody i ostatniej pory siewu/zagrożenia dla pszenicy, nie grzybów - sezon grzybowy w Polsce przypada zwykle później (sierpień-wrzesień), co czyni tę treść nielogiczną i niepotwierdzoną."
+ },
+ {
+  "m": 8,
+  "d": 10,
+  "oldText": "Na świętego Wawrzyńca słońce pali, zboże w polu się wali.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Wawrzyńca szykują się żeńcy do wieńca.",
+  "source": "Nie znaleziono potwierdzenia motywu \"słońce pali, zboże się wali\" - realne przysłowia o Wawrzyńcu dotyczą wieńca żniwnego, jesieni i wina (werandacountry.pl, zoomnawies.pl)."
+ },
+ {
+  "m": 8,
+  "d": 10,
+  "oldText": "Na Wawrzyńca — noc spadających gwiazd.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Perseidy szczytują ok. 10-12 sierpnia; \"łzy świętego Wawrzyńca\" to udokumentowana, wielokrotnie opisywana tradycja (opoka.org.pl, misyjne.pl, ekai.pl, niedziela.pl)."
+ },
+ {
+  "m": 8,
+  "d": 15,
+  "oldText": "Na Zielną — zioła poświęcone w ręku.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Święcenie ziół na Matkę Boską Zielną to bardzo dobrze udokumentowany polski zwyczaj katolicki (niedziela.pl, etnomuzeum.pl, mwmskansen.pl)."
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "oldText": "Na Matkę Boską Siewną siej, kiedy czas sprzyja.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Matka Boska Siewna to dobrze udokumentowany, tradycyjny termin siewu ozimin w Polsce (muzeum-radom.pl, wir.org.pl, mwmskansen.pl)."
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "oldText": "Sieje się na Siewną — wschodzi na wiosnę.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą, dobrze udokumentowaną tradycją siewu ozimin na Matkę Boską Siewną."
+ },
+ {
+  "m": 9,
+  "d": 8,
+  "oldText": "Na Siewną — zboże ozime w ziemię.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z tą samą tradycją."
+ },
+ {
+  "m": 9,
+  "d": 23,
+  "oldText": "Na równonoc jesienną — noc z dniem równy.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Powszechnie znany, łatwo weryfikowalny fakt astronomiczny."
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "oldText": "Na świętego Marcina zima się zaczyna.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Niemal dokładny cytat bardzo dobrze udokumentowanego \"Od św. Marcina zima się zaczyna\" (mnzp.pl, radiokielce.pl, twojapogoda.pl)."
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "oldText": "Gdy gęś na Marcina po lodzie chodzi — zima długo nie odchodzi.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z dobrze udokumentowaną tradycją wróżenia z gęsi marcińskiej (kalendarzrolnikow.pl, ekomaika.pl)."
+ },
+ {
+  "m": 11,
+  "d": 11,
+  "oldText": "Święty Marcin na białym koniu jedzie — zima za nim.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza bardzo dobrze udokumentowanego \"Jak Marcin na białym koniu przyjedzie, to ostrą zimę nam przywiedzie\" (sbc.org.pl, askly.pl)."
+ },
+ {
+  "m": 11,
+  "d": 25,
+  "oldText": "Na Katarzynę — koła się kręcą.",
+  "classification": "suspicious",
+  "newProverb": "Święta Katarzyna adwent rozpoczyna.",
+  "source": "Koło jest atrybutem męczeństwa i patronatu Katarzyny (kołodzieje, garncarze), ale nie znaleziono żadnego przysłowia \"koła się kręcą\" - realne, dobrze udokumentowane przysłowia na ten dzień to \"Święta Katarzyna adwent rozpoczyna\" i \"śluby ucina\" (mnwr.pl, karmelici.pl)."
+ },
+ {
+  "m": 11,
+  "d": 30,
+  "oldText": "Lej wosk na Andrzeja — los odczytaj.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z bardzo dobrze udokumentowanym zwyczajem lania wosku w andrzejki."
+ },
+ {
+  "m": 12,
+  "d": 4,
+  "oldText": "Święta Barbara po lodzie, Boże Narodzenie po wodzie.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat, potwierdzony przez wsjp.pl (Wielki słownik języka polskiego PAN) jako osobne, uznane hasło."
+ },
+ {
+  "m": 12,
+  "d": 4,
+  "oldText": "Gdy Barbara z deszczem — Boże Narodzenie ze śniegiem.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodny wariant tej samej, bardzo dobrze udokumentowanej reguły odwrotności Barbara/Boże Narodzenie."
+ },
+ {
+  "m": 12,
+  "d": 6,
+  "oldText": "Na Mikołaja dzieci na prezenty czekają.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Powszechnie znany, współczesny zwyczaj mikołajkowy, niewymagający dodatkowego potwierdzenia."
+ },
+ {
+  "m": 12,
+  "d": 13,
+  "oldText": "Łucja dnia przyczyni czy nocy — ciemności nie zmniejszy.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z dobrze udokumentowaną, znaną tradycją i paradoksem kalendarzowym św. Łucji (nid.pl, urocznica.pl, muzeum-radom.pl)."
+ },
+ {
+  "m": 12,
+  "d": 21,
+  "oldText": "Na Tomasza — przesilenie zimowe.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z historycznym faktem, że dawne (przedsoborowe) święto Tomasza 21 grudnia wiązano z przesileniem zimowym."
+ },
+ {
+  "m": 12,
+  "d": 21,
+  "oldText": "Najkrótszy dzień roku — słońce zawraca.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Powszechnie znany, łatwo weryfikowalny fakt astronomiczny."
+ },
+ {
+  "m": 12,
+  "d": 24,
+  "oldText": "Gdy na Wigilię gwiazda wyraźna — rok dobry.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z powszechnie znanym polskim zwyczajem wypatrywania pierwszej gwiazdki w Wigilię."
+ },
+ {
+  "m": 12,
+  "d": 25,
+  "oldText": "Boże Narodzenie ze śniegiem — Wielkanoc z kwieciem.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Zgodne (logicznie odwrócone) z dobrze udokumentowaną regułą odwrotności: \"Gdy w Boże Narodzenie pola są zielone, na Wielkanoc będą śniegiem przywalone\" - śnieżne BN implikuje kwiecistą/zieloną Wielkanoc (edziecko.pl, brainly.pl)."
+ },
+ {
+  "m": 12,
+  "d": 25,
+  "oldText": "Gdy Boże Narodzenie zielone — Wielkanoc biała.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny wariant potwierdzonego \"Zielone Boże Narodzenie, a Wielkanoc biała - z pola pociecha mała\" (edziecko.pl, brainly.pl)."
+ },
+ {
+  "m": 12,
+  "d": 27,
+  "oldText": "Jak Jan Apostoł ośnieżony, św. Józef już zielony.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Dokładny cytat potwierdzony przez rodzina.polki.pl (\"303 przysłowia o pogodzie\")."
+ },
+ {
+  "m": 12,
+  "d": 31,
+  "oldText": "Jak Sylwester — taki cały rok nowy.",
+  "classification": "verified",
+  "newProverb": null,
+  "source": "Parafraza bardzo dobrze udokumentowanego \"Jaki sylwester, taki cały rok\" (um.warszawa.pl - oficjalny portal zabytków Warszawy)."
+ },
+ {
+  "m": 12,
+  "d": 31,
+  "oldText": "Na Sylwestra hałasuj — złe duchy przepędź.",
+  "classification": "well-known-classic",
+  "newProverb": null,
+  "source": "Zgodne z dobrze udokumentowanym słowiańskim/polskim zwyczajem hałasowania w sylwestra w celu odpędzenia złych duchów (wyjatkowyprezent.pl, sklepzpetardami.pl)."
+ }
+]

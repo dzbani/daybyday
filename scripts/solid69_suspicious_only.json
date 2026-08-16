@@ -1,0 +1,114 @@
+[
+ {
+  "m": 1,
+  "d": 25,
+  "oldText": "Na nawrócenie Pawła dobra pogoda — rok będzie miał uroda.",
+  "classification": "suspicious",
+  "newProverb": "Gdy na święty Wincenty i Nawrócenie Pawła pogoda świeci, spodziewajcie się dobrego lata, dzieci.",
+  "source": "Błąd gramatyczny (\"rok będzie miał uroda\" zamiast \"urodę\" w bierniku) - typowy sygnał fabrykacji. Prawdziwe przysłowie na ten dzień (mikolajlipowiec.pl, strus.org) brzmi: \"Gdy na święty Wincenty i Nawrócenie Pawła pogoda świeci, spodziewajcie się dobrego lata, dzieci.\""
+ },
+ {
+  "m": 1,
+  "d": 25,
+  "oldText": "Jeśli w dzień świętego Pawła słońce świeci, rok zboże zasięci.",
+  "classification": "suspicious",
+  "newProverb": "Na Świętego Pawła połowa zimy przepadła.",
+  "source": "\"Zasięci\" to nie istniejące polskie słowo/forma czasownika - sfabrykowany rym. Prawdziwe, potwierdzone przysłowie na 25 stycznia (kalbi.pl): \"Na Świętego Pawła połowa zimy przepadła.\""
+ },
+ {
+  "m": 2,
+  "d": 3,
+  "oldText": "Błażej gardło leczy — mrozy też ustępują.",
+  "classification": "suspicious",
+  "newProverb": "Święty Błażej, gardła zagrzej.",
+  "source": "Rdzeń (\"gardło leczy\") jest zgodny z \"Święty Błażej, gardła zagrzej\", ale dodatek \"mrozy też ustępują\" nie ma pokrycia w żadnym źródle - realne przysłowia o Błażeju dotyczą śniegu/deszczu i Wielkanocy (\"Jak pogoda w św. Błażeja, będzie ze śniegiem Wielka Niedziela\"), nie mrozów. Zamiennik potwierdzony przez kalbi.pl/niedziela.pl."
+ },
+ {
+  "m": 2,
+  "d": 9,
+  "oldText": "Apolonia z mrozem — zęby bolą, ale zima zdrowa.",
+  "classification": "suspicious",
+  "newProverb": "Luty bywa w lód okuty.",
+  "source": "Apolonia jest dobrze udokumentowaną patronką bólu zębów, ale żadne źródło nie łączy jej z mrozem ani z formułą \"zima zdrowa\" - brak takiego przysłowia w kalendarzach ludowych (kalbi.pl, kalendarzswiat.pl). Zastąpiono ogólnym, prawdziwym przysłowiem lutowym."
+ },
+ {
+  "m": 2,
+  "d": 14,
+  "oldText": "Na świętego Walentego ptaki się kojarzą, ludzie miłością darzą.",
+  "classification": "suspicious",
+  "newProverb": "Na św. Walentego bywa mróz już do niczego.",
+  "source": "Motyw \"ptaków kojarzących się\" na Walentego to zachodnioeuropejska tradycja średniowieczna (Chaucer), nieudokumentowana jako polskie przysłowie ludowe. Realne polskie przysłowia na 14 lutego dotyczą pogody/mrozu (kalbi.pl, interia.pl, wikikids.pl)."
+ },
+ {
+  "m": 3,
+  "d": 1,
+  "oldText": "Marzec jak zając — ucieka i wraca.",
+  "classification": "suspicious",
+  "newProverb": "W marcu jak w garncu.",
+  "source": "Żadne źródło nie łączy marca z zającem - brak takiego obrazu w zbiorach przysłów o marcu (mamotoja.pl, kalendarzswiat.pl, mnwr.pl). Zastąpiono najsłynniejszym, w pełni potwierdzonym przysłowiem marcowym."
+ },
+ {
+  "m": 3,
+  "d": 19,
+  "oldText": "Na świętego Józefa sadzonki w ziemię wkładaj, bo dobry owoc w sadzie będziesz miał.",
+  "classification": "suspicious",
+  "newProverb": "W Józefa z zimy się śmiej i na grządce kapustę siej.",
+  "source": "Realne przysłowia o Józefie (muzeumetnograficzne.rzeszow.pl) dotyczą sadzenia ziemniaków, siania kapusty i grochu, nie \"sadzonek\"/owoców w sadzie - ta konkretna treść nie ma pokrycia w źródłach."
+ },
+ {
+  "m": 3,
+  "d": 25,
+  "oldText": "Na Zwiastowanie kto nie sieje, przez lato popłakuje.",
+  "classification": "suspicious",
+  "newProverb": "Na Zwiastowanie Najświętszej Panny jaskółki się pokazują i wiosnę zwiastują.",
+  "source": "Nie znaleziono tej treści w żadnym źródle. Realne przysłowia o Zwiastowaniu dotyczą mgły/powodzi, jaskółek i pogody wielkanocnej (\"Jakie Zwiastowanie, takie Zmartwychwstanie\") - pl.wikisource.org, podlaskie24.pl."
+ },
+ {
+  "m": 5,
+  "d": 25,
+  "oldText": "Jeśli Urban z deszczem, wino kwaśne do pieśni.",
+  "classification": "suspicious",
+  "newProverb": "Gdy deszcz na świętego Urbana, mały profit z winobrania.",
+  "source": "\"Wino kwaśne do pieśni\" to bezsensowna fraza sklejona pod rym. Prawdziwe, potwierdzone przysłowie o tej samej treści (deszcz=zła wina) to: \"Gdy deszcz na świętego Urbana, mały profit z winobrania\" (l24.lt/dziennik.pl)."
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "oldText": "Na Piotra i Pawła żyto w głowę wchodzi — kto nie wierzy, na pole idzie.",
+  "classification": "suspicious",
+  "newProverb": "Gdy Piotr z Pawłem w deszcz uderzy, słońce za mgłą tydzień leży.",
+  "source": "Nie znaleziono żadnego przysłowia o Piotrze i Pawle dotyczącego żyta/dojrzewania zboża (sprawdzono kalbi.pl, strus.org, meteoprog.pl) - prawdziwe przysłowia na ten dzień dotyczą deszczu/mgły i grzybów."
+ },
+ {
+  "m": 6,
+  "d": 29,
+  "oldText": "Od Piotra i Pawła — żyto do kosy się kłania.",
+  "classification": "suspicious",
+  "newProverb": "Po świętym Pawle i Piotrze muchy tłuste jak wieprze.",
+  "source": "Jak wyżej - brak potwierdzenia motywu żyta/kosy dla Piotra i Pawła w źródłach. Zamiennik to realne, potwierdzone przysłowie (meteoprog.pl)."
+ },
+ {
+  "m": 7,
+  "d": 25,
+  "oldText": "Na świętego Jakuba zbierać czas grzyba.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Jakuba ostatnia już siewów pora.",
+  "source": "Realne przysłowia o Jakubie (mnwr.pl) dotyczą pogody i ostatniej pory siewu/zagrożenia dla pszenicy, nie grzybów - sezon grzybowy w Polsce przypada zwykle później (sierpień-wrzesień), co czyni tę treść nielogiczną i niepotwierdzoną."
+ },
+ {
+  "m": 8,
+  "d": 10,
+  "oldText": "Na świętego Wawrzyńca słońce pali, zboże w polu się wali.",
+  "classification": "suspicious",
+  "newProverb": "Na świętego Wawrzyńca szykują się żeńcy do wieńca.",
+  "source": "Nie znaleziono potwierdzenia motywu \"słońce pali, zboże się wali\" - realne przysłowia o Wawrzyńcu dotyczą wieńca żniwnego, jesieni i wina (werandacountry.pl, zoomnawies.pl)."
+ },
+ {
+  "m": 11,
+  "d": 25,
+  "oldText": "Na Katarzynę — koła się kręcą.",
+  "classification": "suspicious",
+  "newProverb": "Święta Katarzyna adwent rozpoczyna.",
+  "source": "Koło jest atrybutem męczeństwa i patronatu Katarzyny (kołodzieje, garncarze), ale nie znaleziono żadnego przysłowia \"koła się kręcą\" - realne, dobrze udokumentowane przysłowia na ten dzień to \"Święta Katarzyna adwent rozpoczyna\" i \"śluby ucina\" (mnwr.pl, karmelici.pl)."
+ }
+]
