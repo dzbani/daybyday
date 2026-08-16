@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Jeśli przechodzisz przez piekło, idź dalej.",
+    "original_author": "Winston Churchill",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "International Churchill Society nie znalazło tego zdania w żadnym piśmie ani przemówieniu Churchilla; cytat figuruje w dziale 'Red Herrings' (fałszywe przypisania) w książce 'Churchill by Himself'. Najwcześniejszy zbliżony ślad to anegdota Johna Randalla Dunna w 'Christian Science Sentinel' (1943). Potwierdzone przez Quote Investigator i Snopes. To już trzeci fałszywy cytat 'Churchilla' w tym zbiorze (po partiach 4 i 7). https://quoteinvestigator.com/2014/09/14/keep-going/ ; https://www.snopes.com/fact-check/winston-churchill-keep-going-quote/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Świat obiecuje ci komfort, ale nie zostałeś stworzony dla komfortu. Zostałeś stworzony do wielkości.",
+    "original_author": "Papież Benedykt XVI",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Popularna forma jest skróconą/spopularyzowaną kondensacją myśli Benedykta XVI, zbieżną z jego wypowiedzią z kwietnia 2005 ('Christ did not promise an easy life... he shows us the way to great things') oraz z encykliki 'Spe salvi' ('Man was created for greatness'). Autor i sens zgodne z jego nauczaniem, forma to internetowa parafraza - analogicznie do zaakceptowanego wcześniej przypadku Papieża Franciszka w partii 7.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie aspiruj do tego, by zarabiać na życie, aspiruj do tego, by coś zmienić.",
+    "original_author": "Denzel Washington",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z przemówienia Denzela Washingtona na uroczystości rozdania dyplomów (Commencement Address) na University of Pennsylvania, 16 maja 2011.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie boję się sztormów, bo uczę się żeglować moim statkiem.",
+    "original_author": "Mary Louise Alcott",
+    "status": "misattributed",
+    "correct_author": "Louisa May Alcott",
+    "evidence": "Cytat pochodzi z powieści 'Little Women' ('Małe kobietki') Louisy May Alcott, rozdział 44. Nie istnieje autorka o nazwisku 'Mary Louise Alcott' - to zniekształcone imię i błędna kolejność (prawidłowo: Louisa May Alcott). https://www.goodreads.com/quotes/19092-i-am-not-afraid-of-storms-for-i-am-learning",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Kiedy cały świat milczy, nawet jeden głos staje się potężny.",
+    "original_author": "Malala Yousafzai",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z książki 'I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban', potwierdzony też w relacji z jej przemówienia na Harvardzie (Boston Globe, 28 września 2013).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Czułem, że lepiej umrzeć walcząc z niesprawiedliwością, niż zginąć jak pies lub szczur w pułapce.",
+    "original_author": "Ida B. Wells",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dokładny cytat z autobiografii 'Crusade for Justice: The Autobiography of Ida B. Wells' (University of Chicago Press), str. 62: 'I felt that one had better die fighting against injustice than to die like a dog or a rat in a trap.'",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie chodzi o to, kto mi na to pozwoli; chodzi o to, kto mnie powstrzyma.",
+    "original_author": "Ayn Rand",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Oficjalny artykuł Ayn Rand Institute ('The Quotable Ayn Rand: Who Is Going to Stop Me?') wprost stwierdza, że Rand nigdy nie napisała ani nie wypowiedziała tych dokładnych słów - to internetowa kondensacja dialogu Howarda Roarka z 'Źródła' (The Fountainhead), gdzie oryginalna kwestia brzmi: 'That's not the point. The point is, who will stop me?'. Potwierdzone przez Snopes i PolitiFact. https://ari.aynrand.org/the-quotable-ayn-rand-who-is-going-to-stop-me/ ; https://www.snopes.com/fact-check/ayn-rand-quote/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "To dobre miejsce, gdy wszystko, co masz, to nadzieja, a nie oczekiwania.",
+    "original_author": "Danny Boyle",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('It's a good place when all you have is hope and not expectations') krąży wyłącznie na serwisach z cytatami (BrainyQuote, AZQuotes) w kontekście filmu 'Yesterday' (2019, reż. Boyle, scenariusz Richard Curtis), ale nie znaleziono wywiadu ani wypowiedzi źródłowej potwierdzającej, że to słowa Boyle'a a nie kwestia z filmu lub błędne przypisanie do reżysera zamiast scenarzysty.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie pisz tego, co myślisz, że ludzie chcą czytać. Znajdź swój głos i pisz o tym, co leży ci na sercu.",
+    "original_author": "Quentin Tarantino",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wywiadu Kama Williamsa z Quentinem Tarantino przy okazji 'Inglourious Basterds', opublikowanego na aalbc.com.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy nie wiesz, przed czym uchronił cię twój pech.",
+    "original_author": "Cormac McCarthy",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment powieści 'No Country for Old Men' (2005), kwestia postaci Ellisa Bella. Oryginał: 'You never know what worse luck your bad luck has saved you from.' Zgodnie z przyjętym w tym zbiorze podejściem do cytatów literackich, przypisanie autorowi powieści jest akceptowane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Porażka jest odznaką honoru. Oznacza, że zaryzykowałeś porażkę. A jeśli nie zaryzykujesz porażki, nigdy nie zrobisz niczego, co różniłoby się od tego, co już zrobiłeś.",
+    "original_author": "Charlie Kaufman",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z wykładu Charliego Kaufmana zorganizowanego przez BAFTA we wrześniu 2011 o technikach pisania scenariuszy.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Człowiek sukcesu to taki, który potrafi położyć solidny fundament z cegieł, które rzucili na niego inni.",
+    "original_author": "David Brinkley",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie i zgodnie przypisywany David Brinkleyowi, pochodzi z jego książki 'Brinkley's Beat: People, Places, and Events That Shaped My Time'.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Łatwiej jest budować silne dzieci niż naprawiać zepsutych ludzi.",
+    "original_author": "Frederick Douglass",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Check Your Fact (2019) oraz dwóch niezależnych badaczy dorobku Douglassa nie znalazło tego zdania ani jego wariantu w żadnym z jego pism, przemówień, listów czy autobiografii. Jeden z ekspertów określił cytat jako apokryf. Najwcześniejszy ślad przypisania to reklama z 1994 roku. https://checkyourfact.com/2019/04/30/fact-check-frederick-douglass-easier-build-strong-children-repair-broken-men/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Kiedy nie jesteśmy już w stanie zmienić sytuacji — musimy zmienić siebie.",
+    "original_author": "Viktor E. Frankl",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z 'Man's Search for Meaning' (1946) Viktora Frankla, powszechnie i wiarygodnie udokumentowany.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kłopoty są często narzędziami, za pomocą których Bóg przygotowuje nas do lepszych rzeczy.",
+    "original_author": "Henry Ward Beecher",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Zgodne z oryginałem 'Troubles are often the tools by which God fashions us for better things' z 'Life Thoughts' (1858) Henry'ego Warda Beechera. Polska wersja z 'narzędziami' dobrze odpowiada oryginalnemu 'tools' (a nie krążącej mylnej wersji ze słowem 'school').",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wszystkie dobre pomysły zaczynają się jako złe pomysły. Dlatego trwa to tak długo.",
+    "original_author": "Steven Spielberg",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat konsekwentnie przypisywany Spielbergowi na wielu serwisach (Goodreads, QuoteFancy, AZQuotes, Goalcast), ale bez wskazania konkretnego wywiadu, przemówienia czy publikacji źródłowej.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zawsze wracam, ale nikt nigdy nie mówi mi, gdzie byłem.",
+    "original_author": "Billie Holiday",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z autobiografii 'Lady Sings the Blues' (1956, współautor William Dufty), rozdział 23, str. 212 wydania jubileuszowego. Oryginał: 'I'm always making a comeback, but nobody ever tells me where I've been.'",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Piękno miłości polega na tym, że oddając ją, zostajesz z czymś więcej niż miałeś wcześniej.",
+    "original_author": "David Simon",
+    "status": "misattributed",
+    "correct_author": "David Simon, M.D. (autor 'The Ten Commitments: Translating Good Intentions into Great Choices', 2010) - inna osoba niż David Simon, twórca serialu 'The Wire'/'Homicide'",
+    "evidence": "Wyszukiwanie ujawniło, że cytat pochodzi od David Simona, lekarza i współzałożyciela Chopra Center, autora książki 'The Ten Commitments' (2010) - nie od Davida Simona, dziennikarza i twórcy 'The Wire'/'Homicide: A Year on the Killing Streets', z którym baza cytatów prawdopodobnie go myli (ta sama para imię-nazwisko, brak jednoznacznego wskazania w bazie DaybyDay, którego autora dotyczy przypisanie).",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Ludzie zawsze zakochują się w najdoskonalszych aspektach swoich osobowości. Kto by tego nie zrobił? Każdy może pokochać najwspanialsze części drugiej osoby. Ale nie na tym polega sprytna sztuczka. Naprawdę sprytna sztuczka polega na tym: Czy potrafisz zaakceptować wady?",
+    "original_author": "Elizabeth Gilbert",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z książki Elizabeth Gilbert 'Committed: A Skeptic Makes Peace with Marriage' (nie z 'Eat, Pray, Love', jak czasem mylnie się podaje) - autorstwo poprawne, tytuł dzieła bywa mylony, ale nie ma to wpływu na poprawność przypisania autora.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Eskimosi mieli 52 nazwy dla śniegu, ponieważ był on dla nich ważny: powinno być ich tyle samo dla miłości.",
+    "original_author": "Margaret Atwood",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z powieści Margaret Atwood 'Surfacing' (1972), str. 107. (Sama przesłanka o '52 nazwach na śnieg' jest znanym mitem lingwistycznym wywodzącym się z prac Franza Boasa, ale to nie wpływa na poprawność przypisania autorstwa cytatu Atwood.)",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zbyt wiele osób szuka właściwej osoby, zamiast próbować być właściwą osobą.",
+    "original_author": "Gloria Steinem",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z książki Glorii Steinem 'Revolution from Within: A Book of Self-Esteem' (1992), str. 27.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kochać znaczy kochać to, co niekochane. Przebaczać oznacza wybaczać niewybaczalne. Wiara oznacza wierzyć w to, co niewiarygodne. Nadzieja oznacza mieć nadzieję, gdy wszystko wydaje się beznadziejne.",
+    "original_author": "Gilbert K. Chesterton",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Cytat nie występuje w żadnym ze zdigitalizowanych dzieł Chestertona (potwierdzone przeszukaniem Google Books i dedykowanego indeksu jego twórczości). Artykuł 'Against Chesterton Quotations' (First Things) oraz serwis śledzący fałszywe cytaty 'fauxtations.wordpress.com' klasyfikują go jako niepotwierdzony/błędnie przypisany. Istnieje pokrewna, ale odrębna autentyczna myśl Chestertona: 'Love means to love that which is unlovable; or it is no virtue at all.'",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Nie ma większego daru niż poświęcenie swojego czasu i energii na pomoc innym, nie oczekując niczego w zamian.",
+    "original_author": "Nelson Mandela",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat (w oryginale: 'There can be no greater gift than that of giving one's time and energy to help others without expecting anything in return') pochodzi z autobiografii 'Long Walk to Freedom', str. 403.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "W każdym dobrym małżeństwie pomaga czasami bycie trochę głuchym.",
+    "original_author": "Ruth Bader Ginsburg",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "RBG wielokrotnie przytaczała te słowa jako radę otrzymaną od teściowej w dniu ślubu, m.in. w publikowanym eseju i w książce 'Conversations with RBG'. Choć oryginalnie to rada teściowej, RBG sama spopularyzowała i udokumentowała te słowa we własnym imieniu jako zasadę, którą stosowała 56 lat w małżeństwie i w pracy zawodowej - przypisanie do RBG jako autorki wypowiedzi jest zasadne.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Miej oczy szeroko otwarte przed ślubem, a półprzymknięte po nim.",
+    "original_author": "Ben Franklin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat autentycznie występuje w 'Poor Richard's Almanack' z 1738 roku (potwierdzone pełnym tekstem archiwalnym). Przysłowie mogło wywodzić się wcześniej z 'Introductio ad prudentiam' Thomasa Fullera (1727), ale Franklin opublikował je pod własnym szyldem w almanachu, podobnie jak wiele innych zaadaptowanych przysłów w tym dziele - to standardowa praktyka Poor Richard's Almanack, zgodna z podejściem przyjętym dla innych cytatów-przysłów w tym zbiorze.",
+    "recommendation": "keep"
+  }
+]
