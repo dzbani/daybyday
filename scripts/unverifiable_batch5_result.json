@@ -1,0 +1,352 @@
+[
+  {
+    "m": 4, "d": 21,
+    "oldText": "Kwiecień z ciepłem po dwudziestym — maj pracowity.",
+    "classification": "suspicious",
+    "newProverb": "Gdy kwiecień chmurny, a maj z wiatrami, rok żyzny przed nami.",
+    "source": "Szablon generycznej korelacji miesięcy bez pokrycia źródłowego. Zamiennik: kalbi.pl, kartka z kalendarza na 21 kwietnia."
+  },
+  {
+    "m": 4, "d": 21,
+    "oldText": "Anzelm z deszczem — maj zielony.",
+    "classification": "suspicious",
+    "newProverb": "Deszcze częste w kwietniu wróżą, że owoców będzie dużo.",
+    "source": "Brak potwierdzenia przysłowia o Anzelmie w źródłach. Zamiennik: kalendarzswiat.pl/przyslowia_kwiecien."
+  },
+  {
+    "m": 4, "d": 23,
+    "oldText": "Gdy Wojciech mroźny, owoc tego roku będzie kosztowny.",
+    "classification": "suspicious",
+    "newProverb": "Grzmot w świętego Wojciecha, to chłopięca uciecha.",
+    "source": "Fabrykat (schemat przyczynowo-skutkowy bez pokrycia). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 23 kwietnia."
+  },
+  {
+    "m": 4, "d": 23,
+    "oldText": "Wojciech z słońcem — żyto się obiecuje.",
+    "classification": "suspicious",
+    "newProverb": "Ile dni przed św. Wojciechem kukułka się odezwie albo żaba zaskrzeczy, tyle dni po św. Wojciechu będzie zimno.",
+    "source": "Fabrykat. Zamiennik: tradycyjne przysłowie o św. Wojciechu potwierdzone wielokrotnie (kalbi.pl i inne kalendarze ludowe)."
+  },
+  {
+    "m": 4, "d": 24,
+    "oldText": "Jerzy na koniu — zima pobita.",
+    "classification": "suspicious",
+    "newProverb": "Na święty Jerzy rosa, nie trzeba koniom owsa.",
+    "source": "Fabrykat nawiązujący do ikonografii bez pokrycia tekstowego. Zamiennik potwierdzony w Wikisłowniku (pl.wiktionary.org/wiki/na_święty_Jerzy_rosa,_nie_trzeba_koniom_owsa)."
+  },
+  {
+    "m": 4, "d": 24,
+    "oldText": "Na świętego Jerzego wąż z dziury wychodzi.",
+    "classification": "suspicious",
+    "newProverb": "W kwietniu posusza, nic się na polach nie rusza.",
+    "source": "Brak potwierdzenia przysłowia o wężu na Jerzego w żadnym źródle. Zamiennik: kalbi.pl, kartka z kalendarza na 24 kwietnia."
+  },
+  {
+    "m": 4, "d": 25,
+    "oldText": "Na Marka — słońce grzeje mocniej.",
+    "classification": "suspicious",
+    "newProverb": "Jak Marek przypieka, chłop jeszcze ponarzeka.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 25 kwietnia."
+  },
+  {
+    "m": 4, "d": 26,
+    "oldText": "Kwiecień ku końcowi — pszczoły w kwiatach.",
+    "classification": "suspicious",
+    "newProverb": "W kwietniu łagodne kwiatki, w grudniu śnieżne płatki.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 26 kwietnia."
+  },
+  {
+    "m": 4, "d": 27,
+    "oldText": "Kwiecień na końcu — sprawdź drzewa owocowe.",
+    "classification": "suspicious",
+    "newProverb": "Kwiecień, co deszczem rosi, wiele owoców przynosi.",
+    "source": "Fabrykat (rada praktyczna, nie przysłowie). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 27 kwietnia."
+  },
+  {
+    "m": 4, "d": 28,
+    "oldText": "Kwiecień ostatni — siej co możesz.",
+    "classification": "suspicious",
+    "newProverb": "Jeśli w św. Paweł śnieg albo deszcz pada, dobrych się urodzajów spodziewać wypada.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 28 kwietnia."
+  },
+  {
+    "m": 4, "d": 30,
+    "oldText": "Kwiecień bez deszczu — w stodole cicho.",
+    "classification": "suspicious",
+    "newProverb": "W kwietniu po brzegach wody niosą jęczmienia urody.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 30 kwietnia."
+  },
+  {
+    "m": 4, "d": 30,
+    "oldText": "Ostatni kwiecień — maj za drzwiami.",
+    "classification": "suspicious",
+    "newProverb": "Ciepły kwiecień, mokry maj, będzie żytko jako gaj.",
+    "source": "Fabrykat generyczny (druga pozycja tego dnia). Zamiennik potwierdzony: kalendarzswiat.pl/przyslowia_kwiecien."
+  },
+  {
+    "m": 5, "d": 1,
+    "oldText": "Majowe deszcze — złoto dla pól.",
+    "classification": "suspicious",
+    "newProverb": "Pierwszego maja deszcz, nieurodzaju wieszcz.",
+    "source": "Fabrykat sprzeczny z realną wymową ludową: prawdziwe przysłowie na 1 maja mówi coś przeciwnego — deszcz tego dnia jako zły omen, nie 'złoto dla pól'. Zamiennik potwierdzony: kalendarzswiat.pl/przyslowia_maj i kalbi.pl (kartka na 1 maja: 'Na pierwszego maja szron, obiecuje hojny plon')."
+  },
+  {
+    "m": 5, "d": 2,
+    "oldText": "Gdy maj z deszczem na początku — sierpień obfity.",
+    "classification": "suspicious",
+    "newProverb": "W Zygmunta deszcz — nieurodzaju wieszcz.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony, trafnie dopasowany do patrona dnia (Zygmunt): kalbi.pl, kartka z kalendarza na 2 maja."
+  },
+  {
+    "m": 5, "d": 6,
+    "oldText": "Gdy w maju mgły poranne — upał w południe.",
+    "classification": "suspicious",
+    "newProverb": "Na Filipa, gdy przymrozek spadnie, najgorsza zaraza na zboże przypadnie.",
+    "source": "Fabrykat (obserwacja meteorologiczna bez pokrycia). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 6 maja."
+  },
+  {
+    "m": 5, "d": 7,
+    "oldText": "Na świętego Stanisława lato się przedstawia.",
+    "classification": "suspicious",
+    "newProverb": "Gizela święta zimy nie pamięta.",
+    "source": "Fabrykat — data 7 maja to w kalendarzu ludowym raczej Gizela, nie właściwe święto Stanisława (Translacja św. Stanisława przypada 8 maja). Zamiennik potwierdzony i dopasowany do patronki dnia: kalbi.pl, kartka z kalendarza na 7 maja."
+  },
+  {
+    "m": 5, "d": 8,
+    "oldText": "Gdy maj grzmi — sierpień gorący.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Stanisława rośnie koniom trawa.",
+    "source": "Fabrykat generyczny, pomija właściwego patrona dnia. Zamiennik potwierdzony i trafnie dopasowany (Translacja św. Stanisława Biskupa, 8 maja): kalbi.pl, kartka z kalendarza na 8 maja."
+  },
+  {
+    "m": 5, "d": 10,
+    "oldText": "Na Izydora zasiewaj najpóźniej.",
+    "classification": "suspicious",
+    "newProverb": "Na świętego Izydora często bywa chłodna pora.",
+    "source": "Fabrykat (rada praktyczna, nie przysłowie). Zamiennik potwierdzony: Dziennik.pl, 'Przysłowie na dziś, 10 maja' (wiadomosci.dziennik.pl/ciekawostki/artykuly/11244716)."
+  },
+  {
+    "m": 5, "d": 12,
+    "oldText": "Pankracy mróz przynosi — strzeż sadzone.",
+    "classification": "suspicious",
+    "newProverb": "Pankracy, Serwacy i Bonifacy — źli na ogrody chłopacy.",
+    "source": "Fabrykat z błędem fleksyjnym. Zamiennik — klasyczne, szeroko potwierdzone przysłowie o Zimnych Ogrodnikach: kalbi.pl, kartka z kalendarza na 12 maja."
+  },
+  {
+    "m": 5, "d": 13,
+    "oldText": "Gdy Serwacy bez mrozu — lato gorące.",
+    "classification": "suspicious",
+    "newProverb": "Gdy w maju dobry Serwacy, dobry w czerwcu Bonifacy.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 13 maja."
+  },
+  {
+    "m": 5, "d": 14,
+    "oldText": "Po Bonifacym mróz nie wraca.",
+    "classification": "suspicious",
+    "newProverb": "Pankracy, Serwacy, Bonifacy, każdy swoim zimnem raczy.",
+    "source": "Fabrykat sprzeczny z realną tradycją ludową (Zimni Ogrodnicy kojarzeni są właśnie z przynoszeniem chłodu/mrozu, nie jego brakiem). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 14 maja."
+  },
+  {
+    "m": 5, "d": 21,
+    "oldText": "Maj ciepły po dwudziestym — dobrze wróży.",
+    "classification": "suspicious",
+    "newProverb": "Na Jana Nepomucena wiadoma już zboża cena.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 21 maja."
+  },
+  {
+    "m": 5, "d": 23,
+    "oldText": "Maj na końcu — lato się zbliża.",
+    "classification": "suspicious",
+    "newProverb": "Gdy się w maju pszczoły roją, takie roje w wielkiej cenie stoją.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 23 maja."
+  },
+  {
+    "m": 5, "d": 25,
+    "oldText": "Urban słoneczny — winnica obiecuje.",
+    "classification": "suspicious",
+    "newProverb": "Na Urbana chwile jakie, mówią, że i lato takie.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony, wielokrotnie cytowany jako klasyczne przysłowie o św. Urbanie (25 maja), m.in. wiadomosci.ox.pl/25-maja-sw-urbana i top.pl."
+  },
+  {
+    "m": 5, "d": 27,
+    "oldText": "Maj na końcu zbiera siły do lata.",
+    "classification": "suspicious",
+    "newProverb": "Częste deszcze w całym maju chleb i siano nam dawają.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 27 maja."
+  },
+  {
+    "m": 5, "d": 31,
+    "oldText": "Na końcu maja — liczy się żyto.",
+    "classification": "suspicious",
+    "newProverb": "Deszcz na Nawiedzenie Panny potrwa pewno do Zuzanny.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 31 maja."
+  },
+  {
+    "m": 6, "d": 1,
+    "oldText": "Czerwiec deszczowy — sierpień gorący.",
+    "classification": "suspicious",
+    "newProverb": "Czerwiec na maju zwykle się wzoruje, jego pluchy, pogody często naśladuje.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl (kartka na 1 czerwca) i kalendarzswiat.pl/przyslowia_czerwiec."
+  },
+  {
+    "m": 6, "d": 4,
+    "oldText": "Gdy czerwiec z burzą na początku — lato gorące.",
+    "classification": "suspicious",
+    "newProverb": "Gdy czerwiec chłodem i wodą szafuje, to zwykle rok cały popsuje.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony (przysłowie ogólnoczerwcowe, niezależne od ruchomego święta Bożego Ciała): kalendarzswiat.pl/przyslowia_czerwiec."
+  },
+  {
+    "m": 6, "d": 13,
+    "oldText": "Na Antoniego deszcz pada — zboże pełne wody.",
+    "classification": "suspicious",
+    "newProverb": "Święty Antoni o gryce siać przypomni.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony i trafny (św. Antoni z Padwy, 13 czerwca): kalbi.pl, kartka z kalendarza na 13 czerwca."
+  },
+  {
+    "m": 6, "d": 22,
+    "oldText": "Po przesileniu dzień zaczyna wracać.",
+    "classification": "suspicious",
+    "newProverb": "Gdy słońce w Raka z grzmotem wschodzi, to posuchę zwykle przynosi.",
+    "source": "Stwierdzenie astronomicznego faktu, nie ludowe przysłowie (zgodnie z notatką z inputu). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 22 czerwca."
+  },
+  {
+    "m": 6, "d": 24,
+    "oldText": "Na Jana Chrzciciela słońce nad ziemią miga — urodzaj nie ucieka.",
+    "classification": "suspicious",
+    "newProverb": "Gdy się Jan Chrzciciel w dżdżystej kąpie wodzie, deszcze żniwom bywają wtenczas na przeszkodzie.",
+    "source": "Fabrykat z dziwną frazą 'słońce miga'. Zamiennik — jedno z wielu potwierdzonych przysłów świętojańskich: kalbi.pl (kartka na 24 czerwca) i kalendarzswiat.pl/przyslowia_czerwiec."
+  },
+  {
+    "m": 6, "d": 24,
+    "oldText": "Gdy na świętego Jana rzeka wzbiera — rok w polu obfity.",
+    "classification": "suspicious",
+    "newProverb": "Jak się Janek kąpie w wodzie, żniwom deszcze na przeszkodzie.",
+    "source": "Fabrykat generyczny (druga pozycja tego dnia). Zamiennik potwierdzony: kalendarzswiat.pl/przyslowia_czerwiec."
+  },
+  {
+    "m": 6, "d": 28,
+    "oldText": "Czerwiec ku końcowi — żniwa za miesiąc.",
+    "classification": "suspicious",
+    "newProverb": "Czerwiec grudniową pogodę głosi, lipiec dla stycznia wróżbę przynosi.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 28 czerwca."
+  },
+  {
+    "m": 6, "d": 29,
+    "oldText": "Gdy Piotr i Paweł słoneczni — zboże złote.",
+    "classification": "suspicious",
+    "newProverb": "Gdy Piotr z Pawłem w deszcz uderzy, słońce za mgłą tydzień leży.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony i trafny: kalbi.pl, kartka z kalendarza na 29 czerwca."
+  },
+  {
+    "m": 6, "d": 30,
+    "oldText": "Czerwiec koniec — lato w sile.",
+    "classification": "suspicious",
+    "newProverb": "W czerwcu się okaże, co nam Bóg da w darze.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony (ogólnoczerwcowe): kalendarzswiat.pl/przyslowia_czerwiec."
+  },
+  {
+    "m": 7, "d": 1,
+    "oldText": "Lipiec skwarny — rok owocny.",
+    "classification": "suspicious",
+    "newProverb": "Gdy Halina łąki zrosi, rolnik w wodzie siano kosi.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony i trafnie dopasowany do patronki dnia (Halina): kalbi.pl, kartka z kalendarza na 1 lipca."
+  },
+  {
+    "m": 7, "d": 1,
+    "oldText": "Deszcz lipcowy rolnikowi nie drogowy.",
+    "classification": "suspicious",
+    "newProverb": "Gdy lipiec z deszczem, zima będzie z wiatrem.",
+    "source": "Fabrykat — sztuczny rym bez jasnego sensu (zgodnie z notatką z inputu). Zamiennik potwierdzony: kalendarzswiat.pl/przyslowia_lipiec."
+  },
+  {
+    "m": 7, "d": 2,
+    "oldText": "Lipiec deszczowy — sierpień suchy.",
+    "classification": "suspicious",
+    "newProverb": "Gdy pająk w lipcu przychodzi, to za sobą deszcz przywodzi, gdy swą pajęczynę snuje, bliską burzę czuje.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 2 lipca."
+  },
+  {
+    "m": 7, "d": 2,
+    "oldText": "Gdy lipiec mglisty — jesień piękna.",
+    "classification": "suspicious",
+    "newProverb": "Kiedy lipiec daje deszcze, długie lato będzie jeszcze.",
+    "source": "Fabrykat generyczny (druga pozycja tego dnia). Zamiennik potwierdzony: kalendarzswiat.pl/przyslowia_lipiec."
+  },
+  {
+    "m": 7, "d": 6,
+    "oldText": "Gdy lipiec z burzami — sierpień spokojny.",
+    "classification": "suspicious",
+    "newProverb": "Kto w lipcu patrzy chłodu, nacierpi się w zimie głodu.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 6 lipca."
+  },
+  {
+    "m": 7, "d": 20,
+    "oldText": "Gdy Eliasz grzmi — lato żar wyda.",
+    "classification": "suspicious",
+    "newProverb": "Na świętą Małgorzatę kopa zawsze w polu stanie.",
+    "source": "Fabrykat — mimo realnego ludowego skojarzenia św. Eliasza z grzmotami (chrześcijański następca Peruna w tradycji słowiańskiej), nie znaleziono żadnego udokumentowanego przysłowia w tej konkretnej formie tekstowej. Zamiennik: rzeczywiste przysłowie przypisane do tego dnia w kalendarzu ludowym: kalbi.pl, kartka z kalendarza na 20 lipca."
+  },
+  {
+    "m": 7, "d": 22,
+    "oldText": "Maria Magdalena z deszczem — grzyby po deszczu.",
+    "classification": "suspicious",
+    "newProverb": "Z Magdaleną nam kanikuła wschodzi, święty Bartłomiej ją odwodzi.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 22 lipca."
+  },
+  {
+    "m": 7, "d": 22,
+    "oldText": "Na Magdaleny deszcz pada — urodzaj wróży.",
+    "classification": "suspicious",
+    "newProverb": "Miesiąc lipiec musi przypiec i ostatki mąki wypiec.",
+    "source": "Fabrykat generyczny (druga pozycja tego dnia, brak drugiego potwierdzonego przysłowia o Magdalenie). Zamiennik: kalendarzswiat.pl/przyslowia_lipiec."
+  },
+  {
+    "m": 7, "d": 26,
+    "oldText": "Na Annę — babcie zbierają zioła.",
+    "classification": "suspicious",
+    "newProverb": "Szczęśliwy, kto na Annę wyszuka sobie pannę.",
+    "source": "Fabrykat (łagodny kalambur bez pokrycia). Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 26 lipca."
+  },
+  {
+    "m": 7, "d": 28,
+    "oldText": "Lipiec ku końcowi — żniwa zaczynają.",
+    "classification": "suspicious",
+    "newProverb": "Gdy się grzmot w lipcu od południa poda, drzewom się znaczy szwank i nieuroda.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 28 lipca."
+  },
+  {
+    "m": 7, "d": 29,
+    "oldText": "Na Martę — gospodyni zbiera pierwsze żniwa.",
+    "classification": "suspicious",
+    "newProverb": "Około świętej Marty płać za żniwo, dawaj kwarty.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony i trafnie dopasowany (św. Marta, 29 lipca): kalbi.pl, kartka z kalendarza na 29 lipca."
+  },
+  {
+    "m": 7, "d": 31,
+    "oldText": "Koniec lipca — żniwa w pełni.",
+    "classification": "suspicious",
+    "newProverb": "Jeśli upały w sianokosy i żniwa, to zima ostra i dokuczliwa, a jeżeli słota, to w zimie dużo błota.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 31 lipca."
+  },
+  {
+    "m": 8, "d": 5,
+    "oldText": "Gdy sierpień deszczowy — jesień długa.",
+    "classification": "suspicious",
+    "newProverb": "W pierwszym tygodniu sierpnia spieka, zima ciężka, śnieżna i długa nas czeka.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 5 sierpnia i kalendarzswiat.pl/przyslowia_sierpien."
+  },
+  {
+    "m": 8, "d": 8,
+    "oldText": "Gdy sierpień pogodny — wrzesień spokojny.",
+    "classification": "suspicious",
+    "newProverb": "Gdy z początku sierpień częste grzmoty miewa, tedy też do końca takąż nutkę śpiewa.",
+    "source": "Fabrykat generyczny. Zamiennik potwierdzony: kalbi.pl, kartka z kalendarza na 8 sierpnia."
+  },
+  {
+    "m": 8, "d": 10,
+    "oldText": "Wawrzyniec słońcem pali — żniwa w polu się gonią.",
+    "classification": "suspicious",
+    "newProverb": "Gdy na Wawrzyńca orzechy obrodzą, to w zimie mrozy dogodzą.",
+    "source": "Fabrykat generyczny. Zamiennik — jedno z klasycznych, wielokrotnie potwierdzonych przysłów o św. Wawrzyńcu (10 sierpnia): kalbi.pl, kartka z kalendarza na 10 sierpnia."
+  }
+]
