@@ -2910,10 +2910,9 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // Zodiak
   document.getElementById('sunZodiacRow').innerHTML=`<a href="znaki-zodiaku.html" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--border)">${zod.n} ${zod.s}</a>`;
 
-  // Cytat — deterministyczny: ten sam dzień = ten sam cytat na każdym urządzeniu
+  // Cytat — deterministyczny: ten sam dzień roku = ten sam cytat na każdym urządzeniu i w każdym roku
   (function(){
-    const seed = y * 10000 + m * 100 + d;
-    const idx = seed % QUOTES.length;
+    const idx = (doy - 1) % QUOTES.length;
     const q = QUOTES[idx];
     document.getElementById('quoteText').textContent = q.t;
     document.getElementById('quoteAuthor').textContent = '— ' + q.a;
