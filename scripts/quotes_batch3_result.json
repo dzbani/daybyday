@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Najważniejsza rzecz w komunikacji to słyszeć to, czego nie powiedziano.",
+    "original_author": "Peter Drucker",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat jest ekstremalnie popularny w internecie i literaturze biznesowej (BrainyQuote, Goodreads, Oxford Reference), ale żadne z tych źródeł nie podaje konkretnej książki, eseju ani przemówienia Druckera, w którym miałby paść. Nie znaleziono go w podsumowaniach ani notatkach z jego najbardziej znanej pracy 'The Effective Executive' (1966), mimo że dotyczy ona obszernie komunikacji i słuchania. Jedna z dyskusji (Quora) określa go jako 'faux Drucker' - popularną maksymę, której z czasem 'dorobiono' znanego autora. Brak jednak twardego dowodu obalającego (np. oświadczenia Drucker Institute), więc pozostaje niepewny.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Niemożliwe jest życie bez ponoszenia porażek — chyba że żyjesz tak ostrożnie, że właściwie wcale nie żyjesz.",
+    "original_author": "J. K. Rowling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dosłowny fragment przemówienia J.K. Rowling na rozpoczęciu roku akademickiego na Harvardzie (Harvard Commencement Address, 5.06.2008): 'It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.' https://news.harvard.edu/gazette/story/2008/06/text-of-j-k-rowling-speech/ oraz https://www.jkrowling.com/harvard-commencement-address/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Ból jest nieunikniony. Cierpienie jest opcjonalne.",
+    "original_author": "Haruki Murakami",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dosłowny cytat z książki Murakamiego 'What I Talk About When I Talk About Running' (2008/tłum. pol. 'O czym mówię, kiedy mówię o bieganiu'): 'Pain is inevitable. Suffering is optional.' Sentencja o podobnym sensie krążyła już wcześniej (m.in. przypisywana Karen Casey, 1983, oraz Dalajlamie) jako ogólna maksyma buddyjska, ale Murakami rzeczywiście użył tych dokładnych słów w swojej opublikowanej książce, więc przypisanie mu tego zdania jest uzasadnione. https://www.goodreads.com/quotes/142758-pain-is-inevitable-suffering-is-optional",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli dasz ludziom wolność, by wyrażali siebie, zawsze cię zaskoczą.",
+    "original_author": "Steve Jobs",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tego zdania w żadnym uznanym zbiorze cytatów Steve'a Jobsa (Wikiquote, BrainyQuote, AZQuotes, archiwum book.stevejobsarchive.com) ani w transkrypcjach jego znanych wywiadów (Rolling Stone 1994, Playboy 1985). Jedyne zbliżone trafienie w wyszukiwaniach to fikcyjny, jawnie oznaczony jako parodia/fan-fiction 'wywiad z Fake Steve Jobsem'. Brak jednak jednoznacznego potwierdzenia fabrykacji - może to być rzadko cytowana, słabo zindeksowana wypowiedź.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie możesz połączyć kropek, patrząc do przodu. Możesz je połączyć tylko patrząc wstecz.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dosłowny fragment przemówienia Steve'a Jobsa na rozpoczęciu roku akademickiego na Stanford University (12.06.2005): 'You can't connect the dots looking forward; you can only connect them looking backwards.' Powszechnie i wielokrotnie potwierdzone w transkrypcjach mowy (Stanford Report, YouTube - oficjalne nagranie).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zostań głodnym. Zostań niemądrym.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Steve Jobs zakończył przemówienie na Stanford (2005) słowami 'Stay hungry. Stay foolish.', cytując je jako pożegnalny napis z tylnej okładki 'Whole Earth Catalog' Stewarta Branda (1974), który był dla niego inspiracją. Fraza pierwotnie nie jest autorstwa Jobsa, ale on rzeczywiście ją wypowiedział i spopularyzował w swoim najsłynniejszym przemówieniu, więc przypisanie 'Steve Jobs' jako mówcy jest poprawne w kontekście, w jakim funkcjonuje w kulturze popularnej. https://en.wikipedia.org/wiki/Stay_Hungry_Stay_Foolish",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Innowacja odróżnia lidera od naśladowcy.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'Innovation distinguishes between a leader and a follower.' - szeroko udokumentowany cytat Steve'a Jobsa, spójnie przypisywany mu przez wiarygodne źródła (Forbes, NBC News, BrainyQuote) bez żadnych sygnałów kwestionujących autentyczność.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Projekt to nie tylko to, jak coś wygląda. Projekt to jak coś działa.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Parafraza wypowiedzi Steve'a Jobsa z artykułu 'The Guts of a New Machine' (Rob Walker, New York Times, 30.11.2003): '...It's not just what it looks like and feels like. Design is how it works.' Autentyczność i źródło dobrze udokumentowane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedynym sposobem na świetną pracę jest kochanie tego, co robisz.",
+    "original_author": "Steve Jobs",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dosłowny fragment przemówienia na Stanford University (2005): 'And the only way to do great work is to love what you do.' https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma nic niemożliwego. Słowo samo mówi: jestem możliwy.",
+    "original_author": "Audrey Hepburn",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Na Goodreads cytat oznaczony tagiem 'attributed-no-source' - brak udokumentowanego źródła. Opinie są podzielone: część fanów Hepburn twierdzi, że pochodzi z autoryzowanych zbiorów jej wypowiedzi, inni wskazują, że nie znaleziono żadnego potwierdzenia i że brzmi podejrzanie podobnie do monologu 'I Believe In...' z filmu 'Bull Durham' (1988). Brak rozstrzygającego dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Im więcej pracuję, tym więcej szczęścia mam.",
+    "original_author": "Thomas Edison",
+    "status": "misattributed",
+    "correct_author": "nieznany (najwcześniejszy udokumentowany ślad: Coleman Cox, zbiór 'Listen to This', 1922)",
+    "evidence": "Quote Investigator ustalił, że to popularne powiedzenie ('I am a great believer in luck. The harder I work, the more of it I seem to have.') najwcześniej pojawia się u Colemana Coxa w 1922 r. Bywa błędnie przypisywane wielu postaciom - najczęściej Thomasowi Jeffersonowi (oficjalna strona Monticello jednoznacznie zaprzecza: 'Neither this statement nor any variations thereof have ever been found in Thomas Jefferson's writings'), a także Edisonowi i golfiście Gary Playerowi. Nie znaleziono żadnego wiarygodnego udokumentowania tej wersji w pismach czy wywiadach Edisona. https://quoteinvestigator.com/2012/07/21/luck-hard-work/ ; https://www.monticello.org/encyclopedia/i-am-great-believer-luckspurious-quotation",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Mózg jest jak mięsień — jeśli go nie używasz, zanika.",
+    "original_author": "Stephen Hawking",
+    "status": "misattributed",
+    "correct_author": "Carl Sagan",
+    "evidence": "Zdanie 'The brain is like a muscle. When it is in use we feel very good. Understanding is joyous.' jest konsekwentnie i wielokrotnie przypisywane Carlowi Saganowi (Goodreads, BrainyQuote, AZQuotes), a nie Stephenowi Hawkingowi. Nie znaleziono żadnego źródła łączącego tę konkretną wypowiedź z Hawkingiem.",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Musimy zaakceptować rozczarowanie, ale nie możemy tracić nadziei.",
+    "original_author": "Martin Luther King Jr.",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Parafraza autentycznej wypowiedzi Martina Luthera Kinga Jr. ('We must accept finite disappointment, but we must never lose infinite hope') z przemówienia w Waszyngtonie w lutym 1968 r. Podobne sformułowanie ('the finite disappointment... the infinite hope') pojawia się już we wcześniejszym szkicu rozdziału 'Shattered Dreams' w archiwach The Martin Luther King, Jr. Research and Education Institute (Stanford). https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-x-shattered-dreams",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Najlepsza zemsta to niesamowity sukces.",
+    "original_author": "Frank Sinatra",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('The best revenge is massive success') jest bardzo szeroko przypisywany Sinatrze w internecie (Goodreads, BrainyQuote), ale żadne z tych źródeł nie podaje konkretnego wywiadu, koncertu ani publikacji, w której miałby paść. Quote Investigator nie ma dedykowanego artykułu o tej wersji (ma tylko o pokrewnych 'Living/Writing well is the best revenge'). Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Twoje ograniczenia istnieją tylko w twojej głowie.",
+    "original_author": "Arnold Schwarzenegger",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Ta dokładna fraza nie pojawia się w żadnym uznanym zbiorze cytatów Schwarzeneggera - najczęściej cytowana, potwierdzona jego wypowiedź na ten temat brzmi inaczej: 'The mind is the limit. As long as the mind can envision the fact that you can do something, you can do it...' (BrainyQuote, Goodreads). Sama idea 'ograniczenia istnieją tylko w umyśle' krąży w internecie jako 'wędrujący' cytat przypisywany też Napoleonowi Hillowi, Alanowi Cohenowi i Jamiemu Paolinettiemu - nie ma jednego ustalonego autora. Brak jednak dowodu jednoznacznie wykluczającego Schwarzeneggera.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Sukces zwykle przychodzi do tych, którzy są zbyt zajęci, żeby go szukać.",
+    "original_author": "Henry David Thoreau",
+    "status": "misattributed",
+    "correct_author": "nieznany (The Walden Woods Project klasyfikuje to jako błędne przypisanie)",
+    "evidence": "The Walden Woods Project - organizacja specjalizująca się w badaniu spuścizny Thoreau - umieszcza ten cytat na oficjalnej liście 'The Henry D. Thoreau Mis-Quotation Page', wskazując, że zaczął krążyć dopiero w połowie XX wieku w drobnych publikacjach, zanim rozprzestrzenił się w internecie w XXI wieku - a więc nie pochodzi z żadnego udokumentowanego dzieła czy dziennika Thoreau. https://www.walden.org/what-we-do/library/thoreau/mis-quotations/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Im trudniejsza walka, tym słodsze zwycięstwo.",
+    "original_author": "Muhammad Ali",
+    "status": "misattributed",
+    "correct_author": "Les Brown",
+    "evidence": "Zdanie 'The harder the battle, the sweeter the victory' nie pojawia się w żadnej z uznanych, obszernych baz udokumentowanych cytatów Alego (BrainyQuote, LibQuotes ze źródłami, Parade). Konsekwentnie i wielokrotnie (LinkedIn, Facebook, quotesstreet.com, Sean Croxton) jest ono przypisywane amerykańskiemu mówcy motywacyjnemu Lesowi Brownowi.",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nie mam rywali — mam tylko inspiracje.",
+    "original_author": "Coco Chanel",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tego zdania (ani jego angielskiej 'I don't have rivals, I only have inspiration', ani francuskiej 'Je n'ai pas de rivales, je n'ai que des inspirations') w żadnym zbiorze autentycznych cytatów Chanel - ani angielskim (Goodreads, BrainyQuote, QuoteFancy), ani francuskim (Wikiquote FR, citation-celebre.com). Co ciekawe, historycznie udokumentowana jest silna, wroga rywalizacja Chanel z projektantką Elsą Schiaparelli, co przeczy sentymentowi cytatu. Brak jednak jednoznacznego potwierdzenia fabrykacji.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie możesz wrócić i zmienić początku, ale możesz zacząć od teraz i zmienić koniec.",
+    "original_author": "C. S. Lewis",
+    "status": "misattributed",
+    "correct_author": "nieznany (prawdopodobnie James Sherman, 1982, lub Carl Bard wg Zig Ziglara)",
+    "evidence": "Wielokrotnie i jednoznacznie potwierdzone błędne przypisanie: oficjalna strona CSLewis.com w dziale 'Surprised By Misquotes' odrzuca ten cytat; fact-checki Daily Caller i australijskiego AAP FactCheck cytują eksperta (dr Jedidiah Evans, University of Sydney), który stwierdza, że zdanie 'nie brzmi jak Lewis'. Najwcześniejszy znany ślad to książka Jamesa Shermana o przezwyciężaniu odrzucenia z 1982 r. ('You can't go back and make a new start, but you can start right now and make a brand new ending'); Zig Ziglar w swojej książce przypisywał podobne zdanie Carlowi Bardowi. https://www.cslewis.com/surprised-by-misquotes/ ; https://dailycaller.com/2019/07/26/fact-check-cs-lewis-cant-go-back-change-beginning-start-ending/ ; https://www.aap.com.au/factcheck/inspirational-quote-on-starting-over-isnt-from-c-s-lewis/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Każdy, kto nigdy nie popełnił błędu, nigdy nic nie próbował.",
+    "original_author": "Albert Einstein",
+    "status": "misattributed",
+    "correct_author": "nieznany (rodzina powiedzeń ewoluująca od XIX w.; przypisanie Einsteinowi 'słabe', pojawiło się dopiero od ok. 1995 r.)",
+    "evidence": "Quote Investigator: ta rodzina maksym ewoluuje od ponad 150 lat - wersję umieścił Samuel Smiles w wpływowej książce z 1859 r., Josh Billings w 1874 r., a 'Mr. Phelps' w magazynie 'Punch' w 1889 r. Przypisanie Einsteinowi pojawiło się dopiero w latach 90. XX w. i QI określa je jako 'weak attribution' - bez wsparcia w żadnym autentycznym piśmie czy wywiadzie Einsteina. https://quoteinvestigator.com/2014/12/16/no-mistakes/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Życie jest za krótkie, żeby być małym.",
+    "original_author": "Benjamin Disraeli",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z powieści Benjamina Disraelego 'Coningsby, or, The New Generation' (1844), s. 255: 'Life is too short to be little. Man is never so manly as when he feels deeply, acts boldly, and expresses himself with frankness and with fervor.' Źródło potwierdzone spójnie w wielu bazach cytatów (Goodreads, BrainyQuote, AZQuotes) z podaniem konkretnego dzieła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedyną niemożliwą podróżą jest ta, której nigdy nie zaczynasz.",
+    "original_author": "Tony Robbins",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat jest szeroko i konsekwentnie przypisywany Tony'emu Robbinsowi, w tym udostępniony na jego oficjalnym profilu na Facebooku, co jest umiarkowanie mocną poszlaką autentyczności. Żadne źródło nie wskazuje jednak konkretnej książki lub wystąpienia, w którym to zdanie pierwotnie padło, więc formalnie brak twardego pierwotnego źródła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Sukces to suma małych wysiłków powtarzanych dzień po dniu.",
+    "original_author": "Robert Collier",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('Success is the sum of small efforts, repeated day-in and day-out') jest przypisywany Robertowi Collierowi w związku z jego książką 'Riches Within Your Reach' - źródło konsekwentnie potwierdzone w wielu bazach cytatów (LibQuotes, BrainyQuote, Goodreads).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie chodzi o to, jak bardzo chcesz coś osiągnąć. Chodzi o to, jak bardzo możesz to znieść i dalej iść naprzód.",
+    "original_author": "Rocky Balboa / Sylvester Stallone",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Parafraza dosłownej kwestii z filmu 'Rocky Balboa' (2006, scenariusz Sylvester Stallone), monolog do syna: 'It ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done!' Potwierdzone w oficjalnym transkrypcie scenariusza filmu. Podwójne przypisanie w bazie (postać filmowa / scenarzysta-aktor) jest poprawne i adekwatne dla cytatu filmowego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bądź tak dobry, żeby nie mogli cię zignorować.",
+    "original_author": "Steve Martin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Steve Martin wielokrotnie powtarzał tę radę (m.in. w wywiadzie z Charliem Rose'em), tłumacząc, że gdy ludzie proszą go o radę dotyczącą kariery, zamiast szukać skrótów powinni skupić się na tym, by być na tyle dobrym, że ludzie sami zaczną ich zauważać - 'be so good they can't ignore you'. Rada ta jest dobrze udokumentowana jako jego stały motyw wypowiedzi (spopularyzowana też przez książkę Cala Newporta pod tym tytułem, 2012).",
+    "recommendation": "keep"
+  }
+]
