@@ -1,0 +1,186 @@
+[
+  {
+    "original_text_pl": "Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy nie czyta, żyje tylko jednym.",
+    "original_author": "George R. R. Martin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z 'A Dance with Dragons' (2011) - słowa postaci Jojena Reeda do Brana Starka: 'A reader lives a thousand lives before he dies... The man who never reads lives only one.' Martin spopularyzował tę frazę, potwierdzone przez Quote Investigator. https://quoteinvestigator.com/2018/11/02/reader/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy nie możesz dostać dość dobrej herbaty ani dość długiej książki.",
+    "original_author": "C. S. Lewis",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'You can never get a cup of tea large enough or a book long enough to suit me.' - z eseju C.S. Lewisa 'Studies in Medieval and Renaissance Literature'. https://quotefancy.com/quote/149/C-S-Lewis-You-can-never-get-a-cup-of-tea-large-enough-or-a-book-long-enough-to-suit-me",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wierzysz w kłamstwa, więc w końcu nauczysz się ufać tylko sobie.",
+    "original_author": "Marilyn Monroe",
+    "status": "misattributed",
+    "correct_author": "nieznany (prawdopodobnie fabrykacja internetowa)",
+    "evidence": "Cytat pochodzi z dłuższego, popularnego w internecie tekstu 'I believe that everything happens for a reason...', którego nie można powiązać z żadną udokumentowaną wypowiedzią lub pismem Marilyn Monroe. Liczne źródła (Snopes, artykuł 'Marilyn Monroe Never Said That') dokumentują masowy wzorzec fałszywych cytatów przypisywanych Monroe bez pierwotnego źródła. https://www.snopes.com/fact-check/marilyn-monroe-quote/ ; https://amycolleen.medium.com/marilyn-monroe-never-said-that-358c78633f3a",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Tylko w ciemności możesz zobaczyć gwiazdy.",
+    "original_author": "Martin Luther King Jr.",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "King rzeczywiście wypowiedział wariant tej frazy ('only when it is dark enough, can you see the stars') w swoim ostatnim przemówieniu 'I've Been to the Mountaintop' (3 kwietnia 1968), choć sam przypisywał ją historykowi Charlesowi A. Beardowi. Ponieważ King publicznie i udokumentowanie wygłosił tę myśl, przypisanie do niego jest uzasadnione (pierwotne źródło idei jest starsze i niepewne). https://quoteinvestigator.com wg wyników wyszukiwania; https://speakola.com/ideas/martin-luther-king-jr-ive-been-to-the-mountaintop-1968",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma znaczenia, kim ktoś się urodził — liczy się to, kim wyrósł.",
+    "original_author": "J. K. Rowling",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słowa Dumbledore'a z 'Harry Potter and the Goblet of Fire' Rowling, skierowane do Corneliusa Knota. https://www.hp-lexicon.org/quote/matters-not-someone-born/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Miłość to bitwa, miłość to wojna — miłość to dorastanie.",
+    "original_author": "James Baldwin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.' - z powieści Jamesa Baldwina 'Giovanni's Room'. https://www.goodreads.com/quotes/1262-love-does-not-begin-and-end-the-way-we-seem",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Rób każdego dnia jedną rzecz, która cię przeraża.",
+    "original_author": "Eleanor Roosevelt",
+    "status": "misattributed",
+    "correct_author": "Mary Schmich (prawdopodobnie; kolumna w Chicago Tribune, czerwiec 1997)",
+    "evidence": "Quote Investigator nie znalazł żadnego uzasadnienia przypisania tego zdania Eleanor Roosevelt. Dokładne dopasowanie znaleziono w eseju Mary Schmich z 1997 roku (Chicago Tribune). Koncepcja sięga też Emersona (1841, 'Always do what you are afraid to do'). https://quoteinvestigator.com/2013/08/09/scare/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nie ma przyjaciela tak lojalnego jak książka.",
+    "original_author": "Ernest Hemingway",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat szeroko krąży w bazach cytatów jako przypisany Hemingwayowi, ale nie znaleziono żadnego pierwotnego źródła (dzieła, listu, wywiadu) potwierdzającego, że rzeczywiście to napisał lub powiedział. Brak też jednoznacznego dowodu obalającego to przypisanie. https://www.goodreads.com/quotes/2058-there-is-no-friend-as-loyal-as-a-book",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kiedy jedne drzwi szczęścia się zamykają, otwierają się inne.",
+    "original_author": "Helen Keller",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Keller opublikowała tę myśl w swojej książce 'We Bereaved' (1929) i powtórzyła w 'The Open Door' (1957) - jest więc udokumentowanym, legalnym źródłem tego sformułowania, mimo że podobna koncepcja pojawia się już w anonimowej hiszpańskiej noweli z XVI wieku. https://quoteinvestigator.com/2018/12/03/open-door/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie nie polega na znajdowaniu siebie. Życie polega na tworzeniu siebie.",
+    "original_author": "George Bernard Shaw",
+    "status": "misattributed",
+    "correct_author": "Sydney J. Harris (tentatywnie; kolumna z 1969 r.)",
+    "evidence": "Quote Investigator nie znalazł żadnych dowodów, że George Bernard Shaw (zm. 1950) użył tego sformułowania. Najwcześniejsze dopasowanie pochodzi z syndykowanej kolumny Sydneya J. Harrisa z 1969 roku; podobną myśl wyraził też Thomas Szasz w 1973. https://quoteinvestigator.com/2021/09/28/create-yourself/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nie wszyscy, którzy wędrują, są zgubieni.",
+    "original_author": "J. R. R. Tolkien",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Drugi wers wiersza 'The Riddle of Strider' (znanego też jako 'All that is gold does not glitter') z 'The Fellowship of the Ring' (1954), cytowany przez Gandalfa w liście do Froda. https://tolkiengateway.net/wiki/Riddle_of_Strider",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Do pisania nie potrzeba nic. Tylko siąść przy maszynie i krwawić.",
+    "original_author": "Ernest Hemingway",
+    "status": "misattributed",
+    "correct_author": "nieznany, prawdopodobnie Walter 'Red' Smith (1949: 'sit down at the typewriter and open your veins and bleed') lub Paul Gallico (1946)",
+    "evidence": "The Hemingway Society ('Hemingway Didn't Say That') potwierdza brak dowodów, że Hemingway to powiedział lub napisał; pierwsze przypisanie mu tego cytatu pojawiło się dopiero w 1973, ponad dekadę po jego śmierci. Wcześniejsze, podobne sformułowania pochodzą od dziennikarza sportowego Reda Smitha (1949) i pisarza Paula Gallico (1946). https://www.hemingwaysociety.org/hemingway-didnt-say ; https://checkyourfact.com/2019/07/02/fact-check-ernest-hemingway-writing-sit-down-typewriter-bleed/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Skończ każdy dzień i zostaw go za sobą.",
+    "original_author": "Ralph Waldo Emerson",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment listu Emersona do córki Ellen z 8 kwietnia 1854, opublikowany w tomie IV zbioru jego listów (Columbia University Press, 1939, red. Ralph L. Rusk) oraz w 'A Memoir of Ralph Waldo Emerson' Jamesa Elliota Cabota (1887). https://quoteinvestigator.com/2018/12/19/finish-day/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kochać w ogóle — to być wrażliwym.",
+    "original_author": "C. S. Lewis",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'To love at all is to be vulnerable.' - z książki C.S. Lewisa 'The Four Loves' (1958). https://www.cslewis.com/no-safe-investment/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie pamiętasz twarzy człowieka, który był twoją ostatnią nadzieją.",
+    "original_author": "Suzanne Collins",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'You don't forget the face of the person who was your last hope.' - myśl Katniss Everdeen z powieści Suzanne Collins 'The Hunger Games' (2009). https://www.goodreads.com/quotes/170332-you-don-t-forget-the-face-of-the-person-who-was",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Gdybym nie był fizykiem, prawdopodobnie zostałbym muzykiem.",
+    "original_author": "Albert Einstein",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "'If I were not a physicist, I would probably be a musician... I often think in music.' - wypowiedź Einsteina dla 'Saturday Evening Post' w 1929 roku. Cytowana m.in. przez wydział fizyki University of Wisconsin z powołaniem na to źródło. https://news.wisc.edu/physics-department-concert-pays-homage-to-genius",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli czytasz tylko te książki, które czytają wszyscy inni, możesz myśleć tylko to, co myślą wszyscy inni.",
+    "original_author": "Haruki Murakami",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z powieści Murakamiego 'Norwegian Wood' - słowa postaci Nagasawy do narratora Toru Watanabe. Standardowo przypisywany autorowi powieści. https://fs.blog/reading-what-everyone-else-is-reading/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Celem życia jest żyć naprawdę.",
+    "original_author": "Oscar Wilde",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono udokumentowanego źródła tej dokładnej frazy w twórczości Wilde'a. Zweryfikowany cytat Wilde'a na podobny temat brzmi inaczej: 'The aim of life is self-development. To realize one's nature perfectly - that is what each of us is here for.' (Portret Doriana Graya). Możliwe, że to uproszczona/skrócona parafraza krążąca w internecie, ale brak dowodu na fabrykację ani na potwierdzenie. https://www.whatshouldireadnext.com/quotes/oscar-wilde-the-aim-of-life-is",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy się nie poddawaj — nigdy, nigdy, nigdy.",
+    "original_author": "Winston Churchill",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Nawiązuje do słynnego przemówienia Churchilla w Harrow School (29.10.1941): 'Never give in, never give in, never, never, never, never...'. Dokładne polskie tłumaczenie upraszcza 'never give in' na 'nigdy się nie poddawaj', co jest powszechnie powielaną (choć nie dosłowną) wersją - autorstwo Churchilla i kontekst przemówienia są jednak w pełni potwierdzone. https://winstonchurchill.org/resources/speeches/1941-1945-war-leader/never-give-in/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Odwaga to nie brak strachu, lecz ocena, że coś innego jest ważniejsze.",
+    "original_author": "Ambrose Redmoon",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Ambrose Redmoon (prawdziwe nazwisko James Neil Hollingworth, 1933-1996) napisał ten cytat w eseju 'No Peaceful Warriors!' opublikowanym w czasopiśmie 'Gnosis: A Journal of the Western Inner Traditions', wydanie jesień 1991. http://entersection.com/posts/1158-ambrose-hollingworth-redmoon-on-courage",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Świat jest pełen magii czekającej cierpliwie, aż nasze zmysły staną się ostrzejsze.",
+    "original_author": "W. B. Yeats",
+    "status": "misattributed",
+    "correct_author": "Eden Phillpotts",
+    "evidence": "Quote Investigator ustalił, że bardzo podobne sformułowanie ('The universe is full of magical things patiently waiting for our wits to grow sharper') pochodzi od Edena Phillpottsa, nie od W.B. Yeatsa. Przypisanie Yeatsowi jest powszechne w internecie, ale niepoparte źródłem. https://quoteinvestigator.com/2012/07/07/magical-things-waiting/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Gdybym miał drzewo, posadził je dziś.",
+    "original_author": "Martin Luther King Jr.",
+    "status": "misattributed",
+    "correct_author": "Martin Luther (reformator religijny) - choć samo przypisanie jemu jest również wątpliwe/prawdopodobnie apokryficzne",
+    "evidence": "To słynne zdanie o sadzeniu jabłoni mimo końca świata jest w tradycji cytatów przypisywane Marcinowi Lutrowi (reformatorowi z XVI w.), a NIE Martinowi Lutherowi Kingowi Jr. - w bazie doszło do pomylenia dwóch różnych osób o zbliżonych nazwiskach. Co więcej, samo przypisanie Lutrowi jest niepewne: najwcześniejszy zapis pochodzi dopiero z 1944 r. (list pastora Karla Lotza), a fraza mogła być zaadaptowana z powiedzenia Jochanana ben Zakkaja. Niezależnie od niepewności co do pierwotnego autora, przypisanie do MLK Jr. jest błędem identyfikacji osoby. https://www.acton.org/religion-liberty/volume-29-number-4/luthers-apple-tree ; https://quotepark.com/quotes/1444647-martin-luther-even-if-i-knew-that-tomorrow-the-world-would-go-to/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nie ma nic bardziej imponującego niż człowiek pewny siebie i znający swoje miejsce w świecie.",
+    "original_author": "Jodie Foster",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tego cytatu w żadnej bazie cytatów Jodie Foster (BrainyQuote, AZQuotes, QuoteFancy, IMDb, Goodreads) ani w wywiadach. Podobne, ale różniące się treścią sformułowania o atrakcyjności pewności siebie krążą anonimowo w internecie (Facebook, TikTok) bez przypisania do konkretnej osoby. Brak dowodu potwierdzającego, ale też brak dowodu obalającego.",
+    "recommendation": "keep"
+  }
+]
