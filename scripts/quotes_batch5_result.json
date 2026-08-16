@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "To, co robimy dla innych i świata, trwa.",
+    "original_author": "Albert Pike",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wierna, skrócona parafraza autentycznego cytatu Alberta Pike'a: 'What we have done for ourselves alone dies with us; what we have done for others and the world remains and is immortal.' Pochodzi z jego zbioru mów pogrzebowych 'Ex Corde Locutiones: Words from the Heart Spoken of His Dead Brethren', konkretnie z przemówienia wygłoszonego 30 marca 1860 r. w Lodge of Sorrow w Waszyngtonie. Solidnie udokumentowane (BrainyQuote, AZQuotes, LibQuotes, Busted Halo) z podanym konkretnym źródłem i datą. https://www.azquotes.com/quote/520026",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Szczęście jest wtedy, gdy to, co myślisz, co mówisz i co robisz, jest w harmonii.",
+    "original_author": "Mahatma Gandhi",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Happiness is when what you think, what you say, and what you do are in harmony') jest masowo i konsekwentnie przypisywany Gandhiemu (BrainyQuote, Goodreads, LinkedIn, Medium), ale żadne z przeszukanych źródeł nie wskazuje konkretnego dzieła, przemówienia czy daty. Dyskusja na Quora zauważa, że idea nawiązuje do starożytnej sanskryckiej maksymy 'manasa, vaca, karmana' (myślą, mową, czynem), co sugeruje możliwą wtórną atrybucję ogólnej idei filozoficznej do Gandhiego. W przeciwieństwie do cytatu nr 4 w tej samej partii, nie znaleziono dedykowanego artykułu Quote Investigator ani oficjalnego zaprzeczenia (np. Gandhi Institute), które jednoznacznie obalałyby tę atrybucję. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Działaj tak, jakby to, co robisz, miało znaczenie — bo ma.",
+    "original_author": "William James",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Act as if what you do makes a difference. It does.') szeroko krąży w internecie przypisywany Williamowi Jamesowi, jednak baza QuotePark oznacza go tagiem 'Misattributed', a bibliotekarka University of San Francisco w swoim dochodzeniu (blog 'Gleeson Gleanings') opisała, że próby odnalezienia źródła w pismach Jamesa 'prowadziły w kółko lub do niczego'. Mimo tych wątpliwości nie znaleziono żadnego alternatywnego autora ani rozstrzygającego werdyktu instytucji typu Quote Investigator. Sentyment jest zgodny z pragmatyzmem Jamesa, ale konkretne sformułowanie pozostaje niepotwierdzone w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Żyj tak, jakbyś miał umrzeć jutro. Ucz się tak, jakbyś miał żyć wiecznie.",
+    "original_author": "Mahatma Gandhi",
+    "status": "misattributed",
+    "correct_author": "nieznany (maksyma starsza niż Gandhi o ok. 2 lata; przypisywana też m.in. Izydorowi z Sewilli)",
+    "evidence": "Udokumentowane wersje tej sentencji ('Study as if you were to die tomorrow...') pojawiały się w druku już w 1867 r. — dwa lata PRZED narodzinami Gandhiego (1869) — co czyni bezpośrednie autorstwo Gandhiego niemożliwym. Artykuł 'Gizmodo: 7 Gandhi Quotes That Are Totally Fake' wymienia ten cytat jako jeden z siedmiu udokumentowanych fałszywych przypisań Gandhiemu. Maksymę wariantowo przypisywano też Izydorowi z Sewilli (VI/VII w.), Edmundowi Rich (1175-1240) czy Alain de Lille. Książka z 1995 r. 'The Good Boatman' opisuje, że Gandhi 'podzielał ten pogląd' — ale to opis jego filozofii przez biografa, a nie jego bezpośrednie, udokumentowane słowa. https://gizmodo.com/7-gandhi-quotes-that-are-totally-fake-1716503435",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Świat należy do optymistów — pesymiści są tylko widzami.",
+    "original_author": "François Guizot",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat ('The world belongs to the optimists; the pessimists are only spectators') przypisywany francuskiemu historykowi i mężowi stanu François Guizot, cytowany m.in. w akademickim artykule 'Moral Leadership in Today's World' (University of Michigan, quod.lib.umich.edu) — poważne, naukowe źródło, a nie tylko farma cytatów.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kto nie idzie do przodu, ten cofa się.",
+    "original_author": "Johann Wolfgang von Goethe",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z poematu epickiego Goethego 'Hermann und Dorothea' (1797): 'Einmal für allemal gilt das wahre Sprüchlein der Alten: Wer nicht vorwärts geht, der kommt zurücke!' ('Kto nie idzie naprzód, ten się cofa'). W tekście wypowiada to postać ojca, przywołując 'prawdziwe stare przysłowie' — ale to Goethe jest autorem tej publikowanej linijki, więc przypisanie mu jej jest zasadne, mimo że w treści przedstawiona jest jako cytat ludowej mądrości.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Umysł, który się otworzył na nową ideę, nigdy nie wróci do poprzednich rozmiarów.",
+    "original_author": "Oliver Wendell Holmes",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Quote Investigator ustalił, że najwcześniejsze udokumentowane sformułowanie ('Every now and then a man's mind is stretched by a new idea or sensation, and never shrinks back to its former dimensions') pochodzi z września 1858 r., z felietonu 'The Autocrat of the Breakfast-Table' w 'The Atlantic Monthly', autorstwa Olivera Wendella Holmesa (seniora, lekarza i eseisty — w odróżnieniu od jego syna, sędziego Holmesa Jr., któremu bywa mylnie przypisywany). Cytat w badanej wersji nie podaje 'Jr.', co zgadza się z prawidłowym, pierwotnym autorem. https://quoteinvestigator.com/2023/03/29/stretch/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma nic dobrego ani złego — myśl nasza czyni takim.",
+    "original_author": "William Szekspir",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dokładny cytat z 'Hamleta' (akt II, scena 2): 'There is nothing either good or bad, but thinking makes it so.' Słowa Hamleta skierowane do Rosencrantza i Guildensterna. Potwierdzone w oryginalnym tekście sztuki (m.in. MIT Shakespeare, shakespeare.mit.edu/hamlet/hamlet.2.2.html).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Odwaga to nie brak strachu, lecz decyzja, że coś ważniejszego jest od strachu.",
+    "original_author": "Nelson Mandela",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wierna parafraza autentycznego fragmentu autobiografii Nelsona Mandeli 'Long Walk to Freedom' (1995): 'I learned that courage was not the absence of fear, but the triumph over it.' Cytat i jego źródło szeroko potwierdzone (Theodore Roosevelt... nie, w tym wypadku: kwize.com z odniesieniem do 'Long Walk to Freedom', CNN).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Tylko głupiec nie zmienia zdania.",
+    "original_author": "Winston Churchill",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono dokładnego angielskiego odpowiednika tej frazy w żadnym udokumentowanym źródle. International Churchill Society, która prowadzi obszerną, oficjalną listę fałszywie przypisywanych Churchillowi cytatów, NIE wymienia tej frazy ani pokrewnych ('fanatic...', 'those who never change their minds...') na swojej liście fałszywych cytatów - co jest niejednoznaczne (może być autentyczny, może po prostu nie być jeszcze zbadany). W polskich bazach cytatów (Lubimyczytać.pl) krąży w kilku wariantach bez podanego źródła. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Szczęście nie jest stacją docelową — to sposób podróżowania.",
+    "original_author": "Margaret Lee Runbeck",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Wierna parafraza autentycznego cytatu z książki Margaret Lee Runbeck 'Time for Each Other' (1944): 'Happiness is not a state to arrive at, but a manner of traveling' (w innej wersji: 'station you arrive at'). Konsekwentnie potwierdzone z podanym tytułem i rokiem publikacji (BrainyQuote, Goodreads, Quotationspage).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Dobroć jest językiem, który słyszą głusi i widzą niewidomi.",
+    "original_author": "Mark Twain",
+    "status": "misattributed",
+    "correct_author": "Christian Nestell Bovee (pierwotna wersja, 1857); błędnie przypisano Twainowi dopiero w 1942 r.",
+    "evidence": "Quote Investigator jednoznacznie ustalił, że pierwsze przypisanie tego zdania Markowi Twainowi (zm. 1910) pojawiło się dopiero w 1942 r. za sprawą popularnego kolumnisty Waltera Winchella - 32 lata po śmierci Twaina. Najwcześniejsza udokumentowana wersja pochodzi z 1857 r., ze zbioru Christiana Nestella Bovee 'Thoughts, Feelings, and Fancies': 'Kindness is a language which the blind can read, the deaf can hear, and the dumb can speak. Even fools can master it.' https://quoteinvestigator.com/2013/10/26/kindness-see/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Rób co możesz, z tym co masz, tam gdzie jesteś.",
+    "original_author": "Theodore Roosevelt",
+    "status": "misattributed",
+    "correct_author": "Squire Bill Widener (z Widener's Valley, Virginia) — sam Roosevelt przypisał mu ten cytat",
+    "evidence": "Sam Theodore Roosevelt w swojej autobiografii z 1913 r. (rozdział IX) w pełni przypisał te słowa ('Do what you can, with what you've got, where you are') niejakiemu Squire'owi Billowi Widenerowi z Widener's Valley w Wirginii — nie stworzył ich sam. Quote Investigator potwierdza tę analizę, wskazując Widenera jako właściwego autora na podstawie świadectwa samego Roosevelta. Mimo to popularne bazy cytatów pomijają ten kontekst i przypisują sentencję wyłącznie Rooseveltowi. https://quoteinvestigator.com/2022/12/17/what-you-can/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Wyobraźnia jest ważniejsza niż wiedza.",
+    "original_author": "Albert Einstein",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat Einsteina z wywiadu dla 'The Saturday Evening Post' (26 października 1929 r., przeprowadzonego przez George'a Sylvestera Viereck'a): 'Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world...'. Pojawił się też w zbiorze 'Cosmic Religion: With Other Opinions and Aphorisms' (1931). Solidnie udokumentowane, jedno z najsłynniejszych i zweryfikowanych powiedzeń Einsteina.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie oceniaj każdego dnia po żniwie, które zbierasz — lecz po ziarnach, które siejesz.",
+    "original_author": "Robert Louis Stevenson",
+    "status": "misattributed",
+    "correct_author": "William Arthur Ward",
+    "evidence": "Quote Investigator jednoznacznie stwierdza: 'QI has found no substantive evidence that Robert Louis Stevenson said or wrote this statement.' Najwcześniejsze udokumentowane wystąpienie to maj 1963 r. w gazecie 'Oklahoma City Star', gdzie cytat przypisany jest Williamowi Arthurowi Wardowi. Fałszywe przypisanie Stevensonowi (zm. 1894) pojawiło się dopiero w 1990 r. - niemal sto lat po jego śmierci - w książce 'Persuasive Business Speaking'. https://quoteinvestigator.com/2021/06/23/seeds/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Człowiek staje się tym, w co wierzy.",
+    "original_author": "Mahatma Gandhi",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Skrócona parafraza szeroko krążącego cytatu 'Man often becomes what he believes himself to be. If I keep on saying to myself that I cannot do a certain thing, it is possible that I may end by really becoming incapable of doing it.' Konsekwentnie przypisywany Gandhiemu (Goodreads, BrainyQuote, QuoteFancy), ale mimo poszukiwań nie znaleziono potwierdzenia konkretnego źródła (np. w 'Young India') ani żadnego dowodu obalającego. Brak rozstrzygnięcia w żadną stronę - w przeciwieństwie do cytatu nr 4 w tej samej partii, nie ma tu twardych dowodów fałszerstwa.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie trzeba być wielkim, żeby zacząć — ale trzeba zacząć, żeby być wielkim.",
+    "original_author": "Zig Ziglar",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('You don't have to be great to start, but you have to start to be great') konsekwentnie i wyłącznie przypisywany Zigowi Ziglarowi (Goodreads, BrainyQuote, oficjalny profil Facebook 'ZigZiglar', liczne książki-notatniki z jego nazwiskiem), zgodny z jego stylem motywacyjnym, ale żadne źródło nie wskazuje konkretnej książki, wykładu czy nagrania, w którym padłoby to zdanie. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zacznij od tego, gdzie jesteś. Użyj tego, co masz. Zrób co możesz.",
+    "original_author": "Arthur Ashe",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Start where you are. Use what you have. Do what you can.') konsekwentnie i wyłącznie przypisywany Arthurowi Ashe'owi (Goodreads, BrainyQuote, Oncology Nursing News, liczne artykuły motywacyjne), zgodny z jego biografią (pokonywanie przeciwności), ale żadne źródło nie wskazuje konkretnego wystąpienia, wywiadu czy publikacji (np. książki 'Days of Grace'). Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "W środku zimy odkryłem w sobie niezwyciężone lato.",
+    "original_author": "Albert Camus",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dokładny cytat z eseju Alberta Camusa 'Return to Tipasa' ('Powrót do Tipasa', 1954): 'In the midst of winter, I found there was, within me, an invincible summer.' Camus napisał to po ponownej wizycie w rzymskich ruinach Tipasy w Algierii po II wojnie światowej. Autentyczność krótkiego zdania (bez popularnej, rozszerzonej wersji internetowej z dodatkowym zdaniem 'And that makes me happy...') jest dobrze potwierdzona.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Aby zrozumieć świat, trzeba go najpierw pokochać.",
+    "original_author": "Blaise Pascal",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tego zdania w żadnym uznanym zbiorze cytatów Pascala - ani w polskich źródłach ('Myśli' na Wikiźródłach, Wikicytaty PL, granice.pl, lubimyczytac.pl), ani w angielskich (Goodreads, BrainyQuote, math.hmc.edu/su/pascal). Pokrewna, ale nietożsama myśl pojawia się w powieści Hermanna Hessego 'Siddhartha' ('...to be able to love the world...'), a inny, zupełnie osobny cytat o podobnej strukturze ('To understand the world, you must first understand a place like Mississippi') jest udokumentowanym fałszywym cytatem Williama Faulknera (autorstwa Willie Morrisa, 1996) - co pokazuje, że to popularny wzorzec retoryczny łatwo błędnie przypisywany znanym pisarzom. Mimo intensywnych poszukiwań brak jednoznacznego dowodu obalającego akurat tę atrybucję Pascalowi.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wolność nie polega na robieniu tego, co chcemy, lecz na chceniu tego, co robimy.",
+    "original_author": "Jean-Paul Sartre",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Bliska parafraza autentycznego, dobrze udokumentowanego cytatu Sartre'a: 'Être libre, ce n'est pas pouvoir faire ce que l'on veut, mais c'est vouloir ce que l'on peut' (Być wolnym to nie móc robić tego, co się chce, lecz chcieć tego, co się może), wywodzącego się z jego filozofii przedstawionej w 'Existentialism is a Humanism'. Drobna różnica w polskiej wersji ('to co robimy' zamiast 'to co możemy') to typowa wariacja tłumaczeniowa, nie zmieniająca rdzenia autentycznej myśli.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Mądrzy ludzie mają to do siebie, że dla głupich wydają się szaleni.",
+    "original_author": "Stephen Hawking",
+    "status": "misattributed",
+    "correct_author": "nieznany (najwcześniejszy ślad: anonimowy użytkownik Twittera, 2011 r.)",
+    "evidence": "Badacz etymologii cytatów Barry Popik jednoznacznie stwierdza: 'There is no evidence that... Stephen Hawking... originated the saying, or even said it.' Najwcześniejsze udokumentowane wystąpienie tego zdania ('The thing about smart people is that they seem like crazy people to dumb people') to tweet anonimowego użytkownika @teedubya z 4 listopada 2011 r. - cytat rozprzestrzenił się w mediach społecznościowych i dopiero z czasem zaczęto błędnie łączyć go z Hawkingiem (zm. 2018), bez żadnych dowodów w jego wywiadach, książkach czy wystąpieniach. https://barrypopik.com/blog/the_thing_about_smart_people_is",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Zasadniczo pierwsza połowa życia to pisanie tekstu, a druga połowa to pisanie komentarza do tego tekstu.",
+    "original_author": "Richard Rohr",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Dokładny cytat z książki Richarda Rohra 'Falling Upward: A Spirituality for the Two Halves of Life' (2011): 'Basically, the first half of life is writing the text, and the second half is writing the commentary on that text.' Potwierdzone w licznych recenzjach i zestawieniach cytatów z tej konkretnej książki (Goodreads 'Falling Upward Quotes', quotessayings.net).",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Życie to jedna głupia rzecz po drugiej, podczas gdy miłość to dwie głupie rzeczy po sobie.",
+    "original_author": "Oscar Wilde",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Angielska wersja ('Life is one fool thing after another whereas love is two fool things after each other') jest konsekwentnie przypisywana Oscarowi Wilde'owi (Goodreads, AZQuotes, QuoteFancy) - polskie tłumaczenie 'głupia rzecz' wiernie odpowiada oryginalnemu 'fool thing' (nie mylić z osobnym, zupełnie innym powiedzeniem 'one damned thing after another', przypisywanym m.in. Elbertowi Hubbardowi). Mimo to strona Wikiquote (angielska, rygorystyczna w kwestii źródeł) nie zawiera tego cytatu w widocznym fragmencie, a podawane źródło ('The Happy Prince and Other Tales') budzi wątpliwości, bo to zbiór baśni dla dzieci, mało prawdopodobny jako miejsce takiej sentencji. Brak jednoznacznego rozstrzygnięcia w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie bój się doskonałości. Nigdy jej nie osiągniesz.",
+    "original_author": "Salvador Dali",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat ('Have no fear of perfection - you'll never reach it') konsekwentnie i wyłącznie przypisywany Salvadorowi Dali (Goodreads, BrainyQuote, AZQuotes, Google Arts & Culture), spójny z jego ekscentryczną, prowokacyjną osobowością artystyczną, ale żadne źródło nie podaje konkretnego wywiadu, wystąpienia czy publikacji. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  }
+]
