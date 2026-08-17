@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Człowiek — to rzecz święta.",
+    "original_author": "Stefan Żeromski",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment \"Ludzi bezdomnych\" (tom II, rozdział \"Pielgrzym\"): \"Złe niewątpliwie jest tylko jedno: krzywda bliźniego. Człowiek – jest to rzecz święta, której krzywdzić nikomu nie wolno.\" Wersja na stronie jest skróconym cytatem rdzenia zdania, sens i autorstwo poprawne. Potwierdzone m.in. na Wikicytatach i lubimyczytac.pl. https://pl.wikiquote.org/wiki/Stefan_%C5%BBeromski",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nauka jest jak niezmierne morze — im więcej jej pijesz, tym bardziej jesteś spragniony.",
+    "original_author": "Stefan Żeromski",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat z powieści \"Syzyfowe prace\": \"Nauka jest, jak niezmierne morze... Im więcej jej pijesz, tem bardziej jesteś spragniony.\" Potwierdzone skanem oryginalnego wydania na Wikiźródłach. https://pl.wikisource.org/wiki/Strona:PL_Stefan_%C5%BBeromski_-_Syzyfowe_prace.djvu/203",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Każdy ma swoje miejsce ulubione w dzieciństwie. To jest ojczyzna duszy.",
+    "original_author": "Stefan Żeromski",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat pochodzi z powieści \"Przedwiośnie\" (słowa Karoliny Szarłatowiczówny do Cezarego Baryki). Szeroko potwierdzone w zbiorach cytatów (lubimyczytac.pl, quotepark.com, zamyslenie.pl). https://lubimyczytac.pl/cytat/34123",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Po mowie jest na świecie potęgą największą — milczenie.",
+    "original_author": "Stefan Żeromski",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Zdanie od lat cytowane jako fragment \"Dzienników\" Żeromskiego (t. I, s. 53), ale przy okazji promocji nowego, nieocenzurowanego wydania \"Dzienników\" w Muzeum Narodowym w Kielcach (2022) ujawniono, że Jerzy Kądziela — redaktor wcześniejszych wydań — błędnie przypisał tę sentencję Żeromskiemu, choć \"to nie jest jego tekst\" (podobnie jak błędnie odczytał słowo \"kalwinista\" jako \"kahornista\"). Prawdziwy autor zdania pozostaje nieznany. https://echodnia.eu/swietokrzyskie/uroczysta-promocja-dziennikow-w-muzeum-narodowym-w-kielcach-zeromski-po-raz-pierwszy-bez-cenzury-zobacz-zdjecia/ar/c5-16189667",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "To, czego nie przeżyłeś, nie jest prawdziwe.",
+    "original_author": "Czesław Miłosz",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment \"Traktatu moralnego\"/\"Traktatu poetyckiego\", cytowany też w \"Wiersze wszystkie\". Potwierdzone na lubimyczytac.pl i granice.pl. https://lubimyczytac.pl/cytat/26828",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Cudowność. Być człowiekiem i żyć wśród ludzi to przecież cudowne.",
+    "original_author": "Czesław Miłosz",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Pełne zdanie: \"Cudowność. Być człowiekiem i żyć wśród ludzi to przecież cudowne, nawet jeżeli znamy podłości i zbrodnie, do jakich są zdolni.\" Z tomu \"Gdzie wschodzi słońce i kędy zapada\" (1974). Potwierdzone na granice.pl i Wikicytatach. https://www.granice.pl/cytat/114473",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wiedzieć i nie mówić: tak się zapomina.",
+    "original_author": "Czesław Miłosz",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment eseju/wiersza \"Czytając japońskiego poetę Issa\" (1982): \"Wiedzieć i nie mówić: tak się zapomina. Co jest wymówione, wzmacnia się. Co nie jest wymówione, zmierza do nieistnienia.\" https://pl.wikiquote.org/wiki/Czes%C5%82aw_Mi%C5%82osz",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Naród, który traci pamięć, traci sumienie.",
+    "original_author": "Zbigniew Herbert",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat udokumentowany na Wikicytatach ze wskazanym źródłem: S. Abramowicz, T. Balbus, \"Konspiracja i opór społeczny w Polsce 1944–1956. Słownik biograficzny\", IPN 2002, przedmowa, s. VII. Szeroko cytowany (niezalezna.pl i in.) w rocznice śmierci Herberta. https://pl.wikiquote.org/wiki/Zbigniew_Herbert",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Płynie się zawsze do źródeł pod prąd, z prądem płyną śmiecie.",
+    "original_author": "Zbigniew Herbert",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słowa Herberta z rozmowy z Adamem Michnikiem (1981) o stosunku do tradycji: \"Nigdy nie utraciłem natury wędrowca, a wędruje się do źródeł. Płynie się zawsze do źródeł, pod prąd. Z prądem płyną śmiecie.\" Potwierdzone przez Fundację Herberta i liczne inne źródła (Fronda.pl, Tygodnik Powszechny). https://fundacjaherberta.com/zbigniew-herbert/zycie/herbert-o-sobie/plynie-sie-zawsze-do-zrodel-pod-prad-z-pradem-plyna-smiecie/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bądź odważny, gdy rozum zawodzi — w ostatecznym rachunku jedynie to się liczy.",
+    "original_author": "Zbigniew Herbert",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment wiersza \"Przesłanie Pana Cogito\" — jednego z najczęściej analizowanych i cytowanych utworów Herberta w szkolnych i akademickich opracowaniach (zpe.gov.pl, Fundacja Herberta, klp.pl). https://fundacjaherberta.com/biblioteka-herberta/wiersze/przeslanie-pana-cogito/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedyną rzeczą gorszą niż bycie ślepym jest posiadanie wzroku, ale brak wizji.",
+    "original_author": "Helen Keller",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"The only thing worse than being blind is having sight but no vision\" jest bardzo szeroko przypisywany Keller (Goodreads, BrainyQuote, AZQuotes), ale żadne z tych źródeł nie podaje konkretnej mowy, listu ani książki, w której miałaby paść ta fraza. Brak też dowodu na fałszywe przypisanie (nie figuruje w sekcji \"Misattributed\" Wikiquote dla Keller w znalezionych wynikach). Status niepewny w obie strony.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Muzyka może zmieniać świat, bo może zmieniać ludzi.",
+    "original_author": "Bono",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Music can change the world because it can change people\" jest konsekwentnie przypisywany Bono na wielu portalach cytatowych (BrainyQuote, Goodreads, AZQuotes, QuoteFancy), ale żadne źródło nie wskazuje konkretnego wywiadu, przemówienia ani publikacji. Brak dowodu na błędne przypisanie, ale też brak weryfikowalnego źródła pierwotnego.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie potrzeba siły, żeby się poddać — siła potrzebna jest, żeby wytrwać.",
+    "original_author": "Bob Marley",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy (ani jej angielskiego odpowiednika w wariantach \"strength to give up / strength to hold on\") w żadnym z głównych zbiorów cytatów Boba Marleya (BrainyQuote, Goodreads, polskie portale cytatowe). Najbliższy autentycznie potwierdzony cytat o sile to \"You never know how strong you are, until being strong is your only choice.\" Brak jednak twardego dowodu na błędne przypisanie tego konkretnego zdania — mogło być pominięte przez wyszukiwarki. Status niepewny.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedną miłością możesz zmyć nienawiść całego świata.",
+    "original_author": "Bob Marley",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza \"One love can wash away the hatred of the whole world\" nie występuje w przeszukanych zbiorach cytatów Marleya (Wikiquote, AZQuotes, Happier Human, IMDb). Autentycznie potwierdzone są za to pokrewne motywy: \"One love, one heart\" (z piosenki) i \"Overcome the devils with a thing called love.\" Brak jednoznacznego dowodu na fałszywe przypisanie, ale też brak potwierdzenia źródła.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Lepiej umrzeć na własnych nogach niż żyć na kolanach.",
+    "original_author": "Bob Marley",
+    "status": "misattributed",
+    "correct_author": "Emiliano Zapata (przypisanie sporne)",
+    "evidence": "Wg Quote Investigator fraza \"lepiej umrzeć stojąc, niż żyć na kolanach\" to znacznie starsze, wędrujące powiedzenie sięgające meksykańskiej prasy z 1906 r. (graffiti w Cuernavaca: \"Es mas honroso morir de pie que vivir de rodillas\"), popularyzowane przez Emiliano Zapatę, a później m.in. przez Dolores Ibárruri, i przypisywane również Hemingwayowi, Heszce Rooseveltowi i innym. Bob Marley bywa łączony z podobną, ale inną frazą z własnego repertuaru: \"It is better to die fighting for your freedom than to be a prisoner all the days of your life.\" To dowód, że przypisanie akurat tej wersji (\"na kolanach\"/\"na nogach\") Marleyowi jest niepoprawne — to nie jego autorskie sformułowanie. https://quoteinvestigator.com/2026/04/16/feet-knees/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Prawdziwy przyjaciel to ktoś, kto przychodzi, gdy cały świat odchodzi.",
+    "original_author": "Marlene Dietrich",
+    "status": "misattributed",
+    "correct_author": "Walter Winchell",
+    "evidence": "Angielski oryginał \"A real friend is one who walks in when the rest of the world walks out\" jest w rzeczywistości cytatem dziennikarza i komentatora radiowego Waltera Winchella, mylnie przypisywanym też Dietrich na wielu portalach. Autentyczny cytat Dietrich o przyjaźni brzmi inaczej: \"It's the friends you can call up at 4 a.m. that matter.\" https://www.brainyquote.com/quotes/marlene_dietrich_105242 ; https://www.goodreads.com/author/quotes/656830.Walter_Winchell",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Starzenie się to jedyny sposób na długie życie.",
+    "original_author": "Charlie Chaplin",
+    "status": "misattributed",
+    "correct_author": "Kitty O'Neill Collins",
+    "evidence": "Angielski oryginał \"Aging seems to be the only available way to live a long life\" jest konsekwentnie i wyłącznie przypisywany Kitty O'Neill Collins w zbiorach cytatów o starzeniu się (m.in. cytatybaza.pl, paperadepts.com i portale anglojęzyczne o urodzinach/starości). Fraza nie występuje w żadnym z przeszukanych zbiorów cytatów Chaplina (BrainyQuote, Goodreads, libquotes, charliechaplin.com). Podejrzenie użytkownika co do niedokładnego tłumaczenia było trafne — to w ogóle nie jest cytat Chaplina.",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Życie to tragedia widziana z bliska i komedia widziana z oddali.",
+    "original_author": "Charlie Chaplin",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Life is a tragedy when seen in close-up, but a comedy in long-shot\" ma solidne pośrednie potwierdzenie wg Quote Investigator: pojawia się w autobiografii Chaplina z 1916 r. \"Charlie Chaplin's Own Story\" oraz w nekrologu Chaplina w The Guardian (28.12.1977). https://quoteinvestigator.com/2017/02/05/comedy/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Śmieje się najlepiej, kto śmieje się zdrowo.",
+    "original_author": "Charlie Chaplin",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza nie występuje w żadnym z przeszukanych zbiorów cytatów Chaplina (polskich ani anglojęzycznych, w tym oficjalna strona charliechaplin.com). Znane przysłowie \"kto się śmieje ostatni, ten się śmieje najlepiej\" (od Johna Heywooda, XVI w.) ma inny sens (\"ostatni\" a nie \"zdrowo\") i nie jest związane z Chaplinem. Brak potwierdzenia w żadną stronę — całkowity brak śladu tego sformułowania budzi wątpliwości, ale nie znaleziono też jednoznacznego dowodu błędnego przypisania ani prawdziwego autora.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Liczy się nie to, ile masz lat, ale ile życia masz w tych latach.",
+    "original_author": "Abraham Lincoln",
+    "status": "misattributed",
+    "correct_author": "Edward J. Stieglitz (przypisanie niepewne)",
+    "evidence": "Wg szczegółowego śledztwa Quote Investigator nie ma żadnych dowodów, że Lincoln wypowiedział te słowa. Najwcześniejszy mocny ślad to reklama z 1947 r. książki dr. Edwarda J. Stieglitza \"The Second Forty Years\" w Chicago Tribune: \"The important thing to you is not how many years in your life, but how much life in your years!\". Frazy używał też Adlai Stevenson II od 1952 r. Potwierdzone też przez Snopes i NPR jako popularny fałszywy cytat Lincolna. https://quoteinvestigator.com/2012/07/14/life-years-count/ ; https://www.snopes.com/fact-check/abraham-lincoln-life-in-your-years-quote/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "W końcu to nie lata w twoim życiu się liczą, ale życie w twoich latach.",
+    "original_author": "Abraham Lincoln",
+    "status": "misattributed",
+    "correct_author": "Edward J. Stieglitz (przypisanie niepewne)",
+    "evidence": "To ten sam angielski cytat co w #20 (\"it's not the years in your life that count; it's the life in your years\"), w innym polskim tłumaczeniu. Ta sama analiza Quote Investigator/Snopes/NPR dotyczy obu wersji: brak dowodów na autorstwo Lincolna, najwcześniejszy ślad to reklama książki E. J. Stieglitza z 1947 r., później używane przez Adlaia Stevensona II. https://quoteinvestigator.com/2012/07/14/life-years-count/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Nic nie uczyni cię szczęśliwszym niż to, że komuś jesteś potrzebny.",
+    "original_author": "Audrey Hepburn",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej dokładnej frazy w zbiorach cytatów Hepburn. Najbliższy autentycznie krążący cytat brzmi: \"When you have nobody you can make a cup of tea for, when nobody needs you, that's when I think life is over\" — podobny temat (bycie potrzebnym), ale inne sformułowanie. Hepburn ma też udokumentowane przypadki błędnych przypisań (np. cytat Judy Garland \"first-rate version of yourself\"), co zwiększa czujność, ale w tym konkretnym przypadku brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Szczęście jest jak perfumy — nie możesz go polewać na innych, nie skrapiając siebie.",
+    "original_author": "Ralph Waldo Emerson",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Wg badania Quote Investigator sentencja pojawiła się anonimowo już w 1856 r. w brytyjskim magazynie \"Punch\" i była przedrukowywana co najmniej 14 razy w latach 1857–1913 bez żadnego przypisania nazwiskowego. Przypisanie Emersonowi pojawia się dopiero w 1927 r. (W. Gardiner, \"Getting a Foothold\") i w \"Forbes Book of Business Quotations\" (1997), bez dowodów źródłowych. Prawdziwy autor pozostaje nieznany. https://quoteinvestigator.com (wyniki dot. \"happiness is a perfume\")",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "To, co za nami, i to, co przed nami, jest niczym w porównaniu z tym, co w nas.",
+    "original_author": "Ralph Waldo Emerson",
+    "status": "misattributed",
+    "correct_author": "Henry Stanley Haskins",
+    "evidence": "Quote Investigator ustalił, że angielski oryginał \"What lies behind us and what lies before us are tiny matters compared to what lies within us\" pochodzi z książki Henry'ego Stanleya Haskinsa \"Meditations in Wall Street\" (1940). Potwierdza to również Jeffrey Cramer, redaktor \"The Portable Emerson\". Cytat bywa też mylnie przypisywany Oliverowi Wendellowi Holmesowi Jr. i Thoreau. https://quoteinvestigator.com/2011/01/11/what-lies-within/ ; https://checkyourfact.com/2019/08/15/fact-check-ralph-waldo-emerson-quote-what-lies-within-behind-before-us/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Zrób dziś to, co inni nie chcą, a jutro będziesz żył tak, jak inni nie mogą.",
+    "original_author": "Jerry Rice",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Today I will do what others won't, so tomorrow I can do what others can't\" jest szeroko przypisywany Jerry'emu Rice'owi jako jego osobiste motto i był publikowany na jego własnym, oficjalnym koncie na Instagramie (@jerryrice) jako jego wypowiedź. Drobne różnice w wersjach słownych (\"accomplish\" vs \"do\") nie zmieniają sensu ani autorstwa. https://www.instagram.com/jerryrice/p/Crs4Mv9r5PR/?hl=en",
+    "recommendation": "keep"
+  }
+]
