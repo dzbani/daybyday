@@ -1,0 +1,202 @@
+[
+  {
+    "original_text_pl": "Jestem mądrością, którą zdobyłem przez głupstwo.",
+    "original_author": "Oscar Wilde",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy (ani angielskiego oryginału w żadnym wariancie) w żadnym z przeszukanych zbiorów cytatów Wilde'a (Goodreads, BrainyQuote, AZQuotes, Wikiquote) ani w jego znanych dziełach (De Profundis, Obraz Doriana Graya). Najbliższa tematycznie autentyczna myśl Wilde'a to \"The method by which the fool arrives at his folly was as dear to him as the ultimate wisdom of the wise\" (Krytyk jako artysta) — ale to inne zdanie o innym sensie. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Mogę oprzeć się wszystkiemu, oprócz pokusy.",
+    "original_author": "Oscar Wilde",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"I can resist everything except temptation\" pochodzi z komedii \"Lady Windermere's Fan\" (1892, akt I, słowa Lorda Darlingtona). Jeden z najsolidniej udokumentowanych cytatów Wilde'a, potwierdzony w tekście sztuki. https://en.wikiquote.org/wiki/Oscar_Wilde",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bądź sobą — wszyscy inni są już zajęci.",
+    "original_author": "Oscar Wilde",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Wg Check Your Fact i badania Quote Investigator brak jakiegokolwiek dowodu, że Wilde to powiedział lub napisał — przeszukanie jego kompletnych dzieł nie dało wyniku. Donald Mead, prezes Oscar Wilde Society, potwierdził wprost: \"This is definitely not Oscar\". Najwcześniejszy zbliżony tematycznie ślad to \"The Hudson Review\" z 1967 r., czyli ponad 60 lat po śmierci Wilde'a (1900). Prawdziwy autor pozostaje nieustalony. https://checkyourfact.com/2019/08/27/fact-check-oscar-wilde-be-yourself-everyone-already-taken/ ; https://quoteinvestigator.com/2014/01/20/be-yourself/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Doświadczenie jest nazwą, jaką każdy nadaje swoim błędom.",
+    "original_author": "Oscar Wilde",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Experience is the name everyone gives to their mistakes\" pochodzi z \"Lady Windermere's Fan\" (1892, akt III, słowa Lorda Darlingtona/Cecila Grahama). Potwierdzone w tekście sztuki i szeroko cytowane. https://en.wikiquote.org/wiki/Oscar_Wilde",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedyną różnicą między kaprysem a wieczną miłością jest to, że kaprys trwa nieco dłużej.",
+    "original_author": "Oscar Wilde",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"The only difference between a caprice and a lifelong passion is that the caprice lasts a little longer\" pochodzi z \"Portretu Doriana Graya\" (1890, słowa Lorda Henry'ego). Potwierdzone w tekście powieści. https://en.wikiquote.org/wiki/Oscar_Wilde",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Im mniej ludzie wiedzą, tym trudniej jest im zmienić zdanie.",
+    "original_author": "Bertrand Russell",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza nie występuje w żadnym z przeszukanych zbiorów cytatów Russella (Goodreads, BrainyQuote, Wikiquote, WIST). Istnieje pokrewna, ale odrębna i przypisana komu innemu myśl: \"The less people know, the more stubbornly they know it\" — Osho. Brak jednoznacznego dowodu na błędne przypisanie Russellowi, ale też brak potwierdzenia źródła w jego pismach.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Ból minie, ale piękno wygranej zostaje na zawsze.",
+    "original_author": "Steve Prefontaine",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "To nie jest udokumentowana wypowiedź Prefontaine'a — jego autentyczny, wielokrotnie potwierdzony cytat o bólu brzmi inaczej: \"Pain is temporary. It may last a minute, or an hour, or a day, or a year, but eventually it will subside and something else will take its place. If I quit, however, it lasts forever.\" Fraza w stylu \"pain is temporary, glory/pride is forever\" to za to bezosobowe, wędrujące powiedzenie sportowe krążące od lat 80. (m.in. na koszulkach US Marines z 1988 r.), przypisywane też m.in. George'owi Bestowi i Matowi Hoffmanowi, bez jednego autora. https://www.brainyquote.com/authors/steve-prefontaine-quotes ; https://www.azquotes.com/quote/715359",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Mistrzostwo to nie przypadek — to ciężka praca każdego dnia.",
+    "original_author": "Pelé",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Dokładna fraza nie występuje w zbiorach cytatów Pelégo, ale jest bliską parafrazą jego dobrze udokumentowanego cytatu: \"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do\" (potwierdzone m.in. na jego oficjalnym koncie na X). Brak dowodu na błędne przypisanie, ale to skrócona/przeredagowana wersja, nie dosłowny cytat. https://x.com/Pele/status/491679674742104065",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nigdy nie tłumacz się i nigdy nie przepraszaj — to znak słabości.",
+    "original_author": "Elbert Hubbard",
+    "status": "misattributed",
+    "correct_author": "John Wayne (kwestia z filmu \"She Wore a Yellow Ribbon\", 1949)",
+    "evidence": "Autentyczny, udokumentowany cytat Hubbarda brzmi inaczej i nie zawiera słów \"nigdy nie przepraszaj\" ani \"znak słabości\": \"Never explain — your friends do not need it and your enemies will not believe you anyhow\" (pierwsze udokumentowane wystąpienie 1904, wg Quote Investigator). Fraza z \"znakiem słabości\" pochodzi ze scenariusza filmu \"She Wore a Yellow Ribbon\" (1949, scenariusz Frank S. Nugent i Laurence Stallings), gdzie mówi ją bohater grany przez Johna Wayne'a: \"Never apologize and never explain — it's a sign of weakness\" (wg Bartlett's Familiar Quotations). Wcześniejsze warianty tej myśli (bez \"znaku słabości\") przypisuje się też Benjaminowi Jowettowi i admirałowi Johnowi Fisherowi. https://quoteinvestigator.com/2023/01/24/explain-friends/ ; https://www.goodreads.com/quotes/278271-never-apologize-mister-it-s-a-sign-of-weakness",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Spróbuj nie być człowiekiem sukcesu, lecz człowiekiem wartości.",
+    "original_author": "Albert Einstein",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Try not to become a man of success, but rather try to become a man of value\" jest jednym z solidniej udokumentowanych cytatów Einsteina, cytowanym m.in. w Life Magazine (1955) i licznych biografiach. https://en.wikiquote.org/wiki/Albert_Einstein",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wyobraź sobie wszystkich ludzi żyjących w pokoju.",
+    "original_author": "John Lennon",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Parafraza wersu z piosenki \"Imagine\" (1971): \"Imagine all the people living life in peace\". Autentyczny tekst Lennona, powszechnie znany i udokumentowany. https://www.tekstowo.pl/piosenka,john_lennon,imagine.html",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Zarządzanie polega na robieniu rzeczy dobrze — przywództwo na robieniu właściwych rzeczy.",
+    "original_author": "Peter Drucker",
+    "status": "misattributed",
+    "correct_author": "Warren Bennis (koncepcja pierwotnie Petera Druckera, ale w innej formie)",
+    "evidence": "Wg Quote Investigator Drucker sformułował pierwotną ideę w innej postaci — jako rozróżnienie \"efektywność vs skuteczność\" (m.in. Harvard Business Review 1963: \"the confusion between effectiveness and efficiency that stands between doing the right things and doing things right\"). Dopiero Warren Bennis (z Burtem Nanusem, 1985) przeformułował to na parę \"management/leadership\": \"leading means doing the right things, and managing means doing things right\". Wersję \"zarządzanie/przywództwo\" (dokładnie tę cytowaną na stronie) spopularyzował Stephen Covey w 1989 r., przypisując ją \"obu — Druckerowi i Bennisowi\", co doprowadziło do powszechnego, niedokładnego przypisywania całości samemu Druckerowi. https://quoteinvestigator.com/2021/04/09/doing-right/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Jeśli nie możesz czegoś wyjaśnić w prosty sposób, to znaczy, że sam tego nie rozumiesz.",
+    "original_author": "Albert Einstein",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza nie występuje w żadnym z opublikowanych pism Einsteina i nie figuruje na jego stronie Wikiquote (ani w sekcji cytatów potwierdzonych, ani w sekcji \"Disputed\"/\"Misattributed\") mimo ogromnej popularności w internecie. Brak jednak dowodu na konkretnego innego autora — pochodzenie pozostaje niejasne w obie strony. https://en.wikiquote.org/wiki/Albert_Einstein",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma żadnego uczucia, które byłoby złe — jest tylko złe działanie.",
+    "original_author": "Erich Fromm",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy w \"O sztuce miłości\" ani w innych przeszukanych zbiorach cytatów Fromma (polskich i anglojęzycznych). Istnieje zbliżona myśl \"emotions are never wrong; only actions can be wrong\" z zupełnie innej książki — \"The Ethical Slut\" Janet W. Hardy — ale nie ma dowodu, że to jest źródło tej wersji ani że to w ogóle ten sam cytat. Brak potwierdzenia w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Miłość jest aktywnym zainteresowaniem życiem i rozwojem tego, co kochamy.",
+    "original_author": "Erich Fromm",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Love is the active concern for the life and the growth of that which we love\" to jedna z centralnych definicji z książki \"O sztuce miłości\" (\"The Art of Loving\", 1956). Szeroko potwierdzone w licznych opracowaniach i zbiorach cytatów tej książki.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Człowiek jest jedynym stworzeniem, które odmawia bycia tym, czym jest.",
+    "original_author": "Albert Camus",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fragment eseju \"Człowiek zbuntowany\" (\"L'Homme révolté\", 1951). Różne polskie tłumaczenia oddają to zdanie nieco inaczej (\"nie zgadza się być\", \"nie chce być\", \"odmawia bycia\"), ale sens i autorstwo są spójnie potwierdzone na Wikicytatach i w licznych zbiorach. https://pl.wikiquote.org/wiki/Cz%C5%82owiek_zbuntowany",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Musimy wyobrazić sobie Syzyfa szczęśliwym.",
+    "original_author": "Albert Camus",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słynne zdanie kończące esej \"Mit Syzyfa\" (\"Le Mythe de Sisyphe\", 1942): \"Il faut imaginer Sisyphe heureux\". Jeden z najczęściej cytowanych i najsolidniej udokumentowanych cytatów filozoficznych XX wieku.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Piekło to inni.",
+    "original_author": "Jean-Paul Sartre",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Słynna kwestia z dramatu \"Przy drzwiach zamkniętych\" (\"Huis clos\", 1944), wypowiadana przez postać Garcina: \"L'enfer, c'est les autres\". Potwierdzone w tekście sztuki, powszechnie znane.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Każda epoka ma swoje prawa moralne. Nasza jest epoką zasad bez sumienia.",
+    "original_author": "Sławomir Mrożek",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy nigdzie w internecie — ani na stronie Mrożka na Wikicytatach, ani w żadnym z licznych polskich zbiorów jego aforyzmów (cytatybaza.pl, aforyzmy-cytaty.pl, nakanapie.pl, granice.pl), ani w ogóle jako cytat przypisywany komukolwiek. Całkowity brak śladu tej frazy w sieci jest nietypowy nawet dla fabrykowanych cytatów (te zwykle krążą choć na jednym agregatorze) i budzi wątpliwości co do autentyczności, ale brak też twardego dowodu błędnego przypisania czy prawdziwego autora.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Głupota jest zawsze wystarczająca, mądrość nigdy.",
+    "original_author": "Sławomir Mrożek",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat figuruje na stronie Mrożka na Wikicytatach w sekcji \"Inne\" (bez wskazania konkretnego dzieła/źródła) oraz w kilku polskich zbiorach cytatów, konsekwentnie przypisywany właśnie jemu. Brak jednak wskazania, z którego utworu/wywiadu pochodzi, więc nie można potwierdzić autentyczności na poziomie źródła pierwotnego. https://pl.wikiquote.org/wiki/S%C5%82awomir_Mro%C5%BCek",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "W każdym człowieku mieszka i dobro, i zło — tylko to drugie jest aktywne.",
+    "original_author": "Bolesław Prus",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat figuruje na stronie Prusa na Wikicytatach (sekcja \"Inne\", bez powiązania z konkretną powieścią), ale jedyne wskazane źródło to wtórna antologia \"Księga toastów i humoru biesiadnego\" (red. Leszek Bubel, Warszawa 1995), a nie któreś z oryginalnych dzieł Prusa (mimo że bywa mylnie kojarzony z \"Lalką\"). Antologie tego typu są znanym źródłem błędnych/luźnych przypisań. Brak potwierdzenia w tekstach samego Prusa. https://pl.wikiquote.org/wiki/Boles%C5%82aw_Prus",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wiek człowieka mierzy się nie latami, lecz tym, co zrobił.",
+    "original_author": "Maria Skłodowska-Curie",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza nie występuje na stosunkowo obszernej stronie Skłodowskiej-Curie na Wikicytatach ani w żadnym z przeszukanych zbiorów jej cytatów. Istnieje strukturalnie zbliżona, ale odrębna i przypisana komu innemu myśl: \"Time is not measured by the passing of years but by what one does, what one feels, and what one achieves\" — Jawaharlal Nehru. Brak jednak twardego dowodu, że to właśnie ten cytat błędnie przetłumaczono/przypisano Curie — całkowita nieobecność w jej udokumentowanych wypowiedziach jest jednak podejrzana. https://pl.wikiquote.org/wiki/Maria_Sk%C5%82odowska-Curie",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Książki to marzenia, które trzymasz w rękach.",
+    "original_author": "Neil Gaiman",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"A book is a dream that you hold in your hands\" jest szeroko przypisywany Gaimanowi, m.in. na plakacie American Library Association z 2003 r. (związanym z jego postacią Dream z komiksu \"Sandman\"). Sam Gaiman zamieścił ten cytat na swoim blogu na Goodreads, ale z dopiskiem źródła \"(via quotemadness)\" — czyli nie jako własne, jednoznaczne potwierdzenie autorstwa, tylko przytoczenie krążącej już frazy. Niejednoznaczne w obie strony.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Moc nie pochodzi z wygrywania. Twoja walka rozwija twoją moc. Kiedy przechodzisz przez trudności i nie poddajesz się, to jest moc.",
+    "original_author": "Arnold Schwarzenegger",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Angielski oryginał \"Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength\" pochodzi z wywiadu dla Boston Globe (dziennikarka Marian Christy, 1982) i jest szeroko i spójnie potwierdzony w zbiorach cytatów Schwarzeneggera.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Niemożliwe to nie fakt — to opinia.",
+    "original_author": "Muhammad Ali",
+    "status": "misattributed",
+    "correct_author": "Aimee Lehto (copywriterka kampanii reklamowej Adidas)",
+    "evidence": "Zdanie pochodzi z manifestu reklamowego kampanii Adidas \"Impossible Is Nothing\" (2004), napisanego przez copywriterkę agencji TBWA, Aimee Lehto — potwierdziła to sama autorka w wiadomości do Quote Investigator w kwietniu 2017 r. Ali występował w reklamie i wypowiadał ten tekst, ale go nie stworzył — Quote Investigator nie znalazł żadnego zapisu, by Ali kiedykolwiek powiedział te słowa poza kontekstem reklamy (ani w wywiadach, ani w autobiografiach, ani na koncie na Twitterze). https://quoteinvestigator.com/2017/11/28/impossible-is/",
+    "recommendation": "fix_author"
+  }
+]
