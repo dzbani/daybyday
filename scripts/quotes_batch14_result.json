@@ -1,0 +1,266 @@
+[
+  {
+    "original_text_pl": "Możliwości nie znikają — przechodzą do kogoś innego.",
+    "original_author": "H. Jackson Brown Jr.",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy w żadnym udokumentowanym zbiorze cytatów H. Jackson Brown Jr. (m.in. \"Life's Little Instruction Book\") ani na AZQuotes/BrainyQuote/Goodreads. Zbliżona sentymentalnie fraza \"Opportunities are never lost; someone will take the ones you miss\" krąży w sieci przypisywana Andy'emu Rooneyowi, także bez potwierdzonego źródła. Brak dowodu w żadną stronę. https://www.azquotes.com/author/2012-H_Jackson_Brown_Jr",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma czegoś takiego jak porażka — jest tylko informacja zwrotna.",
+    "original_author": "Robert Allen",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza \"There is no failure, only feedback\" jest konsekwentnie przypisywana Robertowi Allenowi na Goodreads i wielu blogach, ale bez wskazania konkretnej książki/wystąpienia. Jest to też klasyczne \"założenie\" (presupposition) NLP krążące od dekad bez jednego ustalonego autora. Brak dowodu na fabrykację, ale też brak twardego źródła pierwotnego. https://www.goodreads.com/quotes/9597909-there-is-no-failure-only-feedback",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Miłość to decyzja, a nie uczucie.",
+    "original_author": "Lew Tołstoj",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Fraza nie występuje w żadnym z przeszukanych zbiorów autentycznych cytatów Tołstoja (Goodreads, Lubimyczytać, Libquotes) ani nie pasuje stylistycznie do jego rozbudowanej, XIX-wiecznej prozy. Niemal identyczna fraza \"Love is a decision — not an emotion\" jest udokumentowana jako fałszywy cytat krążący też pod nazwiskiem Lao Tzu (taoistic.com/fake-laotzu-quotes), co wskazuje na współczesną maksymę przypisywaną naprzemiennie różnym znanym postaciom. https://www.taoistic.com/fake-laotzu-quotes/fake-laotzu-quote-Love_is_a_decision_not_an_emotion.htm",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Wszyscy myślą o zmianie świata, nikt nie myśli o zmianie siebie.",
+    "original_author": "Lew Tołstoj",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat (\"Everyone thinks of changing the world, but no one thinks of changing himself\") jest szeroko, spójnie i od dawna przypisywany Tołstojowi w wielu niezależnych zbiorach (Goodreads, BrainyQuote, The Quotations Page) i tematycznie zgadza się z jego późną filozofią moralnego samodoskonalenia (np. \"Spowiedź\"). Brak jakiegokolwiek dowodu przeciwnego. https://www.brainyquote.com/quotes/leo_tolstoy_105644",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jeśli chcesz być szczęśliwy — bądź.",
+    "original_author": "Lew Tołstoj",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Cytat krąży szeroko po polskich i anglojęzycznych stronach z cytatami jako przypisany Tołstojowi, ale żadne ze sprawdzonych źródeł nie wskazuje konkretnego dzieła/listu, z którego miałby pochodzić. Nawet polscy blogerzy piszący o tym cytacie przyznają niepewność co do źródła. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Każda szczęśliwa rodzina jest do siebie podobna, każda nieszczęśliwa jest nieszczęśliwa na swój sposób.",
+    "original_author": "Lew Tołstoj",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "To dosłownie pierwsze zdanie \"Anny Kareniny\" Tołstoja (1877): \"Wszystkie szczęśliwe rodziny są do siebie podobne, każda nieszczęśliwa rodzina jest nieszczęśliwa na swój sposób.\" Jeden z najsolidniej udokumentowanych cytatów w literaturze światowej. https://www.goodreads.com/quotes/7142-all-happy-families-are-alike-each-unhappy-family-is-unhappy",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Człowiek może żyć chlebem samym — ale nie tylko chlebem.",
+    "original_author": "Fiodor Dostojewski",
+    "status": "misattributed",
+    "correct_author": "Biblia (Ewangelia wg św. Mateusza 4:4 / Pwt 8:3)",
+    "evidence": "Fraza \"nie samym chlebem żyje człowiek\" pochodzi z Biblii (Mt 4:4, cytujące Pwt 8:3) i pojawia się jedynie jako nawiązanie w ustach postaci Wielkiego Inkwizytora w rozdziale \"Braci Karamazow\" Dostojewskiego — nie jest to jego autorska myśl, lecz cytat biblijny użyty w dialogu literackim. Przypisywanie jej bezpośrednio Dostojewskiemu jako jego własnych słów jest niedokładne. https://en.wikipedia.org/wiki/Not_by_Bread_Alone",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Kochać to znaczy widzieć człowieka takim, jakim go Bóg zamierzył.",
+    "original_author": "Fiodor Dostojewski",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Fraza krąży szeroko na polskich stronach z cytatami jako przypisana Dostojewskiemu i opisywana jako \"parafraza myśli z Braci Karamazow\", ale żadne źródło nie wskazuje dosłownego fragmentu powieści, z którego by pochodziła. To sugeruje raczej luźną parafrazę niż weryfikowalny cytat.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Piękno uratuje świat.",
+    "original_author": "Fiodor Dostojewski",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z powieści \"Idiota\" (1868) Fiodora Dostojewskiego — słowa wypowiedziane w powieści (najczęściej łączone z księciem Myszkinem, choć fragment wygłasza formalnie Hipolit Terentiew, cytując opinię Myszkina). https://www.omnesmag.com/en/news/culture/idiot-dostoyevsky/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nie ma nieszczęść nieuleczalnych w życiu.",
+    "original_author": "Fiodor Dostojewski",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy (ani w polskim, ani w przetłumaczonym angielskim wariancie) w żadnym z przeszukanych zbiorów cytatów Dostojewskiego (Wikicytaty, Lubimyczytać, Libquotes) ani w jego znanych dziełach. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Człowiek jest stworzony do szczęścia jak ptak do lotu.",
+    "original_author": "Włodzimierz Korolenko",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z opowiadania Korolenki \"Paradoks\" (\"Paradoks\", 1894) — słowa wypowiedziane przez bohatera, kalekę bez rąk. Fraza stała się popularnym aforyzmem, szczególnie w czasach sowieckich. https://en.home-task.com/man-is-created-for-happiness-like-a-bird-for-flight-composition/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Miłość to cierpliwość.",
+    "original_author": "Stendhal",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy w żadnym z przeszukanych zbiorów cytatów Stendhala (BrainyQuote, AZQuotes, Goodreads — w tym zbiór cytatów z traktatu \"O miłości\"/\"De l'amour\"). Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bóg jest martwy.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Wiedzy radosnej\" (\"Die fröhliche Wissenschaft\", 1882), paragraf 125, \"Przypowieść o szaleńcu\": \"Bóg umarł. Bóg pozostaje martwy. I my go zabiliśmy\". Jeden z najsolidniej udokumentowanych cytatów Nietzschego. https://germanhistorydocs.org/en/forging-an-empire-bismarckian-germany-1866-1890/friedrich-nietzsche-pronounces-god-is-dead-the-gay-science-1882",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Stań się tym, kim jesteś.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Wiedzy radosnej\", księga 3, paragraf 270 (1882): \"Co mówi twoje sumienie? — Powinieneś stać się tym, kim jesteś\". https://wist.info/nietzsche-friedrich/72202/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Co mnie nie zabija, to mnie wzmacnia.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Zmierzchu bożyszcz\" (\"Götzen-Dämmerung\", 1888), sekcja \"Maksymy i strzały\", aforyzm 8: \"Was mich nicht umbringt, macht mich stärker\". https://en.wikipedia.org/wiki/What_does_not_kill_me_makes_me_stronger",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Bez muzyki życie byłoby błędem.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Zmierzchu bożyszcz\" (1888): \"Without music, life would be a mistake\". https://www.themarginalian.org/2015/09/18/nietzsche-on-music/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Szaleństwo u jednostki jest rzadkie — ale u grup, partii, narodów jest regułą.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Poza dobrem i złem\" (\"Jenseits von Gut und Böse\", 1886): \"Madness is something rare in individuals — but in groups, parties, peoples, and ages, it is the rule\". https://www.goodreads.com/quotes/2137-in-individuals-insanity-is-rare-but-in-groups-parties-nations",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Jedyną drogą do odkrycia granic możliwości jest wyjście poza nie.",
+    "original_author": "Arthur C. Clarke",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z \"Profiles of the Future\" (1962), rozdział \"Hazards of Prophecy: The Failure of Imagination\": \"The only way of discovering the limits of the possible is to venture a little way past them into the impossible\". Potwierdzone przez Quote Investigator. https://quoteinvestigator.com/2022/06/25/limits/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nauka bez religii jest kulawa, religia bez nauki jest ślepa.",
+    "original_author": "Albert Einstein",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat z eseju Einsteina \"Science and Religion\" (1940/1954): \"Science without religion is lame, religion without science is blind\". Dobrze udokumentowane, choć często cytowane poza pierwotnym kontekstem filozoficznym. https://sacred-texts.com/aor/einstein/einsci.htm",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Wyobraźnia ogarnia wszystko, przygotowuje to, co w przyszłości będzie rzeczywistością.",
+    "original_author": "Nikola Tesla",
+    "status": "misattributed",
+    "correct_author": "Albert Einstein",
+    "evidence": "Fraza \"imagination embraces the entire world\" pochodzi z wywiadu Einsteina \"What Life Means to Einstein\" (Saturday Evening Post, 1929): \"knowledge is limited... while imagination embraces the entire world, stimulating progress, giving birth to evolution\". Pomyłka wynika prawdopodobnie z tytułu popularnej książki \"Nikola Tesla: Imagination and the Man That Invented the 20th Century\", w której cytat Einsteina bywa mylnie kojarzony z Teslą. W żadnym z autentycznych źródeł Tesli (m.in. \"My Inventions\") nie znaleziono tej frazy.",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Teraźniejszość jest ich, ale przyszłość, dla której naprawdę pracuję, jest moja.",
+    "original_author": "Nikola Tesla",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Autentyczny cytat Tesli, udokumentowany m.in. w \"A Visit to Nikola Tesla\" Dragislava L. Petkovicia (Politika, kwiecień 1927) oraz w biografiach \"Tesla, Master of Lightning\" (1999, s.73) i \"Tesla: Man Out of Time\" (2001, s.230). https://www.goodreads.com/quotes/18082-the-present-is-theirs-the-future-for-which-i-really",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Muzyka jest skrótem uczucia.",
+    "original_author": "Thomas Carlyle",
+    "status": "misattributed",
+    "correct_author": "Lew Tołstoj",
+    "evidence": "Fraza \"Music is the shorthand of emotion\" jest dobrze udokumentowanym cytatem Lwa Tołstoja (pełniejsza wersja: \"Emotions, which let themselves be described in words with such difficulty, are directly conveyed to man in music\"), a nie Thomasa Carlyle'a — żadne źródło nie łączy tej frazy z Carlyle'em. https://www.goodreads.com/quotes/65861-music-is-the-shorthand-of-emotion",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Kiedy już nauczysz się latać, ziemia jest zawsze za daleko.",
+    "original_author": "Salvador Dali",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono tej frazy w żadnym polskim ani anglojęzycznym zbiorze cytatów Salvadora Dalego (Lubimyczytać, Wikicytaty PL, granice.pl). Pokrewna tematycznie fraza o \"skosztowaniu lotu\" jest udokumentowana jako fałszywie przypisywana Leonardowi da Vinci (skrypt z filmu z 1965 r.), co pokazuje, że motyw \"lotu i tęsknoty za niebem\" krąży jako spopularyzowany, niepewnego pochodzenia. Brak dowodu w żadną stronę dla wersji z Dalim.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Kolor jest miejscem, gdzie nasz mózg spotyka Wszechświat.",
+    "original_author": "Paul Cézanne",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Cytat udokumentowany w \"Cézanne: a Memoir with Conversations\" (zapiski rozmów z Cézanne'em, 1897-1906), s. 153: \"Colour is the place where our brain and the universe meet\". Szeroko cytowane w literaturze o teorii koloru. https://sensationalcolor.com/cezanne-quotes-color/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Mam sny — i te sny mnie podtrzymują przy życiu.",
+    "original_author": "Edith Piaf",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono francuskiego oryginału tej frazy w żadnym z przeszukanych zbiorów cytatów Piaf (dicocitations.com, Babelio, linternaute.fr). Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Śpiewam, bo mi smutno, śpiewam, bo mi lżej.",
+    "original_author": "Edith Piaf",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Nie znaleziono francuskiego oryginału tej frazy w żadnym z przeszukanych zbiorów cytatów Piaf. Brak dowodu w żadną stronę.",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Niemożliwe to słowo ze słownika głupców.",
+    "original_author": "Napoleon Bonaparte",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Fraza \"impossible is a word found only in the dictionary of fools\" jest szeroko rozpowszechniona w bazach cytatów, ale żaden z udokumentowanych, autentycznych listów Napoleona jej nie zawiera. Udokumentowany autentyczny cytat o podobnym sensie to inny, konkretny list do generała Le Marois (9 lipca 1813): \"Piszesz mi, że to niemożliwe; to słowo nie jest francuskie\" — co sugeruje, że popularna wersja \"słownika głupców\" to późniejsza, niepotwierdzona parafraza.",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Każdy żołnierz nosi w swoim tornister buławę feldmarszałka.",
+    "original_author": "Napoleon Bonaparte",
+    "status": "verified",
+    "correct_author": null,
+    "evidence": "Fraza \"Tout soldat français porte dans sa giberne le bâton de maréchal de France\" jest udokumentowana w źródłach z XIX w. (m.in. Harper's New Monthly Magazine, t. 51, 1875, s. 799) i przypisywana Napoleonowi w relacjach z jego rozmów (m.in. \"To O'Meara\"). Jedno źródło zaznacza, że to \"skonsolidowany\" cytat łączący wypowiedzi Napoleona, Germaine de Staël i Ludwika XVIII, ale podstawowe przypisanie Napoleonowi jest historycznie ugruntowane. https://www.bartleby.com/lit-hub/dictionary-of-quotations/authors/napoleon-2/",
+    "recommendation": "keep"
+  },
+  {
+    "original_text_pl": "Nikt nie może sprawić, żebyś poczuł się gorszy bez twojej zgody.",
+    "original_author": "Eleanor Roosevelt",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Quote Investigator: dokładne przeszukanie książek i archiwalnych pism Eleanor Roosevelt (w tym autobiografii \"This Is My Story\") nie ujawniło tej frazy. Najwcześniejszy ślad to Reader's Digest z września 1940 r., już wtedy przypisany Roosevelt, ale bez podania źródła. Sama idea wywodzi się z jej wypowiedzi z 1935 r., lecz elegancka, zwięzła formuła powstała najprawdopodobniej później i nie jest jej dosłownym cytatem. https://quoteinvestigator.com/2011/03/30/not-inferior/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Przyszłość należy do tych, którzy wierzą w piękno swoich marzeń.",
+    "original_author": "Eleanor Roosevelt",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Quote Investigator: badacze cytatów (Ralph Keyes, Fred R. Shapiro, Barry Popik) nie byli w stanie znaleźć żadnego wiarygodnego związku tej frazy z Eleanor Roosevelt. Najwcześniejsze udokumentowane wystąpienie to ogłoszenie drobne z 1978 r. w kanadyjskiej gazecie \"The Surrey Leader\" — 16 lat po śmierci Roosevelt (1962) — i to bez podania autora. https://quoteinvestigator.com/2018/02/10/beauty-dreams/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Rób rzeczy, których się boisz, a strach umrze.",
+    "original_author": "Ralph Waldo Emerson",
+    "status": "misattributed",
+    "correct_author": null,
+    "evidence": "Quote Investigator dokumentuje, że pokrewna fraza \"Always do what you are afraid to do\" bywa błędnie przypisywana Emersonowi — sam Emerson zacytował ją w eseju \"Heroism\" jako cudzą myśl (\"pewnej damy\"), a nie własną. Konkretna wersja \"do the thing you fear and the death of fear is certain\" nie ma udokumentowanego źródła w pismach Emersona i krąży wyłącznie na stronach z cytatami motywacyjnymi. https://quoteinvestigator.com/2013/08/09/scare/",
+    "recommendation": "remove"
+  },
+  {
+    "original_text_pl": "Nie idź tam, gdzie prowadzi droga — idź tam, gdzie drogi nie ma.",
+    "original_author": "Ralph Waldo Emerson",
+    "status": "misattributed",
+    "correct_author": "prawdopodobnie Muriel Strode",
+    "evidence": "Quote Investigator: brak jakiegokolwiek udokumentowanego związku tego cytatu z Emersonem. Ralph Keyes w \"The Quote Verifier\" stwierdza wprost: \"No source of this quotation has ever been found in his works\". Najwcześniejsze przypisanie Emersonowi pochodzi dopiero z 1992 r. (\"Middle School Journal\"). Bliska wariantowo fraza pojawia się w wierszu Muriel Strode \"Wind-Wafted Wild Flowers\" (1903), co wskazuje ją jako prawdopodobne pierwotne źródło. https://quoteinvestigator.com/2014/06/19/new-path/",
+    "recommendation": "fix_author"
+  },
+  {
+    "original_text_pl": "Świat jest piękny, ale ma chorobę zwaną człowiekiem.",
+    "original_author": "Friedrich Nietzsche",
+    "status": "unverifiable",
+    "correct_author": null,
+    "evidence": "Jedynym odnalezionym źródłem tej frazy jest XIX-wieczna kompilacja cytatów \"Dictionary of Burning Words of Brilliant Writers\" (1895) — zbiór bez podania konkretnego dzieła Nietzschego, z którego miałaby pochodzić. Fraza nie pojawia się w żadnym ze zweryfikowanych, głównych dzieł filozofa ani na Wikiquote. Brak rozstrzygającego dowodu w żadną stronę.",
+    "recommendation": "keep"
+  }
+]
