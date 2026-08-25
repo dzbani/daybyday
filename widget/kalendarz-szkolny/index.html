@@ -69,7 +69,12 @@
     {start:'2027-05-16', end:'2027-05-16', label:'Zielone Świątki', type:'wolny', emoji:'🕊️'},
     {start:'2027-05-27', end:'2027-05-27', label:'Boże Ciało', type:'wolny', emoji:'⛪'},
     {start:'2027-06-25', end:'2027-06-25', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
-    {start:'2027-06-26', end:'2027-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'}
+    {start:'2027-06-26', end:'2027-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
+    // 1 września 2027 to środa (dzień powszedni) — zgodnie z ustawową regułą (pierwszy dzień
+    // powszedni września) rok szkolny 2027/2028 rozpocznie się właśnie tego dnia. Bez tego wpisu
+    // sekcja "Za X dni" byłaby pusta przez całe lato 2027 (jedyne w całej tablicy), bo to ostatnie
+    // wydarzenie w danych i nie ma kolejnego, do którego można by odliczać.
+    {start:'2027-09-01', end:'2027-09-01', label:'Rozpoczęcie roku szkolnego 2027/2028', type:'szkolny', emoji:'🎒'}
   ];
 
   function parseDate(s){ var p = s.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
