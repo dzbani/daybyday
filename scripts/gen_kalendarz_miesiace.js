@@ -96,27 +96,62 @@ const HOLIDAY_NAMES = {
   '2028-12-24': 'Wigilia Bożego Narodzenia', '2028-12-25': 'Boże Narodzenie', '2028-12-26': 'Drugi dzień Bożego Narodzenia',
 };
 
-// Niedziele handlowe 2026 - zsynchronizowane z niedziele-handlowe.html (jedyne zrodlo
-// prawdy, tam tez lista wszystkich 52 niedziel roku w DATES_2026). Otwarte niedziele
-// (8 z 52) maja wlasna etykiete tlumaczaca dlaczego akurat ta jest handlowa; pozostale
-// sa domyslnie "niehandlowa". Rok 2027 nie ma jeszcze oficjalnych dat (ogloszenie przez
-// MRiPS dopiero w IV kw. 2026), wiec celowo NIE fabrykujemy danych - funkcja zwraca null
-// dla lat innych niz 2026.
-const OPEN_SUNDAYS_2026 = {
-  '1-25': 'Niedziela handlowa — przed końcem miesiąca',
-  '3-29': 'Niedziela Palmowa — handlowa przed Wielkanocą',
-  '4-26': 'Niedziela handlowa — ostatnia niedziela kwietnia',
-  '6-28': 'Niedziela handlowa — ostatnia niedziela czerwca',
-  '8-30': 'Niedziela handlowa — przed szkołą',
-  '12-6': 'Niedziela handlowa — przedświąteczna',
-  '12-13': 'Niedziela handlowa — przedświąteczna',
-  '12-20': 'Niedziela handlowa — przedświąteczna',
+// Niedziele handlowe - zsynchronizowane z niedziele-handlowe.html (jedyne zrodlo prawdy
+// dla 2026/2027, tam tez lista wszystkich niedziel roku w DATES_2026/DATES_2027). Reguła
+// jest ustawowo stala (art. 7 ustawy o ograniczeniu handlu w niedziele, po nowelizacji z
+// 1 lutego 2025 r. - Dz.U. 2024 poz. 1965): ostatnia niedziela stycznia/kwietnia/czerwca/
+// sierpnia, Niedziela Palmowa, oraz TRZY niedziele poprzedzajace Wigilie (24 grudnia) -
+// 8 z ok. 52 w roku, obliczalne z gory (bez dorocznego ogloszenia MRiPS, w przeciwienstwie
+// do ferii zimowych) - stad dane dla wszystkich 4 lat 2025-2028, nie tylko 2026.
+// Zweryfikowane zewnetrznie (WebSearch/WebFetch) dla kazdego roku z osobna 2026-08-25.
+const OPEN_SUNDAYS = {
+  2025: {
+    '1-26': 'Niedziela handlowa — przed końcem miesiąca',
+    '4-13': 'Niedziela Palmowa — handlowa przed Wielkanocą',
+    '4-27': 'Niedziela handlowa — ostatnia niedziela kwietnia',
+    '6-29': 'Niedziela handlowa — ostatnia niedziela czerwca',
+    '8-31': 'Niedziela handlowa — przed szkołą',
+    '12-7': 'Niedziela handlowa — przedświąteczna',
+    '12-14': 'Niedziela handlowa — przedświąteczna',
+    '12-21': 'Niedziela handlowa — przedświąteczna',
+  },
+  2026: {
+    '1-25': 'Niedziela handlowa — przed końcem miesiąca',
+    '3-29': 'Niedziela Palmowa — handlowa przed Wielkanocą',
+    '4-26': 'Niedziela handlowa — ostatnia niedziela kwietnia',
+    '6-28': 'Niedziela handlowa — ostatnia niedziela czerwca',
+    '8-30': 'Niedziela handlowa — przed szkołą',
+    '12-6': 'Niedziela handlowa — przedświąteczna',
+    '12-13': 'Niedziela handlowa — przedświąteczna',
+    '12-20': 'Niedziela handlowa — przedświąteczna',
+  },
+  2027: {
+    '1-31': 'Niedziela handlowa — przed końcem miesiąca',
+    '3-21': 'Niedziela Palmowa — handlowa przed Wielkanocą',
+    '4-25': 'Niedziela handlowa — ostatnia niedziela kwietnia',
+    '6-27': 'Niedziela handlowa — ostatnia niedziela czerwca',
+    '8-29': 'Niedziela handlowa — przed szkołą',
+    '12-5': 'Niedziela handlowa — przedświąteczna',
+    '12-12': 'Niedziela handlowa — przedświąteczna',
+    '12-19': 'Niedziela handlowa — przedświąteczna',
+  },
+  2028: {
+    '1-30': 'Niedziela handlowa — przed końcem miesiąca',
+    '4-9': 'Niedziela Palmowa — handlowa przed Wielkanocą',
+    '4-30': 'Niedziela handlowa — ostatnia niedziela kwietnia',
+    '6-25': 'Niedziela handlowa — ostatnia niedziela czerwca',
+    '8-27': 'Niedziela handlowa — przed szkołą',
+    '12-3': 'Niedziela handlowa — przedświąteczna',
+    '12-10': 'Niedziela handlowa — przedświąteczna',
+    '12-17': 'Niedziela handlowa — przedświąteczna',
+  },
 };
 function shoppingSundayInfo(year, m, d, dow) {
-  if (year !== 2026 || dow !== 0) return null;
+  const map = OPEN_SUNDAYS[year];
+  if (!map || dow !== 0) return null;
   const key = `${m}-${d}`;
-  return OPEN_SUNDAYS_2026[key]
-    ? { open: true, label: OPEN_SUNDAYS_2026[key] }
+  return map[key]
+    ? { open: true, label: map[key] }
     : { open: false, label: 'Niedziela niehandlowa — sklepy zamknięte' };
 }
 
