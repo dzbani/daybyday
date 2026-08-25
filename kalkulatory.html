@@ -334,6 +334,31 @@
     return `${d.getDate()} ${PL_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
   }
 
+  // <input type="date"> zwraca "YYYY-MM-DD", a new Date(str) parsuje to jako
+  // północ UTC — dla odwiedzających w strefach na zachód od UTC (np. USA, Kanada)
+  // lokalne metody (getDate/getDay/setDate...) czytałyby wtedy DZIEŃ WCZEŚNIEJSZY.
+  // Ten parser buduje datę bezpośrednio w strefie lokalnej przeglądarki, żeby
+  // wynik był spójny niezależnie od strefy czasowej użytkownika.
+  function parseLocalDate(str) {
+    if (!str) return new Date(NaN);
+    const [y, m, d] = str.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  // Dzień roku (1 stycznia = dzień 1) i tydzień roku (ISO 8601 — tydzień zawierający
+  // pierwszy czwartek stycznia to tydzień 1, tygodnie liczone od poniedziałku).
+  // Liczone przez Date.UTC, żeby wynik nie zależał od przesunięć przy zmianie czasu.
+  function dayOfYear(d) {
+    return Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 1)) / 86400000) + 1;
+  }
+  function isoWeek(d) {
+    const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    const dow = (date.getUTCDay() + 6) % 7;
+    date.setUTCDate(date.getUTCDate() - dow + 3);
+    const firstThursday = new Date(Date.UTC(date.getUTCFullYear(), 0, 4));
+    return 1 + Math.round((date - firstThursday) / (7 * 86400000));
+  }
+
   function calcDays() {
     const d1 = new Date(document.getElementById('d1').value);
     const d2 = new Date(document.getElementById('d2').value);
@@ -347,7 +372,7 @@
   }
 
   function calcDate() {
-    const start = new Date(document.getElementById('startDate').value);
+    const start = parseLocalDate(document.getElementById('startDate').value);
     const days = parseInt(document.getElementById('daysAdd').value) || 0;
     const op = document.getElementById('operation').value;
     if (isNaN(start)) return;
@@ -356,7 +381,7 @@
     document.getElementById('dateNum').textContent = formatDate(result);
     document.getElementById('dateLabel').textContent = PL_DAYS[result.getDay()];
     document.getElementById('dateDetail').textContent =
-      `Dzień ${Math.ceil((result - new Date(result.getFullYear(),0,1))/86400000)} roku ${result.getFullYear()} · Tydzień ${Math.ceil(((result - new Date(result.getFullYear(),0,1))/86400000+new Date(result.getFullYear(),0,1).getDay()+1)/7)}`;
+      `Dzień ${dayOfYear(result)} roku ${result.getFullYear()} · Tydzień ${isoWeek(result)}`;
     document.getElementById('dateResult').classList.add('visible');
   }
 
@@ -375,7 +400,7 @@
   document.getElementById('birthDate').max = new Date().toISOString().split('T')[0];
 
   function calcAge() {
-    const birth = new Date(document.getElementById('birthDate').value);
+    const birth = parseLocalDate(document.getElementById('birthDate').value);
     if (isNaN(birth)) return;
     const now = new Date();
     if (birth > now) return;
@@ -415,7 +440,7 @@
       `Wielki Piątek: ${fmt(addDays(easter,-2))}<br>`+
       `Wielkanoc: ${fmt(easter)}<br>`+
       `Poniedziałek Wielkanocny: ${fmt(addDays(easter,1))}<br>`+
-      `Wniebowstąpienie: ${fmt(addDays(easter,39))}<br>`+
+      `Wniebowstąpienie (w Polsce): ${fmt(addDays(easter,42))}<br>`+
       `Zesłanie Ducha Świętego: ${fmt(addDays(easter,49))}<br>`+
       `Boże Ciało: ${fmt(addDays(easter,60))}`;
     const res=document.getElementById('easterResult');
@@ -439,8 +464,8 @@
     return diff===0||diff===1||diff===49||diff===60;
   }
   function calcWorkDays() {
-    const s=new Date(document.getElementById('workStart').value);
-    const e=new Date(document.getElementById('workEnd').value);
+    const s=parseLocalDate(document.getElementById('workStart').value);
+    const e=parseLocalDate(document.getElementById('workEnd').value);
     if(isNaN(s)||isNaN(e)||s>e) return;
     let days=0; const cur=new Date(s);
     while(cur<=e){const dow=cur.getDay();if(dow!==0&&dow!==6&&!isHoliday(cur))days++;cur.setDate(cur.getDate()+1);}
@@ -451,14 +476,14 @@
   }
 
   function calcWeekday() {
-    const d = new Date(document.getElementById('weekdayDate').value);
+    const d = parseLocalDate(document.getElementById('weekdayDate').value);
     if (isNaN(d)) return;
     const dayName = PL_DAYS[d.getDay()];
-    const dayNum = Math.ceil((d - new Date(d.getFullYear(),0,1))/86400000);
+    const dayNum = dayOfYear(d);
     document.getElementById('weekdayNum').textContent = dayName;
     document.getElementById('weekdayLabel').textContent = formatDate(d);
     document.getElementById('weekdayDetail').textContent =
-      `Dzień ${dayNum} roku · Tydzień ${Math.ceil((dayNum + new Date(d.getFullYear(),0,1).getDay())/7)} · ${d.getFullYear()} rok`;
+      `Dzień ${dayNum} roku · Tydzień ${isoWeek(d)} · ${d.getFullYear()} rok`;
     document.getElementById('weekdayResult').classList.add('visible');
   }
 </script>
