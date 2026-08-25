@@ -325,16 +325,70 @@
       {name:'Okres zwykły II (po Zesłaniu Ducha Świętego)', from:addDays(pentecost,1), to:addDays(christKingDate,6), color:'green', note:'Niedziela Chrystusa Króla kończy rok liturgiczny — biały'},
     ];
 
+    // Zwiastowanie Pańskie: zwykle 25 marca, ale gdy ta data wypada od Niedzieli Palmowej
+    // do soboty w Oktawie Wielkanocy włącznie (Wielki Tydzień/Triduum/Oktawa nie przyjmują
+    // żadnych uroczystości), przenosi się je na poniedziałek po II Niedzieli Wielkanocnej
+    // (Easter+8) — reguła zweryfikowana na udokumentowanym przypadku 2016 (Wielkanoc 27.03,
+    // Zwiastowanie faktycznie obchodzone 4.04.2016). Dotyczy m.in. 2024, 2027, 2029, 2032,
+    // 2035, 2040 — bez tej korekty 25 marca w te lata kolidowałby z Niedzielą Palmową/
+    // Wielkim Tygodniem (np. w karcie "Dzisiaj" i siatce świąt pokazywałyby się dwa
+    // różne wydarzenia na tę samą datę).
+    const annunciationNaive=new Date(epiphany.getFullYear(),2,25);
+    const annunciationDate = (annunciationNaive>=palmSunday && annunciationNaive<=addDays(easter,6))
+      ? addDays(easter,8)
+      : (annunciationNaive.getDay()===0 ? addDays(annunciationNaive,1) : annunciationNaive);
+
+    // Narodzenie św. Jana Chrzciciela (24 czerwca) koliduje z Najświętszym Sercem PJ
+    // (piątek po oktawie Bożego Ciała, data ruchoma) w latach, gdy Wielkanoc wypada
+    // 17 kwietnia (np. 2022, 2033, 2044) — potwierdzone realnym precedensem: w 2022 r.
+    // Najświętsze Serce PJ zachowało 24 czerwca, a Narodzenie Jana Chrzciciela przeniesiono
+    // na 23 czerwca (dekret watykański z 2020 r., z wyjątkiem miejsc gdzie Jan Chrzciciel
+    // jest patronem — nieistotne dla ogólnopolskiej strony).
+    const johnBaptistNaive=new Date(epiphany.getFullYear(),5,24);
+    const johnBaptistDate = sameDay(johnBaptistNaive,addDays(easter,68)) ? addDays(johnBaptistNaive,-1) : johnBaptistNaive;
+
+    const fixed=[
+      {date:new Date(christmasThisLitYear.getFullYear(),11,8), name:'Niepokalane Poczęcie NMP', color:'white', rank:'Uroczystość', slug:'niepokalane-poczecie-nmp'},
+      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-narodzenie'},
+      {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto', slug:'szczepana-pierwszego-meczennika'},
+      {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true, slug:'swietej-bozej-rodzicielki-maryi'},
+      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true, slug:'objawienie-panskie'},
+      {date:annunciationDate, name:'Zwiastowanie Pańskie'+(sameDay(annunciationDate,annunciationNaive)?'':' (przeniesione)'), color:'white', rank:'Uroczystość', slug:'zwiastowanie-panskie'},
+      {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu', slug:'sroda-popielcowa'},
+      {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień', slug:'niedziela-palmowa'},
+      {date:holyThursday, name:'Wielki Czwartek — Msza Wieczerzy Pańskiej', color:'white', rank:'Początek Triduum Paschalnego', slug:'wielki-czwartek'},
+      {date:goodFriday, name:'Wielki Piątek — Liturgia Męki Pańskiej', color:'red', rank:'Dzień postu ścisłego, Triduum Paschalne', slug:'wielki-piatek'},
+      {date:easter, name:'Niedziela Zmartwychwstania Pańskiego', color:'white', rank:'Uroczystość — szczyt roku liturgicznego', slug:'niedziela-zmartwychwstania-panskiego'},
+      {date:addDays(easter,42), name:'Wniebowstąpienie Pańskie', color:'white', rank:'Uroczystość (w Polsce przeniesiona na 7. niedzielę wielkanocną)', slug:'wniebowstapienie-panskie'},
+      {date:pentecost, name:'Zesłanie Ducha Świętego (Pięćdziesiątnica)', color:'red', rank:'Uroczystość', slug:'zeslanie-ducha-swietego'},
+      {date:trinitySunday, name:'Trójcy Przenajświętszej', color:'white', rank:'Uroczystość', slug:'trojcy-przenajswietszej'},
+      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-cialo'},
+      {date:addDays(easter,68), name:'Najświętszego Serca Pana Jezusa', color:'white', rank:'Uroczystość — piątek po oktawie Bożego Ciała', slug:'najswietszego-serca-pana-jezusa'},
+      {date:johnBaptistDate, name:'Narodzenie św. Jana Chrzciciela'+(sameDay(johnBaptistDate,johnBaptistNaive)?'':' (przeniesione — koliduje z Najświętszym Sercem PJ)'), color:'white', rank:'Uroczystość', slug:'narodzenie-jana-chrzciciela'},
+      {date:new Date(epiphany.getFullYear(),5,29), name:'Świętych Apostołów Piotra i Pawła', color:'red', rank:'Uroczystość', slug:'piotra-i-pawla'},
+      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość', obligatory:true, slug:'wniebowziecie-nmp'},
+      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość', obligatory:true, slug:'wszystkich-swietych'},
+      {date:new Date(epiphany.getFullYear(),10,2), name:'Wspomnienie wszystkich wiernych zmarłych (Zaduszki)', color:'violet', rank:'Wspomnienie', slug:'zaduszki'},
+      {date:christKingDate, name:'Jezusa Chrystusa Króla Wszechświata', color:'white', rank:'Uroczystość — koniec roku liturgicznego', slug:'chrystusa-krola-wszechswiata'},
+    ].sort((a,b)=>a.date-b.date);
+
     // ustal aktywny sezon
     let active=null;
     for(const s of seasons){ if(today>=s.from && today<=s.to){ active=s; break; } }
-    // przypadki szczególne dnia
+    // przypadki szczególne dnia — najpierw dni o unikalnej, bogatszej nazwie własnej,
+    // potem ogólny fallback do listy stałych świąt (fixed) jako jedynego źródła prawdy
+    // o kolorze/randze — bez tego każde święto wypadające w "zielonym" okresie zwykłym
+    // (np. Boże Ciało, Wniebowzięcie NMP, Wszystkich Świętych) pokazywałoby się błędnie
+    // jako zwykły zielony dzień, mimo że siatka "Najważniejsze święta" niżej na tej samej
+    // stronie poprawnie oznacza je jako białe/czerwone/fioletowe uroczystości.
     let todayName=active?active.name:'Okres zwykły', todayColor=active?active.color:'green';
+    const todayFixedFeast=fixed.find(f=>sameDay(today,f.date));
     if(sameDay(today,goodFriday)){ todayName='Wielki Piątek — Męka Pańska'; todayColor='red'; }
     else if(sameDay(today,holyThursday)){ todayName='Wielki Czwartek — Msza Wieczerzy Pańskiej'; todayColor='white'; }
     else if(sameDay(today,easter)){ todayName='Niedziela Zmartwychwstania Pańskiego'; todayColor='white'; }
     else if(sameDay(today,pentecost)){ todayName='Zesłanie Ducha Świętego'; todayColor='red'; }
     else if(sameDay(today,christmasThisLitYear)){ todayName='Boże Narodzenie'; todayColor='white'; }
+    else if(todayFixedFeast){ todayName=todayFixedFeast.name; todayColor=todayFixedFeast.color; }
     else if(active && active.name.indexOf('Adwent')===0){
       const dow=today.getDay();
       if(dow===0){
@@ -363,31 +417,6 @@
       const wn=34-totalWeeksPart2+1+weekIndexFromStart;
       weekLabel=wn+'. tydzień okresu zwykłego';
     }
-
-    const fixed=[
-      {date:new Date(christmasThisLitYear.getFullYear(),11,8), name:'Niepokalane Poczęcie NMP', color:'white', rank:'Uroczystość', slug:'niepokalane-poczecie-nmp'},
-      {date:christmasThisLitYear, name:'Boże Narodzenie', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-narodzenie'},
-      {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto', slug:'szczepana-pierwszego-meczennika'},
-      {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true, slug:'swietej-bozej-rodzicielki-maryi'},
-      {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true, slug:'objawienie-panskie'},
-      {date:new Date(epiphany.getFullYear(),2,25), name:'Zwiastowanie Pańskie', color:'white', rank:'Uroczystość', slug:'zwiastowanie-panskie'},
-      {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu', slug:'sroda-popielcowa'},
-      {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień', slug:'niedziela-palmowa'},
-      {date:holyThursday, name:'Wielki Czwartek — Msza Wieczerzy Pańskiej', color:'white', rank:'Początek Triduum Paschalnego', slug:'wielki-czwartek'},
-      {date:goodFriday, name:'Wielki Piątek — Liturgia Męki Pańskiej', color:'red', rank:'Dzień postu ścisłego, Triduum Paschalne', slug:'wielki-piatek'},
-      {date:easter, name:'Niedziela Zmartwychwstania Pańskiego', color:'white', rank:'Uroczystość — szczyt roku liturgicznego', slug:'niedziela-zmartwychwstania-panskiego'},
-      {date:addDays(easter,42), name:'Wniebowstąpienie Pańskie', color:'white', rank:'Uroczystość (w Polsce przeniesiona na 7. niedzielę wielkanocną)', slug:'wniebowstapienie-panskie'},
-      {date:pentecost, name:'Zesłanie Ducha Świętego (Pięćdziesiątnica)', color:'red', rank:'Uroczystość', slug:'zeslanie-ducha-swietego'},
-      {date:trinitySunday, name:'Trójcy Przenajświętszej', color:'white', rank:'Uroczystość', slug:'trojcy-przenajswietszej'},
-      {date:corpusChristi, name:'Boże Ciało', color:'white', rank:'Uroczystość', obligatory:true, slug:'boze-cialo'},
-      {date:addDays(easter,68), name:'Najświętszego Serca Pana Jezusa', color:'white', rank:'Uroczystość — piątek po oktawie Bożego Ciała', slug:'najswietszego-serca-pana-jezusa'},
-      {date:new Date(epiphany.getFullYear(),5,24), name:'Narodzenie św. Jana Chrzciciela', color:'white', rank:'Uroczystość', slug:'narodzenie-jana-chrzciciela'},
-      {date:new Date(epiphany.getFullYear(),5,29), name:'Świętych Apostołów Piotra i Pawła', color:'red', rank:'Uroczystość', slug:'piotra-i-pawla'},
-      {date:new Date(epiphany.getFullYear(),7,15), name:'Wniebowzięcie NMP', color:'white', rank:'Uroczystość', obligatory:true, slug:'wniebowziecie-nmp'},
-      {date:new Date(epiphany.getFullYear(),10,1), name:'Wszystkich Świętych', color:'white', rank:'Uroczystość', obligatory:true, slug:'wszystkich-swietych'},
-      {date:new Date(epiphany.getFullYear(),10,2), name:'Wspomnienie wszystkich wiernych zmarłych (Zaduszki)', color:'violet', rank:'Wspomnienie', slug:'zaduszki'},
-      {date:christKingDate, name:'Jezusa Chrystusa Króla Wszechświata', color:'white', rank:'Uroczystość — koniec roku liturgicznego', slug:'chrystusa-krola-wszechswiata'},
-    ].sort((a,b)=>a.date-b.date);
 
     return {seasons, active, todayName, todayColor, fixed, today, ashWednesday, goodFriday, weekLabel};
   }
