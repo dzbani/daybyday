@@ -198,16 +198,16 @@
   <p class="page-sub">Kiedy w Polsce przestawiamy zegarki? Sprawdź dokładne daty i godziny zmiany na czas letni i zimowy w 2026 roku i kolejnych latach.</p>
 
   <div class="change-cards">
-    <div class="change-card summer past">
-      <div class="change-badge badge-summer badge-past">✓ Minęła</div>
-      <div class="change-date">29 marca 2026</div>
+    <div class="change-card summer past" id="cardSummer">
+      <div class="change-badge badge-summer badge-past" id="badgeSummer">✓ Minęła</div>
+      <div class="change-date" id="dateSummer">29 marca 2026</div>
       <div class="change-time">O godzinie 2:00 → 3:00</div>
       <div class="change-dir">☀️ ➜</div>
       <div class="change-desc">Zmiana na <strong>czas letni (CEST)</strong> — przestawiamy zegarki <strong>o 1 godzinę do przodu</strong>. Ta noc jest krótsza o 1 godzinę. Obowiązuje strefa UTC+2.</div>
     </div>
-    <div class="change-card winter">
-      <div class="change-badge badge-winter badge-upcoming">↑ Zbliża się</div>
-      <div class="change-date">25 października 2026</div>
+    <div class="change-card winter" id="cardWinter">
+      <div class="change-badge badge-winter badge-upcoming" id="badgeWinter">↑ Zbliża się</div>
+      <div class="change-date" id="dateWinter">25 października 2026</div>
       <div class="change-time">O godzinie 3:00 → 2:00</div>
       <div class="change-dir">❄️ ➜</div>
       <div class="change-desc">Zmiana na <strong>czas zimowy (CET)</strong> — przestawiamy zegarki <strong>o 1 godzinę do tyłu</strong>. Ta noc jest dłuższa o 1 godzinę. Obowiązuje strefa UTC+1.</div>
@@ -221,13 +221,13 @@
     <table class="ytable">
       <thead><tr><th>Rok</th><th>Zmiana na letni (marzec)</th><th>Zmiana na zimowy (październik)</th></tr></thead>
       <tbody>
-        <tr><td>2024</td><td>31 marca 2024, 2:00 → 3:00</td><td>27 października 2024, 3:00 → 2:00</td></tr>
-        <tr><td>2025</td><td>30 marca 2025, 2:00 → 3:00</td><td>26 października 2025, 3:00 → 2:00</td></tr>
-        <tr class="current-year"><td><strong>2026</strong></td><td><strong>29 marca 2026, 2:00 → 3:00</strong></td><td><strong>25 października 2026, 3:00 → 2:00</strong></td></tr>
-        <tr><td>2027</td><td>28 marca 2027, 2:00 → 3:00</td><td>31 października 2027, 3:00 → 2:00</td></tr>
-        <tr><td>2028</td><td>26 marca 2028, 2:00 → 3:00</td><td>29 października 2028, 3:00 → 2:00</td></tr>
-        <tr><td>2029</td><td>25 marca 2029, 2:00 → 3:00</td><td>28 października 2029, 3:00 → 2:00</td></tr>
-        <tr><td>2030</td><td>31 marca 2030, 2:00 → 3:00</td><td>27 października 2030, 3:00 → 2:00</td></tr>
+        <tr data-year="2024"><td>2024</td><td>31 marca 2024, 2:00 → 3:00</td><td>27 października 2024, 3:00 → 2:00</td></tr>
+        <tr data-year="2025"><td>2025</td><td>30 marca 2025, 2:00 → 3:00</td><td>26 października 2025, 3:00 → 2:00</td></tr>
+        <tr data-year="2026" class="current-year"><td><strong>2026</strong></td><td><strong>29 marca 2026, 2:00 → 3:00</strong></td><td><strong>25 października 2026, 3:00 → 2:00</strong></td></tr>
+        <tr data-year="2027"><td>2027</td><td>28 marca 2027, 2:00 → 3:00</td><td>31 października 2027, 3:00 → 2:00</td></tr>
+        <tr data-year="2028"><td>2028</td><td>26 marca 2028, 2:00 → 3:00</td><td>29 października 2028, 3:00 → 2:00</td></tr>
+        <tr data-year="2029"><td>2029</td><td>25 marca 2029, 2:00 → 3:00</td><td>28 października 2029, 3:00 → 2:00</td></tr>
+        <tr data-year="2030"><td>2030</td><td>31 marca 2030, 2:00 → 3:00</td><td>27 października 2030, 3:00 → 2:00</td></tr>
       </tbody>
     </table>
   </div>
@@ -252,7 +252,7 @@
     </div>
     <div class="faq-item">
       <div class="faq-q">Który dzień jest krótszy, a który dłuższy przy zmianie czasu?</div>
-      <div class="faq-a">Kiedy przestawiamy na czas letni (marzec): noc ma 23 godziny (den jest normalny, noc krótsza). Kiedy wracamy na czas zimowy (październik): noc ma 25 godzin (zyskujemy dodatkową godzinę snu).</div>
+      <div class="faq-a">Kiedy przestawiamy na czas letni (marzec): noc ma 23 godziny (dzień jest normalny, noc krótsza). Kiedy wracamy na czas zimowy (październik): noc ma 25 godzin (zyskujemy dodatkową godzinę snu).</div>
     </div>
   </div>
 </main>
@@ -267,20 +267,57 @@
 </footer>
 
 <script>
-  const target = new Date('2026-10-25T03:00:00+02:00');
+  // Daty zmiany czasu liczone bezposrednio (ostatnia niedziela marca/pazdziernika w UE,
+  // dyrektywa 2000/84/WE), nie z hardkodowanej daty jednego roku - poprzednia wersja
+  // ('2026-10-25' na sztywno) po tej dacie na zawsze pokazywalaby "Juz za nami",
+  // ten sam wzorzec bledu co juz raz naprawiony na ferie-zimowe.html.
+  const PL_MON = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+
+  function lastSundayUTC(y, m) { // m: 1-12, dzien miesiaca liczony w UTC
+    const d = new Date(Date.UTC(y, m, 0));
+    d.setUTCDate(d.getUTCDate() - d.getUTCDay());
+    return d;
+  }
+  function springChange(y) { const d = lastSundayUTC(y, 3); return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 1, 0, 0)); } // 2:00 CET = 01:00 UTC
+  function autumnChange(y) { const d = lastSundayUTC(y, 10); return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 1, 0, 0)); } // 3:00 CEST = 01:00 UTC
+  function fmtDate(d) { return d.getUTCDate() + ' ' + PL_MON[d.getUTCMonth()] + ' ' + d.getUTCFullYear(); }
+
   const now = new Date();
+  const y = now.getUTCFullYear();
+  const candidates = [
+    {date: springChange(y-1), type:'summer'}, {date: autumnChange(y-1), type:'winter'},
+    {date: springChange(y),   type:'summer'}, {date: autumnChange(y),   type:'winter'},
+    {date: springChange(y+1), type:'summer'}, {date: autumnChange(y+1), type:'winter'},
+  ].sort((a,b) => a.date - b.date);
+  let past = null, next = null;
+  for (const c of candidates) { if (c.date <= now) past = c; else { next = c; break; } }
+
+  function updateCard(prefix, type, ev, isNext) {
+    const card = document.getElementById('card'+prefix);
+    const badge = document.getElementById('badge'+prefix);
+    const dateEl = document.getElementById('date'+prefix);
+    if (!ev || ev.type !== type) { card.style.display = 'none'; return; }
+    dateEl.textContent = fmtDate(ev.date);
+    card.classList.toggle('past', !isNext);
+    badge.className = 'change-badge ' + (type==='summer' ? 'badge-summer' : 'badge-winter') + ' ' + (isNext ? 'badge-upcoming' : 'badge-past');
+    badge.textContent = isNext ? '↑ Zbliża się' : '✓ Minęła';
+  }
+  updateCard('Summer', 'summer', [past,next].find(e=>e && e.type==='summer'), next && next.type==='summer');
+  updateCard('Winter', 'winter', [past,next].find(e=>e && e.type==='winter'), next && next.type==='winter');
+
+  document.querySelectorAll('.ytable tr[data-year]').forEach(tr => {
+    tr.classList.toggle('current-year', tr.dataset.year === String(now.getUTCFullYear()));
+  });
 
   function renderCountdown() {
-    const diff = target - new Date();
-    if (diff <= 0) {
-      document.getElementById('countdownBox').innerHTML = '<div><div class="cd-label">Zmiana czasu zimowego 2026</div><div class="cd-val">Już za nami</div></div>';
-      return;
-    }
+    const diff = next.date - new Date();
+    if (diff <= 0) { renderCountdownRecalc(); return; }
     const days = Math.floor(diff / 86400000);
     const hours = Math.floor((diff % 86400000) / 3600000);
     const mins = Math.floor((diff % 3600000) / 60000);
+    const label = next.type === 'summer' ? 'Do zmiany czasu letniego' : 'Do zmiany czasu zimowego';
     document.getElementById('countdownBox').innerHTML = `
-      <div><div class="cd-label">Do zmiany czasu zimowego</div><div style="font-size:.75rem;opacity:.6">25 października 2026, 3:00 → 2:00</div></div>
+      <div><div class="cd-label">${label}</div><div style="font-size:.75rem;opacity:.6">${fmtDate(next.date)}, ${next.type==='summer' ? '2:00 → 3:00' : '3:00 → 2:00'}</div></div>
       <div style="display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap">
         <div><div class="cd-val">${days}</div><div class="cd-label">dni</div></div>
         <div class="cd-sep">:</div>
@@ -289,6 +326,10 @@
         <div><div class="cd-val">${String(mins).padStart(2,'0')}</div><div class="cd-label">minut</div></div>
       </div>
     `;
+  }
+  function renderCountdownRecalc() {
+    // 'next' wlasnie minal (rzadki przypadek: strona otwarta dokladnie w momencie zmiany) - przelicz od nowa
+    location.reload();
   }
 
   renderCountdown();
