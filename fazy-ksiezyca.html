@@ -834,31 +834,35 @@
 <script>
 (function() {
   const DEG = Math.PI / 180;
-  const NEW_MOONS = [
-    new Date('2025-12-20T05:43:00Z'), new Date('2026-01-18T19:52:00Z'),
-    new Date('2026-02-17T12:01:00Z'), new Date('2026-03-19T01:23:00Z'),
-    new Date('2026-04-17T11:52:00Z'), new Date('2026-05-16T20:01:00Z'),
-    new Date('2026-06-15T02:54:00Z'), new Date('2026-07-14T09:43:00Z'),
-    new Date('2026-08-12T17:37:00Z'), new Date('2026-09-11T03:27:00Z'),
-    new Date('2026-10-10T16:50:00Z'), new Date('2026-11-09T10:02:00Z'),
-    new Date('2026-12-09T04:52:00Z'),
-  ];
-  const PHASE_EVENTS = [
-    {date:new Date('2026-06-21T21:55:00Z'),icon:'🌓',name:'Pierwsza kwadra'},
-    {date:new Date('2026-06-29T23:58:00Z'),icon:'🌕',name:'Pełnia'},
-    {date:new Date('2026-07-07T19:29:00Z'),icon:'🌗',name:'Ostatnia kwadra'},
-    {date:new Date('2026-07-14T09:43:00Z'),icon:'🌑',name:'Nów'},
-    {date:new Date('2026-07-21T11:05:00Z'),icon:'🌓',name:'Pierwsza kwadra'},
-    {date:new Date('2026-07-29T14:36:00Z'),icon:'🌕',name:'Pełnia'},
-    {date:new Date('2026-08-06T02:21:00Z'),icon:'🌗',name:'Ostatnia kwadra'},
-    {date:new Date('2026-08-12T17:37:00Z'),icon:'🌑',name:'Nów'},
-    {date:new Date('2026-08-20T02:46:00Z'),icon:'🌓',name:'Pierwsza kwadra'},
-    {date:new Date('2026-08-28T04:18:00Z'),icon:'🌕',name:'Pełnia'},
-    {date:new Date('2026-09-04T07:51:00Z'),icon:'🌗',name:'Ostatnia kwadra'},
-    {date:new Date('2026-09-11T03:27:00Z'),icon:'🌑',name:'Nów'},
-    {date:new Date('2026-09-19T01:45:00Z'),icon:'🌓',name:'Pierwsza kwadra'},
-    {date:new Date('2026-09-26T17:49:00Z'),icon:'🌕',name:'Pełnia'},
-  ];
+  const SYNODIC = 29.53058867;
+  // Wiek Ksiezyca liczony bezposrednio (algorytm Meeus, ten sam sprawdzony wzor co w
+  // kalendarz.html getMoonPhaseCompact), nie z hardkodowanej listy nowiow/faz -
+  // poprzednia wersja (NEW_MOONS/PHASE_EVENTS, tablice konczace sie w 2026 r.) po
+  // wyczerpaniu zakresu dawala coraz bardziej bledny wiek i na stale utykala w "Now"
+  // (getPhase mial fallback dla age>=28, co zawsze trafialo dla wieku np. 188 dni).
+  function getMoonAgePerpetual(now) {
+    const rad = DEG;
+    const y=now.getUTCFullYear(), mo=now.getUTCMonth()+1, d=now.getUTCDate(), hh=now.getUTCHours()+now.getUTCMinutes()/60;
+    const toJD=(y,m,d,hh)=>{if(m<=2){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+hh/24+B-1524.5;};
+    const JD = toJD(y,mo,d,hh);
+    const T = (JD-2451545.0)/36525;
+    const D = ((297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868)%360+360)%360;
+    const M = ((357.5291092+35999.0502909*T-0.0001536*T*T)%360+360)%360;
+    const Mp = ((134.9633964+477198.8675055*T+0.0087414*T*T+T*T*T/69699)%360+360)%360;
+    const F = ((93.2720950+483202.0175233*T-0.0036539*T*T)%360+360)%360;
+    const Lp = ((218.3164477+481267.88123421*T-0.0015786*T*T)%360+360)%360;
+    const dL = 6288774*Math.sin(Mp*rad)+1274027*Math.sin((2*D-Mp)*rad)+658314*Math.sin(2*D*rad)
+      +213618*Math.sin(2*Mp*rad)-185116*Math.sin(M*rad)-114332*Math.sin(2*F*rad)
+      +58793*Math.sin((2*D-2*Mp)*rad)+57066*Math.sin((2*D-M-Mp)*rad)
+      +53322*Math.sin((2*D+Mp)*rad)+45758*Math.sin((2*D-M)*rad)
+      -40923*Math.sin((M-Mp)*rad)-34720*Math.sin(D*rad)-30383*Math.sin((M+Mp)*rad);
+    const moonLon = ((Lp+dL/1000000)%360+360)%360;
+    const sunLon = ((280.46646+36000.76983*T+0.0003032*T*T)%360+360)%360;
+    const elong = ((moonLon-sunLon)%360+360)%360;
+    return elong/360*SYNODIC;
+  }
+  const PHASE_BOUNDARY_NAMES = [{icon:'🌑',name:'Nów'},{icon:'🌓',name:'Pierwsza kwadra'},{icon:'🌕',name:'Pełnia'},{icon:'🌗',name:'Ostatnia kwadra'}];
+  function phaseQuarterIdx(age){ return Math.floor((age/SYNODIC)*4) % 4; }
   const PL_MON = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
   const PL_MON_SHORT = ['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
 
@@ -977,8 +981,7 @@
   }
 
   function getMoonAge(now) {
-    for(let i=NEW_MOONS.length-1;i>=0;i--) if(now>=NEW_MOONS[i]) return (now-NEW_MOONS[i])/86400000;
-    return 0;
+    return getMoonAgePerpetual(now);
   }
 
   function getPhase(age) {
@@ -994,12 +997,17 @@
   }
 
   function getNext(now) {
-    for(const e of PHASE_EVENTS) {
-      if(e.date>now) {
-        const days=Math.ceil((e.date-now)/86400000);
-        const d=e.date, label=d.getDate()+' '+PL_MON_SHORT[d.getMonth()];
-        return {num:e.icon+' '+label, sub:e.name+' (za '+days+' dni)'};
+    let prevIdx = phaseQuarterIdx(getMoonAgePerpetual(now));
+    for (let h=1; h<=24*35; h++) {
+      const t = new Date(now.getTime()+h*3600000);
+      const idx = phaseQuarterIdx(getMoonAgePerpetual(t));
+      if (idx !== prevIdx) {
+        const days = Math.ceil((t-now)/86400000);
+        const label = t.getDate()+' '+PL_MON_SHORT[t.getMonth()];
+        const ph = PHASE_BOUNDARY_NAMES[idx];
+        return {num:ph.icon+' '+label, sub:ph.name+' (za '+days+' dni)'};
       }
+      prevIdx = idx;
     }
     return null;
   }
