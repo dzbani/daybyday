@@ -79,11 +79,12 @@
   }
 
   var today = new Date(); today.setHours(0,0,0,0);
-  var current = null, next = null;
+  var current = null, next = null, dataEnd = null;
   for (var i = 0; i < EVENTS.length; i++) {
     var e = EVENTS[i], s = parseDate(e.start), en = parseDate(e.end);
     if (today >= s && today <= en) current = e;
     if (s > today && (!next || s < parseDate(next.start))) next = e;
+    if (!dataEnd || en > dataEnd) dataEnd = en;
   }
 
   var statusEl = document.getElementById('dbdStatus');
@@ -91,6 +92,10 @@
 
   if (current) {
     statusEl.innerHTML = '<span class="emoji">' + current.emoji + '</span>Dziś: ' + current.label;
+  } else if (today > dataEnd) {
+    // Poza zakresem znanych dat (nowy rok szkolny bez wpisanych jeszcze terminów) —
+    // nie zgadujemy dnia nauki/ferii, tylko odsyłamy do pełnego, aktualizowanego kalendarza.
+    statusEl.innerHTML = '<span class="emoji">🗓️</span>Sprawdź aktualny kalendarz szkolny';
   } else {
     var day = today.getDay(); // 0=niedz, 6=sob
     if (day === 0 || day === 6) {

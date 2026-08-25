@@ -42,7 +42,7 @@
     .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; margin-bottom:2.5rem; }
     h2 { font-family:'Instrument Serif',serif; font-size:1.3rem; font-weight:400; margin: 2rem 0 .75rem; }
     .preview-box { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; margin-bottom:1rem; display:flex; justify-content:center; }
-    #dbd-widget-preview iframe { border:0; width:100%; max-width:320px; height:270px; }
+    #dbd-widget-preview iframe { border:0; width:100%; max-width:320px; height:290px; }
     .code-box { position:relative; background:#1A1916; color:#F0EDE8; border-radius:12px; padding:1.25rem 1.4rem; font-family:'Courier New',monospace; font-size:.8rem; line-height:1.6; overflow-x:auto; white-space:pre; margin-bottom:.75rem; }
     .copy-btn { background:var(--text); color:var(--bg); border:none; border-radius:60px; padding:.5rem 1.25rem; font-size:.82rem; font-weight:600; cursor:pointer; font-family:inherit; transition:opacity .15s; }
     .copy-btn:hover { opacity:.85; }
@@ -56,26 +56,45 @@
     [data-theme="dark"] .code-box { background:#0D0D0C; }
     #themeToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); display: flex; align-items: center; justify-content: center; }
     #themeToggle:hover { background: var(--tag-bg); color: var(--text); }
-    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-links{display:none} .topnav{padding:0 12px} }
+    #fontToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 11px; font-weight: 700; color: var(--muted); transition: background .15s, color .15s; display: flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1; font-family: inherit; letter-spacing: -.03em; }
+    #fontToggle:hover { background: var(--tag-bg); color: var(--text); }
+    [data-font="large"] { font-size: 112%; }
+    [data-font="xl"] { font-size: 125%; }
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .topnav{padding:0 12px}
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+      [data-theme="dark"] .topnav .nav-links { background:rgba(17,17,16,0.98) !important; }
+    }
   </style>
   <script>
     (function(){
       var s=localStorage.getItem('dbd-theme');
       var p=window.matchMedia('(prefers-color-scheme:dark)').matches;
       document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));
+      var f=localStorage.getItem('dbd-font')||'normal';if(f!=='normal')document.documentElement.setAttribute('data-font',f);
     })();
   </script>
 </head>
 <body>
 <nav class="topnav">
   <a href="/" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="/">Główna</a></li>
     <li><a href="imieniny.html">Imieniny</a></li>
     <li><a href="swieta.html">Święta</a></li>
-    <li><a href="kartka-z-kalendarza.html">Kartka z kalendarza</a></li>
+    <li><a href="kalendarz-liturgiczny.html">Liturgiczny</a></li>
+    <li><a href="kalkulatory.html">Kalkulatory</a></li>
   </ul>
+  <button id="fontToggle" onclick="cycleFontSize()" title="Rozmiar tekstu" aria-label="Zmień rozmiar tekstu">A</button>
   <button id="themeToggle" onclick="toggleDarkMode()" title="Tryb ciemny/jasny" aria-label="Przełącz tryb ciemny/jasny"></button>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </nav>
 
 <main class="page">
@@ -95,7 +114,7 @@
   var d = new Date(), mm = String(d.getMonth()+1).padStart(2,'0'), dd = String(d.getDate()).padStart(2,'0');
   var f = document.createElement('iframe');
   f.src = 'https://daybyday.today/kartka/' + mm + '-' + dd + '/widget/';
-  f.style.cssText = 'border:0;width:100%;max-width:320px;height:270px;';
+  f.style.cssText = 'border:0;width:100%;max-width:320px;height:290px;';
   f.title = 'Kartka z kalendarza — DaybyDay';
   f.loading = 'lazy';
   document.getElementById('dbd-kartka-widget').appendChild(f);
@@ -107,7 +126,7 @@
   <ul class="rules">
     <li>Wklej powyższy kod w dowolnym miejscu swojej strony (np. w sidebarze albo stopce).</li>
     <li>Widget sam oblicza dzisiejszą datę i wczytuje aktualną kartkę — nie trzeba nic aktualizować ręcznie.</li>
-    <li>Rozmiar (320×270px) można dopasować, zmieniając <code>max-width</code>/<code>height</code> w kodzie.</li>
+    <li>Rozmiar (320×290px) można dopasować, zmieniając <code>max-width</code>/<code>height</code> w kodzie.</li>
     <li>Widget jest darmowy i nie wymaga podpięcia konta — jedynym warunkiem jest zachowanie linku do DaybyDay w stopce widgetu.</li>
   </ul>
 </main>
@@ -125,7 +144,7 @@
   var d = new Date(), mm = String(d.getMonth()+1).padStart(2,'0'), dd = String(d.getDate()).padStart(2,'0');
   var f = document.createElement('iframe');
   f.src = '/kartka/' + mm + '-' + dd + '/widget/';
-  f.style.cssText = 'border:0;width:100%;max-width:320px;height:270px;';
+  f.style.cssText = 'border:0;width:100%;max-width:320px;height:290px;';
   f.title = 'Podgląd widgetu Kartka z kalendarza';
   document.getElementById('dbd-widget-preview').appendChild(f);
 })();
@@ -170,7 +189,24 @@ function updateThemeBtn(){
   var b=document.getElementById('themeToggle');
   if(b) b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'☾';
 }
+function cycleFontSize(){
+  var sizes=['normal','large','xl'];
+  var d=document.documentElement;
+  var cur=d.getAttribute('data-font')||'normal';
+  var next=sizes[(sizes.indexOf(cur)+1)%sizes.length];
+  if(next==='normal') d.removeAttribute('data-font'); else d.setAttribute('data-font',next);
+  localStorage.setItem('dbd-font',next);
+  updateFontBtn();
+}
+function updateFontBtn(){
+  var b=document.getElementById('fontToggle');
+  if(!b) return;
+  var f=document.documentElement.getAttribute('data-font')||'normal';
+  b.textContent=f==='normal'?'A':f==='large'?'A+':'A++';
+  b.setAttribute('aria-label',f==='normal'?'Zwiększ czcionkę':f==='large'?'Jeszcze większa czcionka':'Przywróć domyślną czcionkę');
+}
 updateThemeBtn();
+updateFontBtn();
 </script>
 <script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
 </body>
