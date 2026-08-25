@@ -64,6 +64,21 @@ select{background:var(--tag-bg);border:1px solid var(--border);border-radius:60p
 footer{border-top:1px solid var(--border);padding:1.5rem 1.25rem;text-align:center;font-size:.78rem;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--text)}
+#fontToggle{background:none;border:1px solid var(--border);border-radius:8px;width:32px;height:32px;cursor:pointer;font-size:11px;font-weight:700;color:var(--muted);transition:background .15s,color .15s;display:flex;align-items:center;justify-content:center;flex-shrink:0;line-height:1;font-family:inherit;letter-spacing:-.03em}
+#fontToggle:hover{background:var(--tag-bg);color:var(--text)}
+[data-font="large"]{font-size:112%}
+[data-font="xl"]{font-size:125%}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:6px;border-radius:8px;transition:background .15s}
+.nav-burger:hover{background:var(--tag-bg)}
+.nav-burger span{display:block;height:2px;background:var(--text);border-radius:2px;transition:all .25s}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:600px){
+  .nav-burger{display:flex}
+  nav .nav-links{display:none;position:fixed;top:56px;left:0;right:0;background:var(--card);border-bottom:1px solid var(--border);flex-direction:column;align-items:flex-start;padding:.5rem 1.25rem;gap:.25rem;z-index:49}
+  nav .nav-links.open{display:flex}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9960731129891588" crossorigin="anonymous"></script>
 <script src="imieniny_slugs.js"></script>
@@ -71,12 +86,16 @@ footer a:hover{color:var(--text)}
 <body>
 <nav>
   <a class="nav-logo" href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
-  <div class="nav-links">
-    <a href="/">Dziś</a>
-    <a href="kalendarz.html">Kalendarz</a>
-    <a href="ranking-imion.html" class="active">Imiona</a>
-    <button class="btn-theme" onclick="toggleDark()" id="themeBtn">🌙</button>
+  <div class="nav-links" id="navLinks">
+    <a href="/">Główna</a>
+    <a href="imieniny.html">Imieniny</a>
+    <a href="swieta.html">Święta</a>
+    <a href="kalendarz-liturgiczny.html">Liturgiczny</a>
+    <a href="kalkulatory.html">Kalkulatory</a>
   </div>
+  <button id="fontToggle" onclick="cycleFontSize()" title="Rozmiar tekstu" aria-label="Zmień rozmiar tekstu">A</button>
+  <button class="btn-theme" onclick="toggleDark()" id="themeBtn">🌙</button>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </nav>
 <div class="hero">
   <div class="hero-label">Dane Ministerstwa Cyfryzacji · 2025</div>
@@ -168,10 +187,29 @@ function toggleDark(){
   localStorage.setItem('dbd-theme',dark?'light':'dark');
   document.getElementById('themeBtn').textContent=dark?'\ud83c\udf19':'\u2600\ufe0f';
 }
+function cycleFontSize(){
+  var sizes=['normal','large','xl'];
+  var d=document.documentElement;
+  var cur=d.getAttribute('data-font')||'normal';
+  var next=sizes[(sizes.indexOf(cur)+1)%sizes.length];
+  if(next==='normal') d.removeAttribute('data-font'); else d.setAttribute('data-font',next);
+  localStorage.setItem('dbd-font',next);
+  updateFontBtn();
+}
+function updateFontBtn(){
+  var b=document.getElementById('fontToggle');
+  if(!b) return;
+  var f=document.documentElement.getAttribute('data-font')||'normal';
+  b.textContent=f==='normal'?'A':f==='large'?'A+':'A++';
+  b.setAttribute('aria-label',f==='normal'?'Zwi\u0119ksz czcionk\u0119':f==='large'?'Jeszcze wi\u0119ksza czcionka':'Przywr\u00f3\u0107 domy\u015bln\u0105 czcionk\u0119');
+}
 (function(){
   var t=localStorage.getItem('dbd-theme')||'light';
   document.documentElement.setAttribute('data-theme',t);
   document.getElementById('themeBtn').textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';
+  var f=localStorage.getItem('dbd-font')||'normal';
+  if(f!=='normal') document.documentElement.setAttribute('data-font',f);
+  updateFontBtn();
 })();
 render();
 
