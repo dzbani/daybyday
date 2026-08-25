@@ -46,7 +46,7 @@ const MONTH_NAMES = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Li
 const MONTH_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
 const MONTH_SLUGS = ['styczen','luty','marzec','kwiecien','maj','czerwiec','lipiec','sierpien','wrzesien','pazdziernik','listopad','grudzien'];
 const DAY_NAMES_FULL = ['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'];
-const DAY_NAMES = ['Pn','Wt','Śr','Cz','Pt','So','Nd'];
+const DAY_NAMES = ['Pn','Wt','Śr','Cz','Pt','Sb','Nd'];
 const YEARS = [2025, 2026, 2027, 2028];
 
 function pad(n) { return String(n).padStart(2, '0'); }

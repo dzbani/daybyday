@@ -292,7 +292,7 @@
 <script>
   const PL_MONTHS = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
   const PL_MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
-  const DAY_SHORT = ['Pn','Wt','Śr','Cz','Pt','So','Nd'];
+  const DAY_SHORT = ['Pn','Wt','Śr','Cz','Pt','Sb','Nd'];
 
   function addDays(date, n) { const d = new Date(date); d.setDate(d.getDate() + n); return d; }
   function fmt(d) { return `${d.getDate()} ${PL_MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}`; }
