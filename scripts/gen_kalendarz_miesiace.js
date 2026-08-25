@@ -522,7 +522,7 @@ function buildYearPage(year) {
     </table>
   </div>
 
-  ${year === 2026 ? `<p class="full-cal-link"><a href="/wymiar-czasu-pracy.html">Sprawdź wymiar czasu pracy na ${year} rok →</a></p>` : ''}
+  ${(year === 2026 || year === 2027) ? `<p class="full-cal-link"><a href="/wymiar-czasu-pracy.html">Sprawdź wymiar czasu pracy na ${year} rok →</a></p>` : ''}
 </div>
 
 <footer>
