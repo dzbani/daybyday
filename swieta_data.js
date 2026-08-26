@@ -122,6 +122,8 @@ const SWIETA_DATA=[
   [1,9,'Rocznica wybuchu II Wojny Światowej (1939)','rocznica-1-wrzesnia','historyczne'],
   [1,9,'Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej','dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej','panstwowe'],
   [1,9,'Światowy Dzień Modlitwy o Ochronę Stworzenia','dzien-modlitwy-o-ochrone-stworzenia','koscielne'],
+  [11,9,'Rocznica zamachów z 11 września 2001 roku','rocznica-11-wrzesnia','historyczne'],
+  [12,9,'Rocznica bitwy pod Wiedniem (1683)','rocznica-bitwy-pod-wiedniem','historyczne'],
   [13,9,'Dzień Programisty','dzien-programisty','branzowe'],
   [16,9,'Europejski Dzień Maszynisty Kolejowego','dzien-maszynisty','branzowe'],
   [17,9,'Rocznica agresji ZSRR na Polskę (17 września 1939)','dzien-historii','historyczne'],

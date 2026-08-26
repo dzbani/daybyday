@@ -4466,6 +4466,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/rocznica-11-wrzesnia/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/rocznica-bitwy-pod-wiedniem/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/rocznica-pierwszego-lotu-braci-wright/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
