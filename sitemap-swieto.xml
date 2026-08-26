@@ -1376,6 +1376,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-moreli/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -4907,6 +4912,11 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-kociewia/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-kokosa/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
