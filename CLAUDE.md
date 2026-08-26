@@ -2,6 +2,10 @@
 
 Statyczna strona (HTML/CSS/JS, bez frameworka i buildu) hostowana na GitHub Pages. Polski kalendarz/kalkulatory/astrologia/statystyki. Każda strona ma własne, samodzielne `<style>`/`<script>` — brak wspólnego bundla.
 
+## Zasada pracy: zawsze jednym agentem
+
+Wszystko i zawsze jednym agentem, chyba że użytkownik wyraźnie zdecyduje inaczej. Nie uruchamiać wielu równoległych subagentów (narzędzie Agent) do pracy w tym repo, nawet gdy zadanie naturalnie dzieli się na niezależne części (np. audyt wielu stron/imion, przeszukiwanie wielu niezależnych tematów). Zawsze jednym agentem — albo bezpośrednio samemu, albo pojedynczym wywołaniem Agent, nigdy wieloma równocześnie — domyślnie, bez pytania. Wyjątek: jeśli użytkownik w danej chwili sam poprosi o wiele agentów/zrównoleglenie, można to zrobić — ale to on decyduje, nie ja z własnej inicjatywy. Potwierdzone dwukrotnie jako wyraźna, ogólna preferencja użytkownika (26.08.2026), niezależnie od tego, jak bardzo dane zadanie nadawałoby się do zrównoleglenia.
+
 ## Struktura katalogów
 
 - `imieniny/<slug>/`, `swieto/<slug>/` — ~2400/~1300 wygenerowanych stron treściowych (generatory: `scripts/gen_static_pages.js`, `scripts/gen_static_swieto_pages.js`)
