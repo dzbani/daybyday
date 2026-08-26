@@ -994,8 +994,7 @@ searchResult = document.getElementById('searchResult');
 // BAZA DANYCH IMION — szczegółowe opisy (źródło: daybyday.today)
 // ============================================================
 const NAME_DB = {
-  'aneta': {
-    count: '151 255', gender: 'K',
+  'aneta': { gender: 'K',
     origin: 'Hebrajskie / francuskie', meaning: 'Spolszczenie fr. „Anette" — forma skrócona imienia Anna (hebr. „łaska, piękno")',
     patron: 'Święta Anna, matka Maryi (26 lipca)', extraDates: ['16 czerwca','24 października','9 grudnia'],
     positive: ['Dostojna i kulturalna','Pogodna — rzadko narzeka','Aktywna, poszukuje przygód','Talent do nauki języków obcych','Stworzona do życia rodzinnego'],
@@ -1005,8 +1004,7 @@ const NAME_DB = {
     diminutives: 'Anetka, Netka, Anka',
     foreign: 'ang. Annette, fr. Anette, niem. Annette, ros. Аннета',
   },
-  'anna': {
-    count: '1 063 768', gender: 'K',
+  'anna': { gender: 'K',
     origin: 'Hebrajskie (hannah — „łaska")', meaning: 'Pełna łaski, wdzięku — „ta, której Bóg był łaskawy"',
     patron: 'Święta Anna, matka Maryi z Nazaretu (26 lipca). Istnieje ok. 30 świętych o tym imieniu.',
     extraDates: ['10 stycznia','27 lutego','7 czerwca','9 czerwca','23 czerwca','15 lipca','1 września','8 grudnia'],
@@ -1017,8 +1015,7 @@ const NAME_DB = {
     diminutives: 'Anula, Anusza, Anica, Anka, Anuchna',
     foreign: 'ang. Anne / Hannah, fr. Anne, niem. Anna, ros. Анна, wł. Anna',
   },
-  'jolanta': {
-    count: '233 614', gender: 'K',
+  'jolanta': { gender: 'K',
     origin: 'Greckie (ion = fiołek, anthos = kwiat); możliwe też germańskie lub węgierskie', meaning: 'Kwiat fiołka — symbolizuje skromność, cnotę i pokorę',
     patron: 'Błogosławiona Jolanta Helena, księżna kaliska, patronka Wielkopolski i Kalisza',
     extraDates: [],
@@ -1029,8 +1026,7 @@ const NAME_DB = {
     diminutives: 'Jola',
     foreign: 'ang. Yolanda, fr. Yolande, niem. Jolanthe',
   },
-  'maria': {
-    count: '566 957', gender: 'K',
+  'maria': { gender: 'K',
     origin: 'Hebrajskie', meaning: '„Cieszyć się, dawać radość" — jedno z najstarszych imion chrześcijańskich',
     patron: 'Najświętsza Maryja Panna — ok. 53 świętych o tym imieniu, liczne święta przez cały rok',
     extraDates: ['11 lutego','25 marca','3 maja','15 sierpnia','8 września','7 października','8 grudnia'],
@@ -1041,8 +1037,7 @@ const NAME_DB = {
     diminutives: 'Marysia, Mańka, Marylka, Maja',
     foreign: 'ang. Mary, fr. Marie, niem. Maria, ros. Мария, wł. Maria',
   },
-  'jan': {
-    count: '462 517', gender: 'M',
+  'jan': { gender: 'M',
     origin: 'Hebrajskie (Jochanan)', meaning: '„Jahwe jest łaskaw" — jedno z najpopularniejszych imion na świecie',
     patron: 'Święty Jan Chrzciciel (24 czerwca), patron abstynentów, kowali i pasterzy; Święty Jan Kanty, patron nauczycieli i studentów',
     extraDates: ['31 stycznia','26 czerwca','29 sierpnia','24 listopada','27 grudnia'],
@@ -1053,8 +1048,7 @@ const NAME_DB = {
     diminutives: 'Jasiu, Janek, Janeczek, Janas, Janik',
     foreign: 'ang. John, fr. Jean, niem. Johann / Hans, ros. Иван, wł. Giovanni',
   },
-  'katarzyna': {
-    count: '602 474', gender: 'K',
+  'katarzyna': { gender: 'K',
     origin: 'Greckie słowo „katharós" (czysty, bez skazy)', meaning: 'Czysta, nieskazitelna, niepokalana',
     patron: 'Św. Katarzyna ze Sieny (1347–1380) oraz św. Katarzyna Aleksandryjska (ok. 282–300)',
     extraDates: ['2 lutego','13 lutego','9 marca','22 marca','29 kwietnia','9 maja','4 września','31 grudnia'],
@@ -1065,8 +1059,7 @@ const NAME_DB = {
     diminutives: 'Kasza, Katusza, Katka, Kaszka',
     foreign: 'ang. Catherine / Katherine, fr. Catherine, niem. Katharina, ros. Екатерина',
   },
-  'piotr': {
-    count: '682 519', gender: 'M',
+  'piotr': { gender: 'M',
     origin: 'Greckie słowo petra (skała, kamień), łac. Petrus', meaning: 'Skała, opoka — symbol niezłomności',
     patron: 'Święty Piotr Apostoł, pierwszy papież, patron rybaków i budowlańców (29 czerwca)',
     extraDates: ['18 stycznia','29 kwietnia','30 lipca','2 sierpnia','9 września','19 października'],
@@ -1077,8 +1070,7 @@ const NAME_DB = {
     diminutives: 'Pietrzyk, Pietrek, Piotrek, Pieszko, Piotruszka, Pietraszek',
     foreign: 'ang. Peter, fr. Pierre, niem. Peter, ros. Пётр, wł. Pietro',
   },
-  'tomasz': {
-    count: '533 223', gender: 'M',
+  'tomasz': { gender: 'M',
     origin: 'Aramejskie słowo toma (bliźniak)', meaning: 'Bliźniak — imię noszone przez Apostoła Tomasza',
     patron: 'Św. Tomasz Apostoł (3 lipca), Św. Tomasz z Akwinu (28 stycznia), Św. Tomasz Becket (29 grudnia)',
     extraDates: ['28 stycznia','7 marca','22 czerwca','3 lipca','18 listopada','21 grudnia','29 grudnia'],
@@ -1089,8 +1081,7 @@ const NAME_DB = {
     diminutives: 'Tomek, Tomko',
     foreign: 'ang. Thomas, fr. Thomas, niem. Thomas, ros. Фома, wł. Tommaso',
   },
-  'agnieszka': {
-    count: '544 968', gender: 'K',
+  'agnieszka': { gender: 'K',
     origin: 'Greckie słowo hagne (czysta, dziewicza, nieskalana); przejęte od Czechów', meaning: 'Czysta, niewinna, nieskalana',
     patron: 'Święta Agnieszka Rzymianka, dziewica i męczennica (ur. ok. 291 r.), patronka dziewic i ogrodników',
     extraDates: ['28 stycznia','18 lutego','6 marca','17 czerwca','20 kwietnia','27 sierpnia','18 listopada','20 listopada'],
@@ -1101,8 +1092,7 @@ const NAME_DB = {
     diminutives: 'Agna, Jagna, Jagosza, Aga, Agusia',
     foreign: 'ang. Agnes, fr. Agnès, niem. Agnes, ros. Агнесса',
   },
-  'michal': {
-    count: '492 336', gender: 'M',
+  'michal': { gender: 'M',
     origin: 'Hebrajskie imię Mika\'el', meaning: '„Któż jest jak Bóg?" — imię Archanioła Michała',
     patron: 'Archanioł Michał, przedstawiany jako rycerz z mieczem i pokonanym szatanem (29 września)',
     extraDates: ['23 stycznia','10 lutego','17 lutego','2 marca','6 kwietnia','4 maja','14 czerwca','25 sierpnia','29 sierpnia'],
@@ -1113,8 +1103,7 @@ const NAME_DB = {
     diminutives: 'Michałek, Michałko, Michalik, Michalec',
     foreign: 'ang. Michael, fr. Michel, niem. Michael, ros. Михаил',
   },
-  'magdalena': {
-    count: '434 120', gender: 'K',
+  'magdalena': { gender: 'K',
     origin: 'Biblijny przydomek — Magdala to wioska w Izraelu nad Jeziorem Galilejskim', meaning: 'Pochodząca z Magdali; hebr. migdal = twierdza, wieża',
     patron: 'Święta Maria Magdalena, uczennica Jezusa i pierwsza świadkini Zmartwychwstania — „Apostołka Apostołów" (22 lipca)',
     extraDates: ['29 maja','10 kwietnia','13 maja','27 maja','1 czerwca','17 sierpnia','22 sierpnia','13 października'],
@@ -1125,8 +1114,7 @@ const NAME_DB = {
     diminutives: 'Magda, Madzia, Macha, Maga',
     foreign: 'ang. Magdalene, fr. Madeleine, niem. Magdalena',
   },
-  'barbara': {
-    count: '467 697', gender: 'K',
+  'barbara': { gender: 'K',
     origin: 'Grecko-łacińskie; grecki przymiotnik barbaros — „niegrecki, mówiący niezrozumiale"', meaning: 'Cudzoziemka, obca — „ta, która mówi bar-bar"',
     patron: 'Święta Barbara z Nikomedii, dziewica i męczennica (†305) — 4 grudnia',
     extraDates: ['20 września'],
@@ -1137,8 +1125,7 @@ const NAME_DB = {
     diminutives: 'Basia, Baśka, Barbarka',
     foreign: 'ang. Barbara, fr. Barbe, niem. Barbara, ros. Варвара',
   },
-  'wojciech': {
-    count: '335 544', gender: 'M',
+  'wojciech': { gender: 'M',
     origin: 'Staropolskie imię dwuczłonowe słowiańskie: woj (wojownik) + ciech (cieszyć się)', meaning: 'Cieszący się wojownik / ten, któremu walka sprawia radość',
     patron: 'Święty Wojciech Sławnikowic (ur. ok. 956), główny patron Polski i Czech, biskup i męczennik (23 kwietnia)',
     extraDates: [],
@@ -1149,8 +1136,7 @@ const NAME_DB = {
     diminutives: 'Wojtek, Wojciej, Wojcieszek, Wociech, Wojsza',
     foreign: 'łac. Adalbertus, niem. Adalbert / Voytke, czes. Vojtěch',
   },
-  'stanislaw': {
-    count: '348 830', gender: 'M',
+  'stanislaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: Stani (stać się) + sław (sława)', meaning: 'Ten, który stał się sławny / utwierdzający chwałę',
     patron: 'Święty Stanisław ze Szczepanowa (1030–1081), patron Polski; Święty Stanisław Kostka (1550)',
     extraDates: ['8 maja','18 września','13 listopada'],
@@ -1161,8 +1147,7 @@ const NAME_DB = {
     diminutives: 'Stan, Staszko, Stanek, Staszek, Stachno, Stachnik, Staszel',
     foreign: 'czes. Stanislav, ros. Станислав',
   },
-  'krzysztof': {
-    count: '631 900', gender: 'M',
+  'krzysztof': { gender: 'M',
     origin: 'Greckie Christophoros, łac. Christophorus', meaning: 'Noszący Chrystusa — nawiązanie do legendy o świętym przenoszącym Jezusa przez rzekę',
     patron: 'Święty Krzysztof, męczennik, patron kierowców, podróżników i turystów (25 lipca)',
     extraDates: ['2 marca','5 marca','15 marca','14 kwietnia','21 maja','20 sierpnia','23 września','31 października'],
@@ -1173,8 +1158,7 @@ const NAME_DB = {
     diminutives: 'Krzystek, Krzystko, Krzystel, Krystak',
     foreign: 'ang. Christopher, fr. Christophe, niem. Christoph, ros. Христофор',
   },
-  'lukasz': {
-    count: '382 274', gender: 'M',
+  'lukasz': { gender: 'M',
     origin: 'Łacińskie Lucas — „pochodzący z Lukanii" (kraina w pd. Włoszech); nawiązuje też do łac. lux (światło)', meaning: 'Pochodzący z Lukanii / urodzony o świcie / biały, świecący',
     patron: 'Święty Łukasz Ewangelista, autor trzeciej Ewangelii, patron lekarzy i malarzy (18 października)',
     extraDates: ['17 lutego','23 stycznia','2 marca','22 kwietnia','10 września','12 sierpnia','31 października'],
@@ -1185,8 +1169,7 @@ const NAME_DB = {
     diminutives: 'Łuka, Łuczko, Łuczek, Łuczka',
     foreign: 'ang. Luke, fr. Luc, niem. Lukas, ros. Лука, wł. Luca',
   },
-  'elzbieta': {
-    count: '404 679', gender: 'K',
+  'elzbieta': { gender: 'K',
     origin: 'Hebrajskie Eliseba — „Bóg moją przysięgą", „poświęcona Bogu"', meaning: 'Mój Bóg jest moją przysięgą / poświęcona Bogu',
     patron: 'Św. Elżbieta z Schönau (18 czerwca), Św. Elżbieta Węgierska (17 listopada), Bł. Elżbieta Czacka',
     extraDates: ['4 stycznia','20 lutego','4 lipca','8 lipca','14 sierpnia','5 listopada','8 listopada','17 listopada','19 listopada'],
@@ -1197,8 +1180,7 @@ const NAME_DB = {
     diminutives: 'Ela, Elka, Halżka, Bieta, Zbieta, Eli',
     foreign: 'ang. Elizabeth, fr. Élisabeth, niem. Elisabeth, ros. Елизавета',
   },
-  'marek': {
-    count: '369 242', gender: 'M',
+  'marek': { gender: 'M',
     origin: 'Łacińskie Marcus — jedno z najstarszych imion rzymskich', meaning: 'Należący do Marsa, związany z Marsem — bogiem wojny',
     patron: 'Święty Marek Ewangelista, autor najkrótszej Ewangelii (25 kwietnia)',
     extraDates: ['24 lutego','5 marca','19 marca','29 marca','10 kwietnia','28 kwietnia','18 czerwca','21 września','22 października'],
@@ -1209,8 +1191,7 @@ const NAME_DB = {
     diminutives: 'Marczko, Marczyk, Markiel, Markosz, Markuszek',
     foreign: 'ang. Mark, fr. Marc, niem. Markus, ros. Марк, wł. Marco',
   },
-  'mikolaj': {
-    count: '141 544', gender: 'M',
+  'mikolaj': { gender: 'M',
     origin: 'Greckie Nikolaos: nike (zwycięstwo) + laos (lud)', meaning: 'Zwycięstwo ludu — kojarzone z władzą i sukcesem',
     patron: 'Święty Mikołaj, biskup Miry (ur. ok. 270 r.), patron dzieci, kupców i podróżników (6 grudnia)',
     extraDates: ['10 września','2 lutego','12 lutego','16 lutego','21 marca','9 maja','2 czerwca','9 lipca','29 września','13 października'],
@@ -1221,8 +1202,7 @@ const NAME_DB = {
     diminutives: 'Mikuł, Nikuł, Mikoła, Mikołajek, Mikołajko',
     foreign: 'ang. Nicholas, fr. Nicolas, niem. Nikolaus, ros. Николай, wł. Nicola',
   },
-  'oliwia': {
-    count: '166 405', gender: 'K',
+  'oliwia': { gender: 'K',
     origin: 'Łacińskie oliva (drzewo oliwne, oliwka); notowane w Anglii na długo przed Szekspirem', meaning: 'Oliwka — symbol pokoju, mądrości i płodności',
     patron: 'Święta Oliwia z Brescii, męczennica (5 marca); Oliwa z Palermo',
     extraDates: ['15 czerwca'],
@@ -1233,8 +1213,7 @@ const NAME_DB = {
     diminutives: 'Oliwka, Livia',
     foreign: 'ang. Olivia, fr. Olivie, niem. Olivia, ros. Оливия',
   },
-  'wit': {
-    count: '12 400', gender: 'M',
+  'wit': { gender: 'M',
     origin: 'Łacińskie Vitus, od vita (życie)', meaning: 'Żywotny, pełen energii i życia',
     patron: 'Święty Wit (Vitus), męczennik (zm. ok. 303), patron epilepsji (15 czerwca)',
     extraDates: ['15 czerwca'],
@@ -1245,8 +1224,7 @@ const NAME_DB = {
     diminutives: 'Witek, Witus',
     foreign: 'łac. Vitus, niem. Veit',
   },
-  'witold': {
-    count: '63 000', gender: 'M',
+  'witold': { gender: 'M',
     origin: 'Litewskie Vytautas; imię znane w Polsce od XIV w.', meaning: 'Wielki władca / goniec — od lit. vytas (władca) lub vytis (goniec)',
     patron: 'Święty Witold (15 czerwca)',
     extraDates: ['15 czerwca'],
@@ -1257,8 +1235,7 @@ const NAME_DB = {
     diminutives: 'Witek, Wituś',
     foreign: 'lit. Vytautas',
   },
-  'bernard': {
-    count: '38 000', gender: 'M',
+  'bernard': { gender: 'M',
     origin: 'Germańskie Bernhard: bern (niedźwiedź) + hard (silny, twardy)', meaning: 'Silny jak niedźwiedź',
     patron: 'Święty Bernard z Clairvaux, doktor Kościoła (zm. 1153), 20 sierpnia',
     extraDates: ['20 sierpnia','15 czerwca'],
@@ -1269,8 +1246,7 @@ const NAME_DB = {
     diminutives: 'Benek, Bernardek',
     foreign: 'ang. Bernard, fr. Bernard, niem. Bernhard, ros. Бернард',
   },
-  'angelina': {
-    count: '29 000', gender: 'K',
+  'angelina': { gender: 'K',
     origin: 'Greckie / łacińskie angelus (posłaniec, anioł)', meaning: 'Anioł — posłaniec, symbol dobroci i łagodności',
     patron: 'Błogosławiona Angelina z Serbii (15 czerwca)',
     extraDates: ['15 czerwca'],
@@ -1281,8 +1257,7 @@ const NAME_DB = {
     diminutives: 'Anielka, Ania, Gela',
     foreign: 'ang. Angelina, fr. Angéline, niem. Angelina, ros. Ангелина',
   },
-  'jozef': {
-    count: '376 000', gender: 'M',
+  'jozef': { gender: 'M',
     origin: 'Hebrajskie Yosef', meaning: '„Bóg pomnoży / Bóg doda" — imię biblijnego syna Jakuba i patriarchy Izraela',
     patron: 'Święty Józef, Oblubieniec Maryi, patron rodziny i rzemieślników (19 marca)',
     extraDates: ['19 marca','1 maja'],
@@ -1293,8 +1268,7 @@ const NAME_DB = {
     diminutives: 'Józek, Józio, Pepek',
     foreign: 'ang. Joseph, fr. Joseph, niem. Josef, ros. Иосиф, wł. Giuseppe',
   },
-  'modesta': {
-    count: '7 200', gender: 'K',
+  'modesta': { gender: 'K',
     origin: 'Łacińskie Modestus', meaning: 'Skromna, powściągliwa — symbol elegancji bez ostentacji',
     patron: 'Święta Modesta (15 czerwca)',
     extraDates: ['15 czerwca'],
@@ -1305,8 +1279,7 @@ const NAME_DB = {
     diminutives: 'Modestka',
     foreign: 'fr. Modeste, niem. Modesta',
   },
-  'faustyn': {
-    count: '8 100', gender: 'M',
+  'faustyn': { gender: 'M',
     origin: 'Łacińskie Faustinus, od faustus (szczęście, powodzenie)', meaning: 'Szczęśliwy, pomyślny',
     patron: 'Święty Faustyn, męczennik (15 czerwca)',
     extraDates: ['15 czerwca'],
@@ -1317,8 +1290,7 @@ const NAME_DB = {
     diminutives: 'Faustek',
     foreign: 'fr. Faustin, ros. Фаустин',
   },
-  'adam': {
-    count: '400 579', gender: 'M',
+  'adam': { gender: 'M',
     origin: 'Hebrajskie: adom (czerwony) lub adam (ludzie) + adhamah (ziemia)', meaning: 'Zrodzony z ziemi, rolnik — pierwsze imię człowieka',
     patron: 'Święty Adam, pierwszy człowiek według Biblii, patron ogrodników (24 grudnia)',
     extraDates: ['24 grudnia'],
@@ -1329,8 +1301,7 @@ const NAME_DB = {
     diminutives: 'Adamek, Adamko',
     foreign: 'ang. Adam, fr. Adam, niem. Adam, ros. Адам',
   },
-  'robert': {
-    count: '256 984', gender: 'M',
+  'robert': { gender: 'M',
     origin: 'Germańskie Hrodebert: hrod (sława) + beraht (jasny, bystry)', meaning: 'Osoba ciesząca się sławą',
     patron: 'Święty Robert z Molesme, opat i reformator, założyciel zakonu cystersów (zm. 1111)',
     extraDates: ['29 kwietnia'],
@@ -1341,8 +1312,7 @@ const NAME_DB = {
     diminutives: 'Robcio, Robek',
     foreign: 'ang. Robert, niem. Robert, wł. Roberto, Rupert / Ruprecht',
   },
-  'grzegorz': {
-    count: '369 675', gender: 'M',
+  'grzegorz': { gender: 'M',
     origin: 'Greckie Gregorios — czuwający, czujny', meaning: 'Czuwający, gotowy do działania',
     patron: 'Święty Grzegorz I Wielki, papież i doktor Kościoła (12 marca)',
     extraDates: ['12 marca','25 maja'],
@@ -1353,8 +1323,7 @@ const NAME_DB = {
     diminutives: 'Grześ, Grzesiek, Grześko',
     foreign: 'ang. Gregory, fr. Grégoire, niem. Gregor, ros. Григорий',
   },
-  'andrzej': {
-    count: '513 751', gender: 'M',
+  'andrzej': { gender: 'M',
     origin: 'Greckie — zdrobnienie imion z rdzeniem aner (człowiek, mężczyzna)', meaning: 'Mężny, dzielny, taki jak mężczyzna',
     patron: 'Święty Andrzej Apostoł (30 listopada), Święty Andrzej Bobola — patron Polski',
     extraDates: ['30 listopada','16 maja'],
@@ -1365,8 +1334,7 @@ const NAME_DB = {
     diminutives: 'Andrzejek, Jędrzejek, Jędrek',
     foreign: 'ang. Andrew, fr. André, niem. Andreas, ros. Андрей, skand. Anders',
   },
-  'marcin': {
-    count: '447 274', gender: 'M',
+  'marcin': { gender: 'M',
     origin: 'Łacińskie Martinus — od Marsa, boga wojny', meaning: 'Należący do Marsa / poświęcony Marsowi',
     patron: 'Święty Marcin z Tours (316–397), biskup, patron dzieci, podróżników i żołnierzy (11 listopada)',
     extraDates: ['11 listopada','13 kwietnia'],
@@ -1377,8 +1345,7 @@ const NAME_DB = {
     diminutives: 'Marcinek, Marcisz',
     foreign: 'ang. Martin, fr. Martin, skand. Morten, ros. Мартин',
   },
-  'pawel': {
-    count: '502 078', gender: 'M',
+  'pawel': { gender: 'M',
     origin: 'Łacińskie Paulus', meaning: 'Mały, drobny — imię Apostoła Narodów',
     patron: 'Święty Paweł z Tarsu, Apostoł Narodów (29 czerwca)',
     extraDates: ['29 czerwca','25 stycznia','30 czerwca'],
@@ -1389,8 +1356,7 @@ const NAME_DB = {
     diminutives: 'Pawlik, Paszek, Paszko, Pawliczko',
     foreign: 'ang. Paul, fr. Paul, niem. Paul, ros. Павел, wł. Paolo',
   },
-  'kamil': {
-    count: '251 238', gender: 'M',
+  'kamil': { gender: 'M',
     origin: 'Łacińskie Camillus — szlachetnie urodzony chłopiec i pomocnik kapłana; po arabsku: kompletny, doskonały', meaning: 'Szlachetnie urodzony / pomocnik kapłana / doskonały',
     patron: 'Święty Kamil de Lellis (1550–1614), patron chorych i służby zdrowia (14 lipca)',
     extraDates: ['14 lipca','4 stycznia'],
@@ -1401,8 +1367,7 @@ const NAME_DB = {
     diminutives: 'Kamilek, Milek',
     foreign: 'ang. Camil, fr. Camille, wł. Camillo',
   },
-  'maciej': {
-    count: '267 060', gender: 'M',
+  'maciej': { gender: 'M',
     origin: 'Hebrajskie Matatjahu (dar Jahwe), przez grec. Matthias i łac. Matthaeus', meaning: 'Dar Jahwe / dar Boga',
     patron: 'Święty Maciej Apostoł (14 maja, 24 lutego)',
     extraDates: ['14 maja','24 lutego'],
@@ -1413,8 +1378,7 @@ const NAME_DB = {
     diminutives: 'Maćko, Maciek, Maciejek',
     foreign: 'ang. Matthew / Matthias, fr. Matthieu, niem. Matthias, węg. Matyas',
   },
-  'zofia': {
-    count: '360 470', gender: 'K',
+  'zofia': { gender: 'K',
     origin: 'Greckie sophia (mądrość)', meaning: 'Mądrość',
     patron: 'Święta Zofia z Rzymu, wdowa i męczennica (ok. III w.) — 15 maja',
     extraDates: ['15 maja','30 września'],
@@ -1425,8 +1389,7 @@ const NAME_DB = {
     diminutives: 'Zosia, Zosieńka',
     foreign: 'ang. Sophia / Sophie, fr. Sophie, niem. Sophie, ros. София, bułg. Sofko',
   },
-  'marta': {
-    count: '289 125', gender: 'K',
+  'marta': { gender: 'K',
     origin: 'Aramejskie — pierwotnie oznaczało pani domu, gospodyni', meaning: 'Gospodyni domowa, pani domu',
     patron: 'Biblijna siostra Marii i Łazarza, patronka gospodyń domowych, kucharek i hotelarzy (29 lipca)',
     extraDates: ['29 lipca','13 stycznia'],
@@ -1437,8 +1400,7 @@ const NAME_DB = {
     diminutives: 'Martunia, Marteczka',
     foreign: 'ang. Martha, fr. Marthe, niem. Martha, ros. Марта',
   },
-  'dorota': {
-    count: '266 291', gender: 'K',
+  'dorota': { gender: 'K',
     origin: 'Greckie Dorothea: doron (dar) + Theós (Bóg)', meaning: 'Dar od Boga',
     patron: 'Święta Dorota, dziewica i męczennica (284–305), patronka ogrodników i botaników (6 lutego)',
     extraDates: ['6 lutego','25 marca'],
@@ -1449,8 +1411,7 @@ const NAME_DB = {
     diminutives: 'Dochna, Dora, Dorotka',
     foreign: 'ang. Dorothy / Dorothea, fr. Dorothée, niem. Dorothea, ros. Дорофея',
   },
-  'monika': {
-    count: '376 774', gender: 'K',
+  'monika': { gender: 'K',
     origin: 'Greckie monos (jeden, sam) lub łacińskie moneo (upominać, doradzać)', meaning: 'Samodzielna, jedna / doradczyni',
     patron: 'Święta Monika (332–387), matka świętego Augustyna, patronka matek i wdów (27 sierpnia)',
     extraDates: ['27 sierpnia'],
@@ -1461,8 +1422,7 @@ const NAME_DB = {
     diminutives: 'Monia, Mońka, Muńka',
     foreign: 'ang. Monica, fr. Monique, niem. Monika, wł. Monica, węg. Mónika',
   },
-  'joanna': {
-    count: '401 861', gender: 'K',
+  'joanna': { gender: 'K',
     origin: 'Hebrajskie Jo-hanan — Bóg jest łaskawy. Żeński odpowiednik imienia Jan.', meaning: 'Bóg jest łaskawy',
     patron: 'Święta Joanna d\'Arc, patronka Francji (30 maja)',
     extraDates: ['30 maja','24 maja','12 marca'],
@@ -1473,8 +1433,7 @@ const NAME_DB = {
     diminutives: 'Joasia, Jana, Janka',
     foreign: 'ang. Joan, fr. Jeanne, niem. Johanna, wł. Giovanna, hiszp. Juana',
   },
-  'natalia': {
-    count: '320 225', gender: 'K',
+  'natalia': { gender: 'K',
     origin: 'Łacińskie natalis (dzień urodzin) — związane z narodzinami Jezusa Chrystusa', meaning: 'Urodzona w Boże Narodzenie / poświęcona narodzinom Chrystusa',
     patron: 'Święta Natalia z Nikomedii (1 grudnia), Natalia Tułasiewicz — polska błogosławiona',
     extraDates: ['1 grudnia','26 sierpnia','4 marca'],
@@ -1485,8 +1444,7 @@ const NAME_DB = {
     diminutives: 'Natka, Nati',
     foreign: 'ang. Natalie / Natalia, fr. Nathalie, niem. Natalie, ros. Наталья',
   },
-  'karolina': {
-    count: '295 015', gender: 'K',
+  'karolina': { gender: 'K',
     origin: 'Żeńska forma imienia Karol; przejęta z włoskiego (Carolina) i francuskiego (Caroline)', meaning: 'Żeńska forma Karola — silna, wolna kobieta',
     patron: 'Błogosławiona Karolina Kózka (1898–1914), dziewica i męczennica, patronka młodzieży (18 maja)',
     extraDates: ['18 maja','4 listopada'],
@@ -1497,8 +1455,7 @@ const NAME_DB = {
     diminutives: 'Karo, Karolcia, Lina',
     foreign: 'ang. Caroline / Carolina, fr. Caroline, niem. Karoline, wł. Carolina',
   },
-  'ewa': {
-    count: '469 822', gender: 'K',
+  'ewa': { gender: 'K',
     origin: 'Starosumeryjskie „Awa", hebrajskie havvah (dająca życie, rodząca)', meaning: 'Dająca życie, matka — pierwsza kobieta według Biblii',
     patron: 'Święta Ewa, pierwsza kobieta w Biblii (24 grudnia); Bł. Ewa z Leodium (14 marca)',
     extraDates: ['24 grudnia','14 marca','12 lutego'],
@@ -1509,8 +1466,7 @@ const NAME_DB = {
     diminutives: 'Ewka, Ewunia, Eweczka',
     foreign: 'ang. Eve / Eva, fr. Ève, niem. Eva, ros. Ева, wł. Eva',
   },
-  'jakub': {
-    count: '433 698', gender: 'M',
+  'jakub': { gender: 'M',
     origin: 'Hebrajskie Jaaqob — ten, którego Bóg ochrania; lub od aqeb (pięta)', meaning: 'Ten, którego Bóg ochrania',
     patron: 'Święty Jakub Apostoł Starszy, patron pielgrzymów i Santiago de Compostela (25 lipca)',
     extraDates: ['25 lipca','1 maja','11 maja'],
@@ -1521,8 +1477,7 @@ const NAME_DB = {
     diminutives: 'Kuba, Kubek, Jakubek',
     foreign: 'ang. James / Jacob, fr. Jacques, niem. Jakob, ros. Яков, hiszp. Santiago',
   },
-  'mateusz': {
-    count: '377 594', gender: 'M',
+  'mateusz': { gender: 'M',
     origin: 'Hebrajskie Mattanjah (dar Jahwe), przez grec. Matthias i łac. Matthaeus', meaning: 'Dar Jahwe / dar od Boga',
     patron: 'Święty Mateusz Ewangelista, apostoł i autor pierwszej Ewangelii (21 września)',
     extraDates: ['21 września'],
@@ -1533,8 +1488,7 @@ const NAME_DB = {
     diminutives: 'Mati, Matitiasz, Matyja, Matusz',
     foreign: 'ang. Matthew, fr. Matthieu, niem. Matthias, łac. Matthaeus',
   },
-  'bartosz': {
-    count: '205 155', gender: 'M',
+  'bartosz': { gender: 'M',
     origin: 'Aramejskie Bar Tholomai — syn oracza lub syn Tolmy. Zdrobnienie od Bartłomiej.', meaning: 'Syn oracza',
     patron: 'Święty Bartłomiej (Natanael), jeden z dwunastu Apostołów (24 sierpnia)',
     extraDates: ['24 sierpnia'],
@@ -1545,8 +1499,7 @@ const NAME_DB = {
     diminutives: 'Bartek, Bartuś',
     foreign: 'ang. Bartholomew, fr. Barthélemy, niem. Bartholomäus',
   },
-  'sebastian': {
-    count: '186 065', gender: 'M',
+  'sebastian': { gender: 'M',
     origin: 'Greckie Sebastos — czcigodny, dostojny, mądry', meaning: 'Czcigodny, dostojny',
     patron: 'Święty Sebastian, męczennik, patron Rzymu i chorych na choroby zakaźne (20 stycznia)',
     extraDates: ['20 stycznia'],
@@ -1557,8 +1510,7 @@ const NAME_DB = {
     diminutives: 'Seba, Sebol, Sebek',
     foreign: 'ang. Sebastian, fr. Sébastien, niem. Sebastian, ros. Себастьян',
   },
-  'aleksandra': {
-    count: '390 150', gender: 'K',
+  'aleksandra': { gender: 'K',
     origin: 'Greckie — żeńska forma imienia Aleksander (alexandros — obrońca ludzi)', meaning: 'Obrończyni ludzi',
     patron: 'Święta Aleksandra z Galacji, męczennica za odmowę udziału w pogańskiej procesji (21 marca)',
     extraDates: ['21 marca','20 marca','12 października'],
@@ -1569,8 +1521,7 @@ const NAME_DB = {
     diminutives: 'Ola, Oleńka, Ola',
     foreign: 'ang. Alexandra, fr. Alexandra, niem. Alexandra, ros. Александра',
   },
-  'dominika': {
-    count: '123 336', gender: 'K',
+  'dominika': { gender: 'K',
     origin: 'Żeńska forma imienia Dominik, łac. dominus (Pan)', meaning: 'Należąca do Pana',
     patron: 'Święta Dominika, męczennica z III wieku z Nikomedii (6 lipca)',
     extraDates: ['6 lipca','8 sierpnia'],
@@ -1581,8 +1532,7 @@ const NAME_DB = {
     diminutives: 'Dominika, Domi, Nika',
     foreign: 'ang. Dominique, fr. Dominique, niem. Dominika',
   },
-  'sylwia': {
-    count: '181 946', gender: 'K',
+  'sylwia': { gender: 'K',
     origin: 'Łacińskie silva (las)', meaning: 'Leśna, dzika, żyjąca w lesie',
     patron: 'Święta Sylwia Rzymianka (ok. 520–592), matka papieża Grzegorza Wielkiego (3 listopada)',
     extraDates: ['3 listopada'],
@@ -1593,8 +1543,7 @@ const NAME_DB = {
     diminutives: 'Sylwunia, Sylwka',
     foreign: 'ang. Sylvia, fr. Sylvie, niem. Silvia, ros. Сильвия',
   },
-  'rafal': {
-    count: '260 328', gender: 'M',
+  'rafal': { gender: 'M',
     origin: 'Hebrajskie Rafael: rofe (uzdrowiciel) + el (Bóg)', meaning: 'Bóg uleczy / boski uzdrowiciel',
     patron: 'Archanioł Rafał, opiekun podróżnych, emigrantów i pielgrzymów; patron aptekarzy i lekarzy (29 września)',
     extraDates: ['29 września','24 października'],
@@ -1605,8 +1554,7 @@ const NAME_DB = {
     diminutives: 'Rafałko, Rafałek, Rafi',
     foreign: 'ang. Raphael, fr. Raphaël, niem. Raphael, wł. Raffaele',
   },
-  'antoni': {
-    count: '314 188', gender: 'M',
+  'antoni': { gender: 'M',
     origin: 'Łacińskie — rodowy przydomek Antoniuszów (gens Antonia); znaczenie niepewne, możliwe od greckiego anthos (kwiat)', meaning: 'Nieoceniony, bezcenny / kwitnący',
     patron: 'Święty Antoni Padewski (1195–1231), doktor Kościoła, patron zagubionych rzeczy (13 czerwca); Święty Antoni Abbot (17 stycznia)',
     extraDates: ['17 stycznia','13 czerwca'],
@@ -1617,8 +1565,7 @@ const NAME_DB = {
     diminutives: 'Antek, Antosiek, Toniek',
     foreign: 'ang. Anthony, fr. Antoine, niem. Anton, ros. Антон, wł. Antonio',
   },
-  'henryk': {
-    count: '213 874', gender: 'M',
+  'henryk': { gender: 'M',
     origin: 'Germańskie Heimrich: heim (dom) + rich (władca, bogaty)', meaning: 'Władca domu / pan swego terytorium',
     patron: 'Święty Henryk II, cesarz, patron małżonków (13 lipca)',
     extraDates: ['13 lipca','19 stycznia','15 lipca'],
@@ -1629,8 +1576,7 @@ const NAME_DB = {
     diminutives: 'Henio, Heniu, Heniuś',
     foreign: 'ang. Henry, fr. Henri, niem. Heinrich, ros. Генрих, wł. Enrico',
   },
-  'irena': {
-    count: '399 225', gender: 'K',
+  'irena': { gender: 'K',
     origin: 'Greckie Eirene — bogini pokoju w mitologii greckiej', meaning: 'Pokój, spokój, harmonia',
     patron: 'Święta Irena z Tesaloniki, dziewica i męczennica (5 kwietnia)',
     extraDates: ['5 kwietnia','20 października'],
@@ -1641,8 +1587,7 @@ const NAME_DB = {
     diminutives: 'Irka, Irusia, Ira',
     foreign: 'ang. Irene, fr. Irène, niem. Irene, ros. Ирина, wł. Irene',
   },
-  'franciszek': {
-    count: '182 441', gender: 'M',
+  'franciszek': { gender: 'M',
     origin: 'Łacińskie Franciscus — „Francuz", od łac. Francus (mieszkaniec Francji)', meaning: 'Wolny, Francuz — imię nadane przez ojca Franciszka z Asyżu, który handlował z Francją',
     patron: 'Święty Franciszek z Asyżu (1181–1226), patron ekologów, zwierząt i biednych (4 października)',
     extraDates: ['4 października','2 października'],
@@ -1653,8 +1598,7 @@ const NAME_DB = {
     diminutives: 'Franek, Franuś, Frań',
     foreign: 'ang. Francis / Frank, fr. François, niem. Franz, ros. Франциск, wł. Francesco',
   },
-  'feliks': {
-    count: '39 182', gender: 'M',
+  'feliks': { gender: 'M',
     origin: 'Łacińskie felix — szczęśliwy, pomyślny, błogosławiony', meaning: 'Szczęśliwy, pomyślny',
     patron: 'Święty Feliks I, papież (14 maja); Święty Feliks z Noli, kapłan (14 stycznia)',
     extraDates: ['14 stycznia','14 maja'],
@@ -1665,8 +1609,7 @@ const NAME_DB = {
     diminutives: 'Feluś, Felek',
     foreign: 'ang. Felix, fr. Félix, niem. Felix, ros. Феликс, wł. Felice',
   },
-  'weronika': {
-    count: '175 320', gender: 'K',
+  'weronika': { gender: 'K',
     origin: 'Greckie Berenice (Berenike) — od phero (nieść) + nike (zwycięstwo); lub łac. vera icon (prawdziwy wizerunek)', meaning: 'Niosąca zwycięstwo / prawdziwy wizerunek',
     patron: 'Święta Weronika, która ocierała twarz Jezusa chustą (12 lipca)',
     extraDates: ['4 lutego','9 stycznia'],
@@ -1677,8 +1620,7 @@ const NAME_DB = {
     diminutives: 'Werka, Wera, Ronia',
     foreign: 'ang. Veronica, fr. Véronique, niem. Veronika, ros. Вероника',
   },
-  'malgorzata': {
-    count: '553 918', gender: 'K',
+  'malgorzata': { gender: 'K',
     origin: 'Greckie margarites — perła', meaning: 'Perła — symbol rzadkości, wartości i piękna',
     patron: 'Święta Małgorzata z Antiochii, dziewica i męczennica (20 lipca); Święta Małgorzata Szkocka (16 listopada)',
     extraDates: ['20 lipca','16 listopada'],
@@ -1689,8 +1631,7 @@ const NAME_DB = {
     diminutives: 'Małgosia, Gosia, Gosieńka, Gośka',
     foreign: 'ang. Margaret, fr. Marguerite, niem. Margarete, ros. Маргарита, wł. Margherita',
   },
-  'benedykt': {
-    count: '21 644', gender: 'M',
+  'benedykt': { gender: 'M',
     origin: 'Łacińskie Benedictus — błogosławiony, sławiony', meaning: 'Błogosławiony, ten, któremu życzono dobra',
     patron: 'Święty Benedykt z Nursji (480–547), ojciec zachodniej monastyki, patron Europy (21 marca)',
     extraDates: ['21 marca','11 lipca'],
@@ -1701,8 +1642,7 @@ const NAME_DB = {
     diminutives: 'Beniek, Benio, Beneś',
     foreign: 'ang. Benedict, fr. Benoît, niem. Benedikt, ros. Бенедикт, wł. Benedetto',
   },
-  'cecylia': {
-    count: '52 870', gender: 'K',
+  'cecylia': { gender: 'K',
     origin: 'Łacińskie — żeńska forma od Caecilius; możliwe od caecus (niewidoma) lub od etruskiego rodu Caecilii', meaning: 'Ślepa / z rodu Cecyliuszów — paradoksalnie jej patronka widziała najpiękniejszą muzykę duszą',
     patron: 'Święta Cecylia Rzymianka, patronka muzyków i kompozytorów (22 listopada)',
     extraDates: ['22 listopada'],
@@ -1713,8 +1653,7 @@ const NAME_DB = {
     diminutives: 'Cesia, Cecylka',
     foreign: 'ang. Cecilia / Cecily, fr. Cécile, niem. Cäcilia, ros. Цецилия, wł. Cecilia',
   },
-  'wanda': {
-    count: '159 430', gender: 'K',
+  'wanda': { gender: 'K',
     origin: 'Staropolskie / słowiańskie — możliwe od Wandalów lub od słow. rdzenia wen- (pragnienie, chęć)', meaning: 'Ta, która rozchodzi się po świecie / wojowniczka — legendarny charakter',
     patron: 'Legendarna księżniczka Wanda, córka Kraka, patronka Krakowa',
     extraDates: ['23 czerwca','9 grudnia'],
@@ -1725,8 +1664,7 @@ const NAME_DB = {
     diminutives: 'Wandzia, Wandeczka',
     foreign: 'ang. Wanda, fr. Vanda, niem. Wanda, ros. Ванда',
   },
-  'filip': {
-    count: '229 445', gender: 'M',
+  'filip': { gender: 'M',
     origin: 'Greckie Philippos: philos (przyjaciel, miłośnik) + hippos (koń)', meaning: 'Miłośnik koni / przyjaciel koni',
     patron: 'Święty Filip Apostoł (3 maja, 11 maja), Święty Filip Nereusz (26 maja)',
     extraDates: ['3 maja','11 maja','26 maja'],
@@ -1737,8 +1675,7 @@ const NAME_DB = {
     diminutives: 'Filipek, Felek',
     foreign: 'ang. Philip, fr. Philippe, niem. Philipp, ros. Филипп, wł. Filippo',
   },
-  'szymon': {
-    count: '152 660', gender: 'M',
+  'szymon': { gender: 'M',
     origin: 'Hebrajskie Shimeon — od shama (słyszeć, wysłuchać)', meaning: '„Bóg wysłuchał" / ten, który słyszy',
     patron: 'Święty Szymon Apostoł Zelota (28 października)',
     extraDates: ['28 października','18 lutego','18 lipca'],
@@ -1749,8 +1686,7 @@ const NAME_DB = {
     diminutives: 'Szymek, Szymuś',
     foreign: 'ang. Simon, fr. Simon, niem. Simon, ros. Симон, wł. Simone',
   },
-  'leon': {
-    count: '49 872', gender: 'M',
+  'leon': { gender: 'M',
     origin: 'Łacińskie Leo, greckie Leon — lew', meaning: 'Lew — symbol siły, odwagi i królewskości',
     patron: 'Święty Leon I Wielki, papież i doktor Kościoła (10 listopada)',
     extraDates: ['10 listopada','28 lutego','11 kwietnia'],
@@ -1761,8 +1697,7 @@ const NAME_DB = {
     diminutives: 'Leonek, Leonuś',
     foreign: 'ang. Leo / Leon, fr. Léon, niem. Leon / Leo, ros. Лев / Леон, wł. Leone',
   },
-  'amelia': {
-    count: '136 842', gender: 'K',
+  'amelia': { gender: 'K',
     origin: 'Germańskie Amalberga — od amal (praca, trud) lub od rodu Amalów; możliwe też łac. aemulus (starający się dorównać)', meaning: 'Pracowita / rywalizująca z innymi',
     patron: 'Święta Amelia (Amalberga) z Temblandii (10 lipca)',
     extraDates: ['10 lipca','9 stycznia'],
@@ -1773,8 +1708,7 @@ const NAME_DB = {
     diminutives: 'Amelka, Mela, Milka',
     foreign: 'ang. Amelia / Emily, fr. Amélie, niem. Amalie / Amelie, ros. Амелия',
   },
-  'roman': {
-    count: '230 416', gender: 'M',
+  'roman': { gender: 'M',
     origin: 'Łacińskie Romanus — „Rzymianin", od Roma (Rzym)', meaning: 'Obywatel Rzymu / silny jak Rzym',
     patron: 'Święty Roman Ostiarius, diakon, męczennik (9 sierpnia)',
     extraDates: ['9 sierpnia','23 lutego','28 lutego'],
@@ -1785,8 +1719,7 @@ const NAME_DB = {
     diminutives: 'Romek, Romuś',
     foreign: 'ang. Roman, fr. Romain, niem. Roman, ros. Роман, wł. Romano',
   },
-  'stefan': {
-    count: '283 120', gender: 'M',
+  'stefan': { gender: 'M',
     origin: 'Greckie Stephanos — wieniec, korona', meaning: 'Uwieńczony / noszący koronę',
     patron: 'Święty Stefan, pierwszy chrześcijański męczennik, diakon (26 grudnia)',
     extraDates: ['26 grudnia','16 sierpnia'],
@@ -1797,8 +1730,7 @@ const NAME_DB = {
     diminutives: 'Stefek, Stefcio',
     foreign: 'ang. Stephen / Steven, fr. Étienne, niem. Stefan, ros. Степан, wł. Stefano',
   },
-  'wiktoria': {
-    count: '118 340', gender: 'K',
+  'wiktoria': { gender: 'K',
     origin: 'Łacińskie Victoria — bogini zwycięstwa w mitologii rzymskiej', meaning: 'Zwycięstwo, triumf',
     patron: 'Święta Wiktoria z Kordoby, dziewica i męczennica (17 listopada)',
     extraDates: ['17 listopada'],
@@ -1809,8 +1741,7 @@ const NAME_DB = {
     diminutives: 'Wika, Wicia, Wikta',
     foreign: 'ang. Victoria, fr. Victoire, niem. Victoria / Viktoria, ros. Виктория, wł. Vittoria',
   },
-  'gabriel': {
-    count: '77 232', gender: 'M',
+  'gabriel': { gender: 'M',
     origin: 'Hebrajskie: Gavriel — gabri (mój bohater) + el (Bóg)', meaning: '„Bóg jest moją mocą" — imię Archanioła',
     patron: 'Archanioł Gabriel, posłaniec Boży, zwiastun Narodzenia Pańskiego (29 września)',
     extraDates: ['29 września','24 marca','27 lutego'],
@@ -1821,8 +1752,7 @@ const NAME_DB = {
     diminutives: 'Gabryś, Gabi',
     foreign: 'ang. Gabriel, fr. Gabriel, niem. Gabriel, ros. Гавриил, wł. Gabriele',
   },
-  'krystyna': {
-    count: '270 430', gender: 'K',
+  'krystyna': { gender: 'K',
     origin: 'Łacińskie Christiana — żeńska forma Christianus (chrześcijanka)', meaning: 'Chrześcijanka / naśladowczyni Chrystusa',
     patron: 'Święta Krystyna z Bolseny, dziewica i męczennica (24 lipca)',
     extraDates: ['24 lipca','13 marca'],
@@ -1833,8 +1763,7 @@ const NAME_DB = {
     diminutives: 'Krysia, Krysieńka',
     foreign: 'ang. Christina / Christine, fr. Christine, niem. Christina, ros. Кристина',
   },
-  'klaudia': {
-    count: '97 834', gender: 'K',
+  'klaudia': { gender: 'K',
     origin: 'Łacińskie Claudia — żeńska forma od Claudius, rodu Klaudiuszów; od claudus (kulawy)', meaning: 'Z rodu Klaudiuszów / paradoksalnie: imię symbolizuje wytrwałość mimo słabości',
     patron: 'Błogosławiona Klaudia, dziewica (20 marca)',
     extraDates: ['20 marca'],
@@ -1845,8 +1774,7 @@ const NAME_DB = {
     diminutives: 'Klausia, Klaudia',
     foreign: 'ang. Claudia, fr. Claudie, niem. Claudia, ros. Клавдия, wł. Claudia',
   },
-  'dawid': {
-    count: '187 316', gender: 'M',
+  'dawid': { gender: 'M',
     origin: 'Hebrajskie Dawid — ukochany, umiłowany', meaning: '„Umiłowany Boży" — król, wojownik i poeta',
     patron: 'Król Dawid, psalmista (29 grudnia); Święty Dawid, patron Walii (1 marca)',
     extraDates: ['29 grudnia','1 marca'],
@@ -1857,8 +1785,7 @@ const NAME_DB = {
     diminutives: 'Dawidek',
     foreign: 'ang. David, fr. David, niem. David, ros. Давид, wł. Davide',
   },
-  'beata': {
-    count: '129 470', gender: 'K',
+  'beata': { gender: 'K',
     origin: 'Łacińskie beata — błogosławiona, szczęśliwa', meaning: 'Błogosławiona, szczęśliwa, spełniona',
     patron: 'Błogosławiona Beata (13 marca)',
     extraDates: ['13 marca'],
@@ -1869,8 +1796,7 @@ const NAME_DB = {
     diminutives: 'Beatka, Becia',
     foreign: 'ang. Beatrice / Beata, fr. Béate, niem. Beata, ros. Беата',
   },
-  'konrad': {
-    count: '89 122', gender: 'M',
+  'konrad': { gender: 'M',
     origin: 'Germańskie Konrad: kuoni (odważny, śmiały) + rad (rada, mądrość)', meaning: 'Odważny doradca / śmiała rada',
     patron: 'Święty Konrad z Piacenzy, pustelnik (19 lutego)',
     extraDates: ['19 lutego','21 kwietnia'],
@@ -1881,8 +1807,7 @@ const NAME_DB = {
     diminutives: 'Konradek, Kuno',
     foreign: 'ang. Conrad, fr. Conrad, niem. Konrad, ros. Конрад',
   },
-  'urszula': {
-    count: '118 653', gender: 'K',
+  'urszula': { gender: 'K',
     origin: 'Łacińskie ursula — niedźwiedzica (zdrobnienie od ursa)', meaning: 'Mała niedźwiedzica — symbol siły i macierzyńskiej miłości',
     patron: 'Święta Urszula Ledóchowska (29 maja), Święta Urszula z Kolonii z 11 tysiącami towarzyszek (21 października)',
     extraDates: ['21 października','29 maja'],
@@ -1893,8 +1818,7 @@ const NAME_DB = {
     diminutives: 'Ula, Ulka, Urszulka',
     foreign: 'ang. Ursula, fr. Ursule, niem. Ursula, ros. Урсула, wł. Orsola',
   },
-  'emilia': {
-    count: '162 338', gender: 'K',
+  'emilia': { gender: 'K',
     origin: 'Łacińskie Aemilia — żeńska forma od rodu Emiliuszów (aemulus — rywalizujący, gorliwy)', meaning: 'Starająca się dorównać / gorliwa / z rodu Emiliuszów',
     patron: 'Błogosławiona Emilia de Vialar (24 sierpnia)',
     extraDates: ['22 maja','19 września'],
@@ -1905,8 +1829,7 @@ const NAME_DB = {
     diminutives: 'Emilka, Mila, Emia',
     foreign: 'ang. Emily / Emilia, fr. Émilie, niem. Emilia / Emilie, ros. Эмилия',
   },
-  'jadwiga': {
-    count: '136 212', gender: 'K',
+  'jadwiga': { gender: 'K',
     origin: 'Germańskie Hedwig: hadu (bitwa, walka) + wig (walka, bojownik)', meaning: 'Wojowniczka / walcząca — historyczne imię polskich królowych',
     patron: 'Święta Jadwiga Królowa Polski (17 lipca), Święta Jadwiga Śląska (16 października)',
     extraDates: ['16 października','17 lipca'],
@@ -1917,8 +1840,7 @@ const NAME_DB = {
     diminutives: 'Jadzia, Jadzieńka, Wisia',
     foreign: 'ang. Hedwig / Jadwiga, fr. Hedwige, niem. Hedwig',
   },
-  'teresa': {
-    count: '210 540', gender: 'K',
+  'teresa': { gender: 'K',
     origin: 'Greckie — od Therasia (wyspa koło Krety) lub od theros (lato, żniwa)', meaning: 'Kobieta z Therasy / letnia / zbierająca żniwa',
     patron: 'Święta Teresa z Ávili (15 października), doktor Kościoła; Święta Teresa z Lisieux (1 października)',
     extraDates: ['15 października','1 października'],
@@ -1929,8 +1851,7 @@ const NAME_DB = {
     diminutives: 'Tereska, Terenia, Tesia',
     foreign: 'ang. Teresa / Theresa, fr. Thérèse, niem. Theresia, ros. Тереза, wł. Teresa',
   },
-  'anastazja': {
-    count: '14 330', gender: 'K',
+  'anastazja': { gender: 'K',
     origin: 'Greckie Anastasia — od anastasis (zmartwychwstanie)', meaning: 'Zmartwychwstała / ta, która powstaje z martwych',
     patron: 'Święta Anastazja Rzymianka, siostrzennica Nerona, męczennica (25 grudnia)',
     extraDates: ['25 grudnia','15 lutego','4 maja'],
@@ -1941,8 +1862,7 @@ const NAME_DB = {
     diminutives: 'Nastia, Anastazka',
     foreign: 'ang. Anastasia, fr. Anastasie, niem. Anastasia, ros. Анастасия',
   },
-  'ignacy': {
-    count: '55 780', gender: 'M',
+  'ignacy': { gender: 'M',
     origin: 'Łacińskie Ignatius — możliwe od ignis (ogień) lub od etruskiego imienia Egnatius', meaning: 'Ognisty / żarliwy — płonący duchem',
     patron: 'Święty Ignacy Loyola (31 lipca), założyciel jezuitów; Święty Ignacy z Antiochii (17 października)',
     extraDates: ['31 lipca','17 października','1 lutego'],
@@ -1953,8 +1873,7 @@ const NAME_DB = {
     diminutives: 'Ignaś, Ignacek',
     foreign: 'ang. Ignatius, fr. Ignace, niem. Ignaz, ros. Игнатий, wł. Ignazio',
   },
-  'kamila': {
-    count: '158 440', gender: 'K',
+  'kamila': { gender: 'K',
     origin: 'Łacińskie Camilla — szlachetnie urodzona dziewczyna, pomocnica kapłana; po arabsku: doskonała', meaning: 'Szlachetna dziewica / pomocnica świątyni / doskonała',
     patron: 'Święta Kamila, patronka sług Bożych (14 maja)',
     extraDates: ['14 maja','31 maja'],
@@ -1965,8 +1884,7 @@ const NAME_DB = {
     diminutives: 'Kamilka, Mila',
     foreign: 'ang. Camilla, fr. Camille, niem. Kamilla, wł. Camilla',
   },
-  'augustyn': {
-    count: '20 444', gender: 'M',
+  'augustyn': { gender: 'M',
     origin: 'Łacińskie Augustinus — zdrobnienie od Augustus (czcigodny, majestatyczny)', meaning: 'Czcigodny, majestatyczny — mały August',
     patron: 'Święty Augustyn z Hippony (354–430), wybitny filozof i doktor Kościoła (28 sierpnia)',
     extraDates: ['28 sierpnia'],
@@ -1977,8 +1895,7 @@ const NAME_DB = {
     diminutives: 'Auguś, Gustek',
     foreign: 'ang. Augustine / Austin, fr. Augustin, niem. Augustin, ros. Августин, wł. Agostino',
   },
-  'wawrzyniec': {
-    count: '27 850', gender: 'M',
+  'wawrzyniec': { gender: 'M',
     origin: 'Łacińskie Laurentius — „człowiek z Laurentum" (miasto w Lacjum, gdzie rosły laury)', meaning: 'Uwieńczony laurem / zwycięzca',
     patron: 'Święty Wawrzyniec, diakon i męczennik, patron Krakowa (10 sierpnia)',
     extraDates: ['10 sierpnia'],
@@ -1989,8 +1906,7 @@ const NAME_DB = {
     diminutives: 'Wawrzek, Wawrek',
     foreign: 'ang. Lawrence / Laurence, fr. Laurent, niem. Laurenz, ros. Лаврентий, wł. Lorenzo',
   },
-  'jacek': {
-    count: '299 450', gender: 'M',
+  'jacek': { gender: 'M',
     origin: 'Łacińskie Hyacinthus — od greckiego hyakinthos (hiacynt, szlachetny kamień)', meaning: 'Hiacynt — kwiat piękna i aromatyczny',
     patron: 'Święty Jacek Odrowąż (1185–1257), dominikanin, Apostoł Słowian (17 sierpnia)',
     extraDates: ['17 sierpnia','10 lutego'],
@@ -2001,8 +1917,7 @@ const NAME_DB = {
     diminutives: 'Jacuś, Jaceczek',
     foreign: 'ang. Hyacinth, fr. Hyacinthe, niem. Hyazinth, ros. Гиацинт',
   },
-  'kazimierz': {
-    count: '214 782', gender: 'M',
+  'kazimierz': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: kazić (niszczyć, karać) + mir (pokój, świat)', meaning: 'Niosący pokój / karzący wrogów dla pokoju',
     patron: 'Święty Kazimierz Jagiellończyk (1458–1484), patron Polski i Litwy (4 marca)',
     extraDates: ['4 marca'],
@@ -2013,8 +1928,7 @@ const NAME_DB = {
     diminutives: 'Kazik, Kazimierczyk',
     foreign: 'ang. Casimir, fr. Casimir, niem. Kasimir, ros. Казимир',
   },
-  'zuzanna': {
-    count: '100 228', gender: 'K',
+  'zuzanna': { gender: 'K',
     origin: 'Hebrajskie Shoshanah — lilia, różany kwiat', meaning: 'Lilia, różany kwiat — piękna i czysta',
     patron: 'Święta Zuzanna, biblijna bohaterka zachowana przez Daniela (11 sierpnia)',
     extraDates: ['11 sierpnia','24 maja'],
@@ -2025,8 +1939,7 @@ const NAME_DB = {
     diminutives: 'Zuzia, Zuzka, Zuzunia',
     foreign: 'ang. Susanna / Susan, fr. Suzanne, niem. Susanne, ros. Сусанна',
   },
-  'florian': {
-    count: '65 554', gender: 'M',
+  'florian': { gender: 'M',
     origin: 'Łacińskie Florianus — od flos/floris (kwiat)', meaning: 'Kwitnący, pełen rozkwitu',
     patron: 'Święty Florian, patron strażaków i ochrony przed pożarami (4 maja)',
     extraDates: ['4 maja'],
@@ -2037,8 +1950,7 @@ const NAME_DB = {
     diminutives: 'Florek, Florcio',
     foreign: 'ang. Florian, fr. Florian, niem. Florian, ros. Флориан',
   },
-  'julia': {
-    count: '202 416', gender: 'K',
+  'julia': { gender: 'K',
     origin: 'Łacińskie Julia — żeńska forma od Juliusza, rodu Juliuszów; od Julus (syn Eneasza)', meaning: 'Z rodu Juliuszów / miękka, puchata — symbol młodości i wiosenności',
     patron: 'Święta Julia z Kartaginy, dziewica i męczennica (22 maja)',
     extraDates: ['22 maja'],
@@ -2049,8 +1961,7 @@ const NAME_DB = {
     diminutives: 'Julka, Julcia',
     foreign: 'ang. Julia / Julie, fr. Julie, niem. Julia, ros. Юлия, wł. Giulia',
   },
-  'helena': {
-    count: '196 840', gender: 'K',
+  'helena': { gender: 'K',
     origin: 'Greckie Helene — od helene (pochodnia, blask) lub od Hellas (Grecja)', meaning: 'Lśniąca, promienna — piękna jak trojańska Helena',
     patron: 'Święta Helena, matka cesarza Konstantyna, odkrywczyni Krzyża Świętego (18 sierpnia)',
     extraDates: ['18 sierpnia','4 marca'],
@@ -2061,8 +1972,7 @@ const NAME_DB = {
     diminutives: 'Hela, Helenka, Helka',
     foreign: 'ang. Helen / Helena, fr. Hélène, niem. Helena / Helene, ros. Елена / Алёна',
   },
-  'wladyslaw': {
-    count: '215 340', gender: 'M',
+  'wladyslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: władać (władza) + sław (chwała, sława)', meaning: 'Sławny z władzy / ten, który zdobywa sławę rządzeniem',
     patron: 'Święty Władysław, król Węgier (27 czerwca)',
     extraDates: ['27 czerwca'],
@@ -2073,8 +1983,7 @@ const NAME_DB = {
     diminutives: 'Władek, Władeczek, Władysławek',
     foreign: 'ang. Ladislas, fr. Ladislas, niem. Ladislaus, ros. Владислав',
   },
-  'ryszard': {
-    count: '210 448', gender: 'M',
+  'ryszard': { gender: 'M',
     origin: 'Germańskie Richard: ric (potężny, bogaty) + hard (silny, twardy)', meaning: 'Silny władca / mocny jak skała',
     patron: 'Święty Ryszard z Chichester (3 kwietnia)',
     extraDates: ['3 kwietnia','7 lutego'],
@@ -2085,8 +1994,7 @@ const NAME_DB = {
     diminutives: 'Rysiek, Rychu, Rysio',
     foreign: 'ang. Richard, fr. Richard, niem. Richard, ros. Ричард',
   },
-  'waleria': {
-    count: '40 120', gender: 'K',
+  'waleria': { gender: 'K',
     origin: 'Łacińskie Valeria — żeńska forma od Valerius; od valere (być silnym, zdrowym)', meaning: 'Silna, zdrowa, wartościowa',
     patron: 'Święta Waleria z Limoges, patronka Akwitanii (9 grudnia)',
     extraDates: ['9 grudnia','28 kwietnia'],
@@ -2097,8 +2005,7 @@ const NAME_DB = {
     diminutives: 'Walcia, Walusia',
     foreign: 'ang. Valerie / Valeria, fr. Valérie, niem. Valeria, ros. Валерия',
   },
-  'sylwester': {
-    count: '74 330', gender: 'M',
+  'sylwester': { gender: 'M',
     origin: 'Łacińskie Silvester — od silva (las)', meaning: 'Leśnik, mieszkaniec lasu — bliski naturze',
     patron: 'Święty Sylwester I, papież (31 grudnia) — jego dzień zbiegł się z sylwestrem',
     extraDates: ['31 grudnia'],
@@ -2109,8 +2016,7 @@ const NAME_DB = {
     diminutives: 'Sylwek, Sylwuś',
     foreign: 'ang. Sylvester, fr. Sylvestre, niem. Silvester, ros. Сильвестр',
   },
-  'edyta': {
-    count: '102 768', gender: 'K',
+  'edyta': { gender: 'K',
     origin: 'Angielskie Edith — od anglos. ead (bogactwo, majątek) + gyth (walka)', meaning: 'Bogata w walce / szczęśliwa wojowniczka',
     patron: 'Święta Edyta ze Wilton (16 września), córka angielskiego króla',
     extraDates: ['16 września'],
@@ -2121,8 +2027,7 @@ const NAME_DB = {
     diminutives: 'Edytka, Edit',
     foreign: 'ang. Edith, fr. Édith, niem. Edith, ros. Эдита',
   },
-  'wincenty': {
-    count: '98 452', gender: 'M',
+  'wincenty': { gender: 'M',
     origin: 'Łacińskie Vincentius — od vincere (zwyciężać)', meaning: 'Zwycięzca / ten, który zwycięża',
     patron: 'Święty Wincenty à Paulo (27 września), patron dzieł miłosierdzia; Święty Wincenty Pallotti (22 stycznia)',
     extraDates: ['22 stycznia','27 września'],
@@ -2133,8 +2038,7 @@ const NAME_DB = {
     diminutives: 'Wicek, Wicio, Wincentek',
     foreign: 'ang. Vincent, fr. Vincent, niem. Vinzenz, ros. Викентий, wł. Vincenzo',
   },
-  'halina': {
-    count: '338 640', gender: 'K',
+  'halina': { gender: 'K',
     origin: 'Greckie Haline lub Helena — od helene (blask); możliwe też staropolskie zdrobnienie Heleny', meaning: 'Jasna, promienna / blask księżyca',
     patron: 'Święta Helena — patronka imienia (18 sierpnia)',
     extraDates: ['18 sierpnia'],
@@ -2145,8 +2049,7 @@ const NAME_DB = {
     diminutives: 'Halka, Halinka, Hala',
     foreign: 'ang. Helena / Halina, fr. Hélène, niem. Halina',
   },
-  'daria': {
-    count: '91 254', gender: 'K',
+  'daria': { gender: 'K',
     origin: 'Greckie / perskie — żeńska forma od Dariusz (Dareios); od perskiego daraya (posiadać) + vahu (dobro)', meaning: 'Posiadająca dobro / zamożna',
     patron: 'Święta Daria z Nikomedii, męczennica (25 października)',
     extraDates: ['25 października'],
@@ -2157,8 +2060,7 @@ const NAME_DB = {
     diminutives: 'Darka, Daria',
     foreign: 'ang. Daria, fr. Daria, niem. Daria, ros. Дарья',
   },
-  'angela': {
-    count: '38 220', gender: 'K',
+  'angela': { gender: 'K',
     origin: 'Greckie / łacińskie angelus (posłaniec, anioł)', meaning: 'Anioł, posłaniec — symbol dobroci, łagodności i opieki',
     patron: 'Święta Angela Merici (27 stycznia), założycielka urszulanek',
     extraDates: ['27 stycznia'],
@@ -2169,8 +2071,7 @@ const NAME_DB = {
     diminutives: 'Ania, Anielka, Gela',
     foreign: 'ang. Angela, fr. Angèle, niem. Angela, ros. Анжела, wł. Angela',
   },
-  'zefir': {
-    count: '1 200', gender: 'M',
+  'zefir': { gender: 'M',
     origin: 'Greckie Zephyros — bóg zachodniego wiatru w mitologii greckiej', meaning: 'Zachodni wiatr / łagodna bryza — symbol wiosny i lekkości',
     patron: 'Nie ma powszechnie uznanego patrona; imię nawiązuje do boga wiatru',
     extraDates: ['26 sierpnia','16 grudnia'],
@@ -2181,8 +2082,7 @@ const NAME_DB = {
     diminutives: 'Zefirek',
     foreign: 'ang. Zephyr, fr. Zéphyr, niem. Zephir, ros. Зефир',
   },
-  'kazimiera': {
-    count: '196 870', gender: 'K',
+  'kazimiera': { gender: 'K',
     origin: 'Staropolskie — żeńska forma imienia Kazimierz', meaning: 'Niosąca pokój / karzącą wrogów dla pokoju',
     patron: 'Święty Kazimierz — patronuje imioninom kobiecej formy (4 marca)',
     extraDates: ['4 marca'],
@@ -2193,8 +2093,7 @@ const NAME_DB = {
     diminutives: 'Kazia, Kaziuchna',
     foreign: 'ang. Casimira, fr. Casimire, ros. Казимира',
   },
-  'rozalia': {
-    count: '28 440', gender: 'K',
+  'rozalia': { gender: 'K',
     origin: 'Łacińskie Rosalia — od rosa (róża)', meaning: 'Różana / pełna róż — symbol piękna i wdzięku',
     patron: 'Święta Rozalia z Palermo, pustelnicy (4 września)',
     extraDates: ['4 września'],
@@ -2205,8 +2104,7 @@ const NAME_DB = {
     diminutives: 'Rozalka, Rozia',
     foreign: 'ang. Rosalie / Rosalia, fr. Rosalie, niem. Rosalie, ros. Розалия',
   },
-  'agata': {
-    count: '163 440', gender: 'K',
+  'agata': { gender: 'K',
     origin: 'Greckie agathe — dobra, szlachetna', meaning: 'Dobra, szlachetna, uczciwa',
     patron: 'Święta Agata z Katanii, dziewica i męczennica (5 lutego), patronka kobiet z chorobami piersi',
     extraDates: ['5 lutego'],
@@ -2217,8 +2115,7 @@ const NAME_DB = {
     diminutives: 'Agatka, Agatusia',
     foreign: 'ang. Agatha, fr. Agathe, niem. Agathe, ros. Агата',
   },
-  'aleksander': {
-    count: '211 780', gender: 'M',
+  'aleksander': { gender: 'M',
     origin: 'Greckie Alexandros: alexein (bronić, odpierać) + aner/andros (mężczyzna)', meaning: 'Obrońca ludzi / ten, który broni mężczyzn',
     patron: 'Święty Aleksander I, papież i męczennik (3 maja)',
     extraDates: ['3 maja','26 lutego','10 marca'],
@@ -2229,8 +2126,7 @@ const NAME_DB = {
     diminutives: 'Alek, Olek, Oluś, Oleś',
     foreign: 'ang. Alexander, fr. Alexandre, niem. Alexander, ros. Александр, wł. Alessandro',
   },
-  'aleksy': {
-    count: '18 220', gender: 'M',
+  'aleksy': { gender: 'M',
     origin: 'Greckie Alexios — od alexein (bronić, pomagać)', meaning: 'Obrońca, pomocnik',
     patron: 'Święty Aleksy, wyznawca, patron ubogich i pielgrzymów (17 lutego)',
     extraDates: ['17 lutego'],
@@ -2241,8 +2137,7 @@ const NAME_DB = {
     diminutives: 'Oluś, Aleksek',
     foreign: 'ang. Alexis, fr. Alexis, niem. Alexius, ros. Алексей',
   },
-  'alicja': {
-    count: '199 340', gender: 'K',
+  'alicja': { gender: 'K',
     origin: 'Germańskie Adalheidis: adal (szlachetny) + heid (rodzaj, natura) — przez franc. Alice', meaning: 'Szlachetna z natury',
     patron: 'Święta Alicja (dawna forma Adelajdy)',
     extraDates: ['24 czerwca'],
@@ -2253,8 +2148,7 @@ const NAME_DB = {
     diminutives: 'Ala, Alka, Alusia',
     foreign: 'ang. Alice / Alicia, fr. Alice, niem. Alice / Alicia, ros. Алиса',
   },
-  'damian': {
-    count: '188 650', gender: 'M',
+  'damian': { gender: 'M',
     origin: 'Greckie Damianos — od damazo (pokonywać, oswajać) lub od Damia (bogini żyzności)', meaning: 'Oswajający, poskramiający / związany z boginią ziemi',
     patron: 'Święci Kosma i Damian, bezpłatni lekarze-męczennicy, patroni medycyny (26 września)',
     extraDates: ['26 września','12 lutego'],
@@ -2265,8 +2159,7 @@ const NAME_DB = {
     diminutives: 'Damianek, Damek',
     foreign: 'ang. Damian, fr. Damien, niem. Damian, ros. Дамиан',
   },
-  'daniel': {
-    count: '264 110', gender: 'M',
+  'daniel': { gender: 'M',
     origin: 'Hebrajskie: dan (sędzia) + el (Bóg)', meaning: '„Bóg jest moim sędzią" — imię biblijnego proroka',
     patron: 'Prorok Daniel, patron duchownych i jeńców (11 grudnia)',
     extraDates: ['11 grudnia','21 lipca','16 lutego'],
@@ -2277,8 +2170,7 @@ const NAME_DB = {
     diminutives: 'Danek, Danielek',
     foreign: 'ang. Daniel, fr. Daniel, niem. Daniel, ros. Даниил, wł. Daniele',
   },
-  'dominik': {
-    count: '183 228', gender: 'M',
+  'dominik': { gender: 'M',
     origin: 'Łacińskie Dominicus — od dominus (Pan, władca)', meaning: 'Należący do Pana / poświęcony Bogu',
     patron: 'Święty Dominik Guzmán (1170–1221), założyciel zakonu dominikanów (8 sierpnia)',
     extraDates: ['8 sierpnia','4 maja'],
@@ -2289,8 +2181,7 @@ const NAME_DB = {
     diminutives: 'Domek, Dominiczek',
     foreign: 'ang. Dominic, fr. Dominique, niem. Dominikus, ros. Доминик, wł. Domenico',
   },
-  'edward': {
-    count: '246 114', gender: 'M',
+  'edward': { gender: 'M',
     origin: 'Anglosakońskie Eadweard: ead (bogactwo, majątek) + weard (strażnik, opiekun)', meaning: 'Strażnik bogactwa / opiekun majątku',
     patron: 'Święty Edward Wyznawca, król Anglii (13 października)',
     extraDates: ['13 października','18 marca'],
@@ -2301,8 +2192,7 @@ const NAME_DB = {
     diminutives: 'Edek, Edwardek',
     foreign: 'ang. Edward, fr. Édouard, niem. Eduard, ros. Эдуард',
   },
-  'emil': {
-    count: '113 440', gender: 'M',
+  'emil': { gender: 'M',
     origin: 'Łacińskie Aemilius — od rodu Emiliuszów; od aemulus (starający się dorównać, gorliwy)', meaning: 'Gorliwy, ambitny / rywalizujący',
     patron: 'Błogosławiony Emil Szramek, kapłan i męczennik (30 maja)',
     extraDates: ['22 maja','30 maja'],
@@ -2313,8 +2203,7 @@ const NAME_DB = {
     diminutives: 'Emilczyk, Emilek',
     foreign: 'ang. Emil / Emile, fr. Émile, niem. Emil, ros. Эмиль, wł. Emilio',
   },
-  'eugenia': {
-    count: '88 660', gender: 'K',
+  'eugenia': { gender: 'K',
     origin: 'Greckie Eugenia — żeńska forma Eugeniusza; od eu (dobrze) + genos (ród, urodzenie)', meaning: 'Szlachetnie urodzona / dobrze urodzona',
     patron: 'Święta Eugenia, dziewica i męczennica (25 grudnia)',
     extraDates: ['25 grudnia','6 września'],
@@ -2325,8 +2214,7 @@ const NAME_DB = {
     diminutives: 'Genia, Eniusia',
     foreign: 'ang. Eugenia, fr. Eugénie, niem. Eugenia, ros. Евгения',
   },
-  'fabian': {
-    count: '46 320', gender: 'M',
+  'fabian': { gender: 'M',
     origin: 'Łacińskie Fabianus — od rodu Fabiuszów; możliwe od faba (bób)', meaning: 'Z rodu Fabiuszów / uprawiający bób',
     patron: 'Święty Fabian, papież i męczennik (20 stycznia)',
     extraDates: ['20 stycznia'],
@@ -2337,8 +2225,7 @@ const NAME_DB = {
     diminutives: 'Fabek, Fabianek',
     foreign: 'ang. Fabian, fr. Fabien, niem. Fabian, ros. Фабиан',
   },
-  'felicja': {
-    count: '29 880', gender: 'K',
+  'felicja': { gender: 'K',
     origin: 'Łacińskie Felix — szczęśliwy; żeńska forma Felicja', meaning: 'Szczęśliwa, pomyślna, błogosławiona',
     patron: 'Święta Felicja, męczennica (24 stycznia)',
     extraDates: ['24 stycznia'],
@@ -2349,8 +2236,7 @@ const NAME_DB = {
     diminutives: 'Felka, Felusia',
     foreign: 'ang. Felicia, fr. Félicia, niem. Felicia, ros. Феличия',
   },
-  'franciszka': {
-    count: '194 550', gender: 'K',
+  'franciszka': { gender: 'K',
     origin: 'Łacińskie Francisca — żeńska forma Franciszka', meaning: 'Wolna, Francuzka — kobieca forma Franciszka',
     patron: 'Święta Franciszka Romana (9 marca), patronka kierowców',
     extraDates: ['9 marca','22 grudnia'],
@@ -2361,8 +2247,7 @@ const NAME_DB = {
     diminutives: 'Frania, Franusia, Franciszeczka',
     foreign: 'ang. Frances / Francisca, fr. Françoise, niem. Franziska, ros. Франческа',
   },
-  'hanna': {
-    count: '175 430', gender: 'K',
+  'hanna': { gender: 'K',
     origin: 'Hebrajskie Hannah — od hanan (łaska, wdzięk, miłosierdzie)', meaning: 'Łaska Boża / pełna wdzięku',
     patron: 'Święta Anna, matka Samuela, biblijna wzorzec modlitwy (2 marca)',
     extraDates: ['26 lipca','2 marca'],
@@ -2373,8 +2258,7 @@ const NAME_DB = {
     diminutives: 'Hania, Hanieczka',
     foreign: 'ang. Hannah, fr. Hannah, niem. Hanna, ros. Ханна',
   },
-  'hieronim': {
-    count: '23 440', gender: 'M',
+  'hieronim': { gender: 'M',
     origin: 'Greckie Hieronymos: hieros (święty) + onoma (imię)', meaning: 'Noszący święte imię / człowiek o świętym imieniu',
     patron: 'Święty Hieronim ze Strydonu (347–420), doktor Kościoła, tłumacz Biblii (Wulgata) (30 września)',
     extraDates: ['30 września'],
@@ -2385,8 +2269,7 @@ const NAME_DB = {
     diminutives: 'Hieronimek',
     foreign: 'ang. Jerome, fr. Jérôme, niem. Hieronymus, ros. Иероним, wł. Girolamo',
   },
-  'hubert': {
-    count: '83 340', gender: 'M',
+  'hubert': { gender: 'M',
     origin: 'Germańskie Hugibert: hug (myśl, duch, serce) + beraht (jasny, świetlany)', meaning: 'Jaśniejący duchem / mający świetlany umysł',
     patron: 'Święty Hubert z Liège (656–727), patron myśliwych i leśników (3 listopada)',
     extraDates: ['3 listopada'],
@@ -2397,8 +2280,7 @@ const NAME_DB = {
     diminutives: 'Huberek, Hubek',
     foreign: 'ang. Hubert, fr. Hubert, niem. Hubert, ros. Губерт',
   },
-  'izabela': {
-    count: '233 780', gender: 'K',
+  'izabela': { gender: 'K',
     origin: 'Hebrajskie Elisheba przez łac. Isabella — forma Elżbiety na Półwyspie Iberyjskim', meaning: 'Bóg moją przysięgą / poświęcona Bogu',
     patron: 'Błogosławiona Izabela Francuska (22 lutego)',
     extraDates: ['22 lutego','5 lutego'],
@@ -2409,8 +2291,7 @@ const NAME_DB = {
     diminutives: 'Iza, Izka, Isia',
     foreign: 'ang. Isabella / Isabel, fr. Isabelle, niem. Isabella, ros. Изабелла, hiszp. Isabel',
   },
-  'izydor': {
-    count: '27 650', gender: 'M',
+  'izydor': { gender: 'M',
     origin: 'Greckie Isidoros: Isis (bogini egipska) + doron (dar)', meaning: 'Dar Izydy / dar bogini',
     patron: 'Święty Izydor Oracz, patron rolników i chłopów (15 maja)',
     extraDates: ['15 maja','4 kwietnia'],
@@ -2421,8 +2302,7 @@ const NAME_DB = {
     diminutives: 'Izek, Izydorek',
     foreign: 'ang. Isidore, fr. Isidore, niem. Isidor, ros. Исидор, hiszp. Isidoro',
   },
-  'jerzy': {
-    count: '362 780', gender: 'M',
+  'jerzy': { gender: 'M',
     origin: 'Greckie Georgios: ge (ziemia) + ergon (praca)', meaning: 'Rolnik, oracz — ten, który pracuje ziemię',
     patron: 'Święty Jerzy, rycerz i męczennik, pogromca smoka, patron Anglii (23 kwietnia)',
     extraDates: ['23 kwietnia'],
@@ -2433,8 +2313,7 @@ const NAME_DB = {
     diminutives: 'Jurek, Jureczek',
     foreign: 'ang. George, fr. Georges, niem. Georg, ros. Георгий, wł. Giorgio',
   },
-  'joachim': {
-    count: '19 220', gender: 'M',
+  'joachim': { gender: 'M',
     origin: 'Hebrajskie Jehojakim — „Jahwe ustanowił / wywyższył"', meaning: '„Bóg wywyższył" — imię ojca Maryi z Nazaretu',
     patron: 'Święty Joachim, ojciec Najświętszej Maryi Panny (26 lipca)',
     extraDates: ['26 lipca'],
@@ -2445,8 +2324,7 @@ const NAME_DB = {
     diminutives: 'Joaś, Joachimek',
     foreign: 'ang. Joachim, fr. Joachim, niem. Joachim, ros. Иоаким',
   },
-  'justyna': {
-    count: '191 660', gender: 'K',
+  'justyna': { gender: 'K',
     origin: 'Łacińskie Iustina — żeńska forma od Iustus (sprawiedliwy)', meaning: 'Sprawiedliwa, uczciwa, prawna',
     patron: 'Święta Justyna, dziewica i męczennica z Nikomedii (7 października)',
     extraDates: ['7 października','26 września'],
@@ -2457,8 +2335,7 @@ const NAME_DB = {
     diminutives: 'Justynka, Justka',
     foreign: 'ang. Justine / Justina, fr. Justine, niem. Justina, ros. Юстина',
   },
-  'kacper': {
-    count: '121 440', gender: 'M',
+  'kacper': { gender: 'M',
     origin: 'Perskie / aramejskie — od gizbar (skarbnik); imię jednego z Trzech Króli', meaning: 'Skarbnik / strażnik skarbu — Jeden z Trzech Magów',
     patron: 'Święty Kacper, jeden z Trzech Króli (Magów), patron podróżników (6 stycznia)',
     extraDates: ['6 stycznia'],
@@ -2469,8 +2346,7 @@ const NAME_DB = {
     diminutives: 'Kacperek, Kasprzycha',
     foreign: 'ang. Caspar / Jasper, fr. Gaspard, niem. Kaspar, ros. Каспар',
   },
-  'karol': {
-    count: '291 440', gender: 'M',
+  'karol': { gender: 'M',
     origin: 'Germańskie — od pranem Karl (wolny człowiek, mężczyzna); łac. Carolus', meaning: 'Wolny człowiek / prawdziwy mężczyzna',
     patron: 'Święty Karol Boromeusz (1538–1584), patron seminariów (4 listopada); Karol Wielki',
     extraDates: ['4 listopada','28 stycznia'],
@@ -2481,8 +2357,7 @@ const NAME_DB = {
     diminutives: 'Karolek, Karol',
     foreign: 'ang. Charles, fr. Charles, niem. Karl / Carl, ros. Карл, wł. Carlo',
   },
-  'klara': {
-    count: '94 220', gender: 'K',
+  'klara': { gender: 'K',
     origin: 'Łacińskie Clara — od clarus (jasny, sławny, wyraźny)', meaning: 'Jasna, sławna, wyraźna — lśniąca',
     patron: 'Święta Klara z Asyżu (1194–1253), założycielka klarysek, patronka telewizji (11 sierpnia)',
     extraDates: ['11 sierpnia'],
@@ -2493,8 +2368,7 @@ const NAME_DB = {
     diminutives: 'Klarcia, Klarunia',
     foreign: 'ang. Clare / Clara, fr. Claire, niem. Klara, ros. Клара, wł. Chiara',
   },
-  'klemens': {
-    count: '18 440', gender: 'M',
+  'klemens': { gender: 'M',
     origin: 'Łacińskie Clemens — łagodny, miłosierny, łaskawy', meaning: 'Łagodny, miłosierny, przebaczający',
     patron: 'Święty Klemens I, papież i męczennik (23 listopada)',
     extraDates: ['23 listopada'],
@@ -2505,8 +2379,7 @@ const NAME_DB = {
     diminutives: 'Klemek, Klimek',
     foreign: 'ang. Clement, fr. Clément, niem. Klemens, ros. Климент',
   },
-  'konstanty': {
-    count: '28 220', gender: 'M',
+  'konstanty': { gender: 'M',
     origin: 'Łacińskie Constantinus — od constans (stały, wytrwały, nieugięty)', meaning: 'Stały, wytrwały, nieugięty — jak cesarz Konstantyn Wielki',
     patron: 'Cesarz Konstantyn Wielki, który legalizował chrześcijaństwo (21 maja)',
     extraDates: ['21 maja'],
@@ -2517,8 +2390,7 @@ const NAME_DB = {
     diminutives: 'Kostek, Konstantek',
     foreign: 'ang. Constantine, fr. Constant, niem. Konstantin, ros. Константин',
   },
-  'kinga': {
-    count: '185 330', gender: 'K',
+  'kinga': { gender: 'K',
     origin: 'Skrócona forma od Kunigunde (germańskie: kuoni — śmiały + gund — walka) lub zdrobnienie imienia Katarzyna', meaning: 'Śmiała wojowniczka / skrót od Kunigunde',
     patron: 'Święta Kinga (Kunigunda), księżna krakowska, patronka górników (24 lipca)',
     extraDates: ['24 lipca','7 września'],
@@ -2529,8 +2401,7 @@ const NAME_DB = {
     diminutives: 'Kindzka, Kingusia',
     foreign: 'ang. Kinga / Kinga, fr. Cunégonde, niem. Kunigunde',
   },
-  'laura': {
-    count: '101 440', gender: 'K',
+  'laura': { gender: 'K',
     origin: 'Łacińskie Laura — od laurus (laur, wawrzyn)', meaning: 'Uwieńczona laurem / zwycięska / artystka',
     patron: 'Święta Laura z Kordoby, opatka i męczennica (19 października)',
     extraDates: ['19 października'],
@@ -2541,8 +2412,7 @@ const NAME_DB = {
     diminutives: 'Laurka, Lora',
     foreign: 'ang. Laura, fr. Laure, niem. Laura, ros. Лаура, wł. Laura',
   },
-  'leonard': {
-    count: '54 220', gender: 'M',
+  'leonard': { gender: 'M',
     origin: 'Germańskie Leonard: lewo (lew) + hard (silny, twardy)', meaning: 'Mocny jak lew / odważny jak lew',
     patron: 'Święty Leonard z Limoges, patron więźniów i kobiet rodzących (6 listopada)',
     extraDates: ['6 listopada','26 listopada'],
@@ -2553,8 +2423,7 @@ const NAME_DB = {
     diminutives: 'Leonek, Lonek',
     foreign: 'ang. Leonard, fr. Léonard, niem. Leonard, ros. Леонард',
   },
-  'leopold': {
-    count: '14 880', gender: 'M',
+  'leopold': { gender: 'M',
     origin: 'Germańskie Leupold: leud (lud, naród) + bald (śmiały, odważny)', meaning: 'Śmiały obrońca narodu',
     patron: 'Święty Leopold III z Austrii, margrabia, patron Austrii (15 listopada)',
     extraDates: ['15 listopada'],
@@ -2565,8 +2434,7 @@ const NAME_DB = {
     diminutives: 'Leopoldzik, Poldek',
     foreign: 'ang. Leopold, fr. Léopold, niem. Leopold, ros. Леопольд',
   },
-  'lidia': {
-    count: '194 330', gender: 'K',
+  'lidia': { gender: 'K',
     origin: 'Greckie Lydia — mieszkanka Lydii (krainy w zachodniej Anatolii)', meaning: 'Kobieta z Lydii / piękna jak wschodnia księżniczka',
     patron: 'Święta Lidia z Tyatyry, pierwsza chrześcijanka w Europie, kupczyni purpurą (27 marca)',
     extraDates: ['27 marca'],
@@ -2577,8 +2445,7 @@ const NAME_DB = {
     diminutives: 'Lidka, Lydia',
     foreign: 'ang. Lydia, fr. Lydie, niem. Lydia, ros. Лидия',
   },
-  'lucjan': {
-    count: '29 440', gender: 'M',
+  'lucjan': { gender: 'M',
     origin: 'Łacińskie Lucianus — od lux/lucis (światło)', meaning: 'Pełen światła / urodzony przy świetle',
     patron: 'Święty Lucjan z Beauvais, kapłan i męczennik (8 stycznia)',
     extraDates: ['8 stycznia'],
@@ -2589,8 +2456,7 @@ const NAME_DB = {
     diminutives: 'Lucjanek, Lucek',
     foreign: 'ang. Lucian, fr. Lucien, niem. Luzian, ros. Лукиан',
   },
-  'ludwik': {
-    count: '54 880', gender: 'M',
+  'ludwik': { gender: 'M',
     origin: 'Germańskie Hludwig: hlut (sławny) + wig (walka, wojownik)', meaning: 'Sławny wojownik / słynny w boju',
     patron: 'Święty Ludwik IX, król Francji, patron tercjarzy (25 sierpnia)',
     extraDates: ['25 sierpnia'],
@@ -2601,8 +2467,7 @@ const NAME_DB = {
     diminutives: 'Lutek, Ludwiś',
     foreign: 'ang. Louis / Lewis, fr. Louis, niem. Ludwig, ros. Людовик, wł. Luigi',
   },
-  'maksymilian': {
-    count: '74 880', gender: 'M',
+  'maksymilian': { gender: 'M',
     origin: 'Łacińskie — połączenie Maximus (największy) i Aemilianus lub Fabianus', meaning: 'Największy, najdoskonalszy',
     patron: 'Święty Maksymilian Maria Kolbe (1894–1941), franciszkanin, patron mediów (14 sierpnia)',
     extraDates: ['14 sierpnia'],
@@ -2613,8 +2478,7 @@ const NAME_DB = {
     diminutives: 'Maksymek, Maks, Makso',
     foreign: 'ang. Maximilian, fr. Maximilien, niem. Maximilian, ros. Максимилиан',
   },
-  'martyna': {
-    count: '165 440', gender: 'K',
+  'martyna': { gender: 'K',
     origin: 'Łacińskie Martina — żeńska forma od Marcin/Martinus (związana z Marsem)', meaning: 'Należąca do Marsa / związana z wojną i siłą',
     patron: 'Święta Martyna, dziewica i męczennica, patronka Rzymu (30 stycznia)',
     extraDates: ['30 stycznia'],
@@ -2625,8 +2489,7 @@ const NAME_DB = {
     diminutives: 'Martynka, Tynia',
     foreign: 'ang. Martina, fr. Martine, niem. Martina, ros. Мартина',
   },
-  'marzena': {
-    count: '122 440', gender: 'K',
+  'marzena': { gender: 'K',
     origin: 'Słowiańska forma imienia Maria lub Małgorzata; w tradycji ludowej związana z marcową wierzbową lalką (marzanna)', meaning: 'Marcowa / forma Marii lub Małgorzaty; lalka wiosny',
     patron: 'Patronką jest Maria (Maryja)',
     extraDates: ['26 kwietnia'],
@@ -2637,8 +2500,7 @@ const NAME_DB = {
     diminutives: 'Marzenka, Marzena',
     foreign: 'ang. Marina / Marena, fr. Marceline, ros. Марина',
   },
-  'nina': {
-    count: '56 220', gender: 'K',
+  'nina': { gender: 'K',
     origin: 'Różne źródła: hebrajskie (grzeczna dziewczynka), perskie (potężna), gruzińskie (apostołka Gruzji)', meaning: 'Grzeczna, dobra / potężna / apostołka — zależnie od tradycji',
     patron: 'Święta Nina, apostołka Gruzji (14 stycznia)',
     extraDates: ['14 stycznia','15 grudnia'],
@@ -2649,8 +2511,7 @@ const NAME_DB = {
     diminutives: 'Ninka, Nineczka',
     foreign: 'ang. Nina, fr. Nina, niem. Nina, ros. Нина',
   },
-  'norbert': {
-    count: '63 440', gender: 'M',
+  'norbert': { gender: 'M',
     origin: 'Germańskie Nordbert: nord (północ) + beraht (jasny, świetlany)', meaning: 'Jaśniejący z północy / blask z północy',
     patron: 'Święty Norbert z Xanten (1080–1134), założyciel norbertanów (6 czerwca)',
     extraDates: ['6 czerwca'],
@@ -2661,8 +2522,7 @@ const NAME_DB = {
     diminutives: 'Norberek, Norbi',
     foreign: 'ang. Norbert, fr. Norbert, niem. Norbert, ros. Норберт',
   },
-  'olga': {
-    count: '121 780', gender: 'K',
+  'olga': { gender: 'K',
     origin: 'Skandynawskie / staronordyckie Helga — święta, błogosławiona', meaning: 'Święta, błogosławiona, szczęśliwa',
     patron: 'Święta Olga (Helena), księżna kijowska, pierwsza chrześcijańska władczyni Rusi (11 lipca)',
     extraDates: ['11 lipca'],
@@ -2673,8 +2533,7 @@ const NAME_DB = {
     diminutives: 'Olunia, Oleczka',
     foreign: 'ang. Olga / Helga, fr. Olga, niem. Olga, ros. Ольга, skand. Helga',
   },
-  'patrycja': {
-    count: '108 440', gender: 'K',
+  'patrycja': { gender: 'K',
     origin: 'Łacińskie Patricia — żeńska forma od patricius (szlachcic, arystokrata)', meaning: 'Szlachcianka, arystokratka',
     patron: 'Święta Patrycja z Neapolu, dziewica (25 sierpnia)',
     extraDates: ['25 sierpnia','17 marca'],
@@ -2685,8 +2544,7 @@ const NAME_DB = {
     diminutives: 'Patka, Pati, Patrycja',
     foreign: 'ang. Patricia / Patricia, fr. Patricia, niem. Patricia, ros. Патриция',
   },
-  'paulina': {
-    count: '189 330', gender: 'K',
+  'paulina': { gender: 'K',
     origin: 'Łacińskie Paulina — żeńska forma od Paulus (mały)', meaning: 'Mała, delikatna / żeńska forma Pawła',
     patron: 'Błogosławiona Paulina (Amabile Lucia Rodrigues), pierwsza błogosławiona Brazylii (9 lipca)',
     extraDates: ['26 stycznia','9 lipca'],
@@ -2697,8 +2555,7 @@ const NAME_DB = {
     diminutives: 'Paulinka, Paula',
     foreign: 'ang. Pauline / Paula, fr. Pauline, niem. Paulina, ros. Паулина, wł. Paolina',
   },
-  'radoslaw': {
-    count: '174 660', gender: 'M',
+  'radoslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: rado (radość) + sław (sława)', meaning: 'Sławny z radości / niosący radość i chwałę',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 4 marca',
     extraDates: ['4 marca'],
@@ -2709,8 +2566,7 @@ const NAME_DB = {
     diminutives: 'Radek, Radoś',
     foreign: 'ang. Radoslav, fr. Radoslav, ros. Радослав',
   },
-  'rajmund': {
-    count: '34 440', gender: 'M',
+  'rajmund': { gender: 'M',
     origin: 'Germańskie Raginmund: ragin (rada, mądrość) + mund (ochrona, opiekun)', meaning: 'Mądry opiekun / ochrona przez mądrość',
     patron: 'Święty Rajmund z Peñafort (1175–1275), patron prawników (7 stycznia)',
     extraDates: ['7 stycznia','31 sierpnia'],
@@ -2721,8 +2577,7 @@ const NAME_DB = {
     diminutives: 'Rajmundek, Raymund',
     foreign: 'ang. Raymond, fr. Raymond, niem. Raimund, ros. Раймонд',
   },
-  'rita': {
-    count: '51 220', gender: 'K',
+  'rita': { gender: 'K',
     origin: 'Skrócenie od Margarita (Małgorzata) lub Margherita; łacińskie margarita — perła', meaning: 'Perła / zdrobnienie Małgorzaty',
     patron: 'Święta Rita z Cascii (1381–1457), patronka spraw beznadziejnych (22 maja)',
     extraDates: ['22 maja'],
@@ -2733,8 +2588,7 @@ const NAME_DB = {
     diminutives: 'Ritka, Ritusia',
     foreign: 'ang. Rita, fr. Rita, niem. Rita, ros. Рита, wł. Rita',
   },
-  'sabina': {
-    count: '40 660', gender: 'K',
+  'sabina': { gender: 'K',
     origin: 'Łacińskie Sabina — „kobieta z Sabinum" (kraina w środkowych Włoszech)', meaning: 'Sabinianka / kobieta z Sabinum — symbol dzielności',
     patron: 'Święta Sabina Rzymianka, wdowa i męczennica (29 sierpnia)',
     extraDates: ['29 sierpnia'],
@@ -2745,8 +2599,7 @@ const NAME_DB = {
     diminutives: 'Sabka, Sabcia',
     foreign: 'ang. Sabina / Sabine, fr. Sabine, niem. Sabine, ros. Сабина',
   },
-  'seweryn': {
-    count: '25 880', gender: 'M',
+  'seweryn': { gender: 'M',
     origin: 'Łacińskie Severinus — od Severus (surowy, poważny, srogi)', meaning: 'Surowy, poważny, nieustępliwy',
     patron: 'Święty Seweryn z Noricum, opat i apostoł Austrii (8 stycznia)',
     extraDates: ['8 stycznia'],
@@ -2757,8 +2610,7 @@ const NAME_DB = {
     diminutives: 'Sewek, Sewerynek',
     foreign: 'ang. Severinus / Severin, fr. Séverin, niem. Severin, ros. Северин',
   },
-  'slawomira': {
-    count: '27 440', gender: 'K',
+  'slawomira': { gender: 'K',
     origin: 'Staropolskie — żeńska forma Sławomira: sław (sława) + mir (pokój, świat)', meaning: 'Sławna z pokoju / ta, której sława przynosi spokój',
     patron: 'Brak ogólnie uznanego świętego patrona',
     extraDates: ['5 listopada'],
@@ -2769,8 +2621,7 @@ const NAME_DB = {
     diminutives: 'Sławka, Sławusia',
     foreign: 'ang. Slawomir (brak bezpośredniego odpowiednika)',
   },
-  'slawomir': {
-    count: '91 660', gender: 'M',
+  'slawomir': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: sław (sława) + mir (pokój, świat)', meaning: 'Sławny na świecie / niosący sławę i pokój',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 5 listopada',
     extraDates: ['5 listopada'],
@@ -2781,8 +2632,7 @@ const NAME_DB = {
     diminutives: 'Sławek, Sławuś',
     foreign: 'ang. Slawomir (brak bezpośredniego odpowiednika), ros. Славомир',
   },
-  'tatiana': {
-    count: '39 440', gender: 'K',
+  'tatiana': { gender: 'K',
     origin: 'Grecko-łacińskie — od imienia Titus (Tacjusz), króla Sabinów; lub od greckiego tatto (ustanawiać)', meaning: 'Ustanawiająca / z rodu Tycjusza — imię popularne w Rosji',
     patron: 'Święta Tatiana, męczennica w Rzymie za panowania Aleksandra Sewera (12 stycznia)',
     extraDates: ['12 stycznia'],
@@ -2793,8 +2643,7 @@ const NAME_DB = {
     diminutives: 'Tania, Tatianeczka',
     foreign: 'ang. Tatiana, fr. Tatiana, niem. Tatiana, ros. Татьяна',
   },
-  'teodor': {
-    count: '27 660', gender: 'M',
+  'teodor': { gender: 'M',
     origin: 'Greckie Theodoros: theos (Bóg) + doron (dar)', meaning: '„Dar Boży" — imię wielu cesarzy i świętych',
     patron: 'Święty Teodor Stratelat, wódz i męczennik (7 lutego)',
     extraDates: ['7 lutego','9 listopada'],
@@ -2805,8 +2654,7 @@ const NAME_DB = {
     diminutives: 'Teodek, Tedek',
     foreign: 'ang. Theodore, fr. Théodore, niem. Theodor, ros. Фёдор / Теодор',
   },
-  'tymoteusz': {
-    count: '18 440', gender: 'M',
+  'tymoteusz': { gender: 'M',
     origin: 'Greckie Timotheos: time (honor, szacunek) + theos (Bóg)', meaning: '„Czczący Boga" / „Bóg jest honorowany"',
     patron: 'Święty Tymoteusz, uczeń apostoła Pawła, biskupem Efezu (26 stycznia)',
     extraDates: ['26 stycznia','24 maja'],
@@ -2817,8 +2665,7 @@ const NAME_DB = {
     diminutives: 'Tymek, Timek',
     foreign: 'ang. Timothy, fr. Timothée, niem. Timotheus, ros. Тимофей',
   },
-  'urban': {
-    count: '16 880', gender: 'M',
+  'urban': { gender: 'M',
     origin: 'Łacińskie Urbanus — od urbs (miasto)', meaning: 'Miejski, kultywowany, cywilizowany — człowiek miasta',
     patron: 'Święty Urban I, papież i męczennik (25 maja)',
     extraDates: ['25 maja','31 października'],
@@ -2829,8 +2676,7 @@ const NAME_DB = {
     diminutives: 'Urbanek, Urbaś',
     foreign: 'ang. Urban, fr. Urbain, niem. Urban, ros. Урбан',
   },
-  'walenty': {
-    count: '24 440', gender: 'M',
+  'walenty': { gender: 'M',
     origin: 'Łacińskie Valentinus — od valens (silny, zdrowy, wartościowy)', meaning: 'Silny, zdrowy, pełen wartości — patron zakochanych',
     patron: 'Święty Walenty, kapłan i lekarz, patron zakochanych (14 lutego)',
     extraDates: ['14 lutego'],
@@ -2841,8 +2687,7 @@ const NAME_DB = {
     diminutives: 'Walent, Walentynek',
     foreign: 'ang. Valentine, fr. Valentin, niem. Valentin, ros. Валентин, wł. Valentino',
   },
-  'walentyna': {
-    count: '36 770', gender: 'K',
+  'walentyna': { gender: 'K',
     origin: 'Łacińskie Valentina — żeńska forma Walentego; od valens (silna, zdrowa)', meaning: 'Silna i zdrowa / patronka zakochanej miłości',
     patron: 'Święta Walentyna, dziewica i męczennica (25 lipca)',
     extraDates: ['25 lipca','14 lutego'],
@@ -2853,8 +2698,7 @@ const NAME_DB = {
     diminutives: 'Walentynka, Wala',
     foreign: 'ang. Valentina, fr. Valentina, niem. Valentina, ros. Валентина',
   },
-  'wiktor': {
-    count: '125 440', gender: 'M',
+  'wiktor': { gender: 'M',
     origin: 'Łacińskie Victor — zwycięzca', meaning: 'Zwycięzca, triumfator',
     patron: 'Święty Wiktor I, papież (28 lipca); Święty Wiktor, żołnierz i męczennik (25 lutego)',
     extraDates: ['25 lutego','28 lipca'],
@@ -2865,8 +2709,7 @@ const NAME_DB = {
     diminutives: 'Wiktorek, Wicio',
     foreign: 'ang. Victor, fr. Victor, niem. Viktor, ros. Виктор, wł. Vittore',
   },
-  'wilhelm': {
-    count: '35 880', gender: 'M',
+  'wilhelm': { gender: 'M',
     origin: 'Germańskie Willahelm: wil (wola, pragnienie) + helm (hełm, ochrona)', meaning: 'Chroniący wolę / zdecydowany obrońca',
     patron: 'Święty Wilhelm z Vercelli, pustelnik (25 czerwca)',
     extraDates: ['25 czerwca'],
@@ -2877,8 +2720,7 @@ const NAME_DB = {
     diminutives: 'Wilhem, Wilek, Willi',
     foreign: 'ang. William, fr. Guillaume, niem. Wilhelm, ros. Вильгельм',
   },
-  'wieslaw': {
-    count: '116 440', gender: 'M',
+  'wieslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: wie (wiedzieć) + sław (sława)', meaning: 'Sławny z wiedzy / ten, którego wiedza jest sławna',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 1 października',
     extraDates: ['1 października'],
@@ -2889,8 +2731,7 @@ const NAME_DB = {
     diminutives: 'Wiesiek, Wieśko',
     foreign: 'ang. Wieslaw (brak bezpośredniego odpowiednika), ros. Веслав',
   },
-  'zbigniew': {
-    count: '284 440', gender: 'M',
+  'zbigniew': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: zbić (pozbyć się) + gniew (gniew, złość)', meaning: 'Pozbawiający gniewu / ten, który odpędza gniew',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 17 marca',
     extraDates: ['17 marca'],
@@ -2901,8 +2742,7 @@ const NAME_DB = {
     diminutives: 'Zbyszek, Zbych, Zbysław',
     foreign: 'ang. Zbigniew (brak bezpośredniego odpowiednika), ros. Збигнев',
   },
-  'zenon': {
-    count: '60 440', gender: 'M',
+  'zenon': { gender: 'M',
     origin: 'Greckie Zenon — od Zeus (bóg grecki) lub od zenos (gość, obcy)', meaning: 'Dar Zeusa / gość — imię greckiego filozofa stoickiego',
     patron: 'Święty Zenon z Werony, biskup i męczennik (12 kwietnia)',
     extraDates: ['12 kwietnia'],
@@ -2913,8 +2753,7 @@ const NAME_DB = {
     diminutives: 'Zenek, Zenuś',
     foreign: 'ang. Zeno, fr. Zénon, niem. Zenon, ros. Зенон, wł. Zenone',
   },
-  'zygmunt': {
-    count: '75 440', gender: 'M',
+  'zygmunt': { gender: 'M',
     origin: 'Germańskie Sigismund: sig (zwycięstwo) + mund (ochrona, opiekun)', meaning: 'Zwycięski opiekun / obrońca zwycięstwa',
     patron: 'Święty Zygmunt, król Burgundii i męczennik (2 maja)',
     extraDates: ['2 maja'],
@@ -2925,8 +2764,7 @@ const NAME_DB = {
     diminutives: 'Zygmuś, Zygmuntek',
     foreign: 'ang. Sigismund, fr. Sigismond, niem. Sigismund / Siegmund, ros. Сигизмунд',
   },
-  'adrian': {
-    count: '168 440', gender: 'M',
+  'adrian': { gender: 'M',
     origin: 'Łacińskie Adrianus — od Hadria (miasto nad Adriatykiem)', meaning: 'Człowiek znad Adriatyku / mórz — wolny i nieskrępowany',
     patron: 'Święty Adrian, oficer rzymski nawrócony przez chrześcijańskich więźniów, męczennik (8 września)',
     extraDates: ['8 września'],
@@ -2937,8 +2775,7 @@ const NAME_DB = {
     diminutives: 'Adek, Adrisio',
     foreign: 'ang. Adrian, fr. Adrien, niem. Adrian, ros. Адриан',
   },
-  'adriana': {
-    count: '74 440', gender: 'K',
+  'adriana': { gender: 'K',
     origin: 'Łacińskie Adriana — żeńska forma Adriana; od Hadria (miasto nad Adriatykiem)', meaning: 'Kobieta znad Adriatyku / wolna jak morze',
     patron: 'Święta Adriana (8 września)',
     extraDates: ['8 września','5 marca'],
@@ -2949,8 +2786,7 @@ const NAME_DB = {
     diminutives: 'Adria, Adrianka',
     foreign: 'ang. Adriana, fr. Adrienne, niem. Adriana, ros. Адриана',
   },
-  'angelika': {
-    count: '96 440', gender: 'K',
+  'angelika': { gender: 'K',
     origin: 'Łacińskie Angelica — od angelus (anioł, posłaniec)', meaning: 'Anielska, posłaniec Boży — łagodna jak anioł',
     patron: 'Święta Angela Merici (27 stycznia)',
     extraDates: ['27 stycznia','4 stycznia'],
@@ -2961,8 +2797,7 @@ const NAME_DB = {
     diminutives: 'Aniela, Angelka',
     foreign: 'ang. Angelica, fr. Angélique, niem. Angelika, ros. Ангелика',
   },
-  'amanda': {
-    count: '59 440', gender: 'K',
+  'amanda': { gender: 'K',
     origin: 'Łacińskie Amanda — gerundivum od amare (kochać): „godna miłości, zasługująca na miłość"', meaning: 'Godna miłości / ta, którą należy kochać',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 6 lutego',
     extraDates: ['6 lutego'],
@@ -2973,8 +2808,7 @@ const NAME_DB = {
     diminutives: 'Amandka, Mandy',
     foreign: 'ang. Amanda, fr. Amanda, niem. Amanda, ros. Аманда',
   },
-  'jozefina': {
-    count: '30 440', gender: 'K',
+  'jozefina': { gender: 'K',
     origin: 'Żeńska forma imienia Józef; hebrajskie Yosef — „Bóg pomnoży"', meaning: '„Bóg pomnoży" — imię cesarskiej Józefiny',
     patron: 'Święta Józefina Bakhita (8 lutego)',
     extraDates: ['8 lutego','19 marca'],
@@ -2985,8 +2819,7 @@ const NAME_DB = {
     diminutives: 'Józia, Józeczka, Fina',
     foreign: 'ang. Josephine, fr. Joséphine, niem. Josefine, ros. Жозефина',
   },
-  'ernest': {
-    count: '51 440', gender: 'M',
+  'ernest': { gender: 'M',
     origin: 'Germańskie Ernst — od eornost (poważny, szczery, gorliwy, wytrwały)', meaning: 'Poważny, szczery, gorliwy — człowiek z zasadami',
     patron: 'Święty Ernest, opat, męczennik (7 listopada)',
     extraDates: ['7 listopada','12 stycznia'],
@@ -2997,8 +2830,7 @@ const NAME_DB = {
     diminutives: 'Ernesteczek, Ernestek',
     foreign: 'ang. Ernest, fr. Ernest, niem. Ernst, ros. Эрнест',
   },
-  'bogumil': {
-    count: '19 440', gender: 'M',
+  'bogumil': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: Bogu (Bogu, Boga) + miły (miły, kochany)', meaning: 'Miły Bogu / ulubieniec Boga',
     patron: 'Błogosławiony Bogumił, arcybiskup gnieźnieński (10 czerwca)',
     extraDates: ['10 czerwca'],
@@ -3009,8 +2841,7 @@ const NAME_DB = {
     diminutives: 'Bogumilczyk, Bogumił',
     foreign: 'ang. Bogumil, fr. Bogumil, ros. Богомил',
   },
-  'matylda': {
-    count: '58 440', gender: 'K',
+  'matylda': { gender: 'K',
     origin: 'Germańskie Mathilde: maht (siła, moc) + hild (walka)', meaning: 'Silna w walce / mocarny wojownik',
     patron: 'Święta Matylda, królowa Niemiec (14 marca)',
     extraDates: ['14 marca'],
@@ -3021,8 +2852,7 @@ const NAME_DB = {
     diminutives: 'Matyldziczka, Tilda',
     foreign: 'ang. Matilda / Mathilda, fr. Mathilde, niem. Mathilde, ros. Матильда',
   },
-  'emma': {
-    count: '131 440', gender: 'K',
+  'emma': { gender: 'K',
     origin: 'Germańskie Erma / Emma — skrócenie od imion z członem erm/irm (wielki, cały, wszechmocny)', meaning: 'Wielka, wszechmocna — imię pełne siły',
     patron: 'Święta Emma z Gurk (27 czerwca)',
     extraDates: ['27 czerwca','29 lipca'],
@@ -3033,8 +2863,7 @@ const NAME_DB = {
     diminutives: 'Emcia, Emka',
     foreign: 'ang. Emma, fr. Emma, niem. Emma, ros. Эмма',
   },
-  'lucyna': {
-    count: '148 440', gender: 'K',
+  'lucyna': { gender: 'K',
     origin: 'Łacińskie Lucina — od lux/lucis (światło); bogini porodu w mitologii rzymskiej', meaning: 'Pełna światła / bogini porodu — przynosząca życie na świat',
     patron: 'Święta Łucja / Lucyna (13 grudnia)',
     extraDates: ['13 grudnia','30 czerwca'],
@@ -3045,8 +2874,7 @@ const NAME_DB = {
     diminutives: 'Lucynka, Lunia',
     foreign: 'ang. Lucina / Lucy, fr. Lucine, niem. Luzina, ros. Луцина',
   },
-  'marianna': {
-    count: '153 440', gender: 'K',
+  'marianna': { gender: 'K',
     origin: 'Połączenie Marii i Anny; lub łacińskie Mariana — rozwinięcie Marii', meaning: 'Łaska Boża i piękno połączone — Maria + Anna',
     patron: 'Patronki obu imion: Maria i Anna (26 lipca)',
     extraDates: ['26 lipca'],
@@ -3057,8 +2885,7 @@ const NAME_DB = {
     diminutives: 'Marianka, Marianeczka',
     foreign: 'ang. Marianne, fr. Marianne, niem. Marianna, ros. Марианна',
   },
-  'celestyn': {
-    count: '5 880', gender: 'M',
+  'celestyn': { gender: 'M',
     origin: 'Łacińskie Caelestinus — od caelum (niebo, niebiański)', meaning: 'Niebiański / należący do nieba',
     patron: 'Święty Celestyn V, papież i pustelnik (19 maja)',
     extraDates: ['19 maja'],
@@ -3069,8 +2896,7 @@ const NAME_DB = {
     diminutives: 'Celestyneczek, Celestek',
     foreign: 'ang. Celestine, fr. Célestin, niem. Coelestin, ros. Целестин',
   },
-  'bazyli': {
-    count: '8 440', gender: 'M',
+  'bazyli': { gender: 'M',
     origin: 'Greckie Basileios — od basileus (król, władca)', meaning: 'Królewski, władca — imię Ojca Kościoła',
     patron: 'Święty Bazyli Wielki (329–379), doktor Kościoła, patron Rosji i Grecji (2 stycznia)',
     extraDates: ['2 stycznia'],
@@ -3081,8 +2907,7 @@ const NAME_DB = {
     diminutives: 'Bazylczyk, Bazylek',
     foreign: 'ang. Basil, fr. Basile, niem. Basilius, ros. Василий, wł. Basilio',
   },
-  'fryderyk': {
-    count: '16 440', gender: 'M',
+  'fryderyk': { gender: 'M',
     origin: 'Germańskie Friedrich: frid (pokój) + rich (możny, władca)', meaning: 'Pokojowy władca / pokój przez siłę',
     patron: 'Święty Fryderyk z Utrecht (18 lipca)',
     extraDates: ['18 lipca'],
@@ -3093,8 +2918,7 @@ const NAME_DB = {
     diminutives: 'Fredek, Fryś',
     foreign: 'ang. Frederick, fr. Frédéric, niem. Friedrich, ros. Фридрих',
   },
-  'herbert': {
-    count: '24 440', gender: 'M',
+  'herbert': { gender: 'M',
     origin: 'Germańskie Heribert: heri (wojsko, zastępy) + beraht (jasny, błyszczący)', meaning: 'Jasny rycerz / błyszczący w wojsku',
     patron: 'Święty Herbert, pustelnik (20 marca)',
     extraDates: ['20 marca'],
@@ -3105,8 +2929,7 @@ const NAME_DB = {
     diminutives: 'Herberteczek, Herberek',
     foreign: 'ang. Herbert, fr. Herbert, niem. Herbert, ros. Герберт',
   },
-  'emanuel': {
-    count: '47 440', gender: 'M',
+  'emanuel': { gender: 'M',
     origin: 'Hebrajskie Immanuel: immanu (z nami) + El (Bóg) — „Bóg jest z nami"', meaning: '„Bóg jest z nami" — imię mesjańskie z Izajasza',
     patron: 'Imię Chrystusa (Iz 7,14); Święty Emanuel, męczennik (17 czerwca)',
     extraDates: ['17 czerwca'],
@@ -3117,8 +2940,7 @@ const NAME_DB = {
     diminutives: 'Emanek, Maniek',
     foreign: 'ang. Emmanuel, fr. Emmanuel, niem. Emanuel, ros. Эмануэль, hiszp. Manuel',
   },
-  'hugo': {
-    count: '43 440', gender: 'M',
+  'hugo': { gender: 'M',
     origin: 'Germańskie Hugo / Hug — od hug (umysł, duch, myśl)', meaning: 'Błyskotliwy umysł / człowiek myśli',
     patron: 'Święty Hugo z Grenoble (1 kwietnia)',
     extraDates: ['1 kwietnia'],
@@ -3129,8 +2951,7 @@ const NAME_DB = {
     diminutives: 'Hugosio, Hugeczek',
     foreign: 'ang. Hugh / Hugo, fr. Hugues, niem. Hugo, ros. Гуго',
   },
-  'herman': {
-    count: '17 440', gender: 'M',
+  'herman': { gender: 'M',
     origin: 'Germańskie Hermann: heri (wojsko) + man (człowiek, mąż)', meaning: 'Mąż z wojska / rycerski człowiek',
     patron: 'Święty Herman Józef (7 kwietnia)',
     extraDates: ['7 kwietnia'],
@@ -3141,8 +2962,7 @@ const NAME_DB = {
     diminutives: 'Hermek, Hermuś',
     foreign: 'ang. Herman, fr. Hermann, niem. Hermann, ros. Герман',
   },
-  'alojzy': {
-    count: '14 880', gender: 'M',
+  'alojzy': { gender: 'M',
     origin: 'Germańskie Alois/Aloysius; złożenie z all (cały) + wis (mądry) lub od Clovis/Ludwik', meaning: 'Mądry we wszystkim / sławny wojownik',
     patron: 'Święty Alojzy Gonzaga (21 czerwca), patron młodzieży i studentów',
     extraDates: ['21 czerwca'],
@@ -3153,8 +2973,7 @@ const NAME_DB = {
     diminutives: 'Alojzek, Alojzeczek',
     foreign: 'ang. Aloysius, fr. Aloys, niem. Alois, ros. Алоизий, wł. Luigi',
   },
-  'paulin': {
-    count: '4 440', gender: 'M',
+  'paulin': { gender: 'M',
     origin: 'Łacińskie Paulinus — zdrobnienie od Paulus (mały, skromny)', meaning: 'Małe i pokorne serce — skromny jak Paweł',
     patron: 'Święty Paulin z Noli (22 czerwca)',
     extraDates: ['22 czerwca'],
@@ -3165,8 +2984,7 @@ const NAME_DB = {
     diminutives: 'Paulinek, Paulineczek',
     foreign: 'ang. Paulinus, fr. Paulin, niem. Paulinus, ros. Павлин',
   },
-  'brunon': {
-    count: '7 440', gender: 'M',
+  'brunon': { gender: 'M',
     origin: 'Germańskie Bruno — od brun (brunatny, brązowy; zbroja)', meaning: 'Ubrany w zbroję / brunatny wojownik',
     patron: 'Święty Bruno z Kwerfurtu (19 czerwca), Święty Bruno założyciel kartuzów (6 października)',
     extraDates: ['6 października','19 czerwca'],
@@ -3177,8 +2995,7 @@ const NAME_DB = {
     diminutives: 'Bruneczek, Brunek',
     foreign: 'ang. Bruno, fr. Bruno, niem. Bruno, ros. Бруно',
   },
-  'bonawentura': {
-    count: '3 120', gender: 'M',
+  'bonawentura': { gender: 'M',
     origin: 'Włoskie Bonaventura: bona (dobra) + ventura (przyszłość, los, przygoda) — „dobra przyszłość"', meaning: '„Dobra przyszłość" / szczęśliwy los',
     patron: 'Święty Bonawentura, doktor Kościoła, kardynał (15 lipca)',
     extraDates: ['15 lipca'],
@@ -3189,8 +3006,7 @@ const NAME_DB = {
     diminutives: 'Bonawenturczyk',
     foreign: 'ang. Bonaventure, fr. Bonaventure, niem. Bonaventura, ros. Бонавентура',
   },
-  'celestyna': {
-    count: '6 440', gender: 'K',
+  'celestyna': { gender: 'K',
     origin: 'Łacińskie Caelestina — od caelum (niebo); żeńska forma Celestyna', meaning: 'Niebiańska / córka nieba',
     patron: 'Święta Celestyna (2 marca)',
     extraDates: ['2 marca'],
@@ -3201,8 +3017,7 @@ const NAME_DB = {
     diminutives: 'Celestynka, Celesteczka',
     foreign: 'ang. Celestine, fr. Célestine, niem. Cölestine, ros. Целестина',
   },
-  'alfons': {
-    count: '11 440', gender: 'M',
+  'alfons': { gender: 'M',
     origin: 'Germańskie Alfons/Alphonse: adal (szlachetny) + funs (gotowy, chętny)', meaning: 'Szlachetnie gotowy / ochoczo szlachetny',
     patron: 'Święty Alfons Maria de Liguori, doktor Kościoła (1 sierpnia)',
     extraDates: ['1 sierpnia'],
@@ -3213,8 +3028,7 @@ const NAME_DB = {
     diminutives: 'Alfonsek, Alfoneczek',
     foreign: 'ang. Alphonse / Alfonso, fr. Alphonse, niem. Alfons, ros. Альфонс, hiszp. Alfonso',
   },
-  'idzi': {
-    count: '2 440', gender: 'M',
+  'idzi': { gender: 'M',
     origin: 'Greckie Aegidius — od aegis (tarcza Zeusa, ochrona, egida)', meaning: 'Pod tarczą Boga / chroniony egidą',
     patron: 'Święty Idzi, pustelnik (1 września), jeden z Czternastu Świętych Wspomożycieli',
     extraDates: ['1 września'],
@@ -3225,8 +3039,7 @@ const NAME_DB = {
     diminutives: 'Idzik, Idzeczek',
     foreign: 'ang. Giles, fr. Gilles, niem. Ägidius, ros. Эгидий',
   },
-  'regina': {
-    count: '63 440', gender: 'K',
+  'regina': { gender: 'K',
     origin: 'Łacińskie Regina — regina (królowa)', meaning: 'Królowa / rządząca — królewska kobieta',
     patron: 'Święta Regina, dziewica i męczennica (7 września)',
     extraDates: ['7 września'],
@@ -3237,8 +3050,7 @@ const NAME_DB = {
     diminutives: 'Renia, Reginka',
     foreign: 'ang. Regina, fr. Régine, niem. Regina, ros. Регина',
   },
-  'justyn': {
-    count: '20 440', gender: 'M',
+  'justyn': { gender: 'M',
     origin: 'Łacińskie Justinus — od iustus (sprawiedliwy, prawy)', meaning: 'Sprawiedliwy / prawy z natury',
     patron: 'Święty Justyn Męczennik, filozof (1 czerwca)',
     extraDates: ['1 czerwca'],
@@ -3249,8 +3061,7 @@ const NAME_DB = {
     diminutives: 'Justynek, Justuszek',
     foreign: 'ang. Justin, fr. Justin, niem. Justin, ros. Юстин',
   },
-  'gerard': {
-    count: '17 440', gender: 'M',
+  'gerard': { gender: 'M',
     origin: 'Germańskie Gerhard: ger (włócznia) + hard (twardy, odważny)', meaning: 'Twardy jak włócznia / odważny rycerz',
     patron: 'Święty Gerard Sagredo (24 września), Święty Gerard Majella (16 października)',
     extraDates: ['24 września','16 października'],
@@ -3261,8 +3072,7 @@ const NAME_DB = {
     diminutives: 'Geranek, Gerek',
     foreign: 'ang. Gerard, fr. Gérard, niem. Gerhard, ros. Жерар',
   },
-  'cyprian': {
-    count: '6 440', gender: 'M',
+  'cyprian': { gender: 'M',
     origin: 'Łacińskie Cyprianus — od Kypros (Cypr, wyspa), stąd „człowiek z Cypru"', meaning: 'Człowiek z Cypru / wyspiarskie korzenie',
     patron: 'Święty Cyprian, biskup Kartaginy i męczennik (16 września)',
     extraDates: ['16 września'],
@@ -3273,8 +3083,7 @@ const NAME_DB = {
     diminutives: 'Cyprianek, Cyprianeczek',
     foreign: 'ang. Cyprian, fr. Cyprien, niem. Cyprian, ros. Киприан',
   },
-  'honoriusz': {
-    count: '2 440', gender: 'M',
+  'honoriusz': { gender: 'M',
     origin: 'Łacińskie Honorius — od honor (honor, cześć, dostojeństwo)', meaning: 'Człowiek honoru / dostojeństwo i cześć',
     patron: 'Święty Honoriusz, arcybiskup Canterbury (30 września)',
     extraDates: ['30 września'],
@@ -3285,8 +3094,7 @@ const NAME_DB = {
     diminutives: 'Honorek, Honoriuszek',
     foreign: 'ang. Honorius, fr. Honoré, niem. Honorius, ros. Гонорий',
   },
-  'izaak': {
-    count: '4 880', gender: 'M',
+  'izaak': { gender: 'M',
     origin: 'Hebrajskie Yitzhak — od tzahak (śmiać się, radować)', meaning: '„Ten, który się śmieje" / śmiech Sary i Abrahama z radości',
     patron: 'Patriarcha Izaak (syn Abrahama); Święty Izaak Jogues (19 października)',
     extraDates: ['19 października'],
@@ -3297,8 +3105,7 @@ const NAME_DB = {
     diminutives: 'Izaaczek, Zaczek',
     foreign: 'ang. Isaac, fr. Isaac, niem. Isaak, ros. Исаак, hebr. Yitzhak',
   },
-  'janusz': {
-    count: '248 440', gender: 'M',
+  'janusz': { gender: 'M',
     origin: 'Staropolska forma Jana: Janus + -usz; lub od łacińskiego Janus (bóg początków)', meaning: 'Dar Boga / syn Jana — polskie imię przez wieki',
     patron: 'Święty Jan Chrzciciel (24 czerwca)',
     extraDates: ['24 czerwca'],
@@ -3309,8 +3116,7 @@ const NAME_DB = {
     diminutives: 'Januszek, Janek, Januszeczek',
     foreign: 'ang. John (odpowiednik), fr. Jean, niem. Johannes, ros. Янош',
   },
-  'flora': {
-    count: '7 440', gender: 'K',
+  'flora': { gender: 'K',
     origin: 'Łacińskie Flora — od flos/floris (kwiat); bogini kwiatów i wiosny w mitologii rzymskiej', meaning: 'Kwitnąca / bogini kwiatów i wiosny',
     patron: 'Święta Flora z Kordoby, męczennica (24 listopada)',
     extraDates: ['24 listopada'],
@@ -3321,8 +3127,7 @@ const NAME_DB = {
     diminutives: 'Florka, Floreczka',
     foreign: 'ang. Flora, fr. Flora, niem. Flora, ros. Флора',
   },
-  'ambrozy': {
-    count: '5 440', gender: 'M',
+  'ambrozy': { gender: 'M',
     origin: 'Greckie Ambrosios — od ambrotos (nieśmiertelny, boski); ambrosia to nektar bogów', meaning: 'Nieśmiertelny / boski — karmiony ambrozją',
     patron: 'Święty Ambroży, doktor Kościoła, biskup Mediolanu (7 grudnia)',
     extraDates: ['7 grudnia'],
@@ -3333,8 +3138,7 @@ const NAME_DB = {
     diminutives: 'Ambrozieczek, Ambrozeńko',
     foreign: 'ang. Ambrose, fr. Ambroise, niem. Ambrosius, ros. Амвросий, wł. Ambrogio',
   },
-  'damazy': {
-    count: '2 880', gender: 'M',
+  'damazy': { gender: 'M',
     origin: 'Łacińskie Damasus — od greckiego Damasos (poskramiający, tresujący)', meaning: 'Poskramiający / ten, który panuje nad żywiołami',
     patron: 'Święty Damazy I, papież (11 grudnia)',
     extraDates: ['11 grudnia'],
@@ -3345,8 +3149,7 @@ const NAME_DB = {
     diminutives: 'Damazynek, Damazeczek',
     foreign: 'ang. Damasus, fr. Damase, niem. Damasus, ros. Дамасий',
   },
-  'adelaida': {
-    count: '8 880', gender: 'K',
+  'adelaida': { gender: 'K',
     origin: 'Germańskie Adalheid / Adelheid: adal (szlachetny) + heid (stan, rodzaj)', meaning: 'Szlachetna z rodu / szlachetna z natury',
     patron: 'Święta Adelajda, cesarzowa (16 grudnia)',
     extraDates: ['16 grudnia'],
@@ -3357,8 +3160,7 @@ const NAME_DB = {
     diminutives: 'Adela, Adelka, Heidi',
     foreign: 'ang. Adelaide, fr. Adélaïde, niem. Adelheid, ros. Аделаида',
   },
-  'marceli': {
-    count: '21 440', gender: 'M',
+  'marceli': { gender: 'M',
     origin: 'Łacińskie Marcellus — zdrobnienie od Marcus (od Marsa, boga wojny)', meaning: 'Mały Mars / wojowniczy duch',
     patron: 'Święty Marceli I, papież i męczennik (16 stycznia)',
     extraDates: ['16 stycznia'],
@@ -3369,8 +3171,7 @@ const NAME_DB = {
     diminutives: 'Marcelek, Marceluś',
     foreign: 'ang. Marcel, fr. Marcel, niem. Marcellus, ros. Марцелл',
   },
-  'alfreda': {
-    count: '3 440', gender: 'K',
+  'alfreda': { gender: 'K',
     origin: 'Germańskie Alfreda — żeńska forma Alfreda: alf (elf, duch natury) + red (rada, doradca)', meaning: 'Elficka doradczyni / mądra jak duch natury',
     patron: 'Święty Alfred Wielki (26 października) jako patron imienia',
     extraDates: ['26 października'],
@@ -3381,8 +3182,7 @@ const NAME_DB = {
     diminutives: 'Alfredka, Freda',
     foreign: 'ang. Alfreda, fr. Alfreda, niem. Alfreda, ros. Альфреда',
   },
-  'arnold': {
-    count: '11 440', gender: 'M',
+  'arnold': { gender: 'M',
     origin: 'Germańskie Arnhold / Arnold: arn (orzeł) + wald (władać, rządzić)', meaning: 'Władca orłów / rządzący jak orzeł',
     patron: 'Święty Arnold z Soissons (14 sierpnia)',
     extraDates: ['14 sierpnia'],
@@ -3393,8 +3193,7 @@ const NAME_DB = {
     diminutives: 'Arnoldek, Arnuś',
     foreign: 'ang. Arnold, fr. Arnaud, niem. Arnold, ros. Арнольд',
   },
-  'mariusz': {
-    count: '171 440', gender: 'M',
+  'mariusz': { gender: 'M',
     origin: 'Łacińskie Marius — od rodu Mariuszów lub od Mars (bóg wojny)', meaning: 'Syn Marsa / wojowniczy i silny',
     patron: 'Święty Mariusz, żołnierz i męczennik (19 stycznia)',
     extraDates: ['19 stycznia'],
@@ -3405,8 +3204,7 @@ const NAME_DB = {
     diminutives: 'Mariuszek, Marek',
     foreign: 'ang. Marius, fr. Marius, niem. Marius, ros. Мариуш',
   },
-  'genowefa': {
-    count: '92 440', gender: 'K',
+  'genowefa': { gender: 'K',
     origin: 'Celtyckie lub germańskie: geno (ród, plemię) + vefa / wifa (kobieta); lub od keltyjskiego Genovefa', meaning: 'Kobieta z rodu / patronka Paryża',
     patron: 'Święta Genowefa, patronka Paryża (3 stycznia)',
     extraDates: ['3 stycznia'],
@@ -3417,8 +3215,7 @@ const NAME_DB = {
     diminutives: 'Genia, Genka, Genowefka',
     foreign: 'ang. Genevieve, fr. Geneviève, niem. Genoveva, ros. Женевьева',
   },
-  'melchior': {
-    count: '5 440', gender: 'M',
+  'melchior': { gender: 'M',
     origin: 'Hebrajskie lub perskie — Melchior (Malkhior): melekh (król) + or (światło) — „król światła"', meaning: 'Król światła / jeden z Trzech Króli',
     patron: 'Trzej Królowie-Magowie, wspominani 6 stycznia (Melchior, Kacper, Baltazar)',
     extraDates: ['6 stycznia'],
@@ -3429,8 +3226,7 @@ const NAME_DB = {
     diminutives: 'Melchiorek, Melchioreczek',
     foreign: 'ang. Melchior, fr. Melchior, niem. Melchior, ros. Мельхиор',
   },
-  'baltazar': {
-    count: '3 440', gender: 'M',
+  'baltazar': { gender: 'M',
     origin: 'Babilońskie Belshazzar lub Belteshazzar — „Baal strzeże króla"', meaning: 'Jeden z Trzech Króli / strzeżony przez Boga',
     patron: 'Trzej Królowie-Magowie (6 stycznia); Święty Baltazar',
     extraDates: ['6 stycznia'],
@@ -3441,8 +3237,7 @@ const NAME_DB = {
     diminutives: 'Baltazarek, Baltazareczek',
     foreign: 'ang. Balthasar, fr. Balthazar, niem. Balthasar, ros. Валтасар',
   },
-  'marcelin': {
-    count: '4 440', gender: 'M',
+  'marcelin': { gender: 'M',
     origin: 'Łacińskie Marcellinus — zdrobnienie od Marcellus, od Marcus (Mars, bóg wojny)', meaning: 'Mały wojownik / duch Marsa w małym ciele',
     patron: 'Święty Marceli i Piotr, męczennicy (2 czerwca)',
     extraDates: ['2 czerwca'],
@@ -3453,8 +3248,7 @@ const NAME_DB = {
     diminutives: 'Marcelinek, Marcelineczek',
     foreign: 'ang. Marcellinus, fr. Marcelin, niem. Marcellin, ros. Марцеллин',
   },
-  'berenika': {
-    count: '18 440', gender: 'K',
+  'berenika': { gender: 'K',
     origin: 'Greckie Berenike (macedońskie) — od pherein (nieść) + nike (zwycięstwo) — „przynosząca zwycięstwo"', meaning: 'Przynosząca zwycięstwo / zwycięska',
     patron: 'Święta Berenika, wdowa otarła oblicze Chrystusa (4 lutego)',
     extraDates: ['4 lutego'],
@@ -3465,8 +3259,7 @@ const NAME_DB = {
     diminutives: 'Berka, Bereniczka',
     foreign: 'ang. Berenice / Veronica, fr. Bérénice, niem. Berenike, ros. Береника',
   },
-  'walburga': {
-    count: '2 440', gender: 'K',
+  'walburga': { gender: 'K',
     origin: 'Germańskie Waldburga: wald (rządzić, las) + burg (zamek, twierdza)', meaning: 'Pani lasu i zamku / strażniczka twierdzy',
     patron: 'Święta Walburga, opatka (25 lutego / 1 maja)',
     extraDates: ['25 lutego','1 maja'],
@@ -3477,8 +3270,7 @@ const NAME_DB = {
     diminutives: 'Wala, Walcia',
     foreign: 'ang. Walburga / Walpurga, fr. Valburge, niem. Walburga, ros. Вальбурга',
   },
-  'gaudenty': {
-    count: '2 880', gender: 'M',
+  'gaudenty': { gender: 'M',
     origin: 'Łacińskie Gaudentius — od gaudere (radować się, cieszyć)', meaning: 'Radujący się / pełen radości',
     patron: 'Święty Gaudenty, pierwszy arcybiskup Gniezna (5 marca / 25 sierpnia)',
     extraDates: ['5 marca','25 sierpnia'],
@@ -3489,8 +3281,7 @@ const NAME_DB = {
     diminutives: 'Gaudek, Gaudentczyk',
     foreign: 'ang. Gaudentius, fr. Gaudence, niem. Gaudentius, ros. Гауденций',
   },
-  'ildefons': {
-    count: '2 440', gender: 'M',
+  'ildefons': { gender: 'M',
     origin: 'Germańskie Hildifuns: hildi (walka, bitwa) + funs (gotowy, chętny)', meaning: 'Gotowy do walki / ochoczo bojowy',
     patron: 'Święty Ildefons, arcybiskup Toledo (23 stycznia)',
     extraDates: ['23 stycznia'],
@@ -3501,8 +3292,7 @@ const NAME_DB = {
     diminutives: 'Ilduś, Ildefonczyk',
     foreign: 'ang. Ildephonsus, fr. Ildefonse, niem. Ildefons, ros. Ильдефонс, hiszp. Ildefonso',
   },
-  'emiliana': {
-    count: '7 440', gender: 'K',
+  'emiliana': { gender: 'K',
     origin: 'Łacińskie Aemiliana — żeńska forma Emiliana; od Aemilius (rywalizujący, gorliwy)', meaning: 'Gorliwa / pełna zapału i rywalizacji',
     patron: 'Święta Emiliana, ciotka Grzegorza Wielkiego (5 stycznia)',
     extraDates: ['5 stycznia'],
@@ -3513,8 +3303,7 @@ const NAME_DB = {
     diminutives: 'Emilka, Emilcia',
     foreign: 'ang. Aemiliana, fr. Émiliane, niem. Aemiliana, ros. Эмилиана',
   },
-  'edwarda': {
-    count: '5 440', gender: 'K',
+  'edwarda': { gender: 'K',
     origin: 'Germańskie Edwarda — żeńska forma Edwarda: ead (majątek, bogactwo) + weard (strażnik)', meaning: 'Strażniczka majątku / bogata opiekunka',
     patron: 'Święty Edward Wyznawca (13 października) jako patron imienia',
     extraDates: ['13 października'],
@@ -3525,8 +3314,7 @@ const NAME_DB = {
     diminutives: 'Edwarda, Edyta, Edzia',
     foreign: 'ang. Edwarda, fr. Edwarda, niem. Edwarda, ros. Эдварда',
   },
-  'juliana': {
-    count: '19 440', gender: 'K',
+  'juliana': { gender: 'K',
     origin: 'Łacińskie Juliana — żeńska forma Juliana; od Iulius (z rodu Juliuszy lub miesiąc lipiec)', meaning: 'Z rodu Juliuszy / lipcowa, letnia',
     patron: 'Święta Juliana z Nikomedii, męczennica (16 lutego)',
     extraDates: ['16 lutego'],
@@ -3537,8 +3325,7 @@ const NAME_DB = {
     diminutives: 'Julka, Julianka',
     foreign: 'ang. Juliana, fr. Juliane, niem. Juliane, ros. Юлиана',
   },
-  'tytus': {
-    count: '11 440', gender: 'M',
+  'tytus': { gender: 'M',
     origin: 'Łacińskie Titus — od starołacińskiego titor (honorowy, wychwalany) lub etruskie', meaning: 'Honorowy / starożytny majestat Rzymu',
     patron: 'Święty Tytus, uczeń i towarzysz świętego Pawła (26 stycznia)',
     extraDates: ['26 stycznia'],
@@ -3549,8 +3336,7 @@ const NAME_DB = {
     diminutives: 'Tytek, Tytusek',
     foreign: 'ang. Titus, fr. Tite, niem. Titus, ros. Тит',
   },
-  'roscislaw': {
-    count: '3 440', gender: 'M',
+  'roscislaw': { gender: 'M',
     origin: 'Słowiańskie: rości (rosnąć, wzrastać) + sław (sława) — „rośnie w sławę"', meaning: 'Rosnący w sławę / wzrastający w chwale',
     patron: 'Rościsław, książę morawski (11 maja)',
     extraDates: ['11 maja'],
@@ -3561,8 +3347,7 @@ const NAME_DB = {
     diminutives: 'Rościsławek, Rościk',
     foreign: 'ang. Rostislav, fr. Rostislav, ros. Ростислав, czes. Rostislav',
   },
-  'sebastiana': {
-    count: '3 440', gender: 'K',
+  'sebastiana': { gender: 'K',
     origin: 'Łacińskie Sebastiana — żeńska forma Sebastiana; od Sebastos (czcigodny, szanowny)', meaning: 'Czcigodna / godna szacunku',
     patron: 'Święty Sebastian (20 stycznia) jako patron imienia',
     extraDates: ['20 stycznia'],
@@ -3573,8 +3358,7 @@ const NAME_DB = {
     diminutives: 'Sebastianka, Seba',
     foreign: 'ang. Sebastiana, fr. Sébastienne, niem. Sebastiana, ros. Себастьяна',
   },
-  'mieszka': {
-    count: '2 440', gender: 'K',
+  'mieszka': { gender: 'K',
     origin: 'Żeńska forma Mieszka — od Mieczysław lub Mieszko; staropolskie miech (miecz) + sław (sława)', meaning: 'Sławna jak Mieszko / córka Pierwszego',
     patron: 'Błogosławiony Mieszko (25 maja)',
     extraDates: ['25 maja'],
@@ -3585,8 +3369,7 @@ const NAME_DB = {
     diminutives: 'Mieszkka, Mieszanka',
     foreign: 'ang. Mieszka, ros. Мешка',
   },
-  'apolonia': {
-    count: '28 440', gender: 'K',
+  'apolonia': { gender: 'K',
     origin: 'Greckie Apollonia — od Apollon (Apollo, bóg słońca i sztuki)', meaning: 'Apollińska / córka słońca i sztuk pięknych',
     patron: 'Święta Apolonia z Aleksandrii, patronka dentystów (9 lutego)',
     extraDates: ['9 lutego'],
@@ -3597,8 +3380,7 @@ const NAME_DB = {
     diminutives: 'Apolka, Apolonka',
     foreign: 'ang. Apollonia, fr. Apollonie, niem. Apollonia, ros. Аполлония',
   },
-  'eleonora': {
-    count: '72 440', gender: 'K',
+  'eleonora': { gender: 'K',
     origin: 'Prowansalskie / arabskie Aliénor lub łacińskie Elionora — prawdopodobnie od Heleny lub arabskiego al-naur (światło)', meaning: 'Świetlista / pełna królewskiego blasku',
     patron: 'Brak jednoznacznego patrona; imię obchodzone 21 lutego',
     extraDates: ['21 lutego'],
@@ -3609,8 +3391,7 @@ const NAME_DB = {
     diminutives: 'Ela, Nora, Norka',
     foreign: 'ang. Eleanor, fr. Éléonore, niem. Eleonore, ros. Элеонора',
   },
-  'luiza': {
-    count: '21 440', gender: 'K',
+  'luiza': { gender: 'K',
     origin: 'Germańskie Luisa — żeńska forma Ludwika: hlud (sława) + wig (walka, wojownik)', meaning: 'Sławna wojowniczka / walcząca o chwałę',
     patron: 'Święta Ludwika de Marillac (15 marca)',
     extraDates: ['15 marca'],
@@ -3621,8 +3402,7 @@ const NAME_DB = {
     diminutives: 'Luizka, Lusia',
     foreign: 'ang. Louisa / Louise, fr. Louise, niem. Luise, ros. Луиза',
   },
-  'aniela': {
-    count: '78 440', gender: 'K',
+  'aniela': { gender: 'K',
     origin: 'Greckie Angeleia — od angelos (anioł, posłaniec); polska forma Angeliki / Angeli', meaning: 'Anielska / posłaniec Boga',
     patron: 'Święta Angela Merici (27 stycznia)',
     extraDates: ['27 stycznia'],
@@ -3633,8 +3413,7 @@ const NAME_DB = {
     diminutives: 'Anielka, Aniusia',
     foreign: 'ang. Angela, fr. Angèle, niem. Angela, ros. Ангела',
   },
-  'zbyszek': {
-    count: '40 440', gender: 'M',
+  'zbyszek': { gender: 'M',
     origin: 'Staropolskie zdrobnienie od Zbigniew: zbi (unikać, odpędzać) + gniew (gniew) — „ten, który odpędza gniew"', meaning: 'Odpędzający gniew / spokojny duch',
     patron: 'Święty Zbigniew (jak Zbigniew)',
     extraDates: ['26 sierpnia'],
@@ -3645,8 +3424,7 @@ const NAME_DB = {
     diminutives: 'Zbyszek, Zbyszko',
     foreign: 'ang. Zbigniew (bez odpowiednika), ros. Збышек',
   },
-  'gemma': {
-    count: '12 440', gender: 'K',
+  'gemma': { gender: 'K',
     origin: 'Łacińskie Gemma — gemma (klejnot, szlachetny kamień)', meaning: 'Klejnot / szlachetny kamień wśród kobiet',
     patron: 'Święta Gemma Galgani (11 kwietnia)',
     extraDates: ['11 kwietnia'],
@@ -3657,8 +3435,7 @@ const NAME_DB = {
     diminutives: 'Gemmka, Gemmeczka',
     foreign: 'ang. Gemma, fr. Gemma, niem. Gemma, ros. Джемма, wł. Gemma',
   },
-  'hildegarda': {
-    count: '3 440', gender: 'K',
+  'hildegarda': { gender: 'K',
     origin: 'Germańskie Hildegard: hild (walka, bitwa) + gard (ogród, ogrodzenie)', meaning: 'Ogród bitewny / walcząca ogrodniczka',
     patron: 'Święta Hildegarda z Bingen, doktorka Kościoła (17 września)',
     extraDates: ['17 września'],
@@ -3669,8 +3446,7 @@ const NAME_DB = {
     diminutives: 'Hilda, Hildka',
     foreign: 'ang. Hildegard, fr. Hildegarde, niem. Hildegard, ros. Хильдегарда',
   },
-  'bernadeta': {
-    count: '29 440', gender: 'K',
+  'bernadeta': { gender: 'K',
     origin: 'Żeńska forma Bernarda: bern (niedźwiedź) + hard (twardy, odważny) — ze starofrancuskiego Bernadette', meaning: 'Silna jak niedźwiedź / odważna widzka z Lourdes',
     patron: 'Święta Bernadeta Soubirous z Lourdes (18 lutego)',
     extraDates: ['18 lutego'],
@@ -3681,8 +3457,7 @@ const NAME_DB = {
     diminutives: 'Bernadka, Berna',
     foreign: 'ang. Bernadette, fr. Bernadette, niem. Bernadette, ros. Бернадетта',
   },
-  'kornelia': {
-    count: '18 440', gender: 'K',
+  'kornelia': { gender: 'K',
     origin: 'Łacińskie Cornelia — od rodu Kornelii; cornu (róg — symbol siły i obfitości)', meaning: 'Z rodu Kornelii / silna jak róg obfitości',
     patron: 'Święty Korneliusz, papież (16 września)',
     extraDates: ['16 września'],
@@ -3693,8 +3468,7 @@ const NAME_DB = {
     diminutives: 'Kornelka, Nelia',
     foreign: 'ang. Cornelia, fr. Cornélie, niem. Cornelia, ros. Корнелия',
   },
-  'izolda': {
-    count: '6 440', gender: 'K',
+  'izolda': { gender: 'K',
     origin: 'Germańskie Isolde / Iseult: is (lód, żelazo) + wald (rządzić) lub celtyckie — znana z legendy o Tristanie', meaning: 'Władczyni żelaza / niezapomniana z legendy o Tristanie',
     patron: 'Brak jednoznacznego świętego; imię celebrowane 5 maja',
     extraDates: ['5 maja'],
@@ -3705,8 +3479,7 @@ const NAME_DB = {
     diminutives: 'Izoldzinka, Izia',
     foreign: 'ang. Isolde / Iseult, fr. Iseut, niem. Isolde, ros. Изольда',
   },
-  'julianna': {
-    count: '15 440', gender: 'K',
+  'julianna': { gender: 'K',
     origin: 'Łacińskie Iuliana — wariant Juliany; żeńska forma Juliana (z rodu Juliuszy)', meaning: 'Z rodu Juliuszy / lipcowa piękność',
     patron: 'Święta Julianna z Falconieri (19 czerwca)',
     extraDates: ['19 czerwca','16 lutego'],
@@ -3717,8 +3490,7 @@ const NAME_DB = {
     diminutives: 'Julka, Julianeczka',
     foreign: 'ang. Julianna / Juliana, fr. Juliane, niem. Juliane, ros. Юлианна',
   },
-  'florentyna': {
-    count: '9 440', gender: 'K',
+  'florentyna': { gender: 'K',
     origin: 'Łacińskie Florentina — od florens (kwitnący, rozkwitający); żeńska forma Florencjusza', meaning: 'Kwitnąca jak Florencja / rozkwitająca',
     patron: 'Święta Florentyna, siostra Leandra i Izydora z Sewilli (20 czerwca)',
     extraDates: ['20 czerwca'],
@@ -3729,8 +3501,7 @@ const NAME_DB = {
     diminutives: 'Florka, Florcia',
     foreign: 'ang. Florentina, fr. Florentine, niem. Florentina, ros. Флорентина',
   },
-  'anatol': {
-    count: '13 440', gender: 'M',
+  'anatol': { gender: 'M',
     origin: 'Greckie Anatolios — od anatole (wschód słońca)', meaning: 'Człowiek ze wschodu / syn wschodzącego słońca',
     patron: 'Święty Anatol, patriarcha Konstantynopola (3 lipca)',
     extraDates: ['3 lipca'],
@@ -3741,8 +3512,7 @@ const NAME_DB = {
     diminutives: 'Anatolek, Tolus',
     foreign: 'ang. Anatole, fr. Anatole, niem. Anatol, ros. Анатолий',
   },
-  'ulryk': {
-    count: '5 440', gender: 'M',
+  'ulryk': { gender: 'M',
     origin: 'Germańskie Ulrich: uodal (dziedzictwo, majątek) + rich (bogaty, władca)', meaning: 'Bogaty w dziedzictwo / władca majątku',
     patron: 'Święty Ulryk z Augsburga (4 lipca)',
     extraDates: ['4 lipca'],
@@ -3753,8 +3523,7 @@ const NAME_DB = {
     diminutives: 'Ulryczek, Uli',
     foreign: 'ang. Ulrich, fr. Ulrich, niem. Ulrich, ros. Ульрих',
   },
-  'estera': {
-    count: '13 440', gender: 'K',
+  'estera': { gender: 'K',
     origin: 'Hebrajskie Esther — od perskiego stara (gwiazda) lub hebrajskiego hester (ukryć)', meaning: 'Gwiazda / ukryta — jak biblijna Estera ocalająca swój lud',
     patron: 'Biblijna Estera, bohaterka Starego Testamentu (1 lipca)',
     extraDates: ['1 lipca'],
@@ -3765,8 +3534,7 @@ const NAME_DB = {
     diminutives: 'Esterka, Estusia',
     foreign: 'ang. Esther, fr. Esther, niem. Esther, ros. Эстер, hebr. Hadassa',
   },
-  'edgar': {
-    count: '10 440', gender: 'M',
+  'edgar': { gender: 'M',
     origin: 'Anglosaksonie Eadgar: ead (majątek, szczęście) + gar (włócznia)', meaning: 'Szczęśliwa włócznia / pomyślny wojownik',
     patron: 'Święty Edgar, król Anglii (8 lipca)',
     extraDates: ['8 lipca'],
@@ -3777,8 +3545,7 @@ const NAME_DB = {
     diminutives: 'Edgarek, Edus',
     foreign: 'ang. Edgar, fr. Edgar, niem. Edgar, ros. Эдгар',
   },
-  'aureliusz': {
-    count: '6 440', gender: 'M',
+  'aureliusz': { gender: 'M',
     origin: 'Łacińskie Aurelius — od aurum (złoto)', meaning: 'Złoty / jak złoto — imię Marka Aureliusza',
     patron: 'Święty Aureliusz (20 lipca)',
     extraDates: ['20 lipca'],
@@ -3789,8 +3556,7 @@ const NAME_DB = {
     diminutives: 'Aurelo, Aureliuszek',
     foreign: 'ang. Aurelius, fr. Aurèle, niem. Aurelius, ros. Аврелий',
   },
-  'hiacynt': {
-    count: '4 440', gender: 'M',
+  'hiacynt': { gender: 'M',
     origin: 'Greckie Hyakinthos — od imienia mitologicznego kwiatu; Hiacynt zabity przez Apollo, przemieniony w kwiat', meaning: 'Piękny jak kwiat hiacyntu / umiłowany przez bogów',
     patron: 'Święty Jacek / Hiacynt Odrowąż (17 sierpnia), apostoł Słowian Północnych',
     extraDates: ['17 sierpnia'],
@@ -3801,8 +3567,7 @@ const NAME_DB = {
     diminutives: 'Hiacyntek, Jacuś',
     foreign: 'ang. Hyacinth, fr. Hyacinthe, niem. Hyazinth, ros. Гиацинт',
   },
-  'hilary': {
-    count: '7 440', gender: 'M',
+  'hilary': { gender: 'M',
     origin: 'Łacińskie Hilarius — od hilaris (wesoły, radosny)', meaning: 'Radosny / wesoły — jak „hilarious"',
     patron: 'Święty Hilary z Poitiers, doktor Kościoła (13 stycznia)',
     extraDates: ['13 stycznia'],
@@ -3813,8 +3578,7 @@ const NAME_DB = {
     diminutives: 'Hilarek, Hilaruś',
     foreign: 'ang. Hilary, fr. Hilaire, niem. Hilarius, ros. Иларий',
   },
-  'scholastyka': {
-    count: '8 440', gender: 'K',
+  'scholastyka': { gender: 'K',
     origin: 'Łacińskie Scholastica — od schola (szkoła, nauka)', meaning: 'Uczona / kobieta wiedzy i szkoły',
     patron: 'Święta Scholastyka, siostra bliźniacza Benedykta z Nursji (10 lutego)',
     extraDates: ['10 lutego'],
@@ -3825,8 +3589,7 @@ const NAME_DB = {
     diminutives: 'Scholka, Scholastyczka',
     foreign: 'ang. Scholastica, fr. Scholastique, niem. Scholastika, ros. Схоластика',
   },
-  'benedykta': {
-    count: '5 440', gender: 'K',
+  'benedykta': { gender: 'K',
     origin: 'Łacińskie Benedicta — od benedicere (błogosławić); żeńska forma Benedykta', meaning: 'Błogosławiona / ta, którą błogosławią bogowie',
     patron: 'Święta Benedicta (4 marca)',
     extraDates: ['4 marca'],
@@ -3837,8 +3600,7 @@ const NAME_DB = {
     diminutives: 'Benedka, Benedeczka',
     foreign: 'ang. Benedicta / Benedikta, fr. Bénédicte, niem. Benedikte, ros. Бенедикта',
   },
-  'beatrycze': {
-    count: '17 440', gender: 'K',
+  'beatrycze': { gender: 'K',
     origin: 'Łacińskie Beatrix — od beatus (błogosławiony, szczęśliwy) + -trix (działający)', meaning: 'Przynosząca szczęście / błogosławiona',
     patron: 'Święta Beatrycze (29 lipca)',
     extraDates: ['29 lipca'],
@@ -3849,8 +3611,7 @@ const NAME_DB = {
     diminutives: 'Beatka, Bea',
     foreign: 'ang. Beatrice, fr. Béatrice, niem. Beatrix, ros. Беатриче, wł. Beatrice',
   },
-  'konstancja': {
-    count: '19 440', gender: 'K',
+  'konstancja': { gender: 'K',
     origin: 'Łacińskie Constantia — od constans (stały, wytrwały)', meaning: 'Stała / wytrwała — niezachwiana',
     patron: 'Święta Konstancja, córka Konstantyna Wielkiego (18 lutego)',
     extraDates: ['18 lutego'],
@@ -3861,8 +3622,7 @@ const NAME_DB = {
     diminutives: 'Konstancja, Konsia',
     foreign: 'ang. Constance, fr. Constance, niem. Konstanze, ros. Констанция',
   },
-  'mariola': {
-    count: '34 440', gender: 'K',
+  'mariola': { gender: 'K',
     origin: 'Polskie zdrobnienie Marii — Mariola jako pieszczotliwa forma imienia Maria', meaning: 'Maleńka Maria / ukochana jak Matka Boża',
     patron: 'Matka Boża / Święta Maria',
     extraDates: ['8 września','15 sierpnia'],
@@ -3873,8 +3633,7 @@ const NAME_DB = {
     diminutives: 'Mariolunia, Marioleczka',
     foreign: 'ang. Mariola, fr. Mariole, ros. Мариола',
   },
-  'teofil': {
-    count: '12 440', gender: 'M',
+  'teofil': { gender: 'M',
     origin: 'Greckie Theophilos: theos (Bóg) + philos (miłujący) — „miłujący Boga"', meaning: 'Miłujący Boga / Bogu miły',
     patron: 'Święty Teofil, patriarcha Aleksandrii (20 października)',
     extraDates: ['20 października'],
@@ -3885,8 +3644,7 @@ const NAME_DB = {
     diminutives: 'Teofek, Teofilek',
     foreign: 'ang. Theophilus, fr. Théophile, niem. Theophil, ros. Феофил',
   },
-  'eustachy': {
-    count: '5 440', gender: 'M',
+  'eustachy': { gender: 'M',
     origin: 'Greckie Eustachios: eu (dobry) + stachys (kłos zboża) — „dobry kłos / żyzny"', meaning: 'Żyzny i dobry jak kłos pszenicy',
     patron: 'Święty Eustachy, Roman oficer i męczennik (20 września)',
     extraDates: ['20 września'],
@@ -3897,8 +3655,7 @@ const NAME_DB = {
     diminutives: 'Eustaszek, Eustaś',
     foreign: 'ang. Eustace, fr. Eustache, niem. Eustachius, ros. Евстафий',
   },
-  'albin': {
-    count: '11 440', gender: 'M',
+  'albin': { gender: 'M',
     origin: 'Łacińskie Albinus — od albus (biały, jasny)', meaning: 'Jasny / biały — czysty i świetlisty',
     patron: 'Święty Albin z Angers (1 marca)',
     extraDates: ['1 marca'],
@@ -3909,8 +3666,7 @@ const NAME_DB = {
     diminutives: 'Albinek, Albineczek',
     foreign: 'ang. Albin / Albinus, fr. Albin, niem. Albin, ros. Альбин',
   },
-  'jordan': {
-    count: '19 440', gender: 'M',
+  'jordan': { gender: 'M',
     origin: 'Hebrajskie Yarden — od yarad (schodzić, płynąć w dół); nazwa rzeki biblijnej', meaning: 'Jak rzeka Jordan / płynący przez biblijne ziemie',
     patron: 'Błogosławiony Jordan z Saksonii (13 lutego)',
     extraDates: ['13 lutego'],
@@ -3921,8 +3677,7 @@ const NAME_DB = {
     diminutives: 'Jordi, Jordanek',
     foreign: 'ang. Jordan, fr. Jourdain, niem. Jordan, ros. Иордан',
   },
-  'eliza': {
-    count: '47 440', gender: 'K',
+  'eliza': { gender: 'K',
     origin: 'Skrócenie od Elżbieta: hebrajskie Elisheba — „Bóg jest moją przysięgą / pełnią"', meaning: 'Boża przysięga / skrót pięknej Elżbiety',
     patron: 'Święta Elżbieta Węgierska (17 listopada)',
     extraDates: ['17 listopada'],
@@ -3933,8 +3688,7 @@ const NAME_DB = {
     diminutives: 'Elizka, Elizcia',
     foreign: 'ang. Eliza / Elizabeth, fr. Élise, niem. Elise, ros. Элиза',
   },
-  'bogna': {
-    count: '20 440', gender: 'K',
+  'bogna': { gender: 'K',
     origin: 'Staropolskie słowiańskie: Bogna — od Bóg (Bóg, bóstwo); „dana przez Boga" lub „Bogu oddana"', meaning: 'Dana przez Boga / Bogu oddana',
     patron: 'Święta Bogna / Benigny (1 listopada)',
     extraDates: ['1 listopada'],
@@ -3945,8 +3699,7 @@ const NAME_DB = {
     diminutives: 'Bogneczka, Bogusia',
     foreign: 'ang. Bogna, ros. Богна',
   },
-  'sylwana': {
-    count: '8 440', gender: 'K',
+  'sylwana': { gender: 'K',
     origin: 'Łacińskie Silvana — od silva (las); żeńska forma Sylwana', meaning: 'Córka lasu / kobieta lasu',
     patron: 'Święty Sylwan (26 maja) jako patron imienia',
     extraDates: ['26 maja'],
@@ -3957,8 +3710,7 @@ const NAME_DB = {
     diminutives: 'Sylwanka, Sylwcia',
     foreign: 'ang. Silvana, fr. Sylviane, niem. Silvana, ros. Сильвана',
   },
-  'faustyna': {
-    count: '20 440', gender: 'K',
+  'faustyna': { gender: 'K',
     origin: 'Łacińskie Faustina — od faustus (szczęśliwy, pomyślny)', meaning: 'Szczęśliwa / pomyślna — imię świętej Faustyny',
     patron: 'Święta Faustyna Kowalska, apostołka Bożego Miłosierdzia (5 października)',
     extraDates: ['5 października'],
@@ -3969,8 +3721,7 @@ const NAME_DB = {
     diminutives: 'Faustynka, Fauneczka',
     foreign: 'ang. Faustina, fr. Faustine, niem. Faustina, ros. Фаустина',
   },
-  'ilona': {
-    count: '33 440', gender: 'K',
+  'ilona': { gender: 'K',
     origin: 'Węgierska forma Heleny: greckie Helene — od helios (słońce) lub Hellas (Grecja)', meaning: 'Słoneczna / jaśniejąca jak Helena',
     patron: 'Święta Helena, matka Konstantyna Wielkiego (18 sierpnia)',
     extraDates: ['18 sierpnia'],
@@ -3981,8 +3732,7 @@ const NAME_DB = {
     diminutives: 'Ilonka, Ilcia',
     foreign: 'ang. Ilona / Helen, fr. Ilona, niem. Ilona, ros. Илона, węg. Ilona',
   },
-  'otylia': {
-    count: '6 440', gender: 'K',
+  'otylia': { gender: 'K',
     origin: 'Germańskie Odilia / Ottilia — od aud lub od (majątek, dziedzictwo, szczęście)', meaning: 'Bogata w szczęście / dziedziczka dobra',
     patron: 'Święta Odyla / Otylia, patronka Alzacji (13 grudnia)',
     extraDates: ['13 grudnia'],
@@ -3993,8 +3743,7 @@ const NAME_DB = {
     diminutives: 'Otylka, Oti',
     foreign: 'ang. Odilia / Ottilia, fr. Odile, niem. Odilia, ros. Отилия',
   },
-  'olaf': {
-    count: '8 440', gender: 'M',
+  'olaf': { gender: 'M',
     origin: 'Staronordyckie Ólafr: anu (prapradziadek) + leifr (dziedzic, potomek) — „dziedzic przodków"', meaning: 'Dziedzic przodków / nordycki bohater',
     patron: 'Święty Olaf, król Norwegii i męczennik (29 lipca)',
     extraDates: ['29 lipca'],
@@ -4005,8 +3754,7 @@ const NAME_DB = {
     diminutives: 'Olafek, Oluś',
     foreign: 'ang. Olaf, fr. Olaf, niem. Olaf, ros. Олаф, norw. Olav',
   },
-  'liliana': {
-    count: '40 440', gender: 'K',
+  'liliana': { gender: 'K',
     origin: 'Łacińskie Liliana — od lilium (lilia); kwiat czystości i piękna', meaning: 'Piękna jak lilia / czysta i delikatna',
     patron: 'Brak jednoznacznego patrona; imię celebrowane 27 lipca',
     extraDates: ['27 lipca'],
@@ -4017,8 +3765,7 @@ const NAME_DB = {
     diminutives: 'Lilianka, Lila',
     foreign: 'ang. Lilliana / Liliana, fr. Liliane, niem. Liliana, ros. Лилиана',
   },
-  'julita': {
-    count: '26 440', gender: 'K',
+  'julita': { gender: 'K',
     origin: 'Zdrobnienie łacińskie od Julia — Julitta / Julita; od Iulius (z rodu Juliuszy)', meaning: 'Małe Juliuszowe serce / lipcowa pieszczota',
     patron: 'Święta Julita (Julitta) i jej syn Cyryl (16 czerwca)',
     extraDates: ['16 czerwca'],
@@ -4029,8 +3776,7 @@ const NAME_DB = {
     diminutives: 'Julitunia, Julka',
     foreign: 'ang. Julitta, fr. Julitte, niem. Julitta, ros. Юлита',
   },
-  'kajetana': {
-    count: '5 440', gender: 'K',
+  'kajetana': { gender: 'K',
     origin: 'Łacińskie Caietana — od Caieta (miasto Gaeta we Włoszech); żeńska forma Kajetana', meaning: 'Z Gaety / włoskie korzenie',
     patron: 'Święty Kajetan, założyciel teatynów (7 sierpnia)',
     extraDates: ['7 sierpnia'],
@@ -4041,8 +3787,7 @@ const NAME_DB = {
     diminutives: 'Kajetanka, Kajtunia',
     foreign: 'ang. Cajetan / Caetana, fr. Cajetane, niem. Kajetana, ros. Каетана',
   },
-  'donata': {
-    count: '11 440', gender: 'K',
+  'donata': { gender: 'K',
     origin: 'Łacińskie Donata — od donare (darować); „darowana, dar"', meaning: 'Darowana / dar od Boga lub losu',
     patron: 'Święta Donata (31 grudnia)',
     extraDates: ['31 grudnia'],
@@ -4053,8 +3798,7 @@ const NAME_DB = {
     diminutives: 'Donatka, Donunia',
     foreign: 'ang. Donata, fr. Donate, niem. Donata, ros. Доната',
   },
-  'maksym': {
-    count: '12 440', gender: 'M',
+  'maksym': { gender: 'M',
     origin: 'Łacińskie Maximus — największy, największa; od magnus (wielki)', meaning: 'Największy / maksymalny we wszystkim',
     patron: 'Święty Maksym Wyznawca, teolog (13 sierpnia)',
     extraDates: ['13 sierpnia'],
@@ -4065,8 +3809,7 @@ const NAME_DB = {
     diminutives: 'Maksymek, Maks',
     foreign: 'ang. Maximus / Max, fr. Maxime, niem. Maximus, ros. Максим',
   },
-  'blandyna': {
-    count: '5 440', gender: 'K',
+  'blandyna': { gender: 'K',
     origin: 'Łacińskie Blandina — od blandus (łagodny, miły, czarujący)', meaning: 'Łagodna i miła / czarująca swoją dobrocią',
     patron: 'Święta Blandyna, sługa i męczennica z Lyonu (2 czerwca)',
     extraDates: ['2 czerwca'],
@@ -4077,8 +3820,7 @@ const NAME_DB = {
     diminutives: 'Blandynka, Blandzia',
     foreign: 'ang. Blandina, fr. Blandine, niem. Blandina, ros. Бландина',
   },
-  'donat': {
-    count: '9 440', gender: 'M',
+  'donat': { gender: 'M',
     origin: 'Łacińskie Donatus — od donare (darować); „darowany przez Boga"', meaning: 'Dar Boga / dany ludziom jako łaska',
     patron: 'Święty Donat z Arezzo (7 sierpnia)',
     extraDates: ['7 sierpnia'],
@@ -4089,8 +3831,7 @@ const NAME_DB = {
     diminutives: 'Donatek, Donateusz',
     foreign: 'ang. Donat / Donatus, fr. Donat, niem. Donat, ros. Донат',
   },
-  'amalia': {
-    count: '42 330', gender: 'K',
+  'amalia': { gender: 'K',
     origin: 'Germańskie Amalia — od amal (praca, trud) lub od imienia rodu Amalów; forma wariantowa Amelii', meaning: 'Pracowita, gorliwa / z rodu Amalów',
     patron: 'Święta Amalia z Temblandii (10 lipca)',
     extraDates: ['10 lipca'],
@@ -4101,8 +3842,7 @@ const NAME_DB = {
     diminutives: 'Amalka, Malia',
     foreign: 'ang. Amalia, fr. Amalia, niem. Amalia, ros. Амалия',
   },
-  'albert': {
-    count: '74 880', gender: 'M',
+  'albert': { gender: 'M',
     origin: 'Germańskie Adalbert: adal (szlachetny) + beraht (jasny, świetlany)', meaning: 'Szlachetny blask / jaśniejący szlachetnością',
     patron: 'Święty Albert Wielki (1193–1280), doktor Kościoła, patron naukowców (15 listopada)',
     extraDates: ['15 listopada'],
@@ -4113,8 +3853,7 @@ const NAME_DB = {
     diminutives: 'Alber, Albertek',
     foreign: 'ang. Albert, fr. Albert, niem. Albert, ros. Альберт',
   },
-  'alina': {
-    count: '186 440', gender: 'K',
+  'alina': { gender: 'K',
     origin: 'Skrócenie od Adelina (germańskie — szlachetna) lub od Aline (forma Heleny)', meaning: 'Szlachetna / jasna jak Helena',
     patron: 'Brak ogólnie uznanego patrona; imię celebrowane 16 czerwca',
     extraDates: ['16 czerwca'],
@@ -4125,8 +3864,7 @@ const NAME_DB = {
     diminutives: 'Alinka, Alineczka',
     foreign: 'ang. Alina / Aline, fr. Aline, niem. Alina, ros. Алина',
   },
-  'ambrozy': {
-    count: '14 220', gender: 'M',
+  'ambrozy': { gender: 'M',
     origin: 'Greckie Ambrosios — od ambrotos (nieśmiertelny, boski)', meaning: 'Nieśmiertelny, boski — imię biskupa Mediolanu',
     patron: 'Święty Ambroży z Mediolanu (339–397), doktor Kościoła, patron pszczelarzy (7 grudnia)',
     extraDates: ['7 grudnia'],
@@ -4137,8 +3875,7 @@ const NAME_DB = {
     diminutives: 'Ambroś, Ambrozik',
     foreign: 'ang. Ambrose, fr. Ambroise, niem. Ambrosius, ros. Амвросий, wł. Ambrogio',
   },
-  'anastazy': {
-    count: '5 660', gender: 'M',
+  'anastazy': { gender: 'M',
     origin: 'Greckie Anastasios — od anastasis (zmartwychwstanie); forma męska Anastazji', meaning: 'Zmartwychwstały / ten, który powstaje',
     patron: 'Święty Anastazy, mnich i męczennik perski (22 stycznia)',
     extraDates: ['22 stycznia'],
@@ -4149,8 +3886,7 @@ const NAME_DB = {
     diminutives: 'Anastazek, Staśko',
     foreign: 'ang. Anastasius, fr. Anastase, niem. Anastasius, ros. Анастасий',
   },
-  'bartlomiej': {
-    count: '127 330', gender: 'M',
+  'bartlomiej': { gender: 'M',
     origin: 'Aramejskie Bar Tholomai — syn oracza, syn Tolmy (Natanael)', meaning: 'Syn oracza / syn Tolmy — imię Apostoła',
     patron: 'Święty Bartłomiej (Natanael), jeden z dwunastu Apostołów (24 sierpnia)',
     extraDates: ['24 sierpnia'],
@@ -4161,8 +3897,7 @@ const NAME_DB = {
     diminutives: 'Bartek, Bartuś',
     foreign: 'ang. Bartholomew, fr. Barthélemy, niem. Bartholomäus, wł. Bartolomeo',
   },
-  'boguslaw': {
-    count: '95 440', gender: 'M',
+  'boguslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: Bogu (Boga) + sław (chwała)', meaning: 'Chwała Boga / sławiący Boga',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 18 kwietnia',
     extraDates: ['18 kwietnia','18 grudnia'],
@@ -4173,8 +3908,7 @@ const NAME_DB = {
     diminutives: 'Bogusiek, Bogdanek',
     foreign: 'ang. Boguslaw, fr. Boguslaw, ros. Богуслав',
   },
-  'boleslaw': {
-    count: '86 660', gender: 'M',
+  'boleslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: bole (bardziej, więcej) + sław (sława)', meaning: 'Coraz sławniejszy / ten, który zdobywa większą chwałę',
     patron: 'Brak ogólnie uznanego świętego patrona; imię historycznych królów polskich',
     extraDates: ['2 listopada'],
@@ -4185,8 +3919,7 @@ const NAME_DB = {
     diminutives: 'Bolek, Boleczek',
     foreign: 'ang. Boleslav, fr. Boleslav, ros. Болеслав',
   },
-  'bonifacy': {
-    count: '18 440', gender: 'M',
+  'bonifacy': { gender: 'M',
     origin: 'Łacińskie Bonifacius: bonum (dobro) + facere (czynić)', meaning: 'Czyniący dobro / ten, którego przeznaczeniem jest dobro',
     patron: 'Święty Bonifacy, apostoł Niemiec, biskup i męczennik (5 czerwca)',
     extraDates: ['5 czerwca'],
@@ -4197,8 +3930,7 @@ const NAME_DB = {
     diminutives: 'Bonifek, Boni',
     foreign: 'ang. Boniface, fr. Boniface, niem. Bonifaz, ros. Бонифаций',
   },
-  'bozena': {
-    count: '121 770', gender: 'K',
+  'bozena': { gender: 'K',
     origin: 'Słowiańskie: Boża (od Boga) — imię nawiązujące do boskości', meaning: 'Boża / dana przez Boga',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 13 marca',
     extraDates: ['13 marca'],
@@ -4209,8 +3941,7 @@ const NAME_DB = {
     diminutives: 'Bozia, Bożenka',
     foreign: 'ang. Bozena, fr. Bozena, ros. Божена',
   },
-  'bronislaw': {
-    count: '128 440', gender: 'M',
+  'bronislaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: broni (bronić) + sław (sława)', meaning: 'Sławny z obrony / ten, który chwałą zdobywa obronę',
     patron: 'Błogosławiony Bronisław, dominikanin (1 września)',
     extraDates: ['1 września'],
@@ -4221,8 +3952,7 @@ const NAME_DB = {
     diminutives: 'Bronek, Bronisławek',
     foreign: 'ang. Bronislaw, fr. Bronislaw, ros. Бронислав',
   },
-  'brygida': {
-    count: '29 440', gender: 'K',
+  'brygida': { gender: 'K',
     origin: 'Celtyckie Brighid — od brigit (wysoka, moc, siła, cnota)', meaning: 'Silna i cnotliwa / bogini siły i mądrości',
     patron: 'Święta Brygida Irlandzka (1 lutego), patronka Irlandii; Święta Brygida Szwedzka (23 lipca)',
     extraDates: ['1 lutego','23 lipca'],
@@ -4233,8 +3963,7 @@ const NAME_DB = {
     diminutives: 'Brysia, Brygidka',
     foreign: 'ang. Bridget / Brigid, fr. Brigitte, niem. Brigitte, ros. Бригитта',
   },
-  'blazej': {
-    count: '37 440', gender: 'M',
+  'blazej': { gender: 'M',
     origin: 'Łacińskie Blasius — od blaisus (jąkający się) lub od greckiego blastos (kiełek, pęd)', meaning: 'Jąkający się / kiełkujący — imię biskupa oddanego chorym',
     patron: 'Święty Błażej, biskup Sebasty i męczennik, patron chorób gardła (3 lutego)',
     extraDates: ['3 lutego'],
@@ -4245,8 +3974,7 @@ const NAME_DB = {
     diminutives: 'Błażejek, Blaś',
     foreign: 'ang. Blaise, fr. Blaise, niem. Blasius, ros. Власий',
   },
-  'celina': {
-    count: '76 440', gender: 'K',
+  'celina': { gender: 'K',
     origin: 'Łacińskie Caelina — od caelum (niebo)', meaning: 'Niebieska / niebiańska',
     patron: 'Święta Celina (matka świętego Remigiusza) (21 października)',
     extraDates: ['21 października','17 lutego'],
@@ -4257,8 +3985,7 @@ const NAME_DB = {
     diminutives: 'Celinka, Cela',
     foreign: 'ang. Celina, fr. Célina, niem. Celina, ros. Целина',
   },
-  'cezary': {
-    count: '73 440', gender: 'M',
+  'cezary': { gender: 'M',
     origin: 'Łacińskie Caesarius — od Caesar (cięty, urodzony przez cesarskie cięcie) lub od rodu Juliuszów', meaning: 'Cezar / urodzone przez cesarskie cięcie — imię władców',
     patron: 'Święty Cezary z Arles (470–542), biskup i doktor (27 sierpnia)',
     extraDates: ['27 sierpnia','25 lutego'],
@@ -4269,8 +3996,7 @@ const NAME_DB = {
     diminutives: 'Cezarek, Cezio',
     foreign: 'ang. Caesar, fr. César, niem. Cäsar, ros. Цезарь',
   },
-  'cyryl': {
-    count: '13 440', gender: 'M',
+  'cyryl': { gender: 'M',
     origin: 'Greckie Kyrillos — od kyrios (Pan, władca)', meaning: 'Pański, należący do Pana — twórca alfabetu',
     patron: 'Święty Cyryl, apostoł Słowian, twórca pisma głagolickiego (14 lutego)',
     extraDates: ['14 lutego'],
@@ -4281,8 +4007,7 @@ const NAME_DB = {
     diminutives: 'Cyrylko, Cyrk',
     foreign: 'ang. Cyril, fr. Cyrille, niem. Kyrill, ros. Кирилл',
   },
-  'czeslaw': {
-    count: '139 660', gender: 'M',
+  'czeslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: cześć (cześć, honor) + sław (sława)', meaning: 'Sławny z czci / ten, który oddaje cześć i chwałę',
     patron: 'Błogosławiony Czesław, dominikanin, apostoł Wrocławia (20 lipca)',
     extraDates: ['20 lipca'],
@@ -4293,8 +4018,7 @@ const NAME_DB = {
     diminutives: 'Czesiek, Czesia',
     foreign: 'ang. Czeslaw, fr. Czeslaw, ros. Честлав',
   },
-  'dagmara': {
-    count: '74 440', gender: 'K',
+  'dagmara': { gender: 'K',
     origin: 'Staronordyckie Dagmar: dag (dzień) + mar (sławna)', meaning: 'Sławna z dnia / jaśniejąca jak dzień',
     patron: 'Święta Dagmara, królowa Danii (12 grudnia)',
     extraDates: ['12 grudnia'],
@@ -4305,8 +4029,7 @@ const NAME_DB = {
     diminutives: 'Dagmarka, Daga',
     foreign: 'ang. Dagmar, fr. Dagmar, niem. Dagmar, ros. Дагмар',
   },
-  'danuta': {
-    count: '265 440', gender: 'K',
+  'danuta': { gender: 'K',
     origin: 'Litewskie / słowiańskie — prawdopodobnie od Donata (dar Boży) lub od lit. danute (gwiazdka)', meaning: 'Dar Boży / gwiazdka',
     patron: 'Brak ogólnie uznanego patrona; imię celebrowane 24 czerwca',
     extraDates: ['24 czerwca','10 stycznia'],
@@ -4317,8 +4040,7 @@ const NAME_DB = {
     diminutives: 'Danka, Danutka',
     foreign: 'ang. Danuta (brak bezpośredniego odpowiednika), lit. Danutė',
   },
-  'dariusz': {
-    count: '310 440', gender: 'M',
+  'dariusz': { gender: 'M',
     origin: 'Perskie Dariavahush: daraya (posiadać) + vahu (dobro)', meaning: 'Posiadający dobro / zamożny — imię perskich królów',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 11 grudnia',
     extraDates: ['11 grudnia'],
@@ -4329,8 +4051,7 @@ const NAME_DB = {
     diminutives: 'Darek, Dariuszek',
     foreign: 'ang. Darius, fr. Darius, niem. Darius, ros. Дарий, perskie Darjusz',
   },
-  'edmund': {
-    count: '74 660', gender: 'M',
+  'edmund': { gender: 'M',
     origin: 'Anglosakońskie Eadmund: ead (bogactwo, majątek) + mund (ochrona, opiekun)', meaning: 'Opiekun bogactwa / strażnik dostatku',
     patron: 'Święty Edmund Król, męczennik angielski (20 listopada)',
     extraDates: ['20 listopada'],
@@ -4341,8 +4062,7 @@ const NAME_DB = {
     diminutives: 'Edek, Mundek',
     foreign: 'ang. Edmund, fr. Edmond, niem. Edmund, ros. Эдмунд',
   },
-  'eugeniusz': {
-    count: '98 440', gender: 'M',
+  'eugeniusz': { gender: 'M',
     origin: 'Greckie Eugenios — od eu (dobrze) + genos (ród, urodzenie)', meaning: 'Szlachetnie urodzony / dobrze urodzony',
     patron: 'Święty Eugeniusz I, papież (2 czerwca)',
     extraDates: ['2 czerwca','15 listopada'],
@@ -4353,8 +4073,7 @@ const NAME_DB = {
     diminutives: 'Eugeniuszek, Geniuś',
     foreign: 'ang. Eugene, fr. Eugène, niem. Eugen, ros. Евгений, wł. Eugenio',
   },
-  'ferdynand': {
-    count: '22 440', gender: 'M',
+  'ferdynand': { gender: 'M',
     origin: 'Germańskie Ferdinand: frithu (pokój) + nantha (odważny, gotowy)', meaning: 'Odważny w pokoju / wojownik pokoju',
     patron: 'Święty Ferdynand III, król Kastylii i Leónu (30 maja)',
     extraDates: ['30 maja'],
@@ -4365,8 +4084,7 @@ const NAME_DB = {
     diminutives: 'Ferdzio, Ferdek',
     foreign: 'ang. Ferdinand, fr. Ferdinand, niem. Ferdinand, ros. Фердинанд, hiszp. Fernando',
   },
-  'gertruda': {
-    count: '27 440', gender: 'K',
+  'gertruda': { gender: 'K',
     origin: 'Germańskie Gertrude: ger (włócznia) + trut (siła, drogi, ukochany)', meaning: 'Silna jak włócznia / ukochana wojowniczka',
     patron: 'Święta Gertruda Wielka (1256–1302), mistyczka (16 listopada); Święta Gertruda z Nivelles (17 marca)',
     extraDates: ['16 listopada','17 marca'],
@@ -4377,8 +4095,7 @@ const NAME_DB = {
     diminutives: 'Gerta, Truda, Gertrudka',
     foreign: 'ang. Gertrude, fr. Gertrude, niem. Gertrude, ros. Гертруда',
   },
-  'gustaw': {
-    count: '55 440', gender: 'M',
+  'gustaw': { gender: 'M',
     origin: 'Staronordyckie Gøtstaff lub Gustaff: gøt/Goth (Goci) + staf (laska, berło)', meaning: 'Berło Gotów / król Gotów — imię szwedzkich władców',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 2 sierpnia',
     extraDates: ['2 sierpnia'],
@@ -4389,8 +4106,7 @@ const NAME_DB = {
     diminutives: 'Gustek, Gustaś',
     foreign: 'ang. Gustav / Gustave, fr. Gustave, niem. Gustav, ros. Густав, skand. Gustav',
   },
-  'hilary': {
-    count: '12 440', gender: 'M',
+  'hilary': { gender: 'M',
     origin: 'Łacińskie Hilarius — od hilaris (wesoły, pogodny, radosny)', meaning: 'Wesoły, radosny, pogodny — imię pełne optymizmu',
     patron: 'Święty Hilary z Poitiers, doktor Kościoła (13 stycznia)',
     extraDates: ['13 stycznia','28 lutego'],
@@ -4401,8 +4117,7 @@ const NAME_DB = {
     diminutives: 'Hilarek, Hiluś',
     foreign: 'ang. Hilary / Hillary, fr. Hilaire, niem. Hilarius, ros. Иларий',
   },
-  'honorata': {
-    count: '17 440', gender: 'K',
+  'honorata': { gender: 'K',
     origin: 'Łacińskie Honorata — żeńska forma od Honor (honor, cześć, szacunek)', meaning: 'Godna honoru, szanowana, czcigodna',
     patron: 'Święta Honorata, dziewica i mniszka (11 stycznia)',
     extraDates: ['11 stycznia','27 lutego'],
@@ -4413,8 +4128,7 @@ const NAME_DB = {
     diminutives: 'Honoratka, Hora',
     foreign: 'ang. Honorata, fr. Honorée, niem. Honorata, ros. Гонората',
   },
-  'ireneusz': {
-    count: '49 440', gender: 'M',
+  'ireneusz': { gender: 'M',
     origin: 'Greckie Eirenaios — od Eirene (pokój); forma grecka od łacińskie Irenek', meaning: 'Pokojowy, miłujący pokój',
     patron: 'Święty Ireneusz z Lyonu (ok. 130–202), biskup i doktor Kościoła (28 czerwca)',
     extraDates: ['28 czerwca'],
@@ -4425,8 +4139,7 @@ const NAME_DB = {
     diminutives: 'Ireczek, Irek',
     foreign: 'ang. Irenaeus, fr. Irénée, niem. Irenäus, ros. Ириней',
   },
-  'janina': {
-    count: '384 440', gender: 'K',
+  'janina': { gender: 'K',
     origin: 'Żeńska forma imienia Jan; hebrajskie Jochanan — Bóg jest łaskawy', meaning: 'Boża łaska / żeński Jan',
     patron: 'Święta Joanna d\'Arc — imię celebrowane 6 kwietnia i 24 maja',
     extraDates: ['6 kwietnia','24 maja'],
@@ -4437,8 +4150,7 @@ const NAME_DB = {
     diminutives: 'Janka, Jasia, Janeczka',
     foreign: 'ang. Janina / Jane, fr. Jeannine, niem. Janina, ros. Янина',
   },
-  'julian': {
-    count: '74 440', gender: 'M',
+  'julian': { gender: 'M',
     origin: 'Łacińskie Julianus — od rodu Juliuszów; od Julus (syn Eneasza)', meaning: 'Z rodu Juliuszów / potomek cezarów',
     patron: 'Święty Julian Gościnny, patron podróżników i hotelarzy (12 lutego)',
     extraDates: ['12 lutego','9 marca'],
@@ -4449,8 +4161,7 @@ const NAME_DB = {
     diminutives: 'Julek, Julanek',
     foreign: 'ang. Julian, fr. Julien, niem. Julian, ros. Юлиан, wł. Giuliano',
   },
-  'kunegunda': {
-    count: '8 440', gender: 'K',
+  'kunegunda': { gender: 'K',
     origin: 'Germańskie Kunigunde: kuoni (śmiały, odważny) + gund (walka)', meaning: 'Śmiała wojowniczka',
     patron: 'Święta Kunigunda (Kinga), księżna krakowska i patronka górników (24 lipca)',
     extraDates: ['24 lipca','3 marca'],
@@ -4461,8 +4172,7 @@ const NAME_DB = {
     diminutives: 'Kunka, Kinga',
     foreign: 'ang. Cunigunde, fr. Cunégonde, niem. Kunigunde, ros. Кунигунда',
   },
-  'leszek': {
-    count: '98 440', gender: 'M',
+  'leszek': { gender: 'M',
     origin: 'Staropolskie skrócenie od Lech, Lesław lub Władysław; od leszcz (leszczyna) lub od lech (Polak)', meaning: 'Polak / syn Lecha — imię historycznych książąt',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 7 czerwca',
     extraDates: ['7 czerwca'],
@@ -4473,8 +4183,7 @@ const NAME_DB = {
     diminutives: 'Leszeczek, Lesiek',
     foreign: 'ang. Leszek (brak bezpośredniego odpowiednika)',
   },
-  'marcela': {
-    count: '33 440', gender: 'K',
+  'marcela': { gender: 'K',
     origin: 'Łacińskie Marcella — żeńska forma od Marek / Marcellus (od Marsa)', meaning: 'Należąca do Marsa / wojownicza',
     patron: 'Święta Marcela z Rzymu, wdowa i ascetka (31 stycznia)',
     extraDates: ['31 stycznia','29 grudnia'],
@@ -4485,8 +4194,7 @@ const NAME_DB = {
     diminutives: 'Marcelka, Marcia',
     foreign: 'ang. Marcella, fr. Marcelle, niem. Marcella, ros. Марцелла',
   },
-  'maurycy': {
-    count: '18 440', gender: 'M',
+  'maurycy': { gender: 'M',
     origin: 'Łacińskie Mauritius — od Maurus (Maur, ciemnoskóry; z Mauretanii)', meaning: 'Maur, ciemnoskóry — imię żołnierza Legionu Tebańskiego',
     patron: 'Święty Maurycy, żołnierz i męczennik, patron wojska (22 września)',
     extraDates: ['22 września'],
@@ -4497,8 +4205,7 @@ const NAME_DB = {
     diminutives: 'Mauryś, Maurek',
     foreign: 'ang. Maurice, fr. Maurice, niem. Moritz, ros. Маврикий, wł. Maurizio',
   },
-  'michalina': {
-    count: '35 440', gender: 'K',
+  'michalina': { gender: 'K',
     origin: 'Żeńska forma imienia Michał; hebrajskie Mikael — „Któż jest jak Bóg?"', meaning: '„Któż jest jak Bóg?" — kobieca forma Archanioła Michała',
     patron: 'Błogosławiona Michalina Jędrzejowska',
     extraDates: ['24 lipca'],
@@ -4509,8 +4216,7 @@ const NAME_DB = {
     diminutives: 'Michalinka, Misia',
     foreign: 'ang. Michalina, fr. Micheline, niem. Michaline, ros. Михалина',
   },
-  'mieczyslaw': {
-    count: '152 440', gender: 'M',
+  'mieczyslaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: miecz (miecz) + sław (sława)', meaning: 'Sławny mieczem / chwała przez miecz',
     patron: 'Brak ogólnie uznanego świętego patrona; imię pierwszego historycznego władcy Polski',
     extraDates: ['1 marca'],
@@ -4521,8 +4227,7 @@ const NAME_DB = {
     diminutives: 'Mietek, Mieczysławek',
     foreign: 'ang. Mieszko / Mieczyslaw, fr. Mieczyslaw, ros. Мечислав',
   },
-  'milena': {
-    count: '108 440', gender: 'K',
+  'milena': { gender: 'K',
     origin: 'Słowiańskie — od miły (miły, kochany, drogi)', meaning: 'Miła, kochana, droga — imię pieszczoty',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 25 stycznia',
     extraDates: ['25 stycznia'],
@@ -4533,8 +4238,7 @@ const NAME_DB = {
     diminutives: 'Milenka, Milka',
     foreign: 'ang. Milena, fr. Milena, niem. Milena, ros. Милена',
   },
-  'miroslawa': {
-    count: '82 440', gender: 'K',
+  'miroslawa': { gender: 'K',
     origin: 'Staropolskie imię słowiańskie — żeńska forma Mirosława: mir (pokój, świat) + sław (sława)', meaning: 'Sławna z pokoju / przynosi sławę i spokój',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 26 lutego',
     extraDates: ['26 lutego'],
@@ -4545,8 +4249,7 @@ const NAME_DB = {
     diminutives: 'Mirka, Mirosławka',
     foreign: 'ang. Miroslava, fr. Miroslava, ros. Мирослава',
   },
-  'narcyz': {
-    count: '5 880', gender: 'M',
+  'narcyz': { gender: 'M',
     origin: 'Greckie Narkissos — od narke (odurzenie, sen, znieczulenie) lub od kwiatu narcyz', meaning: 'Narcyz — kwiat symbolizujący piękno i przemijanie',
     patron: 'Święty Narcyz, biskup Jerozolimy (29 października)',
     extraDates: ['29 października'],
@@ -4557,8 +4260,7 @@ const NAME_DB = {
     diminutives: 'Narcyzek',
     foreign: 'ang. Narcissus, fr. Narcisse, niem. Narzissus, ros. Нарцисс',
   },
-  'nikodem': {
-    count: '14 440', gender: 'M',
+  'nikodem': { gender: 'M',
     origin: 'Greckie Nikodemos: nike (zwycięstwo) + demos (lud)', meaning: 'Zwycięstwo ludu / lud zwycięski',
     patron: 'Święty Nikodem, faryzeusz i uczeń Jezusa (3 sierpnia)',
     extraDates: ['3 sierpnia'],
@@ -4569,8 +4271,7 @@ const NAME_DB = {
     diminutives: 'Nikodemek, Nikoś',
     foreign: 'ang. Nicodemus, fr. Nicodème, niem. Nikodemus, ros. Никодим',
   },
-  'oskar': {
-    count: '102 440', gender: 'M',
+  'oskar': { gender: 'M',
     origin: 'Staronordyckie / anglosaskie Oscar: os (bóg) + gar (włócznia) lub ás (as, bóg) + geirr (włócznia)', meaning: 'Boska włócznia / bóg z włócznią — nordycki wojownik',
     patron: 'Święty Oskar (Ansgar), apostoł Skandynawii, patron Danii i Szwecji (3 lutego)',
     extraDates: ['3 lutego'],
@@ -4581,8 +4282,7 @@ const NAME_DB = {
     diminutives: 'Oskarek',
     foreign: 'ang. Oscar, fr. Oscar, niem. Oskar, ros. Оскар, skand. Oskar',
   },
-  'pankracy': {
-    count: '3 440', gender: 'M',
+  'pankracy': { gender: 'M',
     origin: 'Greckie Pankratios: pan (wszyscy) + kratos (siła, władza)', meaning: 'Wszechmocny / mający nad wszystkim władzę',
     patron: 'Święty Pankracy, jeden z Zimnych Ogrodników (12 maja)',
     extraDates: ['12 maja','3 kwietnia'],
@@ -4593,8 +4293,7 @@ const NAME_DB = {
     diminutives: 'Pankracek',
     foreign: 'ang. Pancratius, fr. Pancrace, niem. Pankratius, ros. Панкратий',
   },
-  'roch': {
-    count: '12 440', gender: 'M',
+  'roch': { gender: 'M',
     origin: 'Germańskie Rochus — od hrok (odpoczynek, spoczynek) lub od roch (kruk)', meaning: 'Odpoczywający / kruk — patron chorych',
     patron: 'Święty Roch z Montpellier, pielgrzym i opiekun zarażonych dżumą (16 sierpnia)',
     extraDates: ['16 sierpnia'],
@@ -4605,8 +4304,7 @@ const NAME_DB = {
     diminutives: 'Rochek, Roszko',
     foreign: 'ang. Roch / Rock, fr. Roch, niem. Rochus, ros. Рох',
   },
-  'rudolf': {
-    count: '46 440', gender: 'M',
+  'rudolf': { gender: 'M',
     origin: 'Germańskie Rudolf: hrod (sława) + wolf (wilk)', meaning: 'Sławny wilk / wilk o sławie — symbol siły i niezależności',
     patron: 'Brak ogólnie uznanego świętego patrona; imię celebrowane 17 kwietnia',
     extraDates: ['17 kwietnia'],
@@ -4617,8 +4315,7 @@ const NAME_DB = {
     diminutives: 'Rudek, Rudolfek',
     foreign: 'ang. Rudolf / Rudolph, fr. Rodolphe, niem. Rudolf, ros. Рудольф',
   },
-  'rut': {
-    count: '11 880', gender: 'K',
+  'rut': { gender: 'K',
     origin: 'Hebrajskie Ruth — możliwe od re\'ut (przyjaciółka, towarzyszka) lub od rawah (nasycony)', meaning: 'Przyjaciółka, towarzyszka / wierna do końca',
     patron: 'Biblijna Rut Moabitka, wzorzec lojalności i wierności (4 czerwca)',
     extraDates: ['4 czerwca','30 sierpnia'],
@@ -4629,8 +4326,7 @@ const NAME_DB = {
     diminutives: 'Rutka, Rutunia',
     foreign: 'ang. Ruth, fr. Ruth, niem. Ruth, ros. Руфь',
   },
-  'roza': {
-    count: '95 440', gender: 'K',
+  'roza': { gender: 'K',
     origin: 'Łacińskie Rosa — od rosa (róża, kwiat)', meaning: 'Róża — kwiat miłości, piękna i cierpienia',
     patron: 'Święta Róża z Limy (1586–1617), pierwsza święta Ameryki Łacińskiej (23 sierpnia)',
     extraDates: ['23 sierpnia'],
@@ -4641,8 +4337,7 @@ const NAME_DB = {
     diminutives: 'Różyczka, Rozia',
     foreign: 'ang. Rose / Rosa, fr. Rose, niem. Rose, ros. Роза, wł. Rosa',
   },
-  'samuel': {
-    count: '30 440', gender: 'M',
+  'samuel': { gender: 'M',
     origin: 'Hebrajskie Shemu\'el — od shama (słyszeć) + el (Bóg)', meaning: '„Bóg wysłuchał" lub „imię Boga" — prorok i sędzia Izraela',
     patron: 'Prorok Samuel, ostatni sędzia Izraela (20 sierpnia)',
     extraDates: ['20 sierpnia'],
@@ -4653,8 +4348,7 @@ const NAME_DB = {
     diminutives: 'Samuelek, Samek',
     foreign: 'ang. Samuel, fr. Samuel, niem. Samuel, ros. Самуил, wł. Samuele',
   },
-  'sara': {
-    count: '74 440', gender: 'K',
+  'sara': { gender: 'K',
     origin: 'Hebrajskie Sarai, potem Sara — od sar (władca, książę); Sara = księżna, pani', meaning: 'Księżna, pani, władczyni',
     patron: 'Biblijna Sara, żona Abrahama, matka Izaaka (9 października)',
     extraDates: ['13 lipca','9 października'],
@@ -4665,8 +4359,7 @@ const NAME_DB = {
     diminutives: 'Sarusia, Sareczka',
     foreign: 'ang. Sarah / Sara, fr. Sara, niem. Sara, ros. Сарра, wł. Sara',
   },
-  'szczepan': {
-    count: '20 440', gender: 'M',
+  'szczepan': { gender: 'M',
     origin: 'Hebrajskie / greckie Stephanos — wieniec; polska forma imienia Stefan/Szczepan', meaning: 'Uwieńczony — pierwszy chrześcijański męczennik',
     patron: 'Święty Szczepan (Stefan), protomęczennik, diakon (26 grudnia)',
     extraDates: ['26 grudnia'],
@@ -4677,8 +4370,7 @@ const NAME_DB = {
     diminutives: 'Szczepek, Szczepanek',
     foreign: 'ang. Stephen / Steven, fr. Étienne, niem. Stephan / Stefan, ros. Стефан',
   },
-  'teodora': {
-    count: '12 440', gender: 'K',
+  'teodora': { gender: 'K',
     origin: 'Greckie Theodora — żeńska forma Teodora: theos (Bóg) + doron (dar)', meaning: '„Dar Boży" — cesarzowa i święta',
     patron: 'Święta Teodora, cesarzowa bizantyjska, która przywróciła kult ikon (11 lutego)',
     extraDates: ['11 lutego','27 grudnia'],
@@ -4689,8 +4381,7 @@ const NAME_DB = {
     diminutives: 'Teodorka, Dora',
     foreign: 'ang. Theodora, fr. Théodora, niem. Theodora, ros. Феодора',
   },
-  'waclaw': {
-    count: '79 440', gender: 'M',
+  'waclaw': { gender: 'M',
     origin: 'Staropolskie imię słowiańskie: wać (wieniec) + sław (sława) lub od czeskiego Václav (więcej + chwała)', meaning: 'Sławny wieńcem / coraz sławniejszy — imię patrona Czech',
     patron: 'Święty Wacław, książę Czech i patron Czech (28 września)',
     extraDates: ['28 września'],
@@ -4701,8 +4392,7 @@ const NAME_DB = {
     diminutives: 'Wacek, Wacławek',
     foreign: 'ang. Wenceslas, fr. Venceslas, niem. Wenzel, ros. Вацлав, czes. Václav',
   },
-  'wlodzimierz': {
-    count: '115 440', gender: 'M',
+  'wlodzimierz': { gender: 'M',
     origin: 'Staropolskie / słowiańskie: władać (władza, władać) + mir (pokój, świat)', meaning: 'Władca świata / ten, który włada pokojem',
     patron: 'Święty Włodzimierz Wielki, chrzciciel Rusi (15 lipca)',
     extraDates: ['15 lipca'],
@@ -4713,8 +4403,7 @@ const NAME_DB = {
     diminutives: 'Włodek, Włodeczek',
     foreign: 'ang. Vladimir, fr. Vladimir, niem. Wladimir, ros. Владимир',
   },
-  'lucja': {
-    count: '42 220', gender: 'K',
+  'lucja': { gender: 'K',
     origin: 'Łacińskie Lucia — od lux/lucis (światło)', meaning: 'Pełna światła, urodzona przy świetle dnia',
     patron: 'Święta Łucja / Lucia z Syrakuz (283–304), dziewica i męczennica, patronka wzroku (13 grudnia)',
     extraDates: ['13 grudnia'],
@@ -4927,8 +4616,6 @@ function doSearch(val) {
 
   // Popularity from PESEL
   const peselCount = (typeof NAME_POPULARITY !== 'undefined') ? (NAME_POPULARITY[matchedName] || 0) : 0;
-  const countSrc = (d && d.count) ? d.count : (peselCount > 0 ? peselCount.toLocaleString('pl-PL') : null);
-  const countHTML = countSrc ? `<span class="result-count">Imię nosi w Polsce <strong>${countSrc}</strong> osób <span style="font-size:.75rem;color:var(--muted)">(rejestr PESEL, stan na 20.01.2026)</span></span>` : '';
   const nameRank = getNameRank(matchedName);
 
 
