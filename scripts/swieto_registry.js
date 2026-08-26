@@ -39,6 +39,7 @@ const NAME_ALIASES = {
   'Dzień Praw Człowieka': 'dzien-praw-czlowieka',
   'Dzień Sapera': 'dzien-sapera',
   'Dzień Tolerancji': 'dzien-tolerancji',
+  'Dzień Parówkożercy': 'dzien-parowki',
 
   // Audyt 2026-08-04: 77 dodatkowych aliasow znalezionych przekrojowym porownaniem
   // HOLIDAYS_DB vs HOLIDAYS (nietypowe) po nazwie+dacie (nie tylko dokladnym stringu) —
