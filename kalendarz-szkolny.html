@@ -68,6 +68,13 @@
     .stat-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; }
     .stat-num { font-family:'Instrument Serif',serif; font-size:2.5rem; line-height:1; }
     .stat-label { font-size:.75rem; color:var(--muted); margin-top:.3rem; }
+    .countdown-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; margin-bottom:1.5rem; }
+    .countdown-label { font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:.75rem; }
+    .countdown-num { font-family:'Instrument Serif',serif; font-size:3rem; line-height:1; }
+    .countdown-unit { font-size:.95rem; color:var(--muted); }
+    .countdown-bar-track { height:8px; background:var(--tag-bg); border-radius:99px; overflow:hidden; margin:1rem 0 .6rem; }
+    .countdown-bar-fill { height:100%; border-radius:99px; transition:width .3s ease; }
+    .countdown-sub { font-size:.78rem; color:var(--muted); }
     footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
     .footer-links { display:flex; gap:1.5rem; }
@@ -202,6 +209,16 @@
   <h1 class="page-title">Kalendarz Szkolny</h1>
   <p class="page-sub">Rok szkolny 2025/2026 — ważne daty, ferie, egzaminy i dni wolne od zajęć. Prowadzisz stronę szkoły? <a href="widget-kalendarz-szkolny.html" style="color:var(--text);">Osadź ten kalendarz jako widget →</a></p>
 
+  <div class="countdown-card" id="countdownCard">
+    <div class="countdown-label" id="countdownLabel"></div>
+    <div style="display:flex;align-items:baseline;gap:.5rem;">
+      <span class="countdown-num" id="countdownNum"></span>
+      <span class="countdown-unit" id="countdownUnit"></span>
+    </div>
+    <div class="countdown-bar-track"><div class="countdown-bar-fill" id="countdownBarFill"></div></div>
+    <div class="countdown-sub" id="countdownSub"></div>
+  </div>
+
   <div class="year-tabs">
     <button class="year-tab active" onclick="showYear('2025',this)">2025/2026</button>
     <button class="year-tab" onclick="showYear('2026',this)">2026/2027</button>
@@ -312,6 +329,55 @@
     document.getElementById('year-2025').style.display = y === '2025' ? '' : 'none';
     document.getElementById('year-2026').style.display = y === '2026' ? '' : 'none';
   }
+
+  // Rozporzadzenie MEN: rok szkolny zaczyna sie pierwszego dnia powszedniego wrzesnia
+  // (jesli 1 wrzesnia wypada w piatek/sobote - przesuniecie na najblizszy poniedzialek)
+  // i konczy sie w najblizszy piatek po 20 czerwca. Liczone algorytmicznie z biezacej
+  // daty (nie z zaszytej tabeli lat) - zeby dzialalo bez aktualizacji w kolejnych latach.
+  function schoolStart(year) {
+    var d = new Date(year, 8, 1);
+    var dow = d.getDay();
+    if (dow === 0) d.setDate(2);
+    else if (dow === 6) d.setDate(3);
+    else if (dow === 5) d.setDate(4);
+    return d;
+  }
+  function schoolEnd(year) {
+    var d = new Date(year, 5, 20);
+    var dow = d.getDay();
+    var add = (5 - dow + 7) % 7;
+    if (add === 0) add = 7;
+    d.setDate(20 + add);
+    return d;
+  }
+  function daysBetween(a, b) {
+    var MS = 24 * 60 * 60 * 1000;
+    var a0 = new Date(a.getFullYear(), a.getMonth(), a.getDate());
+    var b0 = new Date(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.round((b0 - a0) / MS);
+  }
+  function renderCountdown() {
+    var today = new Date();
+    var Y = today.getFullYear();
+    var bStart = schoolStart(Y - 1), bEnd = schoolEnd(Y);
+    var aStart = schoolStart(Y), aEnd = schoolEnd(Y + 1);
+    var start, end, inSchool;
+    if (today <= bEnd) { start = bStart; end = bEnd; inSchool = true; }
+    else if (today < aStart) { start = bEnd; end = aStart; inSchool = false; }
+    else { start = aStart; end = aEnd; inSchool = true; }
+    var totalDays = daysBetween(start, end);
+    var elapsedDays = daysBetween(start, today);
+    var remainingDays = daysBetween(today, end);
+    var pct = totalDays > 0 ? Math.round(Math.max(0, Math.min(1, elapsedDays / totalDays)) * 100) : 0;
+    var fmt = function (d) { return d.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' }); };
+    document.getElementById('countdownLabel').textContent = inSchool ? 'Do wakacji letnich' : 'Trwają wakacje letnie';
+    document.getElementById('countdownNum').textContent = Math.max(0, remainingDays);
+    document.getElementById('countdownUnit').textContent = inSchool ? 'dni' : 'dni do szkoły';
+    document.getElementById('countdownBarFill').style.width = pct + '%';
+    document.getElementById('countdownBarFill').style.background = inSchool ? '#3A5FA0' : '#E8936A';
+    document.getElementById('countdownSub').textContent = pct + (inSchool ? '% roku szkolnego za Tobą · ' : '% wakacji za Tobą · ') + fmt(end);
+  }
+  renderCountdown();
 </script>
 
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
