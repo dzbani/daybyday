@@ -299,7 +299,7 @@ function buildPage(name) {
       <li><a href="/">Główna</a></li>
       <li><a href="/imieniny.html">Imieniny</a></li>
       <li><a href="/swieta.html">Święta</a></li>
-      <li><a href="/kalendarz-liturgiczny.html">Liturgiczny</a></li>
+      <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
       <li><a href="/kalkulatory.html">Kalkulatory</a></li>
     </ul>
     <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>

@@ -327,7 +327,7 @@ function buildPage(year, monthIdx0) {
     <li><a href="/">Główna</a></li>
     <li><a href="/imieniny.html">Imieniny</a></li>
     <li><a href="/swieta.html">Święta</a></li>
-    <li><a href="/kalendarz-liturgiczny.html">Liturgiczny</a></li>
+    <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
     <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
 </nav>
@@ -495,7 +495,7 @@ function buildYearPage(year) {
     <li><a href="/">Główna</a></li>
     <li><a href="/imieniny.html">Imieniny</a></li>
     <li><a href="/swieta.html">Święta</a></li>
-    <li><a href="/kalendarz-liturgiczny.html">Liturgiczny</a></li>
+    <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
     <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
 </nav>
