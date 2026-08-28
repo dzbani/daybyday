@@ -51,8 +51,12 @@ for (const [d, m, name, , tag] of HOLIDAYS) {
   (holidayMap[`${m}-${d}`] = holidayMap[`${m}-${d}`] || []).push({ name, tag });
 }
 
-const PROVERBS_DAILY = eval('(' + extractConst(indexRaw, 'PROVERBS_DAILY') + ')');
-const PROVERBS_ARR = eval(extractConst(indexRaw, 'PROVERBS_ARR'));
+// PROVERBS_DAILY w index.html to IIFE odwolujaca sie do globalnego PROVERBS, ktory od kampanii
+// weryfikacji przyslow (sierpien 2026) zyje w osobnym pliku przyslowia_data.js, laczonym przez
+// <script src>. Node nie laduje tego automatycznie - trzeba oba zrodla zewaluowac w jednym
+// wspolnym zasiegu (eval() per-wywolanie ma wlasny zasieg blokowy dla const/let).
+const przyslowiaDataRaw = readFile('przyslowia_data.js'); // definiuje: const PROVERBS = {...}
+const PROVERBS_DAILY = eval('(function(){' + przyslowiaDataRaw + '\nreturn ' + extractConst(indexRaw, 'PROVERBS_DAILY') + ';})()');
 // Odtworz PROVERBS_MONTH_POOL dokladnie jak w index.html
 function getSeason(m) {
   if (m === 12 || m <= 2) return 'zima';
@@ -87,6 +91,11 @@ const PROVERBS_MONTH_POOL = (function () {
   });
   return pool;
 })();
+// PROVERBS_ARR (plaska lista - ostateczny fallback w proverbsFor()) juz nie istnieje w
+// index.html po tej samej restrukturyzacji - PROVERBS_DAILY ma teraz wpis dla praktycznie
+// kazdego dnia (365/366), wiec ta galaz jest w praktyce nieosiagalna, ale zostawiamy bezpieczny
+// odpowiednik (wszystkie przyslowia miesieczne spłaszczone) zamiast twardego bledu.
+const PROVERBS_ARR = Object.values(PROVERBS_MONTH_POOL).flat();
 
 // --- 3. SWIETA_DATA (powazne swieta ze slugami) + HOLIDAYS_DB ze swieto.html (pelna baza, w tym partie tematyczne) ---
 const swietaDataRaw = readFile('swieta_data.js');
@@ -145,6 +154,18 @@ function proverbsFor(m, d, dayOfYearApprox) {
 }
 
 function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l').replace(/[^a-z0-9-]/g, ''); }
+
+// Niektore imiona z kalendarza NAMES nie maja wlasnej strony /imieniny/<slug>/ (folder w ogole
+// nie istnieje - inny, gorszy przypadek niz "folder bez tresci"). Linkowanie do nich dawalo
+// realne 404 na 76 imionach / 157 linkach (znalezione skanem 28.08.2026) - sprawdzamy istnienie
+// folderu przed wygenerowaniem linku, tak jak juz robi to gen_static_swieto_pages.js dla `related`.
+const nameHasPageCache = new Map();
+function nameHasPage(n) {
+  if (!nameHasPageCache.has(n)) {
+    nameHasPageCache.set(n, fs.existsSync(path.join(ROOT, 'imieniny', nameSlug(n))));
+  }
+  return nameHasPageCache.get(n);
+}
 
 const MONTH_GEN = ['', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
 const pad2 = n => String(n).padStart(2, '0');
@@ -236,7 +257,7 @@ function buildStaticPage(day) {
   const dateLabel = `${d} ${MONTH_GEN[m]}`;
 
   const namesHtml = day.names.length
-    ? day.names.map(n => `<a href="/imieniny/${nameSlug(n)}/">${n}</a>`).join(', ')
+    ? day.names.map(n => nameHasPage(n) ? `<a href="/imieniny/${nameSlug(n)}/">${n}</a>` : n).join(', ')
     : 'brak danych o imieninach dla tego dnia';
 
   const holidaysHtml = day.holidays.length
@@ -349,7 +370,7 @@ function buildWidgetPage(day) {
   const dateLabel = `${d} ${MONTH_GEN[m]}`;
 
   const namesHtml = day.names.length
-    ? day.names.slice(0, 6).map(n => `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>`).join(', ')
+    ? day.names.slice(0, 6).map(n => nameHasPage(n) ? `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>` : esc(n)).join(', ')
     : '—';
 
   let holidayHtml = '';
