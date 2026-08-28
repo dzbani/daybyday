@@ -67,6 +67,13 @@ for (const [m, d, names] of NAMES) {
   }
 }
 
+// --- 4b. Zbuduj mapę odwrotną: "m-d" -> lista imion obchodzonych tego dnia
+// (do sekcji "kto jeszcze obchodzi imieniny tego dnia" na stronie imienia) ---
+const dayNames = {};
+for (const [m, d, names] of NAMES) {
+  dayNames[`${m}-${d}`] = names;
+}
+
 function nameSlug(n) {
   return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l').replace(/[^a-z0-9-]/g, '');
 }
@@ -75,6 +82,8 @@ function normalize(s) {
 }
 
 const MONTH_NAMES_GEN = ['', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
+const MONTH_SLUGS = ['', 'styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec', 'sierpien', 'wrzesien', 'pazdziernik', 'listopad', 'grudzien'];
+const MONTH_NAMES_LOC = ['', 'Styczniu', 'Lutym', 'Marcu', 'Kwietniu', 'Maju', 'Czerwcu', 'Lipcu', 'Sierpniu', 'Wrześniu', 'Październiku', 'Listopadzie', 'Grudniu'];
 const PATRON_HEADERS = ['Patron', 'Święty patron', 'Święta patronka', 'Święci patroni', 'Święte patronki'];
 
 function transformRich(html) {
@@ -105,6 +114,24 @@ for (const [slug, names] of Object.entries(bySlug)) {
   }
   collisionLog.push(`${slug}: [${names.join(', ')}] -> wybrano "${slugOwner[slug]}"`);
 }
+
+// --- 5b. Uniwersum imion, które faktycznie dostają własną stronę (folder + daty + opis) —
+// potrzebne do nawigacji poprzednie/następne (pełny alfabetyczny pierścień) i do odfiltrowania
+// z "kto jeszcze obchodzi imieniny tego dnia" imion bez wygenerowanej strony (kolizje slugów,
+// brak opisu w RICH). Kryteria muszą być identyczne z tym, co realnie generuje buildPage().
+const allValidNames = Object.values(slugOwner).filter(name => {
+  const slug = nameSlug(name);
+  return !!RICH[name] && fs.existsSync(path.join(ROOT, 'imieniny', slug)) && (dateMap[name] || []).length > 0;
+});
+const allValidNamesSet = new Set(allValidNames);
+const sortedAllNames = [...allValidNames].sort((a, b) => a.localeCompare(b, 'pl'));
+const prevNextMap = {};
+sortedAllNames.forEach((name, i) => {
+  prevNextMap[name] = {
+    prev: sortedAllNames[(i - 1 + sortedAllNames.length) % sortedAllNames.length],
+    next: sortedAllNames[(i + 1) % sortedAllNames.length],
+  };
+});
 
 // Skopiowane 1:1 z imieniny.html (buildTrendChart/trendOdmiana/buildTrendNarrative) -
 // ta sama logika renderowania wykresu trendu popularnosci, tylko uruchamiana w Node
@@ -227,6 +254,42 @@ function buildPage(name) {
     ? `\n  <div class="patron-section">\n    <h2>Patron / Patronka</h2>\n    <p>${dbEntry.patron}</p>\n  </div>`
     : '';
 
+  // --- Linkowanie wewnętrzne: link do strony miesiąca + kto jeszcze obchodzi imieniny tego
+  // dnia + nawigacja poprzednie/następne imię. Bez tego strona nie miała ŻADNEGO linku do
+  // innej strony /imieniny/<slug>/ — była wyspą widoczną tylko z sitemap.xml (diagnoza GSC
+  // 27.08.2026: 0 linków zewnętrznych + brak wewnętrznej sieci między stronami imion).
+  const monthsSeen = new Set();
+  const monthLinks = [];
+  for (const d of dates) {
+    if (monthsSeen.has(d.m)) continue;
+    monthsSeen.add(d.m);
+    monthLinks.push(`<a href="/imieniny/miesiac/${MONTH_SLUGS[d.m]}/">Wszystkie imieniny w ${MONTH_NAMES_LOC[d.m]}</a>`);
+  }
+  const monthLinksHtml = monthLinks.length
+    ? `\n  <p class="month-links">${monthLinks.join(' · ')}</p>`
+    : '';
+
+  // Zakres ograniczony (max 3 daty x 12 współ-solenizantów) - imiona z wieloma datami
+  // w roku (np. Jacek: 9 dat) inaczej generowałyby ścianę 100+ linków w jednej sekcji.
+  const MAX_SAMEDAY_DATES = 3;
+  const MAX_COCELEBRANTS_PER_DATE = 12;
+  const sameDayParas = dates.slice(0, MAX_SAMEDAY_DATES).map(d => {
+    let co = (dayNames[`${d.m}-${d.d}`] || []).filter(n => n !== name && allValidNamesSet.has(n));
+    const truncated = co.length > MAX_COCELEBRANTS_PER_DATE;
+    co = co.slice(0, MAX_COCELEBRANTS_PER_DATE);
+    if (!co.length) return '';
+    const coLinks = co.map(n => `<a href="/imieniny/${nameSlug(n)}/">${n}</a>`).join(', ');
+    return `<p><strong>${d.d} ${MONTH_NAMES_GEN[d.m]}:</strong> ${coLinks}${truncated ? ' i inni' : ''}</p>`;
+  }).filter(Boolean);
+  const sameDaySection = sameDayParas.length
+    ? `\n  <div class="related-section">\n    <h2>Kto jeszcze obchodzi imieniny tego dnia</h2>\n    ${sameDayParas.join('\n    ')}\n  </div>`
+    : '';
+
+  const pn = prevNextMap[name];
+  const prevNextNav = pn
+    ? `\n  <nav class="prevnext" aria-label="Nawigacja alfabetyczna">\n    <a href="/imieniny/${nameSlug(pn.prev)}/">← ${pn.prev}</a>\n    <a href="/imieniny.html">Wszystkie imiona A–Z</a>\n    <a href="/imieniny/${nameSlug(pn.next)}/">${pn.next} →</a>\n  </nav>`
+    : '';
+
   const slug = nameSlug(name);
   const pageUrl = `https://daybyday.today/imieniny/${slug}/`;
   const articleLd = jsonLdScript({
@@ -276,6 +339,12 @@ function buildPage(name) {
     .name-desc-section { margin-bottom: 1.25rem; }
     .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin-bottom: .4rem; }
     .patron-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+    .related-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+    .related-section p { margin: .3rem 0; font-size: .92rem; }
+    .month-links { font-size: .85rem; margin-top: 1rem; }
+    .prevnext { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: .85rem; flex-wrap: wrap; }
+    .prevnext a { text-decoration: none; }
+    .prevnext a:hover { text-decoration: underline; }
     a { color: var(--text); }
     .breadcrumb { font-size: .8rem; color: var(--muted2); margin-bottom: 1rem; }
     .breadcrumb a { color: var(--muted2); }
@@ -307,7 +376,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
-  ${trendHtml ? trendHtml + '\n  ' : ''}<div>${descHtml}</div>${patronBlock}
+  ${trendHtml ? trendHtml + '\n  ' : ''}<div>${descHtml}</div>${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
