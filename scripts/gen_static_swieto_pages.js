@@ -58,6 +58,64 @@ function jsonLdScript(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 }
 
+// --- Linkowanie wewnętrzne: dotąd tylko 126/902 świąt miało ręcznie skonfigurowane `related`,
+// więc 776 stron nie linkowało do żadnej innej strony /swieto/*. Dokładamy trzy warstwy
+// generowane automatycznie z danych już w HOLIDAYS_DB (analogicznie do zmiany w
+// gen_static_pages.js dla /imieniny/* - diagnoza GSC 27.08.2026: 0 linków zewnętrznych +
+// brak wewnętrznej sieci między stronami treściowymi):
+// 1) inne święta tego samego dnia (parsowane z pola `date`), 2) sąsiedzi w tej samej
+// kategorii `type` (pierścień, K najbliższych po alfabecie - żeby nie skupiać linków zawsze
+// na tych samych pierwszych kilku świętach kategorii), 3) globalna nawigacja poprzednie/
+// następne (pełny alfabetyczny pierścień po nazwie, jak w /imieniny/*).
+const MONTH_NAMES_GEN_H = ['', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
+const DATE_RE = new RegExp('^(\\d{1,2}) (' + MONTH_NAMES_GEN_H.slice(1).join('|') + ')(?: \\d{4})?$');
+function parseFixedDate(dateStr) {
+  if (!dateStr) return null;
+  const m = dateStr.match(DATE_RE);
+  if (!m) return null;
+  return { day: parseInt(m[1], 10), month: MONTH_NAMES_GEN_H.indexOf(m[2]) };
+}
+
+const ALL_HOLIDAY_SLUGS = Object.keys(HOLIDAYS_DB);
+
+// "m-d" -> [slug,...] dla świąt o stałej, parsowalnej dacie (813/902 - reszta to daty
+// ruchome/przedziały, dla nich sekcja "tego dnia" po prostu się nie pojawi)
+const dayMap = {};
+for (const slug of ALL_HOLIDAY_SLUGS) {
+  const parsed = parseFixedDate(HOLIDAYS_DB[slug].date);
+  if (!parsed) continue;
+  const key = `${parsed.month}-${parsed.day}`;
+  (dayMap[key] = dayMap[key] || []).push(slug);
+}
+
+const TYPE_LABELS = {
+  state: 'święta państwowe', religious: 'święta religijne', professional: 'święta branżowe',
+  cultural: 'święta kulturalne', historical: 'rocznice historyczne', unofficial: 'święta nieoficjalne',
+  local: 'święta lokalne', un: 'dni ONZ', who: 'dni WHO',
+};
+const typeGroups = {};
+for (const slug of ALL_HOLIDAY_SLUGS) {
+  const t = HOLIDAYS_DB[slug].type;
+  (typeGroups[t] = typeGroups[t] || []).push(slug);
+}
+for (const t in typeGroups) {
+  typeGroups[t].sort((a, b) => HOLIDAYS_DB[a].name.localeCompare(HOLIDAYS_DB[b].name, 'pl'));
+}
+const typeIndexOf = {};
+for (const t in typeGroups) {
+  typeGroups[t].forEach((slug, i) => { typeIndexOf[slug] = i; });
+}
+
+// Globalny alfabetyczny pierścień (po nazwie) - nawigacja poprzednie/następne
+const sortedAllHolidaySlugs = [...ALL_HOLIDAY_SLUGS].sort((a, b) => HOLIDAYS_DB[a].name.localeCompare(HOLIDAYS_DB[b].name, 'pl'));
+const holidayPrevNextMap = {};
+sortedAllHolidaySlugs.forEach((slug, i) => {
+  holidayPrevNextMap[slug] = {
+    prev: sortedAllHolidaySlugs[(i - 1 + sortedAllHolidaySlugs.length) % sortedAllHolidaySlugs.length],
+    next: sortedAllHolidaySlugs[(i + 1) % sortedAllHolidaySlugs.length],
+  };
+});
+
 function buildTitle(h) {
   if (h.dayOff === true) return `${h.name} — kiedy wypada i czy to dzień wolny? | DaybyDay`;
   if (h.type === 'state' || h.type === 'religious') return `${h.name} — kiedy wypada? Czy to dzień wolny? | DaybyDay`;
@@ -78,6 +136,41 @@ function buildPage(slug) {
     const href = exists ? `/swieto/${rslug}/` : `/swieto.html?id=${rslug}`;
     return `<li><a href="${href}">${rel.emoji} ${rel.name}</a></li>`;
   }).join('');
+
+  const MAX_SAMEDAY = 10;
+  const MAX_CATEGORY = 6;
+  const parsedDate = parseFixedDate(h.date);
+  const sameDaySlugs = parsedDate ? (dayMap[`${parsedDate.month}-${parsedDate.day}`] || []).filter(s => s !== slug) : [];
+  const usedSlugs = new Set([slug, ...(h.related || []), ...sameDaySlugs]);
+
+  const sameDayHtml = sameDaySlugs.length
+    ? `<div class="section-label">Inne święta tego dnia</div><ul>${sameDaySlugs.slice(0, MAX_SAMEDAY).map(s => {
+        const rel = HOLIDAYS_DB[s];
+        return `<li><a href="/swieto/${s}/">${rel.emoji || ''} ${rel.name}</a></li>`;
+      }).join('')}</ul>`
+    : '';
+
+  const group = typeGroups[h.type] || [];
+  let categoryHtml = '';
+  if (group.length > 1) {
+    const idx = typeIndexOf[slug];
+    const picks = [];
+    for (let step = 1; step <= group.length - 1 && picks.length < MAX_CATEGORY; step++) {
+      const candidate = group[(idx + step) % group.length];
+      if (!usedSlugs.has(candidate)) { picks.push(candidate); usedSlugs.add(candidate); }
+    }
+    if (picks.length) {
+      categoryHtml = `<div class="section-label">Więcej: ${TYPE_LABELS[h.type] || 'powiązane święta'}</div><ul>${picks.map(s => {
+        const rel = HOLIDAYS_DB[s];
+        return `<li><a href="/swieto/${s}/">${rel.emoji || ''} ${rel.name}</a></li>`;
+      }).join('')}</ul>`;
+    }
+  }
+
+  const pn = holidayPrevNextMap[slug];
+  const prevNextNav = pn
+    ? `<nav class="prevnext" aria-label="Nawigacja alfabetyczna"><a href="/swieto/${pn.prev}/">← ${HOLIDAYS_DB[pn.prev].name}</a><a href="/swieta.html">Wszystkie święta</a><a href="/swieto/${pn.next}/">${HOLIDAYS_DB[pn.next].name} →</a></nav>`
+    : '';
 
   const pageUrl = `https://daybyday.today/swieto/${slug}/`;
   const articleLd = jsonLdScript({
@@ -141,6 +234,9 @@ function buildPage(slug) {
     #themeToggle:hover { background: var(--border); }
     #themeToggle::before { content: '☾'; }
     [data-theme="dark"] #themeToggle::before { content: '☀'; }
+    .prevnext { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: .85rem; flex-wrap: wrap; }
+    .prevnext a { text-decoration: none; }
+    .prevnext a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -164,7 +260,10 @@ function buildPage(slug) {
   </div>
   <div>${descHtml}</div>
   ${tradHtml ? `<div class="section-label">Tradycje i zwyczaje</div><ul>${tradHtml}</ul>` : ''}
+  ${sameDayHtml}
   ${relLinks ? `<div class="section-label">Powiązane święta</div><ul>${relLinks}</ul>` : ''}
+  ${categoryHtml}
+  ${prevNextNav}
   <p><a href="/swieto.html?id=${slug}">Pełne informacje →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
