@@ -990,15 +990,17 @@
   // kalendarz-365.pl i TheSkyLive (wszystkie etykietują Pełnię tylko na
   // pojedynczy dzień najbliższy dokładnemu momentowi). Poprzednia wersja
   // miała szersze (~3,5-dniowe), choć w miarę symetryczne okno dla Pełni.
+  // Nazwy ujednolicone z index.html/kartka-z-kalendarza.html (2026-08-29) —
+  // wcześniej ta strona używała innych słów dla tych samych faz.
   function getPhase(age) {
     if(age<0.5)  return {icon:'🌑',name:'Nów'};
-    if(age<6.88) return {icon:'🌒',name:'Sierp rosnący'};
+    if(age<6.88) return {icon:'🌒',name:'Wzrastający sierp'};
     if(age<7.88) return {icon:'🌓',name:'Pierwsza kwadra'};
-    if(age<14.27)return {icon:'🌔',name:'Księżyc rosnący'};
+    if(age<14.27)return {icon:'🌔',name:'Wzrastający garb'};
     if(age<15.27)return {icon:'🌕',name:'Pełnia'};
-    if(age<21.65)return {icon:'🌖',name:'Księżyc malejący'};
+    if(age<21.65)return {icon:'🌖',name:'Zanikający garb'};
     if(age<22.65)return {icon:'🌗',name:'Ostatnia kwadra'};
-    if(age<29.03)return {icon:'🌘',name:'Sierp malejący'};
+    if(age<29.03)return {icon:'🌘',name:'Zanikający sierp'};
     return {icon:'🌑',name:'Nów'};
   }
 

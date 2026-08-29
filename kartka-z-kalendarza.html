@@ -272,15 +272,16 @@ function getMoonPhase(date) {
   const SYNODIC = 29.53058867;
   const age = elong / 360 * SYNODIC;
   // Okna kardynalne wąskie (±0,5 dnia) — jak index.html/fazy-ksiezyca.html,
-  // patrz komentarz tam.
+  // patrz komentarz tam. Nazwy ujednolicone z index.html/fazy-ksiezyca.html
+  // (2026-08-29) — wcześniej ta strona używała innych słów dla tych samych faz.
   if (age < 0.5) return { phase:'Nów', symbol:'🌑', age:Math.round(age) };
-  if (age < 6.88) return { phase:'Przybywający sierp', symbol:'🌒', age:Math.round(age) };
+  if (age < 6.88) return { phase:'Wzrastający sierp', symbol:'🌒', age:Math.round(age) };
   if (age < 7.88) return { phase:'Pierwsza kwadra', symbol:'🌓', age:Math.round(age) };
-  if (age < 14.27) return { phase:'Przybywający garb', symbol:'🌔', age:Math.round(age) };
+  if (age < 14.27) return { phase:'Wzrastający garb', symbol:'🌔', age:Math.round(age) };
   if (age < 15.27) return { phase:'Pełnia', symbol:'🌕', age:Math.round(age) };
-  if (age < 21.65) return { phase:'Ubywający garb', symbol:'🌖', age:Math.round(age) };
+  if (age < 21.65) return { phase:'Zanikający garb', symbol:'🌖', age:Math.round(age) };
   if (age < 22.65) return { phase:'Ostatnia kwadra', symbol:'🌗', age:Math.round(age) };
-  return { phase:'Ubywający sierp', symbol:'🌘', age:Math.round(age) };
+  return { phase:'Zanikający sierp', symbol:'🌘', age:Math.round(age) };
 }
 
 function getSunTimes(date) {
