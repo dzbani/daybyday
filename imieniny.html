@@ -333,6 +333,7 @@
 <script src="name_descriptions.js"></script>
 <script src="name_descriptions_rich.js"></script>
 <script src="name_genitive.js"></script>
+<script src="imieniny_slugs.js"></script>
 <script>
 // Polska baza imienin — format: [miesiąc(1-12), dzień, [imiona]]
 const NAMES=
@@ -812,7 +813,11 @@ function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/
     .filter(n=>{ const p=NAME_PRIMARY_DAY[n]; return p&&(p[0]!==hD||p[1]!==hM); })
     .sort((a,b)=>(NAME_POPULARITY[b]||0)-(NAME_POPULARITY[a]||0));
 
-  const mkLink = (n, cls) => `<a class="${cls}" href="/imieniny/${nameSlug(n)}/">${n}</a>`;
+  const mkLink = (n, cls) => {
+    const slug = nameSlug(n);
+    const href = (typeof IMIENINY_SLUGS !== 'undefined' && IMIENINY_SLUGS.has(slug)) ? `/imieniny/${slug}/` : `/imieniny.html?name=${encodeURIComponent(n)}`;
+    return `<a class="${cls}" href="${href}">${n}</a>`;
+  };
   const primaryHtml = primary.map(n=>mkLink(n,'hero-name-primary')).join(', ');
   const secondaryHtml = secondary.length
     ? `<span class="hero-also"> — a także: ${secondary.map(n=>mkLink(n,'hero-name-secondary')).join(', ')}</span>`
@@ -2362,7 +2367,7 @@ const NAME_DB = {
     patron: 'Święta Klara z Asyżu (1194–1253), założycielka klarysek, patronka telewizji (11 sierpnia)',
     extraDates: ['11 sierpnia'],
     positive: ['Jasna i promienna osobowość','Szczera i wyraźna w komunikacji','Wierna ideałom','Artystyczna','Ubóstwo jako cnota duchowa','Empatyczna','Piękna wewnętrznie'],
-    negative: ['Bywa zbyt radykalna w ideałach','Trudno jej żyć po prostu','Niekiedy zbyt surowа wobec siebie','Asketyczna przez co trudna do codziennego życia'],
+    negative: ['Bywa zbyt radykalna w ideałach','Trudno jej żyć po prostu','Niekiedy zbyt surowa wobec siebie','Asketyczna przez co trudna do codziennego życia'],
     love: 'Miłość musi być czysta i autentyczna. Nie akceptuje kompromisów moralnych. Szuka partnera o podobnej głębi ducha.',
     professions: ['Artystka','Duchowna','Pisarka','Terapeutka','Pedagog'],
     diminutives: 'Klarcia, Klarunia',
@@ -3574,7 +3579,7 @@ const NAME_DB = {
     positive: ['Radosny i pogodny','Lojalny','Wytrwały','Dobroduszny','Ciepły','Towarzyski','Empatyczny'],
     negative: ['Bywa zbyt wesoły w nieodpowiednich chwilach','Niekiedy niepoważny','Trudno mu być mrocznym'],
     love: 'Wnosi radość do każdego związku. Szuka partnerki równie pogodnej. W miłości jest ciepły i lojalny.',
-    professions: ['Pedagog','Komik','Aktor','Animatор','Duszpasterz'],
+    professions: ['Pedagog','Komik','Aktor','Animator','Duszpasterz'],
     diminutives: 'Hilarek, Hilaruś',
     foreign: 'ang. Hilary, fr. Hilaire, niem. Hilarius, ros. Иларий',
   },
@@ -4701,7 +4706,7 @@ if (urlParam) {
   searchInput.value = urlParam;
   doSearch(urlParam);
   const friendlySlug = nameSlug(urlParam);
-  if (friendlySlug) history.replaceState(null, '', '/imieniny/' + friendlySlug + '/');
+  if (friendlySlug && typeof IMIENINY_SLUGS !== 'undefined' && IMIENINY_SLUGS.has(friendlySlug)) history.replaceState(null, '', '/imieniny/' + friendlySlug + '/');
 }
 buildAll();
 
