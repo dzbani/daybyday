@@ -244,14 +244,35 @@ const MOON_PHASES = [
   { date:'2026-07-04', phase:'Ostatnia kwadra', symbol:'🌗' },
 ];
 
+// Pelny algorytm Meeus (rozdz. 47-48, z perturbacjami) - ten sam sprawdzony wzor
+// co index.html/kalendarz.html/fazy-ksiezyca.html (jedno zrodlo prawdy, patrz
+// CLAUDE.md wzorzec bugow nr 3). Poprzednia wersja liczyla wiek prostym wzorem
+// (znany moment nowiu + sredni okres synodyczny, bez perturbacji) - roznica wobec
+// pelnego Meeusa siega do ~0,6 dnia w ciagu roku, co przy waskich (~1-dniowych)
+// oknach nazw faz moglo dawac inna faze niz pozostale 4 implementacje na stronie.
 function getMoonPhase(date) {
-  const known = new Date('2000-01-06T18:14:00Z');
-  const diff = (date - known) / 86400000;
-  const cycle = 29.53059;
-  const age = ((diff % cycle) + cycle) % cycle;
+  const rad = Math.PI / 180;
+  function toJD(y, m, d) { if (m <= 2) { y--; m += 12; } const A = Math.floor(y / 100); const B = 2 - A + Math.floor(A / 4); return Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5; }
+  const y = date.getFullYear(), mo = date.getMonth() + 1, d = date.getDate();
+  const JD = toJD(y, mo, d) + 0.5;
+  const T = (JD - 2451545.0) / 36525;
+  const D = ((297.8501921 + 445267.1114034 * T - 0.0018819 * T * T + T * T * T / 545868) % 360 + 360) % 360;
+  const M = ((357.5291092 + 35999.0502909 * T - 0.0001536 * T * T) % 360 + 360) % 360;
+  const Mp = ((134.9633964 + 477198.8675055 * T + 0.0087414 * T * T + T * T * T / 69699) % 360 + 360) % 360;
+  const F = ((93.2720950 + 483202.0175233 * T - 0.0036539 * T * T) % 360 + 360) % 360;
+  const Lp = ((218.3164477 + 481267.88123421 * T - 0.0015786 * T * T) % 360 + 360) % 360;
+  const dL = 6288774 * Math.sin(Mp * rad) + 1274027 * Math.sin((2 * D - Mp) * rad) + 658314 * Math.sin(2 * D * rad)
+    + 213618 * Math.sin(2 * Mp * rad) - 185116 * Math.sin(M * rad) - 114332 * Math.sin(2 * F * rad)
+    + 58793 * Math.sin((2 * D - 2 * Mp) * rad) + 57066 * Math.sin((2 * D - M - Mp) * rad)
+    + 53322 * Math.sin((2 * D + Mp) * rad) + 45758 * Math.sin((2 * D - M) * rad)
+    - 40923 * Math.sin((M - Mp) * rad) - 34720 * Math.sin(D * rad) - 30383 * Math.sin((M + Mp) * rad);
+  const moonLon = ((Lp + dL / 1000000) % 360 + 360) % 360;
+  const sunLon = ((280.46646 + 36000.76983 * T + 0.0003032 * T * T) % 360 + 360) % 360;
+  const elong = ((moonLon - sunLon) % 360 + 360) % 360;
+  const SYNODIC = 29.53058867;
+  const age = elong / 360 * SYNODIC;
   // Okna kardynalne wąskie (±0,5 dnia) — jak index.html/fazy-ksiezyca.html,
-  // patrz komentarz tam. Wcześniej progi (Kwadra/Pełnia) zaczynały się
-  // dokładnie na momencie astronomicznym zamiast symetrycznie wokół niego.
+  // patrz komentarz tam.
   if (age < 0.5) return { phase:'Nów', symbol:'🌑', age:Math.round(age) };
   if (age < 6.88) return { phase:'Przybywający sierp', symbol:'🌒', age:Math.round(age) };
   if (age < 7.88) return { phase:'Pierwsza kwadra', symbol:'🌓', age:Math.round(age) };
