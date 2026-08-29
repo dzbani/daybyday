@@ -1698,4 +1698,10 @@ const NAME_GENITIVE = {
   "Niegosław": "Niegosława",
   "Sarbeliusz": "Sarbeliusza",
   "Segolena": "Segoleny",
+  "Jan Chrzciciel": "Jana Chrzciciela",
+  "Eutymiusz": "Eutymiusza",
+  "Hipacy": "Hipacego",
+  "Mederyk": "Mederyka",
+  "Mederyka": "Mederyki",
+  "Sebbus": "Sebbusa",
 };
