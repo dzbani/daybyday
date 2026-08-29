@@ -45,6 +45,33 @@ Z audytu całego września 2026 (3 rundy, 591 wystąpień imion + wszystkie świ
 
 **Ważne o agentach weryfikujących fakty:** w tej samej sesji agent general-purpose 3-krotnie zgłosił "błąd", który po własnej weryfikacji Claude okazał się fałszywym alarmem lub błędną diagnozą (raz wskazał złą przyczynę realnego problemu). Nigdy nie wdrażać poprawki zasugerowanej przez agenta bez własnej, niezależnej weryfikacji najważniejszych/najbardziej zaskakujących ustaleń.
 
+## Codzienny audyt treści dnia (imieniny + święta) — cel: 10:00, zero błędów
+
+**Wymaga osobno skonfigurowanego zaplanowanego zadania (np. `/schedule`), które o 10:00 codziennie uruchamia sesję z poleceniem wykonania tego audytu — sam ten wpis w CLAUDE.md niczego automatycznie nie odpala, to tylko instrukcja czytana przez agenta, gdy sesja faktycznie się uruchomi.**
+
+Zakres: WSZYSTKIE imiona obchodzące imieniny danego dnia (`NAMES` w `imieniny.html`) oraz WSZYSTKIE święta danego dnia — zarówno z `HOLIDAYS_DB` (`swieto.html`), jak i z listy "nietypowych" (`swieta-nietypowe.html`, tablica `HOLIDAYS`). Cel: żadnego, nawet najdrobniejszego błędu na żywej stronie każdego z tych imion/świąt.
+
+**Per imię dnia — sprawdzić:**
+1. Data(y) w `NAMES` zgadzają się z datą(ami) wypisaną na wygenerowanej stronie `/imieniny/<slug>/` (`dates`/`datesStr` w `buildPage()`).
+2. Wpis w `name_descriptions_rich.js` istnieje — jeśli brak, sprawdź czy imię ma realnych nosicieli (`name_popularity_gender.js`/`name_trends.js`, wzorzec z audytu Włodzimierza 28.08.2026) zanim zdecydujesz, czy uzupełniać.
+3. `Znaczenie imienia` i `Historia` nie powielają tej samej etymologii — użyj `node scripts/gen_static_pages.js --check-duplication --only=<Imię>` (próg 25%, wzorzec z 2026-07-12).
+4. Sekcja patrona (`Patron`/`Święty patron`/`Święta patronka`/`Święci patroni`/`Święte patronki`) w RICH — porównaj wszystkie liczby-lata z odpowiadającym wpisem w `NAME_DB` (`imieniny.html`) dla tego samego imienia: brak sprzecznych dat/tożsamości ORAZ brak patronów, których zna `NAME_DB`, a pomija RICH (RICH całkowicie nadpisuje NAME_DB gdy ma własną sekcję patrona — luka jest niewidoczna bez ręcznego porównania, wzorzec ze Stanisława Kostki 28.08.2026).
+5. Fakty historyczne (daty życia/śmierci, kanonizacja, urząd, narodowość) zweryfikowane przez WebSearch z co najmniej jednym niezależnym źródłem — ale **tylko dla treści nowej lub zmienionej od ostatniego audytu tego imienia**, nie powtarzaj pełnej weryfikacji faktów, które już raz sprawdzono i się nie zmieniły (ten sam dzień wraca za rok — bezsensowne re-weryfikowanie identycznego, niezmienionego tekstu w kółko). Prowadź nieformalny rejestr "ostatnio zweryfikowane" (np. komentarz w pliku lub log w `scripts/`), żeby wiedzieć, co jest nowe.
+6. Skan mechaniczny na treści imienia: wzmianki konkurencji (`grep -in "kalbi\|bimkal"`), literówki cyrylicowe (patrz niżej).
+7. Linki wewnętrzne ze strony imienia (miesiąc, współsolenizanci, poprzednie/następne) prowadzą do istniejących stron.
+
+**Per święto dnia (poważne i nietypowe) — sprawdzić:**
+1. Data w `HOLIDAYS_DB`/`HOLIDAYS` zgadza się z rzeczywistym dniem kalendarzowym.
+2. Brak duplikatu tego samego wydarzenia pod dwiema nazwami tego samego dnia — **uwaga:** to bywa złudne (patrz "Dzień Strażaka" vs "Międzynarodowy Dzień Strażaka", 28.08.2026 — dwa różne, prawdziwe wydarzenia na tej samej dacie z powodu wspólnego patrona; nie łączyć automatycznie tylko po podobieństwie nazwy, zweryfikować merytorycznie).
+3. Fakty (`origin`, `desc`, `traditions`) zweryfikowane przez WebSearch — z tym samym zastrzeżeniem co przy imionach: nie re-weryfikuj niezmienionej treści co roku bez powodu.
+4. Skan mechaniczny: wzmianki konkurencji, literówki cyrylicowe.
+5. Linki wewnętrzne (tego samego dnia, tej samej kategorii) prowadzą do istniejących stron.
+
+**Mechaniczne skany (bez WebSearch/agenta, tanie — odpalać zawsze, całe punkty 6/4 wyżej):**
+- Konkurencja: `grep -in "kalbi\|bimkal"` po treści dnia.
+- Cyrylica: regex słowo z ≥1 literą łacińską i ≥1 cyrylicką — `/\b[a-zA-Z...]*[а-яёА-ЯЁ][a-zA-Z...]*\b/gu`.
+- Pełna metodologia i przykład wykonania (w tym pułapka fałszywych trafień przy dopasowywaniu dat) — patrz sesja 28.08.2026.
+
 ## Weryfikacja danych kalendarzowych/astronomicznych
 
 - Wielkanoc: algorytm Meeusa/Jonesa/Butchera (użyty w wielu plikach, zweryfikowany).
