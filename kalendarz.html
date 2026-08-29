@@ -411,14 +411,16 @@
     const elong = ((moonLon - sunLon) % 360 + 360) % 360;
     const SYNODIC = 29.53058867;
     const age = elong / 360 * SYNODIC;
+    // Okna kardynalne wąskie (±0,5 dnia) — jak index.html/getMoonPhase,
+    // patrz komentarz tam.
     let icon;
-    if (age < 1.85) icon = '🌑';
-    else if (age < 7.38) icon = '🌒';
-    else if (age < 9.22) icon = '🌓';
-    else if (age < 14.77) icon = '🌔';
-    else if (age < 16.61) icon = '🌕';
-    else if (age < 22.15) icon = '🌖';
-    else if (age < 23.99) icon = '🌗';
+    if (age < 0.5) icon = '🌑';
+    else if (age < 6.88) icon = '🌒';
+    else if (age < 7.88) icon = '🌓';
+    else if (age < 14.27) icon = '🌔';
+    else if (age < 15.27) icon = '🌕';
+    else if (age < 21.65) icon = '🌖';
+    else if (age < 22.65) icon = '🌗';
     else icon = '🌘';
     const ZODIAC = ['Baran ♈', 'Byk ♉', 'Bliźnięta ♊', 'Rak ♋', 'Lew ♌', 'Panna ♍', 'Waga ♎', 'Skorpion ♏', 'Strzelec ♐', 'Koziorożec ♑', 'Wodnik ♒', 'Ryby ♓'];
     return { icon, sign: ZODIAC[Math.floor(moonLon / 30) % 12] };

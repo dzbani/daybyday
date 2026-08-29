@@ -984,15 +984,21 @@
     return getMoonAgePerpetual(now);
   }
 
+  // Okna kardynalne (Nów/Kwadry/Pełnia) wąskie (±0,5 dnia wokół dokładnego
+  // momentu astronomicznego) — te same progi co index.html/getMoonPhase,
+  // potwierdzone 2026-08-29 porównaniem z timeanddate.com, moongiant.com,
+  // kalendarz-365.pl i TheSkyLive (wszystkie etykietują Pełnię tylko na
+  // pojedynczy dzień najbliższy dokładnemu momentowi). Poprzednia wersja
+  // miała szersze (~3,5-dniowe), choć w miarę symetryczne okno dla Pełni.
   function getPhase(age) {
-    if(age<1.5) return {icon:'🌑',name:'Nów'};
-    if(age<6.5) return {icon:'🌒',name:'Sierp rosnący'};
-    if(age<8.5) return {icon:'🌓',name:'Pierwsza kwadra'};
-    if(age<13)  return {icon:'🌔',name:'Księżyc rosnący'};
-    if(age<16.5)return {icon:'🌕',name:'Pełnia'};
-    if(age<21)  return {icon:'🌖',name:'Księżyc malejący'};
-    if(age<23.5)return {icon:'🌗',name:'Ostatnia kwadra'};
-    if(age<28)  return {icon:'🌘',name:'Sierp malejący'};
+    if(age<0.5)  return {icon:'🌑',name:'Nów'};
+    if(age<6.88) return {icon:'🌒',name:'Sierp rosnący'};
+    if(age<7.88) return {icon:'🌓',name:'Pierwsza kwadra'};
+    if(age<14.27)return {icon:'🌔',name:'Księżyc rosnący'};
+    if(age<15.27)return {icon:'🌕',name:'Pełnia'};
+    if(age<21.65)return {icon:'🌖',name:'Księżyc malejący'};
+    if(age<22.65)return {icon:'🌗',name:'Ostatnia kwadra'};
+    if(age<29.03)return {icon:'🌘',name:'Sierp malejący'};
     return {icon:'🌑',name:'Nów'};
   }
 
