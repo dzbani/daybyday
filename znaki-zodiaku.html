@@ -321,8 +321,18 @@ function getSign(date) {
   return SIGNS[11];
 }
 
+// <input type="date"> zwraca "YYYY-MM-DD", a new Date(str) parsuje to jako
+// północ UTC — dla odwiedzających w strefach na zachód od UTC (np. USA, Kanada)
+// getMonth()/getDate() czytałyby wtedy DZIEŃ WCZEŚNIEJSZY (możliwa zła data
+// przy urodzinach blisko granicy dwóch znaków zodiaku).
+function parseLocalDate(str) {
+  if (!str) return new Date(NaN);
+  const [y, m, d] = str.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
 function calcSign() {
-  const d = new Date(document.getElementById('birthDate').value);
+  const d = parseLocalDate(document.getElementById('birthDate').value);
   if (isNaN(d)) { alert('Podaj datę urodzenia.'); return; }
   const s = getSign(d);
   document.getElementById('srSymbol').textContent = s.symbol;

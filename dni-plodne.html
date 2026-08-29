@@ -294,6 +294,15 @@
   const PL_MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
   const DAY_SHORT = ['Pn','Wt','Śr','Cz','Pt','Sb','Nd'];
 
+  // <input type="date"> zwraca "YYYY-MM-DD", a new Date(str) parsuje to jako
+  // północ UTC — dla odwiedzających w strefach na zachód od UTC (np. USA, Kanada)
+  // lokalne metody (getDate/getDay/setDate...) czytałyby wtedy DZIEŃ WCZEŚNIEJSZY.
+  function parseLocalDate(str) {
+    if (!str) return new Date(NaN);
+    const [y, m, d] = str.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
   function addDays(date, n) { const d = new Date(date); d.setDate(d.getDate() + n); return d; }
   function fmt(d) { return `${d.getDate()} ${PL_MONTHS_GEN[d.getMonth()]} ${d.getFullYear()}`; }
   function fmtShort(d) { return `${d.getDate()} ${PL_MONTHS[d.getMonth()]}`; }
@@ -301,7 +310,7 @@
   function between(d, a, b) { return d >= a && d <= b; }
 
   function calculate() {
-    const lastPeriod = new Date(document.getElementById('lastPeriod').value);
+    const lastPeriod = parseLocalDate(document.getElementById('lastPeriod').value);
     const cycle = parseInt(document.getElementById('cycleLen').value);
     const pLen = parseInt(document.getElementById('periodLen').value);
     if (isNaN(lastPeriod.getTime())) return;

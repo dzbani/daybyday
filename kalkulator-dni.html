@@ -255,19 +255,33 @@
   const MONTHS = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
   const MONTHS_NOM = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
 
+  // <input type="date"> zwraca "YYYY-MM-DD", a new Date(str) parsuje to jako
+  // północ UTC — dla odwiedzających w strefach na zachód od UTC (np. USA, Kanada)
+  // lokalne metody (getDate/getDay/setDate...) czytałyby wtedy DZIEŃ WCZEŚNIEJSZY.
+  // Analogicznie toISOString() do zapisu domyślnej daty jest UTC, więc tuż po
+  // północy w Polsce (UTC+1/+2) pokazywałby wczorajszą datę zamiast dzisiejszej.
+  function parseLocalDate(str) {
+    if (!str) return new Date(NaN);
+    const [y, m, d] = str.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+  function toLocalISO(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+
   // Ustaw domyślne daty: dziś i za 30 dni
   const today = new Date();
   const in30 = new Date(today); in30.setDate(today.getDate() + 30);
-  document.getElementById('dateFrom').value = today.toISOString().slice(0,10);
-  document.getElementById('dateTo').value = in30.toISOString().slice(0,10);
+  document.getElementById('dateFrom').value = toLocalISO(today);
+  document.getElementById('dateTo').value = toLocalISO(in30);
 
   function formatDate(d) {
     return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
   }
 
   function calculate() {
-    const from = new Date(document.getElementById('dateFrom').value);
-    const to = new Date(document.getElementById('dateTo').value);
+    const from = parseLocalDate(document.getElementById('dateFrom').value);
+    const to = parseLocalDate(document.getElementById('dateTo').value);
     if (isNaN(from) || isNaN(to)) { alert('Uzupełnij obie daty.'); return; }
 
     const diff = Math.abs(to - from);
