@@ -2671,16 +2671,23 @@ function getMoonPhase(year,month,day){
   const age=elong/360*SYNODIC;
   const bright=Math.round((1-Math.cos(elong*rad))/2*100);
 
-  // Nazwa fazy
+  // Nazwa fazy — 8 równych ~3,69-dniowych okien (SYNODIC/8), wyśrodkowanych
+  // symetrycznie na każdej z 8 nazw (0°/45°/90°/.../315° elongacji). Wcześniej
+  // progi faz kardynalnych (Kwadra/Pełnia) były ustawione DOKŁADNIE na
+  // momencie astronomicznym zamiast symetrycznie wokół niego — efekt:
+  // "Pełnia" pokazywała się z opóźnieniem, np. 29 sierpnia 2026 mimo że
+  // prawdziwa pełnia wypadła 28 sierpnia (potwierdzone przez USNO). Szerokość
+  // okna (a nie węższa, jak u TheSkyLive) zgodna z kalendarzswiat.pl i z tym,
+  // że jasność (illumination) trzyma się >95% przez kilka dni wokół pełni.
   let phase,icon;
-  if(age<1.85)       {phase='Nów';              icon='🌑';}
-  else if(age<7.38)  {phase='Wzrastający sierp';icon='🌒';}
-  else if(age<9.22)  {phase='Pierwsza kwadra';  icon='🌓';}
-  else if(age<14.77) {phase='Wzrastający garb'; icon='🌔';}
-  else if(age<16.61) {phase='Pełnia';           icon='🌕';}
-  else if(age<22.15) {phase='Zanikający garb';  icon='🌖';}
-  else if(age<23.99) {phase='Ostatnia kwadra';  icon='🌗';}
-  else               {phase='Zanikający sierp'; icon='🌘';}
+  if(age<1.85)        {phase='Nów';              icon='🌑';}
+  else if(age<5.54)   {phase='Wzrastający sierp';icon='🌒';}
+  else if(age<9.23)   {phase='Pierwsza kwadra';  icon='🌓';}
+  else if(age<12.92)  {phase='Wzrastający garb'; icon='🌔';}
+  else if(age<16.61)  {phase='Pełnia';           icon='🌕';}
+  else if(age<20.30)  {phase='Zanikający garb';  icon='🌖';}
+  else if(age<23.99)  {phase='Ostatnia kwadra';  icon='🌗';}
+  else                {phase='Zanikający sierp'; icon='🌘';}
 
   // Znak zodiaku z prawdziwej długości ekliptycznej
   const MOON_SIGNS=['Baran ♈','Byk ♉','Bliźnięta ♊','Rak ♋','Lew ♌','Panna ♍','Waga ♎','Skorpion ♏','Strzelec ♐','Koziorożec ♑','Wodnik ♒','Ryby ♓'];
