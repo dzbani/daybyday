@@ -306,15 +306,28 @@ const WEEKDAYS = ['niedziela','poniedziałek','wtorek','środa','czwartek','pią
 
 let currentCity = 'warszawa';
 
-// Algorytm NOAA Solar Calculator
+// Meeus niskiej precyzji (zamieniony 2026-08-29 z przyblizenia Fouriera NOAA,
+// ktore dawalo systematyczny blad do ~3 min wobec timeanddate.com) - ten sam
+// wzor co index.html/kalendarz.html/kartka-z-kalendarza.html
 function calcSunCore(year, month, day, lat, lon) {
   const rad = Math.PI / 180;
-  const isLeap = year%4===0 && (year%100!==0 || year%400===0);
-  const mo = [0,31,59,90,120,151,181,212,243,273,304,334];
-  const N = mo[month-1] + day + (isLeap && month>2 ? 1 : 0);
-  const g2 = 2*Math.PI/(isLeap?366:365) * (N-1+0.5);
-  const eqt = 229.18*(0.000075+0.001868*Math.cos(g2)-0.032077*Math.sin(g2)-0.014615*Math.cos(2*g2)-0.04089*Math.sin(2*g2));
-  const decl = 0.006918-0.399912*Math.cos(g2)+0.070257*Math.sin(g2)-0.006758*Math.cos(2*g2)+0.000907*Math.sin(2*g2)-0.002697*Math.cos(3*g2)+0.00148*Math.sin(3*g2);
+  function toJD(y, m, d) { if (m <= 2) { y--; m += 12; } const A = Math.floor(y / 100); const B = 2 - A + Math.floor(A / 4); return Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5; }
+  const JD = toJD(year, month, day) + 0.5;
+  const T = (JD - 2451545.0) / 36525;
+  const L0 = ((280.46646 + 36000.76983 * T + 0.0003032 * T * T) % 360 + 360) % 360;
+  const M = ((357.52911 + 35999.05029 * T - 0.0001537 * T * T) % 360 + 360) % 360;
+  const Mr = M * rad;
+  const C = (1.914602 - 0.004817 * T - 0.000014 * T * T) * Math.sin(Mr) + (0.019993 - 0.000101 * T) * Math.sin(2 * Mr) + 0.000289 * Math.sin(3 * Mr);
+  const trueLon = L0 + C;
+  const Omega = 125.04 - 1934.136 * T;
+  const appLon = trueLon - 0.00569 - 0.00478 * Math.sin(Omega * rad);
+  const eps0 = 23.439291 - 0.0130042 * T - 0.00000016 * T * T + 0.000000504 * T * T * T;
+  const eps = eps0 + 0.00256 * Math.cos(Omega * rad);
+  const decl = Math.asin(Math.sin(eps * rad) * Math.sin(appLon * rad));
+  const RA = (Math.atan2(Math.cos(eps * rad) * Math.sin(appLon * rad), Math.cos(appLon * rad)) / rad + 360) % 360;
+  let eotDeg = L0 - 0.0057183 - RA;
+  if (eotDeg > 180) eotDeg -= 360; if (eotDeg < -180) eotDeg += 360;
+  const eqt = eotDeg * 4;
   const cosHA = (Math.cos(90.833*rad) - Math.sin(lat*rad)*Math.sin(decl)) / (Math.cos(lat*rad)*Math.cos(decl));
   if (Math.abs(cosHA) > 1) return null;
   const HA = Math.acos(cosHA) / rad;
