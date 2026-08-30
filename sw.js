@@ -1,4 +1,4 @@
-﻿const CACHE = 'daybyday-v361';
+﻿const CACHE = 'daybyday-v362';
 
 const PRECACHE = [
   'fonts.css',
@@ -26,7 +26,7 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   const url = e.request.url;
-  if (e.request.mode === 'navigate' || url.includes('api.') || url.includes('openstreetmap') || url.includes('open-meteo') || url.includes('wttr') || url.includes('wikipedia')) {
+  if (e.request.mode === 'navigate' || url.includes('api.') || url.includes('openstreetmap') || url.includes('open-meteo') || url.includes('wttr')) {
     e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
     return;
   }
