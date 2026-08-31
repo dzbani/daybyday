@@ -236,19 +236,25 @@ function buildPage(name) {
   const dates = (dateMap[name] || []).slice().sort((a, b) => a.m !== b.m ? a.m - b.m : a.d - b.d);
   if (!dates.length) return null;
   const rich = RICH[name];
-  if (!rich) return null;
+  // Imiona bez wpisu w NAME_DESCRIPTIONS_RICH (zwykle brak realnych nosicieli) nadal dostają
+  // stronę - okrojoną (bez sekcji Znaczenie/Historia/Patron/wykresu popularności), ale ZAWSZE
+  // z pełną nawigacją (topnav/breadcrumb/link do miesiąca/współsolenizanci). Naprawia bug
+  // "strona-kikut bez żadnej nawigacji" (CLAUDE.md, audyt 2026-08-31: Optat/Prymian/
+  // Solidariusz/Teodot). Nawigacja poprzednie/następne zostaje pominięta dla takich imion -
+  // pierścień alfabetyczny (prevNextMap) obejmuje tylko imiona z RICH, żeby nie przesuwać
+  // wskaźników prev/next na wszystkich sąsiednich, już poprawnych stronach.
 
   const datesStr = dates.map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ');
   const metaDatesStr = dates.length > 3
     ? dates.slice(0, 3).map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ') + ' i inne'
     : datesStr;
   const freqStr = dates.length === 1 ? 'raz w roku' : `${dates.length} razy w roku`;
-  const descHtml = transformRich(rich);
+  const descHtml = rich ? transformRich(rich) : '';
   const trendHtml = buildTrendChart(name);
   const genitive = NAME_GENITIVE[name] || name;
   const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
 
-  const richHasPatron = PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
+  const richHasPatron = !!rich && PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
   const dbEntry = NAME_DB[normalize(name)];
   const patronBlock = (!richHasPatron && dbEntry && dbEntry.patron)
     ? `\n  <div class="patron-section">\n    <h2>Patron / Patronka</h2>\n    <p>${dbEntry.patron}</p>\n  </div>`
@@ -376,7 +382,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
-  ${trendHtml ? trendHtml + '\n  ' : ''}<div>${descHtml}</div>${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
+  ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
 </body>
