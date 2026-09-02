@@ -2050,6 +2050,24 @@ const HOLIDAYS=[
 
 ];
 
+// ── Święta ruchome (data zależna od dnia tygodnia, np. "pierwsza środa miesiąca") ──
+// Liczone algorytmicznie z roku przeglądanej strony (`y`), bez tabeli lat na przyszłość —
+// ten sam wzorzec co licznik do wakacji w kalendarz-szkolny.html (patrz CLAUDE.md).
+function nthWeekdayOfMonth(year,month,weekday,n){
+  // month: 1-12, weekday: 0=niedziela..6=sobota (jak Date.getDay()), n>0: n-te wystąpienie, n=-1: ostatnie w miesiącu
+  if(n>0){
+    const first=new Date(year,month-1,1);
+    const offset=(weekday-first.getDay()+7)%7;
+    return 1+offset+(n-1)*7;
+  }
+  const last=new Date(year,month,0); // dzień 0 kolejnego miesiąca = ostatni dzień tego miesiąca
+  const offset=(last.getDay()-weekday+7)%7;
+  return last.getDate()-offset;
+}
+const FLOATING_HOLIDAYS=[
+  {name:'Światowy Dzień Pozyskiwania Talentów',month:9,weekday:3,n:1,tag:'inne'},
+];
+
 // ── Kolory tagów ──────────────────────────────────────────────
 const TAG_COLOR = {
   'Tradycja':'#C9A84C','Jedzenie':'#E8936A','Przyroda':'#5A7A5A','Zdrowie':'#E87B7B',
@@ -2879,7 +2897,10 @@ function getMoonRiseSet(year,month,day,lat,lon){
   }
 
   // Święta
-  const todays=HOLIDAYS.filter(([hd,hm])=>hd===d&&hm===m);
+  const todaysFixed=HOLIDAYS.filter(([hd,hm])=>hd===d&&hm===m);
+  const todaysFloating=FLOATING_HOLIDAYS.filter(fh=>fh.month===m&&nthWeekdayOfMonth(y,fh.month,fh.weekday,fh.n)===d)
+    .map(fh=>[d,m,fh.name,'',fh.tag]);
+  const todays=[...todaysFixed,...todaysFloating];
   // Chipsy świąt w date-hero
   const heroEl=document.getElementById('heroHolidays');
   if(todays.length&&heroEl){
