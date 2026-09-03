@@ -325,6 +325,19 @@
       {name:'Okres zwykły II (po Zesłaniu Ducha Świętego)', from:addDays(pentecost,1), to:addDays(christKingDate,6), color:'green', note:'Niedziela Chrystusa Króla kończy rok liturgiczny — biały'},
     ];
 
+    // Świętego Józefa: zwykle 19 marca, ale wg tej samej ogólnej normy liturgicznej co
+    // Zwiastowanie (uroczystości nie przyjmują niedziel Wielkiego Postu ani Wielkiego
+    // Tygodnia/Oktawy Wielkanocy) — gdy data wypada w niedzielę Wielkiego Postu, przenosi
+    // się na poniedziałek; gdy wypada od Niedzieli Palmowej do soboty w Oktawie Wielkanocy
+    // włącznie, przenosi się na poniedziałek po II Niedzieli Wielkanocnej (Easter+8).
+    // Reguła zweryfikowana na udokumentowanym przypadku 2023 (19 marca wypadło w IV Niedzielę
+    // Wielkiego Postu, uroczystość faktycznie obchodzona 20.03.2023). Dotyczy też 2028, 2034
+    // (niedziela) oraz rzadziej samego Wielkiego Tygodnia (np. 2035).
+    const josephNaive=new Date(epiphany.getFullYear(),2,19);
+    const josephDate = (josephNaive>=palmSunday && josephNaive<=addDays(easter,6))
+      ? addDays(easter,8)
+      : (josephNaive.getDay()===0 ? addDays(josephNaive,1) : josephNaive);
+
     // Zwiastowanie Pańskie: zwykle 25 marca, ale gdy ta data wypada od Niedzieli Palmowej
     // do soboty w Oktawie Wielkanocy włącznie (Wielki Tydzień/Triduum/Oktawa nie przyjmują
     // żadnych uroczystości), przenosi się je na poniedziałek po II Niedzieli Wielkanocnej
@@ -353,6 +366,7 @@
       {date:new Date(christmasThisLitYear.getFullYear(),11,26), name:'Św. Szczepana, pierwszego męczennika', color:'red', rank:'Święto', slug:'szczepana-pierwszego-meczennika'},
       {date:new Date(epiphany.getFullYear(),0,1), name:'Świętej Bożej Rodzicielki Maryi', color:'white', rank:'Uroczystość — Nowy Rok', obligatory:true, slug:'swietej-bozej-rodzicielki-maryi'},
       {date:epiphany, name:'Objawienie Pańskie (Trzech Króli)', color:'white', rank:'Uroczystość', obligatory:true, slug:'objawienie-panskie'},
+      {date:josephDate, name:'Świętego Józefa, Oblubieńca NMP'+(sameDay(josephDate,josephNaive)?'':' (przeniesione)'), color:'white', rank:'Uroczystość', slug:'swietego-jozefa'},
       {date:annunciationDate, name:'Zwiastowanie Pańskie'+(sameDay(annunciationDate,annunciationNaive)?'':' (przeniesione)'), color:'white', rank:'Uroczystość', slug:'zwiastowanie-panskie'},
       {date:ashWednesday, name:'Środa Popielcowa', color:'violet', rank:'Początek Wielkiego Postu', slug:'sroda-popielcowa'},
       {date:palmSunday, name:'Niedziela Palmowa Męki Pańskiej', color:'red', rank:'Niedziela — rozpoczyna Wielki Tydzień', slug:'niedziela-palmowa'},
