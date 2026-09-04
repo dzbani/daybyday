@@ -201,10 +201,7 @@
     <h1 class="page-title">Święta i dni wolne</h1>
   </div>
 
-  <div class="year-nav" style="display:flex;gap:.5rem;margin-bottom:1.25rem;">
-    <button class="year-btn swieta-year-btn active" data-year="2026" onclick="showSwietaYear(2026)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2026</button>
-    <button class="year-btn swieta-year-btn" data-year="2027" onclick="showSwietaYear(2027)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2027</button>
-  </div>
+  <div class="year-nav" id="swietaYearNav" style="display:flex;gap:.5rem;margin-bottom:1.25rem;"></div>
   <style>.swieta-year-btn.active{background:var(--text) !important;color:var(--bg) !important;border-color:var(--text) !important;}</style>
 
   <div class="filter-row">
@@ -302,23 +299,31 @@
   const TYPE_COLOR={panstwowe:'#3A5FA0',koscielne:'#8B5E2A',miedzynarodowe:'#3A6B3F',branzowe:'#5B4E8C',nieoficjalne:'#6B6864',historyczne:'#7A4A42'};
   const DATE_LABEL_OVERRIDE={'dzien-farmaceuty':'25–26 wrz'};
 
-  // Ruchome swieta (liczone wzgledem Wielkanocy) - w SWIETA_DATA daty sa dla 2026
-  // (Wielkanoc 5 kwietnia). Dla 2027 (Wielkanoc 28 marca) podmieniamy tylko te sluigi,
-  // reszta (stale daty) zostaje bez zmian - unika duplikowania calej ~170-pozycyjnej bazy.
-  const MOVABLE_2027={
-    'tlusty-czwartek':[4,2], 'ostatki':[9,2], 'popielec':[10,2],
-    'niedziela-palmowa':[21,3], 'wielki-czwartek':[25,3], 'wielki-piatek':[26,3],
-    'wielka-sobota':[27,3], 'wielkanoc':[28,3], 'poniedzialek-wielkanocny':[29,3],
-    'milosierdzie-boze':[4,4], 'wniebowstapienie':[9,5], 'zielone-swiatki':[16,5],
-    'boze-cialo':[27,5],
-  };
-  const SWIETA_DATA_2027=SWIETA_DATA.map(([day,month,name,slug,typeStr])=>{
-    const ov=MOVABLE_2027[slug];
-    return ov ? [ov[0],ov[1],name,slug,typeStr] : [day,month,name,slug,typeStr];
-  });
+  // Swieta ruchome liczone algorytmicznie dla dowolnego roku - patrz
+  // computeMovableSwieta() w swieta_data.js (naprawione 4.09.2026; wczesniejsza reczna
+  // łatka na sam 2027 rok pomijala nawet Trojce Przenajswietsza).
+  function swietaDataForYear(year){
+    return SWIETA_DATA_STATIC.concat(computeMovableSwieta(year));
+  }
 
   const list=document.getElementById('holidaysList');
+  const thisYear=new Date().getFullYear();
   let currentData=SWIETA_DATA;
+
+  // Przyciski lat generowane dynamicznie (biezacy rok + 3 kolejne), zamiast sztywnej
+  // listy z dwoma latami w HTML - unika ponownego "zamrozenia" wyboru roku.
+  (function renderYearButtons(){
+    const nav=document.getElementById('swietaYearNav');
+    for(let y=thisYear; y<=thisYear+3; y++){
+      const btn=document.createElement('button');
+      btn.className='year-btn swieta-year-btn'+(y===thisYear?' active':'');
+      btn.dataset.year=y;
+      btn.textContent=y;
+      btn.style.cssText='padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;';
+      btn.onclick=()=>showSwietaYear(y);
+      nav.appendChild(btn);
+    }
+  })();
 
   function render(data){
     list.innerHTML='';
@@ -346,7 +351,7 @@
   }
 
   window.showSwietaYear=function(year){
-    currentData = (year===2027) ? SWIETA_DATA_2027 : SWIETA_DATA;
+    currentData = (year===thisYear) ? SWIETA_DATA : swietaDataForYear(year);
     document.querySelectorAll('.swieta-year-btn').forEach(b=>b.classList.toggle('active', Number(b.dataset.year)===year));
     document.querySelectorAll('.filter-btn').forEach((b,i)=>b.classList.toggle('active', i===0));
     render(currentData);

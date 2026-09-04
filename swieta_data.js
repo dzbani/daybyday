@@ -1,7 +1,16 @@
-// Wspólna baza danych świąt i dni obchodzonych (2026) — jedno źródło prawdy
+// Wspólna baza danych świąt i dni obchodzonych — jedno źródło prawdy
 // używane przez swieta.html (pełna lista z filtrami) i index.html (widżet "Najbliższe ważne daty").
 // Format: [dzień, miesiąc, nazwa, slug, typ(y) rozdzielone spacją]
-const SWIETA_DATA=[
+//
+// Święta ruchome (liczone względem Wielkanocy) NIE są tu wpisane na sztywno - patrz
+// SWIETA_DATA_MOVABLE_OFFSETS i computeMovableSwieta() niżej. Wczesniej byly zakodowane
+// na sztywno dla 2026 r., z reczna łatka na 2027 w swieta.html (MOVABLE_2027) - index.html
+// w ogole nie mial tej łatki, wiec od 1 stycznia 2027 pokazywalby cicho bledne daty
+// (ten sam wzorzec bledu co przy fazach ksiezyca/wschodach slonca, patrz CLAUDE.md).
+// Naprawione 4.09.2026: te same przesuniecia co w kalendarz-liturgiczny.html (algorytm
+// Meeusa/Jonesa/Butchera), zweryfikowane obliczeniowo zgodnie z poprzednimi sztywnymi
+// wartosciami dla 2026 i 2027 (13/13 dopasowan).
+const SWIETA_DATA_STATIC=[
   [1,1,'Nowy Rok','nowy-rok','panstwowe koscielne'],
   [6,1,'Trzech Króli (Objawienie Pańskie)','trzech-kroli','koscielne'],
   [21,1,'Dzień Babci','dzien-babci','nieoficjalne'],
@@ -16,10 +25,7 @@ const SWIETA_DATA=[
   [21,2,'Międzynarodowy Dzień Języka Ojczystego','dzien-jezyka-ojczystego','miedzynarodowe'],
   [22,2,'Dzień Ofiar Przestępstw','dzien-ofiar-przestepstw','branzowe'],
   [23,2,'Międzynarodowy Dzień Walki z Depresją','dzien-walki-z-depresja','miedzynarodowe'],
-  [12,2,'Tłusty Czwartek','tlusty-czwartek','nieoficjalne'],
-  [17,2,'Ostatki (Śledzik)','ostatki','nieoficjalne'],
   [17,2,'Dzień Służby Cywilnej','dzien-sluzby-cywilnej','branzowe'],
-  [18,2,'Środa Popielcowa (Popielec)','popielec','koscielne'],
   [14,2,'Walentynki — Dzień Zakochanych','walentynki','nieoficjalne'],
   [19,2,'Narodowy Dzień Nauki Polskiej','dzien-nauki-polskiej','panstwowe'],
   [1,3,'Narodowy Dzień Pamięci „Żołnierzy Wyklętych”','dzien-pamieci-zolnierzy-wykletych','panstwowe'],
@@ -36,17 +42,10 @@ const SWIETA_DATA=[
   [23,3,'Światowy Dzień Meteorologii','dzien-meteorologii','branzowe'],
   [24,3,'Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją niemiecką','dzien-pamieci-polakow-ratujacych-zydow','panstwowe'],
   [27,3,'Międzynarodowy Dzień Teatru','dzien-teatru','branzowe'],
-  [29,3,'Niedziela Palmowa','niedziela-palmowa','koscielne'],
   [29,3,'Dzień Metalowca','dzien-metalowca','branzowe'],
   [1,4,'Prima Aprilis','prima-aprilis','nieoficjalne'],
-  [2,4,'Wielki Czwartek','wielki-czwartek','koscielne'],
-  [3,4,'Wielki Piątek','wielki-piatek','koscielne'],
-  [4,4,'Wielka Sobota','wielka-sobota','koscielne'],
-  [5,4,'Wielka Niedziela — Wielkanoc','wielkanoc','koscielne'],
-  [6,4,'Poniedziałek Wielkanocny (Śmigus-Dyngus)','poniedzialek-wielkanocny','koscielne'],
   [7,4,'Światowy Dzień Zdrowia','dzien-zdrowia','miedzynarodowe'],
   [12,4,'Dzień Kosmonautyki','dzien-kosmonautyki','branzowe'],
-  [12,4,'Niedziela Miłosierdzia Bożego','milosierdzie-boze','koscielne'],
   [13,4,'Dzień Pamięci Ofiar Zbrodni Katyńskiej','dzien-pamieci-ofiar-zbrodni-katynskiej','panstwowe'],
   [14,4,'Święto Chrztu Polski','swieto-chrztu-polski','panstwowe'],
   [16,4,'Dzień Sapera (Święto Wojsk Inżynieryjnych)','dzien-sapera','branzowe'],
@@ -73,17 +72,13 @@ const SWIETA_DATA=[
   [16,5,'Święto Straży Granicznej','swieto-strazy-granicznej','branzowe'],
   [18,5,'Krajowy Dzień Fryzjera i Kosmetyczki','dzien-fryzjera','branzowe'],
   [18,5,'Międzynarodowy Dzień Muzeów','dzien-muzeow','branzowe'],
-  [17,5,'Wniebowstąpienie Pańskie','wniebowstapienie','koscielne'],
   [24,5,'Święto Wojsk Specjalnych','dzien-wojsk-specjalnych','branzowe'],
-  [24,5,'Zesłanie Ducha Świętego (Zielone Świątki)','zielone-swiatki','koscielne'],
   [25,5,'Dzień Piwowara','dzien-piwowara','branzowe'],
   [26,5,'Dzień Matki','dzien-matki','nieoficjalne'],
   [27,5,'Dzień Samorządu Terytorialnego','dzien-samorzadu-terytorialnego','panstwowe'],
   [27,5,'Ogólnopolski Dzień Diagnosty Laboratoryjnego','dzien-diagnosty-laboratoryjnego','branzowe'],
   [29,5,'Dzień Weterana Działań poza Granicami Państwa','dzien-weterana','panstwowe'],
-  [31,5,'Uroczystość Trójcy Przenajświętszej','trojca-swiety','koscielne'],
   [1,6,'Dzień Dziecka','dzien-dziecka','nieoficjalne'],
-  [4,6,'Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa)','boze-cialo','koscielne'],
   [4,6,'Dzień Wolności i Praw Obywatelskich','dzien-wolnosci-i-praw-obywatelskich','panstwowe'],
   [4,6,'Dzień Drukarza','dzien-drukarza','branzowe'],
   [7,6,'Dzień Chemika','dzien-chemika','branzowe'],
@@ -173,3 +168,55 @@ const SWIETA_DATA=[
   [27,12,'Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego','dzien-zwycieskiego-powstania-wielkopolskiego','panstwowe'],
   [31,12,'Sylwester','sylwester','nieoficjalne']
 ];
+
+// Algorytm Meeusa/Jonesa/Butchera (kalendarz gregoriański) — data Wielkanocy.
+// Ten sam wzór co w kalendarz-liturgiczny.html - kopiowany tu celowo (a nie importowany),
+// bo ten plik jest ladowany samodzielnie przez index.html i swieta.html, bez wspolnego
+// modulu JS na tej stronie.
+function swietaDataEasterSunday(year){
+  const a=year%19, b=Math.floor(year/100), c=year%100;
+  const d=Math.floor(b/4), e=b%4, f=Math.floor((b+8)/25), g=Math.floor((b-f+1)/3);
+  const h=(19*a+b-d-g+15)%30;
+  const i=Math.floor(c/4), k=c%4;
+  const l=(32+2*e+2*i-h-k)%7;
+  const m=Math.floor((a+11*h+22*l)/451);
+  const month=Math.floor((h+l-7*m+114)/31);
+  const day=((h+l-7*m+114)%31)+1;
+  return new Date(year, month-1, day);
+}
+function swietaDataAddDays(d,n){ const r=new Date(d); r.setDate(r.getDate()+n); return r; }
+
+// Przesunięcia względem Wielkanocy (dzień 0). Zweryfikowane 4.09.2026 obliczeniowo
+// przeciwko poprzednim sztywnym wartościom dla 2026 i 2027 (13/13 dopasowań) - patrz
+// runda 16/17 audytu w pamięci projektu. Trójcy Przenajświętszej (+56) była pominięta
+// nawet w poprzedniej ręcznej łatce na 2027 rok - dodana tu poprawnie.
+const SWIETA_DATA_MOVABLE=[
+  [-52,'Tłusty Czwartek','tlusty-czwartek','nieoficjalne'],
+  [-47,'Ostatki (Śledzik)','ostatki','nieoficjalne'],
+  [-46,'Środa Popielcowa (Popielec)','popielec','koscielne'],
+  [-7,'Niedziela Palmowa','niedziela-palmowa','koscielne'],
+  [-3,'Wielki Czwartek','wielki-czwartek','koscielne'],
+  [-2,'Wielki Piątek','wielki-piatek','koscielne'],
+  [-1,'Wielka Sobota','wielka-sobota','koscielne'],
+  [0,'Wielka Niedziela — Wielkanoc','wielkanoc','koscielne'],
+  [1,'Poniedziałek Wielkanocny (Śmigus-Dyngus)','poniedzialek-wielkanocny','koscielne'],
+  [7,'Niedziela Miłosierdzia Bożego','milosierdzie-boze','koscielne'],
+  [42,'Wniebowstąpienie Pańskie','wniebowstapienie','koscielne'],
+  [49,'Zesłanie Ducha Świętego (Zielone Świątki)','zielone-swiatki','koscielne'],
+  [56,'Uroczystość Trójcy Przenajświętszej','trojca-swiety','koscielne'],
+  [60,'Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa)','boze-cialo','koscielne'],
+];
+
+function computeMovableSwieta(year){
+  const easter = swietaDataEasterSunday(year);
+  return SWIETA_DATA_MOVABLE.map(([offset,name,slug,type])=>{
+    const d = swietaDataAddDays(easter, offset);
+    return [d.getDate(), d.getMonth()+1, name, slug, type];
+  });
+}
+
+// SWIETA_DATA gotowe do użycia = stałe daty + ruchome policzone dla bieżącego roku
+// kalendarzowego (wszystkie ruchome święta mieszczą się między lutym a czerwcem, więc
+// zwykły rok kalendarzowy wystarcza — bez potrzeby logiki "roku liturgicznego" jak
+// w kalendarz-liturgiczny.html).
+const SWIETA_DATA = SWIETA_DATA_STATIC.concat(computeMovableSwieta(new Date().getFullYear()));

@@ -2814,6 +2814,12 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const isToday=T.getTime()===TODAY.getTime();
 
   const y=T.getFullYear(),m=T.getMonth()+1,d=T.getDate();
+  // SWIETA_DATA (z swieta_data.js) jest liczone dla realnego biezacego roku przy wczytaniu
+  // skryptu (new Date().getFullYear()) - przegladanie innego dnia przez URL (?d=&m=&y=) moze
+  // pokazywac inny rok niz "teraz", co dla swiat ruchomych dawaloby zle daty. Dla widzianego
+  // roku innego niz biezacy liczymy ruchome swieta osobno dla tego roku (patrz naprawa
+  // "zamrozenia" dat ruchomych w swieta_data.js, 4.09.2026).
+  const swietaForY=(y===TODAY.getFullYear())?SWIETA_DATA:SWIETA_DATA_STATIC.concat(computeMovableSwieta(y));
   const doy=getDayOfYear(T);
   const week=getISOWeek(T);
   const zod=getZodiac(m,d);
@@ -2892,7 +2898,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   }
   // Święta z SWIETA_DATA (Państwowe/Kościelne/Tradycyjne i okolicznościowe) + nietypowe, bez duplikatów po nazwie
   const CARD_TYPES=['panstwowe','koscielne','nieoficjalne'];
-  const todaysCurated=SWIETA_DATA.filter(([hd,hm,,,type])=>hd===d&&hm===m&&type.split(' ').some(t=>CARD_TYPES.includes(t)));
+  const todaysCurated=swietaForY.filter(([hd,hm,,,type])=>hd===d&&hm===m&&type.split(' ').some(t=>CARD_TYPES.includes(t)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
   const todaysNietypowe=todays.filter(([,,name])=>!curatedNames.has(name));
   const shownTodayNames=new Set([...curatedNames,...todaysNietypowe.map(([,,name])=>name)]);
@@ -3124,9 +3130,25 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
   const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne'];
-  const allUpcoming=SWIETA_DATA.filter(([,,name,,type])=>type.split(' ').some(t=>WIDGET_TYPES.includes(t)) && name!=='Święto Wojska Polskiego').map(([dd,mm,name,slug])=>{
+  // Swieto ruchome przechodzace na kolejny rok nie moze po prostu powtorzyc dd/mm z roku
+  // biezacego (Wielkanoc i pochodne wypadaja co roku innego dnia) - doliczane osobno dla y+1,
+  // z pamiecia podreczna liczoną leniwie tylko gdy faktycznie potrzebna.
+  const movableSlugsForUpcoming=new Set(SWIETA_DATA_MOVABLE.map(([,,slug])=>slug));
+  let movableNextYearMap=null;
+  const allUpcoming=swietaForY.filter(([,,name,,type])=>type.split(' ').some(t=>WIDGET_TYPES.includes(t)) && name!=='Święto Wojska Polskiego').map(([dd,mm,name,slug])=>{
     let dt=new Date(y,mm-1,dd);
-    if(dt.getTime()<TODAY_MS)dt=new Date(y+1,mm-1,dd);
+    if(dt.getTime()<TODAY_MS){
+      if(movableSlugsForUpcoming.has(slug)){
+        if(!movableNextYearMap){
+          movableNextYearMap={};
+          computeMovableSwieta(y+1).forEach(([ndd,nmm,,nslug])=>{movableNextYearMap[nslug]=[ndd,nmm];});
+        }
+        const [ndd,nmm]=movableNextYearMap[slug];
+        dt=new Date(y+1,nmm-1,ndd);
+      }else{
+        dt=new Date(y+1,mm-1,dd);
+      }
+    }
     const diff=Math.round((dt.getTime()-TODAY_MS)/86400000);
     return{name,dt,diff,slug};
   }).filter(x=>x.diff>0).sort((a,b)=>a.diff-b.diff).slice(0,6);
