@@ -1824,7 +1824,40 @@ const HOLIDAYS = [
 [27,12,'Międzynarodowy Dzień Gotowości na Epidemię','COVID-19 pokazał, jak nieprzygotowany był świat. Dziś WHO apeluje o systemy wczesnego ostrzegania, zapasy szczepionek i plany zarządzania kryzysowego przed następną pandemią.','zdrowie'],
 [28,12,'Dzień Gry w Karty','Karty do gry — wynalezione w Chinach w IX wieku — podbijły świat. Poker, brydż, solitaire, war — nieskończona różnorodność gier z 52 kartami. Dziś tasujemy i rozdajemy.','inne'],
 [30,12,'Dzień Serka Wiejskiego','Serek wiejski — biały, ziarnisty, delikatny — to jedno z najzdrowszych nabiałowych sniadaniowych dań. Z rzodkiewką i szczypiorkiem lub z dżemem: prosty i zawsze dobry.','jedzenie'],
-[31,12,'Dzień bez Bielizny','Ostatni dzień roku i ostatnia granica nonkonformizmu — dziś ci odważni żegnają rok w najbardziej naturalny sposób. Kontrowersyjne, humorystyczne i całkowicie dobrowolne.','inne']
+[31,12,'Dzień bez Bielizny','Ostatni dzień roku i ostatnia granica nonkonformizmu — dziś ci odważni żegnają rok w najbardziej naturalny sposób. Kontrowersyjne, humorystyczne i całkowicie dobrowolne.','inne'],
+
+// Przywrócone 5.09.2026: 25 poprawnie zdatowanych świąt błędnie usuniętych 3.09.2026
+// (commity 23dfe0d40, be489811d) - tablica HOLIDAYS ma format [DZIEŃ,MIESIĄC,...], nie
+// [miesiąc,dzień,...] jak błędnie zapisano wtedy w CLAUDE.md. Wszystkie te wpisy mają
+// dzień=9 (np. "9 maja" = Dzień Europy), co pod błędnym odwrotnym odczytem wyglądało jak
+// duplikat "9 września" i zostało skasowane. Zweryfikowane niezależnie (Dzień Europy=9 maja
+// 1950 Schuman, Dzień Kaczora Donalda=9 czerwca 1934 wg własnego opisu, Noc Kryształowa=
+// 9/10 listopada 1938 itd.) - patrz CLAUDE.md, sekcja o formacie tablicy HOLIDAYS.
+[9,2,'Dzień Bezpiecznego Internetu','Dzień edukacji o bezpiecznym korzystaniu z internetu, ochronie prywatności i zagrożeniach online — szczególnie ważny dla dzieci i młodzieży.','inne'],
+[9,2,'Międzynarodowy Dzień Pizzy','Pizza narodziła się w Neapolu w XVIII wieku jako jedzenie uliczne dla biednych. Dziś to jeden z najbardziej rozpoznawalnych potraw świata, a neapolitańska pizza trafiła na listę UNESCO.','inne'],
+[9,3,'Światowy Dzień Drzemki w Pracy','Badania NASA potwierdzają: 26-minutowa drzemka poprawia wydajność o 34% i czujność o 54%. Dziś hasłem jest „nap at work" — czas przekonać szefa, że chwila odpoczynku to inwestycja, a nie lenistwo.','inne'],
+[9,3,'Dzień Barbie','9 marca 1959 roku Barbie zadebiutowała na targach zabawek w Nowym Jorku — lalka, która wywołuje dyskusje o wizerunku kobiety do dziś.','inne'],
+[9,4,'Międzynarodowy Dzień Jednorożca','Jednorożec — mityczne stworzenie z jednym rogiem — symbolizuje magię, czystość i wyjątkowość. W średniowieczu wierzono, że jego róg leczy trucizny. Dziś jednorożce świętują swoje własne święto w tęczowym stylu.','inne'],
+[9,5,'Światowy Dzień Ptaków Wędrownych','Miliard ptaków przemierza co roku tysiące kilometrów między kontynentami. Dziś chronimy ich trasy migracyjne, zagrożone przez urbanizację i zmiany klimatu.','przyroda'],
+[9,5,'Światowy Dzień Sprawiedliwego Handlu','Fair Trade gwarantuje producentom z krajów rozwijających się uczciwe ceny — kupując kawę lub czekoladę ze znaczkiem Fairtrade, zmieniamy czyjeś życie.','inne'],
+[9,5,'Dzień Europy','9 maja 1950 roku Robert Schuman przedstawił plan, który dał początek Unii Europejskiej — projektu pokoju jednoczącego demokratyczne narody przez ponad 70 lat.','inne'],
+[9,6,'Międzynarodowy Dzień Archiwów','Archiwa to pamięć cywilizacji — miliony dokumentów, zdjęć i map, które pozwalają zrozumieć przeszłość. Dziś Międzynarodowa Rada Archiwów promuje ich ochronę.','inne'],
+[9,6,'Dzień Kaczora Donalda','9 czerwca 1934 roku Donald Duck zadebiutował w krótkim filmie „Wise Little Hen". Furionat w marynarskim uniformie szybko stał się gwiazdą ważniejszą od Myszki Miki.','inne'],
+[9,6,'Dzień Agugaga','Fikcyjne, absurdalne święto — humor dadaistyczny przeniesiony na kalendarz. Agugaga to coś, co istnieje dlatego, że ktoś postanowił, że istnieje. I to wystarczy.','inne'],
+[9,6,'Dzień Trójkąta Koralowego','Trójkąt Koralowy — wody Indonezji, Filipin i Papui — to centrum bioróżnorodności morskiej. 76% znanych raf koralowych świata. Dziś walczymy o ich przetrwanie.','inne'],
+[9,7,'Dzień Chodzenia Do Pracy Inną Drogą','Zmień trasę, odkryj nową kawiarnię, zauważ fasadę budynku, obok której chodziłeś latami. Rutyna tępi umysł — jeden mały objazd może zmienić sposób, w jaki widzisz miasto.','inne'],
+[9,8,'Międzynarodowy Dzień Ludności Tubylczej na Świecie','470 mln rdzennych mieszkańców Ziemi strzeże 80% światowej bioróżnorodności. Dziś ONZ broni ich praw do ziemi, kultury, języka i samostanowienia.','inne'],
+[9,10,'Światowy Dzień Poczty i Znaczka Pocztowego','Poczta łączy świat od wieków — od gołębia pocztowego po paczkę ekspresową. Dziś świętujemy 150-letnią historię Światowego Związku Pocztowego i piękno dawnych znaczków.','inne'],
+[9,10,'Międzynarodowy Dzień Pisania Listów','List odręczny to gest wyjątkowy — dziś, gdy email to norma, kartka napisana ręcznie wzrusza bardziej niż tysiąc wiadomości SMS. Dziś piszemy do kogoś bliskiego.','inne'],
+[9,10,'Światowy Dzień Jaja','Jajko to idealna kapsułka odżywcza — białko, witaminy, lecytyna. Sadzone, gotowane, w omlecie czy w cieście — dziś świętujemy ten wszechstronny dar natury.','jedzenie'],
+[9,11,'Europejski Dzień Wynalazcy','Europa dała światu druk, silnik parowy i penicylinę. Dziś honorujemy wynalazców — tych wielkich i tych cichych, którzy każdego roku składają tysiące patentów poprawiających życie.','inne'],
+[9,11,'Światowy Dzień Adopcji','Adopcja to nie zastępstwo — to miłość, która wybiera. Dziś świętujemy rodziny adoptywne i walczymy o uproszczenie procedur, by każde dziecko czekające na rodzinę miało szansę.','ludzie'],
+[9,11,'Światowy Dzień Sierot','Ponad 140 milionów dzieci na świecie nie ma obojga rodziców — wiele z nich trafia do domów dziecka lub na ulicę. Dziś walczymy o system pieczy zastępczej i wsparcie dla sierot.','ludzie'],
+[9,12,'Dzień Dziewic','Dzień poświęcony legendom i symbolice dziewictwa w różnych kulturach — od antycznych westalek po współczesne debaty o wartościach i wolności wyboru.','inne'],
+[9,12,'Międzynarodowy Dzień Przeciwdziałania Korupcji','ONZ walczy z korupcją — zjawiskiem kosztującym gospodarkę światową 2,6 bln dolarów rocznie i niszczącym demokrację oraz zaufanie do instytucji.','inne'],
+[9,12,'Międzynarodowy Dzień Pamięci i Godności Ofiar Zbrodni Ludobójstwa oraz Zapobiegania tej Zbrodni','Holokaust, Rwanda, Srebrenica — ludobójstwo wraca, gdy milczymy. Dziś ONZ wymienia ofiary po imieniu i przypomina, że „nigdy więcej" to nie slogan, lecz obowiązek każdego pokolenia.','inne'],
+[9,12,'Międzynarodowy Dzień Medycyny Weterynaryjnej','Weterynarz leczy zwierzęta, ale też chroni ludzi — kontroluje bezpieczeństwo żywności i zwalcza choroby odzwierzęce. Dziś hołd za naukę, która stoi na styku zdrowia zwierząt i ludzi.','zdrowie'],
+[9,11,'Międzynarodowy Dzień Walki z Faszyzmem i Antysemityzmem','Rocznica Nocy Kryształowej 1938 roku — pogromów żydowskich w Niemczech i Austrii. Dziś walczymy z faszyzmem, rasizmem i antysemityzmem.','inne']
 
 ];
 
