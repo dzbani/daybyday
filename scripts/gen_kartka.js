@@ -99,7 +99,15 @@ const PROVERBS_ARR = Object.values(PROVERBS_MONTH_POOL).flat();
 
 // --- 3. SWIETA_DATA (powazne swieta ze slugami) + HOLIDAYS_DB ze swieto.html (pelna baza, w tym partie tematyczne) ---
 const swietaDataRaw = readFile('swieta_data.js');
-const SWIETA_DATA = eval(extractConst(swietaDataRaw, 'SWIETA_DATA'));
+// SWIETA_DATA = SWIETA_DATA_STATIC.concat(computeMovableSwieta(...)) - zalezy od dwoch innych
+// identyfikatorow zdefiniowanych wyzej w tym samym pliku, wiec (inaczej niz reszta extractConst()
+// w tym generatorze) trzeba uruchomic caly plik w jednym kontekscie, nie tylko wyciac linie
+// "const SWIETA_DATA = ...", inaczej eval() rzuca "SWIETA_DATA_STATIC is not defined". Ten sam
+// wzorzec vm.runInContext co przy astroFuncsCode nizej.
+const swietaDataSandbox = {};
+vm.createContext(swietaDataSandbox);
+vm.runInContext(swietaDataRaw + '\nthis.__swieta__ = SWIETA_DATA;', swietaDataSandbox);
+const SWIETA_DATA = swietaDataSandbox.__swieta__;
 const majorByName = {}; // nazwa -> slug
 for (const [d, m, name, slug] of SWIETA_DATA) { majorByName[name] = slug; }
 const swietoHtmlRaw = readFile('swieto.html');
@@ -314,6 +322,7 @@ function buildStaticPage(day) {
   <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="${dateLabel} — kartka z kalendarza | DaybyDay">
   <meta property="og:description" content="${esc(metaDesc)}">
+  <meta property="og:site_name" content="DaybyDay">
   <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
