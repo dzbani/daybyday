@@ -137,7 +137,7 @@ function buildPage(monthIdx0) {
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:image" content="https://daybyday.today/og-image-v2.png">
+  <meta property="og:image" content="https://daybyday.today/og-image-v3.png">
   <meta property="og:url" content="${pageUrl}">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
