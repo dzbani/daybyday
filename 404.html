@@ -34,6 +34,11 @@
     .err-num { font-family:'Instrument Serif',serif; font-size:clamp(6rem,20vw,12rem); line-height:1; color:var(--border); }
     .err-title { font-family:'Instrument Serif',serif; font-size:clamp(1.5rem,4vw,2.5rem); margin-bottom:.75rem; }
     .err-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:420px; margin:0 auto 2rem; }
+    .err-search { display:flex; gap:.5rem; max-width:380px; margin:0 auto 1.75rem; }
+    .err-search-input { flex:1; min-width:0; padding:.7rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; font-family:'Outfit',sans-serif; font-size:.9rem; color:var(--text); outline:none; transition:border-color .2s; }
+    .err-search-input:focus { border-color:var(--text); }
+    .err-search-btn { width:44px; height:44px; flex-shrink:0; border-radius:12px; border:1px solid var(--border); background:var(--surface); color:var(--muted); cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s,color .15s; }
+    .err-search-btn:hover { background:var(--tag-bg); color:var(--text); }
     .err-links { display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
     .btn { padding:.6rem 1.5rem; border-radius:60px; font-size:.85rem; font-weight:500; text-decoration:none; font-family:inherit; transition:all .15s; }
     .btn-primary { background:var(--text); color:white; }
@@ -163,11 +168,18 @@
   <div>
     <div class="err-num">404</div>
     <h1 class="err-title">Strona nie istnieje</h1>
-    <p class="err-sub">Być może link jest nieaktualny albo strona została przeniesiona. Wróć na stronę główną i sprawdź co się dzieje dziś.</p>
+    <p class="err-sub">Być może link jest nieaktualny albo strona została przeniesiona. Poszukaj imienia poniżej albo wróć na stronę główną i sprawdź, co się dzieje dziś.</p>
+    <form class="err-search" action="imieniny.html" method="get" role="search">
+      <input type="text" name="name" class="err-search-input" placeholder="Szukaj imienia, np. Anna, Tomasz…" autocomplete="off" aria-label="Szukaj imienia">
+      <button type="submit" class="err-search-btn" aria-label="Szukaj">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </form>
     <div class="err-links">
       <a href="/" class="btn btn-primary">Strona główna</a>
       <a href="imieniny.html" class="btn btn-secondary">Imieniny</a>
       <a href="swieta.html" class="btn btn-secondary">Święta</a>
+      <a href="kalendarz-szkolny.html" class="btn btn-secondary">Kalendarz szkolny</a>
     </div>
   </div>
 </main>
