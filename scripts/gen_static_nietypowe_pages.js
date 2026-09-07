@@ -171,6 +171,7 @@ function buildLightPage(slug, entry) {
   <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="${esc(name)} | DaybyDay">
   <meta property="og:description" content="${esc(metaDesc)}">
+  <meta property="og:site_name" content="DaybyDay">
   <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">

@@ -253,7 +253,8 @@ function buildPage(year, monthIdx0) {
   <meta property="og:title" content="Kalendarz ${monthName} ${year}">
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://daybyday.today/og-image.svg">
+  <meta property="og:site_name" content="DaybyDay">
+  <meta property="og:image" content="https://daybyday.today/og-image.png">
   <meta property="og:url" content="${pageUrl}">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -430,7 +431,8 @@ function buildYearPage(year) {
   <meta property="og:title" content="Kalendarz ${year}">
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://daybyday.today/og-image.svg">
+  <meta property="og:site_name" content="DaybyDay">
+  <meta property="og:image" content="https://daybyday.today/og-image.png">
   <meta property="og:url" content="${pageUrl}">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
