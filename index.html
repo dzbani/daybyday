@@ -3316,6 +3316,18 @@ function calcCountdown(){
   tick(); setInterval(tick,1000);
 })();
 
+// ── Auto-odświeżenie po zmianie daty (karta zostawiona otwarta na noc) ────────
+(function(){
+  const params=new URLSearchParams(location.search);
+  if(params.has('d')) return; // przeglądanie innego dnia — nie dotyczy
+  const loadedDay=new Date().toDateString();
+  function checkDate(){
+    if(new Date().toDateString()!==loadedDay) location.reload();
+  }
+  setInterval(checkDate,60000);
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) checkDate(); });
+})();
+
 // ── Udostępnij dzień ────────
 function shareDay(){
   const params=new URLSearchParams(location.search);
