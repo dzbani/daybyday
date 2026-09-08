@@ -3073,13 +3073,24 @@ function getMoonRiseSet(year,month,day,lat,lon){
     [15,8,'Wniebowzięcie NMP'],[1,11,'Wszystkich Świętych'],[11,11,'Święto Niepodległości'],
     [24,12,'Wigilia Bożego Narodzenia'],[25,12,'Boże Narodzenie'],[26,12,'Drugi dzień Bożego Narodzenia'],
   ];
-  // Wielkanoc 2026: 5 kwietnia
-  const EASTER_2026=[5,4];
+  // Wielkanoc liczona algorytmem Gaussa dla oglądanego roku (y), nie na sztywno dla 2026 —
+  // poprzednia wersja z hardkodowaną datą 2026 dawała błędne Zielone Świątki/Boże Ciało
+  // (dodawanie dni wprost do numeru dnia miesiąca bez przeniesienia na kolejny miesiąc,
+  // np. "54 kwietnia") i zamrożenie na dacie Wielkanocy 2026 dla wszystkich kolejnych lat.
+  const easterY=(function(yy){
+    const a=yy%19,b=Math.floor(yy/100),c=yy%100,d=Math.floor(b/4),e=b%4;
+    const f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30;
+    const i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7;
+    const mm=Math.floor((a+11*h+22*l)/451);
+    return new Date(yy,Math.floor((h+l-7*mm+114)/31)-1,((h+l-7*mm+114)%31)+1);
+  })(y);
+  const easterMs=easterY.getTime(),dayMs=86400000;
+  const mdFromEaster=(offsetDays)=>{const dt=new Date(easterMs+offsetDays*dayMs);return [dt.getDate(),dt.getMonth()+1];};
   const MOVABLE=[
-    [EASTER_2026[0],EASTER_2026[1],'Wielkanoc'],
-    [EASTER_2026[0]+1,EASTER_2026[1],'Poniedziałek Wielkanocny'],
-    [EASTER_2026[0]+49,EASTER_2026[1],'Zielone Świątki'],
-    [EASTER_2026[0]+60,EASTER_2026[1],'Boże Ciało'],
+    [...mdFromEaster(0),'Wielkanoc'],
+    [...mdFromEaster(1),'Poniedziałek Wielkanocny'],
+    [...mdFromEaster(49),'Zielone Świątki'],
+    [...mdFromEaster(60),'Boże Ciało'],
   ];
   const NAMED_DAYS=[[12,2,'Tłusty Czwartek'],[14,2,'Walentynki'],[8,3,'Dzień Kobiet'],[23,3,'Dzień Wiosny'],[26,5,'Dzień Matki'],[1,6,'Dzień Dziecka'],[23,6,'Dzień Ojca'],[21,6,'Przesilenie letnie'],[31,10,'Halloween'],[2,11,'Dzień Zaduszny'],[30,11,'Andrzejki'],[6,12,'Mikołajki'],[22,12,'Przesilenie zimowe'],[24,12,'Wigilia'],[31,12,'Sylwester']];
   const EVENT_SLUG={
