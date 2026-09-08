@@ -1061,6 +1061,16 @@
 
   render(52.23, 21.01, 'Warszawa');
 })();
+
+// ── Auto-odświeżenie po zmianie daty (karta zostawiona otwarta na noc) ────────
+(function(){
+  const loadedDayISO = new Date().toISOString().slice(0,10);
+  function checkDate(){
+    if (new Date().toISOString().slice(0,10) !== loadedDayISO) location.reload();
+  }
+  setInterval(checkDate,60000);
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) checkDate(); });
+})();
 </script>
 <script src="transitions.js"></script></body>
 </html>
