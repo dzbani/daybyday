@@ -24,13 +24,19 @@ const onlyList = onlyArg ? onlyArg.split('=')[1].split(',') : null;
 
 const srcRaw = fs.readFileSync(path.join(ROOT, 'kalendarz.html'), 'utf8').replace(/^\uFEFF/, '');
 
-// --- 1. Wyciagnij HOLIDAYS ---
-const holidaysMatch = srcRaw.match(/const HOLIDAYS = (\{[\s\S]*?\n  \};)/);
-if (!holidaysMatch) throw new Error('Nie znaleziono HOLIDAYS w kalendarz.html');
-const sandbox = {};
-vm.createContext(sandbox);
-vm.runInContext('this.__H__ = ' + holidaysMatch[1], sandbox);
-const HOLIDAYS = sandbox.__H__;
+// --- 1. Wyciagnij logike swiat (FIXED_HOLIDAYS + easterDateKal + isHolidayDate) ---
+// 7.09.2026: kalendarz.html przestal miec staly obiekt HOLIDAYS (bylby zrodlem tej samej
+// "zamrozonej na 2025-2028" tablicy, ktora byla tu wczesniej) - zastapiony funkcja liczaca
+// swieta ruchome algorytmem Gaussa. Ten generator wyciaga teraz tamta funkcje bezposrednio
+// (jedno zrodlo prawdy, jak zawsze), zamiast trzymac wlasna kopie.
+const holidaysStart = srcRaw.indexOf('const FIXED_HOLIDAYS');
+const holidaysEnd = srcRaw.indexOf('const TODAY = new Date();');
+if (holidaysStart === -1 || holidaysEnd === -1) throw new Error('Nie znaleziono logiki swiat (FIXED_HOLIDAYS/isHolidayDate) w kalendarz.html');
+const holidaysCode = srcRaw.slice(holidaysStart, holidaysEnd);
+const holidaySandbox = {};
+vm.createContext(holidaySandbox);
+vm.runInContext(holidaysCode + '\nthis.__holidays__ = { isHolidayDate, easterDateKal };', holidaySandbox);
+const { isHolidayDate, easterDateKal } = holidaySandbox.__holidays__;
 
 // --- 2. Wyciagnij funkcje sun/moon/zodiac (identyczne co w kalendarz.html) ---
 const funcsStart = srcRaw.indexOf('function pad(n)');
@@ -56,45 +62,42 @@ function jsonLdScript(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 }
 
-function holidayNameFor(key) {
-  // HOLIDAYS w kalendarz.html to tylko flagi bool (bez nazw) - nazwy bierzemy z wlasnej,
-  // stabilnej listy (te same 13 dni ustawowo wolnych na kazdy rok, tylko ruchome sie przesuwaja).
-  return HOLIDAY_NAMES[key] || 'Święto ustawowo wolne od pracy';
-}
-
-// Nazwy odpowiadajace kluczom dat w HOLIDAYS (zsynchronizowane z HOLIDAYS_DB w swieto.html).
+// Stale nazwy (dzien-miesiac, niezalezne od roku) + ruchome liczone wprost z Wielkanocy
+// (easterDateKal wyciagniete z kalendarz.html) - zero recznie wpisywanych dat na kolejne
+// lata, w przeciwienstwie do poprzedniej wersji (osobna tablica HOLIDAY_NAMES na sztywno
+// dla 2025-2028, ktora trzeba by bylo recznie rozszerzac o kazdy kolejny rok).
 // Od Wigilii 2025 wlacznie: 14 dni ustawowo wolnych (Wigilia dodana ustawa z 6.12.2024,
 // Dz.U. 2024 poz. 1965, w zyciu od 1.02.2025) - patrz pamiec projektu.
-const HOLIDAY_NAMES = {
-  '2025-01-01': 'Nowy Rok', '2025-01-06': 'Trzech Króli',
-  '2025-04-20': 'Wielkanoc', '2025-04-21': 'Poniedziałek Wielkanocny',
-  '2025-05-01': 'Święto Pracy', '2025-05-03': 'Konstytucja 3 Maja',
-  '2025-06-08': 'Zielone Świątki', '2025-06-19': 'Boże Ciało',
-  '2025-08-15': 'Wniebowzięcie NMP',
-  '2025-11-01': 'Wszystkich Świętych', '2025-11-11': 'Święto Niepodległości',
-  '2025-12-24': 'Wigilia Bożego Narodzenia', '2025-12-25': 'Boże Narodzenie', '2025-12-26': 'Drugi dzień Bożego Narodzenia',
-  '2026-01-01': 'Nowy Rok', '2026-01-06': 'Trzech Króli',
-  '2026-04-05': 'Wielkanoc', '2026-04-06': 'Poniedziałek Wielkanocny',
-  '2026-05-01': 'Święto Pracy', '2026-05-03': 'Konstytucja 3 Maja',
-  '2026-05-24': 'Zielone Świątki', '2026-06-04': 'Boże Ciało',
-  '2026-08-15': 'Wniebowzięcie NMP',
-  '2026-11-01': 'Wszystkich Świętych', '2026-11-11': 'Święto Niepodległości',
-  '2026-12-24': 'Wigilia Bożego Narodzenia', '2026-12-25': 'Boże Narodzenie', '2026-12-26': 'Drugi dzień Bożego Narodzenia',
-  '2027-01-01': 'Nowy Rok', '2027-01-06': 'Trzech Króli',
-  '2027-03-28': 'Wielkanoc', '2027-03-29': 'Poniedziałek Wielkanocny',
-  '2027-05-01': 'Święto Pracy', '2027-05-03': 'Konstytucja 3 Maja',
-  '2027-05-16': 'Zielone Świątki', '2027-05-27': 'Boże Ciało',
-  '2027-08-15': 'Wniebowzięcie NMP',
-  '2027-11-01': 'Wszystkich Świętych', '2027-11-11': 'Święto Niepodległości',
-  '2027-12-24': 'Wigilia Bożego Narodzenia', '2027-12-25': 'Boże Narodzenie', '2027-12-26': 'Drugi dzień Bożego Narodzenia',
-  '2028-01-01': 'Nowy Rok', '2028-01-06': 'Trzech Króli',
-  '2028-04-16': 'Wielkanoc', '2028-04-17': 'Poniedziałek Wielkanocny',
-  '2028-05-01': 'Święto Pracy', '2028-05-03': 'Konstytucja 3 Maja',
-  '2028-06-04': 'Zielone Świątki', '2028-06-15': 'Boże Ciało',
-  '2028-08-15': 'Wniebowzięcie NMP',
-  '2028-11-01': 'Wszystkich Świętych', '2028-11-11': 'Święto Niepodległości',
-  '2028-12-24': 'Wigilia Bożego Narodzenia', '2028-12-25': 'Boże Narodzenie', '2028-12-26': 'Drugi dzień Bożego Narodzenia',
+const FIXED_HOLIDAY_NAMES = {
+  '01-01': 'Nowy Rok', '01-06': 'Trzech Króli',
+  '05-01': 'Święto Pracy', '05-03': 'Konstytucja 3 Maja',
+  '08-15': 'Wniebowzięcie NMP',
+  '11-01': 'Wszystkich Świętych', '11-11': 'Święto Niepodległości',
+  '12-24': 'Wigilia Bożego Narodzenia', '12-25': 'Boże Narodzenie', '12-26': 'Drugi dzień Bożego Narodzenia',
 };
+const MOVABLE_HOLIDAY_NAMES = { 0: 'Wielkanoc', 1: 'Poniedziałek Wielkanocny', 49: 'Zielone Świątki', 60: 'Boże Ciało' };
+
+function holidayNameFor(key) {
+  const [year, mm, dd] = key.split('-');
+  const fixed = FIXED_HOLIDAY_NAMES[`${mm}-${dd}`];
+  if (fixed) return fixed;
+  const easterMs = easterDateKal(parseInt(year, 10)).getTime(), dayMs = 86400000;
+  for (const off of Object.keys(MOVABLE_HOLIDAY_NAMES)) {
+    const dt = new Date(easterMs + off * dayMs);
+    if (`${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}` === key) return MOVABLE_HOLIDAY_NAMES[off];
+  }
+  return 'Święto ustawowo wolne od pracy';
+}
+
+function allHolidayKeysForYear(year) {
+  const keys = Object.keys(FIXED_HOLIDAY_NAMES).map(md => `${year}-${md}`);
+  const easterMs = easterDateKal(year).getTime(), dayMs = 86400000;
+  Object.keys(MOVABLE_HOLIDAY_NAMES).forEach(off => {
+    const dt = new Date(easterMs + off * dayMs);
+    keys.push(`${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}`);
+  });
+  return keys.sort();
+}
 
 // Niedziele handlowe - zsynchronizowane z niedziele-handlowe.html (jedyne zrodlo prawdy
 // dla 2026/2027, tam tez lista wszystkich niedziel roku w DATES_2026/DATES_2027). Reguła
@@ -165,7 +168,7 @@ function buildMonthData(year, monthIdx0) {
     const date = new Date(year, monthIdx0, d);
     const dow = date.getDay();
     const key = `${year}-${pad(m)}-${pad(d)}`;
-    const isHoliday = !!HOLIDAYS[key];
+    const isHoliday = isHolidayDate(year, m, d);
     const isWeekend = dow === 0 || dow === 6;
     if (isWeekend) weekendCount++;
     if (isHoliday) holidaysInMonth.push({ day: d, name: holidayNameFor(key), dow });
@@ -374,13 +377,13 @@ function buildYearPage(year) {
   const pageUrl = `https://daybyday.today/kalendarz/${year}/`;
   const isLeap = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
   const daysInYear = isLeap ? 366 : 365;
-  const yearHolidays = Object.keys(HOLIDAY_NAMES).filter(k => k.startsWith(`${year}-`)).sort();
+  const yearHolidays = allHolidayKeysForYear(year);
   const holidayRows = yearHolidays.map(k => {
     const [, m, d] = k.split('-').map(Number);
     const date = new Date(year, m - 1, d);
     const dow = date.getDay();
     const dowLabel = dow === 0 ? 'niedziela' : dow === 6 ? 'sobota' : DAY_NAMES_FULL[dow - 1].toLowerCase();
-    return `<tr><td>${d} ${MONTH_GEN[m - 1]}</td><td>${esc(HOLIDAY_NAMES[k])}</td><td>${dowLabel}</td></tr>`;
+    return `<tr><td>${d} ${MONTH_GEN[m - 1]}</td><td>${esc(holidayNameFor(k))}</td><td>${dowLabel}</td></tr>`;
   }).join('');
 
   const monthCards = MONTH_SLUGS.map((slug, i) => {
