@@ -402,41 +402,34 @@
   }
 
   (function updateRowStates() {
-    const DATES_2026 = [
-      [1,4],[1,11],[1,18],[1,25],
-      [2,1],[2,8],[2,15],[2,22],
-      [3,1],[3,8],[3,15],[3,22],[3,29],
-      [4,5],[4,12],[4,19],[4,26],
-      [5,3],[5,10],[5,17],[5,24],[5,31],
-      [6,7],[6,14],[6,21],[6,28],
-      [7,5],[7,12],[7,19],[7,26],
-      [8,2],[8,9],[8,16],[8,23],[8,30],
-      [9,6],[9,13],[9,20],[9,27],
-      [10,4],[10,11],[10,18],[10,25],
-      [11,1],[11,8],[11,15],[11,22],[11,29],
-      [12,6],[12,13],[12,20],[12,27]
-    ];
+    // Data każdego wiersza parsowana wprost z widocznego tekstu (".sun-date"),
+    // nie z osobnej hardkodowanej tablicy dat — jedno źródło prawdy, działa
+    // dla dowolnej liczby lat/zakładek bez ręcznego dopisywania kolejnej tablicy.
+    const MONTHS_PL = {'stycznia':0,'lutego':1,'marca':2,'kwietnia':3,'maja':4,'czerwca':5,'lipca':6,'sierpnia':7,'września':8,'października':9,'listopada':10,'grudnia':11};
     const today = new Date(); today.setHours(0,0,0,0);
-    const rows = document.querySelectorAll('#year-2026 .sunday-row');
-    rows.forEach((row, i) => {
-      const [m,d] = DATES_2026[i] || [];
-      if (!m) return;
-      const dt = new Date(2026, m-1, d);
+    let nextRow = null;
+    document.querySelectorAll('.sunday-row').forEach(row => {
+      const dateEl = row.querySelector('.sun-date');
+      const m = dateEl.textContent.match(/(\d+)\s+(\S+)\s+(\d{4})/);
+      if (!m || !(m[2] in MONTHS_PL)) return;
+      const dt = new Date(parseInt(m[3],10), MONTHS_PL[m[2]], parseInt(m[1],10));
       row.classList.remove('past','today','upcoming');
-      if (dt < today) row.classList.add('past');
-      else if (dt.getTime() === today.getTime()) row.classList.add('today');
-      else row.classList.add('upcoming');
-      // remove hardcoded badges from date cells
-      row.querySelectorAll('.sun-date .sun-badge').forEach(b => b.remove());
+      dateEl.querySelectorAll('.sun-badge').forEach(b => b.remove());
+      if (dt < today) { row.classList.add('past'); }
+      else { row.classList.add(dt.getTime() === today.getTime() ? 'today' : 'upcoming'); if (!nextRow) nextRow = row; }
     });
-    // mark next upcoming as "następna"
-    const nextRow = document.querySelector('#year-2026 .sunday-row.upcoming');
     if (nextRow) {
       const b = document.createElement('span');
       b.className = 'sun-badge badge-today';
       b.style.marginLeft = '.5rem';
       b.textContent = 'następna';
       nextRow.querySelector('.sun-date').appendChild(b);
+    }
+    // Domyślnie pokazana zakładka roku ma podążać za rzeczywistym rokiem —
+    // ten sam wzorzec "zamrożenia roku" co naprawiony wcześniej w kalendarz.html.
+    const y = today.getFullYear();
+    if (y >= 2027 && document.getElementById('year-2027')) {
+      showYear('2027', document.querySelector('.year-tab[onclick*="2027"]'));
     }
   })();
 </script>

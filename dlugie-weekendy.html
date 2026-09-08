@@ -369,6 +369,13 @@
       document.querySelector('.dw-year-btn[data-year="'+y+'"]').classList.toggle('active', y===year);
     });
   }
+  // Domyślnie pokazana zakładka roku ma podążać za rzeczywistym rokiem —
+  // ten sam wzorzec "zamrożenia roku" co naprawiony wcześniej w kalendarz.html.
+  (function initYear(){
+    const y = new Date().getFullYear();
+    if (y >= 2027) showDwYear(2027);
+  })();
+
   (function updateRowStates() {
     const today = new Date(); today.setHours(0,0,0,0);
     const rows = document.querySelectorAll('.weekend-row');

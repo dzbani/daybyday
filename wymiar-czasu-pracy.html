@@ -261,10 +261,13 @@
     var today = new Date();
     var y = today.getFullYear();
     var m = today.getMonth()+1;
+    // Domyślnie pokazana zakładka roku ma podążać za rzeczywistym rokiem —
+    // ten sam wzorzec "zamrożenia roku" co naprawiony wcześniej w kalendarz.html.
+    // >= zamiast === , żeby nie zamarło ponownie po 2027 (pokazuje najnowszy dostępny rok).
+    if (y >= 2027) showWctYear(2027);
     if (y !== 2026 && y !== 2027) return;
     var row = document.querySelector('#wctTable-'+y+' tbody tr[data-month="'+m+'"]');
     if (row) row.classList.add('wct-current');
-    if (y === 2027) showWctYear(2027);
   })();
 </script>
 
