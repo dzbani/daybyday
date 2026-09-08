@@ -112,13 +112,18 @@
   <div class="code-box" id="embedCode">&lt;div id="dbd-kartka-widget"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function(){
-  var d = new Date(), mm = String(d.getMonth()+1).padStart(2,'0'), dd = String(d.getDate()).padStart(2,'0');
+  function dbdPath(){var d=new Date();return String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
   var f = document.createElement('iframe');
-  f.src = 'https://daybyday.today/kartka/' + mm + '-' + dd + '/widget/';
+  f.src = 'https://daybyday.today/kartka/' + dbdPath() + '/widget/';
   f.style.cssText = 'border:0;width:100%;max-width:320px;height:290px;';
   f.title = 'Kartka z kalendarza — DaybyDay';
   f.loading = 'lazy';
   document.getElementById('dbd-kartka-widget').appendChild(f);
+  // Odswieza widget o polnocy, jesli strona z widgetem zostanie otwarta przez noc
+  setInterval(function(){
+    var p = dbdPath();
+    if (f.src.indexOf('/kartka/' + p + '/') === -1) f.src = 'https://daybyday.today/kartka/' + p + '/widget/';
+  }, 60000);
 })();
 &lt;/script&gt;</div>
   <button class="copy-btn" id="copyBtn" onclick="copyEmbedCode()">Kopiuj kod</button>
@@ -142,12 +147,16 @@
 
 <script>
 (function(){
-  var d = new Date(), mm = String(d.getMonth()+1).padStart(2,'0'), dd = String(d.getDate()).padStart(2,'0');
+  function dbdPath(){var d=new Date();return String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
   var f = document.createElement('iframe');
-  f.src = '/kartka/' + mm + '-' + dd + '/widget/';
+  f.src = '/kartka/' + dbdPath() + '/widget/';
   f.style.cssText = 'border:0;width:100%;max-width:320px;height:290px;';
   f.title = 'Podgląd widgetu Kartka z kalendarza';
   document.getElementById('dbd-widget-preview').appendChild(f);
+  setInterval(function(){
+    var p = dbdPath();
+    if (f.src.indexOf('/kartka/' + p + '/') === -1) f.src = '/kartka/' + p + '/widget/';
+  }, 60000);
 })();
 function copyEmbedCode(){
   var text = document.getElementById('embedCode').innerText;

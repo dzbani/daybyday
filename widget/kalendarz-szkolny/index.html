@@ -114,6 +114,13 @@
     var days = Math.round((parseDate(next.start) - today) / 86400000);
     nextEl.innerHTML = '<div class="next-label">' + next.emoji + ' Za ' + days + ' ' + (days === 1 ? 'dzień' : 'dni') + ': ' + next.label + '</div><div class="next-date">' + fmtDate(parseDate(next.start)) + '</div>';
   }
+
+  // Odswieza widget o polnocy, jesli strona osadzajaca iframe zostanie otwarta przez noc
+  var loadedDayISO = today.toISOString().slice(0,10);
+  setInterval(function(){
+    var d = new Date(); d.setHours(0,0,0,0);
+    if (d.toISOString().slice(0,10) !== loadedDayISO) location.reload();
+  }, 60000);
 })();
 </script>
 </body>
