@@ -43,8 +43,13 @@ const OLD_LOCATION_STATUS_CSS = '.location-status { font-size:.78rem; color:var(
 const OLD_HERO = '<div class="page-label">Astronomia</div>\n  <h1 class="page-title">Wschód i zachód słońca</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>';
 const OLD_TAB_DEFAULT = "btn.className = 'city-tab' + (key === 'warszawa' ? ' active' : '');";
 const OLD_INIT_DEFAULT = "} else {\n  selectCity('warszawa');\n  useMyLocation(true);\n}";
+// Strony miast leza katalog glebiej niz wschody-zachody.html (/wschod-zachod-slonca/<slug>/),
+// wiec wzgledna sciezka "sw.js" (poprawna na stronie zrodlowej) rozwiazywalaby sie do
+// nieistniejacego /wschod-zachod-slonca/<slug>/sw.js - 404, cicho zepsuty Service Worker
+// na wszystkich 12 stronach miast od 31.07.2026 (potwierdzone na zywo curl-em 7.09.2026).
+const OLD_SW_REGISTER = 'navigator.serviceWorker.register("sw.js")';
 
-for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT]) {
+for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT, OLD_SW_REGISTER]) {
   if (!srcRaw.includes(OLD)) throw new Error('Wzorzec nie znaleziony w źródle (zmieniono wschody-zachody.html?): ' + OLD.slice(0, 60));
 }
 
@@ -96,6 +101,7 @@ function buildPage(slug, city) {
   html = html.replace(OLD_HERO, `<div class="page-label">Astronomia</div>\n  ${breadcrumbHtml}\n  <h1 class="page-title">Wschód i zachód słońca ${cityIn}</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>`);
   html = html.replace(OLD_TAB_DEFAULT, `btn.className = 'city-tab' + (key === '${slug}' ? ' active' : '');`);
   html = html.replace(OLD_INIT_DEFAULT, `} else {\n  selectCity('${slug}');\n  useMyLocation(true);\n}`);
+  html = html.replace(OLD_SW_REGISTER, 'navigator.serviceWorker.register("/sw.js")');
 
   // Statyczne tabele miesieczne dla WLASNEJ lokalizacji tego miasta (nie Warszawy) -
   // ten sam mechanizm co dla glownej strony, patrz gen_wschody_static.js.
