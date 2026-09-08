@@ -48,8 +48,14 @@ const OLD_INIT_DEFAULT = "} else {\n  selectCity('warszawa');\n  useMyLocation(t
 // nieistniejacego /wschod-zachod-slonca/<slug>/sw.js - 404, cicho zepsuty Service Worker
 // na wszystkich 12 stronach miast od 31.07.2026 (potwierdzone na zywo curl-em 7.09.2026).
 const OLD_SW_REGISTER = 'navigator.serviceWorker.register("sw.js")';
+// Ten sam problem co sw.js wyzej: fonts.css/transitions.js ladowane sciezka wzgledna -
+// na stronach miast (katalog glebiej) 404, przez co @font-face z fonts.css nigdy sie nie
+// definiuje i strona cicho renderuje sie fontem systemowym zamiast Instrument Serif/Outfit
+// (potwierdzone 7.09.2026: document.fonts.size === 0 na zywej stronie krakowskiej).
+const OLD_FONTS_CSS = '<link rel="stylesheet" href="fonts.css">';
+const OLD_TRANSITIONS_JS = '<script src="transitions.js"></script>';
 
-for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT, OLD_SW_REGISTER]) {
+for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT, OLD_SW_REGISTER, OLD_FONTS_CSS, OLD_TRANSITIONS_JS]) {
   if (!srcRaw.includes(OLD)) throw new Error('Wzorzec nie znaleziony w źródle (zmieniono wschody-zachody.html?): ' + OLD.slice(0, 60));
 }
 
@@ -102,6 +108,8 @@ function buildPage(slug, city) {
   html = html.replace(OLD_TAB_DEFAULT, `btn.className = 'city-tab' + (key === '${slug}' ? ' active' : '');`);
   html = html.replace(OLD_INIT_DEFAULT, `} else {\n  selectCity('${slug}');\n  useMyLocation(true);\n}`);
   html = html.replace(OLD_SW_REGISTER, 'navigator.serviceWorker.register("/sw.js")');
+  html = html.replace(OLD_FONTS_CSS, '<link rel="stylesheet" href="/fonts.css">');
+  html = html.replace(OLD_TRANSITIONS_JS, '<script src="/transitions.js"></script>');
 
   // Statyczne tabele miesieczne dla WLASNEJ lokalizacji tego miasta (nie Warszawy) -
   // ten sam mechanizm co dla glownej strony, patrz gen_wschody_static.js.
