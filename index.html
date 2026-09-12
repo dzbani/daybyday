@@ -3433,7 +3433,8 @@ function jumpToDate(val){
       new Date(y,4,1),new Date(y,4,3),
       new Date(em+49*ms),new Date(em+60*ms),
       new Date(y,7,15),new Date(y,10,1),new Date(y,10,11),
-      new Date(y,11,25),new Date(y,11,26)
+      // Wigilia (24 XII) jest ustawowym dniem wolnym od pracy od 2025 r. (Dz.U. 2024 poz. 1965)
+      new Date(y,11,24),new Date(y,11,25),new Date(y,11,26)
     ].map(d=>{d.setHours(0,0,0,0);return d.getTime();});
   }
   const today=new Date(); today.setHours(0,0,0,0);
