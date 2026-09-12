@@ -3042,6 +3042,12 @@ function getMoonRiseSet(year,month,day,lat,lon){
     const startDow=(firstDay.getDay()+6)%7;
     const daysInMonth=new Date(cy,cm,0).getDate();
     const hmMap=HOLIDAYS.filter(([hd,hm])=>hm===cm).reduce((acc,[hd,,name])=>{(acc[hd]=acc[hd]||[]).push(name);return acc;},{});
+    // Dołącz też święta z SWIETA_DATA (panstwowe/koscielne/nieoficjalne/historyczne) — lekka lista HOLIDAYS
+    // sama w sobie nie obejmuje wszystkich dni (np. Wigilii, Bożego Narodzenia, rocznic historycznych),
+    // przez co te dni nie dostawały kropki mimo realnej treści świątecznej (naprawione 12.09.2026).
+    const swietaForCal=(cy===TODAY.getFullYear())?SWIETA_DATA:SWIETA_DATA_STATIC.concat(computeMovableSwieta(cy));
+    swietaForCal.filter(([hd,hm,,,type])=>hm===cm&&type.split(' ').some(t=>CARD_TYPES.includes(t)))
+      .forEach(([hd,,name])=>{(hmMap[hd]=hmMap[hd]||[]).push(name);});
     const hmSet=new Set(Object.keys(hmMap).map(Number));
     for(let i=0;i<startDow;i++){const s=document.createElement('span');s.className='mini-cal-day other-month';grid.appendChild(s);}
     for(let dd=1;dd<=daysInMonth;dd++){
