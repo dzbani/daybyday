@@ -2080,7 +2080,7 @@ const TAG_COLOR = {
   'Praca':'#6A7A8A','Moda':'#D87BA8','Rodzina':'#E8C07B','Pop-kultura':'#B87B9A',
   'Podróże':'#7BAAE8','Literatura':'#C09070','Zwierzęta':'#7BAE7B','Edukacja':'#7BB8E8',
   'inne':'#888580','jedzenie':'#E8936A','przyroda':'#5A7A5A','zdrowie':'#E87B7B','kultura':'#A07BE8',
-  'panstwowe':'#3A5FA0','koscielne':'#8B5E2A','nieoficjalne':'#6B6864',
+  'panstwowe':'#3A5FA0','koscielne':'#8B5E2A','nieoficjalne':'#6B6864','historyczne':'#7A6A5E',
 };
 
 // ── Cytaty ────────────────────────────────────────────────────
@@ -2926,7 +2926,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     });
   }
   // Święta z SWIETA_DATA (Państwowe/Kościelne/Tradycyjne i okolicznościowe) + nietypowe, bez duplikatów po nazwie
-  const CARD_TYPES=['panstwowe','koscielne','nieoficjalne'];
+  const CARD_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
   const todaysCurated=swietaForY.filter(([hd,hm,,,type])=>hd===d&&hm===m&&type.split(' ').some(t=>CARD_TYPES.includes(t)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
   const todaysNietypowe=todays.filter(([,,name])=>!curatedNames.has(name));
@@ -3169,7 +3169,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     hlEl.insertBefore(el, hlEl.firstChild);
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
-  const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne'];
+  const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
   // Swieto ruchome przechodzace na kolejny rok nie moze po prostu powtorzyc dd/mm z roku
   // biezacego (Wielkanoc i pochodne wypadaja co roku innego dnia) - doliczane osobno dla y+1,
   // z pamiecia podreczna liczoną leniwie tylko gdy faktycznie potrzebna.
