@@ -339,9 +339,17 @@ function dayOfYear(d) {
   return Math.round((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
 }
 
+// Numer tygodnia wg ISO 8601 (tydzień 1 = tydzień zawierający pierwszy czwartek roku, tygodnie
+// od poniedziałku) — ta sama funkcja co na stronie głównej (index.html, getISOWeek). Poprzednia,
+// naiwna implementacja dawała złe wyniki niezależnie od strefy czasowej (np. 15 marca 2026: 12
+// zamiast poprawnych 11) i dodatkowo psuła się przy niektórych datach przez użycie T12:00:00
+// zamiast północy (12 września 2026: 38 zamiast 37) — naprawione 12.09.2026.
 function weekOfYear(d) {
-  const startOfYear = new Date(d.getFullYear(), 0, 1);
-  return Math.ceil(((d - startOfYear) / 86400000 + startOfYear.getDay() + 1) / 7);
+  const dt = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const dow = dt.getUTCDay() || 7;
+  dt.setUTCDate(dt.getUTCDate() + 4 - dow);
+  const yearStart = new Date(Date.UTC(dt.getUTCFullYear(), 0, 1));
+  return Math.ceil((((dt - yearStart) / 86400000) + 1) / 7);
 }
 
 function renderDay(dateStr) {
