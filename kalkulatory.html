@@ -434,7 +434,12 @@
     const day=((h+l-7*m+114)%31)+1;
     const easter=new Date(y,month-1,day);
     const fmt=d=>d.getDate()+' '+PL_MONTHS[d.getMonth()]+' '+d.getFullYear();
-    const addDays=(d,n)=>new Date(d.getTime()+n*86400000);
+    // Kalendarzowe dodawanie dni (setDate), NIE arytmetyka na milisekundach (d.getTime()+n*86400000) —
+    // ta druga psuje się na granicy zmiany czasu (DST). Np. dla 2026 r. Niedziela Palmowa (Wielkanoc-7)
+    // wypadała akurat w tygodniu z marcową zmianą czasu (ostatnia niedziela marca) i odjęcie dokładnie
+    // 168 godzin lądowało dzień za wcześnie (28 marca zamiast poprawnych 29 marca, niedzieli) - znalezione
+    // i naprawione 12.09.2026.
+    const addDays=(d,n)=>{const r=new Date(d);r.setDate(r.getDate()+n);return r;};
     document.getElementById('easterDate').textContent=`${day} ${PL_MONTHS[month-1]}`;
     document.getElementById('easterDetail').innerHTML=
       `Niedziela Palmowa: ${fmt(addDays(easter,-7))}<br>`+
