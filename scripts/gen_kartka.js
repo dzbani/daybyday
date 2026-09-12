@@ -121,6 +121,20 @@ for (; hdbI < swietoHtmlRaw.length; hdbI++) {
 const HOLIDAYS_DB = eval('(' + swietoHtmlRaw.slice(hdbBraceStart, hdbI) + ')');
 for (const [slug, entry] of Object.entries(HOLIDAYS_DB)) { majorByName[entry.name] = slug; }
 
+// SWIETA_DATA ("powazne swieta ze slugami" - panstwowe/koscielne/historyczne/miedzynarodowe/
+// nieoficjalne/branzowe, 170 wpisow) nigdy nie bylo laczone do holidayMap ponizej - holidayMap
+// budowal sie WYLACZNIE z lekkiej listy HOLIDAYS (nieoficjalne dni z index.html). Skutek: strona
+// kartka-z-kalendarza.html i wszystkie 366 stron statycznych /kartka/<mm>-<dd>/ nigdy nie
+// pokazywaly zadnego powazniejszego swieta (np. Boze Narodzenie, Nowy Rok, Swieto Niepodleglosci,
+// Wniebowziecie NMP byly calkowicie nieobecne) - znalezione i naprawione 12.09.2026. Dopisujemy
+// wpisy z SWIETA_DATA na poczatek listy danego dnia (bardziej "powazne" niz lekkie), z dedupem
+// po nazwie na wypadek, gdyby to samo swieto figurowalo w obu zrodlach.
+for (const [d, m, name, , type] of SWIETA_DATA) {
+  const key = `${m}-${d}`;
+  const list = holidayMap[key] = holidayMap[key] || [];
+  if (!list.some(h => h.name === name)) list.unshift({ name, tag: type });
+}
+
 // --- 4. swieto_slugs.js: ktore slugi maja gotowa strone ---
 const swietoSlugsRaw = readFile('swieto_slugs.js');
 const SWIETO_SLUGS = new Set(eval(swietoSlugsRaw.match(/new Set\((\[[\s\S]*?\])\)/)[1]));
