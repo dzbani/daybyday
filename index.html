@@ -2083,6 +2083,30 @@ const TAG_COLOR = {
   'panstwowe':'#3A5FA0','koscielne':'#8B5E2A','nieoficjalne':'#6B6864','historyczne':'#7A6A5E',
 };
 
+// ── Polskie święta ustawowo wolne od pracy — wspólne źródło ────
+// Wielkanoc (algorytm Gaussa) i pochodne od niej święta ruchome. Wspólna funkcja, żeby ten sam
+// wzór i ta sama lista dni wolnych nie żyły w kilku niezależnych kopiach w tym pliku — dokładnie
+// to spowodowało bug 12.09.2026: karta "Następny długi weekend" miała WŁASNĄ, osobno utrzymywaną
+// listę świąt (getHolidays), która nie miała Wigilii, mimo że karta "Ile zostało do końca roku"
+// (PUBLIC_HOLIDAYS+MOVABLE) już ją poprawnie uwzględniała.
+function easterDateFor(y){
+  const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4;
+  const f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30;
+  const i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7;
+  const mm=Math.floor((a+11*h+22*l)/451);
+  return new Date(y,Math.floor((h+l-7*mm+114)/31)-1,((h+l-7*mm+114)%31)+1);
+}
+// Pełna lista dni ustawowo wolnych od pracy dla danego roku jako pary [dzień,miesiąc] (stałe +
+// ruchome liczone od Wielkanocy). Wigilia (24 XII) wolna od 2025 r. (Dz.U. 2024 poz. 1965).
+function polishHolidayDates(y){
+  const em=easterDateFor(y).getTime(), ms=86400000;
+  const md=off=>{const dt=new Date(em+off*ms);return [dt.getDate(),dt.getMonth()+1];};
+  return [
+    [1,1],[6,1], md(0), md(1), [1,5],[3,5], md(49), md(60),
+    [15,8],[1,11],[11,11],[24,12],[25,12],[26,12]
+  ];
+}
+
 // ── Cytaty ────────────────────────────────────────────────────
 const QUOTES=[  {t:'Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy nie czyta, żyje tylko jednym.',a:'George R. R. Martin'},
   {t:'Nigdy nie możesz dostać dość dobrej herbaty ani dość długiej książki.',a:'C. S. Lewis'},
@@ -3083,14 +3107,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // poprzednia wersja z hardkodowaną datą 2026 dawała błędne Zielone Świątki/Boże Ciało
   // (dodawanie dni wprost do numeru dnia miesiąca bez przeniesienia na kolejny miesiąc,
   // np. "54 kwietnia") i zamrożenie na dacie Wielkanocy 2026 dla wszystkich kolejnych lat.
-  const easterY=(function(yy){
-    const a=yy%19,b=Math.floor(yy/100),c=yy%100,d=Math.floor(b/4),e=b%4;
-    const f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30;
-    const i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7;
-    const mm=Math.floor((a+11*h+22*l)/451);
-    return new Date(yy,Math.floor((h+l-7*mm+114)/31)-1,((h+l-7*mm+114)%31)+1);
-  })(y);
-  const easterMs=easterY.getTime(),dayMs=86400000;
+  // Wzór dzielony z polishHolidayDates()/easterDateFor() (patrz komentarz przy ich definicji).
+  const easterMs=easterDateFor(y).getTime(),dayMs=86400000;
   const mdFromEaster=(offsetDays)=>{const dt=new Date(easterMs+offsetDays*dayMs);return [dt.getDate(),dt.getMonth()+1];};
   const MOVABLE=[
     [...mdFromEaster(0),'Wielkanoc'],
@@ -3418,24 +3436,10 @@ function jumpToDate(val){
 (function renderLongWeekend(){
   const DAYS_PL=['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
   const MONTHS_PL=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
-  function easterDate(y){
-    const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4;
-    const f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30;
-    const i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7;
-    const mm=Math.floor((a+11*h+22*l)/451);
-    return new Date(y,Math.floor((h+l-7*mm+114)/31)-1,((h+l-7*mm+114)%31)+1);
-  }
+  // Scalone z kartą "Ile zostało do końca roku" (PUBLIC_HOLIDAYS+MOVABLE) 12.09.2026 — obie karty
+  // czytają teraz z jednej, wspólnej funkcji polishHolidayDates() zamiast dwóch niezależnych list.
   function getHolidays(y){
-    const e=easterDate(y),em=e.getTime(),ms=86400000;
-    return [
-      new Date(y,0,1),new Date(y,0,6),
-      new Date(em),new Date(em+ms),
-      new Date(y,4,1),new Date(y,4,3),
-      new Date(em+49*ms),new Date(em+60*ms),
-      new Date(y,7,15),new Date(y,10,1),new Date(y,10,11),
-      // Wigilia (24 XII) jest ustawowym dniem wolnym od pracy od 2025 r. (Dz.U. 2024 poz. 1965)
-      new Date(y,11,24),new Date(y,11,25),new Date(y,11,26)
-    ].map(d=>{d.setHours(0,0,0,0);return d.getTime();});
+    return polishHolidayDates(y).map(([dd,mm])=>{const dt=new Date(y,mm-1,dd);dt.setHours(0,0,0,0);return dt.getTime();});
   }
   const today=new Date(); today.setHours(0,0,0,0);
   const y=today.getFullYear();
