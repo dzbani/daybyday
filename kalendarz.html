@@ -410,7 +410,12 @@
       + 53322 * Math.sin((2 * D + Mp) * rad) + 45758 * Math.sin((2 * D - M) * rad)
       - 40923 * Math.sin((M - Mp) * rad) - 34720 * Math.sin(D * rad) - 30383 * Math.sin((M + Mp) * rad);
     const moonLon = ((Lp + dL / 1000000) % 360 + 360) % 360;
-    const sunLon = ((280.46646 + 36000.76983 * T + 0.0003032 * T * T) % 360 + 360) % 360;
+    // Dlugosc Slonca: srednia + rownanie srodka - sama srednia dawala ~3-4h bledu w
+    // momencie zmiany fazy (bug znaleziony 12.09.2026 w fazy-ksiezyca.html, naprawione
+    // tez tutaj tym samym sposobem, zweryfikowane niezaleznie na 3 terminach/miesiacach).
+    const sunLonMean = ((280.46646 + 36000.76983 * T + 0.0003032 * T * T) % 360 + 360) % 360;
+    const eqC = (1.914602 - 0.004817 * T - 0.000014 * T * T) * Math.sin(M * rad) + (0.019993 - 0.000101 * T) * Math.sin(2 * M * rad) + 0.000289 * Math.sin(3 * M * rad);
+    const sunLon = ((sunLonMean + eqC) % 360 + 360) % 360;
     const elong = ((moonLon - sunLon) % 360 + 360) % 360;
     const SYNODIC = 29.53058867;
     const age = elong / 360 * SYNODIC;

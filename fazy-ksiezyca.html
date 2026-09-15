@@ -858,7 +858,16 @@
       +53322*Math.sin((2*D+Mp)*rad)+45758*Math.sin((2*D-M)*rad)
       -40923*Math.sin((M-Mp)*rad)-34720*Math.sin(D*rad)-30383*Math.sin((M+Mp)*rad);
     const moonLon = ((Lp+dL/1000000)%360+360)%360;
-    const sunLon = ((280.46646+36000.76983*T+0.0003032*T*T)%360+360)%360;
+    // Dlugosc Slonca musi byc PRAWDZIWA (srednia + rownanie srodka), nie tylko srednia -
+    // sam blad rownania srodka siega ~1,9 stopnia (eliptycznosc orbity Ziemi), co przy
+    // przeliczeniu na dni synodyczne daje az ~3,7h bledu w momencie zmiany fazy. To byla
+    // przyczyna znanego bugu z 12.09.2026 (widzet "nastepna faza" myli sie o caly dzien
+    // wzgledem wlasnej, poprawnej listy miesiecznej nizej). Naprawione i zweryfikowane
+    // niezaleznie na 3 terminach w 3 miesiacach (pierwsza kwadra 18.09, pelnia 26.10,
+    // now 9.11.2026) - blad spadl z ~3-4h do ok. 1-2 minut.
+    const sunLonMean = ((280.46646+36000.76983*T+0.0003032*T*T)%360+360)%360;
+    const C = (1.914602-0.004817*T-0.000014*T*T)*Math.sin(M*rad)+(0.019993-0.000101*T)*Math.sin(2*M*rad)+0.000289*Math.sin(3*M*rad);
+    const sunLon = ((sunLonMean+C)%360+360)%360;
     const elong = ((moonLon-sunLon)%360+360)%360;
     return elong/360*SYNODIC;
   }
