@@ -305,6 +305,12 @@ const CITIES = {
 const LOC_STORAGE_KEY = 'dbd-sun-location';
 function saveLocation(loc) { localStorage.setItem(LOC_STORAGE_KEY, JSON.stringify(loc)); }
 function loadSavedLocation() { try { return JSON.parse(localStorage.getItem(LOC_STORAGE_KEY)); } catch(e) { return null; } }
+// Na dedykowanych stronach miast (/wschod-zachod-slonca/<slug>/) generator wstawia tu
+// wlasny slug, zeby strona ZAWSZE pokazywala swoje miasto — niezalezne od tego, co
+// odwiedzajacy mial wczesniej zapisane w dbd-sun-location (np. po wizycie na innej
+// stronie miasta). Na tej, ogolnej stronie ma pozostac null: tu zapamietana lokalizacja
+// ma sens, bo URL nie sugeruje zadnego konkretnego miasta.
+const FORCE_CITY = 'poznan';
 
 const MONTHS_NOM = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
 const MONTHS_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
@@ -540,7 +546,9 @@ Object.entries(CITIES).forEach(([key, c]) => {
 document.getElementById('locationInput').addEventListener('keydown', e => { if (e.key === 'Enter') searchLocation(); });
 
 const savedLoc = loadSavedLocation();
-if (savedLoc && savedLoc.key && CITIES[savedLoc.key]) {
+if (FORCE_CITY && CITIES[FORCE_CITY]) {
+  selectCity(FORCE_CITY);
+} else if (savedLoc && savedLoc.key && CITIES[savedLoc.key]) {
   selectCity(savedLoc.key);
 } else if (savedLoc && typeof savedLoc.lat === 'number') {
   document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));

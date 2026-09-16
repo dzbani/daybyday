@@ -43,6 +43,12 @@ const OLD_LOCATION_STATUS_CSS = '.location-status { font-size:.78rem; color:var(
 const OLD_HERO = '<div class="page-label">Astronomia</div>\n  <h1 class="page-title">Wschód i zachód słońca</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>';
 const OLD_TAB_DEFAULT = "btn.className = 'city-tab' + (key === 'warszawa' ? ' active' : '');";
 const OLD_INIT_DEFAULT = "} else {\n  selectCity('warszawa');\n  useMyLocation(true);\n}";
+// FORCE_CITY sprawia, ze strona miasta ZAWSZE pokazuje swoje miasto, nawet gdy
+// odwiedzajacy ma w dbd-sun-location zapisana inna lokalizacje (np. z wizyty na
+// stronie innego miasta) - bez tego savedLoc mial pierwszenstwo i podmienial
+// tresc strony na dane zupelnie innego miasta niz to w URL/H1/breadcrumb
+// (potwierdzone 16.09.2026: /wschod-zachod-slonca/gdansk/ pokazywal dane Krakowa).
+const OLD_FORCE_CITY = 'const FORCE_CITY = null;';
 // Strony miast leza katalog glebiej niz wschody-zachody.html (/wschod-zachod-slonca/<slug>/),
 // wiec wzgledna sciezka "sw.js" (poprawna na stronie zrodlowej) rozwiazywalaby sie do
 // nieistniejacego /wschod-zachod-slonca/<slug>/sw.js - 404, cicho zepsuty Service Worker
@@ -55,7 +61,7 @@ const OLD_SW_REGISTER = 'navigator.serviceWorker.register("sw.js")';
 const OLD_FONTS_CSS = '<link rel="stylesheet" href="fonts.css">';
 const OLD_TRANSITIONS_JS = '<script src="transitions.js"></script>';
 
-for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT, OLD_SW_REGISTER, OLD_FONTS_CSS, OLD_TRANSITIONS_JS]) {
+for (const OLD of [OLD_TITLE, OLD_DESC, OLD_CANONICAL, OLD_OG_TITLE, OLD_OG_DESC, OLD_OG_URL, OLD_LOCATION_STATUS_CSS, OLD_HERO, OLD_TAB_DEFAULT, OLD_INIT_DEFAULT, OLD_FORCE_CITY, OLD_SW_REGISTER, OLD_FONTS_CSS, OLD_TRANSITIONS_JS]) {
   if (!srcRaw.includes(OLD)) throw new Error('Wzorzec nie znaleziony w źródle (zmieniono wschody-zachody.html?): ' + OLD.slice(0, 60));
 }
 
@@ -107,6 +113,7 @@ function buildPage(slug, city) {
   html = html.replace(OLD_HERO, `<div class="page-label">Astronomia</div>\n  ${breadcrumbHtml}\n  <h1 class="page-title">Wschód i zachód słońca ${cityIn}</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>`);
   html = html.replace(OLD_TAB_DEFAULT, `btn.className = 'city-tab' + (key === '${slug}' ? ' active' : '');`);
   html = html.replace(OLD_INIT_DEFAULT, `} else {\n  selectCity('${slug}');\n  useMyLocation(true);\n}`);
+  html = html.replace(OLD_FORCE_CITY, `const FORCE_CITY = '${slug}';`);
   html = html.replace(OLD_SW_REGISTER, 'navigator.serviceWorker.register("/sw.js")');
   html = html.replace(OLD_FONTS_CSS, '<link rel="stylesheet" href="/fonts.css">');
   html = html.replace(OLD_TRANSITIONS_JS, '<script src="/transitions.js"></script>');
