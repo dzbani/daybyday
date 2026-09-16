@@ -129,9 +129,19 @@ for (const [slug, entry] of Object.entries(HOLIDAYS_DB)) { majorByName[entry.nam
 // Wniebowziecie NMP byly calkowicie nieobecne) - znalezione i naprawione 12.09.2026. Dopisujemy
 // wpisy z SWIETA_DATA na poczatek listy danego dnia (bardziej "powazne" niz lekkie), z dedupem
 // po nazwie na wypadek, gdyby to samo swieto figurowalo w obu zrodlach.
-for (const [d, m, name, , type] of SWIETA_DATA) {
+//
+// NAME_ALIASES (z swieto_registry.js) - ta sama, juz istniejaca, recznie zweryfikowana lista
+// ktorej gen_static_nietypowe_pages.js uzywa do pomijania duplikatow przy generowaniu stron
+// /swieto/<slug>/ - bez niej "awansowane" swieto (pelna nazwa z SWIETA_DATA) zostawalo na
+// liscie dnia OBOK swojego starszego aliasu z lekkiej listy HOLIDAYS (krotsza/uproszczona
+// nazwa), oba linkujace do tej samej strony /swieto/<slug>/ (np. 16 wrzesnia: "Dzien
+// Maszynisty" i "Europejski Dzien Maszynisty Kolejowego" obok siebie). Znalezione 16.09.2026,
+// potwierdzone na 6 datach w roku (skan calego SWIETA_DATA vs HOLIDAYS/swieta-nietypowe.html).
+const { NAME_ALIASES } = require('./swieto_registry');
+for (const [d, m, name, slug, type] of SWIETA_DATA) {
   const key = `${m}-${d}`;
-  const list = holidayMap[key] = holidayMap[key] || [];
+  let list = holidayMap[key] = holidayMap[key] || [];
+  list = holidayMap[key] = list.filter(h => NAME_ALIASES[h.name] !== slug);
   if (!list.some(h => h.name === name)) list.unshift({ name, tag: type });
 }
 
