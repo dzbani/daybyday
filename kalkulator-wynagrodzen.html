@@ -273,12 +273,31 @@
 
   function pln(v) { return v.toLocaleString('pl-PL',{minimumFractionDigits:2,maximumFractionDigits:2})+' zł'; }
 
-  function compute(brutto, pit0, ppk, commute) {
-    // Składki ZUS pracownika
-    const emerytalne = brutto * 0.0976;
-    const rentowe = brutto * 0.015;
+  // Próg II skali podatkowej i limit 30-krotności - stawki 2026 (zweryfikowane WebSearch 16.09.2026:
+  // portalfk.pl/pit.pl, obwieszczenie MRPiPS z 19.11.2025). Zaliczka PIT i składki emerytalno-rentowe
+  // liczone są w Polsce NARASTAJĄCO w ciągu roku (kumulatywny dochód/podstawa), nie od pojedynczej
+  // wypłaty w oderwaniu od reszty roku - poprzednia wersja compute() liczyła KAŻDY miesiąc identycznie,
+  // zawsze stawką 12% bez II progu i bez limitu ZUS, co przy wysokich pensjach (>~10 000 zł brutto/mies.,
+  // roczna podstawa >120 000 zł) dawało zawyżone "netto" o ponad 1000 zł/mies. - znalezione i naprawione
+  // 16.09.2026.
+  const PROG_II_PIT = 120000; // roczny próg II stawki PIT (bez zmian od Polskiego Ładu 2022)
+  const LIMIT_30KROTNOSC = 282600; // roczny limit podstawy składek emerytalno-rentowych na 2026 r.
+  function annualTaxOnBase(base) {
+    return base <= PROG_II_PIT ? base * 0.12 : PROG_II_PIT * 0.12 + (base - PROG_II_PIT) * 0.32;
+  }
+
+  // Liczy jeden miesiąc, przyjmując stan narastająco z poprzednich miesięcy roku (cumBruttoZus - suma
+  // brutto do limitu 30-krotności, cumPodstawaPIT - suma podstawy PIT do progu II). Zwraca wynik miesiąca
+  // ORAZ zaktualizowany stan narastająco (do przekazania do kolejnego miesiąca).
+  function computeMonth(brutto, pit0, ppk, commute, cumBruttoZus, cumPodstawaPIT) {
+    // Składki emerytalna/rentowa tylko do limitu 30-krotności narastająco w roku - powyżej limitu
+    // nie są już pobierane (chorobowa i zdrowotna limitu nie mają).
+    const bruttoDoSkladekEmRent = Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
+    const emerytalne = bruttoDoSkladekEmRent * 0.0976;
+    const rentowe = bruttoDoSkladekEmRent * 0.015;
     const chorobowe = brutto * 0.0245;
     const zusTotal = emerytalne + rentowe + chorobowe;
+    const cumBruttoZusAfter = cumBruttoZus + brutto;
 
     // PPK
     const ppkWorker = ppk ? brutto * 0.02 : 0;
@@ -291,20 +310,45 @@
     // Koszty uzyskania
     const kosztUzysk = commute ? 300 : 250;
 
-    // Podstawa PIT
-    const podstawaPIT = Math.max(0, brutto - zusTotal - kosztUzysk - ppkWorker);
-    const kwotaWolna = 300; // 3600/12
+    // Podstawa PIT tego miesiąca i narastająco
+    const podstawaPITmc = Math.max(0, brutto - zusTotal - kosztUzysk - ppkWorker);
+    const cumPodstawaPITAfter = cumPodstawaPIT + podstawaPITmc;
+    const kwotaWolna = 300; // miesięczna kwota zmniejszająca podatek (3600/12), z PIT-2
 
+    // Zaliczka PIT tego miesiąca = różnica podatku narastająco (uwzględnia przejście przez próg II
+    // w trakcie miesiąca, gdy część podstawy jest jeszcze w I progu a część już w II) minus kwota wolna.
     let pit = 0;
     if (!pit0) {
-      pit = Math.max(0, podstawaPIT * 0.12 - kwotaWolna);
+      pit = Math.max(0, annualTaxOnBase(cumPodstawaPITAfter) - annualTaxOnBase(cumPodstawaPIT) - kwotaWolna);
     }
 
     const netto = brutto - zusTotal - zdrowotna - pit - ppkWorker;
-    const kosztPracodawcy = brutto + brutto * 0.0976 + brutto * 0.065 + brutto * 0.0167 + ppkEmployer;
+    const kosztPracodawcy = brutto + emerytalne + bruttoDoSkladekEmRent * 0.065 + brutto * 0.0167 + ppkEmployer;
 
-    return { brutto, netto, zusTotal, zdrowotna, pit, ppkWorker, ppkEmployer, kosztPracodawcy,
-      emerytalne, rentowe, chorobowe };
+    return {
+      result: { brutto, netto, zusTotal, zdrowotna, pit, ppkWorker, ppkEmployer, kosztPracodawcy,
+        emerytalne, rentowe, chorobowe },
+      cumBruttoZus: cumBruttoZusAfter, cumPodstawaPIT: cumPodstawaPITAfter,
+    };
+  }
+
+  // Symuluje pełny rok (12 miesięcy tej samej pensji brutto) narastająco - zwraca tablicę 12 wyników.
+  function computeYear(brutto, pit0, ppk, commute) {
+    let cumBruttoZus = 0, cumPodstawaPIT = 0;
+    const months = [];
+    for (let i = 0; i < 12; i++) {
+      const m = computeMonth(brutto, pit0, ppk, commute, cumBruttoZus, cumPodstawaPIT);
+      months.push(m.result);
+      cumBruttoZus = m.cumBruttoZus;
+      cumPodstawaPIT = m.cumPodstawaPIT;
+    }
+    return months;
+  }
+
+  // Wynik "typowego miesiąca" (kalkulator główny, tabela popularnych kwot) = styczeń świeżego roku -
+  // dla pensji poniżej progów daje dokładnie tę samą wartość co poprzednia wersja compute().
+  function compute(brutto, pit0, ppk, commute) {
+    return computeMonth(brutto, pit0, ppk, commute, 0, 0).result;
   }
 
   function calcSalary() {
@@ -354,8 +398,9 @@
   }
 
   function renderMonths(brutto, pit0, ppk, commute) {
-    const rows = MONTHS_NOM.map(m => {
-      const r = compute(brutto, pit0, ppk, commute);
+    const year = computeYear(brutto, pit0, ppk, commute);
+    const rows = MONTHS_NOM.map((m, i) => {
+      const r = year[i];
       return `<tr><td>${m}</td><td><strong>${pln(r.netto)}</strong></td><td>${pln(r.pit)}</td><td>${pln(r.zusTotal)}</td></tr>`;
     }).join('');
     document.getElementById('monthBody').innerHTML = rows;
