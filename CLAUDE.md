@@ -79,6 +79,17 @@ Zakres: WSZYSTKIE imiona obchodzące imieniny danego dnia (`NAMES` w `imieniny.h
 - Cyrylica: regex słowo z ≥1 literą łacińską i ≥1 cyrylicką — `/\b[a-zA-Z...]*[а-яёА-ЯЁ][a-zA-Z...]*\b/gu`.
 - Pełna metodologia i przykład wykonania (w tym pułapka fałszywych trafień przy dopasowywaniu dat) — patrz sesja 28.08.2026.
 
+## Weryfikacja cytatów (`index.html`, `QUOTES`) — dwa poziomy pewności, nie jeden próg
+
+Odkryte 15-16.09.2026 przy pełnym, dwurundowym audycie całej bazy 400+ cytatów (dwie niezależne rundy: pierwotny 14-rundowy audyt 2026 + druga runda WebSearch tej sesji, partiami po 5, na każdej podgrupie): **"sprawdzone" i "pewne" to dwie różne rzeczy, w zależności od tego, skąd startuje dana pozycja.**
+
+- **Cytat wcześniej NIEPOTWIERDZONY (nigdy nie znaleziono pierwotnego źródła):** kryterium usuwania to **całkowity brak jakiegokolwiek śladu w internecie** (nawet na farmach cytatów typu Goodreads/BrainyQuote/AZQuotes) pod danym nazwiskiem — to wystarczający sygnał fabrykacji, bez potrzeby "twardego dowodu" jak przy jawnie zdementowanym cytacie. Uzasadnienie: prawdziwe (nawet błędnie przypisane) cytaty niemal zawsze pojawiają się choć na jednej farmie, bo te strony indeksują wszystko bezkrytycznie — całkowita nieobecność sugeruje, że tekst mógł zostać wygenerowany/skomponowany specjalnie, a nie faktycznie krążyć.
+- **Cytat wcześniej JUŻ POTWIERDZONY źródłem (choćby drugorzędnym):** kryterium usuwania to wyłącznie **twardy dowód obalający** (jak Napoleon — inny udokumentowany autor + brak druku sprzed 24 lat po jego śmierci; jak Churchill "głupiec nie zmienia zdania" — International Churchill Society jawnie na liście fałszywych). Sam brak dodatkowego potwierdzenia w tej rundzie NIE wystarcza do usunięcia — cytat pozostaje.
+
+**Wniosek praktyczny:** przy kolejnym audycie cytatów/przysłów/podobnej treści najpierw ustal, z której grupy startuje dana pozycja (nigdy niepotwierdzona vs. już potwierdzona choćby słabo), bo to determinuje próg dowodowy do usunięcia — stosowanie jednego progu do obu grup prowadzi albo do nadmiernego usuwania prawdziwych cytatów (zbyt surowy próg dla grupy 2), albo do trzymania fabrykacji (zbyt łagodny próg dla grupy 1).
+
+**Trwały sufit pewności:** cytat, który przetrwał DWIE niezależne rundy WebSearch bez znalezienia pierwotnego źródła W ŻADNĄ STRONĘ (ani potwierdzenia, ani obalenia), prawdopodobnie zostanie w tym stanie na stałe — to nie kwestia włożenia większego wysiłku, tylko fizycznego limitu tego, co da się znaleźć przez wyszukiwarkę (stare książki niezindeksowane cyfrowo, wywiady bez archiwum online). Trzecia runda tym samym narzędziem z reguły nie zmienia wyniku — nie traktować braku postępu jako sygnału do jeszcze bardziej agresywnego usuwania, tylko jako naturalny, zaakceptowany stan końcowy tej podgrupy.
+
 ## Weryfikacja danych kalendarzowych/astronomicznych
 
 - Wielkanoc: algorytm Meeusa/Jonesa/Butchera (użyty w wielu plikach, zweryfikowany).
