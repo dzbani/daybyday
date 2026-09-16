@@ -231,7 +231,7 @@ MONTHS.forEach((m, i) => {
     sec.innerHTML = '<p style="color:var(--muted);font-size:.85rem;padding:1rem 0">Przysłowia dla tego miesiąca będą dodane wkrótce.</p>';
   } else {
     sec.innerHTML = days.map(day => {
-      const date = new Date(2026, mNum-1, day.d);
+      const date = new Date(today.getFullYear(), mNum-1, day.d);
       const wd = WEEKDAYS[date.getDay()];
       const isToday = mNum === todayM && day.d === todayD;
       const todayBadge = isToday ? '<span class="today-badge">Dziś</span>' : '';
