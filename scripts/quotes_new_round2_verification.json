@@ -1,0 +1,12 @@
+{
+  "summary": "Druga runda weryfikacji 84 'nowych' cytatów (dodanych przy uzupełnianiu puli 317->401). Metoda: partie po 5, dedykowany WebSearch per cytat, szukanie potwierdzenia dokładnego brzmienia + źródła. Wynik: 84/84 POTWIERDZONE, 0 usunięć, 0 poprawek autora. Najwyższy wskaźnik potwierdzeń ze wszystkich trzech grup w tej sesji (193 'verified', 87 'unverifiable', 84 'nowe') - spójne z tym, że przy dodawaniu każdy kandydat miał już wskazane konkretne źródło (strona/rozdział/data), więc próg wejścia był wyższy niż w pierwotnym audycie z 2026.",
+  "total_checked": 84,
+  "confirmed": 84,
+  "removed": 0,
+  "fixed_author": 0,
+  "notable_findings": [
+    "Niels Bohr 'przeciwieństwem głębokiej prawdy...' - sam Bohr nazwał to 'starym powiedzeniem' (Heisenberg, 'Physics and Beyond', 1971), ale to on je spopularyzował - analogiczny wzorzec do Steve Jobs 'Stay Hungry Stay Foolish'. Zostawione bez zmian, zgodnie z już przyjętym standardem.",
+    "Zora Neale Hurston 'nie ma większej udręki niż noszenie w sobie nieopowiedzianej historii' - baza SAMA już poprawnie unikała częstej błędnej atrybucji do Mai Angelou, potwierdzone przez Quote Investigator ze skanem oryginalnej publikacji z 1942 (str. 220-221).",
+    "Drobne, nieistotne warianty tekstu między wydaniami (Wyspiański 'czapki/czapkę', 'huka/hula'; Czechow data listu 11 vs 23 kwietnia) - nie wpływają na autentyczność ani autorstwo."
+  ]
+}
