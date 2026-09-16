@@ -2083,6 +2083,15 @@ const TAG_COLOR = {
   'panstwowe':'#3A5FA0','koscielne':'#8B5E2A','nieoficjalne':'#6B6864','historyczne':'#7A6A5E',
 };
 
+// Rozwiazuje nazwe swieta na slug przez SWIETO_NAME_TO_SLUG (swieto_names.js) - ta mapa juz
+// zawiera rejestr recznie zweryfikowanych aliasow (NAME_ALIASES z scripts/swieto_registry.js),
+// wiec dwie rozne nazwy tego samego realnego swieta (np. "Dzien Nauki Polskiej" i pelne
+// "Narodowy Dzien Nauki Polskiej") rozwiazuja sie do TEGO SAMEGO sluga. Funkcja na najwyzszym
+// poziomie (nie const w jednym domknieciu), zeby byla widoczna z kazdego bloku ktory laczy
+// lekka liste HOLIDAYS z SWIETA_DATA - dedup PO SAMEJ NAZWIE nie wystarcza, bo obie nazwy
+// czesto sie od siebie roznia mimo ze to to samo wydarzenie. Znalezione 16.09.2026.
+function nameToSlugSafe(name){ return (typeof SWIETO_NAME_TO_SLUG!=='undefined')?SWIETO_NAME_TO_SLUG[name]:undefined; }
+
 // ── Polskie święta ustawowo wolne od pracy — wspólne źródło ────
 // Wielkanoc (algorytm Gaussa) i pochodne od niej święta ruchome. Wspólna funkcja, żeby ten sam
 // wzór i ta sama lista dni wolnych nie żyły w kilku niezależnych kopiach w tym pliku — dokładnie
@@ -2929,11 +2938,22 @@ function getMoonRiseSet(year,month,day,lat,lon){
       heroEl.appendChild(a);
     });
   }
-  // Święta z SWIETA_DATA (Państwowe/Kościelne/Tradycyjne i okolicznościowe) + nietypowe, bez duplikatów po nazwie
+  // Święta z SWIETA_DATA (Państwowe/Kościelne/Tradycyjne i okolicznościowe) + nietypowe, bez duplikatów po nazwie.
+  // Dedup TYLKO po dokladnej nazwie nie wystarcza: gdy swieto ma w lekkiej liscie HOLIDAYS
+  // starsza, krotsza nazwe sprzed "awansu" do SWIETA_DATA (np. "Dzien Nauki Polskiej" vs pelne
+  // "Narodowy Dzien Nauki Polskiej", ten sam slug dzien-nauki-polskiej), obie wersje ladowaly
+  // sie obok siebie na karcie. SWIETO_NAME_TO_SLUG (swieto_names.js) juz zawiera rejestr
+  // aliasow (NAME_ALIASES z scripts/swieto_registry.js) - porownujemy po rozwiazanym slugu,
+  // nie po samej nazwie. Znalezione i naprawione 16.09.2026 (ten sam wzorzec co gen_kartka.js).
   const CARD_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
   const todaysCurated=swietaForY.filter(([hd,hm,,,type])=>hd===d&&hm===m&&type.split(' ').some(t=>CARD_TYPES.includes(t)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
-  const todaysNietypowe=todays.filter(([,,name])=>!curatedNames.has(name));
+  const curatedSlugs=new Set(todaysCurated.map(([,,name])=>nameToSlugSafe(name)).filter(Boolean));
+  const todaysNietypowe=todays.filter(([,,name])=>{
+    if(curatedNames.has(name))return false;
+    const slug=nameToSlugSafe(name);
+    return !(slug&&curatedSlugs.has(slug));
+  });
   const shownTodayNames=new Set([...curatedNames,...todaysNietypowe.map(([,,name])=>name)]);
   const hl=document.getElementById('holidaysList');
   if(todaysCurated.length||todaysNietypowe.length){
@@ -3050,8 +3070,17 @@ function getMoonRiseSet(year,month,day,lat,lon){
     // sama w sobie nie obejmuje wszystkich dni (np. Wigilii, Bożego Narodzenia, rocznic historycznych),
     // przez co te dni nie dostawały kropki mimo realnej treści świątecznej (naprawione 12.09.2026).
     const swietaForCal=(cy===TODAY.getFullYear())?SWIETA_DATA:SWIETA_DATA_STATIC.concat(computeMovableSwieta(cy));
+    // Dedup po slugu (nameToSlugSafe), nie po samej nazwie - inaczej podpowiedz dnia potrafi
+    // pokazac to samo swieto dwukrotnie pod dwiema nazwami (ten sam bug co w karcie "Swieta i
+    // obchodzone dni" wyzej, np. 19 lutego: "Dzien Nauki Polskiej" + "Narodowy Dzien Nauki
+    // Polskiej"). Znalezione 16.09.2026.
     swietaForCal.filter(([hd,hm,,,type])=>hm===cm&&type.split(' ').some(t=>CARD_TYPES.includes(t)))
-      .forEach(([hd,,name])=>{(hmMap[hd]=hmMap[hd]||[]).push(name);});
+      .forEach(([hd,,name])=>{
+        const slug=nameToSlugSafe(name);
+        const list=hmMap[hd]=hmMap[hd]||[];
+        if(slug){const dup=list.findIndex(n=>nameToSlugSafe(n)===slug);if(dup!==-1)list.splice(dup,1);}
+        list.push(name);
+      });
     const hmSet=new Set(Object.keys(hmMap).map(Number));
     for(let i=0;i<startDow;i++){const s=document.createElement('span');s.className='mini-cal-day other-month';grid.appendChild(s);}
     for(let dd=1;dd<=daysInMonth;dd++){
