@@ -313,7 +313,20 @@
     const adventOfThisLitYear = litYearStart;
     const christmasThisLitYear = new Date(adventOfThisLitYear.getFullYear(),11,25);
     const epiphany = new Date(christmasThisLitYear.getFullYear()+1,0,6);
-    const baptismOfLord = epiphany.getDay()===0 ? addDays(epiphany,1) : addDays(epiphany, (7-epiphany.getDay())%7 || 7);
+    // Chrzest Pański: zawsze NIEDZIELA przypadająca po 6 stycznia (Ogólne normy roku
+    // liturgicznego). W Polsce Objawienie Pańskie ma STAŁĄ datę 6 stycznia (nie jest
+    // przenoszone na niedzielę jak w części krajów anglosaskich) - tzw. "przeniesienie na
+    // poniedziałek" dotyczy WYŁĄCZNIE kalendarzy, w których samo Objawienie Pańskie wypada
+    // w niedzielę 7 lub 8 stycznia (bo tam Epifania jest przenoszona), co w Polsce nie
+    // występuje. Gdy 6 stycznia SAMO wypada w niedzielę, Chrzest Pański przesuwa się na
+    // KOLEJNĄ niedzielę (13 stycznia), a nie na poniedziałek 7 stycznia - zweryfikowane na
+    // realnym przypadku 2019 r. (6 I 2019 = niedziela; Chrzest Pański realnie obchodzony
+    // 13 I 2019, potwierdzone przez niezbednik.niedziela.pl: 7-12 I 2019 to wciąż "tydzień
+    // po Narodzeniu Pańskim"). Poprzednia wersja miała osobną gałąź dla getDay()===0 dającą
+    // błędnie poniedziałek zamiast kolejnej niedzieli - błąd potwierdzony też dla 2030 r.
+    // (ten sam przypadek), naprawiony 16.09.2026: jeden wzór dla każdego dnia tygodnia,
+    // "|| 7" naturalnie daje +7 dni gdy 6 stycznia jest już niedzielą (0%7=0 jest falsy).
+    const baptismOfLord = addDays(epiphany, (7-epiphany.getDay())%7 || 7);
     const christKingDate = addDays(adventStart(christmasThisLitYear.getFullYear()+1),-7);
 
     const seasons=[
