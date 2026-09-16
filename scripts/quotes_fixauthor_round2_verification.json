@@ -1,0 +1,8 @@
+{
+  "summary": "Trzecia i ostatnia grupa w pełnym audycie bazy cytatów: 34 pozycje, którym w PIERWOTNYM audycie 2026 poprawiono autora (status='misattributed', recommendation='fix_author' w plikach quotes_batch1-14_result.json). Ta grupa NIE była częścią list 'verified' (193) ani 'unverifiable' (87) sprawdzanych wcześniej w tej sesji - został odkryty jako przeoczony segment podczas weryfikacji rachunków (400 vs suma podgrup). Metoda: niezależny WebSearch per pozycja, weryfikacja czy poprawka z 2026 r. jest nadal trafna.",
+  "total_checked": 34,
+  "confirmed_correct": 34,
+  "reversed": 0,
+  "notes": "100% poprawek z oryginalnego audytu 2026 potwierdzonych jako trafne przy niezależnej rundzie weryfikacji. Wszystkie mają solidne oparcie w Quote Investigator lub równoważnym źródle. Kilka pozycji ma z natury niepewne/tymczasowe przypisanie zarówno w oryginalnej, jak i tej weryfikacji (np. Martin Luther/jabłoń, Emiliano Zapata, Muriel Strode) - ale to jest już poprawnie odzwierciedlone jako niepewność w samej bazie, nie błąd.",
+  "pary_zamienione_miejscami": "Warto odnotować: pozycje 'Zainwestuj w swoją wiedzę' (Buffett->Franklin) i 'Najlepsza inwestycja to inwestycja w siebie' (Franklin->Buffett) to DWA różne, autentyczne cytaty, które w oryginalnej bazie miały odwrotnie przypisanych autorów (klasyczna zamiana miejscami) - audyt 2026 poprawnie to rozpoznał i naprawił obie strony zamiany."
+}
