@@ -3421,7 +3421,14 @@ function jumpToDate(val){
     95:['⛈️','Burza'],96:['⛈️','Burza z gradem'],99:['⛈️','Burza z silnym gradem']
   };
   const url=`https://api.open-meteo.com/v1/forecast?latitude=${LOC_LAT}&longitude=${LOC_LON}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m&timezone=Europe%2FWarsaw&wind_speed_unit=kmh`;
-  fetch(url).then(r=>r.json()).then(data=>{
+  // Open-Meteo aktualizuje dane "current" co ok. 15 min — odświeżamy co 20 min oraz po powrocie do karty
+  const REFRESH_MS=20*60*1000;
+  let lastFetch=0;
+  function refreshWeather(){
+    lastFetch=Date.now();
+    fetch(url).then(r=>r.json()).then(applyWeather).catch(()=>{});
+  }
+  function applyWeather(data){
     const c=data.current;
     const [icon,desc]=WMO[c.weather_code]||['🌡️','Nieznane'];
     document.getElementById('weatherIcon').textContent=icon;
@@ -3433,7 +3440,12 @@ function jumpToDate(val){
       `<div class="weather-detail">💨 Wiatr <strong>${Math.round(c.wind_speed_10m)} km/h</strong></div>`+
       `<div class="weather-detail">💧 Wilgotność <strong>${c.relative_humidity_2m}%</strong></div>`;
     document.getElementById('weatherCard').style.display='';
-  }).catch(()=>{});
+  }
+  refreshWeather();
+  setInterval(refreshWeather,REFRESH_MS);
+  document.addEventListener('visibilitychange',()=>{
+    if(!document.hidden&&Date.now()-lastFetch>REFRESH_MS/2) refreshWeather();
+  });
 })();
 
 // ── Następny długi weekend ────────────────────────────────────
