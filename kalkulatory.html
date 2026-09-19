@@ -386,19 +386,12 @@
     document.getElementById('dateResult').classList.add('visible');
   }
 
-  function calcSyrup() {
-    const w = parseFloat(document.getElementById('weight').value);
-    const d = parseFloat(document.getElementById('dosage').value);
-    const c = parseFloat(document.getElementById('concentration').value);
-    if (!w || !d || !c) return;
-    const ml = (w * d / c).toFixed(1);
-    document.getElementById('syrupNum').textContent = ml;
-    document.getElementById('syrupDetail').textContent =
-      `Całkowita dawka: ${(w*d).toFixed(0)} mg · Stężenie: ${c} mg/ml · Wynik: ${ml} ml\n⚠ Zawsze skonsultuj dawkowanie z lekarzem lub farmaceutą.`;
-    document.getElementById('syrupResult').classList.add('visible');
-  }
-
-  document.getElementById('birthDate').max = new Date().toISOString().split('T')[0];
+  (function () {
+    // max = dzisiejsza data LOKALNA (toISOString dałoby datę UTC, czyli wczorajszą tuż po północy)
+    const t = new Date();
+    document.getElementById('birthDate').max =
+      `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, '0')}-${String(t.getDate()).padStart(2, '0')}`;
+  })();
 
   function calcAge() {
     const birth = parseLocalDate(document.getElementById('birthDate').value);
@@ -410,7 +403,9 @@
     let days = now.getDate() - birth.getDate();
     if (days < 0) { months--; days += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); }
     if (months < 0) { years--; months += 12; }
-    const totalDays = Math.floor((now - birth) / 86400000);
+    // Dni kalendarzowe liczone przez Date.UTC — różnica w milisekundach lokalnego czasu gubi 1 dzień
+    // w pierwszej godzinie po północy, gdy między datą urodzenia a dziś była zmiana czasu (DST).
+    const totalDays = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(birth.getFullYear(), birth.getMonth(), birth.getDate())) / 86400000);
     const totalWeeks = Math.floor(totalDays / 7);
     const totalHours = Math.floor((now - birth) / 3600000);
     const res = document.getElementById('ageResult');
@@ -466,6 +461,8 @@
     const mm=String(date.getMonth()+1).padStart(2,'0'),dd=String(date.getDate()).padStart(2,'0');
     if(PL_PUBLIC_HOLIDAYS.includes(`${dd}-${mm}`)) return true;
     const y=date.getFullYear(), e=getEasterDate(y);
+    // Wigilia (24 grudnia) jest ustawowo wolna od pracy od 2025 r. (Dz.U. 2024 poz. 1965)
+    if(y>=2025&&dd==='24'&&mm==='12') return true;
     const diff=Math.round((date-e)/86400000);
     return diff===0||diff===1||diff===49||diff===60;
   }
