@@ -310,6 +310,15 @@
   function same(a, b) { return a.toDateString() === b.toDateString(); }
   function between(d, a, b) { return d >= a && d <= b; }
 
+  // Domyślna data początku ostatniej miesiączki = 14 dni temu (przykład do podglądu wyniku),
+  // zamiast daty z czerwca 2026 wpisanej w HTML.
+  (function setDefaultLastPeriod() {
+    const d = new Date();
+    d.setDate(d.getDate() - 14);
+    document.getElementById('lastPeriod').value =
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  })();
+
   function calculate() {
     const lastPeriod = parseLocalDate(document.getElementById('lastPeriod').value);
     const cycle = parseInt(document.getElementById('cycleLen').value);

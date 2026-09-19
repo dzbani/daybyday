@@ -3130,7 +3130,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
     [...mdFromEaster(49),'Zielone Świątki'],
     [...mdFromEaster(60),'Boże Ciało'],
   ];
-  const NAMED_DAYS=[[12,2,'Tłusty Czwartek'],[14,2,'Walentynki'],[8,3,'Dzień Kobiet'],[23,3,'Dzień Wiosny'],[26,5,'Dzień Matki'],[1,6,'Dzień Dziecka'],[23,6,'Dzień Ojca'],[21,6,'Przesilenie letnie'],[31,10,'Halloween'],[2,11,'Dzień Zaduszny'],[30,11,'Andrzejki'],[6,12,'Mikołajki'],[22,12,'Przesilenie zimowe'],[24,12,'Wigilia'],[31,12,'Sylwester']];
+  // Tłusty Czwartek = 52 dni przed Wielkanocą (nie na sztywno 12 II — to data z 2026)
+  const NAMED_DAYS=[[...mdFromEaster(-52),'Tłusty Czwartek'],[14,2,'Walentynki'],[8,3,'Dzień Kobiet'],[21,3,'Dzień Wiosny'],[26,5,'Dzień Matki'],[1,6,'Dzień Dziecka'],[23,6,'Dzień Ojca'],[21,6,'Przesilenie letnie'],[31,10,'Halloween'],[2,11,'Dzień Zaduszny'],[30,11,'Andrzejki'],[6,12,'Mikołajki'],[22,12,'Przesilenie zimowe'],[24,12,'Wigilia'],[31,12,'Sylwester']];
   const EVENT_SLUG={
     'Nowy Rok':'nowy-rok',
     'Trzech Króli':'trzech-kroli',
@@ -3267,7 +3268,10 @@ function getMoonRiseSet(year,month,day,lat,lon){
   }
   const freeDays=daysLeft-workDays;
   const yc=document.getElementById('yearCounters');
-  [[daysLeft,'dni do\nkońca roku'],[workDays,'dni\nroboczych'],[freeDays,'weekendów\ni świąt']].forEach(([n,lbl])=>{
+  // liczba pojedyncza wymaga innej formy ("1 dzień", nie "1 dni")
+  [[daysLeft,daysLeft===1?'dzień do\nkońca roku':'dni do\nkońca roku'],
+   [workDays,workDays===1?'dzień\nroboczy':'dni\nroboczych'],
+   [freeDays,freeDays===1?'dzień wolny\n(weekend/święto)':'weekendów\ni świąt']].forEach(([n,lbl])=>{
     yc.innerHTML+=`<div class="year-counter"><div class="year-counter-num">${n}</div><div class="year-counter-lbl">${lbl.replace('\n','<br>')}</div></div>`;
   });
   // pasek postępu roku

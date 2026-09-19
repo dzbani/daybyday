@@ -335,6 +335,18 @@
     return `${d.getDate()} ${PL_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
   }
 
+  // Domyślne wartości pól dat = dzisiaj (zamiast dat z czerwca 2026 wpisanych w HTML);
+  // składane z lokalnych składników, nie z toISOString() (UTC dałoby wczorajszą datę tuż po północy).
+  (function setDefaultDates() {
+    const t = new Date();
+    const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const today = iso(t);
+    document.getElementById('d1').value = `${t.getFullYear()}-01-01`;
+    document.getElementById('d2').value = today;
+    document.getElementById('startDate').value = today;
+    document.getElementById('weekdayDate').value = today;
+  })();
+
   // <input type="date"> zwraca "YYYY-MM-DD", a new Date(str) parsuje to jako
   // północ UTC — dla odwiedzających w strefach na zachód od UTC (np. USA, Kanada)
   // lokalne metody (getDate/getDay/setDate...) czytałyby wtedy DZIEŃ WCZEŚNIEJSZY.
