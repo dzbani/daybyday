@@ -29,7 +29,7 @@
   </div>
 <script>
 (function(){
-  // Kluczowe daty lat szkolnych 2025/2026 i 2026/2027. Utrzymywane ręcznie, tak samo
+  // Kluczowe daty lat szkolnych 2025/2026, 2026/2027 i 2027/2028. Utrzymywane ręcznie, tak samo
   // jak zrodlowa strona kalendarz-szkolny.html (brak automatycznego generatora — patrz
   // ten sam plik). Ferie zimowe zaleza od wojewodztwa, wiec pokazane jako jeden zbiorczy
   // zakres z dopiskiem, zamiast probowac zgadywac wojewodztwo widza.
@@ -70,11 +70,28 @@
     {start:'2027-05-27', end:'2027-05-27', label:'Boże Ciało', type:'wolny', emoji:'⛪'},
     {start:'2027-06-25', end:'2027-06-25', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
     {start:'2027-06-26', end:'2027-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
-    // 1 września 2027 to środa (dzień powszedni) — zgodnie z ustawową regułą (pierwszy dzień
-    // powszedni września) rok szkolny 2027/2028 rozpocznie się właśnie tego dnia. Bez tego wpisu
-    // sekcja "Za X dni" byłaby pusta przez całe lato 2027 (jedyne w całej tablicy), bo to ostatnie
-    // wydarzenie w danych i nie ma kolejnego, do którego można by odliczać.
-    {start:'2027-09-01', end:'2027-09-01', label:'Rozpoczęcie roku szkolnego 2027/2028', type:'szkolny', emoji:'🎒'}
+    {start:'2027-09-01', end:'2027-09-01', label:'Rozpoczęcie roku szkolnego 2027/2028', type:'szkolny', emoji:'🎒'},
+    {start:'2027-10-14', end:'2027-10-14', label:'Dzień Edukacji Narodowej — dzień wolny', type:'wolny', emoji:'📕'},
+    {start:'2027-11-01', end:'2027-11-01', label:'Wszystkich Świętych', type:'wolny', emoji:'🕯️'},
+    {start:'2027-11-11', end:'2027-11-11', label:'Narodowe Święto Niepodległości', type:'wolny', emoji:'🇵🇱'},
+    {start:'2027-12-23', end:'2027-12-31', label:'Przerwa świąteczna', type:'przerwa', emoji:'🎄'},
+    {start:'2027-12-24', end:'2027-12-24', label:'Wigilia — dzień wolny', type:'wolny', emoji:'🎄'},
+    {start:'2027-12-25', end:'2027-12-26', label:'Boże Narodzenie', type:'wolny', emoji:'🎄'},
+    {start:'2028-01-01', end:'2028-01-01', label:'Nowy Rok', type:'wolny', emoji:'🎉'},
+    {start:'2028-01-06', end:'2028-01-06', label:'Trzech Króli — dzień wolny', type:'wolny', emoji:'👑'},
+    {start:'2028-01-17', end:'2028-02-27', label:'Ferie zimowe (dokładne daty zależą od województwa)', type:'ferie', emoji:'⛄'},
+    {start:'2028-04-13', end:'2028-04-18', label:'Przerwa wielkanocna', type:'przerwa', emoji:'🐣'},
+    {start:'2028-04-16', end:'2028-04-17', label:'Wielkanoc', type:'wolny', emoji:'🐣'},
+    {start:'2028-05-01', end:'2028-05-01', label:'Święto Pracy', type:'wolny', emoji:'🏳️'},
+    {start:'2028-05-03', end:'2028-05-03', label:'Święto Konstytucji 3 Maja', type:'wolny', emoji:'🇵🇱'},
+    {start:'2028-06-04', end:'2028-06-04', label:'Zielone Świątki', type:'wolny', emoji:'🕊️'},
+    {start:'2028-06-15', end:'2028-06-15', label:'Boże Ciało', type:'wolny', emoji:'⛪'},
+    {start:'2028-06-23', end:'2028-06-23', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
+    {start:'2028-06-24', end:'2028-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
+    // 1 września 2028 to piątek — zgodnie z rozporządzeniem (piątek/sobota → najbliższy poniedziałek)
+    // rok szkolny 2028/2029 rozpocznie się w poniedziałek 4 września. Bez tego wpisu sekcja "Za X dni"
+    // byłaby pusta przez całe lato 2028 (jedyne w całej tablicy), bo to ostatnie wydarzenie w danych.
+    {start:'2028-09-04', end:'2028-09-04', label:'Rozpoczęcie roku szkolnego 2028/2029', type:'szkolny', emoji:'🎒'}
   ];
 
   function parseDate(s){ var p = s.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
