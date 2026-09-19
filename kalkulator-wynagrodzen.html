@@ -286,6 +286,11 @@
     return base <= PROG_II_PIT ? base * 0.12 : PROG_II_PIT * 0.12 + (base - PROG_II_PIT) * 0.32;
   }
 
+  // Zaokrąglenia jak w programach kadrowo-płacowych: składki ZUS/zdrowotna/PPK do groszy,
+  // podstawa PIT i zaliczka PIT do pełnych złotych (dzięki temu wynik zgadza się z listą płac co do grosza,
+  // np. 4806 zł brutto -> 3605,85 zł netto).
+  const r2 = x => Math.round(x * 100) / 100;
+
   // Liczy jeden miesiąc, przyjmując stan narastająco z poprzednich miesięcy roku (cumBruttoZus - suma
   // brutto do limitu 30-krotności, cumPodstawaPIT - suma podstawy PIT do progu II). Zwraca wynik miesiąca
   // ORAZ zaktualizowany stan narastająco (do przekazania do kolejnego miesiąca).
@@ -293,37 +298,44 @@
     // Składki emerytalna/rentowa tylko do limitu 30-krotności narastająco w roku - powyżej limitu
     // nie są już pobierane (chorobowa i zdrowotna limitu nie mają).
     const bruttoDoSkladekEmRent = Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
-    const emerytalne = bruttoDoSkladekEmRent * 0.0976;
-    const rentowe = bruttoDoSkladekEmRent * 0.015;
-    const chorobowe = brutto * 0.0245;
-    const zusTotal = emerytalne + rentowe + chorobowe;
+    const emerytalne = r2(bruttoDoSkladekEmRent * 0.0976);
+    const rentowe = r2(bruttoDoSkladekEmRent * 0.015);
+    const chorobowe = r2(brutto * 0.0245);
+    const zusTotal = r2(emerytalne + rentowe + chorobowe);
     const cumBruttoZusAfter = cumBruttoZus + brutto;
 
-    // PPK
-    const ppkWorker = ppk ? brutto * 0.02 : 0;
-    const ppkEmployer = ppk ? brutto * 0.015 : 0;
+    // PPK: wpłata pracownika (2%) jest potrącana z wynagrodzenia PO opodatkowaniu i NIE obniża podstawy
+    // PIT; wpłata pracodawcy (1,5%) jest przychodem pracownika (podlega PIT, nie podlega składkom ZUS).
+    // Wcześniejsza wersja odejmowała wpłatę pracownika od podstawy PIT i pomijała przychód z wpłaty
+    // pracodawcy - netto z PPK było zawyżone o ok. 25 zł przy 6000 zł brutto (poprawione 19.09.2026).
+    const ppkWorker = ppk ? r2(brutto * 0.02) : 0;
+    const ppkEmployer = ppk ? r2(brutto * 0.015) : 0;
 
     // Podstawa zdrowotnej
-    const podstawaZdrowotna = brutto - zusTotal;
-    const zdrowotna = podstawaZdrowotna * 0.09;
+    const zdrowotna = r2((brutto - zusTotal) * 0.09);
 
     // Koszty uzyskania
     const kosztUzysk = commute ? 300 : 250;
 
-    // Podstawa PIT tego miesiąca i narastająco
-    const podstawaPITmc = Math.max(0, brutto - zusTotal - kosztUzysk - ppkWorker);
+    // Podstawa PIT tego miesiąca (pełne złote) i narastająco
+    const podstawaPITmc = Math.max(0, Math.round(brutto + ppkEmployer - zusTotal - kosztUzysk));
     const cumPodstawaPITAfter = cumPodstawaPIT + podstawaPITmc;
     const kwotaWolna = 300; // miesięczna kwota zmniejszająca podatek (3600/12), z PIT-2
 
     // Zaliczka PIT tego miesiąca = różnica podatku narastająco (uwzględnia przejście przez próg II
-    // w trakcie miesiąca, gdy część podstawy jest jeszcze w I progu a część już w II) minus kwota wolna.
+    // w trakcie miesiąca, gdy część podstawy jest jeszcze w I progu a część już w II) minus kwota wolna,
+    // zaokrąglona do pełnych złotych.
     let pit = 0;
     if (!pit0) {
-      pit = Math.max(0, annualTaxOnBase(cumPodstawaPITAfter) - annualTaxOnBase(cumPodstawaPIT) - kwotaWolna);
+      pit = Math.max(0, Math.round(annualTaxOnBase(cumPodstawaPITAfter) - annualTaxOnBase(cumPodstawaPIT) - kwotaWolna));
     }
 
-    const netto = brutto - zusTotal - zdrowotna - pit - ppkWorker;
-    const kosztPracodawcy = brutto + emerytalne + bruttoDoSkladekEmRent * 0.065 + brutto * 0.0167 + ppkEmployer;
+    const netto = r2(brutto - zusTotal - zdrowotna - pit - ppkWorker);
+    // Koszt pracodawcy = brutto + emerytalna 9,76% + rentowa 6,5% (do limitu 30-krotności) + wypadkowa 1,67%
+    // (stawka domyślna) + Fundusz Pracy 2,45% + FGŚP 0,10% (bez limitu) + PPK 1,5%. Razem ~20,48% brutto
+    // (+PPK). Wcześniejsza wersja pomijała FP i FGŚP (2,55%) - koszt był zaniżony o ok. 150 zł przy 6000 zł.
+    const kosztPracodawcy = r2(brutto + emerytalne + r2(bruttoDoSkladekEmRent * 0.065)
+      + r2(brutto * 0.0167) + r2(brutto * 0.0245) + r2(brutto * 0.001) + ppkEmployer);
 
     return {
       result: { brutto, netto, zusTotal, zdrowotna, pit, ppkWorker, ppkEmployer, kosztPracodawcy,
@@ -394,6 +406,7 @@
           <div class="bar-legend-item"><div class="bar-dot" style="background:#8B3A1A"></div>PIT ${pct(r.pit)}</div>
         </div>
       </div>
+      ${pit0 && r.brutto*12 > 85528 ? `<p class="form-hint" style="margin-top:14px">Uwaga: limit ulgi PIT-0 to 85 528 zł przychodu rocznie. Przy takiej pensji wyczerpie się po ok. ${Math.floor(85528/r.brutto)} mies. — kolejne miesiące będą już opodatkowane, a kalkulator tego nie uwzględnia (pokazuje kwotę bez podatku).</p>` : ''}
     `;
   }
 
@@ -408,7 +421,7 @@
   }
 
   // Popularne kwoty
-  const popularAmounts = [4242,5000,6000,7000,8000,10000,12000,15000,20000];
+  const popularAmounts = [4806,5000,6000,7000,8000,10000,12000,15000,20000];
   document.getElementById('popularBody').innerHTML = popularAmounts.map(b => {
     const r = compute(b, false, false, false);
     return `<tr><td>${pln(b)}</td><td><strong>${pln(r.netto)}</strong></td><td>${pln(r.zusTotal)}</td><td>${pln(r.pit)}</td><td>${pln(r.kosztPracodawcy)}</td></tr>`;
