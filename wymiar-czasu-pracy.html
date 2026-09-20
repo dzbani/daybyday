@@ -11,19 +11,19 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wymiar Czasu Pracy 2026/2027 — tabela godzin i dni robocze | DaybyDay</title>
-  <meta name="description" content="Wymiar czasu pracy 2026 i 2027 miesiąc po miesiącu: dokładna liczba dni roboczych i godzin do przepracowania na pełnym etacie, zgodnie z art. 130 Kodeksu pracy, z uwzględnieniem Wigilii jako 14. dnia ustawowo wolnego.">
+  <title>Wymiar Czasu Pracy 2026–2028 — tabela godzin i dni robocze | DaybyDay</title>
+  <meta name="description" content="Wymiar czasu pracy 2026, 2027 i 2028 miesiąc po miesiącu: dokładna liczba dni roboczych i godzin do przepracowania na pełnym etacie, zgodnie z art. 130 Kodeksu pracy, z uwzględnieniem Wigilii jako 14. dnia ustawowo wolnego.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/wymiar-czasu-pracy.html">
-  <meta property="og:title" content="Wymiar Czasu Pracy 2026/2027 — tabela godzin i dni robocze">
+  <meta property="og:title" content="Wymiar Czasu Pracy 2026–2028 — tabela godzin i dni robocze">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:description" content="251 dni roboczych i 2008 godzin do przepracowania w 2026 i 2027 roku. Pełna tabela miesiąc po miesiącu.">
+  <meta property="og:description" content="Wymiar czasu pracy w latach 2026–2028 (2026 i 2027: 251 dni i 2008 godzin, 2028: 249 dni i 1992 godziny). Pełna tabela miesiąc po miesiącu.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <meta property="og:url" content="https://daybyday.today/wymiar-czasu-pracy.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wymiar Czasu Pracy 2026/2027","description":"Wymiar czasu pracy 2026 i 2027 miesiąc po miesiącu: dokładna liczba dni roboczych i godzin do przepracowania na pełnym etacie, zgodnie z art. 130 Kodeksu pracy.","url":"https://daybyday.today/wymiar-czasu-pracy.html","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wymiar Czasu Pracy 2026–2028","description":"Wymiar czasu pracy 2026 i 2027 miesiąc po miesiącu: dokładna liczba dni roboczych i godzin do przepracowania na pełnym etacie, zgodnie z art. 130 Kodeksu pracy.","url":"https://daybyday.today/wymiar-czasu-pracy.html","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DaybyDay","item":"https://daybyday.today/"},{"@type":"ListItem","position":2,"name":"Wymiar Czasu Pracy","item":"https://daybyday.today/wymiar-czasu-pracy.html"}]}</script>
 
 
@@ -167,6 +167,7 @@
   <div class="year-nav" style="display:flex;gap:.5rem;margin-bottom:1.5rem;">
     <button class="year-btn wct-year-btn active" data-year="2026" onclick="showWctYear(2026)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2026</button>
     <button class="year-btn wct-year-btn" data-year="2027" onclick="showWctYear(2027)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2027</button>
+    <button class="year-btn wct-year-btn" data-year="2028" onclick="showWctYear(2028)" style="padding:.4rem .9rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:500;color:var(--text);cursor:pointer;">2028</button>
   </div>
   <style>.wct-year-btn.active{background:var(--text) !important;color:var(--bg) !important;border-color:var(--text) !important;}</style>
 
@@ -185,6 +186,11 @@
   <div class="stats-row" id="wctStats-2027" style="display:none;">
     <div class="stat-card"><div class="stat-num">251</div><div class="stat-label">dni robocze w 2027 roku</div></div>
     <div class="stat-card"><div class="stat-num">2008</div><div class="stat-label">godzin do przepracowania (pełny etat)</div></div>
+    <div class="stat-card"><div class="stat-num">14</div><div class="stat-label">dni ustawowo wolnych od pracy</div></div>
+  </div>
+  <div class="stats-row" id="wctStats-2028" style="display:none;">
+    <div class="stat-card"><div class="stat-num">249</div><div class="stat-label">dni robocze w 2028 roku</div></div>
+    <div class="stat-card"><div class="stat-num">1992</div><div class="stat-label">godzin do przepracowania (pełny etat)</div></div>
     <div class="stat-card"><div class="stat-num">14</div><div class="stat-label">dni ustawowo wolnych od pracy</div></div>
   </div>
 
@@ -233,12 +239,34 @@
         <tr><td>Razem 2027</td><td>251</td><td>2008</td><td></td></tr>
       </tfoot>
     </table>
+    <table class="wct-table" id="wctTable-2028" style="display:none;">
+      <thead>
+        <tr><th>Miesiąc</th><th>Dni robocze</th><th>Godziny</th><th>Święta w miesiącu</th></tr>
+      </thead>
+      <tbody>
+        <tr data-month="1"><td>Styczeń</td><td>19</td><td>152</td><td class="wct-holiday-note">Nowy Rok (1.01, sobota), Trzech Króli (6.01)</td></tr>
+        <tr data-month="2"><td>Luty</td><td>21</td><td>168</td><td class="wct-holiday-note">—</td></tr>
+        <tr data-month="3"><td>Marzec</td><td>23</td><td>184</td><td class="wct-holiday-note">—</td></tr>
+        <tr data-month="4"><td>Kwiecień</td><td>19</td><td>152</td><td class="wct-holiday-note">Wielkanoc (16.04, niedziela), Poniedziałek Wielkanocny (17.04)</td></tr>
+        <tr data-month="5"><td>Maj</td><td>21</td><td>168</td><td class="wct-holiday-note">Święto Pracy (1.05), Konstytucja 3 Maja (3.05)</td></tr>
+        <tr data-month="6"><td>Czerwiec</td><td>21</td><td>168</td><td class="wct-holiday-note">Zielone Świątki (4.06, niedziela), Boże Ciało (15.06)</td></tr>
+        <tr data-month="7"><td>Lipiec</td><td>21</td><td>168</td><td class="wct-holiday-note">—</td></tr>
+        <tr data-month="8"><td>Sierpień</td><td>22</td><td>176</td><td class="wct-holiday-note">Wniebowzięcie NMP (15.08)</td></tr>
+        <tr data-month="9"><td>Wrzesień</td><td>21</td><td>168</td><td class="wct-holiday-note">—</td></tr>
+        <tr data-month="10"><td>Październik</td><td>22</td><td>176</td><td class="wct-holiday-note">—</td></tr>
+        <tr data-month="11"><td>Listopad</td><td>20</td><td>160</td><td class="wct-holiday-note">Wszystkich Świętych (1.11), Święto Niepodległości (11.11, sobota)</td></tr>
+        <tr data-month="12"><td>Grudzień</td><td>19</td><td>152</td><td class="wct-holiday-note">Wigilia (24.12, niedziela), Boże Narodzenie (25.12), Drugi dzień Bożego Narodzenia (26.12)</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td>Razem 2028</td><td>249</td><td>1992</td><td></td></tr>
+      </tfoot>
+    </table>
   </div>
 
   <div class="info-box">
     <div class="info-icon">💡</div>
     <div class="info-text">
-      <strong>Uwaga o świętach w sobotę:</strong> Święto przypadające w sobotę obniża wymiar czasu pracy o 8 godzin tak samo jak w dzień powszedni (art. 130 §1 k.p. — dotyczy każdego dnia innego niż niedziela). W 2026 roku dotyczy to Wniebowzięcia NMP (15 sierpnia) i drugiego dnia Bożego Narodzenia (26 grudnia); w 2027 roku — Święta Pracy (1 maja) i Bożego Narodzenia (25 grudnia). Zgodnie z art. 130 §2 k.p. pracodawca musi w zamian obniżyć wymiar czasu pracy w danym okresie rozliczeniowym — w praktyce oznacza to dodatkowy dzień wolny do wykorzystania, bez stałej daty. Zobacz też <a href="dlugie-weekendy.html">kalendarz długich weekendów</a> i <a href="swieta.html">pełną listę świąt</a>.
+      <strong>Uwaga o świętach w sobotę:</strong> Święto przypadające w sobotę obniża wymiar czasu pracy o 8 godzin tak samo jak w dzień powszedni (art. 130 §1 k.p. — dotyczy każdego dnia innego niż niedziela). W 2026 roku dotyczy to Wniebowzięcia NMP (15 sierpnia) i drugiego dnia Bożego Narodzenia (26 grudnia); w 2027 roku — Święta Pracy (1 maja) i Bożego Narodzenia (25 grudnia); w 2028 roku — Nowego Roku (1 stycznia) i Święta Niepodległości (11 listopada). Wigilia 2028 wypada w niedzielę, więc — jak każde święto w niedzielę — nie obniża wymiaru czasu pracy. Zgodnie z art. 130 §2 k.p. pracodawca musi w zamian obniżyć wymiar czasu pracy w danym okresie rozliczeniowym — w praktyce oznacza to dodatkowy dzień wolny do wykorzystania, bez stałej daty. Zobacz też <a href="dlugie-weekendy.html">kalendarz długich weekendów</a> i <a href="swieta.html">pełną listę świąt</a>.
     </div>
   </div>
 </div>
@@ -250,8 +278,10 @@
 </footer>
 
 <script>
+  var WCT_YEARS = [2026, 2027, 2028];
+  var WCT_LAST = WCT_YEARS[WCT_YEARS.length - 1];
   function showWctYear(year){
-    [2026, 2027].forEach(function(y){
+    WCT_YEARS.forEach(function(y){
       document.getElementById('wctStats-'+y).style.display = (y===year) ? '' : 'none';
       document.getElementById('wctTable-'+y).style.display = (y===year) ? '' : 'none';
       document.querySelector('.wct-year-btn[data-year="'+y+'"]').classList.toggle('active', y===year);
@@ -263,9 +293,9 @@
     var m = today.getMonth()+1;
     // Domyślnie pokazana zakładka roku ma podążać za rzeczywistym rokiem —
     // ten sam wzorzec "zamrożenia roku" co naprawiony wcześniej w kalendarz.html.
-    // >= zamiast === , żeby nie zamarło ponownie po 2027 (pokazuje najnowszy dostępny rok).
-    if (y >= 2027) showWctYear(2027);
-    if (y !== 2026 && y !== 2027) return;
+    // >= zamiast === , żeby nie zamarło ponownie po ostatnim roku w tabeli (pokazuje najnowszy dostępny rok).
+    if (y >= WCT_LAST) showWctYear(WCT_LAST);
+    if (WCT_YEARS.indexOf(y) === -1) return;
     var row = document.querySelector('#wctTable-'+y+' tbody tr[data-month="'+m+'"]');
     if (row) row.classList.add('wct-current');
   })();
