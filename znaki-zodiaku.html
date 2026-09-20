@@ -204,7 +204,7 @@
 
 <main class="page">
   <div class="page-label">Astrologia</div>
-  <h1 class="page-title">Znaki Zodiaku 2026</h1>
+  <h1 class="page-title">Znaki Zodiaku <span class="zodYear">2026</span></h1>
   <p class="page-sub">Sprawdź swój znak zodiaku, poznaj daty graniczne z dokładnością astronomiczną i odkryj cechy charakteru przypisywane każdemu z 12 znaków.</p>
 
   <div class="calc-card">
@@ -229,10 +229,10 @@
   <div class="section-title">Wszystkie znaki zodiaku</div>
   <div class="signs-grid" id="signsGrid"></div>
 
-  <div class="section-title">Daty graniczne 2026</div>
+  <div class="section-title">Daty graniczne <span class="zodYear">2026</span></div>
   <div class="dates-table">
     <table class="dtable">
-      <thead><tr><th>Znak</th><th>Popularne daty</th><th>Dokładny moment wejścia 2026</th><th>Żywioł</th><th>Planeta</th></tr></thead>
+      <thead><tr><th>Znak</th><th>Popularne daty</th><th>Dokładny moment wejścia <span class="zodYear">2026</span></th><th>Żywioł</th><th>Planeta</th></tr></thead>
       <tbody id="datesBody"></tbody>
     </table>
   </div>
@@ -268,40 +268,40 @@
 
 <script>
 const SIGNS = [
-  { name:'Baran', symbol:'♈', dates:'21 marca – 19 kwietnia', start:[3,21], end:[4,19], exact:'20 marca 2026, 15:46 CET', element:'Ogień', planet:'Mars', color:'#C0392B',
+  { name:'Baran', symbol:'♈', dates:'21 marca – 19 kwietnia', start:[3,21], end:[4,19], element:'Ogień', planet:'Mars', color:'#C0392B',
     traits:['Energiczny','Odważny','Pionierski','Impulsywny','Spontaniczny'],
     desc:'Baran bywa łączony z energią, inicjatywą i odwagą. Osoby spod tego znaku są często pierwszymi, które podejmują działanie. Mogą być impulsywne, ale też niezwykle zdeterminowane w dążeniu do celu.' },
-  { name:'Byk', symbol:'♉', dates:'20 kwietnia – 20 maja', start:[4,20], end:[5,20], exact:'20 kwietnia 2026, 03:39 CEST', element:'Ziemia', planet:'Wenus', color:'#27AE60',
+  { name:'Byk', symbol:'♉', dates:'20 kwietnia – 20 maja', start:[4,20], end:[5,20], element:'Ziemia', planet:'Wenus', color:'#27AE60',
     traits:['Wytrwały','Zmysłowy','Lojalny','Uparty','Praktyczny'],
     desc:'Byk kojarzony jest z wytrwałością, zmysłowością i przywiązaniem do tradycji. Osoby te cenią stabilność i bezpieczeństwo. Potrafią długo dążyć do celu, choć bywają uparte.' },
-  { name:'Bliźnięta', symbol:'♊', dates:'21 maja – 20 czerwca', start:[5,21], end:[6,20], exact:'21 maja 2026, 02:36 CEST', element:'Powietrze', planet:'Merkury', color:'#F39C12',
+  { name:'Bliźnięta', symbol:'♊', dates:'21 maja – 20 czerwca', start:[5,21], end:[6,20], element:'Powietrze', planet:'Merkury', color:'#F39C12',
     traits:['Komunikatywny','Ciekawy','Elastyczny','Niezdecydowany','Dowcipny'],
     desc:'Bliźnięta łączone są z ciekawością, komunikatywnością i elastycznością. Lubią różnorodność i szybko przyswajają nowe informacje. Mogą mieć trudności z wyborem jednej drogi.' },
-  { name:'Rak', symbol:'♋', dates:'21 czerwca – 22 lipca', start:[6,21], end:[7,22], exact:'21 czerwca 2026, 10:24 CEST', element:'Woda', planet:'Księżyc', color:'#2980B9',
+  { name:'Rak', symbol:'♋', dates:'21 czerwca – 22 lipca', start:[6,21], end:[7,22], element:'Woda', planet:'Księżyc', color:'#2980B9',
     traits:['Opiekuńczy','Empatyczny','Intuicyjny','Wrażliwy','Rodzinny'],
     desc:'Rak łączony jest z empatią, opiekuńczością i silnym przywiązaniem do rodziny. Osoby te są bardzo intuicyjne i wrażliwe na emocje innych. Mogą być skłonne do zamykania się w sobie.' },
-  { name:'Lew', symbol:'♌', dates:'23 lipca – 22 sierpnia', start:[7,23], end:[8,22], exact:'22 lipca 2026, 21:13 CEST', element:'Ogień', planet:'Słońce', color:'#E67E22',
+  { name:'Lew', symbol:'♌', dates:'23 lipca – 22 sierpnia', start:[7,23], end:[8,22], element:'Ogień', planet:'Słońce', color:'#E67E22',
     traits:['Charyzmatyczny','Hojny','Dumny','Twórczy','Dramatyczny'],
     desc:'Lew kojarzony jest z charyzmą, kreatywnością i naturalnym autorytetem. Osoby spod tego znaku lubią być w centrum uwagi i często inspirują innych swoją energią.' },
-  { name:'Panna', symbol:'♍', dates:'23 sierpnia – 22 września', start:[8,23], end:[9,22], exact:'23 sierpnia 2026, 04:18 CEST', element:'Ziemia', planet:'Merkury', color:'#8E44AD',
+  { name:'Panna', symbol:'♍', dates:'23 sierpnia – 22 września', start:[8,23], end:[9,22], element:'Ziemia', planet:'Merkury', color:'#8E44AD',
     traits:['Analityczny','Dokładny','Pomocny','Krytyczny','Pracowity'],
     desc:'Panna łączona jest z analitycznym umysłem, precyzją i skromnością. Osoby te zwracają uwagę na szczegóły i chętnie pomagają innym. Bywają krytyczne — szczególnie wobec siebie.' },
-  { name:'Waga', symbol:'♎', dates:'23 września – 22 października', start:[9,23], end:[10,22], exact:'23 września 2026, 02:05 CEST', element:'Powietrze', planet:'Wenus', color:'#16A085',
+  { name:'Waga', symbol:'♎', dates:'23 września – 22 października', start:[9,23], end:[10,22], element:'Powietrze', planet:'Wenus', color:'#16A085',
     traits:['Dyplomatyczny','Sprawiedliwy','Estetyczny','Niezdecydowany','Towarzyski'],
     desc:'Waga kojarzona jest z poczuciem sprawiedliwości, estetyką i harmonią w relacjach. Osoby te szukają równowagi i często pełnią rolę mediatorów. Mogą mieć trudności z podejmowaniem decyzji.' },
-  { name:'Skorpion', symbol:'♏', dates:'23 października – 21 listopada', start:[10,23], end:[11,21], exact:'23 października 2026, 11:38 CEST', element:'Woda', planet:'Pluton/Mars', color:'#8E1A10',
+  { name:'Skorpion', symbol:'♏', dates:'23 października – 21 listopada', start:[10,23], end:[11,21], element:'Woda', planet:'Pluton/Mars', color:'#8E1A10',
     traits:['Intensywny','Lojalny','Przenikliwy','Zazdrosny','Zdeterminowany'],
     desc:'Skorpion łączony jest z intensywnością emocji, przenikliwością i determinacją. Osoby te rzadko pozostają obojętne — albo fascynują, albo odpychają. Są bardzo lojalne wobec bliskich.' },
-  { name:'Strzelec', symbol:'♐', dates:'22 listopada – 21 grudnia', start:[11,22], end:[12,21], exact:'22 listopada 2026, 08:23 CET', element:'Ogień', planet:'Jowisz', color:'#D35400',
+  { name:'Strzelec', symbol:'♐', dates:'22 listopada – 21 grudnia', start:[11,22], end:[12,21], element:'Ogień', planet:'Jowisz', color:'#D35400',
     traits:['Optymistyczny','Wolny','Filozoficzny','Nieostrożny','Przygodowy'],
     desc:'Strzelec kojarzony jest z optymizmem, miłością do wolności i poszukiwaniem sensu. Osoby te kochają podróże i poznawanie różnych kultur. Bywają nieostrożne w obietnicach.' },
-  { name:'Koziorożec', symbol:'♑', dates:'22 grudnia – 19 stycznia', start:[12,22], end:[1,19], exact:'21 grudnia 2026, 21:50 CET', element:'Ziemia', planet:'Saturn', color:'#5D6D7E',
+  { name:'Koziorożec', symbol:'♑', dates:'22 grudnia – 19 stycznia', start:[12,22], end:[1,19], element:'Ziemia', planet:'Saturn', color:'#5D6D7E',
     traits:['Ambitny','Odpowiedzialny','Zdyscyplinowany','Powściągliwy','Wytrwały'],
     desc:'Koziorożec łączony jest z ambicją, odpowiedzialnością i cierpliwością. Osoby te budują stabilność krok po kroku i rzadko się poddają. Mogą być powściągliwe w wyrażaniu emocji.' },
-  { name:'Wodnik', symbol:'♒', dates:'20 stycznia – 18 lutego', start:[1,20], end:[2,18], exact:'20 stycznia 2026, 02:45 CET', element:'Powietrze', planet:'Uran', color:'#2471A3',
+  { name:'Wodnik', symbol:'♒', dates:'20 stycznia – 18 lutego', start:[1,20], end:[2,18], element:'Powietrze', planet:'Uran', color:'#2471A3',
     traits:['Oryginalny','Humanitarny','Niezależny','Nieprzewidywalny','Innowacyjny'],
     desc:'Wodnik kojarzony jest z oryginalnością, humanitaryzmem i niezależnością myślenia. Osoby te często wyprzedzają swój czas i cenią wolność intelektualną ponad wszystko.' },
-  { name:'Ryby', symbol:'♓', dates:'19 lutego – 20 marca', start:[2,19], end:[3,20], exact:'18 lutego 2026, 16:52 CET', element:'Woda', planet:'Neptun', color:'#1A5276',
+  { name:'Ryby', symbol:'♓', dates:'19 lutego – 20 marca', start:[2,19], end:[3,20], element:'Woda', planet:'Neptun', color:'#1A5276',
     traits:['Wrażliwy','Empatyczny','Intuicyjny','Idealistyczny','Twórczy'],
     desc:'Ryby łączone są z wrażliwością, wyobraźnią i empatią. Osoby spod tego znaku często mają silną intuicję i zdolności artystyczne. Mogą zatracać się w marzeniach.' },
 ];
@@ -359,12 +359,54 @@ document.getElementById('signsGrid').innerHTML = SIGNS.map(s => `
   </div>
 `).join('');
 
+// Dokładne momenty wejścia Słońca w znak (długość ekliptyczna 0°, 30°, ... 330°),
+// wyliczone astronomicznie (astronomy-engine) — minuty od 1 stycznia 00:00 UTC danego roku,
+// w kolejności jak w SIGNS. Poza zakresem lat kolumna pokazuje myślnik (nie zgadujemy).
+const EXACT_MIN = {
+2026:[113206,157059,201637,246745,292033,337099,381606,425378,468444,511010,27465,70072],
+  2027:[113545,157397,201978,247091,292384,337454,381961,425733,468796,511362,27810,70414],
+  2028:[113897,157749,202330,247442,292734,337801,382305,426074,469135,511700,28162,70766],
+  2029:[112802,156655,201236,246348,291642,336711,381218,424988,468049,510614,27061,69668],
+  2030:[113152,157003,201581,246691,291985,337057,381567,425341,468405,510970,27414,70020],
+  2031:[113501,157351,201928,247037,292331,337403,381915,425690,468753,511316,27768,70371],
+  2032:[113842,157694,202275,247389,292685,337758,382271,426046,469111,511676,28112,70712],
+  2033:[112763,156613,201191,246301,291593,336662,381172,424948,468016,510585,27033,69634],
+  2034:[113117,156964,201537,246644,291936,337008,381520,425297,468365,510934,27387,69990],
+  2035:[113463,157309,201883,246993,292289,337364,381879,425656,468723,511291,27735,70337],
+  2036:[113823,157670,202245,247352,292642,337713,382224,425999,469065,511633,28091,70694],
+  2037:[112730,156580,201156,246262,291552,336622,381133,424910,467979,510548,26994,69599],
+  2038:[113080,156928,201503,246609,291900,336970,381482,425261,468332,510902,27349,69952],
+  2039:[113432,157278,201851,246957,292248,337318,381830,425605,468672,511241,27703,70306],
+  2040:[113771,157619,202196,247306,292601,337673,382185,425960,469025,511593,28041,70643],
+  2041:[112687,156535,201109,246216,291507,336576,381087,424862,467929,510498,26954,69557],
+  2042:[113033,156879,201451,246556,291846,336918,381432,425210,468277,510844,27300,69904],
+  2043:[113368,157214,201789,246898,292193,337270,381787,425567,468635,511201,27642,70242],
+  2044:[113720,157567,202142,247251,292543,337615,382128,425906,468975,511544,27998,70596],
+  2045:[112627,156472,201046,246154,291447,336519,381033,424812,467884,510455,26902,69502],
+  2046:[112978,156819,201388,246495,291789,336865,381382,425164,468236,510808,27256,69856],
+  2047:[113333,157172,201739,246843,292135,337211,381728,425509,468579,511148,27610,70210],
+  2048:[113674,157517,202088,247194,292487,337562,382081,425862,468933,511502,27947,70548],
+  2049:[112589,156433,201004,246107,291396,336467,380983,424765,467839,510412,26861,69462],
+  2050:[112939,156782,201351,246453,291741,336812,381328,425112,468186,510758,27214,69815]
+};
+function exactMoment(year, idx) {
+  const row = EXACT_MIN[year];
+  if (!row) return '—';
+  const d = new Date(Date.UTC(year, 0, 1) + row[idx] * 60000);
+  const parts = new Intl.DateTimeFormat('pl-PL', { timeZone:'Europe/Warsaw', day:'numeric', month:'long', hour:'2-digit', minute:'2-digit', hourCycle:'h23' }).formatToParts(d);
+  const p = t => parts.find(x => x.type === t).value;
+  const off = Math.round((new Date(d.toLocaleString('en-US', { timeZone:'Europe/Warsaw' })).getTime() - new Date(d.toLocaleString('en-US', { timeZone:'UTC' })).getTime()) / 3600000);
+  return p('day') + ' ' + p('month') + ' ' + year + ', ' + p('hour') + ':' + p('minute') + (off === 2 ? ' CEST' : ' CET');
+}
+const ZOD_YEAR = new Date().getFullYear();
+document.querySelectorAll('.zodYear').forEach(el => el.textContent = ZOD_YEAR);
+
 // Render dates table
-document.getElementById('datesBody').innerHTML = SIGNS.map(s => `
+document.getElementById('datesBody').innerHTML = SIGNS.map((s, i) => `
   <tr>
     <td><strong>${s.symbol} ${s.name}</strong></td>
     <td>${s.dates}</td>
-    <td style="color:var(--muted);font-size:.78rem">${s.exact}</td>
+    <td style="color:var(--muted);font-size:.78rem">${exactMoment(ZOD_YEAR, i)}</td>
     <td>${s.element}</td>
     <td>${s.planet}</td>
   </tr>
