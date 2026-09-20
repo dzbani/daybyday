@@ -106,8 +106,14 @@ const swietaDataRaw = readFile('swieta_data.js');
 // wzorzec vm.runInContext co przy astroFuncsCode nizej.
 const swietaDataSandbox = {};
 vm.createContext(swietaDataSandbox);
-vm.runInContext(swietaDataRaw + '\nthis.__swieta__ = SWIETA_DATA;', swietaDataSandbox);
+vm.runInContext(swietaDataRaw + '\nthis.__swieta__ = SWIETA_DATA; this.__movable__ = SWIETA_DATA_MOVABLE;', swietaDataSandbox);
 const SWIETA_DATA = swietaDataSandbox.__swieta__;
+// Swieta RUCHOME (Wielkanoc +/- N dni) nie moga trafic do statycznych stron dnia MM-DD ani do
+// HOLIDAYS_DB: ich data zmienia sie co roku, a SWIETA_DATA jest liczone dla roku, w ktorym
+// uruchomiono generator - od 2027 strony pokazywalyby je w zlym dniu (znalezione 19.09.2026).
+// kartka-z-kalendarza.html dolicza je w przegladarce dla wybranego roku (computeMovableSwieta).
+const MOVABLE_SLUGS = new Set(swietaDataSandbox.__movable__.map(x => x[2]));
+const MOVABLE_NAMES = new Set(swietaDataSandbox.__movable__.map(x => x[1]));
 const majorByName = {}; // nazwa -> slug
 for (const [d, m, name, slug] of SWIETA_DATA) { majorByName[name] = slug; }
 const swietoHtmlRaw = readFile('swieto.html');
@@ -139,10 +145,17 @@ for (const [slug, entry] of Object.entries(HOLIDAYS_DB)) { majorByName[entry.nam
 // potwierdzone na 6 datach w roku (skan calego SWIETA_DATA vs HOLIDAYS/swieta-nietypowe.html).
 const { NAME_ALIASES } = require('./swieto_registry');
 for (const [d, m, name, slug, type] of SWIETA_DATA) {
+  if (MOVABLE_SLUGS.has(slug)) continue;
   const key = `${m}-${d}`;
   let list = holidayMap[key] = holidayMap[key] || [];
   list = holidayMap[key] = list.filter(h => NAME_ALIASES[h.name] !== slug);
   if (!list.some(h => h.name === name)) list.unshift({ name, tag: type });
+}
+
+// Usun ruchome swieta rowniez z lekkiej listy HOLIDAYS (index.html) - po nazwie i przez aliasy.
+for (const k of Object.keys(holidayMap)) {
+  holidayMap[k] = holidayMap[k].filter(h => !MOVABLE_NAMES.has(h.name) && !MOVABLE_SLUGS.has(NAME_ALIASES[h.name]));
+  if (!holidayMap[k].length) delete holidayMap[k];
 }
 
 // --- 4. swieto_slugs.js: ktore slugi maja gotowa strone ---
