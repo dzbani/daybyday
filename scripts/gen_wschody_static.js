@@ -22,6 +22,12 @@ const vm = require('vm');
 const ROOT = path.join(__dirname, '..');
 const SRC_PATH = path.join(ROOT, 'wschody-zachody.html');
 
+// Rok referencyjny statycznych tabel (widocznych crawlerom/bez JS). Tekst statyczny strony jest
+// bez roku (evergreen), a klient JS i tak przelicza tabele dla BIEZACEGO roku; godziny wschodu
+// tego samego dnia roznia sie miedzy latami o ok. 1-2 min (cykl przestepny), wiec rok
+// referencyjny nie wymaga corocznej regeneracji.
+const STATIC_REF_YEAR = 2026;
+
 function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 // --- Wyciagnij MONTHS_NOM/WEEKDAYS_SHORT + funkcje astro z wschody-zachody.html przez vm
@@ -46,10 +52,10 @@ function buildMonthTabsAndSections(lat, lon) {
     const activeCls = mi === 0 ? ' active' : '';
     tabsHtml += `<button class="month-tab${activeCls}">${esc(MONTHS_NOM[mi])}</button>`;
 
-    const daysInMonth = new Date(2026, mi + 1, 0).getDate();
+    const daysInMonth = new Date(STATIC_REF_YEAR, mi + 1, 0).getDate();
     let rows = '';
     for (let d = 1; d <= daysInMonth; d++) {
-      const date = new Date(2026, mi, d);
+      const date = new Date(STATIC_REF_YEAR, mi, d);
       const t = getSunTimes(date, lat, lon);
       if (!t) continue; // biegunowa noc/dzien - teoretycznie nie wystapi w Polsce, ale bezpiecznik jak w kodzie klienta
       const dur = t.set - t.rise;

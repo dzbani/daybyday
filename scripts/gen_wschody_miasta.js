@@ -33,14 +33,14 @@ vm.createContext(sandbox);
 vm.runInContext('this.__C__ = ' + citiesMatch[1], sandbox);
 const CITIES = sandbox.__C__;
 
-const OLD_TITLE = '<title>Wschód i Zachód Słońca w Polsce 2026 | DaybyDay</title>';
-const OLD_DESC = '<meta name="description" content="Godziny wschodu i zachodu słońca w Polsce na każdy dzień 2026. Sprawdź o której wschodzi i zachodzi słońce w Twoim mieście.">';
+const OLD_TITLE = '<title>Wschód i Zachód Słońca w Polsce | DaybyDay</title>';
+const OLD_DESC = '<meta name="description" content="Godziny wschodu i zachodu słońca w Polsce na każdy dzień roku. Sprawdź o której wschodzi i zachodzi słońce w Twoim mieście.">';
 const OLD_CANONICAL = '<link rel="canonical" href="https://daybyday.today/wschody-zachody.html">';
-const OLD_OG_TITLE = '<meta property="og:title" content="Wschód i Zachód Słońca w Polsce 2026">';
-const OLD_OG_DESC = '<meta property="og:description" content="Godziny wschodu i zachodu słońca na każdy dzień 2026. Wybierz miasto i sprawdź długość dnia.">';
+const OLD_OG_TITLE = '<meta property="og:title" content="Wschód i Zachód Słońca w Polsce">';
+const OLD_OG_DESC = '<meta property="og:description" content="Godziny wschodu i zachodu słońca na każdy dzień roku. Wybierz miasto i sprawdź długość dnia.">';
 const OLD_OG_URL = '<meta property="og:url" content="https://daybyday.today/wschody-zachody.html">';
 const OLD_LOCATION_STATUS_CSS = '.location-status { font-size:.78rem; color:var(--muted); margin-top:-.5rem; margin-bottom:1.5rem; min-height:1.2em; }';
-const OLD_HERO = '<div class="page-label">Astronomia</div>\n  <h1 class="page-title">Wschód i zachód słońca</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski w 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>';
+const OLD_HERO = '<div class="page-label">Astronomia</div>\n  <h1 class="page-title">Wschód i zachód słońca</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca dla głównych miast Polski, na każdy dzień bieżącego roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego.</p>';
 const OLD_TAB_DEFAULT = "btn.className = 'city-tab' + (key === 'warszawa' ? ' active' : '');";
 const OLD_INIT_DEFAULT = "} else {\n  selectCity('warszawa');\n  useMyLocation(true);\n}";
 // FORCE_CITY sprawia, ze strona miasta ZAWSZE pokazuje swoje miasto, nawet gdy
@@ -77,9 +77,9 @@ const PREP = { wroclaw: 'we' };
 function buildPage(slug, city) {
   const pageUrl = `https://daybyday.today/wschod-zachod-slonca/${slug}/`;
   const cityIn = `${PREP[slug] || 'w'} ${LOCATIVE[slug]}`;
-  const title = `Wschód i zachód słońca ${cityIn} 2026 | DaybyDay`;
-  const ogTitle = `Wschód i zachód słońca ${cityIn} 2026`;
-  const metaDesc = `Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień 2026 roku. Sprawdź o której wschodzi i zachodzi słońce oraz długość dnia ${cityIn}.`;
+  const title = `Wschód i zachód słońca ${cityIn} | DaybyDay`;
+  const ogTitle = `Wschód i zachód słońca ${cityIn}`;
+  const metaDesc = `Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień roku. Sprawdź o której wschodzi i zachodzi słońce oraz długość dnia ${cityIn}.`;
 
   const breadcrumbItems = [
     { name: 'DaybyDay', url: 'https://daybyday.today/' },
@@ -110,7 +110,7 @@ function buildPage(slug, city) {
   html = html.replace(OLD_OG_DESC, `<meta property="og:description" content="${metaDesc}">`);
   html = html.replace(OLD_OG_URL, `<meta property="og:url" content="${pageUrl}">`);
   html = html.replace(OLD_LOCATION_STATUS_CSS, `${OLD_LOCATION_STATUS_CSS}\n    .breadcrumb { font-size:.78rem; color:var(--muted); margin-bottom:1rem; }\n    .breadcrumb a { color:var(--muted); text-decoration:none; }\n    .breadcrumb a:hover { color:var(--text); }`);
-  html = html.replace(OLD_HERO, `<div class="page-label">Astronomia</div>\n  ${breadcrumbHtml}\n  <h1 class="page-title">Wschód i zachód słońca ${cityIn}</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień 2026 roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>`);
+  html = html.replace(OLD_HERO, `<div class="page-label">Astronomia</div>\n  ${breadcrumbHtml}\n  <h1 class="page-title">Wschód i zachód słońca ${cityIn}</h1>\n  <p class="page-sub">Godziny wschodu i zachodu słońca ${cityIn} na każdy dzień bieżącego roku. Dane astronomiczne z uwzględnieniem czasu letniego i zimowego. Możesz też sprawdzić inne miasta poniżej.</p>`);
   html = html.replace(OLD_TAB_DEFAULT, `btn.className = 'city-tab' + (key === '${slug}' ? ' active' : '');`);
   html = html.replace(OLD_INIT_DEFAULT, `} else {\n  selectCity('${slug}');\n  useMyLocation(true);\n}`);
   html = html.replace(OLD_FORCE_CITY, `const FORCE_CITY = '${slug}';`);
