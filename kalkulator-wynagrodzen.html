@@ -235,6 +235,10 @@
           <span class="checkbox-label">Uczeń lub student do 26 lat (bez składek ZUS i zdrowotnej)</span>
         </label>
         <label class="checkbox-row" data-for="zlecenie">
+          <input type="checkbox" id="zbieg">
+          <span class="checkbox-label">Mam już etat (co najmniej za minimalną) lub inny tytuł do ubezpieczeń — ze zlecenia tylko zdrowotna</span>
+        </label>
+        <label class="checkbox-row" data-for="zlecenie">
           <input type="checkbox" id="chorobowe">
           <span class="checkbox-label">Dobrowolna składka chorobowa (2,45%)</span>
         </label>
@@ -342,13 +346,18 @@
     }
 
     const student = type === 'zlecenie' && !!o.student; // uczeń/student do 26 lat na zleceniu: bez ZUS i zdrowotnej
+    // Zbieg tytułów: zleceniobiorca ma etat z pensją >= minimalnej (lub inny tytuł do ubezpieczeń społecznych) -
+    // ze zlecenia nie są odprowadzane składki społeczne (ani FP/FGŚP/wypadkowa zleceniodawcy), płaci się tylko
+    // składkę zdrowotną 9% od pełnego przychodu (sprawdzone: 5000 zł, bez PIT-2 -> 4070 zł netto).
+    const zbieg = type === 'zlecenie' && !student && !!o.zbieg;
+    const bezSpolecznych = student || zbieg;
     // Składki emerytalna/rentowa tylko do limitu 30-krotności narastająco w roku - powyżej limitu
     // nie są już pobierane (chorobowa i zdrowotna limitu nie mają).
-    const bruttoDoSkladekEmRent = student ? 0 : Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
+    const bruttoDoSkladekEmRent = bezSpolecznych ? 0 : Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
     const emerytalne = r2(bruttoDoSkladekEmRent * 0.0976);
     const rentowe = r2(bruttoDoSkladekEmRent * 0.015);
     // Chorobowa: obowiązkowa na etacie, dobrowolna na zleceniu.
-    const chorobowe = student ? 0 : (type === 'etat' || o.chorobowe) ? r2(brutto * 0.0245) : 0;
+    const chorobowe = bezSpolecznych ? 0 : (type === 'etat' || o.chorobowe) ? r2(brutto * 0.0245) : 0;
     const zusTotal = r2(emerytalne + rentowe + chorobowe);
     const cumBruttoZusAfter = cumBruttoZus + brutto;
 
@@ -388,7 +397,7 @@
     // ~20,48% brutto (+PPK). Na zleceniu FP i FGŚP tylko od kwoty >= minimalnego wynagrodzenia; uczeń/student
     // do 26 lat na zleceniu: zleceniodawca nie płaci żadnych składek (koszt = brutto).
     let kosztPracodawcy;
-    if (student) {
+    if (bezSpolecznych) {
       kosztPracodawcy = brutto;
     } else {
       const fp = (type === 'etat' || brutto >= MIN_WAGE) ? r2(brutto * 0.0245) + r2(brutto * 0.001) : 0;
@@ -429,7 +438,7 @@
       type: document.getElementById('contract').value,
       brutto: parseFloat(document.getElementById('brutto').value),
       pit0: g('pit0'), ppk: g('ppk'), commute: g('commute'),
-      student: g('student'), chorobowe: g('chorobowe'), pit2: g('pit2'), autorskie: g('autorskie'),
+      student: g('student'), zbieg: g('zbieg'), chorobowe: g('chorobowe'), pit2: g('pit2'), autorskie: g('autorskie'),
     };
   }
 
@@ -457,7 +466,7 @@
     const zusLabel = type === 'zlecenie' ? 'Składki ZUS (zleceniobiorca)' : 'ZUS pracownika';
     const costLabel = type === 'etat' ? 'Koszt pracodawcy' : 'Koszt zleceniodawcy';
     const notes = [];
-    if (type === 'zlecenie') notes.push('Zlecenie: koszty uzyskania 20% przychodu pomniejszonego o składki społeczne. Gdy zleceniobiorca ma etat co najmniej za minimalne wynagrodzenie (lub prowadzi działalność ze składkami), ze zlecenia płaci zwykle tylko składkę zdrowotną — ten kalkulator zakłada zlecenie jako jedyny tytuł do ubezpieczeń.');
+    if (type === 'zlecenie') notes.push(o.zbieg && !o.student ? 'Zbieg tytułów: przy etacie co najmniej za minimalne wynagrodzenie (lub działalności ze składkami) ze zlecenia płaci się tylko składkę zdrowotną, a koszty uzyskania to 20% pełnego przychodu. Składka chorobowa i składki społeczne zleceniodawcy nie występują.' : 'Zlecenie: koszty uzyskania 20% przychodu pomniejszonego o składki społeczne; kalkulator zakłada, że zlecenie jest jedynym tytułem do ubezpieczeń. Masz etat co najmniej za minimalne wynagrodzenie? Zaznacz odpowiednią opcję.');
     if (type === 'dzielo') notes.push('Dzieło: bez składek ZUS i zdrowotnej, zaliczka PIT 12% od przychodu pomniejszonego o koszty, bez kwoty zmniejszającej. Dzieło zawarte z własnym pracodawcą lub wykonywane w jego ramach jest oskładkowane jak umowa o pracę/zlecenie — kalkulator tego nie obejmuje.');
     if (o.pit0 && r.brutto*12 > 85528) notes.push('Uwaga: limit ulgi PIT-0 to 85 528 zł przychodu rocznie. Przy takiej pensji wyczerpie się po ok. ' + Math.floor(85528/r.brutto) + ' mies. — kolejne miesiące będą już opodatkowane, a kalkulator tego nie uwzględnia (pokazuje kwotę bez podatku).');
     document.getElementById('resultCard').innerHTML = `
@@ -521,7 +530,10 @@
 
   // Uczeń/student do 26 lat na zleceniu ma też ulgę PIT-0 - zaznaczamy ją automatycznie.
   document.getElementById('student').addEventListener('change', e => {
-    if (e.target.checked) document.getElementById('pit0').checked = true;
+    if (e.target.checked) { document.getElementById('pit0').checked = true; document.getElementById('zbieg').checked = false; }
+  });
+  document.getElementById('zbieg').addEventListener('change', e => {
+    if (e.target.checked) { document.getElementById('student').checked = false; document.getElementById('chorobowe').checked = false; }
   });
 
   renderPopular();
