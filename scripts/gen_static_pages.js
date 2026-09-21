@@ -205,9 +205,9 @@ function buildTrendNarrative(name, vals, years) {
   let sentence;
 
   if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
-    return `Imię <strong>${name}</strong> miało krótki epizod popularności w polskich metrykach — po raz pierwszy pojawiło się w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
+    return `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawiło się dopiero w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
   } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
-    sentence = `Imię <strong>${name}</strong> to stosunkowo nowe zjawisko w polskich metrykach — pierwsze pojedyncze nadania odnotowano dopiero w ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawia się dopiero od ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 >= 10 && val2024 <= 2) {
     sentence = `W ciągu ostatnich ${lastYear - 2000} lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 >= 10 && pct !== null && pct <= -50) {
