@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulator Wynagrodzeń 2026 — brutto netto netto | DaybyDay</title>
-  <meta name="description" content="Kalkulator wynagrodzeń 2026: przelicz brutto na netto i odwrotnie. Uwzględnia składki ZUS, podatek i ulgę podatkową. Aktualne stawki 2026.">
+  <meta name="description" content="Kalkulator wynagrodzeń 2026: przelicz brutto na netto dla umowy o pracę, umowy zlecenie i umowy o dzieło. Uwzględnia składki ZUS, podatek, PIT-0 i PPK. Aktualne stawki 2026.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/kalkulator-wynagrodzen.html">
   <meta property="og:title" content="Kalkulator Wynagrodzeń 2026 — brutto na netto">
@@ -47,7 +47,8 @@
     .form-group { margin-bottom:1.25rem; }
     .form-group label { display:block; font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:.5rem; }
     .form-group input { width:100%; padding:.75rem 1rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); outline:none; transition:border-color .15s; }
-    .form-group input:focus { border-color:var(--text); }
+    .form-group select { width:100%; padding:.75rem 1rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); outline:none; transition:border-color .15s; }
+    .form-group input:focus, .form-group select:focus { border-color:var(--text); }
     .form-hint { font-size:.74rem; color:var(--muted); margin-top:.35rem; }
     .checkbox-group { display:flex; flex-direction:column; gap:.75rem; margin-bottom:1.25rem; }
     .checkbox-row { display:flex; align-items:center; gap:.6rem; cursor:pointer; }
@@ -209,10 +210,19 @@
 <main class="page">
   <div class="page-label">Kalkulator</div>
   <h1 class="page-title">Kalkulator wynagrodzeń 2026</h1>
-  <p class="page-sub">Oblicz wynagrodzenie netto z brutto (lub odwrotnie) uwzględniając składki ZUS, podatek dochodowy, ulgę PIT-0 i PPK. Stawki aktualne na rok 2026.</p>
+  <p class="page-sub">Oblicz wynagrodzenie netto z brutto dla umowy o pracę, umowy zlecenie lub umowy o dzieło — ze składkami ZUS, podatkiem dochodowym, ulgą PIT-0 i PPK. Stawki aktualne na rok 2026.</p>
 
   <div class="layout">
     <div class="calc-card">
+      <div class="form-group">
+        <label for="contract">Rodzaj umowy</label>
+        <select id="contract" onchange="onContractChange()">
+          <option value="etat">Umowa o pracę</option>
+          <option value="zlecenie">Umowa zlecenie</option>
+          <option value="dzielo">Umowa o dzieło</option>
+        </select>
+      </div>
+
       <div class="form-group">
         <label for="brutto">Wynagrodzenie brutto (PLN)</label>
         <input type="number" id="brutto" placeholder="np. 6000" min="0" step="100" value="6000">
@@ -220,15 +230,31 @@
       </div>
 
       <div class="checkbox-group">
+        <label class="checkbox-row" data-for="zlecenie">
+          <input type="checkbox" id="student">
+          <span class="checkbox-label">Uczeń lub student do 26 lat (bez składek ZUS i zdrowotnej)</span>
+        </label>
+        <label class="checkbox-row" data-for="zlecenie">
+          <input type="checkbox" id="chorobowe">
+          <span class="checkbox-label">Dobrowolna składka chorobowa (2,45%)</span>
+        </label>
+        <label class="checkbox-row" data-for="zlecenie">
+          <input type="checkbox" id="pit2" checked>
+          <span class="checkbox-label">Złożono PIT-2 (kwota zmniejszająca podatek 300 zł/mies.)</span>
+        </label>
+        <label class="checkbox-row" data-for="dzielo">
+          <input type="checkbox" id="autorskie">
+          <span class="checkbox-label">Przeniesienie praw autorskich (koszty uzyskania 50% zamiast 20%)</span>
+        </label>
         <label class="checkbox-row">
           <input type="checkbox" id="pit0">
           <span class="checkbox-label">Ulga PIT-0 (poniżej 26 lat / rodzic 4+ dzieci / senior)</span>
         </label>
-        <label class="checkbox-row">
+        <label class="checkbox-row" data-for="etat">
           <input type="checkbox" id="ppk">
           <span class="checkbox-label">PPK (Pracownicze Plany Kapitałowe)</span>
         </label>
-        <label class="checkbox-row">
+        <label class="checkbox-row" data-for="etat">
           <input type="checkbox" id="commute">
           <span class="checkbox-label">Dojazd do pracy (podwyższone koszty uzyskania)</span>
         </label>
@@ -243,9 +269,9 @@
   </div>
 
   <div class="popular-table">
-    <div class="popular-title">Popularne kwoty brutto → netto (2026)</div>
+    <div class="popular-title">Popularne kwoty brutto → netto (2026) — <span id="popularType">umowa o pracę</span></div>
     <table class="ptable">
-      <thead><tr><th>Brutto</th><th>Netto</th><th>ZUS</th><th>Podatek</th><th>Koszt pracodawcy</th></tr></thead>
+      <thead><tr><th>Brutto</th><th>Netto</th><th>ZUS</th><th>Podatek</th><th id="popularCostHead">Koszt pracodawcy</th></tr></thead>
       <tbody id="popularBody"></tbody>
     </table>
   </div>
@@ -291,65 +317,97 @@
   // np. 4806 zł brutto -> 3605,85 zł netto).
   const r2 = x => Math.round(x * 100) / 100;
 
-  // Liczy jeden miesiąc, przyjmując stan narastająco z poprzednich miesięcy roku (cumBruttoZus - suma
-  // brutto do limitu 30-krotności, cumPodstawaPIT - suma podstawy PIT do progu II). Zwraca wynik miesiąca
-  // ORAZ zaktualizowany stan narastająco (do przekazania do kolejnego miesiąca).
-  function computeMonth(brutto, pit0, ppk, commute, cumBruttoZus, cumPodstawaPIT) {
+  const MIN_WAGE = 4806; // minimalne wynagrodzenie 2026 (FP i FGŚP od umowy zlecenia tylko od kwoty >= minimalnej)
+
+  // Liczy jeden miesiąc dla wybranego rodzaju umowy, przyjmując stan narastająco z poprzednich miesięcy
+  // roku (cumBruttoZus - suma brutto do limitu 30-krotności, cumPodstawaPIT - suma podstawy PIT do progu II).
+  // Zwraca wynik miesiąca ORAZ zaktualizowany stan narastająco (do przekazania do kolejnego miesiąca).
+  // o = { type: 'etat'|'zlecenie'|'dzielo', brutto, pit0, ppk, commute, student, chorobowe, pit2, autorskie }
+  function computeMonth(o, cumBruttoZus, cumPodstawaPIT) {
+    const brutto = o.brutto;
+    const type = o.type || 'etat';
+
+    // Umowa o dzieło: bez składek ZUS i zdrowotnej (dzieło z osobą, która nie jest pracownikiem zleceniodawcy);
+    // koszty uzyskania 20% (50% przy przeniesieniu praw autorskich), podatek 12% od podstawy w pełnych złotych,
+    // BEZ kwoty zmniejszającej. Koszt zleceniodawcy = kwota brutto. Rozliczenie jednorazowe - bez narastania.
+    if (type === 'dzielo') {
+      const koszty = r2(brutto * (o.autorskie ? 0.5 : 0.2));
+      const podstawa = Math.max(0, Math.round(brutto - koszty));
+      const pit = o.pit0 ? 0 : Math.round(podstawa * 0.12);
+      return {
+        result: { brutto, netto: r2(brutto - pit), zusTotal: 0, zdrowotna: 0, pit, ppkWorker: 0, ppkEmployer: 0,
+          kosztPracodawcy: brutto, emerytalne: 0, rentowe: 0, chorobowe: 0, koszty },
+        cumBruttoZus, cumPodstawaPIT,
+      };
+    }
+
+    const student = type === 'zlecenie' && !!o.student; // uczeń/student do 26 lat na zleceniu: bez ZUS i zdrowotnej
     // Składki emerytalna/rentowa tylko do limitu 30-krotności narastająco w roku - powyżej limitu
     // nie są już pobierane (chorobowa i zdrowotna limitu nie mają).
-    const bruttoDoSkladekEmRent = Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
+    const bruttoDoSkladekEmRent = student ? 0 : Math.max(0, Math.min(brutto, LIMIT_30KROTNOSC - cumBruttoZus));
     const emerytalne = r2(bruttoDoSkladekEmRent * 0.0976);
     const rentowe = r2(bruttoDoSkladekEmRent * 0.015);
-    const chorobowe = r2(brutto * 0.0245);
+    // Chorobowa: obowiązkowa na etacie, dobrowolna na zleceniu.
+    const chorobowe = student ? 0 : (type === 'etat' || o.chorobowe) ? r2(brutto * 0.0245) : 0;
     const zusTotal = r2(emerytalne + rentowe + chorobowe);
     const cumBruttoZusAfter = cumBruttoZus + brutto;
 
-    // PPK: wpłata pracownika (2%) jest potrącana z wynagrodzenia PO opodatkowaniu i NIE obniża podstawy
-    // PIT; wpłata pracodawcy (1,5%) jest przychodem pracownika (podlega PIT, nie podlega składkom ZUS).
+    // PPK (tylko etat): wpłata pracownika (2%) jest potrącana z wynagrodzenia PO opodatkowaniu i NIE obniża
+    // podstawy PIT; wpłata pracodawcy (1,5%) jest przychodem pracownika (podlega PIT, nie podlega składkom ZUS).
     // Wcześniejsza wersja odejmowała wpłatę pracownika od podstawy PIT i pomijała przychód z wpłaty
     // pracodawcy - netto z PPK było zawyżone o ok. 25 zł przy 6000 zł brutto (poprawione 19.09.2026).
+    const ppk = type === 'etat' && o.ppk;
     const ppkWorker = ppk ? r2(brutto * 0.02) : 0;
     const ppkEmployer = ppk ? r2(brutto * 0.015) : 0;
 
-    // Podstawa zdrowotnej
-    const zdrowotna = r2((brutto - zusTotal) * 0.09);
+    // Podstawa zdrowotnej: brutto pomniejszone o składki społeczne
+    const zdrowotna = student ? 0 : r2((brutto - zusTotal) * 0.09);
 
-    // Koszty uzyskania
-    const kosztUzysk = commute ? 300 : 250;
+    // Koszty uzyskania: etat - ryczałt miesięczny 250/300 zł; zlecenie - 20% przychodu pomniejszonego
+    // o składki społeczne (sprawdzone na przykładach z kalkulatorów: 5000 zł, pełny ZUS z chorobową
+    // i bez PIT-2 -> 3512,19 zł netto).
+    const kosztUzysk = type === 'zlecenie' ? r2((brutto - zusTotal) * 0.2) : (o.commute ? 300 : 250);
 
     // Podstawa PIT tego miesiąca (pełne złote) i narastająco
     const podstawaPITmc = Math.max(0, Math.round(brutto + ppkEmployer - zusTotal - kosztUzysk));
     const cumPodstawaPITAfter = cumPodstawaPIT + podstawaPITmc;
-    const kwotaWolna = 300; // miesięczna kwota zmniejszająca podatek (3600/12), z PIT-2
+    // Miesięczna kwota zmniejszająca podatek (3600/12): etat - z PIT-2; zlecenie - tylko po złożeniu PIT-2.
+    const kwotaWolna = type === 'etat' || o.pit2 ? 300 : 0;
 
     // Zaliczka PIT tego miesiąca = różnica podatku narastająco (uwzględnia przejście przez próg II
     // w trakcie miesiąca, gdy część podstawy jest jeszcze w I progu a część już w II) minus kwota wolna,
     // zaokrąglona do pełnych złotych.
     let pit = 0;
-    if (!pit0) {
+    if (!o.pit0) {
       pit = Math.max(0, Math.round(annualTaxOnBase(cumPodstawaPITAfter) - annualTaxOnBase(cumPodstawaPIT) - kwotaWolna));
     }
 
     const netto = r2(brutto - zusTotal - zdrowotna - pit - ppkWorker);
-    // Koszt pracodawcy = brutto + emerytalna 9,76% + rentowa 6,5% (do limitu 30-krotności) + wypadkowa 1,67%
-    // (stawka domyślna) + Fundusz Pracy 2,45% + FGŚP 0,10% (bez limitu) + PPK 1,5%. Razem ~20,48% brutto
-    // (+PPK). Wcześniejsza wersja pomijała FP i FGŚP (2,55%) - koszt był zaniżony o ok. 150 zł przy 6000 zł.
-    const kosztPracodawcy = r2(brutto + emerytalne + r2(bruttoDoSkladekEmRent * 0.065)
-      + r2(brutto * 0.0167) + r2(brutto * 0.0245) + r2(brutto * 0.001) + ppkEmployer);
+    // Koszt pracodawcy/zleceniodawcy = brutto + emerytalna 9,76% + rentowa 6,5% (do limitu 30-krotności) +
+    // wypadkowa 1,67% (stawka domyślna) + Fundusz Pracy 2,45% + FGŚP 0,10% (bez limitu) + PPK 1,5%. Razem
+    // ~20,48% brutto (+PPK). Na zleceniu FP i FGŚP tylko od kwoty >= minimalnego wynagrodzenia; uczeń/student
+    // do 26 lat na zleceniu: zleceniodawca nie płaci żadnych składek (koszt = brutto).
+    let kosztPracodawcy;
+    if (student) {
+      kosztPracodawcy = brutto;
+    } else {
+      const fp = (type === 'etat' || brutto >= MIN_WAGE) ? r2(brutto * 0.0245) + r2(brutto * 0.001) : 0;
+      kosztPracodawcy = r2(brutto + emerytalne + r2(bruttoDoSkladekEmRent * 0.065) + r2(brutto * 0.0167) + fp + ppkEmployer);
+    }
 
     return {
       result: { brutto, netto, zusTotal, zdrowotna, pit, ppkWorker, ppkEmployer, kosztPracodawcy,
-        emerytalne, rentowe, chorobowe },
+        emerytalne, rentowe, chorobowe, koszty: kosztUzysk },
       cumBruttoZus: cumBruttoZusAfter, cumPodstawaPIT: cumPodstawaPITAfter,
     };
   }
 
   // Symuluje pełny rok (12 miesięcy tej samej pensji brutto) narastająco - zwraca tablicę 12 wyników.
-  function computeYear(brutto, pit0, ppk, commute) {
+  function computeYear(o) {
     let cumBruttoZus = 0, cumPodstawaPIT = 0;
     const months = [];
     for (let i = 0; i < 12; i++) {
-      const m = computeMonth(brutto, pit0, ppk, commute, cumBruttoZus, cumPodstawaPIT);
+      const m = computeMonth(o, cumBruttoZus, cumPodstawaPIT);
       months.push(m.result);
       cumBruttoZus = m.cumBruttoZus;
       cumPodstawaPIT = m.cumPodstawaPIT;
@@ -359,37 +417,63 @@
 
   // Wynik "typowego miesiąca" (kalkulator główny, tabela popularnych kwot) = styczeń świeżego roku -
   // dla pensji poniżej progów daje dokładnie tę samą wartość co poprzednia wersja compute().
-  function compute(brutto, pit0, ppk, commute) {
-    return computeMonth(brutto, pit0, ppk, commute, 0, 0).result;
+  function compute(o) {
+    return computeMonth(o, 0, 0).result;
+  }
+
+  const TYPE_NAMES = { etat: 'umowa o pracę', zlecenie: 'umowa zlecenie', dzielo: 'umowa o dzieło' };
+
+  function getOpts() {
+    const g = id => document.getElementById(id).checked;
+    return {
+      type: document.getElementById('contract').value,
+      brutto: parseFloat(document.getElementById('brutto').value),
+      pit0: g('pit0'), ppk: g('ppk'), commute: g('commute'),
+      student: g('student'), chorobowe: g('chorobowe'), pit2: g('pit2'), autorskie: g('autorskie'),
+    };
+  }
+
+  // Pokazuje tylko opcje właściwe dla wybranego rodzaju umowy (wiersze z data-for).
+  function onContractChange() {
+    const type = document.getElementById('contract').value;
+    document.querySelectorAll('.checkbox-row[data-for]').forEach(row => {
+      row.style.display = row.dataset.for.split(' ').includes(type) ? '' : 'none';
+    });
+    renderPopular();
+    calcSalary();
   }
 
   function calcSalary() {
-    const brutto = parseFloat(document.getElementById('brutto').value);
-    if (!brutto || brutto <= 0) { alert('Podaj kwotę brutto.'); return; }
-    const pit0 = document.getElementById('pit0').checked;
-    const ppk = document.getElementById('ppk').checked;
-    const commute = document.getElementById('commute').checked;
-    const r = compute(brutto, pit0, ppk, commute);
-    renderResult(r, pit0, ppk);
-    renderMonths(brutto, pit0, ppk, commute);
+    const o = getOpts();
+    if (!o.brutto || o.brutto <= 0) { alert('Podaj kwotę brutto.'); return; }
+    const r = compute(o);
+    renderResult(r, o);
+    renderMonths(o);
   }
 
-  function renderResult(r, pit0, ppk) {
+  function renderResult(r, o) {
+    const type = o.type;
     const pct = v => ((v/r.brutto)*100).toFixed(1)+'%';
+    const zusLabel = type === 'zlecenie' ? 'Składki ZUS (zleceniobiorca)' : 'ZUS pracownika';
+    const costLabel = type === 'etat' ? 'Koszt pracodawcy' : 'Koszt zleceniodawcy';
+    const notes = [];
+    if (type === 'zlecenie') notes.push('Zlecenie: koszty uzyskania 20% przychodu pomniejszonego o składki społeczne. Gdy zleceniobiorca ma etat co najmniej za minimalne wynagrodzenie (lub prowadzi działalność ze składkami), ze zlecenia płaci zwykle tylko składkę zdrowotną — ten kalkulator zakłada zlecenie jako jedyny tytuł do ubezpieczeń.');
+    if (type === 'dzielo') notes.push('Dzieło: bez składek ZUS i zdrowotnej, zaliczka PIT 12% od przychodu pomniejszonego o koszty, bez kwoty zmniejszającej. Dzieło zawarte z własnym pracodawcą lub wykonywane w jego ramach jest oskładkowane jak umowa o pracę/zlecenie — kalkulator tego nie obejmuje.');
+    if (o.pit0 && r.brutto*12 > 85528) notes.push('Uwaga: limit ulgi PIT-0 to 85 528 zł przychodu rocznie. Przy takiej pensji wyczerpie się po ok. ' + Math.floor(85528/r.brutto) + ' mies. — kolejne miesiące będą już opodatkowane, a kalkulator tego nie uwzględnia (pokazuje kwotę bez podatku).');
     document.getElementById('resultCard').innerHTML = `
       <div class="result-netto">${pln(r.netto)}</div>
-      <div class="result-netto-label">netto miesięcznie</div>
+      <div class="result-netto-label">netto ${type === 'etat' ? 'miesięcznie' : 'do wypłaty'}</div>
       <div class="breakdown">
         <div class="breakdown-row"><span class="breakdown-label">Wynagrodzenie brutto</span><span class="breakdown-val">${pln(r.brutto)}</span></div>
         <div class="breakdown-divider"></div>
-        <div class="breakdown-row"><span class="breakdown-label">ZUS pracownika</span><span class="breakdown-val neg">−${pln(r.zusTotal)}</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">Składka zdrowotna</span><span class="breakdown-val neg">−${pln(r.zdrowotna)}</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">Zaliczka PIT${pit0?' (ulga PIT-0)':''}</span><span class="breakdown-val neg">−${pln(r.pit)}</span></div>
-        ${ppk?`<div class="breakdown-row"><span class="breakdown-label">PPK (wpłata pracownika)</span><span class="breakdown-val neg">−${pln(r.ppkWorker)}</span></div>`:''}
+        ${type !== 'dzielo' ? `<div class="breakdown-row"><span class="breakdown-label">${zusLabel}</span><span class="breakdown-val neg">−${pln(r.zusTotal)}</span></div>
+        <div class="breakdown-row"><span class="breakdown-label">Składka zdrowotna</span><span class="breakdown-val neg">−${pln(r.zdrowotna)}</span></div>` : ''}
+        <div class="breakdown-row"><span class="breakdown-label">Zaliczka PIT${o.pit0?' (ulga PIT-0)':''}</span><span class="breakdown-val neg">−${pln(r.pit)}</span></div>
+        ${r.ppkWorker ? `<div class="breakdown-row"><span class="breakdown-label">PPK (wpłata pracownika)</span><span class="breakdown-val neg">−${pln(r.ppkWorker)}</span></div>` : ''}
         <div class="breakdown-divider"></div>
         <div class="breakdown-row"><span class="breakdown-label" style="font-weight:600">Do wypłaty</span><span class="breakdown-val pos">${pln(r.netto)}</span></div>
         <div class="breakdown-divider"></div>
-        <div class="breakdown-row"><span class="breakdown-label">Koszt pracodawcy</span><span class="breakdown-val">${pln(r.kosztPracodawcy)}</span></div>
+        <div class="breakdown-row"><span class="breakdown-label">${costLabel}</span><span class="breakdown-val">${pln(r.kosztPracodawcy)}</span></div>
       </div>
       <div class="bar-container">
         <div class="bar-label">Rozkład wynagrodzenia brutto</div>
@@ -406,28 +490,42 @@
           <div class="bar-legend-item"><div class="bar-dot" style="background:#8B3A1A"></div>PIT ${pct(r.pit)}</div>
         </div>
       </div>
-      ${pit0 && r.brutto*12 > 85528 ? `<p class="form-hint" style="margin-top:14px">Uwaga: limit ulgi PIT-0 to 85 528 zł przychodu rocznie. Przy takiej pensji wyczerpie się po ok. ${Math.floor(85528/r.brutto)} mies. — kolejne miesiące będą już opodatkowane, a kalkulator tego nie uwzględnia (pokazuje kwotę bez podatku).</p>` : ''}
+      ${notes.map(n => `<p class="form-hint" style="margin-top:14px">${n}</p>`).join('')}
     `;
   }
 
-  function renderMonths(brutto, pit0, ppk, commute) {
-    const year = computeYear(brutto, pit0, ppk, commute);
+  // Tabela "netto w ciągu roku" - tylko dla umów rozliczanych co miesiąc (etat, zlecenie); dzieło jest jednorazowe.
+  function renderMonths(o) {
+    const section = document.getElementById('monthTableSection');
+    if (o.type === 'dzielo') { section.style.display = 'none'; return; }
+    const year = computeYear(o);
     const rows = MONTHS_NOM.map((m, i) => {
       const r = year[i];
       return `<tr><td>${m}</td><td><strong>${pln(r.netto)}</strong></td><td>${pln(r.pit)}</td><td>${pln(r.zusTotal)}</td></tr>`;
     }).join('');
     document.getElementById('monthBody').innerHTML = rows;
-    document.getElementById('monthTableSection').style.display = '';
+    section.style.display = '';
   }
 
-  // Popularne kwoty
+  // Popularne kwoty - dla wybranego rodzaju umowy, bez dodatkowych opcji
   const popularAmounts = [4806,5000,6000,7000,8000,10000,12000,15000,20000];
-  document.getElementById('popularBody').innerHTML = popularAmounts.map(b => {
-    const r = compute(b, false, false, false);
-    return `<tr><td>${pln(b)}</td><td><strong>${pln(r.netto)}</strong></td><td>${pln(r.zusTotal)}</td><td>${pln(r.pit)}</td><td>${pln(r.kosztPracodawcy)}</td></tr>`;
-  }).join('');
+  function renderPopular() {
+    const type = document.getElementById('contract').value;
+    document.getElementById('popularType').textContent = TYPE_NAMES[type];
+    document.getElementById('popularCostHead').textContent = type === 'etat' ? 'Koszt pracodawcy' : 'Koszt zleceniodawcy';
+    document.getElementById('popularBody').innerHTML = popularAmounts.map(b => {
+      const r = compute({ type, brutto: b, pit2: true });
+      return `<tr><td>${pln(b)}</td><td><strong>${pln(r.netto)}</strong></td><td>${pln(r.zusTotal)}</td><td>${pln(r.pit)}</td><td>${pln(r.kosztPracodawcy)}</td></tr>`;
+    }).join('');
+  }
 
-  calcSalary();
+  // Uczeń/student do 26 lat na zleceniu ma też ulgę PIT-0 - zaznaczamy ją automatycznie.
+  document.getElementById('student').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('pit0').checked = true;
+  });
+
+  renderPopular();
+  onContractChange();
 </script>
 
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
