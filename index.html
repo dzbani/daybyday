@@ -2614,10 +2614,10 @@ function calcSunCore(year,month,day,lat,lon){
     return { decl, eqt };
   }
   const JD0=toJD(year,month,day)+0.5;
-  function eventMin(sign) { // sign: -1 = wschod, +1 = zachod (minuty UTC od polnocy)
+  function eventMin(sign, zen) { // sign: -1 = wschod/swit, +1 = zachod/zmierzch; zen: zenit w stopniach (minuty UTC od polnocy)
     let p = solar(JD0), min = 0;
     for (let i = 0; i < 2; i++) {
-      const cosHA = (Math.cos(90.833 * rad) - Math.sin(lat * rad) * Math.sin(p.decl)) / (Math.cos(lat * rad) * Math.cos(p.decl));
+      const cosHA = (Math.cos(zen * rad) - Math.sin(lat * rad) * Math.sin(p.decl)) / (Math.cos(lat * rad) * Math.cos(p.decl));
       if (Math.abs(cosHA) > 1) return null;
       const HA = Math.acos(cosHA) / rad;
       min = 720 - 4 * (lon - sign * HA) - p.eqt;
@@ -2625,10 +2625,16 @@ function calcSunCore(year,month,day,lat,lon){
     }
     return min;
   }
-  const riseMin = eventMin(-1), setMin = eventMin(1);
+  const riseMin = eventMin(-1, 90.833), setMin = eventMin(1, 90.833);
   if (riseMin === null || setMin === null) return null;
-  const noonP = solar(JD0); // swit/zmierzch cywilny i gorowanie: parametry z poludnia UTC (jak dotad)
-  return{riseUTC:riseMin/60,setUTC:setMin/60,lenH:(setMin-riseMin)/60,eqt:noonP.eqt,decl:noonP.decl};
+  // Swit i zmierzch cywilny (zenit 96 stopni, Slonce 6 stopni pod horyzontem) - te same iteracje co wschod/zachod
+  // (rms bledu ~0,5-3 s zamiast 25-35 s przy parametrach z poludnia UTC).
+  const dawnMin = eventMin(-1, 96), duskMin = eventMin(1, 96);
+  // Gorowanie (poludnie sloneczne) i wysokosc Slonca w poludnie: parametry z poludnia UTC wystarczaja
+  // (poludnie sloneczne w Polsce to ok. 10-11 UTC, blad rownania czasu ~1-2 s).
+  const noonP = solar(JD0);
+  return{riseUTC:riseMin/60,setUTC:setMin/60,lenH:(setMin-riseMin)/60,eqt:noonP.eqt,decl:noonP.decl,
+    dawnUTC:dawnMin===null?null:dawnMin/60,duskUTC:duskMin===null?null:duskMin/60};
 }
 
 function calcSunTimes(year,month,day){
@@ -2638,13 +2644,11 @@ function calcSunTimes(year,month,day){
   const fmt=h=>{h=((h+tz)%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
   let lh=Math.floor(c.lenH),lm=Math.round((c.lenH-lh)*60);
   if(lm===60){lm=0;lh+=1;}
-  // Świt i zmierzch cywilny (-6°): cosHA dla -6° zamiast -0.833°. eqt/decl
-  // wzięte z calcSunCore (jedno źródło) zamiast osobnego przeliczania.
+  // Świt i zmierzch cywilny (-6°) liczone w calcSunCore (jedno źródło, z iteracją do chwili zdarzenia).
   const rad=Math.PI/180;
   const {eqt,decl}=c;
-  const cosHAciv=(Math.cos(96*rad)-Math.sin(LOC_LAT*rad)*Math.sin(decl))/(Math.cos(LOC_LAT*rad)*Math.cos(decl));
-  const dawn=Math.abs(cosHAciv)<=1?fmt((720-4*(LOC_LON+Math.acos(cosHAciv)/rad)-eqt)/60):'—';
-  const dusk=Math.abs(cosHAciv)<=1?fmt((720-4*(LOC_LON-Math.acos(cosHAciv)/rad)-eqt)/60):'—';
+  const dawn=c.dawnUTC!==null?fmt(c.dawnUTC):'—';
+  const dusk=c.duskUTC!==null?fmt(c.duskUTC):'—';
   // Górowanie (południe słoneczne) i wysokość słońca w południe
   const noonUTC=(720-4*LOC_LON-eqt)/60;
   const noonAltDeg=Math.asin(Math.sin(LOC_LAT*rad)*Math.sin(decl)+Math.cos(LOC_LAT*rad)*Math.cos(decl))/rad;
