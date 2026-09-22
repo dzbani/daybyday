@@ -11,13 +11,13 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulator Wynagrodzeń 2026 — brutto netto netto | DaybyDay</title>
-  <meta name="description" content="Kalkulator wynagrodzeń 2026: przelicz brutto na netto dla umowy o pracę, umowy zlecenie i umowy o dzieło. Uwzględnia składki ZUS, podatek, PIT-0 i PPK. Aktualne stawki 2026.">
+  <title>Kalkulator Wynagrodzeń 2027 — brutto netto netto | DaybyDay</title>
+  <meta name="description" content="Kalkulator wynagrodzeń 2027: przelicz brutto na netto dla umowy o pracę, umowy zlecenie i umowy o dzieło. Uwzględnia składki ZUS, podatek, PIT-0 i PPK. Aktualne stawki 2027.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/kalkulator-wynagrodzen.html">
-  <meta property="og:title" content="Kalkulator Wynagrodzeń 2026 — brutto na netto">
+  <meta property="og:title" content="Kalkulator Wynagrodzeń 2027 — brutto na netto">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:description" content="Przelicz wynagrodzenie brutto na netto. Aktualne składki ZUS i podatek 2026.">
+  <meta property="og:description" content="Przelicz wynagrodzenie brutto na netto. Aktualne składki ZUS i podatek 2027.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <meta property="og:url" content="https://daybyday.today/kalkulator-wynagrodzen.html">
@@ -209,8 +209,8 @@
 
 <main class="page">
   <div class="page-label">Kalkulator</div>
-  <h1 class="page-title">Kalkulator wynagrodzeń 2026</h1>
-  <p class="page-sub">Oblicz wynagrodzenie netto z brutto dla umowy o pracę, umowy zlecenie lub umowy o dzieło — ze składkami ZUS, podatkiem dochodowym, ulgą PIT-0 i PPK. Stawki aktualne na rok 2026.</p>
+  <h1 class="page-title">Kalkulator wynagrodzeń 2027</h1>
+  <p class="page-sub">Oblicz wynagrodzenie netto z brutto dla umowy o pracę, umowy zlecenie lub umowy o dzieło — ze składkami ZUS, podatkiem dochodowym, ulgą PIT-0 i PPK. Stawki aktualne na rok 2027.</p>
 
   <div class="layout">
     <div class="calc-card">
@@ -273,7 +273,7 @@
   </div>
 
   <div class="popular-table">
-    <div class="popular-title">Popularne kwoty brutto → netto (2026) — <span id="popularType">umowa o pracę</span></div>
+    <div class="popular-title">Popularne kwoty brutto → netto (2027) — <span id="popularType">umowa o pracę</span></div>
     <table class="ptable">
       <thead><tr><th>Brutto</th><th>Netto</th><th>ZUS</th><th>Podatek</th><th id="popularCostHead">Koszt pracodawcy</th></tr></thead>
       <tbody id="popularBody"></tbody>
@@ -303,25 +303,31 @@
 
   function pln(v) { return v.toLocaleString('pl-PL',{minimumFractionDigits:2,maximumFractionDigits:2})+' zł'; }
 
-  // Próg II skali podatkowej i limit 30-krotności - stawki 2026 (zweryfikowane WebSearch 16.09.2026:
-  // portalfk.pl/pit.pl, obwieszczenie MRPiPS z 19.11.2025). Zaliczka PIT i składki emerytalno-rentowe
-  // liczone są w Polsce NARASTAJĄCO w ciągu roku (kumulatywny dochód/podstawa), nie od pojedynczej
-  // wypłaty w oderwaniu od reszty roku - poprzednia wersja compute() liczyła KAŻDY miesiąc identycznie,
-  // zawsze stawką 12% bez II progu i bez limitu ZUS, co przy wysokich pensjach (>~10 000 zł brutto/mies.,
-  // roczna podstawa >120 000 zł) dawało zawyżone "netto" o ponad 1000 zł/mies. - znalezione i naprawione
-  // 16.09.2026.
-  const PROG_II_PIT = 120000; // roczny próg II stawki PIT (bez zmian od Polskiego Ładu 2022)
-  const LIMIT_30KROTNOSC = 282600; // roczny limit podstawy składek emerytalno-rentowych na 2026 r.
+  // Próg II skali podatkowej i limit 30-krotności - stawki 2027 (zaktualizowane WebSearch 22.09.2026).
+  // Zaliczka PIT i składki emerytalno-rentowe liczone są w Polsce NARASTAJĄCO w ciągu roku (kumulatywny
+  // dochód/podstawa), nie od pojedynczej wypłaty w oderwaniu od reszty roku - poprzednia wersja compute()
+  // liczyła KAŻDY miesiąc identycznie, zawsze stawką 12% bez II progu i bez limitu ZUS, co przy wysokich
+  // pensjach (>~10 000 zł brutto/mies., roczna podstawa >120 000 zł) dawało zawyżone "netto" o ponad
+  // 1000 zł/mies. - znalezione i naprawione 16.09.2026.
+  const PROG_II_PIT = 120000; // roczny próg II stawki PIT (bez zmian od Polskiego Ładu 2022, potwierdzone też na 2027)
+  // LIMIT_30KROTNOSC na 2027 r.: 30 x 10 033 zł (prognozowane przeciętne wynagrodzenie miesięczne w gospodarce
+  // narodowej z projektu ustawy budżetowej na 2027 r., przyjętego przez Radę Ministrów we wrześniu 2026 r.,
+  // podniesionego z wcześniejszej prognozy 9971 zł z czerwca 2026 r.). UWAGA: ustawa budżetowa na 2027 r. nie
+  // była jeszcze ostatecznie uchwalona przez Sejm w chwili tej aktualizacji (22.09.2026) - ostateczna, wiążąca
+  // kwota limitu jest zwykle ogłaszana obwieszczeniem MRPiPS w Monitorze Polskim pod koniec roku poprzedzającego;
+  // do zweryfikowania i ew. korekty, gdy ustawa zostanie ostatecznie uchwalona/opublikowana.
+  const LIMIT_30KROTNOSC = 300990; // roczny limit podstawy składek emerytalno-rentowych na 2027 r. (30 x 10033 zł, wg projektu budżetu)
   function annualTaxOnBase(base) {
     return base <= PROG_II_PIT ? base * 0.12 : PROG_II_PIT * 0.12 + (base - PROG_II_PIT) * 0.32;
   }
 
   // Zaokrąglenia jak w programach kadrowo-płacowych: składki ZUS/zdrowotna/PPK do groszy,
-  // podstawa PIT i zaliczka PIT do pełnych złotych (dzięki temu wynik zgadza się z listą płac co do grosza,
-  // np. 4806 zł brutto -> 3605,85 zł netto).
+  // podstawa PIT i zaliczka PIT do pełnych złotych (dzięki temu wynik zgadza się z listą płac co do grosza).
   const r2 = x => Math.round(x * 100) / 100;
 
-  const MIN_WAGE = 4806; // minimalne wynagrodzenie 2026 (FP i FGŚP od umowy zlecenia tylko od kwoty >= minimalnej)
+  // Minimalne wynagrodzenie 2027: 4950 zł brutto (rozporządzenie Rady Ministrów, Dz.U. 2026 poz. 1213
+  // z 15.09.2026 - ostatecznie uchwalone, nie projekt). Minimalna stawka godzinowa 2027: 32,30 zł.
+  const MIN_WAGE = 4950; // minimalne wynagrodzenie 2027 (FP i FGŚP od umowy zlecenia tylko od kwoty >= minimalnej)
 
   // Liczy jeden miesiąc dla wybranego rodzaju umowy, przyjmując stan narastająco z poprzednich miesięcy
   // roku (cumBruttoZus - suma brutto do limitu 30-krotności, cumPodstawaPIT - suma podstawy PIT do progu II).
@@ -517,7 +523,7 @@
   }
 
   // Popularne kwoty - dla wybranego rodzaju umowy, bez dodatkowych opcji
-  const popularAmounts = [4806,5000,6000,7000,8000,10000,12000,15000,20000];
+  const popularAmounts = [4950,5000,6000,7000,8000,10000,12000,15000,20000];
   function renderPopular() {
     const type = document.getElementById('contract').value;
     document.getElementById('popularType').textContent = TYPE_NAMES[type];
