@@ -29,7 +29,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const OUT_DIR = path.join(ROOT, 'history-data');
+const outArg = process.argv.find(a => a.startsWith('--out='));
+const OUT_DIR = path.join(ROOT, outArg ? outArg.split('=')[1] : 'history-data');
 const DRY = process.argv.includes('--dry-run');
 const limitArg = process.argv.find(a => a.startsWith('--limit='));
 const LIMIT = limitArg ? parseInt(limitArg.split('=')[1], 10) : Infinity;
@@ -44,25 +45,72 @@ const DAYS_IN_MONTH = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const UA = 'DaybyDayHistoryBot/1.0 (https://daybyday.today; kontakt@daybyday.today) node-fetch';
 
 function stripWiki(t) {
-  return t
+  let x = t
+    .replace(/<ref[^>]*\/>/gi, '')
+    .replace(/<ref[^>]*>[\s\S]*?<\/ref>/gi, '')
+    .replace(/&nbsp;/g, ' ');
+  // {{link-interwiki |Nazwa |Q=..}} -> sama nazwa; pozostale szablony usuwamy
+  // (petla, bo moga byc zagniezdzone)
+  x = x.replace(/\{\{\s*link-interwiki\s*\|\s*([^|}]*?)\s*(?:\|[^{}]*)?\}\}/gi, '$1');
+  for (let i = 0; i < 5 && /\{\{[^{}]*\}\}/.test(x); i++) x = x.replace(/\{\{[^{}]*\}\}/g, '');
+  return x
+    .replace(/\[\[(?:Plik|File|Grafika):[^\]]*\]\]/gi, '')
     .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, '$1')
     .replace(/'{2,3}/g, '')
-    .replace(/\{\{[^}]*\}\}/g, '')
     .replace(/<[^>]+>/g, '')
+    .replace(/\s+([,.;:])/g, '$1')
     .replace(/\s+/g, ' ').trim();
 }
 
+// Sekcje wikitekstu maja dwa uklady: "* [[ROK]] – tekst." oraz zagniezdzony
+// "* [[ROK]]:" + "** tekst" (takze "* [[ROK]] – Wojna X:" + "** tekst").
+// Pierwsza wersja parsera gubila cala druga forme i zostawiala naglowki bez
+// tresci ("Wojna francusko-pruska:"), a usuwanie szablonow link-interwiki
+// zostawialo wpisy bez podmiotu ("został prezydentem Gwatemali.").
+const HEADING_PREFIX = [
+  [/praw miejskich/i, 'Nadanie praw miejskich'],
+];
+
 function parseSection(wikitext) {
-  return wikitext.split('\n')
-    .filter(l => l.startsWith('*'))
-    .map(l => {
-      const m = l.match(/^\*\s*\[\[(\d{3,4})\]\]\s*[–-]\s*(.+)/);
-      if (!m) return null;
-      const text = stripWiki(m[2]);
-      if (!text) return null;
-      return { y: parseInt(m[1], 10), t: text };
-    })
-    .filter(Boolean);
+  const out = [];
+  let ctx = null; // { y, prefix }
+  let heading = '';
+  for (const line of wikitext.split('\n')) {
+    const h = line.match(/^=+\s*(.*?)\s*=+\s*$/);
+    if (h) { heading = stripWiki(h[1]); ctx = null; continue; }
+    const m = line.match(/^(\*+)\s*(.*)$/);
+    if (!m) continue;
+    const level = m[1].length;
+    const body = m[2];
+    if (level === 1) {
+      const y = body.match(/^\[\[(\d{3,4})\]\]\s*(?::\s*|[–-]\s*(.*))?$/);
+      if (!y) { ctx = null; continue; }
+      const year = parseInt(y[1], 10);
+      const rest = stripWiki(y[2] || '');
+      if (!rest || /:$/.test(rest)) { ctx = { y: year, prefix: rest.replace(/:$/, '').trim() }; continue; }
+      ctx = null;
+      let t = rest;
+      const hp = HEADING_PREFIX.find(([re]) => re.test(heading));
+      if (hp && t.length < 80 && !/\s(w|na|z|do|się)\s/.test(t)) t = hp[1] + ': ' + t;
+      out.push({ y: year, t });
+    } else if (ctx && level === 2) {
+      const child = stripWiki(body);
+      if (!child) continue;
+      out.push({ y: ctx.y, t: ctx.prefix ? ctx.prefix + ': ' + child : child });
+    }
+  }
+  return out;
+}
+
+// Wpisy, ktorych parser nie umial poprawnie zlozyc (brak podmiotu po
+// usunietym szablonie, naglowek bez tresci, urwane zdanie, niedomkniety
+// nawias, resztki markupu) - lepiej pominac niz pokazac uzytkownikowi.
+function isBroken(t) {
+  if (/^[a-ząćęłńóśźż]/.test(t)) return true;
+  if (/[:,;]\s*\.?$/.test(t)) return true;
+  if (/\[\[|\]\]|\{\{|\}\}/.test(t)) return true;
+  if ((t.match(/\(/g) || []).length !== (t.match(/\)/g) || []).length) return true;
+  return false;
 }
 
 async function fetchDay(pageName) {
@@ -75,7 +123,8 @@ async function fetchDay(pageName) {
   const events = [
     ...parseSection(j2?.parse?.wikitext?.['*'] || ''),
     ...parseSection(j3?.parse?.wikitext?.['*'] || ''),
-  ];
+  ].filter((e, i, arr) => arr.findIndex(x => x.y === e.y && x.t === e.t) === i)
+   .filter(e => !isBroken(e.t));
   return events;
 }
 
