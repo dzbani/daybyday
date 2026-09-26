@@ -445,7 +445,8 @@
     else if (age < 15.27) icon = '🌕';
     else if (age < 21.65) icon = '🌖';
     else if (age < 22.65) icon = '🌗';
-    else icon = '🌘';
+    else if (age < 29.03) icon = '🌘';
+    else icon = '🌑'; // ostatnie 0,5 dnia przed nowiem (okno ±0,5 dnia)
     const ZODIAC = ['Baran ♈', 'Byk ♉', 'Bliźnięta ♊', 'Rak ♋', 'Lew ♌', 'Panna ♍', 'Waga ♎', 'Skorpion ♏', 'Strzelec ♐', 'Koziorożec ♑', 'Wodnik ♒', 'Ryby ♓'];
     return { icon, sign: ZODIAC[Math.floor(moonLon / 30) % 12] };
   }

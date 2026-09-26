@@ -233,6 +233,27 @@ const ENTRY_FIXES = [
   // Fuad I zostal sultanem w 1917, krolem od 1922
   { file: '10-09.json', y: 1917, re: /Fu’ad I/, sub: ['został królem Egiptu i Sudanu', 'został sułtanem Egiptu (od 1922 roku król)'] },
   { file: '10-09.json', y: 1936, re: /Cinwaya/, sub: ['Jacka Cinwaya', 'Jacka Conwaya'] },
+  // West Tennessee State Normal School (dzis Uniwersytet Memphis) otwarto 10 IX 1912
+  { file: '10-10.json', y: 1912, re: /Uniwersytet Memphis/, drop: true },
+  // strefa A plebiscytu: 22 025 glosow = 59,04% za Austria
+  { file: '10-10.json', y: 1920, re: /Karyntii/, sub: ['59,14%', '59,04%'] },
+  // Krolestwo Kurdystanu istnialo od IX 1922; 10 X 1921 - jedynie deklaracja o rzadzie kurdyjskim
+  { file: '10-10.json', y: 1921, re: /Królestwo Kurdystanu/, drop: true },
+  // Czang Kaj-szek zostal przewodniczacym Rzadu Narodowego pierwszy raz 10 X 1928 (drugi raz 1943)
+  { file: '10-10.json', y: 1928, re: /Czang Kaj-szek/, sub: ['został po raz drugi przewodniczącym', 'został przewodniczącym'] },
+  { file: '10-10.json', y: 1943, re: /ochraniananych/, sub: ['ochraniananych', 'ochranianych'] },
+  // porozumienie procentowe - noc 9 X 1944; dotyczylo Rumunii, Grecji, Jugoslawii, Wegier i Bulgarii, nie Polski
+  { file: '10-10.json', y: 1944, re: /Stalin i Winston Churchill/, drop: true },
+  { file: '10-10.json', y: 1956, re: /ziszczeniu/, sub: ['ziszczeniu', 'zniszczeniu'] },
+  { file: '10-10.json', y: 1970, re: /Laporte/, sub: ['Kanadyjski wicepremier Pierre Laporte', 'Wicepremier prowincji Quebec Pierre Laporte'] },
+  // traktat o EurAsEC podpisano w Astanie
+  { file: '10-10.json', y: 2000, re: /Euroazjatycką Wspólnotę/, sub: ['W stolicy Kirgistanu Biszkeku założono', 'W Astanie, stolicy Kazachstanu, założono'] },
+  // Google oglosil zakup YouTube 9 X 2006
+  { file: '10-10.json', y: 2006, re: /YouTube/, drop: true },
+  // Antyle Holenderskie rozwiazano: Curacao i Sint Maarten - kraje autonomiczne, 3 wyspy - gminy specjalne Holandii
+  { file: '10-10.json', y: 2010, re: /Antyle Holenderskie/, replace: 'Rozwiązano Antyle Holenderskie: Curaçao i Sint Maarten stały się krajami autonomicznymi w składzie Królestwa Niderlandów, a Bonaire, Sint Eustatius i Saba – gminami specjalnymi Holandii.' },
+  // masakra przed gmachem Maspero w Kairze - 9 X 2011
+  { file: '10-10.json', y: 2011, re: /Koptów w Kairze/, drop: true },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {

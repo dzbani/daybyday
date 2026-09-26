@@ -2792,7 +2792,8 @@ function getMoonPhase(year,month,day){
   else if(age<15.27) {phase='Pełnia';           icon='🌕';}
   else if(age<21.65) {phase='Zanikający garb';  icon='🌖';}
   else if(age<22.65) {phase='Ostatnia kwadra';  icon='🌗';}
-  else               {phase='Zanikający sierp'; icon='🌘';}
+  else if(age<29.03) {phase='Zanikający sierp'; icon='🌘';}
+  else               {phase='Nów';              icon='🌑';} // ostatnie 0,5 dnia przed nowiem (okno ±0,5 dnia)
 
   // Znak zodiaku z prawdziwej długości ekliptycznej
   const MOON_SIGNS=['Baran ♈','Byk ♉','Bliźnięta ♊','Rak ♋','Lew ♌','Panna ♍','Waga ♎','Skorpion ♏','Strzelec ♐','Koziorożec ♑','Wodnik ♒','Ryby ♓'];
