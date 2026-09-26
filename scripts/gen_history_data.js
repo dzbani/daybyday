@@ -135,6 +135,10 @@ const ENTRY_FIXES = [
   { file: '10-02.json', y: 1990, re: /Iła-76/, drop: true },
   // UTA 1964 (Alcazaba k. Granady) to Douglas DC-6B, nie DC-8
   { file: '10-02.json', y: 1964, re: /DC-8/, sub: ['DC-8', 'DC-6'] },
+  // pogrzeb Jana Pawla I odbyl sie 4 X 1978 (jest w 10-04.json), nie 3 X
+  { file: '10-03.json', y: 1978, re: /pogrzebowe papieża Jana Pawła I/, drop: true },
+  // literowka zrodla: 'wojna-polsko-rosyjska'
+  { file: '10-03.json', y: 1654, re: /wojna-polsko-rosyjska/, sub: ['wojna-polsko-rosyjska', 'wojna polsko-rosyjska'] },
 ];
 function applyEntryFixes(file, events) {
   return events

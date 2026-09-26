@@ -47,8 +47,8 @@ const lists = { 'index.html': listOf('index.html', 'HOLIDAYS'), 'swieta-nietypow
 
 const MONTHS = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
 const ORD = [[/^pierwsz/, 1], [/^drug/, 2], [/^trzeci|^trzec/, 3], [/^czwart/, 4], [/^ostatni/, -1]];
-const WD = [[/^niedziel/, 0], [/^poniedzia/, 1], [/^wtorek/, 2], [/^środ/, 3], [/^czwartek/, 4], [/^piąt/, 5], [/^sobot/, 6]];
-const RULE_RE = /(pierwsz|drug|trzeci|trzec|czwart|ostatni)[\wąćęłńóśźż]*\s+(poniedziałek|poniedziałk|wtorek|środ|czwartek|piątek|sobot|niedziel)[\wąćęłńóśźż]*\s+([a-ząćęłńóśźż]+)/i;
+const WD = [[/^niedziel/, 0], [/^poniedzia/, 1], [/^wtorek/, 2], [/^środ/, 3], [/^czwartek/, 4], [/^piąt/, 5], [/^sobot/, 6], [/^weekend/, 6]];
+const RULE_RE = /(pierwsz|drug|trzeci|trzec|czwart|ostatni)[\wąćęłńóśźż]*\s+(poniedziałek|poniedziałk|wtorek|środ|czwartek|piątek|sobot|niedziel|weekend)[\wąćęłńóśźż]*\s+([a-ząćęłńóśźż]+)/i;
 function parseRule(txt) {
   const m = RULE_RE.exec(txt);
   if (!m) return null;
@@ -63,7 +63,7 @@ const isFixedDate = t => { const x = t.trim().split(/[  ]+/); return x.length =
 // albo dla innego kraju - zweryfikowane ręcznie 27.09.2026.
 const KNOWN_FIXED = new Set([
   'dzien-matki', 'dzien-ojca', 'dzien-handlowca', 'dzien-kolejarza', 'dzien-metalowca', 'dzien-architekta',
-  'dzien-drukarza', 'dzien-energetyka', 'dzien-pokoju', 'swiatowy-dzien-jablka', 'swiatowy-dzien-serca',
+  'dzien-drukarza', 'dzien-energetyka', 'dzien-pokoju', 'swiatowy-dzien-jablka', 'swiatowy-dzien-ptakow', 'swiatowy-dzien-serca',
   'miedzynarodowy-dzien-ograniczania-skutkow-katastrof', 'swiatowy-dzien-drzewa',
 ]);
 

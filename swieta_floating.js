@@ -102,6 +102,7 @@ const SWIETA_FLOATING=[
   {slug:"niebieski-poniedzialek",names:["Niebieski Poniedziałek"],m:1,wd:1,n:3},
   {slug:"swiatowy-dzien-drzemki-w-pracy",names:["Światowy Dzień Drzemki w Pracy"],m:3,wd:1,from:9},
   {slug:"swiatowy-dzien-pochp",names:["Światowy Dzień Przewlekłej Obturacyjnej Choroby Płuc", "Światowy Dzień Przewlekłej Obturacyjnej Choroby Płuc (POChP)"],m:11,wd:3,n:3},
+  {slug:"europejski-dzien-ptakow",names:["Europejski Dzień Ptaków"],m:10,wd:6,n:1},
 ];
 
 function sfEaster(y){
