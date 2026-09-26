@@ -194,6 +194,28 @@ const ENTRY_FIXES = [
   // 7 X 2001 - operacja Enduring Freedom (USA i Wielka Brytania), nie NATO
   { file: '10-07.json', y: 2001, re: /Afganistanie/, replace: 'Wojska amerykańskie i brytyjskie rozpoczęły naloty na Afganistan – początek operacji „Enduring Freedom” przeciwko talibom i Al-Kaidzie.' },
   { file: '10-07.json', y: 2023, re: /Herat/, sub: ['o magnitudzie 6,3 w skali Richtera', 'o magnitudzie 6,3'] },
+  { file: '10-08.json', y: 1500, re: /Brasław/, replace: 'Wielki książę litewski Aleksander Jagiellończyk nadał Brasławiowi przywilej na prawie magdeburskim.' },
+  { file: '10-08.json', y: 1931, re: /wybychu/, sub: ['wybychu', 'wybuchu'] },
+  // Metternich zostal ministrem spraw zagranicznych 8 X 1809, nie 1808
+  { file: '10-08.json', y: 1808, re: /Metternich/, drop: true },
+  // "Zagubiony Batalion" nie przelamal linii - odsiecz dotarla 7 X wieczorem, 194 zolnierzy wyszlo 8 X
+  { file: '10-08.json', y: 1918, re: /Zagubionego Batalionu/, replace: 'I wojna światowa: z okrążenia w Lesie Argońskim w północno-wschodniej Francji wyszło 194 żołnierzy amerykańskiego „Zagubionego Batalionu”, do którego poprzedniego wieczoru przebiła się odsiecz.' },
+  // pierwszy mecz na Rose Bowl - 28 X 1922
+  { file: '10-08.json', y: 1922, re: /Rose Bowl/, drop: true },
+  // Ajaccio wyzwolono 9 IX 1943
+  { file: '10-08.json', y: 1943, re: /Ajaccio/, drop: true },
+  // Uniwersytet Malaya zalozono 8 X 1949 w Singapurze (kampus w Kuala Lumpur od 1959)
+  { file: '10-08.json', y: 1949, re: /Uniwersytet Malaya/, sub: ['z siedzibą w Kuala Lumpur', 'z siedzibą w Singapurze'] },
+  // Kucan prezydentem niepodleglej Slowenii od 23 XII 1992; 8 X 1991 weszla w zycie niepodleglosc
+  { file: '10-08.json', y: 1991, re: /Kučan/, replace: 'Po zakończeniu trzymiesięcznego moratorium na mocy porozumienia z Brioni weszła w życie deklaracja niepodległości Słowenii.' },
+  { file: '10-08.json', y: 1997, re: /pierwszym sekretarzem Partii Pracy Korei/, sub: ['pierwszym sekretarzem', 'sekretarzem generalnym'] },
+  // 8 X 2001 powolano Biuro Bezpieczenstwa Krajowego; Departament (DHS) utworzono ustawa z 25 XI 2002
+  { file: '10-08.json', y: 2001, re: /Departamentu Bezpieczeństwa Krajowego/, replace: 'Prezydent USA George W. Bush powołał Biuro Bezpieczeństwa Krajowego (Office of Homeland Security) – poprzednika utworzonego w 2002 roku Departamentu Bezpieczeństwa Krajowego.' },
+  { file: '10-08.json', y: 2005, re: /Kaszmirze/, sub: ['o sile 7,6 stopnia w skali Richtera', 'o magnitudzie 7,6'] },
+  // Nasheed wygral druga ture 28 X 2008 (8 X - pierwsza tura)
+  { file: '10-08.json', y: 2008, re: /Nasheed/, drop: true },
+  // rezolucja o Pulaskim: Izba 7 X 2009, podpis prezydenta 6 XI 2009
+  { file: '10-08.json', y: 2009, re: /Pułaskiemu/, drop: true },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {
