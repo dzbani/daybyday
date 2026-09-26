@@ -216,6 +216,23 @@ const ENTRY_FIXES = [
   { file: '10-08.json', y: 2008, re: /Nasheed/, drop: true },
   // rezolucja o Pulaskim: Izba 7 X 2009, podpis prezydenta 6 XI 2009
   { file: '10-08.json', y: 2009, re: /Pułaskiemu/, drop: true },
+  // 9 X to Dzien Leifa Eriksona (upamietnienie z 1825 r.), a nie data ladowania w Winlandii
+  { file: '10-09.json', y: 1000, re: /Leif Eriksson/, drop: true },
+  // duplikat wpisu z czesci polskiej (Kreml 1610) + literowka
+  { file: '10-09.json', y: 1610, re: /chorągwie pod dowództwem hetmana/, drop: true },
+  { file: '10-09.json', y: 1635, re: /Roger/, sub: ['Władze Salem w kolonii Massachusetts skazały', 'Sąd Generalny kolonii Massachusetts skazał'] },
+  { file: '10-09.json', y: 1717, re: /Lleidzie/, sub: ['w holenderskiej Lleidzie', 'w katalońskiej Lleidzie'] },
+  // w 1760 Berlin zajeto i obciazono kontrybucja, nie spalono
+  { file: '10-09.json', y: 1760, re: /Berlin/, sub: ['zdobyły i spaliły Berlin', 'zajęły Berlin i nałożyły na miasto kontrybucję'] },
+  // Hobart zalozono 21 II 1804
+  { file: '10-09.json', y: 1804, re: /Hobart/, drop: true },
+  // niewolnictwo w Kostaryce (Zjednoczone Prowincje Ameryki Srodkowej) zniesiono 17 IV 1824
+  { file: '10-09.json', y: 1824, re: /Kostaryce/, drop: true },
+  // pomnik poswiecono 21 II 1885; 9 X 1888 udostepniono go zwiedzajacym
+  { file: '10-09.json', y: 1888, re: /Pomnik Waszyngtona/, replace: 'W Waszyngtonie udostępniono zwiedzającym Pomnik Waszyngtona (poświęcony w 1885 roku).' },
+  // Fuad I zostal sultanem w 1917, krolem od 1922
+  { file: '10-09.json', y: 1917, re: /Fu’ad I/, sub: ['został królem Egiptu i Sudanu', 'został sułtanem Egiptu (od 1922 roku król)'] },
+  { file: '10-09.json', y: 1936, re: /Cinwaya/, sub: ['Jacka Cinwaya', 'Jacka Conwaya'] },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {

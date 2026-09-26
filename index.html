@@ -2436,7 +2436,7 @@ const QUOTES=[  {t:'Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy
   {t:'Szaleństwo u jednostki jest rzadkie — ale u grup, partii, narodów jest regułą.',a:'Friedrich Nietzsche'},
   {t:'Jedyną drogą do odkrycia granic możliwości jest wyjście poza nie.',a:'Arthur C. Clarke'},
   {t:'Nauka bez religii jest kulawa, religia bez nauki jest ślepa.',a:'Albert Einstein'},
-  {t:'Wyobraźnia ogarnia wszystko, przygotowuje to, co w przyszłości będzie rzeczywistością.',a:'Albert Einstein'},
+  {t:'Wiedza jest ograniczona, a wyobraźnia ogarnia cały świat, pobudzając postęp i dając początek ewolucji.',a:'Albert Einstein'},
   {t:'Teraźniejszość jest ich, ale przyszłość, dla której naprawdę pracuję, jest moja.',a:'Nikola Tesla'},
   {t:'Muzyka jest skrótem uczucia.',a:'Lew Tołstoj'},
   {t:'Kolor jest miejscem, gdzie nasz mózg spotyka Wszechświat.',a:'Paul Cézanne'},
@@ -3356,8 +3356,9 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   // pasek postępu roku
   const startOfYear=new Date(y,0,1);
-  const totalDays=new Date(y,11,31)-startOfYear+86400000;
-  const elapsed=T-startOfYear+86400000;
+  // w pełnych dniach — różnica w ms jest latem o 1 h krótsza (czas letni), co zaniżało zaokrąglenie
+  const totalDays=Math.round((new Date(y,11,31)-startOfYear)/86400000)+1;
+  const elapsed=Math.round((T-startOfYear)/86400000)+1;
   const pct=(elapsed/totalDays*100).toFixed(1);
   document.getElementById('yearProgressBar').style.width=pct+'%';
   document.getElementById('yearProgressPct').textContent=pct+'%';
