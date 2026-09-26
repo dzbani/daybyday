@@ -123,13 +123,18 @@ const ENTRY_FIXES = [
   { file: '09-30.json', y: 1966, re: /Spandau/, replace: 'O północy z 30 września na 1 października, po odbyciu 20-letnich kar pozbawienia wolności, nazistowscy zbrodniarze wojenni Baldur von Schirach i Albert Speer opuścili więzienie Spandau w Berlinie.' },
   // Jodhpur lezy w Radzasthanie, w POLNOCNO-ZACHODNICH Indiach
   { file: '09-30.json', y: 2008, re: /Dźodhpur/, replace: 'W hinduistycznej świątyni w Dźodhpurze w północno-zachodnich Indiach 249 pielgrzymów zostało zadeptanych, a ponad 400 odniosło obrażenia.' },
+  // Mars 1 wystartowal 1 LISTOPADA 1962 (nie 1 X)
+  { file: '10-01.json', y: 1962, re: /Mars 1/, drop: true },
+  // w 1806 krolem Prus byl Fryderyk Wilhelm III (II zmarl w 1797); sub = podmiana fragmentu
+  { file: '10-01.json', y: 1806, re: /Fryderyk Wilhelm II /, sub: ['Fryderyk Wilhelm II ', 'Fryderyk Wilhelm III '] },
 ];
 function applyEntryFixes(file, events) {
   return events
     .map(e => {
       const fx = ENTRY_FIXES.find(f => f.file === file && f.y === e.y && f.re.test(e.t));
       if (!fx) return e;
-      return fx.drop ? null : { ...e, t: fx.replace };
+      if (fx.drop) return null;
+      return { ...e, t: fx.sub ? e.t.replace(fx.sub[0], fx.sub[1]) : fx.replace };
     })
     .filter(Boolean);
 }
