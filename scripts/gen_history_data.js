@@ -113,6 +113,16 @@ const ENTRY_FIXES = [
   { file: '09-29.json', y: 1969, re: /ARPANET/, drop: true },
   // w 1903 Prusy wprowadzily prawo jazdy z egzaminem, ale nie jako pierwszy kraj (Nowy Jork w 1901)
   { file: '09-29.json', y: 1903, re: /pierwszym kraju na świecie/, replace: 'W Prusach wprowadzono obowiązek posiadania prawa jazdy, poprzedzony egzaminem z obsługi pojazdu.' },
+  // Midway: formalne objecie w posiadanie przez kpt. Reynoldsa 28.08.1867, nie 30 IX
+  { file: '09-30.json', y: 1867, re: /Midway/, drop: true },
+  // druk Biblii Gutenberga trwal 1452-1455; data 30 IX 1452 opiera sie na jednym zrodle popularnym
+  { file: '09-30.json', y: 1452, re: /Gutenberg/, drop: true },
+  // en.wikipedia: ok. 300 utonelo, wrak na mieliznie kolo Terceiry (liczba 333 bez potwierdzenia)
+  { file: '09-30.json', y: 1651, re: /Constant Reformation/, replace: 'Na mieliźnie u wybrzeży Terceiry na Azorach rozbił się angielski okręt „Constant Reformation”, w wyniku czego utonęło ok. 300 członków załogi.' },
+  // uwolnienie o polnocy 30 IX/1 X 1966 (wyrok wygasl o 24:00 30 IX)
+  { file: '09-30.json', y: 1966, re: /Spandau/, replace: 'O północy z 30 września na 1 października, po odbyciu 20-letnich kar pozbawienia wolności, nazistowscy zbrodniarze wojenni Baldur von Schirach i Albert Speer opuścili więzienie Spandau w Berlinie.' },
+  // Jodhpur lezy w Radzasthanie, w POLNOCNO-ZACHODNICH Indiach
+  { file: '09-30.json', y: 2008, re: /Dźodhpur/, replace: 'W hinduistycznej świątyni w Dźodhpurze w północno-zachodnich Indiach 249 pielgrzymów zostało zadeptanych, a ponad 400 odniosło obrażenia.' },
 ];
 function applyEntryFixes(file, events) {
   return events
