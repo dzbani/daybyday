@@ -135,7 +135,7 @@ const ENTRY_FIXES = [
   { file: '10-02.json', y: 1990, re: /Iła-76/, drop: true },
   // UTA 1964 (Alcazaba k. Granady) to Douglas DC-6B, nie DC-8
   { file: '10-02.json', y: 1964, re: /DC-8/, sub: ['DC-8', 'DC-6'] },
-];
+];
 function applyEntryFixes(file, events) {
   return events
     .map(e => {
