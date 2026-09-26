@@ -2106,6 +2106,38 @@ function easterDateFor(y){
   const mm=Math.floor((a+11*h+22*l)/451);
   return new Date(y,Math.floor((h+l-7*mm+114)/31)-1,((h+l-7*mm+114)%31)+1);
 }
+// ── Równonoce i przesilenia — algorytm Meeusa (Astronomical Algorithms, rozdz. 27) ──
+// Data astronomicznego początku pory roku liczona dla danego roku, NIE na sztywno (21 III /
+// 21 VI / 22 XII to data z jednego roku: przesilenie zimowe 2026 to 21 XII, letnie 2028 to 20 VI).
+// k: 0=równonoc wiosenna, 1=przesilenie letnie, 2=równonoc jesienna, 3=przesilenie zimowe.
+// Zwraca datę kalendarzową w strefie Europe/Warsaw (dokładność rzędu minut; ΔT≈69 s odjęte).
+const SEASON_TERMS=[[485,324.96,1934.136],[203,337.23,32964.467],[199,342.08,20.186],[182,27.85,445267.112],[156,73.14,45036.886],[136,171.52,22518.443],[77,222.54,65928.934],[74,296.72,3034.906],[70,243.58,9037.513],[58,119.81,33718.147],[52,297.17,150.678],[50,21.02,2281.226],[45,247.54,29929.562],[44,325.15,31555.956],[29,60.93,4443.417],[18,155.12,67555.328],[17,288.79,4562.452],[16,198.04,62894.029],[14,199.76,31436.921],[12,95.39,14577.848],[12,287.11,31931.756],[12,320.81,34777.259],[9,227.73,1222.114],[8,15.45,16859.074]];
+function seasonInstantFor(y,k){
+  const Y=(y-2000)/1000;
+  const c=[[2451623.80984,365242.37404,0.05169,-0.00411,-0.00057],
+           [2451716.56767,365241.62603,0.00325,0.00888,-0.00030],
+           [2451810.21715,365242.01767,-0.11575,0.00337,0.00078],
+           [2451900.05952,365242.74049,-0.06223,-0.00823,0.00032]][k];
+  const jde0=c[0]+c[1]*Y+c[2]*Y*Y+c[3]*Y*Y*Y+c[4]*Y*Y*Y*Y;
+  const T=(jde0-2451545)/36525,rad=Math.PI/180;
+  const W=35999.373*T-2.47;
+  const dl=1+0.0334*Math.cos(W*rad)+0.0007*Math.cos(2*W*rad);
+  let S=0;
+  for(const [A,B,C] of SEASON_TERMS)S+=A*Math.cos((B+C*T)*rad);
+  const jde=jde0+0.00001*S/dl;
+  return new Date((jde-2440587.5)*86400000-69000); // JDE → UTC (ΔT≈69 s)
+}
+function seasonDateFor(y,k){
+  const inst=seasonInstantFor(y,k);
+  try{
+    const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Warsaw',day:'numeric',month:'numeric'}).formatToParts(inst);
+    return [+p.find(x=>x.type==='day').value,+p.find(x=>x.type==='month').value];
+  }catch(e){
+    // brak Intl/strefy: czas środkowoeuropejski (UTC+1 zimą, +2 latem)
+    const dt=new Date(inst.getTime()+(k===1||k===2?2:1)*3600000);
+    return [dt.getUTCDate(),dt.getUTCMonth()+1];
+  }
+}
 // Pełna lista dni ustawowo wolnych od pracy dla danego roku jako pary [dzień,miesiąc] (stałe +
 // ruchome liczone od Wielkanocy). Wigilia (24 XII) wolna od 2025 r. (Dz.U. 2024 poz. 1965).
 function polishHolidayDates(y){
@@ -3150,8 +3182,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
     [...mdFromEaster(49),'Zielone Świątki'],
     [...mdFromEaster(60),'Boże Ciało'],
   ];
-  // Tłusty Czwartek = 52 dni przed Wielkanocą (nie na sztywno 12 II — to data z 2026)
-  const NAMED_DAYS=[[...mdFromEaster(-52),'Tłusty Czwartek'],[14,2,'Walentynki'],[8,3,'Dzień Kobiet'],[21,3,'Dzień Wiosny'],[26,5,'Dzień Matki'],[1,6,'Dzień Dziecka'],[23,6,'Dzień Ojca'],[21,6,'Przesilenie letnie'],[31,10,'Halloween'],[2,11,'Dzień Zaduszny'],[30,11,'Andrzejki'],[6,12,'Mikołajki'],[22,12,'Przesilenie zimowe'],[24,12,'Wigilia'],[31,12,'Sylwester']];
+  // Tłusty Czwartek = 52 dni przed Wielkanocą (nie na sztywno 12 II — to data z 2026); równonoc/przesilenia z seasonDateFor(y,…) (Meeus), nie na sztywno
+  const NAMED_DAYS=[[...mdFromEaster(-52),'Tłusty Czwartek'],[14,2,'Walentynki'],[8,3,'Dzień Kobiet'],[...seasonDateFor(y,0),'Dzień Wiosny'],[26,5,'Dzień Matki'],[1,6,'Dzień Dziecka'],[23,6,'Dzień Ojca'],[...seasonDateFor(y,1),'Przesilenie letnie'],[31,10,'Halloween'],[2,11,'Dzień Zaduszny'],[30,11,'Andrzejki'],[6,12,'Mikołajki'],[...seasonDateFor(y,3),'Przesilenie zimowe'],[24,12,'Wigilia'],[31,12,'Sylwester']];
   const EVENT_SLUG={
     'Nowy Rok':'nowy-rok',
     'Trzech Króli':'trzech-kroli',
