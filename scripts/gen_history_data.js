@@ -254,6 +254,17 @@ const ENTRY_FIXES = [
   { file: '10-10.json', y: 2010, re: /Antyle Holenderskie/, replace: 'Rozwiązano Antyle Holenderskie: Curaçao i Sint Maarten stały się krajami autonomicznymi w składzie Królestwa Niderlandów, a Bonaire, Sint Eustatius i Saba – gminami specjalnymi Holandii.' },
   // masakra przed gmachem Maspero w Kairze - 9 X 2011
   { file: '10-10.json', y: 2011, re: /Koptów w Kairze/, drop: true },
+  // gierkowke oficjalnie otwarto 11 X 1976 w Czestochowie (jest w 10-11.json)
+  { file: '10-08.json', y: 1976, re: /gierkówkę/, drop: true },
+  // PZLA nie byl pierwszym polskim stowarzyszeniem sportowym (Sokol 1867 i in.)
+  { file: '10-11.json', y: 1919, re: /Lekkiej Atletyki/, replace: 'Założono Polski Związek Lekkiej Atletyki.' },
+  // w 1865 niewolnictwo na Jamajce nie istnialo (zniesione 1834/1838) - powstanie czarnych chlopow
+  { file: '10-11.json', y: 1865, re: /Morant Bay/, sub: ['wybuchło powstanie niewolników', 'wybuchło powstanie czarnoskórych chłopów przeciwko brytyjskim władzom kolonialnym'] },
+  { file: '10-11.json', y: 1917, re: /operacja operacja/, sub: ['operacja operacja', 'operacja'] },
+  // sprawstwo saudyjskie w zabojstwie al-Hamdiego jest domniemane, nie ustalone
+  { file: '10-11.json', y: 1977, re: /al-Hamdi/, replace: 'W Sanie został zamordowany prezydent Jemenu Północnego Ibrahim al-Hamdi.' },
+  // Abd Allah an-Nusur zostal premierem Jordanii 10 X 2012, nie 11 X 2011
+  { file: '10-11.json', y: 2011, re: /an-Nusur/, drop: true },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {

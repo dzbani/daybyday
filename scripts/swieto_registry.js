@@ -9,6 +9,7 @@ const path = require('path');
 function scanSwietoFolders(ROOT) {
   const dir = path.join(ROOT, 'swieto');
   const slugs = [];
+  const noindex = new Set(); // strony-przekierowania (stuby) — bez nich w sitemapie
   const nameToSlug = {};
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
@@ -16,6 +17,7 @@ function scanSwietoFolders(ROOT) {
     if (!fs.existsSync(idx)) continue;
     slugs.push(entry.name);
     const content = fs.readFileSync(idx, 'utf8');
+    if (/<meta name="robots" content="noindex"/.test(content)) noindex.add(entry.name);
     const m = content.match(/<meta property="og:title" content="([\s\S]*?) \| DaybyDay">/);
     if (m) {
       const name = m[1].replace(/&quot;/g, '"').replace(/&amp;/g, '&');
@@ -23,7 +25,7 @@ function scanSwietoFolders(ROOT) {
     }
   }
   slugs.sort();
-  return { slugs, nameToSlug };
+  return { slugs, nameToSlug, noindex };
 }
 
 // aliasy: nazwy alternatywne tego samego realnego wydarzenia, ktore nie maja
@@ -40,6 +42,8 @@ const NAME_ALIASES = {
   'Dzień Sapera': 'dzien-sapera',
   'Dzień Tolerancji': 'dzien-tolerancji',
   'Dzień Parówkożercy': 'dzien-parowki',
+  // 11 X: to samo swieto ONZ (rez. 66/170) co 'Miedzynarodowy Dzien Dziewczat' — audyt 11.10.2026
+  'Dzień Dziewczyny': 'dzien-dziewczat',
 
   // Audyt 2026-08-04: 77 dodatkowych aliasow znalezionych przekrojowym porownaniem
   // HOLIDAYS_DB vs HOLIDAYS (nietypowe) po nazwie+dacie (nie tylko dokladnym stringu) —
@@ -125,7 +129,7 @@ const NAME_ALIASES = {
 };
 
 function regenerateRegistry(ROOT, extraAliases) {
-  const { slugs, nameToSlug } = scanSwietoFolders(ROOT);
+  const { slugs, nameToSlug, noindex } = scanSwietoFolders(ROOT);
   const aliases = Object.assign({}, NAME_ALIASES, extraAliases || {});
   for (const [name, slug] of Object.entries(aliases)) {
     if (slugs.includes(slug)) nameToSlug[name] = slug;
@@ -137,7 +141,9 @@ function regenerateRegistry(ROOT, extraAliases) {
   const namesContent = `// Mapa nazwa swieta -> slug (do linkowania z index.html / swieta-nietypowe.html)\nconst SWIETO_NAME_TO_SLUG=${JSON.stringify(nameToSlug)};\n`;
   fs.writeFileSync(path.join(ROOT, 'swieto_names.js'), namesContent, 'utf8');
 
-  const urls = slugs.map(s => `  <url>\n    <loc>https://daybyday.today/swieto/${s}/</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.6</priority>\n  </url>`).join('\n');
+  // strony z noindex (przekierowania ze starych/zdublowanych adresow) nie naleza do sitemapy —
+  // Google zglaszal je w GSC jako 'wykluczone przez noindex' (dzien-deskorolki-21-6, 2026-09)
+  const urls = slugs.filter(s => !noindex.has(s)).map(s => `  <url>\n    <loc>https://daybyday.today/swieto/${s}/</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.6</priority>\n  </url>`).join('\n');
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, 'sitemap-swieto.xml'), sitemap, 'utf8');
 

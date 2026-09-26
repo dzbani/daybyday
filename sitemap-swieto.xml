@@ -516,11 +516,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/dzien-deskorolki-21-6/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/dzien-diagnosty-laboratoryjnego/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -677,11 +672,6 @@
   </url>
   <url>
     <loc>https://daybyday.today/swieto/dzien-dziewczat/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://daybyday.today/swieto/dzien-dziewczyny/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
