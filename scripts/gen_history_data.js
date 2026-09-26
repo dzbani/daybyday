@@ -127,7 +127,15 @@ const ENTRY_FIXES = [
   { file: '10-01.json', y: 1962, re: /Mars 1/, drop: true },
   // w 1806 krolem Prus byl Fryderyk Wilhelm III (II zmarl w 1797); sub = podmiana fragmentu
   { file: '10-01.json', y: 1806, re: /Fryderyk Wilhelm II /, sub: ['Fryderyk Wilhelm II ', 'Fryderyk Wilhelm III '] },
-];
+  // Radio Slowackie: pierwsza transmisja 3.08.1926, regularna emisja od 1.10.1926 - nie 2 X
+  { file: '10-02.json', y: 1926, re: /Radio Słowackie/, drop: true },
+  // BEA: pierwsza na swiecie regularna linia helikopterowa Cardiff-Wrexham-Liverpool ruszyla 1.06.1950, nie 2.10.1951
+  { file: '10-02.json', y: 1951, re: /British European Airways/, drop: true },
+  // brak potwierdzenia w zrodlach (rzekoma katastrofa Iła-76 Iraqi Airways w Kuwejcie 2.10.1990)
+  { file: '10-02.json', y: 1990, re: /Iła-76/, drop: true },
+  // UTA 1964 (Alcazaba k. Granady) to Douglas DC-6B, nie DC-8
+  { file: '10-02.json', y: 1964, re: /DC-8/, sub: ['DC-8', 'DC-6'] },
+];
 function applyEntryFixes(file, events) {
   return events
     .map(e => {
