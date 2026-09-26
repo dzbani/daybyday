@@ -124,7 +124,9 @@ async function fetchDay(pageName) {
     ...parseSection(j2?.parse?.wikitext?.['*'] || ''),
     ...parseSection(j3?.parse?.wikitext?.['*'] || ''),
   ].filter((e, i, arr) => arr.findIndex(x => x.y === e.y && x.t === e.t) === i)
-   .filter(e => !isBroken(e.t));
+   .filter(e => !isBroken(e.t))
+   // wpisy Wikipedii bez kropki na koncu (np. "Zakonczenie powstania w Bulgarii") - dopisz
+   .map(e => (/[.!?”"’)»…]$/.test(e.t) ? e : { ...e, t: e.t + "." }));
   return events;
 }
 
