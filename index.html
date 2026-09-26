@@ -476,7 +476,7 @@
         <a href="kalendarz-liturgiczny.html" class="mini-nav-link"><span class="mini-nav-label">Kalendarz liturgiczny<span class="mini-nav-sub">Święta kościelne i czytania</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="niedziele-handlowe.html" class="mini-nav-link"><span class="mini-nav-label">Niedziele handlowe<span class="mini-nav-sub">Kiedy sklepy są otwarte</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="dlugie-weekendy.html" class="mini-nav-link"><span class="mini-nav-label">Długie weekendy<span class="mini-nav-sub">Kalendarz i dni urlopu</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
-        <a href="wymiar-czasu-pracy.html" class="mini-nav-link"><span class="mini-nav-label">Wymiar czasu pracy<span class="mini-nav-sub">Dni robocze i godziny na 2026</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="wymiar-czasu-pracy.html" class="mini-nav-link"><span class="mini-nav-label">Wymiar czasu pracy<span class="mini-nav-sub">Dni robocze i godziny 2026–2029</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="fazy-ksiezyca.html" class="mini-nav-link"><span class="mini-nav-label">Fazy księżyca<span class="mini-nav-sub">Nów, pełnia i kwadry</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="dni-plodne.html" class="mini-nav-link"><span class="mini-nav-label">Dni płodne<span class="mini-nav-sub">Kalkulator cyklu i owulacji</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="ferie-zimowe.html" class="mini-nav-link"><span class="mini-nav-label">Ferie zimowe<span class="mini-nav-sub">Terminy dla wszystkich województw</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -2385,7 +2385,7 @@ const QUOTES=[  {t:'Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy
   {t:'Możliwości nie znikają — przechodzą do kogoś innego.',a:'Andy Rooney'},
   {t:'Nie ma czegoś takiego jak porażka — jest tylko informacja zwrotna.',a:'Robert Allen'},
   {t:'Wszyscy myślą o zmianie świata, nikt nie myśli o zmianie siebie.',a:'Lew Tołstoj'},
-  {t:'Jeśli chcesz być szczęśliwy — bądź.',a:'Lew Tołstoj'},
+  {t:'Jeśli chcesz być szczęśliwy — bądź.',a:'Koźma Prutkow'},
   {t:'Każda szczęśliwa rodzina jest do siebie podobna, każda nieszczęśliwa jest nieszczęśliwa na swój sposób.',a:'Lew Tołstoj'},
   {t:'Człowiek może żyć chlebem samym — ale nie tylko chlebem.',a:'Biblia (Mt 4,4)'},
   {t:'Kochać to znaczy widzieć człowieka takim, jakim go Bóg zamierzył.',a:'Fiodor Dostojewski'},
@@ -3072,7 +3072,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   const meta=document.createElement('div');
   meta.className='proverb-meta';
-  meta.textContent='Tradycja ludowa · '+MONTH_GEN[m];
+  meta.textContent='Tradycja ludowa · '+(PROVERBS_DAILY[provKey]?d+' '+MONTH_GEN[m]:MONTH_NOM[m].toLowerCase());
   pl.appendChild(meta);
 
   // ── Mini-kalendarz ────────────────────────────────────────────
