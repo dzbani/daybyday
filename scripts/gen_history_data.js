@@ -180,6 +180,20 @@ const ENTRY_FIXES = [
   { file: '10-06.json', y: 1969, re: /Weather Underground/, sub: ['organizację anarchistyczną Weather Underground', 'skrajnie lewicową organizację Weather Underground'] },
   // Na Klang (prow. Nong Bua Lamphu) lezy w polnocno-wschodniej Tajlandii (Isan)
   { file: '10-06.json', y: 2022, re: /Na Klang/, sub: ['w północnej Tajlandii', 'w północno-wschodniej Tajlandii'] },
+  // Bund: dwa wpisy o tym samym zjezdzie zalozycielskim (7-9 X 1897); zostaje jeden, bez "miedzynarodowy"
+  { file: '10-07.json', y: 1897, re: /zjazd założycielski Bundu/, drop: true },
+  { file: '10-07.json', y: 1897, re: /międzynarodowy żydowski związek/, sub: ['międzynarodowy żydowski związek robotniczy Bund', 'żydowski związek robotniczy Bund (Powszechny Żydowski Związek Robotniczy na Litwie, w Polsce i Rosji)'] },
+  // bitwa w zatoce Koge: 4 X 1710, nierozstrzygnieta
+  { file: '10-07.json', y: 1710, re: /Køge/, drop: true },
+  // Highland Park lezy w stanie Michigan (przedmiescie Detroit)
+  { file: '10-07.json', y: 1913, re: /Highland Park/, sub: ['w stanie Illinois', 'w stanie Michigan'] },
+  // Henry Gurney zginal w zasadzce 6 X 1951
+  { file: '10-07.json', y: 1951, re: /Gurney/, drop: true },
+  // patent USA 2,612,994 (7 X 1952): Norman Joseph Woodland i Bernard Silver
+  { file: '10-07.json', y: 1952, re: /kod kreskowy/, replace: 'Norman Joseph Woodland i Bernard Silver otrzymali amerykański patent na kod kreskowy.' },
+  // 7 X 2001 - operacja Enduring Freedom (USA i Wielka Brytania), nie NATO
+  { file: '10-07.json', y: 2001, re: /Afganistanie/, replace: 'Wojska amerykańskie i brytyjskie rozpoczęły naloty na Afganistan – początek operacji „Enduring Freedom” przeciwko talibom i Al-Kaidzie.' },
+  { file: '10-07.json', y: 2023, re: /Herat/, sub: ['o magnitudzie 6,3 w skali Richtera', 'o magnitudzie 6,3'] },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {
