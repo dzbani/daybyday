@@ -139,6 +139,20 @@ const ENTRY_FIXES = [
   { file: '10-03.json', y: 1978, re: /pogrzebowe papieża Jana Pawła I/, drop: true },
   // literowka zrodla: 'wojna-polsko-rosyjska'
   { file: '10-03.json', y: 1654, re: /wojna-polsko-rosyjska/, sub: ['wojna-polsko-rosyjska', 'wojna polsko-rosyjska'] },
+  // Friedrichstadt 1850: oblegaly wojska szlezwicko-holsztynskie (Prusy wycofaly sie z wojny w 1850)
+  { file: '10-04.json', y: 1850, re: /Friedrichstadt/, sub: ['nad pruskimi', 'nad szlezwicko-holsztyńskimi'] },
+  // Manuel II opuscil Portugalie 5 X 1910 (Ericeira), republike proklamowano 5 X - nie 4 X
+  { file: '10-04.json', y: 1910, re: /Manuel II/, drop: true },
+  // Dinosaur National Monument lezy na granicy Kolorado i Utah (nie Arizony ani Wyoming)
+  { file: '10-04.json', y: 1915, re: /Dinosaur National Monument/, sub: ['na granicy stanów Kolorado, Arizona, Wyoming i Utah', 'na granicy stanów Kolorado i Utah'] },
+  // rzezbiarz Mount Rushmore znany jako Gutzon Borglum; ok. 400 robotnikow to laczna liczba z lat 1927-1941
+  { file: '10-04.json', y: 1927, re: /Borglum/, replace: 'Gutzon Borglum rozpoczął wykuwanie głów czterech prezydentów USA na górze Mount Rushmore w Dakocie Południowej; przez 14 lat prac pracowało przy nim ok. 400 robotników.' },
+  // kampania na Wyspach Salomona trwala do 1945 (Bougainville); 4 X 1943 nic takiego nie nastapilo
+  { file: '10-04.json', y: 1943, re: /Wyspy Salomona/, drop: true },
+  // katastrofa kolejowa pod Saltillo byla 5/6 X 1972, nie 4 X
+  { file: '10-04.json', y: 1972, re: /Saltillo/, drop: true },
+  // Protokol madrycki to Protokol o ochronie srodowiska (cala Antarktyka rezerwatem), nie "obszar szczegolnie chroniony"
+  { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {
   return events

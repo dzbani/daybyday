@@ -3544,7 +3544,11 @@ function jumpToDate(val){
   function getHolidays(y){
     return polishHolidayDates(y).map(([dd,mm])=>{const dt=new Date(y,mm-1,dd);dt.setHours(0,0,0,0);return dt.getTime();});
   }
-  const today=new Date(); today.setHours(0,0,0,0);
+  // Liczone od oglądanego dnia (?d=&m=&y=), jak pozostałe karty — wcześniej zawsze od realnego "dziś"
+  const params=new URLSearchParams(location.search);
+  const now=new Date(); now.setHours(0,0,0,0);
+  const today=params.has('d')?new Date(parseInt(params.get('y')||now.getFullYear()),parseInt(params.get('m'))-1,parseInt(params.get('d'))):new Date(now);
+  today.setHours(0,0,0,0);
   const y=today.getFullYear();
   const hset=new Set([...getHolidays(y),...getHolidays(y+1)]);
   function isOff(d){const dow=d.getDay();return dow===0||dow===6||hset.has(d.getTime());}
