@@ -411,6 +411,19 @@
     });
   }
 
+  // Domyślnie otwarta karta = pierwszy rok szkolny, którego ferie jeszcze się nie skończyły
+  // (ostatni dzień ostatniego turnusu). Wcześniej na sztywno 2026/2027 — po 28 II 2027 strona
+  // dalej pokazywałaby jako "bieżące" ferie, które już minęły. Kolejny rok (2028/2029) dopisać,
+  // gdy MEN ogłosi terminy (najpóźniej do końca czerwca 2027) — dodać wpis tu, przycisk i panel.
+  (function(){
+    var ends = [["2026", new Date(2026, 2, 1)], ["2027", new Date(2027, 1, 28)], ["2028", new Date(2028, 1, 27)]];
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var idx = ends.length - 1;
+    for (var i = 0; i < ends.length; i++) { if (today <= ends[i][1]) { idx = i; break; } }
+    var btns = document.querySelectorAll(".year-tab");
+    if (btns[idx]) showYear(ends[idx][0], btns[idx]);
+  })();
+
   // Koniec roku szkolnego liczony algorytmicznie (najblizszy piatek po 20 czerwca),
   // ten sam wzorzec co w kalendarz-szkolny.html — dziala bez recznej aktualizacji
   // w kolejnych latach, patrz CLAUDE.md ("zamrozenie po dacie granicznej").
