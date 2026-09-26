@@ -257,7 +257,7 @@ const IMIENINY_TRAD={
 "9-10":["Piotr","Łukasz","Mikołaj","Leon","Aldona","Klemens","Leona","Poliana","Kandyda","Agapiusz","Mścibor","Nimfodora","Polianna","Pulcheria"],
 "9-11":["Piotr","Jan","Jacek","Feliks","Dagna","Prot","Ademar","Naczęsław"],
 "9-12":["Maria","Maja","Amadeusz","Sylwina","Sylwin","Cyrus","Gwidon","Teodul"],
-"9-13":["Filip","Aleksander","Aureliusz","Amat","Litoriusz","Morzysław"],
+"9-13":["Filip","Aleksander","Eugenia","Aureliusz","Amat","Litoriusz","Morzysław"],
 "9-14":["Piotr","Szymon","Bernard","Siemomysł"],
 "9-15":["Maria","Kamil","Albin","Ekhard","Budzigniew"],
 "9-16":["Jakub","Franciszek","Wiktor","Edyta","Kamila","Eugenia","Kornel","Cyprian","Eufemia","Edda","Sebastiana","Sędzisław","Antym","Korneli","Korneliusz"],
