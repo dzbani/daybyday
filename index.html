@@ -530,6 +530,13 @@
 <script src="swieta_floating.js"></script>
 <script src="przyslowia_data.js"></script>
 <script>
+// Awaryjne puste dane, gdy któryś plik się nie wczytał (zerwane połączenie, blokada) —
+// bez tego ReferenceError w init() wyłączał całą stronę (astronomia, cytat, liczniki). 10.10.2026
+if(typeof PROVERBS==='undefined') window.PROVERBS={};
+if(typeof SWIETA_DATA==='undefined'){window.SWIETA_DATA=[];window.SWIETA_DATA_STATIC=[];window.SWIETA_DATA_MOVABLE=[];window.computeMovableSwieta=function(){return [];};}
+if(typeof redateFloating==='undefined') window.redateFloating=function(list){return list;};
+</script>
+<script>
 function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,''); }
 function swietoHref(slug) { return (typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:`swieto.html?id=${slug}`; }
 // ── Dane: imieniny ────────────────────────────────────────────
@@ -2560,6 +2567,7 @@ const PROVERBS_MONTH_POOL = (function(){
     12:['Pasuje jak kwiatek do kożucha.','Jedna jaskółka wiosny nie czyni.'],
   };
   Object.entries(extra).forEach(([mo, arr]) => {
+    if (!pool[mo]) pool[mo] = [];
     arr.forEach(p => { if (!pool[mo].includes(p)) pool[mo].push(p); });
   });
   return pool;
