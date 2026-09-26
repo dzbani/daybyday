@@ -1,0 +1,8973 @@
+{
+ "_opis": "Migawka tradycyjnych kalendarzy imienin (pobrane 2026-10-03): pl.wikipedia.org \"Imieniny – <miesiąc>\" oraz imieniny.rky.pl/miesiac-N.html. Wejście dla scripts/gen_imieniny_trad.js.",
+ "dni": {
+  "1-1": {
+   "wikipedia": [
+    "Mieczysław",
+    "Mieszko",
+    "Maria",
+    "Mieczysława",
+    "Masław",
+    "Odys",
+    "Odyseusz",
+    "Wilhelm",
+    "Piotr"
+   ],
+   "rky": [
+    "Maria",
+    "Masław",
+    "Mieczysław",
+    "Mieczysława",
+    "Mieszko",
+    "Odys",
+    "Odyseusz",
+    "Piotr",
+    "Wilhelm"
+   ]
+  },
+  "1-2": {
+   "wikipedia": [
+    "Abel",
+    "Bazyli",
+    "Narcyz",
+    "Aspazja",
+    "Grzegorz",
+    "Makary",
+    "Odylon",
+    "Telesfor",
+    "Jakubina",
+    "Telesfora",
+    "Achacy",
+    "Achacjusz"
+   ],
+   "rky": [
+    "Abel",
+    "Achacjusz",
+    "Achacy",
+    "Aspazja",
+    "Bazyli",
+    "Grzegorz",
+    "Hortulana",
+    "Izydor",
+    "Jakubina",
+    "Makary",
+    "Narcyz",
+    "Odylon",
+    "Sylwester",
+    "Sylwestra",
+    "Telesfor",
+    "Telesfora"
+   ]
+  },
+  "1-3": {
+   "wikipedia": [
+    "Arleta",
+    "Anter",
+    "Daniel",
+    "Danuta",
+    "Enoch",
+    "Meliton",
+    "Teonas",
+    "Genowefa",
+    "Teona",
+    "Piotr"
+   ],
+   "rky": [
+    "Anter",
+    "Arleta",
+    "Daniel",
+    "Danuta",
+    "Enoch",
+    "Genowefa",
+    "Meliton",
+    "Piotr",
+    "Teona",
+    "Teonas"
+   ]
+  },
+  "1-4": {
+   "wikipedia": [
+    "Aniela",
+    "Angelika",
+    "Benedykta",
+    "Dobromir",
+    "Eugeniusz",
+    "Krystiana",
+    "Grzegorz",
+    "Fereol",
+    "Tytus",
+    "Rygobert",
+    "Suligost"
+   ],
+   "rky": [
+    "Angelika",
+    "Aniela",
+    "Benedykta",
+    "Dobromir",
+    "Eugeniusz",
+    "Fereol",
+    "Grzegorz",
+    "Krystiana",
+    "Rygobert",
+    "Suligost",
+    "Tytus"
+   ]
+  },
+  "1-5": {
+   "wikipedia": [
+    "Amata",
+    "Emiliana",
+    "Edward",
+    "Szymon",
+    "Piotr"
+   ],
+   "rky": [
+    "Amata",
+    "Edward",
+    "Emilian",
+    "Emiliusz",
+    "Piotr",
+    "Szymon (Symeon)"
+   ]
+  },
+  "1-6": {
+   "wikipedia": [
+    "Andrzej",
+    "Jędrzej",
+    "Baltazar",
+    "Epifania",
+    "Kacper",
+    "Kasper",
+    "Melchior",
+    "Norman",
+    "Miłowit",
+    "Miłwit",
+    "Wiltruda"
+   ],
+   "rky": [
+    "Andrzej",
+    "Baltazar",
+    "Epifania",
+    "Fotyn",
+    "Fotyna",
+    "Jędrzej",
+    "Kacper",
+    "Melchior",
+    "Miłowit",
+    "Miłwit",
+    "Norman"
+   ]
+  },
+  "1-7": {
+   "wikipedia": [
+    "Chociesław",
+    "Julian",
+    "Lucjan",
+    "Kryspin",
+    "Rajmund",
+    "Walenty",
+    "Rajnold",
+    "Wirginia"
+   ],
+   "rky": [
+    "Chociesław (Chocsław)",
+    "Izydor",
+    "Julian",
+    "Kryspin",
+    "Lucjan",
+    "Rajmund",
+    "Rajnold",
+    "Walenty"
+   ]
+  },
+  "1-8": {
+   "wikipedia": [
+    "Mścisław",
+    "Seweryn",
+    "Teofil",
+    "Mroczysław"
+   ],
+   "rky": [
+    "Mroczysław",
+    "Mścisław",
+    "Seweryn",
+    "Teofil"
+   ]
+  },
+  "1-9": {
+   "wikipedia": [
+    "Adrian",
+    "Antoni",
+    "Julian",
+    "Marcelin",
+    "Marcjanna",
+    "Przemir",
+    "Piotr"
+   ],
+   "rky": [
+    "Adrian",
+    "Antoni",
+    "Julian",
+    "Marcelin",
+    "Marcjanna",
+    "Piotr",
+    "Przemir"
+   ]
+  },
+  "1-10": {
+   "wikipedia": [
+    "Agaton",
+    "Danuta",
+    "Dobrosław",
+    "Jan",
+    "Kolumba",
+    "Nikanor",
+    "Paweł",
+    "Wilhelm",
+    "Anna",
+    "Leonia",
+    "Piotr",
+    "Petroniusz"
+   ],
+   "rky": [
+    "Agaton",
+    "Anna",
+    "Danuta",
+    "Dobrosław",
+    "Jan",
+    "Kolumba",
+    "Leonia",
+    "Nikanor",
+    "Paweł",
+    "Piotr",
+    "Wilhelm"
+   ]
+  },
+  "1-11": {
+   "wikipedia": [
+    "Feliks",
+    "Hilary",
+    "Honorata",
+    "Hortensja",
+    "Hortensjusz",
+    "Hygin",
+    "Matylda",
+    "Odon",
+    "Krzesimir"
+   ],
+   "rky": [
+    "Feliks",
+    "Hilary",
+    "Honorata",
+    "Hortensja",
+    "Hortensjusz",
+    "Hygin",
+    "Krzesimir",
+    "Matylda",
+    "Odon"
+   ]
+  },
+  "1-12": {
+   "wikipedia": [
+    "Antoni",
+    "Arkadiusz",
+    "Wiktorian",
+    "Bonet",
+    "Arkady",
+    "Benedykt",
+    "Bonit",
+    "Czesława",
+    "Bonita",
+    "Ernest",
+    "Tacjan",
+    "Tacjana",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Tygriusz",
+    "Piotr",
+    "Marcin"
+   ],
+   "rky": [
+    "Antoni",
+    "Arkadiusz",
+    "Arkady",
+    "Benedykt",
+    "Bonet",
+    "Bonita",
+    "Bonitus",
+    "Czesława",
+    "Ernest",
+    "Piotr",
+    "Tacjan",
+    "Tacjana (Tatiana)",
+    "Tygriusz",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna"
+   ]
+  },
+  "1-13": {
+   "wikipedia": [
+    "Bogumił",
+    "Bogusław",
+    "Gotfryd",
+    "Leoncjusz",
+    "Melania",
+    "Weronika"
+   ],
+   "rky": [
+    "Bogumił",
+    "Bogusław",
+    "Gotfryd",
+    "Leoncjusz",
+    "Melania",
+    "Weronika"
+   ]
+  },
+  "1-14": {
+   "wikipedia": [
+    "Feliks",
+    "Hilary",
+    "Amadea",
+    "Krystiana",
+    "Nina",
+    "Otto",
+    "Rajner",
+    "Saba",
+    "Mściwuj",
+    "Piotr",
+    "Krzesimir"
+   ],
+   "rky": [
+    "Amadea",
+    "Feliks",
+    "Hilary",
+    "Krystiana",
+    "Mściwuj",
+    "Nina",
+    "Otto",
+    "Piotr",
+    "Rajner",
+    "Saba"
+   ]
+  },
+  "1-15": {
+   "wikipedia": [
+    "Aleksander",
+    "Dąbrówka",
+    "Dobrawa",
+    "Domosław",
+    "Makary",
+    "Maur",
+    "Paweł",
+    "Ida",
+    "Micheasz",
+    "Piotr",
+    "Habakuk",
+    "Tarsycja"
+   ],
+   "rky": [
+    "Aleksander",
+    "Dąbrówka",
+    "Dobrawa",
+    "Domosław",
+    "Habakuk",
+    "Ida",
+    "Izydor",
+    "Makary",
+    "Maur",
+    "Micheasz",
+    "Paweł",
+    "Piotr"
+   ]
+  },
+  "1-16": {
+   "wikipedia": [
+    "Marceli",
+    "Waldemar",
+    "Waleriusz",
+    "Treweriusz",
+    "Włodzimierz",
+    "Piotr"
+   ],
+   "rky": [
+    "Marceli",
+    "Piotr",
+    "Treweriusz",
+    "Waldemar",
+    "Waleriusz",
+    "Włodzimierz"
+   ]
+  },
+  "1-17": {
+   "wikipedia": [
+    "Antoni",
+    "Jan",
+    "Alba",
+    "Sulpicjusz",
+    "Rościsław",
+    "Przemił"
+   ],
+   "rky": [
+    "Alba",
+    "Antoni",
+    "Jan",
+    "Przemił",
+    "Rościsław",
+    "Sulpicjusz"
+   ]
+  },
+  "1-18": {
+   "wikipedia": [
+    "Beatrycze",
+    "Bogumił",
+    "Krystyna",
+    "Liberata",
+    "Lubart",
+    "Małgorzata",
+    "Zuzanna",
+    "Wenerand"
+   ],
+   "rky": [
+    "Beatrycze",
+    "Bogumił",
+    "Krystyna",
+    "Liberata",
+    "Lubart",
+    "Małgorzata",
+    "Wenerand",
+    "Zuzanna"
+   ]
+  },
+  "1-19": {
+   "wikipedia": [
+    "Andrzej",
+    "Bernard",
+    "Erwin",
+    "Erwina",
+    "Eufemia",
+    "Henryk",
+    "Kanut",
+    "Mariusz",
+    "Marta",
+    "Matylda",
+    "Sara",
+    "Wulstan",
+    "Adalryk",
+    "Alderyk",
+    "Pia"
+   ],
+   "rky": [
+    "Adalryk",
+    "Alderyk",
+    "Andrzej",
+    "Bernard",
+    "Erwin",
+    "Erwina",
+    "Eufemia",
+    "Henryk",
+    "Kanut",
+    "Mariusz",
+    "Marta",
+    "Matylda",
+    "Sara",
+    "Wulstan"
+   ]
+  },
+  "1-20": {
+   "wikipedia": [
+    "Dobiegniew",
+    "Fabian",
+    "Dobrożyźń",
+    "Sebastian"
+   ],
+   "rky": [
+    "Dobiegniew",
+    "Dobrożyźń",
+    "Fabian",
+    "Sebastian"
+   ]
+  },
+  "1-21": {
+   "wikipedia": [
+    "Agnieszka",
+    "Patrokles",
+    "Epifani",
+    "Jarosław",
+    "Jarosława",
+    "Krystiana",
+    "Józefa",
+    "Awit",
+    "Awita"
+   ],
+   "rky": [
+    "Agnieszka",
+    "Awit",
+    "Awita",
+    "Epifani",
+    "Jarosław",
+    "Jarosława",
+    "Józefa",
+    "Krystiana",
+    "Patrokles"
+   ]
+  },
+  "1-22": {
+   "wikipedia": [
+    "Uriel",
+    "Anastazy",
+    "Dorian",
+    "Gaudencjusz",
+    "Gaudenty",
+    "Dobromysł",
+    "Wincenty",
+    "Jutrogost"
+   ],
+   "rky": [
+    "Anastazy",
+    "Dobromysł",
+    "Dorian",
+    "Gaudencjusz",
+    "Gaudenty",
+    "Jutrogost",
+    "Uriel",
+    "Wincenty"
+   ]
+  },
+  "1-23": {
+   "wikipedia": [
+    "Emerencja",
+    "Ildefons",
+    "Jan",
+    "Klemens",
+    "Maria",
+    "Rajmund",
+    "Rajmunda"
+   ],
+   "rky": [
+    "Emerencja",
+    "Ildefons",
+    "Jan",
+    "Klemens",
+    "Maria",
+    "Rajmund",
+    "Rajmunda"
+   ]
+  },
+  "1-24": {
+   "wikipedia": [
+    "Chwalibog",
+    "Franciszek",
+    "Milena",
+    "Wera",
+    "Ksenia",
+    "Rafał",
+    "Tymoteusz"
+   ],
+   "rky": [
+    "Chwalibog",
+    "Franciszek",
+    "Ksenia",
+    "Milena",
+    "Rafał",
+    "Tymoteusz",
+    "Wera"
+   ]
+  },
+  "1-25": {
+   "wikipedia": [
+    "Miłosz",
+    "Paweł",
+    "Artemia",
+    "Albert",
+    "Miłobor"
+   ],
+   "rky": [
+    "Albert",
+    "Artemia",
+    "Miłobor",
+    "Miłosz",
+    "Paweł"
+   ]
+  },
+  "1-26": {
+   "wikipedia": [
+    "Paula",
+    "Skarbimir",
+    "Leon",
+    "Tymoteusz",
+    "Tytus",
+    "Leona",
+    "Wanda",
+    "Żeligniew",
+    "Ksenofont",
+    "Małostryj"
+   ],
+   "rky": [
+    "Ksenofont",
+    "Leon",
+    "Leona",
+    "Małostryj",
+    "Paula",
+    "Skarbimir",
+    "Tymoteusz",
+    "Tytus",
+    "Wanda",
+    "Żeligniew"
+   ]
+  },
+  "1-27": {
+   "wikipedia": [
+    "Aniela",
+    "Rozalia",
+    "Jan Chryzostom",
+    "Jerzy",
+    "Julian",
+    "Przybysław",
+    "Adalruna",
+    "Alruna",
+    "Angelika",
+    "Teodoryk"
+   ],
+   "rky": [
+    "Adalruna",
+    "Alruna",
+    "Angelika",
+    "Aniela",
+    "Jan Chryzostom",
+    "Jerzy",
+    "Julian",
+    "Przybysław",
+    "Rozalia",
+    "Teodoryk"
+   ]
+  },
+  "1-28": {
+   "wikipedia": [
+    "Augustyn",
+    "Manfred",
+    "Manfreda",
+    "Flawian",
+    "Ildefons",
+    "Julian",
+    "Karol",
+    "Piotr",
+    "Roger",
+    "Tomasz",
+    "Waleriusz",
+    "Walery"
+   ],
+   "rky": [
+    "Augustyn",
+    "Flawian",
+    "Ildefons",
+    "Julian",
+    "Karol",
+    "Manfred",
+    "Manfreda",
+    "Piotr",
+    "Roger",
+    "Tomasz",
+    "Waleriusz",
+    "Walery"
+   ]
+  },
+  "1-29": {
+   "wikipedia": [
+    "Sulpicjusz",
+    "Ismena",
+    "Gildas",
+    "Waleriusz",
+    "Zdzisław"
+   ],
+   "rky": [
+    "Franciszek Salezy",
+    "Gildas",
+    "Ismena",
+    "Konstancja",
+    "Sulpicjusz",
+    "Waleriusz",
+    "Zdzisław"
+   ]
+  },
+  "1-30": {
+   "wikipedia": [
+    "Adelajda",
+    "Cyntia",
+    "Dobiegniew",
+    "Feliks",
+    "Gerard",
+    "Gerarda",
+    "Hiacynta",
+    "Maciej",
+    "Marcin",
+    "Martyna",
+    "Sebastian",
+    "Teofil",
+    "Adalgunda",
+    "Adelgunda",
+    "Piotr"
+   ],
+   "rky": [
+    "Adalgunda",
+    "Adelajda",
+    "Adelgunda",
+    "Cyntia",
+    "Dobiegniew",
+    "Feliks",
+    "Gerard",
+    "Gerarda",
+    "Hiacynta",
+    "Maciej",
+    "Marcin",
+    "Martyna",
+    "Piotr",
+    "Sebastian",
+    "Teofil"
+   ]
+  },
+  "1-31": {
+   "wikipedia": [
+    "Cyrus",
+    "Euzebiusz",
+    "Jan",
+    "Ksawery",
+    "Ludwik",
+    "Marceli",
+    "Marcelin",
+    "Marcelina",
+    "Eudoksja"
+   ],
+   "rky": [
+    "Cyrus",
+    "Euzebiusz",
+    "Jan",
+    "Ksawery",
+    "Ludwik",
+    "Marceli",
+    "Marcelin",
+    "Marcelina"
+   ]
+  },
+  "2-1": {
+   "wikipedia": [
+    "Brygida",
+    "Winand",
+    "Winanda",
+    "Seweryn",
+    "Żegota",
+    "Zybert",
+    "Zybracht",
+    "Zybart",
+    "Zygbert",
+    "Piotr"
+   ],
+   "rky": [
+    "Brygida",
+    "Piotr",
+    "Seweryn",
+    "Winand",
+    "Winanda",
+    "Zybart",
+    "Zybert",
+    "Zybracht",
+    "Zygbert",
+    "Żegota"
+   ]
+  },
+  "2-2": {
+   "wikipedia": [
+    "Berwin",
+    "Ermentruda",
+    "Jagoda",
+    "Joanna",
+    "Katarzyna",
+    "Kornel",
+    "Kornel",
+    "Kornel",
+    "Maria",
+    "Marian",
+    "Marcin",
+    "Miłosław",
+    "Miłosława",
+    "Piotr",
+    "Teodoryk"
+   ],
+   "rky": [
+    "Ermentruda",
+    "Joanna",
+    "Katarzyna",
+    "Kornel",
+    "Korneli",
+    "Korneliusz",
+    "Marcin",
+    "Maria",
+    "Marian",
+    "Miłosław",
+    "Miłosława",
+    "Mirosław",
+    "Piotr",
+    "Teodoryk"
+   ]
+  },
+  "2-3": {
+   "wikipedia": [
+    "Błażej",
+    "Oskar",
+    "Ignacy"
+   ],
+   "rky": [
+    "Błażej",
+    "Ignacy",
+    "Oskar"
+   ]
+  },
+  "2-4": {
+   "wikipedia": [
+    "Joanna",
+    "Weronika",
+    "Częstogoj",
+    "Izydor"
+   ],
+   "rky": [
+    "Częstogoj",
+    "Joanna",
+    "Weronika"
+   ]
+  },
+  "2-5": {
+   "wikipedia": [
+    "Sabbas",
+    "Agata",
+    "Lubodrog",
+    "Awit",
+    "Awita",
+    "Adelajda",
+    "Albwin",
+    "Dobiemir",
+    "Elpin",
+    "Indracht",
+    "Jakub",
+    "Modest",
+    "Przybygniew",
+    "Strzeżysława",
+    "Rodomił"
+   ],
+   "rky": [
+    "Adelajda",
+    "Agata",
+    "Albwin",
+    "Awit",
+    "Awita",
+    "Dobiemir",
+    "Elpin",
+    "Indracht",
+    "Izydor",
+    "Jakub",
+    "Lubodrog",
+    "Modest",
+    "Przybygniew",
+    "Rodomił",
+    "Saba",
+    "Strzeżysława"
+   ]
+  },
+  "2-6": {
+   "wikipedia": [
+    "Dorota",
+    "Leon",
+    "Paweł",
+    "Leona",
+    "Amanda",
+    "Zdziewit"
+   ],
+   "rky": [
+    "Amanda",
+    "Dorota",
+    "Leon",
+    "Leona",
+    "Paweł",
+    "Zdziewit"
+   ]
+  },
+  "2-7": {
+   "wikipedia": [
+    "Ryszard",
+    "Romuald",
+    "Teodor",
+    "Partenia",
+    "Parteniusz",
+    "Rozalia",
+    "Romeusz"
+   ],
+   "rky": [
+    "Partenia",
+    "Parteniusz",
+    "Romeusz",
+    "Rozalia",
+    "Ryszard",
+    "Teodor"
+   ]
+  },
+  "2-8": {
+   "wikipedia": [
+    "Elfryda",
+    "Hieronim",
+    "Ampeliusz",
+    "Gabriela",
+    "Gniewomir",
+    "Izajasz",
+    "Piotr",
+    "Polikarp",
+    "Juwencja",
+    "Juwencjusz",
+    "Sebastian",
+    "Zyta"
+   ],
+   "rky": [
+    "Ampeliusz",
+    "Elfryda",
+    "Gabriela",
+    "Gniewomir",
+    "Hieronim",
+    "Izajasz",
+    "Juwencja",
+    "Juwencjusz",
+    "Piotr",
+    "Polikarp",
+    "Sebastian",
+    "Zyta"
+   ]
+  },
+  "2-9": {
+   "wikipedia": [
+    "Apolonia",
+    "Cyryl",
+    "Marian",
+    "Pola",
+    "Sulisława"
+   ],
+   "rky": [
+    "Apolonia",
+    "Cyryl",
+    "Marian",
+    "Sulisława"
+   ]
+  },
+  "2-10": {
+   "wikipedia": [
+    "Jacek",
+    "Elwira",
+    "Scholastyka",
+    "Trojan"
+   ],
+   "rky": [
+    "Jacek",
+    "Scholastyka",
+    "Trojan"
+   ]
+  },
+  "2-11": {
+   "wikipedia": [
+    "Dezydery",
+    "Lucjan",
+    "Olgierd",
+    "Cedmon",
+    "Sekundyn",
+    "Bertrada",
+    "Maria"
+   ],
+   "rky": [
+    "Bertrada",
+    "Cedmon",
+    "Dezydery",
+    "Lucjan",
+    "Olgierd",
+    "Sekundyn"
+   ]
+  },
+  "2-12": {
+   "wikipedia": [
+    "Modest",
+    "Eulalia",
+    "Damian",
+    "Ampeliusz",
+    "Melecjusz",
+    "Norma",
+    "Ewa",
+    "Radosław"
+   ],
+   "rky": [
+    "Ampeliusz",
+    "Damian",
+    "Eulalia",
+    "Ewa",
+    "Melecjusz",
+    "Modest",
+    "Norma"
+   ]
+  },
+  "2-13": {
+   "wikipedia": [
+    "Arleta",
+    "Grzegorz",
+    "Katarzyna",
+    "Jordana",
+    "Toligniew"
+   ],
+   "rky": [
+    "Arleta",
+    "Grzegorz",
+    "Jordana",
+    "Katarzyna",
+    "Toligniew"
+   ]
+  },
+  "2-14": {
+   "wikipedia": [
+    "Cyryl",
+    "Dobiesława",
+    "Metody",
+    "Auksencja",
+    "Auksencjusz",
+    "Auksenty",
+    "Adolf",
+    "Walenty",
+    "Piotr",
+    "Liliana",
+    "Eleukadiusz"
+   ],
+   "rky": [
+    "Adolf",
+    "Auksencja",
+    "Auksencjusz",
+    "Auksenty",
+    "Cyryl",
+    "Dobiesława",
+    "Liliana",
+    "Metody",
+    "Piotr",
+    "Walenty"
+   ]
+  },
+  "2-15": {
+   "wikipedia": [
+    "Julia",
+    "Jowita",
+    "Faustyn",
+    "Zygfryda",
+    "Jordana",
+    "Zygfryd",
+    "Klaudia",
+    "Klaudiusz",
+    "Georgina"
+   ],
+   "rky": [
+    "Faustyn",
+    "Georgina",
+    "Jordana",
+    "Jowita",
+    "Klaudia",
+    "Klaudiusz",
+    "Zygfryd",
+    "Zygfryda"
+   ]
+  },
+  "2-16": {
+   "wikipedia": [
+    "Danuta",
+    "Eliasz",
+    "Julianna",
+    "Izajasz",
+    "Daniel",
+    "Irena",
+    "Samuel",
+    "Teodul"
+   ],
+   "rky": [
+    "Daniel",
+    "Danuta",
+    "Eliasz",
+    "Irena",
+    "Izajasz",
+    "Julianna",
+    "Samuel"
+   ]
+  },
+  "2-17": {
+   "wikipedia": [
+    "Łukasz",
+    "Aleksy",
+    "Donat",
+    "Zbigniew",
+    "Sylwin",
+    "Sylwina",
+    "Julian"
+   ],
+   "rky": [
+    "Aleksy",
+    "Donat",
+    "Julian",
+    "Sylwin",
+    "Sylwina",
+    "Zbigniew"
+   ]
+  },
+  "2-18": {
+   "wikipedia": [
+    "Konstancja",
+    "Szymon",
+    "Konstantyna",
+    "Klaudiusz",
+    "Gertruda",
+    "Agapit",
+    "Agapita"
+   ],
+   "rky": [
+    "Gertruda",
+    "Klaudiusz",
+    "Konstancja",
+    "Konstantyna",
+    "Szymon"
+   ]
+  },
+  "2-19": {
+   "wikipedia": [
+    "Arnold",
+    "Konrad",
+    "Barbacy",
+    "Barbat"
+   ],
+   "rky": [
+    "Arnold",
+    "Konrad"
+   ]
+  },
+  "2-20": {
+   "wikipedia": [
+    "Leon",
+    "Ludomira",
+    "Leona",
+    "Aulus"
+   ],
+   "rky": [
+    "Aulus",
+    "Leon",
+    "Leona",
+    "Ludomira"
+   ]
+  },
+  "2-21": {
+   "wikipedia": [
+    "Eleonora",
+    "Piotr",
+    "Gumbert",
+    "Pepin"
+   ],
+   "rky": [
+    "Eleonora",
+    "Gumbert",
+    "Piotr"
+   ]
+  },
+  "2-22": {
+   "wikipedia": [
+    "Małgorzata",
+    "Marwald",
+    "Konkordia",
+    "Wrocisław",
+    "Marold",
+    "Chociebąd",
+    "Arystion"
+   ],
+   "rky": [
+    "Chociebąd",
+    "Konkordia",
+    "Małgorzata",
+    "Marold",
+    "Marta",
+    "Marwald",
+    "Wrocisław"
+   ]
+  },
+  "2-23": {
+   "wikipedia": [
+    "Marta",
+    "Damian",
+    "Romana",
+    "Izabela",
+    "Polikarp",
+    "Montan"
+   ],
+   "rky": [
+    "Damian",
+    "Izabela",
+    "Montan",
+    "Polikarp",
+    "Romana"
+   ]
+  },
+  "2-24": {
+   "wikipedia": [
+    "Józefa",
+    "Bogurad",
+    "Sergiusz",
+    "Maciej",
+    "Marek",
+    "Jan",
+    "Wieledrog",
+    "Ermegarda",
+    "Irmegarda",
+    "Montan",
+    "Eunika"
+   ],
+   "rky": [
+    "Bogurad",
+    "Ermegarda",
+    "Irmegarda",
+    "Józefa",
+    "Maciej",
+    "Marek",
+    "Montan",
+    "Sergiusz",
+    "Wieledrog"
+   ]
+  },
+  "2-25": {
+   "wikipedia": [
+    "Cezary",
+    "Wiktor",
+    "Lubart",
+    "Antonina",
+    "Adam"
+   ],
+   "rky": [
+    "Adam",
+    "Antonina",
+    "Cezary",
+    "Lubart",
+    "Wiktor"
+   ]
+  },
+  "2-26": {
+   "wikipedia": [
+    "Aleksander",
+    "Dionizy",
+    "Mirosław",
+    "Klaudian",
+    "Gerlinda"
+   ],
+   "rky": [
+    "Aleksander",
+    "Dionizy",
+    "Gerlinda",
+    "Klaudian",
+    "Mirosław"
+   ]
+  },
+  "2-27": {
+   "wikipedia": [
+    "Gabriel",
+    "Anastazja",
+    "Auksencja",
+    "Baldomer",
+    "Auksencjusz",
+    "Auksenty",
+    "Baldomera",
+    "Honoryna",
+    "Bazyli",
+    "Anna"
+   ],
+   "rky": [
+    "Anastazja",
+    "Anna",
+    "Auksencja",
+    "Auksencjusz",
+    "Auksenty",
+    "Baldomer",
+    "Baldomera",
+    "Bazyli",
+    "Gabriel",
+    "Honoryna",
+    "Jana"
+   ]
+  },
+  "2-28": {
+   "wikipedia": [
+    "Ludomir",
+    "Roman",
+    "Falibog",
+    "Gaja",
+    "Makary",
+    "Oswald",
+    "Kaja",
+    "August",
+    "Gajusz"
+   ],
+   "rky": [
+    "August (w latach nieprzestępnych)",
+    "Falibog",
+    "Gaja",
+    "Gajusz",
+    "Kaja",
+    "Ludomir",
+    "Makary",
+    "Oswald",
+    "Roman"
+   ]
+  },
+  "2-29": {
+   "wikipedia": [
+    "Ariusz",
+    "Roman",
+    "Dobrosiodł",
+    "August",
+    "Lutosław",
+    "Teofil"
+   ],
+   "rky": [
+    "Ariusz",
+    "August",
+    "Dobrosiodł",
+    "Lutosław",
+    "Roman",
+    "Teofil"
+   ]
+  },
+  "3-1": {
+   "wikipedia": [
+    "Feliks",
+    "Herakles",
+    "Józef",
+    "Eudokia",
+    "Leon",
+    "Nicefor",
+    "Leona",
+    "Antoni",
+    "Joanna",
+    "Radosław",
+    "Budzisław",
+    "Albin"
+   ],
+   "rky": [
+    "Albina",
+    "Antoni",
+    "Budzisław",
+    "Eudoksja",
+    "Feliks",
+    "Herakles",
+    "Joanna",
+    "Józef",
+    "Leon",
+    "Leona",
+    "Nicefor",
+    "Radosław"
+   ]
+  },
+  "3-2": {
+   "wikipedia": [
+    "Absalon",
+    "Paweł",
+    "Januaria",
+    "Agnieszka",
+    "Symplicjusz",
+    "Michał",
+    "Helena",
+    "Franciszek",
+    "Henryk",
+    "Krzysztof",
+    "Prosper"
+   ],
+   "rky": [
+    "Absalon",
+    "Agnieszka",
+    "Franciszek",
+    "Helena",
+    "Henryk",
+    "Januaria",
+    "Krzysztof",
+    "Michał",
+    "Paweł",
+    "Prosper",
+    "Symplicjusz"
+   ]
+  },
+  "3-3": {
+   "wikipedia": [
+    "Wirzchosława",
+    "Gerwina",
+    "Asteriusz",
+    "Samuel",
+    "Gerwin",
+    "Kinga",
+    "Kamila",
+    "Maryn",
+    "Maryniusz",
+    "Kunegunda",
+    "Tycjan",
+    "Piotr"
+   ],
+   "rky": [
+    "Asteriusz",
+    "Gerwin",
+    "Gerwina",
+    "Kinga",
+    "Kunegunda",
+    "Maryna",
+    "Piotr",
+    "Samuel",
+    "Tycjan",
+    "Wirzchosława"
+   ]
+  },
+  "3-4": {
+   "wikipedia": [
+    "Adrian",
+    "Leonard",
+    "Lucjusz",
+    "Gerarda",
+    "Eugeniusz",
+    "Kazimierz",
+    "Gerard",
+    "Arkadiusz",
+    "Jakubina",
+    "Piotr"
+   ],
+   "rky": [
+    "Adrian",
+    "Arkadiusz",
+    "Eugeniusz",
+    "Gerard",
+    "Gerarda",
+    "Jakubina",
+    "Kazimierz",
+    "Leonard",
+    "Lucjusz",
+    "Piotr"
+   ]
+  },
+  "3-5": {
+   "wikipedia": [
+    "Adrian",
+    "Fryderyk",
+    "Pakosław",
+    "Jan",
+    "Oliwia",
+    "Marek",
+    "Euzebiusz"
+   ],
+   "rky": [
+    "Adrian",
+    "Euzebiusz",
+    "Fryderyk",
+    "Jan",
+    "Marek",
+    "Oliwia",
+    "Pakosław"
+   ]
+  },
+  "3-6": {
+   "wikipedia": [
+    "Eugenia",
+    "Róża",
+    "Jordana",
+    "Koleta",
+    "Frydolin",
+    "Wiktor",
+    "Jordan",
+    "Będzimysł"
+   ],
+   "rky": [
+    "Będzimysł",
+    "Eugenia",
+    "Frydolin",
+    "Jordan",
+    "Jordana",
+    "Koleta",
+    "Róża",
+    "Wiktor"
+   ]
+  },
+  "3-7": {
+   "wikipedia": [
+    "Paweł",
+    "Bazyli",
+    "Tomasz",
+    "Nadmir",
+    "Felicyta",
+    "German",
+    "Eubul"
+   ],
+   "rky": [
+    "Bazyli",
+    "Eubul",
+    "Felicyta",
+    "German",
+    "Nadmir",
+    "Paweł",
+    "Tomasz"
+   ]
+  },
+  "3-8": {
+   "wikipedia": [
+    "Miłogost",
+    "Wincenty",
+    "Stefan",
+    "Jan",
+    "Julian",
+    "Beata",
+    "Herenia"
+   ],
+   "rky": [
+    "Beata",
+    "Filemon",
+    "Herenia",
+    "Jan",
+    "Julian",
+    "Miłogost",
+    "Stefan",
+    "Wincenty"
+   ]
+  },
+  "3-9": {
+   "wikipedia": [
+    "Mścisława",
+    "Dominik",
+    "Tarazjusz",
+    "Prudencjusz",
+    "Franciszka",
+    "Katarzyna",
+    "Przemyślibor"
+   ],
+   "rky": [
+    "Dominik",
+    "Franciszka",
+    "Katarzyna",
+    "Mścisława",
+    "Prudencjusz",
+    "Przemyślibor",
+    "Tarazjusz"
+   ]
+  },
+  "3-10": {
+   "wikipedia": [
+    "Makary",
+    "Porfirion",
+    "Marceli",
+    "Cyprian",
+    "Aleksander",
+    "Zwnisława",
+    "Gajus",
+    "Gaja",
+    "Piotr"
+   ],
+   "rky": [
+    "Aleksander",
+    "Cyprian",
+    "Gaja",
+    "Gajus",
+    "Makary",
+    "Marceli",
+    "Piotr",
+    "Porfirion",
+    "Zwnisława"
+   ]
+  },
+  "3-11": {
+   "wikipedia": [
+    "Benedykt",
+    "Konstanty",
+    "Prokop",
+    "Sofroniusz",
+    "Trofim",
+    "Kandyd",
+    "Drogosława",
+    "Konstanty"
+   ],
+   "rky": [
+    "Benedykt",
+    "Drogosława",
+    "Kandyd",
+    "Konstanty",
+    "Konstantyn",
+    "Prokop",
+    "Sofroniusz",
+    "Trofim"
+   ]
+  },
+  "3-12": {
+   "wikipedia": [
+    "Bernard",
+    "Józefina",
+    "Grzegorz",
+    "Blizbor",
+    "Piotr"
+   ],
+   "rky": [
+    "Bernard",
+    "Blizbor",
+    "Grzegorz",
+    "Józefina",
+    "Piotr"
+   ]
+  },
+  "3-13": {
+   "wikipedia": [
+    "Roderyk",
+    "Patrycja",
+    "Bożena",
+    "Marek",
+    "Kasjan",
+    "Ernest",
+    "Trzebiesław",
+    "Krystyna",
+    "Letycja"
+   ],
+   "rky": [
+    "Bożena",
+    "Ernest",
+    "Kasjan",
+    "Krystyna",
+    "Marek",
+    "Roderyk",
+    "Trzebiesław"
+   ]
+  },
+  "3-14": {
+   "wikipedia": [
+    "Fawila",
+    "Michał",
+    "Afrodyzy",
+    "Pamela",
+    "Bożeciecha",
+    "Matylda",
+    "Leona",
+    "Afrodyzjusz",
+    "Afrodyzja",
+    "Leon",
+    "Jakub",
+    "Piotr",
+    "Ewa"
+   ],
+   "rky": [
+    "Afrodyzja",
+    "Afrodyzjusz",
+    "Afrodyzy",
+    "Bożeciecha",
+    "Ewa",
+    "Fawila",
+    "Jakub",
+    "Leon",
+    "Leona",
+    "Matylda",
+    "Michał",
+    "Pamela",
+    "Piotr"
+   ]
+  },
+  "3-15": {
+   "wikipedia": [
+    "Klemens",
+    "Ludwika",
+    "Longina",
+    "Longin",
+    "Gościmir",
+    "Krzysztof",
+    "Placyd"
+   ],
+   "rky": [
+    "Gościmir",
+    "Klemens",
+    "Krzysztof",
+    "Longin",
+    "Longina",
+    "Ludwika",
+    "Placyd"
+   ]
+  },
+  "3-16": {
+   "wikipedia": [
+    "Hilary",
+    "Abraham",
+    "Cyriak",
+    "Hiacynt",
+    "Izabela",
+    "Artemia",
+    "Natalis",
+    "Herbert",
+    "Miłostryj"
+   ],
+   "rky": [
+    "Abraham",
+    "Artemia",
+    "Cyriak",
+    "Herbert",
+    "Hiacynt",
+    "Hilary",
+    "Izabela",
+    "Miłostryj",
+    "Natalis"
+   ]
+  },
+  "3-17": {
+   "wikipedia": [
+    "Agrykola",
+    "Ambroży",
+    "Cieszysław",
+    "Gertruda",
+    "Józef",
+    "Patrycjusz",
+    "Patrycy",
+    "Patryk",
+    "Paweł",
+    "Regina",
+    "Witburga",
+    "Zbigniew",
+    "Zbygniew",
+    "Zbygniewa"
+   ],
+   "rky": [
+    "Agrykola",
+    "Ambroży",
+    "Cieszysław",
+    "Gertruda",
+    "Józef",
+    "Patrycjusz",
+    "Patrycy",
+    "Patryk",
+    "Paweł",
+    "Regina",
+    "Witburga",
+    "Zbigniew",
+    "Zbygniew",
+    "Zbygniewa"
+   ]
+  },
+  "3-18": {
+   "wikipedia": [
+    "Aleksa",
+    "Narcyz",
+    "Boguchwał",
+    "Anzelm",
+    "Cyryl",
+    "Marta",
+    "Edward",
+    "Salwator",
+    "Aleksander",
+    "Trofim",
+    "Celestyna"
+   ],
+   "rky": [
+    "Aleksander",
+    "Anzelm",
+    "Boguchwał",
+    "Celestyna",
+    "Cyryl",
+    "Edward",
+    "Marta",
+    "Narcyz",
+    "Salwator",
+    "Trofim"
+   ]
+  },
+  "3-19": {
+   "wikipedia": [
+    "Bogdan",
+    "Jan",
+    "Józef",
+    "Leoncjusz",
+    "Marceli",
+    "Marek",
+    "Sybillina"
+   ],
+   "rky": [
+    "Bogdan",
+    "Jan",
+    "Józef",
+    "Leoncjusz",
+    "Marceli",
+    "Marek"
+   ]
+  },
+  "3-20": {
+   "wikipedia": [
+    "Klemens",
+    "Klaudia",
+    "Bogusław",
+    "Ambroży",
+    "Eufemia",
+    "Cyriaka",
+    "Wincenty",
+    "Patrycjusz",
+    "Anatol",
+    "Aleksander",
+    "Fotyna",
+    "Józefa",
+    "Ermegarda",
+    "Irmegarda",
+    "Kutbert",
+    "Wolfram",
+    "Archip"
+   ],
+   "rky": [
+    "Aleksander",
+    "Ambroży",
+    "Anatol",
+    "Bogusław",
+    "Cyriaka",
+    "Ermegarda",
+    "Eufemia",
+    "Fotyna",
+    "Irmegarda",
+    "Józefa",
+    "Klaudia",
+    "Klemens",
+    "Kutbert",
+    "Patrycjusz",
+    "Wincenty",
+    "Wolfram"
+   ]
+  },
+  "3-21": {
+   "wikipedia": [
+    "Benedykt",
+    "Marzanna",
+    "Klemencja",
+    "Mikołaj",
+    "Ludomira",
+    "Teodul"
+   ],
+   "rky": [
+    "Benedykt",
+    "Filemon",
+    "Klemencja",
+    "Ludomira",
+    "Marzanna",
+    "Mikołaj"
+   ]
+  },
+  "3-22": {
+   "wikipedia": [
+    "Paweł",
+    "Bogusław",
+    "August",
+    "Kazimierz",
+    "Katarzyna",
+    "Godzisław",
+    "Baldwin",
+    "Baldwina",
+    "Bazyli",
+    "Lea"
+   ],
+   "rky": [
+    "August",
+    "Baldwin",
+    "Baldwina",
+    "Bazyli",
+    "Bogusław",
+    "Godzisław",
+    "Katarzyna",
+    "Kazimierz",
+    "Paweł"
+   ]
+  },
+  "3-23": {
+   "wikipedia": [
+    "Feliks",
+    "Pelagia",
+    "Zbysław",
+    "Eberhard",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Wiktorian",
+    "Konrad",
+    "Piotra",
+    "Pelagiusz",
+    "Katarzyna",
+    "Oktawian"
+   ],
+   "rky": [
+    "Eberhard",
+    "Feliks",
+    "Katarzyna",
+    "Konrad",
+    "Oktawian",
+    "Pelagia",
+    "Pelagiusz",
+    "Piotra",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Zbysław"
+   ]
+  },
+  "3-24": {
+   "wikipedia": [
+    "Sewer",
+    "Sofroniusz",
+    "Marek",
+    "Aldmir",
+    "Oldmir",
+    "Szymon",
+    "Dzirżysława",
+    "Gabriel",
+    "Bertrada",
+    "Ademar"
+   ],
+   "rky": [
+    "Ademar",
+    "Aldmir",
+    "Bertrada",
+    "Dzirżysława",
+    "Gabriel",
+    "Marek",
+    "Oldmir",
+    "Sewer",
+    "Sofroniusz",
+    "Szymon"
+   ]
+  },
+  "3-25": {
+   "wikipedia": [
+    "Mariola",
+    "Dyzma",
+    "Nikodem",
+    "Maria",
+    "Lutomysł",
+    "Ireneusz",
+    "Dula"
+   ],
+   "rky": [
+    "Dyzma",
+    "Ireneusz",
+    "Lutomysł",
+    "Maria",
+    "Mariola",
+    "Nikodem"
+   ]
+  },
+  "3-26": {
+   "wikipedia": [
+    "Feliks",
+    "Emanuel",
+    "Emanuela",
+    "Teodor",
+    "Larysa",
+    "Nicefor",
+    "Manuela",
+    "Tworzymir",
+    "Bazyli",
+    "Montan"
+   ],
+   "rky": [
+    "Bazyli",
+    "Emanuel",
+    "Emanuela",
+    "Feliks",
+    "Larysa",
+    "Manuela",
+    "Montan",
+    "Nicefor",
+    "Teodor",
+    "Tworzymir"
+   ]
+  },
+  "3-27": {
+   "wikipedia": [
+    "Benedykt",
+    "Ernest",
+    "Lidia",
+    "Jan"
+   ],
+   "rky": [
+    "Benedykt",
+    "Ernest",
+    "Jan",
+    "Lidia"
+   ]
+  },
+  "3-28": {
+   "wikipedia": [
+    "Aleksander",
+    "Doroteusz",
+    "Guntram",
+    "Renata",
+    "Ingbert",
+    "Joanna",
+    "Kastor",
+    "Malachiasz",
+    "Malkolm",
+    "Pryskus",
+    "Rogat",
+    "Stefan"
+   ],
+   "rky": [
+    "Aleksander",
+    "Doroteusz",
+    "Guntram",
+    "Ingbert",
+    "Joanna",
+    "Kastor",
+    "Malachiasz",
+    "Malkolm",
+    "Pryskus",
+    "Renata",
+    "Rogat"
+   ]
+  },
+  "3-29": {
+   "wikipedia": [
+    "Wiktoryn",
+    "Marek",
+    "Eustazy",
+    "Czcirad",
+    "Cyryl"
+   ],
+   "rky": [
+    "Cyryl",
+    "Czcirad",
+    "Eustazy",
+    "Marek",
+    "Wiktoryn"
+   ]
+  },
+  "3-30": {
+   "wikipedia": [
+    "Amelia",
+    "Leonard",
+    "Dobromir",
+    "Amadea",
+    "Kwiryna",
+    "Kwiryn",
+    "Mamertyn",
+    "Aniela",
+    "Litobor",
+    "Częstobor",
+    "Jan",
+    "Mamertyna",
+    "Piotr"
+   ],
+   "rky": [
+    "Amadea",
+    "Aniela",
+    "Częstobor",
+    "Dobromir",
+    "Jan",
+    "Kwiryn",
+    "Kwiryna",
+    "Leonard",
+    "Litobor",
+    "Mamertyn",
+    "Mamertyna",
+    "Piotr"
+   ]
+  },
+  "3-31": {
+   "wikipedia": [
+    "Gwido",
+    "Beniamin",
+    "Kornelia",
+    "Dobromira",
+    "Balbina",
+    "Amos",
+    "Achacjusz",
+    "Achacy"
+   ],
+   "rky": [
+    "Achacjusz",
+    "Achacy",
+    "Amos",
+    "Balbina",
+    "Beniamin",
+    "Dobromira",
+    "Gwido",
+    "Kornelia"
+   ]
+  },
+  "4-1": {
+   "wikipedia": [
+    "Hugo",
+    "Zbigniew",
+    "Grażyna",
+    "Meliton",
+    "Teodora",
+    "Katarzyna",
+    "Tolisław",
+    "Jakubina"
+   ],
+   "rky": [
+    "Grażyna",
+    "Hugo",
+    "Jakubina",
+    "Katarzyna",
+    "Meliton",
+    "Teodora",
+    "Tolisław",
+    "Zbigniew"
+   ]
+  },
+  "4-2": {
+   "wikipedia": [
+    "Laurencja",
+    "Franciszek",
+    "Urban",
+    "Miłobąd"
+   ],
+   "rky": [
+    "Franciszek",
+    "Laurencja",
+    "Miłobąd",
+    "Urban"
+   ]
+  },
+  "4-3": {
+   "wikipedia": [
+    "Sykstus",
+    "Ryszard",
+    "Antoni",
+    "Pankracy",
+    "Cieszygor",
+    "Jakub"
+   ],
+   "rky": [
+    "Antoni",
+    "Cieszygor",
+    "Jakub",
+    "Pankracy",
+    "Ryszard",
+    "Sykstus"
+   ]
+  },
+  "4-4": {
+   "wikipedia": [
+    "Benedykt",
+    "Ambroży",
+    "Zdzimir",
+    "Izydor",
+    "Teodul"
+   ],
+   "rky": [
+    "Ambroży",
+    "Benedykt",
+    "Izydor",
+    "Zdzimir"
+   ]
+  },
+  "4-5": {
+   "wikipedia": [
+    "Irena",
+    "Wincenty",
+    "Borzywoj",
+    "Tristan"
+   ],
+   "rky": [
+    "Borzywoj",
+    "Irena",
+    "Tristan",
+    "Wincenty"
+   ]
+  },
+  "4-6": {
+   "wikipedia": [
+    "Zachariasz",
+    "Wilhelm",
+    "Diogenes",
+    "Zachary",
+    "Katarzyna",
+    "Ireneusz",
+    "Piotra",
+    "Platonida",
+    "Celestyna"
+   ],
+   "rky": [
+    "Celestyna",
+    "Diogenes",
+    "Ireneusz",
+    "Katarzyna",
+    "Piotra",
+    "Platonida",
+    "Wilhelm",
+    "Zachariasz",
+    "Zachary"
+   ]
+  },
+  "4-7": {
+   "wikipedia": [
+    "Donat",
+    "Herman",
+    "Przecław",
+    "Epifaniusz",
+    "Hegezyp",
+    "Przedsław",
+    "Niestanka"
+   ],
+   "rky": [
+    "Donat",
+    "Epifaniusz",
+    "Hegezyp",
+    "Herman",
+    "Niestanka",
+    "Przecław",
+    "Przedsław"
+   ]
+  },
+  "4-8": {
+   "wikipedia": [
+    "Sieciesława",
+    "Cezaryna",
+    "Radosław",
+    "August",
+    "Apolinary",
+    "Cezary",
+    "January",
+    "Herodion"
+   ],
+   "rky": [
+    "Apolinary",
+    "August",
+    "Cezary",
+    "Cezaryna",
+    "January",
+    "Radosław",
+    "Sieciesława"
+   ]
+  },
+  "4-9": {
+   "wikipedia": [
+    "Marceli",
+    "Maja",
+    "Dobrosława",
+    "Wadim",
+    "Heliodor"
+   ],
+   "rky": [
+    "Dobrosława",
+    "Heliodor",
+    "Maja",
+    "Marceli",
+    "Wadim"
+   ]
+  },
+  "4-10": {
+   "wikipedia": [
+    "Grodzisław",
+    "Makary",
+    "Pompejusz",
+    "Marek",
+    "Apoloniusz",
+    "Daniel",
+    "Michał",
+    "Antoni",
+    "Ezechiel",
+    "Małgorzata",
+    "Henryk"
+   ],
+   "rky": [
+    "Antoni",
+    "Apoloniusz",
+    "Daniel",
+    "Ezechiel",
+    "Grodzisław",
+    "Henryk",
+    "Makary",
+    "Małgorzata",
+    "Marek",
+    "Michał",
+    "Pompejusz"
+   ]
+  },
+  "4-11": {
+   "wikipedia": [
+    "Filip",
+    "Herman",
+    "Leon",
+    "Jaromir",
+    "Gemma",
+    "Leona",
+    "Hildebrand",
+    "Hildebranda",
+    "Adolf"
+   ],
+   "rky": [
+    "Adolf",
+    "Filip",
+    "Gemma",
+    "Herman",
+    "Hildebrand",
+    "Hildebranda",
+    "Jaromir",
+    "Leon",
+    "Leona"
+   ]
+  },
+  "4-12": {
+   "wikipedia": [
+    "Zenon",
+    "Sabbas",
+    "Andrzej",
+    "Wiktor",
+    "Juliusz"
+   ],
+   "rky": [
+    "Andrzej",
+    "Juliusz",
+    "Saba",
+    "Wiktor",
+    "Zenon"
+   ]
+  },
+  "4-13": {
+   "wikipedia": [
+    "Justyn",
+    "Marcjusz",
+    "Marcin",
+    "Hermenegilda",
+    "Przemysł",
+    "Przemysław",
+    "Małgorzata",
+    "Jan",
+    "Ida"
+   ],
+   "rky": [
+    "Hermenegilda",
+    "Ida",
+    "Jan",
+    "Justyn",
+    "Małgorzata",
+    "Marcin",
+    "Marcjusz",
+    "Przemysł",
+    "Przemysław"
+   ]
+  },
+  "4-14": {
+   "wikipedia": [
+    "Walerian",
+    "Tyburcja",
+    "Tyburcy",
+    "Maria",
+    "Tyburcjusz",
+    "Julianna",
+    "Myślimir",
+    "Trofim",
+    "Ardalion",
+    "Krzysztof",
+    "Piotr",
+    "Lawiniusz"
+   ],
+   "rky": [
+    "Ardalion",
+    "Julianna",
+    "Krzysztof",
+    "Maria",
+    "Myślimir",
+    "Piotr",
+    "Trofim",
+    "Tyburcja",
+    "Tyburcjusz",
+    "Tyburcy",
+    "Walerian"
+   ]
+  },
+  "4-15": {
+   "wikipedia": [
+    "Wiktoryn",
+    "Olimpia",
+    "Modest",
+    "Abel",
+    "Wszegniew",
+    "Anastazja",
+    "Tytus",
+    "Potencjana",
+    "Potencjanna",
+    "Sylwester",
+    "Sylwestra",
+    "Piotr"
+   ],
+   "rky": [
+    "Abel",
+    "Anastazja",
+    "Modest",
+    "Olimpia",
+    "Piotr",
+    "Potencjana",
+    "Potencjanna",
+    "Sylwester",
+    "Sylwestra",
+    "Tytus",
+    "Wiktoryn",
+    "Wszegniew"
+   ]
+  },
+  "4-16": {
+   "wikipedia": [
+    "Benedykt",
+    "Bernadeta",
+    "Charyzjusz",
+    "Leonid",
+    "Erwin",
+    "Patrycy",
+    "Lambert",
+    "Urban",
+    "Julia"
+   ],
+   "rky": [
+    "Benedykt",
+    "Bernadeta",
+    "Charyzjusz",
+    "Erwin",
+    "Julia",
+    "Ksenia",
+    "Lambert",
+    "Leonid",
+    "Patrycy",
+    "Urban"
+   ]
+  },
+  "4-17": {
+   "wikipedia": [
+    "Klara",
+    "Józef",
+    "Robert",
+    "Radociech",
+    "Anicet",
+    "Izydor",
+    "Izydora",
+    "Aniceta",
+    "Jakub",
+    "Innocenty"
+   ],
+   "rky": [
+    "Anicet",
+    "Aniceta",
+    "Innocenty",
+    "Izydora",
+    "Jakub",
+    "Józef",
+    "Klara",
+    "Radociech",
+    "Robert",
+    "Stefan"
+   ]
+  },
+  "4-18": {
+   "wikipedia": [
+    "Gościsław",
+    "Bogusław",
+    "Apoloniusz",
+    "Flawiusz",
+    "Bogusława",
+    "Alicja",
+    "Gosława",
+    "Barbara"
+   ],
+   "rky": [
+    "Alicja",
+    "Apoloniusz",
+    "Barbara",
+    "Bogusław",
+    "Bogusława",
+    "Flawiusz",
+    "Gosława",
+    "Gościsław"
+   ]
+  },
+  "4-19": {
+   "wikipedia": [
+    "Konrada",
+    "Leontyna",
+    "Werner",
+    "Leona",
+    "Włodzimierz",
+    "Irydion",
+    "Cieszyrad",
+    "Leon",
+    "Pafnucy"
+   ],
+   "rky": [
+    "Cieszyrad",
+    "Irydion",
+    "Konrada",
+    "Leon",
+    "Leona",
+    "Leontyna",
+    "Pafnucy",
+    "Werner",
+    "Włodzimierz"
+   ]
+  },
+  "4-20": {
+   "wikipedia": [
+    "Amalia",
+    "Sekundyn",
+    "Teodor",
+    "Marcelin",
+    "Berenika",
+    "Agnieszka",
+    "Nawoj",
+    "Szymon",
+    "Sulpicjusz",
+    "Czesław",
+    "Ursycyn"
+   ],
+   "rky": [
+    "Agnieszka",
+    "Amalia",
+    "Berenika",
+    "Czesław",
+    "Marcelin",
+    "Nawoj",
+    "Sekundyn",
+    "Sulpicjusz",
+    "Szymon",
+    "Teodor",
+    "Ursycyn"
+   ]
+  },
+  "4-21": {
+   "wikipedia": [
+    "Feliks",
+    "Addar",
+    "Anzelm",
+    "Drogomił",
+    "Apollo",
+    "Apollina",
+    "Bartosz",
+    "Konrad",
+    "Roman"
+   ],
+   "rky": [
+    "Addar",
+    "Anzelm",
+    "Apollina",
+    "Apollo",
+    "Bartosz",
+    "Drogomił",
+    "Feliks",
+    "Konrad"
+   ]
+  },
+  "4-22": {
+   "wikipedia": [
+    "Łukasz",
+    "Wanesa",
+    "Gajusz",
+    "Teodor",
+    "Gaja",
+    "Soter",
+    "Leonid",
+    "Strzeżymir",
+    "Leon",
+    "Leona",
+    "Wirginiusz",
+    "Aital",
+    "Agapit",
+    "Agapita"
+   ],
+   "rky": [
+    "Gaja",
+    "Gajusz",
+    "Leon",
+    "Leona",
+    "Leonid",
+    "Łukasz",
+    "Soter",
+    "Strzeżymir",
+    "Teodor",
+    "Wanesa",
+    "Wirginiusz"
+   ]
+  },
+  "4-23": {
+   "wikipedia": [
+    "Adalbert",
+    "Wojciech",
+    "Gerard",
+    "Helena",
+    "Jerzy",
+    "Gabriela",
+    "Gerarda",
+    "Lena"
+   ],
+   "rky": [
+    "Adalbert",
+    "Gabriela",
+    "Gerard",
+    "Gerarda",
+    "Helena",
+    "Jerzy",
+    "Lena",
+    "Wojciech"
+   ]
+  },
+  "4-24": {
+   "wikipedia": [
+    "Fidelis",
+    "Erwin",
+    "Horacy",
+    "Egbert",
+    "Grzegorz",
+    "Horacjusz",
+    "Aleksja",
+    "Aleksy",
+    "Aleksander",
+    "Sabbas"
+   ],
+   "rky": [
+    "Aleksander",
+    "Aleksja",
+    "Aleksy",
+    "Egbert",
+    "Erwin",
+    "Fidelis",
+    "Grzegorz",
+    "Horacjusz",
+    "Horacy",
+    "Saba"
+   ]
+  },
+  "4-25": {
+   "wikipedia": [
+    "Kaliksta",
+    "Ewodia",
+    "Markusław",
+    "Jarosław",
+    "Ewodiusz",
+    "Marek",
+    "Piotr"
+   ],
+   "rky": [
+    "Ewodia",
+    "Ewodiusz",
+    "Jarosław",
+    "Kaliksta",
+    "Marek",
+    "Markusław",
+    "Piotr"
+   ]
+  },
+  "4-26": {
+   "wikipedia": [
+    "Marcelin",
+    "Klarencjusz",
+    "Spycimir",
+    "Klet",
+    "Marzena",
+    "Artemon"
+   ],
+   "rky": [
+    "Artemon",
+    "Klarencjusz",
+    "Klet",
+    "Marcelin",
+    "Marzena",
+    "Spycimir"
+   ]
+  },
+  "4-27": {
+   "wikipedia": [
+    "Felicja",
+    "Anastazy",
+    "Marcin",
+    "Zyta",
+    "Piotr",
+    "Teofil",
+    "Andrzej",
+    "Kanizjusz",
+    "Bożebor"
+   ],
+   "rky": [
+    "Anastazy",
+    "Andrzej",
+    "Bożebor",
+    "Felicja",
+    "Kanizjusz",
+    "Marcin",
+    "Piotr",
+    "Teofil",
+    "Zyta"
+   ]
+  },
+  "4-28": {
+   "wikipedia": [
+    "Paweł",
+    "Maria",
+    "Waleria",
+    "Marek",
+    "Przybycześć",
+    "Afrodyzy",
+    "Afrodyzjusz",
+    "Afrodyzja",
+    "Arystarch",
+    "Andrea",
+    "Witalis",
+    "Piotr",
+    "Hanna"
+   ],
+   "rky": [
+    "Afrodyzja",
+    "Afrodyzjusz",
+    "Afrodyzy",
+    "Andrea",
+    "Arystarch",
+    "Marek",
+    "Maria",
+    "Paweł",
+    "Piotr",
+    "Przybycześć",
+    "Waleria",
+    "Witalis"
+   ]
+  },
+  "4-29": {
+   "wikipedia": [
+    "Hugo",
+    "Bogusław",
+    "Robert",
+    "Piotr",
+    "Ermentruda",
+    "Paulin",
+    "Ryta",
+    "Augustyn",
+    "Roberta",
+    "Angelina",
+    "Wiktor",
+    "Katarzyna"
+   ],
+   "rky": [
+    "Angelina",
+    "Augustyn",
+    "Bogusław",
+    "Ermentruda",
+    "Hugo",
+    "Katarzyna",
+    "Paulin",
+    "Piotr",
+    "Robert",
+    "Roberta",
+    "Ryta",
+    "Wiktor"
+   ]
+  },
+  "4-30": {
+   "wikipedia": [
+    "Eutropiusz",
+    "Bartłomiej",
+    "Chwalisława",
+    "Lilla",
+    "Katarzyna",
+    "Afrodyzy",
+    "Afrodyzjusz",
+    "Afrodyzja",
+    "Jakub",
+    "Marian",
+    "Andrea",
+    "Piotr",
+    "Imieniny 4"
+   ],
+   "rky": [
+    "Afrodyzja",
+    "Afrodyzjusz",
+    "Afrodyzy",
+    "Andrea",
+    "Bartłomiej",
+    "Chwalisława",
+    "Eutropiusz",
+    "Jakub",
+    "Katarzyna",
+    "Lilla",
+    "Marian",
+    "Piotr"
+   ]
+  },
+  "5-1": {
+   "wikipedia": [
+    "Jeremiasz",
+    "Berta",
+    "Briok",
+    "Jeremi",
+    "Józef",
+    "Aniela",
+    "Floryna",
+    "Lubomir",
+    "Jakub",
+    "Tamara",
+    "Maja"
+   ],
+   "rky": [
+    "Aniela",
+    "Berta",
+    "Briok",
+    "Floryna",
+    "Jakub",
+    "Jeremi",
+    "Jeremiasz",
+    "Józef",
+    "Lubomir",
+    "Maja",
+    "Tamara"
+   ]
+  },
+  "5-2": {
+   "wikipedia": [
+    "Zoe",
+    "Borys",
+    "Zygmunta",
+    "Walter",
+    "Gwalbert",
+    "Walbert",
+    "Waldebert",
+    "Witomir",
+    "Atanazy",
+    "Walenty",
+    "Zygmunt",
+    "Anatol"
+   ],
+   "rky": [
+    "Anatol",
+    "Atanazy",
+    "Borys",
+    "Gwalbert",
+    "Walbert",
+    "Waldebert",
+    "Walenty",
+    "Walter",
+    "Witomir",
+    "Zoe",
+    "Zygmunt",
+    "Zygmunta"
+   ]
+  },
+  "5-3": {
+   "wikipedia": [
+    "Juwenalis",
+    "Maria",
+    "Alodia",
+    "Antonina",
+    "Aleksander",
+    "Leonia",
+    "Tymoteusz",
+    "Piotr",
+    "Teodul"
+   ],
+   "rky": [
+    "Aleksander",
+    "Alodia",
+    "Antonina",
+    "Juwenalis",
+    "Leonia",
+    "Maria",
+    "Piotr",
+    "Tymoteusz"
+   ]
+  },
+  "5-4": {
+   "wikipedia": [
+    "Florian",
+    "Michał",
+    "Paulin",
+    "Monika",
+    "Grzegorz",
+    "January",
+    "Antonina"
+   ],
+   "rky": [
+    "Antonina",
+    "Florian",
+    "Grzegorz",
+    "January",
+    "Michał",
+    "Monika",
+    "Paulin"
+   ]
+  },
+  "5-5": {
+   "wikipedia": [
+    "Pius",
+    "Teodor",
+    "Irena",
+    "Zdziebor",
+    "Penelopa",
+    "Waldemar",
+    "Sabrina"
+   ],
+   "rky": [
+    "Irena",
+    "Penelopa",
+    "Pius",
+    "Sabrina",
+    "Teodor",
+    "Waldemar",
+    "Zdziebor"
+   ]
+  },
+  "5-6": {
+   "wikipedia": [
+    "Judyta",
+    "Ewodia",
+    "Teodor",
+    "Gościwit",
+    "Benedykta",
+    "Ewodiusz",
+    "Jurand",
+    "Jan",
+    "Jakub",
+    "Edbert",
+    "Miłodrog",
+    "Małgorzata",
+    "Domagniew",
+    "Placyd"
+   ],
+   "rky": [
+    "Benedykta",
+    "Dawid",
+    "Domagniew",
+    "Ewodia",
+    "Ewodiusz",
+    "Gościwit",
+    "Jakub",
+    "Jan",
+    "Judyta",
+    "Jurand",
+    "Małgorzata",
+    "Miłodrog",
+    "Placyd",
+    "Teodor"
+   ]
+  },
+  "5-7": {
+   "wikipedia": [
+    "Benedykt",
+    "Florian",
+    "Gizela",
+    "August",
+    "Ludomiła",
+    "Domicela",
+    "Domicjan",
+    "Domicjana",
+    "Flawia",
+    "Róża",
+    "Sykstus",
+    "Piotr"
+   ],
+   "rky": [
+    "August",
+    "Benedykt",
+    "Domicela",
+    "Domicjan",
+    "Domicjana",
+    "Flawia",
+    "Florian",
+    "Gizela",
+    "Ludomiła",
+    "Piotr",
+    "Róża",
+    "Sykstus"
+   ]
+  },
+  "5-8": {
+   "wikipedia": [
+    "Heladiusz",
+    "Dezyderia",
+    "Amat",
+    "Michał",
+    "Stanisław",
+    "Ida",
+    "Achacjusz",
+    "Achacy"
+   ],
+   "rky": [
+    "Achacjusz",
+    "Achacy",
+    "Amat",
+    "Dezyderia",
+    "Heladiusz",
+    "Ida",
+    "Michał",
+    "Stanisław"
+   ]
+  },
+  "5-9": {
+   "wikipedia": [
+    "Karolina",
+    "Hiob",
+    "Grzegorz",
+    "Mikołaj",
+    "Beat"
+   ],
+   "rky": [
+    "Beat",
+    "Grzegorz",
+    "Hiob",
+    "Karolina",
+    "Mikołaj"
+   ]
+  },
+  "5-10": {
+   "wikipedia": [
+    "Gordian",
+    "Chociesław",
+    "Gordiana",
+    "Symeon",
+    "Chocsław",
+    "Antonin",
+    "Częstomir",
+    "Samuel",
+    "Wiktoryna",
+    "Jan",
+    "Sylwester",
+    "Sylwestra"
+   ],
+   "rky": [
+    "Antonin",
+    "Chociesław",
+    "Chocsław",
+    "Częstomir",
+    "Gordian",
+    "Gordiana",
+    "Izydor",
+    "Jan",
+    "Samuel",
+    "Sylwester",
+    "Sylwestra",
+    "Symeon",
+    "Wiktoryna"
+   ]
+  },
+  "5-11": {
+   "wikipedia": [
+    "Benedykt",
+    "Filip",
+    "Mamerta",
+    "Adalbert",
+    "Leon",
+    "Gwalbert",
+    "Walbert",
+    "Waldebert",
+    "Stella",
+    "Franciszek",
+    "Mamert",
+    "Lutogniew",
+    "Ignacy",
+    "Zuzanna",
+    "Tadea",
+    "Tadeusz"
+   ],
+   "rky": [
+    "Adalbert",
+    "Benedykt",
+    "Filip",
+    "Franciszek",
+    "Gwalbert",
+    "Ignacy",
+    "Leon",
+    "Lutogniew",
+    "Mamert",
+    "Mamerta",
+    "Stella",
+    "Tadea",
+    "Tadeusz",
+    "Walbert",
+    "Waldebert",
+    "Zuzanna"
+   ]
+  },
+  "5-12": {
+   "wikipedia": [
+    "Wszemił",
+    "Dominik",
+    "Epifani",
+    "Nawoja",
+    "Domicjan",
+    "Domicjana",
+    "Joanna",
+    "Pankracy",
+    "Jazon",
+    "Jan",
+    "Domicela",
+    "Flawia",
+    "Janina",
+    "German"
+   ],
+   "rky": [
+    "Domicela",
+    "Domicjan",
+    "Domicjana",
+    "Dominik",
+    "Epifani",
+    "Flawia",
+    "German",
+    "Jan",
+    "Janina",
+    "Jazon",
+    "Joanna",
+    "Nawoja",
+    "Pankracy",
+    "Wszemił"
+   ]
+  },
+  "5-13": {
+   "wikipedia": [
+    "Robert",
+    "Gerard",
+    "Serwacy",
+    "Aaron",
+    "Magdalena",
+    "Andrzej",
+    "Natalis",
+    "Gloria",
+    "Ciechosław",
+    "Gerarda",
+    "Dobiesława",
+    "Agnieszka",
+    "Gemma"
+   ],
+   "rky": [
+    "Aaron",
+    "Agnieszka",
+    "Andrzej",
+    "Ciechosław",
+    "Dobiesława",
+    "Gerard",
+    "Gerarda",
+    "Gloria",
+    "Magdalena",
+    "Natalis",
+    "Robert",
+    "Serwacy"
+   ]
+  },
+  "5-14": {
+   "wikipedia": [
+    "Jeremiasz",
+    "Koryna",
+    "Bonifacy",
+    "Maciej",
+    "Wiktor",
+    "Dobiesław",
+    "Ampeliusz",
+    "Fenenna",
+    "Izydor"
+   ],
+   "rky": [
+    "Ampeliusz",
+    "Bonifacy",
+    "Dobiesław",
+    "Fenenna",
+    "Jeremiasz",
+    "Koryna",
+    "Maciej",
+    "Wiktor"
+   ]
+  },
+  "5-15": {
+   "wikipedia": [
+    "Strzeżysław",
+    "Robert",
+    "Cecyliusz",
+    "Atanazy",
+    "Zofia",
+    "Dionizja",
+    "Czcibora",
+    "Nadzieja",
+    "Izydor",
+    "Jan",
+    "Kasjusz",
+    "Florencjusz",
+    "Florenty",
+    "Piotr"
+   ],
+   "rky": [
+    "Atanazy",
+    "Cecyliusz",
+    "Czcibora",
+    "Dionizja",
+    "Florencjusz",
+    "Florenty",
+    "Izydor",
+    "Jan",
+    "Kasjusz",
+    "Nadzieja",
+    "Piotr",
+    "Robert",
+    "Strzeżysław",
+    "Zofia"
+   ]
+  },
+  "5-16": {
+   "wikipedia": [
+    "Germeriusz",
+    "Trzebiemysł",
+    "Fidol",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Jan Nepomucen",
+    "Ubald",
+    "Wiktorian",
+    "Andrzej",
+    "Szymon",
+    "Honorat",
+    "Jędrzej",
+    "Jan",
+    "Rambert",
+    "Adam"
+   ],
+   "rky": [
+    "Andrzej",
+    "Fidol",
+    "Germeriusz",
+    "Honorat",
+    "Jan",
+    "Jan Nepomucen",
+    "Jędrzej",
+    "Szymon",
+    "Trzebiemysł",
+    "Ubald",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna"
+   ]
+  },
+  "5-17": {
+   "wikipedia": [
+    "Weronika",
+    "Paschalis",
+    "Herakliusz",
+    "Sławomir",
+    "Bruno",
+    "Wiktor",
+    "Montan"
+   ],
+   "rky": [
+    "Bruno",
+    "Herakliusz",
+    "Montan",
+    "Paschalis",
+    "Sławomir",
+    "Weronika",
+    "Wiktor"
+   ]
+  },
+  "5-18": {
+   "wikipedia": [
+    "Feliks",
+    "Wenancjusz",
+    "Myślibor",
+    "Eryk",
+    "Liberiusz",
+    "Klaudia",
+    "Aleksander",
+    "Aleksandra",
+    "Teodot"
+   ],
+   "rky": [
+    "Aleksander",
+    "Aleksandra",
+    "Eryk",
+    "Feliks",
+    "Klaudia",
+    "Liberiusz",
+    "Myślibor",
+    "Teodot",
+    "Wenancjusz"
+   ]
+  },
+  "5-19": {
+   "wikipedia": [
+    "Celestyn",
+    "Potencjana",
+    "Potencjanna",
+    "Kryspin",
+    "Bernarda",
+    "Piotr",
+    "Iwo",
+    "Pękosław",
+    "Mikołaj",
+    "Augustyn",
+    "Pudencjana",
+    "Pudencjanna"
+   ],
+   "rky": [
+    "Augustyn",
+    "Bernarda",
+    "Celestyn",
+    "Iwo",
+    "Kryspin",
+    "Mikołaj",
+    "Pękosław",
+    "Piotr",
+    "Potencjana",
+    "Potencjanna",
+    "Pudencjana",
+    "Pudencjanna"
+   ]
+  },
+  "5-20": {
+   "wikipedia": [
+    "Teodor",
+    "Anastazy",
+    "Aleksander",
+    "Wiktoria",
+    "Asteriusz",
+    "Bernardyn",
+    "Saturnina",
+    "Iwo",
+    "Bronimir",
+    "Rymwid",
+    "Józefa"
+   ],
+   "rky": [
+    "Anastazy",
+    "Asteriusz",
+    "Bernardyn",
+    "Bronimir",
+    "Iwo",
+    "Józefa",
+    "Rymwid",
+    "Saturnina",
+    "Teodor",
+    "Wiktoria"
+   ]
+  },
+  "5-21": {
+   "wikipedia": [
+    "Tymoteusz",
+    "Ryksa",
+    "Walenty",
+    "Wiktor",
+    "Przedsława",
+    "Jan",
+    "Pudens",
+    "Krzysztof",
+    "Piotr",
+    "Teobald"
+   ],
+   "rky": [
+    "Jan",
+    "Krzysztof",
+    "Piotr",
+    "Przedsława",
+    "Pudens",
+    "Ryksa",
+    "Teobald",
+    "Tymoteusz",
+    "Walenty",
+    "Wiktor"
+   ]
+  },
+  "5-22": {
+   "wikipedia": [
+    "Wisława",
+    "Emil",
+    "Helena",
+    "Ryta",
+    "Julia",
+    "Jan",
+    "Krzesisława",
+    "Wiesław",
+    "Wiesława"
+   ],
+   "rky": [
+    "Emil",
+    "Helena",
+    "Jan",
+    "Julia",
+    "Krzesisława",
+    "Ryta",
+    "Wiesław",
+    "Wiesława",
+    "Wisława"
+   ]
+  },
+  "5-23": {
+   "wikipedia": [
+    "Dezydery",
+    "Iwona",
+    "Symeon",
+    "Michał",
+    "Emilia",
+    "Dezyderiusz",
+    "Budziwoj",
+    "Eufrozyna",
+    "Jan"
+   ],
+   "rky": [
+    "Budziwoj",
+    "Dezyderiusz",
+    "Dezydery",
+    "Emilia",
+    "Eufrozyna",
+    "Iwona",
+    "Jan",
+    "Michał",
+    "Symeon"
+   ]
+  },
+  "5-24": {
+   "wikipedia": [
+    "Maria",
+    "Wincenty",
+    "Milena",
+    "Joanna",
+    "Zuzanna",
+    "Natan",
+    "Tomira",
+    "Orion",
+    "Jan",
+    "Cieszysława"
+   ],
+   "rky": [
+    "Cieszysława",
+    "Jan",
+    "Joanna",
+    "Maria",
+    "Milena",
+    "Natan",
+    "Orion",
+    "Tomira",
+    "Wincenty",
+    "Zuzanna"
+   ]
+  },
+  "5-25": {
+   "wikipedia": [
+    "Magdalena",
+    "Beda",
+    "Leon",
+    "Imisława",
+    "Grzegorz",
+    "Urban",
+    "Leona",
+    "Wenerand"
+   ],
+   "rky": [
+    "Beda",
+    "Grzegorz",
+    "Imisława",
+    "Leon",
+    "Leona",
+    "Magdalena",
+    "Urban",
+    "Wenerand"
+   ]
+  },
+  "5-26": {
+   "wikipedia": [
+    "Angelika",
+    "Filip",
+    "Adalwina",
+    "Alwina",
+    "Adalwin",
+    "Alwin",
+    "Emil",
+    "Ewelina",
+    "Paulina",
+    "Więcemił",
+    "Ariusz"
+   ],
+   "rky": [
+    "Adalwin",
+    "Adalwina",
+    "Alwin",
+    "Alwina",
+    "Angelika",
+    "Ariusz",
+    "Emil",
+    "Ewelina",
+    "Filip",
+    "Paulina",
+    "Więcemił"
+   ]
+  },
+  "5-27": {
+   "wikipedia": [
+    "Lucjan",
+    "Magdalena",
+    "Oliwer",
+    "Radowit",
+    "Juliusz",
+    "Jan"
+   ],
+   "rky": [
+    "Izydor",
+    "Jan",
+    "Juliusz",
+    "Lucjan",
+    "Magdalena",
+    "Oliwer",
+    "Radowit"
+   ]
+  },
+  "5-28": {
+   "wikipedia": [
+    "Heladiusz",
+    "Wilhelm",
+    "Emil",
+    "Priam",
+    "Wiktor",
+    "Ignacy",
+    "German",
+    "Augustyn",
+    "Jaromir"
+   ],
+   "rky": [
+    "Augustyn",
+    "Emil",
+    "German",
+    "Heladiusz",
+    "Ignacy",
+    "Jaromir",
+    "Priam",
+    "Wiktor",
+    "Wilhelm"
+   ]
+  },
+  "5-29": {
+   "wikipedia": [
+    "Maksymina",
+    "Teodor",
+    "Bogusława",
+    "Maksymin",
+    "Ermentruda",
+    "Urszula",
+    "Rajmunda",
+    "Magdalena",
+    "Piotr"
+   ],
+   "rky": [
+    "Bogusława",
+    "Ermentruda",
+    "Magdalena",
+    "Maksymin",
+    "Maksymina",
+    "Piotr",
+    "Rajmunda",
+    "Teodor",
+    "Urszula"
+   ]
+  },
+  "5-30": {
+   "wikipedia": [
+    "Feliks",
+    "Ferdynand",
+    "Jan",
+    "Andronik",
+    "Sulimir",
+    "Suligniewa",
+    "Bazyli"
+   ],
+   "rky": [
+    "Andronik",
+    "Bazyli",
+    "Feliks",
+    "Ferdynand",
+    "Jan",
+    "Suligniewa",
+    "Sulimir"
+   ]
+  },
+  "5-31": {
+   "wikipedia": [
+    "Feliks",
+    "Teodor",
+    "Petronela",
+    "Petronia",
+    "Kancjusz",
+    "Kancjan",
+    "Kancjanela",
+    "Noe",
+    "Kamila"
+   ],
+   "rky": [
+    "Feliks",
+    "Kancjan",
+    "Kancjanela",
+    "Kancjusz",
+    "Noe",
+    "Petronela",
+    "Petronia",
+    "Petroniusz",
+    "Teodor"
+   ]
+  },
+  "6-1": {
+   "wikipedia": [
+    "Bernard",
+    "Nikodem",
+    "Alfons",
+    "Symeon",
+    "Fortunat",
+    "Magdalena",
+    "Konrad",
+    "Felin",
+    "Felina",
+    "Ischyrion",
+    "Juwencja",
+    "Juwencjusz",
+    "Justyn",
+    "Teobald",
+    "Pamela",
+    "Hannibal"
+   ],
+   "rky": [
+    "Alfons",
+    "Bernard",
+    "Eunika",
+    "Felin",
+    "Felina",
+    "Fortunat",
+    "Ischyrion",
+    "Justyn",
+    "Juwencja",
+    "Juwencjusz",
+    "Konrad",
+    "Magdalena",
+    "Nikodem",
+    "Pamela",
+    "Symeon",
+    "Teobald"
+   ]
+  },
+  "6-2": {
+   "wikipedia": [
+    "Blandyna",
+    "Marzanna",
+    "Marcelin",
+    "Efrem",
+    "Maria",
+    "Trofima",
+    "Erazm",
+    "Racisław",
+    "Nicefor",
+    "Piotr",
+    "Eugeniusz",
+    "Florianna",
+    "Floriana",
+    "Mikołaj",
+    "Marianna",
+    "Fotyn",
+    "Materna",
+    "Domna"
+   ],
+   "rky": [
+    "Domna",
+    "Efrem",
+    "Erazm",
+    "Eugeniusz",
+    "Floriana",
+    "Florianna",
+    "Fotyn",
+    "Marcelin",
+    "Maria",
+    "Marianna",
+    "Marzanna",
+    "Materna",
+    "Mikołaj",
+    "Nicefor",
+    "Piotr",
+    "Racisław",
+    "Trofima"
+   ]
+  },
+  "6-3": {
+   "wikipedia": [
+    "Tamara",
+    "Konstanty",
+    "Owidiusz",
+    "Leszek",
+    "Paula",
+    "Cecyliusz",
+    "Ferdynand",
+    "Klotylda",
+    "Owidia",
+    "Kewin",
+    "Klotylda"
+   ],
+   "rky": [
+    "Cecyliusz",
+    "Ferdynand",
+    "Kewin",
+    "Klotylda",
+    "Klotylda",
+    "Konstantyn",
+    "Leszek",
+    "Owidia",
+    "Owidiusz",
+    "Paula",
+    "Tamara"
+   ]
+  },
+  "6-4": {
+   "wikipedia": [
+    "Dacjan",
+    "Karol",
+    "Braturad",
+    "Niepełka",
+    "Karp",
+    "Franciszek",
+    "Saturnina",
+    "Gostmił",
+    "Aleksander",
+    "Skarbisław"
+   ],
+   "rky": [
+    "Aleksander",
+    "Braturad",
+    "Dacjan",
+    "Franciszek",
+    "Gostmił",
+    "Karol",
+    "Karp",
+    "Niepełka",
+    "Saturnina",
+    "Skarbisław"
+   ]
+  },
+  "6-5": {
+   "wikipedia": [
+    "Walter",
+    "Waleria",
+    "Dobrociech",
+    "Bonifacy",
+    "Nikanor",
+    "Igor",
+    "Hildebrand",
+    "Hildebranda"
+   ],
+   "rky": [
+    "Bonifacy",
+    "Dobrociech",
+    "Hildebrand",
+    "Hildebranda",
+    "Igor",
+    "Nikanor",
+    "Waleria",
+    "Walter"
+   ]
+  },
+  "6-6": {
+   "wikipedia": [
+    "Norberta",
+    "Dominika",
+    "Benignus",
+    "Gerarda",
+    "Symeon",
+    "Więcerad",
+    "Laurenty",
+    "Gerard",
+    "Klaudiusz",
+    "Norbert",
+    "Paulina",
+    "Kandyda"
+   ],
+   "rky": [
+    "Benignus",
+    "Dominika",
+    "Gerard",
+    "Gerarda",
+    "Kandyda",
+    "Klaudiusz",
+    "Laurenty",
+    "Norbert",
+    "Norberta",
+    "Paulina",
+    "Symeon",
+    "Więcerad"
+   ]
+  },
+  "6-7": {
+   "wikipedia": [
+    "Lukrecja",
+    "Paweł",
+    "Anna",
+    "Robert",
+    "Jarosław",
+    "Antoni",
+    "Hadriana",
+    "Wisław",
+    "Ciechomir",
+    "Wiesława",
+    "Piotr"
+   ],
+   "rky": [
+    "Anna",
+    "Antoni",
+    "Ciechomir",
+    "Hadriana",
+    "Jarosław",
+    "Lukrecja",
+    "Paweł",
+    "Piotr",
+    "Robert",
+    "Wiesława",
+    "Wisław"
+   ]
+  },
+  "6-8": {
+   "wikipedia": [
+    "Wyszesław",
+    "Wilhelm",
+    "Medard",
+    "Maksymin",
+    "Seweryn",
+    "Herakliusz",
+    "Medarda",
+    "Maksymina",
+    "Dobrociech",
+    "Jadwiga"
+   ],
+   "rky": [
+    "Dobrociech",
+    "Herakliusz",
+    "Maksymin",
+    "Maksymina",
+    "Medard",
+    "Medarda",
+    "Seweryn",
+    "Wilhelm",
+    "Wyszesław"
+   ]
+  },
+  "6-9": {
+   "wikipedia": [
+    "Anna",
+    "Felicjan",
+    "Pelagia",
+    "Sylwester",
+    "Sylwestra"
+   ],
+   "rky": [
+    "Anna",
+    "Felicjan",
+    "Pelagia",
+    "Sylwester",
+    "Sylwestra"
+   ]
+  },
+  "6-10": {
+   "wikipedia": [
+    "Bogumiła",
+    "Mauryn",
+    "Bogumił",
+    "Apollo",
+    "Edgar",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Ingolf",
+    "Małgorzata"
+   ],
+   "rky": [
+    "Apollo",
+    "Bogumił",
+    "Bogumiła",
+    "Edgar",
+    "Ingolf",
+    "Małgorzata",
+    "Mauryn",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna"
+   ]
+  },
+  "6-11": {
+   "wikipedia": [
+    "Feliks",
+    "Teodozja",
+    "Anastazy",
+    "Radomił",
+    "Barnaba",
+    "Witomysł"
+   ],
+   "rky": [
+    "Anastazy",
+    "Barnaba",
+    "Feliks",
+    "Radomił",
+    "Teodozja",
+    "Witomysł"
+   ]
+  },
+  "6-12": {
+   "wikipedia": [
+    "Wyszemir",
+    "Onufry",
+    "Władysława",
+    "Jarogniewa",
+    "Narcyz",
+    "Antonina",
+    "Leon",
+    "Jan",
+    "Jarogniew",
+    "Leona",
+    "Celestyna",
+    "Władysław",
+    "Tadea",
+    "Placyd",
+    "Piotr",
+    "Ewa"
+   ],
+   "rky": [
+    "Antonina",
+    "Celestyna",
+    "Ewa",
+    "Jan",
+    "Jarogniew",
+    "Jarogniewa",
+    "Leon",
+    "Leona",
+    "Narcyz",
+    "Onufry",
+    "Piotr",
+    "Placyd",
+    "Tadea",
+    "Władysław",
+    "Władysława",
+    "Wyszemir"
+   ]
+  },
+  "6-13": {
+   "wikipedia": [
+    "Herman",
+    "Armand",
+    "Chociemir",
+    "Lucjan",
+    "Gerard",
+    "Antoni",
+    "Tobiasz",
+    "Gerarda",
+    "Lubowid",
+    "Rambert"
+   ],
+   "rky": [
+    "Antoni",
+    "Armand",
+    "Chociemir",
+    "Gerard",
+    "Gerarda",
+    "Herman",
+    "Lubowid",
+    "Lucjan",
+    "Tobiasz"
+   ]
+  },
+  "6-14": {
+   "wikipedia": [
+    "Walerian",
+    "Justyn",
+    "Eliza",
+    "Ninogniew"
+   ],
+   "rky": [
+    "Eliza",
+    "Justyn",
+    "Ninogniew",
+    "Walerian"
+   ]
+  },
+  "6-15": {
+   "wikipedia": [
+    "Bernard",
+    "Abraham",
+    "Edburga",
+    "Witold",
+    "Witosław",
+    "Jolanta",
+    "Wit",
+    "Leonida",
+    "Lotar",
+    "Angelina",
+    "Wisława",
+    "Oliwia",
+    "Dula"
+   ],
+   "rky": [
+    "Abraham",
+    "Angelina",
+    "Bernard",
+    "Edburga",
+    "Jolanta",
+    "Leonida",
+    "Lotar",
+    "Wisława",
+    "Wit",
+    "Witold",
+    "Witosław"
+   ]
+  },
+  "6-16": {
+   "wikipedia": [
+    "Benon",
+    "Cyryk",
+    "Ludgarda",
+    "Aneta",
+    "Budzimir",
+    "Justyna",
+    "Jan",
+    "Aureusz",
+    "Benona",
+    "Aubert",
+    "Alina",
+    "Alena"
+   ],
+   "rky": [
+    "Alina",
+    "Aneta",
+    "Aubert",
+    "Aureusz",
+    "Benon",
+    "Benona",
+    "Budzimir",
+    "Cyryk",
+    "Jan",
+    "Justyna",
+    "Ludgarda"
+   ]
+  },
+  "6-17": {
+   "wikipedia": [
+    "Izaura",
+    "Laura",
+    "Drogomysł",
+    "Radomił",
+    "Hipacy",
+    "Franciszek",
+    "Adrianna",
+    "Gundolf",
+    "Marcjan",
+    "Rajner",
+    "Adolf",
+    "Waleriana",
+    "Awit",
+    "Awita",
+    "Piotr",
+    "Montan",
+    "Daria"
+   ],
+   "rky": [
+    "Adolf",
+    "Adrianna",
+    "Awit",
+    "Awita",
+    "Drogomysł",
+    "Franciszek",
+    "Gundolf",
+    "Hipacy",
+    "Izaura",
+    "Marcjan",
+    "Montan",
+    "Piotr",
+    "Radomił",
+    "Rajner",
+    "Waleriana"
+   ]
+  },
+  "6-18": {
+   "wikipedia": [
+    "Elżbieta",
+    "Paula",
+    "Marek",
+    "Efrem",
+    "Emil",
+    "Gerwazy",
+    "Drohobysz",
+    "Amanda",
+    "Miłobor"
+   ],
+   "rky": [
+    "Amanda",
+    "Drohobysz",
+    "Efrem",
+    "Elżbieta",
+    "Emil",
+    "Gerwazy",
+    "Marek",
+    "Miłobor",
+    "Paula"
+   ]
+  },
+  "6-19": {
+   "wikipedia": [
+    "Michalina",
+    "Borzysław",
+    "Gerwazy",
+    "Odo",
+    "Protazy",
+    "Julianna",
+    "Eurydyka",
+    "Grymilda"
+   ],
+   "rky": [
+    "Borzysław",
+    "Eurydyka",
+    "Gerwazy",
+    "Julianna",
+    "Michalina",
+    "Odo",
+    "Protazy"
+   ]
+  },
+  "6-20": {
+   "wikipedia": [
+    "Bożena",
+    "Bogna",
+    "Rafał",
+    "Edburga",
+    "Gemma",
+    "Florentyna",
+    "Franciszek",
+    "Hektor",
+    "Michał"
+   ],
+   "rky": [
+    "Bogna",
+    "Bożena",
+    "Edburga",
+    "Florentyna",
+    "Franciszek",
+    "Gemma",
+    "Hektor",
+    "Rafał"
+   ]
+  },
+  "6-21": {
+   "wikipedia": [
+    "Teodor",
+    "Domamir",
+    "Demetria",
+    "Lutfryd",
+    "Alojza",
+    "Alojzy",
+    "Marcja",
+    "Rudolf",
+    "Rudolfina",
+    "Alicja",
+    "Rudolfa",
+    "Chloe"
+   ],
+   "rky": [
+    "Alicja",
+    "Alojza",
+    "Alojzy",
+    "Chloe",
+    "Demetria",
+    "Domamir",
+    "Lutfryd",
+    "Marcja",
+    "Rudolf",
+    "Rudolfa",
+    "Rudolfina",
+    "Teodor"
+   ]
+  },
+  "6-22": {
+   "wikipedia": [
+    "Agenor",
+    "Flawiusz",
+    "Achacy",
+    "Innocenta",
+    "Paulina",
+    "Achacjusz",
+    "Innocenty",
+    "Tomasz",
+    "Alban"
+   ],
+   "rky": [
+    "Achacjusz",
+    "Achacy",
+    "Agenor",
+    "Alban",
+    "Flawiusz",
+    "Innocenta",
+    "Innocenty",
+    "Paulina",
+    "Tomasz"
+   ]
+  },
+  "6-23": {
+   "wikipedia": [
+    "Józef",
+    "Wanda",
+    "Agrypina",
+    "Zenon",
+    "Albin",
+    "Anna",
+    "Edeltruda"
+   ],
+   "rky": [
+    "Agrypina",
+    "Albin",
+    "Anna",
+    "Józef",
+    "Wanda",
+    "Zenon"
+   ]
+  },
+  "6-24": {
+   "wikipedia": [
+    "Emilia",
+    "Wilhelm",
+    "Danuta",
+    "Jan",
+    "Janina"
+   ],
+   "rky": [
+    "Danuta",
+    "Emilia",
+    "Jan",
+    "Wilhelm"
+   ]
+  },
+  "6-25": {
+   "wikipedia": [
+    "Prosper",
+    "Fiebrosław",
+    "Wilhelm",
+    "Antyd",
+    "Eulogiusz",
+    "Tolisława",
+    "Febronia",
+    "Febron",
+    "Dorota"
+   ],
+   "rky": [
+    "Antyd",
+    "Dorota",
+    "Eulogiusz",
+    "Febron",
+    "Febronia",
+    "Fiebrosław",
+    "Prosper",
+    "Tolisława",
+    "Wilhelm"
+   ]
+  },
+  "6-26": {
+   "wikipedia": [
+    "Jeremiasz",
+    "Edburga",
+    "Paweł",
+    "Zdziwoj",
+    "Jan",
+    "Dawid",
+    "Maksencjusz",
+    "Maksanty"
+   ],
+   "rky": [
+    "Dawid",
+    "Edburga",
+    "Jan",
+    "Jeremiasz",
+    "Maksanty",
+    "Maksencjusz",
+    "Paweł",
+    "Zdziwoj"
+   ]
+  },
+  "6-27": {
+   "wikipedia": [
+    "Włodzisław",
+    "Cyryl",
+    "Bożydar"
+   ],
+   "rky": [
+    "Bożydar",
+    "Cyryl",
+    "Włodzisław"
+   ]
+  },
+  "6-28": {
+   "wikipedia": [
+    "Paweł",
+    "Ekhard",
+    "Józef",
+    "Zbrosław",
+    "Leon",
+    "Serena",
+    "Leona",
+    "Ireneusz",
+    "Plutarch",
+    "Ekard",
+    "Jakert",
+    "Heron"
+   ],
+   "rky": [
+    "Ekard",
+    "Ekhard",
+    "Heron",
+    "Ireneusz",
+    "Jakert",
+    "Józef",
+    "Leon",
+    "Leona",
+    "Paweł",
+    "Plutarch",
+    "Serena",
+    "Zbrosław"
+   ]
+  },
+  "6-29": {
+   "wikipedia": [
+    "Piotr",
+    "Paweł",
+    "Dawid",
+    "Dalebor",
+    "Benedykta",
+    "Kasjusz"
+   ],
+   "rky": [
+    "Dalebor Benedykta",
+    "Dawid",
+    "Kasjusz",
+    "Paweł",
+    "Piotr"
+   ]
+  },
+  "6-30": {
+   "wikipedia": [
+    "Marcjalis",
+    "Bazyli",
+    "Władysława",
+    "Ciechosława",
+    "Leon",
+    "Emilia",
+    "Leona",
+    "Lucyna",
+    "Trofim",
+    "Władysław",
+    "Ermentruda",
+    "Teobald",
+    "Imieniny 6"
+   ],
+   "rky": [
+    "Bazyli",
+    "Ciechosława",
+    "Emilia",
+    "Ermentruda",
+    "Leon",
+    "Leona",
+    "Lucyna",
+    "Marcjalis",
+    "Teobald",
+    "Trofim",
+    "Władysław",
+    "Władysława"
+   ]
+  },
+  "7-1": {
+   "wikipedia": [
+    "Bogusław",
+    "Halina",
+    "Estera",
+    "Namir",
+    "Karolina",
+    "Marcin",
+    "Teodoryk",
+    "Domicjan",
+    "Domicjana",
+    "Klarysa",
+    "Ekhard",
+    "Marian",
+    "Jakert"
+   ],
+   "rky": [
+    "Bogusław",
+    "Domicjan",
+    "Domicjana",
+    "Ekhard",
+    "Estera",
+    "Halina",
+    "Jakert",
+    "Karolina",
+    "Klarysa",
+    "Marcin",
+    "Namir",
+    "Teodoryk"
+   ]
+  },
+  "7-2": {
+   "wikipedia": [
+    "Otto",
+    "Urban",
+    "Martynian",
+    "Bożydar",
+    "Juda",
+    "Niegosława",
+    "Switun",
+    "Juwenalis",
+    "Bernardyn"
+   ],
+   "rky": [
+    "Bożydar",
+    "Juda",
+    "Juwenalis",
+    "Martynian",
+    "Niegosława",
+    "Otto",
+    "Switun",
+    "Urban"
+   ]
+  },
+  "7-3": {
+   "wikipedia": [
+    "Heliodor",
+    "Jacek",
+    "Miłosław",
+    "Otto",
+    "Otto",
+    "Teodot",
+    "Tomasz",
+    "Leon",
+    "Anatol",
+    "Leona"
+   ],
+   "rky": [
+    "Anatol",
+    "Heliodor",
+    "Jacek",
+    "Leon",
+    "Leona",
+    "Miłosław",
+    "Otto",
+    "Otton",
+    "Teodot",
+    "Tomasz"
+   ]
+  },
+  "7-4": {
+   "wikipedia": [
+    "Elżbieta",
+    "Aurelian",
+    "Aggeusz",
+    "Alfred",
+    "Teodor",
+    "Józef",
+    "Odon",
+    "Odo",
+    "Malwina",
+    "Wielisław",
+    "Innocenty",
+    "Julian",
+    "Berta",
+    "Ozeasz",
+    "Piotr"
+   ],
+   "rky": [
+    "Aggeusz",
+    "Alfred",
+    "Aurelian",
+    "Berta",
+    "Elżbieta",
+    "Innocenty",
+    "Józef",
+    "Julian",
+    "Malwina",
+    "Odo",
+    "Odon",
+    "Ozeasz",
+    "Piotr",
+    "Teodor",
+    "Wielisław"
+   ]
+  },
+  "7-5": {
+   "wikipedia": [
+    "Zoe",
+    "Marta",
+    "Wilhelm",
+    "Trofima",
+    "Antoni",
+    "Przybywoj",
+    "Bartłomiej",
+    "Jakub",
+    "Filomena"
+   ],
+   "rky": [
+    "Antoni",
+    "Bartłomiej",
+    "Filomena",
+    "Jakub",
+    "Karolina",
+    "Marta",
+    "Przybywoj",
+    "Trofima",
+    "Wilhelm",
+    "Zoe"
+   ]
+  },
+  "7-6": {
+   "wikipedia": [
+    "Niegosław",
+    "Dominika",
+    "Nazaria",
+    "Dominik",
+    "Ignacja",
+    "Gotard",
+    "Agrypina",
+    "Chociebor",
+    "Zuzanna"
+   ],
+   "rky": [
+    "Agrypina",
+    "Chociebor",
+    "Dominik",
+    "Dominika",
+    "Gotard",
+    "Ignacja",
+    "Nazaria",
+    "Niegosław",
+    "Zuzanna"
+   ]
+  },
+  "7-7": {
+   "wikipedia": [
+    "Benedykt",
+    "Pompejusz",
+    "Sędzisława",
+    "German",
+    "Antoni",
+    "Cyryl",
+    "Wilibald",
+    "Metody"
+   ],
+   "rky": [
+    "Antoni",
+    "Benedykt",
+    "Cyryl",
+    "Estera",
+    "German",
+    "Metody",
+    "Pompejusz",
+    "Sędzisława",
+    "Wilibald"
+   ]
+  },
+  "7-8": {
+   "wikipedia": [
+    "Adrian",
+    "Kilian",
+    "Kiliana",
+    "Prokop",
+    "Eugeniusz",
+    "Odeta",
+    "Edgar",
+    "Chwalimir",
+    "Adolf",
+    "Adolfa",
+    "Piotr",
+    "Teobald"
+   ],
+   "rky": [
+    "Adolf",
+    "Adolfa",
+    "Adrian",
+    "Chwalimir",
+    "Edgar",
+    "Eugeniusz",
+    "Kilian",
+    "Kiliana",
+    "Odeta",
+    "Piotr",
+    "Prokop",
+    "Teobald"
+   ]
+  },
+  "7-9": {
+   "wikipedia": [
+    "Lukrecja",
+    "Zenona",
+    "Sylwia",
+    "Anatola",
+    "Adolfina",
+    "Anatolia",
+    "Weronika",
+    "Ludwika",
+    "Patrycjusz",
+    "Róża",
+    "Zenon",
+    "Florianna",
+    "Floriana",
+    "Hieronim",
+    "Mikołaj",
+    "Lucja",
+    "Teodoryk",
+    "Antoni",
+    "Kornel",
+    "Kornel",
+    "Kornel",
+    "Barbara"
+   ],
+   "rky": [
+    "Adolfina",
+    "Anatola",
+    "Anatolia",
+    "Antoni",
+    "Barbara",
+    "Floriana",
+    "Florianna",
+    "Hieronim",
+    "Kornel",
+    "Korneli",
+    "Korneliusz",
+    "Lucja",
+    "Ludwika",
+    "Lukrecja",
+    "Mikołaj",
+    "Patrycjusz",
+    "Róża",
+    "Sylwia",
+    "Teodoryk",
+    "Weronika",
+    "Zenon",
+    "Zenona"
+   ]
+  },
+  "7-10": {
+   "wikipedia": [
+    "Filip",
+    "Aniela",
+    "Samson",
+    "Zacheusz",
+    "Witołd",
+    "Amalberga",
+    "Sylwan",
+    "Witalis",
+    "January",
+    "Aleksander",
+    "Rufina",
+    "Rzędziwoj",
+    "Engelbert",
+    "Askaniusz"
+   ],
+   "rky": [
+    "Aleksander",
+    "Amalberga",
+    "Aniela",
+    "Askaniusz",
+    "Engelbert",
+    "Filip",
+    "January",
+    "Rufina",
+    "Rzędziwoj",
+    "Samson",
+    "Sylwan",
+    "Witalis",
+    "Witołd",
+    "Zacheusz"
+   ]
+  },
+  "7-11": {
+   "wikipedia": [
+    "Benedykt",
+    "Pius",
+    "Pelagia",
+    "Siepraw",
+    "Olga",
+    "Wyszesława",
+    "Kalina",
+    "Placyd",
+    "Sawin",
+    "Cyrus",
+    "Zybert",
+    "Zybracht",
+    "Zybart",
+    "Zygbert"
+   ],
+   "rky": [
+    "Benedykt",
+    "Cyrus",
+    "Kalina",
+    "Olga",
+    "Pelagia",
+    "Pius",
+    "Placyd",
+    "Sawin",
+    "Siepraw",
+    "Wyszesława",
+    "Zybart",
+    "Zybert",
+    "Zybracht",
+    "Zygbert"
+   ]
+  },
+  "7-12": {
+   "wikipedia": [
+    "Feliks",
+    "Paweł",
+    "Leon",
+    "Epifania",
+    "Jan Gwalbert",
+    "Leona",
+    "Weronika",
+    "Euzebiusz",
+    "Andrzej",
+    "Henryk",
+    "Natan",
+    "Himisław"
+   ],
+   "rky": [
+    "Andrzej",
+    "Epifania",
+    "Euzebiusz",
+    "Feliks",
+    "Henryk",
+    "Jan Gwalbert",
+    "Leon",
+    "Leona",
+    "Natan",
+    "Paweł",
+    "Weronika"
+   ]
+  },
+  "7-13": {
+   "wikipedia": [
+    "Radomiła",
+    "Henryk",
+    "Joel",
+    "Ernest",
+    "Eugeniusz",
+    "Małgorzata",
+    "Trofima",
+    "Sara",
+    "Jakub",
+    "Ezdrasz"
+   ],
+   "rky": [
+    "Ernest",
+    "Eugeniusz",
+    "Ezdrasz",
+    "Jakub",
+    "Joel",
+    "Małgorzata",
+    "Radomiła",
+    "Sara",
+    "Trofima"
+   ]
+  },
+  "7-14": {
+   "wikipedia": [
+    "Marcelin",
+    "Ulryk",
+    "Kamil",
+    "Tuskana",
+    "Franciszek",
+    "Dobrogost",
+    "Kosma",
+    "Marceli",
+    "Izabela",
+    "Damian",
+    "Angelina",
+    "Wincenty"
+   ],
+   "rky": [
+    "Angelina",
+    "Damian",
+    "Dobrogost",
+    "Franciszek",
+    "Izabela",
+    "Kamil",
+    "Kosma",
+    "Marceli",
+    "Marcelin",
+    "Tuskana",
+    "Ulryk"
+   ]
+  },
+  "7-15": {
+   "wikipedia": [
+    "Lubomysł",
+    "Daniel",
+    "Donald",
+    "Włodzimierz",
+    "Roksana",
+    "Egon",
+    "Ignacy",
+    "Niecisław",
+    "Dawid",
+    "Anna"
+   ],
+   "rky": [
+    "Anna",
+    "Daniel",
+    "Dawid",
+    "Egon",
+    "Henryk",
+    "Ignacy",
+    "Lubomysł",
+    "Niecisław",
+    "Roksana",
+    "Włodzimierz"
+   ]
+  },
+  "7-16": {
+   "wikipedia": [
+    "Benedykt",
+    "Faust",
+    "Stefan",
+    "Eustacjusz",
+    "Eustachy",
+    "Andrzej",
+    "Dzierżysław",
+    "Carmen",
+    "Ermegarda",
+    "Irmegarda",
+    "Maria"
+   ],
+   "rky": [
+    "Andrzej",
+    "Benedykt",
+    "Carmen",
+    "Dzierżysław",
+    "Ermegarda",
+    "Eustachy",
+    "Eustacjusz",
+    "Faust",
+    "Irmegarda",
+    "Stefan"
+   ]
+  },
+  "7-17": {
+   "wikipedia": [
+    "Januaria",
+    "Donata",
+    "Marcelina",
+    "Dzierżykraj",
+    "Konstancja",
+    "Aneta",
+    "Marceli",
+    "Andrzej",
+    "Aleksja",
+    "Karolina",
+    "Leon",
+    "Aleksy",
+    "Leona",
+    "Jadwiga",
+    "Bogdan",
+    "Tarsycja"
+   ],
+   "rky": [
+    "Aleksja",
+    "Aleksy",
+    "Andrzej",
+    "Aneta",
+    "Bogdan",
+    "Donata",
+    "Dzierżykraj",
+    "Jadwiga",
+    "Januaria",
+    "Karolina",
+    "Konstancja",
+    "Leon",
+    "Leona",
+    "Marceli",
+    "Marcelina"
+   ]
+  },
+  "7-18": {
+   "wikipedia": [
+    "Robert",
+    "Erwin",
+    "Uniesław",
+    "Matern",
+    "Arnold",
+    "Wespazjan",
+    "Teodozja",
+    "Szymon",
+    "Arnolf",
+    "Arnulf",
+    "Emilian"
+   ],
+   "rky": [
+    "Arnold",
+    "Arnolf",
+    "Arnulf",
+    "Erwin",
+    "Karolina",
+    "Matern",
+    "Robert",
+    "Szymon",
+    "Teodozja",
+    "Uniesław",
+    "Wespazjan"
+   ]
+  },
+  "7-19": {
+   "wikipedia": [
+    "Arseniusz",
+    "Marcin",
+    "Wincenty",
+    "Lutobor",
+    "Rufin",
+    "Zdziesuł",
+    "Piotr"
+   ],
+   "rky": [
+    "Arseniusz",
+    "Lutobor",
+    "Marcin",
+    "Piotr",
+    "Rufin",
+    "Wincenty",
+    "Zdziesuł"
+   ]
+  },
+  "7-20": {
+   "wikipedia": [
+    "Paweł",
+    "Eliasz",
+    "Sewera",
+    "Hieronim",
+    "Małgorzata",
+    "Leon",
+    "Heliasz",
+    "Czesław",
+    "Leona",
+    "Stosław"
+   ],
+   "rky": [
+    "Czesław",
+    "Eliasz",
+    "Heliasz",
+    "Hieronim",
+    "Leon",
+    "Leona",
+    "Małgorzata",
+    "Paweł",
+    "Sewera"
+   ]
+  },
+  "7-21": {
+   "wikipedia": [
+    "Benedykt",
+    "Prokop",
+    "Daniel",
+    "Ignacy",
+    "Andrzej",
+    "Wiktor",
+    "Julia",
+    "Prakseda",
+    "Klaudiusz",
+    "Arbogast"
+   ],
+   "rky": [
+    "Andrzej",
+    "Arbogast",
+    "Benedykt",
+    "Daniel",
+    "Ignacy",
+    "Julia",
+    "Klaudiusz",
+    "Prakseda",
+    "Prokop",
+    "Stojsław",
+    "Wiktor"
+   ]
+  },
+  "7-22": {
+   "wikipedia": [
+    "Wawrzyniec",
+    "Bolesława",
+    "Magdalena",
+    "Pankracy",
+    "Laurencjusz",
+    "Albin",
+    "Naczęsława",
+    "Benona",
+    "Stojsław"
+   ],
+   "rky": [
+    "Albin",
+    "Benona",
+    "Bolesława",
+    "Laurencjusz",
+    "Magdalena",
+    "Naczęsława",
+    "Pankracy",
+    "Wawrzyniec"
+   ]
+  },
+  "7-23": {
+   "wikipedia": [
+    "Bogna",
+    "Apolinary",
+    "Apolinaria"
+   ],
+   "rky": [
+    "Apolinaria",
+    "Apolinary",
+    "Bogna"
+   ]
+  },
+  "7-24": {
+   "wikipedia": [
+    "Olga",
+    "Antoni",
+    "Kinga",
+    "Wojciecha",
+    "Kunegunda",
+    "Krystyna",
+    "Zyglinda",
+    "Krzesimir"
+   ],
+   "rky": [
+    "Antoni",
+    "Kinga",
+    "Krystyna",
+    "Kunegunda",
+    "Olga",
+    "Wojciecha",
+    "Zyglinda"
+   ]
+  },
+  "7-25": {
+   "wikipedia": [
+    "Walentyna",
+    "Nieznamir",
+    "Alfons",
+    "Olimpia",
+    "Rudolf",
+    "Rudolfina",
+    "Jakub",
+    "Sławosław",
+    "Krzysztof",
+    "Rudolfa",
+    "Dariusz"
+   ],
+   "rky": [
+    "Alfons",
+    "Dariusz",
+    "Jakub",
+    "Krzysztof",
+    "Nieznamir",
+    "Olimpia",
+    "Rudolf",
+    "Rudolfa",
+    "Rudolfina",
+    "Sławosław",
+    "Walentyna"
+   ]
+  },
+  "7-26": {
+   "wikipedia": [
+    "Anna",
+    "Mirosława",
+    "Grażyna",
+    "Krystiana",
+    "Bartłomieja",
+    "Hanna",
+    "Sancja",
+    "Joachim"
+   ],
+   "rky": [
+    "Anna",
+    "Bartłomieja",
+    "Grażyna",
+    "Hanna",
+    "Joachim",
+    "Krystiana",
+    "Mirosława",
+    "Sancja"
+   ]
+  },
+  "7-27": {
+   "wikipedia": [
+    "Aureli",
+    "Pantaleon",
+    "Antuza",
+    "Natalia",
+    "Bertold",
+    "Laurenty",
+    "Wszebor",
+    "Julia",
+    "Lilla",
+    "Stoisław"
+   ],
+   "rky": [
+    "Antuza",
+    "Aureli",
+    "Bertold",
+    "Julia",
+    "Laurenty",
+    "Lilla",
+    "Natalia",
+    "Pantaleon",
+    "Wszebor"
+   ]
+  },
+  "7-28": {
+   "wikipedia": [
+    "Alfonsa",
+    "Samson",
+    "Pantaleon",
+    "Marcela",
+    "Wiktor",
+    "Innocenty",
+    "Tymona",
+    "Tymon",
+    "Achacjusz",
+    "Achacy"
+   ],
+   "rky": [
+    "Achacjusz",
+    "Achacy",
+    "Alfonsa",
+    "Innocenty",
+    "Marcela",
+    "Pantaleon",
+    "Samson",
+    "Tymon",
+    "Tymona",
+    "Wiktor"
+   ]
+  },
+  "7-29": {
+   "wikipedia": [
+    "Konstanty",
+    "Lucyliusz",
+    "Olaf",
+    "Maria",
+    "Faustyn",
+    "Serafina",
+    "Marta",
+    "Urban",
+    "Beatrycze",
+    "Lucyla",
+    "Cierpisław",
+    "Prosper"
+   ],
+   "rky": [
+    "Beatrycze",
+    "Cierpisław",
+    "Faustyn",
+    "Konstantyn",
+    "Lucyla",
+    "Lucyliusz",
+    "Maria",
+    "Marta",
+    "Olaf",
+    "Prosper",
+    "Serafina",
+    "Urban"
+   ]
+  },
+  "7-30": {
+   "wikipedia": [
+    "Ubysław",
+    "Ubysława",
+    "Ludomiła",
+    "Julita",
+    "Maryna",
+    "Abdon",
+    "Julia",
+    "Piotr"
+   ],
+   "rky": [
+    "Abdon",
+    "Julia",
+    "Julita",
+    "Ludomiła",
+    "Maryna",
+    "Piotr",
+    "Ubysław",
+    "Ubysława"
+   ]
+  },
+  "7-31": {
+   "wikipedia": [
+    "Alfonsa",
+    "Justyn",
+    "German",
+    "Helena",
+    "Demokryt",
+    "Ignacy",
+    "Ernesta",
+    "Emilian",
+    "Beat",
+    "Ludomir",
+    "Adam",
+    "Lubomir"
+   ],
+   "rky": [
+    "Adam",
+    "Alfonsa",
+    "Beat",
+    "Demokryt",
+    "Emilian",
+    "Ernesta",
+    "German",
+    "Helena",
+    "Ignacy",
+    "Justyn",
+    "Lubomir",
+    "Ludomir"
+   ]
+  },
+  "8-1": {
+   "wikipedia": [
+    "Alfons",
+    "Justyn",
+    "Nadzieja",
+    "Piotr",
+    "Brodzisław",
+    "Rudolf",
+    "Rudolfina",
+    "Konrad",
+    "Rudolfa"
+   ],
+   "rky": [
+    "Alfons",
+    "Brodzisław",
+    "Justyn",
+    "Konrad",
+    "Nadzieja",
+    "Piotr",
+    "Rudolf",
+    "Rudolfa",
+    "Rudolfina"
+   ]
+  },
+  "8-2": {
+   "wikipedia": [
+    "Gustaw",
+    "Karina",
+    "Maria",
+    "Stefan",
+    "Świętosław",
+    "Teodota",
+    "Edeltruda",
+    "Alfreda"
+   ],
+   "rky": [
+    "Gustaw",
+    "Karina",
+    "Maria",
+    "Stefan",
+    "Świętosław",
+    "Teodota"
+   ]
+  },
+  "8-3": {
+   "wikipedia": [
+    "Nikodem",
+    "Nikodema",
+    "Szczepan",
+    "Lidia",
+    "Piotr",
+    "Dalmacjusz"
+   ],
+   "rky": [
+    "Lidia",
+    "Nikodem",
+    "Nikodema",
+    "Piotr",
+    "Szczepan"
+   ]
+  },
+  "8-4": {
+   "wikipedia": [
+    "Alfred",
+    "Mironieg",
+    "Perpetua",
+    "Maria",
+    "Arystarch",
+    "Andrzej"
+   ],
+   "rky": [
+    "Alfred",
+    "Andrzej",
+    "Arystarch",
+    "Dominika",
+    "Maria",
+    "Mironieg",
+    "Perpetua",
+    "Protazy"
+   ]
+  },
+  "8-5": {
+   "wikipedia": [
+    "Nonna",
+    "Cyriak",
+    "Abel",
+    "Maria",
+    "Memiusz",
+    "Oswalda",
+    "Oswald",
+    "Karolina"
+   ],
+   "rky": [
+    "Abel",
+    "Cyriak",
+    "Karolina",
+    "Maria",
+    "Memiusz",
+    "Nonna",
+    "Oswald",
+    "Oswalda"
+   ]
+  },
+  "8-6": {
+   "wikipedia": [
+    "Wincenty",
+    "Felicysym",
+    "Stefan",
+    "Jakub",
+    "January",
+    "Just",
+    "Namir",
+    "Nasław",
+    "Oktawian"
+   ],
+   "rky": [
+    "Felicysym",
+    "Jakub",
+    "January",
+    "Just",
+    "Namir",
+    "Nasław",
+    "Oktawian",
+    "Stefan",
+    "Wincenty"
+   ]
+  },
+  "8-7": {
+   "wikipedia": [
+    "Licyniusz",
+    "Kajetan",
+    "Klaudia",
+    "Dobiemir",
+    "Dorota",
+    "Sykstus",
+    "Andromeda",
+    "Albert",
+    "Doryda",
+    "Licynia",
+    "Konrad",
+    "Donata"
+   ],
+   "rky": [
+    "Albert",
+    "Andromeda",
+    "Dobiemir",
+    "Donata",
+    "Dorota",
+    "Doryda",
+    "Kajetan",
+    "Klaudia",
+    "Konrad",
+    "Licynia",
+    "Licyniusz",
+    "Sykstus"
+   ]
+  },
+  "8-8": {
+   "wikipedia": [
+    "Dominik",
+    "Niezamysł",
+    "Cyriak",
+    "Sylwiusz",
+    "Cyryl",
+    "Emilian",
+    "Niegosław"
+   ],
+   "rky": [
+    "Cyriak",
+    "Cyryl",
+    "Emilian",
+    "Niegosław",
+    "Niezamysł",
+    "Sylwiusz"
+   ]
+  },
+  "8-9": {
+   "wikipedia": [
+    "Klarysa",
+    "Miłorad",
+    "Domicjan",
+    "Domicjana",
+    "Dominika",
+    "Roland",
+    "Roman",
+    "Jan",
+    "Romuald"
+   ],
+   "rky": [
+    "Domicjan",
+    "Domicjana",
+    "Dominika",
+    "Jan",
+    "Klarysa",
+    "Miłorad",
+    "Roland",
+    "Roman",
+    "Romuald"
+   ]
+  },
+  "8-10": {
+   "wikipedia": [
+    "Bernard",
+    "Amadea",
+    "Wawrzyniec",
+    "Wierzchosław",
+    "Asteria",
+    "Hugona",
+    "Bożydar",
+    "Wirzchosław",
+    "Filomena",
+    "Prochor"
+   ],
+   "rky": [
+    "Amadea",
+    "Asteria",
+    "Bernard",
+    "Bożydar",
+    "Filomena",
+    "Hugona",
+    "Prochor",
+    "Wawrzyniec",
+    "Wierzchosław",
+    "Wirzchosław"
+   ]
+  },
+  "8-11": {
+   "wikipedia": [
+    "Lukrecja",
+    "Herman",
+    "Włodzimierz",
+    "Tyburcja",
+    "Zuzanna",
+    "Ligia",
+    "Aleksander",
+    "Klara"
+   ],
+   "rky": [
+    "Aleksander",
+    "Herman",
+    "Ligia",
+    "Lukrecja",
+    "Tyburcja",
+    "Włodzimierz",
+    "Zuzanna"
+   ]
+  },
+  "8-12": {
+   "wikipedia": [
+    "Anicet",
+    "Aniceta",
+    "Bądzsław",
+    "Cyriak",
+    "Digna",
+    "Eunomia",
+    "Euzebiusz",
+    "Fotyn",
+    "Herkulan",
+    "Hilaria",
+    "Innocenty",
+    "Joanna",
+    "Julian",
+    "Julianna",
+    "Klara",
+    "Largus",
+    "Lech",
+    "Leonida",
+    "Makary",
+    "Wiktoria"
+   ],
+   "rky": [
+    "Anita",
+    "Filip",
+    "Julia",
+    "Lech",
+    "Łukasz",
+    "Mateusz",
+    "Robert"
+   ]
+  },
+  "8-13": {
+   "wikipedia": [
+    "Radomiła",
+    "Hipolit",
+    "Sekundyn",
+    "Hipolita",
+    "Kasjan",
+    "Adriana",
+    "Helena",
+    "Wojbor",
+    "Jan",
+    "Diana",
+    "Radegunda"
+   ],
+   "rky": [
+    "Adriana",
+    "Diana",
+    "Helena",
+    "Hipolit",
+    "Hipolita",
+    "Jan",
+    "Kasjan",
+    "Radegunda",
+    "Radomiła",
+    "Sekundyn",
+    "Wojbor"
+   ]
+  },
+  "8-14": {
+   "wikipedia": [
+    "Alfred",
+    "Euzebiusz",
+    "Atanazja",
+    "Kalikst",
+    "Dobrowoj",
+    "Maksymilian",
+    "Dobrowoja",
+    "Machabeusz",
+    "Ursycyn",
+    "Majnard"
+   ],
+   "rky": [
+    "Alfred",
+    "Atanazja",
+    "Dobrowoj",
+    "Dobrowoja",
+    "Euzebiusz",
+    "Kalikst",
+    "Machabeusz",
+    "Majnard",
+    "Maksymilian",
+    "Ursycyn"
+   ]
+  },
+  "8-15": {
+   "wikipedia": [
+    "Napoleon",
+    "Maria",
+    "Stefan",
+    "Arnolf",
+    "Arnulf",
+    "Trzebiemir",
+    "Armida"
+   ],
+   "rky": [
+    "Armida",
+    "Arnolf",
+    "Arnulf",
+    "Maria",
+    "Napoleon",
+    "Stefan",
+    "Trzebiemir"
+   ]
+  },
+  "8-16": {
+   "wikipedia": [
+    "Ambroży",
+    "Emil",
+    "Roch",
+    "Domarad",
+    "Eleuteria",
+    "Stefan",
+    "Piotra",
+    "Saba",
+    "Arsacjusz"
+   ],
+   "rky": [
+    "Ambroży",
+    "Arsacjusz",
+    "Domarad",
+    "Eleuteria",
+    "Emil",
+    "Piotra",
+    "Roch",
+    "Saba",
+    "Stefan"
+   ]
+  },
+  "8-17": {
+   "wikipedia": [
+    "Bertram",
+    "Jacek",
+    "Miron",
+    "Zawisza",
+    "Anita",
+    "Jaczewoj",
+    "Liberat",
+    "Eliza",
+    "Joanna",
+    "Anastazja",
+    "Julianna",
+    "Angelika",
+    "Serwiusz",
+    "Żaneta",
+    "Klara"
+   ],
+   "rky": [
+    "Anastazja",
+    "Angelika",
+    "Anita",
+    "Bertram",
+    "Eliza",
+    "Jacek",
+    "Jaczewoj",
+    "Joanna",
+    "Julianna",
+    "Liberat",
+    "Miron",
+    "Serwiusz",
+    "Zawisza",
+    "Żaneta"
+   ]
+  },
+  "8-18": {
+   "wikipedia": [
+    "Klara",
+    "Ilona",
+    "Tacjana",
+    "Tworzysława",
+    "Helena",
+    "Agapit",
+    "Bogusława",
+    "Bronisław"
+   ],
+   "rky": [
+    "Agapit",
+    "Bogusława",
+    "Bronisław",
+    "Helena",
+    "Ilona",
+    "Klara",
+    "Tacjana",
+    "Tworzysława"
+   ]
+  },
+  "8-19": {
+   "wikipedia": [
+    "Bolesław",
+    "Ludwik",
+    "Emilia",
+    "Sykstus",
+    "Juliusz",
+    "Jan",
+    "Sebald",
+    "Julian"
+   ],
+   "rky": [
+    "Bolesław",
+    "Emilia",
+    "Jan",
+    "Julian",
+    "Juliusz",
+    "Ludwik",
+    "Sebald",
+    "Sykstus"
+   ]
+  },
+  "8-20": {
+   "wikipedia": [
+    "Bernard",
+    "Samuel",
+    "Sobiesław",
+    "Sabin",
+    "Sara",
+    "Jan",
+    "Samuela"
+   ],
+   "rky": [
+    "Bernard",
+    "Jan",
+    "Sabin",
+    "Samuel",
+    "Samuela",
+    "Sara",
+    "Sobiesław"
+   ]
+  },
+  "8-21": {
+   "wikipedia": [
+    "Bernard",
+    "Franciszek",
+    "Joanna",
+    "Wiktoria",
+    "Męcimir",
+    "Adolf",
+    "Filipina",
+    "Emilian",
+    "Baldwin",
+    "Baldwina",
+    "Agapiusz"
+   ],
+   "rky": [
+    "Adolf",
+    "Baldwin",
+    "Baldwina",
+    "Bernard",
+    "Emilian",
+    "Filipina",
+    "Franciszek",
+    "Joanna",
+    "Męcimir"
+   ]
+  },
+  "8-22": {
+   "wikipedia": [
+    "Fabrycjan",
+    "Tymoteusz",
+    "Teonas",
+    "Fabrycy",
+    "Dalegor",
+    "Hipolit",
+    "Namysław",
+    "Maria",
+    "Zygfryd",
+    "Zygfryda",
+    "Cezary",
+    "Agatonik",
+    "Teona"
+   ],
+   "rky": [
+    "Agatonik",
+    "Cezary",
+    "Dalegor",
+    "Fabrycjan",
+    "Fabrycy",
+    "Hipolit",
+    "Maria",
+    "Namysław",
+    "Teona",
+    "Teonas",
+    "Tymoteusz",
+    "Zygfryd",
+    "Zygfryda"
+   ]
+  },
+  "8-23": {
+   "wikipedia": [
+    "Filip",
+    "Róża",
+    "Walerian",
+    "Benicjusz",
+    "Sulirad",
+    "Zacheusz",
+    "Laurenty",
+    "Apolinary",
+    "Piotra",
+    "Klaudiusz",
+    "Leoncja",
+    "Lubomira"
+   ],
+   "rky": [
+    "Apolinary",
+    "Benicjusz",
+    "Filip",
+    "Klaudiusz",
+    "Laurenty",
+    "Leoncja",
+    "Lubomira",
+    "Piotra",
+    "Róża",
+    "Sulirad",
+    "Walerian",
+    "Zacheusz"
+   ]
+  },
+  "8-24": {
+   "wikipedia": [
+    "Michalina",
+    "Halina",
+    "Anita",
+    "Cieszymir",
+    "Bartłomiej",
+    "Joanna",
+    "Jerzy",
+    "Malina",
+    "Bartosz",
+    "Natanael"
+   ],
+   "rky": [
+    "Anita",
+    "Bartłomiej",
+    "Bartosz",
+    "Cieszymir",
+    "Halina",
+    "Jerzy",
+    "Joanna",
+    "Malina",
+    "Michalina"
+   ]
+  },
+  "8-25": {
+   "wikipedia": [
+    "Sieciesław",
+    "Kalasanty",
+    "Ludwik",
+    "Luiza",
+    "Michał",
+    "Elwira",
+    "Grzegorz",
+    "Arediusz",
+    "Gaudencjusz",
+    "Teodoryk",
+    "Genezjusz"
+   ],
+   "rky": [
+    "Arediusz",
+    "Elwira",
+    "Gaudencjusz",
+    "Genezjusz",
+    "Grzegorz",
+    "Kalasanty",
+    "Ludwik",
+    "Luiza",
+    "Michał",
+    "Sieciesław",
+    "Teodoryk"
+   ]
+  },
+  "8-26": {
+   "wikipedia": [
+    "Wirzchosława",
+    "Maria",
+    "Maksym",
+    "Dobroniega",
+    "Joanna",
+    "Wiktorian",
+    "Konstanty",
+    "Ireneusz",
+    "Wiktoriana",
+    "Wiktorianna"
+   ],
+   "rky": [
+    "Dobroniega",
+    "Ireneusz",
+    "Joanna",
+    "Konstanty",
+    "Maksym",
+    "Maria",
+    "Wiktorian",
+    "Wiktoriana",
+    "Wiktorianna",
+    "Wirzchosława"
+   ]
+  },
+  "8-27": {
+   "wikipedia": [
+    "Teodor",
+    "Józef",
+    "Gebhard",
+    "Rufus",
+    "Monika",
+    "Amadea",
+    "Małgorzata",
+    "Przybymir",
+    "Cezary"
+   ],
+   "rky": [
+    "Amadea",
+    "Cezary",
+    "Gebhard",
+    "Józef",
+    "Małgorzata",
+    "Monika",
+    "Przybymir",
+    "Rufus",
+    "Teodor"
+   ]
+  },
+  "8-28": {
+   "wikipedia": [
+    "Alfons",
+    "Hermes",
+    "Joachima",
+    "Stronisław",
+    "Sobiesław",
+    "Adelinda",
+    "Aleksy",
+    "Augustyn"
+   ],
+   "rky": [
+    "Adelinda",
+    "Aleksander",
+    "Aleksy",
+    "Alfons",
+    "Augustyn",
+    "Hermes",
+    "Joachima",
+    "Sobiesław",
+    "Stronisław"
+   ]
+  },
+  "8-29": {
+   "wikipedia": [
+    "Mederyka",
+    "Sabina",
+    "Flora",
+    "Racibor",
+    "Mederyk",
+    "Jan"
+   ],
+   "rky": [
+    "Flora",
+    "Jan",
+    "Mederyk",
+    "Mederyka",
+    "Racibor",
+    "Sabina"
+   ]
+  },
+  "8-30": {
+   "wikipedia": [
+    "Gaudencja",
+    "Miron",
+    "Tekla",
+    "Częstowoj",
+    "Adaukt",
+    "Rebeka",
+    "Piotr"
+   ],
+   "rky": [
+    "Adaukt",
+    "Częstowoj",
+    "Gaudencja",
+    "Miron",
+    "Piotr",
+    "Rebeka",
+    "Tekla"
+   ]
+  },
+  "8-31": {
+   "wikipedia": [
+    "Rajmund",
+    "Bogdan",
+    "Albertyna",
+    "Amat",
+    "Paulina",
+    "Teodot"
+   ],
+   "rky": [
+    "Albertyna",
+    "Amat",
+    "Bogdan",
+    "Paulina",
+    "Rajmund",
+    "Teodot"
+   ]
+  },
+  "9-1": {
+   "wikipedia": [
+    "Idzi",
+    "Bronisław",
+    "Bronisława",
+    "Sykstus",
+    "August",
+    "Miłodziad",
+    "Melecjusz",
+    "Anna"
+   ],
+   "rky": [
+    "Anna",
+    "August",
+    "Bronisław",
+    "Bronisława",
+    "Idzi",
+    "Melecjusz",
+    "Miłodziad",
+    "Sykstus"
+   ]
+  },
+  "9-2": {
+   "wikipedia": [
+    "Absalon",
+    "Dziesław",
+    "Wilhelm",
+    "Stefan",
+    "Bogdan",
+    "Eliza",
+    "Tobiasz",
+    "Dionizy",
+    "Henryk",
+    "Julian",
+    "Czesław"
+   ],
+   "rky": [
+    "Absalon",
+    "Bogdan",
+    "Czesław",
+    "Dionizy",
+    "Dziesław",
+    "Eliza",
+    "Henryk",
+    "Julian",
+    "Stefan",
+    "Tobiasz",
+    "Wilhelm"
+   ]
+  },
+  "9-3": {
+   "wikipedia": [
+    "Eufemia",
+    "Erazma",
+    "Wincenty",
+    "Gerarda",
+    "Antoni",
+    "Bazylisa",
+    "Szymona",
+    "Mojmir",
+    "Bartłomiej",
+    "Zenon",
+    "Szymon",
+    "Dorota",
+    "Joachim",
+    "Gerard",
+    "Izabela",
+    "Natalis",
+    "Jan",
+    "Bronisław",
+    "Grzegorz",
+    "Przecław",
+    "Przedsław"
+   ],
+   "rky": [
+    "Antoni",
+    "Bartłomiej",
+    "Bazylisa",
+    "Bronisław",
+    "Dorota",
+    "Erazma",
+    "Eufemia",
+    "Gerard",
+    "Gerarda",
+    "Grzegorz",
+    "Izabela",
+    "Jan",
+    "Joachim",
+    "Manswet",
+    "Mojmir",
+    "Natalis",
+    "Przecław",
+    "Przedsław",
+    "Szymon",
+    "Szymona",
+    "Wincenty",
+    "Zenon"
+   ]
+  },
+  "9-4": {
+   "wikipedia": [
+    "Rozalia",
+    "Liliana",
+    "Rościgniew",
+    "Daniela",
+    "Hermiona",
+    "Ida",
+    "Ermegarda",
+    "Irmegarda",
+    "Scypion",
+    "Kandyda"
+   ],
+   "rky": [
+    "Daniela",
+    "Ermegarda",
+    "Hermiona",
+    "Ida",
+    "Irmegarda",
+    "Kandyda",
+    "Liliana",
+    "Rościgniew",
+    "Rozalia",
+    "Scypion"
+   ]
+  },
+  "9-5": {
+   "wikipedia": [
+    "Herakles",
+    "Herkulan",
+    "Dorota",
+    "Fereol",
+    "Stronisława",
+    "Herkules",
+    "Justyna"
+   ],
+   "rky": [
+    "Dorota",
+    "Fereol",
+    "Herakles",
+    "Herkulan",
+    "Herkules",
+    "Justyna",
+    "Stronisława",
+    "Wawrzyniec"
+   ]
+  },
+  "9-6": {
+   "wikipedia": [
+    "Michał",
+    "Zachariasz",
+    "Magnus",
+    "German",
+    "Eugeniusz",
+    "Zachary",
+    "Albin",
+    "Aleksja",
+    "Uniewit",
+    "Gundolf",
+    "Ewa",
+    "Amoniusz",
+    "Petroniusz",
+    "Manswet"
+   ],
+   "rky": [
+    "Albin",
+    "Aleksja",
+    "Eugenia",
+    "Eugeniusz",
+    "Ewa",
+    "German",
+    "Gundolf",
+    "Magnus",
+    "Michał",
+    "Uniewit",
+    "Zachariasz",
+    "Zachary"
+   ]
+  },
+  "9-7": {
+   "wikipedia": [
+    "Sozont",
+    "Melchior",
+    "Ryszard",
+    "Domasława",
+    "Regina",
+    "Dobrobąd",
+    "Teodoryk",
+    "Gratus"
+   ],
+   "rky": [
+    "Dobrobąd",
+    "Domasława",
+    "Gratus",
+    "Melchior",
+    "Regina",
+    "Ryszard",
+    "Sozont",
+    "Teodoryk"
+   ]
+  },
+  "9-8": {
+   "wikipedia": [
+    "Radosława",
+    "Maria",
+    "Adrianna",
+    "Adrian",
+    "Radosław",
+    "Nestor"
+   ],
+   "rky": [
+    "Adrianna",
+    "Maria",
+    "Nestor",
+    "Radosław",
+    "Radosława"
+   ]
+  },
+  "9-9": {
+   "wikipedia": [
+    "Gorgoniusz",
+    "Aureliusz",
+    "Otmar",
+    "Piotr",
+    "Audomar",
+    "Dionizy",
+    "Ożanna"
+   ],
+   "rky": [
+    "Audomar",
+    "Aureliusz",
+    "Dionizy",
+    "Edeltrauda",
+    "Gorgoniusz",
+    "Otmar",
+    "Ożanna",
+    "Piotr"
+   ]
+  },
+  "9-10": {
+   "wikipedia": [
+    "Mścibor",
+    "Klemens",
+    "Leon",
+    "Poliana",
+    "Polianna",
+    "Pulcheria",
+    "Aldona",
+    "Mikołaj",
+    "Leona",
+    "Łukasz",
+    "Nimfodora",
+    "Kandyda",
+    "Piotr",
+    "Agapiusz"
+   ],
+   "rky": [
+    "Aldona",
+    "Kandyda",
+    "Klemens",
+    "Leon",
+    "Leona",
+    "Łukasz",
+    "Mikołaj",
+    "Mścibor",
+    "Nimfodora",
+    "Piotr",
+    "Poliana",
+    "Polianna",
+    "Pulcheria"
+   ]
+  },
+  "9-11": {
+   "wikipedia": [
+    "Feliks",
+    "Jacek",
+    "Naczęsław",
+    "Dagna",
+    "Prot",
+    "Jan",
+    "Ademar",
+    "Piotr"
+   ],
+   "rky": [
+    "Ademar",
+    "Dagna",
+    "Feliks",
+    "Jacek",
+    "Jan",
+    "Naczęsław",
+    "Piotr",
+    "Prot"
+   ]
+  },
+  "9-12": {
+   "wikipedia": [
+    "Gwidon",
+    "Maria",
+    "Sylwin",
+    "Amadeusz",
+    "Cyrus",
+    "Maja",
+    "Sylwina",
+    "Teodul"
+   ],
+   "rky": [
+    "Amadeusz",
+    "Cyrus",
+    "Gwidon",
+    "Maja",
+    "Maria",
+    "Sylwin",
+    "Sylwina"
+   ]
+  },
+  "9-13": {
+   "wikipedia": [
+    "Filip",
+    "Amat",
+    "Aureliusz",
+    "Morzysław",
+    "Aleksander",
+    "Litoriusz"
+   ],
+   "rky": [
+    "Aleksander",
+    "Amat",
+    "Aureliusz",
+    "Eugenia",
+    "Filip",
+    "Litoriusz",
+    "Morzysław"
+   ]
+  },
+  "9-14": {
+   "wikipedia": [
+    "Bernard",
+    "Siemomysł",
+    "Szymon",
+    "Matern",
+    "Piotr"
+   ],
+   "rky": [
+    "Bernard",
+    "Matern",
+    "Piotr",
+    "Siemomysł",
+    "Szymon"
+   ]
+  },
+  "9-15": {
+   "wikipedia": [
+    "Budzigniew",
+    "Maria",
+    "Albin",
+    "Ekhard",
+    "Kamil"
+   ],
+   "rky": [
+    "Albin",
+    "Budzigniew",
+    "Ekhard",
+    "Kamil",
+    "Maria"
+   ]
+  },
+  "9-16": {
+   "wikipedia": [
+    "Eugenia",
+    "Edyta",
+    "Jakub",
+    "Kornel",
+    "Eufemia",
+    "Edda",
+    "Sędzisław",
+    "Antym",
+    "Franciszek",
+    "Kamila",
+    "Sebastiana",
+    "Wiktor",
+    "Cyprian",
+    "Kornel",
+    "Kornel"
+   ],
+   "rky": [
+    "Antym",
+    "Cyprian",
+    "Edda",
+    "Edyta",
+    "Eufemia",
+    "Eugenia",
+    "Franciszek",
+    "Jakub",
+    "Kamila",
+    "Kornel",
+    "Korneli",
+    "Korneliusz",
+    "Sebastiana",
+    "Sędzisław",
+    "Wiktor"
+   ]
+  },
+  "9-17": {
+   "wikipedia": [
+    "Ariadna",
+    "Szczęsny",
+    "Zygmunta",
+    "Justyna",
+    "Justyn",
+    "Narcyz",
+    "Hildegarda",
+    "Lamberta",
+    "Franciszek",
+    "Szczęsna",
+    "Dezyderiusz",
+    "Drogosław",
+    "Lambert",
+    "Teodora",
+    "Piotr",
+    "Cherubin",
+    "Robert"
+   ],
+   "rky": [
+    "Ariadna",
+    "Dezyderiusz",
+    "Drogosław",
+    "Franciszek",
+    "Hildegarda",
+    "Justyn",
+    "Justyna",
+    "Lambert",
+    "Lamberta",
+    "Narcyz",
+    "Piotr",
+    "Szczęsna",
+    "Szczęsny",
+    "Teodora",
+    "Zygmunta"
+   ]
+  },
+  "9-18": {
+   "wikipedia": [
+    "Irena",
+    "Józef",
+    "Fereol",
+    "Zachariasz",
+    "Dobrowit",
+    "Stefania",
+    "Zachary",
+    "Ryszarda",
+    "Tytus",
+    "Baltazar",
+    "Sobierad"
+   ],
+   "rky": [
+    "Baltazar",
+    "Dobrowit",
+    "Fereol",
+    "Irena",
+    "Józef",
+    "Ryszarda",
+    "Sobierad",
+    "Stefania",
+    "Tytus",
+    "Zachariasz",
+    "Zachary"
+   ]
+  },
+  "9-19": {
+   "wikipedia": [
+    "Więcemir",
+    "Teodor",
+    "Wilhelmina",
+    "Marta",
+    "Alfons",
+    "Trofim",
+    "Konstancja",
+    "Festus",
+    "January",
+    "Zuzanna",
+    "Arnolf",
+    "Arnulf"
+   ],
+   "rky": [
+    "Alfons",
+    "Arnolf",
+    "Arnulf",
+    "Festus",
+    "January",
+    "Konstancja",
+    "Marta",
+    "Teodor",
+    "Trofim",
+    "Więcemir",
+    "Wilhelmina",
+    "Zuzanna"
+   ]
+  },
+  "9-20": {
+   "wikipedia": [
+    "Klemens",
+    "Mieczysława",
+    "Irena",
+    "Faustyna",
+    "Oleg",
+    "Eustachiusz",
+    "Eustachy",
+    "Fausta",
+    "Dionizy",
+    "Miłostryj",
+    "Barbara",
+    "Perpetua",
+    "Agnieszka",
+    "Protazy"
+   ],
+   "rky": [
+    "Agnieszka",
+    "Barbara",
+    "Dionizy",
+    "Eustachiusz",
+    "Eustachy",
+    "Fausta",
+    "Faustyna",
+    "Irena",
+    "Klemens",
+    "Mieczysława",
+    "Miłostryj",
+    "Oleg",
+    "Perpetua"
+   ]
+  },
+  "9-21": {
+   "wikipedia": [
+    "Bernardyna",
+    "Hipolit",
+    "Jonasz",
+    "Marek",
+    "Laurenty",
+    "Mateusz",
+    "Ifigenia",
+    "Bożeciech",
+    "Melecjusz"
+   ],
+   "rky": [
+    "Bernardyna",
+    "Bożeciech",
+    "Hipolit",
+    "Ifigenia",
+    "Jonasz",
+    "Laurenty",
+    "Marek",
+    "Mateusz",
+    "Melecjusz"
+   ]
+  },
+  "9-22": {
+   "wikipedia": [
+    "Maurycy",
+    "Tomasz",
+    "Ignacy",
+    "Joachim",
+    "Prosimir",
+    "Józefa"
+   ],
+   "rky": [
+    "Daria",
+    "Ignacy",
+    "Joachim",
+    "Józefa",
+    "Maurycy",
+    "Prosimir",
+    "Tomasz"
+   ]
+  },
+  "9-23": {
+   "wikipedia": [
+    "Bogusław",
+    "Liwiusz",
+    "Tekla",
+    "Boguchwała",
+    "Libert",
+    "Zachariasz",
+    "Zachary",
+    "Krzysztof",
+    "Elżbieta",
+    "Piotr"
+   ],
+   "rky": [
+    "Boguchwała",
+    "Bogusław",
+    "Elżbieta",
+    "Krzysztof",
+    "Libert",
+    "Liwiusz",
+    "Piotr",
+    "Tekla",
+    "Zachariasz",
+    "Zachary"
+   ]
+  },
+  "9-24": {
+   "wikipedia": [
+    "Teodor",
+    "Gerard",
+    "Maria",
+    "Uniegost",
+    "Tomir",
+    "Gerarda",
+    "Twardomir"
+   ],
+   "rky": [
+    "Gerard",
+    "Gerarda",
+    "Maria",
+    "Teodor",
+    "Tomir",
+    "Uniegost"
+   ]
+  },
+  "9-25": {
+   "wikipedia": [
+    "Aureli",
+    "Aurelia",
+    "Aurelian",
+    "Herkulan",
+    "Wincenty",
+    "Rufus",
+    "Franciszek",
+    "Włodzisław",
+    "Eufrozyna",
+    "Władysław",
+    "Kleofas",
+    "Ermenfryda",
+    "Irmfryda",
+    "Ermenfryd",
+    "Irmfryd"
+   ],
+   "rky": [
+    "Aureli",
+    "Aurelia",
+    "Aurelian",
+    "Ermenfryd",
+    "Ermenfryda",
+    "Eufrozyna",
+    "Franciszek",
+    "Herkulan",
+    "Irmfryd",
+    "Irmfryda",
+    "Kleofas",
+    "Rufus",
+    "Wincenty",
+    "Władysław",
+    "Włodzisław"
+   ]
+  },
+  "9-26": {
+   "wikipedia": [
+    "Euzebiusz",
+    "Majnard",
+    "Cyprian",
+    "Kacper",
+    "Kasper",
+    "Damian",
+    "Kosma",
+    "Justyna"
+   ],
+   "rky": [
+    "Cyprian",
+    "Damian",
+    "Euzebiusz",
+    "Kacper",
+    "Kasper",
+    "Majnard"
+   ]
+  },
+  "9-27": {
+   "wikipedia": [
+    "Przedbor",
+    "Urban",
+    "Gaja",
+    "Amadeusz",
+    "Gajus",
+    "Mirela",
+    "Adolf",
+    "Adolfa",
+    "Zybart",
+    "Zybert",
+    "Zybracht",
+    "Zygbert"
+   ],
+   "rky": [
+    "Adolf",
+    "Adolfa",
+    "Amadeusz",
+    "Gaja",
+    "Gajusz",
+    "Mirela",
+    "Przedbor",
+    "Urban",
+    "Zybart",
+    "Zybert",
+    "Zybracht",
+    "Zygbert"
+   ]
+  },
+  "9-28": {
+   "wikipedia": [
+    "Więcesław",
+    "Wawrzyniec",
+    "Salomon",
+    "Wacława",
+    "Marek",
+    "Sylwin",
+    "Wacław",
+    "Laurencjusz",
+    "Jan",
+    "Alodiusz",
+    "Sylwina",
+    "Tymon",
+    "Bernardyn"
+   ],
+   "rky": [
+    "Alodiusz",
+    "Jan",
+    "Laurencjusz",
+    "Marek",
+    "Salomon",
+    "Sylwin",
+    "Sylwina",
+    "Tymon",
+    "Wacław",
+    "Wacława",
+    "Wawrzyniec",
+    "Więcesław"
+   ]
+  },
+  "9-29": {
+   "wikipedia": [
+    "Cyriak",
+    "Dadzbog",
+    "Dadzboga",
+    "Lutwin",
+    "Dariusz",
+    "Franciszek",
+    "Fraternus",
+    "Gabriel",
+    "Gajana",
+    "Grimbald",
+    "Michalina",
+    "Michał",
+    "Mikołaj",
+    "Rafał",
+    "Rypsyma",
+    "Teodota",
+    "Ludwin"
+   ],
+   "rky": [
+    "Cyriak",
+    "Dadzbog",
+    "Dadzboga",
+    "Dariusz",
+    "Franciszek",
+    "Fraternus",
+    "Gabriel",
+    "Gajana",
+    "Grimbald",
+    "Ludwin",
+    "Lutwin",
+    "Michalina",
+    "Michał",
+    "Mikołaj",
+    "Rafał",
+    "Rypsyma",
+    "Teodota"
+   ]
+  },
+  "9-30": {
+   "wikipedia": [
+    "Euzebia",
+    "Felicja",
+    "Grzegorz",
+    "Zofia",
+    "Hieronim",
+    "Imisław",
+    "Jimisław",
+    "Himisław",
+    "Wiktor",
+    "Honoriusz",
+    "Znamir"
+   ],
+   "rky": [
+    "Felicja",
+    "Grzegorz",
+    "Hieronim",
+    "Honoriusz",
+    "Imisław",
+    "Wiara",
+    "Wiktor",
+    "Znamir",
+    "Zofia"
+   ]
+  },
+  "10-1": {
+   "wikipedia": [
+    "Cieszysław",
+    "Benigna",
+    "Danuta",
+    "Jan",
+    "Małobąd",
+    "Remigiusz",
+    "Igor"
+   ],
+   "rky": [
+    "Benigna",
+    "Cieszysław",
+    "Danuta",
+    "Igor",
+    "Jan",
+    "Małobąd",
+    "Remigiusz"
+   ]
+  },
+  "10-2": {
+   "wikipedia": [
+    "Aleksandra",
+    "Leodegar",
+    "Stanimir",
+    "Teofil",
+    "Nasiębor",
+    "Ursycyn"
+   ],
+   "rky": [
+    "Leodegar",
+    "Nasiębor",
+    "Stanimir",
+    "Teofil",
+    "Ursycyn"
+   ]
+  },
+  "10-3": {
+   "wikipedia": [
+    "Jan",
+    "Teresa",
+    "Gerard",
+    "Ewalda",
+    "Gerarda",
+    "Ewald",
+    "Kandyd",
+    "Eustachy",
+    "Sierosław",
+    "Częstobrona",
+    "Ermegarda",
+    "Irmegarda",
+    "Romana",
+    "Augustyna",
+    "Kandyda",
+    "Cyprian"
+   ],
+   "rky": [
+    "Augustyna",
+    "Cyprian",
+    "Częstobrona",
+    "Ermegarda",
+    "Eustachy",
+    "Ewald",
+    "Ewalda",
+    "Gerard",
+    "Gerarda",
+    "Irmegarda",
+    "Kandyd",
+    "Kandyda",
+    "Romana",
+    "Sierosław",
+    "Teresa"
+   ]
+  },
+  "10-4": {
+   "wikipedia": [
+    "Dobromiła",
+    "Dalwin",
+    "Franciszek",
+    "Konrad",
+    "Konrada",
+    "Dalewin",
+    "Petroniusz"
+   ],
+   "rky": [
+    "Dalewin",
+    "Dalwin",
+    "Franciszek",
+    "Konrad",
+    "Konrada"
+   ]
+  },
+  "10-5": {
+   "wikipedia": [
+    "Justyn",
+    "Faust",
+    "Galla",
+    "Charytyna",
+    "Placyd",
+    "Konstancjusz",
+    "Apolinary",
+    "Flawiana",
+    "Igor"
+   ],
+   "rky": [
+    "Apolinary",
+    "Charytyna",
+    "Faust",
+    "Flawiana",
+    "Galla",
+    "Igor",
+    "Justyn",
+    "Konstancjusz",
+    "Placyd"
+   ]
+  },
+  "10-6": {
+   "wikipedia": [
+    "Fryderyka",
+    "Alberta",
+    "Brunon",
+    "Roman",
+    "Bronisław",
+    "Baldwin",
+    "Baldwina",
+    "Askaniusz",
+    "Artur"
+   ],
+   "rky": [
+    "Alberta",
+    "Artur",
+    "Askaniusz",
+    "Baldwin",
+    "Baldwina",
+    "Bronisław",
+    "Brunon",
+    "Fryderyka",
+    "Roman"
+   ]
+  },
+  "10-7": {
+   "wikipedia": [
+    "Amalia",
+    "Tekla",
+    "Marek",
+    "August",
+    "Maria",
+    "Rościsława",
+    "Stefan",
+    "Justyna"
+   ],
+   "rky": [
+    "Amalia",
+    "August",
+    "Justyna",
+    "Marek",
+    "Maria",
+    "Mireli",
+    "Rościsława",
+    "Stefan",
+    "Tekla"
+   ]
+  },
+  "10-8": {
+   "wikipedia": [
+    "Laurencja",
+    "Marcin",
+    "Ginter",
+    "Ewodia",
+    "Guncerz",
+    "Gunter",
+    "Demetriusz",
+    "Pelagia",
+    "Symeon",
+    "Ewodiusz",
+    "Marcjusz",
+    "Brygida",
+    "Artemon",
+    "Gratus"
+   ],
+   "rky": [
+    "Artemon",
+    "Brygida",
+    "Demetriusz",
+    "Ewodia",
+    "Ewodiusz",
+    "Ginter",
+    "Gratus",
+    "Guncerz",
+    "Gunter",
+    "Laurencja",
+    "Marcin",
+    "Marcjusz",
+    "Pelagia",
+    "Symeon"
+   ]
+  },
+  "10-9": {
+   "wikipedia": [
+    "Przedpełk",
+    "Ludwik",
+    "Arnold",
+    "Guncerz",
+    "Ginter",
+    "Gunter",
+    "Dionizjusz",
+    "Bogdan",
+    "Atanazja",
+    "Bożydar",
+    "Sara",
+    "Sybilla",
+    "Dionizy",
+    "Jan",
+    "Aaron",
+    "Piotr"
+   ],
+   "rky": [
+    "Aaron",
+    "Arnold",
+    "Atanazja",
+    "Bogdan",
+    "Bożydar",
+    "Dionizjusz",
+    "Dionizy",
+    "Ginter",
+    "Guncerz",
+    "Gunter",
+    "Jan",
+    "Ludwik",
+    "Piotr",
+    "Przedpełk",
+    "Sara",
+    "Sybilla"
+   ]
+  },
+  "10-10": {
+   "wikipedia": [
+    "Lutomir",
+    "Kalistrat",
+    "Samuel",
+    "Przemysław",
+    "Paulin",
+    "Franciszek",
+    "Tomiła",
+    "Tomił",
+    "Adalryk",
+    "Alderyk",
+    "Kasjusz",
+    "Eulampiusz",
+    "Eulampia"
+   ],
+   "rky": [
+    "Adalryk",
+    "Alderyk",
+    "Eulampia",
+    "Eulampiusz",
+    "Franciszek",
+    "Kalistrat",
+    "Kasjusz",
+    "Lutomir",
+    "Paulin",
+    "Przemysław",
+    "Samuel",
+    "Tomił",
+    "Tomiła"
+   ]
+  },
+  "10-11": {
+   "wikipedia": [
+    "Burchard",
+    "Germanik",
+    "Maria",
+    "Dobromiła",
+    "Aldona",
+    "Brunon",
+    "Marian",
+    "Emil",
+    "Emilian",
+    "Placyda",
+    "Placyd"
+   ],
+   "rky": [
+    "Aldona",
+    "Brunon",
+    "Burchard",
+    "Dobromiła",
+    "Emil",
+    "Emilian",
+    "Germanik",
+    "Maria",
+    "Marian",
+    "Placyd",
+    "Placyda"
+   ]
+  },
+  "10-12": {
+   "wikipedia": [
+    "Witolda",
+    "Wilfryd",
+    "Serafin",
+    "Cyriak",
+    "Edwin",
+    "Marcin",
+    "Witold",
+    "Salwin",
+    "Grzymisław",
+    "Eustachy",
+    "Maksymiliana",
+    "Maksymilian"
+   ],
+   "rky": [
+    "Cyriak",
+    "Edwin",
+    "Eustachy",
+    "Grzymisław",
+    "Maksymilian",
+    "Maksymiliana",
+    "Marcin",
+    "Salwin",
+    "Serafin",
+    "Wilfryd",
+    "Witold",
+    "Witolda"
+   ]
+  },
+  "10-13": {
+   "wikipedia": [
+    "Daniel",
+    "Geraldyna",
+    "Wacław",
+    "Wacława",
+    "Maurycy",
+    "Gerald",
+    "Teofil",
+    "Mikołaj",
+    "Edward",
+    "Siemisław",
+    "Florencjusz",
+    "Florenty"
+   ],
+   "rky": [
+    "Daniel",
+    "Edward",
+    "Florencjusz",
+    "Florenty",
+    "Gerald",
+    "Geraldyna",
+    "Maurycy",
+    "Mikołaj",
+    "Siemisław",
+    "Teofil",
+    "Wacław",
+    "Wacława"
+   ]
+  },
+  "10-14": {
+   "wikipedia": [
+    "Bernard",
+    "Dominik",
+    "Alan",
+    "Gaja",
+    "Kalikst",
+    "Fortunata",
+    "Gajusz"
+   ],
+   "rky": [
+    "Alan",
+    "Bernard",
+    "Dominik",
+    "Fortunata",
+    "Gaja",
+    "Gajusz",
+    "Kalikst"
+   ]
+  },
+  "10-15": {
+   "wikipedia": [
+    "Teresa",
+    "Sewer",
+    "Tekla",
+    "Gościsława",
+    "Brunon",
+    "Jadwiga",
+    "Teodoryk"
+   ],
+   "rky": [
+    "Brunon",
+    "Gościsława",
+    "Jadwiga",
+    "Sewer",
+    "Tekla",
+    "Teodoryk",
+    "Teresa"
+   ]
+  },
+  "10-16": {
+   "wikipedia": [
+    "Aurelia",
+    "Radzisław",
+    "Ambroży",
+    "Gerard",
+    "Gaweł",
+    "Emil",
+    "Gerarda",
+    "Florentyna",
+    "Grzegorz",
+    "Dionizy",
+    "Jadwiga"
+   ],
+   "rky": [
+    "Ambroży",
+    "Aurelia",
+    "Dionizy",
+    "Emil",
+    "Florentyna",
+    "Gaweł",
+    "Gerard",
+    "Gerarda",
+    "Grzegorz",
+    "Jadwiga",
+    "Radzisław"
+   ]
+  },
+  "10-17": {
+   "wikipedia": [
+    "Małgorzata",
+    "Lucyna",
+    "Laurentyna",
+    "Augustyna",
+    "Rudolf",
+    "Wiktor",
+    "Rudolfina",
+    "Seweryna",
+    "Sulisława",
+    "Ignacy",
+    "Marian",
+    "Rudolfa",
+    "Zuzanna",
+    "Heron",
+    "Andrzej"
+   ],
+   "rky": [
+    "Andrzej",
+    "Augustyna",
+    "Heron",
+    "Ignacy",
+    "Laurentyna",
+    "Lucyna",
+    "Małgorzata",
+    "Marian",
+    "Rudolf",
+    "Rudolfa",
+    "Rudolfina",
+    "Seweryna",
+    "Sulisława",
+    "Wiktor",
+    "Zuzanna"
+   ]
+  },
+  "10-18": {
+   "wikipedia": [
+    "Asklepiades",
+    "Bratomił",
+    "Julian",
+    "Just",
+    "Łukasz",
+    "Miłobrat",
+    "Piotr",
+    "Remigia",
+    "Remigiusz",
+    "Siemowit",
+    "Ziemowit"
+   ],
+   "rky": [
+    "Asklepiades",
+    "Bratomił",
+    "Julian",
+    "Just",
+    "Łukasz",
+    "Miłobrat",
+    "Piotr",
+    "Remigia",
+    "Remigiusz",
+    "Siemowit"
+   ]
+  },
+  "10-19": {
+   "wikipedia": [
+    "Jerzy",
+    "Paweł",
+    "Kleopatra",
+    "Ferdynand",
+    "Skarbimir"
+   ],
+   "rky": [
+    "Ferdynand",
+    "Kleopatra",
+    "Paweł",
+    "Pelagia",
+    "Siemowit",
+    "Skarbimir",
+    "Ziemowit"
+   ]
+  },
+  "10-20": {
+   "wikipedia": [
+    "Budzisława",
+    "Irena",
+    "Wendelin",
+    "Apollo",
+    "Witalis",
+    "Aurora"
+   ],
+   "rky": [
+    "Apollo",
+    "Aurora",
+    "Budzisława",
+    "Irena",
+    "Wendelin",
+    "Witalis"
+   ]
+  },
+  "10-21": {
+   "wikipedia": [
+    "Klementyna",
+    "Elżbieta",
+    "Hilary",
+    "Bernard",
+    "Dobromił",
+    "Pelagia",
+    "Celina",
+    "Urszula",
+    "Nunilona",
+    "Samuel",
+    "Wszebora",
+    "Piotr"
+   ],
+   "rky": [
+    "Bernard",
+    "Celina",
+    "Dobromił",
+    "Elżbieta",
+    "Hilary",
+    "Klementyna",
+    "Nunilona",
+    "Pelagia",
+    "Piotr",
+    "Samuel",
+    "Urszula",
+    "Wszebora"
+   ]
+  },
+  "10-22": {
+   "wikipedia": [
+    "Filip",
+    "Sewer",
+    "Kordula",
+    "Marek",
+    "Kordian",
+    "Abercjusz",
+    "Alodia"
+   ],
+   "rky": [
+    "Abercjusz",
+    "Alodia",
+    "Filip",
+    "Kordian",
+    "Kordula",
+    "Marek",
+    "Sewer"
+   ]
+  },
+  "10-23": {
+   "wikipedia": [
+    "Seweryn",
+    "Giedymin",
+    "Małogost",
+    "Marlena",
+    "Ignacy",
+    "Roman",
+    "Jan",
+    "Domicjusz",
+    "Gracjan",
+    "Gracjana",
+    "Gracjanna",
+    "Klotylda"
+   ],
+   "rky": [
+    "Domicjusz",
+    "Giedymin",
+    "Gracjan",
+    "Gracjana",
+    "Gracjanna",
+    "Ignacy",
+    "Jan",
+    "Klotylda",
+    "Małogost",
+    "Marlena",
+    "Roman",
+    "Seweryn"
+   ]
+  },
+  "10-24": {
+   "wikipedia": [
+    "Filip",
+    "Salomon",
+    "Marcin",
+    "Pamfilia",
+    "Boleczest",
+    "Marek",
+    "Antoni",
+    "Walentyna",
+    "Rafał"
+   ],
+   "rky": [
+    "Antoni",
+    "Boleczest",
+    "Filip",
+    "Marcin",
+    "Marek",
+    "Pamfilia",
+    "Rafał",
+    "Salomon",
+    "Walentyna"
+   ]
+  },
+  "10-25": {
+   "wikipedia": [
+    "Daria",
+    "Chryzant",
+    "Tarazjusz",
+    "German",
+    "Teodozjusz",
+    "Maur",
+    "Sambor",
+    "Kryspin",
+    "Tadea",
+    "Cyryn",
+    "Cyryna"
+   ],
+   "rky": [
+    "Chryzant",
+    "Cyryn",
+    "Cyryna",
+    "Daria",
+    "German",
+    "Kryspin",
+    "Maur",
+    "Sambor",
+    "Tadea",
+    "Tarazjusz",
+    "Teodozjusz"
+   ]
+  },
+  "10-26": {
+   "wikipedia": [
+    "Ludomiła",
+    "Ewaryst",
+    "Lutosław",
+    "Lucyna",
+    "Leonarda",
+    "Amanda"
+   ],
+   "rky": [
+    "Amanda",
+    "Ewaryst",
+    "Leonarda",
+    "Lucyna",
+    "Ludomiła",
+    "Lutosław"
+   ]
+  },
+  "10-27": {
+   "wikipedia": [
+    "Frumencjusz",
+    "Sabina",
+    "Iwona",
+    "Wincenty",
+    "Siestrzemił",
+    "Manfred",
+    "Manfreda"
+   ],
+   "rky": [
+    "Frumencjusz",
+    "Iwona",
+    "Manfred",
+    "Manfreda",
+    "Sabina",
+    "Siestrzemił",
+    "Wincenty"
+   ]
+  },
+  "10-28": {
+   "wikipedia": [
+    "Tadeusz",
+    "Wszeciech",
+    "Szymon",
+    "Juda",
+    "Wielimir",
+    "Domabor"
+   ],
+   "rky": [
+    "Domabor",
+    "Juda",
+    "Szymon",
+    "Tadeusz",
+    "Wielimir",
+    "Wszeciech"
+   ]
+  },
+  "10-29": {
+   "wikipedia": [
+    "Teodor",
+    "Narcyz",
+    "Longin",
+    "Lubgost",
+    "Euzebia",
+    "Franciszek",
+    "Wioleta",
+    "Ida",
+    "Ermelinda",
+    "Piotr"
+   ],
+   "rky": [
+    "Ermelinda",
+    "Euzebia",
+    "Franciszek",
+    "Ida",
+    "Longin",
+    "Lubgost",
+    "Narcyz",
+    "Piotr",
+    "Teodor",
+    "Wioleta"
+   ]
+  },
+  "10-30": {
+   "wikipedia": [
+    "Zenobia",
+    "Przemysław",
+    "Gerarda",
+    "German",
+    "Klaudiusz",
+    "Edmund"
+   ],
+   "rky": [
+    "Edmund",
+    "Gerarda",
+    "German",
+    "Klaudiusz",
+    "Przemysław",
+    "Zenobia"
+   ]
+  },
+  "10-31": {
+   "wikipedia": [
+    "Augusta",
+    "Alfons",
+    "Wolfgang",
+    "Antoni",
+    "Urban",
+    "Godzimir",
+    "Lucyla",
+    "Saturnin",
+    "Narcyz",
+    "Lucyliusz",
+    "Krzysztof",
+    "Imieniny 10"
+   ],
+   "rky": [
+    "Alfons",
+    "Antoni",
+    "Augusta",
+    "Godzimir",
+    "Lucyla",
+    "Lucyliusz",
+    "Narcyz",
+    "Saturnin",
+    "Urban",
+    "Wolfgang"
+   ]
+  },
+  "11-1": {
+   "wikipedia": [
+    "Wszyscy",
+    "Konradyn",
+    "Seweryn",
+    "Andrzej",
+    "Warcisław",
+    "Wiktoryna",
+    "Konradyna",
+    "Nikola",
+    "Cyrenia",
+    "Julian"
+   ],
+   "rky": [
+    "Andrzej",
+    "Konradyn",
+    "Konradyna",
+    "Nikola",
+    "Seweryn",
+    "Warcisław",
+    "Wiktoryna"
+   ]
+  },
+  "11-2": {
+   "wikipedia": [
+    "Wiktoryn",
+    "Eudoksjusz",
+    "Ambroży",
+    "Stomir",
+    "Małgorzata",
+    "Tobiasz",
+    "Bogdana",
+    "Teodot",
+    "Wojsław",
+    "Wojsława",
+    "Agapiusz"
+   ],
+   "rky": [
+    "Ambroży",
+    "Bogdana",
+    "Eudoksjusz",
+    "Małgorzata",
+    "Stomir",
+    "Teodot",
+    "Tobiasz",
+    "Wiktoryn",
+    "Wojsław",
+    "Wojsława"
+   ]
+  },
+  "11-3": {
+   "wikipedia": [
+    "Sylwia",
+    "Huberta",
+    "Chwalisław",
+    "German",
+    "Hubert",
+    "Marcin",
+    "Bogumił",
+    "Cezary"
+   ],
+   "rky": [
+    "Bogumił",
+    "Cezary",
+    "Chwalisław",
+    "German",
+    "Hubert",
+    "Huberta",
+    "Marcin",
+    "Sylwia"
+   ]
+  },
+  "11-4": {
+   "wikipedia": [
+    "Karolina",
+    "Dżesika",
+    "Emeryk",
+    "Karol Boromeusz",
+    "Olgierd",
+    "Modesta",
+    "Witalis",
+    "Mojżesz",
+    "Emeryka",
+    "Mściwoj",
+    "Mszczujwoj",
+    "Perpetua",
+    "Joannicjusz"
+   ],
+   "rky": [
+    "Dżesika",
+    "Emeryk",
+    "Emeryka",
+    "Karol Boromeusz",
+    "Karolina",
+    "Modesta",
+    "Mojżesz",
+    "Mszczujwoj",
+    "Mściwoj",
+    "Olgierd",
+    "Perpetua",
+    "Witalis"
+   ]
+  },
+  "11-5": {
+   "wikipedia": [
+    "Florian",
+    "Trofima",
+    "Marek",
+    "Sławomir",
+    "Blandyna",
+    "Blandyn",
+    "Dalemir",
+    "Gwidon"
+   ],
+   "rky": [
+    "Blandyn",
+    "Blandyna",
+    "Dalemir",
+    "Florian",
+    "Marek",
+    "Sławomir",
+    "Trofima"
+   ]
+  },
+  "11-6": {
+   "wikipedia": [
+    "Feliks",
+    "Leonard",
+    "Trzebowit",
+    "Daniela",
+    "Teobald",
+    "Gabriela"
+   ],
+   "rky": [
+    "Daniela",
+    "Feliks",
+    "Leonard",
+    "Teobald",
+    "Trzebowit"
+   ]
+  },
+  "11-7": {
+   "wikipedia": [
+    "Achilles",
+    "Ernest",
+    "Karyna",
+    "Amaranta",
+    "Melchior",
+    "Przemił",
+    "Antoni",
+    "Florentyn",
+    "Engelbert",
+    "Gizbert",
+    "Żelibrat",
+    "Ingarda",
+    "Florencjusz",
+    "Florenty"
+   ],
+   "rky": [
+    "Achilles",
+    "Amaranta",
+    "Antoni",
+    "Engelbert",
+    "Florencjusz",
+    "Florenty",
+    "Florentyn",
+    "Gizbert",
+    "Ingarda",
+    "Karyna",
+    "Melchior",
+    "Przemił",
+    "Żelibrat"
+   ]
+  },
+  "11-8": {
+   "wikipedia": [
+    "Sędziwoj",
+    "Sewerian",
+    "Adrian",
+    "Sewer",
+    "Wiktoryn",
+    "Godfryd",
+    "Wiktoria",
+    "Seweryn",
+    "Marcin",
+    "Klaudiusz",
+    "Wiktor",
+    "Hadrian"
+   ],
+   "rky": [
+    "Adrian",
+    "Godfryd",
+    "Hadrian",
+    "Klaudiusz",
+    "Marcin",
+    "Sewer",
+    "Sewerian",
+    "Seweryn",
+    "Sędziwoj",
+    "Wiktor",
+    "Wiktoria",
+    "Wiktoryn"
+   ]
+  },
+  "11-9": {
+   "wikipedia": [
+    "Genowefa",
+    "Teodor",
+    "Bogodar",
+    "Teodora",
+    "Ursyn",
+    "Nestor"
+   ],
+   "rky": [
+    "Bogodar",
+    "Genowefa",
+    "Nestor",
+    "Teodor",
+    "Teodora",
+    "Ursyn"
+   ]
+  },
+  "11-10": {
+   "wikipedia": [
+    "Probus",
+    "Nimfa",
+    "Stefan",
+    "Andrzej",
+    "Leon",
+    "Leona",
+    "Ludomir",
+    "Uniebog"
+   ],
+   "rky": [
+    "Andrzej",
+    "Leon",
+    "Leona",
+    "Ludomir",
+    "Nimfa",
+    "Probus",
+    "Stefan",
+    "Uniebog"
+   ]
+  },
+  "11-11": {
+   "wikipedia": [
+    "Jozafat",
+    "Teodor",
+    "Marcin",
+    "Spycisław",
+    "Bartłomiej",
+    "Maciej",
+    "Anastazja",
+    "Prot"
+   ],
+   "rky": [
+    "Anastazja",
+    "Bartłomiej",
+    "Jozafat",
+    "Maciej",
+    "Marcin",
+    "Prot",
+    "Spycisław",
+    "Teodor"
+   ]
+  },
+  "11-12": {
+   "wikipedia": [
+    "Jozafat",
+    "Marcin",
+    "Witold",
+    "Jonasz",
+    "Renata",
+    "Cibor",
+    "Czcibor",
+    "Renat",
+    "Arsacjusz"
+   ],
+   "rky": [
+    "Arsacjusz",
+    "Cibor",
+    "Czcibor",
+    "Jonasz",
+    "Jozafat",
+    "Marcin",
+    "Renat",
+    "Renata",
+    "Witold"
+   ]
+  },
+  "11-13": {
+   "wikipedia": [
+    "Brykcjusz",
+    "Walenty",
+    "Eugeniusz",
+    "Stanisław",
+    "German",
+    "Liwia",
+    "Augustyna",
+    "Mikołaj",
+    "Jan",
+    "Arkadiusz",
+    "Dalmacjusz"
+   ],
+   "rky": [
+    "Arkadiusz",
+    "Augustyna",
+    "Brykcjusz",
+    "Eugeniusz",
+    "German",
+    "Jan",
+    "Liwia",
+    "Mikołaj",
+    "Stanisław",
+    "Walentyn"
+   ]
+  },
+  "11-14": {
+   "wikipedia": [
+    "Elżbieta",
+    "Wszerad",
+    "Józef",
+    "Antyd",
+    "Serapion",
+    "Klementyn",
+    "Judyta",
+    "Hipacy",
+    "Laurenty",
+    "Kosma",
+    "Lewin",
+    "Damian",
+    "Agryppa",
+    "Teodot",
+    "Maria",
+    "Paweł",
+    "Montan"
+   ],
+   "rky": [
+    "Agryppa",
+    "Antyd",
+    "Damian",
+    "Elżbieta",
+    "Hipacy",
+    "Józef",
+    "Judyta",
+    "Klementyn",
+    "Kosma",
+    "Laurenty",
+    "Lewin",
+    "Maria",
+    "Montan",
+    "Paweł",
+    "Serapion",
+    "Teodot",
+    "Wszerad"
+   ]
+  },
+  "11-15": {
+   "wikipedia": [
+    "Alfons",
+    "Idalia",
+    "Leopold",
+    "Leopoldyna",
+    "Roger",
+    "Albert",
+    "Przybygniew",
+    "Artur",
+    "Gurias"
+   ],
+   "rky": [
+    "Albert",
+    "Alfons",
+    "Artur",
+    "Idalia",
+    "Leopold",
+    "Leopoldyna",
+    "Przybygniew",
+    "Roger"
+   ]
+  },
+  "11-16": {
+   "wikipedia": [
+    "Ariel",
+    "Otmar",
+    "Aureliusz",
+    "Audomar",
+    "Niedamir",
+    "Dionizy",
+    "Gertruda",
+    "Edmund",
+    "Patrokles",
+    "Agnieszka"
+   ],
+   "rky": [
+    "Agnieszka",
+    "Ariel",
+    "Audomar",
+    "Aureliusz",
+    "Dionizy",
+    "Edmund",
+    "Gertruda",
+    "Niedamir",
+    "Otmar",
+    "Patrokles"
+   ]
+  },
+  "11-17": {
+   "wikipedia": [
+    "Jozafat",
+    "Hugo",
+    "Karolina",
+    "Palmira",
+    "Zbysław",
+    "Floryn",
+    "Zacheusz",
+    "Grzegorz",
+    "Sulibor",
+    "Dionizy"
+   ],
+   "rky": [
+    "Dionizy",
+    "Floryn",
+    "Grzegorz",
+    "Hugo",
+    "Jozafat",
+    "Karolina",
+    "Palmira",
+    "Sulibor",
+    "Zacheusz",
+    "Zbysław"
+   ]
+  },
+  "11-18": {
+   "wikipedia": [
+    "Leonard",
+    "Aniela",
+    "Otto",
+    "Otto",
+    "Galezy",
+    "Odo",
+    "Tomasz",
+    "Cieszymysł",
+    "Filipina",
+    "Karolina",
+    "Roman",
+    "Gabriela",
+    "Józefa",
+    "Agnieszka"
+   ],
+   "rky": [
+    "Aniela",
+    "Cieszymysł",
+    "Filipina",
+    "Gabriela",
+    "Galezy",
+    "Józefa",
+    "Karolina",
+    "Leonard",
+    "Odo",
+    "Otto",
+    "Otton",
+    "Roman",
+    "Tomasz"
+   ]
+  },
+  "11-19": {
+   "wikipedia": [
+    "Elżbieta",
+    "Paweł",
+    "Seweryn",
+    "Mironiega",
+    "Salomea",
+    "Kryspin",
+    "Małowid",
+    "Barbara"
+   ],
+   "rky": [
+    "Barbara",
+    "Elżbieta",
+    "Kryspin",
+    "Małowid",
+    "Mironiega",
+    "Paweł",
+    "Salomea",
+    "Seweryn"
+   ]
+  },
+  "11-20": {
+   "wikipedia": [
+    "Feliks",
+    "Maksencja",
+    "Ampeliusz",
+    "Hieronim",
+    "Sędzimir",
+    "Edmund",
+    "Anatol",
+    "Oktawia",
+    "Oktawiusz",
+    "Sylwester",
+    "Sylwestra",
+    "Fortunata",
+    "Agapiusz"
+   ],
+   "rky": [
+    "Ampeliusz",
+    "Anatol",
+    "Edmund",
+    "Feliks",
+    "Fortunata",
+    "Hieronim",
+    "Maksencja",
+    "Oktawia",
+    "Oktawiusz",
+    "Sędzimir",
+    "Sylwester",
+    "Sylwestra"
+   ]
+  },
+  "11-21": {
+   "wikipedia": [
+    "Janusz",
+    "Twardosław",
+    "Maria",
+    "Elwira",
+    "Albert",
+    "Rufus",
+    "Regina",
+    "Konrad",
+    "Wiesław",
+    "Heliodor"
+   ],
+   "rky": [
+    "Albert",
+    "Elwira",
+    "Heliodor",
+    "Janusz",
+    "Konrad",
+    "Maria",
+    "Regina",
+    "Rufus",
+    "Twardosław",
+    "Wiesław"
+   ]
+  },
+  "11-22": {
+   "wikipedia": [
+    "Cecylia",
+    "Marek",
+    "Maur",
+    "Wszemiła"
+   ],
+   "rky": [
+    "Cecylia",
+    "Marek",
+    "Maur",
+    "Wszemiła"
+   ]
+  },
+  "11-23": {
+   "wikipedia": [
+    "Klemens",
+    "Adela",
+    "Przedwoj",
+    "Erast",
+    "Orestes",
+    "Felicyta",
+    "Fotyna"
+   ],
+   "rky": [
+    "Adela",
+    "Erast",
+    "Felicyta",
+    "Fotyna",
+    "Klemens",
+    "Orestes",
+    "Przedwoj"
+   ]
+  },
+  "11-24": {
+   "wikipedia": [
+    "Dobrosław",
+    "Pęcisław",
+    "Gerard",
+    "Emilia",
+    "Flora",
+    "Franciszek",
+    "Protazy",
+    "Jan",
+    "Biruta",
+    "Jaśmina",
+    "Felicjana",
+    "Felicjanna",
+    "Agnieszka",
+    "Joachim",
+    "Twardomir"
+   ],
+   "rky": [
+    "Agnieszka",
+    "Biruta",
+    "Dobrosław",
+    "Emilia",
+    "Felicjana",
+    "Felicjanna",
+    "Flora",
+    "Franciszek",
+    "Gerard",
+    "Jan",
+    "Jaśmina",
+    "Pęcisław",
+    "Protazy"
+   ]
+  },
+  "11-25": {
+   "wikipedia": [
+    "Erazm",
+    "Katarzyna",
+    "Tęgomir",
+    "Piotr"
+   ],
+   "rky": [
+    "Erazm",
+    "Katarzyna",
+    "Piotr",
+    "Tęgomir"
+   ]
+  },
+  "11-26": {
+   "wikipedia": [
+    "Leonard",
+    "Sylwester",
+    "Dobiemiest",
+    "Delfin",
+    "Lechosława",
+    "Lechosław",
+    "Jan",
+    "Konrad",
+    "Sylwestra",
+    "Piotr"
+   ],
+   "rky": [
+    "Delfin",
+    "Dobiemiest",
+    "Jan",
+    "Konrad",
+    "Lechosław",
+    "Lechosława",
+    "Leonard",
+    "Piotr",
+    "Sylwester",
+    "Sylwestra"
+   ]
+  },
+  "11-27": {
+   "wikipedia": [
+    "Wirgiliusz",
+    "Jozafat",
+    "Zygfryd",
+    "Stojgniew",
+    "Gustaw",
+    "Dominik",
+    "Damazy",
+    "Zygfryda",
+    "Oda",
+    "Walery",
+    "Maksymilian",
+    "Sekundyn",
+    "Achacjusz",
+    "Achacy",
+    "Bernardyn"
+   ],
+   "rky": [
+    "Achacjusz",
+    "Achacy",
+    "Damazy",
+    "Dominik",
+    "Gustaw",
+    "Jozafat",
+    "Maksymilian",
+    "Oda",
+    "Sekundyn",
+    "Stojgniew",
+    "Walery",
+    "Wirgiliusz",
+    "Zygfryd",
+    "Zygfryda"
+   ]
+  },
+  "11-28": {
+   "wikipedia": [
+    "Grzegorz",
+    "Lesław",
+    "Zdzisław",
+    "Gościrad",
+    "Lesława",
+    "Jakub",
+    "Rufin",
+    "Ginter",
+    "Guncerz",
+    "Gunter",
+    "Kwieta",
+    "Berta"
+   ],
+   "rky": [
+    "Berta",
+    "Ginter",
+    "Gościrad",
+    "Grzegorz",
+    "Guncerz",
+    "Gunter",
+    "Jakub",
+    "Kwieta",
+    "Lesław",
+    "Lesława",
+    "Rufin",
+    "Zdzisław"
+   ]
+  },
+  "11-29": {
+   "wikipedia": [
+    "Klementyna",
+    "Walter",
+    "Błażej",
+    "Bolemysł",
+    "Przemysł",
+    "Fryderyk",
+    "Saturnin",
+    "Paramon"
+   ],
+   "rky": [
+    "Błażej",
+    "Bolemysł",
+    "Fryderyk",
+    "Klementyna",
+    "Paramon",
+    "Przemysł",
+    "Saturnin",
+    "Walter"
+   ]
+  },
+  "11-30": {
+   "wikipedia": [
+    "Zbysława",
+    "Andrzej",
+    "Justyna",
+    "Konstancjusz",
+    "Maura",
+    "Tadea",
+    "Kutbert"
+   ],
+   "rky": [
+    "Andrzej",
+    "Justyna",
+    "Konstancjusz",
+    "Kutbert",
+    "Maura",
+    "Tadea",
+    "Zbysława"
+   ]
+  },
+  "12-1": {
+   "wikipedia": [
+    "Eligia",
+    "Natalia",
+    "Platon",
+    "Edmund",
+    "Eligiusz",
+    "Blanka",
+    "Sobiesława",
+    "Gosława"
+   ],
+   "rky": [
+    "Blanka",
+    "Edmund",
+    "Eligia",
+    "Eligiusz",
+    "Gosława",
+    "Natalia",
+    "Platon",
+    "Sobiesława"
+   ]
+  },
+  "12-2": {
+   "wikipedia": [
+    "Bibiana",
+    "Bibianna",
+    "Aurelia",
+    "Wiktoryn",
+    "Zbylut",
+    "Ludwina",
+    "Balbina",
+    "Sulisław",
+    "Paulina",
+    "Sylweriusz",
+    "Budzisława",
+    "Budzisław"
+   ],
+   "rky": [
+    "Aurelia",
+    "Balbina",
+    "Bibiana",
+    "Bibianna",
+    "Budzisław",
+    "Budzisława",
+    "Ludwina",
+    "Paulina",
+    "Sulisław",
+    "Sylweriusz",
+    "Wiktoryn",
+    "Zbylut"
+   ]
+  },
+  "12-3": {
+   "wikipedia": [
+    "Uniemir",
+    "Kasjan",
+    "Lucjusz",
+    "Franciszek",
+    "Kryspin",
+    "Ksawery",
+    "Atalia",
+    "Gerlinda",
+    "Biryn",
+    "Sofoniasz"
+   ],
+   "rky": [
+    "Atalia",
+    "Biryn",
+    "Franciszek",
+    "Gerlinda",
+    "Kasjan",
+    "Kryspin",
+    "Ksawery",
+    "Lucjusz",
+    "Sofoniasz",
+    "Uniemir"
+   ]
+  },
+  "12-4": {
+   "wikipedia": [
+    "Klemens",
+    "Chrystian",
+    "Barbara",
+    "Krystian",
+    "Hieronim",
+    "Melecjusz"
+   ],
+   "rky": [
+    "Barbara",
+    "Chrystian",
+    "Hieronim",
+    "Klemens",
+    "Krystian",
+    "Melecjusz"
+   ]
+  },
+  "12-5": {
+   "wikipedia": [
+    "Anastazy",
+    "Kryspina",
+    "Sabina",
+    "Kryspin",
+    "Gerald",
+    "Pęcisława",
+    "Krystyna",
+    "Sabbas",
+    "Dalmacjusz"
+   ],
+   "rky": [
+    "Anastazy",
+    "Gerald",
+    "Kryspin",
+    "Kryspina",
+    "Krystyna",
+    "Pęcisława",
+    "Saba",
+    "Sabina"
+   ]
+  },
+  "12-6": {
+   "wikipedia": [
+    "Nikola",
+    "Angelika",
+    "Heliodor",
+    "Agata",
+    "Dionizja",
+    "Mikołaj",
+    "Emilian",
+    "Leoncja",
+    "Piotr",
+    "Honorata"
+   ],
+   "rky": [
+    "Agata",
+    "Angelika",
+    "Dionizja",
+    "Emilian",
+    "Heliodor",
+    "Leoncja",
+    "Mikołaj",
+    "Piotr"
+   ]
+  },
+  "12-7": {
+   "wikipedia": [
+    "Ambroży",
+    "Marcin",
+    "Ninomysł",
+    "Agaton",
+    "Marcisław",
+    "Józefa",
+    "Polikarp",
+    "Zdziemił",
+    "Sabin"
+   ],
+   "rky": [
+    "Agaton",
+    "Ambroży",
+    "Józefa",
+    "Marcin",
+    "Marcisław",
+    "Ninomysł",
+    "Polikarp",
+    "Sabin",
+    "Zdziemił"
+   ]
+  },
+  "12-8": {
+   "wikipedia": [
+    "Maria",
+    "Narcyza",
+    "Apollo",
+    "Boguwola"
+   ],
+   "rky": [
+    "Apollo",
+    "Boguwola",
+    "Maria",
+    "Narcyza"
+   ]
+  },
+  "12-9": {
+   "wikipedia": [
+    "Leokadia",
+    "Waleria",
+    "Joachim",
+    "Delfina",
+    "Wiesław",
+    "Wielisława",
+    "Wiesława",
+    "Piotr"
+   ],
+   "rky": [
+    "Delfina",
+    "Joachim",
+    "Leokadia",
+    "Piotr",
+    "Waleria",
+    "Wielisława",
+    "Wiesław"
+   ]
+  },
+  "12-10": {
+   "wikipedia": [
+    "Polidor",
+    "Brajan",
+    "Daniel",
+    "Judyta",
+    "Maria",
+    "Andrzej",
+    "Julia",
+    "Switun",
+    "Unierad",
+    "Unirad"
+   ],
+   "rky": [
+    "Andrzej",
+    "Brajan Daniel",
+    "Judyta",
+    "Julia",
+    "Maria",
+    "Polidor",
+    "Switun",
+    "Unierad",
+    "Unirad"
+   ]
+  },
+  "12-11": {
+   "wikipedia": [
+    "Stefan",
+    "Damazy",
+    "Waldemar",
+    "Wojmir",
+    "Wilburga"
+   ],
+   "rky": [
+    "Damazy",
+    "Stefan",
+    "Waldemar",
+    "Wilburga",
+    "Wojmir"
+   ]
+  },
+  "12-12": {
+   "wikipedia": [
+    "Adelajda",
+    "Dagmara",
+    "Edburga",
+    "Suliwuj",
+    "Paramon",
+    "Spirydon",
+    "Aleksander",
+    "Ada",
+    "Przybysława",
+    "Maksencjusz"
+   ],
+   "rky": [
+    "Ada",
+    "Adelajda",
+    "Aleksander",
+    "Dagmara",
+    "Edburga",
+    "Joanna",
+    "Maksencjusz",
+    "Paramon",
+    "Przybysława",
+    "Spirydion",
+    "Suliwuj"
+   ]
+  },
+  "12-13": {
+   "wikipedia": [
+    "Bernarda",
+    "Otylia",
+    "Edburga",
+    "Jodok",
+    "Róża",
+    "Włodzisława",
+    "Auksencja",
+    "Łucja",
+    "Auksencjusz",
+    "Auksenty",
+    "Aubert"
+   ],
+   "rky": [
+    "Aubert",
+    "Auksencja",
+    "Auksencjusz",
+    "Auksenty",
+    "Bernarda",
+    "Edburga",
+    "Jodok",
+    "Otylia",
+    "Róża",
+    "Włodzisława"
+   ]
+  },
+  "12-14": {
+   "wikipedia": [
+    "Pompejusz",
+    "Sławobor",
+    "Alfred",
+    "Nahum",
+    "Arseniusz",
+    "Noemi",
+    "Izydor",
+    "Heron"
+   ],
+   "rky": [
+    "Alfred",
+    "Arseniusz",
+    "Heron",
+    "Izydor",
+    "Nahum",
+    "Noemi",
+    "Pompejusz",
+    "Sławobor"
+   ]
+  },
+  "12-15": {
+   "wikipedia": [
+    "Cecylia",
+    "Walerian",
+    "Mścigniew",
+    "Sylwia",
+    "Wolimir",
+    "Drogosława",
+    "Wirginia"
+   ],
+   "rky": [
+    "Cecylia",
+    "Drogosława",
+    "Mścigniew",
+    "Walerian",
+    "Wolimir"
+   ]
+  },
+  "12-16": {
+   "wikipedia": [
+    "Alina",
+    "Adelajda",
+    "Zdzisława",
+    "Ananiasz",
+    "Albina",
+    "Dyter",
+    "Deder",
+    "Tyter"
+   ],
+   "rky": [
+    "Adelajda",
+    "Albina",
+    "Alina",
+    "Ananiasz",
+    "Deder",
+    "Dyter",
+    "Tyter",
+    "Zdzisława"
+   ]
+  },
+  "12-17": {
+   "wikipedia": [
+    "Florian",
+    "Łazarz",
+    "Łukasz",
+    "Olimpia"
+   ],
+   "rky": [
+    "Florian",
+    "Łazarz",
+    "Łukasz",
+    "Olimpia"
+   ]
+  },
+  "12-18": {
+   "wikipedia": [
+    "Bogusław",
+    "Wszemir",
+    "Arkadia",
+    "Wilibald",
+    "Auksencja",
+    "Winebald",
+    "Winibald",
+    "Winibalda",
+    "Wunibald",
+    "Auksencjusz",
+    "Auksenty"
+   ],
+   "rky": [
+    "Arkadia",
+    "Auksencja",
+    "Auksencjusz",
+    "Auksenty",
+    "Bogusław",
+    "Wilibald",
+    "Winebald",
+    "Winibald",
+    "Winibalda",
+    "Wszemir",
+    "Wunibald"
+   ]
+  },
+  "12-19": {
+   "wikipedia": [
+    "Tymoteusz",
+    "Nemezjusz",
+    "Abraham",
+    "Dariusz",
+    "Beniamin",
+    "Urban",
+    "Mścigniew",
+    "Bogumiła"
+   ],
+   "rky": [
+    "Abraham",
+    "Beniamin",
+    "Bogumiła",
+    "Dariusz",
+    "Mścigniew",
+    "Nemezjusz",
+    "Tymoteusz",
+    "Urban"
+   ]
+  },
+  "12-20": {
+   "wikipedia": [
+    "Bogumiła",
+    "Dominik",
+    "Amon",
+    "Liberat",
+    "Dagmara",
+    "Teofil",
+    "Ursycyn"
+   ],
+   "rky": [
+    "Amon",
+    "Bogumiła",
+    "Dagmara",
+    "Dominik",
+    "Liberat",
+    "Teofil",
+    "Ursycyn"
+   ]
+  },
+  "12-21": {
+   "wikipedia": [
+    "Tomisław",
+    "Balbin",
+    "Tomasz",
+    "Honorat",
+    "Festus",
+    "Piotr"
+   ],
+   "rky": [
+    "Balbin",
+    "Festus",
+    "Honorat",
+    "Piotr",
+    "Tomasz",
+    "Tomisław"
+   ]
+  },
+  "12-22": {
+   "wikipedia": [
+    "Drogomir",
+    "Ksawera",
+    "Honorata",
+    "Zenon",
+    "Franciszka",
+    "Gryzelda",
+    "Flawian",
+    "Beata",
+    "Ischyrion"
+   ],
+   "rky": [
+    "Beata",
+    "Drogomir",
+    "Flawian",
+    "Franciszka",
+    "Gryzelda",
+    "Honorata",
+    "Ischyrion",
+    "Ksawera",
+    "Zenon"
+   ]
+  },
+  "12-23": {
+   "wikipedia": [
+    "Wiktoria",
+    "Anatola",
+    "Sławomir",
+    "Sławomira",
+    "Dagobert",
+    "Anatolia",
+    "Teodul"
+   ],
+   "rky": [
+    "Anatola",
+    "Anatolia",
+    "Dagobert",
+    "Sławomir",
+    "Sławomira",
+    "Wiktoria"
+   ]
+  },
+  "12-24": {
+   "wikipedia": [
+    "Adela",
+    "Grzymisława",
+    "Druzjanna",
+    "Ewa",
+    "Godzisława",
+    "Irmina",
+    "Druzjan",
+    "Adamina",
+    "Grzegorz",
+    "Ewelina",
+    "Hermina",
+    "Zenobiusz",
+    "Tarsylla",
+    "Adam"
+   ],
+   "rky": [
+    "Adam",
+    "Adamina",
+    "Adela",
+    "Druzjan",
+    "Druzjanna",
+    "Ewa",
+    "Ewelina",
+    "Godzisława",
+    "Grzegorz",
+    "Grzymisława",
+    "Hermina",
+    "Irmina",
+    "Tarsylia",
+    "Tarsylla",
+    "Zenobiusz"
+   ]
+  },
+  "12-25": {
+   "wikipedia": [
+    "Eugenia",
+    "Mateusz",
+    "Piotr",
+    "Siemisław",
+    "Domna"
+   ],
+   "rky": [
+    "Domna",
+    "Eugenia",
+    "Mateusz",
+    "Piotr",
+    "Siemisław"
+   ]
+  },
+  "12-26": {
+   "wikipedia": [
+    "Wrociwoj",
+    "Szczepan",
+    "Dionizy"
+   ],
+   "rky": [
+    "Dionizy",
+    "Szczepan",
+    "Wrociwoj"
+   ]
+  },
+  "12-27": {
+   "wikipedia": [
+    "Żaneta",
+    "Fabia",
+    "Fabiola",
+    "Jan",
+    "Cezary",
+    "Krystyna"
+   ],
+   "rky": [
+    "Cezary",
+    "Fabia",
+    "Fabiola",
+    "Jan",
+    "Krystyna",
+    "Żaneta"
+   ]
+  },
+  "12-28": {
+   "wikipedia": [
+    "Teofila",
+    "Antoni",
+    "Ema",
+    "Teonas",
+    "Dobrowieść",
+    "Teona",
+    "Godzisław"
+   ],
+   "rky": [
+    "Antoni",
+    "Dobrowieść",
+    "Ema",
+    "Godzisław",
+    "Teofila",
+    "Teona",
+    "Teonas"
+   ]
+  },
+  "12-29": {
+   "wikipedia": [
+    "Trofim",
+    "Jonatan",
+    "Gerarda",
+    "Dominik",
+    "Marcin",
+    "Tomasz",
+    "Gosław",
+    "Dawid",
+    "Gerard",
+    "Jakert",
+    "Tadea"
+   ],
+   "rky": [
+    "Dawid",
+    "Dominik",
+    "Gerard",
+    "Gerarda",
+    "Gosław",
+    "Jakert",
+    "Jonatan",
+    "Marcin",
+    "Tadea",
+    "Tomasz",
+    "Trofim"
+   ]
+  },
+  "12-30": {
+   "wikipedia": [
+    "Sewer",
+    "Anizja",
+    "Egwin",
+    "Eugeniusz",
+    "Rajner",
+    "Dionizy",
+    "Uniedrog",
+    "Irmina"
+   ],
+   "rky": [
+    "Anizja",
+    "Dionizy",
+    "Egwin",
+    "Eugeniusz",
+    "Irmina",
+    "Rajner",
+    "Sewer",
+    "Uniedrog"
+   ]
+  },
+  "12-31": {
+   "wikipedia": [
+    "Sylwester",
+    "Donata",
+    "Mariusz",
+    "Melania",
+    "Katarzyna",
+    "Saturnina",
+    "Sebastian",
+    "Tworzysław",
+    "Sylwestra"
+   ],
+   "rky": [
+    "Donata",
+    "Mariusz",
+    "Melania",
+    "Saturnina",
+    "Sebastian",
+    "Sylwester",
+    "Sylwestra",
+    "Tworzysław"
+   ]
+  }
+ }
+}
