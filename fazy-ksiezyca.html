@@ -841,11 +841,8 @@
   // poprzednia wersja (NEW_MOONS/PHASE_EVENTS, tablice konczace sie w 2026 r.) po
   // wyczerpaniu zakresu dawala coraz bardziej bledny wiek i na stale utykala w "Now"
   // (getPhase mial fallback dla age>=28, co zawsze trafialo dla wieku np. 188 dni).
-  function getMoonAgePerpetual(now) {
+  function elongAtJD(JD) {
     const rad = DEG;
-    const y=now.getUTCFullYear(), mo=now.getUTCMonth()+1, d=now.getUTCDate(), hh=now.getUTCHours()+now.getUTCMinutes()/60;
-    const toJD=(y,m,d,hh)=>{if(m<=2){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+hh/24+B-1524.5;};
-    const JD = toJD(y,mo,d,hh);
     const T = (JD-2451545.0)/36525;
     const D = ((297.8501921+445267.1114034*T-0.0018819*T*T+T*T*T/545868)%360+360)%360;
     const M = ((357.5291092+35999.0502909*T-0.0001536*T*T)%360+360)%360;
@@ -869,7 +866,22 @@
     const C = (1.914602-0.004817*T-0.000014*T*T)*Math.sin(M*rad)+(0.019993-0.000101*T)*Math.sin(2*M*rad)+0.000289*Math.sin(3*M*rad);
     const sunLon = ((sunLonMean+C)%360+360)%360;
     const elong = ((moonLon-sunLon)%360+360)%360;
-    return elong/360*SYNODIC;
+    return elong;
+  }
+  function jdOf(now) {
+    const y=now.getUTCFullYear(), mo=now.getUTCMonth()+1, d=now.getUTCDate(), hh=now.getUTCHours()+now.getUTCMinutes()/60;
+    const toJD=(y,m,d,hh)=>{if(m<=2){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+hh/24+B-1524.5;};
+    return toJD(y,mo,d,hh);
+  }
+  // Wiek fazowy (elongacja/360*okres synodyczny) - do nazw faz i oswietlenia (progi ustalone na tej skali).
+  function getMoonAgePerpetual(now) { return elongAtJD(jdOf(now))/360*SYNODIC; }
+  // Wiek RZECZYWISTY = czas od ostatniego nowiu (Newton po elongacji=0). Ksiezyc porusza sie
+  // nierowno (11-15 st./dobe), wiec wiek z samej elongacji myli sie do ~0,6 doby.
+  function getMoonAgeSinceNew(now) {
+    const JD = jdOf(now);
+    let tn = JD - elongAtJD(JD)/360*SYNODIC;
+    for (let i=0;i<8;i++) { let de = elongAtJD(tn); if (de>180) de-=360; tn -= de/12.19; }
+    return JD - tn;
   }
   const PHASE_BOUNDARY_NAMES = [{icon:'🌑',name:'Nów'},{icon:'🌓',name:'Pierwsza kwadra'},{icon:'🌕',name:'Pełnia'},{icon:'🌗',name:'Ostatnia kwadra'}];
   function phaseQuarterIdx(age){ return Math.floor((age/SYNODIC)*4) % 4; }
@@ -1041,7 +1053,7 @@
     document.getElementById('moonPhaseName').textContent=phase.name;
     document.getElementById('moonPhaseDate').textContent=now.getDate()+' '+PL_MON[now.getMonth()]+' '+now.getFullYear();
     document.getElementById('mdIlum').textContent=ilum+'%';
-    document.getElementById('mdAge').textContent=Math.floor(age)+' dni';
+    document.getElementById('mdAge').textContent=Math.floor(getMoonAgeSinceNew(now))+' dni';
     document.getElementById('mdRise').textContent=rs.rise;
     document.getElementById('mdTransit').textContent=rs.transit;
     document.getElementById('mdSet').textContent=rs.set;

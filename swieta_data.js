@@ -127,6 +127,7 @@ const SWIETA_DATA_STATIC=[
   [21,9,'Dzień Krajowej Administracji Skarbowej','dzien-kas','branzowe'],
   [25,9,'Dzień Budowlanych','dzien-budowlanych','branzowe'],
   [25,9,'Światowy Dzień Farmaceuty i Ogólnopolski Dzień Aptekarza','dzien-farmaceuty','branzowe'],
+  [26,9,'Międzynarodowy Dzień Całkowitej Eliminacji Broni Jądrowej','dzien-eliminacji-broni-jadrowej','miedzynarodowe'],
   [27,9,'Dzień Polskiego Państwa Podziemnego','dzien-polskiego-panstwa-podziemnego','panstwowe'],
   [30,9,'Dzień Chłopaka','dzien-chlopaka','nieoficjalne'],
   [30,9,'Międzynarodowy Dzień Tłumacza','dzien-tlumacza','branzowe'],

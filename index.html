@@ -1728,6 +1728,7 @@ const HOLIDAYS=[
 [26,9,'Światowy Dzień Antykoncepcji','','inne'],
 [26,9,'Światowy Dzień Królika','','inne'],
 [26,9,'Ogólnopolski Dzień Aptekarza','','inne'],
+[26,9,'Międzynarodowy Dzień Całkowitej Eliminacji Broni Jądrowej','','inne'],
 [27,9,'Światowy Dzień Turystyki','','inne'],
 [27,9,'Międzynarodowy Dzień Głuchych','','inne'],
 [27,9,'Dzień Polskiego Państwa Podziemnego','','inne'],
@@ -2760,6 +2761,13 @@ function getMoonPhase(year,month,day){
   const {moonLon,sunLon,elong}=moonSun(JD);
   const SYNODIC=29.53058867;
   const age=elong/360*SYNODIC;
+  // Wiek do nazwy fazy (progi poniżej) = elongacja/360*okres synodyczny.
+  // Wiek WYŚWIETLANY = rzeczywisty czas od ostatniego nowiu (Newton po elongacji=0): Księżyc
+  // porusza się nierówno (11-15°/dobę), więc wiek z samej elongacji myli się do ~0,6 doby
+  // (26.09.2026: pełnia, elongacja dawała 14,6 d, a od nowiu 11.09 minęło 15,4 d).
+  let tNew=JD-age;
+  for(let i=0;i<8;i++){let de=moonSun(tNew).elong;if(de>180)de-=360;tNew-=de/12.19;}
+  const ageSinceNew=JD-tNew;
   const bright=Math.round((1-Math.cos(elong*rad))/2*100);
 
   // Nazwa fazy — okna kardynalne (Nów/Kwadry/Pełnia) wąskie (±0,5 dnia wokół
@@ -2809,7 +2817,7 @@ function getMoonPhase(year,month,day){
     const daysToFull=Math.max(0,(nextFM.getTime()-nowMs)/86400000);
     nextFull=`${nextFM.getDate()} ${MONTH_GEN[nextFM.getMonth()+1]} (za ${Math.round(daysToFull)} dni)`;
   }
-  return{phase:`${icon} ${phase}`,age:`${age.toFixed(1)} dni`,bright:`${bright}%`,sign:MOON_SIGNS[signIdx],nextFull};
+  return{phase:`${icon} ${phase}`,age:`${ageSinceNew.toFixed(1)} dni`,bright:`${bright}%`,sign:MOON_SIGNS[signIdx],nextFull};
 }
 
 // ── Wschód/zachód księżyca ─────────────────────────────────────
@@ -3261,12 +3269,14 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
   const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
+  // Dzień Edukacji Narodowej (14 X) jest w bazie jako 'branzowe', ale to powszechnie znane święto oświatowe — pokazujemy je w widżecie mimo typu
+  const WIDGET_EXTRA_SLUGS=['dzien-nauczyciela'];
   // Swieto ruchome przechodzace na kolejny rok nie moze po prostu powtorzyc dd/mm z roku
   // biezacego (Wielkanoc i pochodne wypadaja co roku innego dnia) - doliczane osobno dla y+1,
   // z pamiecia podreczna liczoną leniwie tylko gdy faktycznie potrzebna.
   const movableSlugsForUpcoming=new Set(SWIETA_DATA_MOVABLE.map(([,,slug])=>slug));
   let movableNextYearMap=null;
-  const allUpcoming=swietaForY.filter(([,,name,,type])=>type.split(' ').some(t=>WIDGET_TYPES.includes(t)) && name!=='Święto Wojska Polskiego').map(([dd,mm,name,slug])=>{
+  const allUpcoming=swietaForY.filter(([,,name,slug,type])=>(type.split(' ').some(t=>WIDGET_TYPES.includes(t))||WIDGET_EXTRA_SLUGS.includes(slug)) && name!=='Święto Wojska Polskiego').map(([dd,mm,name,slug])=>{
     let dt=new Date(y,mm-1,dd);
     if(dt.getTime()<TODAY_MS){
       if(movableSlugsForUpcoming.has(slug)){

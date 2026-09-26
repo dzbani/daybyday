@@ -706,6 +706,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-eliminacji-broni-jadrowej/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-eliminacji-przemocy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
