@@ -30,6 +30,20 @@ for (const [m, d, names] of NAMES) {
 
 // --- 2. HOLIDAYS (nietypowe) + PROVERBS_* z index.html ---
 const indexRaw = readFile('index.html');
+
+// --- 2a. Imiona "główne" dnia — ta sama reguła co nagłówek na index.html:
+// POPULAR ∩ tradycyjne kalendarze (imieniny_tradycyjne.js); gdy brak — 3 najpopularniejsze tradycyjne
+const POPULAR = new Set(eval(indexRaw.match(/const POPULAR=new Set\((\[[^\]]*\])\)/)[1]));
+const tradCtx = {};
+vm.runInNewContext(readFile('imieniny_tradycyjne.js').replace('const IMIENINY_TRAD', 'var IMIENINY_TRAD'), tradCtx);
+const IMIENINY_TRAD = tradCtx.IMIENINY_TRAD;
+function splitNames(key, names) {
+  const trad = IMIENINY_TRAD[key];
+  let main = names.filter(n => POPULAR.has(n) && (!trad || trad.includes(n)));
+  if (!main.length && trad) { const top = trad.slice(0, 3); main = names.filter(n => top.includes(n)); }
+  if (!main.length) main = names.slice(0, 3);
+  return { main, rest: names.filter(n => !main.includes(n)) };
+}
 function extractConst(src, name) {
   const re = new RegExp(`const\\s+${name}\\s*=`);
   const m = src.match(re);
@@ -258,7 +272,7 @@ function buildRealDbLiterals() {
   const holidaysObj = {};
   const proverbsObj = {};
   for (const day of days) {
-    if (day.names.length) namesObj[day.key] = day.names;
+    if (day.names.length) { const s = splitNames(day.key, day.names); namesObj[day.key] = s.main.concat(s.rest); } // główne imiona dnia na początku
     if (day.holidays.length) holidaysObj[day.key] = day.holidays.map(h => h.name);
     proverbsObj[day.key] = day.proverbs; // zawsze niepuste dzieki fallbackowi
   }
@@ -315,8 +329,10 @@ function buildStaticPage(day) {
   const slug = `${pad2(m)}-${pad2(d)}`;
   const dateLabel = `${d} ${MONTH_GEN[m]}`;
 
+  const nameLink = n => nameHasPage(n) ? `<a href="/imieniny/${nameSlug(n)}/">${n}</a>` : n;
+  const { main: mainNames, rest: restNames } = splitNames(day.key, day.names);
   const namesHtml = day.names.length
-    ? day.names.map(n => nameHasPage(n) ? `<a href="/imieniny/${nameSlug(n)}/">${n}</a>` : n).join(', ')
+    ? `<strong>${mainNames.map(nameLink).join(', ')}</strong>` + (restNames.length ? ` — a także: ${restNames.map(nameLink).join(', ')}` : '')
     : 'brak danych o imieninach dla tego dnia';
 
   const holidaysHtml = day.holidays.length
@@ -339,7 +355,7 @@ function buildStaticPage(day) {
   const astroHtml = `<p>Wschód słońca: <strong>${esc(sun.rise)}</strong> · Zachód: <strong>${esc(sun.set)}</strong> · Długość dnia: ${esc(sun.len)}</p><p>Słońce w znaku: ${esc(zodiac)}</p>`;
 
   const metaDescParts = [];
-  if (day.names.length) metaDescParts.push(`imieniny obchodzą ${day.names.slice(0, 3).join(', ')}`);
+  if (day.names.length) metaDescParts.push(`imieniny obchodzą ${mainNames.slice(0, 3).join(', ')}`);
   if (day.holidays.length) metaDescParts.push(`${day.holidays.length} świąt i dni tematycznych`);
   metaDescParts.push(`wschód słońca o ${sun.rise}`);
   const metaDesc = truncateDesc(`${dateLabel}: ${metaDescParts.join(', ')}. Sprawdź, co przypada na ten dzień.`);
@@ -433,7 +449,7 @@ function buildWidgetPage(day) {
   const dateLabel = `${d} ${MONTH_GEN[m]}`;
 
   const namesHtml = day.names.length
-    ? day.names.slice(0, 6).map(n => nameHasPage(n) ? `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>` : esc(n)).join(', ')
+    ? (s => s.main.concat(s.rest))(splitNames(day.key, day.names)).slice(0, 6).map(n => nameHasPage(n) ? `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>` : esc(n)).join(', ')
     : '—';
 
   let holidayHtml = '';
