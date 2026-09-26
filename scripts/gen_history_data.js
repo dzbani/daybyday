@@ -152,6 +152,21 @@ const ENTRY_FIXES = [
   // katastrofa kolejowa pod Saltillo byla 5/6 X 1972, nie 4 X
   { file: '10-04.json', y: 1972, re: /Saltillo/, drop: true },
   // Protokol madrycki to Protokol o ochronie srodowiska (cala Antarktyka rezerwatem), nie "obszar szczegolnie chroniony"
+  // Zanella zostal wybrany prezydentem Fiume 5 X 1921 (jest w 10-05.json), nie 4 X
+  { file: '10-04.json', y: 1921, re: /Zanella/, drop: true },
+  // 5 X 1938 byla PROBNA emisja (wystep M. Fogga); pierwszy oficjalny program - 26 VIII 1939
+  { file: '10-05.json', y: 1938, re: /Prudential/, replace: 'Z anteny na dachu warszawskiego wieżowca Prudential nadano pierwszą w Polsce próbną emisję programu telewizyjnego – występ Mieczysława Fogga.' },
+  // 5 X 1939 komisarz Hans Drechsel wydal zarzadzenie; getto zaczelo funkcjonowac 8 X 1939
+  { file: '10-05.json', y: 1939, re: /Piotrkowie Trybunalskim/, replace: 'Niemiecki komisarz Piotrkowa Trybunalskiego Hans Drechsel wydał zarządzenie o utworzeniu dzielnicy żydowskiej – 8 października zaczęło w niej funkcjonować pierwsze getto w okupowanej Polsce.' },
+  // pierwsze wejscie na Kilimandzaro (Kibo) - 6 X 1889, w 40. urodziny Purtschellera
+  { file: '10-05.json', y: 1889, re: /Kilimandżaro/, drop: true },
+  // premiera "Dziesieciorga przykazan" - 8 XI 1956 (Criterion Theatre, Nowy Jork)
+  { file: '10-05.json', y: 1956, re: /Dziesięcioro przykazań/, drop: true },
+  // rekord Bolotnikowa z 5 X 1960 to 28:18,8
+  { file: '10-05.json', y: 1960, re: /Bołotnikow/, sub: ['(28.12,2)', '(28:18,8)'] },
+  { file: '10-05.json', y: 1961, re: /Blake’a Edwarda/, sub: ['Blake’a Edwarda', 'Blake’a Edwardsa'] },
+  // rekord Kurosa pobil w 2022 r. Aleksandr Sorokin (319,6 km)
+  { file: '10-05.json', y: 1997, re: /Kuros/, sub: ['aktualny do dziś rekord świata', 'ówczesny rekord świata'] },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {
