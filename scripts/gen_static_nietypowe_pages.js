@@ -17,6 +17,11 @@ const { regenerateRegistry, NAME_ALIASES } = require('./swieto_registry');
 
 const ROOT = path.join(__dirname, '..');
 
+// Swieta o ruchomej dacie (swieta_floating.js): strona pokazuje regule, nie date z jednego roku
+const floatingSandbox = {};
+vm.createContext(floatingSandbox);
+vm.runInContext(fs.readFileSync(path.join(ROOT, 'swieta_floating.js'), 'utf8') + '\nthis.__byName__ = SWIETA_FLOATING_BY_NAME; this.__ruleText__ = floatingRuleText;', floatingSandbox);
+
 const MONTH_NAMES_PL = ['stycznia','lutego','marca','kwietnia','maja','czerwca',
   'lipca','sierpnia','września','października','listopada','grudnia'];
 
@@ -135,7 +140,8 @@ function sameNormalizedName(a, b) {
 
 function buildLightPage(slug, entry) {
   const [d, m, name, desc, tag] = entry;
-  const dateStr = `${d} ${MONTH_NAMES_PL[m - 1]}`;
+  const floatingRule = floatingSandbox.__byName__[name];
+  const dateStr = floatingRule ? floatingSandbox.__ruleText__(floatingRule) : `${d} ${MONTH_NAMES_PL[m - 1]}`;
   const metaDesc = truncateDesc((desc || `${name} — ${dateStr}.`).replace(/<[^>]+>/g, ''));
   const tagLabel = TAG_LABELS[tag] || tag || '';
 

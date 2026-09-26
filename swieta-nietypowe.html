@@ -689,6 +689,7 @@
 
 <script src="swieto_slugs.js"></script>
 <script src="swieto_names.js"></script>
+<script src="swieta_floating.js"></script>
 <script>
 function swietoLink(name) {
   const slug = (typeof SWIETO_NAME_TO_SLUG!=='undefined') ? SWIETO_NAME_TO_SLUG[name] : undefined;
@@ -1862,6 +1863,8 @@ const HOLIDAYS = [
 [9,11,'Międzynarodowy Dzień Walki z Faszyzmem i Antysemityzmem','Rocznica Nocy Kryształowej 1938 roku — pogromów żydowskich w Niemczech i Austrii. Dziś walczymy z faszyzmem, rasizmem i antysemityzmem.','inne']
 
 ];
+// Daty świąt ruchomych (n-ty dzień tygodnia miesiąca) przeliczane na bieżący rok — patrz swieta_floating.js
+const HOLIDAYS_CUR = redateFloating(HOLIDAYS, new Date().getFullYear());
 
 // ── Helpers ──────────────────────────────────────────────
 const TODAY = new Date();
@@ -1874,7 +1877,7 @@ function fullMonth(m){ return MONTH_LONG[m-1]; }
 
 // ── Today section ─────────────────────────────────────────
 (function buildToday(){
-  const items = HOLIDAYS.filter(([d,m])=>isToday(d,m));
+  const items = HOLIDAYS_CUR.filter(([d,m])=>isToday(d,m));
   if(!items.length) return;
   document.getElementById('todaySection').style.display='';
   const wd = WEEKDAYS[TODAY.getDay()];
@@ -1906,7 +1909,7 @@ function render(){
 
   // Group by month, filtered
   const monthBuckets = {};
-  HOLIDAYS.forEach(h => {
+  HOLIDAYS_CUR.forEach(h => {
     const [d, m, name, desc, tag] = h;
     const monthKey = MONTHS[m-1];
     const showMonth = activeMonth==='wszystkie' || activeMonth===monthKey;
@@ -2047,7 +2050,7 @@ function renderCal() {
 
   // Holiday lookup for this month
   const lookup = {};
-  HOLIDAYS.forEach(([d, m, name, desc, tag]) => {
+  redateFloating(HOLIDAYS, calYear).forEach(([d, m, name, desc, tag]) => {
     if (m === calMonth + 1) {
       if (!lookup[d]) lookup[d] = [];
       lookup[d].push({name, desc, tag});
@@ -2119,8 +2122,8 @@ if (_q) {
     'lipca','sierpnia','września','października','listopada','grudnia'];
   const TAG_LABELS = {inne:'inne',przyroda:'przyroda',kultura:'kultura',
     jedzenie:'jedzenie',zdrowie:'zdrowie',ludzie:'ludzie'};
-  const match = HOLIDAYS.find(h => h[2] === _q);
-  console.log('_q:', JSON.stringify(_q), 'match:', match ? match[2] : 'NONE', 'total:', HOLIDAYS.length);
+  const match = HOLIDAYS_CUR.find(h => h[2] === _q);
+  console.log('_q:', JSON.stringify(_q), 'match:', match ? match[2] : 'NONE', 'total:', HOLIDAYS_CUR.length);
   if (match) {
     const [d, m, name, desc, tag] = match;
     document.getElementById('detailDateline').textContent =
@@ -2148,7 +2151,7 @@ if (_q) {
     // Day view
     const MONTH_NAMES_PL = ['stycznia','lutego','marca','kwietnia','maja','czerwca',
       'lipca','sierpnia','września','października','listopada','grudnia'];
-    const items = HOLIDAYS.filter(([d, m]) => d === _d && m === _m);
+    const items = HOLIDAYS_CUR.filter(([d, m]) => d === _d && m === _m);
     document.getElementById('dayViewDateline').textContent =
       `${_d} ${MONTH_NAMES_PL[_m-1]}`;
     document.getElementById('dayViewTitle').textContent =

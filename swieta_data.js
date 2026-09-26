@@ -51,7 +51,6 @@ const SWIETA_DATA_STATIC=[
   [16,4,'Dzień Sapera (Święto Wojsk Inżynieryjnych)','dzien-sapera','branzowe'],
   [22,4,'Dzień Ziemi','dzien-ziemi','miedzynarodowe'],
   [23,4,'Światowy Dzień Książki i Praw Autorskich','dzien-ksiazki','miedzynarodowe'],
-  [25,4,'Światowy Dzień Lekarzy Weterynarii','dzien-weterynarii','branzowe'],
   [25,4,'Międzynarodowy Dzień Sekretarki i Asystentki','dzien-sekretarki','branzowe'],
   [26,4,'Dzień Drogowca i Transportowca','dzien-drogowca','branzowe'],
   [27,4,'Światowy Dzień Grafika','dzien-grafika','branzowe'],
@@ -81,7 +80,6 @@ const SWIETA_DATA_STATIC=[
   [1,6,'Dzień Dziecka','dzien-dziecka','nieoficjalne'],
   [4,6,'Dzień Wolności i Praw Obywatelskich','dzien-wolnosci-i-praw-obywatelskich','panstwowe'],
   [4,6,'Dzień Drukarza','dzien-drukarza','branzowe'],
-  [7,6,'Dzień Chemika','dzien-chemika','branzowe'],
   [8,6,'Światowy Dzień Oceanów','dzien-oceanow','miedzynarodowe'],
   [9,6,'Dzień Księgowego','dzien-ksiegowego','branzowe'],
   [9,6,'Międzynarodowy Dzień Archiwów','dzien-archiwow','branzowe'],
@@ -206,11 +204,20 @@ const SWIETA_DATA_MOVABLE=[
   [49,'Zesłanie Ducha Świętego (Zielone Świątki)','zielone-swiatki','koscielne'],
   [56,'Uroczystość Trójcy Przenajświętszej','trojca-swiety','koscielne'],
   [60,'Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa)','boze-cialo','koscielne'],
+  // Ruchome wg reguły "n-ty dzień tygodnia miesiąca" (offset null, 5. element = reguła: m, wd 0=niedziela..6=sobota,
+  // n 1-4 albo -1 = ostatni). Wcześniej stałe daty z 2026 w SWIETA_DATA_STATIC (27.09.2026: audyt świąt ruchomych).
+  [null,'Światowy Dzień Lekarzy Weterynarii','dzien-weterynarii','branzowe',{m:4,wd:6,n:-1}],
+  [null,'Dzień Chemika','dzien-chemika','branzowe',{m:6,wd:0,n:1}],
 ];
 
 function computeMovableSwieta(year){
   const easter = swietaDataEasterSunday(year);
-  return SWIETA_DATA_MOVABLE.map(([offset,name,slug,type])=>{
+  return SWIETA_DATA_MOVABLE.map(([offset,name,slug,type,rule])=>{
+    if (rule) {
+      const first = new Date(year, rule.m-1, 1), last = new Date(year, rule.m, 0);
+      const day = rule.n > 0 ? 1+(rule.wd-first.getDay()+7)%7+(rule.n-1)*7 : last.getDate()-(last.getDay()-rule.wd+7)%7;
+      return [day, rule.m, name, slug, type];
+    }
     const d = swietaDataAddDays(easter, offset);
     return [d.getDate(), d.getMonth()+1, name, slug, type];
   });

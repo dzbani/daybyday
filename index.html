@@ -526,6 +526,7 @@
 <script src="imieniny_slugs.js"></script>
 <script src="swieto_slugs.js"></script>
 <script src="swieto_names.js"></script>
+<script src="swieta_floating.js"></script>
 <script src="przyslowia_data.js"></script>
 <script>
 function nameSlug(n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,''); }
@@ -2984,7 +2985,8 @@ function getMoonRiseSet(year,month,day,lat,lon){
   }
 
   // Święta
-  const todaysFixed=HOLIDAYS.filter(([hd,hm])=>hd===d&&hm===m);
+  // Święta ruchome (n-ty dzień tygodnia) mają w HOLIDAYS datę z 2026 — przeliczane na oglądany rok (swieta_floating.js)
+  const todaysFixed=redateFloating(HOLIDAYS,y).filter(([hd,hm])=>hd===d&&hm===m);
   const todaysFloating=FLOATING_HOLIDAYS.filter(fh=>fh.month===m&&nthWeekdayOfMonth(y,fh.month,fh.weekday,fh.n)===d)
     .map(fh=>[d,m,fh.name,'',fh.tag]);
   const todays=[...todaysFixed,...todaysFloating];
@@ -3130,7 +3132,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     const firstDay=new Date(cy,cm-1,1);
     const startDow=(firstDay.getDay()+6)%7;
     const daysInMonth=new Date(cy,cm,0).getDate();
-    const hmMap=HOLIDAYS.filter(([hd,hm])=>hm===cm).reduce((acc,[hd,,name])=>{(acc[hd]=acc[hd]||[]).push(name);return acc;},{});
+    const hmMap=redateFloating(HOLIDAYS,cy).filter(([hd,hm])=>hm===cm).reduce((acc,[hd,,name])=>{(acc[hd]=acc[hd]||[]).push(name);return acc;},{});
     // Dołącz też święta z SWIETA_DATA (panstwowe/koscielne/nieoficjalne/historyczne) — lekka lista HOLIDAYS
     // sama w sobie nie obejmuje wszystkich dni (np. Wigilii, Bożego Narodzenia, rocznic historycznych),
     // przez co te dni nie dostawały kropki mimo realnej treści świątecznej (naprawione 12.09.2026).

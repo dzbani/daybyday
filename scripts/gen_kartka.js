@@ -158,6 +158,20 @@ for (const k of Object.keys(holidayMap)) {
   if (!holidayMap[k].length) delete holidayMap[k];
 }
 
+// Swieta o ruchomej dacie liczonej regula "n-ty dzien tygodnia miesiaca" (swieta_floating.js)
+// tez nie moga trafic na statyczne strony MM-DD ani do HOLIDAYS_DB: lekka lista HOLIDAYS ma dla
+// nich date z jednego roku (2026), wiec strona /kartka/MM-DD/ pokazywalaby je w zlym dniu w kazdym
+// innym roku (znalezione 27.09.2026). kartka-z-kalendarza.html dolicza je w przegladarce dla
+// wybranego roku (floatingNamesOn).
+const floatingSandbox = {};
+vm.createContext(floatingSandbox);
+vm.runInContext(readFile('swieta_floating.js') + '\nthis.__floating__ = SWIETA_FLOATING_BY_NAME;', floatingSandbox);
+const FLOATING_NAMES = new Set(Object.keys(floatingSandbox.__floating__));
+for (const k of Object.keys(holidayMap)) {
+  holidayMap[k] = holidayMap[k].filter(h => !FLOATING_NAMES.has(h.name));
+  if (!holidayMap[k].length) delete holidayMap[k];
+}
+
 // --- 4. swieto_slugs.js: ktore slugi maja gotowa strone ---
 const swietoSlugsRaw = readFile('swieto_slugs.js');
 const SWIETO_SLUGS = new Set(eval(swietoSlugsRaw.match(/new Set\((\[[\s\S]*?\])\)/)[1]));
@@ -317,9 +331,12 @@ function buildStaticPage(day) {
 
   const astroYear = astroYearFor(m, d);
   const sun = sunTimesFor(astroYear, m, d);
-  const moon = getMoonPhaseCompact(astroYear, m, d);
+  // Faza Ksiezyca i znak Ksiezyca celowo NIE sa na statycznej stronie: liczone dla ASTRO_YEAR (2026)
+  // dawalyby zla faze w kazdym innym roku (Ksiezyc przesuwa sie o ~11 dni rocznie wzgledem daty).
+  // Poprzednia wersja dodatkowo podpisywala znak zodiaku Ksiezyca jako "Faza ksiezyca" (bez nazwy
+  // fazy) - znalezione 27.09.2026. Faza na wybrany dzien i rok: kartka-z-kalendarza.html.
   const zodiac = getSunZodiac(m, d);
-  const astroHtml = `<p>Wschód słońca: <strong>${esc(sun.rise)}</strong> · Zachód: <strong>${esc(sun.set)}</strong> · Długość dnia: ${esc(sun.len)}</p><p>Faza księżyca: ${esc(moon.icon)} ${esc(moon.sign)} · Znak zodiaku: ${esc(zodiac)}</p>`;
+  const astroHtml = `<p>Wschód słońca: <strong>${esc(sun.rise)}</strong> · Zachód: <strong>${esc(sun.set)}</strong> · Długość dnia: ${esc(sun.len)}</p><p>Słońce w znaku: ${esc(zodiac)}</p>`;
 
   const metaDescParts = [];
   if (day.names.length) metaDescParts.push(`imieniny obchodzą ${day.names.slice(0, 3).join(', ')}`);
@@ -392,7 +409,7 @@ function buildStaticPage(day) {
   <p>${namesHtml}</p>
   <div class="section-label">Święta i wydarzenia</div>
   ${holidaysHtml}
-  <div class="section-label">Wschód/zachód słońca i księżyc</div>
+  <div class="section-label">Wschód i zachód słońca</div>
   ${astroHtml}
   <div class="section-label">Przysłowie na ten dzień</div>
   ${proverbHtml}
