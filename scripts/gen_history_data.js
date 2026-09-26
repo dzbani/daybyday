@@ -105,6 +105,25 @@ function parseSection(wikitext) {
 // Wpisy, ktorych parser nie umial poprawnie zlozyc (brak podmiotu po
 // usunietym szablonie, naglowek bez tresci, urwane zdanie, niedomkniety
 // nawias, resztki markupu) - lepiej pominac niz pokazac uzytkownikowi.
+// Reczne poprawki wpisow z Wikipedii, ktore po weryfikacji w zrodlach okazaly sie bledne
+// (generator odtwarza pliki z Wikipedii od zera, wiec poprawka w samym JSON zostalaby cofnieta).
+// plik: 'MM-DD.json', y: rok, re: rozpoznanie wpisu, drop:true = usun, replace = nowy tekst.
+const ENTRY_FIXES = [
+  // pierwszy wezel ARPANET dostarczono do UCLA 30.08.1969, pierwsze polaczenie 29.10.1969 - nie 29 IX
+  { file: '09-29.json', y: 1969, re: /ARPANET/, drop: true },
+  // w 1903 Prusy wprowadzily prawo jazdy z egzaminem, ale nie jako pierwszy kraj (Nowy Jork w 1901)
+  { file: '09-29.json', y: 1903, re: /pierwszym kraju na świecie/, replace: 'W Prusach wprowadzono obowiązek posiadania prawa jazdy, poprzedzony egzaminem z obsługi pojazdu.' },
+];
+function applyEntryFixes(file, events) {
+  return events
+    .map(e => {
+      const fx = ENTRY_FIXES.find(f => f.file === file && f.y === e.y && f.re.test(e.t));
+      if (!fx) return e;
+      return fx.drop ? null : { ...e, t: fx.replace };
+    })
+    .filter(Boolean);
+}
+
 function isBroken(t) {
   if (/^[a-ząćęłńóśźż]/.test(t)) return true;
   if (/[:,;]\s*\.?$/.test(t)) return true;
@@ -113,7 +132,7 @@ function isBroken(t) {
   return false;
 }
 
-async function fetchDay(pageName) {
+async function fetchDay(pageName, file) {
   const base = `https://pl.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=wikitext&format=json&origin=*`;
   const [r2, r3] = await Promise.all([
     fetch(base + '&section=2', { headers: { 'User-Agent': UA } }),
@@ -127,7 +146,7 @@ async function fetchDay(pageName) {
    .filter(e => !isBroken(e.t))
    // wpisy Wikipedii bez kropki na koncu (np. "Zakonczenie powstania w Bulgarii") - dopisz
    .map(e => (/[.!?”"’)»…]$/.test(e.t) ? e : { ...e, t: e.t + "." }));
-  return events;
+  return applyEntryFixes(file, events);
 }
 
 function sleep(ms) { return new Promise(res => setTimeout(res, ms)); }
@@ -150,7 +169,7 @@ async function main() {
     const { m, d, pageName } = target[i];
     const fname = `${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}.json`;
     try {
-      const events = await fetchDay(pageName);
+      const events = await fetchDay(pageName, fname);
       totalEvents += events.length;
       if (events.length === 0) emptyDays.push(`${fname} (${pageName})`);
       if (!DRY) fs.writeFileSync(path.join(OUT_DIR, fname), JSON.stringify(events), 'utf8');
