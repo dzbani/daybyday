@@ -2830,7 +2830,10 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const rad=Math.PI/180;
   const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
   const tz=isPolandDST(year,month,day)?2:1;
-  const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
+  // W dzień zmiany czasu przesunięcie zmienia się o 01:00 UTC: przed nim obowiązuje offset z doby poprzedniej
+  const pd=new Date(year,month-1,day-1),tzPrev=isPolandDST(pd.getFullYear(),pd.getMonth()+1,pd.getDate())?2:1;
+  const tzAt=h=>(tzPrev!==tz&&h<1)?tzPrev:tz;
+  const fmt=h=>{const local=((h+tzAt(h))%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
   // Pozycja księżyca — pełny algorytm Meeus rozdz. 47 (28+28 wyrazów)
   function moonPos(jd){
@@ -2903,8 +2906,12 @@ function getMoonRiseSet(year,month,day,lat,lon){
     return(lo+hi)/2;
   }
 
-  let riseT=null,setT=null,prev=moonAlt(0);
-  for(let t=0.1;t<=25.1;t+=0.1){
+  // Doba lokalna: od północy do północy czasu polskiego, tj. od -tz do 24-tz godzin UTC względem JD0.
+  // Wcześniej okno 0..25,1 h UTC (= 02:00 do 03:06 następnego dnia latem) — w dniu bez wschodu
+  // pokazywało wschód z następnego dnia (znalezione 6.10.2026: 5 X "01:24", 6 X "02:51").
+  const t0=-tzPrev,t1=24-tz;
+  let riseT=null,setT=null,prev=moonAlt(t0);
+  for(let t=t0+0.1;t<=t1+1e-9;t+=0.1){
     const curr=moonAlt(t);
     if(prev<0&&curr>=0&&riseT===null)riseT=bisect(t-0.1,t,true);
     if(prev>=0&&curr<0&&setT===null)setT=bisect(t-0.1,t,false);

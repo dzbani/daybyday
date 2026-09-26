@@ -167,6 +167,19 @@ const ENTRY_FIXES = [
   { file: '10-05.json', y: 1961, re: /Blake’a Edwarda/, sub: ['Blake’a Edwarda', 'Blake’a Edwardsa'] },
   // rekord Kurosa pobil w 2022 r. Aleksandr Sorokin (319,6 km)
   { file: '10-05.json', y: 1997, re: /Kuros/, sub: ['aktualny do dziś rekord świata', 'ówczesny rekord świata'] },
+  // pierwszy Madzlis otwarto 7 X 1906
+  { file: '10-06.json', y: 1906, re: /Majlis/, drop: true },
+  // Kreta ogloszila 6 X 1908 unie z Grecja (enosis), nie niepodleglosc
+  { file: '10-06.json', y: 1908, re: /Kreteńskie/, replace: 'Autonomiczne Państwo Kreteńskie proklamowało zjednoczenie z Grecją (enosis), wykorzystując kryzys bośniacki.' },
+  // Teixeira Gomes objal urzad prezydenta 5 X 1923 (wybrany 6 VIII)
+  { file: '10-06.json', y: 1923, re: /Teixeira Gomes/, drop: true },
+  // 2CV zaprezentowano na Salonie Paryskim 7 X 1948
+  { file: '10-06.json', y: 1948, re: /2CV/, drop: true },
+  { file: '10-06.json', y: 1965, re: /Iana Brady/, sub: ['Iana Brady', 'Ian Brady'] },
+  // Weather Underground - skrajna lewica (komunistyczna), nie anarchisci
+  { file: '10-06.json', y: 1969, re: /Weather Underground/, sub: ['organizację anarchistyczną Weather Underground', 'skrajnie lewicową organizację Weather Underground'] },
+  // Na Klang (prow. Nong Bua Lamphu) lezy w polnocno-wschodniej Tajlandii (Isan)
+  { file: '10-06.json', y: 2022, re: /Na Klang/, sub: ['w północnej Tajlandii', 'w północno-wschodniej Tajlandii'] },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
 ];
 function applyEntryFixes(file, events) {

@@ -906,7 +906,10 @@
     const rad=DEG;
     const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
     const tz=isPolandDST(year,month,day)?2:1;
-    const fmt=h=>{const local=((h+tz)%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
+    // W dzień zmiany czasu przesunięcie zmienia się o 01:00 UTC: przed nim obowiązuje offset z doby poprzedniej
+    const pd=new Date(year,month-1,day-1),tzPrev=isPolandDST(pd.getFullYear(),pd.getMonth()+1,pd.getDate())?2:1;
+    const tzAt=h=>(tzPrev!==tz&&h<1)?tzPrev:tz;
+    const fmt=h=>{const local=((h+tzAt(h))%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
     function moonPos(jde) {
       const T=(jde-2451545.0)/36525;
@@ -978,26 +981,29 @@
       return(lo+hi)/2;
     }
 
-    let riseT=null,setT=null,peakT=null,peakAlt=-Infinity,prev=altAt(0);
-    if(prev>peakAlt){peakAlt=prev;peakT=0;}
-    for(let t=0.1;t<=25.1;t+=0.1){
-      const curr=altAt(t);
+    // Doba lokalna: od północy do północy czasu polskiego (od -tz do 24-tz h UTC względem JD0) —
+    // wcześniej 0..25,1 h UTC, co w dniu bez wschodu dawało wschód z następnego dnia (6.10.2026)
+    const t0=-tzPrev,t1=24-tz;
+    // Kulminacja górna = przejście przez południk (kąt godzinny HA przechodzi przez 0°/360°).
+    // Wcześniej brano maksimum wysokości — różnica do ok. 5 min i gubienie górowania tuż przed północą.
+    const haSigned=t=>{const h=moonAlt(t).HA;return h>180?h-360:h;};
+    let riseT=null,setT=null,transitT=null,prev=altAt(t0),prevHA=haSigned(t0);
+    for(let t=t0+0.1;t<=t1+1e-9;t+=0.1){
+      const curr=altAt(t),currHA=haSigned(t);
       if(prev<0&&curr>=0&&riseT===null)riseT=bisect(t-0.1,t,true);
       if(prev>=0&&curr<0&&setT===null)setT=bisect(t-0.1,t,false);
-      if(curr>peakAlt){peakAlt=curr;peakT=t;}
-      prev=curr;
+      if(transitT===null&&prevHA<0&&currHA>=0&&currHA-prevHA<90){
+        let lo=t-0.1,hi=t;
+        for(let i=0;i<40;i++){const m=(lo+hi)/2;if(haSigned(m)<0)lo=m;else hi=m;}
+        transitT=(lo+hi)/2;
+      }
+      prev=curr;prevHA=currHA;
     }
-    // dopracuj czas kulminacji (maksimum wysokości) wyszukiwaniem trójdzielnym wokół zgrubnego szczytu
-    let lo=Math.max(0,peakT-0.2), hi=Math.min(25.1,peakT+0.2);
-    for(let i=0;i<40;i++){
-      const m1=lo+(hi-lo)/3, m2=hi-(hi-lo)/3;
-      if(altAt(m1)<altAt(m2))lo=m1; else hi=m2;
-    }
-    const transitT=(lo+hi)/2;
 
     return{
       rise: riseT!==null?fmt(riseT):'—',
-      transit: fmt(transitT),
+      // ok. raz w miesiącu górowanie wypada poprzedniego/następnego dnia — wtedy "—"
+      transit: transitT!==null?fmt(transitT):'—',
       set: setT!==null?fmt(setT):'—',
     };
   }
