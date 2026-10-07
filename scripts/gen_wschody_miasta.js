@@ -117,6 +117,10 @@ function buildPage(slug, city) {
   html = html.replace(OLD_SW_REGISTER, 'navigator.serviceWorker.register("/sw.js")');
   html = html.replace(OLD_FONTS_CSS, '<link rel="stylesheet" href="/fonts.css">');
   html = html.replace(OLD_TRANSITIONS_JS, '<script src="/transitions.js"></script>');
+  // Pozostale wzgledne href/src do plikow w korzeniu (nawigacja, stopka, favicon, manifest) - ten sam
+  // problem co wyzej: na stronie miasta (katalog glebiej) rozwiazywaly sie do nieistniejacych
+  // /wschod-zachod-slonca/<slug>/imieniny.html itd. (404, potwierdzone na zywo 7.10.2026).
+  html = html.replace(/\b(href|src)="([A-Za-z0-9_-]+\.(?:html|svg|png|json|css|js)(?:#[\w-]*)?)"/g, '$1="/$2"');
 
   // Statyczne tabele miesieczne dla WLASNEJ lokalizacji tego miasta (nie Warszawy) -
   // ten sam mechanizm co dla glownej strony, patrz gen_wschody_static.js.
