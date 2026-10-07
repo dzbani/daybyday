@@ -4536,6 +4536,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-bawelny/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-bez-majtek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
