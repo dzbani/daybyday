@@ -232,8 +232,25 @@ function buildTrendNarrative(name, vals, years) {
   return sentence;
 }
 
+// Warianty pisowni tego samego imienia dzielace slug (Jarmila/Jarmiła, Lucjan/Łucjan): jedna strona
+// /imieniny/<slug>/ na wszystkie warianty. Wlasciciel sluga = imie z RICH (patrz slugOwner), a gdy
+// zadne nie ma RICH - pierwszy alfabetycznie. Strona wlasciciela pokazuje SUME dat wszystkich
+// wariantow (np. Jarmila 4 lutego + Jarmiła 14 marca) - wczesniej tylko daty wlasnego zapisu, wiec
+// link z kalendarza dla drugiego wariantu prowadzil do strony bez jego daty (audyt 7.10.2026).
+const variantsBySlug = {};
+for (const n of Object.keys(dateMap)) (variantsBySlug[nameSlug(n)] = variantsBySlug[nameSlug(n)] || []).push(n);
+function slugOwnerOf(slug) {
+  return slugOwner[slug] || (variantsBySlug[slug] || []).slice().sort()[0];
+}
+
 function buildPage(name) {
-  const dates = (dateMap[name] || []).slice().sort((a, b) => a.m !== b.m ? a.m - b.m : a.d - b.d);
+  const ownerName = slugOwnerOf(nameSlug(name));
+  if (ownerName && ownerName !== name) return null; // wariant pisowni - strone buduje wlasciciel sluga
+  const variants = (variantsBySlug[nameSlug(name)] || [name]).filter(v => v !== name);
+  const datesSeen = new Set();
+  const dates = [name, ...variants].flatMap(v => dateMap[v] || [])
+    .filter(x => { const k = x.m + "-" + x.d; if (datesSeen.has(k)) return false; datesSeen.add(k); return true; })
+    .sort((a, b) => a.m !== b.m ? a.m - b.m : a.d - b.d);
   if (!dates.length) return null;
   const rich = RICH[name];
   // Imiona bez wpisu w NAME_DESCRIPTIONS_RICH (zwykle brak realnych nosicieli) nadal dostają
@@ -382,7 +399,7 @@ function buildPage(name) {
   </nav>
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
-  <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong></p>
+  <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
