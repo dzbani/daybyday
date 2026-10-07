@@ -56,7 +56,7 @@ const MONTH_NAMES = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Li
 const MONTH_LOCATIVE = ['Styczniu','Lutym','Marcu','Kwietniu','Maju','Czerwcu','Lipcu','Sierpniu','Wrześniu','Październiku','Listopadzie','Grudniu'];
 const MONTH_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
 const MONTH_SLUGS = ['styczen','luty','marzec','kwiecien','maj','czerwiec','lipiec','sierpien','wrzesien','pazdziernik','listopad','grudzien'];
-const MONTH_DAYS = [31,28,31,30,31,30,31,31,30,31,30,31];
+const MONTH_DAYS = [31,29,31,30,31,30,31,31,30,31,30,31]; // luty z 29 (rok przestepny) - NAMES ma wpis na 29.02
 
 // dzień+miesiąc -> lista imion tego dnia (z NAMES: [miesiąc, dzień, [imiona]])
 const dayMap = {};

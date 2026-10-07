@@ -221,7 +221,8 @@ function proverbsFor(m, d, dayOfYearApprox) {
   const monthPool = PROVERBS_MONTH_POOL[m] || [];
   const season = getSeason(m);
   const seasonPool = SEASON_MONTHS[season].filter(sm => sm !== m).flatMap(sm => PROVERBS_MONTH_POOL[sm] || []);
-  const combined = [...monthPool, ...seasonPool];
+  // jak w index.html: preferuj pule wlasnego miesiaca (29 lutego nie moze dostac przyslowia o grudniu)
+  const combined = monthPool.length ? monthPool : [...monthPool, ...seasonPool];
   if (combined.length > 0) return [combined[(dayOfYearApprox - 1) % combined.length]];
   return [PROVERBS_ARR[(dayOfYearApprox - 1) % PROVERBS_ARR.length]];
 }

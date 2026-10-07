@@ -601,6 +601,7 @@ const NAMES=
   [2,26,["Aleksander","Bogumił","Dionizy","Faustynian","Gerlinda","Klaudian","Lutomir","Lutosława","Mira","Mirosław","Mirosława","Nestor","Nikolina","Otokar","Porfiriusz","Porfiry"]],
   [2,27,["Achacja","Achacjusz","Achacy","Aleksander","Anastazja","Anna","Auksencja","Auksencjusz","Auksenty","Baldomer","Baldomera","Bazyli","Gabriel","Hanna","Honoryna","Julian","Leander","Leandra","Nestor","Orfeusz","Prokop","Sirosława","Wiktor"]],
   [2,28,["Antonia","August","Bogurad","Chwalibog","Gaja","Gajusz","Hilary","Józef","Kaja","Lech","Ludomir","Makary","Nadbor","Oswald","Roman","Sylwana","Tymoteusz"]],
+  [2,29,["Antonia","August","Oswald","Roman"]],
   [3,1,["Albin","Aldona","Antoni","Antonia","Antonina","Budzisław","Dawid","Eudokia","Eudoksja","Eulogia","Eulogiusz","Feliks","Herkulan","Herkules","Joanna","Józef","Leon","Leona","Milena","Radosław","Roger","Switbert"]],
   [3,2,["Absalon","Agnieszka","Franciszek","Halszka","Helena","Henryk","Januaria","Karol","Krzysztof","Michał","Paweł","Piotr","Prosper","Radosław","Symplicjusz","Łukasz"]],
   [3,3,["Agrypin","Anzelm","Asteriusz","Eutropiusz","Gerwin","Gerwina","Gwenol","Hieronim","Innocenty","Jakub","Jan","Kinga","Kleonik","Kleonika","Kolumba","Kunegunda","Marcjusz","Maryn","Maryniusz","Piotr","Samuel","Teodor","Teresa","Tycjan","Tycjana","Wirzchosława"]],
@@ -1943,7 +1944,7 @@ const HOLIDAYS=[
 [20,11,'Dzień Pamięci Osób Transpłciowych','','inne'],
 [20,11,'Dzień Absurdu','','inne'],
 [20,11,'Światowy Dzień Tabliczki Mnożenia','','inne'],
-[21,11,'Światowy Dzień Rybołówstwa','','inne'],
+[21,11,'Światowy Dzień Rybołówstwa (21 listopada)','','inne'],
 [21,11,'Dzień Pracownika Socjalnego','','inne'],
 [21,11,'Światowy Dzień Życzliwości i Pozdrowień','','inne'],
 [21,11,'Światowy Dzień Telewizji','','przyroda'],
@@ -3126,7 +3127,9 @@ function getMoonRiseSet(year,month,day,lat,lon){
     const monthPool = PROVERBS_MONTH_POOL[m] || [];
     const season = getSeason(m);
     const seasonPool = SEASON_MONTHS[season].filter(sm=>sm!==m).flatMap(sm=>PROVERBS_MONTH_POOL[sm]||[]);
-    const combined = [...monthPool, ...seasonPool];
+    // Preferuj pule WLASNEGO miesiaca (dzien bez wpisu, np. 29 lutego, nie moze dostac przyslowia o grudniu);
+    // pora roku tylko gdy miesiac nie ma zadnej puli.
+    const combined = monthPool.length ? monthPool : [...monthPool, ...seasonPool];
     prov = [combined[(doy-1) % combined.length]];
   }
   const firstName=names[0]||'';
