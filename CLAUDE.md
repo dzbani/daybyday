@@ -14,7 +14,7 @@ Wszystko i zawsze jednym agentem, chyba że użytkownik wyraźnie zdecyduje inac
 - `wschod-zachod-slonca/<miasto>/` — 12 miast, generator `scripts/gen_wschody_miasta.js`
 - `swieta-liturgiczne/<slug>/` — 22 strony świąt kościelnych, BEZ generatora (pliki pisane/edytowane ręcznie, wszystkie bajtowo identyczny szablon head/CSS)
 - `widget/<nazwa>/` — strony osadzane w `<iframe>` na cudzych stronach (noindex, minimalne, bez nav)
-- `scripts/` — generatory (`gen_*.js`) + duża liczba jednorazowych skryptów historycznych (`apply_*`, `fix_*`, `quotes_batch*.json` itd. z kampanii weryfikacji przysłów/cytatów) — te ostatnie NIE są do ponownego użycia, to archiwum jednorazowych operacji
+- `scripts/` — generatory (`gen_*.js`) i ich zależności (`swieto_registry.js`, `imieniny_tradycyjne_zrodla.json`) + skrypty kontrolne (`check_swieta_floating.js`, `link_check.js`, `audit_*.js`, `fix_dark_mode_lite_pages.js`). Jednorazowe skrypty i dane z kampanii weryfikacji przysłów/cytatów (`apply_*`, `fix_*`, `quotes_*`, `solid69_*` itd.) oraz pliki robocze z korzenia (surowe listy świąt/imion, w tym zrzuty konkurenta) USUNIĘTE z repo 7.10.2026, bo GitHub Pages publikował je publicznie — nadal są w historii gita (`git log --diff-filter=D --name-only`). Nie wrzucać nowych plików roboczych do repo (cały jego katalog jest serwowany na daybyday.today) — trzymać je poza nim.
 
 **Zasada:** jeśli strona jest wygenerowana ze skryptu, poprawiaj generator + przebuduj, nie edytuj wygenerowanych plików ręcznie (ryzyko rozjazdu przy następnym uruchomieniu generatora).
 
