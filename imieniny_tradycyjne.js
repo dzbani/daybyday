@@ -59,7 +59,7 @@ const IMIENINY_TRAD={
 "2-24":["Jan","Marek","Maciej","Józefa","Sergiusz","Bogurad","Ermegarda","Montan","Wieledrog"],
 "2-25":["Adam","Wiktor","Antonina","Cezary","Lubart"],
 "2-26":["Mirosław","Aleksander","Dionizy","Gerlinda","Klaudian"],
-"2-27":["Anna","Gabriel","Anastazja","Bazyli","Auksencja","Auksencjusz","Auksenty","Baldomer","Baldomera","Honoryna"],
+"2-27":["Anna","Gabriel","Bazyli","Auksencja","Auksencjusz","Auksenty","Baldomer","Baldomera","Honoryna"],
 "2-28":["Roman","Gaja","August","Makary","Oswald","Ludomir","Gajusz","Kaja"],
 "2-29":["Roman","August"],
 "3-1":["Joanna","Józef","Antoni","Radosław","Leon","Feliks","Albin","Leona","Eudoksja","Budzisław","Eudokia"],

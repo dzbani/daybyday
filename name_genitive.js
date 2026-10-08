@@ -390,7 +390,7 @@ const NAME_GENITIVE = {
   "Brunon": "Brunona",
   "Walenty": "Walentego",
   "Ali": "Alego",
-  "Hugo": "Hugona",
+  "Hugo": "Huga",
   "Arnold": "Arnolda",
   "Jeremiasz": "Jeremiasza",
   "Pamela": "Pameli",
