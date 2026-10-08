@@ -2611,13 +2611,13 @@ function getZodiac(m,d){
 // ── Wschód/zachód słońca — lokalizacja użytkownika ────────
 const LOC_DEFAULT={name:'Poznań',lat:52.4064,lon:16.9252};
 let LOC_NAME=LOC_DEFAULT.name,LOC_LAT=LOC_DEFAULT.lat,LOC_LON=LOC_DEFAULT.lon;
-(function(){const s=localStorage.getItem('kalbi_loc');if(s){try{const p=JSON.parse(s);
+(function(){const s=localStorage.getItem('dbd-loc');if(s){try{const p=JSON.parse(s);
   // Obliczenia strefy czasowej (isPolandDST/calcSunTimes/getMoonRiseSet) zakładają polską
   // strefę — zapisana lokalizacja spoza Polski (np. zaległy wpis sprzed dodania
   // countrycodes=pl do wyszukiwarki) dawałaby godziny przesunięte nawet o godzinę,
   // więc taki wpis odrzucamy i wracamy do domyślnej lokalizacji.
   const inPoland=p.lat>=48.5&&p.lat<=55.5&&p.lon>=13.5&&p.lon<=24.5;
-  if(inPoland){LOC_NAME=p.name;LOC_LAT=p.lat;LOC_LON=p.lon;}else{localStorage.removeItem('kalbi_loc');}
+  if(inPoland){LOC_NAME=p.name;LOC_LAT=p.lat;LOC_LON=p.lon;}else{localStorage.removeItem('dbd-loc');}
 }catch(e){}}})();
 
 // Czas letni UE: ostatnia niedziela marca 01:00 UTC -> ostatnia niedziela pazdziernika 01:00 UTC.
@@ -3403,11 +3403,11 @@ async function applyLocSearch(){
     const r=data[0];
     LOC_LAT=parseFloat(r.lat); LOC_LON=parseFloat(r.lon);
     LOC_NAME=r.address?.city||r.address?.town||r.address?.village||r.address?.hamlet||r.display_name.split(',')[0];
-    localStorage.setItem('kalbi_loc',JSON.stringify({name:LOC_NAME,lat:LOC_LAT,lon:LOC_LON}));
+    localStorage.setItem('dbd-loc',JSON.stringify({name:LOC_NAME,lat:LOC_LAT,lon:LOC_LON}));
     location.reload();
   }catch(e){status.textContent='Błąd połączenia.';}
 }
-function resetLoc(){localStorage.removeItem('kalbi_loc');location.reload();}
+function resetLoc(){localStorage.removeItem('dbd-loc');location.reload();}
 
 // ── Notatka na dzień ────────
 (function(){
