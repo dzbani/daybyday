@@ -1704,4 +1704,12 @@ const NAME_GENITIVE = {
   "Mederyk": "Mederyka",
   "Mederyka": "Mederyki",
   "Sebbus": "Sebbusa",
+  "Wioletta": "Wioletty",
+  "Kaja": "Kai",
+  "Tatiana": "Tatiany",
+  "Nataniel": "Nataniela",
+  "Emma": "Emmy",
+  "Rita": "Rity",
+  "Bohdana": "Bohdany",
+  "Lea": "Lei",
 };
