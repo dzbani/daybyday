@@ -28,7 +28,7 @@ if git diff --cached --name-only | grep -q '^imieniny/'; then
     echo "gen_sitemap_imieniny.js (pre-commit) nie powiódł się — commit przerwany." >&2
     exit 1
   fi
-  git add sitemap-imieniny.xml
+  git add sitemap-imieniny.xml imieniny_slugs.js
 fi
 
 exit 0

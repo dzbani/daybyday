@@ -47,6 +47,22 @@ const existing = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '
 const changed = existing !== sitemap;
 if (!DRY && changed) fs.writeFileSync(filePath, sitemap, 'utf8');
 
+// imieniny_slugs.js (IMIENINY_SLUGS) - lista stron do bezpiecznego linkowania bezposredniego
+// (index.html, imieniny.html, ranking-imion.html itd. linkuja do /imieniny/<slug>/ tylko gdy slug
+// jest na liscie, w przeciwnym razie do imieniny.html?name=). Plik byl prowadzony recznie i
+// rozjechal sie z folderami (31 istniejacych stron nie bylo na liscie, 7.10.2026) - teraz
+// jest generowany z tego samego skanu folderow co sitemap.
+const SLUGS_PATH = path.join(ROOT, 'imieniny_slugs.js');
+const slugsExisting = fs.existsSync(SLUGS_PATH) ? fs.readFileSync(SLUGS_PATH, 'utf8') : '';
+const slugsEol = slugsExisting.includes('\r\n') ? '\r\n' : '\n';
+const firstLine = slugsExisting.split(/\r?\n/)[0] || '';
+const slugsHeader = firstLine.startsWith('//')
+  ? firstLine
+  : '// Lista slugow, dla ktorych istnieje wygenerowana strona /imieniny/<slug>/ - uzywane do bezpiecznego linkowania bezposredniego (fallback na imieniny.html?name= gdy brak).';
+const slugsContent = slugsHeader + slugsEol + 'const IMIENINY_SLUGS=new Set(' + JSON.stringify(slugs) + ');' + slugsEol;
+const slugsChanged = slugsExisting !== slugsContent;
+if (!DRY && slugsChanged) fs.writeFileSync(SLUGS_PATH, slugsContent, 'utf8');
 console.log(`Folderow ze stronami (imieniny/<slug>/index.html): ${slugs.length}`);
 console.log(`Stron-hubow miesiecznych (imieniny/miesiac/<slug>/index.html): ${miesiacSlugs.length}`);
+console.log(slugsChanged ? `imieniny_slugs.js ${DRY ? '(dry-run, nie zapisano)' : 'zaktualizowany'} (${slugs.length} slugow)` : 'imieniny_slugs.js bez zmian');
 console.log(changed ? `sitemap-imieniny.xml ${DRY ? '(dry-run, nie zapisano)' : 'zaktualizowany'}` : 'sitemap-imieniny.xml bez zmian');
