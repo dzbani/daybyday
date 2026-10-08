@@ -1726,4 +1726,5 @@ const NAME_GENITIVE = {
   "Hugon": "Hugona",
   "Arabella": "Arabelli",
   "Rupert": "Ruperta",
+  "Sławosz": "Sławosza",
 };
