@@ -349,6 +349,7 @@ function buildPage(name) {
   <meta property="og:site_name" content="DaybyDay">
   <meta property="og:url" content="${pageUrl}">
   <meta property="og:type" content="article">
+  <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   ${articleLd}
   ${breadcrumbLd}
