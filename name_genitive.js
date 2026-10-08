@@ -1727,4 +1727,5 @@ const NAME_GENITIVE = {
   "Arabella": "Arabelli",
   "Rupert": "Ruperta",
   "Sławosz": "Sławosza",
+  "Emmeram": "Emmerama",
 };
