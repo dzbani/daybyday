@@ -100,6 +100,14 @@ Odkryte 15-16.09.2026 przy pełnym, dwurundowym audycie całej bazy 400+ cytató
 
 **Trwały sufit pewności:** cytat, który przetrwał DWIE niezależne rundy WebSearch bez znalezienia pierwotnego źródła W ŻADNĄ STRONĘ (ani potwierdzenia, ani obalenia), prawdopodobnie zostanie w tym stanie na stałe — to nie kwestia włożenia większego wysiłku, tylko fizycznego limitu tego, co da się znaleźć przez wyszukiwarkę (stare książki niezindeksowane cyfrowo, wywiady bez archiwum online). Trzecia runda tym samym narzędziem z reguły nie zmienia wyniku — nie traktować braku postępu jako sygnału do jeszcze bardziej agresywnego usuwania, tylko jako naturalny, zaakceptowany stan końcowy tej podgrupy.
 
+## Baza imienin (`NAMES`) — zmiana dat/imion i weryfikacja (09.10.2026)
+
+- **Trzy kopie, zawsze identyczne:** `NAMES` w `index.html` i `imieniny.html` (format `[miesiąc, dzień, [imiona…]]`, listy sortowane domyślnym `.sort()`) oraz `NAMES_DB` w `kartka-z-kalendarza.html` (klucze `"m-d"`, kolejność nieistotna). Po zmianie uruchom lokalne kontrole: 366 dni, brak duplikatów, trzy kopie zgodne.
+- **Po każdej zmianie dat:** przebuduj WSZYSTKIE strony imion (strony „Kto jeszcze obchodzi imieniny tego dnia” innych imion też się zmieniają): `gen_static_pages.js --only=<lista>` w paczkach po ok. 250 imion (limit długości polecenia) obejmujących wszystkie imiona ze stroną — pełny przebieg bez `--only` pomija strony „lite”; potem `gen_kartka.js`, `gen_imieniny_trad.js`, `gen_imieniny_miesiace.js`, `gen_sitemap_imieniny.js` i bump `sw.js`. Commit przy setkach plików: patrz uwaga o chwilowym „Permission denied” (ponawiać `git add`).
+- **Kolizja sluga Łucja = Lucja:** nie dodawać „Lucja” do `NAMES` (zdublowałaby daty na listach dni); pisownię opisuje zdanie w opisie Łucji. Dotyczy też innych par różniących się tylko „ł”/„l”.
+- **Jak weryfikować daty:** (1) strona dnia w pl.wikipedia (lista „Imieniny obchodzą”), (2) hasło o imieniu („imieniny obchodzi…”). Baza jest nadzbiorem list z Wikipedii (współczesne kalendarze) — samo ich niepokrycie nie jest błędem; podejrzane są DATY rzadkich imion (<300 nosicieli) bez żadnego potwierdzenia, zwłaszcza przesunięte o 1 dzień (np. Donald 14.7 zamiast 15.7). Nie wnioskować z portali-ankiet (halloween.friko.net). Imię bez śladu w polskim kalendarzu (Marisa, Latika) — usuwać z bazy.
+- **Wikipedia API:** pełny tekst przez `prop=revisions` (20 tytułów/zapytanie, przerwa 4 s); `prop=extracts` ucina do ok. 1200 znaków.
+
 ## Weryfikacja danych kalendarzowych/astronomicznych
 
 - Wielkanoc: algorytm Meeusa/Jonesa/Butchera (użyty w wielu plikach, zweryfikowany).
