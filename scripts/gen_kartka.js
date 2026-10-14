@@ -404,6 +404,7 @@ function buildStaticPage(day) {
   <style>
     :root { --bg:#F8F7F5; --text:#1A1916; --muted2:#888; --border:#e5e3de; color-scheme: light dark; }
     [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted2:#8A8680; --border:#2C2A27; }
+    html { font-size: 112%; }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .25rem; }
     .breadcrumb { font-size: .8rem; color: var(--muted2); margin-bottom: 1rem; }

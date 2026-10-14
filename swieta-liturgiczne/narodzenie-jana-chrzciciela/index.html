@@ -17,6 +17,7 @@
   <style>
     :root { --bg:#F8F7F5; --text:#1A1916; --muted:#555; --muted2:#888; --border:#e5e3de; --surface:#F0EDEA; --surface-border:#E8E5E0; color-scheme: light dark; }
     [data-theme="dark"] { --bg:#111110; --text:#F0EDE8; --muted:#B0ACA4; --muted2:#8A8680; --border:#2C2A27; --surface:#232220; --surface-border:#3A3733; }
+    html { font-size: 112%; }
     body { font-family: Georgia, serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; color: var(--text); background: var(--bg); line-height: 1.7; }
     h1 { font-size: 2rem; margin-bottom: .5rem; }
     .feast-meta { font-size: 1.05rem; color: var(--muted); margin-bottom: .5rem; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; }
@@ -37,6 +38,7 @@
     .topnav .nav-links a:hover { color: var(--text); }
     .topnav .nav-links a.active { color: var(--text); font-weight: 700; }
     @media(max-width:480px){ .topnav .nav-links{gap:.6rem .9rem; font-size:.8rem;} }
+    @media(max-width:480px){ .topnav{gap:.2rem 1rem; padding:.7rem 0;} .topnav .nav-links{flex-basis:100%; order:3; gap:.1rem .9rem;} }
     #themeToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     #themeToggle:hover { background: var(--border); }
     #themeToggle::before { content: '☾'; }
