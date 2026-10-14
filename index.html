@@ -3046,7 +3046,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const WIDGET_EXTRA_SLUGS=['dzien-nauczyciela'];
   // Karta dnia pokazuje dodatkowo wybrane święta branżowe, których nie ma w lekkiej liście HOLIDAYS (sprawdzone 14.10.2026 na żywo dla wszystkich 65 branżowych);
   // do widżetu "najbliższe daty" NIE trafiają (tylko dzien-nauczyciela)
-  const CARD_EXTRA_SLUGS=[...WIDGET_EXTRA_SLUGS,'dzien-przedsiebiorcy','dzien-sekretarki','dzien-poloznej','dzien-fryzjera','dzien-rybolowstwa','dzien-instruktora-nauki-jazdy','dzien-straznika-miejskiego'];
+  const CARD_EXTRA_SLUGS=[...WIDGET_EXTRA_SLUGS,'dzien-przedsiebiorcy','dzien-sekretarki','dzien-poloznej','dzien-fryzjera','dzien-rybolowstwa','dzien-instruktora-nauki-jazdy','dzien-straznika-miejskiego','dzien-lacznosciowca'];
   const todaysCurated=swietaForY.filter(([hd,hm,,slug,type])=>hd===d&&hm===m&&(type.split(' ').some(t=>CARD_TYPES.includes(t))||CARD_EXTRA_SLUGS.includes(slug)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
   const curatedSlugs=new Set(todaysCurated.map(([,,name])=>nameToSlugSafe(name)).filter(Boolean));
