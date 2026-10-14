@@ -184,12 +184,20 @@ function buildPage(monthIdx0) {
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
     .footer-links { display:flex; gap:1.5rem; }
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-links{display:none} .im-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))} }
+    @media(max-width:600px){ .topnav{padding:0 12px} .nav-burger{display:flex} .topnav .nav-links{display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49} .topnav .nav-links.open{display:flex} .topnav .nav-links a{display:block; padding:.7rem .75rem; font-size:.9rem} }
   </style>
   <style id="dark-mode-styles">
     [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; }
     [data-theme="dark"] a { color: inherit; }
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
+    [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98); }
     [data-theme="dark"] .im-none { color:#3A3733; }
   </style>
   <script>
@@ -210,6 +218,7 @@ function buildPage(monthIdx0) {
     <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
     <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" onclick="var nl=document.querySelector('.topnav .nav-links');var o=nl.classList.toggle('open');this.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="page">
