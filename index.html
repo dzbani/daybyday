@@ -3040,7 +3040,9 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // aliasow (NAME_ALIASES z scripts/swieto_registry.js) - porownujemy po rozwiazanym slugu,
   // nie po samej nazwie. Znalezione i naprawione 16.09.2026 (ten sam wzorzec co gen_kartka.js).
   const CARD_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
-  const todaysCurated=swietaForY.filter(([hd,hm,,,type])=>hd===d&&hm===m&&type.split(' ').some(t=>CARD_TYPES.includes(t)));
+  // Dzień Edukacji Narodowej (14 X) jest w bazie jako 'branzowe', ale to powszechnie znane święto oświatowe — pokazujemy je na karcie i w widżecie mimo typu
+  const CARD_EXTRA_SLUGS=['dzien-nauczyciela'];
+  const todaysCurated=swietaForY.filter(([hd,hm,,slug,type])=>hd===d&&hm===m&&(type.split(' ').some(t=>CARD_TYPES.includes(t))||CARD_EXTRA_SLUGS.includes(slug)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
   const curatedSlugs=new Set(todaysCurated.map(([,,name])=>nameToSlugSafe(name)).filter(Boolean));
   const todaysNietypowe=todays.filter(([,,name])=>{
@@ -3300,8 +3302,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
   const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
-  // Dzień Edukacji Narodowej (14 X) jest w bazie jako 'branzowe', ale to powszechnie znane święto oświatowe — pokazujemy je w widżecie mimo typu
-  const WIDGET_EXTRA_SLUGS=['dzien-nauczyciela'];
+  const WIDGET_EXTRA_SLUGS=CARD_EXTRA_SLUGS;
   // Swieto ruchome przechodzace na kolejny rok nie moze po prostu powtorzyc dd/mm z roku
   // biezacego (Wielkanoc i pochodne wypadaja co roku innego dnia) - doliczane osobno dla y+1,
   // z pamiecia podreczna liczoną leniwie tylko gdy faktycznie potrzebna.
