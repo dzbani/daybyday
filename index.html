@@ -85,10 +85,10 @@
     .astro-icon.moon { background: #EEF1F6; }
     .astro-icon svg { width: 14px; height: 14px; }
     .astro-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-    .astro-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.35rem 0; border-bottom: 1px solid var(--border); font-size: 0.82rem; }
+    .astro-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; padding: 0.35rem 0; border-bottom: 1px solid var(--border); font-size: 0.82rem; }
     .astro-row:last-child { border-bottom: none; }
-    .astro-row-label { color: var(--muted); }
-    .astro-row-val { font-weight: 500; }
+    .astro-row-label { color: var(--muted); flex-shrink: 0; }
+    .astro-row-val { font-weight: 500; text-align: right; }
     .astro-row-bold .astro-row-label, .astro-row-bold .astro-row-val { font-weight: 700; color: var(--text); }
     .daylight-bar { margin-top: 1rem; height: 4px; background: var(--tag-bg); border-radius: 4px; overflow: hidden; }
     .daylight-fill { height: 100%; background: linear-gradient(90deg, #F5C06A, var(--sun)); border-radius: 4px; }
