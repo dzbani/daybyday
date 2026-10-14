@@ -316,6 +316,7 @@ function buildPage(year, monthIdx0) {
   <style id="dark-mode-styles">
     [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; --holiday:#1F0D0A; --holiday-text:#D47A5A; }
     [data-theme="dark"] a { color: inherit; }
+    [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
   </style>
   <script>
     (function(){
@@ -486,6 +487,7 @@ function buildYearPage(year) {
   <style id="dark-mode-styles">
     [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; }
     [data-theme="dark"] a { color: inherit; }
+    [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
   </style>
   <script>
     (function(){
