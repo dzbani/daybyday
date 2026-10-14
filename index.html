@@ -3042,7 +3042,10 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // nie po samej nazwie. Znalezione i naprawione 16.09.2026 (ten sam wzorzec co gen_kartka.js).
   const CARD_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
   // Dzień Edukacji Narodowej (14 X) jest w bazie jako 'branzowe', ale to powszechnie znane święto oświatowe — pokazujemy je na karcie i w widżecie mimo typu
-  const CARD_EXTRA_SLUGS=['dzien-nauczyciela'];
+  const WIDGET_EXTRA_SLUGS=['dzien-nauczyciela'];
+  // Karta dnia pokazuje dodatkowo wybrane święta branżowe, których nie ma w lekkiej liście HOLIDAYS (sprawdzone 14.10.2026 na żywo dla wszystkich 65 branżowych);
+  // do widżetu "najbliższe daty" NIE trafiają (tylko dzien-nauczyciela)
+  const CARD_EXTRA_SLUGS=[...WIDGET_EXTRA_SLUGS,'dzien-przedsiebiorcy','dzien-sekretarki','dzien-poloznej','dzien-fryzjera','dzien-rybolowstwa','dzien-instruktora-nauki-jazdy','dzien-straznika-miejskiego'];
   const todaysCurated=swietaForY.filter(([hd,hm,,slug,type])=>hd===d&&hm===m&&(type.split(' ').some(t=>CARD_TYPES.includes(t))||CARD_EXTRA_SLUGS.includes(slug)));
   const curatedNames=new Set(todaysCurated.map(([,,name])=>name));
   const curatedSlugs=new Set(todaysCurated.map(([,,name])=>nameToSlugSafe(name)).filter(Boolean));
@@ -3303,7 +3306,6 @@ function getMoonRiseSet(year,month,day,lat,lon){
   });
   const TODAY_MS=new Date(y,m-1,d).getTime();
   const WIDGET_TYPES=['panstwowe','koscielne','nieoficjalne','historyczne'];
-  const WIDGET_EXTRA_SLUGS=CARD_EXTRA_SLUGS;
   // Swieto ruchome przechodzace na kolejny rok nie moze po prostu powtorzyc dd/mm z roku
   // biezacego (Wielkanoc i pochodne wypadaja co roku innego dnia) - doliczane osobno dla y+1,
   // z pamiecia podreczna liczoną leniwie tylko gdy faktycznie potrzebna.
