@@ -1,2 +1,4 @@
 ﻿# Auto detect text files and perform LF normalization
 * text=auto
+# Pliki ICS muszą mieć końce linii CRLF (RFC 5545) - bez konwersji autocrlf
+ics/*.ics -text
