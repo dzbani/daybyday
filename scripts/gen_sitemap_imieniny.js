@@ -44,8 +44,13 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
 
 const filePath = path.join(ROOT, 'sitemap-imieniny.xml');
 const existing = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '';
-const changed = existing !== sitemap;
-if (!DRY && changed) fs.writeFileSync(filePath, sitemap, 'utf8');
+// <lastmod> dopisuje scripts/page_lastmod.js (data ostatniej zmiany TREŚCI strony, nie ostatniego commita)
+let changed = existing.replace(/<lastmod>[^<]*<\/lastmod>/g, '') !== sitemap;
+if (!DRY) {
+  fs.writeFileSync(filePath, sitemap, 'utf8');
+  require('./page_lastmod').applyToSitemapSafe(ROOT, 'sitemap-imieniny.xml');
+  changed = fs.readFileSync(filePath, 'utf8') !== existing;
+}
 
 // imieniny_slugs.js (IMIENINY_SLUGS) - lista stron do bezpiecznego linkowania bezposredniego
 // (index.html, imieniny.html, ranking-imion.html itd. linkuja do /imieniny/<slug>/ tylko gdy slug

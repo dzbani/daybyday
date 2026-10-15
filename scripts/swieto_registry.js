@@ -146,6 +146,8 @@ function regenerateRegistry(ROOT, extraAliases) {
   const urls = slugs.filter(s => !noindex.has(s)).map(s => `  <url>\n    <loc>https://daybyday.today/swieto/${s}/</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.6</priority>\n  </url>`).join('\n');
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, 'sitemap-swieto.xml'), sitemap, 'utf8');
+  // <lastmod> = data ostatniej zmiany TREŚCI strony (nie ostatniego commita) - patrz scripts/page_lastmod.js
+  require('./page_lastmod').applyToSitemapSafe(ROOT, 'sitemap-swieto.xml');
 
   return { slugCount: slugs.length, nameCount: Object.keys(nameToSlug).length };
 }
