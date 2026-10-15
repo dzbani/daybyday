@@ -384,16 +384,15 @@ function getMoonPhase(year,month,day){
   // wciąż wysokiej (~97-98%) jasności. Wcześniejsza wersja z szerokim,
   // symetrycznym oknem (SYNODIC/8, ~3,69 dnia) była oparta tylko na
   // kalendarzswiat.pl, który okazał się jedynym odstającym źródłem.
-  let phase,icon;
-  if(age<0.5)        {phase='Nów';              icon='🌑';}
-  else if(age<6.88)  {phase='Wzrastający sierp';icon='🌒';}
-  else if(age<7.88)  {phase='Pierwsza kwadra';  icon='🌓';}
-  else if(age<14.27) {phase='Wzrastający garb'; icon='🌔';}
-  else if(age<15.27) {phase='Pełnia';           icon='🌕';}
-  else if(age<21.65) {phase='Zanikający garb';  icon='🌖';}
-  else if(age<22.65) {phase='Ostatnia kwadra';  icon='🌗';}
-  else if(age<29.03) {phase='Zanikający sierp'; icon='🌘';}
-  else               {phase='Nów';              icon='🌑';} // ostatnie 0,5 dnia przed nowiem (okno ±0,5 dnia)
+  // Dzień kardynalny (Nów/kwadra/Pełnia) = dzień czasu polskiego, w którym elongacja przekracza 0/90/180/270° (data lokalna dokładnego
+  // momentu, jak w almanachach i na /kalendarz-ksiezycowy/); pozostałe dni — faza przejściowa wg ćwiartki elongacji o 12:00 UTC.
+  // Wcześniej okna wiekowe ±0,5 d o 12:00 UTC: w ok. 3% faz etykieta lądowała na sąsiednim dniu (np. pełnia 24.12.2026 02:28).
+  const tzOff=isPolandDST(year,month,day)?2:1, jd0=JD-0.5-tzOff/24;
+  const qa=Math.floor(moonSun(jd0).elong/90), qb=Math.floor(moonSun(jd0+1).elong/90);
+  const PH_CARD=[['Nów','🌑'],['Pierwsza kwadra','🌓'],['Pełnia','🌕'],['Ostatnia kwadra','🌗']];
+  const PH_TRANS=[['Wzrastający sierp','🌒'],['Wzrastający garb','🌔'],['Zanikający garb','🌖'],['Zanikający sierp','🌘']];
+  const phPick=(qa!==qb)?PH_CARD[qb]:PH_TRANS[Math.floor(elong/90)];
+  const phase=phPick[0], icon=phPick[1];
 
   // Znak zodiaku z prawdziwej długości ekliptycznej
   const MOON_SIGNS=['Baran ♈','Byk ♉','Bliźnięta ♊','Rak ♋','Lew ♌','Panna ♍','Waga ♎','Skorpion ♏','Strzelec ♐','Koziorożec ♑','Wodnik ♒','Ryby ♓'];
