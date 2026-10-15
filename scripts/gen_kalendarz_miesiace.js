@@ -62,6 +62,14 @@ function pdfLineHtml(year) {
   return `<p class="dl-line">Pobierz <a href="/kalendarz-do-druku/${year}/">kalendarz ${year} do druku</a> (PDF): <a href="/pdf/kalendarz-${year}-roczny-poziomo.pdf">roczny poziomo</a> · <a href="/pdf/kalendarz-${year}-roczny-pionowo.pdf">roczny pionowo</a> · <a href="/pdf/kalendarz-${year}-miesieczny.pdf">miesięczny z imieninami</a> — <a href="/kalendarze-do-pobrania.html">wszystkie kalendarze i pliki ICS</a></p>`;
 }
 
+// Wiersz z linkiem do kalendarza księżycowego (scripts/gen_kalendarz_ksiezycowy.js) — tylko gdy strona istnieje (lata 2026-2032)
+function moonLineHtml(year, monthIdx0) {
+  const rel = monthIdx0 === undefined ? `kalendarz-ksiezycowy/${year}` : `kalendarz-ksiezycowy/${year}/${MONTH_SLUGS[monthIdx0]}`;
+  if (!fs.existsSync(path.join(ROOT, rel, 'index.html'))) return '';
+  const what = monthIdx0 === undefined ? `kalendarz księżycowy ${year}` : `kalendarz księżycowy — ${MONTH_NAMES[monthIdx0].toLowerCase()} ${year}`;
+  return `<p class="dl-line dl-line2">Księżyc: <a href="/${rel}/">${what}</a> — nów, kwadry i pełnia z godzinami${monthIdx0 === undefined ? '' : ', oświetlenie, wschody i zachody Księżyca'}</p>`;
+}
+
 function pad(n) { return String(n).padStart(2, '0'); }
 function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
@@ -268,6 +276,7 @@ function buildPage(year, monthIdx0) {
     .month-nav a:hover { text-decoration:underline; }
     .dl-line { font-size:.85rem; color:var(--muted); line-height:1.6; margin:-.4rem 0 1.4rem; }
     .dl-line a { color:var(--text); font-weight:500; text-decoration:underline; text-underline-offset:3px; }
+    .dl-line2 { margin-top:-1rem; }
     .cal-table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-bottom:2rem; overflow-x:auto; }
     table.cal-table { width:100%; border-collapse:collapse; font-size:.82rem; white-space:nowrap; }
     table.cal-table th, table.cal-table td { padding:.6rem .9rem; text-align:left; border-bottom:1px solid var(--border); }
@@ -335,6 +344,7 @@ function buildPage(year, monthIdx0) {
   <h1 class="page-title">${monthName} ${year}</h1>
   <p class="page-sub">${pageSub}</p>
   ${pdfLineHtml(year)}
+  ${moonLineHtml(year, monthIdx0)}
 
   <div class="month-nav">
     ${prevLink}
@@ -460,6 +470,7 @@ function buildYearPage(year) {
     .year-nav a:hover { text-decoration:underline; }
     .dl-line { font-size:.85rem; color:var(--muted); line-height:1.6; margin:-.4rem 0 1.4rem; }
     .dl-line a { color:var(--text); font-weight:500; text-decoration:underline; text-underline-offset:3px; }
+    .dl-line2 { margin-top:-1rem; }
     .months-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; margin-bottom:2.5rem; }
     .month-card-link { display:block; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.1rem 1.25rem; text-decoration:none; color:var(--text); transition:border-color .15s; }
     .month-card-link:hover { border-color:#C8C4BE; }
@@ -518,6 +529,7 @@ function buildYearPage(year) {
   <h1 class="page-title">Kalendarz ${year}</h1>
   <p class="page-sub">${pageSub}</p>
   ${pdfLineHtml(year)}
+  ${moonLineHtml(year)}
 
   <div class="year-nav">
     ${prevLink}
