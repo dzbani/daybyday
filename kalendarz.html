@@ -550,7 +550,10 @@
     document.getElementById('yearLabel').textContent = year;
     document.querySelectorAll('.year-btn')[0].textContent = `← ${year-1}`;
     document.querySelectorAll('.year-btn')[1].textContent = `${year+1} →`;
-    document.getElementById('yearPageLink').href = `/kalendarz/${year}/`;
+    // statyczne strony /kalendarz/RRRR/ istnieją tylko dla lat STATIC_YEARS (scripts/gen_kalendarz_miesiace.js, YEARS)
+    const yearPageLink = document.getElementById('yearPageLink');
+    yearPageLink.href = `/kalendarz/${year}/`;
+    yearPageLink.style.display = (year >= 2025 && year <= 2032) ? '' : 'none';
 
     for (let m = 0; m < 12; m++) {
       const card = document.createElement('div');
@@ -576,7 +579,7 @@
 
       card.appendChild(tableModeMonths.has(m) ? buildMonthTable(year, m) : buildMonthGrid(year, m));
 
-      if (year >= 2025 && year <= 2028) {
+      if (year >= 2025 && year <= 2032) {
         const detailLink = document.createElement('a');
         detailLink.className = 'no-print';
         detailLink.href = `/kalendarz/${year}/${MONTH_SLUGS[m]}/`;

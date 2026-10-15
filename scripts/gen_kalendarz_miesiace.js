@@ -4,7 +4,7 @@
 // (Node, nie JS w przegladarce) - tresc jest w surowym HTML od razu, nie wymaga
 // wykonania JS do zaindeksowania.
 //
-// Powod: kalendarz.html pokazuje wszystkie 12 miesiecy + przelacznik lat 2025-2028
+// Powod: kalendarz.html pokazuje wszystkie 12 miesiecy + przelacznik lat (strony statyczne 2025-2032)
 // wylacznie w JS (bez zmiany URL) - Google widzi i moze zaindeksowac tylko jeden URL
 // (/kalendarz.html), reszta miesiecy/lat nie ma wlasnego adresu do zaindeksowania.
 //
@@ -53,7 +53,7 @@ const MONTH_GEN = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipc
 const MONTH_SLUGS = ['styczen','luty','marzec','kwiecien','maj','czerwiec','lipiec','sierpien','wrzesien','pazdziernik','listopad','grudzien'];
 const DAY_NAMES_FULL = ['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'];
 const DAY_NAMES = ['Pn','Wt','Śr','Cz','Pt','Sb','Nd'];
-const YEARS = [2025, 2026, 2027, 2028];
+const YEARS = [2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032];
 
 // Wiersz z linkami do kalendarzy PDF danego roku (scripts/gen_pdf_calendars.js) — tylko gdy pliki istnieją (dla lat bez PDF pusty)
 function pdfLineHtml(year) {
@@ -106,59 +106,32 @@ function allHolidayKeysForYear(year) {
   return keys.sort();
 }
 
-// Niedziele handlowe - zsynchronizowane z niedziele-handlowe.html (jedyne zrodlo prawdy
-// dla 2026/2027, tam tez lista wszystkich niedziel roku w DATES_2026/DATES_2027). Reguła
-// jest ustawowo stala (art. 7 ustawy o ograniczeniu handlu w niedziele, po nowelizacji z
-// 1 lutego 2025 r. - Dz.U. 2024 poz. 1965): ostatnia niedziela stycznia/kwietnia/czerwca/
-// sierpnia, Niedziela Palmowa, oraz TRZY niedziele poprzedzajace Wigilie (24 grudnia) -
-// 8 z ok. 52 w roku, obliczalne z gory (bez dorocznego ogloszenia MRiPS, w przeciwienstwie
-// do ferii zimowych) - stad dane dla wszystkich 4 lat 2025-2028, nie tylko 2026.
-// Zweryfikowane zewnetrznie (WebSearch/WebFetch) dla kazdego roku z osobna 2026-08-25.
-const OPEN_SUNDAYS = {
-  2025: {
-    '1-26': 'Niedziela handlowa — przed końcem miesiąca',
-    '4-13': 'Niedziela Palmowa — handlowa przed Wielkanocą',
-    '4-27': 'Niedziela handlowa — ostatnia niedziela kwietnia',
-    '6-29': 'Niedziela handlowa — ostatnia niedziela czerwca',
-    '8-31': 'Niedziela handlowa — przed szkołą',
-    '12-7': 'Niedziela handlowa — przedświąteczna',
-    '12-14': 'Niedziela handlowa — przedświąteczna',
-    '12-21': 'Niedziela handlowa — przedświąteczna',
-  },
-  2026: {
-    '1-25': 'Niedziela handlowa — przed końcem miesiąca',
-    '3-29': 'Niedziela Palmowa — handlowa przed Wielkanocą',
-    '4-26': 'Niedziela handlowa — ostatnia niedziela kwietnia',
-    '6-28': 'Niedziela handlowa — ostatnia niedziela czerwca',
-    '8-30': 'Niedziela handlowa — przed szkołą',
-    '12-6': 'Niedziela handlowa — przedświąteczna',
-    '12-13': 'Niedziela handlowa — przedświąteczna',
-    '12-20': 'Niedziela handlowa — przedświąteczna',
-  },
-  2027: {
-    '1-31': 'Niedziela handlowa — przed końcem miesiąca',
-    '3-21': 'Niedziela Palmowa — handlowa przed Wielkanocą',
-    '4-25': 'Niedziela handlowa — ostatnia niedziela kwietnia',
-    '6-27': 'Niedziela handlowa — ostatnia niedziela czerwca',
-    '8-29': 'Niedziela handlowa — przed szkołą',
-    '12-5': 'Niedziela handlowa — przedświąteczna',
-    '12-12': 'Niedziela handlowa — przedświąteczna',
-    '12-19': 'Niedziela handlowa — przedświąteczna',
-  },
-  2028: {
-    '1-30': 'Niedziela handlowa — przed końcem miesiąca',
-    '4-9': 'Niedziela Palmowa — handlowa przed Wielkanocą',
-    '4-30': 'Niedziela handlowa — ostatnia niedziela kwietnia',
-    '6-25': 'Niedziela handlowa — ostatnia niedziela czerwca',
-    '8-27': 'Niedziela handlowa — przed szkołą',
-    '12-3': 'Niedziela handlowa — przedświąteczna',
-    '12-10': 'Niedziela handlowa — przedświąteczna',
-    '12-17': 'Niedziela handlowa — przedświąteczna',
-  },
-};
+// Niedziele handlowe: reguła ustawowa (art. 7 ustawy o ograniczeniu handlu w niedziele, po nowelizacji z
+// 1 lutego 2025 r., Dz.U. 2024 poz. 1965): ostatnia niedziela stycznia/kwietnia/czerwca/sierpnia, Niedziela
+// Palmowa oraz TRZY niedziele poprzedzające 24 grudnia — 8 w roku, liczone z góry (bez dorocznego ogłoszenia).
+// Wcześniej tablica wpisana na sztywno dla 2025-2028; reguła daje dokładnie te same daty (sprawdzone 15.10.2026)
+// i zgadza się z niedziele-handlowe.html dla 2029. Dla lat PO 2029 nie pokazujemy nic o handlu w niedziele —
+// przepisy mogą się zmienić, a strona niedziele-handlowe.html też kończy się na 2029 (jak ICS niedziel handlowych).
+const SHOP_MAX_YEAR = 2029;
+const SHOP_CACHE = {};
+function openSundaysFor(year) {
+  if (SHOP_CACHE[year]) return SHOP_CACHE[year];
+  const map = {};
+  const put = (m, d, t) => { map[`${m}-${d}`] = t; };
+  const lastSunday = m => { let d = new Date(year, m, 0).getDate(); while (new Date(year, m - 1, d).getDay() !== 0) d--; return d; };
+  put(1, lastSunday(1), 'Niedziela handlowa — przed końcem miesiąca');
+  const e = easterDateKal(year), palm = new Date(year, e.getMonth(), e.getDate() - 7);
+  put(palm.getMonth() + 1, palm.getDate(), 'Niedziela Palmowa — handlowa przed Wielkanocą');
+  put(4, lastSunday(4), 'Niedziela handlowa — ostatnia niedziela kwietnia');
+  put(6, lastSunday(6), 'Niedziela handlowa — ostatnia niedziela czerwca');
+  put(8, lastSunday(8), 'Niedziela handlowa — przed szkołą');
+  const c = new Date(year, 11, 23); let n = 0;
+  while (n < 3) { if (c.getDay() === 0) { put(12, c.getDate(), 'Niedziela handlowa — przedświąteczna'); n++; } c.setDate(c.getDate() - 1); }
+  return (SHOP_CACHE[year] = map);
+}
 function shoppingSundayInfo(year, m, d, dow) {
-  const map = OPEN_SUNDAYS[year];
-  if (!map || dow !== 0) return null;
+  if (dow !== 0 || year > SHOP_MAX_YEAR) return null;
+  const map = openSundaysFor(year);
   const key = `${m}-${d}`;
   return map[key]
     ? { open: true, label: map[key] }
@@ -562,7 +535,7 @@ function buildYearPage(year) {
     </table>
   </div>
 
-  ${(year === 2026 || year === 2027) ? `<p class="full-cal-link"><a href="/wymiar-czasu-pracy.html">Sprawdź wymiar czasu pracy na ${year} rok →</a></p>` : ''}
+  ${(year >= 2026 && year <= 2029) ? `<p class="full-cal-link"><a href="/wymiar-czasu-pracy.html">Sprawdź wymiar czasu pracy na ${year} rok →</a></p>` : ''}
 </div>
 
 <footer>
