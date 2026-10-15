@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { phasesInRange } = require('./moon_phases');
+const { phasesInRange, plOffset, plTag, localParts } = require('./moon_phases');
 
 const ROOT = path.join(__dirname, '..');
 const SITE = 'https://daybyday.today';
@@ -42,11 +42,8 @@ const kctx = { Math, Date }; vm.createContext(kctx);
 vm.runInContext(kal.slice(ka, kb) + '\nthis.K={getMoonPhaseCompact};', kctx);
 const { getMoonPhaseCompact } = kctx.K;
 
-// ── czas polski ──────────────────────────────────────────────────────────────
-function lastSundayUtc(y, m) { const d = new Date(Date.UTC(y, m, 0)); d.setUTCDate(d.getUTCDate() - d.getUTCDay()); return Date.UTC(y, m - 1, d.getUTCDate(), 1); } // niedziela 01:00 UTC
-const plOff = utcMs => { const y = new Date(utcMs).getUTCFullYear(); return (utcMs >= lastSundayUtc(y, 3) && utcMs < lastSundayUtc(y, 10)) ? 2 : 1; };
-const plTag = utcMs => plOff(utcMs) === 2 ? 'CEST' : 'CET';
-function local(utcMs) { const ms = Math.floor(utcMs / 60000) * 60000 + plOff(utcMs) * 3600000; const d = new Date(ms); return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate(), hh: d.getUTCHours(), mm: d.getUTCMinutes(), ms }; }
+// ── czas polski (scripts/moon_phases.js) ──
+const plOff = plOffset, local = localParts;
 
 const MONTHS = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
 const MONTH_GEN = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];

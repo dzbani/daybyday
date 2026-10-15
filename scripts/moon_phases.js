@@ -86,4 +86,11 @@ function phasesInRange(y0, y1) {
   return out.filter(e => e.date >= lo && e.date < hi).sort((a, b) => a.jd - b.jd);
 }
 
-module.exports = { phasesInRange, phaseJDE, deltaT };
+// ── czas polski (CET/CEST: zmiana w ostatnią niedzielę marca/października o 01:00 UTC) ──
+function lastSundayUtc(y, mo) { const d = new Date(Date.UTC(y, mo, 0)); d.setUTCDate(d.getUTCDate() - d.getUTCDay()); return Date.UTC(y, mo - 1, d.getUTCDate(), 1); }
+const plOffset = utcMs => { const y = new Date(utcMs).getUTCFullYear(); return (utcMs >= lastSundayUtc(y, 3) && utcMs < lastSundayUtc(y, 10)) ? 2 : 1; };
+const plTag = utcMs => plOffset(utcMs) === 2 ? 'CEST' : 'CET';
+// składniki czasu lokalnego; minuty OBCIĘTE (jak w almanachach), ms = czas lokalny w ms jako "UTC"
+function localParts(utcMs) { const ms = Math.floor(utcMs / 60000) * 60000 + plOffset(utcMs) * 3600000; const d = new Date(ms); return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate(), hh: d.getUTCHours(), mm: d.getUTCMinutes(), ms }; }
+
+module.exports = { phasesInRange, phaseJDE, deltaT, plOffset, plTag, localParts };

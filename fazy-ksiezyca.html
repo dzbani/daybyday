@@ -11,19 +11,19 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fazy Księżyca 2026 — kalendarz księżycowy | DaybyDay</title>
-  <meta name="description" content="Kalendarz faz księżyca 2026: pełnia, nów, kwadra. Sprawdź kiedy jest pełnia księżyca i jak fazy wpływają na przyrodę i zdrowie.">
+  <title>Fazy Księżyca 2026–2032 — kalendarz księżycowy | DaybyDay</title>
+  <meta name="description" content="Kalendarz faz Księżyca 2026–2032: daty i godziny pełni, nowiu oraz pierwszej i ostatniej kwadry w czasie polskim, a do tego aktualna faza, oświetlenie i godziny wschodu Księżyca.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/fazy-ksiezyca.html">
-  <meta property="og:title" content="Fazy Księżyca 2026 — kalendarz księżycowy">
+  <meta property="og:title" content="Fazy Księżyca 2026–2032 — kalendarz księżycowy">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:description" content="Kalendarz faz księżyca 2026: pełnia, nów, kwadra pierwsza i ostatnia. Daty i godziny każdej fazy.">
+  <meta property="og:description" content="Kalendarz faz Księżyca 2026–2032: pełnia, nów, pierwsza i ostatnia kwadra. Daty i godziny każdej fazy.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <meta property="og:url" content="https://daybyday.today/fazy-ksiezyca.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Fazy Księżyca 2026","description":"Kalendarz faz księżyca 2026: pełnia, nów, kwadra. Sprawdź kiedy jest pełnia księżyca i jak fazy wpływają na przyrodę i zdrowie.","url":"https://daybyday.today/fazy-ksiezyca.html","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Fazy Księżyca 2026–2032","description":"Kalendarz faz Księżyca 2026–2032: daty i godziny pełni, nowiu oraz pierwszej i ostatniej kwadry w czasie polskim, a do tego aktualna faza, oświetlenie i godziny wschodu Księżyca.","url":"https://daybyday.today/fazy-ksiezyca.html","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DaybyDay","item":"https://daybyday.today/"},{"@type":"ListItem","position":2,"name":"Fazy Księżyca","item":"https://daybyday.today/fazy-ksiezyca.html"}]}</script>
 
 
@@ -149,6 +149,11 @@
     }
     [data-theme="dark"] .month-tab { color: var(--muted); }
     [data-theme="dark"] .month-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .year-tabs { display:flex; gap:.35rem; flex-wrap:wrap; margin-bottom:.75rem; }
+    .year-tab { padding:.4rem .9rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.78rem; font-weight:500; color:var(--muted); cursor:pointer; transition:all .15s; font-family:inherit; }
+    .year-tab:hover,.year-tab.active { background:var(--text); color:white; border-color:var(--text); }
+    [data-theme="dark"] .year-tab { color: var(--muted); }
+    [data-theme="dark"] .year-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
     [data-theme="dark"] .filter-btn { color: var(--muted); }
     [data-theme="dark"] a { color: inherit; }
     [data-theme="dark"] a:hover { color: var(--text); }
@@ -199,8 +204,8 @@
 <div class="page">
   <div class="page-label">Astronomia</div>
   <h1 class="page-title">Fazy Księżyca</h1>
-  <p class="page-sub">Kalendarz faz księżyca na rok 2026 — pełnie, nowia i kwadry dla Polski. Czasy podano w czasie lokalnym (CET/CEST).</p>
-  <p class="page-sub" style="margin-top:-1.2rem">Fazy na kolejne lata, z godzinami i Księżycem dzień po dniu: <a href="/kalendarz-ksiezycowy/" style="color:var(--text)">kalendarz księżycowy 2026–2032</a> — <a href="/kalendarz-ksiezycowy/2027/" style="color:var(--text)">2027</a> · <a href="/kalendarz-ksiezycowy/2028/" style="color:var(--text)">2028</a> · <a href="/kalendarz-ksiezycowy/2029/" style="color:var(--text)">2029</a> · <a href="/kalendarz-ksiezycowy/2030/" style="color:var(--text)">2030</a>.</p>
+  <p class="page-sub">Kalendarz faz księżyca na lata 2026–2032 — pełnie, nowia i kwadry dla Polski. Czasy podano w czasie polskim (CET/CEST).</p>
+  <p class="page-sub" style="margin-top:-1.2rem">Księżyc dzień po dniu (oświetlenie, wschody i zachody): <a href="/kalendarz-ksiezycowy/" style="color:var(--text)">kalendarz księżycowy 2026–2032</a>.</p>
 
   <div class="moon-visual">
     <div class="moon-phase-display">
@@ -227,6 +232,16 @@
     <div class="legend-item"><span class="legend-icon">🌗</span>Ostatnia kwadra — połowa malejąca</div>
   </div>
 
+  <div class="year-tabs" id="phYearTabs"><!-- PH:YEARS:START -->
+    <button class="year-tab active" data-year="2026" onclick="phShowYear(2026)">2026</button>
+    <button class="year-tab" data-year="2027" onclick="phShowYear(2027)">2027</button>
+    <button class="year-tab" data-year="2028" onclick="phShowYear(2028)">2028</button>
+    <button class="year-tab" data-year="2029" onclick="phShowYear(2029)">2029</button>
+    <button class="year-tab" data-year="2030" onclick="phShowYear(2030)">2030</button>
+    <button class="year-tab" data-year="2031" onclick="phShowYear(2031)">2031</button>
+    <button class="year-tab" data-year="2032" onclick="phShowYear(2032)">2032</button>
+  <!-- PH:YEARS:END --></div>
+
   <div class="month-tabs">
     <button class="month-tab" onclick="filterMonth('wszystkie',this)">Wszystkie</button>
     <button class="month-tab" onclick="filterMonth('styczeń',this)">Sty</button>
@@ -243,495 +258,70 @@
     <button class="month-tab" onclick="filterMonth('grudzień',this)">Gru</button>
   </div>
 
-  <div class="phases-grid" id="phasesGrid">
-
-    <!-- STYCZEŃ -->
-    <div class="month-divider" data-month="styczeń">Styczeń 2026</div>
-    <div class="phase-card past" data-month="styczeń">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">3 sty 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">11:03 CET</div>
-        <div class="phase-desc">Wilczy Księżyc — tradycyjna nazwa pierwszej pełni roku.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="styczeń">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">10 sty 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">16:48 CET</div>
-        <div class="phase-desc">Lewa połowa oświetlona, faza malejąca.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="styczeń">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">18 sty 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">20:52 CET</div>
-        <div class="phase-desc">Księżyc niewidoczny — nowy cykl księżycowy się zaczyna.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="styczeń">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">26 sty 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">05:47 CET</div>
-        <div class="phase-desc">Prawa połowa Księżyca oświetlona, faza rosnąca.</div>
-      </div>
-    </div>
-
-    <!-- LUTY -->
-    <div class="month-divider" data-month="luty">Luty 2026</div>
-    <div class="phase-card past" data-month="luty">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">1 lut 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">23:09 CET</div>
-        <div class="phase-desc">Śnieżny Księżyc — tradycyjna nazwa lutowej pełni.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="luty">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">9 lut 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">13:43 CET</div>
-        <div class="phase-desc">Faza malejąca Księżyca.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="luty">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">17 lut 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">13:01 CET</div>
-        <div class="phase-desc">Początek nowego cyklu księżycowego.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="luty">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">24 lut 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">13:27 CET</div>
-        <div class="phase-desc">Faza rosnąca — dobry czas na nowe inicjatywy wg tradycji.</div>
-      </div>
-    </div>
-
-    <!-- MARZEC -->
-    <div class="month-divider" data-month="marzec">Marzec 2026</div>
-    <div class="phase-card past" data-month="marzec">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">3 mar 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">12:38 CET</div>
-        <div class="phase-desc">Robaczy Księżyc (Worm Moon) — pierwsza pełnia wiosny.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="marzec">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">11 mar 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">10:38 CET</div>
-        <div class="phase-desc">Faza malejąca przed nowym nowiem.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="marzec">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">19 mar 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">02:23 CET</div>
-        <div class="phase-desc">Wiosenny nów księżyca.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="marzec">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">25 mar 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">20:18 CET</div>
-        <div class="phase-desc">Połowa drogi do pełni — księżyc rosnący.</div>
-      </div>
-    </div>
-
-    <!-- KWIECIEŃ -->
-    <div class="month-divider" data-month="kwiecień">Kwiecień 2026</div>
-    <div class="phase-card past" data-month="kwiecień">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">2 kwi 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">04:12 CEST</div>
-        <div class="phase-desc">Różowy Księżyc (Pink Moon) — wiosenna pełnia.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="kwiecień">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">10 kwi 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">06:51 CEST</div>
-        <div class="phase-desc">Księżyc malejący ku nowemu nowiu.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="kwiecień">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">17 kwi 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">13:52 CEST</div>
-        <div class="phase-desc">Kwiecień zaczyna swój cykl księżycowy.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="kwiecień">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">24 kwi 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">04:32 CEST</div>
-        <div class="phase-desc">Księżyc rosnący wiosennym niebem.</div>
-      </div>
-    </div>
-
-    <!-- MAJ -->
-    <div class="month-divider" data-month="maj">Maj 2026</div>
-    <div class="phase-card past" data-month="maj">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">1 maj 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">19:23 CEST</div>
-        <div class="phase-desc">Kwiatowy Księżyc (Flower Moon) — majowa pełnia.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="maj">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">9 maj 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">23:10 CEST</div>
-        <div class="phase-desc">Malejący Księżyc przed kolejnym nowym cyklem.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="maj">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">16 maj 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">22:01 CEST</div>
-        <div class="phase-desc">Nów majowy — czas nowych planów.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="maj">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">23 maj 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">13:11 CEST</div>
-        <div class="phase-desc">Faza rosnąca w majową noc.</div>
-      </div>
-    </div>
-    <div class="phase-card past" data-month="maj">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">31 maj 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">10:45 CEST</div>
-        <div class="phase-desc">Druga pełnia maja — tzw. Niebieski Księżyc (Blue Moon).</div>
-      </div>
-    </div>
-
-    <!-- CZERWIEC -->
-    <div class="month-divider" data-month="czerwiec">Czerwiec 2026</div>
-    <div class="phase-card past" data-month="czerwiec">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">8 cze 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">12:00 CEST</div>
-        <div class="phase-desc">Księżyc zmierza ku nowiu — faza malejąca.</div>
-      </div>
-    </div>
-    <div class="phase-card today" data-month="czerwiec">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">15 cze 2026 <span class="today-badge">Dziś</span></div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">04:54 CEST</div>
-        <div class="phase-desc">Czerwcowy nów — letnie przesilenie na horyzoncie.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="czerwiec">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">21 cze 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">23:55 CEST</div>
-        <div class="phase-desc">Księżyc rosnący w letnią noc.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="czerwiec">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">30 cze 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">01:58 CEST</div>
-        <div class="phase-desc">Truskawkowy Księżyc (Strawberry Moon) — letnia pełnia.</div>
-      </div>
-    </div>
-
-    <!-- LIPIEC -->
-    <div class="month-divider" data-month="lipiec">Lipiec 2026</div>
-    <div class="phase-card" data-month="lipiec">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">7 lip 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">21:29 CEST</div>
-        <div class="phase-desc">Faza malejąca w lipcowym niebie.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="lipiec">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">14 lip 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">11:43 CEST</div>
-        <div class="phase-desc">Lipcowy nów księżyca.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="lipiec">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">21 lip 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">13:05 CEST</div>
-        <div class="phase-desc">Faza rosnąca w lipcowym niebie.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="lipiec">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">29 lip 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">16:36 CEST</div>
-        <div class="phase-desc">Jeleni Księżyc (Buck Moon) — lipcowa pełnia.</div>
-      </div>
-    </div>
-
-    <!-- SIERPIEŃ -->
-    <div class="month-divider" data-month="sierpień">Sierpień 2026</div>
-    <div class="phase-card" data-month="sierpień">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">6 sie 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">04:21 CEST</div>
-        <div class="phase-desc">Faza malejąca sierpniowego księżyca.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="sierpień">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">12 sie 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">19:37 CEST</div>
-        <div class="phase-desc">Sierpniowy nów — lato w pełni.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="sierpień">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">20 sie 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">04:46 CEST</div>
-        <div class="phase-desc">Rosnący księżyc sierpniowy.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="sierpień">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">28 sie 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">06:18 CEST</div>
-        <div class="phase-desc">Jesiotrowy Księżyc (Sturgeon Moon) — sierpniowa pełnia.</div>
-      </div>
-    </div>
-
-    <!-- WRZESIEŃ -->
-    <div class="month-divider" data-month="wrzesień">Wrzesień 2026</div>
-    <div class="phase-card" data-month="wrzesień">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">4 wrz 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">09:51 CEST</div>
-        <div class="phase-desc">Faza malejąca przed nowym nowiem.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="wrzesień">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">11 wrz 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">05:27 CEST</div>
-        <div class="phase-desc">Wrzesień zamknął lato nowym nowiem.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="wrzesień">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">18 wrz 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">22:44 CEST</div>
-        <div class="phase-desc">Księżyc rosnący w jesienny wieczór.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="wrzesień">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">26 wrz 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">18:49 CEST</div>
-        <div class="phase-desc">Żniwny Księżyc (Harvest Moon) — blisko równonocy.</div>
-      </div>
-    </div>
-
-    <!-- PAŹDZIERNIK -->
-    <div class="month-divider" data-month="październik">Październik 2026</div>
-    <div class="phase-card" data-month="październik">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">3 paź 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">15:25 CEST</div>
-        <div class="phase-desc">Faza malejąca w październikową noc.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="październik">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">10 paź 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">17:50 CEST</div>
-        <div class="phase-desc">Październikowy nów — jesień w pełni.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="październik">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">18 paź 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">18:12 CEST</div>
-        <div class="phase-desc">Księżyc rosnący jesiennym niebem.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="październik">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">26 paź 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">05:12 CET</div>
-        <div class="phase-desc">Łowców Księżyc (Hunter's Moon) — październikowa pełnia.</div>
-      </div>
-    </div>
-
-    <!-- LISTOPAD -->
-    <div class="month-divider" data-month="listopad">Listopad 2026</div>
-    <div class="phase-card" data-month="listopad">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">1 lis 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">21:28 CET</div>
-        <div class="phase-desc">Faza malejąca listopadowego księżyca.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="listopad">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">9 lis 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">08:02 CET</div>
-        <div class="phase-desc">Listopadowy nów — ciemniejsze dni.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="listopad">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">17 lis 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">12:48 CET</div>
-        <div class="phase-desc">Faza rosnąca w listopadową noc.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="listopad">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">24 lis 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">15:53 CET</div>
-        <div class="phase-desc">Bobrowy Księżyc (Beaver Moon) — listopadowa pełnia.</div>
-      </div>
-    </div>
-
-    <!-- GRUDZIEŃ -->
-    <div class="month-divider" data-month="grudzień">Grudzień 2026</div>
-    <div class="phase-card" data-month="grudzień">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">1 gru 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">07:08 CET</div>
-        <div class="phase-desc">Faza malejąca przed grudniowym nowiem.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="grudzień">
-      <div class="moon-icon">🌑</div>
-      <div class="phase-info">
-        <div class="phase-date">9 gru 2026</div>
-        <div class="phase-name">Nów</div>
-        <div class="phase-time">01:52 CET</div>
-        <div class="phase-desc">Grudzień rozpoczyna swój cykl księżycowy.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="grudzień">
-      <div class="moon-icon">🌓</div>
-      <div class="phase-info">
-        <div class="phase-date">17 gru 2026</div>
-        <div class="phase-name">Pierwsza kwadra</div>
-        <div class="phase-time">06:42 CET</div>
-        <div class="phase-desc">Rosnący księżyc grudniowy.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="grudzień">
-      <div class="moon-icon">🌕</div>
-      <div class="phase-info">
-        <div class="phase-date">24 gru 2026</div>
-        <div class="phase-name">Pełnia</div>
-        <div class="phase-time">02:28 CET</div>
-        <div class="phase-desc">Zimny Księżyc (Cold Moon) — grudniowa pełnia blisko przesilenia.</div>
-      </div>
-    </div>
-    <div class="phase-card" data-month="grudzień">
-      <div class="moon-icon">🌗</div>
-      <div class="phase-info">
-        <div class="phase-date">30 gru 2026</div>
-        <div class="phase-name">Ostatnia kwadra</div>
-        <div class="phase-time">19:59 CET</div>
-        <div class="phase-desc">Księżyc kończy rok w fazie malejącej.</div>
-      </div>
-    </div>
-
-  </div>
+  <div class="phases-grid" id="phasesGrid" data-year="2026"><!-- PH:GRID:START -->
+<div class="month-divider" data-month="styczeń">Styczeń 2026</div>
+<div class="phase-card" data-month="styczeń" data-date="2026-01-03"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">3 sty 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">11:03 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="styczeń" data-date="2026-01-10"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">10 sty 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">16:49 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="styczeń" data-date="2026-01-18"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">18 sty 2026</div><div class="phase-name">Nów</div><div class="phase-time">20:52 CET</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="styczeń" data-date="2026-01-26"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">26 sty 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">05:48 CET</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="month-divider" data-month="luty">Luty 2026</div>
+<div class="phase-card" data-month="luty" data-date="2026-02-01"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">1 lut 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">23:09 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="luty" data-date="2026-02-09"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">9 lut 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">13:43 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="luty" data-date="2026-02-17"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">17 lut 2026</div><div class="phase-name">Nów</div><div class="phase-time">13:01 CET</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="luty" data-date="2026-02-24"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">24 lut 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">13:28 CET</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="month-divider" data-month="marzec">Marzec 2026</div>
+<div class="phase-card" data-month="marzec" data-date="2026-03-03"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">3 mar 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">12:38 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="marzec" data-date="2026-03-11"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">11 mar 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">10:39 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="marzec" data-date="2026-03-19"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">19 mar 2026</div><div class="phase-name">Nów</div><div class="phase-time">02:24 CET</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="marzec" data-date="2026-03-25"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">25 mar 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">20:18 CET</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="month-divider" data-month="kwiecień">Kwiecień 2026</div>
+<div class="phase-card" data-month="kwiecień" data-date="2026-04-02"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">2 kwi 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">04:12 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="kwiecień" data-date="2026-04-10"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">10 kwi 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">06:52 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="kwiecień" data-date="2026-04-17"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">17 kwi 2026</div><div class="phase-name">Nów</div><div class="phase-time">13:52 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="kwiecień" data-date="2026-04-24"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">24 kwi 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">04:32 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="month-divider" data-month="maj">Maj 2026</div>
+<div class="phase-card" data-month="maj" data-date="2026-05-01"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">1 maj 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">19:23 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="maj" data-date="2026-05-09"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">9 maj 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">23:11 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="maj" data-date="2026-05-16"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">16 maj 2026</div><div class="phase-name">Nów</div><div class="phase-time">22:01 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="maj" data-date="2026-05-23"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">23 maj 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">13:11 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="maj" data-date="2026-05-31"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">31 maj 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">10:45 CEST</div><div class="phase-desc">Druga pełnia w miesiącu — tzw. niebieski księżyc.</div></div></div>
+<div class="month-divider" data-month="czerwiec">Czerwiec 2026</div>
+<div class="phase-card" data-month="czerwiec" data-date="2026-06-08"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">8 cze 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">12:01 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="czerwiec" data-date="2026-06-15"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">15 cze 2026</div><div class="phase-name">Nów</div><div class="phase-time">04:54 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="czerwiec" data-date="2026-06-21"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">21 cze 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">23:55 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="czerwiec" data-date="2026-06-30"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">30 cze 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">01:57 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="lipiec">Lipiec 2026</div>
+<div class="phase-card" data-month="lipiec" data-date="2026-07-07"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">7 lip 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">21:29 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="lipiec" data-date="2026-07-14"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">14 lip 2026</div><div class="phase-name">Nów</div><div class="phase-time">11:44 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="lipiec" data-date="2026-07-21"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">21 lip 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">13:06 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="lipiec" data-date="2026-07-29"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">29 lip 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">16:36 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="sierpień">Sierpień 2026</div>
+<div class="phase-card" data-month="sierpień" data-date="2026-08-06"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">6 sie 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">04:22 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="sierpień" data-date="2026-08-12"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">12 sie 2026</div><div class="phase-name">Nów</div><div class="phase-time">19:37 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="sierpień" data-date="2026-08-20"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">20 sie 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">04:46 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="sierpień" data-date="2026-08-28"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">28 sie 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">06:19 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="wrzesień">Wrzesień 2026</div>
+<div class="phase-card" data-month="wrzesień" data-date="2026-09-04"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">4 wrz 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">09:51 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="wrzesień" data-date="2026-09-11"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">11 wrz 2026</div><div class="phase-name">Nów</div><div class="phase-time">05:27 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="wrzesień" data-date="2026-09-18"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">18 wrz 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">22:44 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="wrzesień" data-date="2026-09-26"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">26 wrz 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">18:49 CEST</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="październik">Październik 2026</div>
+<div class="phase-card" data-month="październik" data-date="2026-10-03"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">3 paź 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">15:25 CEST</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="październik" data-date="2026-10-10"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">10 paź 2026</div><div class="phase-name">Nów</div><div class="phase-time">17:50 CEST</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="październik" data-date="2026-10-18"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">18 paź 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">18:13 CEST</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="październik" data-date="2026-10-26"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">26 paź 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">05:12 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="listopad">Listopad 2026</div>
+<div class="phase-card" data-month="listopad" data-date="2026-11-01"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">1 lis 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">21:28 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="listopad" data-date="2026-11-09"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">9 lis 2026</div><div class="phase-name">Nów</div><div class="phase-time">08:02 CET</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="listopad" data-date="2026-11-17"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">17 lis 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">12:48 CET</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="listopad" data-date="2026-11-24"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">24 lis 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">15:54 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="month-divider" data-month="grudzień">Grudzień 2026</div>
+<div class="phase-card" data-month="grudzień" data-date="2026-12-01"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">1 gru 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">07:09 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<div class="phase-card" data-month="grudzień" data-date="2026-12-09"><div class="moon-icon">🌑</div><div class="phase-info"><div class="phase-date">9 gru 2026</div><div class="phase-name">Nów</div><div class="phase-time">01:52 CET</div><div class="phase-desc">Księżyc niewidoczny — początek nowego cyklu księżycowego.</div></div></div>
+<div class="phase-card" data-month="grudzień" data-date="2026-12-17"><div class="moon-icon">🌓</div><div class="phase-info"><div class="phase-date">17 gru 2026</div><div class="phase-name">Pierwsza kwadra</div><div class="phase-time">06:43 CET</div><div class="phase-desc">Oświetlona prawa połowa tarczy, Księżyc rośnie.</div></div></div>
+<div class="phase-card" data-month="grudzień" data-date="2026-12-24"><div class="moon-icon">🌕</div><div class="phase-info"><div class="phase-date">24 gru 2026</div><div class="phase-name">Pełnia</div><div class="phase-time">02:28 CET</div><div class="phase-desc">Cała tarcza Księżyca oświetlona.</div></div></div>
+<div class="phase-card" data-month="grudzień" data-date="2026-12-30"><div class="moon-icon">🌗</div><div class="phase-info"><div class="phase-date">30 gru 2026</div><div class="phase-name">Ostatnia kwadra</div><div class="phase-time">20:00 CET</div><div class="phase-desc">Oświetlona lewa połowa tarczy, Księżyc maleje.</div></div></div>
+<!-- PH:GRID:END --></div>
 </div>
 
 <footer>
@@ -741,36 +331,65 @@
 </footer>
 
 <script>
-  // Dynamically mark past/today cards based on actual current date
-  (function() {
-    const now = new Date();
-    const todayStr = now.toLocaleDateString('pl-PL', {day:'numeric',month:'short',year:'numeric'}).toLowerCase().replace(/ /g,' ');
-    const todayD = now.getDate(), todayM = now.getMonth()+1, todayY = now.getFullYear();
-
-    const MONTHS = {sty:1,lut:2,mar:3,kwi:4,maj:5,cze:6,lip:7,sie:8,wrz:9,paź:10,lis:11,gru:12};
-
-    document.querySelectorAll('.phase-card').forEach(card => {
-      const dateEl = card.querySelector('.phase-date');
-      if (!dateEl) return;
-      const txt = dateEl.textContent.trim().toLowerCase();
-      const m = txt.match(/(\d+)\s+(\w{3})\s+(\d{4})/);
-      if (!m) return;
-      const d = parseInt(m[1]), mon = MONTHS[m[2]], y = parseInt(m[3]);
-      if (!mon) return;
-      const isToday = (d===todayD && mon===todayM && y===todayY);
-      const isPast = (y < todayY) || (y===todayY && mon < todayM) || (y===todayY && mon===todayM && d < todayD);
-      card.classList.remove('today','past');
-      if (isToday) card.classList.add('today');
-      else if (isPast) card.classList.add('past');
-
-      // manage today badge
-      let badge = dateEl.querySelector('.today-badge');
-      if (isToday) {
-        if (!badge) { badge = document.createElement('span'); badge.className='today-badge'; badge.textContent='Dziś'; dateEl.appendChild(badge); }
-      } else {
-        if (badge) badge.remove();
-      }
+  // Tabela faz jest GENEROWANA (node scripts/gen_fazy_ksiezyca.js): dane PH_EVENTS i funkcja phCardsHtml leżą tu, a generator
+  // uruchamia tę samą funkcję w Node, żeby wpisać statyczny HTML domyślnego roku (SEO, brak JS) — jedno źródło prawdy.
+  /* PH:DATA:START */
+  // [rok, miesiąc, dzień, godzina, minuta, CEST(1)/CET(0), faza: 0 nów, 1 I kwadra, 2 pełnia, 3 III kwadra] — czas polski
+  const PH_EVENTS = [
+    [2026,1,3,11,3,0,2],[2026,1,10,16,49,0,3],[2026,1,18,20,52,0,0],[2026,1,26,5,48,0,1],[2026,2,1,23,9,0,2],[2026,2,9,13,43,0,3],[2026,2,17,13,1,0,0],[2026,2,24,13,28,0,1],[2026,3,3,12,38,0,2],[2026,3,11,10,39,0,3],[2026,3,19,2,24,0,0],[2026,3,25,20,18,0,1],[2026,4,2,4,12,1,2],[2026,4,10,6,52,1,3],[2026,4,17,13,52,1,0],[2026,4,24,4,32,1,1],[2026,5,1,19,23,1,2],[2026,5,9,23,11,1,3],[2026,5,16,22,1,1,0],[2026,5,23,13,11,1,1],[2026,5,31,10,45,1,2],[2026,6,8,12,1,1,3],[2026,6,15,4,54,1,0],[2026,6,21,23,55,1,1],[2026,6,30,1,57,1,2],[2026,7,7,21,29,1,3],[2026,7,14,11,44,1,0],[2026,7,21,13,6,1,1],[2026,7,29,16,36,1,2],[2026,8,6,4,22,1,3],[2026,8,12,19,37,1,0],[2026,8,20,4,46,1,1],[2026,8,28,6,19,1,2],[2026,9,4,9,51,1,3],[2026,9,11,5,27,1,0],[2026,9,18,22,44,1,1],[2026,9,26,18,49,1,2],[2026,10,3,15,25,1,3],[2026,10,10,17,50,1,0],[2026,10,18,18,13,1,1],[2026,10,26,5,12,0,2],[2026,11,1,21,28,0,3],[2026,11,9,8,2,0,0],[2026,11,17,12,48,0,1],[2026,11,24,15,54,0,2],[2026,12,1,7,9,0,3],[2026,12,9,1,52,0,0],[2026,12,17,6,43,0,1],[2026,12,24,2,28,0,2],[2026,12,30,20,0,0,3],
+    [2027,1,7,21,25,0,0],[2027,1,15,21,35,0,1],[2027,1,22,13,17,0,2],[2027,1,29,11,56,0,3],[2027,2,6,16,56,0,0],[2027,2,14,8,59,0,1],[2027,2,21,0,24,0,2],[2027,2,28,6,17,0,3],[2027,3,8,10,30,0,0],[2027,3,15,17,25,0,1],[2027,3,22,11,44,0,2],[2027,3,30,2,54,1,3],[2027,4,7,1,51,1,0],[2027,4,14,0,57,1,1],[2027,4,21,0,27,1,2],[2027,4,28,22,18,1,3],[2027,5,6,12,59,1,0],[2027,5,13,6,44,1,1],[2027,5,20,12,59,1,2],[2027,5,28,15,58,1,3],[2027,6,4,21,40,1,0],[2027,6,11,12,56,1,1],[2027,6,19,2,45,1,2],[2027,6,27,6,54,1,3],[2027,7,4,5,2,1,0],[2027,7,10,20,39,1,1],[2027,7,18,17,45,1,2],[2027,7,26,18,55,1,3],[2027,8,2,12,5,1,0],[2027,8,9,6,54,1,1],[2027,8,17,9,29,1,2],[2027,8,25,4,27,1,3],[2027,8,31,19,41,1,0],[2027,9,7,20,31,1,1],[2027,9,16,1,4,1,2],[2027,9,23,12,21,1,3],[2027,9,30,4,36,1,0],[2027,10,7,13,48,1,1],[2027,10,15,15,47,1,2],[2027,10,22,19,29,1,3],[2027,10,29,15,37,1,0],[2027,11,6,9,0,0,1],[2027,11,14,4,26,0,2],[2027,11,21,1,48,0,3],[2027,11,28,4,24,0,0],[2027,12,6,6,22,0,1],[2027,12,13,17,9,0,2],[2027,12,20,10,11,0,3],[2027,12,27,21,13,0,0],
+    [2028,1,5,2,41,0,1],[2028,1,12,5,3,0,2],[2028,1,18,20,26,0,3],[2028,1,26,16,13,0,0],[2028,2,3,20,11,0,1],[2028,2,10,16,4,0,2],[2028,2,17,9,8,0,3],[2028,2,25,11,38,0,0],[2028,3,4,10,2,0,1],[2028,3,11,2,6,0,2],[2028,3,18,0,23,0,3],[2028,3,26,6,32,1,0],[2028,4,2,21,16,1,1],[2028,4,9,12,27,1,2],[2028,4,16,18,37,1,3],[2028,4,24,21,47,1,0],[2028,5,2,4,26,1,1],[2028,5,8,21,49,1,2],[2028,5,16,12,43,1,3],[2028,5,24,10,16,1,0],[2028,5,31,9,37,1,1],[2028,6,7,8,9,1,2],[2028,6,15,6,28,1,3],[2028,6,22,20,28,1,0],[2028,6,29,14,11,1,1],[2028,7,6,20,11,1,2],[2028,7,14,22,57,1,3],[2028,7,22,5,2,1,0],[2028,7,28,19,40,1,1],[2028,8,5,10,10,1,2],[2028,8,13,13,45,1,3],[2028,8,20,12,44,1,0],[2028,8,27,3,36,1,1],[2028,9,4,1,48,1,2],[2028,9,12,2,46,1,3],[2028,9,18,20,24,1,0],[2028,9,25,15,10,1,1],[2028,10,3,18,25,1,2],[2028,10,11,13,57,1,3],[2028,10,18,4,57,1,0],[2028,10,25,6,53,1,1],[2028,11,2,10,17,0,2],[2028,11,9,22,26,0,3],[2028,11,16,14,18,0,0],[2028,11,24,1,15,0,1],[2028,12,2,2,40,0,2],[2028,12,9,6,39,0,3],[2028,12,16,3,6,0,0],[2028,12,23,22,45,0,1],[2028,12,31,17,49,0,2],
+    [2029,1,7,14,26,0,3],[2029,1,14,18,25,0,0],[2029,1,22,20,23,0,1],[2029,1,30,7,4,0,2],[2029,2,5,22,52,0,3],[2029,2,13,11,32,0,0],[2029,2,21,16,10,0,1],[2029,2,28,18,10,0,2],[2029,3,7,8,52,0,3],[2029,3,15,5,19,0,0],[2029,3,23,8,33,0,1],[2029,3,30,4,26,1,2],[2029,4,5,21,52,1,3],[2029,4,13,23,40,1,0],[2029,4,21,21,50,1,1],[2029,4,28,12,37,1,2],[2029,5,5,11,48,1,3],[2029,5,13,15,42,1,0],[2029,5,21,6,16,1,1],[2029,5,27,20,38,1,2],[2029,6,4,3,19,1,3],[2029,6,12,5,51,1,0],[2029,6,19,11,54,1,1],[2029,6,26,5,22,1,2],[2029,7,3,19,58,1,3],[2029,7,11,17,51,1,0],[2029,7,18,16,14,1,1],[2029,7,25,15,36,1,2],[2029,8,2,13,16,1,3],[2029,8,10,3,56,1,0],[2029,8,16,20,55,1,1],[2029,8,24,3,51,1,2],[2029,9,1,6,33,1,3],[2029,9,8,12,44,1,0],[2029,9,15,3,29,1,1],[2029,9,22,18,30,1,2],[2029,9,30,22,57,1,3],[2029,10,7,21,15,1,0],[2029,10,14,13,9,1,1],[2029,10,22,11,28,1,2],[2029,10,30,12,32,0,3],[2029,11,6,5,24,0,0],[2029,11,13,1,35,0,1],[2029,11,21,5,3,0,2],[2029,11,29,0,48,0,3],[2029,12,5,15,52,0,0],[2029,12,12,18,50,0,1],[2029,12,20,23,47,0,2],[2029,12,28,10,49,0,3],
+    [2030,1,4,3,50,0,0],[2030,1,11,15,6,0,1],[2030,1,19,16,55,0,2],[2030,1,26,19,15,0,3],[2030,2,2,17,8,0,0],[2030,2,10,12,50,0,1],[2030,2,18,7,20,0,2],[2030,2,25,2,58,0,3],[2030,3,4,7,35,0,0],[2030,3,12,9,48,0,1],[2030,3,19,18,57,0,2],[2030,3,26,10,51,0,3],[2030,4,3,0,3,1,0],[2030,4,11,4,57,1,1],[2030,4,18,5,20,1,2],[2030,4,24,20,39,1,3],[2030,5,2,16,12,1,0],[2030,5,10,19,12,1,1],[2030,5,17,13,19,1,2],[2030,5,24,6,57,1,3],[2030,6,1,8,21,1,0],[2030,6,9,5,36,1,1],[2030,6,15,20,41,1,2],[2030,6,22,19,20,1,3],[2030,6,30,23,34,1,0],[2030,7,8,13,2,1,1],[2030,7,15,4,12,1,2],[2030,7,22,10,8,1,3],[2030,7,30,13,11,1,0],[2030,8,6,18,43,1,1],[2030,8,13,12,44,1,2],[2030,8,21,3,16,1,3],[2030,8,29,1,7,1,0],[2030,9,4,23,56,1,1],[2030,9,11,23,18,1,2],[2030,9,19,21,57,1,3],[2030,9,27,11,55,1,0],[2030,10,4,5,56,1,1],[2030,10,11,12,47,1,2],[2030,10,19,16,51,1,3],[2030,10,26,22,17,1,0],[2030,11,2,12,56,0,1],[2030,11,10,4,30,0,2],[2030,11,18,9,33,0,3],[2030,11,25,7,46,0,0],[2030,12,1,23,57,0,1],[2030,12,9,23,41,0,2],[2030,12,18,1,1,0,3],[2030,12,24,18,32,0,0],[2030,12,31,14,36,0,1],
+    [2031,1,8,19,26,0,2],[2031,1,16,13,47,0,3],[2031,1,23,5,31,0,0],[2031,1,30,8,43,0,1],[2031,2,7,13,47,0,2],[2031,2,14,23,50,0,3],[2031,2,21,16,49,0,0],[2031,3,1,5,2,0,1],[2031,3,9,5,30,0,2],[2031,3,16,7,36,0,3],[2031,3,23,4,49,0,0],[2031,3,31,2,32,1,1],[2031,4,7,19,21,1,2],[2031,4,14,14,58,1,3],[2031,4,21,18,57,1,0],[2031,4,29,21,20,1,1],[2031,5,7,5,40,1,2],[2031,5,13,21,7,1,3],[2031,5,21,9,17,1,0],[2031,5,29,13,20,1,1],[2031,6,5,13,59,1,2],[2031,6,12,4,21,1,3],[2031,6,20,0,25,1,0],[2031,6,28,2,19,1,1],[2031,7,4,21,1,1,2],[2031,7,11,13,50,1,3],[2031,7,19,15,40,1,0],[2031,7,27,12,35,1,1],[2031,8,3,3,46,1,2],[2031,8,10,2,24,1,3],[2031,8,18,6,32,1,0],[2031,8,25,20,40,1,1],[2031,9,1,11,21,1,2],[2031,9,8,18,15,1,3],[2031,9,16,20,47,1,0],[2031,9,24,3,20,1,1],[2031,9,30,20,58,1,2],[2031,10,8,12,51,1,3],[2031,10,16,10,21,1,0],[2031,10,23,9,36,1,1],[2031,10,30,8,33,0,2],[2031,11,7,8,3,0,3],[2031,11,14,22,10,0,0],[2031,11,21,15,45,0,1],[2031,11,29,0,19,0,2],[2031,12,7,4,20,0,3],[2031,12,14,10,6,0,0],[2031,12,21,1,1,0,1],[2031,12,28,18,33,0,2],
+    [2032,1,5,23,4,0,3],[2032,1,12,21,7,0,0],[2032,1,19,13,14,0,1],[2032,1,27,13,53,0,2],[2032,2,4,14,49,0,3],[2032,2,11,7,24,0,0],[2032,2,18,4,29,0,1],[2032,2,26,8,43,0,2],[2032,3,5,2,47,0,3],[2032,3,11,17,25,0,0],[2032,3,18,21,57,0,1],[2032,3,27,1,46,0,2],[2032,4,3,12,10,1,3],[2032,4,10,4,40,1,0],[2032,4,17,17,25,1,1],[2032,4,25,17,10,1,2],[2032,5,2,18,2,1,3],[2032,5,9,15,36,1,0],[2032,5,17,11,44,1,1],[2032,5,25,4,37,1,2],[2032,5,31,22,51,1,3],[2032,6,8,3,32,1,0],[2032,6,16,5,0,1,1],[2032,6,23,13,33,1,2],[2032,6,30,4,12,1,3],[2032,7,7,16,42,1,0],[2032,7,15,20,32,1,1],[2032,7,22,20,51,1,2],[2032,7,29,11,25,1,3],[2032,8,6,7,12,1,0],[2032,8,14,9,51,1,1],[2032,8,21,3,47,1,2],[2032,8,27,21,33,1,3],[2032,9,4,22,57,1,0],[2032,9,12,20,49,1,1],[2032,9,19,11,30,1,2],[2032,9,26,11,13,1,3],[2032,10,4,15,27,1,0],[2032,10,12,5,48,1,1],[2032,10,18,20,58,1,2],[2032,10,26,4,29,1,3],[2032,11,3,6,45,0,0],[2032,11,10,12,33,0,1],[2032,11,17,7,42,0,2],[2032,11,24,23,48,0,3],[2032,12,2,21,53,0,0],[2032,12,9,20,9,0,1],[2032,12,16,21,49,0,2],[2032,12,24,21,40,0,3]
+  ];
+  /* PH:DATA:END */
+  /* PH:RENDER:START */
+  const PH_MON = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
+  const PH_MON_SHORT = ['sty','lut','mar','kwi','maj','cze','lip','sie','wrz','paź','lis','gru'];
+  const PH_Q = [
+    { icon:'🌑', name:'Nów', desc:'Księżyc niewidoczny — początek nowego cyklu księżycowego.' },
+    { icon:'🌓', name:'Pierwsza kwadra', desc:'Oświetlona prawa połowa tarczy, Księżyc rośnie.' },
+    { icon:'🌕', name:'Pełnia', desc:'Cała tarcza Księżyca oświetlona.' },
+    { icon:'🌗', name:'Ostatnia kwadra', desc:'Oświetlona lewa połowa tarczy, Księżyc maleje.' }
+  ];
+  function phCardsHtml(year) {
+    const ev = PH_EVENTS.filter(e => e[0] === year);
+    let html = '', curM = 0;
+    ev.forEach(e => {
+      const y = e[0], m = e[1], d = e[2], hh = e[3], mm = e[4], dst = e[5], q = e[6], pq = PH_Q[q];
+      if (m !== curM) { curM = m; html += '<div class="month-divider" data-month="' + PH_MON[m-1] + '">' + PH_MON[m-1].charAt(0).toUpperCase() + PH_MON[m-1].slice(1) + ' ' + y + '</div>\n'; }
+      let desc = pq.desc;
+      if (q === 2) { const fulls = ev.filter(x => x[1] === m && x[6] === 2); if (fulls.length > 1 && fulls[1] === e) desc = 'Druga pełnia w miesiącu — tzw. niebieski księżyc.'; }
+      html += '<div class="phase-card" data-month="' + PH_MON[m-1] + '" data-date="' + y + '-' + String(m).padStart(2,'0') + '-' + String(d).padStart(2,'0') + '"><div class="moon-icon">' + pq.icon + '</div><div class="phase-info"><div class="phase-date">' + d + ' ' + PH_MON_SHORT[m-1] + ' ' + y + '</div><div class="phase-name">' + pq.name + '</div><div class="phase-time">' + String(hh).padStart(2,'0') + ':' + String(mm).padStart(2,'0') + ' ' + (dst ? 'CEST' : 'CET') + '</div><div class="phase-desc">' + desc + '</div></div></div>\n';
     });
+    return html;
+  }
+  /* PH:RENDER:END */
+
+  // Oznacz miniony/dzisiejszy termin wg faktycznej daty (data-date = RRRR-MM-DD)
+  function phMark() {
+    const n = new Date(), t = n.getFullYear() + '-' + String(n.getMonth()+1).padStart(2,'0') + '-' + String(n.getDate()).padStart(2,'0');
+    document.querySelectorAll('.phase-card').forEach(card => {
+      const dt = card.dataset.date; if (!dt) return;
+      const dateEl = card.querySelector('.phase-date'); let badge = dateEl.querySelector('.today-badge');
+      card.classList.remove('today', 'past');
+      if (dt === t) { card.classList.add('today'); if (!badge) { badge = document.createElement('span'); badge.className = 'today-badge'; badge.textContent = 'Dziś'; dateEl.appendChild(badge); } }
+      else { if (dt < t) card.classList.add('past'); if (badge) badge.remove(); }
+    });
+  }
+  window.phShowYear = function(year) {
+    const grid = document.getElementById('phasesGrid');
+    grid.innerHTML = phCardsHtml(year); grid.dataset.year = year;
+    document.querySelectorAll('.year-tab').forEach(b => b.classList.toggle('active', Number(b.dataset.year) === year));
+    phMark();
+    const act = document.querySelector('.month-tab.active'); if (act) act.click(); // zachowaj wybrany miesiąc
+  };
+  (function() {
+    const years = Array.from(new Set(PH_EVENTS.map(e => e[0]))), cy = new Date().getFullYear();
+    const target = Math.min(Math.max(cy, years[0]), years[years.length - 1]); // poza zakresem danych — najbliższy rok z danymi
+    if (Number(document.getElementById('phasesGrid').dataset.year) !== target) phShowYear(target); else phMark();
   })();
 
   function filterMonth(m, btn) {
