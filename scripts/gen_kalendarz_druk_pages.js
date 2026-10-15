@@ -107,7 +107,7 @@ function content(y) {
 <h2 class="dl-h2" id="dni-wolne">Dni wolne od pracy w ${y} roku</h2>
 <p class="dl-intro">W ${y} roku jest <b>${n}</b> dni ustawowo wolnych od pracy: ${D.weekdays} w dni robocze i ${D.wk.length} w weekend (${sunNote}). ${satNote}</p>
 <div class="yr-tablewrap"><table class="yr-table"><thead><tr><th>Data</th><th>Dzień tygodnia</th><th>Święto</th></tr></thead><tbody>${rows}</tbody></table></div>
-<p class="yr-note">Wiersze wyróżnione kolorem oznaczają święta przypadające w weekend. ${hasOnline(y) ? `Pełniejsze zestawienie świąt, dni tematycznych i imienin znajdziesz w <a href="/kalendarz/${y}/">kalendarzu ${y} online</a>.` : ''}</p>
+<p class="yr-note">Wiersze wyróżnione kolorem oznaczają święta przypadające w weekend. Pełną listę świąt, dni tematycznych i okolicznościowych na ${y} rok znajdziesz w <a href="/swieta.html?rok=${y}">kalendarzu świąt</a>${hasOnline(y) ? ` oraz w <a href="/kalendarz/${y}/">kalendarzu ${y} online</a>` : ''}.</p>
 
 <h2 class="dl-h2" id="ics">Dni wolne ${y} w Google, Apple i Outlooku</h2>
 <p class="dl-intro">Zamiast drukować, możesz dodać święta do swojego kalendarza elektronicznego. Plik ICS „Dni wolne od pracy w Polsce” obejmuje także ${y} rok i aktualizuje się samoczynnie, jeśli dodasz go jako subskrypcję.</p>

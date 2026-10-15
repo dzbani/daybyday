@@ -11,13 +11,13 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Święta i dni wolne 2026/2027 — kalendarz świąt | DaybyDay</title>
-  <meta name="description" content="Kompletny kalendarz świąt i dni wolnych od pracy w Polsce 2026 i 2027. Sprawdź kiedy są długie weekendy, Wielkanoc, Boże Narodzenie i inne święta.">
+  <title>Święta i dni wolne 2026–2032 — kalendarz świąt | DaybyDay</title>
+  <meta name="description" content="Kompletny kalendarz świąt i dni wolnych od pracy w Polsce na lata 2026–2032. Sprawdź kiedy wypada Wielkanoc, Boże Ciało, Boże Narodzenie i inne święta.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/swieta.html">
-  <meta property="og:title" content="Święta i dni wolne 2026/2027 — kalendarz świąt w Polsce">
+  <meta property="og:title" content="Święta i dni wolne 2026–2032 — kalendarz świąt w Polsce">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:description" content="Kompletny kalendarz świąt i dni wolnych w Polsce 2026 i 2027. Długie weekendy, święta państwowe i kościelne.">
+  <meta property="og:description" content="Kompletny kalendarz świąt i dni wolnych w Polsce na lata 2026–2032: święta państwowe, kościelne i okolicznościowe.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <meta property="og:url" content="https://daybyday.today/swieta.html">
@@ -203,7 +203,7 @@
     <h1 class="page-title">Święta i dni wolne</h1>
   </div>
 
-  <div class="year-nav" id="swietaYearNav" style="display:flex;gap:.5rem;margin-bottom:1.25rem;"></div>
+  <div class="year-nav" id="swietaYearNav" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem;"></div>
   <style>.swieta-year-btn.active{background:var(--text) !important;color:var(--bg) !important;border-color:var(--text) !important;}</style>
 
   <div class="filter-row">
@@ -312,11 +312,12 @@
   const thisYear=new Date().getFullYear();
   let currentData=SWIETA_DATA;
 
-  // Przyciski lat generowane dynamicznie (biezacy rok + 3 kolejne), zamiast sztywnej
-  // listy z dwoma latami w HTML - unika ponownego "zamrozenia" wyboru roku.
+  // Przyciski lat generowane dynamicznie (biezacy rok + 6 kolejnych = 2026-2032 w 2026 r.), zamiast sztywnej
+  // listy lat w HTML - unika ponownego "zamrozenia" wyboru roku. Zakres w <title>/opisie (2026–2032) trzeba
+  // przesuwac recznie raz w roku (patrz CLAUDE.md).
   (function renderYearButtons(){
     const nav=document.getElementById('swietaYearNav');
-    for(let y=thisYear; y<=thisYear+3; y++){
+    for(let y=thisYear; y<=thisYear+6; y++){
       const btn=document.createElement('button');
       btn.className='year-btn swieta-year-btn'+(y===thisYear?' active':'');
       btn.dataset.year=y;
@@ -359,7 +360,10 @@
     render(currentData);
   };
 
-  render(currentData);
+  // ?rok=RRRR (np. z linkow na stronach "kalendarz do druku") - algorytmicznie dla dowolnego sensownego roku
+  const qYear=parseInt(new URLSearchParams(location.search).get('rok'),10);
+  if(qYear>=2000 && qYear<=2100 && qYear!==thisYear) showSwietaYear(qYear);
+  else render(currentData);
 })();
 </script>
 </body>
