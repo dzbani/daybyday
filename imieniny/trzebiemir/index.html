@@ -27,6 +27,11 @@
     .name-desc-section { margin-bottom: 1.25rem; }
     .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin: 0 0 .4rem; }
     .countdown { min-height: 1.7em; margin: -1rem 0 1.5rem; font-size: .95rem; color: var(--muted); }
+    .cal-add { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+    .cal-add p { margin: .3rem 0 .6rem; font-size: .92rem; color: var(--muted); }
+    .cal-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .6rem; }
+    .cal-chip { font: inherit; font-size: .85rem; padding: .45rem .9rem; min-height: 44px; display: inline-flex; align-items: center; border: 1px solid var(--border); border-radius: 60px; color: var(--text); background: none; text-decoration: none; cursor: pointer; }
+    .cal-chip:hover { background: var(--border); }
     .patron-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section p { margin: .3rem 0; font-size: .92rem; }
@@ -68,6 +73,15 @@
   <p class="dates">Imieniny Trzebiemir: <strong>15 sierpnia</strong></p>
   <p class="countdown" id="cd" data-dates="8-15" data-name="Trzebiemir"></p>
   
+  <div class="cal-add">
+    <h2 class="name-desc-label">Dodaj imieniny do kalendarza</h2>
+    <p>Wydarzenie całodniowe powtarzane co roku. Google Calendar:</p>
+    <div class="cal-chips"><a class="cal-chip" data-m="8" data-d="15" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Imieniny%20Trzebiemir&amp;dates=20260815/20260816&amp;details=https%3A%2F%2Fdaybyday.today%2Fimieniny%2Ftrzebiemir%2F&amp;recur=RRULE%3AFREQ%3DYEARLY&amp;trp=false" target="_blank" rel="noopener">15 sierpnia</a></div>
+    <div id="icsWrap" hidden>
+      <p>Apple Kalendarz, Outlook i inne programy (jeden plik ze wszystkimi datami):</p>
+      <div class="cal-chips"><button type="button" class="cal-chip" id="icsBtn">Pobierz plik .ics</button></div>
+    </div>
+  </div>
   <p class="month-links"><a href="/imieniny/miesiac/sierpien/">Wszystkie imieniny w Sierpniu</a></p>
   <div class="related-section">
     <h2>Kto jeszcze obchodzi imieniny tego dnia</h2>
@@ -75,6 +89,6 @@
   </div>
   <p><a href="/imieniny.html?name=Trzebiemir">Pełne informacje o imieniu Trzebiemir →</a></p>
   <p><a href="/">← DaybyDay</a></p>
-  <script>(function(){var e=document.getElementById('cd');if(!e)return;try{var L=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'],n=new Date(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate()),b=null;e.getAttribute('data-dates').split(',').forEach(function(s){var p=s.split('-'),m=+p[0],d=+p[1];for(var k=0;k<5;k++){var c=new Date(t.getFullYear()+k,m-1,d);if(c.getMonth()!==m-1)continue;if(c>=t){if(!b||c<b.c)b={c:c,m:m,d:d};break;}}});if(!b)return;var x=Math.round((b.c-t)/864e5),w=b.d+' '+L[b.m-1];e.textContent=x===0?'Imieniny '+e.getAttribute('data-name')+' są dziś ('+w+')!':x===1?'Najbliższe imieniny: jutro ('+w+')':'Najbliższe imieniny: '+w+' — za '+x+' dni';}catch(_){}})();</script>
+  <script>(function(){try{var L=["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"],n=new Date(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate());function nx(m,d){for(var k=0;k<5;k++){var c=new Date(t.getFullYear()+k,m-1,d);if(c.getMonth()!==m-1)continue;if(c>=t)return c;}return null;}function p2(x){return(x<10?"0":"")+x;}function ymd(c){return c.getFullYear()+p2(c.getMonth()+1)+p2(c.getDate());}function en(c){return new Date(c.getFullYear(),c.getMonth(),c.getDate()+1);}var e=document.getElementById("cd");if(e){var b=null;e.getAttribute("data-dates").split(",").forEach(function(s){var p=s.split("-"),c=nx(+p[0],+p[1]);if(c&&(!b||c<b.c))b={c:c,m:+p[0],d:+p[1]};});if(b){var x=Math.round((b.c-t)/864e5),w=b.d+" "+L[b.m-1];e.textContent=x===0?"Imieniny "+e.getAttribute("data-name")+" są dziś ("+w+")!":x===1?"Najbliższe imieniny: jutro ("+w+")":"Najbliższe imieniny: "+w+" — za "+x+" dni";}}var T="Imieniny Trzebiemir",U="https://daybyday.today/imieniny/trzebiemir/",S="trzebiemir",ch=document.querySelectorAll(".cal-chip[data-m]");for(var i=0;i<ch.length;i++){var a=ch[i],c=nx(+a.getAttribute("data-m"),+a.getAttribute("data-d"));if(c)a.href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(T)+"&dates="+ymd(c)+"/"+ymd(en(c))+"&details="+encodeURIComponent(U)+"&recur="+encodeURIComponent("RRULE:FREQ=YEARLY")+"&trp=false";}var btn=document.getElementById("icsBtn"),wr=document.getElementById("icsWrap");if(btn&&wr){wr.hidden=false;btn.onclick=function(){var d=new Date(),st=d.getUTCFullYear()+p2(d.getUTCMonth()+1)+p2(d.getUTCDate())+"T"+p2(d.getUTCHours())+p2(d.getUTCMinutes())+p2(d.getUTCSeconds())+"Z",o=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//DaybyDay//Imieniny//PL","CALSCALE:GREGORIAN"];for(var j=0;j<ch.length;j++){var m=+ch[j].getAttribute("data-m"),dd=+ch[j].getAttribute("data-d"),c=nx(m,dd);if(!c)continue;o.push("BEGIN:VEVENT","UID:imieniny-"+S+"-"+m+"-"+dd+"@daybyday.today","DTSTAMP:"+st,"DTSTART;VALUE=DATE:"+ymd(c),"DTEND;VALUE=DATE:"+ymd(en(c)),"RRULE:FREQ=YEARLY","SUMMARY:"+T,"URL:"+U,"TRANSP:TRANSPARENT","END:VEVENT");}o.push("END:VCALENDAR");var bl=new Blob([o.join("\r\n")+"\r\n"],{type:"text/calendar;charset=utf-8"}),u=URL.createObjectURL(bl),l=document.createElement("a");l.href=u;l.download="imieniny-"+S+".ics";document.body.appendChild(l);l.click();setTimeout(function(){URL.revokeObjectURL(u);l.parentNode.removeChild(l);},1000);};}}catch(_){}})();</script>
 </body>
 </html>

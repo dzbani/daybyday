@@ -285,7 +285,31 @@ function buildPage(name) {
   // Odliczanie do najbliższych imienin liczy przeglądarka z new Date() (strona jest statyczna, więc bez zamrożenia po dacie granicznej)
   const cdDates = dates.map(x => `${x.m}-${x.d}`).join(',');
   const countdownHtml = `<p class="countdown" id="cd" data-dates="${cdDates}" data-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}"></p>`;
-  const countdownScript = `<script>(function(){var e=document.getElementById('cd');if(!e)return;try{var L=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'],n=new Date(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate()),b=null;e.getAttribute('data-dates').split(',').forEach(function(s){var p=s.split('-'),m=+p[0],d=+p[1];for(var k=0;k<5;k++){var c=new Date(t.getFullYear()+k,m-1,d);if(c.getMonth()!==m-1)continue;if(c>=t){if(!b||c<b.c)b={c:c,m:m,d:d};break;}}});if(!b)return;var x=Math.round((b.c-t)/864e5),w=b.d+' '+L[b.m-1];e.textContent=x===0?'Imieniny '+e.getAttribute('data-name')+' są dziś ('+w+')!':x===1?'Najbliższe imieniny: jutro ('+w+')':'Najbliższe imieniny: '+w+' — za '+x+' dni';}catch(_){}})();</script>`;
+  // Dodawanie do kalendarza: Google Calendar (wydarzenie całodniowe powtarzane co roku, link per data) i plik .ics ze wszystkimi
+  // datami (tworzony w przeglądarce — bez tysięcy plików w repozytorium). Rok startu liczy przeglądarka (najbliższe wystąpienie);
+  // statyczny href (bez JS) używa roku generowania.
+  const calTitle = 'Imieniny ' + genitive, calUrl = 'https://daybyday.today/imieniny/' + nameSlug(name) + '/';
+  const calYear = new Date().getFullYear();
+  const calYmd = dt => dt.getUTCFullYear() + String(dt.getUTCMonth() + 1).padStart(2, '0') + String(dt.getUTCDate()).padStart(2, '0');
+  const gcalHref = x => 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(calTitle)
+    + '&dates=' + calYmd(new Date(Date.UTC(calYear, x.m - 1, x.d))) + '/' + calYmd(new Date(Date.UTC(calYear, x.m - 1, x.d + 1)))
+    + '&details=' + encodeURIComponent(calUrl) + '&recur=' + encodeURIComponent('RRULE:FREQ=YEARLY') + '&trp=false';
+  const attr = v => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  const calAddHtml = '\n  <div class="cal-add">\n    <h2 class="name-desc-label">Dodaj imieniny do kalendarza</h2>\n    <p>Wydarzenie całodniowe powtarzane co roku. Google Calendar:</p>\n    <div class="cal-chips">'
+    + dates.map(x => '<a class="cal-chip" data-m="' + x.m + '" data-d="' + x.d + '" href="' + attr(gcalHref(x)) + '" target="_blank" rel="noopener">' + x.d + ' ' + MONTH_NAMES_GEN[x.m] + '</a>').join('')
+    + '</div>\n    <div id="icsWrap" hidden>\n      <p>Apple Kalendarz, Outlook i inne programy (jeden plik ze wszystkimi datami):</p>\n      <div class="cal-chips"><button type="button" class="cal-chip" id="icsBtn">Pobierz plik .ics</button></div>\n    </div>\n  </div>';
+  const jsStr = v => JSON.stringify(v).replace(/</g, '\\u003c');
+  const countdownScript = '<script>(function(){try{var L=["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"],n=new Date(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate());'
+    + 'function nx(m,d){for(var k=0;k<5;k++){var c=new Date(t.getFullYear()+k,m-1,d);if(c.getMonth()!==m-1)continue;if(c>=t)return c;}return null;}'
+    + 'function p2(x){return(x<10?"0":"")+x;}function ymd(c){return c.getFullYear()+p2(c.getMonth()+1)+p2(c.getDate());}function en(c){return new Date(c.getFullYear(),c.getMonth(),c.getDate()+1);}'
+    + 'var e=document.getElementById("cd");if(e){var b=null;e.getAttribute("data-dates").split(",").forEach(function(s){var p=s.split("-"),c=nx(+p[0],+p[1]);if(c&&(!b||c<b.c))b={c:c,m:+p[0],d:+p[1]};});'
+    + 'if(b){var x=Math.round((b.c-t)/864e5),w=b.d+" "+L[b.m-1];e.textContent=x===0?"Imieniny "+e.getAttribute("data-name")+" są dziś ("+w+")!":x===1?"Najbliższe imieniny: jutro ("+w+")":"Najbliższe imieniny: "+w+" — za "+x+" dni";}}'
+    + 'var T=' + jsStr(calTitle) + ',U=' + jsStr(calUrl) + ',S=' + jsStr(nameSlug(name)) + ',ch=document.querySelectorAll(".cal-chip[data-m]");'
+    + 'for(var i=0;i<ch.length;i++){var a=ch[i],c=nx(+a.getAttribute("data-m"),+a.getAttribute("data-d"));if(c)a.href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(T)+"&dates="+ymd(c)+"/"+ymd(en(c))+"&details="+encodeURIComponent(U)+"&recur="+encodeURIComponent("RRULE:FREQ=YEARLY")+"&trp=false";}'
+    + 'var btn=document.getElementById("icsBtn"),wr=document.getElementById("icsWrap");if(btn&&wr){wr.hidden=false;btn.onclick=function(){var d=new Date(),st=d.getUTCFullYear()+p2(d.getUTCMonth()+1)+p2(d.getUTCDate())+"T"+p2(d.getUTCHours())+p2(d.getUTCMinutes())+p2(d.getUTCSeconds())+"Z",o=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//DaybyDay//Imieniny//PL","CALSCALE:GREGORIAN"];'
+    + 'for(var j=0;j<ch.length;j++){var m=+ch[j].getAttribute("data-m"),dd=+ch[j].getAttribute("data-d"),c=nx(m,dd);if(!c)continue;o.push("BEGIN:VEVENT","UID:imieniny-"+S+"-"+m+"-"+dd+"@daybyday.today","DTSTAMP:"+st,"DTSTART;VALUE=DATE:"+ymd(c),"DTEND;VALUE=DATE:"+ymd(en(c)),"RRULE:FREQ=YEARLY","SUMMARY:"+T,"URL:"+U,"TRANSP:TRANSPARENT","END:VEVENT");}'
+    + 'o.push("END:VCALENDAR");var bl=new Blob([o.join("\\r\\n")+"\\r\\n"],{type:"text/calendar;charset=utf-8"}),u=URL.createObjectURL(bl),l=document.createElement("a");l.href=u;l.download="imieniny-"+S+".ics";document.body.appendChild(l);l.click();setTimeout(function(){URL.revokeObjectURL(u);l.parentNode.removeChild(l);},1000);};}'
+    + '}catch(_){}})();</script>';
   const patronBlock = (!richHasPatron && dbEntry && dbEntry.patron)
     ? `\n  <div class="patron-section">\n    <h2>Patron / Patronka</h2>\n    <p>${dbEntry.patron}</p>\n  </div>`
     : '';
@@ -378,6 +402,11 @@ function buildPage(name) {
     .name-desc-section { margin-bottom: 1.25rem; }
     .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin: 0 0 .4rem; }
     .countdown { min-height: 1.7em; margin: -1rem 0 1.5rem; font-size: .95rem; color: var(--muted); }
+    .cal-add { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+    .cal-add p { margin: .3rem 0 .6rem; font-size: .92rem; color: var(--muted); }
+    .cal-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .6rem; }
+    .cal-chip { font: inherit; font-size: .85rem; padding: .45rem .9rem; min-height: 44px; display: inline-flex; align-items: center; border: 1px solid var(--border); border-radius: 60px; color: var(--text); background: none; text-decoration: none; cursor: pointer; }
+    .cal-chip:hover { background: var(--border); }
     .patron-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section p { margin: .3rem 0; font-size: .92rem; }
@@ -418,7 +447,7 @@ function buildPage(name) {
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
   ${countdownHtml}
-  ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
+  ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
   ${countdownScript}
