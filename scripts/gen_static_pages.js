@@ -87,7 +87,8 @@ const MONTH_NAMES_LOC = ['', 'Styczniu', 'Lutym', 'Marcu', 'Kwietniu', 'Maju', '
 const PATRON_HEADERS = ['Patron', 'Święty patron', 'Święta patronka', 'Święci patroni', 'Święte patronki'];
 
 function transformRich(html) {
-  return html.replace(/<h3>/g, '<div class="name-desc-label">').replace(/<\/h3>/g, '</div>');
+  // Etykiety sekcji to nagłówki <h2> (hierarchia h1 > h2 bez przeskoku); wygląd ustala klasa .name-desc-label
+  return html.replace(/<h3>/g, '<h2 class="name-desc-label">').replace(/<\/h3>/g, '</h2>');
 }
 
 // Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
@@ -176,7 +177,7 @@ function buildTrendChart(name) {
   const narrative = buildTrendNarrative(name, vals, years);
 
   return `<div style="margin:1rem 0;padding:1rem;background:var(--tag-bg);border-radius:8px">
-    <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Trend popularności (nadania nowych imion 2000–2025)</div>
+    <h2 style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem">Trend popularności (nadania nowych imion 2000–2025)</h2>
     <svg viewBox="0 0 ${W} ${H}" width="100%" style="overflow:visible;display:block">
       <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent,#2563eb)" stop-opacity="0.18"/><stop offset="100%" stop-color="var(--accent,#2563eb)" stop-opacity="0.02"/></linearGradient></defs>
       ${gridLines}
@@ -269,10 +270,22 @@ function buildPage(name) {
   const descHtml = rich ? transformRich(rich) : '';
   const trendHtml = buildTrendChart(name);
   const genitive = NAME_GENITIVE[name] || name;
-  const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. Sprawdź znaczenie imienia, historię i życzenia imieninowe.`;
-
   const richHasPatron = !!rich && PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
   const dbEntry = NAME_DB[normalize(name)];
+  // Opis meta obiecuje wyłącznie sekcje, które strona faktycznie ma (wcześniej: "życzenia imieninowe" bez takiej sekcji)
+  const hasSec = h => !!rich && rich.includes('<h3>' + h + '</h3>');
+  const promised = [
+    hasSec('Znaczenie imienia') && 'znaczenie imienia',
+    hasSec('Historia') && 'historię',
+    hasSec('Zdrobnienia') && 'zdrobnienia',
+    (richHasPatron || (dbEntry && dbEntry.patron)) && 'świętych patronów',
+  ].filter(Boolean);
+  const promisedStr = promised.length > 1 ? promised.slice(0, -1).join(', ') + ' i ' + promised[promised.length - 1] : promised[0];
+  const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. ${promisedStr ? `Sprawdź ${promisedStr}.` : 'Zobacz, kto jeszcze obchodzi imieniny tego dnia.'}`;
+  // Odliczanie do najbliższych imienin liczy przeglądarka z new Date() (strona jest statyczna, więc bez zamrożenia po dacie granicznej)
+  const cdDates = dates.map(x => `${x.m}-${x.d}`).join(',');
+  const countdownHtml = `<p class="countdown" id="cd" data-dates="${cdDates}" data-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}"></p>`;
+  const countdownScript = `<script>(function(){var e=document.getElementById('cd');if(!e)return;try{var L=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'],n=new Date(),t=new Date(n.getFullYear(),n.getMonth(),n.getDate()),b=null;e.getAttribute('data-dates').split(',').forEach(function(s){var p=s.split('-'),m=+p[0],d=+p[1];for(var k=0;k<5;k++){var c=new Date(t.getFullYear()+k,m-1,d);if(c.getMonth()!==m-1)continue;if(c>=t){if(!b||c<b.c)b={c:c,m:m,d:d};break;}}});if(!b)return;var x=Math.round((b.c-t)/864e5),w=b.d+' '+L[b.m-1];e.textContent=x===0?'Imieniny '+e.getAttribute('data-name')+' są dziś ('+w+')!':x===1?'Najbliższe imieniny: jutro ('+w+')':'Najbliższe imieniny: '+w+' — za '+x+' dni';}catch(_){}})();</script>`;
   const patronBlock = (!richHasPatron && dbEntry && dbEntry.patron)
     ? `\n  <div class="patron-section">\n    <h2>Patron / Patronka</h2>\n    <p>${dbEntry.patron}</p>\n  </div>`
     : '';
@@ -363,7 +376,8 @@ function buildPage(name) {
     h2 { font-size: 1.2rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
     .dates { font-size: 1.1rem; color: var(--muted); margin-bottom: 1.5rem; }
     .name-desc-section { margin-bottom: 1.25rem; }
-    .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin-bottom: .4rem; }
+    .name-desc-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted2); margin: 0 0 .4rem; }
+    .countdown { min-height: 1.7em; margin: -1rem 0 1.5rem; font-size: .95rem; color: var(--muted); }
     .patron-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
     .related-section p { margin: .3rem 0; font-size: .92rem; }
@@ -403,9 +417,11 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
   <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
+  ${countdownHtml}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
+  ${countdownScript}
 </body>
 </html>
 `;
@@ -498,7 +514,10 @@ function main() {
   } else if (onlyArg) {
     candidateNames = onlyArg.split('=')[1].split(',');
   } else {
-    candidateNames = Object.values(slugOwner);
+    // imiona z RICH + rzadkie imiona bez wpisu w RICH, które mają folder (strony okrojone) —
+    // bez tych drugich ich strony nigdy nie dostawałyby zmian szablonu (865 stron w 10.2026)
+    const stubNames = Object.keys(dateMap).filter(n => !RICH[n] && fs.existsSync(path.join(ROOT, 'imieniny', nameSlug(n))));
+    candidateNames = [...new Set([...Object.values(slugOwner), ...stubNames])];
   }
 
   // --check-duplication: tylko audyt powielania Znaczenie/Historia, bez generowania stron.
