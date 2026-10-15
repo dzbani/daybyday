@@ -58,8 +58,8 @@ const YEARS = [2025, 2026, 2027, 2028];
 // Wiersz z linkami do kalendarzy PDF danego roku (scripts/gen_pdf_calendars.js) — tylko gdy pliki istnieją (dla lat bez PDF pusty)
 function pdfLineHtml(year) {
   const f = k => path.join(ROOT, 'pdf', `kalendarz-${year}-${k}.pdf`);
-  if (!['roczny-poziomo', 'roczny-pionowo', 'miesieczny'].every(k => fs.existsSync(f(k)))) return '';
-  return `<p class="dl-line">Pobierz kalendarz ${year} do druku (PDF): <a href="/pdf/kalendarz-${year}-roczny-poziomo.pdf">roczny poziomo</a> · <a href="/pdf/kalendarz-${year}-roczny-pionowo.pdf">roczny pionowo</a> · <a href="/pdf/kalendarz-${year}-miesieczny.pdf">miesięczny z imieninami</a> — <a href="/kalendarze-do-pobrania.html">wszystkie kalendarze i pliki ICS</a></p>`;
+  if (!['roczny-poziomo', 'roczny-pionowo', 'miesieczny'].every(k => fs.existsSync(f(k))) || !fs.existsSync(path.join(ROOT, 'kalendarz-do-druku', String(year), 'index.html'))) return '';
+  return `<p class="dl-line">Pobierz <a href="/kalendarz-do-druku/${year}/">kalendarz ${year} do druku</a> (PDF): <a href="/pdf/kalendarz-${year}-roczny-poziomo.pdf">roczny poziomo</a> · <a href="/pdf/kalendarz-${year}-roczny-pionowo.pdf">roczny pionowo</a> · <a href="/pdf/kalendarz-${year}-miesieczny.pdf">miesięczny z imieninami</a> — <a href="/kalendarze-do-pobrania.html">wszystkie kalendarze i pliki ICS</a></p>`;
 }
 
 function pad(n) { return String(n).padStart(2, '0'); }

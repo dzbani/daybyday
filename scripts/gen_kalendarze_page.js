@@ -38,6 +38,7 @@ function yearCard(y) {
   const wk = free.filter(x => x.dow === 0 || x.dow === 6).length;
   const e = C.easterDateKal(y);
   const hub = fs.existsSync(path.join(ROOT, 'kalendarz', String(y), 'index.html')) ? `<a class="dl-more" href="/kalendarz/${y}/">Kalendarz ${y} online →</a>` : '';
+  const druk = fs.existsSync(path.join(ROOT, 'kalendarz-do-druku', String(y), 'index.html')) ? `<a class="dl-more" href="/kalendarz-do-druku/${y}/">Kalendarz ${y} do druku — podgląd i dni wolne →</a>` : '';
   const btn = (key, label) => `<a class="dl-btn" href="pdf/kalendarz-${y}-${key}.pdf" target="_blank" rel="noopener"><span>${label}</span><small>PDF · ${kb(`pdf/kalendarz-${y}-${key}.pdf`)}</small></a>`;
   return `<article class="dl-card" id="rok-${y}">
       <h3>Kalendarz ${y}</h3>
@@ -47,7 +48,7 @@ function yearCard(y) {
         ${btn('roczny-pionowo', 'Roczny, pionowo')}
         ${btn('miesieczny', 'Miesięczny (12 stron) z imieninami i świętami')}
       </div>
-      ${hub}
+      <p class="dl-links">${druk}${hub}</p>
     </article>`;
 }
 function icsCard(c) {
@@ -126,6 +127,7 @@ const CSS = `
     .dl-btn small{color:var(--muted);font-weight:400;font-size:.74rem;white-space:nowrap}
     .dl-btn:hover{border-color:var(--muted)}
     .dl-more{font-size:.84rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px;margin-top:.2rem}
+    .dl-links{display:flex;flex-direction:column;gap:.15rem}
     .dl-url{font-size:.74rem;color:var(--muted);word-break:break-all}
     .dl-url code{font-family:ui-monospace,Menlo,Consolas,monospace}
     .dl-how{display:flex;flex-direction:column;gap:.5rem;max-width:46rem}
