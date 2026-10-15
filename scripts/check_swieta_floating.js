@@ -43,7 +43,7 @@ function listOf(file, name) {
   }
   return eval(s.slice(st, k));
 }
-const lists = { 'index.html': listOf('index.html', 'HOLIDAYS'), 'swieta-nietypowe.html': listOf('swieta-nietypowe.html', 'HOLIDAYS') };
+const lists = { 'index.html': listOf('home_holidays.js', 'HOLIDAYS'), 'swieta-nietypowe.html': listOf('swieta-nietypowe.html', 'HOLIDAYS') };
 
 const MONTHS = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
 const ORD = [[/^pierwsz/, 1], [/^drug/, 2], [/^trzeci|^trzec/, 3], [/^czwart/, 4], [/^ostatni/, -1]];

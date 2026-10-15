@@ -31,6 +31,15 @@ Wszystko i zawsze jednym agentem, chyba że użytkownik wyraźnie zdecyduje inac
 
 `const CACHE = 'daybyday-vNNN'` — network-first dla nawigacji (`mode:'navigate'`), cache-first dla reszty zasobów. **Bump numeru wersji przy KAŻDEJ zmianie inline JS/CSS na stronie, która rejestruje SW** (`if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js")`), inaczej powracający użytkownicy dostaną starą wersję z cache. Strony treściowe (`/swieto/*`, `/imieniny/*`, `/swieta-liturgiczne/*`) nie rejestrują SW — nie dotyczy ich.
 
+**Wersję podbijaj poleceniem `node scripts/bump_sw.js`** (nie ręcznie): podbija `sw.js` o 1 i synchronizuje parametr `?v=NNN` przy skryptach `home_*.js` w `index.html` (`node scripts/bump_sw.js --check` sprawdza zgodność). Bez zsynchronizowanego `?v=` SW (cache-first) mógłby zasłonić zmienione dane starą kopią z cache.
+
+## Dane strony głównej wydzielone do `home_*.js` (15.10.2026)
+
+Trzy duże tablice, które do 14.10 siedziały inline w `index.html` (HTML miał 291 KB / 93 KB gz), leżą teraz w osobnych plikach ładowanych synchronicznie przed głównym skryptem (`<script src="home_*.js?v=NNN">`): **`home_names.js`** (`NAMES`, 366 dni), **`home_holidays.js`** (`HOLIDAYS`, lekka lista świąt `[dzień,miesiąc,nazwa,slug,kategoria]`), **`home_quotes.js`** (`QUOTES`). `index.html` ma ok. 123 KB / 37 KB gz. **Gdziekolwiek w tym pliku jest mowa o „`HOLIDAYS`/`NAMES`/`QUOTES` w `index.html`”, czytaj: w odpowiednim `home_*.js`** — edytuj tam (nie ma ich już w HTML).
+- **Konsumenci przestawieni:** `scripts/gen_kartka.js` (skleja `index.html` + `home_holidays.js`, żeby `extractConst`/regexy działały jak dotąd) i `scripts/check_swieta_floating.js` (`listOf('home_holidays.js', 'HOLIDAYS')`). Przy nowym skrypcie czytającym te dane z `index.html` — czytaj z `home_*.js`.
+- **Efekt (pomiar na symulowanym łączu 200 KB/s, RTT 150 ms, gzip):** powracający użytkownik (skrypty z cache) — widoczna data po ok. 450 ms zamiast ok. 1000 ms; PIERWSZA wizyta bez zysku (ta sama liczba bajtów na krytycznej ścieżce: ok. 169 KB gz). Dalsze odchudzenie pierwszej wizyty wymaga leniwego ładowania `przyslowia_data.js` (17 KB gz), `home_quotes.js` (17 KB gz) i map slugów (`swieto_names.js`, `swieto_slugs.js`, `imieniny_slugs.js`, `imieniny_tradycyjne.js`, razem ok. 49 KB gz) po pierwszym rysowaniu.
+- Regresja wizualna przy tej zmianie: zrzut 20 dat (hero, chipsy świąt, wszystkie karty, linki) identyczny przed i po.
+
 ## Trzy powtarzające się wzorce bugów (sprawdzaj proaktywnie w nowym kodzie)
 
 1. **"Zamrożenie po dacie granicznej"** — hardkodowane dane/tablice z datami (np. `NEW_MOONS`, `EVENTS` roku szkolnego) używane do "co dziś/co następne" bez algorytmicznego liczenia — po minięciu ostatniej daty w tablicy strona pokazuje cichą, fałszywą odpowiedź zamiast błędu. Warianty: (a) licznik pokazujący "0" na zawsze, (b) wartość dryfująca w błędny zakres z aktywnie mylącym fallbackiem, (c) całkiem statyczny HTML bez korekcyjnego JS, (d) ostatni wpis w danych bez "następnego" sąsiada (puste pole zamiast błędu). Napraw przez algorytmiczne obliczanie z `new Date()`, nie przez dopisywanie kolejnego roku do tablicy. **Wzorcowa implementacja bez tego bugu:** licznik "do wakacji"/"do szkoły" na `kalendarz-szkolny.html` (funkcje `schoolStart()`/`schoolEnd()`/`renderCountdown()`, dodane 2026-08-28) — liczy start/koniec roku szkolnego wyłącznie z reguły prawnej (pierwszy dzień powszedni września, najbliższy piątek po 20 czerwca) i `new Date()`, bez żadnej tabeli lat — działa poprawnie dla dowolnego roku w przyszłości, zweryfikowane symulacją do 2032 r. Kopiować ten wzorzec przy każdym kolejnym liczniku/kalendarzu na tej stronie.
@@ -89,7 +98,7 @@ Zakres: WSZYSTKIE imiona obchodzące imieniny danego dnia (`NAMES` w `imieniny.h
 - Cyrylica: regex słowo z ≥1 literą łacińską i ≥1 cyrylicką — `/\b[a-zA-Z...]*[а-яёА-ЯЁ][a-zA-Z...]*\b/gu`.
 - Pełna metodologia i przykład wykonania (w tym pułapka fałszywych trafień przy dopasowywaniu dat) — patrz sesja 28.08.2026.
 
-## Weryfikacja cytatów (`index.html`, `QUOTES`) — dwa poziomy pewności, nie jeden próg
+## Weryfikacja cytatów (`home_quotes.js`, `QUOTES`; do 14.10.2026 inline w `index.html`) — dwa poziomy pewności, nie jeden próg
 
 Odkryte 15-16.09.2026 przy pełnym, dwurundowym audycie całej bazy 400+ cytatów (dwie niezależne rundy: pierwotny 14-rundowy audyt 2026 + druga runda WebSearch tej sesji, partiami po 5, na każdej podgrupie): **"sprawdzone" i "pewne" to dwie różne rzeczy, w zależności od tego, skąd startuje dana pozycja.**
 
@@ -102,7 +111,7 @@ Odkryte 15-16.09.2026 przy pełnym, dwurundowym audycie całej bazy 400+ cytató
 
 ## Baza imienin (`NAMES`) — zmiana dat/imion i weryfikacja (09.10.2026)
 
-- **Trzy kopie, zawsze identyczne:** `NAMES` w `index.html` i `imieniny.html` (format `[miesiąc, dzień, [imiona…]]`, listy sortowane domyślnym `.sort()`) oraz `NAMES_DB` w `kartka-z-kalendarza.html` (klucze `"m-d"`, kolejność nieistotna). Po zmianie uruchom lokalne kontrole: 366 dni, brak duplikatów, trzy kopie zgodne.
+- **Trzy kopie, zawsze identyczne:** `NAMES` w `home_names.js` (wcześniej inline w `index.html`) i `imieniny.html` (format `[miesiąc, dzień, [imiona…]]`, listy sortowane domyślnym `.sort()`) oraz `NAMES_DB` w `kartka-z-kalendarza.html` (klucze `"m-d"`, kolejność nieistotna). Po zmianie uruchom lokalne kontrole: 366 dni, brak duplikatów, trzy kopie zgodne.
 - **Po każdej zmianie dat:** przebuduj WSZYSTKIE strony imion (strony „Kto jeszcze obchodzi imieniny tego dnia” innych imion też się zmieniają): `gen_static_pages.js --only=<lista>` w paczkach po ok. 250 imion (limit długości polecenia) obejmujących wszystkie imiona ze stroną — pełny przebieg bez `--only` pomija strony „lite”; potem `gen_kartka.js`, `gen_imieniny_trad.js`, `gen_imieniny_miesiace.js`, `gen_sitemap_imieniny.js` i bump `sw.js`. Commit przy setkach plików: patrz uwaga o chwilowym „Permission denied” (ponawiać `git add`).
 - **Kolizja sluga Łucja = Lucja:** nie dodawać „Lucja” do `NAMES` (zdublowałaby daty na listach dni); pisownię opisuje zdanie w opisie Łucji. Dotyczy też innych par różniących się tylko „ł”/„l”.
 - **Jak weryfikować daty:** (1) strona dnia w pl.wikipedia (lista „Imieniny obchodzą”), (2) hasło o imieniu („imieniny obchodzi…”). Baza jest nadzbiorem list z Wikipedii (współczesne kalendarze) — samo ich niepokrycie nie jest błędem; podejrzane są DATY rzadkich imion (<300 nosicieli) bez żadnego potwierdzenia, zwłaszcza przesunięte o 1 dzień (np. Donald 14.7 zamiast 15.7). Nie wnioskować z portali-ankiet (halloween.friko.net). Imię bez śladu w polskim kalendarzu (Marisa, Latika) — usuwać z bazy.

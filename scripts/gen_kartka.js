@@ -29,7 +29,8 @@ for (const [m, d, names] of NAMES) {
 }
 
 // --- 2. HOLIDAYS (nietypowe) + PROVERBS_* z index.html ---
-const indexRaw = readFile('index.html');
+// HOLIDAYS mieszka w home_holidays.js (wydzielone z index.html 15.10.2026) - skladamy zrodlo, zeby extractConst/regexy dzialaly jak dotad
+const indexRaw = readFile('index.html') + '\n' + readFile('home_holidays.js');
 
 // --- 2a. Imiona "główne" dnia — ta sama reguła co nagłówek na index.html:
 // POPULAR ∩ tradycyjne kalendarze (imieniny_tradycyjne.js); gdy brak — 3 najpopularniejsze tradycyjne
