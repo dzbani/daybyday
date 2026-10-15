@@ -39,11 +39,14 @@ const out = text.replace(/<url>[\s\S]*?<\/url>/g, block => {
   rel = rel === '/' ? 'index.html' : (rel.endsWith('/') ? rel.slice(1) + 'index.html' : rel.slice(1));
   if (!fs.existsSync(path.join(ROOT, rel))) { missing.push(loc); return block; }
   let date = contentDates.get(rel) || '';
-  if (!date) try { date = execSync('git log -1 --format=%cs -- "' + rel + '"', { cwd: ROOT, encoding: 'utf8' }).trim(); } catch (e) { /* brak gita */ }
+  if (!date) {
+    try { date = execSync('git log -1 --format=%cs -- "' + rel + '"', { cwd: ROOT, encoding: 'utf8' }).trim(); } catch (e) { /* brak gita */ }
+    // plik nowy lub zmieniony względem ostatniego commita (skrypt odpala się PRZED commitem) = dzisiejsza data
+    try { if (execSync('git status --porcelain -- "' + rel + '"', { cwd: ROOT, encoding: 'utf8' }).trim()) { const n = new Date(); date = `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`; } } catch (e) { /* brak gita */ }
+  }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) { kept++; return block; }
-  const nb = /<lastmod>[^<]*<\/lastmod>/.test(block)
-    ? block.replace(/<lastmod>[^<]*<\/lastmod>/, '<lastmod>' + date + '</lastmod>')
-    : block.replace('</url>', '  <lastmod>' + date + '</lastmod>\n  </url>');
+  // <lastmod> zaraz po <loc> (kolejność ze schematu sitemap: loc, lastmod, changefreq, priority)
+  const nb = block.replace(/\s*<lastmod>[^<]*<\/lastmod>/, '').replace(/(<loc>[^<]*<\/loc>)/, '$1\n    <lastmod>' + date + '</lastmod>');
   if (nb !== block) changed++;
   return nb;
 });

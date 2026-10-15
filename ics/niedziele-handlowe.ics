@@ -1,0 +1,432 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DaybyDay//Kalendarze//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Niedziele handlowe w Polsce
+X-WR-CALDESC:Niedziele\, w które sklepy są otwarte (2026–2032). Dane ze
+  strony daybyday.today/niedziele-handlowe.html
+X-WR-TIMEZONE:Europe/Warsaw
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:niedziela-handlowa-20260125@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260125
+DTEND;VALUE=DATE:20260126
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed końcem miesiąca. P
+ ełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20260329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260329
+DTEND;VALUE=DATE:20260330
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): Niedziela Palmowa — hand
+ lowa przed Wielkanocą. Pełna lista: https://daybyday.today/niedziele-han
+ dlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20260426@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260426
+DTEND;VALUE=DATE:20260427
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela kwietni
+ a. Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20260628@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260628
+DTEND;VALUE=DATE:20260629
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela czerwca
+ . Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20260830@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed szkołą. Pełna lis
+ ta: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20261206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20261213@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20261220@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20270131@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed końcem miesiąca. P
+ ełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20270321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): Niedziela Palmowa — hand
+ lowa przed Wielkanocą. Pełna lista: https://daybyday.today/niedziele-han
+ dlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20270425@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela kwietni
+ a. Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20270627@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela czerwca
+ . Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20270829@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270829
+DTEND;VALUE=DATE:20270830
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed szkołą. Pełna lis
+ ta: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20271205@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271205
+DTEND;VALUE=DATE:20271206
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20271212@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271212
+DTEND;VALUE=DATE:20271213
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20271219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271219
+DTEND;VALUE=DATE:20271220
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20280130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280130
+DTEND;VALUE=DATE:20280131
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed końcem miesiąca. P
+ ełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20280409@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280409
+DTEND;VALUE=DATE:20280410
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): Niedziela Palmowa — hand
+ lowa przed Wielkanocą. Pełna lista: https://daybyday.today/niedziele-han
+ dlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20280430@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280430
+DTEND;VALUE=DATE:20280501
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela kwietni
+ a. Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20280625@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280625
+DTEND;VALUE=DATE:20280626
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela czerwca
+ . Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20280827@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280827
+DTEND;VALUE=DATE:20280828
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed szkołą. Pełna lis
+ ta: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20281203@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281203
+DTEND;VALUE=DATE:20281204
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20281210@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281210
+DTEND;VALUE=DATE:20281211
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20281217@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281217
+DTEND;VALUE=DATE:20281218
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20290128@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290128
+DTEND;VALUE=DATE:20290129
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed końcem miesiąca. P
+ ełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20290325@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290325
+DTEND;VALUE=DATE:20290326
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): Niedziela Palmowa — hand
+ lowa przed Wielkanocą. Pełna lista: https://daybyday.today/niedziele-han
+ dlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20290429@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290429
+DTEND;VALUE=DATE:20290430
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela kwietni
+ a. Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20290624@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290624
+DTEND;VALUE=DATE:20290625
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): ostatnia niedziela czerwca
+ . Pełna lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20290826@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290826
+DTEND;VALUE=DATE:20290827
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przed szkołą. Pełna lis
+ ta: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20291209@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291209
+DTEND;VALUE=DATE:20291210
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20291216@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291216
+DTEND;VALUE=DATE:20291217
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-handlowa-20291223@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291223
+DTEND;VALUE=DATE:20291224
+SUMMARY:Niedziela handlowa
+DESCRIPTION:Niedziela handlowa (sklepy otwarte): przedświąteczna. Pełna 
+ lista: https://daybyday.today/niedziele-handlowe.html
+URL:https://daybyday.today/niedziele-handlowe.html
+CATEGORIES:Niedziela handlowa
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+END:VCALENDAR

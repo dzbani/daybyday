@@ -1,0 +1,1804 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DaybyDay//Kalendarze//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dni okolicznościowe (Dzień Matki\, Walentynki…)
+X-WR-CALDESC:Popularne dni okolicznościowe 2026–2032: Walentynki\, Dzie
+ ń Kobiet\, Matki\, Babci\, Tłusty Czwartek itd. daybyday.today
+X-WR-TIMEZONE:Europe/Warsaw
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:dzien-babci-20260121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260121
+DTEND;VALUE=DATE:20260122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20260122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260122
+DTEND;VALUE=DATE:20260123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20260212@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260212
+DTEND;VALUE=DATE:20260213
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20260214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260214
+DTEND;VALUE=DATE:20260215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20260217@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260217
+DTEND;VALUE=DATE:20260218
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20260308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260308
+DTEND;VALUE=DATE:20260309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20260310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260310
+DTEND;VALUE=DATE:20260311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20260321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260321
+DTEND;VALUE=DATE:20260322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20260321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260321
+DTEND;VALUE=DATE:20260322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20260401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20260526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20260601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20260623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20260701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20260920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20260930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20261031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20261130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20261206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20261231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20270121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20270122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20270204@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20270209@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20270214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20270308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20270310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20270321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20270321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20270401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20270526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20270601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20270623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270623
+DTEND;VALUE=DATE:20270624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20270701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20270920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270920
+DTEND;VALUE=DATE:20270921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20270930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20271031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20271130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20271206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271206
+DTEND;VALUE=DATE:20271207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20271231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20280121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280121
+DTEND;VALUE=DATE:20280122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20280122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280122
+DTEND;VALUE=DATE:20280123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20280214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280214
+DTEND;VALUE=DATE:20280215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20280224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280224
+DTEND;VALUE=DATE:20280225
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20280229@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280229
+DTEND;VALUE=DATE:20280301
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20280308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280308
+DTEND;VALUE=DATE:20280309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20280310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280310
+DTEND;VALUE=DATE:20280311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20280321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280321
+DTEND;VALUE=DATE:20280322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20280321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280321
+DTEND;VALUE=DATE:20280322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20280401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280401
+DTEND;VALUE=DATE:20280402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20280526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280526
+DTEND;VALUE=DATE:20280527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20280601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280601
+DTEND;VALUE=DATE:20280602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20280623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280623
+DTEND;VALUE=DATE:20280624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20280701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280701
+DTEND;VALUE=DATE:20280702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20280920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280920
+DTEND;VALUE=DATE:20280921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20280930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280930
+DTEND;VALUE=DATE:20281001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20281031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281031
+DTEND;VALUE=DATE:20281101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20281130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281130
+DTEND;VALUE=DATE:20281201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20281206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281206
+DTEND;VALUE=DATE:20281207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20281231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281231
+DTEND;VALUE=DATE:20290101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20290121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290121
+DTEND;VALUE=DATE:20290122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20290122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290122
+DTEND;VALUE=DATE:20290123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20290208@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290208
+DTEND;VALUE=DATE:20290209
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20290213@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290213
+DTEND;VALUE=DATE:20290214
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20290214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290214
+DTEND;VALUE=DATE:20290215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20290308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290308
+DTEND;VALUE=DATE:20290309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20290310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290310
+DTEND;VALUE=DATE:20290311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20290321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290321
+DTEND;VALUE=DATE:20290322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20290321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290321
+DTEND;VALUE=DATE:20290322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20290401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290401
+DTEND;VALUE=DATE:20290402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20290526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290526
+DTEND;VALUE=DATE:20290527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20290601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290601
+DTEND;VALUE=DATE:20290602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20290623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290623
+DTEND;VALUE=DATE:20290624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20290701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290701
+DTEND;VALUE=DATE:20290702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20290920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290920
+DTEND;VALUE=DATE:20290921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20290930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290930
+DTEND;VALUE=DATE:20291001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20291031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291031
+DTEND;VALUE=DATE:20291101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20291130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291130
+DTEND;VALUE=DATE:20291201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20291206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291206
+DTEND;VALUE=DATE:20291207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20291231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291231
+DTEND;VALUE=DATE:20300101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20300121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300121
+DTEND;VALUE=DATE:20300122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20300122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300122
+DTEND;VALUE=DATE:20300123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20300214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300214
+DTEND;VALUE=DATE:20300215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20300228@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300228
+DTEND;VALUE=DATE:20300301
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20300305@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300305
+DTEND;VALUE=DATE:20300306
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20300308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300308
+DTEND;VALUE=DATE:20300309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20300310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300310
+DTEND;VALUE=DATE:20300311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20300321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300321
+DTEND;VALUE=DATE:20300322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20300321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300321
+DTEND;VALUE=DATE:20300322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20300401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300401
+DTEND;VALUE=DATE:20300402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20300526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300526
+DTEND;VALUE=DATE:20300527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20300601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300601
+DTEND;VALUE=DATE:20300602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20300623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300623
+DTEND;VALUE=DATE:20300624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20300701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300701
+DTEND;VALUE=DATE:20300702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20300920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300920
+DTEND;VALUE=DATE:20300921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20300930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300930
+DTEND;VALUE=DATE:20301001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20301031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301031
+DTEND;VALUE=DATE:20301101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20301130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301130
+DTEND;VALUE=DATE:20301201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20301206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301206
+DTEND;VALUE=DATE:20301207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20301231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301231
+DTEND;VALUE=DATE:20310101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20310121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310121
+DTEND;VALUE=DATE:20310122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20310122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310122
+DTEND;VALUE=DATE:20310123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20310214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310214
+DTEND;VALUE=DATE:20310215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20310220@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310220
+DTEND;VALUE=DATE:20310221
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20310225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310225
+DTEND;VALUE=DATE:20310226
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20310308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310308
+DTEND;VALUE=DATE:20310309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20310310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310310
+DTEND;VALUE=DATE:20310311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20310321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310321
+DTEND;VALUE=DATE:20310322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20310321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310321
+DTEND;VALUE=DATE:20310322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20310401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310401
+DTEND;VALUE=DATE:20310402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20310526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310526
+DTEND;VALUE=DATE:20310527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20310601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310601
+DTEND;VALUE=DATE:20310602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20310623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310623
+DTEND;VALUE=DATE:20310624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20310701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310701
+DTEND;VALUE=DATE:20310702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20310920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310920
+DTEND;VALUE=DATE:20310921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20310930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310930
+DTEND;VALUE=DATE:20311001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20311031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311031
+DTEND;VALUE=DATE:20311101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20311130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311130
+DTEND;VALUE=DATE:20311201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20311206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311206
+DTEND;VALUE=DATE:20311207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20311231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311231
+DTEND;VALUE=DATE:20320101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-babci-20320121@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320121
+DTEND;VALUE=DATE:20320122
+SUMMARY:Dzień Babci
+DESCRIPTION:Dzień Babci. Więcej: https://daybyday.today/swieto/dzien-babc
+ i/
+URL:https://daybyday.today/swieto/dzien-babci/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziadka-20320122@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320122
+DTEND;VALUE=DATE:20320123
+SUMMARY:Dzień Dziadka
+DESCRIPTION:Dzień Dziadka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iadka/
+URL:https://daybyday.today/swieto/dzien-dziadka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:tlusty-czwartek-20320205@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320205
+DTEND;VALUE=DATE:20320206
+SUMMARY:Tłusty Czwartek
+DESCRIPTION:Tłusty Czwartek. Więcej: https://daybyday.today/swieto/tlusty
+ -czwartek/
+URL:https://daybyday.today/swieto/tlusty-czwartek/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:ostatki-20320210@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320210
+DTEND;VALUE=DATE:20320211
+SUMMARY:Ostatki (Śledzik)
+DESCRIPTION:Ostatki (Śledzik). Więcej: https://daybyday.today/swieto/osta
+ tki/
+URL:https://daybyday.today/swieto/ostatki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:walentynki-20320214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320214
+DTEND;VALUE=DATE:20320215
+SUMMARY:Walentynki — Dzień Zakochanych
+DESCRIPTION:Walentynki — Dzień Zakochanych. Więcej: https://daybyday.to
+ day/swieto/walentynki/
+URL:https://daybyday.today/swieto/walentynki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-kobiet-20320308@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320308
+DTEND;VALUE=DATE:20320309
+SUMMARY:Międzynarodowy Dzień Kobiet
+DESCRIPTION:Międzynarodowy Dzień Kobiet. Więcej: https://daybyday.today/
+ swieto/dzien-kobiet/
+URL:https://daybyday.today/swieto/dzien-kobiet/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-mezczyzn-20320310@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320310
+DTEND;VALUE=DATE:20320311
+SUMMARY:Dzień Mężczyzn
+DESCRIPTION:Dzień Mężczyzn. Więcej: https://daybyday.today/swieto/dzien
+ -mezczyzn/
+URL:https://daybyday.today/swieto/dzien-mezczyzn/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wiosny-20320321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320321
+DTEND;VALUE=DATE:20320322
+SUMMARY:Dzień Wagarowicza / Pierwszy Dzień Wiosny
+DESCRIPTION:Dzień Wagarowicza / Pierwszy Dzień Wiosny. Więcej: https://d
+ aybyday.today/swieto/dzien-wiosny/
+URL:https://daybyday.today/swieto/dzien-wiosny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:topienie-marzanny-20320321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320321
+DTEND;VALUE=DATE:20320322
+SUMMARY:Topienie Marzanny
+DESCRIPTION:Topienie Marzanny. Więcej: https://daybyday.today/swieto/topie
+ nie-marzanny/
+URL:https://daybyday.today/swieto/topienie-marzanny/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:prima-aprilis-20320401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320401
+DTEND;VALUE=DATE:20320402
+SUMMARY:Prima Aprilis
+DESCRIPTION:Prima Aprilis. Więcej: https://daybyday.today/swieto/prima-apr
+ ilis/
+URL:https://daybyday.today/swieto/prima-aprilis/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-matki-20320526@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320526
+DTEND;VALUE=DATE:20320527
+SUMMARY:Dzień Matki
+DESCRIPTION:Dzień Matki. Więcej: https://daybyday.today/swieto/dzien-matk
+ i/
+URL:https://daybyday.today/swieto/dzien-matki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-dziecka-20320601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320601
+DTEND;VALUE=DATE:20320602
+SUMMARY:Dzień Dziecka
+DESCRIPTION:Dzień Dziecka. Więcej: https://daybyday.today/swieto/dzien-dz
+ iecka/
+URL:https://daybyday.today/swieto/dzien-dziecka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-ojca-20320623@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320623
+DTEND;VALUE=DATE:20320624
+SUMMARY:Dzień Ojca
+DESCRIPTION:Dzień Ojca. Więcej: https://daybyday.today/swieto/dzien-ojca/
+URL:https://daybyday.today/swieto/dzien-ojca/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-morza-20320701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320701
+DTEND;VALUE=DATE:20320702
+SUMMARY:Dzień Morza
+DESCRIPTION:Dzień Morza. Więcej: https://daybyday.today/swieto/dzien-morz
+ a/
+URL:https://daybyday.today/swieto/dzien-morza/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-przedszkolaka-20320920@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320920
+DTEND;VALUE=DATE:20320921
+SUMMARY:Ogólnopolski Dzień Przedszkolaka
+DESCRIPTION:Ogólnopolski Dzień Przedszkolaka. Więcej: https://daybyday.t
+ oday/swieto/dzien-przedszkolaka/
+URL:https://daybyday.today/swieto/dzien-przedszkolaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-chlopaka-20320930@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320930
+DTEND;VALUE=DATE:20321001
+SUMMARY:Dzień Chłopaka
+DESCRIPTION:Dzień Chłopaka. Więcej: https://daybyday.today/swieto/dzien-
+ chlopaka/
+URL:https://daybyday.today/swieto/dzien-chlopaka/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:halloween-20321031@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321031
+DTEND;VALUE=DATE:20321101
+SUMMARY:Halloween
+DESCRIPTION:Halloween. Więcej: https://daybyday.today/swieto/halloween/
+URL:https://daybyday.today/swieto/halloween/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:andrzejki-20321130@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321130
+DTEND;VALUE=DATE:20321201
+SUMMARY:Andrzejki
+DESCRIPTION:Andrzejki. Więcej: https://daybyday.today/swieto/andrzejki/
+URL:https://daybyday.today/swieto/andrzejki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:mikolajki-20321206@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321206
+DTEND;VALUE=DATE:20321207
+SUMMARY:Mikołajki (Dzień Świętego Mikołaja)
+DESCRIPTION:Mikołajki (Dzień Świętego Mikołaja). Więcej: https://dayb
+ yday.today/swieto/mikolajki/
+URL:https://daybyday.today/swieto/mikolajki/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:sylwester-20321231@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321231
+DTEND;VALUE=DATE:20330101
+SUMMARY:Sylwester
+DESCRIPTION:Sylwester. Więcej: https://daybyday.today/swieto/sylwester/
+URL:https://daybyday.today/swieto/sylwester/
+CATEGORIES:Dzień okolicznościowy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+END:VCALENDAR

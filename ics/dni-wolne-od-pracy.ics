@@ -1,0 +1,1297 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DaybyDay//Kalendarze//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dni wolne od pracy w Polsce
+X-WR-CALDESC:Ustawowo wolne od pracy dni w Polsce 2026–2032 (z Wigilią).
+  daybyday.today
+X-WR-TIMEZONE:Europe/Warsaw
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:dzien-wolny-20260101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260106
+DTEND;VALUE=DATE:20260107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260405@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260406@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260524@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20260815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20261101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20261111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20261224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20261225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20261226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270328@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270516@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20270815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20271101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20271111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20271224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20271225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20271226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280101
+DTEND;VALUE=DATE:20280102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280106
+DTEND;VALUE=DATE:20280107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280416@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280417@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280501
+DTEND;VALUE=DATE:20280502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280503
+DTEND;VALUE=DATE:20280504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280615@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280615
+DTEND;VALUE=DATE:20280616
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20280815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280815
+DTEND;VALUE=DATE:20280816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20281101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281101
+DTEND;VALUE=DATE:20281102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20281111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281111
+DTEND;VALUE=DATE:20281112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20281224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281224
+DTEND;VALUE=DATE:20281225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20281225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281225
+DTEND;VALUE=DATE:20281226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20281226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281226
+DTEND;VALUE=DATE:20281227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290101
+DTEND;VALUE=DATE:20290102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290106
+DTEND;VALUE=DATE:20290107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290401
+DTEND;VALUE=DATE:20290402
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290402@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290402
+DTEND;VALUE=DATE:20290403
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290501
+DTEND;VALUE=DATE:20290502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290503
+DTEND;VALUE=DATE:20290504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290520@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290520
+DTEND;VALUE=DATE:20290521
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290531@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290531
+DTEND;VALUE=DATE:20290601
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20290815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290815
+DTEND;VALUE=DATE:20290816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20291101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291101
+DTEND;VALUE=DATE:20291102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20291111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291111
+DTEND;VALUE=DATE:20291112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20291224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291224
+DTEND;VALUE=DATE:20291225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20291225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291225
+DTEND;VALUE=DATE:20291226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20291226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291226
+DTEND;VALUE=DATE:20291227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300101
+DTEND;VALUE=DATE:20300102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300106
+DTEND;VALUE=DATE:20300107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300421@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300421
+DTEND;VALUE=DATE:20300422
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300422@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300422
+DTEND;VALUE=DATE:20300423
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300503
+DTEND;VALUE=DATE:20300504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300609@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300609
+DTEND;VALUE=DATE:20300610
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300620
+DTEND;VALUE=DATE:20300621
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20300815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300815
+DTEND;VALUE=DATE:20300816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20301101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301101
+DTEND;VALUE=DATE:20301102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20301111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301111
+DTEND;VALUE=DATE:20301112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20301224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301224
+DTEND;VALUE=DATE:20301225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20301225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20301226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301226
+DTEND;VALUE=DATE:20301227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310101
+DTEND;VALUE=DATE:20310102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310106
+DTEND;VALUE=DATE:20310107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310413
+DTEND;VALUE=DATE:20310414
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310414
+DTEND;VALUE=DATE:20310415
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310501
+DTEND;VALUE=DATE:20310502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310503
+DTEND;VALUE=DATE:20310504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310601
+DTEND;VALUE=DATE:20310602
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310612@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310612
+DTEND;VALUE=DATE:20310613
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20310815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310815
+DTEND;VALUE=DATE:20310816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20311101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311101
+DTEND;VALUE=DATE:20311102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20311111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311111
+DTEND;VALUE=DATE:20311112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20311224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311224
+DTEND;VALUE=DATE:20311225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20311225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311225
+DTEND;VALUE=DATE:20311226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20311226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311226
+DTEND;VALUE=DATE:20311227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320101
+DTEND;VALUE=DATE:20320102
+SUMMARY:Nowy Rok
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320106
+DTEND;VALUE=DATE:20320107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320328@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320328
+DTEND;VALUE=DATE:20320329
+SUMMARY:Wielkanoc (Niedziela Wielkanocna)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320329
+DTEND;VALUE=DATE:20320330
+SUMMARY:Poniedziałek Wielkanocny
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320501
+DTEND;VALUE=DATE:20320502
+SUMMARY:Święto Pracy
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320503
+DTEND;VALUE=DATE:20320504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320516@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320516
+DTEND;VALUE=DATE:20320517
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320527
+DTEND;VALUE=DATE:20320528
+SUMMARY:Boże Ciało
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20320815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320815
+DTEND;VALUE=DATE:20320816
+SUMMARY:Wniebowzięcie NMP (Święto Wojska Polskiego)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20321101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321101
+DTEND;VALUE=DATE:20321102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20321111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321111
+DTEND;VALUE=DATE:20321112
+SUMMARY:Narodowe Święto Niepodległości
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20321224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321224
+DTEND;VALUE=DATE:20321225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce. Więcej: https://dayby
+ day.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20321225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321225
+DTEND;VALUE=DATE:20321226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w sobotę — p
+ racodawca wyznacza inny dzień wolny). Więcej: https://daybyday.today/swi
+ eta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolny-20321226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321226
+DTEND;VALUE=DATE:20321227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Dzień ustawowo wolny od pracy w Polsce (wypada w niedzielę). 
+ Więcej: https://daybyday.today/swieta.html
+URL:https://daybyday.today/swieta.html
+CATEGORIES:Dzień wolny od pracy
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+END:VCALENDAR

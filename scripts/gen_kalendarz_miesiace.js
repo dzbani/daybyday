@@ -55,6 +55,13 @@ const DAY_NAMES_FULL = ['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','
 const DAY_NAMES = ['Pn','Wt','Śr','Cz','Pt','Sb','Nd'];
 const YEARS = [2025, 2026, 2027, 2028];
 
+// Wiersz z linkami do kalendarzy PDF danego roku (scripts/gen_pdf_calendars.js) — tylko gdy pliki istnieją (dla lat bez PDF pusty)
+function pdfLineHtml(year) {
+  const f = k => path.join(ROOT, 'pdf', `kalendarz-${year}-${k}.pdf`);
+  if (!['roczny-poziomo', 'roczny-pionowo', 'miesieczny'].every(k => fs.existsSync(f(k)))) return '';
+  return `<p class="dl-line">Pobierz kalendarz ${year} do druku (PDF): <a href="/pdf/kalendarz-${year}-roczny-poziomo.pdf">roczny poziomo</a> · <a href="/pdf/kalendarz-${year}-roczny-pionowo.pdf">roczny pionowo</a> · <a href="/pdf/kalendarz-${year}-miesieczny.pdf">miesięczny z imieninami</a> — <a href="/kalendarze-do-pobrania.html">wszystkie kalendarze i pliki ICS</a></p>`;
+}
+
 function pad(n) { return String(n).padStart(2, '0'); }
 function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
@@ -286,6 +293,8 @@ function buildPage(year, monthIdx0) {
     .month-nav { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.4rem 1rem; margin-bottom:1.5rem; font-size:.85rem; }
     .month-nav a { color:var(--text); text-decoration:none; font-weight:500; }
     .month-nav a:hover { text-decoration:underline; }
+    .dl-line { font-size:.85rem; color:var(--muted); line-height:1.6; margin:-.4rem 0 1.4rem; }
+    .dl-line a { color:var(--text); font-weight:500; text-decoration:underline; text-underline-offset:3px; }
     .cal-table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-bottom:2rem; overflow-x:auto; }
     table.cal-table { width:100%; border-collapse:collapse; font-size:.82rem; white-space:nowrap; }
     table.cal-table th, table.cal-table td { padding:.6rem .9rem; text-align:left; border-bottom:1px solid var(--border); }
@@ -352,6 +361,7 @@ function buildPage(year, monthIdx0) {
   <div class="page-label">Kalendarz</div>
   <h1 class="page-title">${monthName} ${year}</h1>
   <p class="page-sub">${pageSub}</p>
+  ${pdfLineHtml(year)}
 
   <div class="month-nav">
     ${prevLink}
@@ -475,6 +485,8 @@ function buildYearPage(year) {
     .year-nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; font-size:.85rem; }
     .year-nav a { color:var(--text); text-decoration:none; font-weight:500; }
     .year-nav a:hover { text-decoration:underline; }
+    .dl-line { font-size:.85rem; color:var(--muted); line-height:1.6; margin:-.4rem 0 1.4rem; }
+    .dl-line a { color:var(--text); font-weight:500; text-decoration:underline; text-underline-offset:3px; }
     .months-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; margin-bottom:2.5rem; }
     .month-card-link { display:block; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.1rem 1.25rem; text-decoration:none; color:var(--text); transition:border-color .15s; }
     .month-card-link:hover { border-color:#C8C4BE; }
@@ -532,6 +544,7 @@ function buildYearPage(year) {
   <div class="page-label">Kalendarz</div>
   <h1 class="page-title">Kalendarz ${year}</h1>
   <p class="page-sub">${pageSub}</p>
+  ${pdfLineHtml(year)}
 
   <div class="year-nav">
     ${prevLink}

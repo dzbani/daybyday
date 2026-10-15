@@ -1,0 +1,4779 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DaybyDay//Kalendarze//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Święta państwowe i kościelne (Polska)
+X-WR-CALDESC:Święta państwowe i kościelne w Polsce 2026–2032 wraz ze 
+ świętami ruchomymi. daybyday.today
+X-WR-TIMEZONE:Europe/Warsaw
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:nowy-rok-20260101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20260106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260106
+DTEND;VALUE=DATE:20260107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20260202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20260218@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20260219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260219
+DTEND;VALUE=DATE:20260220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20260301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260301
+DTEND;VALUE=DATE:20260302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20260324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20260325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20260329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260329
+DTEND;VALUE=DATE:20260330
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20260402@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20260403@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20260404@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260404
+DTEND;VALUE=DATE:20260405
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20260405@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20260406@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20260412@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20260413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20260414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20260501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20260502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20260503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20260502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20260503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20260503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20260508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20260517@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20260524@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20260527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20260529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20260531@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20260604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20260604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20260614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20260620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20260628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260628
+DTEND;VALUE=DATE:20260629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20260701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20260711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20260712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260712
+DTEND;VALUE=DATE:20260713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20260801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20260815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20260815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20260831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20260901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20260901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20260927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20261002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20261019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20261022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20261101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20261102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20261111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20261224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20261225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20261226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20261227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20270101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20270106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20270202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20270210@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20270219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20270301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20270321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20270324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20270325@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20270326@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20270327@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20270328@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20270329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20270404@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20270413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20270414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20270501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20270502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20270502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20270503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20270508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20270509@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20270516@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20270523@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20270527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20270527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20270529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20270604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20270614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20270620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20270628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20270701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20270711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20270712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20270801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20270815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20270815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20270831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20270901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20270901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20270927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20271002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20271019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20271022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20271101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20271102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271102
+DTEND;VALUE=DATE:20271103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20271111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271111
+DTEND;VALUE=DATE:20271112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20271224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20271225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20271226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20271227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20280101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280101
+DTEND;VALUE=DATE:20280102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20280106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280106
+DTEND;VALUE=DATE:20280107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20280202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280202
+DTEND;VALUE=DATE:20280203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20280219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280219
+DTEND;VALUE=DATE:20280220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20280301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280301
+DTEND;VALUE=DATE:20280302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20280301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280301
+DTEND;VALUE=DATE:20280302
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20280324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280324
+DTEND;VALUE=DATE:20280325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20280409@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280409
+DTEND;VALUE=DATE:20280410
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20280413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20280413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20280414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20280414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20280415@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20280416@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20280417@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20280423@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280423
+DTEND;VALUE=DATE:20280424
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20280501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280501
+DTEND;VALUE=DATE:20280502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20280502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280502
+DTEND;VALUE=DATE:20280503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20280502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280502
+DTEND;VALUE=DATE:20280503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20280503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280503
+DTEND;VALUE=DATE:20280504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20280508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280508
+DTEND;VALUE=DATE:20280509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20280527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280527
+DTEND;VALUE=DATE:20280528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20280528@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280528
+DTEND;VALUE=DATE:20280529
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20280529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280529
+DTEND;VALUE=DATE:20280530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20280604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20280604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20280611@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280611
+DTEND;VALUE=DATE:20280612
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20280614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280614
+DTEND;VALUE=DATE:20280615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20280615@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280615
+DTEND;VALUE=DATE:20280616
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20280620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280620
+DTEND;VALUE=DATE:20280621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20280628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280628
+DTEND;VALUE=DATE:20280629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20280701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280701
+DTEND;VALUE=DATE:20280702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20280711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280711
+DTEND;VALUE=DATE:20280712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20280712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280712
+DTEND;VALUE=DATE:20280713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20280801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280801
+DTEND;VALUE=DATE:20280802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20280815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280815
+DTEND;VALUE=DATE:20280816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20280815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280815
+DTEND;VALUE=DATE:20280816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20280831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280831
+DTEND;VALUE=DATE:20280901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20280901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280901
+DTEND;VALUE=DATE:20280902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20280901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280901
+DTEND;VALUE=DATE:20280902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20280927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20280927
+DTEND;VALUE=DATE:20280928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20281002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281002
+DTEND;VALUE=DATE:20281003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20281019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281019
+DTEND;VALUE=DATE:20281020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20281022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281022
+DTEND;VALUE=DATE:20281023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20281101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281101
+DTEND;VALUE=DATE:20281102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20281102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281102
+DTEND;VALUE=DATE:20281103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20281111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281111
+DTEND;VALUE=DATE:20281112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20281224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281224
+DTEND;VALUE=DATE:20281225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20281225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281225
+DTEND;VALUE=DATE:20281226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20281226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281226
+DTEND;VALUE=DATE:20281227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20281227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20281227
+DTEND;VALUE=DATE:20281228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20290101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290101
+DTEND;VALUE=DATE:20290102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20290106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290106
+DTEND;VALUE=DATE:20290107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20290202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290202
+DTEND;VALUE=DATE:20290203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20290214@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290214
+DTEND;VALUE=DATE:20290215
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20290219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290219
+DTEND;VALUE=DATE:20290220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20290301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290301
+DTEND;VALUE=DATE:20290302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20290324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290324
+DTEND;VALUE=DATE:20290325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20290325@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290325
+DTEND;VALUE=DATE:20290326
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20290329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290329
+DTEND;VALUE=DATE:20290330
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20290330@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290330
+DTEND;VALUE=DATE:20290331
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20290331@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290331
+DTEND;VALUE=DATE:20290401
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20290401@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290401
+DTEND;VALUE=DATE:20290402
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20290402@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290402
+DTEND;VALUE=DATE:20290403
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20290408@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290408
+DTEND;VALUE=DATE:20290409
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20290413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20290414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20290501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290501
+DTEND;VALUE=DATE:20290502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20290502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290502
+DTEND;VALUE=DATE:20290503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20290502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290502
+DTEND;VALUE=DATE:20290503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20290503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290503
+DTEND;VALUE=DATE:20290504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20290508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290508
+DTEND;VALUE=DATE:20290509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20290513@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290513
+DTEND;VALUE=DATE:20290514
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20290520@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290520
+DTEND;VALUE=DATE:20290521
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20290527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20290527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20290529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290529
+DTEND;VALUE=DATE:20290530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20290531@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290531
+DTEND;VALUE=DATE:20290601
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20290604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290604
+DTEND;VALUE=DATE:20290605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20290614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290614
+DTEND;VALUE=DATE:20290615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20290620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290620
+DTEND;VALUE=DATE:20290621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20290628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290628
+DTEND;VALUE=DATE:20290629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20290701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290701
+DTEND;VALUE=DATE:20290702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20290711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290711
+DTEND;VALUE=DATE:20290712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20290712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290712
+DTEND;VALUE=DATE:20290713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20290801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290801
+DTEND;VALUE=DATE:20290802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20290815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290815
+DTEND;VALUE=DATE:20290816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20290815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290815
+DTEND;VALUE=DATE:20290816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20290831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290831
+DTEND;VALUE=DATE:20290901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20290901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290901
+DTEND;VALUE=DATE:20290902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20290901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290901
+DTEND;VALUE=DATE:20290902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20290927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20290927
+DTEND;VALUE=DATE:20290928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20291002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291002
+DTEND;VALUE=DATE:20291003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20291019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291019
+DTEND;VALUE=DATE:20291020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20291022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291022
+DTEND;VALUE=DATE:20291023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20291101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291101
+DTEND;VALUE=DATE:20291102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20291102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291102
+DTEND;VALUE=DATE:20291103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20291111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291111
+DTEND;VALUE=DATE:20291112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20291224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291224
+DTEND;VALUE=DATE:20291225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20291225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291225
+DTEND;VALUE=DATE:20291226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20291226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291226
+DTEND;VALUE=DATE:20291227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20291227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20291227
+DTEND;VALUE=DATE:20291228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20300101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300101
+DTEND;VALUE=DATE:20300102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20300106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300106
+DTEND;VALUE=DATE:20300107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20300202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300202
+DTEND;VALUE=DATE:20300203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20300219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300219
+DTEND;VALUE=DATE:20300220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20300301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300301
+DTEND;VALUE=DATE:20300302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20300306@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300306
+DTEND;VALUE=DATE:20300307
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20300324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300324
+DTEND;VALUE=DATE:20300325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20300413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300413
+DTEND;VALUE=DATE:20300414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20300414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20300414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20300418@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300418
+DTEND;VALUE=DATE:20300419
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20300419@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300419
+DTEND;VALUE=DATE:20300420
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20300420@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300420
+DTEND;VALUE=DATE:20300421
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20300421@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300421
+DTEND;VALUE=DATE:20300422
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20300422@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300422
+DTEND;VALUE=DATE:20300423
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20300428@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300428
+DTEND;VALUE=DATE:20300429
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20300501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20300502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300502
+DTEND;VALUE=DATE:20300503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20300502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300502
+DTEND;VALUE=DATE:20300503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20300503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300503
+DTEND;VALUE=DATE:20300504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20300508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300508
+DTEND;VALUE=DATE:20300509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20300527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300527
+DTEND;VALUE=DATE:20300528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20300529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300529
+DTEND;VALUE=DATE:20300530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20300602@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300602
+DTEND;VALUE=DATE:20300603
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20300604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300604
+DTEND;VALUE=DATE:20300605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20300609@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300609
+DTEND;VALUE=DATE:20300610
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20300614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300614
+DTEND;VALUE=DATE:20300615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20300616@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300616
+DTEND;VALUE=DATE:20300617
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20300620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300620
+DTEND;VALUE=DATE:20300621
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20300620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300620
+DTEND;VALUE=DATE:20300621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20300628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300628
+DTEND;VALUE=DATE:20300629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20300701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300701
+DTEND;VALUE=DATE:20300702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20300711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300711
+DTEND;VALUE=DATE:20300712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20300712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300712
+DTEND;VALUE=DATE:20300713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20300801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300801
+DTEND;VALUE=DATE:20300802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20300815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300815
+DTEND;VALUE=DATE:20300816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20300815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300815
+DTEND;VALUE=DATE:20300816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20300831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300831
+DTEND;VALUE=DATE:20300901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20300901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300901
+DTEND;VALUE=DATE:20300902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20300901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300901
+DTEND;VALUE=DATE:20300902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20300927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20300927
+DTEND;VALUE=DATE:20300928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20301002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301002
+DTEND;VALUE=DATE:20301003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20301019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301019
+DTEND;VALUE=DATE:20301020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20301022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301022
+DTEND;VALUE=DATE:20301023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20301101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301101
+DTEND;VALUE=DATE:20301102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20301102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301102
+DTEND;VALUE=DATE:20301103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20301111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301111
+DTEND;VALUE=DATE:20301112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20301224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301224
+DTEND;VALUE=DATE:20301225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20301225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20301226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301226
+DTEND;VALUE=DATE:20301227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20301227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20310101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310101
+DTEND;VALUE=DATE:20310102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20310106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310106
+DTEND;VALUE=DATE:20310107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20310202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310202
+DTEND;VALUE=DATE:20310203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20310219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310219
+DTEND;VALUE=DATE:20310220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20310226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310226
+DTEND;VALUE=DATE:20310227
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20310301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310301
+DTEND;VALUE=DATE:20310302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20310324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310324
+DTEND;VALUE=DATE:20310325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20310406@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310406
+DTEND;VALUE=DATE:20310407
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20310410@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310410
+DTEND;VALUE=DATE:20310411
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20310411@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310411
+DTEND;VALUE=DATE:20310412
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20310412@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310412
+DTEND;VALUE=DATE:20310413
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20310413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310413
+DTEND;VALUE=DATE:20310414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20310413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310413
+DTEND;VALUE=DATE:20310414
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20310414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310414
+DTEND;VALUE=DATE:20310415
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20310414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310414
+DTEND;VALUE=DATE:20310415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20310420@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310420
+DTEND;VALUE=DATE:20310421
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20310501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310501
+DTEND;VALUE=DATE:20310502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20310502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310502
+DTEND;VALUE=DATE:20310503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20310502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310502
+DTEND;VALUE=DATE:20310503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20310503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310503
+DTEND;VALUE=DATE:20310504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20310508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310508
+DTEND;VALUE=DATE:20310509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20310525@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310525
+DTEND;VALUE=DATE:20310526
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20310527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310527
+DTEND;VALUE=DATE:20310528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20310529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310529
+DTEND;VALUE=DATE:20310530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20310601@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310601
+DTEND;VALUE=DATE:20310602
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20310604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310604
+DTEND;VALUE=DATE:20310605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20310608@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310608
+DTEND;VALUE=DATE:20310609
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20310612@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310612
+DTEND;VALUE=DATE:20310613
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20310614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310614
+DTEND;VALUE=DATE:20310615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20310620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310620
+DTEND;VALUE=DATE:20310621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20310628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310628
+DTEND;VALUE=DATE:20310629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20310701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310701
+DTEND;VALUE=DATE:20310702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20310711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310711
+DTEND;VALUE=DATE:20310712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20310712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310712
+DTEND;VALUE=DATE:20310713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20310801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310801
+DTEND;VALUE=DATE:20310802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20310815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310815
+DTEND;VALUE=DATE:20310816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20310815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310815
+DTEND;VALUE=DATE:20310816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20310831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310831
+DTEND;VALUE=DATE:20310901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20310901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310901
+DTEND;VALUE=DATE:20310902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20310901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310901
+DTEND;VALUE=DATE:20310902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20310927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20310927
+DTEND;VALUE=DATE:20310928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20311002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311002
+DTEND;VALUE=DATE:20311003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20311019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311019
+DTEND;VALUE=DATE:20311020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20311022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311022
+DTEND;VALUE=DATE:20311023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20311101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311101
+DTEND;VALUE=DATE:20311102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20311102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311102
+DTEND;VALUE=DATE:20311103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20311111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311111
+DTEND;VALUE=DATE:20311112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20311224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311224
+DTEND;VALUE=DATE:20311225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20311225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311225
+DTEND;VALUE=DATE:20311226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20311226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311226
+DTEND;VALUE=DATE:20311227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20311227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20311227
+DTEND;VALUE=DATE:20311228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:nowy-rok-20320101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320101
+DTEND;VALUE=DATE:20320102
+SUMMARY:Nowy Rok
+DESCRIPTION:Nowy Rok. Więcej: https://daybyday.today/swieto/nowy-rok/
+URL:https://daybyday.today/swieto/nowy-rok/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trzech-kroli-20320106@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320106
+DTEND;VALUE=DATE:20320107
+SUMMARY:Trzech Króli (Objawienie Pańskie)
+DESCRIPTION:Trzech Króli (Objawienie Pańskie). Więcej: https://daybyday.
+ today/swieto/trzech-kroli/
+URL:https://daybyday.today/swieto/trzech-kroli/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:gromniczna-20320202@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320202
+DTEND;VALUE=DATE:20320203
+SUMMARY:Matki Bożej Gromnicznej (Dzień Świeczki)
+DESCRIPTION:Matki Bożej Gromnicznej (Dzień Świeczki). Więcej: https://d
+ aybyday.today/swieto/gromniczna/
+URL:https://daybyday.today/swieto/gromniczna/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:popielec-20320211@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320211
+DTEND;VALUE=DATE:20320212
+SUMMARY:Środa Popielcowa (Popielec)
+DESCRIPTION:Środa Popielcowa (Popielec). Więcej: https://daybyday.today/s
+ wieto/popielec/
+URL:https://daybyday.today/swieto/popielec/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-nauki-polskiej-20320219@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320219
+DTEND;VALUE=DATE:20320220
+SUMMARY:Narodowy Dzień Nauki Polskiej
+DESCRIPTION:Narodowy Dzień Nauki Polskiej. Więcej: https://daybyday.today
+ /swieto/dzien-nauki-polskiej/
+URL:https://daybyday.today/swieto/dzien-nauki-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-zolnierzy-wykletych-20320301@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320301
+DTEND;VALUE=DATE:20320302
+SUMMARY:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”
+DESCRIPTION:Narodowy Dzień Pamięci „Żołnierzy Wyklętych”. Więcej:
+  https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+URL:https://daybyday.today/swieto/dzien-pamieci-zolnierzy-wykletych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:niedziela-palmowa-20320321@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320321
+DTEND;VALUE=DATE:20320322
+SUMMARY:Niedziela Palmowa
+DESCRIPTION:Niedziela Palmowa. Więcej: https://daybyday.today/swieto/niedz
+ iela-palmowa/
+URL:https://daybyday.today/swieto/niedziela-palmowa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-polakow-ratujacych-zydow-20320324@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320324
+DTEND;VALUE=DATE:20320325
+SUMMARY:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupacją
+  niemiecką
+DESCRIPTION:Narodowy Dzień Pamięci Polaków ratujących Żydów pod okupa
+ cją niemiecką. Więcej: https://daybyday.today/swieto/dzien-pamieci-pola
+ kow-ratujacych-zydow/
+URL:https://daybyday.today/swieto/dzien-pamieci-polakow-ratujacych-zydow/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-czwartek-20320325@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320325
+DTEND;VALUE=DATE:20320326
+SUMMARY:Wielki Czwartek
+DESCRIPTION:Wielki Czwartek. Więcej: https://daybyday.today/swieto/wielki-
+ czwartek/
+URL:https://daybyday.today/swieto/wielki-czwartek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielki-piatek-20320326@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320326
+DTEND;VALUE=DATE:20320327
+SUMMARY:Wielki Piątek
+DESCRIPTION:Wielki Piątek. Więcej: https://daybyday.today/swieto/wielki-p
+ iatek/
+URL:https://daybyday.today/swieto/wielki-piatek/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielka-sobota-20320327@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320327
+DTEND;VALUE=DATE:20320328
+SUMMARY:Wielka Sobota
+DESCRIPTION:Wielka Sobota. Więcej: https://daybyday.today/swieto/wielka-so
+ bota/
+URL:https://daybyday.today/swieto/wielka-sobota/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wielkanoc-20320328@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320328
+DTEND;VALUE=DATE:20320329
+SUMMARY:Wielka Niedziela — Wielkanoc
+DESCRIPTION:Wielka Niedziela — Wielkanoc. Więcej: https://daybyday.today
+ /swieto/wielkanoc/
+URL:https://daybyday.today/swieto/wielkanoc/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:poniedzialek-wielkanocny-20320329@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320329
+DTEND;VALUE=DATE:20320330
+SUMMARY:Poniedziałek Wielkanocny (Śmigus-Dyngus)
+DESCRIPTION:Poniedziałek Wielkanocny (Śmigus-Dyngus). Więcej: https://da
+ ybyday.today/swieto/poniedzialek-wielkanocny/
+URL:https://daybyday.today/swieto/poniedzialek-wielkanocny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:milosierdzie-boze-20320404@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320404
+DTEND;VALUE=DATE:20320405
+SUMMARY:Niedziela Miłosierdzia Bożego
+DESCRIPTION:Niedziela Miłosierdzia Bożego. Więcej: https://daybyday.toda
+ y/swieto/milosierdzie-boze/
+URL:https://daybyday.today/swieto/milosierdzie-boze/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-zbrodni-katynskiej-20320413@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320413
+DTEND;VALUE=DATE:20320414
+SUMMARY:Dzień Pamięci Ofiar Zbrodni Katyńskiej
+DESCRIPTION:Dzień Pamięci Ofiar Zbrodni Katyńskiej. Więcej: https://day
+ byday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-zbrodni-katynskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-chrztu-polski-20320414@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320414
+DTEND;VALUE=DATE:20320415
+SUMMARY:Święto Chrztu Polski
+DESCRIPTION:Święto Chrztu Polski. Więcej: https://daybyday.today/swieto/
+ swieto-chrztu-polski/
+URL:https://daybyday.today/swieto/swieto-chrztu-polski/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-pracy-20320501@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320501
+DTEND;VALUE=DATE:20320502
+SUMMARY:Święto Pracy
+DESCRIPTION:Święto Pracy. Więcej: https://daybyday.today/swieto/swieto-p
+ racy/
+URL:https://daybyday.today/swieto/swieto-pracy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-flagi-20320502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320502
+DTEND;VALUE=DATE:20320503
+SUMMARY:Dzień Flagi Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Flagi Rzeczypospolitej Polskiej. Więcej: https://daybyd
+ ay.today/swieto/dzien-flagi/
+URL:https://daybyday.today/swieto/dzien-flagi/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polonii-20320502@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320502
+DTEND;VALUE=DATE:20320503
+SUMMARY:Dzień Polonii i Polaków za Granicą
+DESCRIPTION:Dzień Polonii i Polaków za Granicą. Więcej: https://daybyda
+ y.today/swieto/dzien-polonii/
+URL:https://daybyday.today/swieto/dzien-polonii/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:konstytucja-3-maja-20320503@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320503
+DTEND;VALUE=DATE:20320504
+SUMMARY:Święto Konstytucji 3 Maja
+DESCRIPTION:Święto Konstytucji 3 Maja. Więcej: https://daybyday.today/sw
+ ieto/konstytucja-3-maja/
+URL:https://daybyday.today/swieto/konstytucja-3-maja/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwyciestwa-20320508@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320508
+DTEND;VALUE=DATE:20320509
+SUMMARY:Narodowy Dzień Zwycięstwa
+DESCRIPTION:Narodowy Dzień Zwycięstwa. Więcej: https://daybyday.today/sw
+ ieto/dzien-zwyciestwa/
+URL:https://daybyday.today/swieto/dzien-zwyciestwa/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowstapienie-20320509@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320509
+DTEND;VALUE=DATE:20320510
+SUMMARY:Wniebowstąpienie Pańskie
+DESCRIPTION:Wniebowstąpienie Pańskie. Więcej: https://daybyday.today/swi
+ eto/wniebowstapienie/
+URL:https://daybyday.today/swieto/wniebowstapienie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:zielone-swiatki-20320516@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320516
+DTEND;VALUE=DATE:20320517
+SUMMARY:Zesłanie Ducha Świętego (Zielone Świątki)
+DESCRIPTION:Zesłanie Ducha Świętego (Zielone Świątki). Więcej: https:
+ //daybyday.today/swieto/zielone-swiatki/
+URL:https://daybyday.today/swieto/zielone-swiatki/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:trojca-swiety-20320523@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320523
+DTEND;VALUE=DATE:20320524
+SUMMARY:Uroczystość Trójcy Przenajświętszej
+DESCRIPTION:Uroczystość Trójcy Przenajświętszej. Więcej: https://dayb
+ yday.today/swieto/trojca-swiety/
+URL:https://daybyday.today/swieto/trojca-swiety/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-cialo-20320527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320527
+DTEND;VALUE=DATE:20320528
+SUMMARY:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrystusa
+ )
+DESCRIPTION:Boże Ciało (Uroczystość Najświętszego Ciała i Krwi Chrys
+ tusa). Więcej: https://daybyday.today/swieto/boze-cialo/
+URL:https://daybyday.today/swieto/boze-cialo/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-samorzadu-terytorialnego-20320527@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320527
+DTEND;VALUE=DATE:20320528
+SUMMARY:Dzień Samorządu Terytorialnego
+DESCRIPTION:Dzień Samorządu Terytorialnego. Więcej: https://daybyday.tod
+ ay/swieto/dzien-samorzadu-terytorialnego/
+URL:https://daybyday.today/swieto/dzien-samorzadu-terytorialnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-20320529@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320529
+DTEND;VALUE=DATE:20320530
+SUMMARY:Dzień Weterana Działań poza Granicami Państwa
+DESCRIPTION:Dzień Weterana Działań poza Granicami Państwa. Więcej: htt
+ ps://daybyday.today/swieto/dzien-weterana/
+URL:https://daybyday.today/swieto/dzien-weterana/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-wolnosci-i-praw-obywatelskich-20320604@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320604
+DTEND;VALUE=DATE:20320605
+SUMMARY:Dzień Wolności i Praw Obywatelskich
+DESCRIPTION:Dzień Wolności i Praw Obywatelskich. Więcej: https://daybyda
+ y.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+URL:https://daybyday.today/swieto/dzien-wolnosci-i-praw-obywatelskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-obozow-koncentracyjnych-20320614@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320614
+DTEND;VALUE=DATE:20320615
+SUMMARY:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Ko
+ ncentracyjnych i Obozów Zagłady
+DESCRIPTION:Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozó
+ w Koncentracyjnych i Obozów Zagłady. Więcej: https://daybyday.today/swi
+ eto/dzien-pamieci-ofiar-obozow-koncentracyjnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-obozow-koncentracyjny
+ ch/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-powstan-slaskich-20320620@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320620
+DTEND;VALUE=DATE:20320621
+SUMMARY:Narodowy Dzień Powstań Śląskich
+DESCRIPTION:Narodowy Dzień Powstań Śląskich. Więcej: https://daybyday.
+ today/swieto/dzien-powstan-slaskich/
+URL:https://daybyday.today/swieto/dzien-powstan-slaskich/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:narodowy-dzien-pamieci-poznanskiego-czerwca-1956-20320628@daybyday.toda
+ y
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320628
+DTEND;VALUE=DATE:20320629
+SUMMARY:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956
+DESCRIPTION:Narodowy Dzień Pamięci Poznańskiego Czerwca 1956. Więcej: h
+ ttps://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerwca-1
+ 956/
+URL:https://daybyday.today/swieto/narodowy-dzien-pamieci-poznanskiego-czerw
+ ca-1956/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-sejmu-polskiego-20320701@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320701
+DTEND;VALUE=DATE:20320702
+SUMMARY:Dzień Sejmu Polskiego
+DESCRIPTION:Dzień Sejmu Polskiego. Więcej: https://daybyday.today/swieto/
+ dzien-sejmu-polskiego/
+URL:https://daybyday.today/swieto/dzien-sejmu-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-ofiar-ludobojstwa-wolyn-20320711@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320711
+DTEND;VALUE=DATE:20320712
+SUMMARY:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa dokon
+ anego przez OUN i UPA
+DESCRIPTION:Narodowy Dzień Pamięci o Polakach – Ofiarach Ludobójstwa d
+ okonanego przez OUN i UPA. Więcej: https://daybyday.today/swieto/dzien-pa
+ mieci-ofiar-ludobojstwa-wolyn/
+URL:https://daybyday.today/swieto/dzien-pamieci-ofiar-ludobojstwa-wolyn/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-walki-i-meczenstwa-wsi-polskiej-20320712@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320712
+DTEND;VALUE=DATE:20320713
+SUMMARY:Dzień Walki i Męczeństwa Wsi Polskiej
+DESCRIPTION:Dzień Walki i Męczeństwa Wsi Polskiej. Więcej: https://dayb
+ yday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+URL:https://daybyday.today/swieto/dzien-walki-i-meczenstwa-wsi-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:rocznica-powstania-warszawskiego-20320801@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320801
+DTEND;VALUE=DATE:20320802
+SUMMARY:Narodowy Dzień Pamięci Powstania Warszawskiego
+DESCRIPTION:Narodowy Dzień Pamięci Powstania Warszawskiego. Więcej: http
+ s://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+URL:https://daybyday.today/swieto/rocznica-powstania-warszawskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-wojska-polskiego-20320815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320815
+DTEND;VALUE=DATE:20320816
+SUMMARY:Święto Wojska Polskiego
+DESCRIPTION:Święto Wojska Polskiego. Więcej: https://daybyday.today/swie
+ to/swieto-wojska-polskiego/
+URL:https://daybyday.today/swieto/swieto-wojska-polskiego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wniebowziecie-nmp-20320815@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320815
+DTEND;VALUE=DATE:20320816
+SUMMARY:Wniebowzięcie NMP
+DESCRIPTION:Wniebowzięcie NMP. Więcej: https://daybyday.today/swieto/wnie
+ bowziecie-nmp/
+URL:https://daybyday.today/swieto/wniebowziecie-nmp/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-solidarnosci-20320831@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320831
+DTEND;VALUE=DATE:20320901
+SUMMARY:Dzień Solidarności i Wolności
+DESCRIPTION:Dzień Solidarności i Wolności. Więcej: https://daybyday.tod
+ ay/swieto/dzien-solidarnosci/
+URL:https://daybyday.today/swieto/dzien-solidarnosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-modlitwy-o-ochrone-stworzenia-20320901@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320901
+DTEND;VALUE=DATE:20320902
+SUMMARY:Światowy Dzień Modlitwy o Ochronę Stworzenia
+DESCRIPTION:Światowy Dzień Modlitwy o Ochronę Stworzenia. Więcej: https
+ ://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+URL:https://daybyday.today/swieto/dzien-modlitwy-o-ochrone-stworzenia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-weterana-walk-o-niepodleglosc-rzeczypospolitej-polskiej-20320901@
+ daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320901
+DTEND;VALUE=DATE:20320902
+SUMMARY:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej
+DESCRIPTION:Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polski
+ ej. Więcej: https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleg
+ losc-rzeczypospolitej-polskiej/
+URL:https://daybyday.today/swieto/dzien-weterana-walk-o-niepodleglosc-rzecz
+ ypospolitej-polskiej/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-polskiego-panstwa-podziemnego-20320927@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20320927
+DTEND;VALUE=DATE:20320928
+SUMMARY:Dzień Polskiego Państwa Podziemnego
+DESCRIPTION:Dzień Polskiego Państwa Podziemnego. Więcej: https://daybyda
+ y.today/swieto/dzien-polskiego-panstwa-podziemnego/
+URL:https://daybyday.today/swieto/dzien-polskiego-panstwa-podziemnego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-o-cywilnej-ludnosci-powstanczej-warszawy-20321002@daybyda
+ y.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321002
+DTEND;VALUE=DATE:20321003
+SUMMARY:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy
+DESCRIPTION:Dzień Pamięci o Cywilnej Ludności Powstańczej Warszawy. Wi
+ ęcej: https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-pow
+ stanczej-warszawy/
+URL:https://daybyday.today/swieto/dzien-pamieci-o-cywilnej-ludnosci-powstan
+ czej-warszawy/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-pamieci-duchownych-niezlomnych-20321019@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321019
+DTEND;VALUE=DATE:20321020
+SUMMARY:Narodowy Dzień Pamięci Duchownych Niezłomnych
+DESCRIPTION:Narodowy Dzień Pamięci Duchownych Niezłomnych. Więcej: http
+ s://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+URL:https://daybyday.today/swieto/dzien-pamieci-duchownych-niezlomnych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-praw-rodziny-20321022@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321022
+DTEND;VALUE=DATE:20321023
+SUMMARY:Dzień Praw Rodziny
+DESCRIPTION:Dzień Praw Rodziny. Więcej: https://daybyday.today/swieto/dzi
+ en-praw-rodziny/
+URL:https://daybyday.today/swieto/dzien-praw-rodziny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wszystkich-swietych-20321101@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321101
+DTEND;VALUE=DATE:20321102
+SUMMARY:Wszystkich Świętych
+DESCRIPTION:Wszystkich Świętych. Więcej: https://daybyday.today/swieto/w
+ szystkich-swietych/
+URL:https://daybyday.today/swieto/wszystkich-swietych/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zaduszny-20321102@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321102
+DTEND;VALUE=DATE:20321103
+SUMMARY:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych)
+DESCRIPTION:Dzień Zaduszny (Wspomnienie Wszystkich Wiernych Zmarłych). Wi
+ ęcej: https://daybyday.today/swieto/dzien-zaduszny/
+URL:https://daybyday.today/swieto/dzien-zaduszny/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:swieto-niepodleglosci-20321111@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321111
+DTEND;VALUE=DATE:20321112
+SUMMARY:Święto Niepodległości
+DESCRIPTION:Święto Niepodległości. Więcej: https://daybyday.today/swie
+ to/swieto-niepodleglosci/
+URL:https://daybyday.today/swieto/swieto-niepodleglosci/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:wigilia-20321224@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321224
+DTEND;VALUE=DATE:20321225
+SUMMARY:Wigilia Bożego Narodzenia
+DESCRIPTION:Wigilia Bożego Narodzenia. Więcej: https://daybyday.today/swi
+ eto/wigilia/
+URL:https://daybyday.today/swieto/wigilia/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-20321225@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321225
+DTEND;VALUE=DATE:20321226
+SUMMARY:Boże Narodzenie (pierwszy dzień)
+DESCRIPTION:Boże Narodzenie (pierwszy dzień). Więcej: https://daybyday.t
+ oday/swieto/boze-narodzenie/
+URL:https://daybyday.today/swieto/boze-narodzenie/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:boze-narodzenie-2-20321226@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321226
+DTEND;VALUE=DATE:20321227
+SUMMARY:Boże Narodzenie (drugi dzień)
+DESCRIPTION:Boże Narodzenie (drugi dzień). Więcej: https://daybyday.toda
+ y/swieto/boze-narodzenie-2/
+URL:https://daybyday.today/swieto/boze-narodzenie-2/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:dzien-zwycieskiego-powstania-wielkopolskiego-20321227@daybyday.today
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20321227
+DTEND;VALUE=DATE:20321228
+SUMMARY:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego
+DESCRIPTION:Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego. Więce
+ j: https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+URL:https://daybyday.today/swieto/dzien-zwycieskiego-powstania-wielkopolski
+ ego/
+CATEGORIES:Święto
+TRANSP:TRANSPARENT
+LAST-MODIFIED:20261015T000000Z
+END:VEVENT
+END:VCALENDAR
