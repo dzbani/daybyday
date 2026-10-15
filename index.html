@@ -11,19 +11,19 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle">DaybyDay — Twój codzienny kalendarz</title>
+  <title id="pageTitle">Imieniny dzisiaj, święta i kalendarz | DaybyDay</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23E8936A'/><rect x='4' y='10' width='24' height='18' rx='3' fill='white' opacity='.95'/><rect x='4' y='8' width='24' height='7' rx='3' fill='%23C8734A'/><rect x='9' y='6' width='3' height='5' rx='1.5' fill='white'/><rect x='20' y='6' width='3' height='5' rx='1.5' fill='white'/><text x='16' y='24' text-anchor='middle' font-family='Arial' font-size='11' font-weight='bold' fill='%23E8936A'>18</text></svg>">
-  <meta name="description" content="DaybyDay — codzienny almanach: imieniny, święta, wschód i zachód słońca, fazy księżyca, kalkulatory dat. Sprawdź co się dzieje dzisiaj.">
+  <meta name="description" content="Kto ma dziś imieniny? Imieniny i święta na każdy dzień, wschód i zachód słońca, fazy księżyca, kalendarze PDF do druku i kalkulatory dat.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/">
-  <meta property="og:title" content="DaybyDay — Twój codzienny kalendarz">
+  <meta property="og:title" content="DaybyDay — imieniny dzisiaj, święta i kalendarz">
   <meta property="og:site_name" content="DaybyDay">
   <meta property="og:description" content="Imieniny, święta, wschód i zachód słońca, fazy księżyca, kalkulatory dat — wszystko w jednym miejscu.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
   <meta property="og:url" content="https://daybyday.today/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="DaybyDay — Twój codzienny kalendarz">
+  <meta name="twitter:title" content="DaybyDay — imieniny dzisiaj, święta i kalendarz">
   <meta name="twitter:description" content="Imieniny, święta, wschód i zachód słońca, fazy księżyca — sprawdź co się dzieje dzisiaj.">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/","description":"Codzienny almanach: imieniny, święta, wschód i zachód słońca, fazy księżyca, kalkulatory dat.","inLanguage":"pl"}</script>
@@ -308,7 +308,7 @@
 
 <div class="page">
   <main>
-    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">DaybyDay — codzienny kalendarz: imieniny, święta i wydarzenia dnia</h1>
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Imieniny dzisiaj, święta i kalendarz na każdy dzień — DaybyDay</h1>
     <!-- DATE HERO -->
     <div class="date-hero">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;gap:.5rem;flex-wrap:wrap;">
@@ -338,35 +338,35 @@
     <!-- IMIENINY -->
     <div class="card" data-card-id="imieniny">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title">Imieniny</div>
+      <h2 class="card-title">Imieniny</h2>
       <div class="names-list" id="namesList"></div>
     </div>
 
     <!-- ŚWIĘTA -->
     <div class="card" data-card-id="swieta">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title">Święta i obchodzone dni</div>
+      <h2 class="card-title">Święta i obchodzone dni</h2>
       <div class="holidays-list" id="holidaysList"></div>
     </div>
 
     <!-- NAJBLIŻSZE ŚWIĘTA -->
     <div class="card" data-card-id="najblizsze">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title">Najbliższe ważne daty</div>
+      <h2 class="card-title">Najbliższe ważne daty</h2>
       <div id="upcomingList"></div>
     </div>
 
     <!-- NASTĘPNY DŁUGI WEEKEND -->
     <div class="card" data-card-id="dlugiwknd" id="longWeekendCard">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title">Następny długi weekend</div>
+      <h2 class="card-title">Następny długi weekend</h2>
       <div id="longWeekendContent"></div>
     </div>
 
     <!-- SŁOŃCE / KSIĘŻYC -->
     <div class="card" data-card-id="astro">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+      <div class="card-title" role="heading" aria-level="2" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
         <span>Dane astronomiczne — <button id="locNameBtn" onclick="toggleLocSearch()" style="font:inherit;font-size:inherit;font-weight:inherit;color:var(--sun-text);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline dotted;text-underline-offset:3px;" title="Zmień lokalizację">Poznań</button></span>
         <div id="locSearchBox" style="display:none;align-items:center;gap:.4rem;">
           <input id="locSearchInput" type="text" placeholder="Wpisz miejscowość…" style="font:inherit;font-size:.8rem;padding:.3rem .7rem;border:1px solid var(--border);border-radius:60px;outline:none;width:180px;background:var(--bg);color:var(--text);" />
@@ -415,7 +415,7 @@
     <!-- DNI DO KOŃCA ROKU -->
     <div class="card" data-card-id="rok">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title">Ile zostało do końca roku?</div>
+      <h2 class="card-title">Ile zostało do końca roku?</h2>
       <div id="yearCounters" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;text-align:center;margin-top:0.25rem;"></div>
       <div style="margin-top:1rem;">
         <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-bottom:.4rem;"><span id="yearProgressLabel">1 stycznia</span><span id="yearProgressPct"></span><span>31 grudnia</span></div>
@@ -426,7 +426,7 @@
     <!-- TEN DZIEŃ W HISTORII -->
     <div class="card" data-card-id="historia" id="historyCard" style="display:none">
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
-      <div class="card-title" id="historyTitle">Ten dzień w historii</div>
+      <h2 class="card-title" id="historyTitle">Ten dzień w historii</h2>
       <div id="historyList"></div>
       <div style="font-size:.7rem;color:var(--muted2,var(--muted));margin-top:.6rem;">Źródło: <a href="https://pl.wikipedia.org/" target="_blank" rel="noopener" style="color:inherit;">Wikipedia</a> (CC BY-SA 4.0)</div>
     </div>
@@ -453,7 +453,7 @@
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="card" id="weatherCard" style="display:none">
-      <div class="card-title">Pogoda dziś — <span id="weatherCity"></span></div>
+      <h2 class="card-title">Pogoda dziś — <span id="weatherCity"></span></h2>
       <div class="weather-main">
         <div class="weather-icon" id="weatherIcon"></div>
         <div>
@@ -473,7 +473,7 @@
       <div id="miniCal"></div>
     </div>
     <div class="card">
-      <div class="card-title">Kalendarze</div>
+      <h2 class="card-title">Kalendarze</h2>
       <nav class="mini-nav-list">
         <a href="swieta-nietypowe.html" class="mini-nav-link"><span class="mini-nav-label">Święta nietypowe<span class="mini-nav-sub">Dni nieoczywiste i branżowe</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="kalendarz.html" class="mini-nav-link"><span class="mini-nav-label">Kalendarze roczne 2026–2028<span class="mini-nav-sub">Do druku i podglądu</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -490,7 +490,7 @@
 </nav>
     </div>
     <div class="card">
-      <div class="card-title">Kalkulatory</div>
+      <h2 class="card-title">Kalkulatory</h2>
       <nav class="mini-nav-list">
         <a href="kalkulatory.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator daty<span class="mini-nav-sub">Ile dni między datami</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="kalkulator-dni.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator dni<span class="mini-nav-sub">Dodaj lub odejmij dni od daty</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -498,7 +498,7 @@
 </nav>
     </div>
     <div class="card">
-      <div class="card-title">Więcej</div>
+      <h2 class="card-title">Więcej</h2>
       <nav class="mini-nav-list">
         <a href="imieniny.html" class="mini-nav-link"><span class="mini-nav-label">Imieniny<span class="mini-nav-sub">Wyszukaj imię i jego daty</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="ranking-imion.html" class="mini-nav-link"><span class="mini-nav-label">Ranking imion<span class="mini-nav-sub">Najpopularniejsze imiona w Polsce</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -510,7 +510,7 @@
 </nav>
     </div>
     <div class="card">
-      <div class="card-title">Kontakt</div>
+      <h2 class="card-title">Kontakt</h2>
       <a href="mailto:kontakt@daybyday.today" style="font-size:.85rem;color:var(--text);text-decoration:none;font-weight:500;">kontakt@daybyday.today</a>
       <p style="font-size:.78rem;color:var(--muted);margin-top:.5rem;line-height:1.5;">Chcesz dodać nowe święto? Napisz do nas.</p>
     </div>
@@ -1084,7 +1084,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
     const tl=document.getElementById('todayLink'); tl.style.display='inline-block';
   }
 
-  document.title=`DaybyDay — Twój codzienny kalendarz`;
+  document.title=`Imieniny dzisiaj, święta i kalendarz | DaybyDay`;
 
   // Date hero
   const dayNameEl=document.getElementById('dayName');
