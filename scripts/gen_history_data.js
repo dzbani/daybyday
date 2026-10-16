@@ -266,6 +266,177 @@ const ENTRY_FIXES = [
   // Abd Allah an-Nusur zostal premierem Jordanii 10 X 2012, nie 11 X 2011
   { file: '10-11.json', y: 2011, re: /an-Nusur/, drop: true },
   { file: '10-04.json', y: 1991, re: /Traktatu Antarktycznego/, replace: 'W Madrycie podpisano Protokół o ochronie środowiska do Traktatu Antarktycznego, uznający Antarktykę za rezerwat przyrody przeznaczony dla pokoju i nauki.' },
+
+  // ===== audyt 16-31 X (16.10.2026): wpisy z blednym dniem, rokiem lub trescia =====
+  // --- 16 X ---
+  // Badajoz 1705: oblezenie 4-17 X zakonczylo sie porazka aliantow (Galway stracil reke), miasta nie zdobyto
+  { file: '10-16.json', y: 1705, re: /Badajoz/, drop: true },
+  // spalenie Falmouth (dzis Portland, Maine): 18 X 1775 (jest w 10-18 lub poza lista), nie 16 X
+  { file: '10-16.json', y: 1775, re: /Portland/, drop: true },
+  // San Marino w Radzie Europy: 16 XI 1988 (strona CoE), nie 16 X
+  { file: '10-16.json', y: 1988, re: /San Marino/, drop: true },
+  // slub Franco z Carmen Polo: zrodla rozbiezne (16 X wg EFE, 22 X wg wiekszosci), dnia nie da sie ustalic
+  { file: '10-16.json', y: 1923, re: /Franco/, drop: true },
+  // 21 postulatow: wpis na liste Pamiec Swiata UNESCO w 2003 (nie Swiatowa Lista Dziedzictwa); dnia brak
+  { file: '10-16.json', y: 2003, re: /21 postulatów/, drop: true },
+  // trzesienie ziemi 1737: 16 X wg UTC (17 X czasu lokalnego), magnituda szacowana 9,0-9,3
+  { file: '10-16.json', y: 1737, re: /Kamczatkę/, replace: 'Kamczatkę nawiedziło trzęsienie ziemi (16 października według czasu UTC) o szacowanej magnitudzie 9,0–9,3, które wywołało falę tsunami.' },
+  // Legitime: 16 X 1888 objal wladze wykonawcza, formalnie prezydentem zostal 16 XII 1888
+  { file: '10-16.json', y: 1888, re: /Légitime/, replace: 'François Denys Légitime objął władzę na Haiti jako szef władzy wykonawczej (formalnie prezydentem został 16 grudnia 1888).' },
+  // --- 17 X ---
+  // Anna Iwanowna zmarla 17 X wg starego stylu = 28 X wg kalendarza gregorianskiego
+  { file: '10-17.json', y: 1740, re: /Anny Iwanowny/, drop: true },
+  // 17 X 1781 Cornwallis poprosil o rozejm; kapitulacja i zajecie Yorktown 19 X (jest w 10-19)
+  { file: '10-17.json', y: 1781, re: /zdobyły Yorktown/, replace: 'Wojna o niepodległość Stanów Zjednoczonych: pod Yorktown gen. Charles Cornwallis zwrócił się do Waszyngtona o rozejm i rozpoczęcie rokowań w sprawie kapitulacji.' },
+  // Curacao: Brytyjczycy przejeli wyspe we wrzesniu 1800 (kapitulacja gubernatora 10 IX)
+  { file: '10-17.json', y: 1800, re: /Curaçao/, drop: true },
+  // film Hepwortha z 1903: data premiery sporna (maj lub 17 X), nie ma zrodla premiery
+  { file: '10-17.json', y: 1903, re: /Alicja w Krainie Czarów/, drop: true },
+  { file: '10-17.json', y: 1980, re: /Watykanie/, replace: 'Królowa Elżbieta II jako pierwszy brytyjski monarcha złożyła oficjalną wizytę w Watykanie, gdzie przyjął ją papież Jan Paweł II.' },
+  { file: '10-17.json', y: 1994, re: /wizytą do Rosji/, replace: 'Królowa Elżbieta II przybyła z oficjalną wizytą do Rosji.' },
+  // --- 18 X ---
+  // Kanal Elblaski: pierwsza lopate wbito 28 X 1844 w Milomlynie (jest w 10-28)
+  { file: '10-18.json', y: 1844, re: /Kanału Elbląskiego/, drop: true },
+  // bitwa pod Ashingdon: dowodzil Edmund II Zelaznoboki, nie Edward II
+  { file: '10-18.json', y: 1016, re: /Ashingdon/, sub: ['królem Edwarda II', 'królem Edmunda II Żelaznobokiego'] },
+  // wpis urwany w Wikipedii ("Car Mikolaj I Romanow wydal.")
+  { file: '10-18.json', y: 1831, re: /wydał\.$/, drop: true },
+  // oblezenie Stralsundu 1715 przez wojska duńsko-pruskie-saskie: lipiec 1715, nie 18 X
+  { file: '10-18.json', y: 1715, re: /Stralsund/, drop: true },
+  // Suczawa 1497: dokladnego dnia zwiniecia oblezenia nie da sie potwierdzic
+  { file: '10-18.json', y: 1497, re: /Suczawy/, drop: true },
+  // --- 19 X ---
+  // linia Wroclaw-Legnica otwarta 18 X 1844 (pierwszy pociag), wpis jest w 10-18
+  { file: '10-19.json', y: 1844, re: /Wrocławiem a Legnicą/, drop: true },
+  // Tymczasowy Rzad Narodowy Wegier w Debreczynie: 22 XII 1944
+  { file: '10-19.json', y: 1944, re: /Debreczynie/, drop: true },
+  // pierwszy chinski test jadrowy: 16 X 1964 (jest w 10-16)
+  { file: '10-19.json', y: 1964, re: /Chiny przeprowadziły próbny wybuch jądrowy/, drop: true },
+  // Czarny poniedzialek: tylko spadek Dow Jones (22,6%) dotyczy tego dnia; reszta liczb to straty z kolejnych dni
+  { file: '10-19.json', y: 1987, re: /Czarny poniedziałek/, replace: 'Czarny poniedziałek na światowych giełdach: indeks Dow Jones spadł o ponad 22%, a w kolejnych dniach załamały się także giełdy w Europie i Azji.' },
+  // "mumia perskiej ksiezniczki" znaleziona 19 X 2000 okazala sie falszerstwem
+  { file: '10-19.json', y: 2000, re: /mumia księżniczki perskiej/, replace: 'W pakistańskiej prowincji Beludżystan znaleziono mumię, uznawaną początkowo za księżniczkę perską sprzed 2600 lat; później okazało się, że jest to fałszerstwo, a zwłoki pochodzą z lat 90. XX wieku.' },
+  // wytyczne ERC 2010 opublikowano 18 X 2010
+  { file: '10-19.json', y: 2010, re: /Europejska Rada Resuscytacji/, drop: true },
+  // --- 20 X ---
+  { file: '10-20.json', y: 1921, re: /Rada Ambasadorów Ligi Narodów/, sub: ['Rada Ambasadorów Ligi Narodów', 'Rada Ambasadorów'] },
+  // Boyarska Duma "Morskim sudam byt": 20 X wg starego stylu = 30 X wg kalendarza gregorianskiego
+  { file: '10-20.json', y: 1696, re: /Rosyjskiej Marynarki Wojennej/, drop: true },
+  // Rackham zlapany 22 X 1720
+  { file: '10-20.json', y: 1720, re: /Calico Jack/, drop: true },
+  // Nowa Granada: ogloszona 21 XI 1831 (ustawa 17 XI)
+  { file: '10-20.json', y: 1831, re: /Republikę Nowej Granady/, drop: true },
+  // Vegkop: Wikipedia podaje 16 X, czesc zrodel 20 X
+  { file: '10-20.json', y: 1836, re: /Vegkop/, sub: ['w bitwie pod Vegkop', 'w bitwie pod Vegkop (według części źródeł 16 października)'] },
+  // --- 21 X ---
+  { file: '10-21.json', y: 1797, re: /USS „Constitution”/, replace: 'Zwodowano USS „Constitution”, najstarszy obecnie pływający okręt na świecie.' },
+  { file: '10-21.json', y: 1879, re: /Edison/, sub: ['grafitowym żarnikiem', 'węglowym żarnikiem'] },
+  // cieśniny zamknieto 27 IX 1914
+  { file: '10-21.json', y: 1914, re: /Bosfor i Dardanele/, drop: true },
+  // GRU: rozkaz z 5 XI 1918
+  { file: '10-21.json', y: 1918, re: /Główny Zarząd Wywiadowczy/, drop: true },
+  // pierwszy numer Rude pravo: 21 IX 1920
+  { file: '10-21.json', y: 1920, re: /Rudé právo/, drop: true },
+  // aresztowanie Ireny Sendlerowej: 20 X 1943 wg wiekszosci zrodel
+  { file: '10-21.json', y: 1943, re: /Sendlerowa/, drop: true },
+  // katastrofa samolotu de Margerie: 20 X 2014 ok. 23:58 czasu moskiewskiego
+  { file: '10-21.json', y: 2014, re: /de Margerie/, drop: true },
+  // --- 22 X ---
+  // Piotr I przyjal tytul imperatora 22 X wg starego stylu = 2 XI wg kalendarza gregorianskiego
+  { file: '10-22.json', y: 1721, re: /Imperatora Wszechrosji/, drop: true },
+  // Dlugi Marsz: daty zakonczenia rozbiezne (19/26 X 1935 Wuqi; 22 X 1936 polaczenie armii)
+  { file: '10-22.json', y: 1935, re: /Długi Marsz/, drop: true },
+  { file: '10-22.json', y: 1962, re: /blokadę morską Kuby/, sub: ['wprowadził blokadę morską Kuby', 'ogłosił blokadę morską Kuby'] },
+  // komitet flagowy Kanady: zrodla podaja 22 lub 29 X; liczba 2600 niepotwierdzona
+  { file: '10-22.json', y: 1964, re: /flagi Kanady/, drop: true },
+  // --- 23 X ---
+  // Mezokeresztes: bitwa trwala 24-26 X 1596
+  { file: '10-23.json', y: 1596, re: /Mezőkeresztes/, drop: true },
+  // traktat w Addis Abebie: 26 X 1896
+  { file: '10-23.json', y: 1896, re: /Addis Abebie/, drop: true },
+  // rekord Agello: 23 X 1934
+  { file: '10-23.json', y: 1933, re: /Agello|Angello/, toYear: 1934 },
+  // Mindszenty wyjechal z Wegier 28 IX 1971
+  { file: '10-23.json', y: 1971, re: /Mindszenty/, drop: true },
+  // Liechtenstein w Radzie Europy: 23 XI 1978
+  { file: '10-23.json', y: 1978, re: /Liechtenstein/, drop: true },
+  { file: '10-23.json', y: 1983, re: /Bejrucie eksplodowały/, replace: 'W Bejrucie eksplodowały dwie ciężarówki wypełnione trotylem, w wyniku czego zginęło 241 żołnierzy amerykańskich i 58 francuskich.' },
+  // Bokassa wrocil do Bangui 24 X 1986
+  { file: '10-23.json', y: 1986, re: /Bokassa/, drop: true },
+  // ustawa o ambasadzie w Jerozolimie: Kongres uchwalil 24 X 1995 (jest w 10-24)
+  { file: '10-23.json', y: 1995, re: /uznały Jerozolimę/, drop: true },
+  // list JP II o ewolucji: przemowienie do Papieskiej Akademii Nauk 22 X 1996
+  { file: '10-23.json', y: 1996, re: /teoria ewolucji/, drop: true },
+  // Bobi zmarl 20 X 2023, a rekord GWR cofnieto w 2024
+  { file: '10-23.json', y: 2023, re: /Bobi/, drop: true },
+  // Mesovouno: ofiar od 142 do ok. 157 wg roznych zrodel
+  { file: '10-23.json', y: 1941, re: /Mesovouno/, sub: ['(142 lub 165)', '(według różnych źródeł od 142 do ok. 157)'] },
+  // --- 24 X ---
+  // Cafe Club: data i sprawca nie do potwierdzenia (24 X 1942 akcja GL dotyczyla Mitropy)
+  { file: '10-24.json', y: 1942, re: /Café Club/, drop: true },
+  // Dubno: egzekucje 26 V, w sierpniu i 5 X 1942
+  { file: '10-24.json', y: 1942, re: /Dubnie/, drop: true },
+  // Batalion Dabrowskiego: data formowania niepewna (14 lub 22 X 1936)
+  { file: '10-24.json', y: 1936, re: /Batalion im\. Jarosława Dąbrowskiego/, drop: true },
+  // 24 X 1938 Ribbentrop rozmawial z ambasadorem Lipskim w Berchtesgaden (nie z Beckiem w Berlinie)
+  { file: '10-24.json', y: 1938, re: /Ribbentrop/, replace: 'Podczas rozmowy w Berchtesgaden Joachim von Ribbentrop przedstawił ambasadorowi Polski Józefowi Lipskiemu niemieckie żądania: włączenia Wolnego Miasta Gdańska do Rzeszy oraz budowy eksterytorialnej autostrady i linii kolejowej przez polskie Pomorze.' },
+  { file: '10-24.json', y: 1940, re: /Corpo Aereo Italiano/, sub: ['po raz wzięło', 'po raz pierwszy wzięło'] },
+  // Fort Pulaski: pomnik narodowy 15 X 1924
+  { file: '10-24.json', y: 1924, re: /Fort Pulaski/, drop: true },
+  { file: '10-24.json', y: 2014, re: /Eustace/, sub: ['(41, 425 km)', '(41,425 km)'] },
+  // --- 25 X ---
+  // oblezenie Lwowa 1655: wojska kozacko-moskiewskie zblizyly sie pod koniec wrzesnia
+  { file: '10-25.json', y: 1655, re: /Lwowa/, drop: true },
+  // traktat w Saint-Germain-en-Laye: 29 VI 1679
+  { file: '10-25.json', y: 1679, re: /Saint-Germain-en-Laye/, drop: true },
+  // bitwa pod Chateauguay: 26 X 1813
+  { file: '10-25.json', y: 1813, re: /Châteauguay/, drop: true },
+  // Volkssturm: dekret z 25 IX 1944 (jest w 09-25)
+  { file: '10-25.json', y: 1944, re: /Volkssturm/, drop: true },
+  // Macedonian: 104 to zabici i ranni lacznie (36 zabitych, 68 rannych)
+  { file: '10-25.json', y: 1812, re: /Macedonian/, sub: ['zginęło 104 marynarzy', 'zginęło lub zostało rannych 104 marynarzy'] },
+  // Tak Bai: 25 X 2004
+  { file: '10-25.json', y: 2005, re: /Tak Bai/, toYear: 2004 },
+  // --- 26 X ---
+  // Polenaktion: 27-29 X 1938
+  { file: '10-26.json', y: 1938, re: /Polenaktion/, drop: true },
+  // Co sie zdarzylo Baby Jane?: premiera 31 X 1962
+  { file: '10-26.json', y: 1962, re: /Baby Jane/, drop: true },
+  // trzeci proces majdanecki: rozpoczal sie 26 XI 1975
+  { file: '10-26.json', y: 1975, re: /Majdanka/, drop: true },
+  // --- 27 X ---
+  // Francuska Afryka Zachodnia utworzona 16 VI 1895
+  { file: '10-27.json', y: 1895, re: /Francuską Afrykę Zachodnią/, drop: true },
+  // drugie weto de Gaulle'a: 27 XI 1967
+  { file: '10-27.json', y: 1967, re: /zawetowała brytyjski wniosek/, drop: true },
+  // Reagan 27 X 1988 zalecil rozbiorke (decyzja nalezala do Kongresu)
+  { file: '10-27.json', y: 1988, re: /ambasady w Moskwie/, replace: 'Prezydent USA Ronald Reagan zalecił rozebranie nowo wybudowanego budynku ambasady w Moskwie z powodu wykrycia w nim aparatury podsłuchowej.' },
+  // operacja NATO Allied Provider rozpoczela sie 24 X 2008
+  { file: '10-27.json', y: 2008, re: /piratom somalijskim/, drop: true },
+  // --- 28 X ---
+  // Dodekanez: przekazanie administracji 31 III 1947, wlaczenie do Grecji 7 III 1948
+  { file: '10-28.json', y: 1947, re: /Dodekanez/, drop: true },
+  // Ortega wygral wybory 4 XI 1984, urzad objal 10 I 1985
+  { file: '10-28.json', y: 1985, re: /Daniel Ortega/, drop: true },
+  // --- 29 X ---
+  // proces zamachowcow z Sarajewa rozpoczal sie 12 X 1914 (jest w 10-12)
+  { file: '10-29.json', y: 1914, re: /proces zamachowców z Sarajewa/, drop: true },
+  // Syria opuscila ZRA po zamachu stanu 28 IX 1961 (jest w 09-28)
+  { file: '10-29.json', y: 1961, re: /Syria wystąpiła/, drop: true },
+  // Itaewon: oficjalnie 159 zmarlych, pozniej 160; pierwsze doniesienia 156
+  { file: '10-29.json', y: 2022, re: /Halloween w Seulu/, replace: 'W wyniku wybuchu paniki i zatłoczenia podczas obchodów Halloween w dzielnicy Itaewon w Seulu zginęło ponad 150 osób, a blisko 200 zostało rannych.' },
+  // --- 30 X ---
+  // USS Reuben James zatonal 31 X 1941
+  { file: '10-30.json', y: 1941, re: /Reuben James/, drop: true },
+  // Most Bosforski otwarto 29 X 1973
+  { file: '10-30.json', y: 1973, re: /Most Bosforski/, drop: true },
+  // Smierc na Nilu: premiera USA 29 IX, Londyn 23 X 1978
+  { file: '10-30.json', y: 1978, re: /Śmierć na Nilu/, drop: true },
+  // wybory w Hiszpanii: 29 X 1989
+  { file: '10-30.json', y: 1989, re: /Felipe Gonzáleza/, drop: true },
+  // --- 31 X ---
+  // metro w Madrycie otwarto 17 X 1919 (jest w 10-17)
+  { file: '10-31.json', y: 1919, re: /madryckiego metra/, drop: true },
 ];
 function applyEntryFixes(file, events) {
   return events
@@ -273,7 +444,8 @@ function applyEntryFixes(file, events) {
       const fx = ENTRY_FIXES.find(f => f.file === file && f.y === e.y && f.re.test(e.t));
       if (!fx) return e;
       if (fx.drop) return null;
-      return { ...e, t: fx.sub ? e.t.replace(fx.sub[0], fx.sub[1]) : fx.replace };
+      // toYear = korekta roku wpisu (np. blad roku w Wikipedii); bez zmiany tresci, gdy brak sub/replace
+      return { ...e, ...(fx.toYear ? { y: fx.toYear } : {}), t: fx.sub ? e.t.replace(fx.sub[0], fx.sub[1]) : (fx.replace || e.t) };
     })
     .filter(Boolean);
 }

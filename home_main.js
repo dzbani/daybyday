@@ -420,7 +420,8 @@ function getMoonPhase(year,month,day){
   if(fullJD!==null){
     const nextFM=new Date((fullJD-2440587.5)*86400000);
     const daysToFull=Math.max(0,(nextFM.getTime()-nowMs)/86400000);
-    nextFull=`${nextFM.getDate()} ${MONTH_GEN[nextFM.getMonth()+1]} (za ${Math.round(daysToFull)} dni)`;
+    const nDays=Math.round(daysToFull);
+    nextFull=`${nextFM.getDate()} ${MONTH_GEN[nextFM.getMonth()+1]} (${nDays===0?'dzisiaj':`za ${nDays} ${nDays===1?'dzień':'dni'}`})`;
   }
   return{phase:`${icon} ${phase}`,age:`${ageSinceNew.toFixed(1)} dni`,bright:`${bright}%`,sign:MOON_SIGNS[signIdx],nextFull};
 }

@@ -721,28 +721,50 @@ const HOLIDAYS_DB = {
     ],
     related: ['dzien-dziecka', 'swieto-pracy']
   },
-  'halloween': {
-    name: 'Halloween',
-    date: '31 października',
-    emoji: '🎃',
-    type: 'cultural',
-    typeLabel: 'Święto kulturowe',
+  "swieto-reformacji": {
+    name: "Święto Reformacji",
+    date: "31 października",
+    emoji: "✝️",
+    type: "religious",
+    typeLabel: "Święto religijne",
     dayOff: false,
-    origin: 'Celtycki Samhain, Irlandia/Wielka Brytania; popularność w Polsce od lat 90. XX w.',
-    observed: 'USA, UK, Irlandia; w Polsce przede wszystkim przez dzieci i młodzież',
+    origin: "Upamiętnia ogłoszenie przez Marcina Lutra 31 października 1517 r. w Wittenberdze 95 tez przeciwko praktyce odpustów, uznawane za początek reformacji",
+    observed: "Kościoły protestanckie; w Polsce przede wszystkim Kościół Ewangelicko-Augsburski",
     desc: [
-      'Halloween obchodzone jest 31 października i wywodzi się ze starożytnego celtyckiego święta Samhain (czyt. „Sałin"), którym Celtowie obchodzili koniec lata i zbiorów. Wierzyli, że tej nocy granica między światem żywych i umarłych jest najcieńsza, a duchy mogą powracać na ziemię.',
-      'Po chrystianizacji Irlandii i Wielkiej Brytanii Samhain zlał się z Wszystkimi Świętymi (1 listopada), tworząc „All Hallows Eve" (Wigilię Wszystkich Świętych) — stąd skrót „Halloween". W XIX wieku irlandzcy emigranci przywieźli zwyczaj do USA, skąd — już w zmodernizowanej formie — trafił z powrotem do Europy.',
-      'W Polsce Halloween jest popularne przede wszystkim wśród dzieci i młodzieży — chodzenie w kostiumach, zabawy w „cukierek albo psikus" (ang. trick-or-treat) i dekorowanie dyń. Nie jest obchodzone przez starsze pokolenia ani przez środowiska religijne, które preferują skupienie na Wszystkich Świętych.'
+      "Święto Reformacji obchodzone jest 31 października w kościołach protestanckich na pamiątkę wystąpienia Marcina Lutra z 1517 r., gdy augustiański mnich i profesor uniwersytetu w Wittenberdze ogłosił 95 tez przeciwko odpustom. Wydarzenie to uznaje się za początek reformacji. Jako dzień pamięci 31 października ogłoszono w 1667 r. w Saksonii, z rozkazu elektora Jerzego II.",
+      "W Polsce jest to jedyne oryginalne święto ewangelickie. Osobom należącym do Kościoła Ewangelicko-Augsburskiego przysługuje prawo zwolnienia od pracy lub nauki w tym dniu (art. 14 ustawy z 13 maja 1994 r. o stosunku Państwa do Kościoła Ewangelicko-Augsburskiego w Rzeczypospolitej Polskiej). Obchody mają charakter nabożeństw, koncertów i spotkań w parafiach ewangelickich."
     ],
     traditions: [
-      'Przebieranie się w kostiumy — duch, wiedźma, wampir, zombie',
-      'Rzeźbienie dyni (Jack-o-lantern) ze świeczką w środku',
-      '"Cukierek albo psikus" — dzieci chodzą po domach po słodycze',
-      'Imprezy tematyczne z dekoracjami Halloween',
-      'Oglądanie horrorów i strasznie filmów'
+      "Uroczyste nabożeństwa w kościołach ewangelickich",
+      "Koncerty muzyki chóralnej i organowej, w tym pieśni Marcina Lutra",
+      "Spotkania i wykłady o historii reformacji"
     ],
-    related: ['wszystkich-swietych']
+    related: [],
+  },
+  "halloween": {
+    name: "Halloween",
+    date: "31 października",
+    emoji: "🎃",
+    type: "cultural",
+    typeLabel: "Święto kulturowe",
+    dayOff: false,
+    origin: "Celtycki Samhain, Irlandia/Wielka Brytania; popularność w Polsce od lat 90. XX w.",
+    observed: "USA, UK, Irlandia; w Polsce przede wszystkim przez dzieci i młodzież",
+    desc: [
+      "Halloween obchodzone jest 31 października i wywodzi się ze starożytnego celtyckiego święta Samhain (czyt. „Sałin\"), którym Celtowie obchodzili koniec lata i zbiorów. Wierzyli, że tej nocy granica między światem żywych i umarłych jest najcieńsza, a duchy mogą powracać na ziemię.",
+      "Po chrystianizacji Irlandii i Wielkiej Brytanii Samhain zlał się z Wszystkimi Świętymi (1 listopada), tworząc „All Hallows Eve\" (Wigilię Wszystkich Świętych) — stąd skrót „Halloween\". W XIX wieku irlandzcy emigranci przywieźli zwyczaj do USA, skąd — już w zmodernizowanej formie — trafił z powrotem do Europy.",
+      "W Polsce Halloween jest popularne przede wszystkim wśród dzieci i młodzieży — chodzenie w kostiumach, zabawy w „cukierek albo psikus\" (ang. trick-or-treat) i dekorowanie dyń. Nie jest obchodzone przez starsze pokolenia ani przez środowiska religijne, które preferują skupienie na Wszystkich Świętych."
+    ],
+    traditions: [
+      "Przebieranie się w kostiumy — duch, wiedźma, wampir, zombie",
+      "Rzeźbienie dyni (Jack-o-lantern) ze świeczką w środku",
+      "\"Cukierek albo psikus\" — dzieci chodzą po domach po słodycze",
+      "Imprezy tematyczne z dekoracjami Halloween",
+      "Oglądanie horrorów i strasznych filmów"
+    ],
+    related: [
+      "wszystkich-swietych"
+    ],
   },
   'wszystkich-swietych': {
     name: 'Wszystkich Świętych',
@@ -2234,48 +2256,52 @@ const HOLIDAYS_DB = {
     ],
     related: []
   },
-  'europejski-dzien-prawnika': {
-    name: 'Europejski Dzień Prawnika',
-    date: '25 października',
-    emoji: '⚖️',
-    type: 'professional',
-    typeLabel: 'Dzień branżowy',
+  "europejski-dzien-prawnika": {
+    name: "Europejski Dzień Prawnika",
+    date: "25 października",
+    emoji: "⚖️",
+    type: "professional",
+    typeLabel: "Dzień branżowy",
     dayOff: false,
-    origin: 'Ustanowiony przez Radę Adwokatur i Stowarzyszeń Prawniczych Europy (CCBE) oraz Radę Europy w 2003 r.',
-    observed: 'Polska i kraje Rady Europy',
+    origin: "Ustanowiony przez Radę Adwokatur i Stowarzyszeń Prawniczych Europy (CCBE) w 2014 r.",
+    observed: "Europa, w tym Polska",
     desc: [
-      'Europejski Dzień Prawnika obchodzony jest 25 października — ustanowiony w 2003 roku wspólnie przez Radę Adwokatur i Stowarzyszeń Prawniczych Europy (CCBE) oraz Radę Europy, jako święto podkreślające rolę zawodów prawniczych w budowaniu praworządności.',
-      'W Polsce w tym dniu organizowane są wydarzenia przez izby adwokackie i radców prawnych — dni otwarte kancelarii, bezpłatne porady prawne dla obywateli oraz debaty o stanie praworządności i dostępie do wymiaru sprawiedliwości.',
-      'Warto odróżnić to święto od Dnia Radcy Prawnego, obchodzonego w Polsce 6 lipca — obie daty odnoszą się do zawodów prawniczych, ale mają odrębne pochodzenie i inny zakres obchodów.'
+      "Europejski Dzień Prawnika obchodzony jest 25 października — ustanowiony w 2014 roku przez Radę Adwokatur i Stowarzyszeń Prawniczych Europy (CCBE) jako święto podkreślające rolę zawodów prawniczych w budowaniu praworządności.",
+      "W Polsce w tym dniu organizowane są wydarzenia przez izby adwokackie i radców prawnych — dni otwarte kancelarii, bezpłatne porady prawne dla obywateli oraz debaty o stanie praworządności i dostępie do wymiaru sprawiedliwości.",
+      "Warto odróżnić to święto od Dnia Radcy Prawnego, obchodzonego w Polsce 6 lipca — obie daty odnoszą się do zawodów prawniczych, ale mają odrębne pochodzenie i inny zakres obchodów."
     ],
     traditions: [
-      'Dni otwarte kancelarii adwokackich i radcowskich',
-      'Bezpłatne porady prawne dla obywateli',
-      'Debaty o praworządności i dostępie do wymiaru sprawiedliwości',
-      'Konferencje organizowane przez izby prawnicze'
+      "Dni otwarte kancelarii adwokackich i radcowskich",
+      "Bezpłatne porady prawne dla obywateli",
+      "Debaty o praworządności i dostępie do wymiaru sprawiedliwości",
+      "Konferencje organizowane przez izby prawnicze"
     ],
-    related: ['dzien-szewca']
+    related: [
+      "dzien-szewca"
+    ],
   },
-  'dzien-szewca': {
-    name: 'Dzień Szewca',
-    date: '25 października',
-    emoji: '👞',
-    type: 'professional',
-    typeLabel: 'Dzień branżowy',
+  "dzien-szewca": {
+    name: "Dzień Szewca",
+    date: "25 października",
+    emoji: "👞",
+    type: "professional",
+    typeLabel: "Dzień branżowy",
     dayOff: false,
-    origin: 'Nieoficjalne święto zainicjowane przez mistrza szewskiego Michała Nowaka; data nawiązuje do wspomnienia świętych Kryspina i Kryspiniana, patronów szewców.',
-    observed: 'Polska',
+    origin: "Nieoficjalne święto o nieznanym twórcy; data nawiązuje do wspomnienia świętych Kryspina i Kryspiniana, patronów szewców.",
+    observed: "Polska",
     desc: [
-      'Dzień Szewca obchodzony jest 25 października — data nawiązuje do wspomnienia świętych braci Kryspina i Kryspiniana, rzymskich patronów szewców, którzy według tradycji chrześcijańskiej w III wieku zajmowali się szewstwem i szerzeniem miłosierdzia wśród osób, dla których szyli obuwie.',
-      'Święto ma charakter nieoficjalny i oddolny — zainicjował je mistrz szewski, projektant obuwia i aktor Michał Nowak, jako wyraz uznania dla zanikającego zawodu i przypomnienie o jego długiej tradycji na ziemiach polskich, gdzie garbarstwo i szewstwo od średniowiecza należały do najważniejszych rzemiosł skórzanych.',
-      'W tym dniu docenia się pracę ostatnich rzemieślników zajmujących się naprawą obuwia — wymianą podeszew, obcasów czy zamków — zawód, który mimo postępującej masowej produkcji obuwia wciąż ma swoich wiernych klientów.'
+      "Dzień Szewca obchodzony jest 25 października — data nawiązuje do wspomnienia świętych braci Kryspina i Kryspiniana, rzymskich patronów szewców, którzy według tradycji chrześcijańskiej w III wieku zajmowali się szewstwem i szerzeniem miłosierdzia wśród osób, dla których szyli obuwie.",
+      "Święto ma charakter nieoficjalny i oddolny, a jego twórca nie jest znany — to wyraz uznania dla zanikającego zawodu i przypomnienie o jego długiej tradycji na ziemiach polskich, gdzie garbarstwo i szewstwo od średniowiecza należały do najważniejszych rzemiosł skórzanych.",
+      "W tym dniu docenia się pracę ostatnich rzemieślników zajmujących się naprawą obuwia — wymianą podeszew, obcasów czy zamków — zawód, który mimo postępującej masowej produkcji obuwia wciąż ma swoich wiernych klientów."
     ],
     traditions: [
-      'Spotkania i wyróżnienia dla lokalnych mistrzów szewskich',
-      'Publikacje i reportaże przypominające o tradycji rzemiosła szewskiego',
-      'Promocja napraw i przedłużania życia obuwia zamiast kupowania nowego'
+      "Spotkania i wyróżnienia dla lokalnych mistrzów szewskich",
+      "Publikacje i reportaże przypominające o tradycji rzemiosła szewskiego",
+      "Promocja napraw i przedłużania życia obuwia zamiast kupowania nowego"
     ],
-    related: ['europejski-dzien-prawnika']
+    related: [
+      "europejski-dzien-prawnika"
+    ],
   },
   'dzien-spedytora': {
     name: 'Dzień Spedytora',
@@ -11110,11 +11136,11 @@ const HOLIDAYS_DB = {
     type: "state",
     typeLabel: "Święto państwowe",
     dayOff: false,
-    origin: "Ustanowiony ustawą Sejmu RP z 8 kwietnia 2005 r., dla upamiętnienia wyboru kardynała Karola Wojtyły na papieża 16 października 1978 r.",
+    origin: "Ustanowiony ustawą z 27 lipca 2005 r. o ustanowieniu 16 października Dniem Papieża Jana Pawła II (Dz.U. 2005 nr 155 poz. 1296), dla upamiętnienia wyboru kardynała Karola Wojtyły na papieża 16 października 1978 r.",
     observed: "Polska",
     desc: [
       "Dzień Papieża Jana Pawła II obchodzony jest w rocznicę konklawe z 16 października 1978 roku, podczas którego kardynał Karol Wojtyła został wybrany na papieża, przyjmując imię Jan Paweł II — pierwszy nie-Włoch na Stolicy Piotrowej od 1522 roku.",
-      "Choć nie jest to dzień wolny od pracy, w Polsce towarzyszą mu uroczystości kościelne, akademie szkolne i wydarzenia upamiętniające pontyfikat papieża Polaka, trwający niemal 27 lat, aż do jego śmierci w 2005 roku."
+      "Choć nie jest to dzień wolny od pracy, w Polsce towarzyszą mu uroczystości kościelne, akademie szkolne i wydarzenia upamiętniające pontyfikat papieża Polaka, trwający ponad 26 lat, aż do jego śmierci w 2005 roku."
     ],
     traditions: [
       "Msze święte i nabożeństwa dziękczynne",
@@ -11234,7 +11260,7 @@ const HOLIDAYS_DB = {
     observed: "Cały świat (193 państwa członkowskie ONZ)",
     desc: [
       "Dzień Narodów Zjednoczonych (United Nations Day) upamiętnia moment, w którym Karta Narodów Zjednoczonych — podpisana w San Francisco w czerwcu 1945 roku — została ratyfikowana przez większość sygnatariuszy, w tym pięciu stałych członków Rady Bezpieczeństwa, i formalnie weszła w życie.",
-      "Od 1971 roku dzień ten otwiera również Tydzień Rozbrojenia, a w wielu krajach członkowskich towarzyszą mu uroczystości dyplomatyczne, wystawy i wydarzenia edukacyjne poświęcone roli ONZ we współczesnym świecie."
+      "Od 1978 roku dzień ten otwiera również Tydzień Rozbrojenia, a w wielu krajach członkowskich towarzyszą mu uroczystości dyplomatyczne, wystawy i wydarzenia edukacyjne poświęcone roli ONZ we współczesnym świecie."
     ],
     traditions: [
       "Uroczystości i wystawy w siedzibach ONZ na całym świecie",
@@ -11290,10 +11316,10 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Upamiętnia pierwszy publiczny protest osób interseksualnych w historii — pikietę zorganizowaną przez Intersex Society of North America przed siedzibą American Academy of Pediatrics w Bostonie 26 października 1996 r.",
+    origin: "Upamiętnia pierwszą w Ameryce Północnej publiczną demonstrację osób interseksualnych, zorganizowaną w Bostonie 26 października 1996 r. podczas konferencji American Academy of Pediatrics",
     observed: "Głównie USA i kraje zachodnie",
     desc: [
-      "Światowy Dzień Świadomości Interseksualizmu (Intersex Awareness Day) upamiętnia protest z 1996 roku, podczas którego osoby interseksualne po raz pierwszy publicznie sprzeciwiły się praktyce wczesnych, nieodwracalnych operacji „normalizujących” narządy płciowe dzieci interseksualnych bez ich zgody.",
+      "Światowy Dzień Świadomości Interseksualizmu (Intersex Awareness Day) upamiętnia demonstrację z 1996 roku — pierwszą w Ameryce Północnej, podczas której osoby interseksualne publicznie sprzeciwiły się praktyce wczesnych, nieodwracalnych operacji „normalizujących” narządy płciowe dzieci interseksualnych bez ich zgody.",
       "Dzień ma zwiększać świadomość społeczną na temat wrodzonych cech interpłciowych oraz promować prawo osób interseksualnych do decydowania o własnym ciele i tożsamości."
     ],
     traditions: [
@@ -16099,12 +16125,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony w 1997 r. przez Międzynarodowy Związek Piekarzy i Cukierników z inicjatywy jego wiceprezesa, Hiszpana Andreu Llargués; data upamiętnia powstanie w Quebecu 16 października 1945 r. Organizacji Narodów Zjednoczonych ds. Wyżywienia i Rolnictwa (FAO)"
-    ,
+    origin: "Święto promowane przez Międzynarodowy Związek Piekarzy i Cukierników (źródła podają różne daty pierwszych obchodów: 2001 lub 2006 r.); data nawiązuje do powstania w Quebecu 16 października 1945 r. Organizacji Narodów Zjednoczonych ds. Wyżywienia i Rolnictwa (FAO)",
     observed: "Cały świat",
     desc: [
       "Światowy Dzień Chleba celebruje jeden z najstarszych i najważniejszych elementów ludzkiego pożywienia — chleb, obecny w kuchniach i obrzędach niemal wszystkich kultur świata od tysięcy lat.",
-      "Święto ustanowił w 1997 r. Międzynarodowy Związek Piekarzy i Cukierników z inicjatywy jego wiceprezesa, Hiszpana Andreu Llargués. Wybór daty nie był przypadkowy — dokładnie 16 października 1945 r. w Quebecu w Kanadzie powstała Organizacja Narodów Zjednoczonych ds. Wyżywienia i Rolnictwa (FAO), co symbolicznie podkreśla znaczenie chleba dla bezpieczeństwa żywnościowego na świecie."
+      "Święto promuje Międzynarodowy Związek Piekarzy i Cukierników; źródła podają różne daty pierwszych obchodów (2001 lub 2006 r.). Data nawiązuje do wydarzenia z 1945 r. — dokładnie 16 października 1945 r. w Quebecu w Kanadzie powstała Organizacja Narodów Zjednoczonych ds. Wyżywienia i Rolnictwa (FAO), co symbolicznie podkreśla znaczenie chleba dla bezpieczeństwa żywnościowego na świecie."
     ],
     traditions: [
       "Degustacje pieczywa w piekarniach",
@@ -16182,11 +16207,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony z inicjatywy Polskiego Stowarzyszenia Sprzedaży Bezpośredniej; obywatelski projekt ustawy o ustanowieniu 17 października Dniem Sprzedaży Bezpośredniej złożono w Sejmie 23 lipca 2015 r.",
+    origin: "Święto promowane przez Polskie Stowarzyszenie Sprzedaży Bezpośredniej; obywatelski projekt ustawy o ustanowieniu 17 października Dniem Sprzedaży Bezpośredniej trafił do Sejmu w 2015 r. (w VIII kadencji jako druk nr 28), lecz dzień nie został ustanowiony ustawą",
     observed: "Polska",
     desc: [
       "Polski Dzień Sprzedaży Bezpośredniej promuje i docenia rolę sprzedaży bezpośredniej w gospodarce. Sprzedaż bezpośrednia — prowadzona przez wędrownych sprzedawców i przedstawicieli handlowych — wywodzi się jeszcze ze starożytnego Egiptu, Syrii i Babilonu, a w nowszych czasach zaczęła rozwijać się w Ameryce w XVIII i XIX w. jako sprzedaż od drzwi do drzwi.",
-      "Inicjatorem polskiego święta jest Polskie Stowarzyszenie Sprzedaży Bezpośredniej, które od lat zabiega o wpisanie tej daty do oficjalnego kalendarza świąt uchwałą Sejmu. Obywatelski projekt ustawy w tej sprawie złożono w Sejmie VII kadencji 23 lipca 2015 r. W Polsce w sprzedaży bezpośredniej i firmach MLM zarejestrowanych jest ok. miliona osób, z czego ok. 200 tysięcy pracuje w tym zawodzie na pełen etat."
+      "Inicjatorem polskiego święta jest Polskie Stowarzyszenie Sprzedaży Bezpośredniej, które zabiegało o ustanowienie tej daty ustawą. Obywatelski projekt ustawy o ustanowieniu 17 października Dniem Sprzedaży Bezpośredniej trafił do Sejmu w 2015 r. (ponownie jako druk nr 28 Sejmu VIII kadencji, z listopada 2015 r.); w stanowisku z 14 lipca 2016 r. rząd uznał, że nie ma potrzeby ustanawiania tego dnia ustawą. Dzień nie został więc ustanowiony ustawowo i ma charakter nieoficjalny."
     ],
     traditions: [
       "Wydarzenia i konferencje branży sprzedaży bezpośredniej",
@@ -16202,11 +16227,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ideę zapoczątkowała w 2009 r. Martine Postma, holenderska dziennikarka i działaczka ekologiczna, organizując w Amsterdamie pierwsze wydarzenie Repair Café; w 2017 r. z inicjatywy Stowarzyszenia Stop Marnowaniu pod kierownictwem Aleksandry Szelągowskiej dzień ten proklamowano Międzynarodowym Dniem Naprawy",
+    origin: "Ideę zapoczątkowała w 2009 r. Martine Postma, holenderska dziennikarka i działaczka ekologiczna, organizując w Amsterdamie pierwsze wydarzenie Repair Café; Międzynarodowy Dzień Naprawy zainicjowała w 2017 r. sieć Open Repair Alliance, a pierwsze obchody odbyły się 21 października 2017 r.",
     observed: "Cały świat",
     desc: [
       "Międzynarodowy Dzień Naprawy promuje kulturę naprawiania przedmiotów zamiast ich wyrzucania, ograniczając w ten sposób ilość odpadów i chroniąc środowisko naturalne. Święto obchodzone jest w trzecią sobotę października, co oznacza, że jego dokładna data zmienia się z roku na rok.",
-      "Ideę zapoczątkowała w 2009 r. Martine Postma, holenderska dziennikarka i działaczka ekologiczna, organizując w Amsterdamie pierwsze wydarzenie Repair Café. W 2017 r., z inicjatywy Stowarzyszenia Stop Marnowaniu pod kierownictwem Aleksandry Szelągowskiej, dzień ten oficjalnie proklamowano Międzynarodowym Dniem Naprawy. Powiązaną inicjatywą jest brytyjski Restart Project, który organizuje tzw. Restart Party — warsztaty, na których wolontariusze uczą ludzi naprawiać sprzęt elektroniczny, by mógł służyć dłużej."
+      "Ideę zapoczątkowała w 2009 r. Martine Postma, holenderska dziennikarka i działaczka ekologiczna, organizując w Amsterdamie pierwsze wydarzenie Repair Café. Międzynarodowy Dzień Naprawy zainicjowała w 2017 r. sieć Open Repair Alliance, zrzeszająca organizacje naprawcze (m.in. Repair Café i The Restart Project); pierwsze obchody odbyły się 21 października 2017 r. Powiązaną inicjatywą jest brytyjski Restart Project, który organizuje tzw. Restart Party — warsztaty, na których wolontariusze uczą ludzi naprawiać sprzęt elektroniczny, by mógł służyć dłużej."
     ],
     traditions: [
       "Warsztaty Repair Café i Restart Party",
@@ -16242,11 +16267,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Obchodzony pod auspicjami Unii Europejskiej od ponad 19 lat",
+    origin: "Obchodzony pod auspicjami Unii Europejskiej od 2007 r.",
     observed: "Unia Europejska",
     desc: [
       "Europejski Dzień przeciwko Handlowi Ludźmi podnosi świadomość społeczną na temat tego przestępstwa — jednej z najpoważniejszych form łamania praw człowieka we współczesnym świecie. Tego dnia organy ścigania, w tym policja, oraz organizacje rządowe i pozarządowe starają się uświadomić społeczeństwu, czym jest handel ludźmi i jak ustrzec się przed staniem się jego ofiarą.",
-      "Święto obchodzone jest pod auspicjami Unii Europejskiej od ponad 19 lat. W Polsce co roku organizowane są przy tej okazji kampanie informacyjne prowadzone przez policję, straż graniczną, Państwową Inspekcję Pracy oraz organizacje pozarządowe zajmujące się pomocą ofiarom handlu ludźmi."
+      "Święto obchodzone jest pod auspicjami Unii Europejskiej od 2007 r. W Polsce co roku organizowane są przy tej okazji kampanie informacyjne prowadzone przez policję, straż graniczną, Państwową Inspekcję Pracy oraz organizacje pozarządowe zajmujące się pomocą ofiarom handlu ludźmi."
     ],
     traditions: [
       "Kampanie informacyjne policji i straży granicznej",
@@ -16262,11 +16287,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony w 2008 r. przez chorwacką instytucję Academia Cravatica, uznany przez chorwacki parlament za oficjalne święto",
+    origin: "Inicjatywa chorwackiej Academia Cravatica (pierwsze duże obchody w Puli 18 października 2003 r.); chorwacki parlament ogłosił 18 października Dniem Krawata — źródła podają rok 2008 lub 2009",
     observed: "Chorwacja, cały świat",
     desc: [
       "Światowy Dzień Krawata świętuje chorwackie korzenie tego elementu męskiej garderoby. Historia krawata sięga XVII w., gdy chorwaccy żołnierze wspierający Francję w wojnie trzydziestoletniej słynęli nie tylko z determinacji w walce, ale i z charakterystycznych chustek na szyi, wiązanych im przez ukochane kobiety jako symbol miłości i wierności.",
-      "Gdy chorwaccy żołnierze wzięli udział w paradzie dla francuskiego króla Ludwika XIV, ich krawaty przypadły do gustu królowi i wersalskiej świcie — jeden z niewielu przypadków, gdy francuska arystokracja, wyznaczająca ówcześnie trendy w modzie, przejęła element stroju od innej kultury. W 2008 r. chorwacka instytucja Academia Cravatica, promująca krawat jako element dziedzictwa narodowego, uchwaliła 18 października Światowym Dniem Krawata, a chorwacki parlament uznał go za oficjalne święto."
+      "Gdy chorwaccy żołnierze wzięli udział w paradzie dla francuskiego króla Ludwika XIV, ich krawaty przypadły do gustu królowi i wersalskiej świcie — jeden z niewielu przypadków, gdy francuska arystokracja, wyznaczająca ówcześnie trendy w modzie, przejęła element stroju od innej kultury. Chorwacka Academia Cravatica, promująca krawat jako element dziedzictwa narodowego, zorganizowała pierwsze duże obchody 18 października 2003 r. w Puli, a chorwacki parlament ogłosił tę datę Dniem Krawata (źródła podają rok 2008 lub 2009)."
     ],
     traditions: [
       "Noszenie krawata jako symbolu eleganckiego stylu",
@@ -16302,11 +16327,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony przez Komisję Europejską w kontekście starzenia się społeczeństw Europy — dokładna data ustanowienia i konkretny dokument założycielski nie są powszechnie udokumentowane",
+    origin: "Nieoficjalne święto obchodzone w Polsce i innych krajach Europy; dokładna data ustanowienia i dokument założycielski nie są udokumentowane",
     observed: "Europa, w tym Polska",
     desc: [
       "Europejski Dzień Seniora to jedno z kilku świąt poświęconych osobom starszym w kalendarzu — obok Międzynarodowego Dnia Osób Starszych (1 października, ustanowionego przez ONZ) oraz Ogólnopolskiego Dnia Seniora (20 listopada). Wszystkie te daty łączy wspólny cel: kształtowanie społecznego postrzegania osób starszych oraz podejmowanie działań na rzecz zapewnienia im godnego życia.",
-      "Święto ustanowiła Komisja Europejska w kontekście rosnącej liczby osób starszych w Europie i ich znaczenia dla społeczeństwa — zmiany demograficzne sprawiają, że seniorzy stanowią coraz większy odsetek populacji kontynentu. Obchody są okazją do refleksji nad sytuacją seniorów w poszczególnych krajach oraz promowania ich aktywności społecznej."
+      "Pochodzenie święta nie jest udokumentowane — nie wskazano organizacji, która je ustanowiła. Zmiany demograficzne sprawiają, że seniorzy stanowią coraz większy odsetek populacji kontynentu. Obchody są okazją do refleksji nad sytuacją seniorów w poszczególnych krajach oraz promowania ich aktywności społecznej."
     ],
     traditions: [
       "Wydarzenia integracyjne dla seniorów w domach kultury",
@@ -16322,10 +16347,10 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Data upamiętnia założenie 20 października 1961 r. Międzynarodowej Federacji Stowarzyszeń Kontrolerów Ruchu Lotniczego (IFATCA) przez kontrolerów z 13 krajów; ideę stworzenia globalnej organizacji zawodowej zapoczątkował w 1956 r. Jacob Wachtel, założyciel izraelskiego stowarzyszenia kontrolerów ruchu lotniczego",
+    origin: "Data upamiętnia założenie 20 października 1961 r. Międzynarodowej Federacji Stowarzyszeń Kontrolerów Ruchu Lotniczego (IFATCA) przez 12 krajowych stowarzyszeń kontrolerów; ideę stworzenia globalnej organizacji zawodowej zapoczątkował w 1956 r. Jacob Wachtel, założyciel izraelskiego stowarzyszenia kontrolerów ruchu lotniczego",
     observed: "Cały świat",
     desc: [
-      "Międzynarodowy Dzień Kontrolera Ruchu Lotniczego docenia pracę osób, które każdego dnia dbają o bezpieczeństwo operacji lotniczych na całym świecie. Data upamiętnia założenie 20 października 1961 r. Międzynarodowej Federacji Stowarzyszeń Kontrolerów Ruchu Lotniczego (IFATCA) przez kontrolerów reprezentujących 13 krajów.",
+      "Międzynarodowy Dzień Kontrolera Ruchu Lotniczego docenia pracę osób, które każdego dnia dbają o bezpieczeństwo operacji lotniczych na całym świecie. Data upamiętnia założenie 20 października 1961 r. Międzynarodowej Federacji Stowarzyszeń Kontrolerów Ruchu Lotniczego (IFATCA) przez przedstawicieli 12 krajowych stowarzyszeń kontrolerów.",
       "Ideę stworzenia globalnej organizacji zawodowej kontrolerów ruchu lotniczego zapoczątkował w 1956 r. Jacob Wachtel, założyciel i pierwszy przewodniczący stowarzyszenia kontrolerów ruchu lotniczego w Izraelu. W Polsce obchody koordynuje Polska Agencja Żeglugi Powietrznej (PAŻP), odpowiedzialna za bezpieczeństwo ruchu lotniczego w polskiej przestrzeni powietrznej."
     ],
     traditions: [
@@ -16342,12 +16367,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ogłoszony przez władze wojewódzkie w 2015 r.; pasztecik szczeciński powstał w 1969 r., gdy Szczecińska Spółdzielnia Społem otrzymała z radzieckiego demobilu maszynę do wyrobu pierożków"
-    ,
+    origin: "Ogłoszony przez władze wojewódzkie w 2015 r.; pasztecik szczeciński powstał w 1969 r., gdy Szczecińska Spółdzielnia Społem otrzymała z radzieckiego demobilu maszynę do wyrobu pierożków",
     observed: "Polska (Szczecin i region)",
     desc: [
       "Dzień Pasztecika Szczecińskiego celebruje jeden z symboli miasta — kultowy przysmak nierozerwalnie związany z historią baru „Pasztecik”, otwartego w październiku 1969 r. przy alei Wojska Polskiego, naprzeciwko kina „Kosmos”. Pasztecik powstał tego samego roku, gdy Szczecińska Spółdzielnia Społem otrzymała z radzieckiego demobilu maszynę do wyrobu pierożków, nazwanych później pasztecikami.",
-      "Datę 20 października jako Dzień Pasztecika Szczecińskiego ogłosiły władze wojewódzkie w 2015 r. Przysmak trafił na listę produktów tradycyjnych 22 grudnia 2010 r., co oznacza, że wszyscy producenci muszą ściśle przestrzegać jego oryginalnej receptury."
+      "Datę 20 października jako Dzień Pasztecika Szczecińskiego ogłosiły władze wojewódzkie w 2015 r. Przysmak trafił na listę produktów tradycyjnych 13 grudnia 2010 r., co oznacza, że wszyscy producenci muszą ściśle przestrzegać jego oryginalnej receptury."
     ],
     traditions: [
       "Degustacje pasztecików w barach i punktach gastronomicznych Szczecina",
@@ -16406,12 +16430,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony w 2017 r. przez grupę entuzjastów zdrowego stylu życia"
-    ,
+    origin: "Nieoficjalne, żartobliwe święto o nieustalonym pochodzeniu",
     observed: "Polska",
     desc: [
       "Międzynarodowy Dzień Odpoczynku od Świętowania przypomina, że nawet najwięksi entuzjaści obchodzenia świąt i imprez muszą czasem odpocząć i się zregenerować. W dzisiejszym przeładowanym kalendarzu świąt nietypowych, gdzie niemal każdy dzień roku dedykowany jest jakiemuś wydarzeniu, postaci czy idei, łatwo o pewne „zmęczenie świętowaniem”.",
-      "Święto ustanowiła w 2017 r. grupa entuzjastów zdrowego stylu życia, chcąc zwrócić uwagę na znaczenie odpoczynku, relaksu i regeneracji — także od przyjemności i presji nieustannego celebrowania. Tego dnia zachęca się do zrobienia sobie przerwy od codziennych obowiązków i świątecznego pośpiechu."
+      "Pochodzenie święta nie jest udokumentowane; jego sens to zwrócenie uwagi na znaczenie odpoczynku, relaksu i regeneracji — także od przyjemności i presji nieustannego celebrowania. Tego dnia zachęca się do zrobienia sobie przerwy od codziennych obowiązków i świątecznego pośpiechu."
     ],
     traditions: [
       "Dzień bez planowania kolejnych uroczystości",
@@ -16427,12 +16450,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Pomysł zrodził się w 2006 r. podczas Światowego Forum Ekonomicznego, jako wspólna inicjatywa księcia Norwegii Haakona, fińskiego profesora Pekki Himanena oraz Amerykanina Johna Hope’a Bryanta; organizuje go międzynarodowa organizacja non-profit Global Dignity"
-    ,
-    observed: "Cały świat, w Polsce od 2009 r.",
+    origin: "Pomysł zrodził się w 2006 r. podczas Światowego Forum Ekonomicznego, jako wspólna inicjatywa księcia Norwegii Haakona, fińskiego profesora Pekki Himanena oraz Amerykanina Johna Hope’a Bryanta; organizuje go międzynarodowa organizacja non-profit Global Dignity",
+    observed: "Cały świat",
     desc: [
       "Światowy Dzień Godności propaguje uniwersalne prawo każdego człowieka do godnego życia, niezależnie od wieku, statusu społecznego czy pochodzenia. Głównym narzędziem organizacji Global Dignity są tzw. lekcje godności, prowadzone w tysiącach szkół na całym świecie, ucząc dzieci o znaczeniu godności, empatii i szacunku do drugiego człowieka.",
-      "Pomysł na święto zrodził się w 2006 r. podczas Światowego Forum Ekonomicznego, jako wspólna inicjatywa księcia Norwegii Haakona, fińskiego profesora Pekki Himanena oraz amerykańskiego przedsiębiorcy Johna Hope'a Bryanta. Obchodzone jest w trzecią środę października, co oznacza, że jego dokładna data zmienia się z roku na rok. W Polsce wydarzenie organizowane jest od 2009 r."
+      "Pomysł na święto zrodził się w 2006 r. podczas Światowego Forum Ekonomicznego, jako wspólna inicjatywa księcia Norwegii Haakona, fińskiego profesora Pekki Himanena oraz amerykańskiego przedsiębiorcy Johna Hope'a Bryanta. Obchodzone jest w trzecią środę października, co oznacza, że jego dokładna data zmienia się z roku na rok."
     ],
     traditions: [
       "Lekcje godności prowadzone w szkołach na całym świecie",
@@ -16448,11 +16470,10 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony w lipcu 1998 r. podczas V Światowego Kongresu Osób Jąkających się w Johannesburgu, z inicjatywy Międzynarodowego Stowarzyszenia Osób Jąkających się (International Stuttering Association, ISA)"
-    ,
+    origin: "Ustanowiony w lipcu 1998 r. podczas V Światowego Kongresu Osób Jąkających się w Johannesburgu, z inicjatywy Międzynarodowego Stowarzyszenia Osób Jąkających się (International Stuttering Association, ISA)",
     observed: "Cały świat",
     desc: [
-      "Światowy Dzień Osób Jąkających się zwraca uwagę społeczeństwa na skalę i złożoność problemu jąkania — zaburzenia płynności mowy, z którym zmaga się ponad 60 milionów osób na całym świecie, a które wpływa nie tylko na komunikację, ale i na codzienne relacje z innymi ludźmi.",
+      "Światowy Dzień Osób Jąkających się zwraca uwagę społeczeństwa na skalę i złożoność problemu jąkania — zaburzenia płynności mowy, z którym zmaga się około 70 milionów osób na całym świecie, a które wpływa nie tylko na komunikację, ale i na codzienne relacje z innymi ludźmi.",
       "Święto ustanowiono w lipcu 1998 r. podczas V Światowego Kongresu Osób Jąkających się w Johannesburgu, z inicjatywy Międzynarodowego Stowarzyszenia Osób Jąkających się (International Stuttering Association, ISA). Celem obchodów jest budowanie świadomości o wyzwaniach, z jakimi mierzą się osoby jąkające się i ich rodziny, a także przeciwdziałanie stygmatyzacji tego zaburzenia."
     ],
     traditions: [
@@ -16510,11 +16531,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Zapoczątkowany w 2004 r. w USA przez firmę US Cellular w ramach akcji „No-E-Mails Friday”, do której dołączyły też firmy Deloitte & Touche i Intel",
+    origin: "Nieoficjalne święto o nieudokumentowanym pochodzeniu; idea „dni bez e-maili” pojawiała się w firmach od początku XXI w.",
     observed: "USA, Polska, cały świat",
     desc: [
       "Dzień bez Maila zachęca do ograniczenia korzystania z poczty elektronicznej i zastąpienia jej bezpośrednim kontaktem telefonicznym lub osobistym z klientami i współpracownikami. Święto nie oznacza całkowitego zakazu wysyłania e-maili, lecz zaproszenie do świadomego zmniejszenia ich liczby na jeden dzień.",
-      "Inicjatywę zapoczątkowała w 2004 r. w USA firma US Cellular w ramach akcji „No-E-Mails Friday” („Piątek bez e-maili”). Do przedsięwzięcia dołączyły później również inne firmy, w tym Deloitte & Touche oraz Intel, chcąc zwrócić uwagę na negatywne skutki nadmiernego korzystania z poczty elektronicznej w pracy."
+      "Idea „dni bez e-maili” pojawiała się w firmach od początku XXI w., a jej celem jest zwrócenie uwagi na negatywne skutki nadmiernego korzystania z poczty elektronicznej w pracy. Dokładne pochodzenie święta i jego daty nie jest udokumentowane."
     ],
     traditions: [
       "Ograniczenie wysyłania e-maili w pracy na jeden dzień",
@@ -16550,12 +16571,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony w 2014 r. przez brytyjską organizację Tripe Marketing Council; data nawiązuje do wpisu w dzienniku Samuela Pepysa z 24 października 1662 r., opisującego „najdoskonalsze danie z flaków”, które sam ugotował"
-    ,
+    origin: "Nieoficjalne święto kulinarne o niepotwierdzonym pochodzeniu; według części źródeł data nawiązuje do wpisu w dzienniku angielskiego kronikarza Samuela Pepysa, w którym opisał on flaki, jakie sam ugotował",
     observed: "Wielka Brytania, Polska",
     desc: [
       "Światowy Dzień Flaczków celebruje gęstą zupę, której głównym składnikiem są oczyszczone i cienko pokrojone fragmenty żołądka wołowego. W Polsce danie to znane było już w XIV w., a jego największym miłośnikiem był podobno król Władysław II Jagiełło.",
-      "Współczesne święto ustanowiła w 2014 r. brytyjska organizacja Tripe Marketing Council. Datę 24 października wybrano na podstawie dziennika angielskiego kronikarza Samuela Pepysa, który pod tą datą w 1662 r. opisał „najdoskonalsze danie z flaków”, jakie sam ugotował. Co ciekawe, Pepys wspominał o jedzeniu flaków także 9 kwietnia 1664 r., lecz tej daty Tripe Marketing Council celowo nie wykorzystał, ponieważ tego samego dnia kronikarz zachorował."
+      "Pochodzenie współczesnego święta nie jest jednoznacznie potwierdzone — według części źródeł datę wybrano w nawiązaniu do dziennika angielskiego kronikarza Samuela Pepysa, który w październiku 1662 r. opisał flaki, jakie sam ugotował."
     ],
     traditions: [
       "Gotowanie i degustacje flaczków",
@@ -16571,15 +16591,14 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Obchodzony w Dniu Narodów Zjednoczonych, upamiętniającym wejście w życie Karty Narodów Zjednoczonych 24 października 1945 r., po jej ratyfikacji przez mocarstwa: USA, Wielką Brytanię, ZSRR, Chiny i Francję"
-    ,
+    origin: "Obchodzony w Dniu Narodów Zjednoczonych, upamiętniającym wejście w życie Karty Narodów Zjednoczonych 24 października 1945 r., po jej ratyfikacji przez mocarstwa: USA, Wielką Brytanię, ZSRR, Chiny i Francję",
     observed: "Cały świat",
     desc: [
       "Międzynarodowy Dzień Dyplomatów honoruje osoby z całego świata, które na co dzień dbają o pokojowe stosunki między państwami poprzez negocjacje, mediacje i budowanie międzynarodowego zaufania. Święto obchodzone jest w Dniu Narodów Zjednoczonych, łącząc pamięć o powstaniu ONZ z uznaniem dla pracy dyplomatów, dla których organizacja stanowi główne forum działania.",
-      "Data upamiętnia wejście w życie Karty Narodów Zjednoczonych 24 października 1945 r., po jej ratyfikacji przez mocarstwa: Stany Zjednoczone, Wielką Brytanię, Związek Radziecki, Chiny i Francję. W Polsce z tej okazji Ministerstwo Spraw Zagranicznych organizuje Dzień Otwarty."
+      "Data upamiętnia wejście w życie Karty Narodów Zjednoczonych 24 października 1945 r., po jej ratyfikacji przez mocarstwa: Stany Zjednoczone, Wielką Brytanię, Związek Radziecki, Chiny i Francję."
     ],
     traditions: [
-      "Dzień Otwarty w Ministerstwie Spraw Zagranicznych",
+      "Spotkania i wykłady o roli dyplomacji w stosunkach międzynarodowych",
       "Wydarzenia upamiętniające powstanie ONZ",
       "Publikacje o roli dyplomacji w utrzymaniu pokoju"
     ],
@@ -16592,19 +16611,20 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Data nawiązuje do dnia po wejściu w życie polskiej ustawy o ochronie zwierząt (24 października); według jednych źródeł zainicjowany w 2005 r. przez organizację „Kundelki w potrzebie”, według innych już w 2000 r. przez Stowarzyszenie Przyjaciół Kundelka Małgorzaty Niedźwiedź"
-    ,
+    origin: "Nieoficjalne polskie święto psów nierasowych; data nawiązuje do dnia po wejściu w życie polskiej ustawy o ochronie zwierząt (24 października), a pochodzenie samego święta nie jest jednoznacznie udokumentowane",
     observed: "Polska",
     desc: [
       "Dzień Kundelka to nieformalne polskie święto psów wielorasowych — kundelków — obchodzone w ramach październikowego „miesiąca dobroci dla zwierząt”, tuż po Dniu Ustawy o Ochronie Zwierząt. Celem święta jest zwrócenie uwagi na los psów nierasowych oraz promocja ich adopcji ze schronisk.",
-      "Historia ustanowienia tego dnia bywa przedstawiana niejednoznacznie — część źródeł wskazuje na 2005 r. i inicjatywę organizacji „Kundelki w potrzebie”, inne na rok 2000, gdy Małgorzata Niedźwiedź założyła Stowarzyszenie Przyjaciół Kundelka, które z braku wystarczającego wsparcia musiało zostać rozwiązane. Niezależnie od dokładnej genezy, właściciele kundelków co roku organizują w całej Polsce lokalne obchody tego święta."
+      "Pochodzenie święta nie jest jednoznacznie udokumentowane — źródła podają różne daty i różnych inicjatorów, dlatego nie ma jednego potwierdzonego twórcy. Niezależnie od genezy, właściciele kundelków co roku organizują w całej Polsce lokalne obchody tego święta."
     ],
     traditions: [
       "Spacery i spotkania integracyjne z udziałem kundelków",
       "Akcje adopcyjne psów ze schronisk",
       "Publikacje o zaletach psów wielorasowych"
     ],
-    related: ["dzien-ustawy-o-ochronie-zwierzat"],
+    related: [
+      "dzien-ustawy-o-ochronie-zwierzat"
+    ],
   },
   "dzien-ustawy-o-ochronie-zwierzat": {
     name: "Dzień Ustawy o Ochronie Zwierząt",
@@ -16634,12 +16654,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Data upamiętnia powstanie w 1921 r., za prezydentury gen. Józefa Hallera, pierwszych Szkolnych Kół Polskiego Czerwonego Krzyża w Radomiu i Warszawie"
-    ,
+    origin: "Nieoficjalne święto Młodzieży PCK; nawiązuje do początków ruchu — pierwsze Szkolne Koła Polskiego Czerwonego Krzyża powstały w 1921 r.",
     observed: "Polska",
     desc: [
       "Dzień Młodzieży PCK to święto wszystkich młodych działaczy, entuzjastów i wolontariuszy Polskiego Czerwonego Krzyża. Od 1921 r. Młodzież Polskiego Czerwonego Krzyża (MPCK) zrzesza dzieci i młodzież pomagającą prowadzić działania zgodne z ideą i wytycznymi Czerwonego Krzyża.",
-      "Data upamiętnia powstanie w 1921 r., za prezydentury gen. Józefa Hallera (III prezesa PCK), pierwszych Szkolnych Kół Polskiego Czerwonego Krzyża w Radomiu i Warszawie. Święto jest okazją do organizowania wydarzeń i happeningów promujących ruch młodzieżowy oraz zachęcających nowych członków do włączenia się w działalność Czerwonego Krzyża."
+      "Święto nawiązuje do początków ruchu: pierwsze Szkolne Koła Polskiego Czerwonego Krzyża powstały w 1921 r., gdy prezesem PCK był gen. Józef Haller (prezes w latach 1920–1926). Źródła nie podają, dlaczego wybrano akurat 25 października. Święto jest okazją do organizowania wydarzeń i happeningów promujących ruch młodzieżowy oraz zachęcających nowych członków do włączenia się w działalność Czerwonego Krzyża."
     ],
     traditions: [
       "Happeningi i wydarzenia organizowane przez Szkolne Koła PCK",
@@ -16655,12 +16674,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Zainicjowany w 2011 r. przez międzynarodowe organizacje zrzeszające artystów; dokładny powód wyboru daty 25 października nie jest jednoznacznie potwierdzony"
-    ,
+    origin: "Nieoficjalne święto; według części źródeł zainicjował je w 2004 r. kanadyjski malarz Chris MacClure, a dokładne pochodzenie daty 25 października nie jest potwierdzone",
     observed: "Cały świat",
     desc: [
       "Międzynarodowy Dzień Artystów oddaje hołd twórcom kultury i sztuki we wszystkich dziedzinach, zwracając uwagę na ich wkład w rozwój społeczeństwa oraz wpływ na codzienne życie ludzi na całym świecie. Święto stworzono, by uhonorować malarzy, rzeźbiarzy, muzyków i przedstawicieli innych dziedzin twórczych.",
-      "Ideę zainicjowały w 2011 r. międzynarodowe organizacje artystyczne, choć źródła nie są zgodne co do dokładnego pochodzenia daty 25 października — część z nich łączy ją z upamiętnieniem instytucji wspierających sztukę i kulturę na świecie, inne wskazują na indywidualną inicjatywę kanadyjskiego malarza Chrisa MacClure'a, twórcy stylu określanego jako „romantyczny realizm”."
+      "Źródła nie są zgodne co do pochodzenia święta — według części z nich ideę zainicjował w 2004 r. kanadyjski malarz Chris MacClure, twórca stylu określanego jako „romantyczny realizm”; dokładne pochodzenie daty 25 października nie jest potwierdzone."
     ],
     traditions: [
       "Wystawy i wydarzenia poświęcone różnym dziedzinom sztuki",
@@ -16718,12 +16736,11 @@ const HOLIDAYS_DB = {
     type: "religious",
     typeLabel: "Święto religijne",
     dayOff: false,
-    origin: "Pomysł zrodził się we wrześniu 1998 r. w społeczności Światowych Spotkań Małżeńskich (WWME) w diecezji Knoxville, świętującej dziesiątą rocznicę istnienia diecezji uczczeniem swoich kapłanów; pierwsze obchody odbyły się w 2000 r., a w czerwcu 2006 r. WWME przeniosło datę na czwartą niedzielę października"
-    ,
+    origin: "Nieoficjalne święto religijne obchodzone w czwartą niedzielę października; informacje o jego początkach i terminie są rozbieżne",
     observed: "Cały świat",
     desc: [
-      "Światowy Dzień Kapłana podkreśla znaczenie duchowieństwa w codziennym życiu wiernych, oddając hołd kapłanom za ich posługę i poświęcenie. Pomysł na święto zrodził się we wrześniu 1998 r. w społeczności Światowych Spotkań Małżeńskich (Worldwide Marriage Encounter, WWME) w diecezji Knoxville, która świętując dziesiątą rocznicę istnienia diecezji, postanowiła uczcić wszystkich swoich kapłanów.",
-      "Pierwsze oficjalne obchody odbyły się w 2000 r. W czerwcu 2006 r. WWME przeniosło datę święta na czwartą niedzielę października, tak by zbiegała się ona z obchodzoną w tym samym czasie niedzielą kapłańską organizacji Serra Club — stąd wynikają rozbieżności w źródłach podających różne dni października dla tego ruchomego święta."
+      "Światowy Dzień Kapłana podkreśla znaczenie duchowieństwa w codziennym życiu wiernych, oddając hołd kapłanom za ich posługę i poświęcenie.",
+      "Święto obchodzone jest w czwartą niedzielę października, więc jego dokładna data zmienia się z roku na rok. Źródła podają różne informacje o początkach święta i jego terminie, dlatego w kalendarzach pojawiają się różne dni października."
     ],
     traditions: [
       "Msze święte z podziękowaniami dla kapłanów",
@@ -16739,12 +16756,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Nieoficjalne święto bez jednego udokumentowanego twórcy, przypominające o konieczności regeneracji sił i dbania o zdrowie psychiczne"
-    ,
+    origin: "Nieoficjalne święto bez jednego udokumentowanego twórcy, przypominające o konieczności regeneracji sił i dbania o zdrowie psychiczne",
     observed: "Polska",
     desc: [
       "Dzień Odpoczynku dla Zszarganych Nerwów przypomina, by nie odkładać troski o siebie na później — dbanie o własne nerwy pozwala na regenerację sił i zapobiega poważniejszym problemom zdrowotnym, zarówno psychicznym, jak i fizycznym.",
-      "Choć nie udało się ustalić dokładnego twórcy tego święta ani roku jego powstania, dzień 28 października jest konsekwentnie odnotowywany przez regionalne ośrodki polityki społecznej, Lasy Państwowe oraz szpitale, przypominające o znaczeniu odpoczynku i zdrowia psychicznego w napiętym, jesiennym okresie roku."
+      "Nie udało się ustalić twórcy tego święta ani roku jego powstania; przypomina ono o znaczeniu odpoczynku i zdrowia psychicznego w napiętym, jesiennym okresie roku."
     ],
     traditions: [
       "Świadome odpoczywanie i ograniczanie stresu",
@@ -16760,12 +16776,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Ustanowiony pod koniec lat 80. XX w. przez sprzedawcę zabawek Royal Selangor, rozszerzając istniejący już Dzień Pluszowego Misia (Teddy Bear Day) na wszystkie pluszowe zwierzątka"
-    ,
+    origin: "Nieoficjalne święto o niepotwierdzonym pochodzeniu, rozszerzające ideę Dnia Pluszowego Misia (Teddy Bear Day) na wszystkie pluszowe zwierzątka",
     observed: "Cały świat",
     desc: [
-      "Dzień Miłośników Pluszaków to święto wszystkich pluszowych zwierzątek i ich właścicieli — nie tylko klasycznych misiów, ale też innych pluszowych stworzeń, które od pokoleń towarzyszą dzieciom i dorosłym. Tradycja pluszowego misia sięga amerykańskiego prezydenta Theodore'a Roosevelta, który miał darować życie niedźwiedziowi podczas polowania — na jego cześć od 1880 r. zaczęto sprzedawać pluszowe misie znane jako Teddy Bear.",
-      "Formalnie święto ustanowił pod koniec lat 80. XX w. sprzedawca zabawek Royal Selangor, który uznał, że inne pluszowe zwierzątka mogłyby czuć się pominięte, skoro tylko miś ma swój dedykowany dzień. W ten sposób powstało szersze święto, obejmujące wszystkie pluszowe maskotki."
+      "Dzień Miłośników Pluszaków to święto wszystkich pluszowych zwierzątek i ich właścicieli — nie tylko klasycznych misiów, ale też innych pluszowych stworzeń, które od pokoleń towarzyszą dzieciom i dorosłym. Tradycja pluszowego misia sięga amerykańskiego prezydenta Theodore'a Roosevelta, który miał darować życie niedźwiedziowi podczas polowania — na jego cześć od 1902 r. zaczęto sprzedawać pluszowe misie znane jako Teddy Bear.",
+      "Pochodzenie samego święta nie jest udokumentowane; rozszerza ono ideę Dnia Pluszowego Misia na wszystkie pluszowe maskotki, by żadne zwierzątko nie czuło się pominięte."
     ],
     traditions: [
       "Zabawa z ulubionymi pluszowymi zwierzątkami",
@@ -16795,6 +16810,26 @@ const HOLIDAYS_DB = {
     ],
     related: [],
   },
+  "miedzynarodowy-dzien-opieki-i-wsparcia": {
+    name: "Międzynarodowy Dzień Opieki i Wsparcia",
+    date: "29 października",
+    emoji: "🤝",
+    type: "un",
+    typeLabel: "Dzień ONZ",
+    dayOff: false,
+    origin: "Ustanowiony rezolucją Zgromadzenia Ogólnego ONZ A/RES/77/317 z lipca 2023 r.; obchodzony co roku 29 października",
+    observed: "Cały świat",
+    desc: [
+      "Międzynarodowy Dzień Opieki i Wsparcia (International Day of Care and Support) zwraca uwagę na wartość pracy opiekuńczej — płatnej i nieodpłatnej — oraz na potrzebę wsparcia zarówno osób, które opieki potrzebują, jak i tych, które jej udzielają.",
+      "Dzień ustanowiło Zgromadzenie Ogólne ONZ rezolucją 77/317 z lipca 2023 r., zapraszając państwa członkowskie, system ONZ, organizacje społeczne, sektor prywatny i środowisko akademickie do jego obchodzenia. Rezolucja podkreśla, że nieproporcjonalny ciężar nieodpłatnej pracy opiekuńczej i domowej spoczywa na kobietach i dziewczętach. Obchody wspierają m.in. UN Women, Międzynarodowa Organizacja Pracy (ILO) i Biuro Wysokiego Komisarza ONZ ds. Praw Człowieka (OHCHR)."
+    ],
+    traditions: [
+      "Konferencje i kampanie agend ONZ o pracy opiekuńczej",
+      "Wydarzenia organizacji wspierających opiekunów i osoby wymagające opieki",
+      "Publikacje o systemach opieki długoterminowej i nieodpłatnej pracy domowej"
+    ],
+    related: [],
+  },
   "dzien-internetu": {
     name: "Dzień Internetu",
     date: "29 października",
@@ -16802,12 +16837,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Upamiętnia wysłanie 29 października 1969 r. pierwszej wiadomości w sieci ARPANET przez profesora UCLA Leonarda Kleinrocka i jego studenta Charleya Kline'a; obchodzony na całym świecie od 2005 r."
-    ,
+    origin: "Upamiętnia wysłanie 29 października 1969 r. pierwszej wiadomości w sieci ARPANET przez zespół z UCLA (profesor Leonard Kleinrock i jego student Charley Kline) do Stanford Research Institute; nieoficjalne święto",
     observed: "Cały świat",
     desc: [
-      "Dzień Internetu upamiętnia moment narodzin sieci, która zmieniła świat. 29 października 1969 r. profesor Uniwersytetu Kalifornijskiego w Los Angeles (UCLA) Leonard Kleinrock wraz ze swoim studentem, programistą Charleyem Kline'em, wysłali za pomocą łącza sieci ARPANET tekst „login” do komputera w Stanford Research Institute — pierwszą w historii wiadomość przesłaną między dwoma komputerami.",
-      "Międzynarodowy Dzień Internetu obchodzony jest na całym świecie co roku 29 października, począwszy od 2005 r. W Polsce internet dostępny jest oficjalnie od 20 grudnia 1991 r., choć pierwsze połączenia online miały miejsce nieco wcześniej — polskie „urodziny internetu” obchodzone są odrębnie, 17 sierpnia."
+      "Dzień Internetu upamiętnia moment narodzin sieci, która zmieniła świat. 29 października 1969 r. profesor Uniwersytetu Kalifornijskiego w Los Angeles (UCLA) Leonard Kleinrock wraz ze swoim studentem, programistą Charleyem Kline'em, próbowali wysłać za pomocą łącza sieci ARPANET słowo „login” do komputera w Stanford Research Institute — przesłane zostały tylko dwie pierwsze litery, „lo”, po czym system uległ awarii; była to pierwsza wiadomość przesłana w sieci ARPANET.",
+      "Dzień Internetu obchodzony jest co roku 29 października. W Polsce pierwsze połączenie z internetem nawiązano 17 sierpnia 1991 r. (Uniwersytet Warszawski – Kopenhaga), dlatego polskie „urodziny internetu” obchodzone są odrębnie, 17 sierpnia."
     ],
     traditions: [
       "Kampanie o świadomym i bezpiecznym korzystaniu z internetu",
@@ -16823,11 +16857,11 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Obchodzony od 2000 r.; niektóre źródła wskazują, że po raz pierwszy świętowano je już w 1998 r. w USA — dokładny twórca nie jest znany",
+    origin: "Nieoficjalne święto o niepotwierdzonym pochodzeniu",
     observed: "Cały świat",
     desc: [
       "Światowy Dzień Spódnicy, nazywany też Dniem Kobiecości, celebruje jeden z najstarszych elementów ludzkiej garderoby. Spódnice noszono już w czasach prehistorycznych jako najprostszy sposób okrycia dolnej części ciała — wykonywano je ze słomy, trzciny, skóry zwierzęcej czy bawełny.",
-      "Co ciekawe, spódnica nie zawsze kojarzyła się wyłącznie z kobiecą modą — w przeszłości nosili ją również mężczyźni. Wraz z popularyzacją nordycko-germańskich spodni w średniowiecznej Europie, męskie spódnice zaczęły znikać z mody, z wyjątkiem Szkocji, gdzie kilty do dziś pozostają narodowym symbolem. Współczesne święto obchodzone jest od 2000 r., choć część źródeł wskazuje na wcześniejsze, amerykańskie obchody już w 1998 r."
+      "Co ciekawe, spódnica nie zawsze kojarzyła się wyłącznie z kobiecą modą — w przeszłości nosili ją również mężczyźni. Wraz z popularyzacją nordycko-germańskich spodni w średniowiecznej Europie, męskie spódnice zaczęły znikać z mody, z wyjątkiem Szkocji, gdzie kilty do dziś pozostają narodowym symbolem. Pochodzenie współczesnego święta nie jest udokumentowane."
     ],
     traditions: [
       "Noszenie spódnic jako wyrazu stylu i kobiecości",
@@ -16843,11 +16877,10 @@ const HOLIDAYS_DB = {
     type: "unofficial",
     typeLabel: "Święto nieoficjalne",
     dayOff: false,
-    origin: "Nieoficjalne święto kulinarne bez jednego udokumentowanego twórcy, szeroko odnotowywane przez branżową prasę spożywczą"
-    ,
+    origin: "Nieoficjalne święto kulinarne bez udokumentowanego twórcy",
     observed: "Polska",
     desc: [
-      "Święto Napojów Wyskokowych celebruje różnorodność smaków i aromatów, jakie oferują napoje alkoholowe z całego świata — od whisky, przez wina, po tradycyjne polskie nalewki. Pierwsze ślady produkcji alkoholu sięgają ok. 7000 r. p.n.e. w Chinach i Mezopotamii.",
+      "Święto Napojów Wyskokowych celebruje różnorodność smaków i aromatów, jakie oferują napoje alkoholowe z całego świata — od whisky, przez wina, po tradycyjne polskie nalewki. Najstarsze znane ślady produkcji napojów alkoholowych pochodzą z Chin (ok. 7000 r. p.n.e.).",
       "Choć dokładne początki tego konkretnego święta nie są jasno określone w źródłach, ma ono także wymiar edukacyjny — przypomina o odpowiedzialnym spożywaniu alkoholu. Współczesne obchody obejmują degustacje, warsztaty oraz spotkania z lokalnymi producentami alkoholi."
     ],
     traditions: [

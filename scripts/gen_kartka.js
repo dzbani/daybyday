@@ -30,7 +30,8 @@ for (const [m, d, names] of NAMES) {
 
 // --- 2. HOLIDAYS (nietypowe) + PROVERBS_* z index.html ---
 // HOLIDAYS mieszka w home_holidays.js (wydzielone z index.html 15.10.2026) - skladamy zrodlo, zeby extractConst/regexy dzialaly jak dotad
-const indexRaw = readFile('index.html') + '\n' + readFile('home_holidays.js');
+// POPULAR (imiona główne) mieszka w home_main.js (główny skrypt strony głównej wydzielony z index.html 15.10.2026)
+const indexRaw = readFile('index.html') + '\n' + readFile('home_holidays.js') + '\n' + readFile('home_main.js');
 
 // --- 2a. Imiona "główne" dnia — ta sama reguła co nagłówek na index.html:
 // POPULAR ∩ tradycyjne kalendarze (imieniny_tradycyjne.js); gdy brak — 3 najpopularniejsze tradycyjne
@@ -71,7 +72,9 @@ for (const [d, m, name, , tag] of HOLIDAYS) {
 // <script src>. Node nie laduje tego automatycznie - trzeba oba zrodla zewaluowac w jednym
 // wspolnym zasiegu (eval() per-wywolanie ma wlasny zasieg blokowy dla const/let).
 const przyslowiaDataRaw = readFile('przyslowia_data.js'); // definiuje: const PROVERBS = {...}
-const PROVERBS_DAILY = eval('(function(){' + przyslowiaDataRaw + '\nreturn ' + extractConst(indexRaw, 'PROVERBS_DAILY') + ';})()');
+// Od wydzielenia home_main.js (15.10.2026) PROVERBS_DAILY nie jest już stałą `const` w HTML, tylko budowane w buildProverbIndex()
+// z PROVERBS — składamy je tu tą samą regułą (dzień-miesiąc -> lista przysłów).
+const PROVERBS_DAILY = eval('(function(){' + przyslowiaDataRaw + '\nconst daily = {}; for (const m in PROVERBS) { PROVERBS[m].forEach(day => { daily[`${day.d}-${m}`] = day.p; }); } return daily;})()');
 // Odtworz PROVERBS_MONTH_POOL dokladnie jak w index.html
 function getSeason(m) {
   if (m === 12 || m <= 2) return 'zima';
