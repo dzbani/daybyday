@@ -475,6 +475,87 @@ const ENTRY_FIXES = [
   { file: '10-15.json', y: 2007, re: /A380/, replace: 'Linie Singapore Airlines odebrały pierwszy egzemplarz największego samolotu pasażerskiego świata, Airbusa A380.' },
   // wystapienie Niemiec z Ligi Narodow oglosono 14 X 1933 (jest w 10-14)
   { file: '10-21.json', y: 1933, re: /Niemcy wystąpiły z Ligi Narodów/, drop: true },
+
+  // ===== audyt 1-11 XI (16.10.2026) =====
+  // --- 1 XI ---
+  // IV sobor laterański rozpoczął się 11 XI 1215 (jest w 11-11)
+  { file: '11-01.json', y: 1215, re: /Sobór laterański/, drop: true },
+  // wpis zepsuty (placeholder Wikidata zamiast nazwy)
+  { file: '11-01.json', y: 1304, re: /^Q=Q/, drop: true },
+  // Mehmed VI zostal obalony przez Wielkie Zgromadzenie Narodowe (zniesienie sultanatu), wyjechal 17 XI
+  { file: '11-01.json', y: 1922, re: /Mehmed VI/, replace: 'Wielkie Zgromadzenie Narodowe Turcji zniosło sułtanat, kończąc panowanie Mehmeda VI, ostatniego sułtana Imperium Osmańskiego.' },
+  // statek Kiangya zatonal 3-4 XII 1948; wpis o 6 tys. osob bez potwierdzenia
+  { file: '11-01.json', y: 1948, re: /statek z około 6 tys/, drop: true },
+  // wybory do Knesetu odbyly sie 2 XI 1965
+  { file: '11-01.json', y: 1965, re: /Koalicja Pracy wygrała wybory/, drop: true },
+  // Stoph zostal premierem NRD 29 X 1976
+  { file: '11-01.json', y: 1976, re: /Willi Stoph/, drop: true },
+  // --- 2 XI ---
+  // Wystawa Panamerykanska w Buffalo zakonczyla sie 2 XI 1901 (McKinley postrzelony 6 IX 1901)
+  { file: '11-02.json', y: 1902, re: /Wystawa Panamerykańska/, toYear: 1901 },
+  // wojska syryjskie wkroczyly do Libanu w czerwcu 1976
+  { file: '11-02.json', y: 1975, re: /wojska syryjskie wkroczyły/, drop: true },
+  // zamach Natuscha w Boliwii: 1 XI 1979 (jest w 11-01 lub poza lista)
+  { file: '11-02.json', y: 1979, re: /Natusch/, drop: true },
+  // --- 3 XI ---
+  // Frederiksodde (Fredericia) zdobyto 24 X 1657
+  { file: '11-03.json', y: 1657, re: /Frederiksodde/, drop: true },
+  // rekord Rosendahl: 3 IX 1970 (Uniwersjada w Turynie byla w sierpniu-wrzesniu)
+  { file: '11-03.json', y: 1970, re: /Rosendahl/, drop: true },
+  // cialo Gongadzego znaleziono 2 XI 2000
+  { file: '11-03.json', y: 2000, re: /Gongadzego/, drop: true },
+  // --- 4 XI ---
+  // Nowa Zelandia: karta 16 XI 1840, osobna kolonia od 3 V 1841
+  { file: '11-04.json', y: 1840, re: /Hobson/, drop: true },
+  // wybory do Kongresu USA: 5 XI 1946
+  { file: '11-04.json', y: 1946, re: /Partia Republikańska zwyciężyła/, drop: true },
+  // --- 5 XI ---
+  // konkordat austriacki podpisano 18 VIII 1855
+  { file: '11-05.json', y: 1855, re: /konkordat między Cesarstwem Austriackim/, drop: true },
+  // katastrofa w Ny-Alesund (Kings Bay): 5 XI 1962
+  { file: '11-05.json', y: 1961, re: /Ny-Ålesund/, toYear: 1962 },
+  // --- 6 XI ---
+  // wybory prezydenckie w USA 1932: 8 XI (jest w 11-08)
+  { file: '11-06.json', y: 1932, re: /Franklin Delano Roosevelt wygrał/, drop: true },
+  // Chavez wygral wybory 6 XII 1998
+  { file: '11-06.json', y: 1998, re: /Hugo Chávez wygrał/, drop: true },
+  // konstytucja Litwy: referendum 25 X 1992, w zycie 2 XI 1992
+  { file: '11-06.json', y: 1991, re: /konstytucja Litwy/, drop: true },
+  // --- 7 XI ---
+  // bitwa pod Gamonal (Burgos): 10 XI 1808 (jest w 11-10)
+  { file: '11-07.json', y: 1808, re: /Burgos/, drop: true },
+  // Stalingrad przemianowano na Wolgograd 10 XI 1961
+  { file: '11-07.json', y: 1961, re: /Stalingrad przemianowano/, drop: true },
+  // Szusza: bitwa 4-8 XI 2020, miasto zdobyte 8 XI
+  { file: '11-07.json', y: 2020, re: /Şuşa/, drop: true },
+  // --- 8 XI ---
+  // Sejm elekcyjny 1575: wpis zdublowany z 11-07, dnia nie da sie potwierdzic
+  { file: '11-08.json', y: 1575, re: /Rozpoczął obrady Sejm elekcyjny mający wybrać/, drop: true },
+  // rekord 200 km/h Hemery'ego (Blitzen Benz, Brooklands): 8 XI 1909
+  { file: '11-08.json', y: 1908, re: /Hémery/, toYear: 1909 },
+  // Plac Saski: przemianowanie na Plac Piłsudskiego w 1928 (dokladny dzien niepotwierdzony; wpis zostaje w 11-11)
+  { file: '11-08.json', y: 1928, re: /Plac Saski w Warszawie przemianowano/, drop: true },
+  // referendum konstytucyjne w Turcji: 7 XI 1982
+  { file: '11-08.json', y: 1982, re: /referendum obywateli Turcji/, drop: true },
+  // 50 000 pkt przekroczyl indeks WIG, nie WIG20 (WIG20 ma kilka tysiecy)
+  { file: '11-08.json', y: 2006, re: /WIG20/, sub: ['WIG20', 'WIG'] },
+  // --- 9 XI ---
+  // traktat z Etaples: 3 XI 1492
+  { file: '11-09.json', y: 1492, re: /Étaples/, drop: true },
+  // Nobel dla Einsteina za 1921 oglosono 9 XI 1922
+  { file: '11-09.json', y: 1921, re: /Einstein/, toYear: 1922 },
+  // Atif Sidki zostal premierem Egiptu 10 XI 1986 (jest w 11-10)
+  { file: '11-09.json', y: 1986, re: /Atif Sidki/, drop: true },
+  // --- 10 XI ---
+  // traktat westminsterski (II wojna angielsko-holenderska): 19 II 1674
+  { file: '11-10.json', y: 1674, re: /traktatu westminsterskiego/, drop: true },
+  // --- 11 XI ---
+  // traktat z Petropolis: 17 XI 1903
+  { file: '11-11.json', y: 1903, re: /Petrópolis/, drop: true },
+  // Huracan zalozono 1 XI 1908
+  { file: '11-11.json', y: 1908, re: /Huracán/, drop: true },
+  // Szanghaj zdobyty (wpis jest w 11-09)
+  { file: '11-11.json', y: 1937, re: /zdobyły Szanghaj/, drop: true },
 ];
 function applyEntryFixes(file, events) {
   return events
