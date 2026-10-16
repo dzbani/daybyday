@@ -437,6 +437,44 @@ const ENTRY_FIXES = [
   // --- 31 X ---
   // metro w Madrycie otwarto 17 X 1919 (jest w 10-17)
   { file: '10-31.json', y: 1919, re: /madryckiego metra/, drop: true },
+
+  // ===== audyt 12-15 X (16.10.2026) =====
+  // Stalowa Wola: brak daty zalozenia (osada budowana 1937-39, prawa miejskie 1945)
+  { file: '10-12.json', y: 1938, re: /Stalowa Wola/, drop: true },
+  // Old Byland: 14 X 1322
+  { file: '10-12.json', y: 1322, re: /Old Byland/, drop: true },
+  // Maclodio: 11 X 1427 wg wiekszosci zrodel
+  { file: '10-12.json', y: 1427, re: /Maclodio/, drop: true },
+  // Dniepropetrowsk: glowne egzekucje 13-14 X 1941; liczba ocalalych niepotwierdzona
+  { file: '10-12.json', y: 1941, re: /Dniepropetrowsku/, replace: 'W ukraińskim Dniepropetrowsku (obecnie Dniepr) Niemcy rozpoczęli masowe mordy miejscowych Żydów (według części źródeł 12 października; główne egzekucje przeprowadzono 13–14 października).' },
+  // synagoga w Zagrzebiu: rozbiorka od pazdziernika 1941 do wiosny 1942, dnia 12 X nie potwierdzono
+  { file: '10-12.json', y: 1941, re: /Zagrzebska synagoga/, drop: true },
+  // tajfun Megi: formal sie 12 X, uderzyl w Filipiny 18 X 2010
+  { file: '10-12.json', y: 2010, re: /Megi/, drop: true },
+  // wpis urwany w Wikipedii
+  { file: '10-13.json', y: 1770, re: /Konfederacja barska uchwaliła\.$/, drop: true },
+  // Pirna: kapitulacja Sasow 14-16 X 1756
+  { file: '10-13.json', y: 1756, re: /Pirna/, drop: true },
+  // Botswana i Lesotho przyjete do ONZ 17 X 1966 (jest w 10-17 lub poza lista)
+  { file: '10-13.json', y: 1966, re: /Botswana/, drop: true },
+  // traktat z Karsu podpisano 13 X 1921 (jest w 10-13)
+  { file: '10-23.json', y: 1921, re: /traktat karski/, drop: true },
+  // Ragusa: Marmont zlikwidowal republike w 1808
+  { file: '10-14.json', y: 1809, re: /Raguzie/, drop: true },
+  // Fuengirola: bitwa 15 X 1810 (14 X tylko ladowanie); wpis zostaje w 10-15
+  { file: '10-14.json', y: 1810, re: /Fuengirol/, drop: true },
+  // pierwszy lot 14 X 1964 dotyczy CH-53 Sea Stallion, nie wersji E (1974)
+  { file: '10-14.json', y: 1964, re: /CH-53E/, replace: 'Dokonano oblotu amerykańskiego ciężkiego śmigłowca transportowego Sikorsky CH-53 Sea Stallion.' },
+  // Struktura krysztalu: premiera 14 X 1969
+  { file: '10-14.json', y: 1968, re: /Struktura kryształu/, toYear: 1969 },
+  // Maria Antonina skazana w nocy 16 X 1793 (egzekucja tego samego dnia)
+  { file: '10-15.json', y: 1793, re: /Maria Antonina/, drop: true },
+  // krolem Saksonii zostal Fryderyk August III
+  { file: '10-15.json', y: 1904, re: /Fryderyk August II/, sub: ['Fryderyk August II ', 'Fryderyk August III '] },
+  // 15 X 2007 dostarczono pierwszy A380; komercyjne loty od 25 X (wpis jest w 10-25)
+  { file: '10-15.json', y: 2007, re: /A380/, replace: 'Linie Singapore Airlines odebrały pierwszy egzemplarz największego samolotu pasażerskiego świata, Airbusa A380.' },
+  // wystapienie Niemiec z Ligi Narodow oglosono 14 X 1933 (jest w 10-14)
+  { file: '10-21.json', y: 1933, re: /Niemcy wystąpiły z Ligi Narodów/, drop: true },
 ];
 function applyEntryFixes(file, events) {
   return events
