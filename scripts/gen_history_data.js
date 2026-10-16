@@ -556,6 +556,285 @@ const ENTRY_FIXES = [
   { file: '11-11.json', y: 1908, re: /Huracán/, drop: true },
   // Szanghaj zdobyty (wpis jest w 11-09)
   { file: '11-11.json', y: 1937, re: /zdobyły Szanghaj/, drop: true },
+
+  // ===== audyt 12-30 XI (16.10.2026) =====
+  // --- 12 XI ---
+  // Roman III zostal cesarzem 12 XI 1028 (slub z Zoe byl 10 XI); wpis w 11-15 zdublowany
+  { file: '11-12.json', y: 1028, re: /ślub bizantyńskiej/, replace: 'Roman III Argyros został cesarzem bizantyńskim.' },
+  // slub Iwana III i Zofii Paleolog: 12 XI 1472 wg kalendarza juliańskiego = 21 XI (jest w 11-21)
+  { file: '11-12.json', y: 1472, re: /Zoe Paleolog/, drop: true },
+  // bitwa pod Jezierną: 10-12 XI to daty juliańskie, w gregoriańskim 20-22 XI (jest w 11-22)
+  { file: '11-12.json', y: 1655, re: /Jezierną/, drop: true },
+  // Simpson pierwszy raz uzyl chloroformu 4 XI 1847
+  { file: '11-12.json', y: 1847, re: /chloroform/, drop: true },
+  // Tobruk zdobyto 13 XI 1942 (jest w 11-13)
+  { file: '11-12.json', y: 1942, re: /zdobyły Tobruk/, drop: true },
+  // --- 13 XI ---
+  // wybory 1800 w USA trwaly do 3 XII
+  { file: '11-13.json', y: 1800, re: /głosowanie powszechne/, drop: true },
+  // Powell zlozyl rezygnacje 15 XI 2004
+  { file: '11-13.json', y: 2004, re: /Powell/, drop: true },
+  // zamachy w Paryzu: 130 ofiar + 7 zamachowcow
+  { file: '11-13.json', y: 2015, re: /zamachów terrorystycznych w Paryżu/, replace: 'W serii zamachów terrorystycznych w Paryżu i Saint-Denis zginęło 130 osób (oraz 7 zamachowców), a kilkaset zostało rannych.' },
+  // --- 14 XI ---
+  // wybory 1820 w USA trwaly do 6 XII
+  { file: '11-14.json', y: 1820, re: /Monroe/, drop: true },
+  // wpis niepotwierdzony, nieencyklopedyczny
+  { file: '11-14.json', y: 2003, re: /Eroticon/, drop: true },
+  // Scillin: 787 z 944 osob na POKLADZIE
+  { file: '11-14.json', y: 1942, re: /Scillin/, sub: ['na pokazie', 'na pokładzie'] },
+  // katastrofa TGV pod Strasburgiem: 11 ofiar
+  { file: '11-14.json', y: 2015, re: /TGV/, sub: ['10 osób zginęło', '11 osób zginęło'] },
+  // --- 15 XI ---
+  // Roman III zostal cesarzem 12 XI (jest w 11-12)
+  { file: '11-15.json', y: 1028, re: /Roman III Argyros został/, drop: true },
+  // wpis zepsuty skladniowo
+  { file: '11-15.json', y: 1316, re: /Pogrobowiec/, replace: 'Urodził się Jan I Pogrobowiec, syn zmarłego w czerwcu Ludwika X Kłótliwego; od chwili narodzin był królem Francji i Nawarry. Zmarł po pięciu dniach, a regencję sprawował jego stryj, późniejszy król Filip V Wysoki.' },
+  // tekst po bialorusku
+  { file: '11-15.json', y: 1925, re: /biełaruskaha/, replace: 'Rozpoczął nadawanie pierwszy ogólnokrajowy kanał białoruskiego radia.' },
+  { file: '11-15.json', y: 1989, re: /Jospephie/, sub: ['Jospephie', 'Josephie'] },
+  // wpis niepotwierdzony (miejsce i okolicznosci)
+  { file: '11-15.json', y: 2009, re: /Vivian Ogu/, drop: true },
+  // --- 16 XI ---
+  // meteoryt z Ensisheim spadl 7 XI 1492
+  { file: '11-16.json', y: 1492, re: /Ensisheim/, drop: true },
+  // Rossosz: bitwa 17 XI 1863 (jest w 11-17)
+  { file: '11-16.json', y: 1863, re: /Rossosz/, drop: true },
+  // Assad: pucz 13 XI 1970 (jest w 11-13)
+  { file: '11-16.json', y: 1970, re: /Assad/, drop: true },
+  // CYFRA+ - data niepotwierdzona
+  { file: '11-16.json', y: 1998, re: /CYFRA\+/, drop: true },
+  // TWPN: pierwsze zebranie 23 XI 1800 (jest w 11-23)
+  { file: '11-16.json', y: 1800, re: /Towarzystwo Warszawskie/, drop: true },
+  // Edward I zostal ogloszony krolem 20 XI 1272 (jest w 11-20)
+  { file: '11-16.json', y: 1272, re: /Edward I/, drop: true },
+  // puste nawiasy po usunietym szablonie
+  { file: '11-16.json', y: 1918, re: /Notyfikowano/, sub: [' ().', '.'] },
+  // w Estonii glowa panstwa: Starszy Panstwa (Riigivanem), nie prezydent
+  { file: '11-16.json', y: 1924, re: /Jaakson/, sub: ['prezydentem Estonii', 'głową państwa Estonii (Starszym Państwa)'] },
+  // --- 17 XI ---
+  // pokoj pirenejski: 7 XI 1659
+  { file: '11-17.json', y: 1659, re: /pokój pirenejski/, drop: true },
+  // II zjazd SDPRR: lipiec-sierpien 1903
+  { file: '11-17.json', y: 1903, re: /Socjaldemokratyczna Partia Robotnicza Rosji/, drop: true },
+  // proces berlinski: wyrok 2 XII 1847
+  { file: '11-17.json', y: 1847, re: /proces wielkopolskich/, drop: true },
+  // Ryszard III nie mial wtedy premiery (1592-93); udokumentowane przedstawienie dworskie
+  { file: '11-17.json', y: 1633, re: /Ryszard III/, replace: 'Na dworze Karola I wystawiono sztukę Williama Szekspira Ryszard III.' },
+  // pierwszy przypadek COVID-19: data niepotwierdzona oficjalnie
+  { file: '11-17.json', y: 2019, re: /COVID-19/, replace: 'Według nieoficjalnych doniesień medialnych w chińskim Wuhan odnotowano pierwszy przypadek zachorowania na COVID-19 (data nie została potwierdzona oficjalnie).' },
+  // --- 18 XI ---
+  // diecezje Macerata erygowal Jan XXII (Grzegorz IX zmarl 1241)
+  { file: '11-18.json', y: 1320, re: /Grzegorz IX/, sub: ['Grzegorz IX', 'Jan XXII'] },
+  // dokladny dzien wydania Biblii gdanskiej niepotwierdzony
+  { file: '11-18.json', y: 1632, re: /Biblia gdańska/, drop: true },
+  // Yongli: daty rozbiezne (24 XII 1646 wg gregorianskiego)
+  { file: '11-18.json', y: 1646, re: /Yongli/, drop: true },
+  // sojusz warszawski 1705: 18 XI (jul.) / 28 XI (greg.) - zrodla rozbiezne
+  { file: '11-18.json', y: 1705, re: /antyrosyjski sojusz/, drop: true },
+  // pozostalosc po linku wiki
+  { file: '11-18.json', y: 1561, re: /Bitwa pod Verbia/, sub: ['w Bitwa pod Verbia', 'w bitwie pod Verbią'] },
+  // starcie 18 XI 1952: F9F Panther (nie F-86) - szczegoly spornie
+  { file: '11-18.json', y: 1952, re: /MiG-15/, replace: 'Wojna koreańska: nad Morzem Japońskim doszło do walki powietrznej amerykańskich myśliwców Grumman F9F Panther z radzieckimi MiG-15; incydent utajniono na kilkadziesiąt lat.' },
+  // Lumen gentium ogloszono 21 XI 1964 (jest w 11-21)
+  { file: '11-18.json', y: 1964, re: /Lumen gentium/, drop: true },
+  // Skolimowski
+  { file: '11-18.json', y: 1966, re: /Smolimowskiego/, sub: ['Smolimowskiego', 'Skolimowskiego'] },
+  // --- 19 XI ---
+  // Giulio de Medici: Klemens VII
+  { file: '11-19.json', y: 1523, re: /Klemens VIII/, sub: ['Klemens VIII', 'Klemens VII'] },
+  // zjazd w Wyszehradzie 1335 - dokladny dzien niepotwierdzony
+  { file: '11-19.json', y: 1335, re: /Wyszehradzie/, drop: true },
+  // bitwa pod Wincanton: 20 XI 1688 wg jul. (30 XI greg.)
+  { file: '11-19.json', y: 1688, re: /Wincanton/, drop: true },
+  // otwarcie kolei fabryczno-lodzkiej: wpis zdublowany z 11-18, zrodla rozbiezne
+  { file: '11-19.json', y: 1865, re: /Koluszek/, drop: true },
+  // Wekerle zostal premierem 17 XI 1892 (jest w 11-17)
+  { file: '11-19.json', y: 1892, re: /Wekerle/, drop: true },
+  // 19 XI 1931 Haas zlozyl wniosek patentowy (patent 1933)
+  { file: '11-19.json', y: 1931, re: /Tampax/, replace: 'Amerykański lekarz Earle Haas złożył wniosek patentowy na tampon higieniczny (patent przyznano w 1933 roku); wyrób sprzedawano pod znakiem towarowym „Tampax”.' },
+  // Rainier III: uroczystosci wstapienia na tron 19 XI 1949 (intronizacja 11 IV 1950)
+  { file: '11-19.json', y: 1949, re: /Rainier III/, replace: 'W Monako odbyły się uroczystości wstąpienia na tron księcia Rainiera III Grimaldiego (data ta stała się później Dniem Narodowym Monako).' },
+  // Edsel: Ford zakonczyl produkcje, a nie zbankrutowal
+  { file: '11-19.json', y: 1959, re: /Edsel/, replace: 'Ford Motor Company ogłosił zakończenie produkcji luksusowej marki Edsel, jednej z największych porażek rynkowych w historii motoryzacji.' },
+  // Annan: rekomendacja RB 13 XII 1996, wybor ZO 17 XII
+  { file: '11-19.json', y: 1996, re: /Kofi Annan/, drop: true },
+  // wichura w Tatrach: ok. 12 tys. ha
+  { file: '11-19.json', y: 2004, re: /Tatrach/, sub: ['a około 100 ha drzewostanu zostało powalone', 'a ok. 12 tys. ha lasu zostało zniszczonych lub uszkodzonych'] },
+  // Hajfong: ostrzal 23 XI 1946, wojna wg wiekszosci zrodel od 19 XII
+  { file: '11-19.json', y: 1946, re: /Hajfong/, drop: true },
+  // Agdam przejety przez Azerbejdzan 20 XI 2020
+  { file: '11-19.json', y: 2020, re: /Ağdam/, drop: true },
+  // --- 20 XI ---
+  // uznanie niepodleglosci Polski przez Niemcy: dzien i "pierwszy kraj" niepotwierdzone
+  { file: '11-20.json', y: 1918, re: /Niemcy, jako pierwszy kraj/, drop: true },
+  // program rzadu Moraczewskiego ogloszono 21 XI 1918 (jest w 11-21)
+  { file: '11-20.json', y: 1918, re: /Moraczewskiego ogłosił swój program/, drop: true },
+  // wybory do Izby Deputowanych we Francji: 16 XI 1919
+  { file: '11-20.json', y: 1919, re: /francuskiego Zgromadzenia/, drop: true },
+  // Hersh opublikowal pierwszy tekst 12-13 XI; 20 XI Plain Dealer wydrukowal zdjecia
+  { file: '11-20.json', y: 1969, re: /Hersh/, replace: 'W amerykańskiej prasie ukazały się pierwsze zdjęcia z masakry dokonanej przez US Army w wietnamskiej wiosce Mỹ Lai.' },
+  // Vacaroiu: nominacja 18 XI, rzad 19 XI 1992
+  { file: '11-20.json', y: 1992, re: /Văcăroiu/, drop: true },
+  { file: '11-20.json', y: 2025, re: /Tonga/, replace: 'Odbyły się wybory parlamentarne w Tonga.' },
+  // --- 21 XI ---
+  // wojska polskie weszly do Lwowa w nocy 21/22 XI
+  { file: '11-21.json', y: 1918, re: /cały Lwów/, replace: 'Wojna polsko-ukraińska: wojska polskie, wsparte przybyłą odsieczą, zmusiły oddziały ukraińskie do opuszczenia Lwowa (w nocy z 21 na 22 listopada).' },
+  // dekret o Medalu za Warszawe: 26 X 1945 (Dz.U. 1945 nr 287)
+  { file: '11-21.json', y: 1945, re: /Medal za Warszawę/, drop: true },
+  // wybory prezydenckie w USA 1832 trwaly do 5 XII
+  { file: '11-21.json', y: 1832, re: /Andrew Jackson/, drop: true },
+  // konstytucje II Republiki uchwalono 4 XI 1848
+  { file: '11-21.json', y: 1848, re: /konstytucja II Republiki/, drop: true },
+  // bitwa o Rostow trwala 17 XI-2 XII 1941
+  { file: '11-21.json', y: 1941, re: /Rostów/, drop: true },
+  { file: '11-21.json', y: 1943, re: /środowych/, sub: ['środowych', 'środkowych'] },
+  // 21 XI parafowano uklad z Dayton (podpisany 14 XII w Paryzu)
+  { file: '11-21.json', y: 1995, re: /Dayton/, replace: 'W Dayton w stanie Ohio parafowano układ kończący wojnę w Bośni i Hercegowinie (formalnie podpisano go 14 grudnia w Paryżu).' },
+  // --- 22 XI ---
+  // Port Artur zdobyto 21 XI 1894 (jest w 11-21)
+  { file: '11-22.json', y: 1894, re: /Lüshun/, drop: true },
+  // data zalozenia NHL rozbiezna (22 XI tradycyjnie, 26 XI oficjalnie)
+  { file: '11-22.json', y: 1917, re: /NHL/, drop: true },
+  // Neapolitanczycy wkroczyli do Rzymu 29 XI (zrodla: 27-29 XI)
+  { file: '11-22.json', y: 1798, re: /Karl Mack/, sub: ['który zajęły 27 listopada', 'który zajęły pod koniec listopada'] },
+  // rezolucja 242 wzywa do wycofania z terytoriow zajetych w wojnie 1967
+  { file: '11-22.json', y: 1967, re: /rezolucję wzywającą Izrael/, sub: ['z okupowanych ziem palestyńskich', 'z terytoriów okupowanych w czasie wojny sześciodniowej'] },
+  // Swiatowy Dzien Wegetarianizmu: inicjatywa NAVS 1977, IVU poparla w 1978
+  { file: '11-22.json', y: 1977, re: /Wegetariańska/, drop: true },
+  // Uklad europejski podpisano 16 XII 1991
+  { file: '11-22.json', y: 1991, re: /Układ europejski/, drop: true },
+  // --- 23 XI ---
+  // proklamacja Waszyngtona 3 X 1789 na 26 XI; brak ustanowienia 23 XI
+  { file: '11-23.json', y: 1789, re: /Święto Dziękczynienia/, drop: true },
+  // pozostalosc po linku wiki
+  { file: '11-23.json', y: 1899, re: /Belmont/, sub: ['w Bitwa pod Belmont (1899)', 'w bitwie pod Belmont'] },
+  // SS Benlomond
+  { file: '11-23.json', y: 1942, re: /Belmond/, sub: ['Belmond', 'Benlomond'] },
+  { file: '11-23.json', y: 1967, re: /połudiowowietnamskich/, sub: ['połudiowowietnamskich', 'południowowietnamskich'] },
+  // epicentrum w Irpinii, nie pod Neapolem
+  { file: '11-23.json', y: 1980, re: /Neapolem/, sub: ['w trzęsieniu ziemi z epicentrum pod Neapolem', 'w trzęsieniu ziemi w Irpinii we Włoszech'] },
+  // porywacze lotu 961 byli Etiopczykami
+  { file: '11-23.json', y: 1996, re: /kenijskich terrorystów/, sub: ['kenijskich terrorystów', 'etiopskich porywaczy'] },
+  // --- 24 XI ---
+  // data juliańska (4 XII wg gregorianskiego)
+  { file: '11-24.json', y: 1639, re: /Horrocks/, replace: 'Angielski astronom Jeremiah Horrocks jako pierwszy zaobserwował przejście Wenus na tle tarczy Słońca (według kalendarza juliańskiego; w gregoriańskim był to 4 grudnia).' },
+  { file: '11-24.json', y: 1714, re: /Order Świętej Katarzyny/, replace: 'Car Rosji Piotr I Wielki ustanowił kobiecy Order Świętej Katarzyny Męczennicy (24 listopada według kalendarza juliańskiego; w gregoriańskim 5 grudnia).' },
+  // w 1848 nie bylo jeszcze Republiki Rzymskiej (proklamowana w lutym 1849)
+  { file: '11-24.json', y: 1848, re: /Pius IX/, sub: ['opuszczenia Republiki Rzymskiej', 'opuszczenia Rzymu'] },
+  { file: '11-24.json', y: 1874, re: /Glidden/, sub: ['Farwall', 'Farwell'] },
+  // Dania i Finlandia przystapily do Paktu antykominternowskiego 25 XI 1941
+  { file: '11-24.json', y: 1941, re: /Dania przystąpiła/, drop: true },
+  // objawienia z Montichiari: data i charakter sporne
+  { file: '11-24.json', y: 1946, re: /Pierina Gilli/, drop: true },
+  // mecz Polska-ZSRR w Lipsku: dnia nie da sie potwierdzic
+  { file: '11-24.json', y: 1957, re: /Lipsku/, drop: true },
+  { file: '11-24.json', y: 1992, re: /Praską Papierów/, sub: ['Praską Papierów', 'Praską Giełdę Papierów'] },
+  // --- 25 XI ---
+  // 25 XI 1491 podpisano kapitulacje Grenady (oblezenie trwalo od kwietnia)
+  { file: '11-25.json', y: 1491, re: /oblężenie Grenady/, replace: 'Rekonkwista: podpisano układ kapitulacyjny Grenady, ostatniego muzułmańskiego królestwa na Półwyspie Iberyjskim (miasto zajęto 2 stycznia 1492 roku).' },
+  // data juliańska (6 XII wg gregorianskiego)
+  { file: '11-25.json', y: 1741, re: /Elżbietę Romanową/, replace: 'W wyniku buntu pułku preobrażeńskiego na tron carski w Rosji wyniesiono Elżbietę Romanową (25 listopada według kalendarza juliańskiego; w gregoriańskim 6 grudnia).' },
+  // Bathurst zaginal w Perleberg
+  { file: '11-25.json', y: 1809, re: /Bathurst/, sub: ['Pod Berlinem', 'W Perlebergu'] },
+  // Wojwodina: Nowy Sad 25 XI, Czarnogora 26 XI (jest w 11-26)
+  { file: '11-25.json', y: 1918, re: /Wojwodina i Czarnogóra/, replace: 'Wielkie Zgromadzenie Narodowe w Nowym Sadzie uchwaliło przyłączenie Wojwodiny do Królestwa Serbii.' },
+  // Prajadhipok: Wajiravudh zmarl 26 XI 1925
+  { file: '11-25.json', y: 1925, re: /Prajadhipok/, drop: true },
+  // Patria zatonela po wybuchu bomby Hagany
+  { file: '11-25.json', y: 1940, re: /Patria/, replace: 'W porcie Hajfa na pokładzie statku „Patria” z około 1800 nielegalnymi żydowskimi imigrantami wybuchła bomba podłożona przez Haganę; statek zatonął, a zginęło około 260 osób.' },
+  // Cmentarz Powstancow Warszawy otwarto 29 XI 1945 (jest w 11-29)
+  { file: '11-25.json', y: 1945, re: /Cmentarz Powstańców/, drop: true },
+  // 9. podroz apostolska Pawla VI rozpoczela sie 26 XI 1970
+  { file: '11-25.json', y: 1970, re: /podróż apostolską/, drop: true },
+  // atak lotniarza z PFLP-GC (Noc lotni)
+  { file: '11-25.json', y: 1987, re: /Kirjat Szemona/, replace: 'Palestyński terrorysta z PFLP-GC przedostał się lotnią z Libanu na teren izraelskiej bazy wojskowej koło Kirjat Szemona, zabił 6 żołnierzy i ranił kilku, po czym sam zginął.' },
+  // II tura wyborow w Urugwaju: 29 XI 2009
+  { file: '11-25.json', y: 2009, re: /Mujica/, drop: true },
+  // uklad Rosja-Abchazja podpisano 24 XI 2014
+  { file: '11-25.json', y: 2014, re: /Abchazja i Rosja/, drop: true },
+  { file: '11-25.json', y: 2021, re: /Gen Nicolae/, sub: ['Gen Nicolae', 'Gen. Nicolae'] },
+  // --- 26 XI ---
+  // data juliańska (7 XII wg gregorianskiego)
+  { file: '11-26.json', y: 1769, re: /Order Świętego Jerzego/, replace: 'Cesarzowa Rosji Katarzyna II Wielka ustanowiła Order Świętego Jerzego (26 listopada według kalendarza juliańskiego; w gregoriańskim 7 grudnia).' },
+  // dokladny dzien uwolnienia Kosciuszki niepotwierdzony
+  { file: '11-26.json', y: 1796, re: /Kościuszkę/, drop: true },
+  // SS Californian zbudowano w 1901-02 (brytyjski, Leyland Line)
+  { file: '11-26.json', y: 1906, re: /Californian/, drop: true },
+  // zdublowane z nastepnym wpisem (Zgromadzenie w Podgoricy)
+  { file: '11-26.json', y: 1918, re: /Wielkie Zgromadzenie Serbskie/, drop: true },
+  { file: '11-26.json', y: 1942, re: /dwudniowe bitwa/, sub: ['dwudniowe bitwa o Brisbane starcia', 'dwudniowa bitwa o Brisbane – starcia'] },
+  { file: '11-26.json', y: 1979, re: /Komorowski/, sub: ['Komorowski.', 'Komorowskiego.'] },
+  // ostatnie wojska wietnamskie opuscily Kambodze 26 IX 1989
+  { file: '11-26.json', y: 1989, re: /wietnamskie oddziały/, drop: true },
+  // --- 27 XI ---
+  // slub per procura Dymitra i Maryny: 22 XI 1605
+  { file: '11-27.json', y: 1605, re: /per procura/, drop: true },
+  // Murat wkroczyl do Warszawy 28 XI 1806
+  { file: '11-27.json', y: 1806, re: /zajęły opuszczoną/, drop: true },
+  // Schwarzenberg zostal premierem 21 XI 1848 (jest w 11-21)
+  { file: '11-27.json', y: 1848, re: /Schwarzenberg/, drop: true },
+  // zachowany jest tylko wpis licencji (27 XI) i bond (28 XI); data slubu nieznana
+  { file: '11-27.json', y: 1582, re: /Szekspir/, replace: 'W Worcesterze wydano zezwolenie na ślub Williama Szekspira (dokładna data jego małżeństwa z Anne Hathaway nie jest znana).' },
+  // trzesienie ziemi w Kita-Izu: 26 XI 1930, 272 ofiary
+  { file: '11-27.json', y: 1930, re: /trzęsieniu ziemi w Japonii/, drop: true },
+  // masakra w Jilavie zdublowana z 11-26
+  { file: '11-27.json', y: 1940, re: /Żelazna Gwardia/, drop: true },
+  // bitwa o Rostow (17 XI-2 XII 1941); 27 XI zaczela sie kontrofensywa radziecka
+  { file: '11-27.json', y: 1941, re: /zakończyła się bitwa o Rostów/, replace: 'Front wschodni: rozpoczęła się radziecka kontrofensywa pod Rostowem nad Donem, zakończona odzyskaniem miasta przez Armię Czerwoną.' },
+  // Ziwkow zostal premierem 19 XI 1962
+  { file: '11-27.json', y: 1962, re: /Żiwkow/, drop: true },
+  // ustawa o tlumaczu przysieglym z 25 XI 2004
+  { file: '11-27.json', y: 2004, re: /tłumacza przysięgłego/, drop: true },
+  // --- 28 XI ---
+  // Modoc War: poczatek 29 XI 1872 (jest w 11-29)
+  { file: '11-28.json', y: 1872, re: /Rozpoczęła się wojna Amerykanów z Modokami/, drop: true },
+  // Nancy Astor wygrala wybory uzupelniajace 15 XI 1919
+  { file: '11-28.json', y: 1919, re: /Nancy Astor/, drop: true },
+  // lot nad biegunem poludniowym: 28-29 XI (nad biegunem 29 XI)
+  { file: '11-28.json', y: 1929, re: /Byrd/, drop: true },
+  // Albania: Republike Ludowa proklamowano 11 I 1946
+  { file: '11-28.json', y: 1944, re: /republiką ludową/, drop: true },
+  // wysiedlenia z Zamojszczyzny - wpis zdublowany z 11-27
+  { file: '11-28.json', y: 1942, re: /Zamojszczyzny/, drop: true },
+  { file: '11-28.json', y: 1982, re: /Dymitrow/, sub: ['Dymitrow"', 'Dymitrow”'] },
+  { file: '11-28.json', y: 2004, re: /Pierwsza tura wyborów na prezydenta Rumunii/, replace: 'W Rumunii odbyła się pierwsza tura wyborów prezydenckich i wybory parlamentarne.' },
+  // --- 29 XI ---
+  // atak na Port-au-Prince w Tonga: 1 XII 1806
+  { file: '11-29.json', y: 1806, re: /Port-au-Prince/, drop: true },
+  // spolka Lancia zalozona 27 XI 1906
+  { file: '11-29.json', y: 1906, re: /Lancia/, drop: true },
+  // rzad Qemalego powstal 4 XII 1912
+  { file: '11-29.json', y: 1912, re: /Ismaila Qemala/, drop: true },
+  // premiera L'Age d'or: 28 XI (zrodla rozbiezne)
+  { file: '11-29.json', y: 1930, re: /Złoty wiek/, drop: true },
+  // Charriere uciekl z kolonii karnej na kontynencie
+  { file: '11-29.json', y: 1933, re: /Papillon/, sub: ['z kolonii karnej na Wyspie Diabelskiej u wybrzeży Gujany Francuskiej', 'z kolonii karnej w Gujanie Francuskiej'] },
+  // ONZ przyjela plan podzialu (nie podzielila Palestyny)
+  { file: '11-29.json', y: 1947, re: /Palestyna została podzielona/, replace: 'Zgromadzenie Ogólne ONZ przyjęło rezolucję nr 181 – plan podziału Palestyny na państwo żydowskie i arabskie.' },
+  // Ellis Island zamknieto 12 XI 1954
+  { file: '11-29.json', y: 1954, re: /Ellis Island/, drop: true },
+  // lotnisko Mirabel otwarto 4 X 1975
+  { file: '11-29.json', y: 1975, re: /Mirabel/, drop: true },
+  // lot KAL 858: 115 ofiar
+  { file: '11-29.json', y: 1987, re: /155 osób/, sub: ['155 osób', '115 osób'] },
+  // Lost River: marginalne zwyciestwo USA, poczatek wojny
+  { file: '11-29.json', y: 1872, re: /Lost River/, replace: 'Wojna z Modokami: starcie nad Lost River, od którego liczy się początek wojny.' },
+  // --- 30 XI ---
+  // 30 XI to data szwedzka (juliańska); gregoriańska 11 XII
+  { file: '11-30.json', y: 1718, re: /Karol XII/, replace: 'Król Szwecji Karol XII zginął podczas oblężenia norweskiej twierdzy Fredrikshald (30 listopada według kalendarza juliańskiego; w gregoriańskim 11 grudnia).' },
+  // Nafplio: data grecka (juliańska) niepewna
+  { file: '11-30.json', y: 1822, re: /Nauplion/, drop: true },
+  // Reunion przeszla na strone Wolnej Francji 28 XI 1942
+  { file: '11-30.json', y: 1942, re: /Reunion/, drop: true },
+  // "dekret glodowy" to osobna akcja, nie Akcja T4
+  { file: '11-30.json', y: 1942, re: /Akcja T4/, replace: 'W Bawarii wydano tzw. dekret głodowy (Hungererlass), nakazujący szpitalom psychiatrycznym drastyczne ograniczenie wyżywienia pacjentów.' },
+  // Super Famicom zadebiutowal 21 XI 1990
+  { file: '11-30.json', y: 1990, re: /Super Nintendo/, drop: true },
+  // Diablo ukazalo sie 31 XII 1996
+  { file: '11-30.json', y: 1996, re: /Diablo/, drop: true },
+  // zepsuty zapis magnitudy
+  { file: '11-30.json', y: 2004, re: /Podhalu doszło do trzęsienia/, replace: 'Na Podhalu doszło do trzęsienia ziemi.' },
 ];
 function applyEntryFixes(file, events) {
   return events
