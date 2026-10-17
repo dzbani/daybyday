@@ -835,6 +835,327 @@ const ENTRY_FIXES = [
   { file: '11-30.json', y: 1996, re: /Diablo/, drop: true },
   // zepsuty zapis magnitudy
   { file: '11-30.json', y: 2004, re: /Podhalu doszło do trzęsienia/, replace: 'Na Podhalu doszło do trzęsienia ziemi.' },
+
+  // ===== audyt 1-31 XII (17.10.2026) =====
+  // --- 1 XII ---
+  // Kodansha: firma Noma Seijiego od 1909 (nazwa Kodansha od 1911)
+  { file: '12-01.json', y: 1938, re: /Kōdansha/, drop: true },
+  // pierwszy zbior basni Andersena: 8 V 1835, drugi 16 XII 1835
+  { file: '12-01.json', y: 1835, re: /Andersen/, drop: true },
+  // protokol z Pekinu: Makau wspolpracuje przy kontroli i opodatkowaniu handlu opium (nie przemycie)
+  { file: '12-01.json', y: 1887, re: /Makau/, sub: ['przy przemycaniu indyjskiego opium', 'przy kontroli i opodatkowaniu handlu indyjskim opium'] },
+  { file: '12-01.json', y: 1390, re: /łacińskimi/, sub: ['łacińskimi', 'łacińskim'] },
+  // plany przekazano plk. Zygmuntowi Puchale (gen. Franciszek Puchala to inna osoba)
+  { file: '12-01.json', y: 1980, re: /Hupałowskiemu/, sub: ['gen. Franciszkowi Puchale', 'płk. Zygmuntowi Puchale'] },
+  // referendum z 1 XII 1985 odrzucilo obie propozycje rownouprawnienia plci
+  { file: '12-01.json', y: 1985, re: /Liechtensteinu/, replace: 'W referendum w Liechtensteinie odrzucono obie propozycje dotyczące równouprawnienia płci.' },
+  // --- 2 XII ---
+  // urwane zdanie
+  { file: '12-02.json', y: 1806, re: /wydał w Poznaniu/, replace: 'W pierwszą rocznicę bitwy pod Austerlitz Napoleon Bonaparte przebywał w Poznaniu.' },
+  // Trocki wydalony z partii 12 XI 1927 (jest w 11-12), XV Zjazd 2-19 XII tylko to potwierdzil
+  { file: '12-02.json', y: 1927, re: /Trocki został usunięty/, drop: true },
+  { file: '12-02.json', y: 2023, re: /Rozlosowano/, replace: 'Odbyło się losowanie grup Mistrzostw Europy w Piłce Nożnej 2024.' },
+  // --- 3 XII ---
+  // Angers oblegali Wandejczycy (nieudanie), miasto bronili republikanie
+  { file: '12-03.json', y: 1793, re: /oblężenie Angers/, replace: 'Powstanie w Wandei: powstańcy wandejscy rozpoczęli nieudane oblężenie Angers.' },
+  { file: '12-03.json', y: 1740, re: /Ubi primum/, sub: ['ogłosił pierwszą w historii encyklikę Ubi primum', 'ogłosił encyklikę Ubi primum'] },
+  // In supremo apostolatus: Grzegorz XVI
+  { file: '12-03.json', y: 1839, re: /In supremo/, sub: ['Grzegorz XV', 'Grzegorz XVI'] },
+  // Himalia odkryta 3 XII 1904
+  { file: '12-03.json', y: 1994, re: /Himalię/, toYear: 1904 },
+  // Cumulina urodzila sie 3 X 1997
+  { file: '12-03.json', y: 1997, re: /Cumulina/, drop: true },
+  // --- 4 XII ---
+  // Harald Gille zginal 14 XII 1136
+  { file: '12-04.json', y: 1136, re: /Harald IV/, drop: true },
+  { file: '12-04.json', y: 1793, re: /po oblężeniu Angers/, replace: 'Powstanie w Wandei: powstańcy wandejscy zakończyli nieudane oblężenie Angers.' },
+  // dekret z Chamartin z 4 XII 1808 wydal Napoleon
+  { file: '12-04.json', y: 1808, re: /Józef Bonaparte wydał dekret/, sub: ['król Józef Bonaparte wydał dekret', 'Napoleon Bonaparte wydał dekret z Chamartín'] },
+  { file: '12-04.json', y: 1884, re: /Jaseon/, sub: ['Jaseon', 'Joseon'] },
+  // konferencja londynska: 4 XII 1908 - 26 II 1909
+  { file: '12-04.json', y: 1909, re: /katalogu zasad prawa międzynarodowego/, toYear: 1908 },
+  { file: '12-04.json', y: 1926, re: /ligę piłkarską/, drop: true },
+  // zgoda na metode kalendarzowa - w Casti connubii z 31 XII 1930
+  { file: '12-04.json', y: 1930, re: /naturalną regulację/, drop: true },
+  // czlonkostwo USA w ONZ Senat zatwierdzil 28 VII 1945
+  { file: '12-04.json', y: 1945, re: /Senat Stanów Zjednoczonych zatwierdził członkostwo/, drop: true },
+  // zamach w Makassar: 5 XII 2002
+  { file: '12-04.json', y: 2002, re: /Makasarze/, drop: true },
+  // --- 5 XII ---
+  // wyprawa Stuarta wyruszyla 25 X 1861
+  { file: '12-05.json', y: 1861, re: /Stuart/, drop: true },
+  // I Zjazd Wszechbialoruski: daty wg kalendarza juliańskiego, nie do potwierdzenia
+  { file: '12-05.json', y: 1917, re: /Zjazd Wszechbiałoruski/, drop: true },
+  { file: '12-17.json', y: 1917, re: /Zjazd Wszechbiałoruski/, drop: true },
+  // zepsuty placeholder: Ticonderoga, Morze Filipinskie
+  { file: '12-05.json', y: 1965, re: /Q=Q/, replace: 'Z pokładu lotniskowca USS „Ticonderoga” stoczył się do Morza Filipińskiego samolot A-4 Skyhawk z bombą termojądrową B43; maszyny nie odzyskano.' },
+  // wzajemne zniesienie ekskomunik: 7 XII 1965 (jest w 12-07)
+  { file: '12-05.json', y: 1965, re: /odwołane ekskomuniki/, drop: true },
+  // --- 6 XII ---
+  // diecezje lublanska ustanowil Pius II (Eugeniusz IV zmarl 1447)
+  { file: '12-06.json', y: 1461, re: /Eugeniusz IV/, sub: ['Eugeniusz IV', 'Pius II'] },
+  // Krolestwo Finlandii powstalo (na papierze) w X 1918
+  { file: '12-06.json', y: 1917, re: /Finlandia ogłosiła niepodległość/, sub: [' Powstało Królestwo Finlandii.', ''] },
+  { file: '12-06.json', y: 1956, re: /Igrzyskach/, sub: ['Podczas XVI Letnich Igrzyskach Olimpijskich', 'Podczas XVI Letnich Igrzysk Olimpijskich'] },
+  // Ballykelly: 11 zolnierzy i 6 cywilow (17 ofiar)
+  { file: '12-06.json', y: 1982, re: /Ballykelly/, sub: ['7 cywilów', '6 cywilów'] },
+  // Miss World 2004: 4 XII 2004
+  { file: '12-06.json', y: 2004, re: /María Julia Mantilla/, drop: true },
+  // --- 7 XII ---
+  // nazwa organizacji: Towarzystwo Szkoly Bialoruskiej (wpis w drugiej czesci dnia)
+  { file: '12-07.json', y: 1921, re: /Białoruskie Towarzystwo Szkolne/, drop: true },
+  { file: '12-07.json', y: 1939, re: /Akcja T4: Niemcy rozpoczęli/, sub: ['Akcja T4: Niemcy rozpoczęli', 'Niemcy rozpoczęli'] },
+  // Schleswig-Holstein zwodowano 17 XII 1906
+  { file: '12-07.json', y: 1906, re: /Schleswig-Holstein/, drop: true },
+  // Hennepin: 6-9 XII 1678, zrodla rozbiezne
+  { file: '12-07.json', y: 1678, re: /Hennepin/, drop: true },
+  // aresztowanie Lenina: 20/21 XII 1895 wg gregorianskiego (8/9 XII st. st.)
+  { file: '12-07.json', y: 1895, re: /Lenin został aresztowany/, drop: true },
+  // Lloyd George premierem od 6 XII 1916 (jest w 12-06)
+  { file: '12-07.json', y: 1916, re: /Lloyd George/, drop: true },
+  // Czeka powstala 7 XII st. st. = 20 XII (jest w 12-20)
+  { file: '12-07.json', y: 1917, re: /Dzierżyński został szefem/, drop: true },
+  // ofensywa Compass: 9 XII 1940
+  { file: '12-07.json', y: 1940, re: /zaatakowały siły włoskie/, drop: true },
+  // --- 8 XII ---
+  // oblezenie Akki: od 27 XI 1831
+  { file: '12-08.json', y: 1831, re: /Akki/, drop: true },
+  { file: '12-08.json', y: 1919, re: /Rada Ambasadorów/, sub: ['Rada Ambasadorów', 'Rada Najwyższa'] },
+  // Colossus lamal szyfr Lorenza, nie Enigmy
+  { file: '12-08.json', y: 1943, re: /Colossus/, sub: ['do łamania szyfrów niemieckiej maszyny Enigma (zwłaszcza tzw. Maszyny Lorenza)', 'do łamania szyfrów niemieckiej maszyny Lorenz'] },
+  { file: '12-08.json', y: 2004, re: /Unię Narodów Południowoamerykańskich/, sub: ['Unię Narodów Południowoamerykańskich', 'Południowoamerykańską Wspólnotę Narodów (poprzedniczkę UNASUR)'] },
+  // --- 9 XII ---
+  // bitwa pod Reading: 9 XII st. st. = 19 XII
+  { file: '12-09.json', y: 1688, re: /Reading/, drop: true },
+  // Vaida-Voevod premierem od 1 XII 1919
+  { file: '12-09.json', y: 1919, re: /Vaida-Voievod/, drop: true },
+  // powstanie w Jesselton: 9-10 X 1943
+  { file: '12-09.json', y: 1943, re: /Jesselton/, drop: true },
+  // Chiny wypowiedzialy wojne 9 XII 1941
+  { file: '12-09.json', y: 1940, re: /Chiny wypowiedziały wojnę/, toYear: 1941 },
+  // strajk LKAB: grudzien 1969 - luty 1970
+  { file: '12-09.json', y: 1968, re: /LKAB/, toYear: 1969 },
+  // umowa EWG-Czechoslowacja: 19 XII 1988
+  { file: '12-09.json', y: 1988, re: /Czechosłowacją/, drop: true },
+  // wyrok na Eichmanna: 11 XII (kara smierci 15 XII)
+  { file: '12-09.json', y: 1961, re: /Eichmann/, drop: true },
+  // --- 10 XII ---
+  // ucieczka Marii z Modeny: 10 XII st. st. = 20 XII
+  { file: '12-10.json', y: 1688, re: /Maria z Modeny/, replace: 'Chwalebna rewolucja: królowa Maria z Modeny uciekła z półrocznym synem Jakubem do Francji (10 grudnia według kalendarza juliańskiego; w gregoriańskim 20 grudnia).' },
+  // Hitler zwolniony z Landsbergu 20 XII 1924
+  { file: '12-10.json', y: 1924, re: /Hitler został przedterminowo/, drop: true },
+  // Curie nie przyjechali po Nobla w 1903
+  { file: '12-10.json', y: 1903, re: /Skłodowska-Curie, Pierre Curie i Henri Becquerel/, replace: 'Nagrodę Nobla w dziedzinie fizyki za rok 1903 przyznano Marii Skłodowskiej-Curie, Pierre’owi Curie i Henriemu Becquerelowi (Curie nie przybyli wtedy do Sztokholmu).' },
+  // Sojuz 26 startowal 10 XII 1977
+  { file: '12-10.json', y: 1977, re: /Sojuz 23/, sub: ['Sojuz 23', 'Sojuz 26'] },
+  // likwidacja obwodu poludniowoosetyjskiego: 11 XII 1990
+  { file: '12-10.json', y: 1990, re: /Południowoosetyjskiego/, drop: true },
+  // kobiety na Tasmanii: wrzesien 1903
+  { file: '12-10.json', y: 1902, re: /Na Tasmanii kobiety/, drop: true },
+  // --- 11 XII ---
+  // Izabela koronowana 13 XII 1474 (jest w 12-13)
+  { file: '12-11.json', y: 1474, re: /Izabela I Katolicka została królową/, drop: true },
+  // powstanie w Kijowie 11 XII 1648 - niepotwierdzone
+  { file: '12-11.json', y: 1648, re: /Kijowie wybuchło powstanie/, drop: true },
+  { file: '12-11.json', y: 1688, re: /Faversham/, replace: 'Chwalebna rewolucja: król Jakub II Stuart został pojmany w Faversham w czasie próby ucieczki do Francji, co jego przeciwnicy uznali za akt abdykacji (11 grudnia według kalendarza juliańskiego; w gregoriańskim 21 grudnia).' },
+  // Durbar koronacyjny w Delhi: 12 XII 1911 (jest w 12-12 przeniesienie stolicy)
+  { file: '12-11.json', y: 1911, re: /Nowym Delhi/, drop: true },
+  // protokol z Kioto: 11 XII 1997
+  { file: '12-11.json', y: 1996, re: /Protokołu z Kioto/, toYear: 1997 },
+  // traktat nicejski podpisano 26 II 2001; 11 XII 2000 zakonczyl sie szczyt
+  { file: '12-11.json', y: 2000, re: /Traktat nicejski/, replace: 'Zakończył się szczyt Rady Europejskiej w Nicei, na którym uzgodniono treść traktatu nicejskiego (podpisanego 26 lutego 2001).' },
+  // --- 12 XII ---
+  // pozar La Fenice: noc 12/13 XII (wpis w 12-13)
+  { file: '12-12.json', y: 1836, re: /La Fenice/, drop: true },
+  // Escalade: 12 XII st. st. = 22 XII
+  { file: '12-12.json', y: 1602, re: /Genewy/, replace: 'Mieszkańcy Genewy odparli nocny atak wojsk sabaudzkich na mury obronne miasta (tzw. Escalade; 12 grudnia według kalendarza juliańskiego, w którym wówczas liczono czas w Genewie; w gregoriańskim 22 grudnia).' },
+  // wybory do rad lokalnych w ZSRR: data niepotwierdzona
+  { file: '12-12.json', y: 1940, re: /wybory do rad szczebla terenowego/, drop: true },
+  // CAPD zalozono 30 XII 1945
+  { file: '12-12.json', y: 1945, re: /Chińskie Stowarzyszenie Promowania Demokracji/, drop: true },
+  { file: '12-12.json', y: 1913, re: /Perrugia/, sub: ['Vicenzzo Perrugia', 'Vincenzo Peruggia'] },
+  // wpis z urwana skladnia i niepotwierdzonymi liczbami
+  { file: '12-12.json', y: 1978, re: /Kirjat Arba/, drop: true },
+  // wycofanie zlotego na terenach zajetych przez ZSRR: 21 XII (jest w 12-21)
+  { file: '12-12.json', y: 1939, re: /wycofano z obiegu złotego/, drop: true },
+  // --- 13 XII ---
+  // encyklika Sancta Dei civitas: 3 XII 1880
+  { file: '12-13.json', y: 1880, re: /Sancta Dei Civitas/, drop: true },
+  // zatonięcie Thomas W. Lawson: noc 13/14 XII (wpis w 12-14)
+  { file: '12-13.json', y: 1907, re: /Thomas W\. Lawson/, drop: true },
+  // Krymska Republika Ludowa: 13 XII st. st. = 26 XII
+  { file: '12-13.json', y: 1917, re: /Krymska Republika Ludowa/, replace: 'Proklamowano Krymską Republikę Ludową (13 grudnia według kalendarza juliańskiego; w gregoriańskim 26 grudnia).' },
+  // RNP Deata zalozono w 1941
+  { file: '12-13.json', y: 1940, re: /Marcel Déat/, drop: true },
+  { file: '12-13.json', y: 1941, re: /Incydent na/, sub: ['który doprowadził do umieszczenia', 'który – według niektórych historyków – przyczynił się do umieszczenia'] },
+  // 13 XII 1956 ONZ zatwierdzila polaczenie; formalnie Togo przylaczono w III 1957
+  { file: '12-13.json', y: 1956, re: /Togo Brytyjskie/, replace: 'Zgromadzenie Ogólne ONZ zatwierdziło przyłączenie Togo Brytyjskiego do Złotego Wybrzeża (obecnie Ghana).' },
+  // --- 14 XII ---
+  // Kriezis premierem od 24 XII 1849 (jest w 12-24)
+  { file: '12-14.json', y: 1849, re: /Kriezis/, drop: true },
+  // unia Krety z Grecja: 1 XII 1913 (jest w 12-01)
+  { file: '12-14.json', y: 1913, re: /Grecja zaanektowała Kretę/, drop: true },
+  { file: '12-14.json', y: 1927, re: /Irak ogłosił niezależność/, replace: 'Wielka Brytania i Irak podpisały traktat uznający niezależność Iraku (formalnie kraj uzyskał ją w 1932 roku).' },
+  // data przejecia Bentleya przez Rolls-Royce'a niepotwierdzona
+  { file: '12-14.json', y: 1931, re: /Bentley/, drop: true },
+  { file: '12-14.json', y: 1868, re: /judaizmu neologicznego/, replace: 'W Peszcie rozpoczął się Kongres Żydów Węgier, którego efektem był podział wspólnoty na nurt neologiczny i ortodoksyjny.' },
+  // Don Kichot: 14 XII st. st. = 26 XII
+  { file: '12-14.json', y: 1869, re: /Don Kichot/, replace: 'W Moskwie odbyła się premiera baletu Don Kichot (14 grudnia według kalendarza juliańskiego; w gregoriańskim 26 grudnia).' },
+  { file: '12-14.json', y: 1863, re: /archidiecezję Vancouver/, drop: true },
+  // 14 XII 1960 podpisano konwencje OECD (organizacja powstala 30 IX 1961)
+  { file: '12-14.json', y: 1960, re: /OECD/, sub: ['Powstała Organizacja Współpracy Gospodarczej i Rozwoju (OECD)', 'Podpisano konwencję o utworzeniu Organizacji Współpracy Gospodarczej i Rozwoju (OECD)'] },
+  // --- 15 XII ---
+  // pierwszy mecz Naismitha: 21 XII 1891 (jest w 12-21)
+  { file: '12-15.json', y: 1891, re: /Naismith/, drop: true },
+  // oblot Muchy 100: 14 XI 1953 (jest w 11-14)
+  { file: '12-15.json', y: 1952, re: /Mucha 100/, drop: true },
+  // atak 47 ronin: 30 I 1703 wg gregorianskiego
+  { file: '12-15.json', y: 1702, re: /bushid/, drop: true },
+  // oblezenie Mekele: styczen 1896
+  { file: '12-15.json', y: 1895, re: /Mekelie/, drop: true },
+  // Austria w ONZ: 14 XII 1955 (jest w 12-14)
+  { file: '12-15.json', y: 1955, re: /Austria została przyjęta do ONZ/, drop: true },
+  // Rai 3 wystartowal 15 XII 1979
+  { file: '12-15.json', y: 1973, re: /Rai 3/, toYear: 1979 },
+  // --- 16 XII ---
+  { file: '12-16.json', y: 1864, re: /Nashville/, replace: 'Wojna secesyjna: zwycięstwem wojsk Unii zakończyła się bitwa pod Nashville.' },
+  // Goblet premierem od 11 XII 1886
+  { file: '12-16.json', y: 1886, re: /René Goblet/, drop: true },
+  // wysadzenie soboru Chrystusa Zbawiciela: 5 XII 1931 (jest w 12-05)
+  { file: '12-16.json', y: 1931, re: /Cerkiew Odkupienia/, drop: true },
+  // referendum w sprawie Badenii-Wirtembergii: 9 XII 1951
+  { file: '12-16.json', y: 1951, re: /Badenia-Wirtembergia/, drop: true },
+  // zajecie ambasady Japonii w Limie: 17 XII 1996
+  { file: '12-16.json', y: 1996, re: /ambasady Japonii/, drop: true },
+  // --- 17 XII ---
+  { file: '12-17.json', y: 1841, re: /archidiecezja Toronto/, sub: ['archidiecezja Toronto', 'diecezja Toronto'] },
+  // protektorat nad Egiptem: 18 XII 1914 (jest w 12-18)
+  { file: '12-17.json', y: 1914, re: /Egipt został objęty protektoratem/, drop: true },
+  { file: '12-17.json', y: 1930, re: /Baudilio Palma/, sub: ['został obalony i zamordowany w wojskowym zamachu stanu', 'został obalony w wojskowym zamachu stanu'] },
+  // SS Corregidor (dawniej HMS Engadine)
+  { file: '12-17.json', y: 1941, re: /Engadine/, replace: 'Wojna na Pacyfiku: w pobliżu Corregidoru zatonął po wejściu na minę filipiński statek „Corregidor” (dawniej brytyjski HMS „Engadine”) z ok. 1200 uciekinierami z Manili; uratowano 282 osoby.' },
+  // Blue Book zamknieto 17 XII 1969
+  { file: '12-17.json', y: 1970, re: /Blue Book/, toYear: 1969 },
+  // Martens IV: 17 XII 1981
+  { file: '12-17.json', y: 1982, re: /Martens/, toYear: 1981 },
+  // Jakes zostal sekretarzem generalnym KPCz (prezydentem byl Husak do XII 1989)
+  { file: '12-17.json', y: 1987, re: /Jakeš/, sub: ['został prezydentem Czechosłowacji', 'został sekretarzem generalnym Komunistycznej Partii Czechosłowacji'] },
+  // --- 18 XII ---
+  // I sesja soboru bazylejskiego nie do potwierdzenia (18 XII 1431 - bulla Eugeniusza IV o rozwiązaniu)
+  { file: '12-18.json', y: 1431, re: /Soboru w Bazylei/, drop: true },
+  // Tasman nigdy nie wyladowal (starcie z Maorysami 19 XII)
+  { file: '12-18.json', y: 1642, re: /Tasman/, replace: 'Holender Abel Tasman zakotwiczył u północnych wybrzeży Wyspy Południowej Nowej Zelandii (w Złotej Zatoce).' },
+  // masakra Santo Domingo: 13 XII 1998
+  { file: '12-18.json', y: 1998, re: /Santo Domingo/, drop: true },
+  // --- 19 XII ---
+  // potyczka pod Clifton Moor: 18 XII 1745
+  { file: '12-19.json', y: 1745, re: /Clifton Moor/, drop: true },
+  // Juan Vicente Gomez - prezydent Wenezueli
+  { file: '12-19.json', y: 1908, re: /Boliwii/, sub: ['Boliwii', 'Wenezueli'] },
+  // przewrot w Boliwii: 20 XII 1943
+  { file: '12-19.json', y: 1943, re: /Boliwii doszło/, drop: true },
+  // Sacharow wrocil do Moskwy 23 XII 1986
+  { file: '12-19.json', y: 1986, re: /Sacharow/, drop: true },
+  // wybory w Korei Poludniowej: 18 XII 1997
+  { file: '12-19.json', y: 1997, re: /Kim Dae-jung/, drop: true },
+  // --- 20 XII ---
+  // seminarium krakowskie - wpis zdublowany z 12-19
+  { file: '12-20.json', y: 1602, re: /seminarium krakowskie/, drop: true },
+  // Savannah zajeto 21 XII 1864
+  { file: '12-20.json', y: 1864, re: /Savannah/, drop: true },
+  // --- 21 XII ---
+  // Curalaba: 23 XII 1598
+  { file: '12-21.json', y: 1598, re: /Curalaba/, drop: true },
+  // wyrok na Fouqueta: 20 XII 1664
+  { file: '12-21.json', y: 1664, re: /Fouquet/, drop: true },
+  // Fetterman Fight: 81 ofiar
+  { file: '12-21.json', y: 1866, re: /Fettermanna/, sub: ['163 żołnierzy', '81 żołnierzy'] },
+  { file: '12-21.json', y: 1891, re: /koszykówk/, replace: 'W Springfield (Massachusetts) James Naismith, nauczyciel wychowania fizycznego w YMCA, rozegrał ze swoimi uczniami pierwszy mecz w wymyśloną przez siebie koszykówkę; 21 grudnia uznaje się za datę powstania tej dyscypliny.' },
+  // wypowiedzenie wojny przez USA: 11 XII 1941 (jest w 12-11)
+  { file: '12-21.json', y: 1941, re: /USA wypowiedziały wojnę/, drop: true },
+  // Civil Partnership Act: w mocy od 5 XII, pierwsze zwiazki w Anglii i Walii 21 XII
+  { file: '12-21.json', y: 2005, re: /Civil Partnership Act/, replace: 'W Anglii i Walii zawarto pierwsze cywilne związki partnerskie (tego dnia związek zawarli m.in. Elton John i David Furnish).' },
+  // --- 22 XII ---
+  // koronacja Stefana: data zrodlowo rozbiezna (22 lub 26 XII), wpisy w obu dniach
+  { file: '12-22.json', y: 1135, re: /Stefan z Blois/, drop: true },
+  { file: '12-26.json', y: 1135, re: /Stefan z Blois/, drop: true },
+  // kapitulacja Abd al-Kadira: 23 XII 1847
+  { file: '12-22.json', y: 1847, re: /Abd al-Kadir/, drop: true },
+  // daty juliańskie
+  { file: '12-22.json', y: 1849, re: /Dostojewski/, replace: 'Stojący przed plutonem egzekucyjnym Fiodor Dostojewski i inni członkowie Koła Pietraszewskiego zostali w ostatniej chwili ułaskawieni przez cara Mikołaja I (22 grudnia według kalendarza juliańskiego; w gregoriańskim 3 stycznia 1850).' },
+  // Newcastle United: data nazwy niepotwierdzona
+  { file: '12-22.json', y: 1892, re: /Newcastle United/, drop: true },
+  // rozmowy w Brzesciu rozpoczely sie 22 XII, rozejm podpisano 15 XII
+  { file: '12-22.json', y: 1917, re: /Zawieszenie broni/, replace: 'Rozpoczęły się rokowania pokojowe państw centralnych z Rosją Radziecką w Brześciu Litewskim (zawieszenie broni podpisano 15 grudnia).' },
+  // Denke aresztowany 21 XII, samobojstwo 22 XII
+  { file: '12-22.json', y: 1924, re: /Denke/, replace: 'W areszcie w Ziębicach (Münsterbergu) popełnił samobójstwo seryjny morderca i kanibal Karl Denke, aresztowany dzień wcześniej.' },
+  // eksperyment 17 XII, praca wyslana 22 XII
+  { file: '12-22.json', y: 1938, re: /Otto Hahn/, replace: 'Niemieccy fizycy Otto Hahn i Fritz Strassmann wysłali do czasopisma „Naturwissenschaften” pracę o rozszczepieniu jądra uranu (eksperyment wykonali 17 grudnia).' },
+  // Jesselton -> Kota Kinabalu: 22 IX 1967
+  { file: '12-22.json', y: 1967, re: /Kota Kinabalu/, drop: true },
+  // --- 23 XII ---
+  // trzesienie Ansei-Tokai: 23 XII 1854
+  { file: '12-23.json', y: 1864, re: /Edo \(obecnie Tokio\)/, toYear: 1854 },
+  { file: '12-23.json', y: 1688, re: /Jakub II Stuart odpłynął/, replace: 'Obalony król Anglii i Szkocji Jakub II Stuart odpłynął do Francji (23 grudnia według kalendarza juliańskiego; w gregoriańskim 2 stycznia 1689).' },
+  // telewizja izraelska: 2 V 1968
+  { file: '12-23.json', y: 1968, re: /Telewizja izraelska/, drop: true },
+  // --- 24 XII ---
+  // Czarnowo: 23 XII (jest w 12-23)
+  { file: '12-24.json', y: 1806, re: /Czarnowem/, drop: true },
+  // --- 25 XII ---
+  // lądowanie na Luzonie: 9 I 1945
+  { file: '12-25.json', y: 1944, re: /Luzonie/, drop: true },
+  // Apophis w skali Torino 4: 27 XII 2004
+  { file: '12-25.json', y: 2004, re: /Apophis/, drop: true },
+  { file: '12-25.json', y: 1615, re: /Hiszpanach/, sub: [' (90 lat Hiszpanach)', ''] },
+  // --- 26 XII ---
+  // koniec oblezenia Jasnej Gory: wpis w 12-27
+  { file: '12-26.json', y: 1655, re: /oblężenie Jasnej Góry/, drop: true },
+  // masakra w Wawrze: wpis w 12-27
+  { file: '12-26.json', y: 1939, re: /Wawrze/, drop: true },
+  { file: '12-26.json', y: 1606, re: /Król Lear/, sub: ['Premiera tragedii Król Lear', 'Pierwsze udokumentowane wystawienie tragedii Król Lear'] },
+  // An-124 oblatano 26 XII 1982
+  { file: '12-26.json', y: 1986, re: /An-124/, toYear: 1982 },
+  // Kim Dzong Un: 30 XII 2011
+  { file: '12-26.json', y: 2011, re: /Kim Dzong Un/, drop: true },
+  // --- 27 XII ---
+  // bitwa pod Szejnowem: 9 I 1878 wg gregorianskiego
+  { file: '12-27.json', y: 1877, re: /Szejnową/, drop: true },
+  // zmiana nazwy Persji: 21 III 1935
+  { file: '12-27.json', y: 1934, re: /Persja zmieniła nazwę/, drop: true },
+  { file: '12-27.json', y: 2007, re: /Kibaki/, replace: 'W Kenii odbyły się wybory prezydenckie i parlamentarne; ogłoszenie zwycięstwa Mwai Kibakiego (30 grudnia) wywołało falę przemocy.' },
+  // --- 28 XII ---
+  // USA zajely Midway 28 VIII 1867
+  { file: '12-28.json', y: 1867, re: /Midway/, drop: true },
+  // powstanie Rand: styczen 1922
+  { file: '12-28.json', y: 1921, re: /Witwatersrand/, drop: true },
+  // wpis niepotwierdzony
+  { file: '12-28.json', y: 1962, re: /Pakistanie zginęło około 5 tys/, drop: true },
+  // --- 29 XII ---
+  // spalenie Buffalo: 30 XII 1813 (jest w 12-30)
+  { file: '12-29.json', y: 1813, re: /Buffalo/, drop: true },
+  { file: '12-29.json', y: 1911, re: /od Mandżurii/, sub: ['od Mandżurii', 'od Chin (dynastii Qing)'] },
+  // wpis niejasny
+  { file: '12-29.json', y: 1920, re: /Mołdawii/, drop: true },
+  // konstytucja z 1937 nie proklamowala republiki
+  { file: '12-29.json', y: 1937, re: /Wolne Państwo Irlandzkie przyjęło konstytucję/, replace: 'W Irlandii weszła w życie nowa konstytucja, zastępująca konstytucję Wolnego Państwa Irlandzkiego i zmieniająca nazwę państwa na Irlandia (Éire).' },
+  // --- 30 XII ---
+  // Delhi zdobyto 11-14 IX 1803
+  { file: '12-30.json', y: 1803, re: /Brytyjczycy zdobyli Delhi/, drop: true },
+  // Kruger prezydentem Transwalu od 1883
+  { file: '12-30.json', y: 1880, re: /Paul Kruger/, drop: true },
+  // Hubble: komunikat 1 I 1925
+  { file: '12-30.json', y: 1924, re: /Hubble/, drop: true },
+  { file: '12-30.json', y: 2018, re: /Tshisekedi/, replace: 'W Demokratycznej Republice Konga odbyły się wybory prezydenckie (zwycięzcą ogłoszono Félixa Tshisekediego).' },
+  // --- 31 XII ---
+  // Cobra 15: wpis zdublowany z 12-30
+  { file: '12-31.json', y: 1969, re: /Cobra 15/, drop: true },
+  // okupacja Krolewca: styczen 1758
+  { file: '12-31.json', y: 1757, re: /Królewca/, drop: true },
+  // bitwa o Kanton: 28-29 XII 1857
+  { file: '12-31.json', y: 1857, re: /bitwie o Kanton/, drop: true },
+  // Asuncion zajeto 1 I 1869
+  { file: '12-31.json', y: 1868, re: /Asunción/, drop: true },
 ];
 function applyEntryFixes(file, events) {
   return events
