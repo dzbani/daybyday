@@ -191,6 +191,10 @@
     .wk-yearbar { display:flex; align-items:center; gap:.75rem; margin-bottom:1rem; flex-wrap:wrap; }
     .wk-yearbar label { font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
     .wk-yearbar select { padding:.55rem .9rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); }
+    .wk-chips { display:flex; gap:.4rem; flex-wrap:wrap; }
+    .wk-chip { padding:.4rem .8rem; background:var(--surface); color:var(--text); border:1px solid var(--border); border-radius:60px; font-family:inherit; font-size:.82rem; font-weight:500; cursor:pointer; transition:background .15s,color .15s,border-color .15s; }
+    .wk-chip:hover { border-color:var(--text); }
+    .wk-chip.on { background:var(--text); color:var(--bg); border-color:var(--text); }
     .wk-table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
     .wk-table { width:100%; border-collapse:collapse; font-size:.86rem; }
     .wk-table th { text-align:left; font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:.75rem 1rem; border-bottom:1px solid var(--border); background:var(--tag-bg); }
@@ -250,6 +254,7 @@
   <div class="wk-yearbar">
     <label for="wkYear">Rok</label>
     <select id="wkYear"></select>
+    <div class="wk-chips" id="wkChips" role="group" aria-label="Szybki wybór roku"></div>
   </div>
   <div class="wk-table-wrap">
     <table class="wk-table">
@@ -340,6 +345,11 @@
     $('wkRows').innerHTML = html;
     $('wkTableTitle').textContent = 'Numery tygodni w roku ' + Y;
     $('wkYear').value = String(Y);
+    document.querySelectorAll('.wk-chip').forEach(function (b) {
+      const on = Number(b.dataset.y) === Y;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
   }
 
   function render(n) {
@@ -366,6 +376,13 @@
     for (let y = 2000; y <= 2100; y++) opts += '<option value="' + y + '">' + y + '</option>';
     $('wkYear').innerHTML = opts;
     const y0 = fromDn(todayDn()).y, list = [];
+    let chips = '';
+    for (let y = Math.max(2000, y0 - 1); y <= Math.min(2100, y0 + 6); y++) chips += '<button type="button" class="wk-chip" data-y="' + y + '">' + y + '</button>';
+    $('wkChips').innerHTML = chips;
+    $('wkChips').addEventListener('click', function (e) {
+      const b = e.target.closest('.wk-chip');
+      if (b) renderTable(Number(b.dataset.y), selected);
+    });
     for (let y = y0; y <= 2100 && list.length < 4; y++) if (weeksInYear(y) === 53) list.push(y);
     $('wk53').textContent = 'Najbliższe lata z 53 tygodniami: ' + list.join(', ') + '.';
     $('wkInput').addEventListener('change', function () {
