@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQZRJPF39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2LQZRJPF39');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Który to tydzień roku? Numer tygodnia i dzień roku | DaybyDay</title>
+  <meta name="description" content="Sprawdź, który jest dziś tydzień roku i który dzień roku. Numer tygodnia ISO dla dowolnej daty oraz tabela wszystkich tygodni z datami od poniedziałku do niedzieli.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daybyday.today/numer-tygodnia.html">
+  <meta property="og:title" content="Który to tydzień roku? Numer tygodnia i dzień roku">
+  <meta property="og:site_name" content="DaybyDay">
+  <meta property="og:description" content="Który to tydzień roku? Numer tygodnia ISO i dzień roku dla dzisiejszej lub wybranej daty, z tabelą wszystkich tygodni.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://daybyday.today/og-image-v4.png">
+  <meta property="og:url" content="https://daybyday.today/numer-tygodnia.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+  <link rel="stylesheet" href="fonts.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; }
+    html, body { max-width: 100vw; overflow-x: clip; }
+    body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Instrument Serif',serif; font-size:1.25rem; color:var(--text); text-decoration:none; display: flex; align-items: center; gap: 0.5rem; }
+    [data-theme="dark"] .nav-logo svg { filter: invert(1); }
+    .nav-links { display:flex; gap:.25rem; list-style:none; }
+    .nav-links a { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; padding:.35rem .75rem; border-radius:8px; transition:background .15s,color .15s; }
+    .nav-links a:hover,.nav-links a.active { background:var(--tag-bg); color:var(--text); }
+    .nav-month { font-size:.8rem; font-weight:500; color:var(--muted); text-decoration:none; }
+    .page { max-width:860px; margin:0 auto; padding:2.5rem 2rem 6rem; }
+    .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
+    .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:600px; margin-bottom:2rem; }
+    .calc-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; margin-bottom:1.5rem; }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.5rem; }
+    .form-group label { display:block; font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:.5rem; }
+    .form-group input { width:100%; padding:.75rem 1rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); outline:none; transition:border-color .15s; }
+    .form-group input:focus { border-color:var(--text); }
+    .btn-calc { width:100%; padding:.85rem; background:var(--text); color:white; border:none; border-radius:10px; font-family:inherit; font-size:.9rem; font-weight:600; cursor:pointer; transition:opacity .15s; }
+    .btn-calc:hover { opacity:.85; }
+    .result-box { display:none; background:var(--tag-bg); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; text-align:center; margin-bottom:1.5rem; }
+    .result-box.visible { display:block; }
+    .result-main { font-family:'Instrument Serif',serif; font-size:3.5rem; line-height:1; margin-bottom:.5rem; }
+    .result-label { font-size:.85rem; color:var(--muted); }
+    .result-sub { font-size:1rem; font-weight:500; margin-top:1rem; color:var(--text); }
+    .result-links { display:flex; gap:.75rem; justify-content:center; margin-top:1.25rem; flex-wrap:wrap; }
+    .result-link { font-size:.8rem; color:var(--muted); text-decoration:none; padding:.3rem .8rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; transition:all .15s; }
+    .result-link:hover { color:var(--text); border-color:#C8C4BE; }
+    .info-box { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem 1.5rem; margin-bottom:1.5rem; display:flex; gap:1rem; align-items:flex-start; }
+    .info-icon { font-size:1.3rem; flex-shrink:0; margin-top:.1rem; }
+    .info-text { font-size:.83rem; color:var(--muted); line-height:1.65; }
+    .info-text strong { color:var(--text); }
+    .faq { margin-top:2.5rem; }
+    .faq-title { font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:1.25rem; }
+    .faq-item { border-bottom:1px solid var(--border); padding:1.1rem 0; }
+    .faq-q { font-size:.88rem; font-weight:600; margin-bottom:.5rem; }
+    .faq-a { font-size:.84rem; color:var(--muted); line-height:1.7; }
+    footer { border-top:1px solid var(--border); padding:2rem; max-width:860px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
+    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
+    .footer-links a:hover { color:var(--text); }
+    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .nav-links{display:none} .topnav{padding:0 12px} .form-grid{grid-template-columns:1fr} .result-main{font-size:2.5rem} }
+
+    body{animation:pageIn .28s ease both}
+    @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    body.page-out{animation:pageOut .22s ease forwards}
+    @keyframes pageOut{to{opacity:0;transform:translateY(-5px)}}  </style>
+  <style>
+    .nav-burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:36px; height:36px; background:none; border:none; cursor:pointer; padding:6px; border-radius:8px; transition:background .15s; }
+    .nav-burger:hover { background:var(--tag-bg); }
+    .nav-burger span { display:block; height:2px; background:var(--text); border-radius:2px; transition:all .25s; }
+    .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity:0; }
+    .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media(max-width:600px){
+      .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; }
+    }
+  </style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#F8F7F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="DaybyDay">
+  <style id="dark-mode-styles">
+    [data-theme="dark"] {
+      --bg: #111110; --surface: #1B1A18; --border: #2C2A27;
+      --text: #F0EDE8; --muted: #6A6760; --tag-bg: #232220;
+      --fertile: #0D1F10; --fertile-text: #7BC87F;
+      --ovulation: #0D1526; --ovulation-text: #7BA0D4;
+      --period: #1F0D0A; --period-text: #D47A5A;
+      --open: #0D1F10; --open-text: #7BC87F;
+      --closed: #1F0D0A; --closed-text: #D47A5A; --accent: #D8D4CE;
+    }
+    [data-theme="dark"] { --muted: #9A9790; }
+    #themeToggle {
+      background: none; border: 1px solid var(--border); border-radius: 8px;
+      width: 32px; height: 32px; cursor: pointer; font-size: 14px;
+      color: var(--muted); transition: background .15s, color .15s;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; line-height: 1;
+    }
+    #themeToggle:hover { background: var(--tag-bg); color: var(--text); }
+    [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
+    [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98) !important; }
+    [data-theme="dark"] .btn-calc { color: var(--bg); }
+    [data-theme="dark"] .date-hero { background: linear-gradient(135deg, #1B1A18 60%, #211E1A 100%) !important; }
+    [data-theme="dark"] .quote-card { background: #1B1A18; }
+    [data-theme="dark"] .quote-text { color: rgba(240,237,232,0.9); }
+    [data-theme="dark"] .quote-mark { color: rgba(240,237,232,0.2); }
+    [data-theme="dark"] .quote-author { color: rgba(240,237,232,0.45); }
+    [data-theme="dark"] .astro-icon.sun { background: #2D1F0F; }
+    [data-theme="dark"] .astro-icon.moon { background: #141B24; }
+    [data-theme="dark"] #calPopup { box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+    [data-theme="dark"] .filter-btn:hover, [data-theme="dark"] .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+    [data-theme="dark"] .date-search input[type=date] { color-scheme: dark; }
+    [data-theme="dark"] .calc-btn { color: var(--bg); }
+    [data-theme="dark"] .type-panstwowe { background: #0D1526; color: #7BA0D4; }
+    [data-theme="dark"] .type-koscielne { background: #1F1208; color: #D4955A; }
+    [data-theme="dark"] .type-nieoficjalne { background: var(--tag-bg); color: var(--muted); }
+    [data-theme="dark"] .type-miedzynarodowe { background: #0D1F10; color: #7BC87F; }
+    [data-theme="dark"] input[type=date], [data-theme="dark"] input[type=text],
+    [data-theme="dark"] input[type=number], [data-theme="dark"] select {
+      background: var(--surface); color: var(--text); border-color: var(--border); color-scheme: dark;
+    }
+    [data-theme="dark"] .field input, [data-theme="dark"] .field select,
+    [data-theme="dark"] .date-input, [data-theme="dark"] .calc-input {
+      background: var(--surface); color: var(--text);
+    }
+    [data-theme="dark"] .month-tab { color: var(--muted); }
+    [data-theme="dark"] .month-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+    [data-theme="dark"] .filter-btn { color: var(--muted); }
+    [data-theme="dark"] a { color: inherit; }
+    [data-theme="dark"] a:hover { color: var(--text); }
+    /* Accessibility: font scaling */
+    html { font-size: 112%; }
+    [data-font="large"] { font-size: 125%; }
+    [data-font="xl"] { font-size: 140%; }
+    /* Better line-height */
+    body { line-height: 1.65; }
+    /* Focus outline for keyboard navigation */
+    :focus-visible { outline: 2px solid var(--sun, #E8936A); outline-offset: 2px; border-radius: 4px; }
+    /* Font-size toggle button */
+    #fontToggle {
+      background: none; border: 1px solid var(--border); border-radius: 8px;
+      width: 32px; height: 32px; cursor: pointer; font-size: 11px; font-weight: 700;
+      color: var(--muted); transition: background .15s, color .15s;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; line-height: 1; font-family: inherit; letter-spacing: -.03em;
+    }
+    #fontToggle:hover { background: var(--tag-bg); color: var(--text); }
+  </style>
+  <script>
+    (function(){
+      var s=localStorage.getItem('dbd-theme');
+      var p=window.matchMedia('(prefers-color-scheme:dark)').matches;
+      document.documentElement.setAttribute('data-theme',s||(p?'dark':'light'));
+            var f=localStorage.getItem('dbd-font')||'normal';if(f!=='normal')document.documentElement.setAttribute('data-font',f);
+    })();
+  </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9960731129891588" crossorigin="anonymous"></script>
+  <style>
+    .wk-hero { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; text-align:center; margin-bottom:1.5rem; }
+    .wk-when { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; }
+    .wk-date { font-size:1.05rem; font-weight:500; margin-bottom:1rem; }
+    .wk-big { display:flex; flex-direction:column; align-items:center; margin-bottom:.5rem; }
+    .wk-big #wkNum { font-family:'Instrument Serif',serif; font-size:5rem; line-height:1; }
+    .wk-big-label { font-size:.85rem; color:var(--muted); }
+    .wk-range { font-size:.88rem; color:var(--muted); margin-bottom:1.5rem; }
+    .wk-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; border-top:1px solid var(--border); padding-top:1.25rem; }
+    .wk-stat-v { font-family:'Instrument Serif',serif; font-size:1.9rem; line-height:1.1; }
+    .wk-stat-l { font-size:.74rem; color:var(--muted); margin-top:.15rem; }
+    .wk-controls { display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:end; }
+    .wk-today { padding:.75rem 1.25rem; background:var(--tag-bg); color:var(--text); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.85rem; font-weight:600; cursor:pointer; }
+    .wk-today:hover { border-color:var(--text); }
+    .wk-h2 { font-family:'Instrument Serif',serif; font-size:1.4rem; font-weight:400; margin:2.5rem 0 1rem; }
+    .wk-yearbar { display:flex; align-items:center; gap:.75rem; margin-bottom:1rem; flex-wrap:wrap; }
+    .wk-yearbar label { font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+    .wk-yearbar select { padding:.55rem .9rem; background:var(--bg); border:1px solid var(--border); border-radius:10px; font-family:inherit; font-size:.9rem; color:var(--text); }
+    .wk-table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+    .wk-table { width:100%; border-collapse:collapse; font-size:.86rem; }
+    .wk-table th { text-align:left; font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:.75rem 1rem; border-bottom:1px solid var(--border); background:var(--tag-bg); }
+    .wk-table td { padding:.55rem 1rem; border-bottom:1px solid var(--border); }
+    .wk-table tr:last-child td { border-bottom:none; }
+    .wk-table td:first-child { font-weight:600; width:5.5rem; }
+    .wk-table tr.cur td { background:var(--tag-bg); font-weight:600; }
+    .wk-table tr.cur td:first-child::after { content:' ←'; color:var(--muted); font-weight:400; }
+    @media(max-width:600px){ .wk-stats { grid-template-columns:1fr; } .wk-controls { grid-template-columns:1fr; } .wk-big #wkNum { font-size:4rem; } .wk-hero { padding:1.5rem 1rem; } }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="/" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
+  <ul class="nav-links">
+    <li><a href="/">Główna</a></li>
+    <li><a href="imieniny.html">Imieniny</a></li>
+    <li><a href="swieta.html">Święta</a></li>
+    <li><a href="kalendarz-szkolny.html">Kalendarz szkolny</a></li>
+    <li><a href="kalkulatory.html" class="active">Kalkulatory</a></li>
+  </ul>
+  
+    <button id="fontToggle" onclick="cycleFontSize()" title="Rozmiar tekstu" aria-label="Zmień rozmiar tekstu">A</button>
+    <button id="themeToggle" onclick="toggleDarkMode()" title="Tryb ciemny/jasny" aria-label="Przełącz tryb ciemny/jasny"></button>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" onclick="var nl=document.querySelector('.topnav .nav-links');nl.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="page">
+  <div class="page-label">Kalendarz</div>
+  <h1 class="page-title">Który to tydzień roku?</h1>
+  <p class="page-sub">Sprawdź numer tygodnia i dzień roku dla dzisiejszej lub dowolnej innej daty. Tygodnie numerujemy według normy ISO 8601: tydzień zaczyna się w poniedziałek, a tydzień 1 to ten, w którym wypada 4 stycznia.</p>
+
+  <div class="wk-hero" aria-live="polite">
+    <div class="wk-when" id="wkWhen">Dziś</div>
+    <div class="wk-date" id="wkDate">—</div>
+    <div class="wk-big"><span id="wkNum">—</span><span class="wk-big-label">tydzień roku</span></div>
+    <div class="wk-range" id="wkRange"></div>
+    <div class="wk-stats">
+      <div class="wk-stat"><div class="wk-stat-v" id="wkDoy">—</div><div class="wk-stat-l">dzień roku</div></div>
+      <div class="wk-stat"><div class="wk-stat-v" id="wkLeft">—</div><div class="wk-stat-l">dni do końca roku</div></div>
+      <div class="wk-stat"><div class="wk-stat-v" id="wkWeeks">—</div><div class="wk-stat-l" id="wkWeeksLabel">tygodni w roku</div></div>
+    </div>
+    <noscript><p class="wk-range">Do wyliczenia numeru tygodnia potrzebny jest JavaScript.</p></noscript>
+  </div>
+
+  <div class="calc-card">
+    <div class="wk-controls">
+      <div class="form-group">
+        <label for="wkInput">Sprawdź inną datę</label>
+        <input type="date" id="wkInput" min="2000-01-01" max="2100-12-31">
+      </div>
+      <button type="button" class="wk-today" id="wkTodayBtn">Dziś</button>
+    </div>
+  </div>
+
+  <h2 class="wk-h2" id="wkTableTitle">Numery tygodni w roku</h2>
+  <div class="wk-yearbar">
+    <label for="wkYear">Rok</label>
+    <select id="wkYear"></select>
+  </div>
+  <div class="wk-table-wrap">
+    <table class="wk-table">
+      <thead><tr><th scope="col">Tydzień</th><th scope="col">Od poniedziałku do niedzieli</th></tr></thead>
+      <tbody id="wkRows"></tbody>
+    </table>
+  </div>
+
+  <div class="info-box" style="margin-top:1.5rem;">
+    <div class="info-icon">📅</div>
+    <div class="info-text">
+      <strong>Warto wiedzieć:</strong> pierwsze dni stycznia mogą należeć do ostatniego tygodnia poprzedniego roku, a ostatnie dni grudnia do tygodnia 1 następnego. <span id="wk53"></span>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-title">Numer tygodnia — najczęstsze pytania</div>
+    <div class="faq-item">
+      <div class="faq-q">Który tydzień roku jest teraz?</div>
+      <div class="faq-a">Aktualny numer tygodnia widać na górze strony. Wyliczamy go z daty ustawionej w Twojej przeglądarce, więc jest zawsze aktualny, bez ręcznych aktualizacji.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Jak liczy się numer tygodnia?</div>
+      <div class="faq-a">Według normy ISO 8601 tydzień zaczyna się w poniedziałek, a tydzień 1 to ten, w którym jest pierwszy czwartek roku — czyli ten, w którym wypada 4 stycznia. Kolejne tygodnie numerujemy po kolei, aż do 52 lub 53.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Ile tygodni ma rok?</div>
+      <div class="faq-a">52 albo 53. Rok ma 53 tygodnie, gdy zaczyna się w czwartek, a także gdy jest przestępny i zaczyna się w środę. Pozostałe lata mają 52 tygodnie.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Czy numeracja tygodni jest wszędzie taka sama?</div>
+      <div class="faq-a">Nie. W Europie, w tym w Polsce, stosuje się zwykle numerację ISO 8601. W USA i kilku innych krajach tydzień zaczyna się w niedzielę, a tydzień 1 to ten z 1 stycznia, więc numery mogą się różnić o jeden.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Co to jest dzień roku?</div>
+      <div class="faq-a">To kolejny numer dnia licząc od 1 stycznia, który ma numer 1. W roku zwykłym ostatnim dniem jest 365, w przestępnym 366. Dzień roku nie zależy od numeracji tygodni.</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-logo">DaybyDay</span>
+  <div class="footer-links">
+    <a href="/">Strona główna</a>
+    <a href="kalkulatory.html">Kalkulatory</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+  </div>
+</footer>
+<script>
+  const MONTHS = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
+  const WEEKDAYS = ['poniedziałek','wtorek','środa','czwartek','piątek','sobota','niedziela'];
+  const DAY = 86400000;
+
+  // Wszystkie obliczenia na numerach dni (liczba dni od 1.01.1970 w UTC z lokalnych składowych y/m/d) — bez
+  // zależności od strefy i czasu letniego. Daty z <input type="date"> parsujemy ręcznie (nie new Date(string)).
+  function dn(y, m, d) { return Math.round(Date.UTC(y, m, d) / DAY); }
+  function fromDn(n) { const t = new Date(n * DAY); return { y: t.getUTCFullYear(), m: t.getUTCMonth(), d: t.getUTCDate() }; }
+  function wdIdx(n) { return (((n + 3) % 7) + 7) % 7; } // 0 = poniedziałek (1.01.1970 był czwartkiem)
+  function isLeap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+  function isoInfo(n) {
+    const wd = wdIdx(n);
+    const thu = n - wd + 3; // czwartek tego tygodnia wyznacza rok ISO
+    const ty = fromDn(thu).y;
+    return { week: Math.floor((thu - dn(ty, 0, 1)) / 7) + 1, year: ty, monday: n - wd };
+  }
+  function weeksInYear(y) { return isoInfo(dn(y, 11, 28)).week; } // 28 grudnia zawsze leży w ostatnim tygodniu ISO
+  function dayOfYear(n) { return n - dn(fromDn(n).y, 0, 1) + 1; }
+  function fmt(n, withYear) { const x = fromDn(n); return x.d + ' ' + MONTHS[x.m] + (withYear ? ' ' + x.y : ''); }
+  function plural(n, one, few, many) { const a = n % 100, b = n % 10; return n === 1 ? one : (b >= 2 && b <= 4 && !(a >= 12 && a <= 14)) ? few : many; }
+  function todayDn() { const t = new Date(); return dn(t.getFullYear(), t.getMonth(), t.getDate()); }
+  function toISO(n) { const x = fromDn(n); return x.y + '-' + String(x.m + 1).padStart(2, '0') + '-' + String(x.d).padStart(2, '0'); }
+
+  const $ = id => document.getElementById(id);
+  let selected = todayDn();
+
+  function renderTable(Y, selN) {
+    const sel = isoInfo(selN);
+    const jan4 = dn(Y, 0, 4);
+    const mon1 = jan4 - wdIdx(jan4);
+    const count = weeksInYear(Y);
+    const part = n => fmt(n, fromDn(n).y !== Y);
+    let html = '';
+    for (let w = 1; w <= count; w++) {
+      const mon = mon1 + 7 * (w - 1);
+      const cur = sel.year === Y && sel.week === w;
+      html += '<tr' + (cur ? ' class="cur" aria-current="date"' : '') + '><td>' + w + '</td><td>' + part(mon) + ' – ' + part(mon + 6) + '</td></tr>';
+    }
+    $('wkRows').innerHTML = html;
+    $('wkTableTitle').textContent = 'Numery tygodni w roku ' + Y;
+    $('wkYear').value = String(Y);
+  }
+
+  function render(n) {
+    selected = n;
+    const info = isoInfo(n), x = fromDn(n), y = x.y;
+    const isToday = n === todayDn();
+    $('wkWhen').textContent = isToday ? 'Dziś' : 'Wybrana data';
+    $('wkDate').textContent = WEEKDAYS[wdIdx(n)] + ', ' + fmt(n, true);
+    $('wkNum').textContent = info.week;
+    const crossYear = fromDn(info.monday).y !== fromDn(info.monday + 6).y;
+    $('wkRange').textContent = 'od ' + fmt(info.monday, crossYear || fromDn(info.monday).y !== y) + ' do ' + fmt(info.monday + 6, true) + (info.year !== y ? ' (tydzień ' + info.week + ' roku ' + info.year + ')' : '');
+    $('wkDoy').textContent = dayOfYear(n);
+    const total = isLeap(y) ? 366 : 365;
+    $('wkLeft').textContent = total - dayOfYear(n);
+    const wiy = weeksInYear(info.year);
+    $('wkWeeks').textContent = wiy;
+    $('wkWeeksLabel').textContent = plural(wiy, 'tydzień', 'tygodnie', 'tygodni') + (info.year === y ? ' w roku ' : ' w roku ISO ') + info.year;
+    $('wkInput').value = toISO(n);
+    renderTable(info.year, n);
+  }
+
+  (function init() {
+    let opts = '';
+    for (let y = 2000; y <= 2100; y++) opts += '<option value="' + y + '">' + y + '</option>';
+    $('wkYear').innerHTML = opts;
+    const y0 = fromDn(todayDn()).y, list = [];
+    for (let y = y0; y <= 2100 && list.length < 4; y++) if (weeksInYear(y) === 53) list.push(y);
+    $('wk53').textContent = 'Najbliższe lata z 53 tygodniami: ' + list.join(', ') + '.';
+    $('wkInput').addEventListener('change', function () {
+      if (!this.value) return;
+      const p = this.value.split('-').map(Number);
+      if (p.length === 3 && p.every(Number.isFinite) && p[0] >= 2000 && p[0] <= 2100) render(dn(p[0], p[1] - 1, p[2]));
+    });
+    $('wkTodayBtn').addEventListener('click', function () { render(todayDn()); });
+    $('wkYear').addEventListener('change', function () { renderTable(Number(this.value), selected); });
+    render(todayDn());
+  })();
+</script>
+
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
+  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
+  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
+</div>
+<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';</script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
+<script>
+  function toggleDarkMode(){
+    var d=document.documentElement;
+    var t=d.getAttribute('data-theme')==='dark'?'light':'dark';
+    d.setAttribute('data-theme',t);
+    localStorage.setItem('dbd-theme',t);
+    updateThemeBtn();
+  }
+  function updateThemeBtn(){
+    var b=document.getElementById('themeToggle');
+    if(b) b.setAttribute('aria-label', document.documentElement.getAttribute('data-theme')==='dark'?'Przełącz na tryb jasny':'Przełącz na tryb ciemny');
+    if(b) b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'☾';
+  }
+  function cycleFontSize(){
+    var sizes=['normal','large','xl'];
+    var d=document.documentElement;
+    var cur=d.getAttribute('data-font')||'normal';
+    var next=sizes[(sizes.indexOf(cur)+1)%sizes.length];
+    d.setAttribute('data-font',next);
+    localStorage.setItem('dbd-font',next);
+    updateFontBtn();
+  }
+  function updateFontBtn(){
+    var b=document.getElementById('fontToggle');
+    if(!b) return;
+    var f=document.documentElement.getAttribute('data-font')||'normal';
+    b.textContent=f==='normal'?'A':f==='large'?'A+':'A++';
+    b.setAttribute('aria-label',f==='normal'?'Zwiększ czcionkę':f==='large'?'Jeszcze większa czcionka':'Przywróć domyślną czcionkę');
+  }
+  (function(){
+    updateThemeBtn();
+    updateFontBtn();
+  })();
+</script>
+
+<script src="transitions.js"></script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
