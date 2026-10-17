@@ -86,9 +86,18 @@ const MONTH_SLUGS = ['', 'styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwi
 const MONTH_NAMES_LOC = ['', 'Styczniu', 'Lutym', 'Marcu', 'Kwietniu', 'Maju', 'Czerwcu', 'Lipcu', 'Sierpniu', 'Wrześniu', 'Październiku', 'Listopadzie', 'Grudniu'];
 const PATRON_HEADERS = ['Patron', 'Święty patron', 'Święta patronka', 'Święci patroni', 'Święte patronki'];
 
-function transformRich(html) {
+// Nagłówki sekcji z imieniem (frazy typu "znaczenie imienia Maciej", "pochodzenie imienia Maciej"). Zmiana tylko w HTML
+// strony: wpisy w NAME_DESCRIPTIONS_RICH zostają z <h3>Znaczenie imienia</h3> (po nich rozpoznaje sekcje reszta generatora).
+const SECTION_HEADING = {
+  'Znaczenie imienia': n => 'Znaczenie i pochodzenie imienia ' + n,
+  'Historia': n => 'Historia imienia ' + n,
+  'Zdrobnienia': n => 'Zdrobnienia imienia ' + n,
+};
+function transformRich(html, name) {
   // Etykiety sekcji to nagłówki <h2> (hierarchia h1 > h2 bez przeskoku); wygląd ustala klasa .name-desc-label
-  return html.replace(/<h3>/g, '<h2 class="name-desc-label">').replace(/<\/h3>/g, '</h2>');
+  return html
+    .replace(/<h3>([^<]*)<\/h3>/g, (m, t) => '<h3>' + (SECTION_HEADING[t] ? SECTION_HEADING[t](name) : t) + '</h3>')
+    .replace(/<h3>/g, '<h2 class="name-desc-label">').replace(/<\/h3>/g, '</h2>');
 }
 
 // Serializuje obiekt do <script type="application/ld+json">, escapujac "<" jako \u003c
@@ -267,7 +276,7 @@ function buildPage(name) {
     ? dates.slice(0, 3).map(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}`).join(', ') + ' i inne'
     : datesStr;
   const freqStr = dates.length === 1 ? 'raz w roku' : `${dates.length} razy w roku`;
-  const descHtml = rich ? transformRich(rich) : '';
+  const descHtml = rich ? transformRich(rich, name) : '';
   const trendHtml = buildTrendChart(name);
   const genitive = NAME_GENITIVE[name] || name;
   const richHasPatron = !!rich && PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
@@ -445,7 +454,7 @@ function buildPage(name) {
   </nav>
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}</h1>
-  <p class="dates">Imieniny ${name}: <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
+  <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
   ${countdownHtml}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
