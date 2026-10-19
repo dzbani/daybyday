@@ -230,6 +230,7 @@ function buildPage(year, monthIdx0) {
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQZRJPF39"></script>
   <script>
+    if (['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) > -1) window['ga-disable-G-2LQZRJPF39'] = true; // testy lokalne nie liczą się w GA4
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -424,6 +425,7 @@ function buildYearPage(year) {
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQZRJPF39"></script>
   <script>
+    if (['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) > -1) window['ga-disable-G-2LQZRJPF39'] = true; // testy lokalne nie liczą się w GA4
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
