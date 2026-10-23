@@ -149,8 +149,8 @@ function update(html, inner) {
 if (BOOT) {
   if (fs.existsSync(PAGE)) { console.error('Strona już istnieje — bootstrap przerwany (usuń plik, jeśli naprawdę chcesz od nowa).'); process.exit(1); }
   let t = fs.readFileSync(path.join(ROOT, 'niedziele-handlowe.html'), 'utf8');
-  const title = `Kalendarze do druku (PDF) i ICS ${YEARS[0]}–${YEARS[YEARS.length - 1]} — pobierz za darmo | DaybyDay`;
-  const desc = `Pobierz za darmo kalendarz ${YEARS[1]}, ${YEARS[2]} i inne lata (${YEARS[0]}–${YEARS[YEARS.length - 1]}) w PDF do druku: roczny poziomo, pionowo i miesięczny z imieninami. Dni wolne i święta jako kalendarz ICS do Google, Apple i Outlooka.`;
+  const title = `Kalendarze do druku (PDF) i ICS ${YEARS[0]}–${YEARS[YEARS.length - 1]} | DaybyDay`;
+  const desc = `Pobierz kalendarz ${YEARS[1]}, ${YEARS[2]} i inne lata ${YEARS[0]}–${YEARS[YEARS.length - 1]} w PDF do druku (roczny, miesięczny) oraz dni wolne i święta jako ICS do Google, Apple i Outlooka.`;
   const shortTitle = `Kalendarze do druku (PDF) i ICS ${YEARS[0]}–${YEARS[YEARS.length - 1]}`;
   const rep = (re, to) => { if (!re.test(t)) throw new Error('Szablon: brak dopasowania ' + re); t = t.replace(re, to); };
   rep(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`);
