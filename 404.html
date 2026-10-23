@@ -15,11 +15,11 @@
   <title>Strona nie znaleziona | DaybyDay</title>
   <meta name="description" content="Strona nie znaleziona. Wróć do DaybyDay — polskiego portalu kalendarzowego.">
   <meta name="robots" content="noindex">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="/fonts.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; }
@@ -67,7 +67,7 @@
       .topnav .nav-links.open { display:flex; }
     }
   </style>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#F8F7F5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -156,10 +156,10 @@
   <a href="/" class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" style="flex-shrink:0;"><rect width="32" height="32" rx="8" fill="#1A1916"/><text x="16" y="23" font-family="Georgia,serif" font-size="20" fill="#F8F7F5" text-anchor="middle">D</text></svg>DaybyDay</a>
   <ul class="nav-links">
     <li><a href="/">Główna</a></li>
-    <li><a href="imieniny.html">Imieniny</a></li>
-    <li><a href="swieta.html">Święta</a></li>
-    <li><a href="kalendarz-szkolny.html">Kalendarz szkolny</a></li>
-    <li><a href="kalkulatory.html">Kalkulatory</a></li>
+    <li><a href="/imieniny.html">Imieniny</a></li>
+    <li><a href="/swieta.html">Święta</a></li>
+    <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
+    <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
     <button id="fontToggle" onclick="cycleFontSize()" title="Rozmiar tekstu" aria-label="Zmień rozmiar tekstu">A</button>
     <button id="themeToggle" onclick="toggleDarkMode()" title="Tryb ciemny/jasny" aria-label="Przełącz tryb ciemny/jasny"></button>
@@ -179,9 +179,9 @@
     </form>
     <div class="err-links">
       <a href="/" class="btn btn-primary">Strona główna</a>
-      <a href="imieniny.html" class="btn btn-secondary">Imieniny</a>
-      <a href="swieta.html" class="btn btn-secondary">Święta</a>
-      <a href="kalendarz-szkolny.html" class="btn btn-secondary">Kalendarz szkolny</a>
+      <a href="/imieniny.html" class="btn btn-secondary">Imieniny</a>
+      <a href="/swieta.html" class="btn btn-secondary">Święta</a>
+      <a href="/kalendarz-szkolny.html" class="btn btn-secondary">Kalendarz szkolny</a>
     </div>
   </div>
 </main>
@@ -189,7 +189,7 @@
 <footer>
   <span class="footer-logo">DaybyDay</span>
 </footer>
-<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js");</script>
 <script>
   function toggleDarkMode(){
     var d=document.documentElement;
@@ -225,7 +225,7 @@
   })();
 </script>
 
-<script src="transitions.js"></script></body>
+<script src="/transitions.js"></script></body>
 </html>
 
 
