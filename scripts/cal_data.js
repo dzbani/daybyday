@@ -2,7 +2,7 @@
 // ŻADNEJ nowej kopii logiki: dni wolne = silnik z kalendarz.html (FIXED_HOLIDAYS + Wielkanoc algorytmem
 // Gaussa; Wigilia wolna od 2025, Dz.U. 2024 poz. 1965), święta i dni tematyczne = swieta_data.js
 // (SWIETA_DATA_STATIC + computeMovableSwieta), imieniny = home_names.js z regułą "imion głównych dnia"
-// z gen_kartka.js (POPULAR z index.html ∩ tradycyjne kalendarze imieniny_tradycyjne.js).
+// z gen_kartka.js (POPULAR z home_main.js (do 15.10.2026 w index.html) ∩ tradycyjne kalendarze imieniny_tradycyjne.js).
 
 const fs = require('fs');
 const path = require('path');
@@ -31,7 +31,7 @@ const NAMES = namesCtx.N; // [[m,d,[imiona]],...]
 const tradCtx = {}; vm.createContext(tradCtx);
 vm.runInContext(read('imieniny_tradycyjne.js').replace('const IMIENINY_TRAD', 'var IMIENINY_TRAD'), tradCtx);
 const TRAD = tradCtx.IMIENINY_TRAD;
-const POPULAR = new Set(eval(read('index.html').match(/const POPULAR=new Set\((\[[^\]]*\])\)/)[1]));
+const POPULAR = new Set(eval(read('home_main.js').match(/const POPULAR=new Set\((\[[^\]]*\])\)/)[1]));
 const nameByKey = {}; for (const [m, d, names] of NAMES) nameByKey[`${m}-${d}`] = names;
 
 // imiona "główne" dnia: ta sama reguła co nagłówek strony głównej i /kartka/ (gen_kartka.js splitNames)
