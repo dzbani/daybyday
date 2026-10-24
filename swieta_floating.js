@@ -103,6 +103,45 @@ const SWIETA_FLOATING=[
   {slug:"swiatowy-dzien-drzemki-w-pracy",names:["Światowy Dzień Drzemki w Pracy"],m:3,wd:1,from:9},
   {slug:"swiatowy-dzien-pochp",names:["Światowy Dzień Przewlekłej Obturacyjnej Choroby Płuc", "Światowy Dzień Przewlekłej Obturacyjnej Choroby Płuc (POChP)"],m:11,wd:3,n:3},
   {slug:"europejski-dzien-ptakow",names:["Europejski Dzień Ptaków"],m:10,wd:6,n:1},
+  // --- 24.10.2026: porownanie z kalbi.pl + weryfikacja w niezaleznych zrodlach (opisy zrodel w komentarzach) ---
+  // Godzina dla Ziemi: WWF ustala termin co roku (zwykle ostatnia sobota marca; 2027 przesunieta o tydzien, bo 27.03 to Wielka Sobota)
+  {slug:"godzina-dla-ziemi",names:["Godzina dla Ziemi"],m:3,wd:6,n:-1,years:{2027:[20,3]}},
+  // Dzien Inwalidow: trzecia niedziela marca (ILO, od 1956)
+  {slug:"miedzynarodowy-dzien-inwalidow",names:["Międzynarodowy Dzień Inwalidów"],m:3,wd:0,n:3},
+  // Dzien Niewidzialnej Pracy: pierwszy wtorek kwietnia (AFEAS, Quebec)
+  {slug:"dzien-niewidzialnej-pracy",names:["Dzień Niewidzialnej Pracy"],m:4,wd:2,n:1},
+  // Narodowy Dzien Czytania Pisma Swietego: Niedziela Biblijna = 14 dni po Wielkanocy
+  {slug:"narodowy-dzien-czytania-pisma-swietego",names:["Narodowy Dzień Czytania Pisma Świętego"],easter:14},
+  // Dzien Doceniania Meza: trzecia sobota kwietnia
+  {slug:"dzien-doceniania-meza",names:["Dzień Doceniania Męża"],m:4,wd:6,n:3},
+  // Dzien Plyty Winylowej: trzecia sobota kwietnia (Record Store Day)
+  {slug:"dzien-plyty-winylowej",names:["Dzień Płyty Winylowej"],m:4,wd:6,n:3},
+  // Dzien Pracownikow Administracyjnych: sroda ostatniego pelnego tygodnia kwietnia (20-26 IV)
+  {slug:"dzien-pracownikow-administracyjnych",names:["Dzień Pracowników Administracyjnych"],m:4,wd:3,from:20},
+  // Dzien Tai-Chi (World Tai Chi & Qigong Day): ostatnia sobota kwietnia
+  {slug:"dzien-tai-chi",names:["Dzień Tai-Chi"],m:4,wd:6,n:-1},
+  // Miedzynarodowy Dzien Swiadomosci Zagrozenia Halasem: ostatnia sroda kwietnia
+  {slug:"miedzynarodowy-dzien-swiadomosci-zagrozenia-halasem",names:["Międzynarodowy Dzień Świadomości Zagrożenia Hałasem"],m:4,wd:3,n:-1},
+  // Dzien Dronow (International Drone Day): pierwsza sobota maja
+  {slug:"dzien-dronow",names:["Dzień Dronów"],m:5,wd:6,n:1},
+  // Swiatowy Dzien Powolnosci: pierwszy poniedzialek maja
+  {slug:"swiatowy-dzien-powolnosci",names:["Światowy Dzień Powolności"],m:5,wd:1,n:1},
+  // Dzien Kosmosu (International Space Day): pierwszy piatek maja
+  {slug:"dzien-kosmosu",names:["Dzień Kosmosu"],m:5,wd:5,n:1},
+  // Europejski Dzien Profilaktyki Udarowej: drugi wtorek maja
+  {slug:"europejski-dzien-profilaktyki-udarowej",names:["Europejski Dzień Profilaktyki Udarowej"],m:5,wd:2,n:2},
+  // Miedzynarodowy Dzien Kierowcy Zawodowego: drugi piatek maja (UICR/IRU)
+  {slug:"miedzynarodowy-dzien-kierowcy-zawodowego",names:["Międzynarodowy Dzień Kierowcy Zawodowego"],m:5,wd:5,n:2},
+  // Dzien Wolnej Kultury (Culture Freedom Day): trzecia sobota maja
+  {slug:"dzien-wolnej-kultury",names:["Dzień Wolnej Kultury"],m:5,wd:6,n:3},
+  // Dzien Dojazdu Rowerem do Pracy (Bike to Work Day): trzeci piatek maja
+  {slug:"dzien-dojazdu-rowerem-do-pracy",names:["Dzień Dojazdu Rowerem do Pracy"],m:5,wd:5,n:3},
+  // Europejski Dzien Sasiada: ostatni piatek maja
+  {slug:"europejski-dzien-sasiada",names:["Europejski Dzień Sąsiada"],m:5,wd:5,n:-1},
+  // Swiatowy Dzien Zonglerki: sobota najblizsza 17 VI (IJA) = sobota 14-20 VI
+  {slug:"swiatowy-dzien-zonglerki",names:["Światowy Dzień Żonglerki"],m:6,wd:6,from:14},
+  // Swiatowy Dzien Smerfa: sobota najblizsza 25 VI = sobota 22-28 VI
+  {slug:"swiatowy-dzien-smerfa",names:["Światowy Dzień Smerfa"],m:6,wd:6,from:22},
 ];
 
 function sfEaster(y){
@@ -112,6 +151,7 @@ function sfEaster(y){
 }
 // [dzień,miesiąc] reguły r w roku year
 function floatingDayFor(r,year){
+  if(r.years&&r.years[year])return r.years[year].slice();
   if(r.easter!==undefined){const dt=new Date(sfEaster(year).getTime()+r.easter*86400000);return [dt.getDate(),dt.getMonth()+1];}
   if(r.from){const first=new Date(year,r.m-1,r.from);return [r.from+(r.wd-first.getDay()+7)%7,r.m];}
   if(r.n>0){const first=new Date(year,r.m-1,1);return [1+(r.wd-first.getDay()+7)%7+(r.n-1)*7,r.m];}
@@ -141,7 +181,8 @@ function floatingNamesOn(year,m,d){
 function floatingRuleText(r){
   const MG=['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
   const WDN=['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota'];
-  if(r.easter!==undefined)return r.easter===42?'niedziela przed Zesłaniem Ducha Świętego (ruchoma data)':'ruchoma data (zależna od Wielkanocy)';
+  if(r.years)return 'zwykle ostatnia '+WDN[r.wd]+' '+MG[r.m-1]+', termin ustala co roku organizator (ruchoma data)';
+  if(r.easter!==undefined)return r.easter===42?'niedziela przed Zesłaniem Ducha Świętego (ruchoma data)':r.easter===14?'niedziela dwa tygodnie po Wielkanocy (ruchoma data)':'ruchoma data (zależna od Wielkanocy)';
   if(r.from)return WDN[r.wd]+' między '+r.from+' a '+(r.from+6)+' '+MG[r.m-1]+' (ruchoma data)';
   const fem=r.wd===0||r.wd===3||r.wd===6;
   const ord={1:['pierwsza','pierwszy'],2:['druga','drugi'],3:['trzecia','trzeci'],4:['czwarta','czwarty'],'-1':['ostatnia','ostatni']}[r.n][fem?0:1];

@@ -76,6 +76,8 @@ for (const r of ctx.R) {
     const [d, m] = ctx.dayFor(r, y);
     const dt = new Date(y, m - 1, d);
     if (dt.getMonth() !== m - 1) fail(`${r.slug} ${y}: dzień poza miesiącem`);
+    // data wymuszona dla pojedynczego roku (np. Godzina dla Ziemi, termin ustala WWF) - sprawdzamy tylko dzień tygodnia
+    if (r.years && r.years[y]) { if (dt.getDay() !== r.wd) fail(`${r.slug} ${y}: zły dzień tygodnia (data wymuszona)`); continue; }
     if (r.easter === undefined && dt.getDay() !== r.wd) fail(`${r.slug} ${y}: zły dzień tygodnia`);
     if (r.n > 0 && !r.from && Math.ceil(d / 7) !== r.n) fail(`${r.slug} ${y}: zły n-ty (${d})`);
     if (r.n === -1 && new Date(y, m - 1, d + 7).getMonth() === m - 1) fail(`${r.slug} ${y}: to nie ostatni`);
