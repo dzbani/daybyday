@@ -138,6 +138,10 @@ const SWIETA_FLOATING=[
   {slug:"dzien-dojazdu-rowerem-do-pracy",names:["Dzień Dojazdu Rowerem do Pracy"],m:5,wd:5,n:3},
   // Europejski Dzien Sasiada: ostatni piatek maja
   {slug:"europejski-dzien-sasiada",names:["Europejski Dzień Sąsiada"],m:5,wd:5,n:-1},
+  // Dzien Ziecia: ostatnia sobota kwietnia (polskie media i kalendarze: 25.04.2026, 24.04.2027)
+  {slug:"dzien-ziecia",names:["Dzień Zięcia"],m:4,wd:6,n:-1},
+  // Dzien Tescia: czwarta sobota maja (24.05.2025, 23.05.2026, 22.05.2027 wg prasy i kalendarzy; zrodla bywaja niespojne)
+  {slug:"dzien-tescia",names:["Dzień Teścia"],m:5,wd:6,n:4},
   // Swiatowy Dzien Zonglerki: sobota najblizsza 17 VI (IJA) = sobota 14-20 VI
   {slug:"swiatowy-dzien-zonglerki",names:["Światowy Dzień Żonglerki"],m:6,wd:6,from:14},
   // Swiatowy Dzien Smerfa: sobota najblizsza 25 VI = sobota 22-28 VI
