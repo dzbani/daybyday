@@ -309,6 +309,10 @@ function buildPage(year, monthIdx0) {
     .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
     .nav-burger.open span:nth-child(2) { opacity:0; }
     .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    /* tablet: linki nie mieszczą się w jednej linii poniżej ok. 740 px, więc burger działa już od 601 do 768 px */
+    @media(min-width:601px) and (max-width:768px){ .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; } }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-links{display:none} table.cal-table{font-size:.74rem} table.cal-table th,table.cal-table td{padding:.45rem .5rem} }
     @media(max-width:600px){ .topnav{padding:0 12px} .nav-burger{display:flex} .topnav .nav-links{display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; max-height:calc(100vh - 56px); overflow-y:auto} .topnav .nav-links.open{display:flex} .topnav .nav-links a{display:block; padding:.7rem .75rem; font-size:.9rem} }
   </style>
@@ -495,6 +499,10 @@ function buildYearPage(year) {
     .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
     .nav-burger.open span:nth-child(2) { opacity:0; }
     .nav-burger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    /* tablet: linki nie mieszczą się w jednej linii poniżej ok. 740 px, więc burger działa już od 601 do 768 px */
+    @media(min-width:601px) and (max-width:768px){ .nav-burger { display:flex; }
+      .topnav .nav-links { display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; }
+      .topnav .nav-links.open { display:flex; } }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-links{display:none} .months-grid{grid-template-columns:1fr 1fr} }
     @media(max-width:600px){ .topnav{padding:0 12px} .nav-burger{display:flex} .topnav .nav-links{display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; max-height:calc(100vh - 56px); overflow-y:auto} .topnav .nav-links.open{display:flex} .topnav .nav-links a{display:block; padding:.7rem .75rem; font-size:.9rem} }
   </style>
