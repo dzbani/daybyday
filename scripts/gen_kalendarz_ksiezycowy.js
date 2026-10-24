@@ -123,7 +123,7 @@ function shell({ title, desc, url, ogTitle, headline, crumbs, body, year }) {
   const a = t.indexOf('<div class="page">'), b = t.indexOf('<footer>');
   if (a < 0 || b < 0) throw new Error('Szablon: brak <div class="page"> / <footer>');
   t = t.slice(0, a) + '<div class="page">\n' + body + '\n</div>\n\n' + t.slice(b);
-  t = t.replace(/&copy; \d{4} daybyday\.today/, `&copy; ${year} daybyday.today`);
+  t = t.replace(/&copy; \d{4} daybyday\.today/, `&copy; daybyday.today`);
   t = t.replace('</head>', `  <style id="mc-css">${CSS}  </style>\n</head>`);
   return t;
 }

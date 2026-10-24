@@ -371,7 +371,7 @@ function buildPage(year, monthIdx0) {
 <footer>
   <div class="footer-logo">DaybyDay</div>
   <div class="footer-links"><a href="/polityka-prywatnosci.html">Polityka prywatności</a><a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a></div>
-  <p class="footer-copy" style="font-size:.75rem;color:var(--muted)">&copy; ${year} daybyday.today</p>
+  <p class="footer-copy" style="font-size:.75rem;color:var(--muted)">&copy; daybyday.today</p>
 </footer>
 </body>
 </html>
@@ -555,7 +555,7 @@ function buildYearPage(year) {
 <footer>
   <div class="footer-logo">DaybyDay</div>
   <div class="footer-links"><a href="/polityka-prywatnosci.html">Polityka prywatności</a><a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a></div>
-  <p class="footer-copy" style="font-size:.75rem;color:var(--muted)">&copy; ${year} daybyday.today</p>
+  <p class="footer-copy" style="font-size:.75rem;color:var(--muted)">&copy; daybyday.today</p>
 </footer>
 </body>
 </html>
