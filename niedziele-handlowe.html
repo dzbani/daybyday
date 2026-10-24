@@ -585,7 +585,11 @@
       row.classList.remove('past','today','upcoming');
       dateEl.querySelectorAll('.sun-badge').forEach(b => b.remove());
       if (dt < today) { row.classList.add('past'); }
-      else { row.classList.add(dt.getTime() === today.getTime() ? 'today' : 'upcoming'); if (!nextRow) nextRow = row; }
+      else {
+        row.classList.add(dt.getTime() === today.getTime() ? 'today' : 'upcoming');
+        // "następna" tylko wśród niedziel handlowych (wiersz ze znaczkiem "Otwarte"), nie pierwsza z brzegu
+        if (!nextRow && row.querySelector(':scope > .sun-badge.badge-open')) nextRow = row;
+      }
     });
     if (nextRow) {
       const b = document.createElement('span');
