@@ -253,6 +253,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/dzien-bez-skarpetek/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/dzien-bez-smiecenia/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>yearly</changefreq>
@@ -1695,6 +1701,12 @@
   <url>
     <loc>https://daybyday.today/swieto/dzien-muzyki/</loc>
     <lastmod>2026-08-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/dzien-muzyki-filmowej/</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4207,6 +4219,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-lesbijek/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-liczby-pi/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>
@@ -6285,6 +6303,12 @@
   <url>
     <loc>https://daybyday.today/swieto/swiatowy-dzien-oszczedzania/</loc>
     <lastmod>2026-10-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/swiatowy-dzien-otylosci/</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
