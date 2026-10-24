@@ -103,6 +103,10 @@
     .mc-lead { font-size:.95rem; color:var(--text); line-height:1.7; max-width:46rem; margin:0 0 1.4rem; }
     .mc-h2 { font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(1.4rem,3.2vw,1.8rem); margin:2rem 0 .7rem; letter-spacing:-.01em; }
     .mc-phases { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr)); gap:.8rem; margin-bottom:.4rem; }
+    /* dokladnie 4 karty (hub, miesiace z 4 fazami): 2x2 do 900 px, 4 w rzedzie powyzej, 1 kolumna na telefonie - bez samotnej 4. karty */
+    .mc-phases.mc-four { grid-template-columns:repeat(2,1fr); }
+    @media(min-width:900px){ .mc-phases.mc-four { grid-template-columns:repeat(4,1fr); } }
+    @media(max-width:480px){ .mc-phases.mc-four { grid-template-columns:1fr; } }
     .mc-ph { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:.9rem 1.1rem; }
     .mc-ph .ic { font-size:1.6rem; line-height:1; }
     .mc-ph .nm { font-weight:600; font-size:.95rem; margin-top:.35rem; }
@@ -145,7 +149,7 @@
   <div class="month-nav"><a href="/kalendarz-ksiezycowy/2030/wrzesien/">← Wrzesień 2030</a><a href="/kalendarz-ksiezycowy/2030/">Cały rok 2030 →</a><a href="/kalendarz-ksiezycowy/2030/listopad/">Listopad 2030 →</a></div>
 
   <h2 class="mc-h2">Fazy Księżyca w październiku 2030</h2>
-  <div class="mc-phases"><div class="mc-ph"><div class="ic">🌓</div><div class="nm">Pierwsza kwadra</div><div class="tm">4 października, 05:56 (CEST)</div></div><div class="mc-ph"><div class="ic">🌕</div><div class="nm">Pełnia</div><div class="tm">11 października, 12:47 (CEST)</div></div><div class="mc-ph"><div class="ic">🌗</div><div class="nm">Ostatnia kwadra</div><div class="tm">19 października, 16:51 (CEST)</div></div><div class="mc-ph"><div class="ic">🌑</div><div class="nm">Nów</div><div class="tm">26 października, 22:17 (CEST)</div></div></div>
+  <div class="mc-phases mc-four"><div class="mc-ph"><div class="ic">🌓</div><div class="nm">Pierwsza kwadra</div><div class="tm">4 października, 05:56 (CEST)</div></div><div class="mc-ph"><div class="ic">🌕</div><div class="nm">Pełnia</div><div class="tm">11 października, 12:47 (CEST)</div></div><div class="mc-ph"><div class="ic">🌗</div><div class="nm">Ostatnia kwadra</div><div class="tm">19 października, 16:51 (CEST)</div></div><div class="mc-ph"><div class="ic">🌑</div><div class="nm">Nów</div><div class="tm">26 października, 22:17 (CEST)</div></div></div>
   
 
   <h2 class="mc-h2">Księżyc dzień po dniu — październik 2030</h2>

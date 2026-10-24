@@ -83,6 +83,10 @@ const CSS = `
     .mc-lead { font-size:.95rem; color:var(--text); line-height:1.7; max-width:46rem; margin:0 0 1.4rem; }
     .mc-h2 { font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(1.4rem,3.2vw,1.8rem); margin:2rem 0 .7rem; letter-spacing:-.01em; }
     .mc-phases { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr)); gap:.8rem; margin-bottom:.4rem; }
+    /* dokladnie 4 karty (hub, miesiace z 4 fazami): 2x2 do 900 px, 4 w rzedzie powyzej, 1 kolumna na telefonie - bez samotnej 4. karty */
+    .mc-phases.mc-four { grid-template-columns:repeat(2,1fr); }
+    @media(min-width:900px){ .mc-phases.mc-four { grid-template-columns:repeat(4,1fr); } }
+    @media(max-width:480px){ .mc-phases.mc-four { grid-template-columns:1fr; } }
     .mc-ph { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:.9rem 1.1rem; }
     .mc-ph .ic { font-size:1.6rem; line-height:1; }
     .mc-ph .nm { font-weight:600; font-size:.95rem; margin-top:.35rem; }
@@ -155,7 +159,7 @@ function monthPage(y, m) {
   <div class="month-nav">${prevL}<a href="/kalendarz-ksiezycowy/${y}/">Cały rok ${y} →</a>${nextL}</div>
 
   <h2 class="mc-h2">Fazy Księżyca w ${mnl} ${y}</h2>
-  <div class="mc-phases">${cards}</div>
+  <div class="mc-phases${events.length === 4 ? ' mc-four' : ''}">${cards}</div>
   ${blue}${monthsNeed}
 
   <h2 class="mc-h2">Księżyc dzień po dniu — ${mn.toLowerCase()} ${y}</h2>
@@ -214,7 +218,7 @@ function hubPage() {
   <p class="mc-lead">Kiedy jest pełnia, a kiedy nów? Wybierz rok, żeby zobaczyć wszystkie fazy Księżyca z godzinami, albo przejdź od razu do miesiąca — dla każdego dnia podajemy fazę, wiek Księżyca, oświetlenie tarczy oraz godziny wschodu, górowania i zachodu.</p>
   ${yearsNav(0)}
   <h2 class="mc-h2">Cztery fazy Księżyca</h2>
-  <div class="mc-phases">${Q.map(q => `<div class="mc-ph"><div class="ic">${q.icon}</div><div class="nm">${q.name}</div><div class="tm">${['Księżyc między Ziemią a Słońcem, tarcza nieoświetlona od strony Ziemi.', 'Oświetlona prawa połowa tarczy (na półkuli północnej), Księżyc rośnie.', 'Księżyc po przeciwnej stronie Ziemi niż Słońce, oświetlona cała tarcza.', 'Oświetlona lewa połowa tarczy (na półkuli północnej), Księżyc maleje.'][Q.indexOf(q)]}</div></div>`).join('')}</div>
+  <div class="mc-phases mc-four">${Q.map(q => `<div class="mc-ph"><div class="ic">${q.icon}</div><div class="nm">${q.name}</div><div class="tm">${['Księżyc między Ziemią a Słońcem, tarcza nieoświetlona od strony Ziemi.', 'Oświetlona prawa połowa tarczy (na półkuli północnej), Księżyc rośnie.', 'Księżyc po przeciwnej stronie Ziemi niż Słońce, oświetlona cała tarcza.', 'Oświetlona lewa połowa tarczy (na półkuli północnej), Księżyc maleje.'][Q.indexOf(q)]}</div></div>`).join('')}</div>
   <p class="mc-note">Pełny cykl faz (miesiąc synodyczny) trwa średnio 29,53 doby, ale poszczególne cykle różnią się o kilka godzin, dlatego w roku wypada 12 lub 13 pełni. ${HOW}</p>
   <h2 class="mc-h2">Co jest w kalendarzu księżycowym</h2>
   <p class="mc-note" style="margin-top:0">Strona roku zawiera zestawienie wszystkich nowiów, kwadr i pełni z godzinami. Strona miesiąca — tabelę dzień po dniu: faza, wiek Księżyca w dniach od nowiu, oświetlenie w procentach, wschód, górowanie i zachód Księżyca oraz znak zodiaku, w którym znajduje się Księżyc. Aktualną fazę i najbliższe zmiany faz pokazuje strona <a href="/fazy-ksiezyca.html">Fazy Księżyca</a>.</p>`;
