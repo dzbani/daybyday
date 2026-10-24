@@ -142,6 +142,8 @@ const SWIETA_FLOATING=[
   {slug:"dzien-ziecia",names:["Dzień Zięcia"],m:4,wd:6,n:-1},
   // Dzien Tescia: czwarta sobota maja (24.05.2025, 23.05.2026, 22.05.2027 wg prasy i kalendarzy; zrodla bywaja niespojne)
   {slug:"dzien-tescia",names:["Dzień Teścia"],m:5,wd:6,n:4},
+  // Dzien Doceniania Pracownika (Employee Appreciation Day): pierwszy piatek marca
+  {slug:"dzien-doceniania-pracownika",names:["Dzień Doceniania Pracownika"],m:3,wd:5,n:1},
   // Swiatowy Dzien Zonglerki: sobota najblizsza 17 VI (IJA) = sobota 14-20 VI
   {slug:"swiatowy-dzien-zonglerki",names:["Światowy Dzień Żonglerki"],m:6,wd:6,from:14},
   // Swiatowy Dzien Smerfa: sobota najblizsza 25 VI = sobota 22-28 VI
