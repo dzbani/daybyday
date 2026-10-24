@@ -65,6 +65,8 @@
     .today-badge { display:inline-block; background:#E8936A; color:#111110; font-size:.62rem; font-weight:600; padding:.15rem .45rem; border-radius:60px; margin-left:.5rem; vertical-align:middle; }
     .month-divider { grid-column:1/-1; font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); padding:.75rem 0 .4rem; border-bottom:1px solid var(--border); margin-bottom:.25rem; margin-top:.75rem; }
     .moon-visual { display:flex; gap:1rem; align-items:center; justify-content:center; margin-bottom:2.5rem; padding:2rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); }
+    /* powyzej 600 px: napis o lokalizacji i podpowiedz w wlasnym wierszu pod siatka (wczesniej flex-row scisnal siatke i lamal etykiety) */
+    @media(min-width:601px){ .moon-visual{flex-wrap:wrap} .moon-visual>#moonLoc,.moon-visual>#moonLocHint{flex:0 0 100%;text-align:center} }
     .moon-phase-display { text-align:center; }
     .moon-phase-display .big-moon { font-size:5rem; line-height:1; }
     .moon-phase-display .phase-label { font-family:'Instrument Serif',serif; font-size:1.5rem; margin-top:.5rem; }
