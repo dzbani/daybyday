@@ -1156,6 +1156,46 @@ const ENTRY_FIXES = [
   { file: '12-31.json', y: 1857, re: /bitwie o Kanton/, drop: true },
   // Asuncion zajeto 1 I 1869
   { file: '12-31.json', y: 1868, re: /Asunción/, drop: true },
+
+  // ===== audyt 28-31 X, druga runda (29.10.2026) =====
+  // --- 28 X ---
+  // zdobycie Alhóndiga de Granaditas w Guanajuato: 28 IX 1810 (en.wikipedia, zrodla meksykanskie), nie 28 X
+  { file: '10-28.json', y: 1810, re: /Granaditas/, drop: true },
+  // Gateway Arch ma 630 stop = 192 m (NPS, ICC); ostatni element wstawiono 28 X 1965
+  { file: '10-28.json', y: 1965, re: /Brama na Zachód/, sub: ['ponad 200-metrowego', '192-metrowego'] },
+  // Lima-Callao 1746: lacznie ok. 5,9 tys. ofiar (en.wikipedia: 5941; Lima 1,2-6 tys.), nie 18 tys.
+  { file: '10-28.json', y: 1746, re: /Limie/, replace: 'Około 6 tys. osób zginęło w wyniku podmorskiego trzęsienia ziemi o sile 8,4 stopnia, które zniszczyło Limę. Pobliskie miasto portowe Callao zostało zniszczone przez tsunami.' },
+  // literowki
+  { file: '10-28.json', y: 1803, re: /Levetta Harrisa/, sub: ['ukaz w o uznaniu', 'ukaz o uznaniu'] },
+  { file: '10-28.json', y: 1998, re: /Digital Millenium/, sub: ['Millenium', 'Millennium'] },
+  // --- 29 X ---
+  // Tarrant & Co. 1900: "ok. 200 zabitych" to wczesny, niepotwierdzony naglowek prasowy; pozniej: ponad 20 zabitych, ponad 200 rannych
+  { file: '10-29.json', y: 1900, re: /zakładach chemicznych w Nowym Jorku/, replace: 'Wybuch w zakładach chemicznych firmy Tarrant w Nowym Jorku zabił co najmniej 20 osób, a ponad 200 zostało rannych.' },
+  // literowki i typografia
+  { file: '10-29.json', y: 1665, re: /Mbwil/, sub: ['z portugalskim kolonistami', 'z portugalskimi kolonistami'] },
+  { file: '10-29.json', y: 1888, re: /Borki/, sub: ['bomba po pociągiem którym', 'bomba pod pociągiem, którym'] },
+  { file: '10-29.json', y: 1794, re: /Rada Najwyższa Narodowa/, sub: ['"na wieczne dziedzictwo"', '„na wieczne dziedzictwo”'] },
+  // --- 30 X ---
+  // Greysteel: lacznie 8 ofiar (7 w nocy ataku, osma zmarla po kilku miesiacach)
+  { file: '10-30.json', y: 1993, re: /Greysteel/, sub: ['7 osób zginęło', '8 osób zginęło'] },
+  { file: '10-30.json', y: 1985, re: /Kondor/, sub: ['„Kondor“', '„Kondor”'] },
+  // --- 31 X ---
+  // Hala Pamieci Czang Kaj-szeka: uroczystosc rozpoczecia budowy 31 X 1976 (en.wikipedia), nie 1975
+  { file: '10-31.json', y: 1975, re: /Hali Pamięci Czang Kaj-szeka/, toYear: 1976 },
+  // Park Narodowy Araguaia: dekret 47.570 z 31 XII 1959 (planalto.gov.br), nie 31 X 1969
+  { file: '10-31.json', y: 1969, re: /Araguaia/, drop: true },
+  // San Giuliano di Puglia: w szkole zginelo 27 dzieci i nauczycielka (zrodla wloskie), lacznie 30 ofiar
+  { file: '10-31.json', y: 2002, re: /San Giuliano di Puglia/, sub: ['26 dzieci i nauczycielka', '27 dzieci i nauczycielka'] },
+  { file: '10-31.json', y: 2017, re: /Saipow/, sub: ['29-letmi', '29-letni'] },
+  // --- usuniecia wpisow niepotwierdzonych w zrodlach (rozszerzone wyszukiwanie, zaakceptowane 29.10.2026) ---
+  // pierwsze bicie Dzwonu sw. Piotra: strona katedry kolonskiej i koeln-lese.de 10 X 1925, domradio 25 X, tylko jedna gazetka 28 X
+  { file: '10-28.json', y: 1925, re: /Dzwon Świętego Piotra/, drop: true },
+  // brak amnestii z 1985 r. (ustawy z 21 VII 1983, 21 VII 1984, 17 VII 1986)
+  { file: '10-29.json', y: 1985, re: /Ogłoszono amnestię/, drop: true },
+  // proces trzydziestu: 6-12 VIII 1894 (fr.wikipedia nie podaje 31 X; tylko en.wikipedia)
+  { file: '10-31.json', y: 1894, re: /proces trzydziestu anarchistów/, drop: true },
+  // ugoda Arafat-Husajn: Kair 27 IX 1970; "31 X" tylko na jednym blogu, "300 tys. uchodzcow" bez zrodla
+  { file: '10-31.json', y: 1970, re: /Arafat podpisał ugodę/, drop: true },
 ];
 function applyEntryFixes(file, events) {
   return events
