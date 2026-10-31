@@ -199,6 +199,19 @@ const swietoNamesRaw = readFile('swieto_names.js');
 const SWIETO_NAME_TO_SLUG = eval('(' + swietoNamesRaw.match(/const SWIETO_NAME_TO_SLUG=(\{[\s\S]*?\});/)[1] + ')');
 Object.assign(majorByName, SWIETO_NAME_TO_SLUG);
 
+// Dwa aliasy tego samego swieta z lekkiej listy (np. 14 III "Sprzeciwu Wobec Tam" i "Dzialan na rzecz
+// Rzek", 20 IX "Dzien Parowki" i "Dzien Parowkozercy") linkowaly do tej samej strony dwa razy -
+// zostaje pierwszy wpis na slug (2.11.2026, ten sam poprawek co w home_main.js)
+for (const k of Object.keys(holidayMap)) {
+  const seen = new Set();
+  holidayMap[k] = holidayMap[k].filter(h => {
+    const s = majorByName[h.name];
+    if (!s) return true;
+    if (seen.has(s)) return false;
+    seen.add(s); return true;
+  });
+}
+
 // --- 4c. Funkcje astro (sun/moon/zodiac) wyciagniete z kalendarz.html — ten sam wzorzec
 // co scripts/gen_kalendarz_miesiace.js (jedno zrodlo prawdy, brak duplikacji algorytmu). ---
 const kalendarzRaw = readFile('kalendarz.html');

@@ -606,7 +606,13 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const todaysFixed=redateFloating(HOLIDAYS,y).filter(([hd,hm])=>hd===d&&hm===m);
   const todaysFloating=FLOATING_HOLIDAYS.filter(fh=>fh.month===m&&nthWeekdayOfMonth(y,fh.month,fh.weekday,fh.n)===d)
     .map(fh=>[d,m,fh.name,'',fh.tag]);
-  const todays=[...todaysFixed,...todaysFloating];
+  // bez powtórzeń po slugu strony: lekka lista ma czasem to samo święto pod dwiema nazwami-aliasami
+  // (np. Dzień Sapera / Święto Wojsk Inżynieryjnych 16 IV) — wcześniej oba chipsy i obie pozycje karty (2.11.2026)
+  const todaysSeenSlugs=new Set();
+  const todays=[...todaysFixed,...todaysFloating].filter(([,,name])=>{
+    const s=nameToSlugSafe(name); if(!s) return true;
+    if(todaysSeenSlugs.has(s)) return false; todaysSeenSlugs.add(s); return true;
+  });
   // Chipsy świąt w date-hero
   const heroEl=document.getElementById('heroHolidays');
   if(todays.length&&heroEl){
@@ -644,6 +650,9 @@ function getMoonRiseSet(year,month,day,lat,lon){
     return !(slug&&curatedSlugs.has(slug));
   });
   const shownTodayNames=new Set([...curatedNames,...todaysNietypowe.map(([,,name])=>name)]);
+  // slugi już pokazanych świąt — NAMED_DAYS ma krótsze nazwy ("Dzień Zaduszny", "Mikołajki", "Wigilia",
+  // "Dzień Kobiet", "Walentynki") niż SWIETA_DATA/HOLIDAYS, więc sama nazwa nie wystarczała (duplikaty 5 dni w roku, 2.11.2026)
+  const shownTodaySlugs=new Set([...todaysCurated.map(([,,,slug])=>slug),...todaysNietypowe.map(([,,name])=>nameToSlugSafe(name))].filter(Boolean));
   const hl=document.getElementById('holidaysList');
   if(todaysCurated.length||todaysNietypowe.length){
     todaysCurated.forEach(([,,name,slug,type])=>{
@@ -891,6 +900,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   namedToday.forEach(([,,name])=>{
     if(shownTodayNames.has(name))return; // już pokazane z SWIETA_DATA/HOLIDAYS wyżej
     const slug=EVENT_SLUG[name];
+    if(slug&&shownTodaySlugs.has(slug))return; // to samo święto pod pełniejszą nazwą
     const el=document.createElement('a');
     el.href=slug?swietoHref(slug):`/?d=${d}&m=${m}&y=${y}`;
     el.className='holiday-item';
