@@ -85,7 +85,8 @@ const SWIETA_FLOATING=[
   {slug:"swiatowy-dzien-filozofii",names:["Światowy Dzień Filozofii"],m:11,wd:4,n:3},
   {slug:"swiatowy-dzien-rzucania-palenia-tytoniu",names:["Światowy Dzień Rzucania Palenia Tytoniu"],m:11,wd:4,n:3},
   {slug:"swiatowy-dzien-tabliczki-mnozenia",names:["Światowy Dzień Tabliczki Mnożenia"],m:11,wd:5,n:3},
-  {slug:"dzien-nitkowania",names:["Dzień Nitkowania"],m:11,wd:5,n:4},
+  {slug:"dzien-nitkowania",names:["Dzień Nitkowania"],m:11,wd:5,from:23}, // piątek po Święcie Dziękczynienia (nie zawsze 4. piątek)
+  {slug:"swiatowy-dzien-sierot",names:["Światowy Dzień Sierot"],m:11,wd:1,n:2},
   {slug:"miedzynarodowy-dzien-inzyniera-systemow",names:["Międzynarodowy Dzień Inżyniera Systemów"],m:11,wd:5,n:-1},
   {slug:"dzien-bez-zakupow",names:["Dzień bez Zakupów"],m:11,wd:6,n:-1},
   {slug:"dzien-otwarty-notariatu",names:["Dzień Otwarty Notariatu"],m:11,wd:6,n:-1},
