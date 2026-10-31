@@ -1111,7 +1111,6 @@ const HOLIDAYS=[
 [15,12,'Święto Służby Metrologii Wojskowej','','inne'],
 [16,12,'Dzień Pokrywania Wszystkiego Czekoladą','','jedzenie'],
 [16,12,'Dzień Pojednania','','inne'],
-[17,12,'Ogólnopolski Dzień Bez','','inne'],
 [17,12,'Dzień bez Przekleństw','','inne'],
 [17,12,'Dzień Braci Wright','','inne'],
 [17,12,'Ogólnopolski Dzień Rozmów Twarzą w Twarz','','inne'],
