@@ -31,6 +31,9 @@ function scanSwietoFolders(ROOT) {
 // aliasy: nazwy alternatywne tego samego realnego wydarzenia, ktore nie maja
 // wlasnej fizycznej strony, tylko wskazuja na slug innej, juz istniejacej strony
 const NAME_ALIASES = {
+  // 11 IV i 19 IV: lekkie wpisy zdublowane z bazą, połączone 01.11.2026
+  'Dzień Osób z Chorobą Parkinsona': 'swiatowy-dzien-parkinsona',
+  'Dzień Rowerowy': 'dzien-rowerowy',
   // 3 III i 21 III: zdublowane wpisy połączone 01.11.2026 (stare adresy = strony-przekierowania)
   'Międzynarodowy Dzień Pisarzy': 'dzien-pisarzy',
   'Światowy Dzień Lasu': 'dzien-lasow',
