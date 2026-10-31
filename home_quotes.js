@@ -14,7 +14,7 @@ const QUOTES=[  {t:'Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy
   {t:'Skończ każdy dzień i zostaw go za sobą.',a:'Ralph Waldo Emerson'},
   {t:'Nigdy nie pozwoliłem, by nauka przeszkadzała mi w edukacji.',a:'Grant Allen'},
   {t:'Kochać w ogóle — to być wrażliwym.',a:'C. S. Lewis'},
-  {t:'Nie pamiętasz twarzy człowieka, który był twoją ostatnią nadzieją.',a:'Suzanne Collins'},
+  {t:'Nie zapomina się twarzy człowieka, który był twoją ostatnią nadzieją.',a:'Suzanne Collins'},
   {t:'Gdybym nie był fizykiem, prawdopodobnie zostałbym muzykiem.',a:'Albert Einstein'},
   {t:'Jeśli czytasz tylko te książki, które czytają wszyscy inni, możesz myśleć tylko to, co myślą wszyscy inni.',a:'Haruki Murakami'},
   {t:'Nigdy się nie poddawaj — nigdy, nigdy, nigdy.',a:'Winston Churchill'},
