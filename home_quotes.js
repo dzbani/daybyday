@@ -346,7 +346,7 @@ const QUOTES=[  {t:'Czytelnik żyje tysiącem żyć, zanim umrze. Ten, kto nigdy
   {t:'Spróbuj opiewać okaleczony świat.',a:'Adam Zagajewski'},
   {t:'Rodzimy się samotni i umieramy samotni.',a:'Octavio Paz'},
   {t:'Ludzie ludziom zgotowali ten los.',a:'Zofia Nałkowska'},
-  {t:'Mam dwadzieścia cztery lata, ocalałem, prowadzony na rzeź.',a:'Tadeusz Różewicz'},
+  {t:'Mam dwadzieścia cztery lata, prowadzony na rzeź ocalałem.',a:'Tadeusz Różewicz'},
   {t:'Postawa błazna jest stałym wysiłkiem refleksji nad możliwymi racjami idei przeciwstawnych; rządzi nią nie chęć przekory, ale nieufność do wszelkiego świata ustabilizowanego.',a:'Leszek Kołakowski'},
   {t:'W życiu bywają noce i bywają dnie powszednie, a czasami bywają też niedziele. Rzadziej się to zdarza niż w kalendarzu.',a:'Maria Dąbrowska'},
   {t:'Powiedz mi, jak mnie kochasz. Powiem. Więc? Kocham cię w słońcu i przy blasku świec. Kocham cię w kapeluszu i w berecie.',a:'Konstanty Ildefons Gałczyński'},
