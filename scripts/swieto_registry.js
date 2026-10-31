@@ -31,6 +31,9 @@ function scanSwietoFolders(ROOT) {
 // aliasy: nazwy alternatywne tego samego realnego wydarzenia, ktore nie maja
 // wlasnej fizycznej strony, tylko wskazuja na slug innej, juz istniejacej strony
 const NAME_ALIASES = {
+  // 3 III i 21 III: zdublowane wpisy połączone 01.11.2026 (stare adresy = strony-przekierowania)
+  'Międzynarodowy Dzień Pisarzy': 'dzien-pisarzy',
+  'Światowy Dzień Lasu': 'dzien-lasow',
   'Międzynarodowy Dzień Sprzeciwu Wobec Tam': 'miedzynarodowy-dzien-dzialan-na-rzecz-rzek',
   // te same realne swieta, opisane w bogatej bazie HOLIDAYS_DB pod pelniejsza nazwa,
   // a w liscie "nietypowych" wystepujace jeszcze raz pod krotsza/uproszczona nazwa
