@@ -31,6 +31,21 @@ vm.createContext(richSandbox);
 vm.runInContext(richRaw + '\nthis.__RESULT__ = NAME_DESCRIPTIONS_RICH;', richSandbox);
 const RICH = richSandbox.__RESULT__;
 
+// --- 1a. Zdrobnienia (sekcja Zdrobnienia w RICH) + ich dopełniacze, do fraz typu "imieniny Tomka" ---
+// Zdrobnienie w tytule/nagłówku dostaje tylko jedna strona: najpopularniejsze imię, które je podaje
+// (Tomek -> Tomasz, nie Tomir/Tomisław; Aga -> Agnieszka). Reguły odmiany i filtr form: scripts/name_forms.js.
+const { dimGenitive, parseDiminutives, buildDimOwners } = require('./name_forms.js');
+const popSandbox = {};
+vm.createContext(popSandbox);
+vm.runInContext(fs.readFileSync(path.join(ROOT, 'name_popularity.js'), 'utf8').replace(/^﻿/, '') + '\nthis.__RESULT__ = NAME_POPULARITY;', popSandbox);
+const NAME_POPULARITY = popSandbox.__RESULT__;
+const dimPrimary = {};
+for (const [form, owners] of Object.entries(buildDimOwners(RICH))) {
+  dimPrimary[form] = owners.slice().sort((a, b) => (NAME_POPULARITY[b] || 0) - (NAME_POPULARITY[a] || 0) || a.localeCompare(b, 'pl'))[0];
+}
+const MAIN_DIM = require('./name_main_diminutive.js');
+const joinPl = a =>a.length > 1 ? a.slice(0, -1).join(', ') + ' i ' + a[a.length - 1] : a[0];
+
 // --- 1b. Wczytaj NAME_TRENDS (nadania noworodkom 2000-2025, dane.gov.pl) ---
 let trendsRaw = fs.readFileSync(path.join(ROOT, 'name_trends.js'), 'utf8').replace(/^﻿/, '');
 const trendsSandbox = {};
@@ -279,6 +294,19 @@ function buildPage(name) {
   const descHtml = rich ? transformRich(rich, name) : '';
   const trendHtml = buildTrendChart(name);
   const genitive = NAME_GENITIVE[name] || name;
+  // Zdrobnienia do fraz "imieniny Tomka", "kiedy imieniny Tomka": główne z ręcznej listy (name_main_diminutive.js) idzie
+  // do tytułu/h1/opisu; do akapitu trafia max 3 formy: główne + takie z RICH, dla których TA strona jest główna
+  // (najpopularniejsze imię, które je podaje) i które umiemy odmienić.
+  const mainDim = NAME_GENITIVE[name] && MAIN_DIM[name] && dimGenitive(MAIN_DIM[name]) ? MAIN_DIM[name] : null;
+  // Formy RICH tylko dla imion z >= 10 tys. nosicieli (zdrobnienia rzadkich imion bywają sztuczne: "Tomirko", "Aleksek"; i nikt
+  // ich nie szuka) i bez form, które mają własną stronę imienia (Lena, Magda) — inaczej dwie strony walczyłyby o to samo zapytanie.
+  const dimExtra = (NAME_POPULARITY[name] || 0) >= 10000
+    ? parseDiminutives(rich, [name, ...variants]).filter(f => dimPrimary[f.toLowerCase()] === name && dimGenitive(f)
+      && f.toLowerCase() !== (mainDim || '').toLowerCase() && !variantsBySlug[nameSlug(f)])
+    : [];
+  const dimUse = !NAME_GENITIVE[name] ? [] : [...(mainDim ? [mainDim] : []), ...dimExtra].slice(0, 3);
+  const dimGen = dimUse.map(dimGenitive);
+  const mainGen = mainDim ? dimGenitive(mainDim) : null;
   const richHasPatron = !!rich && PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
   const dbEntry = NAME_DB[normalize(name)];
   // Opis meta obiecuje wyłącznie sekcje, które strona faktycznie ma (wcześniej: "życzenia imieninowe" bez takiej sekcji)
@@ -290,7 +318,13 @@ function buildPage(name) {
     (richHasPatron || (dbEntry && dbEntry.patron)) && 'świętych patronów',
   ].filter(Boolean);
   const promisedStr = promised.length > 1 ? promised.slice(0, -1).join(', ') + ' i ' + promised[promised.length - 1] : promised[0];
-  const metaDesc = `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. ${promisedStr ? `Sprawdź ${promisedStr}.` : 'Zobacz, kto jeszcze obchodzi imieniny tego dnia.'}`;
+  const metaTail = promisedStr ? `Sprawdź ${promisedStr}.` : 'Zobacz, kto jeszcze obchodzi imieniny tego dnia.';
+  const metaDesc = mainDim
+    ? `Kiedy są imieniny ${genitive} i ${mainGen}? ${name} obchodzi je ${freqStr}: ${metaDatesStr}. ${metaTail}`
+    : `${name} obchodzi imieniny ${freqStr}: ${metaDatesStr}. ${metaTail}`;
+  const dimBlock = dimUse.length
+    ? `\n  <div class="name-desc-section dim-note">\n    <h2 class="name-desc-label">Kiedy są imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''}?</h2>\n    <p>${joinPl(dimUse)} ${dimUse.length > 1 ? 'to zdrobnienia' : 'to zdrobnienie'} imienia ${name}, więc imieniny ${joinPl(dimGen)} przypadają w ${dates.length === 1 ? 'ten sam dzień' : 'te same dni'} co imieniny ${genitive}: ${dates.length > 3 ? metaDatesStr + ' (pełna lista powyżej)' : datesStr}.</p>\n  </div>`
+    : '';
   // Odliczanie do najbliższych imienin liczy przeglądarka z new Date() (strona jest statyczna, więc bez zamrożenia po dacie granicznej)
   const cdDates = dates.map(x => `${x.m}-${x.d}`).join(',');
   const countdownHtml = `<p class="countdown" id="cd" data-dates="${cdDates}" data-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}"></p>`;
@@ -364,7 +398,7 @@ function buildPage(name) {
   const articleLd = jsonLdScript({
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `Imieniny ${name}`,
+    headline: mainDim ? `Imieniny ${genitive} i ${mainGen}` : `Imieniny ${name}`,
     description: metaDesc,
     url: pageUrl,
     inLanguage: 'pl',
@@ -387,7 +421,7 @@ function buildPage(name) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imieniny ${name} — kiedy są imieniny ${genitive}? | DaybyDay</title>
+  <title>${mainDim ? `Imieniny ${genitive} i ${mainGen} — kiedy są? | DaybyDay` : `Imieniny ${name} — kiedy są imieniny ${genitive}? | DaybyDay`}</title>
   <meta name="description" content="${metaDesc}">
   <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="Imieniny ${name} | DaybyDay">
@@ -453,9 +487,9 @@ function buildPage(name) {
     <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   </nav>
   ${breadcrumbHtml}
-  <h1>Imieniny – ${name}</h1>
-  <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
-  ${countdownHtml}
+  <h1>Imieniny – ${name}${mainDim ? ` (${mainDim})` : ''}</h1>
+  <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
+  ${countdownHtml}${dimBlock}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
