@@ -199,16 +199,27 @@ function getZodiac(m,d){
 }
 
 // ── Wschód/zachód słońca — lokalizacja użytkownika ────────
-const LOC_DEFAULT={name:'Poznań',lat:52.4064,lon:16.9252};
-let LOC_NAME=LOC_DEFAULT.name,LOC_LAT=LOC_DEFAULT.lat,LOC_LON=LOC_DEFAULT.lon;
+const LOC_DEFAULT={name:'Poznań',lat:52.4064,lon:16.9252,tz:'Europe/Warsaw'};
+let LOC_NAME=LOC_DEFAULT.name,LOC_LAT=LOC_DEFAULT.lat,LOC_LON=LOC_DEFAULT.lon,LOC_TZ=LOC_DEFAULT.tz;
+function isValidTz(tz){try{new Intl.DateTimeFormat('en-US',{timeZone:tz});return typeof tz==='string'&&tz!=='';}catch(e){return false;}}
 (function(){const s=localStorage.getItem('dbd-loc');if(s){try{const p=JSON.parse(s);
-  // Obliczenia strefy czasowej (isPolandDST/calcSunTimes/getMoonRiseSet) zakładają polską
-  // strefę — zapisana lokalizacja spoza Polski (np. zaległy wpis sprzed dodania
-  // countrycodes=pl do wyszukiwarki) dawałaby godziny przesunięte nawet o godzinę,
-  // więc taki wpis odrzucamy i wracamy do domyślnej lokalizacji.
+  // Godziny wschodów/zachodów są przesuwane o strefę czasową lokalizacji (tzOffsetH), więc zapis musi
+  // ją zawierać. Starszy zapis bez strefy (sprzed obsługi miejscowości spoza Polski) jest ważny tylko
+  // dla Polski (tam strefa = Europe/Warsaw); inny odrzucamy i wracamy do domyślnej lokalizacji.
   const inPoland=p.lat>=48.5&&p.lat<=55.5&&p.lon>=13.5&&p.lon<=24.5;
-  if(inPoland){LOC_NAME=p.name;LOC_LAT=p.lat;LOC_LON=p.lon;}else{localStorage.removeItem('dbd-loc');}
+  const tz=p.tz||(inPoland?'Europe/Warsaw':null);
+  if(tz&&isValidTz(tz)&&isFinite(p.lat)&&isFinite(p.lon)){LOC_NAME=p.name;LOC_LAT=p.lat;LOC_LON=p.lon;LOC_TZ=tz;}else{localStorage.removeItem('dbd-loc');}
 }catch(e){}}})();
+
+// Przesunięcie czasu lokalnego względem UTC (w godzinach, także ułamkowe, np. 5,5) obowiązujące w
+// strefie LOC_TZ w chwili ms (znacznik UTC). Liczone z bazy stref przeglądarki (Intl), więc działa
+// dla dowolnej miejscowości i zmiany czasu, niezależnie od strefy odwiedzającego.
+const _tzFmt={};
+function tzOffsetH(ms){
+  const f=_tzFmt[LOC_TZ]||(_tzFmt[LOC_TZ]=new Intl.DateTimeFormat('en-US',{timeZone:LOC_TZ,hourCycle:'h23',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',second:'numeric'}));
+  const p={};f.formatToParts(new Date(ms)).forEach(x=>{p[x.type]=x.value;});
+  return(Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second)-Math.floor(ms/1000)*1000)/3600000;
+}
 
 // Czas letni UE: ostatnia niedziela marca 01:00 UTC -> ostatnia niedziela pazdziernika 01:00 UTC.
 // Liczone wprost z daty docelowej (nie z zegara systemowego przegladarki/robota), zeby dzialalo
@@ -279,8 +290,9 @@ function calcSunCore(year,month,day,lat,lon){
 function calcSunTimes(year,month,day){
   const c=calcSunCore(year,month,day,LOC_LAT,LOC_LON);
   if(!c)return{rise:'—',set:'—',len:'—',frac:0,lenMin:0,dawn:'—',dusk:'—',noon:'—',noonAlt:'—'};
-  const tz=isPolandDST(year,month,day)?2:1;
-  const fmt=h=>{h=((h+tz)%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
+  // h = godziny UTC liczone od północy UTC danej daty; przesunięcie bierzemy dla chwili samego zdarzenia
+  const dayUTC=Date.UTC(year,month-1,day);
+  const fmt=h=>{h=((h+tzOffsetH(dayUTC+h*3600000))%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
   let lh=Math.floor(c.lenH),lm=Math.round((c.lenH-lh)*60);
   if(lm===60){lm=0;lh+=1;}
   // Świt i zmierzch cywilny (-6°) liczone w calcSunCore (jedno źródło, z iteracją do chwili zdarzenia).
@@ -430,11 +442,9 @@ function getMoonPhase(year,month,day){
 function getMoonRiseSet(year,month,day,lat,lon){
   const rad=Math.PI/180;
   const toJD=(y,m,d)=>{if(m<3){y--;m+=12;}const A=Math.floor(y/100);const B=2-A+Math.floor(A/4);return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;};
-  const tz=isPolandDST(year,month,day)?2:1;
-  // W dzień zmiany czasu przesunięcie zmienia się o 01:00 UTC: przed nim obowiązuje offset z doby poprzedniej
-  const pd=new Date(year,month-1,day-1),tzPrev=isPolandDST(pd.getFullYear(),pd.getMonth()+1,pd.getDate())?2:1;
-  const tzAt=h=>(tzPrev!==tz&&h<1)?tzPrev:tz;
-  const fmt=h=>{const local=((h+tzAt(h))%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
+  // Przesunięcie strefy bierzemy dla chwili samego zdarzenia (w dzień zmiany czasu zmienia się w środku doby)
+  const dayUTC=Date.UTC(year,month-1,day);
+  const fmt=h=>{const local=((h+tzOffsetH(dayUTC+h*3600000))%24+24)%24;let hh=Math.floor(local),mm=Math.round((local-hh)*60);if(mm===60){hh=(hh+1)%24;mm=0;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
 
   // Pozycja księżyca — pełny algorytm Meeus rozdz. 47 (28+28 wyrazów)
   function moonPos(jd){
@@ -507,10 +517,11 @@ function getMoonRiseSet(year,month,day,lat,lon){
     return(lo+hi)/2;
   }
 
-  // Doba lokalna: od północy do północy czasu polskiego, tj. od -tz do 24-tz godzin UTC względem JD0.
+  // Doba lokalna: od północy do północy czasu lokalizacji (strefa LOC_TZ), tj. od -przesunięcie do 24-przesunięcie
+  // godzin UTC względem JD0 (przesunięcie z początku i z końca doby: w dniu zmiany czasu się różnią).
   // Wcześniej okno 0..25,1 h UTC (= 02:00 do 03:06 następnego dnia latem) — w dniu bez wschodu
   // pokazywało wschód z następnego dnia (znalezione 6.10.2026: 5 X "01:24", 6 X "02:51").
-  const t0=-tzPrev,t1=24-tz;
+  const t0=-tzOffsetH(dayUTC),t1=24-tzOffsetH(Date.UTC(year,month-1,day+1));
   let riseT=null,setT=null,prev=moonAlt(t0);
   for(let t=t0+0.1;t<=t1+1e-9;t+=0.1){
     const curr=moonAlt(t);
@@ -686,19 +697,30 @@ function getMoonRiseSet(year,month,day,lat,lon){
   document.getElementById('daylightBar').style.width=(sun.frac*100)+'%';
 
   // Długość dnia vs. solstycja
-  const longestMin=calcDayLenMin(y,6,21);
-  const shortestMin=calcDayLenMin(y,12,21);
+  // Najdłuższy/najkrótszy dzień roku to czerwcowe/grudniowe przesilenie zależnie od półkuli
+  const solMin=[calcDayLenMin(y,6,21),calcDayLenMin(y,12,21)];
+  const longestMin=Math.max(...solMin);
+  const shortestMin=Math.min(...solMin);
   const todayMin=sun.lenMin;
   const lh=Math.floor(todayMin/60),lm=todayMin%60;
   const diffLong=longestMin-todayMin;
   const diffShort=todayMin-shortestMin;
-  let dlText=`<span>Dzień trwa <strong>${lh} godz. ${lm} min</strong>`;
-  if(diffLong===0){
-    dlText+=', jest najdłuższym dniem roku';
-  } else if(diffLong>0){
-    dlText+=`, jest krótszy od najdłuższego o ${fmtDiff(diffLong)}`;
+  let dlText;
+  if(!todayMin){
+    // Słońce w ogóle nie wschodzi lub nie zachodzi (noc/dzień polarny) — calcSunCore zwraca null
+    dlText=`<span>Dla tej lokalizacji Słońce w tym dniu nie wschodzi lub nie zachodzi (noc lub dzień polarny). (Czasy podano dla lokalizacji ${LOC_NAME})</span>`;
+  } else if(longestMin-shortestMin<10){
+    // Strefa równikowa: długość dnia prawie się nie zmienia, porównanie z przesileniami nic nie mówi
+    dlText=`<span>Dzień trwa <strong>${lh} godz. ${lm} min</strong>. (Czasy podano dla lokalizacji ${LOC_NAME})</span>`;
+  } else {
+    dlText=`<span>Dzień trwa <strong>${lh} godz. ${lm} min</strong>`;
+    if(diffLong===0){
+      dlText+=', jest najdłuższym dniem roku';
+    } else if(diffLong>0){
+      dlText+=`, jest krótszy od najdłuższego o ${fmtDiff(diffLong)}`;
+    }
+    dlText+=` i jest dłuższy od najkrótszego o ${fmtDiff(diffShort).replace(/\.$/,'')}. (Czasy podano dla lokalizacji ${LOC_NAME})</span>`;
   }
-  dlText+=` i jest dłuższy od najkrótszego o ${fmtDiff(diffShort).replace(/\.$/,'')}. (Czasy podano dla lokalizacji ${LOC_NAME})</span>`;
   document.getElementById('dayLengthInfo').innerHTML=dlText;
 
   // Księżyc
@@ -1010,9 +1032,14 @@ async function applyLocSearch(){
     const data=await res.json();
     if(!data.length){status.textContent='Nie znaleziono miejscowości.';return;}
     const r=data[0];
-    LOC_LAT=parseFloat(r.lat); LOC_LON=parseFloat(r.lon);
+    const lat=parseFloat(r.lat), lon=parseFloat(r.lon);
+    // Strefa czasowa miejscowości (potrzebna do godzin wschodów/zachodów) — Open-Meteo zwraca ją dla dowolnych współrzędnych
+    const tzRes=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m&timezone=auto`);
+    const tz=(await tzRes.json()).timezone;
+    if(!isValidTz(tz)){status.textContent='Nie udało się ustalić strefy czasowej tej miejscowości.';return;}
+    LOC_LAT=lat; LOC_LON=lon; LOC_TZ=tz;
     LOC_NAME=r.address?.city||r.address?.town||r.address?.village||r.address?.hamlet||r.display_name.split(',')[0];
-    localStorage.setItem('dbd-loc',JSON.stringify({name:LOC_NAME,lat:LOC_LAT,lon:LOC_LON}));
+    localStorage.setItem('dbd-loc',JSON.stringify({name:LOC_NAME,lat:LOC_LAT,lon:LOC_LON,tz:LOC_TZ}));
     location.reload();
   }catch(e){status.textContent='Błąd połączenia.';}
 }
@@ -1137,7 +1164,7 @@ function jumpToDate(val){
     85:['🌨️','Przelotny śnieg'],86:['🌨️','Przelotny śnieg intensywny'],
     95:['⛈️','Burza'],96:['⛈️','Burza z gradem'],99:['⛈️','Burza z silnym gradem']
   };
-  const url=`https://api.open-meteo.com/v1/forecast?latitude=${LOC_LAT}&longitude=${LOC_LON}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m&timezone=Europe%2FWarsaw&wind_speed_unit=kmh`;
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${LOC_LAT}&longitude=${LOC_LON}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m&timezone=auto&wind_speed_unit=kmh`;
   // Open-Meteo aktualizuje dane "current" co ok. 15 min — odświeżamy co 20 min oraz po powrocie do karty
   const REFRESH_MS=20*60*1000;
   let lastFetch=0;
