@@ -68,6 +68,10 @@
     .sc-symbol { font-size:2.2rem; }
     .sc-name { font-family:'Instrument Serif',serif; font-size:1.3rem; }
     .sc-date { font-size:.75rem; color:var(--muted); margin-top:.1rem; }
+    .dates-table { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .dates-table .dtable { min-width:520px; }
+    .calc-error { color:#A23B1E; font-size:.9rem; font-weight:500; margin:.75rem 0 0; }
+    [data-theme="dark"] .calc-error { color:#F0906F; }
     .sc-element { display:inline-flex; align-items:center; gap:.3rem; font-size:.72rem; font-weight:500; padding:.2rem .6rem; border-radius:60px; background:var(--tag-bg); margin-bottom:.75rem; }
     .sc-desc { font-size:.82rem; color:var(--muted); line-height:1.7; }
     .sc-traits { display:flex; gap:.35rem; flex-wrap:wrap; margin-top:.75rem; }
@@ -222,6 +226,7 @@
       </div>
     </div>
     <button class="btn-calc" onclick="calcSign()">Sprawdź swój znak</button>
+    <p class="calc-error" id="calcError" role="alert" hidden></p>
     <div class="sign-result" id="signResult">
       <div class="sign-symbol" id="srSymbol"></div>
       <div class="sign-info">
@@ -295,7 +300,7 @@ const SIGNS = [
   { name:'Waga', symbol:'♎', dates:'23 września – 22 października', start:[9,23], end:[10,22], element:'Powietrze', planet:'Wenus', color:'#16A085',
     traits:['Dyplomatyczny','Sprawiedliwy','Estetyczny','Niezdecydowany','Towarzyski'],
     desc:'Waga kojarzona jest z poczuciem sprawiedliwości, estetyką i harmonią w relacjach. Osoby te szukają równowagi i często pełnią rolę mediatorów. Mogą mieć trudności z podejmowaniem decyzji.' },
-  { name:'Skorpion', symbol:'♏', dates:'23 października – 21 listopada', start:[10,23], end:[11,21], element:'Woda', planet:'Pluton/Mars', color:'#8E1A10',
+  { name:'Skorpion', symbol:'♏', dates:'23 października – 21 listopada', start:[10,23], end:[11,21], element:'Woda', planet:'Mars / Pluton', color:'#8E1A10',
     traits:['Intensywny','Lojalny','Przenikliwy','Zazdrosny','Zdeterminowany'],
     desc:'Skorpion łączony jest z intensywnością emocji, przenikliwością i determinacją. Osoby te rzadko pozostają obojętne — albo fascynują, albo odpychają. Są bardzo lojalne wobec bliskich.' },
   { name:'Strzelec', symbol:'♐', dates:'22 listopada – 21 grudnia', start:[11,22], end:[12,21], element:'Ogień', planet:'Jowisz', color:'#D35400',
@@ -304,10 +309,10 @@ const SIGNS = [
   { name:'Koziorożec', symbol:'♑', dates:'22 grudnia – 19 stycznia', start:[12,22], end:[1,19], element:'Ziemia', planet:'Saturn', color:'#5D6D7E',
     traits:['Ambitny','Odpowiedzialny','Zdyscyplinowany','Powściągliwy','Wytrwały'],
     desc:'Koziorożec łączony jest z ambicją, odpowiedzialnością i cierpliwością. Osoby te budują stabilność krok po kroku i rzadko się poddają. Mogą być powściągliwe w wyrażaniu emocji.' },
-  { name:'Wodnik', symbol:'♒', dates:'20 stycznia – 18 lutego', start:[1,20], end:[2,18], element:'Powietrze', planet:'Uran', color:'#2471A3',
+  { name:'Wodnik', symbol:'♒', dates:'20 stycznia – 18 lutego', start:[1,20], end:[2,18], element:'Powietrze', planet:'Saturn / Uran', color:'#2471A3',
     traits:['Oryginalny','Humanitarny','Niezależny','Nieprzewidywalny','Innowacyjny'],
     desc:'Wodnik kojarzony jest z oryginalnością, humanitaryzmem i niezależnością myślenia. Osoby te często wyprzedzają swój czas i cenią wolność intelektualną ponad wszystko.' },
-  { name:'Ryby', symbol:'♓', dates:'19 lutego – 20 marca', start:[2,19], end:[3,20], element:'Woda', planet:'Neptun', color:'#1A5276',
+  { name:'Ryby', symbol:'♓', dates:'19 lutego – 20 marca', start:[2,19], end:[3,20], element:'Woda', planet:'Jowisz / Neptun', color:'#1A5276',
     traits:['Wrażliwy','Empatyczny','Intuicyjny','Idealistyczny','Twórczy'],
     desc:'Ryby łączone są z wrażliwością, wyobraźnią i empatią. Osoby spod tego znaku często mają silną intuicję i zdolności artystyczne. Mogą zatracać się w marzeniach.' },
 ];
@@ -340,7 +345,14 @@ function parseLocalDate(str) {
 
 function calcSign() {
   const d = parseLocalDate(document.getElementById('birthDate').value);
-  if (isNaN(d)) { alert('Podaj datę urodzenia.'); return; }
+  const err = document.getElementById('calcError');
+  if (isNaN(d)) {
+    err.textContent = 'Podaj datę urodzenia.';
+    err.hidden = false;
+    document.getElementById('signResult').classList.remove('visible');
+    return;
+  }
+  err.hidden = true;
   const s = getSign(d);
   document.getElementById('srSymbol').textContent = s.symbol;
   document.getElementById('srName').textContent = s.name;
@@ -359,7 +371,7 @@ document.getElementById('signsGrid').innerHTML = SIGNS.map(s => `
         <div class="sc-date">${s.dates}</div>
       </div>
     </div>
-    <div class="sc-element" style="background:${s.color}18;color:${s.color}">${s.element} · ${s.planet}</div>
+    <div class="sc-element" style="background:${s.color}22;border:1px solid ${s.color}66;color:var(--text)">${s.element} · ${s.planet}</div>
     <div class="sc-desc">${s.desc}</div>
     <div class="sc-traits">${s.traits.map(t=>`<span class="sc-trait">${t}</span>`).join('')}</div>
   </div>
