@@ -66,6 +66,12 @@
     .breakdown-val { font-weight:500; }
     .breakdown-val.neg { color:#8B3A1A; }
     .breakdown-val.pos { color:#3A6B3F; }
+    [data-theme="dark"] .breakdown-val.neg { color:#F0906F; }
+    [data-theme="dark"] .breakdown-val.pos { color:#7FC48A; }
+    .calc-error { color:#A23B1E; font-size:.9rem; font-weight:500; margin:0 0 1rem; }
+    [data-theme="dark"] .calc-error { color:#F0906F; }
+    .popular-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .popular-scroll .ptable { min-width:480px; }
     .breakdown-divider { height:1px; background:var(--border); margin:.4rem 0; }
     .bar-container { margin-bottom:1.5rem; }
     .bar-label { font-size:.72rem; color:var(--muted); margin-bottom:.5rem; text-transform:uppercase; letter-spacing:.06em; }
@@ -270,6 +276,7 @@
         </label>
       </div>
 
+      <p class="calc-error" id="calcError" role="alert" hidden></p>
       <button class="btn-calc" onclick="calcSalary()">Oblicz wynagrodzenie</button>
     </div>
 
@@ -280,10 +287,12 @@
 
   <div class="popular-table">
     <div class="popular-title">Popularne kwoty brutto → netto (2027) — <span id="popularType">umowa o pracę</span></div>
+    <div class="popular-scroll">
     <table class="ptable">
       <thead><tr><th>Brutto</th><th>Netto</th><th>ZUS</th><th>Podatek</th><th id="popularCostHead">Koszt pracodawcy</th></tr></thead>
       <tbody id="popularBody"></tbody>
     </table>
+    </div>
   </div>
 
   <div class="month-table" id="monthTableSection" style="display:none">
@@ -466,7 +475,15 @@
 
   function calcSalary() {
     const o = getOpts();
-    if (!o.brutto || o.brutto <= 0) { alert('Podaj kwotę brutto.'); return; }
+    const err = document.getElementById('calcError');
+    if (!o.brutto || o.brutto <= 0) {
+      err.textContent = 'Podaj kwotę brutto większą od zera.';
+      err.hidden = false;
+      document.getElementById('resultCard').innerHTML = '<div style="color:var(--muted);font-size:.85rem;padding:2rem 0;text-align:center;">Wprowadź wynagrodzenie brutto i kliknij Oblicz</div>';
+      document.getElementById('monthTableSection').style.display = 'none';
+      return;
+    }
+    err.hidden = true;
     const r = compute(o);
     renderResult(r, o);
     renderMonths(o);
