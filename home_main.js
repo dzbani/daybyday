@@ -276,7 +276,14 @@ function calcSunCore(year,month,day,lat,lon){
     return min;
   }
   const riseMin = eventMin(-1, 90.833), setMin = eventMin(1, 90.833);
-  if (riseMin === null || setMin === null) return null;
+  if (riseMin === null || setMin === null) {
+    // Dzień/noc polarna: Słońce nie zachodzi (cosHA < -1) albo nie wschodzi (cosHA > 1) — zapamiętaj, który przypadek
+    const pp = solar(JD0);
+    const cosH = (Math.cos(90.833 * rad) - Math.sin(lat * rad) * Math.sin(pp.decl)) / (Math.cos(lat * rad) * Math.cos(pp.decl));
+    calcSunCore.polar = cosH < 0 ? 'day' : 'night';
+    return null;
+  }
+  calcSunCore.polar = null;
   // Swit i zmierzch cywilny (zenit 96 stopni, Slonce 6 stopni pod horyzontem) - te same iteracje co wschod/zachod
   // (rms bledu ~0,5-3 s zamiast 25-35 s przy parametrach z poludnia UTC).
   const dawnMin = eventMin(-1, 96), duskMin = eventMin(1, 96);
@@ -289,7 +296,7 @@ function calcSunCore(year,month,day,lat,lon){
 
 function calcSunTimes(year,month,day){
   const c=calcSunCore(year,month,day,LOC_LAT,LOC_LON);
-  if(!c)return{rise:'—',set:'—',len:'—',frac:0,lenMin:0,dawn:'—',dusk:'—',noon:'—',noonAlt:'—'};
+  if(!c)return{rise:'—',set:'—',len:'—',frac:calcSunCore.polar==='day'?1:0,lenMin:0,dawn:'—',dusk:'—',noon:'—',noonAlt:'—',polar:calcSunCore.polar||null};
   // h = godziny UTC liczone od północy UTC danej daty; przesunięcie bierzemy dla chwili samego zdarzenia
   const dayUTC=Date.UTC(year,month-1,day);
   const fmt=h=>{h=((h+tzOffsetH(dayUTC+h*3600000))%24+24)%24;let hh=Math.floor(h),mm=Math.round((h-hh)*60);if(mm===60){mm=0;hh=(hh+1)%24;}return`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;};
@@ -435,7 +442,7 @@ function getMoonPhase(year,month,day){
     const nDays=Math.round(daysToFull);
     nextFull=`${nextFM.getDate()} ${MONTH_GEN[nextFM.getMonth()+1]} (${nDays===0?'dzisiaj':`za ${nDays} ${nDays===1?'dzień':'dni'}`})`;
   }
-  return{phase:`${icon} ${phase}`,age:`${ageSinceNew.toFixed(1)} dni`,bright:`${bright}%`,sign:MOON_SIGNS[signIdx],nextFull};
+  return{phase:`${icon} ${phase}`,age:`${ageSinceNew.toFixed(1).replace('.',',')} dni`,bright:`${bright}%`,sign:MOON_SIGNS[signIdx],nextFull};
 }
 
 // ── Wschód/zachód księżyca ─────────────────────────────────────
@@ -693,7 +700,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   document.getElementById('noonLabel').textContent=sun.noonAlt!=='—'?`Górowanie (${sun.noonAlt}°)`:'Górowanie';
   document.getElementById('sunset').textContent=sun.set;
   document.getElementById('dusk').textContent=sun.dusk;
-  document.getElementById('daylightLen').textContent=sun.len+' dnia';
+  document.getElementById('daylightLen').textContent=sun.polar==='day'?'Dzień polarny — Słońce nie zachodzi':sun.polar==='night'?'Noc polarna — Słońce nie wschodzi':sun.len+' dnia';
   document.getElementById('daylightBar').style.width=(sun.frac*100)+'%';
 
   // Długość dnia vs. solstycja
@@ -1125,7 +1132,7 @@ function shareDay(){
     setTimeout(()=>btn.textContent=orig,2000);
   });
 }
-document.getElementById('locSearchInput')&&document.getElementById('locSearchInput').addEventListener('keydown',e=>{if(e.key==='Enter')applyLocSearch();});
+document.getElementById('locSearchInput')&&document.getElementById('locSearchInput').addEventListener('keydown',e=>{if(e.key==='Enter')applyLocSearch();else if(e.key==='Escape'){toggleLocSearch();const b=document.getElementById('locNameBtn');if(b)b.focus();}});
 updateLocUI();
 
 

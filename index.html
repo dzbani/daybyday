@@ -369,8 +369,8 @@
       <div class="drag-handle" title="Przeciągnij aby zmienić kolejność">⠿</div>
       <div class="card-title" role="heading" aria-level="2" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
         <span>Dane astronomiczne — <button id="locNameBtn" onclick="toggleLocSearch()" style="font:inherit;font-size:inherit;font-weight:inherit;color:var(--sun-text);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline dotted;text-underline-offset:3px;" title="Zmień lokalizację">Poznań</button></span>
-        <div id="locSearchBox" style="display:none;align-items:center;gap:.4rem;">
-          <input id="locSearchInput" type="text" placeholder="Wpisz miejscowość…" style="font:inherit;font-size:.8rem;padding:.3rem .7rem;border:1px solid var(--border);border-radius:60px;outline:none;width:180px;background:var(--bg);color:var(--text);" />
+        <div id="locSearchBox" style="display:none;align-items:center;gap:.4rem;flex-wrap:wrap;min-width:0;max-width:100%;">
+          <input id="locSearchInput" type="text" placeholder="Wpisz miejscowość…" aria-label="Wpisz miejscowość" style="font:inherit;font-size:.8rem;padding:.3rem .7rem;border:1px solid var(--border);border-radius:60px;outline:none;flex:1 1 140px;min-width:0;max-width:180px;background:var(--bg);color:var(--text);" />
           <button onclick="applyLocSearch()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:#1A1916;color:#F8F7F5;border:none;border-radius:60px;cursor:pointer;">Szukaj</button>
           <button onclick="resetLoc()" style="font:inherit;font-size:.78rem;padding:.3rem .8rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);" title="Wróć do domyślnej (Poznań)">Resetuj</button>
           <button onclick="toggleLocSearch()" style="font:inherit;font-size:.78rem;padding:.3rem .6rem;background:none;border:1px solid var(--border);border-radius:60px;cursor:pointer;color:var(--muted);">✕</button>
@@ -390,7 +390,7 @@
           <div class="astro-row"><span class="astro-row-label" id="noonLabel">Górowanie</span><span class="astro-row-val" id="solarNoon"></span></div>
           <div class="astro-row astro-row-bold"><span class="astro-row-label">Zach. Sł.</span><span class="astro-row-val" id="sunset"></span></div>
           <div class="astro-row"><span class="astro-row-label">Zmierzch</span><span class="astro-row-val" id="dusk"></span></div>
-          <div class="astro-row"><span class="astro-row-label">Znak zodiaku</span><span class="astro-row-val" id="sunZodiacRow"></span></div>
+          <div class="astro-row"><span class="astro-row-label">Zodiak</span><span class="astro-row-val" id="sunZodiacRow" style="white-space:nowrap"></span></div>
           <div class="daylight-bar"><div class="daylight-fill" id="daylightBar"></div></div>
           <div class="daylight-label" id="daylightLen"></div>
         </div>
@@ -406,7 +406,7 @@
           <div class="astro-row"><span class="astro-row-label">Faza</span><span class="astro-row-val" id="moonPhase"></span></div>
           <div class="astro-row"><span class="astro-row-label">Wiek</span><span class="astro-row-val" id="moonAge"></span></div>
           <div class="astro-row"><span class="astro-row-label">Jasność</span><span class="astro-row-val" id="moonBright"></span></div>
-          <div class="astro-row"><span class="astro-row-label">Znak zodiaku</span><span class="astro-row-val" id="moonSign"></span></div>
+          <div class="astro-row"><span class="astro-row-label">Zodiak</span><span class="astro-row-val" id="moonSign" style="white-space:nowrap"></span></div>
           <div class="astro-row"><span class="astro-row-label">Pełnia</span><span class="astro-row-val" id="moonNextFull"></span></div>
         </div>
       </div>
@@ -538,8 +538,8 @@
 <script src="swieto_slugs.js"></script>
 <script src="swieto_names.js"></script>
 <script src="swieta_floating.js"></script>
-<script src="home_names.js?v=520"></script>
-<script src="home_holidays.js?v=520"></script>
+<script src="home_names.js?v=521"></script>
+<script src="home_holidays.js?v=521"></script>
 <script>
 // Awaryjne puste dane, gdy któryś plik się nie wczytał (zerwane połączenie, blokada) —
 // bez tego ReferenceError w init() wyłączał całą stronę (astronomia, liczniki). 10.10.2026
@@ -549,7 +549,7 @@ if(typeof HOLIDAYS==='undefined') window.HOLIDAYS=[];
 if(typeof SWIETA_DATA==='undefined'){window.SWIETA_DATA=[];window.SWIETA_DATA_STATIC=[];window.SWIETA_DATA_MOVABLE=[];window.computeMovableSwieta=function(){return [];};}
 if(typeof redateFloating==='undefined') window.redateFloating=function(list){return list;};
 </script>
-<script src="home_main.js?v=520"></script>
+<script src="home_main.js?v=521"></script>
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
   <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
   <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
