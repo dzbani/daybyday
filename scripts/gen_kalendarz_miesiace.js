@@ -256,7 +256,7 @@ function buildPage(year, monthIdx0) {
   <link rel="stylesheet" href="/fonts.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; --holiday:#FDF2EE; --holiday-text:#8B3A1A; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; --holiday:#FDF2EE; --holiday-text:#8B3A1A; --weekend:#A24A31; }
     html { font-size: 112%; }
     html, body { max-width: 100vw; overflow-x: clip; }
     body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; line-height:1.65; }
@@ -283,7 +283,7 @@ function buildPage(year, monthIdx0) {
     table.cal-table th, table.cal-table td { padding:.6rem .9rem; text-align:left; border-bottom:1px solid var(--border); }
     table.cal-table thead th { font-size:.66rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); background:var(--tag-bg); }
     table.cal-table tbody tr:last-child td { border-bottom:none; }
-    table.cal-table tr.weekend td { color:#C0735A; }
+    table.cal-table tr.weekend td { color:var(--weekend); }
     table.cal-table tr.holiday { background:var(--holiday); }
     table.cal-table tr.holiday td.day-cell, table.cal-table tr.holiday td.holiday-name { color:var(--holiday-text); font-weight:600; }
     table.cal-table .day-cell a { color:inherit; text-decoration:none; }
@@ -317,7 +317,12 @@ function buildPage(year, monthIdx0) {
     @media(max-width:600px){ .topnav{padding:0 12px} .nav-burger{display:flex} .topnav .nav-links{display:none; position:fixed; top:56px; left:0; right:0; background:rgba(248,247,245,0.98); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); flex-direction:column; padding:.5rem; gap:.25rem; z-index:49; max-height:calc(100vh - 56px); overflow-y:auto} .topnav .nav-links.open{display:flex} .topnav .nav-links a{display:block; padding:.7rem .75rem; font-size:.9rem} }
   </style>
   <style id="dark-mode-styles">
-    [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; --holiday:#1F0D0A; --holiday-text:#D47A5A; }
+    [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; --holiday:#1F0D0A; --holiday-text:#D47A5A; --weekend:#E08A6C; }
+    #themeToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    #themeToggle:hover { background: var(--border); }
+    #themeToggle::before { content: '☾'; }
+    [data-theme="dark"] #themeToggle::before { content: '☀'; }
+    @media(max-width:768px){ #themeToggle { margin-left:auto; margin-right:.5rem; } }
     [data-theme="dark"] a { color: inherit; }
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
     [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98); }
@@ -340,6 +345,7 @@ function buildPage(year, monthIdx0) {
     <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
     <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
+  <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" onclick="var nl=document.querySelector('.topnav .nav-links');var o=nl.classList.toggle('open');this.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
 </nav>
 
@@ -508,6 +514,11 @@ function buildYearPage(year) {
   </style>
   <style id="dark-mode-styles">
     [data-theme="dark"] { --bg:#111110; --surface:#1B1A18; --border:#2C2A27; --text:#F0EDE8; --muted:#9A9790; --tag-bg:#232220; }
+    #themeToggle { background: none; border: 1px solid var(--border); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 14px; color: var(--muted); font-family: inherit; line-height: 1; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    #themeToggle:hover { background: var(--border); }
+    #themeToggle::before { content: '☾'; }
+    [data-theme="dark"] #themeToggle::before { content: '☀'; }
+    @media(max-width:768px){ #themeToggle { margin-left:auto; margin-right:.5rem; } }
     [data-theme="dark"] a { color: inherit; }
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
     [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98); }
@@ -530,6 +541,7 @@ function buildYearPage(year) {
     <li><a href="/kalendarz-szkolny.html">Kalendarz szkolny</a></li>
     <li><a href="/kalkulatory.html">Kalkulatory</a></li>
   </ul>
+  <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" onclick="var nl=document.querySelector('.topnav .nav-links');var o=nl.classList.toggle('open');this.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button>
 </nav>
 

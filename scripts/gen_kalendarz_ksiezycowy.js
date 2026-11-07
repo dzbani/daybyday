@@ -140,7 +140,7 @@ function monthPage(y, m) {
   const fulls = events.filter(e => e.q === 2), news = events.filter(e => e.q === 0);
   const lead = events.map(e => `${Q[e.q].name.toLowerCase()} ${evText(e)}`).join('; ');
   const tag = [...new Set(events.map(e => plTag(e.utc)))].join('/');
-  const desc = `Kalendarz księżycowy na ${mn.toLowerCase()} ${y}: ${news.length ? 'nów ' + evText(news[0]) + ', ' : ''}${fulls.length ? 'pełnia ' + evText(fulls[0]) + ', ' : ''}kwadry z godzinami, oświetlenie oraz wschody i zachody Księżyca dla Poznania.`;
+  const desc = `Kalendarz księżycowy na ${mn.toLowerCase()} ${y}: ${news.length ? 'nów ' + evText(news[0]) + ', ' : ''}${fulls.length ? 'pełnia ' + evText(fulls[0]) + ', ' : ''}kwadry, oświetlenie, wschody i zachody Księżyca (Poznań).`;
   const cards = events.map(e => `<div class="mc-ph"><div class="ic">${Q[e.q].icon}</div><div class="nm">${Q[e.q].name}</div><div class="tm">${evText(e)} (${plTag(e.utc)})</div></div>`).join('');
   const blue = fulls.length > 1 ? `<p class="mc-note">W ${mnl} ${y} są dwie pełnie: ${evText(fulls[0])} i ${evText(fulls[1])}. Drugą pełnię w miesiącu kalendarzowym nazywa się „niebieskim księżycem”.</p>` : '';
   const monthsNeed = news.length > 1 ? `<p class="mc-note">W ${mnl} ${y} wypadają dwa nowie: ${evText(news[0])} i ${evText(news[1])}.</p>` : '';
@@ -187,7 +187,7 @@ function yearPage(y) {
     const cell = q => yEv.filter(e => e.q === q && e.loc.m === i + 1).map(e => `${e.loc.d} ${MONTH_GEN[e.loc.m - 1].slice(0, 3)}, ${pad(e.loc.hh)}:${pad(e.loc.mm)}`).join('<br>') || '—';
     return `<tr><td class="mo"><a href="/kalendarz-ksiezycowy/${y}/${SLUGS[i]}/">${mn}</a></td><td>${cell(0)}</td><td>${cell(1)}</td><td>${cell(2)}</td><td>${cell(3)}</td></tr>`;
   }).join('');
-  const desc = `Kalendarz księżycowy ${y}: wszystkie nowie, kwadry i pełnie w roku z godzinami (czas polski) — ${n(2)} pełni i ${n(0)} nowiów. Wybierz miesiąc, żeby zobaczyć Księżyc dzień po dniu.`;
+  const desc = `Kalendarz księżycowy ${y}: nowie, kwadry i pełnie z godzinami (czas polski) — ${n(2)} pełni i ${n(0)} nowiów. Wybierz miesiąc, by zobaczyć Księżyc dzień po dniu.`;
   const crumbs = [['DaybyDay', SITE + '/'], ['Kalendarz księżycowy', HUB], [String(y), url]];
   const blue = blueMonths.length ? `<p class="mc-note">W ${y} roku jest ${blueMonths.length === 1 ? 'miesiąc z dwiema pełniami' : 'kilka miesięcy z dwiema pełniami'}: ${blueMonths.map(b => `${MONTH_LOC[MONTHS.indexOf(b.mn)]} (${b.f.map(e => e.loc.d).join(' i ')})`).join(', ')}. Drugą pełnię w miesiącu kalendarzowym nazywa się „niebieskim księżycem”.</p>` : '';
   const body = `  ${breadcrumbHtml(crumbs)}
@@ -211,7 +211,7 @@ function yearPage(y) {
 function hubPage() {
   const first = YEARS_ALL[0], last = YEARS_ALL[YEARS_ALL.length - 1];
   const crumbs = [['DaybyDay', SITE + '/'], ['Kalendarz księżycowy', HUB]];
-  const desc = `Kalendarz księżycowy ${first}–${last}: kiedy jest pełnia, nów i kwadry Księżyca, z godzinami w czasie polskim, oświetleniem tarczy oraz wschodami i zachodami Księżyca miesiąc po miesiącu.`;
+  const desc = `Kalendarz księżycowy ${first}–${last}: kiedy jest pełnia, nów i kwadry — godziny w czasie polskim, oświetlenie tarczy, wschody i zachody Księżyca miesiąc po miesiącu.`;
   const body = `  ${breadcrumbHtml(crumbs)}
   <div class="page-label">Księżyc</div>
   <h1 class="page-title">Kalendarz księżycowy ${first}–${last}</h1>
