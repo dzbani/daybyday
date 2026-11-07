@@ -69,9 +69,10 @@
     .faq-a { font-size:.84rem; color:var(--muted); line-height:1.7; }
     footer { border-top:1px solid var(--border); padding:2rem; max-width:860px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
-    .footer-links { display:flex; gap:1.5rem; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:.5rem 1.5rem; }
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
     .footer-links a:hover { color:var(--text); }
+    .footer-copy { font-size:.75rem; color:var(--muted); }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .nav-links{display:none} .topnav{padding:0 12px} .form-grid{grid-template-columns:1fr} .result-main{font-size:2.5rem} }
 
     body{animation:pageIn .28s ease both}
@@ -306,7 +307,9 @@
     <a href="/">Strona główna</a>
     <a href="kalkulatory.html">Kalkulatory</a>
     <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    <a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a>
   </div>
+  <p class="footer-copy">&copy; daybyday.today</p>
 </footer>
 <script>
   const MONTHS = ['stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia'];
