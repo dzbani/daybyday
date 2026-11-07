@@ -97,9 +97,12 @@
     .cal-day.sun .cal-day-num { color:#C0392B; }
     .cal-day.today .cal-day-num { color:#111110; }
     .cal-day.today .cal-day-names { color:#111110; }
-    .cal-day.today .cal-day-more { color:rgba(17,17,16,.6); }
+    .cal-day.today .cal-day-more { color:rgba(17,17,16,.85); }
     .cal-day-names { font-size:.68rem; line-height:1.45; color:var(--text); word-break:break-word; }
-    .cal-day-more { font-size:.62rem; color:var(--muted); margin-top:.15rem; }
+    .cal-day-more { font-size:.62rem; color:#57534E; margin-top:.15rem; }
+    [data-theme="dark"] .cal-day-more { color:#B5B0A8; }
+    [data-theme="dark"] .cal-month-hd.sun, [data-theme="dark"] .cal-day.sun .cal-day-num { color:#EC7A6C; }
+    [data-theme="dark"] .cal-day.today .cal-day-num { color:#111110; }
     @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .topnav{padding:0 12px} .cal-day { min-height:56px; padding:.4rem; } .cal-day-names { font-size:.6rem; } }
     footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
@@ -728,7 +731,7 @@ function isToday(m, d) { return m === TODAY_M && d === TODAY_D; }
 const nameLookup = {};
 NAMES.forEach(([m, d, names]) => {
   names.forEach(name => {
-    const key = name.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+    const key = name.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l');
     if (!nameLookup[key]) nameLookup[key] = [];
     nameLookup[key].push({m, d, names});
     // also store with diacritics
@@ -4591,7 +4594,7 @@ function doSearch(val) {
 
   const r = found[0];
   const mainDateStr = `${r.d} ${MONTH_NAMES_GEN[r.m]}`;
-  const matchedName = r.names.find(n =>
+  const matchedName = r.names.find(n => n.toLowerCase() === keyRaw || normalize(n) === keyAscii) || r.names.find(n =>
     n.toLowerCase().startsWith(keyRaw) ||
     normalize(n).startsWith(keyAscii)
   ) || r.names[0];
@@ -4625,8 +4628,8 @@ function doSearch(val) {
   });
   const months = Math.floor(minDays / 30), remDays = minDays % 30;
   const daysLabel = minDays === 0 ? 'Dziś są imieniny!' :
-    `Do najbliższych imienin zostało <strong>${minDays}</strong> dni` +
-    (months > 0 ? ` (${months} mies. i ${remDays} dni)` : '');
+    `Do najbliższych imienin zostało <strong>${minDays}</strong> ${minDays === 1 ? 'dzień' : 'dni'}` +
+    (months > 0 ? ` (${months} mies. i ${remDays} ${remDays === 1 ? 'dzień' : 'dni'})` : '');
 
   // Popularity from PESEL
   const peselCount = (typeof NAME_POPULARITY !== 'undefined') ? (NAME_POPULARITY[matchedName] || 0) : 0;
@@ -4648,7 +4651,7 @@ function doSearch(val) {
     <div style="padding:.25rem 0">
       <div class="result-name" style="margin-bottom:1.25rem">${matchedName}</div>
       <p style="font-size:.9rem;line-height:1.7;margin-bottom:.75rem">
-        ${minDays === 0 ? `Dziś są imieniny <strong>${matchedName}</strong>!` : `Do najbliższych imienin <strong>${matchedName}</strong> zostało <strong>${minDays}</strong> dni${months>0?`, co stanowi ${months} mies. i ${remDays} dni`:''}.`}
+        ${minDays === 0 ? `Dziś są imieniny <strong>${matchedName}</strong>!` : `Do najbliższych imienin <strong>${matchedName}</strong> zostało <strong>${minDays}</strong> ${minDays===1?'dzień':'dni'}${months>0?`, co stanowi ${months} mies. i ${remDays} ${remDays===1?'dzień':'dni'}`:''}.`}
       </p>
       <p style="font-size:.9rem;line-height:1.7;margin-bottom:.75rem">
         Daty imienin ${matchedName}: ${datesList}.
