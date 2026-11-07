@@ -1131,8 +1131,8 @@ function shareDay(){
   const url=`${location.origin}${location.pathname}?d=${d}&m=${m}&y=${y}`;
   navigator.clipboard.writeText(url).then(()=>{
     const btn=document.getElementById('shareBtn');
-    const orig=btn.textContent; btn.textContent='✓ Skopiowano';
-    setTimeout(()=>btn.textContent=orig,2000);
+    const orig=btn.innerHTML; btn.innerHTML="<svg class=\"ic\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20 6 9 17l-5-5\"/></svg>"+' Skopiowano';
+    setTimeout(()=>btn.innerHTML=orig,2000);
   });
 }
 document.getElementById('locSearchInput')&&document.getElementById('locSearchInput').addEventListener('keydown',e=>{if(e.key==='Enter')applyLocSearch();else if(e.key==='Escape'){toggleLocSearch();const b=document.getElementById('locNameBtn');if(b)b.focus();}});

@@ -233,6 +233,10 @@
       flex-shrink: 0; line-height: 1;
     }
     #themeToggle:hover { background: var(--tag-bg); color: var(--text); }
+    .ic { width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+    .ibtn { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; }
+    .ibtn .ic { width:16px; height:16px; }
+    #themeToggle .ic { width:17px; height:17px; }
     [data-theme="dark"] .card, [data-theme="dark"] .date-hero { box-shadow: none; }
     [data-theme="dark"] .card-title { border-left-color: var(--border); }
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
@@ -318,13 +322,13 @@
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;gap:.5rem;flex-wrap:wrap;">
         <div style="display:flex;align-items:center;gap:.5rem;">
           <a href="kartka-z-kalendarza.html" class="date-label" style="margin-bottom:0;text-decoration:none;color:inherit;">Kartka z kalendarza</a>
-          <button onclick="toggleCardEdit()" id="editOrderBtn" aria-label="Zmień kolejność sekcji" title="Zmień kolejność sekcji" style="font:inherit;font-size:.75rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.2rem .5rem;cursor:pointer;transition:background .15s;line-height:1;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">⚙</button>
+          <button class="ibtn" onclick="toggleCardEdit()" id="editOrderBtn" aria-label="Zmień kolejność sekcji" title="Zmień kolejność sekcji" style="font:inherit;font-size:.75rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.2rem .5rem;cursor:pointer;transition:background .15s;line-height:1;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg></button>
         </div>
         <div style="display:flex;gap:0.5rem;align-items:center;flex-shrink:0;">
-          <button id="shareBtn" onclick="shareDay()" aria-label="Udostępnij ten dzień" title="Udostępnij ten dzień" style="font:inherit;font-size:.8rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.25rem .6rem;cursor:pointer;transition:background .15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">🔗</button>
-          <a id="prevDayLink" href="#" aria-label="Poprzedni dzień" title="Poprzedni dzień" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">←</a>
+          <button class="ibtn" id="shareBtn" onclick="shareDay()" aria-label="Udostępnij ten dzień" title="Udostępnij ten dzień" style="font:inherit;font-size:.8rem;color:var(--muted);background:none;border:1px solid var(--border);border-radius:8px;padding:.25rem .6rem;cursor:pointer;transition:background .15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button>
+          <a class="ibtn" id="prevDayLink" href="#" aria-label="Poprzedni dzień" title="Poprzedni dzień" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></a>
           <a id="todayLink" href="/" style="font-size:0.75rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);display:none;transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">Dziś</a>
-          <a id="nextDayLink" href="#" aria-label="Następny dzień" title="Następny dzień" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''">→</a>
+          <a class="ibtn" id="nextDayLink" href="#" aria-label="Następny dzień" title="Następny dzień" style="font-size:0.8rem;color:var(--muted);text-decoration:none;padding:0.25rem 0.6rem;border-radius:8px;border:1px solid var(--border);transition:background 0.15s;" onmouseover="this.style.background='var(--tag-bg)'" onmouseout="this.style.background=''"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a>
         </div>
       </div>
       <div class="date-big">
@@ -470,9 +474,9 @@
     </div>
     <div class="card">
       <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;">
-        <button onclick="miniCalNav(-1)" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:0 .3rem;line-height:1;" title="Poprzedni miesiąc">‹</button>
+        <button class="ibtn" aria-label="Poprzedni miesiąc" onclick="miniCalNav(-1)" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:0 .3rem;line-height:1;" title="Poprzedni miesiąc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
         <span id="miniCalTitle">Kalendarz miesiąca</span>
-        <button onclick="miniCalNav(1)" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:0 .3rem;line-height:1;" title="Następny miesiąc">›</button>
+        <button class="ibtn" aria-label="Następny miesiąc" onclick="miniCalNav(1)" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:0 .3rem;line-height:1;" title="Następny miesiąc"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
       </div>
       <div id="miniCal"></div>
     </div>
@@ -541,8 +545,8 @@
 <script src="swieto_slugs.js"></script>
 <script src="swieto_names.js"></script>
 <script src="swieta_floating.js"></script>
-<script src="home_names.js?v=526"></script>
-<script src="home_holidays.js?v=526"></script>
+<script src="home_names.js?v=527"></script>
+<script src="home_holidays.js?v=527"></script>
 <script>
 // Awaryjne puste dane, gdy któryś plik się nie wczytał (zerwane połączenie, blokada) —
 // bez tego ReferenceError w init() wyłączał całą stronę (astronomia, liczniki). 10.10.2026
@@ -552,7 +556,7 @@ if(typeof HOLIDAYS==='undefined') window.HOLIDAYS=[];
 if(typeof SWIETA_DATA==='undefined'){window.SWIETA_DATA=[];window.SWIETA_DATA_STATIC=[];window.SWIETA_DATA_MOVABLE=[];window.computeMovableSwieta=function(){return [];};}
 if(typeof redateFloating==='undefined') window.redateFloating=function(list){return list;};
 </script>
-<script src="home_main.js?v=526"></script>
+<script src="home_main.js?v=527"></script>
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
   <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
   <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
@@ -570,7 +574,7 @@ if(typeof redateFloating==='undefined') window.redateFloating=function(list){ret
   function updateThemeBtn(){
     var b=document.getElementById('themeToggle');
     if(b) b.setAttribute('aria-label', document.documentElement.getAttribute('data-theme')==='dark'?'Przełącz na tryb jasny':'Przełącz na tryb ciemny');
-    if(b) b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'☾';
+    if(b) b.innerHTML=document.documentElement.getAttribute('data-theme')==='dark'?"<svg class=\"ic\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2\"/><path d=\"M12 20v2\"/><path d=\"m4.93 4.93 1.41 1.41\"/><path d=\"m17.66 17.66 1.41 1.41\"/><path d=\"M2 12h2\"/><path d=\"M20 12h2\"/><path d=\"m6.34 17.66-1.41 1.41\"/><path d=\"m19.07 4.93-1.41 1.41\"/></svg>":"<svg class=\"ic\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\"/></svg>";
   }
   function cycleFontSize(){
     var sizes=['normal','large','xl'];
@@ -621,6 +625,8 @@ function toggleCardEdit() {
   const btn = document.getElementById('editOrderBtn');
   btn.classList.toggle('active', editing);
   btn.title = editing ? 'Gotowe — zamknij tryb edycji' : 'Zmień kolejność sekcji';
+  btn.setAttribute('aria-label', btn.title);
+  btn.setAttribute('aria-pressed', editing ? 'true' : 'false');
   if (!editing) saveCardOrder();
 }
 
