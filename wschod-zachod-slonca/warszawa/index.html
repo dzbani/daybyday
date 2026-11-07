@@ -62,7 +62,8 @@
     .day-bar-track { height:12px; background:var(--tag-bg); border-radius:60px; position:relative; overflow:hidden; }
     .day-bar-sun { position:absolute; height:100%; background:linear-gradient(90deg,#F4A261,#E76F51); border-radius:60px; transition:width .4s; }
     .section-title { font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:1.25rem; }
-    .week-table { margin-bottom:2.5rem; }
+    .week-table { margin-bottom:2.5rem; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .week-table .wtable { min-width:440px; }
     .wtable { width:100%; border-collapse:collapse; font-size:.85rem; }
     .wtable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.65rem .75rem; border-bottom:2px solid var(--border); }
     .wtable td { padding:.65rem .75rem; border-bottom:1px solid var(--border); }
@@ -72,7 +73,8 @@
     .month-tab { padding:.4rem 1rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.8rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
     .month-tab.active,.month-tab:hover { background:var(--text); color:white; border-color:var(--text); }
     .month-section { display:none; }
-    .month-section.active { display:block; }
+    .month-section.active { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .month-section .mtable { min-width:420px; }
     .month-table { }
     .mtable { width:100%; border-collapse:collapse; font-size:.82rem; }
     .mtable th { text-align:left; font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:.6rem .75rem; border-bottom:2px solid var(--border); }
@@ -250,7 +252,7 @@
   </p>
 
   <div class="location-search">
-    <input type="text" class="location-input" id="locationInput" placeholder="Wpisz nazwę miejscowości, np. Zakopane, Kielce, Sandomierz…" />
+    <input type="text" class="location-input" id="locationInput" placeholder="Miejscowość, np. Zakopane" aria-label="Nazwa miejscowości w Polsce" />
     <button class="location-btn" id="locationBtn" onclick="searchLocation()">Szukaj</button>
     <button class="location-btn secondary" id="geoBtn" onclick="useMyLocation(false)" title="Ustaw moją lokalizację jako domyślną">📍 Moja lokalizacja</button>
   </div>
@@ -505,6 +507,12 @@ function useMyLocation(silent) {
   if (!silent) { status.textContent = 'Szukam Twojej lokalizacji…'; if (btn) btn.disabled = true; }
   navigator.geolocation.getCurrentPosition(
     p => {
+      // Godziny są podawane w czasie polskim (CET/CEST) — dla miejsc spoza Polski byłyby błędne
+      const inPL = p.coords.latitude >= 48.9 && p.coords.latitude <= 55.0 && p.coords.longitude >= 14.0 && p.coords.longitude <= 24.3;
+      if (!inPL) {
+        if (!silent) { status.textContent = 'Twoja lokalizacja jest poza Polską — ta strona podaje godziny w czasie polskim. Wybierz miasto z listy albo wpisz polską miejscowość.'; if (btn) btn.disabled = false; }
+        return;
+      }
       const c = { name:'Twoja lokalizacja', lat:p.coords.latitude, lon:p.coords.longitude };
       document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
       saveLocation({ key:null, name:c.name, lat:c.lat, lon:c.lon });
@@ -572,7 +580,7 @@ if (FORCE_CITY && CITIES[FORCE_CITY]) {
   selectCity(FORCE_CITY);
 } else if (savedLoc && savedLoc.key && CITIES[savedLoc.key]) {
   selectCity(savedLoc.key);
-} else if (savedLoc && typeof savedLoc.lat === 'number') {
+} else if (savedLoc && typeof savedLoc.lat === 'number' && savedLoc.lat >= 48.9 && savedLoc.lat <= 55.0 && savedLoc.lon >= 14.0 && savedLoc.lon <= 24.3) {
   document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
   renderToday(savedLoc);
   renderWeek(savedLoc);
