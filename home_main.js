@@ -579,7 +579,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   // Date hero
   const dayNameEl=document.getElementById('dayName');
   dayNameEl.textContent=DAY_NOM[T.getDay()];
-  if(T.getDay()===0) dayNameEl.style.color='#C0392B';
+  if(T.getDay()===0) dayNameEl.classList.add('sun');
   document.getElementById('dateDisplay').innerHTML=`${d} ${MONTH_GEN[m]}<br>${y}`;
   const isLeap=y%4===0&&(y%100!==0||y%400===0);
   const daysInYear=isLeap?366:365;
