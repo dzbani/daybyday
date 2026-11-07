@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="fonts.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; --fertile:#EDF7EE; --fertile-text:#3A6B3F; --ovulation:#E8F0FE; --ovulation-text:#3A5FA0; --period:#FDF0EE; --period-text:#8B3A1A; }
+    :root { --bg:#F8F7F5; --surface:#FFFFFF; --border:#E8E5E0; --text:#1A1916; --muted:#6B6762; --tag-bg:#F0EDEA; --radius:16px; --fertile:#EDF7EE; --fertile-text:#3A6B3F; --ovulation:#E8F0FE; --ovulation-text:#3A5FA0; --period:#FDF0EE; --period-text:#8B3A1A; --weekend:#A24A31; }
     html, body { max-width: 100vw; overflow-x: clip; }
     body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
     .topnav { position:sticky; top:0; z-index:50; background:rgba(248,247,245,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; height:56px; display:flex; align-items:center; justify-content:space-between; }
@@ -60,6 +60,8 @@
     .field input:focus, .field select:focus { border-color:var(--text); background:var(--surface); }
     .calc-btn { width:100%; padding:.8rem 1rem; background:var(--text); color:white; border:none; border-radius:10px; font-family:'Outfit',sans-serif; font-size:.88rem; font-weight:500; cursor:pointer; transition:opacity .2s; }
     .calc-btn:hover { opacity:.85; }
+    .calc-error { margin:0 0 1rem; padding:.7rem .9rem; border-radius:10px; background:var(--period); border:1px solid var(--period-text); color:var(--period-text); font-size:.82rem; line-height:1.5; }
+    .calc-error[hidden] { display:none; }
     .result-section { display:none; margin-top:2rem; }
     .result-section.visible { display:block; }
     .result-grid { display:grid; gap:.6rem; margin-bottom:1.25rem; }
@@ -71,9 +73,11 @@
     .result-row-label { font-size:.68rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.2rem; }
     .result-row-dates { font-family:'Instrument Serif',serif; font-size:1.1rem; }
     .result-row-note { font-size:.72rem; color:var(--muted); margin-top:.2rem; }
-    .mini-calendar { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-top:1.5rem; }
+    .mini-calendars { display:grid; gap:1.5rem; margin-top:1.5rem; }
+    .mini-month-title { font-family:'Instrument Serif',serif; font-size:1.05rem; margin-bottom:.35rem; }
+    .mini-calendar { display:grid; grid-template-columns:repeat(7,1fr); gap:2px; }
     .mini-cal-header { font-size:.6rem; font-weight:600; color:var(--muted); text-align:center; padding:.2rem; letter-spacing:.04em; }
-    .mini-cal-header.weekend { color:#C0735A; }
+    .mini-cal-header.weekend { color:var(--weekend); }
     .mini-cal-day { aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:.72rem; border-radius:5px; }
     .mini-cal-day.empty { }
     .mini-cal-day.period { background:var(--period); color:var(--period-text); font-weight:500; }
@@ -131,6 +135,7 @@
       --period: #1F0D0A; --period-text: #D47A5A;
       --open: #0D1F10; --open-text: #7BC87F;
       --closed: #1F0D0A; --closed-text: #D47A5A; --accent: #D8D4CE;
+      --weekend: #E08A6C;
     }
     [data-theme="dark"] { --muted: #9A9790; }
     #themeToggle {
@@ -232,9 +237,9 @@
     <div class="calc-card">
       <div class="calc-title">Oblicz cykl</div>
       <p class="calc-desc">Podaj datę pierwszego dnia ostatniej miesiączki i długość swojego cyklu.</p>
-      <div class="field"><label>Pierwszy dzień ostatniej miesiączki</label><input type="date" id="lastPeriod" value="2026-06-01"></div>
+      <div class="field"><label for="lastPeriod">Pierwszy dzień ostatniej miesiączki</label><input type="date" id="lastPeriod" value="2026-06-01" aria-describedby="calcError"></div>
       <div class="field">
-        <label>Długość cyklu (dni)</label>
+        <label for="cycleLen">Długość cyklu (dni)</label>
         <select id="cycleLen">
           <option value="24">24 dni</option>
           <option value="25">25 dni</option>
@@ -251,7 +256,7 @@
         </select>
       </div>
       <div class="field">
-        <label>Długość miesiączki (dni)</label>
+        <label for="periodLen">Długość miesiączki (dni)</label>
         <select id="periodLen">
           <option value="3">3 dni</option>
           <option value="4">4 dni</option>
@@ -260,6 +265,7 @@
           <option value="7">7 dni</option>
         </select>
       </div>
+      <p class="calc-error" id="calcError" role="alert" hidden></p>
       <button class="calc-btn" onclick="calculate()">Oblicz dni płodne</button>
 
       <div class="result-section" id="resultSection">
@@ -269,14 +275,14 @@
           <div class="legend-item"><div class="legend-dot" style="background:var(--fertile)"></div>Dni płodne</div>
           <div class="legend-item"><div class="legend-dot" style="background:var(--ovulation);border-radius:50%"></div>Owulacja</div>
         </div>
-        <div class="mini-calendar" id="miniCal" style="margin-top:1.5rem"></div>
+        <div class="mini-calendars" id="miniCal"></div>
       </div>
     </div>
 
     <div class="info-cards">
       <div class="info-card">
         <div class="info-card-title">Jak działa metoda kalendarzowa?</div>
-        <div class="info-card-text">Metoda Ogino-Knausa zakłada, że owulacja następuje około 14 dni przed końcem cyklu. Dla cyklu 28-dniowego jest to dzień 14. Dni płodne obejmują 5 dni przed owulacją i 1–2 dni po niej, ponieważ komórka jajowa jest zdolna do zapłodnienia przez ok. 12–24 godziny, a plemniki mogą przeżyć w drogach rodnych do 5 dni.</div>
+        <div class="info-card-text">Metoda Ogino-Knausa zakłada, że owulacja następuje około 14 dni przed początkiem kolejnej miesiączki. Dla cyklu 28-dniowego przypada to na około 15. dzień cyklu (pierwszy dzień miesiączki liczymy jako dzień 1). Dni płodne obejmują 5 dni przed owulacją, dzień owulacji i 1 dzień po niej, ponieważ komórka jajowa jest zdolna do zapłodnienia przez ok. 12–24 godziny, a plemniki mogą przeżyć w drogach rodnych do 5 dni.</div>
       </div>
       <div class="info-card">
         <div class="info-card-title">Kiedy cykl jest regularny?</div>
@@ -316,20 +322,52 @@
   function same(a, b) { return a.toDateString() === b.toDateString(); }
   function between(d, a, b) { return d >= a && d <= b; }
 
+  function startOfToday() { const d = new Date(); d.setHours(0, 0, 0, 0); return d; }
+  function ymd(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
+
+  // Odległość od dziś w pełnych dniach, liczona względem lokalnej północy — godzina zegara
+  // ani zmiana czasu nie wpływają na wynik. Data w przeszłości dostaje opis „N dni temu”
+  // zamiast „Za -N dni”.
+  function relDays(date) {
+    const n = Math.round((date - startOfToday()) / 86400000);
+    if (n === 0) return 'Dzisiaj';
+    if (n === 1) return 'Za 1 dzień';
+    if (n > 1) return `Za ${n} dni`;
+    if (n === -1) return '1 dzień temu';
+    return `${-n} dni temu`;
+  }
+
+  function showCalcError(msg) {
+    const box = document.getElementById('calcError');
+    document.getElementById('resultSection').classList.remove('visible');
+    box.textContent = msg;
+    box.hidden = false;
+  }
+
   // Domyślna data początku ostatniej miesiączki = 14 dni temu (przykład do podglądu wyniku),
-  // zamiast daty z czerwca 2026 wpisanej w HTML.
+  // zamiast daty z czerwca 2026 wpisanej w HTML. Ostatnia miesiączka nie może być w przyszłości,
+  // więc kalendarz w polu daty kończy się na dzisiaj.
   (function setDefaultLastPeriod() {
     const d = new Date();
+    const input = document.getElementById('lastPeriod');
+    input.max = ymd(d);
     d.setDate(d.getDate() - 14);
-    document.getElementById('lastPeriod').value =
-      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    input.value = ymd(d);
   })();
 
   function calculate() {
     const lastPeriod = parseLocalDate(document.getElementById('lastPeriod').value);
     const cycle = parseInt(document.getElementById('cycleLen').value);
     const pLen = parseInt(document.getElementById('periodLen').value);
-    if (isNaN(lastPeriod.getTime())) return;
+    if (isNaN(lastPeriod.getTime()) || lastPeriod.getFullYear() < 1900) {
+      showCalcError('Podaj datę pierwszego dnia ostatniej miesiączki.');
+      return;
+    }
+    if (lastPeriod > startOfToday()) {
+      showCalcError('Pierwszy dzień ostatniej miesiączki nie może być w przyszłości — podaj datę dzisiejszą lub wcześniejszą.');
+      return;
+    }
+    document.getElementById('calcError').hidden = true;
 
     const ovulation = addDays(lastPeriod, cycle - 14);
     const fertileStart = addDays(ovulation, -5);
@@ -352,54 +390,75 @@
       <div class="result-row ovulation">
         <div class="result-row-label">Przewidywana owulacja</div>
         <div class="result-row-dates">${fmt(ovulation)}</div>
-        <div class="result-row-note">Dzień ${cycle - 14} cyklu</div>
+        <div class="result-row-note">Dzień ${cycle - 13} cyklu</div>
       </div>
       <div class="result-row safe">
         <div class="result-row-label">Kolejna miesiączka (orientacyjnie)</div>
         <div class="result-row-dates">${fmt(nextPeriod)}</div>
-        <div class="result-row-note">Za ${Math.round((nextPeriod - new Date()) / 86400000)} dni</div>
+        <div class="result-row-note">${relDays(nextPeriod)}</div>
       </div>
     `;
 
-    buildMiniCal(lastPeriod, cycle, pLen, ovulation, fertileStart, fertileEnd);
+    buildMiniCal(lastPeriod, periodEnd, ovulation, fertileStart, fertileEnd);
     document.getElementById('resultSection').classList.add('visible');
   }
 
-  function buildMiniCal(start, cycle, pLen, ovulation, fertileStart, fertileEnd) {
+  // Kalendarz obejmuje każdy miesiąc, w którym wypada miesiączka, okno płodne lub owulacja
+  // (przy cyklu 24–35 dni to najwyżej dwa miesiące) — wcześniej rysowany był tylko miesiąc
+  // początku miesiączki i dni płodne z kolejnego miesiąca nie były widoczne.
+  function buildMiniCal(start, periodEnd, ovulation, fertileStart, fertileEnd) {
     const cal = document.getElementById('miniCal');
     cal.innerHTML = '';
-    const today = new Date();
+    const last = fertileEnd > periodEnd ? fertileEnd : periodEnd;
+    let y = start.getFullYear(), m = start.getMonth();
+    while (y < last.getFullYear() || (y === last.getFullYear() && m <= last.getMonth())) {
+      cal.appendChild(buildMiniMonth(y, m, start, periodEnd, ovulation, fertileStart, fertileEnd));
+      if (++m > 11) { m = 0; y++; }
+    }
+  }
+
+  function buildMiniMonth(y, m, start, periodEnd, ovulation, fertileStart, fertileEnd) {
+    const today = startOfToday();
+    const wrap = document.createElement('div');
+    const title = document.createElement('div');
+    title.className = 'mini-month-title';
+    title.textContent = `${PL_MONTHS[m].charAt(0).toUpperCase()}${PL_MONTHS[m].slice(1)} ${y}`;
+    wrap.appendChild(title);
+
+    const grid = document.createElement('div');
+    grid.className = 'mini-calendar';
+    grid.setAttribute('role', 'group');
+    grid.setAttribute('aria-label', title.textContent);
 
     DAY_SHORT.forEach((d, i) => {
       const h = document.createElement('div');
       h.className = 'mini-cal-header' + (i >= 5 ? ' weekend' : '');
       h.textContent = d;
-      cal.appendChild(h);
+      grid.appendChild(h);
     });
 
-    const firstDay = new Date(start.getFullYear(), start.getMonth(), 1);
-    let dow = firstDay.getDay();
+    let dow = new Date(y, m, 1).getDay();
     dow = dow === 0 ? 6 : dow - 1;
-
     for (let i = 0; i < dow; i++) {
-      const e = document.createElement('div'); e.className='mini-cal-day empty'; cal.appendChild(e);
+      const e = document.createElement('div'); e.className = 'mini-cal-day empty'; grid.appendChild(e);
     }
 
-    const daysInMonth = new Date(start.getFullYear(), start.getMonth() + 1, 0).getDate();
-    const periodEnd = addDays(start, pLen - 1);
-
+    const daysInMonth = new Date(y, m + 1, 0).getDate();
     for (let d = 1; d <= daysInMonth; d++) {
-      const date = new Date(start.getFullYear(), start.getMonth(), d);
+      const date = new Date(y, m, d);
       const cell = document.createElement('div');
       cell.textContent = d;
-      let cls = 'mini-cal-day';
-      if (same(date, ovulation)) cls += ' ovulation';
-      else if (between(date, fertileStart, fertileEnd)) cls += ' fertile';
-      else if (between(date, start, periodEnd)) cls += ' period';
-      if (same(date, today)) cls += ' today';
+      let cls = 'mini-cal-day', label = '';
+      if (same(date, ovulation)) { cls += ' ovulation'; label = 'Przewidywana owulacja'; }
+      else if (between(date, fertileStart, fertileEnd)) { cls += ' fertile'; label = 'Dzień płodny'; }
+      else if (between(date, start, periodEnd)) { cls += ' period'; label = 'Miesiączka'; }
+      if (same(date, today)) { cls += ' today'; label = label ? `${label} (dzisiaj)` : 'Dzisiaj'; }
+      if (label) cell.title = label;
       cell.className = cls;
-      cal.appendChild(cell);
+      grid.appendChild(cell);
     }
+    wrap.appendChild(grid);
+    return wrap;
   }
 </script>
 
