@@ -524,6 +524,8 @@ const ENTRY_FIXES = [
   // --- 7 XI ---
   // bitwa pod Gamonal (Burgos): 10 XI 1808 (jest w 11-10)
   { file: '11-07.json', y: 1808, re: /Burgos/, drop: true },
+  // trzęsienia Ansei-Tōkai/Nankai: daty „4-7 listopada” to kalendarz japoński (gregoriańskie: 23-26 XII 1854), liczba ofiar niepotwierdzona
+  { file: '11-07.json', y: 1854, re: /trzęsień ziemi i wywołanych nimi fal tsunami/, drop: true },
   // Stalingrad przemianowano na Wolgograd 10 XI 1961
   { file: '11-07.json', y: 1961, re: /Stalingrad przemianowano/, drop: true },
   // Szusza: bitwa 4-8 XI 2020, miasto zdobyte 8 XI
