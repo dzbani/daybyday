@@ -19084,6 +19084,12 @@ function buildTitle(h) {
   return `${h.name} — kiedy wypada? | DaybyDay`;
 }
 
+// Flaga Polski jako SVG zamiast emoji przy 4 świętach narodowych (Windows nie rysuje flag emoji — „PL”; orzeł 🦅 myli się
+// z godłem innego kraju). Ta sama grafika i lista w home_main.js (FLAG_PL) i scripts/gen_static_swieto_pages.js (iconOf).
+const FLAG_PL_SVG = '<svg viewBox="0 0 24 16" aria-hidden="true" focusable="false" style="width:1.3em;height:.87em;vertical-align:-.1em"><rect width="24" height="16" rx="2.5" fill="#fff"/><path d="M0 8h24v5.5a2.5 2.5 0 0 1-2.5 2.5h-19A2.5 2.5 0 0 1 0 13.5z" fill="#DC143C"/><rect x=".5" y=".5" width="23" height="15" rx="2" fill="none" stroke="#000" stroke-opacity=".2"/></svg>';
+const FLAG_SLUGS = new Set(['swieto-niepodleglosci', 'konstytucja-3-maja', 'dzien-flagi', 'dzien-polonii']);
+const holidayIcon = (slug, h) => (FLAG_SLUGS.has(slug) ? FLAG_PL_SVG : (h.emoji || ''));
+
 function render() {
   const id = new URLSearchParams(window.location.search).get('id');
   const page = document.getElementById('pageContent');
@@ -19106,7 +19112,7 @@ function render() {
     const rel = HOLIDAYS_DB[slug];
     if (!rel) return '';
     const relHref = (typeof SWIETO_SLUGS!=='undefined'&&SWIETO_SLUGS.has(slug))?`/swieto/${slug}/`:`swieto.html?id=${slug}`;
-    return `<a href="${relHref}" class="related-link">${rel.emoji} ${rel.name}</a>`;
+    return `<a href="${relHref}" class="related-link">${holidayIcon(slug, rel)} ${rel.name}</a>`;
   }).join('');
 
   page.innerHTML = `
@@ -19119,7 +19125,7 @@ function render() {
     </div>
 
     <div class="holiday-header">
-      <div class="holiday-emoji">${h.emoji}</div>
+      <div class="holiday-emoji">${holidayIcon(id, h)}</div>
       <div class="holiday-badges">
         <span class="badge ${getBadgeClass(h.type)}">${h.typeLabel}</span>
         ${h.type2 ? `<span class="badge ${getBadgeClass(h.type2)}">${h.typeLabel2}</span>` : ''}

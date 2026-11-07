@@ -22,6 +22,12 @@ const { regenerateRegistry } = require('./swieto_registry');
 
 const ROOT = path.join(__dirname, '..');
 
+// Flaga Polski jako SVG zamiast emoji przy 4 świętach narodowych (Windows nie rysuje flag emoji — pokazuje „PL”;
+// orzeł 🦅 myli się z godłem innego kraju). Ta sama grafika i lista w home_main.js (FLAG_PL) i swieto.html (holidayIcon).
+const FLAG_PL_SVG = '<svg viewBox="0 0 24 16" aria-hidden="true" focusable="false" style="width:1.3em;height:.87em;vertical-align:-.1em"><rect width="24" height="16" rx="2.5" fill="#fff"/><path d="M0 8h24v5.5a2.5 2.5 0 0 1-2.5 2.5h-19A2.5 2.5 0 0 1 0 13.5z" fill="#DC143C"/><rect x=".5" y=".5" width="23" height="15" rx="2" fill="none" stroke="#000" stroke-opacity=".2"/></svg>';
+const FLAG_SLUGS = new Set(['swieto-niepodleglosci', 'konstytucja-3-maja', 'dzien-flagi', 'dzien-polonii']);
+const iconOf = (slug, h) => (FLAG_SLUGS.has(slug) ? FLAG_PL_SVG : (h.emoji || ''));
+
 // --- 1. Wczytaj HOLIDAYS_DB wbudowane w swieto.html ---
 function loadHolidaysDb(source) {
   const lines = source.split(/\r?\n/);
@@ -134,7 +140,7 @@ function buildPage(slug) {
     if (!rel) return '';
     const exists = fs.existsSync(path.join(ROOT, 'swieto', rslug));
     const href = exists ? `/swieto/${rslug}/` : `/swieto.html?id=${rslug}`;
-    return `<li><a href="${href}">${rel.emoji} ${rel.name}</a></li>`;
+    return `<li><a href="${href}">${iconOf(rslug, rel)} ${rel.name}</a></li>`;
   }).join('');
 
   const MAX_SAMEDAY = 10;
@@ -146,7 +152,7 @@ function buildPage(slug) {
   const sameDayHtml = sameDaySlugs.length
     ? `<div class="section-label">Inne święta tego dnia</div><ul>${sameDaySlugs.slice(0, MAX_SAMEDAY).map(s => {
         const rel = HOLIDAYS_DB[s];
-        return `<li><a href="/swieto/${s}/">${rel.emoji || ''} ${rel.name}</a></li>`;
+        return `<li><a href="/swieto/${s}/">${iconOf(s, rel)} ${rel.name}</a></li>`;
       }).join('')}</ul>`
     : '';
 
@@ -162,7 +168,7 @@ function buildPage(slug) {
     if (picks.length) {
       categoryHtml = `<div class="section-label">Więcej: ${TYPE_LABELS[h.type] || 'powiązane święta'}</div><ul>${picks.map(s => {
         const rel = HOLIDAYS_DB[s];
-        return `<li><a href="/swieto/${s}/">${rel.emoji || ''} ${rel.name}</a></li>`;
+        return `<li><a href="/swieto/${s}/">${iconOf(s, rel)} ${rel.name}</a></li>`;
       }).join('')}</ul>`;
     }
   }
@@ -256,7 +262,7 @@ function buildPage(slug) {
     <button id="themeToggle" onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('dbd-theme',t);" aria-label="Przełącz tryb ciemny/jasny" title="Tryb ciemny/jasny"></button>
   </nav>
   ${breadcrumbHtml}
-  <h1>${esc(h.name)} ${h.emoji || ''}</h1>
+  <h1>${esc(h.name)} ${iconOf(slug, h)}</h1>
   <p class="date">${esc(h.date)}</p>
   <div class="info">
     <div><b>Pochodzenie</b>${esc(h.origin || '')}</div>
