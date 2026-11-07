@@ -495,8 +495,8 @@
     <div class="card">
       <h2 class="card-title">Kalkulatory</h2>
       <nav class="mini-nav-list">
-        <a href="kalkulatory.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator daty<span class="mini-nav-sub">Ile dni między datami</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
-        <a href="kalkulator-dni.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator dni<span class="mini-nav-sub">Dodaj lub odejmij dni od daty</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="kalkulatory.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator daty<span class="mini-nav-sub">Dodaj dni, wiek, Wielkanoc</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="kalkulator-dni.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator dni<span class="mini-nav-sub">Ile dni między datami</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
         <a href="kalkulator-wynagrodzen.html" class="mini-nav-link"><span class="mini-nav-label">Kalkulator wynagrodzeń<span class="mini-nav-sub">Brutto, netto, ZUS</span></span><svg class="chevron-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
 </nav>
     </div>
@@ -538,8 +538,8 @@
 <script src="swieto_slugs.js"></script>
 <script src="swieto_names.js"></script>
 <script src="swieta_floating.js"></script>
-<script src="home_names.js?v=519"></script>
-<script src="home_holidays.js?v=519"></script>
+<script src="home_names.js?v=520"></script>
+<script src="home_holidays.js?v=520"></script>
 <script>
 // Awaryjne puste dane, gdy któryś plik się nie wczytał (zerwane połączenie, blokada) —
 // bez tego ReferenceError w init() wyłączał całą stronę (astronomia, liczniki). 10.10.2026
@@ -549,7 +549,7 @@ if(typeof HOLIDAYS==='undefined') window.HOLIDAYS=[];
 if(typeof SWIETA_DATA==='undefined'){window.SWIETA_DATA=[];window.SWIETA_DATA_STATIC=[];window.SWIETA_DATA_MOVABLE=[];window.computeMovableSwieta=function(){return [];};}
 if(typeof redateFloating==='undefined') window.redateFloating=function(list){return list;};
 </script>
-<script src="home_main.js?v=519"></script>
+<script src="home_main.js?v=520"></script>
 <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
   <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
   <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>

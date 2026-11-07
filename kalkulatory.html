@@ -13,12 +13,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalkulatory dat i czasu — DaybyDay</title>
-  <meta name="description" content="Darmowe kalkulatory online: ile dni między datami, kalkulator wynagrodzenia brutto/netto, dni płodne, zmiana czasu i więcej.">
+  <meta name="description" content="Darmowe kalkulatory online: ile dni między datami, dodawanie dni do daty, wiek, dni robocze, Wielkanoc, dzień tygodnia i wynagrodzenie brutto/netto.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://daybyday.today/kalkulatory.html">
   <meta property="og:title" content="Kalkulatory dat i czasu — DaybyDay">
   <meta property="og:site_name" content="DaybyDay">
-  <meta property="og:description" content="Darmowe kalkulatory: ile dni między datami, wynagrodzenie brutto/netto, dni płodne i więcej.">
+  <meta property="og:description" content="Darmowe kalkulatory: dni między datami, dodawanie dni, wiek, dni robocze, Wielkanoc i wynagrodzenie brutto/netto.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://daybyday.today/og-image-v5.png">
   <meta property="og:url" content="https://daybyday.today/kalkulatory.html">
@@ -385,8 +385,11 @@
     const diff = Math.round((d2 - d1) / 86400000);
     const abs = Math.abs(diff);
     document.getElementById('daysNum').textContent = abs.toLocaleString('pl');
+    const plN = (n, one, few, many) => n === 1 ? one : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? few : many);
+    const dec = (v, n) => v.toLocaleString('pl-PL', { minimumFractionDigits: n, maximumFractionDigits: n });
+    const wk = Math.floor(abs / 7), rd = abs % 7;
     document.getElementById('daysDetail').textContent =
-      `${Math.floor(abs / 7)} tygodni i ${abs % 7} dni · ok. ${(abs / 30.44).toFixed(1)} miesięcy · ${(abs / 365.25).toFixed(2)} lat`;
+      `${wk} ${plN(wk, 'tydzień', 'tygodnie', 'tygodni')} i ${rd} ${plN(rd, 'dzień', 'dni', 'dni')} · ok. ${dec(abs / 30.44, 1)} mies. · ${dec(abs / 365.25, 2)} lat`;
     document.getElementById('daysResult').classList.add('visible');
   }
 
