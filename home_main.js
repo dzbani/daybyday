@@ -1012,7 +1012,7 @@ function getMoonRiseSet(year,month,day,lat,lon){
   const elapsed=Math.round((T-startOfYear)/86400000)+1;
   const pct=(elapsed/totalDays*100).toFixed(1);
   document.getElementById('yearProgressBar').style.width=pct+'%';
-  document.getElementById('yearProgressPct').textContent=pct+'%';
+  document.getElementById('yearProgressPct').textContent=pct.replace('.',',')+'%';
 })();
 
 // ── Edycja lokalizacji ────────
