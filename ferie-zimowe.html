@@ -45,7 +45,7 @@
     .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
     .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
     .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:560px; margin-bottom:2.5rem; }
-    .year-tabs { display:flex; gap:.5rem; margin-bottom:2.5rem; }
+    .year-tabs { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2.5rem; }
     .year-tab { padding:.45rem 1.2rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.82rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
     .year-tab.active,.year-tab:hover { background:var(--text); color:white; border-color:var(--text); }
     .turns-grid { display:grid; gap:1.25rem; margin-bottom:3rem; }
@@ -73,7 +73,7 @@
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
     .footer-links a:hover { color:var(--text); }
     .footer-copy { font-size:.75rem; color:var(--muted); }
-    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .topnav{padding:0 12px}.nav-links{display:none}.voivodeships-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .topnav{padding:0 12px}.nav-links{display:none}.voivodeships-grid{grid-template-columns:1fr 1fr}.year-tab{padding:.45rem .85rem}}
 
     body{animation:pageIn .28s ease both}
     @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -124,11 +124,9 @@
     [data-theme="dark"] .topnav { background: rgba(17,17,16,0.92); }
     [data-theme="dark"] .topnav .nav-links { background: rgba(17,17,16,0.98) !important; }
     [data-theme="dark"] .year-tab.active, [data-theme="dark"] .year-tab:hover { color: var(--bg); }
-    [data-theme="dark"] .countdown-card { background: var(--text); color: var(--bg); }
-    [data-theme="dark"] .countdown-label { color: rgba(17,17,16,.55); }
-    [data-theme="dark"] .countdown-sub { color: rgba(17,17,16,.7); }
     [data-theme="dark"] .countdown-card { background: var(--surface); color: var(--text); }
     [data-theme="dark"] .countdown-label { color: var(--muted); }
+    [data-theme="dark"] .countdown-sub { color: var(--muted); }
     [data-theme="dark"] .date-hero { background: linear-gradient(135deg, #1B1A18 60%, #211E1A 100%) !important; }
     [data-theme="dark"] .quote-card { background: #1B1A18; }
     [data-theme="dark"] .quote-text { color: rgba(240,237,232,0.9); }

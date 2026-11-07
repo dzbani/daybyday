@@ -45,7 +45,7 @@
     .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
     .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
     .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:560px; margin-bottom:2.5rem; }
-    .year-tabs { display:flex; gap:.5rem; margin-bottom:2.5rem; }
+    .year-tabs { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2.5rem; }
     .year-tab { padding:.45rem 1.2rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.82rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
     .year-tab.active,.year-tab:hover { background:var(--text); color:white; border-color:var(--text); }
     .section-title { font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:1.25rem; margin-top:2.5rem; padding-bottom:.6rem; border-bottom:1px solid var(--border); }
@@ -57,7 +57,7 @@
     .event-row.highlight { background:#EEF3FD; border-color:#C5D3EE; }
     .event-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
     .event-date { font-size:.8rem; font-weight:600; color:var(--muted); min-width:130px; }
-    .event-name { font-size:.9rem; font-weight:500; flex:1; }
+    .event-name { font-size:.9rem; font-weight:500; flex:1; min-width:0; overflow-wrap:anywhere; }
     .event-name a { color:var(--text); text-decoration:underline; text-decoration-color:var(--border); text-underline-offset:2px; }
     .event-name a:hover { text-decoration-color:var(--text); }
     .event-badge { font-size:.68rem; font-weight:500; padding:.2rem .65rem; border-radius:60px; white-space:nowrap; }
@@ -83,7 +83,11 @@
     .footer-links a { font-size:.78rem; color:var(--muted); text-decoration:none; }
     .footer-links a:hover { color:var(--text); }
     .footer-copy { font-size:.75rem; color:var(--muted); }
-    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .topnav{padding:0 12px}.nav-links{display:none}.event-date{min-width:90px}}
+    @media(max-width:600px){ .page{padding-left:12px;padding-right:12px} .nav-month{display:none} .topnav{padding:0 12px}.nav-links{display:none}.event-date{min-width:90px}
+      .year-tab{padding:.45rem .85rem}
+      .event-row{flex-wrap:wrap;gap:.35rem .75rem;padding:.85rem 1rem}
+      .event-name{flex:1 1 140px}
+      .event-badge{margin-left:auto}}
 
     body{animation:pageIn .28s ease both}
     @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -330,10 +334,10 @@
 
   <div id="year-2027" style="display:none">
     <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num">186</div><div class="stat-label">dni nauki w roku (bez dni dyrektorskich)</div></div>
+      <div class="stat-card"><div class="stat-num">185</div><div class="stat-label">dni nauki w roku (bez dni dyrektorskich)</div></div>
       <div class="stat-card"><div class="stat-num">~10</div><div class="stat-label">tygodni wakacji letnich</div></div>
       <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">semestry</div></div>
-      <div class="stat-card"><div class="stat-num">17</div><div class="stat-label">dni roboczych wolnych od zajęć (święta i przerwy, bez ferii)</div></div>
+      <div class="stat-card"><div class="stat-num">18</div><div class="stat-label">dni roboczych wolnych od zajęć (święta i przerwy, bez ferii)</div></div>
     </div>
     <p style="font-size:.78rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.6;">Terminy ferii zimowych ogłosił MEN. Początek i koniec roku szkolnego oraz przerwy świąteczne wynikają wprost z rozporządzenia w sprawie organizacji roku szkolnego. Harmonogram egzaminów na 2028 r. Centralna Komisja Egzaminacyjna ogłosi do 20 sierpnia 2027 r.</p>
 
