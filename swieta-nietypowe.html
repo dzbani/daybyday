@@ -39,9 +39,10 @@
       --surface:#FFFFFF;
       --border:#E5E1DC;
       --text:#1C1917;
-      --muted:#78716C;
-      --subtle:#A8A29E;
+      --muted:#625D58;
+      --subtle:#6B6762;
       --gold:#B8926A;
+      --gold-text:#7A5C34;
       --gold-mid:#C9A87E;
       --gold-light:#F8F0E6;
       --gold-border:#E8D5BB;
@@ -145,7 +146,7 @@
       display:inline-block; margin-top:.65rem;
       padding:.18rem .6rem; background:var(--gold-light);
       border:1px solid var(--gold-border); border-radius:60px;
-      font-size:.63rem; font-weight:600; color:var(--gold);
+      font-size:.63rem; font-weight:600; color:var(--gold-text);
       letter-spacing:.04em;
     }
 
@@ -271,14 +272,14 @@
       border-color:var(--gold-border);
       background:linear-gradient(145deg, #FFFBF5 0%, #FFFFFF 60%);
     }
-    .holiday-card.today .hc-day { color:var(--gold); }
-    .holiday-card.today .hc-month-label { color:var(--gold-mid); }
-    .holiday-card.today .hc-tag { background:var(--gold-light); color:var(--gold); }
+    .holiday-card.today .hc-day { color:var(--gold-text); }
+    .holiday-card.today .hc-month-label { color:var(--gold-text); }
+    .holiday-card.today .hc-tag { background:var(--gold-light); color:var(--gold-text); }
     .holiday-card.today::after {
       content:'DZIŚ';
       position:absolute; top:1.4rem; right:1.4rem;
       font-size:.55rem; font-weight:700; letter-spacing:.16em;
-      color:var(--gold); opacity:.7;
+      color:var(--gold-text);
     }
     .holiday-card.today:hover { box-shadow:0 16px 48px rgba(184,146,106,.15); border-color:var(--gold-mid); }
 
@@ -360,12 +361,13 @@
     .cal-cell:hover { border-color:#C8C4BE; box-shadow:0 2px 8px rgba(0,0,0,.06); }
     .cal-cell.other-month { opacity:.32; pointer-events:none; background:var(--bg); }
     .cal-cell.today { background:#E8936A; border-color:#E8936A; border-width:2px; }
-    .cal-cell.today .cal-num { color:#111110; font-weight:600; }
+    /* dzisiejszy dzień w sobotę/niedzielę: osobne selektory, bo reguły .weekend/.sunday (niżej) inaczej kolorowały numer na pomarańczowym tle (kontrast 1,2:1) */
+    .cal-cell.today .cal-num, .cal-cell.today.weekend .cal-num, .cal-cell.today.sunday .cal-num { color:#111110; font-weight:600; }
     .cal-cell.today .cal-hol { color:#111110; }
-    .cal-cell.today .cal-hol-more { color:rgba(17,17,16,.6); }
+    .cal-cell.today .cal-hol-more { color:rgba(17,17,16,.8); }
     .cal-cell.selected { background:#EEE9E3; border-color:#C8C4BE; }
     .cal-cell.selected .cal-num { font-weight:700; }
-    .cal-cell.weekend .cal-num { color:var(--gold); }
+    .cal-cell.weekend .cal-num { color:var(--gold-text); }
     .cal-cell.sunday .cal-num { color:#C0392B; font-weight:700; }
     .cal-num {
       font-size:.82rem; font-weight:500; color:var(--text);
@@ -442,7 +444,7 @@
       display: inline-block; padding: .22rem .7rem;
       background: var(--gold-light); border: 1px solid var(--gold-border);
       border-radius: 60px; font-size: .65rem; font-weight: 600;
-      color: var(--gold); letter-spacing: .05em; text-transform: uppercase;
+      color: var(--gold-text); letter-spacing: .05em; text-transform: uppercase;
     }
 
     body{animation:pageIn .28s ease both}
@@ -481,8 +483,10 @@
       --period: #1F0D0A; --period-text: #D47A5A;
       --open: #0D1F10; --open-text: #7BC87F;
       --closed: #1F0D0A; --closed-text: #D47A5A;
+      --gold-text: #C9A87E; --gold-light: #2A2015; --gold-border: #3A2A10;
     }
-    [data-theme="dark"] { --muted: #9A9790; }
+    [data-theme="dark"] { --muted: #9A9790; --subtle: #A8A29E; }
+    [data-theme="dark"] .cal-cell.sunday .cal-num { color: #EC7A6C; }
     #themeToggle {
       background: none; border: 1px solid var(--border); border-radius: 8px;
       width: 32px; height: 32px; cursor: pointer; font-size: 14px;
@@ -699,6 +703,23 @@
 function swietoLink(name) {
   const slug = (typeof SWIETO_NAME_TO_SLUG!=='undefined') ? SWIETO_NAME_TO_SLUG[name] : undefined;
   return (slug && typeof SWIETO_SLUGS!=='undefined' && SWIETO_SLUGS.has(slug)) ? `/swieto/${slug}/` : null;
+}
+// Ta sama strona /swieto/<slug>/ pod dwiema nazwami w tym samym dniu (aliasy z rejestru, np. Dzień Parówki /
+// Dzień Parówkożercy 20 IX) to jedno święto: zostaje pierwsza nazwa z listy, a pozostałe trafiają do szóstego
+// elementu wpisu (aliasy) — wyszukiwarka i link ?q= nadal znajdują święto po każdej z nazw.
+function dedupeAliases(list) {
+  const kept = new Map(), out = [];
+  list.forEach(h => {
+    const link = swietoLink(h[2]);
+    if (!link) { out.push(h); return; }
+    const key = h[0] + '-' + h[1] + '-' + link;
+    const first = kept.get(key);
+    if (first) { (first[5] = first[5] || []).push(h[2]); return; }
+    const copy = h.slice(0, 5);
+    kept.set(key, copy);
+    out.push(copy);
+  });
+  return out;
 }
 const MONTHS     = ['styczeń','luty','marzec','kwiecień','maj','czerwiec','lipiec','sierpień','wrzesień','październik','listopad','grudzień'];
 const MONTH_LONG = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień'];
@@ -1872,7 +1893,7 @@ const HOLIDAYS = [
 
 ];
 // Daty świąt ruchomych (n-ty dzień tygodnia miesiąca) przeliczane na bieżący rok — patrz swieta_floating.js
-const HOLIDAYS_CUR = redateFloating(HOLIDAYS, new Date().getFullYear());
+const HOLIDAYS_CUR = dedupeAliases(redateFloating(HOLIDAYS, new Date().getFullYear()));
 
 // ── Helpers ──────────────────────────────────────────────
 const TODAY = new Date();
@@ -1921,7 +1942,7 @@ function render(){
     const [d, m, name, desc, tag] = h;
     const monthKey = MONTHS[m-1];
     const showMonth = activeMonth==='wszystkie' || activeMonth===monthKey;
-    const searchText = `${name} ${desc} ${tag} ${d} ${shortMonth(m)} ${monthKey}`.toLowerCase();
+    const searchText = `${name} ${(h[5]||[]).join(' ')} ${desc} ${tag} ${d} ${shortMonth(m)} ${monthKey}`.toLowerCase();
     const showSearch = !q || searchText.includes(q);
     if(!showMonth || !showSearch) return;
     if(!monthBuckets[monthKey]) monthBuckets[monthKey]={idx:m,cards:[]};
@@ -2052,7 +2073,7 @@ function renderCal() {
 
   // Holiday lookup for this month
   const lookup = {};
-  redateFloating(HOLIDAYS, calYear).forEach(([d, m, name, desc, tag]) => {
+  dedupeAliases(redateFloating(HOLIDAYS, calYear)).forEach(([d, m, name, desc, tag]) => {
     if (m === calMonth + 1) {
       if (!lookup[d]) lookup[d] = [];
       lookup[d].push({name, desc, tag});
@@ -2124,7 +2145,7 @@ if (_q) {
     'lipca','sierpnia','września','października','listopada','grudnia'];
   const TAG_LABELS = {inne:'inne',przyroda:'przyroda',kultura:'kultura',
     jedzenie:'jedzenie',zdrowie:'zdrowie',ludzie:'ludzie'};
-  const match = HOLIDAYS_CUR.find(h => h[2] === _q);
+  const match = HOLIDAYS_CUR.find(h => h[2] === _q || (h[5] && h[5].includes(_q)));
   console.log('_q:', JSON.stringify(_q), 'match:', match ? match[2] : 'NONE', 'total:', HOLIDAYS_CUR.length);
   if (match) {
     const [d, m, name, desc, tag] = match;
