@@ -54,6 +54,8 @@
     .result-box.visible { display:block; }
     .result-main { font-family:'Instrument Serif',serif; font-size:3.5rem; line-height:1; margin-bottom:.5rem; }
     .result-label { font-size:.85rem; color:var(--muted); }
+    .calc-error { color:#A23B1E; font-size:.9rem; font-weight:500; margin:0 0 1rem; }
+    [data-theme="dark"] .calc-error { color:#F0906F; }
     .result-sub { font-size:1rem; font-weight:500; margin-top:1rem; color:var(--text); }
     .result-links { display:flex; gap:.75rem; justify-content:center; margin-top:1.25rem; flex-wrap:wrap; }
     .result-link { font-size:.8rem; color:var(--muted); text-decoration:none; padding:.3rem .8rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; transition:all .15s; }
@@ -211,6 +213,7 @@
         <input type="date" id="dateTo">
       </div>
     </div>
+    <p class="calc-error" id="calcError" role="alert" hidden></p>
     <button class="btn-calc" onclick="calculate()">Oblicz liczbę dni</button>
   </div>
 
@@ -286,37 +289,64 @@
     return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
   }
 
+  // Polska odmiana liczebnika: 1 -> one, 2-4 (poza 12-14) -> few, reszta -> many
+  function pl(n, one, few, many) {
+    if (n === 1) return one;
+    const m10 = n % 10, m100 = n % 100;
+    return (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? few : many;
+  }
+  // Dodaje n miesięcy kalendarzowych; dzień przycinany do końca miesiąca (31 I + 1 mies. = 28/29 II)
+  function addMonths(d, n) {
+    const t = new Date(d.getFullYear(), d.getMonth() + n, 1);
+    const last = new Date(t.getFullYear(), t.getMonth() + 1, 0).getDate();
+    t.setDate(Math.min(d.getDate(), last));
+    return t;
+  }
+  function showCalcError(msg) {
+    const el = document.getElementById('calcError');
+    el.textContent = msg;
+    el.hidden = !msg;
+  }
+  function utcDay(d) { return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()); }
   function calculate() {
     const from = parseLocalDate(document.getElementById('dateFrom').value);
     const to = parseLocalDate(document.getElementById('dateTo').value);
-    if (isNaN(from) || isNaN(to)) { alert('Uzupełnij obie daty.'); return; }
-
-    const diff = Math.abs(to - from);
-    const days = Math.round(diff / 86400000);
-
-    const months = Math.floor(days / 30.44);
-    const remDays = days - Math.round(months * 30.44);
-    const weeks = Math.floor(days / 7);
-    const remWeekDays = days % 7;
-
+    if (isNaN(from) || isNaN(to)) {
+      showCalcError('Uzupełnij obie daty.');
+      document.getElementById('resultBox').classList.remove('visible');
+      return;
+    }
+    showCalcError('');
     const start = from <= to ? from : to;
     const end = from <= to ? to : from;
-
+    // Różnica w dniach kalendarzowych przez Date.UTC (odporna na zmianę czasu)
+    const days = Math.round((utcDay(end) - utcDay(start)) / 86400000);
+    // Pełne miesiące kalendarzowe (1 I -> 1 II = dokładnie 1 miesiąc) + reszta dni
+    let totalMonths = (end.getFullYear() - start.getFullYear()) * 12 + end.getMonth() - start.getMonth();
+    if (addMonths(start, totalMonths) > end) totalMonths--;
+    const remDays = Math.round((utcDay(end) - utcDay(addMonths(start, totalMonths))) / 86400000);
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    const weeks = Math.floor(days / 7);
+    const remWeekDays = days % 7;
     document.getElementById('resultDays').textContent = days.toLocaleString('pl');
     document.getElementById('resultBox').classList.add('visible');
-
-    let sub = '';
-    if (months > 0) sub += `${months} ${months === 1 ? 'miesiąc' : months < 5 ? 'miesiące' : 'miesięcy'}`;
-    if (remDays > 0) sub += (sub ? ' i ' : '') + `${remDays} ${remDays === 1 ? 'dzień' : 'dni'}`;
-    sub += ` · ${weeks} ${weeks === 1 ? 'tydzień' : weeks < 5 ? 'tygodnie' : 'tygodni'}`;
-    if (remWeekDays > 0) sub += ` i ${remWeekDays} ${remWeekDays === 1 ? 'dzień' : 'dni'}`;
+    const parts = [];
+    if (years > 0) parts.push(`${years} ${pl(years, 'rok', 'lata', 'lat')}`);
+    if (months > 0) parts.push(`${months} ${pl(months, 'miesiąc', 'miesiące', 'miesięcy')}`);
+    if (remDays > 0) parts.push(`${remDays} ${pl(remDays, 'dzień', 'dni', 'dni')}`);
+    let sub = parts.length > 1 ? parts.slice(0, -1).join(', ') + ' i ' + parts[parts.length - 1] : (parts[0] || 'ten sam dzień');
+    if (weeks > 0) {
+      sub += ` · ${weeks} ${pl(weeks, 'tydzień', 'tygodnie', 'tygodni')}`;
+      if (remWeekDays > 0) sub += ` i ${remWeekDays} ${pl(remWeekDays, 'dzień', 'dni', 'dni')}`;
+    }
     document.getElementById('resultSub').textContent = sub;
-
+    // Link do kartki z kalendarza dla danej daty (/kartka/MM-DD/ istnieje dla wszystkich 366 dni)
+    const kartka = d => `/kartka/${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}/`;
     document.getElementById('resultLinks').innerHTML =
-      `<a href="/" class="result-link">📅 ${formatDate(start)}</a>` +
-      `<a href="/" class="result-link">📅 ${formatDate(end)}</a>`;
+      `<a href="${kartka(start)}" class="result-link">📅 ${formatDate(start)}</a>` +
+      `<a href="${kartka(end)}" class="result-link">📅 ${formatDate(end)}</a>`;
   }
-
   calculate();
 </script>
 
