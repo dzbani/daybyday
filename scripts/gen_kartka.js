@@ -36,6 +36,8 @@ const indexRaw = readFile('index.html') + '\n' + readFile('home_holidays.js') + 
 // --- 2a. Imiona "główne" dnia — ta sama reguła co nagłówek na index.html:
 // POPULAR ∩ tradycyjne kalendarze (imieniny_tradycyjne.js); gdy brak — 3 najpopularniejsze tradycyjne
 const POPULAR = new Set(eval(indexRaw.match(/const POPULAR=new Set\((\[[^\]]*\])\)/)[1]));
+// Popularność imion (liczba nosicieli, PESEL) — do kolejności „reszty” imion w widgecie (najpopularniejsze pierwsze)
+const POP = (() => { const c = {}; try { vm.runInNewContext(readFile('name_popularity.js').replace(/const /g, 'var '), c); } catch (e) { return {}; } return c.NAME_POPULARITY || {}; })();
 const tradCtx = {};
 vm.runInNewContext(readFile('imieniny_tradycyjne.js').replace('const IMIENINY_TRAD', 'var IMIENINY_TRAD'), tradCtx);
 const IMIENINY_TRAD = tradCtx.IMIENINY_TRAD;
@@ -469,7 +471,7 @@ function buildWidgetPage(day) {
   const dateLabel = `${d} ${MONTH_GEN[m]}`;
 
   const namesHtml = day.names.length
-    ? (s => s.main.concat(s.rest))(splitNames(day.key, day.names)).slice(0, 6).map(n => nameHasPage(n) ? `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>` : esc(n)).join(', ')
+    ? (s => s.main.concat(s.rest.slice().sort((x, y) => (POP[y] || 0) - (POP[x] || 0))))(splitNames(day.key, day.names)).slice(0, 6).map(n => nameHasPage(n) ? `<a href="https://daybyday.today/imieniny/${nameSlug(n)}/" target="_top">${esc(n)}</a>` : esc(n)).join(', ')
     : '—';
 
   let holidayHtml = '';
