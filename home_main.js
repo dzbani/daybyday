@@ -1169,14 +1169,17 @@ function jumpToDate(val){
     0:['☀️','Bezchmurnie'],1:['🌤️','Głównie bezchmurnie'],2:['⛅','Częściowe zachmurzenie'],3:['☁️','Pochmurno'],
     45:['🌫️','Mgła'],48:['🌫️','Szron mgielny'],
     51:['🌦️','Mżawka lekka'],53:['🌦️','Mżawka'],55:['🌦️','Mżawka gęsta'],
+    56:['🌨️','Marznąca mżawka lekka'],57:['🌨️','Marznąca mżawka gęsta'],
     61:['🌧️','Deszcz lekki'],63:['🌧️','Deszcz'],65:['🌧️','Deszcz ulewny'],
     66:['🌨️','Marznący deszcz lekki'],67:['🌨️','Marznący deszcz'],
     71:['❄️','Śnieg lekki'],73:['❄️','Śnieg'],75:['❄️','Śnieg intensywny'],77:['🌨️','Ziarna śniegu'],
-    80:['🌦️','Przelotne opady lekkie'],81:['🌦️','Przelotne opady'],82:['⛈️','Przelotne opady silne'],
+    80:['🌦️','Przelotne opady lekkie'],81:['🌦️','Przelotne opady'],82:['🌧️','Przelotne opady silne'],
     85:['🌨️','Przelotny śnieg'],86:['🌨️','Przelotny śnieg intensywny'],
     95:['⛈️','Burza'],96:['⛈️','Burza z gradem'],99:['⛈️','Burza z silnym gradem']
   };
-  const url=`https://api.open-meteo.com/v1/forecast?latitude=${LOC_LAT}&longitude=${LOC_LON}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m&timezone=auto&wind_speed_unit=kmh`;
+  // Noc (is_day=0): ikony ze słońcem zamieniamy na księżyc/chmurę (w Unicode nie ma emoji „chmura z księżycem”)
+  const NIGHT={0:'🌙',1:'🌙',2:'☁️',51:'🌧️',53:'🌧️',55:'🌧️',80:'🌧️',81:'🌧️'};
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${LOC_LAT}&longitude=${LOC_LON}&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m,is_day&timezone=auto&wind_speed_unit=kmh`;
   // Open-Meteo aktualizuje dane "current" co ok. 15 min — odświeżamy co 20 min oraz po powrocie do karty
   const REFRESH_MS=20*60*1000;
   let lastFetch=0;
@@ -1186,7 +1189,8 @@ function jumpToDate(val){
   }
   function applyWeather(data){
     const c=data.current;
-    const [icon,desc]=WMO[c.weather_code]||['🌡️','Nieznane'];
+    const [dayIcon,desc]=WMO[c.weather_code]||['🌡️','Nieznane'];
+    const icon=(c.is_day===0&&NIGHT[c.weather_code])||dayIcon;
     document.getElementById('weatherIcon').textContent=icon;
     document.getElementById('weatherTemp').textContent=Math.round(c.temperature_2m)+'°C';
     document.getElementById('weatherFeel').textContent='Odczuwalna: '+Math.round(c.apparent_temperature)+'°C';
