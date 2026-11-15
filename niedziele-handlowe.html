@@ -59,6 +59,12 @@
     .months-list { display:flex; flex-direction:column; gap:.5rem; }
     .month-header { font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); padding:.75rem 0 .4rem; border-bottom:1px solid var(--border); margin-bottom:.25rem; margin-top:1.25rem; }
     .month-header:first-child { margin-top:0; }
+    .year-h2 { font-family:'Instrument Serif',serif; font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; line-height:1.2; letter-spacing:-.01em; margin:0 0 1.25rem; }
+    .faq { margin-top:3.5rem; padding-top:2rem; border-top:1px solid var(--border); }
+    .faq h2 { font-family:'Instrument Serif',serif; font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; line-height:1.2; margin:0 0 .5rem; }
+    .faq h3 { font-size:1rem; font-weight:600; line-height:1.4; margin:1.5rem 0 .4rem; }
+    .faq p { font-size:.88rem; color:var(--muted); line-height:1.7; max-width:720px; }
+    .faq p strong { color:var(--text); }
     .sunday-row { display:flex; align-items:center; gap:1rem; padding:1rem 1.25rem; background:var(--surface); border:1px solid var(--border); border-radius:12px; transition:border-color .15s; }
     .sunday-row:hover { border-color:#C8C4BE; }
     .sunday-row.past { opacity:.55; }
@@ -222,6 +228,7 @@
   </div>
 
   <div id="year-2026">
+    <h2 class="year-h2">Niedziele handlowe 2026</h2>
     <div class="stats-row">
       <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">niedziel handlowych w 2026</div></div>
       <div class="stat-card"><div class="stat-num">44</div><div class="stat-label">niedziel z zakazem handlu</div></div>
@@ -308,6 +315,7 @@
   </div>
 
   <div id="year-2027" style="display:none">
+    <h2 class="year-h2">Niedziele handlowe 2027</h2>
     <div class="stats-row">
       <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">niedziel handlowych w 2027</div></div>
       <div class="stat-card"><div class="stat-num">44</div><div class="stat-label">niedziel z zakazem handlu</div></div>
@@ -395,6 +403,7 @@
   </div>
 
   <div id="year-2028" style="display:none">
+    <h2 class="year-h2">Niedziele handlowe 2028</h2>
     <div class="stats-row">
       <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">niedziel handlowych w 2028</div></div>
       <div class="stat-card"><div class="stat-num">45</div><div class="stat-label">niedziel z zakazem handlu</div></div>
@@ -483,6 +492,7 @@
   </div>
 
   <div id="year-2029" style="display:none">
+    <h2 class="year-h2">Niedziele handlowe 2029</h2>
     <div class="stats-row">
       <div class="stat-card"><div class="stat-num">8</div><div class="stat-label">niedziel handlowych w 2029</div></div>
       <div class="stat-card"><div class="stat-num">44</div><div class="stat-label">niedziel z zakazem handlu</div></div>
@@ -557,6 +567,25 @@
       <div class="sunday-row"><div class="sun-date">30 grudnia 2029</div><div class="sun-status"><div class="sun-dot" style="background:#C0735A"></div><div class="sun-name">Niedziela niehandlowa</div></div><span class="sun-badge badge-closed">Zamknięte</span></div>
     </div>
   </div>
+
+  <section class="faq" id="faq">
+    <h2>Najczęstsze pytania o niedziele handlowe</h2>
+
+    <h3>Które niedziele w roku są handlowe?</h3>
+    <p>Handel w niedzielę jest dozwolony tylko w wybrane niedziele: <strong>ostatnią niedzielę stycznia, kwietnia, czerwca i sierpnia</strong>, w <strong>niedzielę poprzedzającą Wielkanoc</strong> (Niedziela Palmowa) oraz w <strong>trzy niedziele przed Bożym Narodzeniem</strong>. W pozostałe niedziele obowiązuje zakaz handlu. Konkretne daty znajdziesz w tabelach powyżej — wybierz rok: 2026, 2027, 2028 lub 2029.</p>
+
+    <h3>Ile niedziel handlowych jest w roku?</h3>
+    <p>W każdym z lat 2026–2029 są <strong>8 niedziel handlowych</strong>. Pozostałe niedziele są niehandlowe: 44 w latach 2026, 2027 i 2029 oraz 45 w 2028, który ma 53 niedziele.</p>
+
+    <h3>Jak sprawdzić, czy dana data jest niedzielą handlową?</h3>
+    <p>Najpierw sprawdź, czy ta data wypada w niedzielę, bo pojęcie niedzieli handlowej dotyczy tylko niedziel. Na przykład 27 lipca 2026 i 23 listopada 2026 to poniedziałki, więc obowiązują zwykłe godziny otwarcia sklepów (chyba że dzień jest świętem). Jeśli data jest niedzielą, znajdź ją w tabeli właściwego roku powyżej: plakietka „Otwarte” oznacza niedzielę handlową, a „Zamknięte” — zakaz handlu.</p>
+
+    <h3>Czy niedziela, która jest świętem, może być handlowa?</h3>
+    <p>Nie. W święta obowiązuje zakaz handlu, więc niedziela będąca jednocześnie świętem jest niehandlowa. W latach 2026–2029 dotyczy to m.in. Niedzieli Wielkanocnej, Zielonych Świątek, 3 maja 2026, Wszystkich Świętych (1 listopada 2026), Wniebowzięcia NMP (15 sierpnia 2027), drugiego dnia Bożego Narodzenia (26 grudnia 2027) i Święta Niepodległości (11 listopada 2029).</p>
+
+    <h3>Które sklepy mogą działać w niedzielę niehandlową?</h3>
+    <p>Zakaz nie obejmuje m.in. stacji benzynowych, sklepów na dworcach i placówek, w których właściciel sam stoi przy kasie.</p>
+  </section>
 </div>
 
 <footer>
