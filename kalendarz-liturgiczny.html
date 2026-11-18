@@ -484,6 +484,13 @@
   function renderFeastsAndSeasons(anchorDate, useRealBadges){
     const data=computeLiturgicalData(anchorDate);
 
+    // nagłówek mówi, który rok liturgiczny widać (od 1. niedzieli Adwentu do soboty przed następnym Adwentem)
+    const seasonsTitle=document.getElementById('seasonsTitle');
+    if(seasonsTitle && data.seasons.length){
+      const ly=data.seasons[0].from.getFullYear();
+      seasonsTitle.textContent='Okresy roku liturgicznego '+ly+'/'+(ly+1);
+    }
+
     const seasonList=document.getElementById('seasonList');
     seasonList.innerHTML=data.seasons.map(s=>{
       const isActive = useRealBadges && data.active===s;
