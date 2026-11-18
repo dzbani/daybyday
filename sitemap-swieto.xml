@@ -409,14 +409,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daybyday.today/swieto/dzien-budowlanca/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://daybyday.today/swieto/dzien-budowlanych/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

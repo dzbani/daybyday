@@ -821,7 +821,6 @@ const HOLIDAYS=[
 [23,9,'Międzynarodowy Dzień Języków Migowych','','inne'],
 [24,9,'Dzień Stylistów Rzęs','','inne'],
 [24,9,'Światowy Dzień Morza','','inne'],
-[25,9,'Dzień Budowlańca','','inne'],
 [25,9,'Światowy Dzień Farmaceuty','','inne'],
 [26,9,'Europejski Dzień Języków (Międzynarodowy Dzień Języków Obcych)','','inne'],
 [26,9,'Światowy Dzień Antykoncepcji','','inne'],
