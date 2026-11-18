@@ -43,6 +43,31 @@ const dimPrimary = {};
 for (const [form, owners] of Object.entries(buildDimOwners(RICH))) {
   dimPrimary[form] = owners.slice().sort((a, b) => (NAME_POPULARITY[b] || 0) - (NAME_POPULARITY[a] || 0) || a.localeCompare(b, 'pl'))[0];
 }
+// --- 1a'. Blok "Ile osób nosi imię X?" (liczba nosicieli + miejsce w rankingu wg PESEL) dla POP_BLOCK_TOP najpopularniejszych imion ---
+// Ta sama informacja jest w wyszukiwarce imion (imieniny.html: "Popularność: imię X nosi N osób"), ale tam dopisuje ją skrypt w
+// przeglądarce; strony statyczne (to je indeksuje Google) jej nie miały, a kalbi i kalendarzswiat podają ją w HTML.
+// Ranking jak w imieniny.html (getNameRank): miejsce na liście żeńskiej/męskiej wg liczby nosicieli, lepsze z dwóch; ranga ukryta
+// przy remisie > TIE_THRESHOLD imion (dla top 100 nie zachodzi). Zakres zmienia stała POP_BLOCK_TOP.
+const POP_BLOCK_TOP = 100;
+const TIE_THRESHOLD = 15;
+const genderSandbox = {};
+vm.createContext(genderSandbox);
+vm.runInContext(fs.readFileSync(path.join(ROOT, 'name_popularity_gender.js'), 'utf8').replace(/^﻿/, '') + '\nthis.__F__ = NAME_POPULARITY_FEMALE; this.__M__ = NAME_POPULARITY_MALE;', genderSandbox);
+function buildRankMap(src) {
+  const entries = Object.entries(src), counts = {}, rank = {}, tie = {};
+  entries.forEach(([n, v], i) => { rank[n] = i + 1; counts[v] = (counts[v] || 0) + 1; });
+  entries.forEach(([n, v]) => { tie[n] = counts[v]; });
+  return { rank, tie };
+}
+const RANK_F = buildRankMap(genderSandbox.__F__), RANK_M = buildRankMap(genderSandbox.__M__);
+function genderRank(name) {
+  const rf = RANK_F.rank[name] || Infinity, rm = RANK_M.rank[name] || Infinity;
+  if (rf === Infinity && rm === Infinity) return null;
+  const female = rf <= rm;
+  if ((female ? RANK_F.tie[name] : RANK_M.tie[name]) > TIE_THRESHOLD) return null;
+  return { rank: female ? rf : rm, gender: female ? 'żeńskich' : 'męskich' };
+}
+const POP_TOP = new Set(Object.entries(NAME_POPULARITY).sort((a, b) => b[1] - a[1]).slice(0, POP_BLOCK_TOP).map(e => e[0]));
 const MAIN_DIM = require('./name_main_diminutive.js');
 const joinPl = a =>a.length > 1 ? a.slice(0, -1).join(', ') + ' i ' + a[a.length - 1] : a[0];
 
@@ -325,6 +350,11 @@ function buildPage(name) {
   const dimBlock = dimUse.length
     ? `\n  <div class="name-desc-section dim-note">\n    <h2 class="name-desc-label">Kiedy są imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''}?</h2>\n    <p>${joinPl(dimUse)} ${dimUse.length > 1 ? 'to zdrobnienia' : 'to zdrobnienie'} imienia ${name}, więc imieniny ${joinPl(dimGen)} przypadają w ${dates.length === 1 ? 'ten sam dzień' : 'te same dni'} co imieniny ${genitive}: ${dates.length > 3 ? metaDatesStr + ' (pełna lista powyżej)' : datesStr}.</p>\n  </div>`
     : '';
+  const popCount = NAME_POPULARITY[name] || 0;
+  const popRank = POP_TOP.has(name) && popCount > 0 ? genderRank(name) : null;
+  const popBlock = POP_TOP.has(name) && popCount > 0
+    ? `\n  <div class="name-desc-section pop-note">\n    <h2 class="name-desc-label">Ile osób nosi imię ${name}?</h2>\n    <p>Imię <strong>${name}</strong> nosi <strong>${popCount.toLocaleString('pl-PL')}</strong> osób w Polsce${popRank ? `, co daje <strong>${popRank.rank}. miejsce</strong> wśród imion ${popRank.gender}` : ''}.<br><span style="font-size:.8rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</span></p>\n  </div>`
+    : '';
   // Odliczanie do najbliższych imienin liczy przeglądarka z new Date() (strona jest statyczna, więc bez zamrożenia po dacie granicznej)
   const cdDates = dates.map(x => `${x.m}-${x.d}`).join(',');
   const countdownHtml = `<p class="countdown" id="cd" data-dates="${cdDates}" data-name="${name.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}"></p>`;
@@ -489,7 +519,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}${mainDim ? ` (${mainDim})` : ''}</h1>
   <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
-  ${countdownHtml}${dimBlock}
+  ${countdownHtml}${dimBlock}${popBlock}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
