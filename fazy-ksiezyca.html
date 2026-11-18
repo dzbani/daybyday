@@ -714,7 +714,15 @@
     );
   };
 
-  render(52.4064, 16.9252, 'Poznań');   // domyślnie Poznań, jak na stronie głównej i w kalendarzu księżycowym
+  // Domyślnie Poznań (jak strona główna i kalendarz księżycowy); jeśli użytkownik wybrał miasto na stronie głównej (dbd-loc),
+  // używamy go. Widżet liczy godziny w czasie polskim (isPolandDST), więc zapis ze strefą inną niż Europe/Warsaw pomijamy.
+  let loc={lat:52.4064,lon:16.9252,name:'Poznań'};
+  try{
+    const s=JSON.parse(localStorage.getItem('dbd-loc')||'null');
+    const inPoland=s&&s.lat>=48.5&&s.lat<=55.5&&s.lon>=13.5&&s.lon<=24.5;
+    if(s&&typeof s.lat==='number'&&typeof s.lon==='number'&&isFinite(s.lat)&&isFinite(s.lon)&&typeof s.name==='string'&&s.name&&(s.tz?s.tz==='Europe/Warsaw':inPoland)) loc=s;
+  }catch(e){}
+  render(loc.lat,loc.lon,loc.name);
 })();
 
 // ── Auto-odświeżenie po zmianie daty (karta zostawiona otwarta na noc) ────────
