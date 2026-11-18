@@ -142,7 +142,10 @@ function buildLightPage(slug, entry) {
   const [d, m, name, desc, tag] = entry;
   const floatingRule = floatingSandbox.__byName__[name];
   const dateStr = floatingRule ? floatingSandbox.__ruleText__(floatingRule) : `${d} ${MONTH_NAMES_PL[m - 1]}`;
-  const metaDesc = truncateDesc((desc || `${name} — ${dateStr}.`).replace(/<[^>]+>/g, ''));
+  // Opis zaczyna się od odpowiedzi na pytanie „kiedy jest X?” (data albo reguła święta ruchomego), bo tak szukają ludzie
+  // (np. „kiedy jest dzień budowlańca”); wcześniej 316 z 327 takich stron nie miało daty w opisie (17.11.2026).
+  const whenSentence = `Kiedy jest ${name}? ${dateStr.charAt(0).toUpperCase()}${dateStr.slice(1)}.`;
+  const metaDesc = truncateDesc(desc ? `${whenSentence} ${desc.replace(/<[^>]+>/g, '')}` : `${name} — ${dateStr}.`);
   const tagLabel = TAG_LABELS[tag] || tag || '';
 
   const pageUrl = `https://daybyday.today/swieto/${slug}/`;
@@ -172,7 +175,7 @@ function buildLightPage(slug, entry) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${esc(name)} — DaybyDay</title>
+  <title>${esc(name)} — kiedy wypada? | DaybyDay</title>
   <meta name="description" content="${esc(metaDesc)}">
   <link rel="canonical" href="${pageUrl}">
   <meta property="og:title" content="${esc(name)} | DaybyDay">
