@@ -20,7 +20,7 @@ module.exports = {
   Jarosław: 'Jarek', Tadeusz: 'Tadek', Sebastian: 'Seba', Renata: 'Renia', Agata: 'Agatka',
   Damian: 'Damianek', Sławomir: 'Sławek', Urszula: 'Ula', Antoni: 'Antek', Filip: 'Filipek',
   Roman: 'Romek', Mirosław: 'Mirek', Daniel: 'Danielek', Patrycja: 'Patka', Oliwia: 'Oliwka',
-  Karol: 'Karolek', Emilia: 'Emilka', Przemysław: 'Przemek', Aleksander: 'Olek', Izabela: 'Iza',
+  Karol: 'Karolek', Karolina: 'Karolcia', Emilia: 'Emilka', Przemysław: 'Przemek', Aleksander: 'Olek', Izabela: 'Iza',
   Helena: 'Hela', Weronika: 'Werka', Aneta: 'Anetka', Henryk: 'Heniek', Adrian: 'Adrianek',
   Ewelina: 'Ewelinka', Martyna: 'Martynka', Mikołaj: 'Mikołajek', Franciszek: 'Franek', Gabriela: 'Gabrysia',
   Dominik: 'Domek', Lena: 'Lenka', Kazimierz: 'Kazik', Arkadiusz: 'Arek', Wiesław: 'Wiesiek',
