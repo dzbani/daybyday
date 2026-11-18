@@ -68,6 +68,38 @@ function genderRank(name) {
   return { rank: female ? rf : rm, gender: female ? 'żeńskich' : 'męskich' };
 }
 const POP_TOP = new Set(Object.entries(NAME_POPULARITY).sort((a, b) => b[1] - a[1]).slice(0, POP_BLOCK_TOP).map(e => e[0]));
+
+// --- 1a''. Linia „Wspomnienia patronów opisanych poniżej: 29 czerwca (św. Piotr Apostoł), …” dla POP_TOP (19.11.2026) ---
+// Dla imion z wieloma datami (Piotr ma ich 63) sama lista dat nie mówi, która za czym stoi. Linia powtarza daty patronów, którzy są
+// już opisani niżej na stronie (sekcja patronów z NAME_DESCRIPTIONS_RICH albo NAME_DB.patron), więc nie dodaje nowych faktów
+// ani nie wskazuje „głównej” daty. Pierwszych PATRON_DATES_MAX patronów, w kolejności z opisu.
+const PATRON_DATES_MAX = 4;
+const PD_MONTHS = '(?:stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia)';
+const PD_DATE_RE = new RegExp('\\b(\\d{1,2}) ' + PD_MONTHS, 'g');
+const pdShort = n => n.replace(/^Święty\s+/, 'św. ').replace(/^Święta\s+/, 'św. ').replace(/^Święci\s+/, 'św. ')
+  .replace(/^Błogosławiony\s+/, 'bł. ').replace(/^Błogosławiona\s+/, 'bł. ').replace(/<[^>]+>/g, '').trim();
+function patronDatesLine(name, rich, dbEntry) {
+  let items = [];
+  if (rich) {
+    const h = rich.search(/<h3>(Świę|Patron)/);
+    if (h >= 0) {
+      const re = new RegExp('<strong>([^<]{3,90})</strong>\\s*\\(([^)]*' + PD_MONTHS + '[^)]*)\\)', 'g');
+      let m;
+      while ((m = re.exec(rich.slice(h)))) {
+        const ds = [...m[2].matchAll(PD_DATE_RE)].map(x => x[0]);
+        if (ds.length) items.push({ who: pdShort(m[1]), dates: ds });
+      }
+    }
+  }
+  if (!items.length && dbEntry && dbEntry.patron) {
+    for (const part of dbEntry.patron.split(';')) {
+      const ds = [...part.matchAll(PD_DATE_RE)].map(x => x[0]);
+      if (ds.length) items.push({ who: pdShort(part.split(/[,(]/)[0].trim()), dates: [ds[ds.length - 1]] });
+    }
+  }
+  if (!items.length) return '';
+  return items.slice(0, PATRON_DATES_MAX).map(i => `${i.dates.join(', ')} (${i.who})`).join(', ');
+}
 const MAIN_DIM = require('./name_main_diminutive.js');
 const joinPl = a =>a.length > 1 ? a.slice(0, -1).join(', ') + ' i ' + a[a.length - 1] : a[0];
 
@@ -350,6 +382,10 @@ function buildPage(name) {
   const dimBlock = dimUse.length
     ? `\n  <div class="name-desc-section dim-note">\n    <h2 class="name-desc-label">Kiedy są imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''}?</h2>\n    <p>${joinPl(dimUse)} ${dimUse.length > 1 ? 'to zdrobnienia' : 'to zdrobnienie'} imienia ${name}, więc imieniny ${joinPl(dimGen)} przypadają w ${dates.length === 1 ? 'ten sam dzień' : 'te same dni'} co imieniny ${genitive}: ${dates.length > 3 ? metaDatesStr + ' (pełna lista powyżej)' : datesStr}.</p>\n  </div>`
     : '';
+  const patronDates = POP_TOP.has(name) ? patronDatesLine(name, rich, dbEntry) : '';
+  const patronDatesHtml = patronDates
+    ? `\n  <p class="patron-dates" style="font-size:.95rem;color:var(--muted)"><strong>Wspomnienia patronów opisanych poniżej:</strong> ${patronDates}.</p>`
+    : '';
   const popCount = NAME_POPULARITY[name] || 0;
   const popRank = POP_TOP.has(name) && popCount > 0 ? genderRank(name) : null;
   const popBlock = POP_TOP.has(name) && popCount > 0
@@ -519,7 +555,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}${mainDim ? ` (${mainDim})` : ''}</h1>
   <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
-  ${countdownHtml}${dimBlock}${popBlock}
+  ${countdownHtml}${patronDatesHtml}${dimBlock}${popBlock}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
