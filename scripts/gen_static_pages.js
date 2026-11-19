@@ -336,6 +336,9 @@ function buildTrendNarrative(name, vals, years) {
     sentence = `Popularność imienia <strong>${name}</strong> gwałtownie wzrosła w ciągu ostatnich ${lastYear - 2000} lat — z ${zaledwie}${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku (wzrost ${growthText}).`;
   } else if (val2000 >= 3 && pct !== null && pct >= 30) {
     sentence = `Imię <strong>${name}</strong> zyskuje na popularności — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  } else if (val2000 === 0) {
+    // start od zera: „stabilna… wtedy 0 razy” brzmiało absurdalnie (audyt 19.11.2026)
+    sentence = `Imię <strong>${name}</strong> nadawane jest sporadycznie — w 2000 roku nie nadano go ani razu, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else {
     sentence = `Popularność imienia <strong>${name}</strong> pozostaje względnie stabilna od 2000 roku — wtedy nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   }
@@ -395,7 +398,7 @@ function buildPage(name) {
       && f.toLowerCase() !== (mainDim || '').toLowerCase() && !variantsBySlug[nameSlug(f)])
     : [];
   const dimUse = !NAME_GENITIVE[name] ? [] : [...(mainDim ? [mainDim] : []), ...dimExtra].slice(0, 3);
-  const dimGen = dimUse.map(dimGenitive);
+  const dimGen = [...new Set(dimUse.map(dimGenitive))]; // bez powtórzeń (Grzesiek i Grześko → oba „Grześka”)
   const mainGen = mainDim ? dimGenitive(mainDim) : null;
   const richHasPatron = !!rich && PATRON_HEADERS.some(h => rich.includes('<h3>' + h + '</h3>'));
   const dbEntry = NAME_DB[normalize(name)];
