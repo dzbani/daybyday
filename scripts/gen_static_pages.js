@@ -73,6 +73,35 @@ const POP_TOP = new Set(Object.entries(NAME_POPULARITY).sort((a, b) => b[1] - a[
 // Dla imion z wieloma datami (Piotr ma ich 63) sama lista dat nie mówi, która za czym stoi. Linia powtarza daty patronów, którzy są
 // już opisani niżej na stronie (sekcja patronów z NAME_DESCRIPTIONS_RICH albo NAME_DB.patron), więc nie dodaje nowych faktów
 // ani nie wskazuje „głównej” daty. Pierwszych PATRON_DATES_MAX patronów, w kolejności z opisu.
+// „Najbardziej znana data imienin” — ręcznie zweryfikowana lista (19.11.2026, plik roboczy glowne_daty_imienin_do_wdrozenia.txt).
+// Każda data jest w bazie dat imienia i w tradycyjnych kalendarzach; podstawa to duże święto kościelne albo opisany zwyczaj.
+// Celowo „najbardziej znana”, nie „najczęściej obchodzona” (tego nie da się zmierzyć). Imiona bez wpisu (np. Krystyna — dwie
+// równorzędne daty, Bożena) nie mają tej linii. Zofia 15.05 to zwyczaj ludowy (zimna Zośka), nie wspomnienie patronki.
+const MAIN_DATE = {
+  Agnieszka: ['21 stycznia', 'wspomnienie św. Agnieszki Rzymianki'],
+  Józef: ['19 marca', 'uroczystość św. Józefa, Oblubieńca NMP'],
+  Zofia: ['15 maja', 'tzw. zimna Zośka, zwyczaj ludowy'],
+  Jan: ['24 czerwca', 'uroczystość Narodzenia św. Jana Chrzciciela, noc świętojańska'],
+  Piotr: ['29 czerwca', 'uroczystość Świętych Apostołów Piotra i Pawła'],
+  Paweł: ['29 czerwca', 'uroczystość Świętych Apostołów Piotra i Pawła'],
+  Krzysztof: ['25 lipca', 'dzień św. Krzysztofa, patrona kierowców'],
+  Anna: ['26 lipca', 'wspomnienie św. Anny, matki Maryi'],
+  Michał: ['29 września', 'święto Archaniołów, w tym św. Michała'],
+  Marcin: ['11 listopada', 'wspomnienie św. Marcina z Tours'],
+  Katarzyna: ['25 listopada', 'wspomnienie św. Katarzyny Aleksandryjskiej, Katarzynki'],
+  Andrzej: ['30 listopada', 'święto św. Andrzeja Apostoła, Andrzejki'],
+  Barbara: ['4 grudnia', 'wspomnienie św. Barbary, Barbórka'],
+  Mikołaj: ['6 grudnia', 'wspomnienie św. Mikołaja, Mikołajki'],
+  Adam: ['24 grudnia', 'Wigilia, w polskiej tradycji dzień Adama i Ewy'],
+  Ewa: ['24 grudnia', 'Wigilia, w polskiej tradycji dzień Adama i Ewy'],
+  Sylwester: ['31 grudnia', 'wspomnienie św. Sylwestra I, papieża'],
+};
+// Imiona z >= 10 tys. nosicieli, które mają DOKŁADNIE JEDNĄ datę potwierdzoną jednocześnie w obu tradycyjnych kalendarzach
+// (Wikipedia „Imieniny – <miesiąc>” + imieniny.rky.pl; migawka scripts/imieniny_tradycyjne_zrodla.json) dostają linię
+// „Data podawana zarówno w Wikipedii, jak i w kalendarzu imieniny.rky.pl”. Mechaniczne i weryfikowalne (bez oceny „która najbardziej znana”).
+// Nie dotyczy imion z ręcznego słownika MAIN_DATE. Imię może mieć dodatkowe daty znane tylko z jednego źródła.
+const TRAD_SRC = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts', 'imieniny_tradycyjne_zrodla.json'), 'utf8').replace(/^﻿/, '')).dni;
+const TRAD_MIN_CARRIERS = 10000;
 const PATRON_DATES_MAX = 4;
 const PD_MONTHS = '(?:stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia)';
 const PD_DATE_RE = new RegExp('\\b(\\d{1,2}) ' + PD_MONTHS, 'g');
@@ -386,6 +415,22 @@ function buildPage(name) {
   const patronDatesHtml = patronDates
     ? `\n  <p class="patron-dates" style="font-size:.95rem;color:var(--muted)"><strong>Wspomnienia patronów opisanych poniżej:</strong> ${patronDates}.</p>`
     : '';
+  let mainDateHtml = '';
+  if (MAIN_DATE[name]) {
+    const [mdDate, mdBasis] = MAIN_DATE[name];
+    // zabezpieczenie: data musi być jedną z dat tego imienia (inaczej błąd w słowniku — nie publikujemy)
+    if (dates.some(x => `${x.d} ${MONTH_NAMES_GEN[x.m]}` === mdDate)) {
+      mainDateHtml = `\n  <p class="main-date" style="font-size:.95rem;color:var(--muted)"><strong>Najbardziej znana data imienin:</strong> ${mdDate} (${mdBasis}).</p>`;
+    } else {
+      console.warn(`UWAGA: MAIN_DATE dla ${name}: „${mdDate}” nie jest datą tego imienia — pominięto`);
+    }
+  }
+  if (!mainDateHtml && !MAIN_DATE[name] && (NAME_POPULARITY[name] || 0) >= TRAD_MIN_CARRIERS) {
+    const both = (dateMap[name] || []).filter(x => { const s = TRAD_SRC[`${x.m}-${x.d}`]; return s && s.wikipedia.includes(name) && s.rky.includes(name); });
+    if (both.length === 1) {
+      mainDateHtml = `\n  <p class="main-date" style="font-size:.95rem;color:var(--muted)"><strong>Data potwierdzona w obu tradycyjnych kalendarzach</strong> (Wikipedia i imieniny.rky.pl): ${both[0].d} ${MONTH_NAMES_GEN[both[0].m]}.</p>`;
+    }
+  }
   const popCount = NAME_POPULARITY[name] || 0;
   const popRank = POP_TOP.has(name) && popCount > 0 ? genderRank(name) : null;
   const popBlock = POP_TOP.has(name) && popCount > 0
@@ -555,7 +600,7 @@ function buildPage(name) {
   ${breadcrumbHtml}
   <h1>Imieniny – ${name}${mainDim ? ` (${mainDim})` : ''}</h1>
   <p class="dates">${NAME_GENITIVE[name] ? `Imieniny ${genitive}${mainDim ? ` i ${mainGen}` : ''} przypadają:` : `Imieniny ${name}:`} <strong>${datesStr}</strong>${variants.length ? ` (także zapisywane: ${variants.join(", ")})` : ''}</p>
-  ${countdownHtml}${patronDatesHtml}${dimBlock}${popBlock}
+  ${countdownHtml}${mainDateHtml}${patronDatesHtml}${dimBlock}${popBlock}
   ${trendHtml ? trendHtml + '\n  ' : ''}${descHtml ? `<div>${descHtml}</div>` : ''}${patronBlock}${calAddHtml}${monthLinksHtml}${sameDaySection}${prevNextNav}
   <p><a href="/imieniny.html?name=${encodeURIComponent(name)}">Pełne informacje o imieniu ${name} →</a></p>
   <p><a href="/">← DaybyDay</a></p>
