@@ -95,6 +95,10 @@ const MAIN_DATE = {
   Adam: ['24 grudnia', 'Wigilia, w polskiej tradycji dzień Adama i Ewy'],
   Ewa: ['24 grudnia', 'Wigilia, w polskiej tradycji dzień Adama i Ewy'],
   Sylwester: ['31 grudnia', 'wspomnienie św. Sylwestra I, papieża'],
+  // Partia 2 (19.11.2026): święta liturgiczne apostoła/ewangelisty/Marii Magdaleny; data jest w bazie imienia.
+  Jakub: ['25 lipca', 'święto św. Jakuba Apostoła'],
+  Magdalena: ['22 lipca', 'święto św. Marii Magdaleny'],
+  Łukasz: ['18 października', 'święto św. Łukasza Ewangelisty'],
 };
 // Imiona z >= 10 tys. nosicieli, które mają DOKŁADNIE JEDNĄ datę potwierdzoną jednocześnie w obu tradycyjnych kalendarzach
 // (Wikipedia „Imieniny – <miesiąc>” + imieniny.rky.pl; migawka scripts/imieniny_tradycyjne_zrodla.json) dostają linię
