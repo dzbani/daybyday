@@ -329,7 +329,7 @@ const IMIENINY_TRAD={
 "11-20":["Sylwester","Edmund","Feliks","Oktawia","Anatol","Sylwestra","Oktawiusz","Fortunata","Sędzimir","Maksencja","Agapiusz","Ampeliusz"],
 "11-21":["Maria","Janusz","Wiesław","Konrad","Regina","Albert","Elwira","Heliodor","Rufus","Twardosław"],
 "11-22":["Marek","Cecylia","Wszemiła","Maur"],
-"11-23":["Adela","Klemens","Felicyta","Orestes","Fotyna","Przedwoj"],
+"11-23":["Adela","Klemens","Felicyta","Orestes","Erast","Fotyna","Przedwoj"],
 "11-24":["Agnieszka","Jan","Emilia","Franciszek","Joachim","Gerard","Jaśmina","Flora","Dobrosław","Biruta","Protazy","Felicjana","Pęcisław","Twardomir"],
 "11-25":["Piotr","Katarzyna","Erazm","Tęgomir"],
 "11-26":["Piotr","Jan","Konrad","Sylwester","Leonard","Lechosław","Sylwestra","Lechosława","Delfin","Dobiemiest"],
