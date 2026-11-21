@@ -334,7 +334,7 @@ const IMIENINY_TRAD={
 "11-25":["Piotr","Katarzyna","Erazm","Tęgomir"],
 "11-26":["Piotr","Jan","Konrad","Sylwester","Leonard","Lechosław","Sylwestra","Lechosława","Delfin","Dobiemiest"],
 "11-27":["Dominik","Maksymilian","Gustaw","Zygfryd","Walery","Damazy","Zygfryda","Wirgiliusz","Bernardyn","Stojgniew","Achacjusz","Achacy","Jozafat","Oda","Sekundyn"],
-"11-28":["Jakub","Grzegorz","Zdzisław","Lesław","Ginter","Berta","Lesława","Gunter","Kwieta","Gościrad"],
+"11-28":["Jakub","Grzegorz","Zdzisław","Lesław","Ginter","Berta","Lesława","Rufin","Gunter","Kwieta","Gościrad","Guncerz"],
 "11-29":["Błażej","Fryderyk","Walter","Klementyna","Saturnin","Paramon","Przemysł","Bolemysł"],
 "11-30":["Andrzej","Justyna","Maura","Zbysława","Tadea","Konstancjusz","Kutbert"],
 "12-1":["Natalia","Blanka","Edmund","Platon","Eligiusz","Eligia","Gosława","Sobiesława"],
