@@ -3727,6 +3727,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://daybyday.today/swieto/miedzynarodowe-swieto-uciekajacych-na-rowerze/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daybyday.today/swieto/miedzynarodowy-dzien-agrafki/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>yearly</changefreq>
@@ -5163,6 +5169,12 @@
   <url>
     <loc>https://daybyday.today/swieto/ogolnopolski-dzien-aptekarza/</loc>
     <lastmod>2026-11-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://daybyday.today/swieto/ogolnopolski-dzien-bez-jak-bylo-dzisiaj-w-szkole/</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
