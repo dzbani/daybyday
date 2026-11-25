@@ -188,7 +188,7 @@ function normalize(s) {
 
 const MONTH_NAMES_GEN = ['', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'];
 const MONTH_SLUGS = ['', 'styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec', 'sierpien', 'wrzesien', 'pazdziernik', 'listopad', 'grudzien'];
-const MONTH_NAMES_LOC = ['', 'Styczniu', 'Lutym', 'Marcu', 'Kwietniu', 'Maju', 'Czerwcu', 'Lipcu', 'Sierpniu', 'Wrześniu', 'Październiku', 'Listopadzie', 'Grudniu'];
+const MONTH_NAMES_LOC = ['', 'w styczniu', 'w lutym', 'w marcu', 'w kwietniu', 'w maju', 'w czerwcu', 'w lipcu', 'w sierpniu', 'we wrześniu', 'w październiku', 'w listopadzie', 'w grudniu'];
 const PATRON_HEADERS = ['Patron', 'Święty patron', 'Święta patronka', 'Święci patroni', 'Święte patronki'];
 
 // Nagłówki sekcji z imieniem (frazy typu "znaczenie imienia Maciej", "pochodzenie imienia Maciej"). Zmiana tylko w HTML
@@ -239,6 +239,13 @@ const allValidNames = Object.values(slugOwner).filter(name => {
   return !!RICH[name] && fs.existsSync(path.join(ROOT, 'imieniny', slug)) && (dateMap[name] || []).length > 0;
 });
 const allValidNamesSet = new Set(allValidNames);
+// „Kto jeszcze obchodzi imieniny”: wszystkie imiona z własną stroną, także bez opisu w RICH (25.11.2026).
+// slugOwner obejmuje tylko imiona z RICH, dlatego właściciela sluga bierzemy ze slugOwnerOf().
+function hasOwnPage(name) {
+  const slug = nameSlug(name);
+  return (dateMap[name] || []).length > 0 && slugOwnerOf(slug) === name &&
+    fs.existsSync(path.join(ROOT, 'imieniny', slug, 'index.html'));
+}
 const sortedAllNames = [...allValidNames].sort((a, b) => a.localeCompare(b, 'pl'));
 const prevNextMap = {};
 sortedAllNames.forEach((name, i) => {
@@ -308,6 +315,12 @@ function buildTrendChart(name) {
 
 function trendOdmiana(n) { return n === 1 ? 'raz' : 'razy'; }
 
+function osobyOdmiana(n) {
+  if (n === 1) return 'osoba';
+  const d = n % 10, h = n % 100;
+  return (d >= 2 && d <= 4 && (h < 12 || h > 14)) ? 'osoby' : 'osób';
+}
+
 function buildTrendNarrative(name, vals, years) {
   const val2000 = vals[0], val2024 = vals[vals.length - 1];
   const lastYear = years[years.length - 1];
@@ -318,8 +331,14 @@ function buildTrendNarrative(name, vals, years) {
   const fmt = n => n.toLocaleString('pl-PL');
 
   let sentence;
+  const nonZeroYears = vals.filter(v => v > 0).length;
+  const fallenFromPeak = peakYear < lastYear && val2024 < peakVal * 0.7;
 
-  if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
+  if (nonZeroYears === 1 && val2000 === 0 && val2024 === 0) {
+    return `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawia się tylko w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}).`;
+  } else if (val2000 >= 3 && pct !== null && pct >= 30 && fallenFromPeak) {
+    return `W 2000 roku imię <strong>${name}</strong> nadano ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}. Szczyt popularności przypadł na ${peakYear} rok (${fmt(peakVal)} ${trendOdmiana(peakVal)}) i od tego czasu nadań jest wyraźnie mniej.`;
+  } else if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
     return `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawiło się dopiero w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
   } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
     sentence = `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawia się dopiero od ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
@@ -331,7 +350,8 @@ function buildTrendNarrative(name, vals, years) {
     sentence = `Popularność imienia <strong>${name}</strong> systematycznie maleje — z ${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku, czyli spadek o ${Math.abs(pct)}%.`;
   } else if (val2000 >= 3 && pct !== null && pct >= 100) {
     const multiplier = val2024 / val2000;
-    const growthText = multiplier >= 3 ? `niemal ${Math.round(multiplier)}-krotnie` : `o ${pct}%`;
+    const whole = Math.floor(multiplier), rest = multiplier - whole;
+    const growthText = multiplier >= 3 ? (rest === 0 ? `${whole}-krotnie` : rest < 0.5 ? `ponad ${whole}-krotnie` : `niemal ${whole + 1}-krotnie`) : `o ${pct}%`;
     const zaledwie = val2000 < 500 ? 'zaledwie ' : '';
     sentence = `Popularność imienia <strong>${name}</strong> gwałtownie wzrosła w ciągu ostatnich ${lastYear - 2000} lat — z ${zaledwie}${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku (wzrost ${growthText}).`;
   } else if (val2000 >= 3 && pct !== null && pct >= 30) {
@@ -441,7 +461,7 @@ function buildPage(name) {
   const popCount = NAME_POPULARITY[name] || 0;
   const popRank = POP_TOP.has(name) && popCount > 0 ? genderRank(name) : null;
   const popBlock = POP_TOP.has(name) && popCount > 0
-    ? `\n  <div class="name-desc-section pop-note">\n    <h2 class="name-desc-label">Ile osób nosi imię ${name}?</h2>\n    <p>Imię <strong>${name}</strong> nosi <strong>${popCount.toLocaleString('pl-PL')}</strong> osób w Polsce${popRank ? `, co daje <strong>${popRank.rank}. miejsce</strong> wśród imion ${popRank.gender}` : ''}.<br><span style="font-size:.8rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</span></p>\n  </div>`
+    ? `\n  <div class="name-desc-section pop-note">\n    <h2 class="name-desc-label">Ile osób nosi imię ${name}?</h2>\n    <p>Imię <strong>${name}</strong> nosi <strong>${popCount.toLocaleString('pl-PL')}</strong> ${osobyOdmiana(popCount)} w Polsce${popRank ? `, co daje <strong>${popRank.rank}. miejsce</strong> wśród imion ${popRank.gender}` : ''}.<br><span style="font-size:.8rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</span></p>\n  </div>`
     : '';
   // Odliczanie do najbliższych imienin liczy przeglądarka z new Date() (strona jest statyczna, więc bez zamrożenia po dacie granicznej)
   const cdDates = dates.map(x => `${x.m}-${x.d}`).join(',');
@@ -484,7 +504,7 @@ function buildPage(name) {
   for (const d of dates) {
     if (monthsSeen.has(d.m)) continue;
     monthsSeen.add(d.m);
-    monthLinks.push(`<a href="/imieniny/miesiac/${MONTH_SLUGS[d.m]}/">Wszystkie imieniny w ${MONTH_NAMES_LOC[d.m]}</a>`);
+    monthLinks.push(`<a href="/imieniny/miesiac/${MONTH_SLUGS[d.m]}/">Wszystkie imieniny ${MONTH_NAMES_LOC[d.m]}</a>`);
   }
   const monthLinksHtml = monthLinks.length
     ? `\n  <p class="month-links">${monthLinks.join(' · ')}</p>`
@@ -495,7 +515,7 @@ function buildPage(name) {
   const MAX_SAMEDAY_DATES = 3;
   const MAX_COCELEBRANTS_PER_DATE = 12;
   const sameDayParas = dates.slice(0, MAX_SAMEDAY_DATES).map(d => {
-    let co = (dayNames[`${d.m}-${d.d}`] || []).filter(n => n !== name && allValidNamesSet.has(n));
+    let co = (dayNames[`${d.m}-${d.d}`] || []).filter(n => n !== name && hasOwnPage(n));
     const truncated = co.length > MAX_COCELEBRANTS_PER_DATE;
     co = co.slice(0, MAX_COCELEBRANTS_PER_DATE);
     if (!co.length) return '';

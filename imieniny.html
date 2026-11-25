@@ -1189,7 +1189,7 @@ const NAME_DB = {
   'elzbieta': { gender: 'K',
     origin: 'Hebrajskie Eliseba — „Bóg moją przysięgą", „poświęcona Bogu"', meaning: 'Mój Bóg jest moją przysięgą / poświęcona Bogu',
     patron: 'Św. Elżbieta z Schönau (18 czerwca), Św. Elżbieta Węgierska (17 listopada), Bł. Elżbieta Czacka',
-    extraDates: ['4 stycznia','20 lutego','4 lipca','8 lipca','14 sierpnia','5 listopada','8 listopada','17 listopada','19 listopada'],
+    extraDates: ['4 stycznia','20 lutego','4 lipca','8 lipca','14 sierpnia','5 listopada','17 listopada','19 listopada'],
     positive: ['Zdeterminowana','Sumienna i perfekcjonistyczna','Poczucie humoru','Zdolności dyplomatyczne','Wyjątkowa elegancja','Wierna ideom','Wszechstronne zainteresowania','Opiekuńcza wobec bliskich'],
     negative: ['Nieustępliwa i niepokorna','Potrzeba narzucać wolę innym','Nie znosi przegrywać','Wybuchy złości','Trudna we współżyciu'],
     love: 'W miłości potrzebuje silnego, pewnego siebie i opiekuńczego mężczyzny, który będzie godnym partnerem. Musi on być przygotowany na częste potyczki i ostrą wymianę zdań. Pociągają ją przystojni idealiści.',
@@ -1282,7 +1282,7 @@ const NAME_DB = {
     negative: ['Bywa zbyt skromny — nie docenia siebie','Trudno mu się chwalić','Może być staroświecki'],
     love: 'Rodzina to jego priorytet. Szuka kobiety, z którą zbuduje trwały dom. W miłości jest wierny i oddany.',
     professions: ['Rzemieślnik','Budowniczy','Inżynier','Rolnik','Cieśla'],
-    diminutives: 'Józek, Józio, Pepek',
+    diminutives: 'Józek, Józio, Józefek, Józuś, Ziutek',
     foreign: 'ang. Joseph, fr. Joseph, niem. Josef, ros. Иосиф, wł. Giuseppe',
   },
   'modesta': { gender: 'K',
@@ -4658,7 +4658,7 @@ function doSearch(val) {
       </p>
       ${peselCount > 0 ? `
       <div style="background:var(--tag-bg);border-left:3px solid var(--border);padding:.85rem 1.1rem;border-radius:0 8px 8px 0">
-        <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> osób w Polsce${nameRank ? ` · <strong>${nameRank.rank}.</strong> najpopularniejsze imię ${nameRank.gender}` : ''}</div>
+        <div style="font-size:.88rem;font-weight:600;margin-bottom:.3rem">Popularność: imię ${matchedName} nosi <strong>${peselCount.toLocaleString('pl-PL')}</strong> ${(peselCount % 10 >= 2 && peselCount % 10 <= 4 && (peselCount % 100 < 12 || peselCount % 100 > 14)) ? 'osoby' : (peselCount === 1 ? 'osoba' : 'osób')} w Polsce${nameRank ? ` · <strong>${nameRank.rank}.</strong> najpopularniejsze imię ${nameRank.gender}` : ''}</div>
         <div style="font-size:.75rem;color:var(--muted)">wg rejestru PESEL, stan na 20.01.2026 · źródło: dane.gov.pl</div>
       </div>` : ''}
       ${buildTrendChart(matchedName)}
