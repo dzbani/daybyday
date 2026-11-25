@@ -228,7 +228,7 @@ const NAMES=
   [8,11,["Aleksander","Filomena","Herman","Klara","Ligia","Lilia","Lukrecja","Piotr","Rufin","Telimena","Tyburcja","Tyburcjusz","Tyburcy","Włodzimierz","Włodzimir","Włościwoj","Zuzanna"]],
   [8,12,["Anicet","Aniceta","Bądzsław","Cyriak","Digna","Eunomia","Euzebiusz","Fotyn","Herkulan","Hilaria","Innocenty","Joanna","Julian","Julianna","Klara","Largus","Lech","Leonida","Letycja","Makary","Wiktoria","Łukasz"]],
   [8,13,["Benild","Diana","Ernest","Helena","Hipolit","Hipolita","Jan","Kasjan","Kasjana","Konkordia","Maksym","Poncjan","Radegunda","Radomiła","Sekundyn","Wigbert","Wolebor"]],
-  [8,14,["Alana","Alfred","Atanazja","Dobrowoj","Dobrowoja","Elżbieta","Euzebiusz","Irena","Kalikst","Machabeusz","Majnard","Maksymilian","Marceli","Ursycyn"]],
+  [8,14,["Alfred","Atanazja","Dobrowoj","Dobrowoja","Elżbieta","Euzebiusz","Irena","Kalikst","Machabeusz","Majnard","Maksymilian","Marceli","Ursycyn"]],
   [8,15,["Alipiusz","Armida","Arnulf","Julianna","Maria","Miriam","Napoleon","Stefan","Tarsycjusz","Trzebiemir"]],
   [8,16,["Abraham","Ambroży","Anioł","Arsacjusz","Ciechosław","Diomedes","Domarad","Domasuł","Eleuteria","Eleuteriusz","Emil","Laurencjusz","Laurenty","Roch","Saba","Stefan","Symplicjusz","Tytus","Wawrzyniec"]],
   [8,17,["Anastazja","Anastazy","Angelika","Anita","Bertram","Bonifacy","Eliza","Euzebiusz","Hiacynt","Jacek","Jacenty","Jaczewoj","Joanna","Julianna","Klara","Liberat","Magdalena","Maksym","Maria","Miron","Mirona","Nastazja","Roch","Rogat","Rustyk","Rustyka","Septymiusz","Serwiusz","Straton","Zawisza","Żaneta","Żanna"]],
