@@ -66,7 +66,7 @@ select{background:var(--tag-bg);border:1px solid var(--border);border-radius:60p
 .rnum.g{color:#7A5F12}.rnum.s{color:#6B6B6B}.rnum.b{color:#8A5A3A}
 [data-theme="dark"] .rnum.g{color:#C9A84C}[data-theme="dark"] .rnum.s{color:#9E9E9E}[data-theme="dark"] .rnum.b{color:#C28A63}
 .rname{flex:1;font-size:.93rem;font-weight:500;color:inherit;text-decoration:none}
-.rname:hover{text-decoration:underline}
+a.rname:hover{text-decoration:underline}
 .rbar-w{width:50px;height:3px;background:var(--border);border-radius:2px;overflow:hidden;flex-shrink:0}
 .rbar{height:100%;background:var(--muted);border-radius:2px}
 .rcnt{font-size:.75rem;color:var(--muted);white-space:nowrap;min-width:2.5rem;text-align:right}
@@ -171,7 +171,8 @@ function setPlec(p){
   render();
 }
 function nameSlug(n){return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/[^a-z0-9-]/g,'');}
-function nameHref(name){var slug=nameSlug(name);return (typeof IMIENINY_SLUGS!=='undefined'&&IMIENINY_SLUGS.has(slug))?('/imieniny/'+slug+'/'):('/imieniny.html?name='+encodeURIComponent(name));}
+function nameHref(name){var slug=nameSlug(name);return (typeof IMIENINY_SLUGS!=='undefined'&&IMIENINY_SLUGS.has(slug))?('/imieniny/'+slug+'/'):null;}
+function nameCell(name){var h=nameHref(name);return h?'<a class="rname" href="'+h+'">'+name+'</a>':'<span class="rname">'+name+'</span>';}
 function medal(i){return i===0?'g':i===1?'s':i===2?'b':'';}
 function card(title, pill, list, offset, max){
   if(!list.length) return '';
@@ -179,7 +180,7 @@ function card(title, pill, list, offset, max){
     +list.map(function(e,i){
       var name=e[0],cnt=e[1],bar=Math.round(cnt/max*100);
       return '<li class="ritem"><span class="rnum '+medal(i+offset)+'">'+( i+offset+1)+'</span>'
-        +'<a class="rname" href="'+nameHref(name)+'">'+name+'</a>'
+        +nameCell(name)
         +'<div class="rbar-w"><div class="rbar" style="width:'+bar+'%"></div></div>'
         +'<span class="rcnt">'+cnt.toLocaleString('pl-PL')+'</span></li>';
     }).join('')+'</ul></div>';
