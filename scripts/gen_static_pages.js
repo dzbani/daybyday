@@ -329,6 +329,8 @@ function buildTrendNarrative(name, vals, years) {
   const firstYear = years[vals.findIndex(v => v > 0)];
   const pct = val2000 > 0 ? Math.round((val2024 - val2000) / val2000 * 100) : null;
   const fmt = n => n.toLocaleString('pl-PL');
+  // „w 2025 roku 3 razy” albo „w 2025 roku nie nadano go ani razu” (nigdy „0 razy”)
+  const inLast = val2024 ? `w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}` : `w ${lastYear} roku nie nadano go ani razu`;
 
   let sentence;
   const nonZeroYears = vals.filter(v => v > 0).length;
@@ -339,15 +341,18 @@ function buildTrendNarrative(name, vals, years) {
   } else if (val2000 >= 3 && pct !== null && pct >= 30 && fallenFromPeak) {
     return `W 2000 roku imię <strong>${name}</strong> nadano ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}. Szczyt popularności przypadł na ${peakYear} rok (${fmt(peakVal)} ${trendOdmiana(peakVal)}) i od tego czasu nadań jest wyraźnie mniej.`;
   } else if (val2000 === 0 && val2024 === 0 && peakVal >= 2 && peakYear > 2000 && peakYear < lastYear) {
-    return `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawiło się dopiero w ${firstYear} roku, szczyt osiągnęło w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)}), po czym niemal całkowicie zniknęło z użycia.`;
+    const peakText = firstYear === peakYear
+      ? `i wtedy nadano je najczęściej (${fmt(peakVal)} ${trendOdmiana(peakVal)})`
+      : `, a najczęściej nadano je w ${peakYear} roku (${fmt(peakVal)} ${trendOdmiana(peakVal)})`;
+    return `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawiło się dopiero w ${firstYear} roku${peakText.startsWith(',') ? '' : ' '}${peakText}; ${inLast}.`;
   } else if (val2000 === 0 && val2024 >= 5 && firstYear > 2000) {
     sentence = `W danych o nadaniach imion z lat 2000–${lastYear} imię <strong>${name}</strong> pojawia się dopiero od ${firstYear} roku, a w ${lastYear} roku otrzymało je już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 >= 10 && val2024 <= 2) {
-    sentence = `W ciągu ostatnich ${lastYear - 2000} lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+    sentence = `W ciągu ostatnich ${lastYear - 2000} lat imię <strong>${name}</strong> niemal całkowicie zniknęło z polskich metryk — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a ${val2024 ? `w ${lastYear} roku zaledwie ${fmt(val2024)} ${trendOdmiana(val2024)}` : inLast}.`;
   } else if (val2000 >= 10 && pct !== null && pct <= -50) {
     sentence = `W ciągu ostatnich ${lastYear - 2000} lat popularność imienia <strong>${name}</strong> drastycznie spadła — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, podczas gdy w ${lastYear} roku już tylko ${fmt(val2024)} ${trendOdmiana(val2024)} (spadek o ${Math.abs(pct)}%).`;
   } else if (val2000 >= 10 && pct !== null && pct <= -20) {
-    sentence = `Popularność imienia <strong>${name}</strong> systematycznie maleje — z ${fmt(val2000)} ${trendOdmiana(val2000)} w 2000 roku do ${fmt(val2024)} ${trendOdmiana(val2024)} w ${lastYear} roku, czyli spadek o ${Math.abs(pct)}%.`;
+    sentence = `W 2000 roku imię <strong>${name}</strong> nadano ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)} — o ${Math.abs(pct)}% mniej.`;
   } else if (val2000 >= 3 && pct !== null && pct >= 100) {
     const multiplier = val2024 / val2000;
     const whole = Math.floor(multiplier), rest = multiplier - whole;
@@ -358,9 +363,12 @@ function buildTrendNarrative(name, vals, years) {
     sentence = `Imię <strong>${name}</strong> zyskuje na popularności — w 2000 roku nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku już ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
   } else if (val2000 === 0) {
     // start od zera: „stabilna… wtedy 0 razy” brzmiało absurdalnie (audyt 19.11.2026)
-    sentence = `Imię <strong>${name}</strong> nadawane jest sporadycznie — w 2000 roku nie nadano go ani razu, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
-  } else {
+    sentence = `Imię <strong>${name}</strong> nadawane jest sporadycznie — w 2000 roku nie nadano go ani razu, a ${inLast}.`;
+  } else if (Math.min(...vals) > 0 && Math.max(...vals) <= Math.min(...vals) * 1.3) {
+    // „stabilna” tylko wtedy, gdy KAZDY rok miesci sie w waskim przedziale, nie tylko pierwszy i ostatni
     sentence = `Popularność imienia <strong>${name}</strong> pozostaje względnie stabilna od 2000 roku — wtedy nadano je ${fmt(val2000)} ${trendOdmiana(val2000)}, a w ${lastYear} roku ${fmt(val2024)} ${trendOdmiana(val2024)}.`;
+  } else {
+    sentence = `W 2000 roku imię <strong>${name}</strong> nadano ${fmt(val2000)} ${trendOdmiana(val2000)}, a ${inLast}.`;
   }
 
   if (peakYear !== 2000 && peakYear !== lastYear && peakVal >= Math.max(val2000, val2024, 5) * 1.4) {
