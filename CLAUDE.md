@@ -33,6 +33,13 @@ Wszystko i zawsze jednym agentem, chyba że użytkownik wyraźnie zdecyduje inac
 
 **Wersję podbijaj poleceniem `node scripts/bump_sw.js`** (nie ręcznie): podbija `sw.js` o 1 i synchronizuje parametr `?v=NNN` przy skryptach `home_*.js` w `index.html` (`node scripts/bump_sw.js --check` sprawdza zgodność). Bez zsynchronizowanego `?v=` SW (cache-first) mógłby zasłonić zmienione dane starą kopią z cache.
 
+## Zgoda na statystyki — `consent.js` (27.11.2026)
+
+- Google Analytics ładuje wyłącznie `consent.js` (korzeń repo) i tylko po kliknięciu „Akceptuję”; w `<head>` strony wystarcza `<script src="/consent.js"></script>`. **Nigdy nie wklejaj bezpośrednio tagu `gtag.js`** (ani w stronie, ani w generatorze). Komunikat o zgodzie buduje ten sam plik — nie dodawaj banerów w HTML.
+- Wybór: localStorage `dbd-consent` (`granted`/`denied`); zmiana: `window.dbdCookieSettings()` (przycisk w `polityka-prywatnosci.html`). W ramce (widżety) komunikat się nie pokazuje. Reklam skrypt nie obsługuje (komunikat Google z panelu AdSense).
+- `consent.js` jest w SW cache-first — po jego zmianie `node scripts/bump_sw.js`.
+- Zmiana listy usług, cookies lub danych w `localStorage` = aktualizacja `polityka-prywatnosci.html`.
+
 ## Dane strony głównej wydzielone do `home_*.js` (15.10.2026)
 
 Trzy duże tablice, które do 14.10 siedziały inline w `index.html` (HTML miał 291 KB / 93 KB gz), leżą teraz w osobnych plikach ładowanych synchronicznie przed głównym skryptem (`<script src="home_*.js?v=NNN">`): **`home_names.js`** (`NAMES`, 366 dni), **`home_holidays.js`** (`HOLIDAYS`, lekka lista świąt `[dzień,miesiąc,nazwa,slug,kategoria]`), **`home_quotes.js`** (`QUOTES`). `index.html` ma ok. 123 KB / 37 KB gz. **Gdziekolwiek w tym pliku jest mowa o „`HOLIDAYS`/`NAMES`/`QUOTES` w `index.html`”, czytaj: w odpowiednim `home_*.js`** — edytuj tam (nie ma ich już w HTML).

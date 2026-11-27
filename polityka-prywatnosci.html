@@ -1,15 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2LQZRJPF39"></script>
-  <script>
-    if (['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) > -1) window['ga-disable-G-2LQZRJPF39'] = true; // testy lokalne nie liczą się w GA4
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2LQZRJPF39');
-  </script>
+  <!-- Statystyki dopiero po zgodzie -->
+  <script src="/consent.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Polityka prywatności | DaybyDay</title>
@@ -184,34 +177,46 @@
   <h2>Administrator danych</h2>
   <p>Administratorem serwisu jest właściciel domeny daybyday.today. Kontakt: <a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a></p>
 
-  <h2>Jakie dane zbieramy</h2>
-  <p>Serwis daybyday.today nie wymaga rejestracji ani logowania i nie zbiera danych osobowych użytkowników. Jedyne dane przetwarzane przez przeglądarkę to:</p>
+  <h2>Jakie dane są przetwarzane</h2>
+  <p>Serwis daybyday.today nie wymaga rejestracji ani logowania i nie prosi o podanie imienia, nazwiska czy adresu. Podczas korzystania ze strony przetwarzane są jednak dane techniczne (np. adres IP, informacje o przeglądarce i urządzeniu, identyfikatory z plików cookies), opisane niżej.</p>
+
+  <h2>Hosting</h2>
+  <p>Strona jest udostępniana przez usługę GitHub Pages (GitHub, Inc.). Serwery hostingu otrzymują m.in. adres IP i dane przeglądarki, co jest potrzebne do wyświetlenia strony i zapewnienia jej bezpieczeństwa. Szczegóły: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">oświadczenie o prywatności GitHub</a>.</p>
+
+  <h2>Statystyki odwiedzin: Google Analytics</h2>
+  <p>Część stron serwisu korzysta z Google Analytics 4, aby mierzyć ruch (np. które strony są odwiedzane, skąd i na jakich urządzeniach). Kod Analytics jest uruchamiany <strong>dopiero po wyrażeniu zgody</strong> w komunikacie na dole strony. Usługa zapisuje wtedy pliki cookies (m.in. <code>_ga</code> i <code>_ga_2LQZRJPF39</code>), a dane trafiają do Google. Dostawcą jest Google Ireland Limited; dane mogą być przekazywane także poza Europejski Obszar Gospodarczy, w tym do USA. Podstawą przetwarzania jest zgoda (art. 6 ust. 1 lit. a RODO). Możesz ją w każdej chwili zmienić lub wycofać — nie wpływa to na zgodność z prawem wcześniejszego przetwarzania.</p>
+  <p><button type="button" onclick="window.dbdCookieSettings&amp;&amp;window.dbdCookieSettings()" style="background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:60px;padding:.55rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit;">Zmień zgodę na statystyki</button></p>
+
+  <h2>Reklamy: Google AdSense</h2>
+  <p>Część stron zawiera kod Google AdSense, który służy do wyświetlania reklam. Google i jego partnerzy mogą w związku z tym używać plików cookies lub podobnych identyfikatorów, przetwarzać adres IP i dane o przeglądarce oraz — zależnie od Twoich wyborów — dopasowywać reklamy na podstawie wcześniejszych odwiedzin tej i innych stron. Użytkownikom z Europejskiego Obszaru Gospodarczego, Wielkiej Brytanii i Szwajcarii Google może wyświetlić komunikat, w którym można wyrazić zgodę lub jej odmówić; wybór jest zapamiętywany w pliku cookie (np. <code>FCCDCF</code>).</p>
   <ul>
-    <li><strong>Geolokalizacja</strong> — używana wyłącznie do obliczenia astronomicznych wschodów i zachodów słońca oraz prognozy pogody dla Twojej lokalizacji. Dane nie są przesyłane na nasze serwery — przetwarzanie odbywa się lokalnie w przeglądarce. Możesz odmówić udostępnienia lokalizacji — serwis będzie działał z domyślną lokalizacją (Poznań).</li>
-    <li><strong>Preferencje lokalne</strong> — wybrana lokalizacja może być zapisana w pamięci lokalnej przeglądarki (<code>localStorage</code>) wyłącznie na Twoim urządzeniu.</li>
+    <li><a href="https://policies.google.com/technologies/partner-sites?hl=pl" target="_blank" rel="noopener">Jak Google wykorzystuje dane z witryn partnerów</a></li>
+    <li><a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Ustawienia reklam Google</a> (m.in. wyłączenie reklam spersonalizowanych)</li>
+    <li><a href="https://policies.google.com/privacy?hl=pl" target="_blank" rel="noopener">Polityka prywatności Google</a></li>
   </ul>
+
+  <h2>Lokalizacja, pogoda i wyszukiwanie miejscowości</h2>
+  <ul>
+    <li><strong>Geolokalizacja przeglądarki</strong> — tylko za Twoją zgodą, na stronach o wschodach i zachodach słońca oraz fazach Księżyca. Obliczenia wykonuje Twoja przeglądarka. Możesz odmówić — strona pokaże wtedy dane dla miasta domyślnego lub wybranego przez Ciebie.</li>
+    <li><strong>Wyszukiwanie miejscowości</strong> — wpisana nazwa jest wysyłana do usługi <a href="https://nominatim.openstreetmap.org/" target="_blank" rel="noopener">Nominatim (OpenStreetMap)</a>.</li>
+    <li><strong>Pogoda</strong> — współrzędne miejscowości (domyślnie Poznania lub wybranej przez Ciebie) są wysyłane do usługi <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a>.</li>
+  </ul>
+  <p>Usługi te otrzymują przy połączeniu również Twój adres IP.</p>
+
+  <h2>Dane zapisywane w Twojej przeglądarce</h2>
+  <p>W pamięci lokalnej przeglądarki (<code>localStorage</code>) serwis może zapisywać: motyw i rozmiar tekstu, wybraną lokalizację, kolejność kart na stronie głównej, notatki na dany dzień oraz Twoją decyzję w sprawie statystyk. Te ustawienia i notatki nie są wysyłane przez serwis na żaden serwer. Możesz je usunąć, czyszcząc dane strony w przeglądarce.</p>
 
   <h2 id="pliki-cookies">Pliki cookies</h2>
-  <p>Serwis daybyday.today nie używa własnych plików cookies do śledzenia użytkowników. Mogą być używane cookies techniczne przez zewnętrzne zasoby:</p>
-  <ul>
-    <li><strong>Google Fonts</strong> — czcionki ładowane z serwerów Google</li>
-    <li><strong>Open-Meteo API</strong> — prognozy pogody (bezpłatne API, bez śledzenia)</li>
-    <li><strong>Wikipedia API</strong> — dane historyczne (bez śledzenia)</li>
-  </ul>
+  <p>Pliki cookies w serwisie pochodzą z opisanych wyżej usług Google (statystyki, reklamy i zapamiętanie wyboru dotyczącego zgody). Możesz je usunąć lub zablokować w ustawieniach przeglądarki — strona będzie nadal działać. Statystyki Google Analytics można też wyłączyć <a href="https://tools.google.com/dlpage/gaoptout?hl=pl" target="_blank" rel="noopener">dodatkiem do przeglądarki od Google</a>.</p>
 
-  <h2>Zewnętrzne API</h2>
-  <p>Serwis korzysta z następujących zewnętrznych usług:</p>
-  <ul>
-    <li><a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> — prognozy pogody (open source, RODO-zgodne)</li>
-    <li><a href="https://pl.wikipedia.org" target="_blank" rel="noopener">Wikipedia API</a> — wydarzenia historyczne</li>
-    <li><a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a> — czcionki Inter i Instrument Serif</li>
-  </ul>
+  <h2>Kontakt e-mail</h2>
+  <p>Jeśli do nas napiszesz, przetwarzamy Twój adres e-mail i treść wiadomości, aby odpowiedzieć. Korespondencję obsługują dostawcy usług pocztowych.</p>
 
   <h2>Twoje prawa</h2>
-  <p>Ponieważ nie zbieramy danych osobowych, nie ma danych do usunięcia, poprawienia ani eksportu. W razie pytań skontaktuj się: <a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a></p>
+  <p>Zgodnie z RODO możesz żądać dostępu do swoich danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, wnieść sprzeciw, a wyrażoną zgodę w każdej chwili wycofać. Możesz także złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych. W sprawach prywatności pisz na adres <a href="mailto:kontakt@daybyday.today">kontakt@daybyday.today</a>.</p>
 
   <h2>Zmiany polityki</h2>
-  <p>Zastrzegamy prawo do aktualizacji niniejszej polityki. Data ostatniej aktualizacji: <strong>czerwiec 2026</strong>.</p>
+  <p>Zastrzegamy prawo do aktualizacji niniejszej polityki. Data ostatniej aktualizacji: <strong>27 listopada 2026</strong>.</p>
 </div>
 
 <footer>
@@ -224,11 +229,6 @@
 </footer>
 
 
-<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1A1916;color:#F8F7F5;padding:1rem 1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-family:Inter,sans-serif;font-size:.82rem;line-height:1.5;">
-  <span>Ta strona używa geolokalizacji i zewnętrznych API (pogoda) wyłącznie do wyświetlania danych na ekranie. Nie zbieramy danych osobowych. <a href="polityka-prywatnosci.html" style="color:#F8F7F5;text-underline-offset:3px;">Polityka prywatności</a></span>
-  <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cookieOK','1')" style="background:#F8F7F5;color:#1A1916;border:none;border-radius:60px;padding:.4rem 1.25rem;font-size:.82rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Rozumiem</button>
-</div>
-<script>if(!localStorage.getItem('cookieOK'))document.getElementById('cookieBanner').style.display='flex';</script>
 <script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
 <script>
   function toggleDarkMode(){
