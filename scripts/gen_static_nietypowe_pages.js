@@ -175,6 +175,8 @@ function buildLightPage(slug, entry) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Statystyki dopiero po zgodzie -->
+  <script src="/consent.js"></script>
   <title>${esc(name)} — kiedy wypada? | DaybyDay</title>
   <meta name="description" content="${esc(metaDesc)}">
   <link rel="canonical" href="${pageUrl}">

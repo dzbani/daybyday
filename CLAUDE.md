@@ -37,6 +37,7 @@ Wszystko i zawsze jednym agentem, chyba że użytkownik wyraźnie zdecyduje inac
 
 - Google Analytics ładuje wyłącznie `consent.js` (korzeń repo) i tylko po kliknięciu „Akceptuję”; w `<head>` strony wystarcza `<script src="/consent.js"></script>`. **Nigdy nie wklejaj bezpośrednio tagu `gtag.js`** (ani w stronie, ani w generatorze). Komunikat o zgodzie buduje ten sam plik — nie dodawaj banerów w HTML.
 - Wybór: localStorage `dbd-consent` (`granted`/`denied`); zmiana: `window.dbdCookieSettings()` (przycisk w `polityka-prywatnosci.html`). W ramce (widżety) komunikat się nie pokazuje. Reklam skrypt nie obsługuje (komunikat Google z panelu AdSense).
+- Skrypt mają też strony treściowe (`imieniny/`, `swieto/`, `kartka/`, `swieta-liturgiczne/`; od 27.11.2026) — nowa strona (także pisana ręcznie) musi go dostać. Bez niego celowo: `kartka/*/widget/` i `widget/`.
 - `consent.js` jest w SW cache-first — po jego zmianie `node scripts/bump_sw.js`.
 - Zmiana listy usług, cookies lub danych w `localStorage` = aktualizacja `polityka-prywatnosci.html`.
 
