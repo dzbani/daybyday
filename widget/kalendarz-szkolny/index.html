@@ -8,15 +8,17 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: transparent; }
-  body { font-family: Georgia, serif; color: #1A1916; padding: 14px 16px; font-size: 14px; line-height: 1.5; }
+  body { font-family: Georgia, serif; color: #1A1916; padding: 6px 8px; font-size: 14px; line-height: 1.4; }
   .card { border: 1px solid #E8E5E0; border-radius: 12px; padding: 14px 16px; background: #FFFFFF; }
   .label { font-size: .66rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: #8A8680; margin: 0 0 .3rem; }
-  .status { font-size: 1.15rem; font-weight: 600; margin-bottom: .7rem; }
+  .status { font-size: 1.15rem; font-weight: 600; margin-bottom: .55rem; }
   .status .emoji { margin-right: .3rem; }
   .next-label { font-size: .95rem; }
   .next-date { font-size: .78rem; color: #6B6762; margin-top: .15rem; }
+  .next-date.note { font-size: .7rem; line-height: 1.35; }
+  .status .next-date { font-weight: 400; font-family: Georgia, serif; }
   a { color: #1A1916; }
-  .brand { display: block; margin-top: .75rem; padding-top: .6rem; border-top: 1px solid #E8E5E0; font-size: .7rem; color: #8A8680; text-decoration: none; font-family: Georgia, serif; }
+  .brand { display: block; margin-top: .55rem; padding-top: .45rem; border-top: 1px solid #E8E5E0; font-size: .7rem; color: #8A8680; text-decoration: none; font-family: Georgia, serif; }
   .brand b { color: #1A1916; }
 </style>
 </head>
@@ -31,11 +33,11 @@
 (function(){
   // Kluczowe daty lat szkolnych 2025/2026, 2026/2027 i 2027/2028. Utrzymywane ręcznie, tak samo
   // jak zrodlowa strona kalendarz-szkolny.html (brak automatycznego generatora — patrz
-  // ten sam plik). Ferie zimowe zaleza od wojewodztwa, wiec pokazane jako jeden zbiorczy
-  // zakres z dopiskiem, zamiast probowac zgadywac wojewodztwo widza.
+  // ten sam plik). Ferie zimowe zaleza od wojewodztwa, wiec kazdy turnus to osobny wpis
+  // z lista wojewodztw (note), zamiast probowac zgadywac wojewodztwo widza.
   var EVENTS = [
     {start:'2025-09-01', end:'2025-09-01', label:'Rozpoczęcie roku szkolnego', type:'szkolny', emoji:'🎒'},
-    {start:'2025-10-14', end:'2025-10-14', label:'Dzień Edukacji Narodowej — dzień wolny', type:'wolny', emoji:'📕'},
+    {start:'2025-10-14', end:'2025-10-14', label:'Dzień Edukacji Narodowej — wolne od lekcji', type:'wolny', emoji:'📕'},
     {start:'2025-11-01', end:'2025-11-01', label:'Wszystkich Świętych', type:'wolny', emoji:'🕯️'},
     {start:'2025-11-11', end:'2025-11-11', label:'Narodowe Święto Niepodległości', type:'wolny', emoji:'🇵🇱'},
     {start:'2025-12-22', end:'2025-12-31', label:'Przerwa świąteczna', type:'przerwa', emoji:'🎄'},
@@ -43,7 +45,9 @@
     {start:'2025-12-25', end:'2025-12-26', label:'Boże Narodzenie', type:'wolny', emoji:'🎄'},
     {start:'2026-01-01', end:'2026-01-01', label:'Nowy Rok', type:'wolny', emoji:'🎉'},
     {start:'2026-01-06', end:'2026-01-06', label:'Trzech Króli — dzień wolny', type:'wolny', emoji:'👑'},
-    {start:'2026-01-19', end:'2026-03-01', label:'Ferie zimowe (dokładne daty zależą od województwa)', type:'ferie', emoji:'⛄'},
+    {start:'2026-01-19', end:'2026-02-01', label:'Ferie zimowe — turnus I', note:'woj. mazowieckie, pomorskie, podlaskie, świętokrzyskie, warmińsko-mazurskie', type:'ferie', emoji:'⛄'},
+    {start:'2026-02-02', end:'2026-02-15', label:'Ferie zimowe — turnus II', note:'woj. dolnośląskie, kujawsko-pomorskie, łódzkie, zachodniopomorskie, małopolskie, opolskie', type:'ferie', emoji:'⛄'},
+    {start:'2026-02-16', end:'2026-03-01', label:'Ferie zimowe — turnus III', note:'woj. podkarpackie, lubelskie, wielkopolskie, lubuskie, śląskie', type:'ferie', emoji:'⛄'},
     {start:'2026-04-02', end:'2026-04-07', label:'Przerwa wielkanocna', type:'przerwa', emoji:'🐣'},
     {start:'2026-04-05', end:'2026-04-06', label:'Wielkanoc', type:'wolny', emoji:'🐣'},
     {start:'2026-05-01', end:'2026-05-01', label:'Święto Pracy', type:'wolny', emoji:'🏳️'},
@@ -53,7 +57,7 @@
     {start:'2026-06-26', end:'2026-06-26', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
     {start:'2026-06-27', end:'2026-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
     {start:'2026-09-01', end:'2026-09-01', label:'Rozpoczęcie roku szkolnego 2026/2027', type:'szkolny', emoji:'🎒'},
-    {start:'2026-10-14', end:'2026-10-14', label:'Dzień Edukacji Narodowej — dzień wolny', type:'wolny', emoji:'📕'},
+    {start:'2026-10-14', end:'2026-10-14', label:'Dzień Edukacji Narodowej — wolne od lekcji', type:'wolny', emoji:'📕'},
     {start:'2026-11-01', end:'2026-11-01', label:'Wszystkich Świętych', type:'wolny', emoji:'🕯️'},
     {start:'2026-11-11', end:'2026-11-11', label:'Narodowe Święto Niepodległości', type:'wolny', emoji:'🇵🇱'},
     {start:'2026-12-23', end:'2026-12-31', label:'Przerwa świąteczna', type:'przerwa', emoji:'🎄'},
@@ -61,7 +65,9 @@
     {start:'2026-12-25', end:'2026-12-26', label:'Boże Narodzenie', type:'wolny', emoji:'🎄'},
     {start:'2027-01-01', end:'2027-01-01', label:'Nowy Rok', type:'wolny', emoji:'🎉'},
     {start:'2027-01-06', end:'2027-01-06', label:'Trzech Króli — dzień wolny', type:'wolny', emoji:'👑'},
-    {start:'2027-01-18', end:'2027-02-28', label:'Ferie zimowe (dokładne daty zależą od województwa)', type:'ferie', emoji:'⛄'},
+    {start:'2027-01-18', end:'2027-01-31', label:'Ferie zimowe — turnus I', note:'woj. podkarpackie, podlaskie, dolnośląskie, łódzkie, śląskie, opolskie', type:'ferie', emoji:'⛄'},
+    {start:'2027-02-01', end:'2027-02-14', label:'Ferie zimowe — turnus II', note:'woj. mazowieckie, pomorskie, świętokrzyskie, lubelskie', type:'ferie', emoji:'⛄'},
+    {start:'2027-02-15', end:'2027-02-28', label:'Ferie zimowe — turnus III', note:'woj. lubuskie, kujawsko-pomorskie, warmińsko-mazurskie, wielkopolskie, zachodniopomorskie, małopolskie', type:'ferie', emoji:'⛄'},
     {start:'2027-03-25', end:'2027-03-30', label:'Przerwa wielkanocna', type:'przerwa', emoji:'🐣'},
     {start:'2027-03-28', end:'2027-03-29', label:'Wielkanoc', type:'wolny', emoji:'🐣'},
     {start:'2027-05-01', end:'2027-05-01', label:'Święto Pracy', type:'wolny', emoji:'🏳️'},
@@ -71,7 +77,7 @@
     {start:'2027-06-25', end:'2027-06-25', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
     {start:'2027-06-26', end:'2027-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
     {start:'2027-09-01', end:'2027-09-01', label:'Rozpoczęcie roku szkolnego 2027/2028', type:'szkolny', emoji:'🎒'},
-    {start:'2027-10-14', end:'2027-10-14', label:'Dzień Edukacji Narodowej — dzień wolny', type:'wolny', emoji:'📕'},
+    {start:'2027-10-14', end:'2027-10-14', label:'Dzień Edukacji Narodowej — wolne od lekcji', type:'wolny', emoji:'📕'},
     {start:'2027-11-01', end:'2027-11-01', label:'Wszystkich Świętych', type:'wolny', emoji:'🕯️'},
     {start:'2027-11-11', end:'2027-11-11', label:'Narodowe Święto Niepodległości', type:'wolny', emoji:'🇵🇱'},
     {start:'2027-12-23', end:'2027-12-31', label:'Przerwa świąteczna', type:'przerwa', emoji:'🎄'},
@@ -79,7 +85,9 @@
     {start:'2027-12-25', end:'2027-12-26', label:'Boże Narodzenie', type:'wolny', emoji:'🎄'},
     {start:'2028-01-01', end:'2028-01-01', label:'Nowy Rok', type:'wolny', emoji:'🎉'},
     {start:'2028-01-06', end:'2028-01-06', label:'Trzech Króli — dzień wolny', type:'wolny', emoji:'👑'},
-    {start:'2028-01-17', end:'2028-02-27', label:'Ferie zimowe (dokładne daty zależą od województwa)', type:'ferie', emoji:'⛄'},
+    {start:'2028-01-17', end:'2028-01-30', label:'Ferie zimowe — turnus I', note:'woj. podlaskie, kujawsko-pomorskie, świętokrzyskie, wielkopolskie, zachodniopomorskie, lubuskie, pomorskie', type:'ferie', emoji:'⛄'},
+    {start:'2028-01-31', end:'2028-02-13', label:'Ferie zimowe — turnus II', note:'woj. mazowieckie, warmińsko-mazurskie, łódzkie, podkarpackie', type:'ferie', emoji:'⛄'},
+    {start:'2028-02-14', end:'2028-02-27', label:'Ferie zimowe — turnus III', note:'woj. opolskie, lubelskie, małopolskie, śląskie, dolnośląskie', type:'ferie', emoji:'⛄'},
     {start:'2028-04-13', end:'2028-04-18', label:'Przerwa wielkanocna', type:'przerwa', emoji:'🐣'},
     {start:'2028-04-16', end:'2028-04-17', label:'Wielkanoc', type:'wolny', emoji:'🐣'},
     {start:'2028-05-01', end:'2028-05-01', label:'Święto Pracy', type:'wolny', emoji:'🏳️'},
@@ -87,7 +95,7 @@
     {start:'2028-06-04', end:'2028-06-04', label:'Zielone Świątki', type:'wolny', emoji:'🕊️'},
     {start:'2028-06-15', end:'2028-06-15', label:'Boże Ciało', type:'wolny', emoji:'⛪'},
     {start:'2028-06-23', end:'2028-06-23', label:'Zakończenie roku szkolnego', type:'szkolny', emoji:'🎓'},
-    {start:'2028-06-24', end:'2028-08-31', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
+    {start:'2028-06-24', end:'2028-09-03', label:'Wakacje letnie', type:'wakacje', emoji:'🏖️'},
     // 1 września 2028 to piątek — zgodnie z rozporządzeniem (piątek/sobota → najbliższy poniedziałek)
     // rok szkolny 2028/2029 rozpocznie się w poniedziałek 4 września. Bez tego wpisu sekcja "Za X dni"
     // byłaby pusta przez całe lato 2028 (jedyne w całej tablicy), bo to ostatnie wydarzenie w danych.
@@ -113,7 +121,8 @@
   var nextEl = document.getElementById('dbdNext');
 
   if (current) {
-    statusEl.innerHTML = '<span class="emoji">' + current.emoji + '</span>Dziś: ' + current.label;
+    statusEl.innerHTML = '<span class="emoji">' + current.emoji + '</span>Dziś: ' + current.label +
+      (current.note ? '<div class="next-date note">' + current.note + '</div>' : '');
   } else if (today > dataEnd) {
     // Poza zakresem znanych dat (nowy rok szkolny bez wpisanych jeszcze terminów) —
     // nie zgadujemy dnia nauki/ferii, tylko odsyłamy do pełnego, aktualizowanego kalendarza.
@@ -129,7 +138,7 @@
 
   if (next) {
     var days = Math.round((parseDate(next.start) - today) / 86400000);
-    nextEl.innerHTML = '<div class="next-label">' + next.emoji + ' Za ' + days + ' ' + (days === 1 ? 'dzień' : 'dni') + ': ' + next.label + '</div><div class="next-date">' + fmtDate(parseDate(next.start)) + '</div>';
+    nextEl.innerHTML = '<div class="next-label">' + next.emoji + ' Za ' + days + ' ' + (days === 1 ? 'dzień' : 'dni') + ': ' + next.label + '</div><div class="next-date' + (next.note ? ' note' : '') + '">' + fmtDate(parseDate(next.start)) + (next.note && !(current && current.note) ? ' · ' + next.note : '') + '</div>';
   }
 
   // Odswieza widget o polnocy, jesli strona osadzajaca iframe zostanie otwarta przez noc

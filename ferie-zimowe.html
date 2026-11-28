@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://daybyday.today/ferie-zimowe.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Ferie Zimowe 2026/2027","description":"Terminy ferii zimowych 2026/2027 w każdym województwie. Sprawdź kiedy są ferie dla Twojego dziecka i zaplanuj urlop.","url":"https://daybyday.today/ferie-zimowe.html","inLanguage":"pl","isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Ferie Zimowe 2026/2027","description":"Terminy ferii zimowych 2026/2027 w każdym województwie. Sprawdź kiedy są ferie dla Twojego dziecka i zaplanuj urlop.","url":"https://daybyday.today/ferie-zimowe.html","inLanguage":"pl","datePublished":"2026-06-20","dateModified":"2026-11-28","image":"https://daybyday.today/og-image-v5.png","author":{"@type":"Organization","name":"DaybyDay","url":"https://daybyday.today/"},"isPartOf":{"@type":"WebSite","name":"DaybyDay","url":"https://daybyday.today/"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"DaybyDay","item":"https://daybyday.today/"},{"@type":"ListItem","position":2,"name":"Ferie Zimowe","item":"https://daybyday.today/ferie-zimowe.html"}]}</script>
 
 
@@ -37,7 +37,7 @@
     .page { max-width:1120px; margin:0 auto; padding:2.5rem 2rem 6rem; }
     .page-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.6rem; }
     .page-title { font-family:'Instrument Serif',serif; font-size:clamp(2rem,5vw,3rem); font-weight:400; line-height:1.15; letter-spacing:-.02em; margin-bottom:.75rem; }
-    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:560px; margin-bottom:2.5rem; }
+    .page-sub { font-size:.9rem; color:var(--muted); line-height:1.65; max-width:560px; margin-bottom:.75rem; }
     .year-tabs { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2.5rem; }
     .year-tab { padding:.45rem 1.2rem; background:var(--surface); border:1px solid var(--border); border-radius:60px; font-size:.82rem; font-weight:500; color:var(--muted); cursor:pointer; font-family:inherit; transition:all .15s; }
     .year-tab.active,.year-tab:hover { background:var(--text); color:white; border-color:var(--text); }
@@ -60,6 +60,8 @@
     .countdown-label { font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:.5rem; }
     .countdown-num { font-family:'Instrument Serif',serif; font-size:3.5rem; line-height:1; margin-bottom:.4rem; }
     .countdown-sub { font-size:.85rem; color:rgba(255,255,255,.7); }
+    .countdown-pick { display:block; margin-top:1.1rem; font-size:.78rem; }
+    .countdown-pick select { font-family:inherit; font-size:.82rem; max-width:100%; margin-left:.35rem; padding:.35rem .6rem; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--text); }
     footer { border-top:1px solid var(--border); padding:2rem; max-width:1120px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
     .footer-logo { font-family:'Instrument Serif',serif; font-size:1rem; }
     .footer-links { display:flex; gap:1.5rem; }
@@ -201,7 +203,8 @@
 <div class="page">
   <div class="page-label">Edukacja</div>
   <h1 class="page-title">Ferie Zimowe</h1>
-  <p class="page-sub">Terminy ferii zimowych dla wszystkich województw w Polsce. Ferie zimowe trwają 2 tygodnie i są podzielone na 3 turnusy.</p>
+  <p class="page-sub">Terminy ferii zimowych dla wszystkich województw w Polsce. Ferie zimowe trwają 2 tygodnie i są podzielone na 3 turnusy. Pozostałe daty: <a href="kalendarz-szkolny.html" style="color:var(--text);">kalendarz szkolny →</a></p>
+  <p style="font-size:.78rem;color:var(--muted);margin-bottom:1.5rem;"><!-- reczna data ostatniej weryfikacji danych, aktualizowac przy kazdej zmianie tresci na tej stronie -->Zaktualizowano: 28 listopada 2026</p>
 
   <div class="year-tabs">
     <button class="year-tab" onclick="showYear('2026',this)">2025/2026</button>
@@ -210,9 +213,10 @@
   </div>
 
   <div class="countdown-card" id="countdownCard">
-    <div class="countdown-label" id="countdownLabel">Do końca roku szkolnego</div>
+    <div class="countdown-label" id="countdownLabel">Do ferii zimowych</div>
     <div class="countdown-num" id="countdown"></div>
     <div class="countdown-sub" id="countdownSub"></div>
+    <label class="countdown-pick">Województwo: <select id="voivSelect"><option value="">najbliższy turnus</option></select></label>
   </div>
 
   <div id="year-2026" style="display:none">
@@ -222,7 +226,7 @@
     </div>
 
     <div class="turns-grid">
-      <div class="turn-card">
+      <div class="turn-card" data-start="2026-01-19" data-end="2026-02-01">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus I</div>
@@ -239,7 +243,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2026-02-02" data-end="2026-02-15">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus II</div>
@@ -257,7 +261,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2026-02-16" data-end="2026-03-01">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus III</div>
@@ -283,7 +287,7 @@
     </div>
 
     <div class="turns-grid">
-      <div class="turn-card">
+      <div class="turn-card" data-start="2027-01-18" data-end="2027-01-31">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus I</div>
@@ -301,7 +305,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2027-02-01" data-end="2027-02-14">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus II</div>
@@ -317,7 +321,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2027-02-15" data-end="2027-02-28">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus III</div>
@@ -344,7 +348,7 @@
     </div>
 
     <div class="turns-grid">
-      <div class="turn-card">
+      <div class="turn-card" data-start="2028-01-17" data-end="2028-01-30">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus I</div>
@@ -363,7 +367,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2028-01-31" data-end="2028-02-13">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus II</div>
@@ -379,7 +383,7 @@
         </div>
       </div>
 
-      <div class="turn-card">
+      <div class="turn-card" data-start="2028-02-14" data-end="2028-02-27">
         <div class="turn-header">
           <div>
             <div class="turn-title">Turnus III</div>
@@ -427,42 +431,50 @@
     if (btns[idx]) showYear(ends[idx][0], btns[idx]);
   })();
 
-  // Koniec roku szkolnego liczony algorytmicznie (najblizszy piatek po 20 czerwca),
-  // ten sam wzorzec co w kalendarz-szkolny.html — dziala bez recznej aktualizacji
-  // w kolejnych latach, patrz CLAUDE.md ("zamrozenie po dacie granicznej").
-  function schoolEnd(year) {
-    var d = new Date(year, 5, 20);
-    var dow = d.getDay();
-    var add = (5 - dow + 7) % 7;
-    if (add === 0) add = 7;
-    d.setDate(20 + add);
-    // jesli czwartek przed tym piatkiem to Boze Cialo (dzien ustawowo wolny),
-    // zajecia koncza sie w srode (par. 2 ust. 1 rozporzadzenia o organizacji roku szkolnego)
-    var bc = corpusChristi(year);
-    if (bc.getMonth() === 5 && bc.getDate() === d.getDate() - 1) d.setDate(d.getDate() - 2);
-    return d;
-  }
-  // Boze Cialo = Wielkanoc (algorytm Meeusa/Jonesa/Butchera) + 60 dni
-  function corpusChristi(y) {
-    var a = y % 19, b = Math.floor(y / 100), c = y % 100;
-    var h = (19 * a + b - Math.floor(b / 4) - Math.floor((b - Math.floor((b + 8) / 25) + 1) / 3) + 15) % 30;
-    var l = (32 + 2 * (b % 4) + 2 * Math.floor(c / 4) - h - c % 4) % 7;
-    var m = Math.floor((a + 11 * h + 22 * l) / 451);
-    var n = h + l - 7 * m + 114;
-    return new Date(y, Math.floor(n / 31) - 1, n % 31 + 1 + 60);
-  }
+  // Licznik do ferii: terminy i wojewodztwa czytane z kart turnusow powyzej (data-start/data-end),
+  // wiec nowy rok wystarczy dopisac w HTML. Po ostatnim wpisanym turnusie licznik mowi to wprost.
+  // Wybor wojewodztwa nie jest zapamietywany (nic nie trafia do localStorage).
   (function(){
-    var today = new Date(); today.setHours(0, 0, 0, 0); // porownujemy same daty, bez godziny
-    var end = schoolEnd(today.getFullYear());
-    if (today > end) end = schoolEnd(today.getFullYear() + 1);
-    var days = Math.round((end - today) / 86400000);
-    var fmt = end.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' });
-    var numEl = document.getElementById('countdown');
-    var subEl = document.getElementById('countdownSub');
-    var labelEl = document.getElementById('countdownLabel');
-    if (days === 0 && labelEl) labelEl.textContent = 'Zakończenie roku szkolnego';
-    if (numEl) numEl.textContent = days === 0 ? 'Dziś' : days;
-    if (subEl) subEl.textContent = days === 0 ? fmt : (days === 1 ? 'dzień' : 'dni') + ' do zakończenia roku szkolnego (' + fmt + ')';
+    function parse(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+    var turns = Array.prototype.map.call(document.querySelectorAll('.turn-card[data-start]'), function (card) {
+      return {
+        start: parse(card.getAttribute('data-start')),
+        end: parse(card.getAttribute('data-end')),
+        name: card.querySelector('.turn-title').textContent.trim(),
+        dates: card.querySelector('.turn-dates').textContent.trim(),
+        voivs: Array.prototype.map.call(card.querySelectorAll('.voiv-item'), function (v) { return v.textContent.trim(); })
+      };
+    }).sort(function (a, b) { return a.start - b.start; });
+    var select = document.getElementById('voivSelect');
+    var all = [];
+    turns.forEach(function (t) { t.voivs.forEach(function (v) { if (all.indexOf(v) < 0) all.push(v); }); });
+    all.sort(function (a, b) { return a.localeCompare(b, 'pl'); }).forEach(function (v) {
+      var o = document.createElement('option'); o.value = v; o.textContent = v; select.appendChild(o);
+    });
+    function days(a, b) { return Math.round((b - a) / 86400000); }
+    function render() {
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var v = select.value;
+      var t = turns.filter(function (x) { return x.end >= today && (!v || x.voivs.indexOf(v) >= 0); })[0];
+      var label = 'Ferie zimowe', num = '—', sub = 'Terminy kolejnych ferii nie są jeszcze wpisane.';
+      if (t) {
+        var who = (v ? 'woj. ' + v + ' · ' : '') + t.name + ', ' + t.dates;
+        if (t.start <= today) {
+          num = days(today, t.end) + 1;
+          label = 'Trwają ferie zimowe';
+          sub = (num === 1 ? 'ostatni dzień ferii' : 'dni do końca ferii (z dzisiejszym)') + ' · ' + who;
+        } else {
+          num = days(today, t.start);
+          label = 'Do ferii zimowych';
+          sub = (num === 1 ? 'dzień' : 'dni') + ' do rozpoczęcia · ' + who;
+        }
+      }
+      document.getElementById('countdownLabel').textContent = label;
+      document.getElementById('countdown').textContent = num;
+      document.getElementById('countdownSub').textContent = sub;
+    }
+    select.addEventListener('change', render);
+    render();
   })();
 
   // ── Auto-odświeżenie po zmianie daty (karta zostawiona otwarta na noc) ────────
